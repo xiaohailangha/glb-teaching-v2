@@ -46,6 +46,7 @@ class SceneRuntime extends ChangeNotifier {
   final stopwatch = Stopwatch()..start();
   final timings = <String, dynamic>{};
   Map<String, dynamic> units = {};
+  List<dynamic> fruitStages = [];
   SecondaryMotion? secondary;
   AttachmentProbe? attachmentProbe;
   CornealHighlights? highlights;
@@ -137,6 +138,7 @@ class SceneRuntime extends ChangeNotifier {
         'teaching-prompts',
         'pronunciation-units',
         'course-prompts',
+        'fruit-prompts',
       ]) {
         final json = jsonDecode(
           await rootBundle.loadString('assets/avatar/audio/$file.json'),
@@ -149,6 +151,13 @@ class SceneRuntime extends ChangeNotifier {
           'assets/avatar/audio/performance-cues.json',
         ),
       );
+      fruitStages =
+          (jsonDecode(
+                await rootBundle.loadString(
+                  'assets/avatar/courses/adult-fruit.json',
+                ),
+              ) as Map)['stages']
+              as List;
       final rig = jsonDecode(
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
       ) as Map<String, dynamic>;
@@ -231,7 +240,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r5',
+        'version': 'scene-0.2.0-r6-course',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -248,6 +257,8 @@ class SceneRuntime extends ChangeNotifier {
       'course',
       'pronunciation',
       'performance',
+      'course-replay',
+      'course-preview',
     ].contains(data['type'])) {
       // The controller sends stop immediately before a new play command.
       // Pause now, before the new gesture unlock, so an older queued stop
@@ -324,11 +335,47 @@ class SceneRuntime extends ChangeNotifier {
           session = c['session'] as int;
           word = 'apple';
           mode = 'course';
-          director = TeachingDirector.apple(
-            style: c['style']?.toString() ?? 'adult',
-            rate: (c['rate'] as num? ?? 1).toDouble(),
-            variation: visits++ % 3,
-          );
+          director = c['style'] == 'adult'
+              ? TeachingDirector.fruit(
+                  fruitStages,
+                  rate: (c['rate'] as num? ?? 1).toDouble(),
+                  saved: c['checkpoint'] as Map<String, dynamic>?,
+                )
+              : TeachingDirector.apple(
+                  style: c['style']?.toString() ?? 'adult',
+                  rate: (c['rate'] as num? ?? 1).toDouble(),
+                  variation: visits++ % 3,
+                );
+          await _enterStage();
+        case 'course-replay':
+        case 'course-preview':
+          if (c['session'] != session || director?.fruitCourse != true) return;
+          unawaited(speech.cancelCapture());
+          final d = director!;
+          if (c['type'] == 'course-preview' || d.stage.clip == null) {
+            final original = d.stage;
+            if (original.answer.isNotEmpty) d.helped.add(original.id);
+            final clip =
+                c['clip']?.toString() ??
+                (original.answer.startsWith('phrase_')
+                    ? original.answer
+                    : d.word);
+            if (!timings.containsKey(clip)) return;
+            d.branch = [
+              Stage(
+                clip.startsWith('phoneme_') || clip.startsWith('group_')
+                    ? 'phoneme'
+                    : 'demonstrate',
+                clip: clip,
+                wordId: d.word,
+                chapter: original.chapter,
+                display: original.display,
+                picture: original.picture,
+                hide: original.hideAnswer,
+                text: '再听一次，然后回到练习。',
+              ),
+            ];
+          }
           await _enterStage();
         case 'pronunciation':
           await stop();
@@ -456,6 +503,7 @@ class SceneRuntime extends ChangeNotifier {
       return;
     }
     phaseStarted = now;
+    word = director!.word;
     iteration = stage.iteration;
     emit('lesson-phase', {
       'session': session,
@@ -467,6 +515,15 @@ class SceneRuntime extends ChangeNotifier {
       'text': stage.text,
       'options': stage.options,
       'hideAnswer': stage.hideAnswer,
+      if (director!.fruitCourse) ...{
+        'word': word,
+        'display': stage.display,
+        'picture': stage.picture,
+        'chapter': stage.chapter,
+        'checkpoint': director!.checkpoint,
+        'stageIndex': director!.index,
+        'stageCount': director!.stages.length,
+      },
     });
     if (stage.clip == null) return;
     final clip = stage.clip!,
@@ -520,6 +577,20 @@ class SceneRuntime extends ChangeNotifier {
 
   void _audioEnded() {
     if (director != null) {
+      if (director!.stage.options.isNotEmpty) return;
+      if (director!.fruitCourse && ['support', 'success'].contains(phase)) {
+        final token = stageGeneration, current = director;
+        unawaited(
+          Future<void>.delayed(const Duration(milliseconds: 900), () {
+            if (disposed || token != stageGeneration || current != director) {
+              return;
+            }
+            director!.advance();
+            unawaited(_enterStage());
+          }),
+        );
+        return;
+      }
       director!.advance();
       unawaited(_enterStage());
     } else if (mode == 'performance') {

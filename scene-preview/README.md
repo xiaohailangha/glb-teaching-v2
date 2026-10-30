@@ -1,5 +1,7 @@
 # Flutter Scene 人物教学验证
 
+**r6 成人首课已发布**：[打开网页](https://49.233.179.83/scene/?r=6)，点击左上角“成人入门 · 认识水果”。完整包含 apple / banana 图片认识、发音练习、听辨、看图回忆、an apple / a banana、延后复习和本节记录，支持暂停/刷新后继续。34 项 Flutter 测试、音频回归、隐藏浏览器完整走课及 8 组线上检查通过；真人录音与用户整课体验仍待反馈。本轮不更新 Android，详见 `../docs/flutter-scene/adult-fruit-course-r6-2026-10-30.md`。
+
 **r5 手机反馈与 Android 更新：用户已复测 Web 并确认“动作和声音都可以”。新引擎 Android 0.2.0+5 ARM64 release 已构建，模型和男童语音内置，签名与包内资产校验通过；[下载测试 APK](https://49.233.179.83/downloads/glb-scene-0.2.0-r5-arm64.apk)。与旧包可并存，原生实机表现另行验证，详见 `../docs/flutter-scene/android-r5-2026-10-30.md`。**
 
 **2026-10-30 r5 候选已部署**：点词仅播放目标词，固定课件与音标统一为云小洋男童声并内置；动作改为有界短段连续表演。29 项 Flutter 测试、2 项音频资产回归和 7 组线上资源检查通过。本轮隐藏 IAB 不可用、无连接真机，动作观感、音标清晰度和手机音频仍待复测，尚未打 Android 新包。详见 `../docs/flutter-scene/motion-audio-r5-2026-10-30.md`；[男童声试听](https://49.233.179.83/scene/voice-review.html)。下文 r4/r3 记录为历史证据。

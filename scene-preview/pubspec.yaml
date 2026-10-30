@@ -29,6 +29,7 @@ flutter:
     - assets/avatar/models/storm-clothing-bindings.json
     - assets/avatar/models/storm-clothing-bindings.bin
     - assets/avatar/audio/
+    - assets/avatar/courses/
     - path: flutter_scene_generated/metal_ios/
       platforms:
         - ios

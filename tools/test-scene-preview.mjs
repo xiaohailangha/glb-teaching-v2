@@ -31,12 +31,12 @@ await check('Tencent synthesis and matching mouth data remain usable',async()=>{
  assert.equal(r.status,200);const speech=await r.json();assert.equal(speech.usable,true);assert.ok(speech.cues.length>0);assert.match(speech.audioUrl,/^\/api\/speech\/audio\/[a-f0-9]{64}\.wav$/);const audio=await get(speech.audioUrl);assert.equal(audio.status,200);await audio.arrayBuffer();
 });
 await check('all shipped teaching voices and word bytes match the boy-voice build',async()=>{
- for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units']) {
+ for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
   const response=await get(`/scene/assets/assets/avatar/audio/${file}.json`);
   assert.equal(response.status,200);const items=await response.json();
   for(const [key,item] of Object.entries(items)) {
    assert.equal(item.voice,403008,key);assert.equal(item.bundled,true,key);
-   if(file==='timings') {
+   if(file==='timings'||file==='fruit-prompts') {
     const response=await get(`/scene/assets/assets/avatar/audio/${key}.wav`);
     assert.equal(response.status,200);
     const bytes=Buffer.from(await response.arrayBuffer());
@@ -46,6 +46,15 @@ await check('all shipped teaching voices and word bytes match the boy-voice buil
   }
  }
  assert.equal((await get('/scene/voice-review.html')).status,200);
+});
+await check('adult fruit course publishes the complete versioned lesson',async()=>{
+ const response=await get('/scene/assets/assets/avatar/courses/adult-fruit.json');
+ assert.equal(response.status,200);
+ const course=await response.json();
+ assert.deepEqual(course,JSON.parse(await fs.readFile('scene-preview/assets/avatar/courses/adult-fruit.json','utf8')));
+ assert.equal(course.id,'adult-fruit-v1');
+ assert.equal(course.stages.at(-1).id,'summary');
+ assert.equal(course.stages.filter(s=>s.answer).length,5);
 });
 await check('private files and cross-site spending remain blocked',async()=>{
  for(const path of ['/scene/.secrets/tencent.json','/scene/services/cos-assets.mjs','/.secrets/tencent.json']){const response=await get(path);assert.ok([403,404].includes(response.status));await response.arrayBuffer();}

@@ -7,7 +7,7 @@ const root=new URL('../scene-preview/assets/avatar/audio/',import.meta.url);
 const read=name=>JSON.parse(fs.readFileSync(new URL(name+'.json',root)));
 test('all scene teaching assets use one bundled boy voice with in-range matching cues',()=>{
   let count=0;
-  for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units']) {
+  for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
     for(const [key,item] of Object.entries(read(file))) {
       assert.equal(item.voice,403008,key);
       assert.equal(item.bundled,true,key);
@@ -26,7 +26,7 @@ test('all scene teaching assets use one bundled boy voice with in-range matching
       count++;
     }
   }
-  assert.equal(count,65);
+  assert.equal(count,77);
 });
 test('apple ending is one continuous same-speaker cut and performance retains its authored clock',()=>{
   const group=read('pronunciation-units').group_schwa_l;

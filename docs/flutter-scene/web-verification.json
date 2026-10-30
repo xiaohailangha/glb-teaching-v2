@@ -1,7 +1,7 @@
 {
   "origin": "https://49.233.179.83/scene/",
-  "checkedAt": "2026-10-30T10:03:08.506Z",
-  "passed": 7,
+  "checkedAt": "2026-10-30T11:39:33.309Z",
+  "passed": 8,
   "checks": [
     "new scene entry is directly accessible",
     "original web entry is unchanged",
@@ -9,6 +9,7 @@
     "new renderer assets and curated phonemes are available",
     "Tencent synthesis and matching mouth data remain usable",
     "all shipped teaching voices and word bytes match the boy-voice build",
+    "adult fruit course publishes the complete versioned lesson",
     "private files and cross-site spending remain blocked"
   ],
   "phonePerformanceVerified": false,

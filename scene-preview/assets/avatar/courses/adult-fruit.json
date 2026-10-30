@@ -1,0 +1,379 @@
+{
+  "id": "adult-fruit-v1",
+  "title": "成人入门 · 认识水果",
+  "stages": [
+    {
+      "id": "fruit_intro",
+      "phase": "introduce",
+      "chapter": "认识水果",
+      "word": "apple",
+      "text": "这节课：认出两个水果，听懂它们，试着说出名字。",
+      "clip": "fruit_intro",
+      "display": "APPLE · BANANA"
+    },
+    {
+      "id": "apple_meaning",
+      "phase": "meaning",
+      "chapter": "认识水果",
+      "word": "apple",
+      "text": "苹果",
+      "clip": "fruit_apple",
+      "picture": "apple",
+      "display": "苹果"
+    },
+    {
+      "id": "apple_model",
+      "phase": "demonstrate",
+      "chapter": "认识水果",
+      "word": "apple",
+      "text": "先听完整单词。",
+      "clip": "apple",
+      "picture": "apple",
+      "display": "apple"
+    },
+    {
+      "id": "apple_practice",
+      "phase": "listen",
+      "chapter": "试着发音",
+      "word": "apple",
+      "text": "先读完整单词。需要时可单独听 /æ/。",
+      "picture": "apple",
+      "display": "apple",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听整词"
+        }
+      ]
+    },
+    {
+      "id": "banana_meaning",
+      "phase": "meaning",
+      "chapter": "认识水果",
+      "word": "banana",
+      "text": "香蕉",
+      "clip": "fruit_banana",
+      "picture": "banana",
+      "display": "香蕉"
+    },
+    {
+      "id": "banana_model",
+      "phase": "demonstrate",
+      "chapter": "认识水果",
+      "word": "banana",
+      "text": "先听完整单词。",
+      "clip": "banana",
+      "picture": "banana",
+      "display": "banana"
+    },
+    {
+      "id": "banana_practice",
+      "phase": "listen",
+      "chapter": "试着发音",
+      "word": "banana",
+      "text": "中间的 /næ/ 读重一些，开头和结尾轻一些。",
+      "picture": "banana",
+      "display": "banana",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听整词"
+        }
+      ]
+    },
+    {
+      "id": "choose_intro",
+      "phase": "explain",
+      "chapter": "听音辨认",
+      "word": "apple",
+      "text": "只听声音，选图片。",
+      "clip": "fruit_choose",
+      "hide": true
+    },
+    {
+      "id": "hear_apple_cue",
+      "phase": "choice",
+      "chapter": "听音辨认",
+      "word": "apple",
+      "text": "听声音…",
+      "clip": "apple",
+      "hide": true
+    },
+    {
+      "id": "hear_apple",
+      "phase": "choice",
+      "chapter": "听音辨认",
+      "word": "apple",
+      "text": "刚才听到的是哪一个？",
+      "picture": "",
+      "answer": "apple",
+      "hide": true,
+      "options": [
+        {
+          "id": "apple",
+          "label": "苹果"
+        },
+        {
+          "id": "banana",
+          "label": "香蕉"
+        },
+        {
+          "id": "help",
+          "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "hear_banana_cue",
+      "phase": "choice",
+      "chapter": "听音辨认",
+      "word": "banana",
+      "text": "听声音…",
+      "clip": "banana",
+      "hide": true
+    },
+    {
+      "id": "hear_banana",
+      "phase": "choice",
+      "chapter": "听音辨认",
+      "word": "banana",
+      "text": "刚才听到的是哪一个？",
+      "picture": "",
+      "answer": "banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "banana",
+          "label": "香蕉"
+        },
+        {
+          "id": "apple",
+          "label": "苹果"
+        },
+        {
+          "id": "help",
+          "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "recall_intro",
+      "phase": "invite",
+      "chapter": "看图回忆",
+      "word": "apple",
+      "text": "先想一想，再听提示。",
+      "clip": "fruit_recall",
+      "hide": true
+    },
+    {
+      "id": "recall_banana",
+      "phase": "recall",
+      "chapter": "看图回忆",
+      "word": "banana",
+      "text": "看图试着说出英文。可以点“说出答案”录音，也可以自己轻声练习。",
+      "picture": "banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我尝试过了"
+        },
+        {
+          "id": "reveal",
+          "label": "想不起来，听提示"
+        }
+      ]
+    },
+    {
+      "id": "recall_apple",
+      "phase": "recall",
+      "chapter": "看图回忆",
+      "word": "apple",
+      "text": "看图试着说出英文。可以点“说出答案”录音，也可以自己轻声练习。",
+      "picture": "apple",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我尝试过了"
+        },
+        {
+          "id": "reveal",
+          "label": "想不起来，听提示"
+        }
+      ]
+    },
+    {
+      "id": "phrase_intro",
+      "phase": "explain",
+      "chapter": "连起来说",
+      "word": "apple",
+      "text": "从单词走到“一个苹果 / 一根香蕉”。",
+      "clip": "fruit_phrase",
+      "display": "一个苹果 · 一根香蕉"
+    },
+    {
+      "id": "phrase_apple_model",
+      "phase": "demonstrate",
+      "chapter": "连起来说",
+      "word": "apple",
+      "text": "一个苹果",
+      "picture": "apple",
+      "display": "an apple",
+      "clip": "phrase_apple"
+    },
+    {
+      "id": "phrase_banana_model",
+      "phase": "demonstrate",
+      "chapter": "连起来说",
+      "word": "banana",
+      "text": "一根香蕉",
+      "picture": "banana",
+      "display": "a banana",
+      "clip": "phrase_banana"
+    },
+    {
+      "id": "article_tip",
+      "phase": "explain",
+      "chapter": "连起来说",
+      "word": "apple",
+      "text": "an apple · a banana。先把这两组说法记在一起。",
+      "clip": "fruit_article",
+      "display": "an apple / a banana"
+    },
+    {
+      "id": "phrase_select_cue",
+      "phase": "choice",
+      "chapter": "连起来说",
+      "word": "banana",
+      "text": "听声音…",
+      "clip": "phrase_banana",
+      "hide": true
+    },
+    {
+      "id": "phrase_select",
+      "phase": "choice",
+      "chapter": "连起来说",
+      "word": "banana",
+      "text": "图里的水果，应该怎样说？",
+      "picture": "banana",
+      "answer": "phrase_banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "phrase_banana",
+          "label": "a banana"
+        },
+        {
+          "id": "phrase_apple",
+          "label": "an apple"
+        },
+        {
+          "id": "help",
+          "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "review_intro",
+      "phase": "transfer",
+      "chapter": "隔一会再认",
+      "word": "apple",
+      "text": "换个顺序，不看英文，再认一次。",
+      "clip": "fruit_review",
+      "hide": true
+    },
+    {
+      "id": "review_banana_cue",
+      "phase": "choice",
+      "chapter": "隔一会再认",
+      "word": "banana",
+      "text": "听声音…",
+      "clip": "banana",
+      "hide": true
+    },
+    {
+      "id": "review_banana",
+      "phase": "choice",
+      "chapter": "隔一会再认",
+      "word": "banana",
+      "text": "刚才听到的是哪一个？",
+      "picture": "",
+      "answer": "banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "apple",
+          "label": "苹果"
+        },
+        {
+          "id": "banana",
+          "label": "香蕉"
+        },
+        {
+          "id": "help",
+          "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "review_apple_cue",
+      "phase": "choice",
+      "chapter": "隔一会再认",
+      "word": "apple",
+      "text": "听声音…",
+      "clip": "apple",
+      "hide": true
+    },
+    {
+      "id": "review_apple",
+      "phase": "choice",
+      "chapter": "隔一会再认",
+      "word": "apple",
+      "text": "刚才听到的是哪一个？",
+      "picture": "",
+      "answer": "apple",
+      "hide": true,
+      "options": [
+        {
+          "id": "banana",
+          "label": "香蕉"
+        },
+        {
+          "id": "apple",
+          "label": "苹果"
+        },
+        {
+          "id": "help",
+          "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "phase": "encourage",
+      "chapter": "本节小结",
+      "word": "apple",
+      "text": "完成了一次练习，不代表已经永久记住。",
+      "clip": "fruit_finish",
+      "display": "完成本节练习"
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "word": "apple",
+      "text": "下次可以再练一轮，检查是否还记得。",
+      "display": "今天的学习记录",
+      "options": []
+    }
+  ]
+}

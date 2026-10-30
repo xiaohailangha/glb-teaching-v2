@@ -2,7 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:snow_speaks/features/lesson/application/lesson_controller.dart';
 
 void main() {
-  test('word tap exits the course without replaying its introduction', () {
+  test('word preview preserves the adult course and its position', () {
     final c = LessonController();
     final commands = <Map<String, Object?>>[];
     c.attach(commands.add);
@@ -10,10 +10,9 @@ void main() {
     c.playCourse();
     final old = c.session;
     c.playWord();
-    expect(c.courseMode, false);
-    expect(c.session, greaterThan(old));
-    expect(commands.last['type'], 'play');
-    expect(c.lessonPhase, 'demonstrate');
+    expect(c.courseMode, true);
+    expect(c.session, old);
+    expect(commands.last['type'], 'course-preview');
     c.dispose();
   });
   test('course responses are gated and cancelled sessions cannot reveal an old answer', () {

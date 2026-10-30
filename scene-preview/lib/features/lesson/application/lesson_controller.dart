@@ -1,5 +1,10 @@
 import 'package:flutter/foundation.dart';
 
+import 'dart:async';
+import 'dart:convert';
+
+import 'package:shared_preferences/shared_preferences.dart';
+
 import '../domain/lesson_word.dart';
 import '../domain/emotion.dart';
 
@@ -13,6 +18,54 @@ class LessonController extends ChangeNotifier {
   bool courseMode = false, hideAnswer = false;
   String courseStyle = 'adult', courseText = '', courseStep = '';
   List<Map<String, String>> courseOptions = [];
+  bool coursePaused = false;
+  String courseDisplay = '', coursePicture = '', courseChapter = '';
+  int coursePosition = 0, courseTotal = 1;
+  Map<String, dynamic>? courseCheckpoint;
+  bool get adultCourse => courseMode && courseStyle == 'adult';
+  Future<void> _saveQueue = Future.value();
+  Future<void> loadCourseProgress() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final saved = prefs.getString('adult-fruit-v1');
+      if (!_disposed && courseCheckpoint == null && saved != null) {
+        final data = jsonDecode(saved);
+        if (data is Map && data['version'] == 1) {
+          courseCheckpoint = Map<String, dynamic>.from(data);
+        }
+        notifyListeners();
+      }
+    } catch (_) {
+      /* Storage unavailable does not prevent learning. */
+    }
+  }
+
+  void _saveCourse() {
+    final data = jsonEncode(courseCheckpoint);
+    _saveQueue = _saveQueue.then((_) async {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('adult-fruit-v1', data);
+      } catch (_) {}
+    });
+  }
+
+  void pauseCourse() {
+    if (!adultCourse || coursePaused) return;
+    coursePaused = true;
+    playing = false;
+    captureState = 'idle';
+    session++;
+    _send?.call({'type': 'stop', 'session': session});
+    notifyListeners();
+  }
+
+  void previewCourse(String clip) {
+    if (!adultCourse || coursePaused || !ready) return;
+    captureState = 'idle';
+    _send?.call({'type': 'course-preview', 'clip': clip, 'session': session});
+  }
+
   int emotionIndex = 0;
   Emotion get emotion => emotions[emotionIndex];
   double rate = 1, progress = 0, level = 0;
@@ -26,6 +79,7 @@ class LessonController extends ChangeNotifier {
   bool get canCapture =>
       speechAvailable &&
       !emotionMode &&
+      !coursePaused &&
       (lessonPhase == 'listen' || lessonPhase == 'recall');
   bool get awaitingResponse =>
       !courseMode && !emotionMode && lessonPhase == 'listen';
@@ -96,6 +150,15 @@ class LessonController extends ChangeNotifier {
           if (message['mode'] == 'recognize') {
             final text = message['text']?.toString().trim() ?? '';
             speechFeedback = text.isEmpty ? '这次没有听清，请再试一次。' : '听到：$text';
+            if (adultCourse && text.isNotEmpty) {
+              final heard = text
+                  .toLowerCase()
+                  .replaceAll(RegExp(r'[^a-z ]'), '')
+                  .split(' ');
+              speechFeedback = heard.contains(word.id)
+                  ? '听到了 ${word.id}，这次想起来了。可以继续，也可以再练。'
+                  : '听到：$text。和目标词还不一致，可以再试或听提示。';
+            }
           } else {
             final result = message['result'] as Map? ?? {};
             final score = (result['PronAccuracy'] as num?)?.toDouble();
@@ -135,6 +198,21 @@ class LessonController extends ChangeNotifier {
         activeSound = message['symbol']?.toString() ?? '';
         emotionMode = false;
         if (courseMode) {
+          if (message['checkpoint'] is Map) {
+            courseCheckpoint = Map<String, dynamic>.from(
+              message['checkpoint'] as Map,
+            );
+            coursePosition = (message['stageIndex'] as num?)?.toInt() ?? 0;
+            courseTotal = (message['stageCount'] as num?)?.toInt() ?? 1;
+            courseDisplay = message['display']?.toString() ?? '';
+            coursePicture = message['picture']?.toString() ?? '';
+            courseChapter = message['chapter']?.toString() ?? '';
+            final nextWord = lessonWords.indexWhere(
+              (w) => w.id == message['word'],
+            );
+            if (nextWord >= 0) index = nextWord;
+            _saveCourse();
+          }
           courseText = message['text']?.toString() ?? '';
           courseStep = message['step']?.toString() ?? '';
           hideAnswer = message['hideAnswer'] == true;
@@ -186,6 +264,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void step(int delta) {
+    if (adultCourse) return;
     if (emotionMode) {
       playEmotion((emotionIndex + delta) % emotions.length);
     } else {
@@ -222,6 +301,10 @@ class LessonController extends ChangeNotifier {
 
   void playWord() {
     if (!ready || error != null) return;
+    if (adultCourse) {
+      previewCourse(word.id);
+      return;
+    }
     stop();
     emotionMode = false;
     play();
@@ -232,6 +315,7 @@ class LessonController extends ChangeNotifier {
     stop();
     emotionMode = false;
     courseMode = false;
+    coursePaused = false;
     index = 0;
     closeUp = false;
     session++;
@@ -286,6 +370,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void stop() {
+    coursePaused = false;
     captureState = 'idle';
     speechFeedback = '';
     session++;
@@ -304,6 +389,14 @@ class LessonController extends ChangeNotifier {
   }
 
   void togglePlayback() {
+    if (adultCourse) {
+      if (coursePaused) {
+        playCourse();
+      } else {
+        pauseCourse();
+      }
+      return;
+    }
     if (playing) {
       stop();
       notifyListeners();
@@ -313,6 +406,14 @@ class LessonController extends ChangeNotifier {
   }
 
   void replayLesson() {
+    if (adultCourse) {
+      if (coursePaused) {
+        playCourse();
+        return;
+      }
+      _send?.call({'type': 'course-replay', 'session': session});
+      return;
+    }
     if (courseMode) {
       if (courseOptions.any((o) => o['id'] == 'help')) {
         respondToCourse('help');
@@ -364,7 +465,7 @@ class LessonController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void playCourse({String style = 'adult'}) {
+  void playCourse({String style = 'adult', bool restart = false}) {
     if (!ready || error != null) return;
     if (!const [
       'adult',
@@ -376,6 +477,8 @@ class LessonController extends ChangeNotifier {
       return;
     }
     stop();
+    if (restart) courseCheckpoint = null;
+    coursePaused = false;
     courseMode = true;
     courseStyle = style;
     emotionMode = false;
@@ -389,11 +492,13 @@ class LessonController extends ChangeNotifier {
       'style': style,
       'rate': rate,
       'session': session,
+      if (style == 'adult') 'checkpoint': courseCheckpoint,
     });
     notifyListeners();
   }
 
   void respondToCourse(String action) {
+    if (coursePaused) return;
     if (!courseMode || !courseOptions.any((o) => o['id'] == action)) return;
     if (captureState != 'idle') _send?.call({'type': 'capture-cancel'});
     captureState = 'idle';

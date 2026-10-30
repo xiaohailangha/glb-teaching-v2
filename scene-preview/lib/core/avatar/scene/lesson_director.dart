@@ -8,25 +8,50 @@ class Stage {
     this.rate = 1,
     this.options = const [],
     this.iteration = 1,
+    this.wordId = '',
+    this.display = '',
+    this.picture = '',
+    this.chapter = '',
+    this.answer = '',
+    this.hide = false,
   });
   final String phase, id, text, symbol;
+  final String wordId, display, picture, chapter, answer;
+  final bool hide;
   final String? clip;
   final double rate;
   final int iteration;
   final List<Map<String, String>> options;
   bool get waiting => options.isNotEmpty || clip == null;
-  bool get hideAnswer => phase == 'choice' || phase == 'recall';
+  bool get hideAnswer => hide || phase == 'choice' || phase == 'recall';
 }
 
 class TeachingDirector {
   TeachingDirector({
-    required this.word,
+    required String word,
     this.style = 'adult',
     this.variation = 0,
     this.course = false,
     List<Stage>? stages,
-  }) : stages = stages ?? [];
-  final String word, style;
+    // Keep the public constructor name while resolving the active stage's word.
+    // ignore: prefer_initializing_formals
+  }) : _word = word,
+       stages = stages ?? [];
+  final String _word, style;
+  String get word => stage.wordId.isEmpty ? _word : stage.wordId;
+  bool fruitCourse = false;
+  final taught = <String>{},
+      attempts = <String>{},
+      correct = <String>{},
+      helped = <String>{};
+  Map<String, dynamic> get checkpoint => {
+    'version': 1,
+    'index': index,
+    'taught': taught.toList(),
+    'attempts': attempts.toList(),
+    'correct': correct.toList(),
+    'helped': helped.toList(),
+  };
   final int variation;
   final bool course;
   final List<Stage> stages;
@@ -38,6 +63,12 @@ class TeachingDirector {
       ? stages[index]
       : const Stage('finished');
   Stage advance() {
+    if (fruitCourse &&
+        branch.isEmpty &&
+        stage.phase == 'demonstrate' &&
+        !stage.hideAnswer) {
+      taught.add(word);
+    }
     if (stage.options.isNotEmpty ||
         stage.phase == 'finished' ||
         stage.phase == 'listen' && !course) {
@@ -65,6 +96,65 @@ class TeachingDirector {
       return stage;
     }
     if (!stage.options.any((item) => item['id'] == action)) return null;
+    if (fruitCourse) {
+      final current = stage;
+      if (action == 'help' ||
+          action == 'reveal' ||
+          action == 'sound' ||
+          current.answer.isNotEmpty && action != current.answer) {
+        helped.add(current.id);
+        final sound = action == 'sound';
+        branch = [
+          Stage(
+            sound ? 'phoneme' : 'support',
+            id: 'help_${current.id}',
+            wordId: word,
+            chapter: current.chapter,
+            clip: sound
+                ? 'phoneme_ae'
+                : current.answer.startsWith('phrase_')
+                ? current.answer
+                : word,
+            display: sound
+                ? '/æ/'
+                : current.answer == 'phrase_apple'
+                ? 'an apple'
+                : current.answer == 'phrase_banana'
+                ? 'a banana'
+                : word,
+            picture: word,
+            text: sound
+                ? '嘴张开，先听 /æ/。再回到完整单词。'
+                : current.answer.isNotEmpty && action != 'help'
+                ? '再听一次，留意声音对应的意思。'
+                : '先听示范，再试一次。',
+          ),
+        ];
+        return stage;
+      }
+      if (current.answer.isNotEmpty && !helped.contains(current.id)) {
+        correct.add(current.id);
+      }
+      if (action == 'attempt') attempts.add(word);
+      index++;
+      if (current.answer.isNotEmpty) {
+        branch = [
+          Stage(
+            'success',
+            id: 'feedback_${current.id}',
+            wordId: current.wordId,
+            chapter: current.chapter,
+            clip: 'fruit_correct',
+            display: current.display,
+            picture: current.wordId,
+            text: helped.contains(current.id)
+                ? '这次选对了。稍后再试一次。'
+                : '听出来了！换一个再试试。',
+          ),
+        ];
+      }
+      return stage;
+    }
     if (action == 'help' || stage.phase == 'choice' && action == 'banana') {
       branch = [
         const Stage(
@@ -92,6 +182,52 @@ class TeachingDirector {
       ),
     ];
     return stage;
+  }
+
+  factory TeachingDirector.fruit(
+    List<dynamic> rows, {
+    double rate = 1,
+    Map<String, dynamic>? saved,
+  }) {
+    final d = TeachingDirector(
+      word: 'apple',
+      course: true,
+      stages: [
+        for (final raw in rows)
+          Stage(
+            raw['phase'] as String,
+            id: raw['id'] as String,
+            wordId: raw['word'] as String? ?? 'apple',
+            clip: raw['clip'] as String?,
+            display: raw['display'] as String? ?? '',
+            picture: raw['picture'] as String? ?? '',
+            chapter: raw['chapter'] as String? ?? '',
+            answer: raw['answer'] as String? ?? '',
+            hide: raw['hide'] == true,
+            text: raw['text'] as String? ?? '',
+            rate: rate,
+            options: [
+              for (final o in raw['options'] as List? ?? [])
+                Map<String, String>.from(o as Map),
+            ],
+          ),
+      ],
+    )..fruitCourse = true;
+    if (saved?['version'] == 1) {
+      d.index = ((saved?['index'] as num?)?.toInt() ?? 0).clamp(
+        0,
+        d.stages.length - 1,
+      );
+      for (final pair in [
+        (d.taught, 'taught'),
+        (d.attempts, 'attempts'),
+        (d.correct, 'correct'),
+        (d.helped, 'helped'),
+      ]) {
+        pair.$1.addAll((saved?[pair.$2] as List? ?? []).whereType<String>());
+      }
+    }
+    return d;
   }
 
   factory TeachingDirector.word({

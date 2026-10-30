@@ -1,3 +1,6 @@
+import 'adult_course_panel.dart';
+import 'fruit_painter.dart';
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -25,6 +28,7 @@ class _LessonPageState extends State<LessonPage> {
     super.initState();
     settings.addListener(_applySettings);
     settings.load();
+    controller.loadCourseProgress();
   }
 
   void _applySettings() => controller.setRenderSettings(settings.command);
@@ -47,6 +51,7 @@ class _LessonPageState extends State<LessonPage> {
   bool _controlsVisible = false;
 
   void _showControls() {
+    if (controller.adultCourse) return;
     _hideTimer?.cancel();
     if (!_controlsVisible) setState(() => _controlsVisible = true);
     _hideTimer = Timer(const Duration(seconds: 5), _hideControls);
@@ -118,6 +123,33 @@ class _LessonPageState extends State<LessonPage> {
                     Positioned.fill(child: AvatarView(controller: controller)),
                     Positioned(
                       top: 12,
+                      left: 18,
+                      child: SafeArea(
+                        child: AnimatedBuilder(
+                          animation: controller,
+                          builder: (context, _) => TextButton.icon(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.black26,
+                            ),
+                            onPressed: controller.ready
+                                ? () {
+                                    controller.playCourse();
+                                    _hideControls();
+                                  }
+                                : null,
+                            icon: const Icon(Icons.school_outlined, size: 20),
+                            label: Text(
+                              controller.courseCheckpoint == null
+                                  ? '成人入门 · 认识水果'
+                                  : '继续水果课',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 12,
                       right: 18,
                       child: SafeArea(
                         child: IconButton(
@@ -154,338 +186,385 @@ class _LessonPageState extends State<LessonPage> {
                       child: Center(
                         child: AnimatedBuilder(
                           animation: controller,
-                          builder: (context, _) => Semantics(
-                            button: true,
-                            label: controller.emotionMode
-                                ? '重播${controller.emotion.label}'
-                                : controller.hideAnswer
-                                ? '回忆练习'
-                                : '听示范 ${controller.word.id}',
-                            child: GestureDetector(
-                              behavior: HitTestBehavior.opaque,
-                              onTap: () {
-                                controller.playWord();
-                                _hideControls();
-                              },
-                              child: SizedBox(
-                                width: double.infinity,
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    if (!controller.emotionMode &&
-                                        !controller.hideAnswer)
-                                      _pronunciationLine(wide)
-                                    else if (controller.emotionMode)
-                                      FittedBox(
-                                        fit: BoxFit.scaleDown,
-                                        alignment: Alignment.centerLeft,
-                                        child: Text(
-                                          controller.emotionMode
-                                              ? 'EMOTION STUDIES'
-                                              : controller.lessonHeading,
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: box.maxWidth * .036,
-                                            fontVariations: const [
-                                              FontVariation('wght', 350),
-                                            ],
-                                            height: 1.25,
-                                          ),
-                                        ),
-                                      ),
-                                    SizedBox(height: box.maxHeight * .008),
-                                    FittedBox(
-                                      fit: BoxFit.scaleDown,
-                                      alignment: Alignment.centerLeft,
-                                      child:
-                                          controller.courseMode &&
-                                              controller.courseStyle.startsWith(
-                                                'child',
-                                              ) &&
-                                              controller.lessonPhase == 'recall'
-                                          ? Semantics(
-                                              label: '苹果图片',
-                                              child: const CustomPaint(
-                                                size: Size(110, 100),
-                                                painter: _FruitPainter('apple'),
-                                              ),
-                                            )
-                                          : Text(
-                                              controller.emotionMode
-                                                  ? controller.emotion.english
-                                                  : controller.displayWord,
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: box.maxWidth * .084,
-                                                fontWeight: FontWeight.w900,
-                                                fontVariations: const [
-                                                  FontVariation('wght', 900),
-                                                ],
-                                                height: 1.12,
-                                                letterSpacing: -.8,
-                                              ),
-                                            ),
-                                    ),
-                                    if (!controller.emotionMode) ...[
-                                      const SizedBox(height: 14),
-                                      Text(
-                                        controller.lessonHint,
-                                        style: TextStyle(
-                                          color: Colors.white70,
-                                          fontSize: wide ? 16 : 12,
-                                          height: 1.5,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 12),
-                                      if (controller.speechFeedback.isNotEmpty)
-                                        Text(
-                                          controller.speechFeedback,
-                                          style: const TextStyle(
-                                            color: Colors.white70,
-                                            fontSize: 14,
-                                          ),
-                                        ),
-                                      Wrap(
-                                        spacing: 6,
-                                        runSpacing: 2,
+                          builder: (context, _) => controller.adultCourse
+                              ? AdultCoursePanel(controller: controller)
+                              : Semantics(
+                                  button: true,
+                                  label: controller.emotionMode
+                                      ? '重播${controller.emotion.label}'
+                                      : controller.hideAnswer
+                                      ? '回忆练习'
+                                      : '听示范 ${controller.word.id}',
+                                  child: GestureDetector(
+                                    behavior: HitTestBehavior.opaque,
+                                    onTap: () {
+                                      controller.playWord();
+                                      _hideControls();
+                                    },
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          if (controller.canCapture)
-                                            TextButton.icon(
-                                              onPressed:
-                                                  controller.processingSpeech ||
-                                                      controller.captureState ==
-                                                          'starting'
-                                                  ? null
-                                                  : controller.toggleCapture,
-                                              icon: Icon(
-                                                controller.capturing
-                                                    ? Icons.stop_rounded
-                                                    : Icons.mic_none_rounded,
-                                              ),
-                                              label: Text(
-                                                controller.capturing
-                                                    ? '说完了'
-                                                    : controller
-                                                          .processingSpeech
-                                                    ? '处理中…'
-                                                    : controller.lessonPhase ==
-                                                          'recall'
-                                                    ? '说出答案'
-                                                    : '跟读',
-                                              ),
-                                              style: TextButton.styleFrom(
-                                                foregroundColor: Colors.white,
-                                                backgroundColor: Colors.white12,
-                                              ),
-                                            ),
-                                          if (controller.courseMode &&
-                                              controller
-                                                  .courseOptions
-                                                  .isNotEmpty)
-                                            for (final option
-                                                in controller.courseOptions)
-                                              TextButton(
-                                                onPressed: () =>
-                                                    controller.respondToCourse(
-                                                      option['id']!,
-                                                    ),
-                                                style: TextButton.styleFrom(
-                                                  foregroundColor: Colors.white,
-                                                  backgroundColor:
-                                                      Colors.white12,
-                                                ),
-                                                child:
-                                                    controller.courseStyle
-                                                            .startsWith(
-                                                              'child',
-                                                            ) &&
-                                                        const [
-                                                          'apple',
-                                                          'banana',
-                                                        ].contains(option['id'])
-                                                    ? Semantics(
-                                                        label: option['label'],
-                                                        child: CustomPaint(
-                                                          size: const Size(
-                                                            42,
-                                                            40,
-                                                          ),
-                                                          painter:
-                                                              _FruitPainter(
-                                                                option['id']!,
-                                                              ),
-                                                        ),
-                                                      )
-                                                    : Text(option['label']!),
-                                              )
-                                          else if (controller.awaitingResponse)
-                                            TextButton.icon(
-                                              onPressed:
-                                                  controller.completeAttempt,
-                                              icon: const Icon(
-                                                Icons.check_circle_outline,
-                                                size: 20,
-                                              ),
-                                              label: const Text('我读好了'),
-                                              style: TextButton.styleFrom(
-                                                foregroundColor: Colors.white,
-                                                backgroundColor: Colors.white12,
-                                              ),
-                                            )
-                                          else
-                                            TextButton.icon(
-                                              onPressed: controller.ready
-                                                  ? controller.playing
-                                                        ? controller
-                                                              .togglePlayback
-                                                        : _play
-                                                  : null,
-                                              icon: Icon(
-                                                controller.playing
-                                                    ? Icons.stop_rounded
-                                                    : Icons.play_arrow_rounded,
-                                                size: 20,
-                                              ),
-                                              label: Text(
-                                                controller.playing
-                                                    ? '停止'
-                                                    : controller.progress == 1
-                                                    ? '再练一次'
-                                                    : '开始学习',
-                                              ),
-                                              style: TextButton.styleFrom(
-                                                foregroundColor: Colors.white,
-                                                backgroundColor: Colors.white12,
-                                              ),
-                                            ),
-                                          if (controller.playing &&
-                                              !controller.courseMode)
-                                            TextButton(
-                                              onPressed:
-                                                  controller.replayLesson,
-                                              child: const Text(
-                                                '再听一次',
+                                          if (!controller.emotionMode &&
+                                              !controller.hideAnswer)
+                                            _pronunciationLine(wide)
+                                          else if (controller.emotionMode)
+                                            FittedBox(
+                                              fit: BoxFit.scaleDown,
+                                              alignment: Alignment.centerLeft,
+                                              child: Text(
+                                                controller.emotionMode
+                                                    ? 'EMOTION STUDIES'
+                                                    : controller.lessonHeading,
                                                 style: TextStyle(
-                                                  color: Colors.white70,
+                                                  color: Colors.white,
+                                                  fontSize: box.maxWidth * .036,
+                                                  fontVariations: const [
+                                                    FontVariation('wght', 350),
+                                                  ],
+                                                  height: 1.25,
                                                 ),
                                               ),
                                             ),
-                                          TextButton(
-                                            onPressed: controller.ready
-                                                ? () => controller.step(1)
-                                                : null,
-                                            child: const Text(
-                                              '下一个',
+                                          SizedBox(
+                                            height: box.maxHeight * .008,
+                                          ),
+                                          FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            alignment: Alignment.centerLeft,
+                                            child:
+                                                controller.courseMode &&
+                                                    controller.courseStyle
+                                                        .startsWith('child') &&
+                                                    controller.lessonPhase ==
+                                                        'recall'
+                                                ? Semantics(
+                                                    label: '苹果图片',
+                                                    child: const CustomPaint(
+                                                      size: Size(110, 100),
+                                                      painter: FruitPainter(
+                                                        'apple',
+                                                      ),
+                                                    ),
+                                                  )
+                                                : Text(
+                                                    controller.emotionMode
+                                                        ? controller
+                                                              .emotion
+                                                              .english
+                                                        : controller
+                                                              .displayWord,
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize:
+                                                          box.maxWidth * .084,
+                                                      fontWeight:
+                                                          FontWeight.w900,
+                                                      fontVariations: const [
+                                                        FontVariation(
+                                                          'wght',
+                                                          900,
+                                                        ),
+                                                      ],
+                                                      height: 1.12,
+                                                      letterSpacing: -.8,
+                                                    ),
+                                                  ),
+                                          ),
+                                          if (!controller.emotionMode) ...[
+                                            const SizedBox(height: 14),
+                                            Text(
+                                              controller.lessonHint,
                                               style: TextStyle(
                                                 color: Colors.white70,
+                                                fontSize: wide ? 16 : 12,
+                                                height: 1.5,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                    if (controller.emotionMode) ...[
-                                      const SizedBox(height: 10),
-                                      Text(
-                                        controller.emotion.label,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: wide ? 26 : 18,
-                                        ),
-                                      ),
-                                      if (box.maxWidth > 700) ...[
-                                        const SizedBox(height: 8),
-                                        Text(
-                                          controller.emotion.description,
-                                          style: const TextStyle(
-                                            color: Colors.white70,
-                                            fontSize: 14,
-                                            height: 1.6,
-                                          ),
-                                        ),
-                                      ],
-                                      const SizedBox(height: 12),
-                                      DropdownButtonHideUnderline(
-                                        child: DropdownButton<String>(
-                                          value: controller.emotion.id,
-                                          isExpanded: true,
-                                          dropdownColor: const Color(
-                                            0xFF414141,
-                                          ),
-                                          style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14,
-                                          ),
-                                          iconEnabledColor: Colors.white70,
-                                          items: emotions
-                                              .map(
-                                                (e) => DropdownMenuItem(
-                                                  value: e.id,
-                                                  child: Text(e.label),
-                                                ),
-                                              )
-                                              .toList(),
-                                          onChanged: (id) {
-                                            if (id != null) {
-                                              controller.playEmotion(
-                                                emotions.indexWhere(
-                                                  (e) => e.id == id,
-                                                ),
-                                              );
-                                            }
-                                          },
-                                        ),
-                                      ),
-                                      Wrap(
-                                        spacing: 4,
-                                        children: [
-                                          TextButton(
-                                            onPressed: controller.ready
-                                                ? () => controller.playEmotion(
-                                                    controller.emotionIndex,
-                                                  )
-                                                : null,
-                                            child: const Text(
-                                              '重播',
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                          ),
-                                          TextButton(
-                                            onPressed: controller.ready
-                                                ? () => controller.playEmotion(
-                                                    0,
-                                                    all: true,
-                                                  )
-                                                : null,
-                                            child: const Text(
-                                              '全部连播',
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                          ),
-                                          if (controller.playing)
-                                            TextButton(
-                                              onPressed:
-                                                  controller.togglePlayback,
-                                              child: const Text(
-                                                '停止',
-                                                style: TextStyle(
+                                            const SizedBox(height: 12),
+                                            if (controller
+                                                .speechFeedback
+                                                .isNotEmpty)
+                                              Text(
+                                                controller.speechFeedback,
+                                                style: const TextStyle(
                                                   color: Colors.white70,
+                                                  fontSize: 14,
                                                 ),
                                               ),
+                                            Wrap(
+                                              spacing: 6,
+                                              runSpacing: 2,
+                                              children: [
+                                                if (controller.canCapture)
+                                                  TextButton.icon(
+                                                    onPressed:
+                                                        controller
+                                                                .processingSpeech ||
+                                                            controller
+                                                                    .captureState ==
+                                                                'starting'
+                                                        ? null
+                                                        : controller
+                                                              .toggleCapture,
+                                                    icon: Icon(
+                                                      controller.capturing
+                                                          ? Icons.stop_rounded
+                                                          : Icons
+                                                                .mic_none_rounded,
+                                                    ),
+                                                    label: Text(
+                                                      controller.capturing
+                                                          ? '说完了'
+                                                          : controller
+                                                                .processingSpeech
+                                                          ? '处理中…'
+                                                          : controller
+                                                                    .lessonPhase ==
+                                                                'recall'
+                                                          ? '说出答案'
+                                                          : '跟读',
+                                                    ),
+                                                    style: TextButton.styleFrom(
+                                                      foregroundColor:
+                                                          Colors.white,
+                                                      backgroundColor:
+                                                          Colors.white12,
+                                                    ),
+                                                  ),
+                                                if (controller.courseMode &&
+                                                    controller
+                                                        .courseOptions
+                                                        .isNotEmpty)
+                                                  for (final option
+                                                      in controller
+                                                          .courseOptions)
+                                                    TextButton(
+                                                      onPressed: () =>
+                                                          controller
+                                                              .respondToCourse(
+                                                                option['id']!,
+                                                              ),
+                                                      style:
+                                                          TextButton.styleFrom(
+                                                            foregroundColor:
+                                                                Colors.white,
+                                                            backgroundColor:
+                                                                Colors.white12,
+                                                          ),
+                                                      child:
+                                                          controller.courseStyle
+                                                                  .startsWith(
+                                                                    'child',
+                                                                  ) &&
+                                                              const [
+                                                                'apple',
+                                                                'banana',
+                                                              ].contains(
+                                                                option['id'],
+                                                              )
+                                                          ? Semantics(
+                                                              label:
+                                                                  option['label'],
+                                                              child: CustomPaint(
+                                                                size:
+                                                                    const Size(
+                                                                      42,
+                                                                      40,
+                                                                    ),
+                                                                painter:
+                                                                    FruitPainter(
+                                                                      option['id']!,
+                                                                    ),
+                                                              ),
+                                                            )
+                                                          : Text(
+                                                              option['label']!,
+                                                            ),
+                                                    )
+                                                else if (controller
+                                                    .awaitingResponse)
+                                                  TextButton.icon(
+                                                    onPressed: controller
+                                                        .completeAttempt,
+                                                    icon: const Icon(
+                                                      Icons
+                                                          .check_circle_outline,
+                                                      size: 20,
+                                                    ),
+                                                    label: const Text('我读好了'),
+                                                    style: TextButton.styleFrom(
+                                                      foregroundColor:
+                                                          Colors.white,
+                                                      backgroundColor:
+                                                          Colors.white12,
+                                                    ),
+                                                  )
+                                                else
+                                                  TextButton.icon(
+                                                    onPressed: controller.ready
+                                                        ? controller.playing
+                                                              ? controller
+                                                                    .togglePlayback
+                                                              : _play
+                                                        : null,
+                                                    icon: Icon(
+                                                      controller.playing
+                                                          ? Icons.stop_rounded
+                                                          : Icons
+                                                                .play_arrow_rounded,
+                                                      size: 20,
+                                                    ),
+                                                    label: Text(
+                                                      controller.playing
+                                                          ? '停止'
+                                                          : controller
+                                                                    .progress ==
+                                                                1
+                                                          ? '再练一次'
+                                                          : '开始学习',
+                                                    ),
+                                                    style: TextButton.styleFrom(
+                                                      foregroundColor:
+                                                          Colors.white,
+                                                      backgroundColor:
+                                                          Colors.white12,
+                                                    ),
+                                                  ),
+                                                if (controller.playing &&
+                                                    !controller.courseMode)
+                                                  TextButton(
+                                                    onPressed:
+                                                        controller.replayLesson,
+                                                    child: const Text(
+                                                      '再听一次',
+                                                      style: TextStyle(
+                                                        color: Colors.white70,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                TextButton(
+                                                  onPressed: controller.ready
+                                                      ? () => controller.step(1)
+                                                      : null,
+                                                  child: const Text(
+                                                    '下一个',
+                                                    style: TextStyle(
+                                                      color: Colors.white70,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
+                                          ],
+                                          if (controller.emotionMode) ...[
+                                            const SizedBox(height: 10),
+                                            Text(
+                                              controller.emotion.label,
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: wide ? 26 : 18,
+                                              ),
+                                            ),
+                                            if (box.maxWidth > 700) ...[
+                                              const SizedBox(height: 8),
+                                              Text(
+                                                controller.emotion.description,
+                                                style: const TextStyle(
+                                                  color: Colors.white70,
+                                                  fontSize: 14,
+                                                  height: 1.6,
+                                                ),
+                                              ),
+                                            ],
+                                            const SizedBox(height: 12),
+                                            DropdownButtonHideUnderline(
+                                              child: DropdownButton<String>(
+                                                value: controller.emotion.id,
+                                                isExpanded: true,
+                                                dropdownColor: const Color(
+                                                  0xFF414141,
+                                                ),
+                                                style: const TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 14,
+                                                ),
+                                                iconEnabledColor:
+                                                    Colors.white70,
+                                                items: emotions
+                                                    .map(
+                                                      (e) => DropdownMenuItem(
+                                                        value: e.id,
+                                                        child: Text(e.label),
+                                                      ),
+                                                    )
+                                                    .toList(),
+                                                onChanged: (id) {
+                                                  if (id != null) {
+                                                    controller.playEmotion(
+                                                      emotions.indexWhere(
+                                                        (e) => e.id == id,
+                                                      ),
+                                                    );
+                                                  }
+                                                },
+                                              ),
+                                            ),
+                                            Wrap(
+                                              spacing: 4,
+                                              children: [
+                                                TextButton(
+                                                  onPressed: controller.ready
+                                                      ? () => controller
+                                                            .playEmotion(
+                                                              controller
+                                                                  .emotionIndex,
+                                                            )
+                                                      : null,
+                                                  child: const Text(
+                                                    '重播',
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                                TextButton(
+                                                  onPressed: controller.ready
+                                                      ? () => controller
+                                                            .playEmotion(
+                                                              0,
+                                                              all: true,
+                                                            )
+                                                      : null,
+                                                  child: const Text(
+                                                    '全部连播',
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                                if (controller.playing)
+                                                  TextButton(
+                                                    onPressed: controller
+                                                        .togglePlayback,
+                                                    child: const Text(
+                                                      '停止',
+                                                      style: TextStyle(
+                                                        color: Colors.white70,
+                                                      ),
+                                                    ),
+                                                  ),
+                                              ],
+                                            ),
+                                          ],
                                         ],
                                       ),
-                                    ],
-                                  ],
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                          ),
                         ),
                       ),
                     ),
@@ -677,7 +756,7 @@ class _LessonPageState extends State<LessonPage> {
                   color: Colors.white70,
                 ),
                 title: const Text(
-                  '课程表演 · apple',
+                  '课程学习 · 水果',
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
@@ -927,45 +1006,4 @@ class _LessonPageState extends State<LessonPage> {
       ),
     );
   }
-}
-
-class _FruitPainter extends CustomPainter {
-  final String fruit;
-  const _FruitPainter(this.fruit);
-  @override
-  void paint(Canvas canvas, Size size) {
-    canvas.save();
-    canvas.scale(size.width / 42, size.height / 40);
-    if (fruit == 'apple') {
-      final body = Path()
-        ..moveTo(21, 12)
-        ..cubicTo(5, 3, 2, 22, 12, 34)
-        ..cubicTo(16, 38, 19, 33, 21, 34)
-        ..cubicTo(25, 38, 30, 37, 35, 25)
-        ..cubicTo(42, 9, 28, 5, 21, 12);
-      canvas.drawPath(body, Paint()..color = const Color(0xFFE9907D));
-      canvas.drawLine(
-        const Offset(21, 12),
-        const Offset(23, 3),
-        Paint()
-          ..color = Colors.white70
-          ..strokeWidth = 2,
-      );
-      canvas.drawOval(
-        const Rect.fromLTWH(24, 3, 10, 5),
-        Paint()..color = const Color(0xFFB0C798),
-      );
-    } else {
-      final body = Path()
-        ..moveTo(7, 7)
-        ..cubicTo(6, 28, 25, 31, 36, 12)
-        ..cubicTo(35, 38, 8, 43, 5, 18)
-        ..close();
-      canvas.drawPath(body, Paint()..color = const Color(0xFFE8CF83));
-    }
-    canvas.restore();
-  }
-
-  @override
-  bool shouldRepaint(_FruitPainter oldDelegate) => oldDelegate.fruit != fruit;
 }
