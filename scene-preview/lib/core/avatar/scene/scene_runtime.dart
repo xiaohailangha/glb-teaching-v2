@@ -19,6 +19,9 @@ import 'corneal_highlights.dart';
 import 'rendered_frame_meter.dart';
 import 'teaching_background.dart';
 import 'scene_diagnostics.dart';
+import 'clothing_bindings.dart';
+import 'intent_motion.dart';
+import 'neutral_gaze.dart';
 
 class SceneRuntime extends ChangeNotifier {
   SceneRuntime(this.controller) {
@@ -48,7 +51,6 @@ class SceneRuntime extends ChangeNotifier {
   CornealHighlights? highlights;
   AnimationClip? teachingClip, emotionClip;
   List<Node> meshes = [];
-  final faceSmoothed = <String, double>{};
   StreamSubscription? endedSubscription;
   bool loaded = false,
       disposed = false,
@@ -126,6 +128,8 @@ class SceneRuntime extends ChangeNotifier {
             : null,
       );
       if (disposed) return;
+      await repairClothingBindings(model!);
+      calibrateNeutralGaze(model!);
       model!.scale = vm.Vector3.all(1.5);
       scene.add(model!);
       for (final file in [
@@ -227,7 +231,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r3',
+        'version': 'scene-0.2.0-r4',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -410,7 +414,6 @@ class SceneRuntime extends ChangeNotifier {
           teachingClip = null;
           emotionClip = null;
           meshes = [];
-          faceSmoothed.clear();
           secondary = null;
           highlights = null;
           scene.dispose();
@@ -570,30 +573,14 @@ class SceneRuntime extends ChangeNotifier {
         emotionClip!.weight = 0;
         applyPerformanceFace(w, math.min(age, 18) / 18 * 9.999);
       } else if (director != null) {
-        final p = loadingAudio ? 0.0 : progress,
-            pose = coursePose(
-              phase,
-              p,
-              age,
-              director!.variation,
-              director!.style,
-            );
+        final p = loadingAudio ? 0.0 : progress;
+        // Select one coherent authored gesture per thought; do not scrub or
+        // loop the whole ten-second reel on each spoken word.
         teachingClip!
-          ..weight = 1 - pose.accent
-          ..seek(pose.time);
-        emotionClip!
-          ..weight = pose.accent
-          ..seek(pose.accentTime);
+          ..weight = 1
+          ..seek(lessonPoseTime(phase));
+        emotionClip!.weight = 0;
         applyCourseFace(w, phase, p, age, director!.variation, director!.style);
-        for (final name in faceNames) {
-          faceSmoothed[name] = damp(
-            faceSmoothed[name] ?? w[name]!,
-            w[name]!,
-            12,
-            frameDt,
-          );
-          w[name] = faceSmoothed[name]!;
-        }
         w['SmileLeft'] = math.min(w['SmileLeft']!, 1 - .78 * articulation(w));
         w['SmileRight'] = math.min(w['SmileRight']!, 1 - .78 * articulation(w));
       } else {
@@ -648,12 +635,12 @@ class SceneRuntime extends ChangeNotifier {
       emoting: mode == 'emotion',
       phase: phase,
       storyTime: mode == 'story' ? now - phaseStarted : null,
+      stageElapsed: now - phaseStarted,
     );
     for (final node in meshes) {
       final names = node.morphTargetNames;
       if (names.isEmpty) continue;
       for (var i = 0; i < names.length; i++) {
-        if (names[i].startsWith('Gaze') && node.name.contains('eye')) continue;
         node.setMorphWeight(i, motion.weights[names[i]] ?? 0);
       }
     }

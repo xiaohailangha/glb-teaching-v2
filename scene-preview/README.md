@@ -34,6 +34,8 @@ git clone --depth 1 --branch 3.47.9 https://github.com/flutter/flutter.git work/
 
 ## 当前取舍和验证边界
 
+`scene-0.2.0-r4`：修复裤子/裤绳/标签中误绑到手臂和手指的权重；加载时应用独立校验绑定，不更换原 89 块模型。普通教学按意图选择完整骨骼姿态，停止循环扫过整个表演，去掉无目的的周期转身并缩短动作/脸部迟滞。源模型及 GLB 的中性眼位本身相对眼眶偏鼻侧，已用两侧一致的原 Gaze 修正校准默认表面，同时取消独立转眼球与眼皮变形的冲突。26 项 Flutter 测试、analyze 和 Web release 通过；CPU 三角形对照及视觉验证边界见 `../docs/flutter-scene/motion-fix-r4-2026-10-30.md`。用户确认 r3 白边已消失；r4 手机眼位、完整表情和动作观感待复测。
+
 角膜在 WebGL 屏幕取色路径下出现黑眼，已通过移除角膜的对照画面定位。现用薄透明角膜与跟随视线/光线的几何高光，保留真实虹膜与眼白；未启用屏幕空间折射。没有为了性能删掉原模型网格或表情。
 
 vendored 引擎补丁把 GPU 活跃表情预算从 8 提至 64、贴图维度上限从 2048 提至 4096，使用 RGBA16F 存储位置/法线变形，并拒绝本模型意外退回 CPU 变形。补丁清单见 `vendor/flutter_scene/LOCAL_PATCHES.md`。
@@ -48,6 +50,6 @@ vendored 引擎补丁把 GPU 活跃表情预算从 8 提至 64、贴图维度上
 
 ## 维护
 
-`node tools/generate-scene-tracks.mjs` 生成 Dart 表演表，`node tools/generate-scene-parity.mjs` 生成原实现对照样本。修改后运行 Flutter format/analyze/test，再观察画面和浏览器错误。
+`node tools/generate-scene-tracks.mjs` 生成 Dart 表演表，`node tools/generate-scene-parity.mjs` 生成原实现对照样本；修改模型后另运行 `node tools/generate-storm-clothing-bindings.mjs`。修改后运行 Flutter format/analyze/test，再观察画面和浏览器错误。
 
 发布顺序：构建 Web → 必要时 `node tools/publish-scene-assets.mjs` 上传新模型分块 → `node tools/deploy-scene-preview.mjs` → `node tools/test-scene-preview.mjs`。部署脚本限定现有腾讯实例，仅更新 `/scene/`、独立模型清单接口及其配置，并保存回滚备份；不操作 ExtraVM。

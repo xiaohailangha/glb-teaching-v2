@@ -1,0 +1,609 @@
+{
+  "renderer": "Three.js CPU skinning of original GLB; no scene renderer",
+  "units": "source model meters",
+  "samplesPerVariant": 12,
+  "before": [
+    {
+      "time": 0,
+      "highest": 0.6415003254814521,
+      "vertex": 9824,
+      "maxEdgeStretch": 33.07523418412031,
+      "worstTriangle": 196,
+      "joints": [
+        {
+          "name": "DEF-Forearm_1R",
+          "weight": 0.9440826177597046
+        },
+        {
+          "name": "DEF-Forearm_2R",
+          "weight": 0.0559174120426178
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 0.5,
+      "highest": 0.7489805800386943,
+      "vertex": 12448,
+      "maxEdgeStretch": 248.01507119651157,
+      "worstTriangle": 1336,
+      "joints": [
+        {
+          "name": "DEF-Forearm_2R",
+          "weight": 0.8794088959693909
+        },
+        {
+          "name": "DEF-Forearm_1R",
+          "weight": 0.12059107422828674
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "highest": 0.8267507619057033,
+      "vertex": 12285,
+      "maxEdgeStretch": 289.8629047254625,
+      "worstTriangle": 1336,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb3R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "highest": 0.7767663865160522,
+      "vertex": 641,
+      "maxEdgeStretch": 249.66938750675172,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 0.6871565580368042
+        },
+        {
+          "name": "DEF-Finger_Thumb2L",
+          "weight": 0.3128434419631958
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "highest": 0.789325743562379,
+      "vertex": 742,
+      "maxEdgeStretch": 266.78236931137013,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 4,
+      "highest": 0.7554273884204195,
+      "vertex": 4847,
+      "maxEdgeStretch": 245.8748821991031,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb2L",
+          "weight": 0.5478904843330383
+        },
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 0.45210951566696167
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 5,
+      "highest": 0.7492994808469203,
+      "vertex": 11875,
+      "maxEdgeStretch": 250.03484509627114,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb2L",
+          "weight": 0.5478904843330383
+        },
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 0.45210951566696167
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 6,
+      "highest": 0.8087459057869768,
+      "vertex": 742,
+      "maxEdgeStretch": 272.3677286547425,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 7,
+      "highest": 0.8225697679666464,
+      "vertex": 742,
+      "maxEdgeStretch": 283.3334729499067,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Finger_Thumb3L",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 8,
+      "highest": 0.646921825744765,
+      "vertex": 13807,
+      "maxEdgeStretch": 101.7034491876711,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Forearm_2L",
+          "weight": 0.5622647404670715
+        },
+        {
+          "name": "DEF-Forearm_1L",
+          "weight": 0.43773528933525085
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 9,
+      "highest": 0.6402974634831702,
+      "vertex": 3182,
+      "maxEdgeStretch": 39.712444436972454,
+      "worstTriangle": 8489,
+      "joints": [
+        {
+          "name": "DEF-Forearm_2L",
+          "weight": 0.5622647404670715
+        },
+        {
+          "name": "DEF-Forearm_1L",
+          "weight": 0.43773528933525085
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 9.9,
+      "highest": 0.64144944068176,
+      "vertex": 9824,
+      "maxEdgeStretch": 32.650705684484926,
+      "worstTriangle": 196,
+      "joints": [
+        {
+          "name": "DEF-Forearm_1R",
+          "weight": 0.9440826177597046
+        },
+        {
+          "name": "DEF-Forearm_2R",
+          "weight": 0.0559174120426178
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "time": 0,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 0.5,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 1,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 2,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 3,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 4,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 5,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 6,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 7,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 8,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 9,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "time": 9.9,
+      "highest": 0.6420768718799703,
+      "vertex": 9824,
+      "maxEdgeStretch": 1.000043806569756,
+      "worstTriangle": 23613,
+      "joints": [
+        {
+          "name": "DEF-Thigh_2R",
+          "weight": 1
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        },
+        {
+          "name": "DEF-Finger_Index1L",
+          "weight": 0
+        }
+      ]
+    }
+  ]
+}

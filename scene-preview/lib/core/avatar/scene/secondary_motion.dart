@@ -5,6 +5,7 @@ import 'package:vector_math/vector_math.dart' as vm;
 
 import 'authored_tracks.dart';
 import 'teaching_math.dart';
+import 'intent_motion.dart';
 
 // Mirror the authored Three.js XYZ rotations into Scene's left-handed basis.
 vm.Quaternion authoredRotation(double x, double y, double z) {
@@ -138,6 +139,9 @@ class SecondaryMotion {
       ]) {
         headAnchors[node] = inverse.transform3(node.position.clone());
       }
+      for (final eye in eyes) {
+        eyeBindRotations[eye] = head!.rotation.conjugated() * eye.rotation;
+      }
     }
     for (final side in ['L', 'R']) {
       final elbow = byName['DEF-Forearm_1.$side'];
@@ -168,6 +172,7 @@ class SecondaryMotion {
   late List<BonePose> headParts, smoothed;
   final hair = <String, HairRecord>{};
   final headAnchors = <Node, vm.Vector3>{};
+  final eyeBindRotations = <Node, vm.Quaternion>{};
   final arms = <({String side, Node elbow, List<BonePose> records})>[];
   final saved = <Node, BonePose>{};
   vm.Quaternion? lastHeadWorld;
@@ -201,6 +206,7 @@ class SecondaryMotion {
     bool emoting = false,
     String phase = 'idle',
     double? storyTime,
+    double stageElapsed = 0,
   }) {
     final authoredHeadInverse = head == null
         ? null
@@ -255,6 +261,12 @@ class SecondaryMotion {
         gain = engaged || storyTime != null ? 1.0 : .60;
     double track(String name, double at) => curve(actingTracks[name], at);
     final listening = ['listen', 'choice', 'recall'].contains(phase);
+    final intent = teachingIntent(
+      phase,
+      stageElapsed,
+      engaged: engaged,
+      speaking: speaking,
+    );
     final spin = storyTime == null
         ? 0.0
         : curve([
@@ -265,27 +277,48 @@ class SecondaryMotion {
             [18.8, math.pi * 2],
             [24, math.pi * 2],
           ], storyTime);
-    var bodyTarget = track('turn', math.max(0, t - .32)) * gain;
-    if (listening) bodyTarget *= .35;
-    if (['meaning', 'explain', 'transfer'].contains(phase)) {
-      bodyTarget = .40 + track('turn', math.max(0, t - .32)) * .22;
-    }
+    var bodyTarget = storyTime != null
+        ? track('turn', math.max(0, t - .10)) * .35
+        : intent.body;
+    if (emoting) bodyTarget = .04;
     bodyTarget += spin;
     yaw +=
         math.atan2(math.sin(bodyTarget - yaw), math.cos(bodyTarget - yaw)) *
-        (1 - math.exp(-dt * 4));
+        (1 - math.exp(-dt * 11));
     headYaw = damp(
       headYaw,
-      (listening ? -.18 : (track('turn', t) - .30) * .35 - .12) * gain,
-      7,
+      emoting
+          ? 0
+          : storyTime != null
+          ? (track('turn', t) - .30) * .20
+          : intent.head,
+      20,
       dt,
     );
-    roll = damp(roll, track('lean', t) * gain, 5, dt);
-    pitch = damp(pitch, track('nod', t) * gain, 6, dt);
+    roll = damp(
+      roll,
+      emoting
+          ? 0
+          : storyTime != null
+          ? track('lean', t) * .5
+          : intent.roll,
+      18,
+      dt,
+    );
+    pitch = damp(
+      pitch,
+      emoting
+          ? 0
+          : storyTime != null
+          ? track('nod', t)
+          : intent.pitch,
+      24,
+      dt,
+    );
     model.rotation = authoredRotation(0, yaw, roll * .32);
     model.position = vm.Vector3(
-      .018 * math.sin(time * .43) * gain + .025 * math.sin(spin),
-      .0025 * math.sin(time * 1.7) - .012 * math.pow(math.sin(spin * .5), 2),
+      .006 * math.sin(spin),
+      breathingOffset(time) - .004 * math.pow(math.sin(spin * .5), 2),
       0,
     );
     if (head != null) {
@@ -300,25 +333,30 @@ class SecondaryMotion {
     }
     for (final arm in arms) {
       final shift = arm.side == 'L' ? 0.30 : 0.0;
-      final target =
-          curve([
-            [0, 0],
-            [2 + shift, 0],
-            [3.7 + shift, .52],
-            [5.1 + shift, .70],
-            [6.7 + shift, 0],
-            [12, 0],
-            [14, .46],
-            [16, .64],
-            [19, .15],
-            [21, 0],
-            [24, 0],
-          ], storyTime ?? time % 18) *
-          (engaged && !listening && !emoting ? 1 : 0);
+      final target = storyTime == null
+          ? (emoting
+                ? 0.0
+                : arm.side == 'L'
+                ? intent.left
+                : intent.right)
+          : curve([
+                  [0, 0],
+                  [2 + shift, 0],
+                  [3.7 + shift, .52],
+                  [5.1 + shift, .70],
+                  [6.7 + shift, 0],
+                  [12, 0],
+                  [14, .46],
+                  [16, .64],
+                  [19, .15],
+                  [21, 0],
+                  [24, 0],
+                ], storyTime) *
+                (engaged && !listening && !emoting ? 1 : 0);
       final gesture = armAmount[arm.side] = damp(
         armAmount[arm.side] ?? 0,
         target,
-        7,
+        24,
         dt,
       );
       final pivot = arm.elbow.position,
@@ -336,8 +374,10 @@ class SecondaryMotion {
     }
     if (!emoting) {
       final a = articulation(w),
-          s = track('smile', t),
-          interest = track('interest', t);
+          s = storyTime != null ? track('smile', t) * .7 : intent.smile,
+          interest = storyTime != null
+              ? track('interest', t) * .7
+              : intent.interest;
       final desired = {
         'SmileLeft': s * (1 - .78 * a),
         'SmileRight': (s * .82 + .025) * (1 - .78 * a),
@@ -354,7 +394,7 @@ class SecondaryMotion {
         face[entry.key] = damp(
           face[entry.key] ?? target,
           target,
-          entry.key.startsWith('Brow') ? 7 : 4.5,
+          entry.key.startsWith('Brow') ? 24 : 16,
           dt,
         );
         w[entry.key] = face[entry.key]!;
@@ -363,8 +403,10 @@ class SecondaryMotion {
       w['SmileRight'] = math.min(w['SmileRight']!, 1 - .78 * a);
       gaze = damp(
         gaze,
-        listening ? 0 : (track('turn', t + .18) - .30) * gain * .9,
-        24,
+        storyTime != null
+            ? boundedGaze((track('turn', t + .1) - .30) * .4)
+            : intent.gaze,
+        45,
         dt,
       );
       w['GazeRight'] = math.max(0, gaze);
@@ -380,10 +422,10 @@ class SecondaryMotion {
         [18, 0],
       ], t);
       final accents = {
-        'curious': pulse(2.1, 3.5, 4.5, 6) * .30,
-        'confused': pulse(5.7, 7, 8, 9.5) * .27,
-        'relieved': pulse(11, 12.7, 13.4, 15) * .22,
-        'happy': pulse(13.5, 14.7, 15.3, 17.4) * .22,
+        'curious': storyTime != null ? pulse(2.1, 3.5, 4.5, 6) * .18 : 0.0,
+        'confused': storyTime != null ? pulse(5.7, 7, 8, 9.5) * .16 : 0.0,
+        'relieved': storyTime != null ? pulse(11, 12.7, 13.4, 15) * .14 : 0.0,
+        'happy': storyTime != null ? pulse(13.5, 14.7, 15.3, 17.4) * .14 : 0.0,
       };
       for (final e in accents.entries) {
         affect[e.key] = damp(
@@ -410,37 +452,24 @@ class SecondaryMotion {
         }
       }
     }
-    _eyeAim(w);
-    _hair(dt);
-  }
-
-  void _eyeAim(Map<String, double> w) {
-    if (eyes.length != 2) return;
-    final center = (eyes[0].position + eyes[1].position) * .5;
-    var target = head != null
-        ? rotateAttachedVector(head!.rotation, vm.Vector3(0, 0, -3))
-        : vm.Vector3(0, 0, -3);
-    final learner = vm.Vector3(-3 * math.sin(yaw), 0, -3 * math.cos(yaw));
-    target = target + (learner - target) * .68;
-    target +=
-        center +
-        vm.Vector3(
-          .65 * ((w['GazeRight'] ?? 0) - (w['GazeLeft'] ?? 0)),
-          .4 * ((w['GazeUp'] ?? 0) - (w['GazeDown'] ?? 0)),
-          0,
-        );
-    for (final eye in eyes) {
-      remember(eye);
-      final q = eye.rotation,
-          forward = rotateAttachedVector(q, vm.Vector3(0, 0, -1))..normalize(),
-          direction = (target - eye.position)..normalize();
-      var delta = vm.Quaternion.fromTwoVectors(forward, direction);
-      final angle = 2 * math.acos(math.min(1, delta.w.abs()));
-      if (angle > .35) {
-        delta = lerpRotation(vm.Quaternion.identity(), delta, .35 / angle);
+    // Use the same baked gaze corrections on eyes, corners and lids. Rotating
+    // the globe separately while moving the lid morphs exposes the inner shell.
+    if (head != null) {
+      for (final eye in eyes) {
+        remember(eye);
+        eye.rotation = head!.rotation * eyeBindRotations[eye]!;
       }
-      eye.rotation = delta * q;
     }
+    for (final key in [
+      'HeadNod',
+      'LookLeft',
+      'LookRight',
+      'Gesture',
+      'Breathe',
+    ]) {
+      w[key] = 0;
+    }
+    _hair(dt);
   }
 
   void _hair(double dt) {

@@ -20,7 +20,7 @@ await check('both cloud model versions remain independent',async()=>{
  }
 });
 await check('new renderer assets and curated phonemes are available',async()=>{
- for(const path of ['/scene/main.dart.js','/scene/assets/assets/avatar/audio/silence.wav','/scene/assets/assets/avatar/audio/pronunciation-units.json']){
+ for(const path of ['/scene/main.dart.js','/scene/assets/assets/avatar/audio/silence.wav','/scene/assets/assets/avatar/audio/pronunciation-units.json','/scene/assets/assets/avatar/models/storm-clothing-bindings.bin','/scene/assets/assets/avatar/models/storm-clothing-bindings.json']){
   const r=await get(path);assert.equal(r.status,200);assert.ok(Number(r.headers.get('content-length'))>0);const bytes=Buffer.from(await r.arrayBuffer());
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),crypto.createHash('sha256').update(await fs.readFile('scene-preview/build/web'+path.slice('/scene'.length))).digest('hex'));
  }

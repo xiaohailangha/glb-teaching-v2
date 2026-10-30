@@ -26,6 +26,8 @@ flutter:
   assets:
     - flutter_scene_generated/
     - assets/avatar/models/storm-rig.json
+    - assets/avatar/models/storm-clothing-bindings.json
+    - assets/avatar/models/storm-clothing-bindings.bin
     - assets/avatar/audio/
     - path: flutter_scene_generated/metal_ios/
       platforms:

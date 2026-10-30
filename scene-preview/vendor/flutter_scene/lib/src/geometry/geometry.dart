@@ -848,6 +848,35 @@ abstract class Geometry {
   /// {@category Geometry}
   bool get isReadable => _cpuVertices != null || _cpuPositions != null;
 
+  /// A detached copy of a retained interleaved upload, including skin fields.
+  /// Unlike extractMeshData, this preserves the complete packed vertex layout.
+  ({
+    Float32List vertices,
+    ByteData? indices,
+    gpu.IndexType indexType,
+    int vertexCount,
+  })
+  copyVertexData() {
+    final source = _cpuVertices;
+    if (source == null) throw StateError('No retained interleaved vertices');
+    final indices = _cpuIndices;
+    return (
+      vertices: Float32List.fromList(Float32List.sublistView(source)),
+      indices: indices == null
+          ? null
+          : ByteData.sublistView(
+              Uint8List.fromList(
+                indices.buffer.asUint8List(
+                  indices.offsetInBytes,
+                  indices.lengthInBytes,
+                ),
+              ),
+            ),
+      indexType: _indexType,
+      vertexCount: _vertexCount,
+    );
+  }
+
   /// Copies this geometry's retained CPU vertex/index data out as an
   /// isolate-transferable [MeshData] snapshot.
   ///
@@ -1749,6 +1778,41 @@ class UnskinnedGeometry extends Geometry {
 /// via [setJointsTexture].
 /// {@category Geometry}
 class SkinnedGeometry extends Geometry {
+  /// Replace only four joint indices and four weights per vertex. This keeps
+  /// positions, topology, materials and morph deltas intact. Used at load time
+  /// to repair known anatomical binding errors in an otherwise unchanged asset.
+  void rebindSkin(Float32List bindings, int jointCount) {
+    final source = _cpuVertices;
+    if (source == null || bindings.length != _vertexCount * 8) {
+      throw StateError('Skin repair requires readable matching vertices');
+    }
+    final floats = Float32List.fromList(Float32List.sublistView(source));
+    if (floats.length != _vertexCount * 26) {
+      throw StateError('Unexpected skinned vertex layout');
+    }
+    for (var v = 0; v < _vertexCount; v++) {
+      var sum = 0.0;
+      for (var k = 0; k < 4; k++) {
+        final joint = bindings[v * 8 + k], weight = bindings[v * 8 + 4 + k];
+        if (!joint.isFinite ||
+            joint != joint.truncateToDouble() ||
+            joint < 0 ||
+            joint >= jointCount ||
+            !weight.isFinite ||
+            weight < 0) {
+          throw ArgumentError('Invalid skin binding at vertex $v');
+        }
+        sum += weight;
+        floats[v * 26 + 18 + k] = joint;
+        floats[v * 26 + 22 + k] = weight;
+      }
+      if ((sum - 1).abs() > .0001) {
+        throw ArgumentError('Unnormalized skin binding');
+      }
+    }
+    uploadVertexData(floats, _vertexCount, _cpuIndices, indexType: _indexType);
+  }
+
   // The skinned FrameInfo, shared by every draw since emplace copies it out.
   // The leading model transform stays identity.
   static final Float32List _skinnedFrameInfoScratch = Float32List(44)

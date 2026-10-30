@@ -1,0 +1,51 @@
+{
+  "version": "scene-0.2.0-r4",
+  "checkedAt": "2026-10-30T08:51:13.561Z",
+  "flutterTests": 26,
+  "analyze": "passed",
+  "webRelease": "passed",
+  "productionDiagnostics": false,
+  "mainDartSha256": "012d5b248ba6a457c8c6f08b1902c93bd0ca83c67dea946ddb7a4f4986d328ed",
+  "browser": "Hidden desktop Chromium",
+  "viewports": [
+    {
+      "width": 926,
+      "height": 428
+    },
+    {
+      "width": 428,
+      "height": 926
+    }
+  ],
+  "observed": [
+    "Full-body portrait raising hand with intact trousers, cord and tags",
+    "Ordinary lesson held listening intent without alternating root turns",
+    "Neutral pupils moved outward relative to both eye apertures",
+    "Surprised face retained eye-corner coverage with calibrated neutral gaze",
+    "No browser errors or warnings"
+  ],
+  "sourceEyeFinding": "Source and exported GLB frontal orthographic renders both show nasal pupil placement relative to the visible eye aperture; parallel optical axes are insufficient evidence of normal visual alignment",
+  "neutralCalibration": {
+    "tested": [
+      0,
+      0.35,
+      0.6
+    ],
+    "selected": 0.6,
+    "method": "Bake matching outward gaze deltas into both eye and lid/corner neutral surfaces"
+  },
+  "phoneVerified": false,
+  "phonePerformanceVerified": false,
+  "androidPackageBuilt": false,
+  "screenshots": [
+    "outputs/flutter-scene/source-eyes-orthographic.png",
+    "outputs/flutter-scene/glb-eyes-orthographic.png",
+    "outputs/flutter-scene/glb-eyes-calibrated-0.6.png",
+    "outputs/flutter-scene/r4-neutral-calibrated.png",
+    "outputs/flutter-scene/r4-surprised-calibrated.png",
+    "outputs/flutter-scene/r4-portrait-final.png"
+  ],
+  "origin": "https://49.233.179.83/scene/",
+  "deploymentBackup": "/opt/glb-backups/before-scene-20261030T083942Z",
+  "liveChecksPassed": 6
+}
