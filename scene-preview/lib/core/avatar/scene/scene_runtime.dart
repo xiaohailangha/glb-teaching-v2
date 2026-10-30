@@ -13,6 +13,8 @@ import '../../../features/lesson/application/lesson_controller.dart';
 import 'lesson_director.dart';
 import 'secondary_motion.dart';
 import 'speech_client.dart';
+import 'automatic_reader.dart';
+import '../../../features/lesson/domain/course_lexicon.dart';
 import 'teaching_math.dart';
 import 'scene_asset_bundle.dart';
 import 'corneal_highlights.dart';
@@ -27,6 +29,56 @@ class SceneRuntime extends ChangeNotifier {
   SceneRuntime(this.controller) {
     scene = _measuredScene();
     controller.attach(command);
+    automatic = AutomaticReader(
+      speech.endpoint,
+      (state, message) {
+        emit('auto-state', {
+          'session': session,
+          'enabled': automatic.enabled,
+          'message': message,
+        });
+      },
+      (target, data) {
+        final result = data['result'] as Map? ?? {};
+        final accuracy = (result['PronAccuracy'] as num?)?.toDouble();
+        final completion = (result['PronCompletion'] as num?)?.toDouble() ?? 0;
+        final words = (result['Words'] as List? ?? []).whereType<Map>();
+        final low = words
+            .where(
+              (w) =>
+                  w['PronAccuracy'] is num &&
+                  (w['PronAccuracy'] as num) >= 0 &&
+                  (w['PronAccuracy'] as num) < 60,
+            )
+            .toList();
+        final word = low.isEmpty
+            ? ''
+            : low.first['Word']?.toString().toLowerCase() ?? '';
+        final reliable = accuracy != null && accuracy >= 0 && completion >= .6;
+        emit('auto-state', {
+          'session': session,
+          'enabled': automatic.enabled,
+          'message': !reliable
+              ? '这次没有听完整，请再说一次。'
+              : low.isEmpty
+              ? '这次已收到，发音参考：${accuracy.toStringAsFixed(0)} 分。可以继续练习。'
+              : '建议再练 $word。先听一次，再试着说。',
+        });
+        if (reliable &&
+            low.isNotEmpty &&
+            courseLexicon.containsKey(word) &&
+            director?.fruitCourse == true &&
+            director!.branch.isEmpty) {
+          unawaited(
+            _command({
+              'type': 'course-preview',
+              'clip': courseLexicon[word]!.clip,
+              'session': session,
+            }),
+          );
+        }
+      },
+    );
     speech.onPlaybackError = (error) {
       playingAudio = false;
       emit('speech-error', {
@@ -42,6 +94,7 @@ class SceneRuntime extends ChangeNotifier {
     if (loaded && !disposed) frameMeter.record(now);
   });
   Node? model;
+  late final AutomaticReader automatic;
   final speech = SpeechClient(), motion = NaturalMotion();
   final stopwatch = Stopwatch()..start();
   final timings = <String, dynamic>{};
@@ -240,7 +293,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r7-sentences',
+        'version': 'scene-0.2.0-r8-learning',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -371,7 +424,10 @@ class SceneRuntime extends ChangeNotifier {
                 clip: clip,
                 wordId: d.word,
                 chapter: original.chapter,
-                display: timings[clip]?['text']?.toString() ?? original.display,
+                display:
+                    timings[clip]?['symbol']?.toString() ??
+                    timings[clip]?['text']?.toString() ??
+                    original.display,
                 picture: original.picture,
                 hide: original.hideAnswer,
                 text: '再听一次，然后回到练习。',
@@ -435,7 +491,14 @@ class SceneRuntime extends ChangeNotifier {
             'session': session,
             'emotion': emotionIds[emotionIndex],
           });
+        case 'auto-start':
+          if (c['session'] != session) return;
+          await speech.cancelCapture();
+          await automatic.start();
+        case 'auto-stop':
+          await automatic.stop();
         case 'capture-start':
+          await automatic.stop();
           if (c['session'] != session ||
               !waiting ||
               !['listen', 'recall'].contains(phase)) {
@@ -489,6 +552,7 @@ class SceneRuntime extends ChangeNotifier {
     loadingAudio = false;
     currentClip = null;
     cues = [];
+    await automatic.stop();
     await speech.stop();
   }
 
@@ -508,7 +572,37 @@ class SceneRuntime extends ChangeNotifier {
       emit('ended', {'session': finishedSession, 'progress': 1});
       return;
     }
+    if (stage.phase == 'finish') {
+      await automatic.stop();
+      emit('auto-state', {
+        'session': session,
+        'enabled': false,
+        'message': '课程已结束，麦克风已关闭。',
+      });
+    }
+    if (disposed || token != stageGeneration || director == null) return;
     phaseStarted = now;
+    String autoText = '', autoKey = '';
+    if (director!.fruitCourse && director!.branch.isEmpty) {
+      if (['listen', 'recall'].contains(stage.phase) &&
+          stage.id != 'extension_gate') {
+        autoText = stage.speechText.isNotEmpty
+            ? stage.speechText
+            : director!.word;
+        autoKey = stage.id;
+      } else if (stage.phase == 'demonstrate' &&
+          director!.index + 1 < director!.stages.length) {
+        final next = director!.stages[director!.index + 1];
+        if (next.phase == 'listen') {
+          autoText = next.speechText.isNotEmpty
+              ? next.speechText
+              : director!.word;
+          autoKey = next.id;
+        }
+      }
+    }
+    automatic.target(autoText, autoKey);
+    automatic.playing = stage.clip != null;
     word = director!.word;
     iteration = stage.iteration;
     emit('lesson-phase', {
@@ -549,6 +643,7 @@ class SceneRuntime extends ChangeNotifier {
         audioGeneration = ++speech.generation,
         expectedSession = session;
     loadingAudio = true;
+    automatic.playing = true;
     emit('speech-loading', {'session': session});
     try {
       final clip = await speech.prepare(
@@ -572,6 +667,7 @@ class SceneRuntime extends ChangeNotifier {
       emit('playing', {
         'session': session,
         'iteration': iteration,
+        'text': timings[key]?['text']?.toString() ?? '',
         'progress': 0,
       });
     } catch (e) {
@@ -584,6 +680,7 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   void _audioEnded() {
+    automatic.playing = false;
     if (director != null) {
       if (director!.stage.options.isNotEmpty) return;
       if (director!.fruitCourse && ['support', 'success'].contains(phase)) {
@@ -744,6 +841,7 @@ class SceneRuntime extends ChangeNotifier {
   void dispose() {
     disposed = true;
     unawaited(endedSubscription?.cancel());
+    unawaited(automatic.dispose());
     unawaited(speech.dispose());
     scene.dispose();
     super.dispose();

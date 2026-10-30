@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>男童声试听 · r5</title>
+<title>发音参考试听 · r8</title>
 <style>body{margin:24px auto;padding:0 18px;max-width:760px;background:#292c30;color:#fff;font:17px system-ui}button,a{font:inherit}button{margin:5px;padding:12px 18px;border:0;border-radius:9px;cursor:pointer}h2{font-size:20px;margin-top:30px}p{line-height:1.6;color:#ddd}a{color:#acd6ff}#status{min-height:28px}</style>
-<h1>男童声试听 · r5</h1>
-<p>统一使用云小洋。点一下只播放所选内容；点另一项立即切换。音标取自同一声线录音，短辅音和英语发音听感仍待人工复核。</p>
-<a href="./">返回人物教学页</a><p id="status" role="status">正在加载试听清单…</p><main id="clips"></main>
+<h1>发音参考试听 · r8</h1>
+<p>单词、句子沿用云小洋；独立音标使用有署名的参考录音，不再截取单词。音节组合请听整词，不机械拼接孤立声音。</p>
+<a href="./">返回人物教学页</a> · <a href="assets/assets/avatar/audio/IPA-reference-attribution.json">音标来源、作者及许可</a><p id="status" role="status">正在加载试听清单…</p><main id="clips"></main>
 <script>
 const audio=new Audio();audio.preload='auto';let generation=0;
 const status=document.querySelector('#status'),main=document.querySelector('#clips');
-for(const [file,title] of [['timings','单词'],['pronunciation-units','音标与释义'],['course-prompts','课程语音']]) {
+for(const [file,title] of [['timings','单词'],['pronunciation-units','音标与释义'],['fruit-prompts','水果课与句子'],['course-prompts','课程语音']]) {
   fetch(`assets/assets/avatar/audio/${file}.json`).then(r=>{if(!r.ok)throw Error('清单加载失败');return r.json()}).then(items=>{
     const section=document.createElement('section'),heading=document.createElement('h2');heading.textContent=title;section.append(heading);
     for(const [key,item] of Object.entries(items)) {

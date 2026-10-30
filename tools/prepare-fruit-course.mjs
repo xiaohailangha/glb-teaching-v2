@@ -14,6 +14,7 @@ const prompts={
  fruit_review:'换个顺序，再听一次。看看现在能不能认出来。',
  fruit_finish:'这一节完成了。下次再试试，看看还能不能记住。',
  phrase_apple:'an apple',phrase_banana:'a banana',
+ word_a:'a',word_an:'an',word_to:'to',
  want_intro:'现在说出你想要什么。先听，再分段练习。',
  eat_intro:'想要吃，和想要一个东西，有一点不同。听听这句话。',
  scene_intro:'现在试着表达自己的选择。先选水果，再开口说。',

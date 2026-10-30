@@ -1839,6 +1839,89 @@
     ],
     "sourceKey": "ceec8d0530b81f36076cb2fc69d2b849dd9efeef955f6eb30ae8dd0fef79c6e1"
   },
+  "word_a": {
+    "text": "a",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 0.715,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08,
+        "id": 4
+      },
+      {
+        "time": 0.56,
+        "id": 0
+      },
+      {
+        "time": 0.64,
+        "id": 0
+      }
+    ],
+    "sourceKey": "d382c653f60e88e6e57b040bceefc30bc0bdfae8f883c70fd1952cdd4d3405ff"
+  },
+  "word_an": {
+    "text": "an",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 0.775,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08000000000000003,
+        "id": 1
+      },
+      {
+        "time": 0.4100000000000001,
+        "id": 19
+      },
+      {
+        "time": 0.6200000000000001,
+        "id": 0
+      },
+      {
+        "time": 0.7000000000000002,
+        "id": 0
+      }
+    ],
+    "sourceKey": "800310692a5da02d758a9f613fb3ab7adb3f9cb19d2709b09d94ba3db7c0207f"
+  },
+  "word_to": {
+    "text": "to",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.235,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08000000000000003,
+        "id": 19
+      },
+      {
+        "time": 0.34,
+        "id": 7
+      },
+      {
+        "time": 1.0799999999999998,
+        "id": 0
+      },
+      {
+        "time": 1.16,
+        "id": 0
+      }
+    ],
+    "sourceKey": "faa22169d65a4246e6c08bf4f190e0f1ee3be80ecdfff5b95166b54edee580a6"
+  },
   "want_intro": {
     "text": "现在说出你想要什么。先听，再分段练习。",
     "voice": 403008,

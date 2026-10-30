@@ -44,42 +44,47 @@
         "id": 0
       },
       {
-        "time": 0.08500000000000002,
+        "time": 0.085,
         "id": 21
       },
       {
-        "time": 0.135,
+        "time": 0.15500000000000003,
         "id": 1
       },
       {
-        "time": 0.185,
+        "time": 0.22500000000000003,
         "id": 19
       },
       {
-        "time": 0.28500000000000003,
+        "time": 0.325,
+        "id": 1
+      },
+      {
+        "time": 0.5449999999999999,
+        "id": 19
+      },
+      {
+        "time": 0.605,
         "id": 1
       },
       {
         "time": 0.855,
-        "id": 19
+        "id": 0
       },
       {
-        "time": 1.155,
-        "id": 1
-      },
-      {
-        "time": 1.345,
+        "time": 0.8800000000000001,
         "id": 0
       }
     ],
     "text": "banana",
     "bundled": true,
-    "duration": 1.47,
-    "sourceKey": "7ca9ea3c133740f0f60d7d081f09c4ae89fba97dbddfaf2f656e9b7fc3efd13d",
+    "duration": 0.98,
+    "sourceKey": "fb11cd72b35579bf34d3849a5bf52f4c2cfb11a9ef7e61647fb78675cc2bc2a9",
     "trim": {
-      "start": 0.245,
-      "end": 1.545
-    }
+      "start": 0.115,
+      "end": 0.925
+    },
+    "sourceText": "banana."
   },
   "cat": {
     "voice": 403008,

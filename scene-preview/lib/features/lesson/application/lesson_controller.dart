@@ -7,10 +7,55 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../domain/lesson_word.dart';
 import '../domain/emotion.dart';
+import '../domain/vocabulary_ledger.dart';
+import '../domain/course_lexicon.dart';
 
 typedef AvatarCommand = void Function(Map<String, Object?> command);
 
 class LessonController extends ChangeNotifier {
+  final vocabulary = VocabularyLedger();
+  bool automaticReading = false, automaticStarting = false;
+  String automaticFeedback = '', selectedWord = '';
+  Future<void> _saveVocabulary() async {
+    final data = jsonEncode(vocabulary.toJson());
+    _saveQueue = _saveQueue.then((_) async {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('vocabulary-exposure-v1', data);
+      } catch (_) {}
+    });
+  }
+
+  void expose(String text) {
+    if (vocabulary.expose(text)) {
+      unawaited(_saveVocabulary());
+    }
+  }
+
+  void previewWord(String raw) {
+    final key = raw.toLowerCase();
+    final item = courseLexicon[key];
+    if (item == null) return;
+    selectedWord = key;
+    expose(key);
+    previewCourse(item.clip);
+    notifyListeners();
+  }
+
+  void toggleAutomatic() {
+    if (!speechAvailable || !adultCourse || coursePaused) return;
+    if (automaticReading || automaticStarting) {
+      automaticReading = automaticStarting = false;
+      automaticFeedback = '自动跟读已关闭';
+      _send?.call({'type': 'auto-stop', 'session': session});
+    } else {
+      automaticStarting = true;
+      automaticFeedback = '请允许麦克风；只上传本次练习的语音片段用于评测。';
+      _send?.call({'type': 'auto-start', 'session': session});
+    }
+    notifyListeners();
+  }
+
   final playbackTick = ValueNotifier<int>(0);
   int index = 0, iteration = 0, session = 0;
   bool ready = false, playing = false, repeating = false, closeUp = false;
@@ -29,11 +74,23 @@ class LessonController extends ChangeNotifier {
   Future<void> loadCourseProgress() async {
     try {
       final prefs = await SharedPreferences.getInstance();
+      final vocab = prefs.getString('vocabulary-exposure-v1');
+      if (vocab != null) {
+        final data = jsonDecode(vocab);
+        if (data is Map) vocabulary.restore(data);
+      }
       final saved = prefs.getString('adult-fruit-v2');
       if (!_disposed && courseCheckpoint == null && saved != null) {
         final data = jsonDecode(saved);
         if (data is Map && data['version'] == 1) {
           courseCheckpoint = Map<String, dynamic>.from(data);
+          if (vocab == null) {
+            for (final word
+                in (data['taught'] as List? ?? []).whereType<String>()) {
+              vocabulary.expose(word);
+            }
+            unawaited(_saveVocabulary());
+          }
         }
         notifyListeners();
       }
@@ -55,6 +112,8 @@ class LessonController extends ChangeNotifier {
   void pauseCourse() {
     if (!adultCourse || coursePaused) return;
     coursePaused = true;
+    vocabulary.inCourse = false;
+    automaticReading = automaticStarting = false;
     playing = false;
     captureState = 'idle';
     session++;
@@ -132,6 +191,7 @@ class LessonController extends ChangeNotifier {
       ready = true;
       error = null;
       diagnostics = message;
+      expose(word.id);
       speechAvailable = (message['speech'] as Map?)?['configured'] == true;
       _send?.call({'type': 'focus', 'closeUp': closeUp});
       _send?.call(_renderSettings);
@@ -142,7 +202,11 @@ class LessonController extends ChangeNotifier {
       diagnostics = {...diagnostics, ...message};
     } else {
       if (message['session'] != session) return;
-      if (event == 'capture') {
+      if (event == 'auto-state') {
+        automaticReading = message['enabled'] == true;
+        automaticStarting = false;
+        automaticFeedback = message['message']?.toString() ?? '';
+      } else if (event == 'capture') {
         captureState = message['state']?.toString() ?? 'idle';
         if (captureState == 'recording') speechFeedback = '正在听…';
         if (captureState == 'processing') speechFeedback = '正在处理你的回答…';
@@ -199,6 +263,7 @@ class LessonController extends ChangeNotifier {
           return;
         }
         lessonPhase = phase!;
+        selectedWord = '';
         speechFeedback = '';
         activeSound = message['symbol']?.toString() ?? '';
         emotionMode = false;
@@ -226,6 +291,13 @@ class LessonController extends ChangeNotifier {
           courseText = message['text']?.toString() ?? '';
           courseStep = message['step']?.toString() ?? '';
           hideAnswer = message['hideAnswer'] == true;
+          if (!hideAnswer && phase != 'phoneme') {
+            expose(courseDisplay);
+            expose(courseText);
+          }
+          if (courseStep == 'summary') {
+            unawaited(_saveVocabulary());
+          }
           courseOptions = (message['options'] as List? ?? [])
               .whereType<Map>()
               .map(
@@ -242,6 +314,9 @@ class LessonController extends ChangeNotifier {
         emotionMode = true;
         emotionIndex = next;
       } else if (event == 'playing' || event == 'progress') {
+        if (event == 'playing' && message['text'] is String) {
+          expose(message['text'] as String);
+        }
         if (speechFeedback == '正在准备示范…') speechFeedback = '';
         final stateChanged =
             !playing ||
@@ -268,6 +343,7 @@ class LessonController extends ChangeNotifier {
     stop();
     emotionMode = false;
     index = value.clamp(0, lessonWords.length - 1);
+    expose(word.id);
     progress = 0;
     notifyListeners();
     if (ready) play(reason: 'next');
@@ -380,6 +456,8 @@ class LessonController extends ChangeNotifier {
   }
 
   void stop() {
+    vocabulary.inCourse = false;
+    automaticReading = automaticStarting = false;
     coursePaused = false;
     captureState = 'idle';
     speechFeedback = '';
@@ -442,7 +520,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void playPhoneme(String symbol) {
-    if (!word.sounds.contains(symbol)) return;
+    if (!word.sounds.contains(symbol) || ['əl', 'oʊ'].contains(symbol)) return;
     _playPronunciation('phoneme', symbol);
   }
 
@@ -488,6 +566,10 @@ class LessonController extends ChangeNotifier {
     }
     stop();
     if (restart) courseCheckpoint = null;
+    if (style == 'adult') {
+      vocabulary.begin(restart: restart || courseCheckpoint == null);
+      unawaited(_saveVocabulary());
+    }
     coursePaused = false;
     courseMode = true;
     courseStyle = style;

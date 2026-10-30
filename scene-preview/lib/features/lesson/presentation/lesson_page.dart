@@ -20,15 +20,23 @@ class LessonPage extends StatefulWidget {
   State<LessonPage> createState() => _LessonPageState();
 }
 
-class _LessonPageState extends State<LessonPage> {
+class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
   final controller = LessonController();
   final settings = AppSettings();
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     settings.addListener(_applySettings);
     settings.load();
     controller.loadCourseProgress();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state != AppLifecycleState.resumed && controller.adultCourse) {
+      controller.pauseCourse();
+    }
   }
 
   void _applySettings() => controller.setRenderSettings(settings.command);
@@ -75,6 +83,7 @@ class _LessonPageState extends State<LessonPage> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _hideTimer?.cancel();
     settings.removeListener(_applySettings);
     settings.dispose();
@@ -258,7 +267,19 @@ class _LessonPageState extends State<LessonPage> {
                                                         : controller
                                                               .displayWord,
                                                     style: TextStyle(
-                                                      color: Colors.white,
+                                                      color:
+                                                          controller
+                                                              .vocabulary
+                                                              .seen
+                                                              .contains(
+                                                                controller
+                                                                    .word
+                                                                    .id,
+                                                              )
+                                                          ? const Color(
+                                                              0xFF91D5FF,
+                                                            )
+                                                          : Colors.white,
                                                       fontSize:
                                                           box.maxWidth * .084,
                                                       fontWeight:
@@ -648,6 +669,8 @@ class _LessonPageState extends State<LessonPage> {
 
   Widget _pronunciationLine(bool wide) {
     final style = TextStyle(
+      fontFamily: 'NotoSansIPA',
+      fontFamilyFallback: const ['NotoSansSC'],
       color: Colors.white70,
       fontSize: wide ? 22 : 16,
       height: 1.3,

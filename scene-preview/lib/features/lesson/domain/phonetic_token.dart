@@ -23,7 +23,7 @@ List<PhoneticToken> phoneticTokens(String transcription, List<String> sounds) {
       }
     }
     if (match != null) {
-      result.add(PhoneticToken(match, true));
+      result.add(PhoneticToken(match, match != 'əl' && match != 'oʊ'));
       index += match.length;
     } else {
       result.add(PhoneticToken(transcription[index], false));

@@ -35,8 +35,8 @@ await check('all shipped teaching voices and word bytes match the boy-voice buil
   const response=await get(`/scene/assets/assets/avatar/audio/${file}.json`);
   assert.equal(response.status,200);const items=await response.json();
   for(const [key,item] of Object.entries(items)) {
-   assert.equal(item.voice,403008,key);assert.equal(item.bundled,true,key);
-   if(file==='timings'||file==='fruit-prompts') {
+   if(item.kind==='phoneme')assert.equal(item.reference,true,key);else assert.equal(item.voice,403008,key);assert.equal(item.bundled,true,key);
+   if(file==='timings'||file==='fruit-prompts'||item.kind==='phoneme') {
     const response=await get(`/scene/assets/assets/avatar/audio/${key}.wav`);
     assert.equal(response.status,200);
     const bytes=Buffer.from(await response.arrayBuffer());

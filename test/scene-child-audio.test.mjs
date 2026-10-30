@@ -20,11 +20,11 @@ test('every published course sound and segment resolves to a bundled asset',()=>
  }
  assert.equal(course.id,'adult-fruit-v2');
 });
-test('all scene teaching assets use one bundled boy voice with in-range matching cues',()=>{
+test('teaching words use boy voice and isolated IPA uses attributed standalone reference recordings',()=>{
   let count=0;
   for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
     for(const [key,item] of Object.entries(read(file))) {
-      assert.equal(item.voice,403008,key);
+      if(item.kind==='phoneme') { assert.equal(item.reference,true,key);assert.ok(item.source?.license,key);assert.equal(item.sourceWord,undefined,key); } else assert.equal(item.voice,403008,key);
       assert.equal(item.bundled,true,key);
       const {duration}=readWave(fs.readFileSync(new URL(key+'.wav',root)));
       assert.ok(Math.abs(duration-item.duration)<.001,key);
@@ -41,13 +41,11 @@ test('all scene teaching assets use one bundled boy voice with in-range matching
       count++;
     }
   }
-  assert.equal(count,93);
+  assert.equal(count,94);
 });
-test('apple ending is one continuous same-speaker cut and performance retains its authored clock',()=>{
-  const group=read('pronunciation-units').group_schwa_l;
-  assert.equal(group.sourceWord,'apple');
-  assert.deepEqual(group.sourcePhones.map(p=>p.phone),['ah','l']);
-  assert.equal(group.sourcePhones[0].end,group.sourcePhones[1].start);
+test('retired word cuts stay absent and performance retains its authored clock',()=>{
+  assert.equal(read('pronunciation-units').group_schwa_l,undefined);
+  assert.equal(read('pronunciation-units').phoneme_ow,undefined);
   const performance=read('performance-cues');
   assert.equal(performance.voice,403008);
   assert.equal(readWave(fs.readFileSync(new URL('performance.wav',root))).duration,10);

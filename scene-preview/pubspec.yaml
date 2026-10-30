@@ -30,6 +30,7 @@ flutter:
     - assets/avatar/models/storm-clothing-bindings.bin
     - assets/avatar/audio/
     - assets/avatar/courses/
+    - assets/fonts/NotoSans-OFL.txt
     - path: flutter_scene_generated/metal_ios/
       platforms:
         - ios
@@ -48,3 +49,7 @@ flutter:
     - family: NotoSansSC
       fonts:
         - asset: assets/fonts/NotoSansSC-ui.ttf
+
+    - family: NotoSansIPA
+      fonts:
+        - asset: assets/fonts/NotoSans-IPA.ttf

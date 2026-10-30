@@ -68,7 +68,8 @@ class SpeechClient {
     Map<String, dynamic> item, {
     bool curated = false,
   }) async {
-    if (item['bundled'] == true && item['voice'] == 403008) {
+    if (item['bundled'] == true &&
+        (item['voice'] == 403008 || item['reference'] == true)) {
       return SpeechClip(key, MouthCue.fromJson(item['cues'], word: key));
     }
     if (curated || !configured || item['text'] == null) {

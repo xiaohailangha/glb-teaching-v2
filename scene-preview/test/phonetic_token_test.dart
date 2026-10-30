@@ -10,22 +10,27 @@ void main() {
       for (final word in lessonWords) {
         final tokens = phoneticTokens(word.phonetic, word.sounds);
         expect(tokens.map((t) => t.text).join(), word.phonetic);
-        expect(tokens.where((t) => t.playable).map((t) => t.text), word.sounds);
+        expect(
+          tokens.where((t) => t.playable).map((t) => t.text),
+          word.sounds.where((s) => !['əl', 'oʊ'].contains(s)),
+        );
         if (word.id == 'apple') {
           expect(tokens.where((t) => t.playable).map((t) => t.isVowel), [
             true,
-            false,
             false,
           ]);
           expect(tokens.where((t) => t.playable).map((t) => t.text), [
             'æ',
             'p',
-            'əl',
           ]);
           expect(tokens.where((t) => t.isWeakEnding).length, 1);
         }
         expect(
-          tokens.where((t) => !t.playable).every((t) => '/ˈ.'.contains(t.text)),
+          tokens
+              .where((t) => !t.playable)
+              .every(
+                (t) => '/ˈ.'.contains(t.text) || ['əl', 'oʊ'].contains(t.text),
+              ),
           isTrue,
         );
       }
@@ -47,8 +52,9 @@ void main() {
     c.replayLesson();
     expect(commands.last['symbol'], 'p');
     expect(commands.last['type'], 'pronunciation');
+    final beforeGroup = commands.length;
     c.playPhoneme('əl');
-    expect(commands.last['symbol'], 'əl');
+    expect(commands.length, beforeGroup);
     final groupedCount = commands.length;
     c.playPhoneme('ə');
     c.playPhoneme('l');
