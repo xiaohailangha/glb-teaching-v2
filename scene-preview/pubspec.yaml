@@ -14,6 +14,7 @@ dependencies:
   just_audio: 0.10.6
   record: 7.1.2
   http: 1.6.0
+  flutter_svg: 2.3.2
   crypto: ^3.0.7
   hooks: ^2.0.2
   web: ^1.1.1
@@ -30,6 +31,7 @@ flutter:
     - assets/avatar/models/storm-clothing-bindings.bin
     - assets/avatar/audio/
     - assets/avatar/courses/
+    - assets/avatar/images/
     - assets/fonts/NotoSans-OFL.txt
     - path: flutter_scene_generated/metal_ios/
       platforms:

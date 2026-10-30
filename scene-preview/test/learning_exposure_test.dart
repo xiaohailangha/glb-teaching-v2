@@ -50,8 +50,12 @@ void main() {
     reader.ingestPcm(voice());
     reader.ingestPcm(Uint8List(25600));
     await Future<void>.delayed(Duration.zero);
+    expect(requests, 0); // A sentence permits a short thinking pause.
+    reader.ingestPcm(Uint8List(12800));
+    await Future<void>.delayed(Duration.zero);
     expect(requests, 1);
     reader.target('I want a banana.', 'banana');
+    expect(reader.busy, isFalse); // Old assessment cannot block the new target.
     pending.complete(http.Response('{"result":{"PronAccuracy":99}}', 200));
     await Future<void>.delayed(Duration.zero);
     expect(results, 0);

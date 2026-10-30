@@ -13,6 +13,24 @@ class LearningText extends StatelessWidget {
   final String text;
   final LessonController controller;
   final double size;
+  String status(String word) {
+    for (final row in controller.wordFeedback) {
+      if (row['word'] == word.toLowerCase()) {
+        return row['status']?.toString() ?? '';
+      }
+    }
+    return '';
+  }
+
+  Color color(String word) {
+    final value = status(word);
+    if (value == 'good') return const Color(0xFFBDE5DD);
+    if (value.isNotEmpty) return const Color(0xFFFFCB95);
+    return controller.vocabulary.seen.contains(word.toLowerCase())
+        ? const Color(0xFFADD6E4)
+        : Colors.white;
+  }
+
   @override
   Widget build(BuildContext context) {
     final tokens = RegExp(r"[A-Za-z]+(?:'[A-Za-z]+)?|[^A-Za-z]+")
@@ -33,12 +51,13 @@ class LearningText extends StatelessWidget {
                     child: TweenAnimationBuilder<double>(
                       tween: Tween(begin: 0, end: 1),
                       duration: Duration(
-                        milliseconds: 180 + token.start.clamp(0, 40) * 8,
+                        milliseconds: 480 + token.start.clamp(0, 40) * 12,
                       ),
+                      curve: Curves.easeOutCubic,
                       builder: (context, value, child) => Opacity(
                         opacity: value,
                         child: Transform.translate(
-                          offset: Offset(0, 4 * (1 - value)),
+                          offset: Offset(0, 14 * (1 - value)),
                           child: child,
                         ),
                       ),
@@ -49,12 +68,14 @@ class LearningText extends StatelessWidget {
                           style: TextStyle(
                             fontSize: size,
                             fontWeight: FontWeight.bold,
-                            color:
-                                controller.vocabulary.seen.contains(
-                                  token[0]!.toLowerCase(),
-                                )
-                                ? const Color(0xFF91D5FF)
-                                : Colors.white,
+                            color: color(token[0]!),
+                            decoration:
+                                status(token[0]!).isNotEmpty &&
+                                    status(token[0]!) != 'good'
+                                ? TextDecoration.underline
+                                : TextDecoration.none,
+                            decorationStyle: TextDecorationStyle.wavy,
+                            decorationColor: const Color(0xFFFFCB95),
                           ),
                         ),
                       ),

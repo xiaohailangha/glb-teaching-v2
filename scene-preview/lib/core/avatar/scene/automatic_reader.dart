@@ -6,6 +6,7 @@ import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 import 'package:record/record.dart';
 
+import 'live_transcript.dart';
 import 'speech_client.dart' show pcmToWav;
 
 /// Local endpoint detector. No speech/no target means no upload.
@@ -13,6 +14,7 @@ class UtteranceGate {
   BytesBuilder buffer = BytesBuilder(copy: false);
   Uint8List lead = Uint8List(0);
   int voiced = 0, quiet = 0, total = 0;
+  int pauseBytes = 25600;
   void reset() {
     buffer = BytesBuilder(copy: false);
     lead = Uint8List(0);
@@ -43,13 +45,13 @@ class UtteranceGate {
     } else {
       quiet += bytes.length;
     }
-    if ((voiced >= 6400 && quiet >= 25600) || total >= 384000) {
+    if ((voiced >= 3200 && quiet >= pauseBytes) || total >= 384000) {
       final out = buffer.takeBytes();
-      final enough = voiced >= 6400;
+      final enough = voiced >= 3200;
       reset();
       return enough ? out : null;
     }
-    if (quiet >= 32000) reset();
+    if (quiet >= pauseBytes + 6400) reset();
     return null;
   }
 }
@@ -60,10 +62,20 @@ class AutomaticReader {
     this.onState,
     this.onResult, {
     http.Client? httpClient,
-  }) : client = httpClient ?? http.Client();
+    AudioRecorder? audioRecorder,
+    this.onSignal,
+    this.onTranscript,
+    this.onRecognized,
+  }) : _recorder = audioRecorder,
+       client = httpClient ?? http.Client();
   final Uri Function(String) endpoint;
   final void Function(String, String) onState;
   final void Function(String, Map<String, dynamic>) onResult;
+  final void Function(double)? onSignal;
+  final void Function(String)? onTranscript;
+  final void Function(String)? onRecognized;
+  LiveTranscript? live, finalizingLive;
+  bool recognitionOnly = false;
   AudioRecorder? _recorder;
   AudioRecorder get recorder => _recorder ??= AudioRecorder();
   final gate = UtteranceGate();
@@ -71,10 +83,18 @@ class AutomaticReader {
   StreamSubscription<Uint8List>? subscription;
   bool enabled = false, playing = false, busy = false;
   String text = '', key = '';
-  int generation = 0, requestGeneration = 0;
-  void target(String nextText, String nextKey) {
+  int generation = 0, requestGeneration = 0, captureGeneration = 0;
+  void target(String nextText, String nextKey, {bool recognizeOnly = false}) {
+    recognitionOnly = recognizeOnly;
+    gate.pauseBytes = nextText.trim().contains(' ') ? 38400 : 25600;
     if (nextKey != key || nextText != text) {
       generation++;
+      requestGeneration++;
+      busy = false;
+      live?.cancel();
+      finalizingLive?.cancel();
+      finalizingLive = null;
+      live = null;
       gate.reset();
     }
     text = nextText;
@@ -83,10 +103,11 @@ class AutomaticReader {
 
   Future<void> start() async {
     await stop();
-    final token = ++generation;
+    final token = ++captureGeneration;
+    onState('starting', '请在浏览器中允许麦克风。');
     try {
       if (!await recorder.hasPermission()) throw StateError('请允许麦克风权限后再开启');
-      if (token != generation) return;
+      if (token != captureGeneration) return;
       final stream = await recorder.startStream(
         const RecordConfig(
           encoder: AudioEncoder.pcm16bits,
@@ -96,7 +117,7 @@ class AutomaticReader {
           noiseSuppress: true,
         ),
       );
-      if (token != generation) {
+      if (token != captureGeneration) {
         await recorder.cancel();
         return;
       }
@@ -119,7 +140,24 @@ class AutomaticReader {
   void ingestPcm(Uint8List bytes) {
     if (!enabled || busy || text.isEmpty || playing) {
       gate.reset();
+      live?.cancel();
+      live = null;
       return;
+    }
+    final samples = ByteData.sublistView(bytes);
+    double energy = 0;
+    for (var i = 0; i + 1 < bytes.length; i += 2) {
+      final v = samples.getInt16(i, Endian.little) / 32768;
+      energy += v * v;
+    }
+    final rms = bytes.isEmpty ? 0.0 : math.sqrt(energy / (bytes.length / 2));
+    onSignal?.call((rms * 12).clamp(0, 1));
+    if (onTranscript != null && (gate.voiced > 0 || rms > .018)) {
+      final token = generation;
+      live ??= LiveTranscript(endpoint, (value) {
+        if (enabled && generation == token) onTranscript?.call(value);
+      });
+      live!.add(bytes);
     }
     final pcm = gate.add(bytes);
     if (pcm != null) unawaited(_assess(pcm));
@@ -130,7 +168,16 @@ class AutomaticReader {
     final request = ++requestGeneration;
     busy = true;
     onState('processing', '正在分析刚才这句话…');
+    final transcript = live;
+    finalizingLive = transcript;
+    live = null;
+    final recognition = transcript?.finish();
     try {
+      if (recognitionOnly) {
+        final heard = await recognition ?? '';
+        if (enabled && token == generation) onRecognized?.call(heard);
+        return;
+      }
       final response = await client
           .post(
             endpoint(
@@ -145,10 +192,16 @@ class AutomaticReader {
       if (response.statusCode != 200) {
         throw StateError(data['error']?.toString() ?? '暂时无法分析');
       }
+      // Recognition updates remain tied to this utterance, never to a later stage.
+      if (recognition != null) await recognition;
+      if (!enabled || token != generation) return;
       onResult(expectedText, data);
     } catch (e) {
       if (enabled && token == generation) onState('error', '这次没有取得可靠结果，请再试一次。');
     } finally {
+      if (identical(finalizingLive, transcript)) {
+        finalizingLive = null;
+      }
       if (request == requestGeneration) {
         busy = false;
         gate.reset();
@@ -158,6 +211,11 @@ class AutomaticReader {
 
   Future<void> stop() async {
     enabled = false;
+    captureGeneration++;
+    live?.cancel();
+    finalizingLive?.cancel();
+    finalizingLive = null;
+    live = null;
     generation++;
     requestGeneration++;
     busy = false;

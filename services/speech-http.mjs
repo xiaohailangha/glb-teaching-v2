@@ -1,3 +1,5 @@
+import {liveRecognitionHandler} from './live-recognition.mjs';
+const liveRecognition=liveRecognitionHandler();
 import fs from 'node:fs';
 import path from 'node:path';
 import {configured,versions,cacheDir,teachingAudio,assess,recognize,validateAudio,speechText} from './tencent-speech.mjs';
@@ -25,6 +27,10 @@ export async function speechHttp(req,res,url){
     res.writeHead(200,{'Content-Type':'audio/wav','Cache-Control':'private, max-age=86400','Content-Length':fs.statSync(file).size});fs.createReadStream(file).pipe(res);return true;
   }
   if(req.method!=='POST'||!['/api/speech/tts','/api/speech/assess','/api/speech/recognize'].includes(url.pathname)){reply(res,404,{error:'接口不存在'});return true;}
+  if(url.pathname==='/api/speech/recognize'&&url.searchParams.has('live')){
+    if(!configured()){reply(res,503,{error:'语音尚未配置'});return true;}
+    return liveRecognition(req,res,url);
+  }
   const now=Date.now(),key=req.socket.remoteAddress,recent=(hits.get(key)||[]).filter(t=>now-t<60000);
   if(inFlight>=2||recent.length>=30){reply(res,429,{error:'请求较多，请稍后重试'});return true;}recent.push(now);hits.set(key,recent);inFlight++;
   const abort=new AbortController();res.on('close',()=>{if(!res.writableEnded)abort.abort();});

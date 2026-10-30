@@ -15,6 +15,7 @@ import 'secondary_motion.dart';
 import 'speech_client.dart';
 import 'automatic_reader.dart';
 import '../../../features/lesson/domain/course_lexicon.dart';
+import '../../../features/lesson/domain/pronunciation_feedback.dart';
 import 'teaching_math.dart';
 import 'scene_asset_bundle.dart';
 import 'corneal_highlights.dart';
@@ -26,58 +27,27 @@ import 'intent_motion.dart';
 import 'neutral_gaze.dart';
 
 class SceneRuntime extends ChangeNotifier {
-  SceneRuntime(this.controller) {
-    scene = _measuredScene();
+  SceneRuntime(
+    this.controller, {
+    this.presentStage,
+    this.feedbackDelay = const Duration(milliseconds: 1100),
+  }) {
+    if (presentStage == null) scene = _measuredScene();
     controller.attach(command);
     automatic = AutomaticReader(
       speech.endpoint,
-      (state, message) {
-        emit('auto-state', {
-          'session': session,
-          'enabled': automatic.enabled,
-          'message': message,
-        });
-      },
-      (target, data) {
-        final result = data['result'] as Map? ?? {};
-        final accuracy = (result['PronAccuracy'] as num?)?.toDouble();
-        final completion = (result['PronCompletion'] as num?)?.toDouble() ?? 0;
-        final words = (result['Words'] as List? ?? []).whereType<Map>();
-        final low = words
-            .where(
-              (w) =>
-                  w['PronAccuracy'] is num &&
-                  (w['PronAccuracy'] as num) >= 0 &&
-                  (w['PronAccuracy'] as num) < 60,
-            )
-            .toList();
-        final word = low.isEmpty
-            ? ''
-            : low.first['Word']?.toString().toLowerCase() ?? '';
-        final reliable = accuracy != null && accuracy >= 0 && completion >= .6;
-        emit('auto-state', {
-          'session': session,
-          'enabled': automatic.enabled,
-          'message': !reliable
-              ? '这次没有听完整，请再说一次。'
-              : low.isEmpty
-              ? '这次已收到，发音参考：${accuracy.toStringAsFixed(0)} 分。可以继续练习。'
-              : '建议再练 $word。先听一次，再试着说。',
-        });
-        if (reliable &&
-            low.isNotEmpty &&
-            courseLexicon.containsKey(word) &&
-            director?.fruitCourse == true &&
-            director!.branch.isEmpty) {
-          unawaited(
-            _command({
-              'type': 'course-preview',
-              'clip': courseLexicon[word]!.clip,
-              'session': session,
-            }),
-          );
-        }
-      },
+      (state, message) => emit('auto-state', {
+        'session': session,
+        'enabled': automatic.enabled,
+        'state': state,
+        'message': message,
+      }),
+      acceptAssessment,
+      onSignal: (level) =>
+          emit('mic-signal', {'session': session, 'level': level}),
+      onTranscript: (text) =>
+          emit('transcript', {'session': session, 'text': text}),
+      onRecognized: _recognized,
     );
     speech.onPlaybackError = (error) {
       playingAudio = false;
@@ -87,6 +57,212 @@ class SceneRuntime extends ChangeNotifier {
       });
     };
   }
+  Stage? coachingOriginal;
+  String coachingWord = '';
+  int retryCount = 0;
+  void _feedback(
+    String message, {
+    String state = 'listening',
+    List<Map<String, Object>>? words,
+    String? sentence,
+  }) {
+    emit('auto-state', {
+      'session': session,
+      'enabled': automatic.enabled,
+      'state': state,
+      'message': message,
+      'words': ?words,
+      'sentence': ?sentence,
+    });
+  }
+
+  void _recognized(String heard) {
+    final d = director;
+    if (d == null || !d.fruitCourse || d.branch.isNotEmpty) return;
+    final text = heard.toLowerCase();
+    String? action;
+    if (d.stage.id == 'extension_gate') {
+      if (RegExp(r'红|学习|继续|yes|red').hasMatch(text)) action = 'next';
+      if (RegExp(r'复习|跳过|no|skip').hasMatch(text)) action = 'skip';
+    } else {
+      final apple = RegExp(r'apple|苹果').hasMatch(text),
+          banana = RegExp(r'banana|香蕉').hasMatch(text);
+      if (apple != banana) {
+        final word = apple ? 'apple' : 'banana';
+        action = d.stage.id == 'scene_pick'
+            ? 'choose_$word'
+            : d.stage.id == 'phrase_select'
+            ? 'phrase_$word'
+            : word;
+      }
+    }
+    if (action != null && d.stage.options.any((o) => o['id'] == action)) {
+      d.respond(action);
+      unawaited(_enterStage());
+    } else {
+      _feedback('没听清你的选择，可以说水果名称，也可以点图片。');
+    }
+  }
+
+  void acceptAssessment(String target, Map<String, dynamic> data) {
+    final d = director;
+    if (d == null || !d.fruitCourse || !automatic.enabled) return;
+    final stage = d.stage;
+    if (!['listen', 'recall'].contains(stage.phase)) return;
+    final report = PronunciationFeedback(target, data['result'] as Map? ?? {});
+    if (report.passed) {
+      automatic.playing = true;
+      retryCount = 0;
+      _feedback(
+        stage.id.startsWith('coach_') ? '这一小段读好了，接着连起来。' : '读好了，继续！',
+        state: 'success',
+        words: report.words.map((w) => w.toJson()).toList(),
+      );
+      final token = stageGeneration;
+      unawaited(
+        Future<void>.delayed(feedbackDelay, () {
+          if (disposed ||
+              token != stageGeneration ||
+              director != d ||
+              !automatic.enabled) {
+            return;
+          }
+          if (stage.id == 'coach_word') {
+            final original = coachingOriginal!;
+            final chunks = original.segments
+                .where(
+                  (c) =>
+                      RegExp(r"[a-z]+(?:'[a-z]+)?")
+                          .allMatches(c['label']!.toLowerCase())
+                          .any((m) => m[0] == coachingWord),
+                )
+                .toList();
+            if (chunks.isNotEmpty &&
+                chunks.first['label']!.split(' ').length > 1) {
+              _coach(
+                chunks.first['label']!,
+                chunks.first['clip']!,
+                'coach_chunk',
+              );
+              return;
+            }
+            _returnToSentence();
+            return;
+          }
+          if (stage.id == 'coach_chunk') {
+            _returnToSentence();
+            return;
+          }
+          coachingOriginal = null;
+          coachingWord = '';
+          final action = stage.options.any((o) => o['id'] == 'attempt')
+              ? 'attempt'
+              : 'next';
+          d.respond(action);
+          unawaited(_enterStage());
+        }),
+      );
+      return;
+    }
+    retryCount++;
+    final sentence = coachingOriginal?.speechText.isNotEmpty == true
+        ? coachingOriginal!.speechText
+        : target;
+    _feedback(
+      report.message + (retryCount >= 3 ? ' 不着急，随时可以在设置里暂停。' : ''),
+      state: 'correction',
+      words: report.words.map((w) => w.toJson()).toList(),
+      sentence: sentence,
+    );
+    if (!report.reliable) return;
+    final focus = report.focus;
+    if (!stage.id.startsWith('coach_') &&
+        focus != null &&
+        courseLexicon.containsKey(focus.word)) {
+      coachingOriginal = stage;
+      coachingWord = focus.word;
+      _coach(focus.word, courseLexicon[focus.word]!.clip, 'coach_word');
+    } else if (coachingOriginal != null && stage.id.startsWith('coach_')) {
+      _coach(stage.speechText, stage.practiceClip, stage.id);
+    } else {
+      unawaited(_command({'type': 'course-replay', 'session': session}));
+    }
+  }
+
+  void _coach(String target, String clip, String id) {
+    final d = director, original = coachingOriginal;
+    if (d == null || original == null || clip.isEmpty) return;
+    d.branch = [
+      if (id == 'coach_word' && timings.containsKey('coach_$coachingWord'))
+        Stage(
+          'explain',
+          clip: 'coach_$coachingWord',
+          wordId: d.word,
+          chapter: '一起练习',
+          display: target,
+          text: wordGuide[coachingWord] ?? '',
+          picture: original.picture,
+        ),
+      Stage(
+        'demonstrate',
+        clip: clip,
+        wordId: d.word,
+        chapter: '一起练习',
+        display: target,
+        text: wordGuide[coachingWord] ?? '',
+        picture: original.picture,
+      ),
+      Stage(
+        'listen',
+        id: id,
+        wordId: d.word,
+        chapter: '一起练习',
+        display: target,
+        speechText: target,
+        practiceClip: clip,
+        text: wordGuide[coachingWord] ?? '',
+        picture: original.picture,
+        options: const [
+          {'id': 'next', 'label': '继续'},
+        ],
+      ),
+    ];
+    unawaited(_enterStage());
+  }
+
+  void _returnToSentence() {
+    final d = director;
+    if (d == null) return;
+    d.branch = [];
+    _feedback('把刚才的小段放回整句，再完整说一次。', state: 'listening');
+    final original = coachingOriginal!;
+    final clip = original.practiceClip.isNotEmpty
+        ? original.practiceClip
+        : d.word;
+    d.branch = [
+      Stage(
+        'explain',
+        clip: 'coach_sentence',
+        wordId: d.word,
+        display: original.speechText,
+        chapter: '回到整句',
+        text: '把小段放回整句，再完整说一次。',
+      ),
+      Stage(
+        'demonstrate',
+        clip: clip,
+        wordId: d.word,
+        display: original.speechText,
+        chapter: original.chapter,
+        text: original.text,
+        picture: original.picture,
+      ),
+    ];
+    unawaited(_enterStage());
+  }
+
+  final Future<void> Function(Stage)? presentStage;
+  final Duration feedbackDelay;
   final LessonController controller;
   late Scene scene;
   final frameMeter = RenderedFrameMeter();
@@ -192,6 +368,7 @@ class SceneRuntime extends ChangeNotifier {
         'pronunciation-units',
         'course-prompts',
         'fruit-prompts',
+        'coach-prompts',
       ]) {
         final json = jsonDecode(
           await rootBundle.loadString('assets/avatar/audio/$file.json'),
@@ -293,7 +470,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r8-learning',
+        'version': 'scene-0.2.0-r9-voice',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -399,6 +576,18 @@ class SceneRuntime extends ChangeNotifier {
                   rate: (c['rate'] as num? ?? 1).toDouble(),
                   variation: visits++ % 3,
                 );
+          if (c['skip'] == true && director!.fruitCourse) {
+            final d = director!;
+            final stage = d.stage;
+            if (stage.phase == 'listen' || stage.phase == 'recall') {
+              if (stage.id.startsWith('scene_')) {
+                d.index = d.stages.indexWhere((s) => s.id == 'extension_gate');
+              } else {
+                d.index++;
+              }
+            }
+          }
+          if (c['style'] == 'adult') unawaited(automatic.start());
           await _enterStage();
         case 'course-replay':
         case 'course-preview':
@@ -532,7 +721,7 @@ class SceneRuntime extends ChangeNotifier {
           meshes = [];
           secondary = null;
           highlights = null;
-          scene.dispose();
+          if (presentStage == null) scene.dispose();
           scene = _measuredScene();
           frameMeter.reset();
           loaded = false;
@@ -552,12 +741,33 @@ class SceneRuntime extends ChangeNotifier {
     loadingAudio = false;
     currentClip = null;
     cues = [];
+    coachingOriginal = null;
+    coachingWord = '';
+    retryCount = 0;
     await automatic.stop();
     await speech.stop();
   }
 
   Future<void> _enterStage() async {
     final stage = director!.stage, token = ++stageGeneration;
+    if (coachingOriginal != null &&
+        director!.branch.isEmpty &&
+        stage.id != coachingOriginal!.id) {
+      coachingOriginal = null;
+      coachingWord = '';
+      emit('auto-state', {
+        'session': session,
+        'enabled': automatic.enabled,
+        'message': '',
+        'words': <Map<String, Object>>[],
+        'sentence': '',
+      });
+    }
+    if (presentStage != null) {
+      automatic.playing = stage.clip != null;
+      await presentStage!(stage);
+      return;
+    }
     speech.generation++;
     playingAudio = false;
     await speech.player.stop();
@@ -582,15 +792,28 @@ class SceneRuntime extends ChangeNotifier {
     }
     if (disposed || token != stageGeneration || director == null) return;
     phaseStarted = now;
+    if (coachingOriginal == null) {
+      _feedback(
+        '',
+        state: stage.clip == null ? 'listening' : 'model',
+        words: [],
+        sentence: '',
+      );
+    }
+    if (stage.clip == null &&
+        ['listen', 'recall', 'choice'].contains(stage.phase)) {
+      emit('transcript', {'session': session, 'text': ''});
+    }
     String autoText = '', autoKey = '';
-    if (director!.fruitCourse && director!.branch.isEmpty) {
+    if (director!.fruitCourse) {
       if (['listen', 'recall'].contains(stage.phase) &&
           stage.id != 'extension_gate') {
         autoText = stage.speechText.isNotEmpty
             ? stage.speechText
             : director!.word;
         autoKey = stage.id;
-      } else if (stage.phase == 'demonstrate' &&
+      } else if (director!.branch.isEmpty &&
+          stage.phase == 'demonstrate' &&
           director!.index + 1 < director!.stages.length) {
         final next = director!.stages[director!.index + 1];
         if (next.phase == 'listen') {
@@ -601,13 +824,20 @@ class SceneRuntime extends ChangeNotifier {
         }
       }
     }
-    automatic.target(autoText, autoKey);
+    if (director!.fruitCourse &&
+        stage.clip == null &&
+        (stage.phase == 'choice' || stage.id == 'extension_gate')) {
+      autoText = 'choice';
+      autoKey = stage.id;
+    }
+    automatic.target(autoText, autoKey, recognizeOnly: autoText == 'choice');
     automatic.playing = stage.clip != null;
     word = director!.word;
     iteration = stage.iteration;
     emit('lesson-phase', {
       'session': session,
       'phase': stage.phase,
+      'speaking': stage.clip != null,
       'iteration': iteration,
       'symbol': stage.symbol,
       'course': director!.course,
@@ -843,7 +1073,7 @@ class SceneRuntime extends ChangeNotifier {
     unawaited(endedSubscription?.cancel());
     unawaited(automatic.dispose());
     unawaited(speech.dispose());
-    scene.dispose();
+    if (presentStage == null) scene.dispose();
     super.dispose();
   }
 }

@@ -182,7 +182,9 @@ void main() {
         await tester.pump();
         expect(tester.takeException(), isNull);
         expect(find.text('banana'), findsNothing);
-        expect(find.text('我尝试过了'), findsOneWidget);
+        expect(find.text('我尝试过了'), findsNothing);
+        expect(find.text('手动跟读'), findsNothing);
+        expect(find.text('开启自动跟读'), findsNothing);
         c.dispose();
       },
     );

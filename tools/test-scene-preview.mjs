@@ -31,7 +31,7 @@ await check('Tencent synthesis and matching mouth data remain usable',async()=>{
  assert.equal(r.status,200);const speech=await r.json();assert.equal(speech.usable,true);assert.ok(speech.cues.length>0);assert.match(speech.audioUrl,/^\/api\/speech\/audio\/[a-f0-9]{64}\.wav$/);const audio=await get(speech.audioUrl);assert.equal(audio.status,200);await audio.arrayBuffer();
 });
 await check('all shipped teaching voices and word bytes match the boy-voice build',async()=>{
- for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
+ for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts','coach-prompts']) {
   const response=await get(`/scene/assets/assets/avatar/audio/${file}.json`);
   assert.equal(response.status,200);const items=await response.json();
   for(const [key,item] of Object.entries(items)) {

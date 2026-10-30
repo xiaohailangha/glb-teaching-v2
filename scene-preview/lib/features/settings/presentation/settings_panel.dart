@@ -42,6 +42,55 @@ class SettingsPanel extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Text(
+              '课程与麦克风',
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+            Wrap(
+              spacing: 8,
+              children: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    lesson.playCourse();
+                  },
+                  child: const Text('继续课程'),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    lesson.playCourse(restart: true);
+                  },
+                  child: const Text('从头开始'),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    lesson.playCourse();
+                  },
+                  child: const Text('重新连接麦克风'),
+                ),
+              ],
+            ),
+            if (lesson.courseOptions.any(
+              (o) => ['next', 'attempt'].contains(o['id']),
+            ))
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  lesson.playCourse(skip: true);
+                },
+                child: const Text('跳过当前练习（不计通过）'),
+              ),
+            const Text(
+              '点人物重听。语音在练习时用于实时文字和发音评测；打开设置、离开页面或课程结束会关麦。音标参考使用独立成人录音，整词和句子仍为男童。',
+              style: TextStyle(
+                color: Colors.white60,
+                fontSize: 12,
+                height: 1.5,
+              ),
+            ),
+            const SizedBox(height: 20),
+            const Text(
               '画面与流畅度',
               style: TextStyle(fontSize: 16, color: Colors.white),
             ),

@@ -1,3 +1,5 @@
+成人水果课 r9：人物点按重听、自动收音和真实实时文字、逐词纠错及整句达标推进。主屏只保留设置与必要的图片选择，水果使用本地 SVG。入口 https://49.233.179.83/scene/?r=9 。详细记录见 ../docs/flutter-scene/voice-first-r9.txt。
+
 成人水果课 r8：逐词试听、跨课接触标蓝、结课增量统计、外放自动跟读、独立音标参考录音和无滚动学习面板。Web 入口：https://49.233.179.83/scene/?r=8 。实现与限制见 ../docs/flutter-scene/learning-experience-r8.txt。
 
 成人水果课 r7：从单词、短语走到 I want / I want to eat，支持分段试听、自选水果后的自主表达和可跳过的红苹果扩展。课程方案见 ../docs/flutter-scene/curriculum-plan-v1.txt。新版进度使用 adult-fruit-v2；旧课进度保留，不套用到新课。Web 入口：https://49.233.179.83/scene/?r=7 。本轮不更新 Android。

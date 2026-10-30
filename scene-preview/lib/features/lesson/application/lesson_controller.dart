@@ -16,6 +16,9 @@ class LessonController extends ChangeNotifier {
   final vocabulary = VocabularyLedger();
   bool automaticReading = false, automaticStarting = false;
   String automaticFeedback = '', selectedWord = '';
+  String automaticState = '', liveTranscript = '', coachSentence = '';
+  double micLevel = 0;
+  List<Map<String, dynamic>> wordFeedback = [];
   Future<void> _saveVocabulary() async {
     final data = jsonEncode(vocabulary.toJson());
     _saveQueue = _saveQueue.then((_) async {
@@ -202,10 +205,28 @@ class LessonController extends ChangeNotifier {
       diagnostics = {...diagnostics, ...message};
     } else {
       if (message['session'] != session) return;
-      if (event == 'auto-state') {
+      if (event == 'mic-signal') {
+        micLevel = (message['level'] as num?)?.toDouble() ?? 0;
+      } else if (event == 'transcript') {
+        liveTranscript = message['text']?.toString() ?? '';
+      } else if (event == 'auto-state') {
         automaticReading = message['enabled'] == true;
-        automaticStarting = false;
+        if (message['state'] == 'starting') {
+          automaticStarting = true;
+        } else if (automaticReading || message['state'] == 'error') {
+          automaticStarting = false;
+        }
         automaticFeedback = message['message']?.toString() ?? '';
+        automaticState = message['state']?.toString() ?? automaticState;
+        if (message['sentence'] is String) {
+          coachSentence = message['sentence'] as String;
+        }
+        if (message['words'] is List) {
+          wordFeedback = (message['words'] as List)
+              .whereType<Map>()
+              .map((w) => Map<String, dynamic>.from(w))
+              .toList();
+        }
       } else if (event == 'capture') {
         captureState = message['state']?.toString() ?? 'idle';
         if (captureState == 'recording') speechFeedback = '正在听…';
@@ -263,6 +284,7 @@ class LessonController extends ChangeNotifier {
           return;
         }
         lessonPhase = phase!;
+        playing = message['speaking'] == true;
         selectedWord = '';
         speechFeedback = '';
         activeSound = message['symbol']?.toString() ?? '';
@@ -293,7 +315,7 @@ class LessonController extends ChangeNotifier {
           hideAnswer = message['hideAnswer'] == true;
           if (!hideAnswer && phase != 'phoneme') {
             expose(courseDisplay);
-            expose(courseText);
+            expose(courseText.replaceAll(RegExp(r'/[^/]+/'), ''));
           }
           if (courseStep == 'summary') {
             unawaited(_saveVocabulary());
@@ -553,7 +575,11 @@ class LessonController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void playCourse({String style = 'adult', bool restart = false}) {
+  void playCourse({
+    String style = 'adult',
+    bool restart = false,
+    bool skip = false,
+  }) {
     if (!ready || error != null) return;
     if (!const [
       'adult',
@@ -565,6 +591,11 @@ class LessonController extends ChangeNotifier {
       return;
     }
     stop();
+    coachSentence = '';
+    wordFeedback = [];
+    liveTranscript = '';
+    automaticState = 'starting';
+    automaticStarting = true;
     if (restart) courseCheckpoint = null;
     if (style == 'adult') {
       vocabulary.begin(restart: restart || courseCheckpoint == null);
@@ -581,6 +612,7 @@ class LessonController extends ChangeNotifier {
     courseText = '先听声音，再试着读。';
     _send?.call({
       'type': 'course',
+      'skip': skip,
       'style': style,
       'rate': rate,
       'session': session,

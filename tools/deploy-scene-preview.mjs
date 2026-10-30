@@ -53,6 +53,8 @@ echo SCENE_UPLOAD_READY
  for(const [source,target]of [
   ['work/cloud-deploy/scene-preview.tar.gz','glb-scene-preview.tar.gz'],
   ['services/cos-assets.mjs','glb-scene-cos-assets.mjs'],
+  ['services/speech-http.mjs','glb-scene-speech-http.mjs'],
+  ['services/live-recognition.mjs','glb-scene-live-recognition.mjs'],
   ['.secrets/cos-scene-assets.json','glb-scene-assets.json'],
  ])await command('scp',[...ssh,source,`root@${host}:/root/${target}`]);
  console.log('Scene release uploaded.');
@@ -63,6 +65,8 @@ backup=/opt/glb-backups/before-scene-$(date -u +%Y%m%dT%H%M%SZ)
 install -d -m 700 "$backup"
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
 cp /opt/glb-teaching/services/cos-assets.mjs "$backup/cos-assets.mjs"
+cp /opt/glb-teaching/services/speech-http.mjs "$backup/speech-http.mjs"
+if test -f /opt/glb-teaching/services/live-recognition.mjs; then cp /opt/glb-teaching/services/live-recognition.mjs "$backup/live-recognition.mjs"; fi
 if test -f /opt/glb-teaching/.secrets/cos-scene-assets.json; then cp /opt/glb-teaching/.secrets/cos-scene-assets.json "$backup/scene-config.json"; fi
 stage=$(mktemp -d /opt/glb-scene-stage-XXXXXX)
 python3 - "$stage" <<'PY'
@@ -82,12 +86,15 @@ for file in stage.rglob('*'):
     file.chmod(0o755 if file.is_dir() else 0o644)
 stage.chmod(0o755)
 PY
+scene_installed=0
 rollback(){
  trap - ERR
  cp "$backup/nginx.conf" /etc/nginx/sites-available/glb-teaching
  cp "$backup/cos-assets.mjs" /opt/glb-teaching/services/cos-assets.mjs
+ cp "$backup/speech-http.mjs" /opt/glb-teaching/services/speech-http.mjs
+ if test -f "$backup/live-recognition.mjs"; then cp "$backup/live-recognition.mjs" /opt/glb-teaching/services/live-recognition.mjs; fi
  if test -f "$backup/scene-config.json"; then install -o glbapp -g glbapp -m 600 "$backup/scene-config.json" /opt/glb-teaching/.secrets/cos-scene-assets.json; fi
- if test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$stage.failed"; fi
+ if test "$scene_installed" = 1 && test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$stage.failed"; fi
  if test -d "$backup/scene"; then mv "$backup/scene" /opt/glb-teaching/build/web/scene; fi
  systemctl restart glb-teaching
  nginx -t && systemctl reload nginx
@@ -95,9 +102,15 @@ rollback(){
 }
 trap rollback ERR
 backend_changed=0
+if ! cmp -s /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs || ! cmp -s /root/glb-scene-live-recognition.mjs /opt/glb-teaching/services/live-recognition.mjs; then backend_changed=1; fi
+/opt/glb-runtime/node/bin/node --check /root/glb-scene-speech-http.mjs
+/opt/glb-runtime/node/bin/node --check /root/glb-scene-live-recognition.mjs
 if ! cmp -s /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets.mjs || ! cmp -s /root/glb-scene-assets.json /opt/glb-teaching/.secrets/cos-scene-assets.json; then backend_changed=1; fi
 if test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$backup/scene"; fi
 mv "$stage" /opt/glb-teaching/build/web/scene
+scene_installed=1
+install -o glbapp -g glbapp -m 644 /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs
+install -o glbapp -g glbapp -m 644 /root/glb-scene-live-recognition.mjs /opt/glb-teaching/services/live-recognition.mjs
 install -o glbapp -g glbapp -m 644 /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets.mjs
 install -o glbapp -g glbapp -m 600 /root/glb-scene-assets.json /opt/glb-teaching/.secrets/cos-scene-assets.json
 python3 - <<'PY'

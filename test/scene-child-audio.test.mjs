@@ -22,7 +22,7 @@ test('every published course sound and segment resolves to a bundled asset',()=>
 });
 test('teaching words use boy voice and isolated IPA uses attributed standalone reference recordings',()=>{
   let count=0;
-  for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
+  for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts','coach-prompts']) {
     for(const [key,item] of Object.entries(read(file))) {
       if(item.kind==='phoneme') { assert.equal(item.reference,true,key);assert.ok(item.source?.license,key);assert.equal(item.sourceWord,undefined,key); } else assert.equal(item.voice,403008,key);
       assert.equal(item.bundled,true,key);
@@ -41,7 +41,7 @@ test('teaching words use boy voice and isolated IPA uses attributed standalone r
       count++;
     }
   }
-  assert.equal(count,94);
+  assert.equal(count,104);
 });
 test('retired word cuts stay absent and performance retains its authored clock',()=>{
   assert.equal(read('pronunciation-units').group_schwa_l,undefined);
