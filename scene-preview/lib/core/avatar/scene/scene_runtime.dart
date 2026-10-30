@@ -220,16 +220,19 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   void command(Map<String, Object?> data) {
-    final gesture =
-        [
-          'play',
-          'course',
-          'pronunciation',
-          'performance',
-        ].contains(data['type'])
-        ? speech.player.unlockFromGesture()
-        : Future<void>.value();
-    unawaited(_commandAfterGesture(data, gesture));
+    if (![
+      'play',
+      'course',
+      'pronunciation',
+      'performance',
+    ].contains(data['type'])) {
+      // The controller sends stop immediately before a new play command.
+      // Pause now, before the new gesture unlock, so an older queued stop
+      // cannot abort Safari's play promise.
+      unawaited(_command(data));
+      return;
+    }
+    unawaited(_commandAfterGesture(data, speech.player.unlockFromGesture()));
   }
 
   Future<void> _commandAfterGesture(
@@ -276,6 +279,7 @@ class SceneRuntime extends ChangeNotifier {
           await stop();
         case 'play':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           word = c['word'] as String;
           mode = 'lesson';
@@ -289,6 +293,7 @@ class SceneRuntime extends ChangeNotifier {
           await _enterStage();
         case 'course':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           word = 'apple';
           mode = 'course';
@@ -300,6 +305,7 @@ class SceneRuntime extends ChangeNotifier {
           await _enterStage();
         case 'pronunciation':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           word = c['word'] as String;
           mode = 'lesson';
@@ -327,6 +333,7 @@ class SceneRuntime extends ChangeNotifier {
           if (next != null) await _enterStage();
         case 'performance':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           word = 'performance';
           mode = 'performance';
@@ -334,11 +341,13 @@ class SceneRuntime extends ChangeNotifier {
           await _play('performance', 1, curated: true);
         case 'acting-story':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           mode = 'story';
           phaseStarted = now;
         case 'emotion':
           await stop();
+          if (c['session'] != controller.session) return;
           session = c['session'] as int;
           mode = 'emotion';
           emotionStarted = now;

@@ -1,6 +1,6 @@
 # Flutter Scene 人物教学验证
 
-独立测试入口：https://49.233.179.83/scene/ ，直接访问，无账号密码。根目录应用及 https://49.233.179.83/ 保留原 Flutter + Three.js 版本。Android 模型继续内置安装包。
+独立测试入口：[Flutter Scene 测试页](https://49.233.179.83/scene/)，直接访问，无账号密码。根目录应用及[原版测试页](https://49.233.179.83/)保留原 Flutter + Three.js 版本。Android 模型继续内置安装包。
 
 本目录使用 Flutter **3.47.9** / Dart **3.13.7**，`flutter_scene` **0.24.3**。SDK 独立放在项目 `work/flutter-scene-sdk`，不升级原来的 `D:\flutter`。Web 后端为 flutter_scene 的 WebGL2；原生后端为 Flutter GPU，不能用 Web 测试结果证明原生 Vulkan/Metal 的性能。
 

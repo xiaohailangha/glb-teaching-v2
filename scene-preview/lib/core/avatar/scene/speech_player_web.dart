@@ -18,9 +18,9 @@ class SpeechPlayer {
   final _audio = web.HTMLAudioElement();
   final _states = StreamController<ProcessingState>.broadcast();
   late final JSFunction _onEnded = ((web.Event _) {
-    _states.add(ProcessingState.completed);
+    // Discard an ended event queued for a source that has been replaced.
+    if (_audio.ended) _states.add(ProcessingState.completed);
   }).toJS;
-  Future<void>? _unlocking;
   bool _unlocked = false;
 
   Stream<ProcessingState> get processingStateStream => _states.stream;
@@ -39,16 +39,11 @@ class SpeechPlayer {
   /// Called synchronously from the original tap, before any network request.
   Future<void> unlockFromGesture() {
     if (_unlocked) return Future.value();
-    if (_unlocking != null) return _unlocking!;
-    return _unlocking = _audio
-        .play()
-        .toDart
-        .then((_) {
-          _unlocked = true;
-        })
-        .whenComplete(() {
-          _unlocking = null;
-        });
+    // A new tap gets a new play promise, even if a previous tap was cancelled
+    // before playback began. Reusing an aborted promise would reject it too.
+    return _audio.play().toDart.then((_) {
+      _unlocked = true;
+    });
   }
 
   Future<void> setAsset(String path) => setUrl(_assetUrl(path));

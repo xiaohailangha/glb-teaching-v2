@@ -13,7 +13,8 @@
     "Attempt produced a thank-you response rather than a score",
     "Happy animation visibly changed face and body pose",
     "Surprised emotion and return to ordinary teaching were selectable",
-    "Final r2 build rendered successfully and showed version plus frame counter without console errors"
+    "Final r2 build rendered successfully and showed version plus frame counter without console errors",
+    "Fresh desktop page: the first phoneme tap played and ended without playback errors after cancellation-order fix"
   ],
   "cacheReload": {
     "responseCount": 31,
@@ -28,7 +29,7 @@
   "phonePerformanceVerified": false,
   "microphoneRecordingVerified": false,
   "finalBuild": "scene-0.2.0-r2",
-  "finalBuildCheckedAt": "2026-10-30T04:48:02.074Z",
+  "finalBuildCheckedAt": "2026-10-30T05:10:25.780Z",
   "renderedFrameCounter": {
     "desktopObservedFps": 60,
     "source": "New screen frames with draw calls; excludes held GPU frames",
