@@ -94,6 +94,8 @@ rollback(){
  echo SCENE_RELEASE_ROLLED_BACK >&2
 }
 trap rollback ERR
+backend_changed=0
+if ! cmp -s /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets.mjs || ! cmp -s /root/glb-scene-assets.json /opt/glb-teaching/.secrets/cos-scene-assets.json; then backend_changed=1; fi
 if test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$backup/scene"; fi
 mv "$stage" /opt/glb-teaching/build/web/scene
 install -o glbapp -g glbapp -m 644 /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets.mjs
@@ -120,7 +122,7 @@ if 'location = /api/assets/scene-manifest' not in s:
     p.write_text(s.replace(marker,block+marker))
 PY
 nginx -t
-systemctl restart glb-teaching
+if test "$backend_changed" = 1; then systemctl restart glb-teaching; fi
 curl --retry 5 --retry-connrefused --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/speech/status >/dev/null
 curl --retry 3 --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/assets/scene-manifest >/dev/null
 systemctl reload nginx

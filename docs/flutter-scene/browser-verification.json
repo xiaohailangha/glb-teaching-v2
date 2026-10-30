@@ -1,0 +1,38 @@
+{
+  "origin": "https://49.233.179.83/scene/",
+  "checkedAt": "2026-10-30T04:32:59.237Z",
+  "browser": "Hidden desktop Chromium; responsive viewport 926 x 428",
+  "checks": [
+    "Character rendered with no console warnings or errors",
+    "Standalone ae phoneme entered its own playback phase",
+    "Rapid p then el clicks ended in the el phase",
+    "Adult apple course reached the explicit listening-choice stage",
+    "Wrong answer returned to choice after support",
+    "Correct choice moved to recall",
+    "Help returned to recall without grading",
+    "Attempt produced a thank-you response rather than a score",
+    "Happy animation visibly changed face and body pose",
+    "Surprised emotion and return to ordinary teaching were selectable",
+    "Final r2 build rendered successfully and showed version plus frame counter without console errors"
+  ],
+  "cacheReload": {
+    "responseCount": 31,
+    "sceneManifestStatus": 200,
+    "cosPartRequests": 0,
+    "eventBufferTruncated": false
+  },
+  "audioResponseStatuses": [
+    200,
+    206
+  ],
+  "phonePerformanceVerified": false,
+  "microphoneRecordingVerified": false,
+  "finalBuild": "scene-0.2.0-r2",
+  "finalBuildCheckedAt": "2026-10-30T04:48:02.074Z",
+  "renderedFrameCounter": {
+    "desktopObservedFps": 60,
+    "source": "New screen frames with draw calls; excludes held GPU frames",
+    "gpuTiming": false,
+    "phoneVerified": false
+  }
+}

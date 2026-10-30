@@ -2,7 +2,7 @@
 
 交接日期：2026-10-30。用途：用户弃用过长的旧对话，后续在新对话继续整个项目开发，不只是部署。
 
-**Flutter Scene 后续验证：用户明确要求尝试新渲染器、先 Web 再 Android。独立实现位于 `scene-preview/`，线上入口 https://49.233.179.83/scene/ ，WebGL2 网页后端；原生计划使用 Flutter GPU。独立 SDK 3.47.9，不升级旧 SDK；模型继续内置原生包。已通过 18 项 Flutter 测试、341 个表演曲线采样对照、analyze、Web release，以及原 55 项 Node 回归。详见 `scene-preview/README.md` 和 `docs/flutter-scene/web-verification.json`。旧根页面保留。新引擎 Android 构建、手机 FPS/发热及真实录音尚未验证，不能与旧 0.1.1 APK 的记录混淆。**
+**Flutter Scene 后续验证：用户明确要求尝试新渲染器、先 Web 再 Android。独立实现位于 `scene-preview/`，线上入口 https://49.233.179.83/scene/ ，WebGL2 网页后端；原生计划使用 Flutter GPU。独立 SDK 3.47.9，不升级旧 SDK；模型继续内置原生包。已通过 21 项 Flutter 测试、341 个表演曲线采样对照、analyze、Web release，以及原 55 项 Node 回归。r2 帧率只计实际新绘制帧，剔除 GPU 复用上一帧的情况。详见 `scene-preview/README.md` 和 `docs/flutter-scene/web-verification.json`。旧根页面保留。新引擎 Android 构建、手机 FPS/发热及真实录音尚未验证，不能与旧 0.1.1 APK 的记录混淆。**
 
 **Git 维护：用户选择新建私有仓库保存本项目，目标 `xiaohailangha/glb-teaching-v2`（已确认 Private），不改公开 `mouth_teacher`。main 为旧基线，feat/flutter-scene 为新验证实现；GLB 用 Git LFS，凭据/SDK/生成产物不入库。是否已同步以远端 refs 与 LFS 对象验证为准，不仅看本地 commit。**
 

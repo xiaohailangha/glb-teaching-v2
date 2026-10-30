@@ -38,7 +38,9 @@ git clone --depth 1 --branch 3.47.9 https://github.com/flutter/flutter.git work/
 
 vendored 引擎补丁把 GPU 活跃表情预算从 8 提至 64、贴图维度上限从 2048 提至 4096，使用 RGBA16F 存储位置/法线变形，并拒绝本模型意外退回 CPU 变形。补丁清单见 `vendor/flutter_scene/LOCAL_PATCHES.md`。
 
-已通过 18 项 Flutter 测试（含 341 个原 JS 表演曲线采样对照）、analyze、Web release 构建；根目录 55 项 Node 回归测试通过。线上检查见 `../docs/flutter-scene/web-verification.json`。桌面画面、配音与待跟读状态已观察；不能据此宣称 S98Pro 或 iPhone 的发热/帧率已改善。
+已通过 21 项 Flutter 测试（含 341 个原 JS 表演曲线采样对照）、analyze、Web release 构建；根目录 55 项 Node 回归测试通过。线上检查见 `../docs/flutter-scene/web-verification.json` 和 `browser-verification.json`。桌面画面、配音与待跟读状态已观察；不能据此宣称 S98Pro 或 iPhone 的发热/帧率已改善。
+
+`scene-0.2.0-r2` 的帧率取自引擎实际产生绘制的屏幕帧，GPU 复用上一帧、等待资源或只有 Ticker 回调时不计入。计数不是 GPU 耗时，原生还需 profile/真机验证。
 
 先完成手机 Web 对比，再打本目录 Android 包。尚无此渲染器的 Android release 构建或真机录音/性能通过记录。当前 `android/` 已声明 Internet、按需麦克风及 Flutter GPU；测试包使用单独应用 ID，便于以后与旧包并存。
 

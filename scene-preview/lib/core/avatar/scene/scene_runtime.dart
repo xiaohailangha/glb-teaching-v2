@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -15,9 +16,11 @@ import 'speech_client.dart';
 import 'teaching_math.dart';
 import 'scene_asset_bundle.dart';
 import 'corneal_highlights.dart';
+import 'rendered_frame_meter.dart';
 
 class SceneRuntime extends ChangeNotifier {
   SceneRuntime(this.controller) {
+    scene = _measuredScene();
     controller.attach(command);
     speech.onPlaybackError = (error) {
       playingAudio = false;
@@ -28,7 +31,11 @@ class SceneRuntime extends ChangeNotifier {
     };
   }
   final LessonController controller;
-  Scene scene = Scene();
+  late Scene scene;
+  final frameMeter = RenderedFrameMeter();
+  Scene _measuredScene() => _MeasuredScene(() {
+    if (loaded && !disposed) frameMeter.record(now);
+  });
   Node? model;
   final speech = SpeechClient(), motion = NaturalMotion();
   final stopwatch = Stopwatch()..start();
@@ -39,7 +46,6 @@ class SceneRuntime extends ChangeNotifier {
   AnimationClip? teachingClip, emotionClip;
   List<Node> meshes = [];
   final faceSmoothed = <String, double>{};
-  final samples = <double>[];
   StreamSubscription? endedSubscription;
   bool loaded = false,
       disposed = false,
@@ -49,12 +55,10 @@ class SceneRuntime extends ChangeNotifier {
   String loading = '正在准备 Flutter Scene…', quality = 'high';
   double frameDt = .016,
       aspect = 16 / 9,
-      lastTick = 0,
       lastStats = 0,
       lastProgress = 0,
       phaseStarted = 0,
       emotionStarted = 0;
-  double sampleWindow = 0;
   double targetFps = 120, playRate = 1;
   int session = 0,
       stageGeneration = 0,
@@ -204,7 +208,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0',
+        'version': 'scene-0.2.0-r2',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -378,7 +382,8 @@ class SceneRuntime extends ChangeNotifier {
           secondary = null;
           highlights = null;
           scene.dispose();
-          scene = Scene();
+          scene = _measuredScene();
+          frameMeter.reset();
           loaded = false;
           notifyListeners();
           await init();
@@ -491,17 +496,6 @@ class SceneRuntime extends ChangeNotifier {
     if (!loaded || disposed) return;
     frameDt = dt.clamp(0.0, .06);
     final at = now;
-    if (lastTick > 0) {
-      final delta = at - lastTick;
-      if (delta > 0) {
-        samples.add(delta);
-        sampleWindow += delta;
-        while (samples.length > 1 && sampleWindow - samples.first > 3) {
-          sampleWindow -= samples.removeAt(0);
-        }
-      }
-    }
-    lastTick = at;
     final speaking = playingAudio && !loadingAudio;
     motion.update(
       frameDt,
@@ -591,8 +585,8 @@ class SceneRuntime extends ChangeNotifier {
       });
       lastProgress = at;
     }
-    if (at - lastStats > 3 && samples.isNotEmpty) {
-      final fps = samples.length / samples.fold<double>(0, (a, b) => a + b);
+    if (at - lastStats > 3) {
+      final fps = frameMeter.fps(at);
       emit('stats', {
         'fps': double.parse(fps.toStringAsFixed(1)),
         'runtime': kIsWeb
@@ -606,6 +600,7 @@ class SceneRuntime extends ChangeNotifier {
         'targetFps': targetFps,
         'renderScale': scene.renderScale * scene.adaptiveRenderScale,
         'sourceClock': 'audio playback position',
+        'fpsSource': 'new scene draws, excluding held GPU frames',
         'modelBytes': 153334024,
       });
       lastStats = at;
@@ -641,9 +636,7 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   void resetFrameSamples() {
-    samples.clear();
-    sampleWindow = 0;
-    lastTick = 0;
+    frameMeter.reset();
   }
 
   @override
@@ -653,6 +646,27 @@ class SceneRuntime extends ChangeNotifier {
     unawaited(speech.dispose());
     scene.dispose();
     super.dispose();
+  }
+}
+
+final class _MeasuredScene extends Scene {
+  _MeasuredScene(this.onRenderedFrame);
+  final void Function() onRenderedFrame;
+  @override
+  void renderViews(
+    List<RenderView> views,
+    ui.Canvas canvas, {
+    ui.Rect? region,
+    double? pixelRatio,
+  }) {
+    final before = renderStats.frameCount;
+    super.renderViews(views, canvas, region: region, pixelRatio: pixelRatio);
+    final frame = renderStats.latest;
+    if (renderStats.frameCount > before &&
+        frame != null &&
+        frame.views.any((view) => !view.offscreen && view.counters.draws > 0)) {
+      onRenderedFrame();
+    }
   }
 }
 

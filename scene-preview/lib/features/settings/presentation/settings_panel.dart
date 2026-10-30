@@ -89,7 +89,7 @@ class SettingsPanel extends StatelessWidget {
               ),
             const SizedBox(height: 8),
             Text(
-              'Flutter Scene 测试版 · ${lesson.diagnostics['runtime'] ?? ''}',
+              '${lesson.diagnostics['version'] ?? 'Flutter Scene 测试版'} · ${lesson.diagnostics['runtime'] ?? ''}',
               style: const TextStyle(color: Colors.white54, fontSize: 12),
             ),
             const SizedBox(height: 8),
