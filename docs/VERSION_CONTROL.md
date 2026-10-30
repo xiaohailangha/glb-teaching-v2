@@ -6,6 +6,8 @@
 
 提交范围包括客户端、语音服务端源码、测试、部署工具和项目文档。`.secrets`、本地环境文件、私钥、SDK、依赖缓存、打包产物、临时录音/视频、原始 Blender 工程均不提交。GLB 成品用 Git LFS 版本化，克隆时需安装 Git LFS 并执行 `git lfs pull`。
 
+恢复后执行 `node tools/install-git-checks.mjs` 安装本仓库的暂存区密钥检查；它保留 Git LFS 的 pre-push hook，遇到其他已有 pre-commit hook 会停止而不覆盖。检查工具批量读取 Git 对象，不逐文件启动 Git，原始密钥值不写入输出。
+
 密钥仍通过原有本地 `.secrets` 文件或服务端环境变量配置；不要将其放入前端或 Git。首次提交和后续推送需先扫描已暂存文件，不只依赖忽略列表。
 
-Flutter Scene 验证使用项目内独立 SDK，现有 `D:\flutter` 保持原版本。运行说明随验证完成更新；`work/` 中的本地 SDK 与临时工具不属于代码仓库。
+Flutter Scene 验证使用项目内独立 SDK，现有 `D:\flutter` 保持原版本。恢复、构建和发布说明见 `scene-preview/README.md`；`work/` 中的本地 SDK 与临时工具不属于代码仓库。

@@ -47,6 +47,8 @@ app.*.map.json
 # Server-only credentials, cloud audio cache, and local recordings
 /.secrets/
 /.env*
+**/.env*
+**/.secrets/
 /work/tencent-cache/
 /work/tencent-private/
 /node_modules/

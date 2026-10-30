@@ -1,0 +1,177 @@
+{
+  "hair": [
+    {
+      "name": "MSTR-Hair",
+      "parent": null
+    },
+    {
+      "name": "FK-Hairside_1.R",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hairside_2.R",
+      "parent": "FK-Hairside_1.R"
+    },
+    {
+      "name": "FK-Hairside_1.L",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hairside_2.L",
+      "parent": "FK-Hairside_1.L"
+    },
+    {
+      "name": "FK-Hair_mullet.L",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_mullet2.L",
+      "parent": "FK-Hair_mullet.L"
+    },
+    {
+      "name": "FK-Hair_mullet2",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_mullet2_1",
+      "parent": "FK-Hair_mullet2"
+    },
+    {
+      "name": "FK-Hair_mullet.R",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_mullet2.R",
+      "parent": "FK-Hair_mullet.R"
+    },
+    {
+      "name": "FK-Hair_front1",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front1_1",
+      "parent": "FK-Hair_front1"
+    },
+    {
+      "name": "FK-Hair_front1_2",
+      "parent": "FK-Hair_front1_1"
+    },
+    {
+      "name": "FK-Hair_front1_3",
+      "parent": "FK-Hair_front1_2"
+    },
+    {
+      "name": "FK-Hair_front2",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front2_1",
+      "parent": "FK-Hair_front2"
+    },
+    {
+      "name": "FK-Hair_front2_2",
+      "parent": "FK-Hair_front2_1"
+    },
+    {
+      "name": "FK-Hair_front2_3",
+      "parent": "FK-Hair_front2_2"
+    },
+    {
+      "name": "FK-Hair_front3",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front3_1",
+      "parent": "FK-Hair_front3"
+    },
+    {
+      "name": "FK-Hair_front3_2",
+      "parent": "FK-Hair_front3_1"
+    },
+    {
+      "name": "FK-Hair_front4",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front4_1",
+      "parent": "FK-Hair_front4"
+    },
+    {
+      "name": "FK-Hair_front4_2",
+      "parent": "FK-Hair_front4_1"
+    },
+    {
+      "name": "FK-Hair_front4_3",
+      "parent": "FK-Hair_front4_2"
+    },
+    {
+      "name": "FK-Hair_front5",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front5_1",
+      "parent": "FK-Hair_front5"
+    },
+    {
+      "name": "FK-Hair_front5_2",
+      "parent": "FK-Hair_front5_1"
+    },
+    {
+      "name": "FK-Hair_front6",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front6_1",
+      "parent": "FK-Hair_front6"
+    },
+    {
+      "name": "FK-Hair_front6_2",
+      "parent": "FK-Hair_front6_1"
+    },
+    {
+      "name": "FK-Hair_front8",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front8_1",
+      "parent": "FK-Hair_front8"
+    },
+    {
+      "name": "FK-Hair_front8_2",
+      "parent": "FK-Hair_front8_1"
+    },
+    {
+      "name": "FK-Hair_front7",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front7_1",
+      "parent": "FK-Hair_front7"
+    },
+    {
+      "name": "P-Hairtop.L",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hairtop.L",
+      "parent": "P-Hairtop.L"
+    },
+    {
+      "name": "FK-Hairtop.R",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front16",
+      "parent": "MSTR-Hair"
+    },
+    {
+      "name": "FK-Hair_front16_1",
+      "parent": "FK-Hair_front16"
+    }
+  ],
+  "eyes": [
+    "FK-Eye.L",
+    "FK-Eye.R"
+  ],
+  "head": "DEF-Head"
+}

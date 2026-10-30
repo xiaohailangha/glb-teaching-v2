@@ -2,6 +2,10 @@
 
 交接日期：2026-10-30。用途：用户弃用过长的旧对话，后续在新对话继续整个项目开发，不只是部署。
 
+**Flutter Scene 后续验证：用户明确要求尝试新渲染器、先 Web 再 Android。独立实现位于 `scene-preview/`，线上入口 https://49.233.179.83/scene/ ，WebGL2 网页后端；原生计划使用 Flutter GPU。独立 SDK 3.47.9，不升级旧 SDK；模型继续内置原生包。已通过 18 项 Flutter 测试、341 个表演曲线采样对照、analyze、Web release，以及原 55 项 Node 回归。详见 `scene-preview/README.md` 和 `docs/flutter-scene/web-verification.json`。旧根页面保留。新引擎 Android 构建、手机 FPS/发热及真实录音尚未验证，不能与旧 0.1.1 APK 的记录混淆。**
+
+**Git 维护：用户选择新建私有仓库保存本项目，目标 `xiaohailangha/glb-teaching-v2`（已确认 Private），不改公开 `mouth_teacher`。main 为旧基线，feat/flutter-scene 为新验证实现；GLB 用 Git LFS，凭据/SDK/生成产物不入库。是否已同步以远端 refs 与 LFS 对象验证为准，不仅看本地 commit。**
+
 **Android 最新状态：已为用户 S98Pro / Android 12 生成并发布 0.1.1+2 ARM64 release 测试包，下载 https://49.233.179.83/downloads/glb-teaching-0.1.1-arm64.apk 。模型内置，补上原生腾讯语音 HTTPS 转发及点击跟读后的 Android 麦克风权限；20 项 Flutter 测试、analyze、release 构建、签名和包内密钥排查通过。仍是 Flutter + WebView + Three.js，未迁移 flutter_scene；ADB 设备 offline，尚无安卓真机性能或录音验证。详情 docs/cloud-deployment/android-preview-2026-10-30.md。用户另报告 iPhone 约 34 FPS 并发热，仍需继续性能优化。**
 
 **iPhone 后续修复：用户的 iPhone 13 Pro Max 在人物出现后整页循环重载；已上线 iOS 内存预算和移除启动自动刷新，55 个本地测试、15 组线上回归通过，桌面浏览器手机代码分支渲染通过。尚待原手机复测，不能宣称已在真机证实修好或把内存假设当成确诊。详见 docs/cloud-deployment/ios-reload-fix-2026-10-30.md。**
