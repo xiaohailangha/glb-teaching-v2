@@ -12,6 +12,26 @@ Map word(String text, {double score = 90, int tag = 0}) => {
   'MatchTag': tag,
 };
 void main() {
+  test('weak function words pass in context but missing articles never do', () {
+    for (final tag in [0, 2, 3, 4]) {
+      final report = PronunciationFeedback(
+        'an apple',
+        result([word('an', score: 55, tag: tag), word('apple')]),
+      );
+      expect(report.passed, tag == 0);
+    }
+    expect(
+      PronunciationFeedback('an', result([word('an', score: 55)])).passed,
+      isFalse,
+    );
+    expect(
+      PronunciationFeedback(
+        'an apple',
+        result([word('an'), word('apple', score: 55)]),
+      ).passed,
+      isFalse,
+    );
+  });
   test('a full sentence passes only with complete matching words', () {
     final rows = [word('I'), word('want'), word('an'), word('apple')];
     expect(

@@ -1,10 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import {readWave} from '../services/tencent-speech.mjs';
 
 const root=new URL('../scene-preview/assets/avatar/audio/',import.meta.url);
 const read=name=>JSON.parse(fs.readFileSync(new URL(name+'.json',root)));
+test('short word repairs retain validated sounds and exact approved bytes',()=>{
+ const manifest=read('fruit-prompts');
+ for(const [key,phones] of [['part_i',['ay']],['word_a',['ah']],['word_an',['ah','n']],['word_to',['t','uw']]]){
+  const item=manifest[key];
+  assert.deepEqual(item.contextWord.phones,phones);
+  assert.equal(item.sha256,crypto.createHash('sha256').update(fs.readFileSync(new URL(key+'.wav',root))).digest('hex'));
+ }
+ assert.equal(manifest.part_i.contextWord.source,'standalone-I');
+});
 
 test('every published course sound and segment resolves to a bundled asset',()=>{
  const course=JSON.parse(fs.readFileSync(new URL('../courses/adult-fruit.json',root)));

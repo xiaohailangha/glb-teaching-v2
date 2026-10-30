@@ -6,8 +6,8 @@ const courseLexicon = <String, ({String clip, String ipa, String meaning})>{
   'want': (clip: 'part_want', ipa: '/wɑːnt/', meaning: '想要'),
   'eat': (clip: 'part_eat', ipa: '/iːt/', meaning: '吃'),
   'red': (clip: 'part_red', ipa: '/red/', meaning: '红色'),
-  'a': (clip: 'word_a', ipa: '/eɪ/；弱读 /ə/', meaning: '一个；句子里通常弱读'),
-  'an': (clip: 'word_an', ipa: '/æn/；弱读 /ən/', meaning: '一个；句子里通常弱读'),
+  'a': (clip: 'word_a', ipa: '/ə/；强读 /eɪ/', meaning: '一个；这里示范句中弱读'),
+  'an': (clip: 'word_an', ipa: '/ən/；强读 /æn/', meaning: '一个；这里示范句中弱读'),
   'to': (
     clip: 'word_to',
     ipa: '/tuː/；弱读 /tə/',

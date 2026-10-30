@@ -44,7 +44,12 @@ class PronunciationFeedback {
           ? 'wrong'
           : tag != 0 || score < 0
           ? 'uncertain'
-          : score < 65
+          // Reduced function words are evaluated in context. Missing/wrong
+          // words still fail; a recognized weak vowel need not be stressed.
+          : score <
+                (expected.length > 1 && const {'a', 'an', 'to'}.contains(word)
+                    ? 50
+                    : 65)
           ? 'practice'
           : 'good';
       final phones = (row?['PhoneInfos'] as List? ?? [])

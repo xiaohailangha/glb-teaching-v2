@@ -174,6 +174,23 @@ void main() {
       await tester.pumpAndSettle();
       expect(tester.takeException(), isNull);
       expect(find.byType(Scrollable), findsNothing);
+      // A stale choice/extension phase must not expose legacy control actions.
+      c.lessonPhase = 'choice';
+      c.courseStep = 'extension_gate';
+      c.courseOptions = [
+        {'id': 'next', 'label': '继续'},
+        {'id': 'attempt', 'label': '我读好了'},
+      ];
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: AdultCoursePanel(key: UniqueKey(), controller: c),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text('继续'), findsNothing);
+      expect(find.text('我读好了'), findsNothing);
       await tester.tap(find.text('want'));
       expect(commands.last['clip'], 'part_want');
       expect(

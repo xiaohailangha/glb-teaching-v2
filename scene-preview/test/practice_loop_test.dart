@@ -25,6 +25,46 @@ Map<String, dynamic> scored(String text, {String? bad}) => {
 };
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  test(
+    'article correction uses a phrase and still requires the full sentence',
+    () async {
+      final c = LessonController();
+      final runtime = SceneRuntime(
+        c,
+        presentStage: (_) async {},
+        feedbackDelay: Duration.zero,
+      );
+      final rows =
+          (jsonDecode(
+                File('assets/avatar/courses/adult-fruit.json')
+                    .readAsStringSync(),
+              ) as Map)['stages']
+              as List;
+      final d = TeachingDirector.fruit(rows);
+      d.index = d.stages.indexWhere((s) => s.id == 'eat_apple');
+      runtime.director = d;
+      runtime.automatic.enabled = true;
+      final start = d.index;
+      runtime.acceptAssessment(
+        'I want to eat an apple.',
+        scored('I want to eat an apple.', bad: 'an'),
+      );
+      expect(d.branch.last.id, 'coach_chunk');
+      expect(d.branch.last.speechText, 'an apple');
+      while (d.stage.clip != null) {
+        d.advance();
+      }
+      runtime.acceptAssessment('an apple', scored('an apple'));
+      await Future<void>.delayed(const Duration(milliseconds: 10));
+      while (d.stage.clip != null) {
+        d.advance();
+      }
+      expect(d.index, start);
+      expect(d.stage.id, 'eat_apple');
+      runtime.dispose();
+      c.dispose();
+    },
+  );
   test('correction rehearses word, phrase and full sentence; only full pass advances', () async {
     final c = LessonController();
     final runtime = SceneRuntime(

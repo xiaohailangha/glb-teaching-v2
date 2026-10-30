@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {teachingAudio,cacheDir,readWave,pcmWave} from '../services/tencent-speech.mjs';
+import {repairContextWords} from './repair-context-words.mjs';
 const audioDir='scene-preview/assets/avatar/audio';
 const prompts={
  fruit_intro:'今天认识苹果和香蕉。先听，再选择，最后试着自己说。随时可以暂停。',
@@ -99,3 +100,4 @@ for(const [key,text] of Object.entries(prompts)) {
  fs.writeFileSync(path.join(audioDir,'fruit-prompts.json'),JSON.stringify(result,null,2)+'\n');
  console.log(`${key}: ${result[key].duration.toFixed(2)}s`);
 }
+await repairContextWords();

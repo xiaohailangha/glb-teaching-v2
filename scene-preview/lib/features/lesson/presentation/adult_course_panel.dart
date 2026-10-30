@@ -29,9 +29,25 @@ class AdultCoursePanel extends StatelessWidget {
           ? c.coachSentence
           : c.courseDisplay;
       final entry = courseLexicon[c.courseDisplay.toLowerCase()];
-      final choice =
-          c.lessonPhase == 'choice' && c.courseOptions.isNotEmpty ||
-          c.courseStep == 'extension_gate';
+      // Only actual answer cards may enter the screen. Legacy transition
+      // actions can still exist in director data but must never flash here.
+      final visibleOptions = c.courseOptions
+          .where(
+            (o) => c.courseStep == 'extension_gate'
+                ? const {'next', 'skip'}.contains(o['id']) &&
+                      const {'学习红苹果', '先去复习'}.contains(o['label'])
+                : c.lessonPhase == 'choice' &&
+                      const {
+                        'apple',
+                        'banana',
+                        'choose_apple',
+                        'choose_banana',
+                        'phrase_apple',
+                        'phrase_banana',
+                      }.contains(o['id']),
+          )
+          .toList();
+      final choice = visibleOptions.isNotEmpty;
       final showEnglish = !c.hideAnswer || c.coachSentence.isNotEmpty;
       final body = Column(
         mainAxisSize: MainAxisSize.min,
@@ -132,9 +148,7 @@ class AdultCoursePanel extends StatelessWidget {
                   spacing: 12,
                   runSpacing: 8,
                   children: [
-                    for (final option in c.courseOptions.where(
-                      (o) => !['help', 'reveal'].contains(o['id']),
-                    ))
+                    for (final option in visibleOptions)
                       Semantics(
                         button: true,
                         label: option['label'],
@@ -177,13 +191,13 @@ class AdultCoursePanel extends StatelessWidget {
                 c.automaticState == 'success')
               AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
-                padding: const EdgeInsets.all(12),
+                padding: c.automaticState == 'success'
+                    ? EdgeInsets.zero
+                    : const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color:
-                      (c.automaticState == 'success'
-                              ? const Color(0xFFBDE5DD)
-                              : const Color(0xFFFFD1A2))
-                          .withValues(alpha: .12),
+                  color: c.automaticState == 'success'
+                      ? Colors.transparent
+                      : const Color(0xFFFFD1A2).withValues(alpha: .12),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Text(

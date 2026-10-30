@@ -114,7 +114,7 @@ class SceneRuntime extends ChangeNotifier {
       automatic.playing = true;
       retryCount = 0;
       _feedback(
-        stage.id.startsWith('coach_') ? '这一小段读好了，接着连起来。' : '读好了，继续！',
+        stage.id.startsWith('coach_') ? '这一小段可以了。' : '很好！',
         state: 'success',
         words: report.words.map((w) => w.toJson()).toList(),
       );
@@ -181,7 +181,21 @@ class SceneRuntime extends ChangeNotifier {
         courseLexicon.containsKey(focus.word)) {
       coachingOriginal = stage;
       coachingWord = focus.word;
-      _coach(focus.word, courseLexicon[focus.word]!.clip, 'coach_word');
+      if (const {'a', 'an', 'to'}.contains(focus.word)) {
+        // A brief reduced word is not a useful standalone scoring gate.
+        final chunks = stage.segments
+            .where(
+              (c) => c['label']!.toLowerCase().split(' ').contains(focus.word),
+            )
+            .toList();
+        if (chunks.isNotEmpty) {
+          _coach(chunks.first['label']!, chunks.first['clip']!, 'coach_chunk');
+        } else {
+          _coach(stage.speechText, stage.practiceClip, 'coach_chunk');
+        }
+      } else {
+        _coach(focus.word, courseLexicon[focus.word]!.clip, 'coach_word');
+      }
     } else if (coachingOriginal != null && stage.id.startsWith('coach_')) {
       _coach(stage.speechText, stage.practiceClip, stage.id);
     } else {
@@ -193,7 +207,7 @@ class SceneRuntime extends ChangeNotifier {
     final d = director, original = coachingOriginal;
     if (d == null || original == null || clip.isEmpty) return;
     d.branch = [
-      if (id == 'coach_word' && timings.containsKey('coach_$coachingWord'))
+      if (timings.containsKey('coach_$coachingWord'))
         Stage(
           'explain',
           clip: 'coach_$coachingWord',
@@ -470,7 +484,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r9-voice',
+        'version': 'scene-0.2.0-r10-short-words',
       });
       notifyListeners();
     } catch (e, stack) {

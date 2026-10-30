@@ -1843,7 +1843,7 @@
     "text": "a",
     "voice": 403008,
     "bundled": true,
-    "duration": 0.715,
+    "duration": 0.47,
     "cues": [
       {
         "time": 0,
@@ -1851,76 +1851,108 @@
       },
       {
         "time": 0.08,
-        "id": 4
+        "id": 1
       },
       {
-        "time": 0.56,
+        "time": 0.32,
         "id": 0
       },
       {
-        "time": 0.64,
+        "time": 0.47,
         "id": 0
       }
     ],
-    "sourceKey": "d382c653f60e88e6e57b040bceefc30bc0bdfae8f883c70fd1952cdd4d3405ff"
+    "sourceKey": "4626abc5e9393b23d176c3ad54245d7710a738520585aafec44d95b16f39f0ea",
+    "contextWord": {
+      "source": "chunk_red",
+      "text": "a red apple",
+      "start": 0.4,
+      "end": 0.64,
+      "phones": [
+        "ah"
+      ]
+    },
+    "sha256": "f6daa865d6ab930a463e488a46d71ae80a8ea167932efd30c44e635443723517"
   },
   "word_an": {
     "text": "an",
     "voice": 403008,
     "bundled": true,
-    "duration": 0.775,
+    "duration": 0.39,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.08000000000000003,
+        "time": 0.08,
         "id": 1
       },
       {
-        "time": 0.4100000000000001,
+        "time": 0.15999999999999986,
         "id": 19
       },
       {
-        "time": 0.6200000000000001,
+        "time": 0.23999999999999994,
         "id": 0
       },
       {
-        "time": 0.7000000000000002,
+        "time": 0.39,
         "id": 0
       }
     ],
-    "sourceKey": "800310692a5da02d758a9f613fb3ab7adb3f9cb19d2709b09d94ba3db7c0207f"
+    "sourceKey": "bfbfdd5fe4e9c884ffac0c0795d3d9bf6ee311401c80ebb16e1ebf6fc25883ca",
+    "contextWord": {
+      "source": "eat_apple",
+      "text": "I want to eat an apple.",
+      "start": 1.37,
+      "end": 1.53,
+      "phones": [
+        "ah",
+        "n"
+      ]
+    },
+    "sha256": "6a69f37c46a45fde4d58ebf7538dc4fe6fc56940c075016b13e4e580c8f9d21f"
   },
   "word_to": {
     "text": "to",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.235,
+    "duration": 0.38,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.08000000000000003,
+        "time": 0.08,
         "id": 19
       },
       {
-        "time": 0.34,
+        "time": 0.15000000000000008,
         "id": 7
       },
       {
-        "time": 1.0799999999999998,
+        "time": 0.23000000000000015,
         "id": 0
       },
       {
-        "time": 1.16,
+        "time": 0.38,
         "id": 0
       }
     ],
-    "sourceKey": "faa22169d65a4246e6c08bf4f190e0f1ee3be80ecdfff5b95166b54edee580a6"
+    "sourceKey": "bfbfdd5fe4e9c884ffac0c0795d3d9bf6ee311401c80ebb16e1ebf6fc25883ca",
+    "contextWord": {
+      "source": "eat_apple",
+      "text": "I want to eat an apple.",
+      "start": 0.94,
+      "end": 1.09,
+      "phones": [
+        "t",
+        "uw"
+      ]
+    },
+    "sha256": "ebc4784176d5642b226096da3d48e60783f1da6cc0c187b1ba7b3d45a96a714d"
   },
   "want_intro": {
     "text": "现在说出你想要什么。先听，再分段练习。",
@@ -2658,26 +2690,32 @@
     "text": "I",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.115,
+    "duration": 1.839,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.08000000000000003,
+        "time": 0.21,
         "id": 11
       },
       {
-        "time": 1.9600000000000002,
-        "id": 0
-      },
-      {
-        "time": 2.04,
+        "time": 1.29,
         "id": 0
       }
     ],
-    "sourceKey": "44326b4134510103cc2741ddd9bbc4934775618bc5e5f9780b51c88b1cff362c"
+    "sourceKey": "9b48fd039b0d052988c031351fd809a41b5250cb700eaa67e9c656d4ef764f66",
+    "contextWord": {
+      "source": "standalone-I",
+      "text": "I.",
+      "start": 0.21,
+      "end": 1.29,
+      "phones": [
+        "ay"
+      ]
+    },
+    "sha256": "c3ea8bf67918982da45deb6de337d7109fcbb278878735b052fe02b5de93aada"
   },
   "part_want": {
     "text": "want",
