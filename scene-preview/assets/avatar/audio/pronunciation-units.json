@@ -1,1 +1,1327 @@
-{"phoneme_ae":{"symbol":"æ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,11,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":1},{"time":0.640,"id":0}]},"phoneme_p":{"symbol":"p","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,37,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":21},{"time":0.413,"id":0}]},"phoneme_schwa":{"symbol":"ə","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,15,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":1},{"time":0.640,"id":0}]},"phoneme_l":{"symbol":"l","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,31,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":14},{"time":0.564,"id":0}]},"phoneme_b":{"symbol":"b","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,17,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":21},{"time":0.426,"id":0}]},"phoneme_n":{"symbol":"n","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,33,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":19},{"time":0.564,"id":0}]},"phoneme_k":{"symbol":"k","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,30,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":20},{"time":0.447,"id":0}]},"phoneme_t":{"symbol":"t","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,41,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":19},{"time":0.413,"id":0}]},"phoneme_d":{"symbol":"d","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,19,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":19},{"time":0.378,"id":0}]},"phoneme_aw":{"symbol":"ɔ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,13,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":3},{"time":0.640,"id":0}]},"phoneme_g":{"symbol":"ɡ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,25,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":20},{"time":0.454,"id":0}]},"phoneme_f":{"symbol":"f","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,24,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":18},{"time":0.640,"id":0}]},"phoneme_ih":{"symbol":"ɪ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,27,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":6},{"time":0.640,"id":0}]},"phoneme_sh":{"symbol":"ʃ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,40,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":16},{"time":0.640,"id":0}]},"phoneme_m":{"symbol":"m","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,32,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":21},{"time":0.571,"id":0}]},"phoneme_uu":{"symbol":"uː","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,44,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":7},{"time":0.640,"id":0}]},"phoneme_s":{"symbol":"s","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,39,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":15},{"time":0.640,"id":0}]},"phoneme_ah":{"symbol":"ʌ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,12,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":1},{"time":0.640,"id":0}]},"phoneme_uh":{"symbol":"ʊ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,43,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":4},{"time":0.640,"id":0}]},"phoneme_h":{"symbol":"h","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,26,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":12},{"time":0.640,"id":0}]},"phoneme_ow":{"symbol":"oʊ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,35,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":8},{"time":0.640,"id":0}]},"phoneme_th":{"symbol":"θ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,42,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":19},{"time":0.640,"id":0}]},"phoneme_ng":{"symbol":"ŋ","kind":"phoneme","voice":"Microsoft Zira Desktop","phones":[7,34,7],"cues":[{"time":0.000,"id":0},{"time":0.213,"id":20},{"time":0.564,"id":0}]},"group_schwa_l":{"symbol":"əl","kind":"group","voice":"Microsoft Zira Desktop","phones":[7,15,31,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":1},{"time":0.240,"id":14},{"time":0.468,"id":0}]},"meaning_apple":{"symbol":"苹果","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,261,11,124,12,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":21},{"time":0.137,"id":6},{"time":0.302,"id":1},{"time":0.399,"id":20},{"time":0.523,"id":20},{"time":0.523,"id":7},{"time":0.605,"id":8},{"time":0.743,"id":8},{"time":0.909,"id":0}]},"meaning_banana":{"symbol":"香蕉","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,360,10,148,10,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":16},{"time":0.137,"id":6},{"time":0.309,"id":2},{"time":0.426,"id":20},{"time":0.550,"id":16},{"time":0.550,"id":6},{"time":0.647,"id":2},{"time":0.784,"id":8},{"time":0.970,"id":0}]},"meaning_cat":{"symbol":"猫","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,207,10,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":21},{"time":0.247,"id":2},{"time":0.385,"id":8},{"time":0.571,"id":0}]},"meaning_dog":{"symbol":"狗","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,116,12,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":20},{"time":0.234,"id":8},{"time":0.420,"id":7},{"time":0.550,"id":0}]},"meaning_fish":{"symbol":"鱼","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,382,11,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":7},{"time":0.282,"id":4},{"time":0.468,"id":4},{"time":0.633,"id":0}]},"meaning_moon":{"symbol":"月亮","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,384,13,188,14,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":7},{"time":0.268,"id":4},{"time":0.358,"id":4},{"time":0.454,"id":14},{"time":0.454,"id":6},{"time":0.543,"id":2},{"time":0.688,"id":20},{"time":0.840,"id":0}]},"meaning_sun":{"symbol":"太阳","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,329,13,373,11,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":19},{"time":0.247,"id":2},{"time":0.337,"id":4},{"time":0.426,"id":6},{"time":0.536,"id":2},{"time":0.736,"id":20},{"time":0.915,"id":0}]},"meaning_book":{"symbol":"书","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,312,10,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":15},{"time":0.137,"id":7},{"time":0.316,"id":7},{"time":0.447,"id":7},{"time":0.606,"id":0}]},"meaning_hello":{"symbol":"你好","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,231,11,129,12,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":19},{"time":0.137,"id":6},{"time":0.254,"id":6},{"time":0.330,"id":6},{"time":0.413,"id":12},{"time":0.543,"id":2},{"time":0.660,"id":8},{"time":0.846,"id":0}]},"meaning_thank":{"symbol":"感谢","kind":"meaning","voice":"Microsoft Huihui Desktop","phones":[7,108,12,362,13,7],"cues":[{"time":0.000,"id":0},{"time":0.137,"id":20},{"time":0.240,"id":2},{"time":0.364,"id":19},{"time":0.461,"id":16},{"time":0.461,"id":6},{"time":0.619,"id":4},{"time":0.681,"id":4},{"time":0.854,"id":0}]}}
+{
+  "phoneme_ae": {
+    "symbol": "æ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ae"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 1
+      },
+      {
+        "time": 0.335,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.46,
+    "sourceKey": "a42b3fbbb4d91a762dc11486a8a25739bf54e5e5804a192bca26c69f836d45e6",
+    "sourceWord": "apple",
+    "sourcePhones": [
+      {
+        "start": 0.19,
+        "end": 0.44,
+        "id": 1,
+        "phone": "ae"
+      }
+    ],
+    "trim": {
+      "start": 0.175,
+      "end": 0.465
+    }
+  },
+  "phoneme_p": {
+    "symbol": "p",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "p"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.20500000000000007,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.3300625,
+    "sourceKey": "a42b3fbbb4d91a762dc11486a8a25739bf54e5e5804a192bca26c69f836d45e6",
+    "sourceWord": "apple",
+    "sourcePhones": [
+      {
+        "start": 0.44,
+        "end": 0.56,
+        "id": 21,
+        "phone": "p"
+      }
+    ],
+    "trim": {
+      "start": 0.425,
+      "end": 0.5850000000000001
+    }
+  },
+  "phoneme_schwa": {
+    "symbol": "ə",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ah"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08499999999999991,
+        "id": 1
+      },
+      {
+        "time": 0.27499999999999986,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.4,
+    "sourceKey": "7ca9ea3c133740f0f60d7d081f09c4ae89fba97dbddfaf2f656e9b7fc3efd13d",
+    "sourceWord": "banana",
+    "sourcePhones": [
+      {
+        "start": 1.33,
+        "end": 1.52,
+        "id": 1,
+        "phone": "ah"
+      }
+    ],
+    "trim": {
+      "start": 1.3150000000000002,
+      "end": 1.545
+    }
+  },
+  "phoneme_l": {
+    "symbol": "l",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "l"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 14
+      },
+      {
+        "time": 0.35500000000000004,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.48,
+    "sourceKey": "a42b3fbbb4d91a762dc11486a8a25739bf54e5e5804a192bca26c69f836d45e6",
+    "sourceWord": "apple",
+    "sourcePhones": [
+      {
+        "start": 0.58,
+        "end": 0.85,
+        "id": 14,
+        "phone": "l"
+      }
+    ],
+    "trim": {
+      "start": 0.565,
+      "end": 0.875
+    }
+  },
+  "phoneme_b": {
+    "symbol": "b",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "b"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.135,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.26,
+    "sourceKey": "7ca9ea3c133740f0f60d7d081f09c4ae89fba97dbddfaf2f656e9b7fc3efd13d",
+    "sourceWord": "banana",
+    "sourcePhones": [
+      {
+        "start": 0.26,
+        "end": 0.31,
+        "id": 21,
+        "phone": "b"
+      }
+    ],
+    "trim": {
+      "start": 0.245,
+      "end": 0.335
+    }
+  },
+  "phoneme_n": {
+    "symbol": "n",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "n"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 19
+      },
+      {
+        "time": 0.36499999999999994,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.49,
+    "sourceKey": "6a9a2959b92d85e1e89b3fdb02d9b5a36e51572ef9fa37ca6d47943eafde97df",
+    "sourceWord": "moon",
+    "sourcePhones": [
+      {
+        "start": 0.68,
+        "end": 0.96,
+        "id": 19,
+        "phone": "n"
+      }
+    ],
+    "trim": {
+      "start": 0.665,
+      "end": 0.985
+    }
+  },
+  "phoneme_k": {
+    "symbol": "k",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "k"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 20
+      },
+      {
+        "time": 0.25500000000000006,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.380125,
+    "sourceKey": "e21faedb1f31e2b511893952c6a0f165baf1d289563f8184c1c8eb1f1394f8b7",
+    "sourceWord": "cat",
+    "sourcePhones": [
+      {
+        "start": 0.29,
+        "end": 0.46,
+        "id": 20,
+        "phone": "k"
+      }
+    ],
+    "trim": {
+      "start": 0.27499999999999997,
+      "end": 0.48500000000000004
+    }
+  },
+  "phoneme_t": {
+    "symbol": "t",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "t"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 19
+      },
+      {
+        "time": 0.25499999999999995,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.38,
+    "sourceKey": "e21faedb1f31e2b511893952c6a0f165baf1d289563f8184c1c8eb1f1394f8b7",
+    "sourceWord": "cat",
+    "sourcePhones": [
+      {
+        "start": 0.66,
+        "end": 0.83,
+        "id": 19,
+        "phone": "t"
+      }
+    ],
+    "trim": {
+      "start": 0.645,
+      "end": 0.855
+    }
+  },
+  "phoneme_d": {
+    "symbol": "d",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "d"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 19
+      },
+      {
+        "time": 0.235,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.36,
+    "sourceKey": "1874eb1d1e1add54bcc7713d91572a7641541af0f5752a3a091295764defd1aa",
+    "sourceWord": "dog",
+    "sourcePhones": [
+      {
+        "start": 0.2,
+        "end": 0.35,
+        "id": 19,
+        "phone": "d"
+      }
+    ],
+    "trim": {
+      "start": 0.185,
+      "end": 0.375
+    }
+  },
+  "phoneme_aw": {
+    "symbol": "ɔ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ao"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 3
+      },
+      {
+        "time": 0.3950000000000001,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.5200625,
+    "sourceKey": "1874eb1d1e1add54bcc7713d91572a7641541af0f5752a3a091295764defd1aa",
+    "sourceWord": "dog",
+    "sourcePhones": [
+      {
+        "start": 0.35,
+        "end": 0.66,
+        "id": 3,
+        "phone": "ao"
+      }
+    ],
+    "trim": {
+      "start": 0.33499999999999996,
+      "end": 0.685
+    }
+  },
+  "phoneme_g": {
+    "symbol": "ɡ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "g"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 20
+      },
+      {
+        "time": 0.20500000000000002,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.33,
+    "sourceKey": "1874eb1d1e1add54bcc7713d91572a7641541af0f5752a3a091295764defd1aa",
+    "sourceWord": "dog",
+    "sourcePhones": [
+      {
+        "start": 0.66,
+        "end": 0.78,
+        "id": 20,
+        "phone": "g"
+      }
+    ],
+    "trim": {
+      "start": 0.645,
+      "end": 0.805
+    }
+  },
+  "phoneme_f": {
+    "symbol": "f",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "f"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 18
+      },
+      {
+        "time": 0.135,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.26,
+    "sourceKey": "dbca55c862b1efb78fe79ac9d946d301b2fe3cc84d8929302ba4002653485c70",
+    "sourceWord": "fish",
+    "sourcePhones": [
+      {
+        "start": 0.3,
+        "end": 0.35,
+        "id": 18,
+        "phone": "f"
+      }
+    ],
+    "trim": {
+      "start": 0.285,
+      "end": 0.375
+    }
+  },
+  "phoneme_ih": {
+    "symbol": "ɪ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ih"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 6
+      },
+      {
+        "time": 0.335,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.4600625,
+    "sourceKey": "dbca55c862b1efb78fe79ac9d946d301b2fe3cc84d8929302ba4002653485c70",
+    "sourceWord": "fish",
+    "sourcePhones": [
+      {
+        "start": 0.35,
+        "end": 0.6,
+        "id": 6,
+        "phone": "ih"
+      }
+    ],
+    "trim": {
+      "start": 0.33499999999999996,
+      "end": 0.625
+    }
+  },
+  "phoneme_sh": {
+    "symbol": "ʃ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "sh"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 16
+      },
+      {
+        "time": 0.3950000000000001,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.52,
+    "sourceKey": "dbca55c862b1efb78fe79ac9d946d301b2fe3cc84d8929302ba4002653485c70",
+    "sourceWord": "fish",
+    "sourcePhones": [
+      {
+        "start": 0.6,
+        "end": 0.91,
+        "id": 16,
+        "phone": "sh"
+      }
+    ],
+    "trim": {
+      "start": 0.585,
+      "end": 0.935
+    }
+  },
+  "phoneme_m": {
+    "symbol": "m",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "m"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.135,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.26,
+    "sourceKey": "6a9a2959b92d85e1e89b3fdb02d9b5a36e51572ef9fa37ca6d47943eafde97df",
+    "sourceWord": "moon",
+    "sourcePhones": [
+      {
+        "start": 0.37,
+        "end": 0.42,
+        "id": 21,
+        "phone": "m"
+      }
+    ],
+    "trim": {
+      "start": 0.355,
+      "end": 0.445
+    }
+  },
+  "phoneme_uu": {
+    "symbol": "uː",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "uw"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 7
+      },
+      {
+        "time": 0.3450000000000001,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.470125,
+    "sourceKey": "6a9a2959b92d85e1e89b3fdb02d9b5a36e51572ef9fa37ca6d47943eafde97df",
+    "sourceWord": "moon",
+    "sourcePhones": [
+      {
+        "start": 0.42,
+        "end": 0.68,
+        "id": 7,
+        "phone": "uw"
+      }
+    ],
+    "trim": {
+      "start": 0.40499999999999997,
+      "end": 0.7050000000000001
+    }
+  },
+  "phoneme_s": {
+    "symbol": "s",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "s"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 15
+      },
+      {
+        "time": 0.11500000000000005,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.2400625,
+    "sourceKey": "7dc11b76e8603af95c8620c9d890514b2cb03b1497025371e766665acd4ab38b",
+    "sourceWord": "sun",
+    "sourcePhones": [
+      {
+        "start": 0.43,
+        "end": 0.46,
+        "id": 15,
+        "phone": "s"
+      }
+    ],
+    "trim": {
+      "start": 0.415,
+      "end": 0.48500000000000004
+    }
+  },
+  "phoneme_ah": {
+    "symbol": "ʌ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ah"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 1
+      },
+      {
+        "time": 0.405,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.53,
+    "sourceKey": "7dc11b76e8603af95c8620c9d890514b2cb03b1497025371e766665acd4ab38b",
+    "sourceWord": "sun",
+    "sourcePhones": [
+      {
+        "start": 0.46,
+        "end": 0.78,
+        "id": 1,
+        "phone": "ah"
+      }
+    ],
+    "trim": {
+      "start": 0.445,
+      "end": 0.805
+    }
+  },
+  "phoneme_uh": {
+    "symbol": "ʊ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "uh"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 4
+      },
+      {
+        "time": 0.45499999999999996,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.58,
+    "sourceKey": "8d73699a7c0efd4337601a17e077d51652ba895c7cfd9f1db507ba9b41b64e5c",
+    "sourceWord": "book",
+    "sourcePhones": [
+      {
+        "start": 0.32,
+        "end": 0.69,
+        "id": 4,
+        "phone": "uh"
+      }
+    ],
+    "trim": {
+      "start": 0.305,
+      "end": 0.715
+    }
+  },
+  "phoneme_h": {
+    "symbol": "h",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "hh"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 12
+      },
+      {
+        "time": 0.365,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.49,
+    "sourceKey": "8c7a75fa8834014fe9dc44ed96d9753887cc292921b4f93689aa09f2ca6d1609",
+    "sourceWord": "hello",
+    "sourcePhones": [
+      {
+        "start": 0.14,
+        "end": 0.42,
+        "id": 12,
+        "phone": "hh"
+      }
+    ],
+    "trim": {
+      "start": 0.125,
+      "end": 0.445
+    }
+  },
+  "phoneme_ow": {
+    "symbol": "oʊ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ow"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 8
+      },
+      {
+        "time": 0.645,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.77,
+    "sourceKey": "8c7a75fa8834014fe9dc44ed96d9753887cc292921b4f93689aa09f2ca6d1609",
+    "sourceWord": "hello",
+    "sourcePhones": [
+      {
+        "start": 0.6,
+        "end": 1.16,
+        "id": 8,
+        "phone": "ow"
+      }
+    ],
+    "trim": {
+      "start": 0.585,
+      "end": 1.1849999999999998
+    }
+  },
+  "phoneme_th": {
+    "symbol": "θ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "th"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 17
+      },
+      {
+        "time": 0.20500000000000002,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.3300625,
+    "sourceKey": "eabb1b60d1d064d85392ca93b210cce2b47e3ef1994a118eb4b4471b039923bc",
+    "sourceWord": "thank",
+    "sourcePhones": [
+      {
+        "start": 0.29,
+        "end": 0.41,
+        "id": 17,
+        "phone": "th"
+      }
+    ],
+    "trim": {
+      "start": 0.27499999999999997,
+      "end": 0.435
+    }
+  },
+  "phoneme_ng": {
+    "symbol": "ŋ",
+    "kind": "phoneme",
+    "voice": 403008,
+    "phones": [
+      "ng"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 20
+      },
+      {
+        "time": 0.235,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.36,
+    "sourceKey": "eabb1b60d1d064d85392ca93b210cce2b47e3ef1994a118eb4b4471b039923bc",
+    "sourceWord": "thank",
+    "sourcePhones": [
+      {
+        "start": 0.46,
+        "end": 0.61,
+        "id": 20,
+        "phone": "ng"
+      }
+    ],
+    "trim": {
+      "start": 0.445,
+      "end": 0.635
+    }
+  },
+  "group_schwa_l": {
+    "symbol": "əl",
+    "kind": "group",
+    "voice": 403008,
+    "phones": [
+      "ah",
+      "l"
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 1
+      },
+      {
+        "time": 0.10499999999999993,
+        "id": 14
+      },
+      {
+        "time": 0.37499999999999994,
+        "id": 0
+      }
+    ],
+    "bundled": true,
+    "duration": 0.5,
+    "sourceKey": "a42b3fbbb4d91a762dc11486a8a25739bf54e5e5804a192bca26c69f836d45e6",
+    "sourceWord": "apple",
+    "sourcePhones": [
+      {
+        "start": 0.56,
+        "end": 0.58,
+        "id": 1,
+        "phone": "ah"
+      },
+      {
+        "start": 0.58,
+        "end": 0.85,
+        "id": 14,
+        "phone": "l"
+      }
+    ],
+    "trim": {
+      "start": 0.545,
+      "end": 0.875
+    }
+  },
+  "meaning_apple": {
+    "symbol": "苹果",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      261,
+      11,
+      124,
+      12,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.38,
+        "id": 21
+      },
+      {
+        "time": 0.58,
+        "id": 6
+      },
+      {
+        "time": 0.81,
+        "id": 20
+      },
+      {
+        "time": 0.92,
+        "id": 7
+      },
+      {
+        "time": 1.42,
+        "id": 0
+      }
+    ],
+    "text": "苹果",
+    "bundled": true,
+    "duration": 1.679,
+    "sourceKey": "678ff359e1833794d1d4a7a648e2ecf713c3281d2588d1e11916915706919796"
+  },
+  "meaning_banana": {
+    "symbol": "香蕉",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      360,
+      10,
+      148,
+      10,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.37,
+        "id": 16
+      },
+      {
+        "time": 0.57,
+        "id": 6
+      },
+      {
+        "time": 0.64,
+        "id": 2
+      },
+      {
+        "time": 0.81,
+        "id": 16
+      },
+      {
+        "time": 0.87,
+        "id": 6
+      },
+      {
+        "time": 0.95,
+        "id": 2
+      },
+      {
+        "time": 1.29,
+        "id": 0
+      }
+    ],
+    "text": "香蕉",
+    "bundled": true,
+    "duration": 1.479,
+    "sourceKey": "4949a38e8c46dfe0839f70b81fdd914dbcd89252d5dd7724e399c5671a98729d"
+  },
+  "meaning_cat": {
+    "symbol": "猫",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      207,
+      10,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.65,
+        "id": 21
+      },
+      {
+        "time": 0.79,
+        "id": 2
+      },
+      {
+        "time": 1.03,
+        "id": 0
+      }
+    ],
+    "text": "猫",
+    "bundled": true,
+    "duration": 1.039,
+    "sourceKey": "02956626656ab23d732bab29b49f54a090442ae6f15a1b9d7ddbb31e81c0ec2b"
+  },
+  "meaning_dog": {
+    "symbol": "狗",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      116,
+      12,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.38,
+        "id": 20
+      },
+      {
+        "time": 0.51,
+        "id": 8
+      },
+      {
+        "time": 1.039,
+        "id": 0
+      }
+    ],
+    "text": "狗",
+    "bundled": true,
+    "duration": 1.039,
+    "sourceKey": "a8840c692b05a46a48aeebc011feec20ae23ab25f299fd277ac1bc4c38b76b88"
+  },
+  "meaning_fish": {
+    "symbol": "鱼",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      382,
+      11,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.53,
+        "id": 6
+      },
+      {
+        "time": 0.75,
+        "id": 7
+      },
+      {
+        "time": 1.039,
+        "id": 0
+      }
+    ],
+    "text": "鱼",
+    "bundled": true,
+    "duration": 1.039,
+    "sourceKey": "bce3fa19ad818c52dd74b0d4dfe36f0d2dd2ccae226a6493d47caf87963f9d61"
+  },
+  "meaning_moon": {
+    "symbol": "月亮",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      384,
+      13,
+      188,
+      14,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.49,
+        "id": 6
+      },
+      {
+        "time": 0.65,
+        "id": 7
+      },
+      {
+        "time": 0.87,
+        "id": 14
+      },
+      {
+        "time": 0.95,
+        "id": 6
+      },
+      {
+        "time": 1.03,
+        "id": 2
+      },
+      {
+        "time": 1.27,
+        "id": 0
+      }
+    ],
+    "text": "月亮",
+    "bundled": true,
+    "duration": 1.399,
+    "sourceKey": "389ab5b9152455a9dfb6f1f571441beb30af2e5750e4fdf2747e5d50cf0c8b2d"
+  },
+  "meaning_sun": {
+    "symbol": "太阳",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      329,
+      13,
+      373,
+      11,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.55,
+        "id": 19
+      },
+      {
+        "time": 0.68,
+        "id": 2
+      },
+      {
+        "time": 0.89,
+        "id": 6
+      },
+      {
+        "time": 0.97,
+        "id": 2
+      },
+      {
+        "time": 1.35,
+        "id": 0
+      }
+    ],
+    "text": "太阳",
+    "bundled": true,
+    "duration": 1.519,
+    "sourceKey": "40c80b66383c0b59322cc2db23bc45136a995169b02750396b6f26752593a755"
+  },
+  "meaning_book": {
+    "symbol": "书",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      312,
+      10,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.42,
+        "id": 16
+      },
+      {
+        "time": 0.67,
+        "id": 7
+      },
+      {
+        "time": 1.119,
+        "id": 0
+      }
+    ],
+    "text": "书",
+    "bundled": true,
+    "duration": 1.119,
+    "sourceKey": "47afa621404bca27da0ad5add5a136ff6af39409fd061858c182f48cd53eb82a"
+  },
+  "meaning_hello": {
+    "symbol": "你好",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      231,
+      11,
+      129,
+      12,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.41,
+        "id": 19
+      },
+      {
+        "time": 0.55,
+        "id": 6
+      },
+      {
+        "time": 0.65,
+        "id": 12
+      },
+      {
+        "time": 0.86,
+        "id": 2
+      },
+      {
+        "time": 1.159,
+        "id": 0
+      }
+    ],
+    "text": "你好",
+    "bundled": true,
+    "duration": 1.159,
+    "sourceKey": "a35f609091ae7e8c00145bd7c4dc8b3246d87685ab541eea5df8b9f1e927b54e"
+  },
+  "meaning_thank": {
+    "symbol": "感谢",
+    "kind": "meaning",
+    "voice": 403008,
+    "phones": [
+      7,
+      108,
+      12,
+      362,
+      13,
+      7
+    ],
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.5,
+        "id": 20
+      },
+      {
+        "time": 0.58,
+        "id": 2
+      },
+      {
+        "time": 0.8,
+        "id": 16
+      },
+      {
+        "time": 0.92,
+        "id": 6
+      },
+      {
+        "time": 1.319,
+        "id": 0
+      }
+    ],
+    "text": "感谢",
+    "bundled": true,
+    "duration": 1.319,
+    "sourceKey": "74ab9ddcd40146280bb75d0796769e4115a4fb84a98def3929d60897929c35cd"
+  }
+}

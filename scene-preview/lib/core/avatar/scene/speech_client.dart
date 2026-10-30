@@ -35,6 +35,23 @@ class SpeechClient {
   bool finishing = false;
   Uri endpoint(String path) => origin.resolve(path);
   Future<void> init() async {
+    unawaited(
+      player.preloadAssets([
+        for (final word in [
+          'apple',
+          'banana',
+          'cat',
+          'dog',
+          'fish',
+          'moon',
+          'sun',
+          'book',
+          'hello',
+          'thank',
+        ])
+          'assets/avatar/audio/$word.wav',
+      ]),
+    );
     try {
       final r = await client
           .get(endpoint('/api/speech/status'))
@@ -51,12 +68,15 @@ class SpeechClient {
     Map<String, dynamic> item, {
     bool curated = false,
   }) async {
-    if (curated || !configured || item['text'] == null) {
+    if (item['bundled'] == true && item['voice'] == 403008) {
       return SpeechClip(key, MouthCue.fromJson(item['cues'], word: key));
+    }
+    if (curated || !configured || item['text'] == null) {
+      throw StateError('同声线示范音频尚未准备好');
     }
     final text = item['text'].toString(),
         language = RegExp(r'[\u3400-\u9fff]').hasMatch(text) ? 'zh' : 'en';
-    final cacheKey = '$language:$text';
+    final cacheKey = '403008:$language:$text';
     if (cache.containsKey(cacheKey)) return cache[cacheKey]!;
     final response = await client
         .post(
@@ -65,7 +85,7 @@ class SpeechClient {
           body: jsonEncode({
             'text': text,
             'language': language,
-            'voice': 403007,
+            'voice': 403008,
             'speed': 0,
           }),
         )

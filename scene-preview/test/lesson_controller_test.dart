@@ -2,6 +2,20 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:snow_speaks/features/lesson/application/lesson_controller.dart';
 
 void main() {
+  test('word tap exits the course without replaying its introduction', () {
+    final c = LessonController();
+    final commands = <Map<String, Object?>>[];
+    c.attach(commands.add);
+    c.handle({'event': 'ready'});
+    c.playCourse();
+    final old = c.session;
+    c.playWord();
+    expect(c.courseMode, false);
+    expect(c.session, greaterThan(old));
+    expect(commands.last['type'], 'play');
+    expect(c.lessonPhase, 'demonstrate');
+    c.dispose();
+  });
   test('course responses are gated and cancelled sessions cannot reveal an old answer', () {
     final c = LessonController();
     final commands = <Map<String, Object?>>[];
@@ -71,7 +85,7 @@ void main() {
     expect(c.playing, isTrue);
     expect(commands.last, containsPair('reason', 'next'));
     c.handle({'event': 'lesson-phase', 'session': first, 'phase': 'listen'});
-    expect(c.lessonPhase, 'introduce');
+    expect(c.lessonPhase, 'demonstrate');
     c.replayLesson();
     expect(commands.last, containsPair('reason', 'retry'));
     c.dispose();

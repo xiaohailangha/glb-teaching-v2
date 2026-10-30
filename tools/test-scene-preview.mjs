@@ -27,8 +27,25 @@ await check('new renderer assets and curated phonemes are available',async()=>{
 });
 await check('Tencent synthesis and matching mouth data remain usable',async()=>{
  assert.equal((await(await get('/api/speech/status')).json()).configured,true);
- const r=await fetch(origin+'/api/speech/tts',{method:'POST',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify({text:'apple',language:'en',voice:403007,speed:0}),signal:AbortSignal.timeout(100000)});
+ const r=await fetch(origin+'/api/speech/tts',{method:'POST',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify({text:'apple',language:'en',voice:403008,speed:0}),signal:AbortSignal.timeout(100000)});
  assert.equal(r.status,200);const speech=await r.json();assert.equal(speech.usable,true);assert.ok(speech.cues.length>0);assert.match(speech.audioUrl,/^\/api\/speech\/audio\/[a-f0-9]{64}\.wav$/);const audio=await get(speech.audioUrl);assert.equal(audio.status,200);await audio.arrayBuffer();
+});
+await check('all shipped teaching voices and word bytes match the boy-voice build',async()=>{
+ for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units']) {
+  const response=await get(`/scene/assets/assets/avatar/audio/${file}.json`);
+  assert.equal(response.status,200);const items=await response.json();
+  for(const [key,item] of Object.entries(items)) {
+   assert.equal(item.voice,403008,key);assert.equal(item.bundled,true,key);
+   if(file==='timings') {
+    const response=await get(`/scene/assets/assets/avatar/audio/${key}.wav`);
+    assert.equal(response.status,200);
+    const bytes=Buffer.from(await response.arrayBuffer());
+    const local=await fs.readFile(`scene-preview/assets/avatar/audio/${key}.wav`);
+    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),crypto.createHash('sha256').update(local).digest('hex'));
+   }
+  }
+ }
+ assert.equal((await get('/scene/voice-review.html')).status,200);
 });
 await check('private files and cross-site spending remain blocked',async()=>{
  for(const path of ['/scene/.secrets/tencent.json','/scene/services/cos-assets.mjs','/.secrets/tencent.json']){const response=await get(path);assert.ok([403,404].includes(response.status));await response.arrayBuffer();}

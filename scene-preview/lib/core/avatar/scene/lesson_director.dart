@@ -101,21 +101,12 @@ class TeachingDirector {
     String reason = 'start',
     int variation = 0,
   }) {
-    final intro = reason == 'retry'
-        ? 'intro_retry'
-        : rate < 1
-        ? 'intro_slow'
-        : reason == 'next'
-        ? 'intro_next'
-        : ['intro_warm', 'intro_listen', 'intro_next'][variation % 3];
     return TeachingDirector(
       word: word,
       variation: variation,
       stages: [
-        Stage('introduce', clip: intro),
         for (var i = 0; i < repeat; i++)
           Stage('demonstrate', clip: word, rate: rate, iteration: i + 1),
-        Stage('invite', clip: variation % 3 == 1 ? 'invite_two' : 'invite_one'),
         const Stage('listen'),
       ],
     );

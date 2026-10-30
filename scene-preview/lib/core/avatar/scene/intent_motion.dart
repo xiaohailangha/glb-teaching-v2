@@ -38,8 +38,27 @@ IntentPose teachingIntent(
   bool engaged = true,
   bool speaking = false,
 }) {
-  if (!engaged) return const IntentPose(body: .04, smile: .18, interest: .14);
+  // Quiet attention has occasional target changes, never a rocking root loop.
+  final glance = gestureBeat(
+    elapsed % 13.7,
+    at: 5.1,
+    attack: .16,
+    hold: .65,
+    release: .36,
+  );
+  if (!engaged) {
+    return IntentPose(
+      body: .04,
+      head: .025 * glance,
+      gaze: .13 * glance,
+      smile: .18,
+      interest: .14 + .08 * glance,
+    );
+  }
   final beat = gestureBeat(elapsed),
+      follow = speaking
+          ? gestureBeat(elapsed, at: 1.65, attack: .28, hold: .35, release: .5)
+          : 0.0,
       nod = gestureBeat(
         elapsed,
         at: .16,
@@ -51,23 +70,37 @@ IntentPose teachingIntent(
     case 'listen':
     case 'choice':
     case 'recall':
-      return const IntentPose(
+      final welcome = gestureBeat(
+        elapsed,
+        at: .1,
+        attack: .3,
+        hold: .4,
+        release: .65,
+      );
+      return IntentPose(
         body: .02,
-        head: -.015,
-        roll: .015,
-        pitch: -.018,
-        interest: .42,
-        smile: .22,
+        head: -.015 + .035 * glance,
+        gaze: .16 * glance,
+        roll: .015 + .012 * welcome,
+        pitch: -.018 + .035 * nod,
+        right: .24 * welcome,
+        interest: .42 + .08 * welcome,
+        smile: .22 + .08 * welcome,
       );
     case 'meaning':
     case 'explain':
     case 'transfer':
       return IntentPose(
-        body: .13,
-        head: .035,
-        gaze: .24,
-        left: .26 * beat,
-        interest: .4,
+        body: .07,
+        head:
+            .055 *
+            gestureBeat(elapsed, at: .12, attack: .3, hold: .55, release: .45),
+        gaze:
+            .24 *
+            gestureBeat(elapsed, at: 0, attack: .12, hold: .65, release: .3),
+        left: .42 * beat,
+        right: .28 * follow,
+        interest: .4 + .12 * follow,
         smile: .25,
       );
     case 'invite':
@@ -76,7 +109,7 @@ IntentPose teachingIntent(
         head: -.025,
         pitch: -.025,
         roll: .025,
-        right: .32 * beat,
+        right: .44 * beat,
         interest: .52,
         smile: .34,
       );
@@ -102,9 +135,11 @@ IntentPose teachingIntent(
     case 'phoneme':
       return IntentPose(
         body: .055,
-        pitch: .025 * nod,
-        right: speaking ? .16 * beat : 0,
-        interest: .35,
+        head: .025 * beat,
+        pitch: .04 * nod,
+        right: speaking ? .32 * beat : 0,
+        left: .20 * follow,
+        interest: .35 + .1 * beat,
         smile: .17,
       );
     default:
@@ -124,13 +159,26 @@ double breathingOffset(double time) => .0008 * math.sin(time * 1.7);
 /// Select an authored whole-body thought instead of looping the entire clip.
 /// Event transitions are blended by the joint smoother. The hand/shoulder
 /// composition stays intact and a held thought does not become another turn.
-double lessonPoseTime(String phase) => switch (phase) {
-  'introduce' => .85,
-  'meaning' || 'explain' || 'transfer' => 2.35,
-  'demonstrate' || 'phoneme' => 3.8,
-  'invite' => 6.4,
-  'listen' || 'choice' || 'recall' => 7.55,
-  'support' => 8.1,
-  'success' || 'encourage' => 1.05,
-  _ => 0,
-};
+double lessonPoseTime(String phase, [double elapsed = 0]) {
+  final base = switch (phase) {
+    'introduce' => .85,
+    'meaning' || 'explain' || 'transfer' => 2.35,
+    'demonstrate' || 'phoneme' => 3.8,
+    'invite' => 6.4,
+    'listen' || 'choice' || 'recall' => 7.55,
+    'support' => 8.1,
+    'success' || 'encourage' => 1.05,
+    _ => 0,
+  };
+  // Play a bounded authored phrase forward through anticipation and release.
+  // Never wrap the source reel, reverse it, or sweep through unrelated turns.
+  final travel = switch (phase) {
+    'meaning' || 'explain' || 'transfer' => .65,
+    'invite' => .72,
+    'demonstrate' || 'phoneme' => .42,
+    'success' || 'encourage' => .48,
+    'listen' || 'choice' || 'recall' => .24,
+    _ => .32,
+  };
+  return base + travel * smooth((elapsed / 1.65).clamp(0, 1));
+}

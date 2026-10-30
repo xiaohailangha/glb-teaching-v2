@@ -207,7 +207,7 @@ class LessonController extends ChangeNotifier {
     playing = true;
     progress = 0;
     iteration = 1;
-    lessonPhase = 'introduce';
+    lessonPhase = 'demonstrate';
     activeSound = '';
     _send?.call({
       'type': 'play',
@@ -218,6 +218,13 @@ class LessonController extends ChangeNotifier {
       'reason': reason,
     });
     notifyListeners();
+  }
+
+  void playWord() {
+    if (!ready || error != null) return;
+    stop();
+    emotionMode = false;
+    play();
   }
 
   void playActingStory() {

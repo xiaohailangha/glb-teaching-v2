@@ -10,12 +10,30 @@ void main() {
         for (final time in [4.0, 9.0, 18.0, 37.0]) {
           final pose = teachingIntent(phase, time);
           expect(pose.body, start.body);
-          expect(pose.head, start.head);
+          expect(pose.head.abs(), lessThan(.06));
           expect(pose.left, 0);
           expect(pose.right, 0);
           expect(pose.body.abs(), lessThan(.03));
         }
       }
+    },
+  );
+  test(
+    'authored gestures move forward then settle inside their own phrase',
+    () {
+      for (final phase in ['explain', 'demonstrate', 'invite', 'listen']) {
+        final start = lessonPoseTime(phase, 0);
+        expect(lessonPoseTime(phase, .8), greaterThan(start));
+        expect(lessonPoseTime(phase, 2) - start, lessThan(.8));
+        expect(lessonPoseTime(phase, 20), lessonPoseTime(phase, 2));
+      }
+      expect(teachingIntent('listen', .5).right, greaterThan(.1));
+      expect(teachingIntent('listen', 5.5).gaze, greaterThan(.1));
+      expect(teachingIntent('listen', 7).gaze, 0);
+      expect(
+        teachingIntent('explain', 2, speaking: true).right,
+        greaterThan(.2),
+      );
     },
   );
   test('gestures attack promptly once, hold and release without repeating', () {

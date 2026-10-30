@@ -1,0 +1,568 @@
+{
+  "voice": 403008,
+  "name": "云小洋",
+  "source": "https://cloud.tencent.com/document/product/1073/92668",
+  "generatedAt": "2026-10-30T10:00:17.869Z",
+  "clips": [
+    {
+      "key": "apple",
+      "voice": 403008,
+      "duration": 0.87,
+      "sourceDuration": 1.199,
+      "trim": {
+        "start": 0.175,
+        "end": 0.875
+      },
+      "cached": true,
+      "elapsedMs": 2
+    },
+    {
+      "key": "banana",
+      "voice": 403008,
+      "duration": 1.47,
+      "sourceDuration": 1.559,
+      "trim": {
+        "start": 0.245,
+        "end": 1.545
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "cat",
+      "voice": 403008,
+      "duration": 0.7500625,
+      "sourceDuration": 4.079,
+      "trim": {
+        "start": 0.27499999999999997,
+        "end": 0.855
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "dog",
+      "voice": 403008,
+      "duration": 0.79,
+      "sourceDuration": 1.119,
+      "trim": {
+        "start": 0.185,
+        "end": 0.805
+      },
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "fish",
+      "voice": 403008,
+      "duration": 0.82,
+      "sourceDuration": 1.279,
+      "trim": {
+        "start": 0.285,
+        "end": 0.935
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "moon",
+      "voice": 403008,
+      "duration": 0.8,
+      "sourceDuration": 1.199,
+      "trim": {
+        "start": 0.355,
+        "end": 0.985
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "sun",
+      "voice": 403008,
+      "duration": 0.87,
+      "sourceDuration": 4.199,
+      "trim": {
+        "start": 0.415,
+        "end": 1.115
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "book",
+      "voice": 403008,
+      "duration": 0.73,
+      "sourceDuration": 2.959,
+      "trim": {
+        "start": 0.245,
+        "end": 0.805
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "hello",
+      "voice": 403008,
+      "duration": 1.23,
+      "sourceDuration": 1.479,
+      "trim": {
+        "start": 0.125,
+        "end": 1.1849999999999998
+      },
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "thank",
+      "voice": 403008,
+      "duration": 0.6200625,
+      "sourceDuration": 1.079,
+      "trim": {
+        "start": 0.27499999999999997,
+        "end": 0.725
+      },
+      "cached": true,
+      "elapsedMs": 2
+    },
+    {
+      "key": "intro_warm",
+      "voice": 403008,
+      "duration": 1.759,
+      "sourceDuration": 1.759,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "intro_listen",
+      "voice": 403008,
+      "duration": 1.879,
+      "sourceDuration": 1.879,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "intro_next",
+      "voice": 403008,
+      "duration": 1.999,
+      "sourceDuration": 1.999,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "intro_retry",
+      "voice": 403008,
+      "duration": 1.839,
+      "sourceDuration": 1.839,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "intro_slow",
+      "voice": 403008,
+      "duration": 1.519,
+      "sourceDuration": 1.519,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "invite_one",
+      "voice": 403008,
+      "duration": 1.199,
+      "sourceDuration": 1.199,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "invite_two",
+      "voice": 403008,
+      "duration": 2.758,
+      "sourceDuration": 2.758,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "encourage_one",
+      "voice": 403008,
+      "duration": 1.599,
+      "sourceDuration": 1.599,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "encourage_two",
+      "voice": 403008,
+      "duration": 1.759,
+      "sourceDuration": 1.759,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_intro",
+      "voice": 403008,
+      "duration": 3.799,
+      "sourceDuration": 3.799,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "course_child_intro",
+      "voice": 403008,
+      "duration": 3.359,
+      "sourceDuration": 3.359,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "course_sound",
+      "voice": 403008,
+      "duration": 5.199,
+      "sourceDuration": 5.199,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_child_sound",
+      "voice": 403008,
+      "duration": 3.039,
+      "sourceDuration": 3.039,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_choice",
+      "voice": 403008,
+      "duration": 3.239,
+      "sourceDuration": 3.239,
+      "cached": true,
+      "elapsedMs": 2
+    },
+    {
+      "key": "course_recall",
+      "voice": 403008,
+      "duration": 3.879,
+      "sourceDuration": 3.879,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_support",
+      "voice": 403008,
+      "duration": 2.959,
+      "sourceDuration": 2.959,
+      "cached": true,
+      "elapsedMs": 2
+    },
+    {
+      "key": "course_correct",
+      "voice": 403008,
+      "duration": 2.639,
+      "sourceDuration": 2.639,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_attempt",
+      "voice": 403008,
+      "duration": 1.759,
+      "sourceDuration": 1.759,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_transfer",
+      "voice": 403008,
+      "duration": 4.239,
+      "sourceDuration": 4.239,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_finish",
+      "voice": 403008,
+      "duration": 3.719,
+      "sourceDuration": 3.719,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "course_child_recall",
+      "voice": 403008,
+      "duration": 3.319,
+      "sourceDuration": 3.319,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_apple",
+      "voice": 403008,
+      "duration": 1.679,
+      "sourceDuration": 1.679,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_banana",
+      "voice": 403008,
+      "duration": 1.479,
+      "sourceDuration": 1.479,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_cat",
+      "voice": 403008,
+      "duration": 1.039,
+      "sourceDuration": 1.039,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_dog",
+      "voice": 403008,
+      "duration": 1.039,
+      "sourceDuration": 1.039,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_fish",
+      "voice": 403008,
+      "duration": 1.039,
+      "sourceDuration": 1.039,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_moon",
+      "voice": 403008,
+      "duration": 1.399,
+      "sourceDuration": 1.399,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "meaning_sun",
+      "voice": 403008,
+      "duration": 1.519,
+      "sourceDuration": 1.519,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "meaning_book",
+      "voice": 403008,
+      "duration": 1.119,
+      "sourceDuration": 1.119,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "meaning_hello",
+      "voice": 403008,
+      "duration": 1.159,
+      "sourceDuration": 1.159,
+      "cached": true,
+      "elapsedMs": 0
+    },
+    {
+      "key": "meaning_thank",
+      "voice": 403008,
+      "duration": 1.319,
+      "sourceDuration": 1.319,
+      "cached": true,
+      "elapsedMs": 1
+    },
+    {
+      "key": "phoneme_ae",
+      "voice": 403008,
+      "duration": 0.46,
+      "sourceWord": "apple",
+      "sourcePhone": "ae",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_p",
+      "voice": 403008,
+      "duration": 0.3300625,
+      "sourceWord": "apple",
+      "sourcePhone": "p",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_schwa",
+      "voice": 403008,
+      "duration": 0.4,
+      "sourceWord": "banana",
+      "sourcePhone": "ah",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_l",
+      "voice": 403008,
+      "duration": 0.48,
+      "sourceWord": "apple",
+      "sourcePhone": "l",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_b",
+      "voice": 403008,
+      "duration": 0.26,
+      "sourceWord": "banana",
+      "sourcePhone": "b",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_n",
+      "voice": 403008,
+      "duration": 0.49,
+      "sourceWord": "moon",
+      "sourcePhone": "n",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_k",
+      "voice": 403008,
+      "duration": 0.380125,
+      "sourceWord": "cat",
+      "sourcePhone": "k",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_t",
+      "voice": 403008,
+      "duration": 0.38,
+      "sourceWord": "cat",
+      "sourcePhone": "t",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_d",
+      "voice": 403008,
+      "duration": 0.36,
+      "sourceWord": "dog",
+      "sourcePhone": "d",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_aw",
+      "voice": 403008,
+      "duration": 0.5200625,
+      "sourceWord": "dog",
+      "sourcePhone": "ao",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_g",
+      "voice": 403008,
+      "duration": 0.33,
+      "sourceWord": "dog",
+      "sourcePhone": "g",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_f",
+      "voice": 403008,
+      "duration": 0.26,
+      "sourceWord": "fish",
+      "sourcePhone": "f",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_ih",
+      "voice": 403008,
+      "duration": 0.4600625,
+      "sourceWord": "fish",
+      "sourcePhone": "ih",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_sh",
+      "voice": 403008,
+      "duration": 0.52,
+      "sourceWord": "fish",
+      "sourcePhone": "sh",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_m",
+      "voice": 403008,
+      "duration": 0.26,
+      "sourceWord": "moon",
+      "sourcePhone": "m",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_uu",
+      "voice": 403008,
+      "duration": 0.470125,
+      "sourceWord": "moon",
+      "sourcePhone": "uw",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_s",
+      "voice": 403008,
+      "duration": 0.2400625,
+      "sourceWord": "sun",
+      "sourcePhone": "s",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_ah",
+      "voice": 403008,
+      "duration": 0.53,
+      "sourceWord": "sun",
+      "sourcePhone": "ah",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_uh",
+      "voice": 403008,
+      "duration": 0.58,
+      "sourceWord": "book",
+      "sourcePhone": "uh",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_h",
+      "voice": 403008,
+      "duration": 0.49,
+      "sourceWord": "hello",
+      "sourcePhone": "hh",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_ow",
+      "voice": 403008,
+      "duration": 0.77,
+      "sourceWord": "hello",
+      "sourcePhone": "ow",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_th",
+      "voice": 403008,
+      "duration": 0.3300625,
+      "sourceWord": "thank",
+      "sourcePhone": "th",
+      "review": "pending listening"
+    },
+    {
+      "key": "phoneme_ng",
+      "voice": 403008,
+      "duration": 0.36,
+      "sourceWord": "thank",
+      "sourcePhone": "ng",
+      "review": "pending listening"
+    },
+    {
+      "key": "group_schwa_l",
+      "voice": 403008,
+      "duration": 0.5,
+      "sourceWord": "apple",
+      "review": "pending listening"
+    }
+  ],
+  "phonemeReview": "pending listening review"
+}

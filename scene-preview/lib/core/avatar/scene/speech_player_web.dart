@@ -22,6 +22,25 @@ class SpeechPlayer {
     if (_audio.ended) _states.add(ProcessingState.completed);
   }).toJS;
   bool _unlocked = false;
+  bool _disposed = false;
+  final _assetBlobs = <String, String>{};
+
+  Future<void> preloadAssets(List<String> paths) async {
+    // Small fixed vocabulary only; sequential downloads do not compete with
+    // model loading or create extra audio elements that need Safari unlocking.
+    for (final path in paths) {
+      if (_disposed) return;
+      try {
+        final response = await web.window.fetch(_assetUrl(path).toJS).toDart;
+        if (!response.ok) continue;
+        final blob = await response.blob().toDart;
+        if (_disposed) return;
+        _assetBlobs[path] = web.URL.createObjectURL(blob);
+      } catch (_) {
+        // The normal asset URL remains available; preloading is optional.
+      }
+    }
+  }
 
   Stream<ProcessingState> get processingStateStream => _states.stream;
   Duration get position => Duration(
@@ -46,7 +65,8 @@ class SpeechPlayer {
     });
   }
 
-  Future<void> setAsset(String path) => setUrl(_assetUrl(path));
+  Future<void> setAsset(String path) =>
+      setUrl(_assetBlobs[path] ?? _assetUrl(path));
   Future<void> setUrl(String url) async {
     _audio.pause();
     _audio.src = url;
@@ -69,10 +89,15 @@ class SpeechPlayer {
   }
 
   Future<void> dispose() async {
+    _disposed = true;
     _audio.pause();
     _audio.removeEventListener('ended', _onEnded);
     _audio.removeAttribute('src');
     _audio.load();
+    for (final url in _assetBlobs.values) {
+      web.URL.revokeObjectURL(url);
+    }
+    _assetBlobs.clear();
     await _states.close();
   }
 }

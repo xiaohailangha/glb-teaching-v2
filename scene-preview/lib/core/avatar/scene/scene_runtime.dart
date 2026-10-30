@@ -231,7 +231,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r4',
+        'version': 'scene-0.2.0-r5',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -444,6 +444,7 @@ class SceneRuntime extends ChangeNotifier {
     speech.generation++;
     playingAudio = false;
     await speech.player.stop();
+    if (disposed || token != stageGeneration || director == null) return;
     playingAudio = false;
     loadingAudio = false;
     if (stage.phase == 'finished') {
@@ -578,7 +579,7 @@ class SceneRuntime extends ChangeNotifier {
         // loop the whole ten-second reel on each spoken word.
         teachingClip!
           ..weight = 1
-          ..seek(lessonPoseTime(phase));
+          ..seek(lessonPoseTime(phase, age));
         emotionClip!.weight = 0;
         applyCourseFace(w, phase, p, age, director!.variation, director!.style);
         w['SmileLeft'] = math.min(w['SmileLeft']!, 1 - .78 * articulation(w));

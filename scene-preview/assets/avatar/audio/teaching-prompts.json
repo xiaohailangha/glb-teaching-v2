@@ -1,1 +1,563 @@
-{"intro_warm":{"text":"Let's try this word.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":14},{"time":0.213,"id":4},{"time":0.323,"id":19},{"time":0.413,"id":15},{"time":0.502,"id":19},{"time":0.654,"id":13},{"time":0.723,"id":2},{"time":0.723,"id":6},{"time":0.922,"id":17},{"time":0.998,"id":6},{"time":1.081,"id":15},{"time":1.226,"id":7},{"time":1.329,"id":5},{"time":1.446,"id":13},{"time":1.598,"id":19},{"time":1.708,"id":0}]},"intro_listen":{"text":"Listen to this.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":14},{"time":0.213,"id":6},{"time":0.316,"id":15},{"time":0.461,"id":1},{"time":0.523,"id":19},{"time":0.619,"id":19},{"time":0.709,"id":4},{"time":0.778,"id":17},{"time":0.840,"id":6},{"time":1.026,"id":15},{"time":1.301,"id":0}]},"intro_next":{"text":"Here's our next word.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":12},{"time":0.247,"id":6},{"time":0.337,"id":13},{"time":0.447,"id":15},{"time":0.571,"id":2},{"time":0.571,"id":4},{"time":0.681,"id":13},{"time":0.750,"id":19},{"time":0.854,"id":4},{"time":0.964,"id":20},{"time":1.026,"id":15},{"time":1.129,"id":19},{"time":1.219,"id":7},{"time":1.322,"id":5},{"time":1.439,"id":13},{"time":1.591,"id":19},{"time":1.701,"id":0}]},"intro_retry":{"text":"Let's try it together.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":14},{"time":0.213,"id":4},{"time":0.323,"id":19},{"time":0.392,"id":15},{"time":0.488,"id":19},{"time":0.633,"id":13},{"time":0.702,"id":2},{"time":0.702,"id":6},{"time":0.922,"id":6},{"time":1.012,"id":19},{"time":1.088,"id":19},{"time":1.170,"id":1},{"time":1.239,"id":20},{"time":1.329,"id":4},{"time":1.467,"id":17},{"time":1.536,"id":1},{"time":1.618,"id":13},{"time":1.797,"id":0}]},"intro_slow":{"text":"Listen closely.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":14},{"time":0.213,"id":6},{"time":0.316,"id":15},{"time":0.461,"id":1},{"time":0.523,"id":19},{"time":0.626,"id":20},{"time":0.785,"id":14},{"time":0.840,"id":8},{"time":0.978,"id":15},{"time":1.150,"id":14},{"time":1.239,"id":6},{"time":1.494,"id":0}]},"invite_one":{"text":"Your turn.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":6},{"time":0.275,"id":3},{"time":0.385,"id":13},{"time":0.461,"id":19},{"time":0.592,"id":5},{"time":0.736,"id":13},{"time":0.847,"id":19},{"time":1.047,"id":0}]},"invite_two":{"text":"Now, you try.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":19},{"time":0.234,"id":2},{"time":0.234,"id":4},{"time":0.509,"id":0},{"time":1.060,"id":6},{"time":1.178,"id":7},{"time":1.267,"id":19},{"time":1.426,"id":13},{"time":1.536,"id":2},{"time":1.536,"id":6},{"time":1.811,"id":0}]},"encourage_one":{"text":"Let's keep going.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":14},{"time":0.213,"id":4},{"time":0.323,"id":19},{"time":0.413,"id":15},{"time":0.482,"id":20},{"time":0.633,"id":6},{"time":0.757,"id":21},{"time":0.874,"id":20},{"time":0.964,"id":8},{"time":1.122,"id":6},{"time":1.267,"id":20},{"time":1.446,"id":0}]},"encourage_two":{"text":"Thanks for trying.","cues":[{"time":0.000,"id":0},{"time":0.137,"id":19},{"time":0.254,"id":1},{"time":0.392,"id":20},{"time":0.454,"id":20},{"time":0.495,"id":15},{"time":0.599,"id":18},{"time":0.702,"id":1},{"time":0.764,"id":13},{"time":0.971,"id":19},{"time":1.129,"id":13},{"time":1.198,"id":2},{"time":1.198,"id":6},{"time":1.356,"id":6},{"time":1.494,"id":20},{"time":1.680,"id":0}]}}
+{
+  "intro_warm": {
+    "text": "Let's try this word.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.32,
+        "id": 14
+      },
+      {
+        "time": 0.42,
+        "id": 4
+      },
+      {
+        "time": 0.5,
+        "id": 19
+      },
+      {
+        "time": 0.56,
+        "id": 15
+      },
+      {
+        "time": 0.64,
+        "id": 19
+      },
+      {
+        "time": 0.7,
+        "id": 13
+      },
+      {
+        "time": 0.78,
+        "id": 11
+      },
+      {
+        "time": 0.92,
+        "id": 17
+      },
+      {
+        "time": 0.98,
+        "id": 6
+      },
+      {
+        "time": 1.08,
+        "id": 15
+      },
+      {
+        "time": 1.18,
+        "id": 7
+      },
+      {
+        "time": 1.3,
+        "id": 5
+      },
+      {
+        "time": 1.52,
+        "id": 19
+      },
+      {
+        "time": 1.7,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.759,
+    "sourceKey": "7ed29dd4d98d7ca0ec70498dd2255767a9cf4cdace50acaab87332ea24f0d0f6"
+  },
+  "intro_listen": {
+    "text": "Listen to this.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.38,
+        "id": 14
+      },
+      {
+        "time": 0.54,
+        "id": 6
+      },
+      {
+        "time": 0.64,
+        "id": 15
+      },
+      {
+        "time": 0.72,
+        "id": 1
+      },
+      {
+        "time": 0.8,
+        "id": 19
+      },
+      {
+        "time": 0.88,
+        "id": 19
+      },
+      {
+        "time": 0.98,
+        "id": 7
+      },
+      {
+        "time": 1.04,
+        "id": 17
+      },
+      {
+        "time": 1.13,
+        "id": 6
+      },
+      {
+        "time": 1.52,
+        "id": 15
+      },
+      {
+        "time": 1.82,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.879,
+    "sourceKey": "00ae6f683b5eae3a0bb1c02fee85b265569588a281209120629c3c5a271d487c"
+  },
+  "intro_next": {
+    "text": "Here's our next word.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.38,
+        "id": 12
+      },
+      {
+        "time": 0.52,
+        "id": 6
+      },
+      {
+        "time": 0.64,
+        "id": 13
+      },
+      {
+        "time": 0.74,
+        "id": 15
+      },
+      {
+        "time": 0.84,
+        "id": 2
+      },
+      {
+        "time": 0.96,
+        "id": 13
+      },
+      {
+        "time": 1.04,
+        "id": 19
+      },
+      {
+        "time": 1.14,
+        "id": 4
+      },
+      {
+        "time": 1.24,
+        "id": 20
+      },
+      {
+        "time": 1.32,
+        "id": 15
+      },
+      {
+        "time": 1.36,
+        "id": 19
+      },
+      {
+        "time": 1.44,
+        "id": 7
+      },
+      {
+        "time": 1.54,
+        "id": 5
+      },
+      {
+        "time": 1.76,
+        "id": 19
+      },
+      {
+        "time": 1.92,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.999,
+    "sourceKey": "3d8fcbc2f9b0085bfac035c3f6018aa7937c3b9a16794778aeaed63cb00c4924"
+  },
+  "intro_retry": {
+    "text": "Let's try it together.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.33,
+        "id": 14
+      },
+      {
+        "time": 0.45,
+        "id": 4
+      },
+      {
+        "time": 0.55,
+        "id": 19
+      },
+      {
+        "time": 0.61,
+        "id": 15
+      },
+      {
+        "time": 0.69,
+        "id": 19
+      },
+      {
+        "time": 0.75,
+        "id": 13
+      },
+      {
+        "time": 0.85,
+        "id": 11
+      },
+      {
+        "time": 0.93,
+        "id": 6
+      },
+      {
+        "time": 1.04,
+        "id": 19
+      },
+      {
+        "time": 1.11,
+        "id": 19
+      },
+      {
+        "time": 1.15,
+        "id": 1
+      },
+      {
+        "time": 1.23,
+        "id": 20
+      },
+      {
+        "time": 1.31,
+        "id": 4
+      },
+      {
+        "time": 1.43,
+        "id": 17
+      },
+      {
+        "time": 1.51,
+        "id": 5
+      },
+      {
+        "time": 1.75,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.839,
+    "sourceKey": "23680d6bd3d36d77010ed9a02849c192338c2333d800a2a26af2cedf029213c4"
+  },
+  "intro_slow": {
+    "text": "Listen closely.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.31,
+        "id": 14
+      },
+      {
+        "time": 0.43,
+        "id": 6
+      },
+      {
+        "time": 0.51,
+        "id": 15
+      },
+      {
+        "time": 0.61,
+        "id": 1
+      },
+      {
+        "time": 0.69,
+        "id": 19
+      },
+      {
+        "time": 0.77,
+        "id": 20
+      },
+      {
+        "time": 0.85,
+        "id": 14
+      },
+      {
+        "time": 0.93,
+        "id": 8
+      },
+      {
+        "time": 1.07,
+        "id": 15
+      },
+      {
+        "time": 1.17,
+        "id": 14
+      },
+      {
+        "time": 1.27,
+        "id": 6
+      },
+      {
+        "time": 1.519,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.519,
+    "sourceKey": "a3ab52f387a64e3479353a1536f9c3939ed1dadbf59e0a34406df20e31754f30"
+  },
+  "invite_one": {
+    "text": "Your turn.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.25,
+        "id": 6
+      },
+      {
+        "time": 0.42,
+        "id": 3
+      },
+      {
+        "time": 0.51,
+        "id": 13
+      },
+      {
+        "time": 0.61,
+        "id": 19
+      },
+      {
+        "time": 0.73,
+        "id": 5
+      },
+      {
+        "time": 1.01,
+        "id": 19
+      },
+      {
+        "time": 1.13,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.199,
+    "sourceKey": "f2d0d0de2ba29902d7488f63ebf4c1002ddd167727c9d2c3c39269737cb06084"
+  },
+  "invite_two": {
+    "text": "Now, you try.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.34,
+        "id": 19
+      },
+      {
+        "time": 0.52,
+        "id": 9
+      },
+      {
+        "time": 1.28,
+        "id": 0
+      },
+      {
+        "time": 1.5,
+        "id": 6
+      },
+      {
+        "time": 1.76,
+        "id": 6
+      },
+      {
+        "time": 1.82,
+        "id": 8
+      },
+      {
+        "time": 1.96,
+        "id": 19
+      },
+      {
+        "time": 2.12,
+        "id": 13
+      },
+      {
+        "time": 2.2,
+        "id": 11
+      },
+      {
+        "time": 2.62,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 2.758,
+    "sourceKey": "abece26a3922d2de4fe7066cc4dc71ee7181f3adabc685e40a88de1df9b2311e"
+  },
+  "encourage_one": {
+    "text": "Let's keep going.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.35,
+        "id": 14
+      },
+      {
+        "time": 0.45,
+        "id": 4
+      },
+      {
+        "time": 0.57,
+        "id": 19
+      },
+      {
+        "time": 0.63,
+        "id": 15
+      },
+      {
+        "time": 0.69,
+        "id": 20
+      },
+      {
+        "time": 0.77,
+        "id": 6
+      },
+      {
+        "time": 0.89,
+        "id": 21
+      },
+      {
+        "time": 0.95,
+        "id": 20
+      },
+      {
+        "time": 1.03,
+        "id": 8
+      },
+      {
+        "time": 1.21,
+        "id": 6
+      },
+      {
+        "time": 1.31,
+        "id": 20
+      },
+      {
+        "time": 1.51,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.599,
+    "sourceKey": "cc719a7b90cd96f591b1b8acd46f553a555f459faf50fe3ab8e1bfcc285077f8"
+  },
+  "encourage_two": {
+    "text": "Thanks for trying.",
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.27,
+        "id": 17
+      },
+      {
+        "time": 0.41,
+        "id": 1
+      },
+      {
+        "time": 0.53,
+        "id": 20
+      },
+      {
+        "time": 0.59,
+        "id": 20
+      },
+      {
+        "time": 0.65,
+        "id": 15
+      },
+      {
+        "time": 0.71,
+        "id": 18
+      },
+      {
+        "time": 0.77,
+        "id": 3
+      },
+      {
+        "time": 0.83,
+        "id": 13
+      },
+      {
+        "time": 0.91,
+        "id": 19
+      },
+      {
+        "time": 1.01,
+        "id": 13
+      },
+      {
+        "time": 1.09,
+        "id": 11
+      },
+      {
+        "time": 1.25,
+        "id": 6
+      },
+      {
+        "time": 1.49,
+        "id": 20
+      },
+      {
+        "time": 1.69,
+        "id": 0
+      }
+    ],
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.759,
+    "sourceKey": "f342f2e64c066e17e1f102cad172e90a81c681268a43c0a0d438e33652fb73c1"
+  }
+}

@@ -1,13 +1,14 @@
 {
   "origin": "https://49.233.179.83/scene/",
-  "checkedAt": "2026-10-30T08:53:40.685Z",
-  "passed": 6,
+  "checkedAt": "2026-10-30T10:03:08.506Z",
+  "passed": 7,
   "checks": [
     "new scene entry is directly accessible",
     "original web entry is unchanged",
     "both cloud model versions remain independent",
     "new renderer assets and curated phonemes are available",
     "Tencent synthesis and matching mouth data remain usable",
+    "all shipped teaching voices and word bytes match the boy-voice build",
     "private files and cross-site spending remain blocked"
   ],
   "phonePerformanceVerified": false,

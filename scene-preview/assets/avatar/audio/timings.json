@@ -1,1 +1,356 @@
-{"apple":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.130,"id":1},{"time":0.330,"duration":0.070,"id":21},{"time":0.426,"duration":0.065,"id":1},{"time":0.516,"duration":0.180,"id":14},{"time":0.764,"duration":0.835,"id":0}]},"banana":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.040,"id":21},{"time":0.206,"duration":0.050,"id":1},{"time":0.275,"duration":0.060,"id":19},{"time":0.358,"duration":0.125,"id":1},{"time":0.530,"duration":0.050,"id":19},{"time":0.599,"duration":0.180,"id":1},{"time":0.847,"duration":0.835,"id":0}]},"cat":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.100,"id":20},{"time":0.289,"duration":0.220,"id":1},{"time":0.592,"duration":0.130,"id":19},{"time":0.771,"duration":0.835,"id":0}]},"dog":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.090,"id":19},{"time":0.275,"duration":0.220,"id":3},{"time":0.578,"duration":0.150,"id":20},{"time":0.785,"duration":0.835,"id":0}]},"fish":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.160,"id":18},{"time":0.371,"duration":0.220,"id":6},{"time":0.675,"duration":0.220,"id":16},{"time":0.978,"duration":0.835,"id":0}]},"moon":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.100,"id":21},{"time":0.289,"duration":0.220,"id":7},{"time":0.592,"duration":0.185,"id":19},{"time":0.847,"duration":0.835,"id":0}]},"sun":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.155,"id":15},{"time":0.364,"duration":0.220,"id":1},{"time":0.668,"duration":0.180,"id":19},{"time":0.916,"duration":0.835,"id":0}]},"book":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.090,"id":21},{"time":0.275,"duration":0.220,"id":4},{"time":0.578,"duration":0.150,"id":20},{"time":0.785,"duration":0.835,"id":0}]},"hello":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.085,"id":12},{"time":0.268,"duration":0.060,"id":4},{"time":0.351,"duration":0.070,"id":14},{"time":0.447,"duration":0.220,"id":8},{"time":0.750,"duration":0.835,"id":0}]},"thank":{"voice":"Microsoft Zira Desktop","cues":[{"time":0.000,"duration":0.110,"id":0},{"time":0.151,"duration":0.155,"id":19},{"time":0.364,"duration":0.220,"id":1},{"time":0.668,"duration":0.065,"id":20},{"time":0.757,"duration":0.150,"id":20},{"time":0.964,"duration":0.835,"id":0}]}}
+{
+  "apple": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 1
+      },
+      {
+        "time": 0.335,
+        "id": 21
+      },
+      {
+        "time": 0.45500000000000007,
+        "id": 1
+      },
+      {
+        "time": 0.475,
+        "id": 14
+      },
+      {
+        "time": 0.7450000000000001,
+        "id": 0
+      }
+    ],
+    "text": "apple",
+    "bundled": true,
+    "duration": 0.87,
+    "sourceKey": "a42b3fbbb4d91a762dc11486a8a25739bf54e5e5804a192bca26c69f836d45e6",
+    "trim": {
+      "start": 0.175,
+      "end": 0.875
+    }
+  },
+  "banana": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.135,
+        "id": 1
+      },
+      {
+        "time": 0.185,
+        "id": 19
+      },
+      {
+        "time": 0.28500000000000003,
+        "id": 1
+      },
+      {
+        "time": 0.855,
+        "id": 19
+      },
+      {
+        "time": 1.155,
+        "id": 1
+      },
+      {
+        "time": 1.345,
+        "id": 0
+      }
+    ],
+    "text": "banana",
+    "bundled": true,
+    "duration": 1.47,
+    "sourceKey": "7ca9ea3c133740f0f60d7d081f09c4ae89fba97dbddfaf2f656e9b7fc3efd13d",
+    "trim": {
+      "start": 0.245,
+      "end": 1.545
+    }
+  },
+  "cat": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 20
+      },
+      {
+        "time": 0.25500000000000006,
+        "id": 1
+      },
+      {
+        "time": 0.45500000000000007,
+        "id": 19
+      },
+      {
+        "time": 0.625,
+        "id": 0
+      }
+    ],
+    "text": "cat",
+    "bundled": true,
+    "duration": 0.7500625,
+    "sourceKey": "e21faedb1f31e2b511893952c6a0f165baf1d289563f8184c1c8eb1f1394f8b7",
+    "trim": {
+      "start": 0.27499999999999997,
+      "end": 0.855
+    }
+  },
+  "dog": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 19
+      },
+      {
+        "time": 0.235,
+        "id": 3
+      },
+      {
+        "time": 0.545,
+        "id": 20
+      },
+      {
+        "time": 0.665,
+        "id": 0
+      }
+    ],
+    "text": "dog",
+    "bundled": true,
+    "duration": 0.79,
+    "sourceKey": "1874eb1d1e1add54bcc7713d91572a7641541af0f5752a3a091295764defd1aa",
+    "trim": {
+      "start": 0.185,
+      "end": 0.805
+    }
+  },
+  "fish": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 18
+      },
+      {
+        "time": 0.135,
+        "id": 6
+      },
+      {
+        "time": 0.385,
+        "id": 16
+      },
+      {
+        "time": 0.6950000000000001,
+        "id": 0
+      }
+    ],
+    "text": "fish",
+    "bundled": true,
+    "duration": 0.82,
+    "sourceKey": "dbca55c862b1efb78fe79ac9d946d301b2fe3cc84d8929302ba4002653485c70",
+    "trim": {
+      "start": 0.285,
+      "end": 0.935
+    }
+  },
+  "moon": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.135,
+        "id": 7
+      },
+      {
+        "time": 0.3950000000000001,
+        "id": 19
+      },
+      {
+        "time": 0.675,
+        "id": 0
+      }
+    ],
+    "text": "moon",
+    "bundled": true,
+    "duration": 0.8,
+    "sourceKey": "6a9a2959b92d85e1e89b3fdb02d9b5a36e51572ef9fa37ca6d47943eafde97df",
+    "trim": {
+      "start": 0.355,
+      "end": 0.985
+    }
+  },
+  "sun": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 15
+      },
+      {
+        "time": 0.11500000000000005,
+        "id": 1
+      },
+      {
+        "time": 0.43500000000000005,
+        "id": 19
+      },
+      {
+        "time": 0.7450000000000001,
+        "id": 0
+      }
+    ],
+    "text": "sun",
+    "bundled": true,
+    "duration": 0.87,
+    "sourceKey": "7dc11b76e8603af95c8620c9d890514b2cb03b1497025371e766665acd4ab38b",
+    "trim": {
+      "start": 0.415,
+      "end": 1.115
+    }
+  },
+  "book": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 21
+      },
+      {
+        "time": 0.14500000000000002,
+        "id": 4
+      },
+      {
+        "time": 0.5149999999999999,
+        "id": 20
+      },
+      {
+        "time": 0.605,
+        "id": 0
+      }
+    ],
+    "text": "book",
+    "bundled": true,
+    "duration": 0.73,
+    "sourceKey": "8d73699a7c0efd4337601a17e077d51652ba895c7cfd9f1db507ba9b41b64e5c",
+    "trim": {
+      "start": 0.245,
+      "end": 0.805
+    }
+  },
+  "hello": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 12
+      },
+      {
+        "time": 0.365,
+        "id": 4
+      },
+      {
+        "time": 0.465,
+        "id": 14
+      },
+      {
+        "time": 0.5449999999999999,
+        "id": 8
+      },
+      {
+        "time": 1.105,
+        "id": 0
+      }
+    ],
+    "text": "hello",
+    "bundled": true,
+    "duration": 1.23,
+    "sourceKey": "8c7a75fa8834014fe9dc44ed96d9753887cc292921b4f93689aa09f2ca6d1609",
+    "trim": {
+      "start": 0.125,
+      "end": 1.1849999999999998
+    }
+  },
+  "thank": {
+    "voice": 403008,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.08500000000000002,
+        "id": 17
+      },
+      {
+        "time": 0.20500000000000002,
+        "id": 1
+      },
+      {
+        "time": 0.25500000000000006,
+        "id": 20
+      },
+      {
+        "time": 0.405,
+        "id": 20
+      },
+      {
+        "time": 0.495,
+        "id": 0
+      }
+    ],
+    "text": "thank",
+    "bundled": true,
+    "duration": 0.6200625,
+    "sourceKey": "eabb1b60d1d064d85392ca93b210cce2b47e3ef1994a118eb4b4471b039923bc",
+    "trim": {
+      "start": 0.27499999999999997,
+      "end": 0.725
+    }
+  }
+}

@@ -163,7 +163,10 @@ class _LessonPageState extends State<LessonPage> {
                                 : '听示范 ${controller.word.id}',
                             child: GestureDetector(
                               behavior: HitTestBehavior.opaque,
-                              onTap: _play,
+                              onTap: () {
+                                controller.playWord();
+                                _hideControls();
+                              },
                               child: SizedBox(
                                 width: double.infinity,
                                 child: Column(

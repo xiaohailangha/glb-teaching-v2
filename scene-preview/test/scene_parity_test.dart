@@ -53,6 +53,25 @@ void main() {
       }
     }
   });
+  test('word taps contain only the selected word and a silent recording opportunity', () {
+    for (final word in [
+      'apple',
+      'banana',
+      'cat',
+      'dog',
+      'fish',
+      'moon',
+      'sun',
+      'book',
+      'hello',
+      'thank',
+    ]) {
+      final d = TeachingDirector.word(word: word);
+      expect(d.stage.clip, word);
+      expect(d.stages.where((s) => s.clip != null).map((s) => s.clip), [word]);
+      expect(d.advance().phase, 'listen');
+    }
+  });
   test('apple course keeps explicit listening, help branches and unassessed attempts', () {
     final d = TeachingDirector.apple(style: 'adult');
     for (var i = 0; i < 7; i++) {
