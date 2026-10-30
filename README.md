@@ -4,7 +4,7 @@
 
 2026-10-30 COS 更新：Storm 模型已通过北京私有 COS 分发，浏览器按模型版本缓存，失败回退服务器。桌面实测首次模型下载约 5.3 秒、再次打开零模型网络下载；这不是手机速度或帧率保证。配置、回滚和验证见 `docs/cos-integration/README.md`。
 
-2026-10-30：已部署私人 Web 测试版到新购腾讯云服务器，入口 **https://49.233.179.83/**，需要测试账号验证。凭据在本地 `.secrets/cloud-preview.json`；维护、HTTPS自动续期、真实下载耗时及验证边界见 `docs/cloud-deployment/README.md`。原ExtraVM翻墙VPS未改动。
+2026-10-30：已部署私人 Web 测试版到新购腾讯云服务器，入口 **https://49.233.179.83/**，按用户要求已取消账号密码。维护、HTTPS自动续期、真实下载耗时及验证边界见 `docs/cloud-deployment/README.md`。原ExtraVM翻墙VPS未改动。
 
 最新课程表演入口：**演示库 → 课程表演 · apple → 成人零基础 / 儿童年龄版本**。已接入与教学阶段和用户作答联动的眼神、表情、身体动作，以及帮助、回忆和反馈分支。当前完整交互样板为 apple；课程全量适配设计与未完成的专用动作见 `docs/curriculum/人物教学表演适配方案.html`，最新验证见 `docs/integrated-teaching.md`。下文原始表演与模型介绍保留为项目历史。
 
