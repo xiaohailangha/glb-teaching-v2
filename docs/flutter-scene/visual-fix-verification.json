@@ -1,0 +1,35 @@
+{
+  "version": "scene-0.2.0-r3",
+  "checkedAt": "2026-10-30T06:23:26.764Z",
+  "origin": "https://49.233.179.83/scene/",
+  "browser": "Hidden desktop Chromium 1280x720",
+  "flutterTests": 23,
+  "analyze": "passed",
+  "webRelease": "passed",
+  "productionProbesRemoved": true,
+  "mainDartSha256": "8f3148fb6e2a307d9331cbcee520e5505f63b40a28fd3e3d42601fb0afaca62a",
+  "attachmentProbe": {
+    "frames": 7200,
+    "maxErrorMeters": {
+      "FK-Eye.L": 1.2134386207835622e-7,
+      "FK-Eye.R": 1.2036781326982014e-7,
+      "MSTR-Hair": 1.202668879729355e-7
+    }
+  },
+  "observed": [
+    "Idle, head turns, 24 second acting sequence and emotion transitions rendered with attached eye centers and scalp root",
+    "Published version r3 confirmed in settings",
+    "Published desktop rendered frame counter observed at 59 FPS"
+  ],
+  "coverageEvidence": "edge-coverage-probes.json",
+  "deploymentBackup": "/opt/glb-backups/before-scene-20261030T062213Z",
+  "userReportedR2PhoneFps": "above 50 FPS in iPhone browser",
+  "r3PhoneVerified": false,
+  "safariFringeResolutionVerified": false,
+  "androidPackageBuilt": false,
+  "screenshots": [
+    "outputs/flutter-scene/r3-public.png",
+    "outputs/flutter-scene/r3-version-public.png",
+    "outputs/flutter-scene/r3-side-local.png"
+  ]
+}

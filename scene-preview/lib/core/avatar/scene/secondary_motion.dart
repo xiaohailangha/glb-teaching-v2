@@ -37,6 +37,20 @@ List<Node> descendants(Node root) => [
   for (final child in root.children) ...descendants(child),
 ];
 
+// Quaternion.rotated in vector_math applies the inverse rotation. Positions
+// attached to a joint must use the same active matrix as Node.localTransform.
+vm.Vector3 rotateAttachedVector(vm.Quaternion rotation, vm.Vector3 vector) =>
+    rotation.asRotationMatrix().transform(vector.clone());
+
+/// Runs on every scene prepass, before the model's animation player. A paint
+/// requested by GPU completion can occur without a new SceneView ticker tick.
+class RestoreSecondaryMotion extends Component {
+  RestoreSecondaryMotion(this.motion);
+  final SecondaryMotion motion;
+  @override
+  void tick(double deltaSeconds) => motion.restore();
+}
+
 class BonePose {
   BonePose(this.node) : p = node.position, q = node.rotation, s = node.scale;
   final Node node;
@@ -116,6 +130,15 @@ class SecondaryMotion {
         hair[node.name] = HairRecord(node, item['parent'] as String?);
       }
     }
+    if (head != null) {
+      final inverse = vm.Matrix4.inverted(head!.localTransform);
+      for (final node in [
+        ...eyes,
+        if (hair['MSTR-Hair'] != null) hair['MSTR-Hair']!.node,
+      ]) {
+        headAnchors[node] = inverse.transform3(node.position.clone());
+      }
+    }
     for (final side in ['L', 'R']) {
       final elbow = byName['DEF-Forearm_1.$side'];
       if (elbow != null) {
@@ -133,7 +156,10 @@ class SecondaryMotion {
     }
     smoothed = [
       for (final n in nodes)
-        if (n.mesh == null && n != model) BonePose(n),
+        if (n.mesh == null &&
+            n != model &&
+            (n == head || !parts.contains(n.name)))
+          BonePose(n),
     ];
   }
   final Node model;
@@ -141,6 +167,7 @@ class SecondaryMotion {
   late List<Node> eyes;
   late List<BonePose> headParts, smoothed;
   final hair = <String, HairRecord>{};
+  final headAnchors = <Node, vm.Vector3>{};
   final arms = <({String side, Node elbow, List<BonePose> records})>[];
   final saved = <Node, BonePose>{};
   vm.Quaternion? lastHeadWorld;
@@ -175,6 +202,9 @@ class SecondaryMotion {
     String phase = 'idle',
     double? storyTime,
   }) {
+    final authoredHeadInverse = head == null
+        ? null
+        : vm.Matrix4.inverted(head!.localTransform);
     for (final p in smoothed) {
       if (smoothingStarted) {
         final blend = 1 - math.exp(-dt * 18);
@@ -186,7 +216,40 @@ class SecondaryMotion {
         p.capture();
       }
     }
+    // These imported joints are siblings with model-space transforms. Smooth
+    // the head once and carry its attached joints by that same rigid delta;
+    // independent position lerps cut different chords through a head turn.
+    if (smoothingStarted && authoredHeadInverse != null) {
+      final delta = head!.localTransform * authoredHeadInverse;
+      for (final part in headParts) {
+        if (part.node == head) continue;
+        final matrix = delta * part.node.localTransform;
+        final position = vm.Vector3.zero(), scale = vm.Vector3.zero();
+        final rotation = vm.Quaternion.identity();
+        matrix.decompose(position, rotation, scale);
+        part.node.position = position;
+        part.node.rotation = rotation;
+        part.node.scale = scale;
+      }
+    }
     smoothingStarted = true;
+    // Baked sibling translations are interpolated linearly while the head
+    // rotates on a quaternion arc. Keep rigid eye centers and the scalp root
+    // on their bind anchors even between authored keys. Hair tips still bend.
+    if (head != null) {
+      final transform = head!.localTransform;
+      for (final eye in eyes) {
+        eye.position = transform.transform3(headAnchors[eye]!.clone());
+      }
+      final root = hair['MSTR-Hair']?.node;
+      if (root != null) {
+        final shift =
+            transform.transform3(headAnchors[root]!.clone()) - root.position;
+        for (final record in hair.values) {
+          record.node.position = record.node.position + shift;
+        }
+      }
+    }
     time += dt;
     final t = ((storyTime ?? time) % 18 + 18) % 18,
         gain = engaged || storyTime != null ? 1.0 : .60;
@@ -230,7 +293,8 @@ class SecondaryMotion {
           q = authoredRotation(pitch, headYaw, roll);
       for (final p in headParts) {
         remember(p.node);
-        p.node.position = q.rotated(p.node.position - pivot) + pivot;
+        p.node.position =
+            rotateAttachedVector(q, p.node.position - pivot) + pivot;
         p.node.rotation = q * p.node.rotation;
       }
     }
@@ -265,7 +329,8 @@ class SecondaryMotion {
           );
       for (final p in arm.records) {
         remember(p.node);
-        p.node.position = q.rotated(p.node.position - pivot) + pivot;
+        p.node.position =
+            rotateAttachedVector(q, p.node.position - pivot) + pivot;
         p.node.rotation = q * p.node.rotation;
       }
     }
@@ -352,8 +417,9 @@ class SecondaryMotion {
   void _eyeAim(Map<String, double> w) {
     if (eyes.length != 2) return;
     final center = (eyes[0].position + eyes[1].position) * .5;
-    var target =
-        head?.rotation.rotated(vm.Vector3(0, 0, -3)) ?? vm.Vector3(0, 0, -3);
+    var target = head != null
+        ? rotateAttachedVector(head!.rotation, vm.Vector3(0, 0, -3))
+        : vm.Vector3(0, 0, -3);
     final learner = vm.Vector3(-3 * math.sin(yaw), 0, -3 * math.cos(yaw));
     target = target + (learner - target) * .68;
     target +=
@@ -366,7 +432,7 @@ class SecondaryMotion {
     for (final eye in eyes) {
       remember(eye);
       final q = eye.rotation,
-          forward = q.rotated(vm.Vector3(0, 0, -1))..normalize(),
+          forward = rotateAttachedVector(q, vm.Vector3(0, 0, -1))..normalize(),
           direction = (target - eye.position)..normalize();
       var delta = vm.Quaternion.fromTwoVectors(forward, direction);
       final angle = 2 * math.acos(math.min(1, delta.w.abs()));

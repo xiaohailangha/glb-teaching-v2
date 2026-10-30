@@ -215,6 +215,10 @@
     "type": "fragment",
     "file": "shaders/flutter_scene_resolve.frag"
   },
+  "TeachingBackgroundFragment": {
+    "type": "fragment",
+    "file": "shaders/teaching_background.frag"
+  },
   "FxaaFragment": {
     "type": "fragment",
     "file": "shaders/flutter_scene_fxaa.frag"

@@ -7,5 +7,6 @@ Upstream: https://github.com/bdero/flutter_scene ; package obtained from pub.dev
 - `lib/src/geometry/morphed_geometry.dart`: upload morph position/normal deltas as RGBA16F instead of RGBA32F.
 - `shaders/flutter_scene_morph.glsl`: uniform array capacity matches the Dart budget of 64.
 - `shaders/impeller/`: SDK shader include headers from Flutter 3.47.9, with their BSD license. This gives Windows impellerc an ASCII include path through the project's temporary V: mapping when the actual workspace contains Chinese characters.
+- `shaders/teaching_background.frag` and its `base.shaderbundle.json` entry: app-specific display-space premultiplied compositing onto the teaching page gradient, after tone mapping and before FXAA. The app registers this custom pass; it produces an opaque image for the browser bridge. Safari silhouette-fringe resolution still requires phone verification.
 
 The app tests cover retention of all 52 Storm morph channels, the head texture budget, and half-float packing. These are compatibility changes, not a phone performance claim. Compare future upstream releases before rebasing this local copy.

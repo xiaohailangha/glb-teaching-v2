@@ -17,6 +17,8 @@ import 'teaching_math.dart';
 import 'scene_asset_bundle.dart';
 import 'corneal_highlights.dart';
 import 'rendered_frame_meter.dart';
+import 'teaching_background.dart';
+import 'scene_diagnostics.dart';
 
 class SceneRuntime extends ChangeNotifier {
   SceneRuntime(this.controller) {
@@ -42,6 +44,7 @@ class SceneRuntime extends ChangeNotifier {
   final timings = <String, dynamic>{};
   Map<String, dynamic> units = {};
   SecondaryMotion? secondary;
+  AttachmentProbe? attachmentProbe;
   CornealHighlights? highlights;
   AnimationClip? teachingClip, emotionClip;
   List<Node> meshes = [];
@@ -86,6 +89,10 @@ class SceneRuntime extends ChangeNotifier {
     try {
       final speechInit = speech.init();
       await Scene.initializeStaticResources();
+      if (!(const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
+          Uri.base.queryParameters['background'] == 'transparent')) {
+        scene.addRenderPass(TeachingBackground());
+      }
       scene
         ..antiAliasingMode = AntiAliasingMode.fxaa
         ..environmentIntensity = .8
@@ -142,6 +149,11 @@ class SceneRuntime extends ChangeNotifier {
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
       ) as Map<String, dynamic>;
       secondary = SecondaryMotion(model!, rig);
+      if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
+          Uri.base.queryParameters['probe'] == '1') {
+        attachmentProbe = AttachmentProbe(secondary!);
+      }
+      model!.addComponent(RestoreSecondaryMotion(secondary!));
       final teaching = model!.findAnimationByName('Teaching_Apple_10s'),
           emotions = model!.findAnimationByName('Emotion_Reel');
       if (teaching == null || emotions == null) {
@@ -199,6 +211,13 @@ class SceneRuntime extends ChangeNotifier {
         }
       });
       loaded = true;
+      if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
+          Uri.base.queryParameters['capture'] == '1') {
+        Future<void>.delayed(
+          const Duration(seconds: 3),
+          () => probeDisplayCoverage(scene),
+        );
+      }
       loading = '';
       emit('ready', {
         'triangles': 425144,
@@ -208,7 +227,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r2',
+        'version': 'scene-0.2.0-r3',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -272,6 +291,10 @@ class SceneRuntime extends ChangeNotifier {
           scene.antiAliasingMode = quality == 'low'
               ? AntiAliasingMode.none
               : AntiAliasingMode.fxaa;
+          if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
+              Uri.base.queryParameters['aa'] == 'off') {
+            scene.antiAliasingMode = AntiAliasingMode.none;
+          }
           notifyListeners();
         case 'focus':
           closeUp = c['closeUp'] == true;
@@ -578,7 +601,6 @@ class SceneRuntime extends ChangeNotifier {
         emotionClip!.weight = 0;
       }
     }
-    secondary?.restore();
     if (at - lastProgress > .1 && mode != 'idle') {
       emit('progress', {
         'session': session,
@@ -616,10 +638,10 @@ class SceneRuntime extends ChangeNotifier {
     }
   }
 
-  void applyProceduralPose() {
+  void applyProceduralPose(double dt) {
     if (!loaded) return;
     secondary?.update(
-      frameDt,
+      dt.clamp(0.0, .06),
       motion.weights,
       speaking: playingAudio && !loadingAudio,
       engaged: mode != 'idle',
@@ -636,6 +658,9 @@ class SceneRuntime extends ChangeNotifier {
       }
     }
     highlights?.update(camera(), motion.weights);
+    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS')) {
+      attachmentProbe?.sample();
+    }
   }
 
   PerspectiveCamera camera() {
@@ -683,7 +708,7 @@ class _PoseDriver extends Component {
   _PoseDriver(this.runtime);
   final SceneRuntime runtime;
   @override
-  void tick(double dt) => runtime.applyProceduralPose();
+  void tick(double dt) => runtime.applyProceduralPose(dt);
 }
 
 class _TeachingProjection extends PerspectiveProjection {

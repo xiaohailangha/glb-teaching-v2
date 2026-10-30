@@ -1,0 +1,38 @@
+[
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":5700,\"maxErrorMeters\":{\"FK-Eye.L\":1.213009667036305e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:06.440Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  },
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":6000,\"maxErrorMeters\":{\"FK-Eye.L\":1.213009667036305e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:11.441Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  },
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":6300,\"maxErrorMeters\":{\"FK-Eye.L\":1.2134386207835622e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:16.456Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  },
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":6600,\"maxErrorMeters\":{\"FK-Eye.L\":1.2134386207835622e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:21.455Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  },
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":6900,\"maxErrorMeters\":{\"FK-Eye.L\":1.2134386207835622e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:26.455Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  },
+  {
+    "level": "log",
+    "message": "ATTACHMENT_PROBE {\"frames\":7200,\"maxErrorMeters\":{\"FK-Eye.L\":1.2134386207835622e-7,\"FK-Eye.R\":1.2036781326982014e-7,\"MSTR-Hair\":1.202668879729355e-7}}",
+    "timestamp": "2026-10-30T06:22:31.457Z",
+    "url": "http://localhost:5303/scene/main.dart.js"
+  }
+]

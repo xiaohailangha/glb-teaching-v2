@@ -38,7 +38,9 @@ git clone --depth 1 --branch 3.47.9 https://github.com/flutter/flutter.git work/
 
 vendored 引擎补丁把 GPU 活跃表情预算从 8 提至 64、贴图维度上限从 2048 提至 4096，使用 RGBA16F 存储位置/法线变形，并拒绝本模型意外退回 CPU 变形。补丁清单见 `vendor/flutter_scene/LOCAL_PATCHES.md`。
 
-已通过 21 项 Flutter 测试（含 341 个原 JS 表演曲线采样对照）、analyze、Web release 构建；根目录 55 项 Node 回归测试通过。线上检查见 `../docs/flutter-scene/web-verification.json` 和 `browser-verification.json`。桌面画面、配音与待跟读状态已观察；不能据此宣称 S98Pro 或 iPhone 的发热/帧率已改善。
+已通过 23 项 Flutter 测试（含 341 个原 JS 表演曲线采样对照，以及真实 Storm 绑定数据的转头、动画过渡和额外重绘回归）、analyze、Web release 构建；根目录既有 55 项 Node 回归测试通过。线上检查见 `../docs/flutter-scene/web-verification.json` 和 `browser-verification.json`。用户反馈 r2 在 iPhone 浏览器达到 50 FPS 以上，同时提供眼球、头发错位和白边截图；这是用户反馈，不是本机真机测试。
+
+`scene-0.2.0-r3` 修正 vector_math 的 Quaternion.rotated 与 Node 渲染矩阵旋转方向不一致；眼球、头发位置改用相同主动旋转。平滑头部时，附属关节使用同一个头部矩阵差量；眼球中心与发根保留头部绑定位置，避免位置插值穿过转头轨迹内部，眼球转动和发梢摆动继续保留。每次引擎 prepass 在动画前恢复附加姿态，不依赖 UI Ticker。人物与相同灰色渐变在 GPU 内合成不透明图像后再抗锯齿，减少透明画面跨浏览器合成的边缘问题；Safari 白边是否消除仍需原手机复测。详细证据见 `../docs/flutter-scene/visual-fix-2026-10-30.md`。
 
 `scene-0.2.0-r2` 的帧率取自引擎实际产生绘制的屏幕帧，GPU 复用上一帧、等待资源或只有 Ticker 回调时不计入。计数不是 GPU 耗时，原生还需 profile/真机验证。
 
