@@ -1,0 +1,22 @@
+{
+  "name": "snow-avatar-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check assets/avatar/avatar.js && node --check assets/avatar/motion.js && node --check assets/avatar/performance.js && node --check assets/avatar/teaching-performance.js && node --check assets/avatar/recording.js && node --check assets/avatar/cloud-speech.js && node --check services/tencent-speech.mjs && node --check services/speech-http.mjs && node --check server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:cloud": "node tools/test-tencent.mjs"
+  },
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "3.0.0",
+    "tencentcloud-sdk-nodejs-sts": "4.1.100",
+    "three": "0.180.0"
+  },
+  "overrides": {
+    "tencentcloud-sdk-nodejs-common": {
+      "uuid": "11.1.1"
+    }
+  }
+}

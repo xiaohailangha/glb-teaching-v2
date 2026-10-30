@@ -1,0 +1,21 @@
+{
+  "deltas": {
+    "head_SmileLeft": 0.018710732460021973,
+    "head_SmileRight": 0.018711209297180176,
+    "head_SmileEyes": 0.006865501403808594,
+    "head_BrowLeft": 0.025622844696044922,
+    "eyebrows_BrowLeft": 0.027915596961975098,
+    "head_BrowRight": 0.025591015815734863,
+    "eyebrows_BrowRight": 0.027915596961975098,
+    "head_Curious": 0.020211338996887207,
+    "eyebrows_Curious": 0.018885016441345215,
+    "head_Attentive": 0.0025274157524108887
+  },
+  "packing": {
+    "before_bytes": 8501812,
+    "after_bytes": 7244360,
+    "removed_rigid_normal_targets": 82,
+    "facial_normal_targets": 127,
+    "accessors": 680
+  }
+}

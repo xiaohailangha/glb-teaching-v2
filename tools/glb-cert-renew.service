@@ -1,0 +1,6 @@
+[Unit]
+Description=Renew GLB preview IP HTTPS certificate
+After=network-online.target
+[Service]
+Type=oneshot
+ExecStart=/opt/glb-runtime/certbot/bin/certbot renew --quiet --deploy-hook "systemctl reload nginx"

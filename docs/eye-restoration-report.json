@@ -1,0 +1,34 @@
+{
+  "source_meshes": [
+    "GEO-snow-eyes",
+    "GEO-snow_eye_corneas"
+  ],
+  "removed_proxy": "Snow_eye_anim",
+  "deltas": {
+    "Snow_eyes_GazeRight": 0.011565014719963074,
+    "Snow_corneas_GazeRight": 0.01218927651643753,
+    "Snow_eyes_GazeLeft": 0.01156502217054367,
+    "Snow_corneas_GazeLeft": 0.012189283967018127,
+    "Snow_eyes_GazeUp": 0.0067713260650634766,
+    "Snow_corneas_GazeUp": 0.007192134857177734,
+    "Snow_eyes_GazeDown": 0.0067713260650634766,
+    "Snow_corneas_GazeDown": 0.007192015647888184,
+    "Snow_eyes_HeadNod": 0.011166691780090332,
+    "Snow_corneas_HeadNod": 0.011555671691894531,
+    "Snow_eyes_LookRight": 0.014352437108755112,
+    "Snow_corneas_LookRight": 0.014882255345582962,
+    "Snow_eyes_LookLeft": 0.014352425932884216,
+    "Snow_corneas_LookLeft": 0.014882242307066917,
+    "Snow_eyes_Breathe": 0.004000306129455566,
+    "Snow_corneas_Breathe": 0.004005074501037598,
+    "Snow_eyes_Gesture": 0.01688261516392231,
+    "Snow_corneas_Gesture": 0.016903502866625786
+  },
+  "packing": {
+    "before_bytes": 10001644,
+    "after_bytes": 8908868,
+    "removed_rigid_normal_targets": 55,
+    "facial_normal_targets": 145,
+    "accessors": 683
+  }
+}

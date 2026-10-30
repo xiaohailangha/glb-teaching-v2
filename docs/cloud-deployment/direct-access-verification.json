@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-30T01:54:51.386Z",
+  "origin": "https://49.233.179.83",
+  "accessMode": "public",
+  "checks": [
+    {
+      "name": "Page opens without credentials",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "name": "Speech status accessible",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "name": "Model metadata accessible",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "name": "COS manifest accessible",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "name": "Server credentials remain blocked",
+      "status": 403,
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[Unit]
+Description=GLB teaching speech backend
+After=network-online.target
+Wants=network-online.target
+[Service]
+User=glbapp
+Group=glbapp
+WorkingDirectory=/opt/glb-teaching
+ExecStart=/opt/glb-runtime/node/bin/node /opt/glb-teaching/server.mjs
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=PORT=5296
+Environment=COS_ASSETS_ENABLED=true
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/glb-teaching/work
+UMask=0077
+[Install]
+WantedBy=multi-user.target

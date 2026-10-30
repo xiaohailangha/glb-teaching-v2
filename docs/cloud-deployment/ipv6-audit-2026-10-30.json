@@ -1,0 +1,154 @@
+{
+  "at": "2026-10-30T01:51:03.119Z",
+  "scope": "Read-only audit after user enabled IPv6. No service or firewall changes.",
+  "checks": {
+    "services": {
+      "exit": 0,
+      "output": "active\nactive",
+      "error": ""
+    },
+    "boot": {
+      "exit": 0,
+      "output": "2026-10-30 09:10:51",
+      "error": ""
+    },
+    "ipv6Addresses": {
+      "exit": 0,
+      "output": "[{\"ifindex\":2,\"ifname\":\"eth0\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"operstate\":\"UP\",\"txqlen\":1000,\"addr_info\":[{\"family\":\"inet6\",\"local\":\"2402:4e00:c054:ce00:8c24:95a0:aeec:0\",\"prefixlen\":128,\"scope\":\"global\",\"valid_life_time\":4294967295,\"preferred_life_time\":4294967295},{}]}]",
+      "error": ""
+    },
+    "ipv6Routes": {
+      "exit": 0,
+      "output": "[{\"dst\":\"2402:4e00:c054:ce00:8c24:95a0:aeec:0\",\"dev\":\"eth0\",\"protocol\":\"kernel\",\"metric\":256,\"flags\":[],\"pref\":\"medium\"},{\"dst\":\"fe80::/64\",\"dev\":\"eth0\",\"protocol\":\"kernel\",\"metric\":256,\"flags\":[],\"pref\":\"medium\"},{\"dst\":\"default\",\"gateway\":\"fe80::feee:ffff:feff:ffff\",\"dev\":\"eth0\",\"metric\":1024,\"flags\":[],\"pref\":\"medium\"}]",
+      "error": ""
+    },
+    "listeners": {
+      "exit": 0,
+      "output": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                           \nLISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=5773,fd=15))                                       \nLISTEN 0      511        127.0.0.1:5296      0.0.0.0:*    users:((\"MainThread\",pid=15330,fd=21))                                           \nLISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=5773,fd=17))                                       \nLISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:((\"sshd\",pid=953,fd=3),(\"systemd\",pid=1,fd=110))                           \nLISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:((\"nginx\",pid=15346,fd=5),(\"nginx\",pid=15345,fd=5),(\"nginx\",pid=5581,fd=5))\nLISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:((\"nginx\",pid=15346,fd=6),(\"nginx\",pid=15345,fd=6),(\"nginx\",pid=5581,fd=6))\nLISTEN 0      4096            [::]:22           [::]:*    users:((\"sshd\",pid=953,fd=4),(\"systemd\",pid=1,fd=112))",
+      "error": ""
+    },
+    "renewal": {
+      "exit": 0,
+      "output": "enabled",
+      "error": ""
+    },
+    "renewalActive": {
+      "exit": 0,
+      "output": "active",
+      "error": ""
+    },
+    "nginxValidation": {
+      "exit": 0,
+      "output": "",
+      "error": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful"
+    },
+    "localSpeech": {
+      "exit": 0,
+      "output": "{\"configured\":true,\"versions\":{\"tts\":\"超自然大模型 2.0 / stream_wsv2\",\"asr\":\"实时识别 V2 / 16k_zh_en_2.0\",\"assessment\":\"智聆口语评测（新版） / soe/api\"},\"voices\":[{\"id\":403007,\"name\":\"YunLeo · 美音男声\"},{\"id\":403006,\"name\":\"YunMia · 美音女声\"},{\"id\":403008,\"name\":\"云小洋 · 男童\"},{\"id\":403004,\"name\":\"云大川 · 男老师\"}]}",
+      "error": ""
+    },
+    "ipv6LocalHttps": {
+      "exit": 7,
+      "output": "",
+      "error": "curl: (7) Failed to connect to ::1 port 443 after 0 ms: Couldn't connect to server"
+    }
+  },
+  "firewall": [
+    {
+      "AppType": "Windows登录优化 (3389)",
+      "Protocol": "UDP",
+      "Port": "3389",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Windows远程桌面登录优化"
+    },
+    {
+      "AppType": "HTTPS (443)",
+      "Protocol": "TCP",
+      "Port": "443",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Web服务HTTPS (443)，如 Apache、Nginx"
+    },
+    {
+      "AppType": "Linux 登录 (22)",
+      "Protocol": "TCP",
+      "Port": "22",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Linux SSH登录"
+    },
+    {
+      "AppType": "Ping (IPv6)",
+      "Protocol": "ICMPv6",
+      "Port": "ALL",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "通过Ping测试IPv6网络连通性 (放通ALL ICMPv6)"
+    },
+    {
+      "AppType": "Windows登录 (3389)",
+      "Protocol": "TCP",
+      "Port": "3389",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Windows远程桌面登录"
+    },
+    {
+      "AppType": "HTTP (80)",
+      "Protocol": "TCP",
+      "Port": "80",
+      "CidrBlock": "",
+      "Ipv6CidrBlock": "::/0",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Web服务HTTP (80)，如 Apache、Nginx"
+    },
+    {
+      "AppType": "HTTPS (443)",
+      "Protocol": "TCP",
+      "Port": "443",
+      "CidrBlock": "0.0.0.0/0",
+      "Ipv6CidrBlock": "",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "GLB teaching HTTPS private preview"
+    },
+    {
+      "AppType": "Linux 登录 (22)",
+      "Protocol": "TCP",
+      "Port": "22",
+      "CidrBlock": "0.0.0.0/0",
+      "Ipv6CidrBlock": "",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Linux SSH登录"
+    },
+    {
+      "AppType": "HTTP (80)",
+      "Protocol": "TCP",
+      "Port": "80",
+      "CidrBlock": "0.0.0.0/0",
+      "Ipv6CidrBlock": "",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "Web服务HTTP (80)，如 Apache、Nginx"
+    },
+    {
+      "AppType": "Ping",
+      "Protocol": "ICMP",
+      "Port": "ALL",
+      "CidrBlock": "0.0.0.0/0",
+      "Ipv6CidrBlock": "",
+      "Action": "ACCEPT",
+      "FirewallRuleDescription": "通过Ping测试网络连通性 (放通ALL ICMP)"
+    }
+  ],
+  "publicRegression": {
+    "web": 10,
+    "cos": 5,
+    "allPassed": true
+  },
+  "conclusion": "Existing IPv4 preview works; IPv6 address and route assigned; Nginx only listens on IPv4; backend remains loopback-only. New IPv6 firewall rules expose SSH 22, and permit unused 3389 TCP/UDP."
+}

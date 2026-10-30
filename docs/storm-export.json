@@ -1,0 +1,189 @@
+{
+  "meshes": {
+    "Storm_trousers_cord": {
+      "vertices": 884,
+      "faces": 880
+    },
+    "Storm_sandal_straps.L": {
+      "vertices": 1347,
+      "faces": 1329
+    },
+    "Storm_eyebrows": {
+      "vertices": 704,
+      "faces": 700
+    },
+    "Storm_gums_bottom": {
+      "vertices": 986,
+      "faces": 984
+    },
+    "Storm_gums_top": {
+      "vertices": 842,
+      "faces": 840
+    },
+    "Storm_teeth_bottom": {
+      "vertices": 2012,
+      "faces": 1904
+    },
+    "Storm_teeth_top": {
+      "vertices": 1834,
+      "faces": 1732
+    },
+    "Storm_tongue": {
+      "vertices": 275,
+      "faces": 264
+    },
+    "Storm_trousers": {
+      "vertices": 12523,
+      "faces": 12400
+    },
+    "Storm_top": {
+      "vertices": 7630,
+      "faces": 7532
+    },
+    "Storm_sandal_sole.L": {
+      "vertices": 542,
+      "faces": 540
+    },
+    "Storm_body": {
+      "vertices": 25604,
+      "faces": 25496
+    },
+    "Storm_eye.L": {
+      "vertices": 3266,
+      "faces": 3264
+    },
+    "Storm_wristwatch_body": {
+      "vertices": 401,
+      "faces": 381
+    },
+    "Storm_wristwatch_strap": {
+      "vertices": 312,
+      "faces": 310
+    },
+    "Storm_sandal_plastic_3.L": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_sandal_plastic_2.L": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_sandal_plastic_1.L": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_sandal_straps.R": {
+      "vertices": 1347,
+      "faces": 1329
+    },
+    "Storm_sandal_sole.R": {
+      "vertices": 542,
+      "faces": 540
+    },
+    "Storm_sandal_plastic_3.R": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_sandal_plastic_2.R": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_sandal_plastic_1.R": {
+      "vertices": 135,
+      "faces": 140
+    },
+    "Storm_eye_cornea.L": {
+      "vertices": 2642,
+      "faces": 2640
+    },
+    "Storm_eye_cornea.R": {
+      "vertices": 2642,
+      "faces": 2640
+    },
+    "Storm_hair_base": {
+      "vertices": 7997,
+      "faces": 7904
+    },
+    "Storm_hair_clumps": {
+      "vertices": 60090,
+      "faces": 59344
+    },
+    "Storm_head": {
+      "vertices": 75655,
+      "faces": 75456
+    },
+    "Storm_eye.R": {
+      "vertices": 3266,
+      "faces": 3264
+    },
+    "Storm_trousers_tag": {
+      "vertices": 137,
+      "faces": 108
+    }
+  },
+  "morphs": {
+    "AA": 4,
+    "EE": 4,
+    "OO": 4,
+    "UU": 4,
+    "FF": 4,
+    "MBP": 1,
+    "TH": 4,
+    "L": 4,
+    "Smile": 4,
+    "Blink": 1,
+    "BrowUp": 2,
+    "BrowRelax": 2,
+    "HeadNod": 13,
+    "LookRight": 14,
+    "LookLeft": 14,
+    "Breathe": 17,
+    "Gesture": 5,
+    "GazeRight": 5,
+    "GazeLeft": 5,
+    "GazeUp": 5,
+    "GazeDown": 5,
+    "Warm": 2,
+    "Curious": 2,
+    "BrowLeft": 2,
+    "BrowRight": 2,
+    "SmileLeft": 4,
+    "SmileRight": 4,
+    "SmileEyes": 2,
+    "Attentive": 2,
+    "Emotion_happy": 5,
+    "EmotionBlink_happy": 1,
+    "Emotion_sad": 5,
+    "EmotionBlink_sad": 1,
+    "Emotion_frustrated": 5,
+    "EmotionBlink_frustrated": 1,
+    "Emotion_afraid": 5,
+    "EmotionBlink_afraid": 1,
+    "Emotion_angry": 5,
+    "EmotionBlink_angry": 1,
+    "Emotion_surprised": 5,
+    "EmotionBlink_surprised": 1,
+    "Emotion_curious": 5,
+    "EmotionBlink_curious": 1,
+    "Emotion_confused": 5,
+    "EmotionBlink_confused": 1,
+    "Emotion_shy": 5,
+    "EmotionBlink_shy": 1,
+    "Emotion_proud": 5,
+    "EmotionBlink_proud": 1,
+    "Emotion_disgusted": 5,
+    "EmotionBlink_disgusted": 0,
+    "Emotion_relieved": 5,
+    "EmotionBlink_relieved": 1
+  },
+  "source": "storm_v1.1.blend",
+  "packing": {
+    "before_bytes": 159793552,
+    "after_bytes": 153334024,
+    "removed_rigid_normal_targets": 108,
+    "facial_normal_targets": 108,
+    "accessors": 1228
+  },
+  "bytes": 153334024,
+  "joints": 128
+}

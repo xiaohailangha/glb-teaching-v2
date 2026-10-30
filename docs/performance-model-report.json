@@ -1,0 +1,474 @@
+{
+  "Snow_body": {
+    "vertices": 3379,
+    "morphs": [
+      {
+        "name": "HeadNod",
+        "max_delta": 0.02032
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01248
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01248
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00491
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.26553
+      }
+    ]
+  },
+  "Snow_head": {
+    "vertices": 3719,
+    "morphs": [
+      {
+        "name": "AA",
+        "max_delta": 0.01693
+      },
+      {
+        "name": "EE",
+        "max_delta": 0.01282
+      },
+      {
+        "name": "OO",
+        "max_delta": 0.02952
+      },
+      {
+        "name": "UU",
+        "max_delta": 0.01463
+      },
+      {
+        "name": "FF",
+        "max_delta": 0.02263
+      },
+      {
+        "name": "MBP",
+        "max_delta": 0.00868
+      },
+      {
+        "name": "Smile",
+        "max_delta": 0.00783
+      },
+      {
+        "name": "Blink",
+        "max_delta": 0.02935
+      },
+      {
+        "name": "BrowUp",
+        "max_delta": 0.00889
+      },
+      {
+        "name": "BrowRelax",
+        "max_delta": 0.0084
+      },
+      {
+        "name": "TH",
+        "max_delta": 0.00683
+      },
+      {
+        "name": "L",
+        "max_delta": 0.00683
+      },
+      {
+        "name": "HeadNod",
+        "max_delta": 0.02032
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.02074
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.02074
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00486
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.02052
+      },
+      {
+        "name": "GazeRight",
+        "max_delta": 0.00028
+      },
+      {
+        "name": "GazeLeft",
+        "max_delta": 0.00028
+      },
+      {
+        "name": "GazeUp",
+        "max_delta": 0.0005
+      },
+      {
+        "name": "GazeDown",
+        "max_delta": 0.0005
+      },
+      {
+        "name": "Warm",
+        "max_delta": 0.01008
+      },
+      {
+        "name": "Curious",
+        "max_delta": 0.01148
+      },
+      {
+        "name": "BrowLeft",
+        "max_delta": 0.01786
+      },
+      {
+        "name": "BrowRight",
+        "max_delta": 0.01781
+      },
+      {
+        "name": "SmileLeft",
+        "max_delta": 0.00909
+      },
+      {
+        "name": "SmileRight",
+        "max_delta": 0.00909
+      }
+    ]
+  },
+  "Snow_shirt": {
+    "vertices": 1679,
+    "morphs": [
+      {
+        "name": "Breathe",
+        "max_delta": 0.00248
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.05584
+      }
+    ]
+  },
+  "Snow_pants": {
+    "vertices": 2631,
+    "morphs": []
+  },
+  "Snow_shoes_base": {
+    "vertices": 2286,
+    "morphs": []
+  },
+  "Snow_shoes_bottom": {
+    "vertices": 1048,
+    "morphs": []
+  },
+  "Snow_shoes_parts": {
+    "vertices": 2956,
+    "morphs": []
+  },
+  "Snow_hair_base": {
+    "vertices": 3418,
+    "morphs": [
+      {
+        "name": "HeadNod",
+        "max_delta": 0.03302
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.02141
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.02112
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.0058
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.02701
+      }
+    ]
+  },
+  "Snow_eyebrows": {
+    "vertices": 806,
+    "morphs": [
+      {
+        "name": "BrowUp",
+        "max_delta": 0.00904
+      },
+      {
+        "name": "BrowRelax",
+        "max_delta": 0.00878
+      },
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01385
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01743
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01743
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00409
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01707
+      },
+      {
+        "name": "Warm",
+        "max_delta": 0.01053
+      },
+      {
+        "name": "Curious",
+        "max_delta": 0.01063
+      },
+      {
+        "name": "BrowLeft",
+        "max_delta": 0.01958
+      },
+      {
+        "name": "BrowRight",
+        "max_delta": 0.01958
+      }
+    ]
+  },
+  "Snow_eye_anim": {
+    "vertices": 1156,
+    "morphs": [
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01146
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01474
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01474
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00401
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01693
+      },
+      {
+        "name": "GazeUp",
+        "max_delta": 0.00019
+      },
+      {
+        "name": "GazeDown",
+        "max_delta": 0.00019
+      }
+    ]
+  },
+  "Snow_teeth_upper": {
+    "vertices": 2142,
+    "morphs": [
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01347
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01769
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01776
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00323
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01346
+      }
+    ]
+  },
+  "Snow_teeth_lower": {
+    "vertices": 2141,
+    "morphs": [
+      {
+        "name": "AA",
+        "max_delta": 0.01537
+      },
+      {
+        "name": "OO",
+        "max_delta": 0.02245
+      },
+      {
+        "name": "UU",
+        "max_delta": 0.00757
+      },
+      {
+        "name": "FF",
+        "max_delta": 0.00188
+      },
+      {
+        "name": "TH",
+        "max_delta": 0.00616
+      },
+      {
+        "name": "L",
+        "max_delta": 0.00616
+      },
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01275
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01699
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01699
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.0031
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01295
+      }
+    ]
+  },
+  "Snow_gums_upper": {
+    "vertices": 927,
+    "morphs": [
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01349
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01774
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01779
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00331
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01381
+      }
+    ]
+  },
+  "Snow_gums_lower": {
+    "vertices": 927,
+    "morphs": [
+      {
+        "name": "AA",
+        "max_delta": 0.01521
+      },
+      {
+        "name": "OO",
+        "max_delta": 0.02218
+      },
+      {
+        "name": "UU",
+        "max_delta": 0.00751
+      },
+      {
+        "name": "FF",
+        "max_delta": 0.00187
+      },
+      {
+        "name": "TH",
+        "max_delta": 0.00612
+      },
+      {
+        "name": "L",
+        "max_delta": 0.00612
+      },
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01266
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01696
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01696
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00306
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.0128
+      }
+    ]
+  },
+  "Snow_tongue": {
+    "vertices": 275,
+    "morphs": [
+      {
+        "name": "AA",
+        "max_delta": 0.01374
+      },
+      {
+        "name": "OO",
+        "max_delta": 0.02003
+      },
+      {
+        "name": "UU",
+        "max_delta": 0.00678
+      },
+      {
+        "name": "FF",
+        "max_delta": 0.00168
+      },
+      {
+        "name": "TH",
+        "max_delta": 0.00952
+      },
+      {
+        "name": "L",
+        "max_delta": 0.00542
+      },
+      {
+        "name": "HeadNod",
+        "max_delta": 0.01171
+      },
+      {
+        "name": "LookRight",
+        "max_delta": 0.01563
+      },
+      {
+        "name": "LookLeft",
+        "max_delta": 0.01562
+      },
+      {
+        "name": "Breathe",
+        "max_delta": 0.00326
+      },
+      {
+        "name": "Gesture",
+        "max_delta": 0.01308
+      }
+    ]
+  },
+  "file_bytes": 7060452
+}

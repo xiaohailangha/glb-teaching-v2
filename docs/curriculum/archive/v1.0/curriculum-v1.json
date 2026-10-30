@@ -1,0 +1,92 @@
+{
+  "title": "英语教学三条路线课程大纲",
+  "version": "1.0",
+  "date": "2026-10-28",
+  "status": "课程设计稿 已完成大纲 待教师审校与试学验证",
+  "routes": [
+    {
+      "id": "child", "name": "儿童英语启蒙", "code": "C", "scope": "首版以约 4—12 岁儿童为设计范围，按理解能力与识字准备度调整；年龄不是分班考试，也不据年龄自动判断能力。",
+      "goal": "从听懂常见词和简单指令，发展到在熟悉情境中表达需求、喜好和简单位置，完成有支持的短对话。识字准备充分的儿童另接拼读支线。目标参考 Pre-A1 至部分 A1 听说描述，不等于取得 CEFR 等级。",
+      "structure": "12 个主题单元，每单元 4 个微课主题，共 48 个核心微课主题；另有 8 个可选拼读单元。复习、诊断和综合任务另计。微课主题不是固定的一天课程。",
+      "delivery": "约 4—6 岁以听说、动作和亲子参与为主；约 7—9 岁可逐步加入字母与声音的联系；约 10—12 岁提高阅读、独立表达和自主选择的比例。初始分组可由实际表现修正。",
+      "units": [
+        {"id":"C01","title":"认识 Snow 和打招呼","prerequisite":"无英语基础要求","objective":"听懂 hello、bye 和名字提问，在角色支持下回应并介绍自己的称呼。","language":"Hello. / Bye. / I'm …；只使用昵称或虚构名字。","lessons":["听见招呼后回应","认识和选择称呼","轮流介绍自己","给新朋友打招呼"],"sound":"先听整句、模仿语调；不要求先背字母表或音标。","task":"Snow 在见面场景中问候，儿童选择角色并回应。","evidence":"在更换角色的两个场景中完成问候与回应；允许起初看图，不以安静或害羞判定不会。"},
+        {"id":"C02","title":"听懂动作和身体指令","prerequisite":"C01 或能参与简单轮流互动","objective":"把简单动作指令与动作对应，能发出一条熟悉指令。","language":"Stand up. / Sit down. / Clap. / Touch your nose. / Please.；不要求全部动作都实际执行。","lessons":["看动作听指令","听指令选动作","给 Snow 一条指令","换顺序玩动作游戏"],"sound":"感知词和短句的节奏，先区分意思再练说。","task":"让 Snow 按用户的选择行动；提供点击替代肢体动作。","evidence":"换顺序后仍能听辨，并能选择或说出一条正确指令。"},
+        {"id":"C03","title":"颜色和我的玩具","prerequisite":"C01—C02 的基本指令","objective":"听懂常见颜色与物品词，描述一个物品。","language":"red、blue、yellow；ball、car、book；a red ball / I have a …。","lessons":["找相同颜色","听出要找的物品","把颜色和物品连起来","介绍一个玩具"],"sound":"区分整词与词组；只挑一个已熟悉词演示音的合成。","task":"根据 Snow 的请求整理玩具，换一件物品再描述。","evidence":"不依赖固定摆放位置，听懂并表达颜色加物品。"},
+        {"id":"C04","title":"数量和大小","prerequisite":"C03 的物品词","objective":"在具体物品中理解 1—10 和大小，表达简单数量。","language":"one—ten；big、small；two balls / a small car。","lessons":["数出看见的物品","听数量选一组","区分大和小","帮 Snow 打包玩具"],"sound":"听见复数结尾，先在有意义的词组中模仿，不集中背规则。","task":"按数量和大小装好物品；加入 C01—C03 的复习。","evidence":"改变数量、大小和位置后仍能完成；作为第一阶段检查。"},
+        {"id":"C05","title":"朋友家人和感受","prerequisite":"C01、C03 的介绍表达","objective":"介绍熟悉人物，理解并表达简单感受。","language":"friend、family；happy、sad、tired；This is … / I'm …。家庭角色允许自由选择。","lessons":["认识故事中的人物","听出角色的感受","介绍一个人物","关心今天的 Snow"],"sound":"感知相同句子在问候、关心时的语调变化。","task":"为角色选择合适的回应，并介绍虚构朋友。","evidence":"能根据情境选择或表达感受，不要求披露个人家庭信息。"},
+        {"id":"C06","title":"食物喜好和礼貌请求","prerequisite":"C03—C05 的物品和描述表达","objective":"听懂常见食物，表达喜好并礼貌索取。","language":"apple、banana、water；I like … / …, please. / Thank you.；熟练后加入 Can I have …?。","lessons":["听词找食物","表达喜欢什么","礼貌地要一份","完成一次水果摊互动"],"sound":"用 apple 感知重读与轻读；əl 可以作为连续练习块，不等于一个音素。","task":"Snow 提供不同食物，儿童完成选择、请求与感谢。","evidence":"换一种熟悉食物仍能完成请求，能区分自己与角色的喜好。"},
+        {"id":"C07","title":"动物和它们的动作","prerequisite":"C02 的动作、C03 的描述","objective":"识别常见动物并说出一种能力或动作。","language":"cat、dog、fish、bird；run、jump、swim；It can …。","lessons":["听声音找动物","配对动物和动作","说出一种能力","给小动物安排活动"],"sound":"比较熟悉短词中的声音；只引入本次真正需要的一个听辨难点。","task":"给动物选择能完成的活动，并向 Snow 说明。","evidence":"更换图片后仍能识别，能用支持句型表达一条信息。"},
+        {"id":"C08","title":"家里藏在哪里","prerequisite":"C03 的物品、C07 的对象描述","objective":"听懂并表达熟悉物品的简单位置。","language":"in、on、under；box、chair、table；Where is …? / It's …。","lessons":["听位置找物品","移动物品说位置","向 Snow 提一个位置问题","完成寻宝任务"],"sound":"把 It's on … 等短语作为连贯语音学习，保留自然轻重。","task":"寻宝中加入颜色、数量和对象，完成第二阶段检查。","evidence":"位置改变后仍能理解；在至少一次轮换中主动问或答。"},
+        {"id":"C09","title":"天气和穿什么","prerequisite":"C03、C05 的描述与感受","objective":"听懂简单天气信息，为场景选择衣物并说明。","language":"sunny、rainy、cold、hot；coat、hat；It's cold. / My coat.。","lessons":["观察天气听描述","为天气选衣物","说明自己的选择","帮 Snow 准备出门"],"sound":"在完整表达中练清楚关键词；不把每个词都读得一样重。","task":"根据变化的天气准备出行物品，允许多种合理选择。","evidence":"能依据听到的信息选择，并说出一个相关词组或句子。"},
+        {"id":"C10","title":"我的一天和简单顺序","prerequisite":"C02 的动作和 C06 的食物","objective":"理解熟悉日常活动的先后，并描述一个简短过程。","language":"get up、eat、play、sleep；first、then；I …。","lessons":["听出一天的活动","排列故事顺序","说说两个连续活动","为 Snow 安排一天"],"sound":"用停顿组织短表达，练习整组意思而非逐词读。","task":"按图片讲两个或三个活动；低龄版只做动作与顺序选择。","evidence":"能表达顺序，改变图片后仍能重组，而非背固定录音。"},
+        {"id":"C11","title":"一起去公园","prerequisite":"C07—C10 的动作、位置和准备表达","objective":"理解简单邀请和方向信息，完成一次共同活动。","language":"Let's … / go、stop、left、right；park；只使用虚构地图。","lessons":["听懂活动邀请","在简单地图上找路","邀请 Snow 一起玩","说明要带什么"],"sound":"在邀请和确认中感知语调；听辨先于要求准确模仿。","task":"选择路线、物品与活动，Snow 根据选择给出合乎情境的回应。","evidence":"完成两三步有意义的任务，允许请求重复。"},
+        {"id":"C12","title":"办一场小小聚会","prerequisite":"按任务选择 C01—C11 中已掌握的内容","objective":"综合运用问候、数量、喜好、位置和礼貌请求。","language":"复用前面单元的语言，不在终点任务临时增加必考新词。","lessons":["选择聚会需要的物品","向朋友询问喜好","一起完成布置和招待","介绍自己的安排"],"sound":"检查整句可理解性和关键重音，不用陌生音标作为结业障碍。","task":"完成一段可分次进行的聚会故事，次日换物品再做一个短任务。","evidence":"记录独立完成、需要提示和仍待练习的目标；形成下一阶段学习建议。"}
+      ]
+    },
+    {
+      "id": "adult", "name": "成人英语零基础", "code": "A", "scope": "适合几乎没有英语基础，或过去学过但难以听懂和开口的成人。允许中文讲解、慢速示范与随时重听。",
+      "goal": "围绕具体生活需要，建立基本听说能力、常见字音联系和简单阅读能力，在有支持的常见场景中完成短交流。目标参考 Pre-A1 至 A1 的部分交际描述，不把完成课时换算成等级证书。",
+      "structure": "12 个单元，每单元 4 个微课主题，共 48 个核心微课主题。每个主题都附复习、听辨、表达和迁移练习，实际学习量由诊断与保持情况决定。",
+      "delivery": "人物像耐心的成人学习伙伴；先说清意思与用途，再解释一个关键语言点。音标按需出现，避免先背完全部符号才能学习生活表达。",
+      "units": [
+        {"id":"A01","title":"打招呼和请求重复","prerequisite":"无基础要求","objective":"完成问候、介绍称呼，听不清时能主动请求重复。","language":"Hello. / I'm … / Sorry? / Again, please. / Thank you.。","lessons":["第一次见面听什么","介绍自己的称呼","听不清时如何接话","完成两轮见面对话"],"sound":"听整句、辨意图、再模仿；认识字母名与实际语音不是同一件事。","task":"与 Snow 初次见面，主动使用一次请求重复。","evidence":"换一个提问顺序仍能接话；允许慢速重复和中文释义。"},
+        {"id":"A02","title":"名字数字和联系方式","prerequisite":"A01 的轮流问答","objective":"听辨基础数字，拼说名字并核对虚构联系方式。","language":"字母名；0—20 及常用十位数；My name is … / Is that …?。","lessons":["听清数字","用字母拼说名字","核对一串号码","填写虚构联络卡"],"sound":"在实际需要中练字母名与易混数字，不把字母名当作单词拼读音。","task":"听写虚构号码，向 Snow 确认其中一项。","evidence":"改变号码后仍能听辨，能表达一次确认；不收集真实证件或联系信息。"},
+        {"id":"A03","title":"认识物品并简单描述","prerequisite":"A01，数字需求可借助 A02","objective":"听懂常见物品，说明是什么并作简单描述。","language":"book、phone、apple；This is … / It's …；a、an 依后面的声音选择。","lessons":["听词认物","用一句话介绍物品","按声音选择 a 或 an","描述另一件物品"],"sound":"按需认识 /æ/ 与弱读；区分音素、音节和界面练习块。","task":"向 Snow 介绍物品，再根据描述选择另一件。","evidence":"换图仍能表达；不依靠物品固定位置或汉字提示作答。"},
+        {"id":"A04","title":"喜欢什么和点一份饮品","prerequisite":"A03 的物品描述","objective":"表达喜好，完成简单点单与确认。","language":"I like … / …, please. / Can I have …? / Yes, please. / No, thanks.。","lessons":["听懂菜单中的熟悉词","表达喜好","礼貌提出请求","完成简短点单"],"sound":"听出请求中的关键词与自然轻读，保留整句示范。","task":"菜单、顺序或角色改变后完成点单；第一阶段综合检查。","evidence":"能传达想要的物品并应对确认；不能仅凭跟读次数通过。"},
+        {"id":"A05","title":"购物数量和价格","prerequisite":"A02、A04","objective":"询问价格、数量并核对购买内容。","language":"How much …? / How many …? / two … / this、that；常见复数形式。","lessons":["听出数量和价格","区分询问数量与价格","表达购买选择","核对一笔小订单"],"sound":"在已知词中听辨复数结尾和数字重音，不要求一次背完所有变化规则。","task":"根据预算选择物品，发现并纠正一次数量差异。","evidence":"更换价格与数量后仍能完成；重点是信息准确传达。"},
+        {"id":"A06","title":"时间和日常安排","prerequisite":"A02 的数字与 A01 的问答","objective":"听懂简单时间信息，说明自己的日常安排。","language":"What time …? / at … / I work … / I study …；整点、半点和常用日期词按需引入。","lessons":["听出时间","说一个日常活动","确认活动开始时间","安排一次学习或见面"],"sound":"让时间和关键动作更突出，练短句节奏。","task":"在两个可选时间中协商一次见面。","evidence":"能够听清并确认不同时间；只要求本单元教过的时间表达。"},
+        {"id":"A07","title":"介绍自己和身边的人","prerequisite":"A01、A03、A06","objective":"用简短句子介绍职业、关系和爱好，并问一个相关问题。","language":"I'm … / This is … / He or she … / I like …；使用自选或虚构人物。","lessons":["听懂人物介绍","组织两三条个人信息","问一个相关问题","做一次简短自我介绍"],"sound":"用停顿组织信息；聚焦当前最影响理解的一个音或重音问题。","task":"交换角色卡并完成短交流，允许不谈私人信息。","evidence":"对方能理解主要信息；更换角色卡后仍能重新组织表达。"},
+        {"id":"A08","title":"位置问路和到达目的地","prerequisite":"A03、A05 的对象与数量","objective":"询问位置，理解简短方向并确认地点。","language":"Where is …? / next to、near、left、right、straight；具体地标。","lessons":["听位置找地点","提出问路问题","听两三步方向","确认是否到达"],"sound":"练习地点和方向词的清楚表达，借助意群停顿理解长一点的指令。","task":"用虚构地图完成问路；第二阶段综合检查。","evidence":"路线变化后仍能完成；遇到不明信息会请求重复。"},
+        {"id":"A09","title":"能力请求和寻求帮助","prerequisite":"A01、A04、A08","objective":"说明简单能力，提出请求并理解同意或婉拒。","language":"I can … / Can you …? / Can I …? / I need help.。","lessons":["听懂能力和请求","提出一个具体请求","理解同意与拒绝","在生活场景中求助"],"sound":"听辨 can 与 can't 等实际含义差异，结合上下文，不仅靠一个固定声学线索。","task":"请 Snow 帮忙找物品或完成动作，并对回应作出下一步选择。","evidence":"能说明需求并接续回应；同一句型可用于另一种熟悉任务。"},
+        {"id":"A10","title":"出行和入住的基础交流","prerequisite":"A02、A06、A08、A09","objective":"说明目的地、核对时间和入住信息，完成有支持的短交流。","language":"I'd like … 作为常用表达；a ticket、a room；Where …? / What time …?。","lessons":["听懂关键出行信息","表达目的地或房间需求","核对时间和数量","完成出行服务对话"],"sound":"从自然语速中识别熟悉语块，不要求机械逐词译读。","task":"在虚构车站或旅店完成任务；提供信息卡。","evidence":"关键需求和核对信息准确，能在需要时要求重说。"},
+        {"id":"A11","title":"解释不明白并修复交流","prerequisite":"A01 及至少两个生活场景单元","objective":"发现误解，澄清意思、确认信息并继续交流。","language":"I don't understand. / Please speak slowly. / I mean … / Is that …?。","lessons":["识别自己没听清的部分","请求慢说或解释","用熟悉词重新表达","修复一次信息误会"],"sound":"练澄清语调与重点词，不用音量大小替代发音清晰度。","task":"Snow 故意理解错一项订单或时间，用户完成澄清。","evidence":"能采取修复策略，而非在听不懂时只能退出或背原句。"},
+        {"id":"A12","title":"完成一段真实用途的短交流","prerequisite":"按任务需要检查 A01—A11 的相关目标","objective":"综合听懂、表达、确认与修复能力，完成一个自选生活任务。","language":"复用点单、购物、约时间、问路、求助等已学表达。","lessons":["选择要完成的生活任务","先听懂对方需要的信息","独立推进短对话","复盘并换情境再做"],"sound":"观察整段可理解性、关键重音和停顿，不以消除口音作为唯一标准。","task":"完成至少四轮有意义的互动，次日使用不同信息卡再做一次。","evidence":"独立完成、提示后完成和未完成分别记录；据此进入巩固或后续 A2 导向内容，不能自动宣称达到 A2。"}
+      ]
+    },
+    {
+      "id": "correction", "name": "有基础的发音纠正", "code": "P", "scope": "适合已经理解基本词句，但存在听辨、单音、词尾、重音、节奏或流利表达困难的学习者。按个人证据选模块，不预设所有中文母语者都有相同问题。",
+      "goal": "提高陌生听者对信息的理解程度，改善个人高频难点在词、句与自发表达中的稳定性。保留可理解的个人口音，不把口音接近度当作唯一评分标准。",
+      "structure": "10 个模块，每模块 4 个微课主题，共 40 个主题。P01 与 P10 是共同入口和出口，其余按诊断选择；没有证据的问题不强行安排。一次主要处理一个目标。",
+      "delivery": "先听辨与自我观察，再练准确动作和语音，随后放入短语、句子及自由表达。选词先检查词义是否熟悉；词义不明时先补足含义。",
+      "units": [
+        {"id":"P01","title":"建立基线和理解反馈","prerequisite":"能理解所选诊断材料的词义","objective":"识别当前最影响理解的一两个问题，建立可重复比较的个人基线。","language":"熟悉词、短句朗读、自选主题短表达；允许无录音模式。","lessons":["完成听辨与设备检查","录一段熟悉材料","比较提示与真实表现","选择本轮训练目标"],"sound":"同时观察听辨、单音、词重音、节奏与信息传达，不以单次机器分数定性。","task":"形成个人训练卡，用户确认目标；噪声或识别不确定的样本进入待复核。","evidence":"保存目标、样本和判据，能说明为何选该目标；未验证自动评分前只提供录音回听与人工审校反馈。"},
+        {"id":"P02","title":"容易混淆的前元音","prerequisite":"P01 显示相关听辨或发音困难","objective":"在熟悉词中区分个人容易混淆的前元音，并迁移到新例词。","language":"如 ship—sheep、sit—seat、bed—bad；按诊断选择其中一组。","lessons":["先听出两个词的区别","观察并尝试发音动作","在短语中保持区别","换例词和句子检查"],"sound":"结合音质与时长等线索，不能把所有元音差异简化为长短。","task":"听词选义、录音对比，再用目标词传递不同信息。","evidence":"随机顺序听辨与未练过的熟悉例词均有改善，隔日保留。"},
+        {"id":"P03","title":"圆唇元音和双元音","prerequisite":"P01 显示相关困难，具备必要的基础听辨","objective":"保持目标元音的口形与音质，双元音内部过渡自然。","language":"如 full—fool、go、home；每轮只选一个对比或一个滑动目标。","lessons":["听出目标元音","控制口形与音质","练连续的元音过渡","在短句里保持清楚"],"sound":"双元音作为一个连续音素练习，不拆成两次停顿的独立发音。","task":"用目标词完成图片选择或句意区分。","evidence":"词和句中保持目标差异，过渡不会造成多出一个音节。"},
+        {"id":"P04","title":"摩擦音与清浊对比","prerequisite":"P01 显示相关困难","objective":"针对需要的音练习发音部位与清浊差别，保持在词中的辨义作用。","language":"如 thin—sin、then—den、fan—van；不是每个人都必须练全部。","lessons":["听出本轮目标对比","学习可观察的发音动作","练词首和词中位置","在短句中传递意思"],"sound":"分别核对牙齿、嘴唇、舌尖与气流说明；普通表情口型不能冒充精确舌位示范。","task":"角色根据听到的词作选择，提供可回听的对比。","evidence":"盲听判断有改善，并在不同位置保持；无法可靠判断的样本不下确定结论。"},
+        {"id":"P05","title":"边音和易混辅音","prerequisite":"P01 显示 /l/、/r/ 或其他相关对比困难","objective":"在个人需要的辅音对比上建立稳定区分，处理相关词尾变化。","language":"如 light—right；若确有需要再加入 night—light。","lessons":["建立目标声音的听觉区别","练起始位置的动作","练词中与词尾","在表达中保留区别"],"sound":"同一音素在不同位置可有语音变化；清楚区分音素标签与实际发音变体。","task":"用目标词描述物品或方向，观察信息能否被正确理解。","evidence":"既有熟悉词也有迁移词，避免只会一个被反复模仿的词。"},
+        {"id":"P06","title":"词尾与辅音组合","prerequisite":"P01 显示漏读、加音或词尾辨义问题","objective":"在必要位置保留词尾或组合的区别，减少无意添加的元音。","language":"如 cap—cab、cat—cats、play—played；stop、next 等按熟悉程度选取。","lessons":["听见词尾改变的含义","保持闭合或连接动作","练复数及过去式的常见读法","放入连续短语"],"sound":"发音不等于每个塞音都要夸张爆破；区分自然的不完全释放与真正漏掉辨义信息。","task":"通过数量、时间或物品选择检查意义是否传达。","evidence":"变化形式与基本形式可辨，语流中没有多加一个明显音节。"},
+        {"id":"P07","title":"音节重音和弱读","prerequisite":"P01 显示词重音或逐音节等重问题","objective":"知道哪些音节更突出、哪些更轻，并在新例词中保持词形。","language":"apple、banana、about、teacher 等熟悉词；标注体系统一使用审定词典。","lessons":["听出音节与突出位置","练轻重和自然时长","处理弱元音与连续尾音","在短句中保持词重音"],"sound":"区分音素、音节和练习块；apple 的三个练习块不代表三个音节。","task":"先判断重音，再把目标词用于有意义的短句。","evidence":"隔日不用重音标记仍能合理突出目标音节，能处理未背诵的熟悉例词。"},
+        {"id":"P08","title":"句子重点和表达节奏","prerequisite":"P07 的必要基础，或诊断显示已具备词重音能力","objective":"用重音和停顿突出想传达的信息，让听者更容易跟上。","language":"如 I want the RED one. / I want TWO tickets.；词义已熟悉。","lessons":["听出说话者强调什么","改变重点表达不同意思","用意群组织较长句子","完成简短澄清对话"],"sound":"重音涉及音高、时长、音量和音质等，不只等于用力大声说。","task":"根据不同信息卡改变句子重点。","evidence":"听者能理解强调差别，停顿与意义组织相符。"},
+        {"id":"P09","title":"理解并使用连贯语流","prerequisite":"熟悉词句的正常语速理解能力，按需补 P07—P08","objective":"在连贯语音中识别熟悉词，并选择适合自己的自然连接。","language":"an apple、turn it on、a cup of … 等熟悉语块。","lessons":["从自然语速中找已知词","对比清晰慢速与自然语速","练一个常用语块的连接","听不同说话者再表达"],"sound":"先提高理解，再练可理解的自然表达；不强迫复制所有省音或极快读法。","task":"从短对话中提取信息，再用同类语块完成回应。","evidence":"换录音和情境后仍能理解，表达没有因追求连读而损失关键信息。"},
+        {"id":"P10","title":"迁移到自己的表达","prerequisite":"完成本轮所选目标的训练，保留 P01 的基线","objective":"把改进带入自发表达，并形成下一轮个人计划。","language":"自我介绍、工作说明、点单或兴趣话题；只要求用户愿意分享的内容。","lessons":["在新句子中使用目标","完成一段自发表达","与基线和延迟样本对比","选择继续巩固或下一个目标"],"sound":"同时观察可理解性、目标稳定性与表达负担，避免一边说一边过度监控所有声音。","task":"新提示下完成 30—60 秒短表达，另一天换提示复测。","evidence":"改善在延迟和新情境中保留；不据单次高分宣告永久掌握或口音消失。"}
+      ]
+    }
+  ],
+  "reading": [
+    {"id":"R01","topic":"听觉合成与分割","content":"用已知短词听音合成、辨认开头声音，暂不显示字母。","examples":"听 /s/ /æ/ /t/ 后选 sat 对应的场景，例词含义先教。"},
+    {"id":"R02","topic":"第一组字母与声音","content":"s a t p i n；区分字母名和这组练习采用的常见字母音。","examples":"sat、sit、tap、pin；只考已教对应关系。"},
+    {"id":"R03","topic":"扩展常见辅音和元音","content":"m d g o c k；在本组词中明确 c 的 /k/ 读法，不泛化成永远如此。","examples":"mat、dog、cat、map。"},
+    {"id":"R04","topic":"扩展短词拼读","content":"e u r h b f l；继续合成，并结合图片检查是否理解。","examples":"red、sun、hat、leg。"},
+    {"id":"R05","topic":"补充字母对应关系","content":"j v w x y z qu；说明 x 在所选词中对应多个声音、qu 常作为组合呈现。","examples":"jam、van、wet、box、yes、zip、quit。"},
+    {"id":"R06","topic":"常见字母组合","content":"sh ch th ng ck；th 的两种常见声音分别教，不能按字母数判断音素数。","examples":"ship、chat、thin、this、ring、duck。"},
+    {"id":"R07","topic":"辅音相邻时怎样合成","content":"逐渐合成相邻辅音，避免在中间加元音；一次只增加一种难度。","examples":"stop、clap、hand。"},
+    {"id":"R08","topic":"常见元音组合入门","content":"ai ee oa oo；明确这些是本组常见读法，尤其 oo 可有不同读音。","examples":"rain、feet、boat、moon、book；未教过的变化不列为失分题。"}
+  ],
+  "timePlans": [
+    {"minutes":10,"review":3,"new":0,"practice":4,"transfer":2,"check":1,"rest":0,"label":"保温日","note":"优先保留回忆与一个关键练习；今天不增加新目标也算完成合理计划。"},
+    {"minutes":20,"review":4,"new":4,"practice":5,"transfer":5,"check":2,"rest":0,"label":"轻量日","note":"新学部分选择一个可独立完成的小目标；不适合四分钟讲完的内容留到下一次。"},
+    {"minutes":30,"review":5,"new":7,"practice":7,"transfer":7,"check":2,"rest":2,"label":"常规日","note":"完成一个主要目标，留出一次新情境应用和简短检查。"},
+    {"minutes":60,"review":10,"new":15,"practice":10,"transfer":15,"check":5,"rest":5,"label":"深入日","note":"分成两个学习段；增加表达与复习，不强行塞入多个尚未巩固的新难点。"},
+    {"minutes":120,"review":20,"new":20,"practice":25,"transfer":25,"check":10,"rest":20,"label":"拓展日","note":"100 分钟活动与 20 分钟休息，分四段完成或分散到一天；新学时间仅适度增加。"}
+  ],
+  "sources": [
+    {"id":"S1","name":"Council of Europe CEFR descriptors search","url":"https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors-search","use":"用具体交际活动描述目标；本大纲的单元顺序和分钟数为项目设计，不是 CEFR 官方规定。"},
+    {"id":"S2","name":"Council of Europe Phonological competence","url":"https://www.coe.int/en/web/common-european-framework-reference-languages/phonological-competence","use":"以可理解性、单音与韵律共同构成发音训练目标，避免只以接近母语口音衡量。"},
+    {"id":"S3","name":"British Council Connected speech part 1","url":"https://www.teachingenglish.org.uk/professional-development/teachers/knowing-subject/connected-speech-part-1","use":"把词与连贯语流、弱读和理解联系起来；不把发音训练局限于孤立音素。"},
+    {"id":"S4","name":"British Council Phonics","url":"https://www.teachingenglish.org.uk/professional-development/teachers/teaching-knowledge-database/n-p/phonics","use":"区分拼读教学与音标教学；字母和声音的对应服务于阅读。本项目的 R01—R08 顺序为待审校设计。"},
+    {"id":"S5","name":"IES Organizing Instruction and Study to Improve Student Learning","url":"https://ies.ed.gov/ncee/wwc/PracticeGuide/1","use":"参考分散学习与主动回忆等一般学习原则，不将其包装为本产品已经验证的教学效果。"},
+    {"id":"S6","name":"AERO Spacing and retrieval practice guide","url":"https://www.edresearch.edu.au/guides-resources/practice-guides/spacing-and-retrieval-practice-guide-full-publication","use":"在不同时间和任务中调用旧知识；具体复习间隔与门槛需要结合学习者表现调整。"},
+    {"id":"S7","name":"Cambridge Dictionary Apple pronunciation","url":"https://dictionary.cambridge.org/us/pronunciation/english/apple","use":"核对 apple 的词典读音和音标示例。词典音频引用需遵守许可，不能直接批量搬运为产品素材。"}
+  ]
+}

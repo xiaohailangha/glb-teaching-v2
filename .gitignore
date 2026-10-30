@@ -1,0 +1,80 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Server-only credentials, cloud audio cache, and local recordings
+/.secrets/
+/.env*
+/work/tencent-cache/
+/work/tencent-private/
+/node_modules/
+/work/tunnel/session.json
+/work/tunnel/access-link.txt
+/work/lan-preview-session.json
+
+# Local SDKs, caches, recordings and release artifacts are reproducible outputs.
+/work/
+/outputs/
+/source-models/
+**/build/
+**/.dart_tool/
+**/.gradle/
+**/.flutter-plugins-dependencies
+**/flutter_scene_generated/
+**/android/local.properties
+**/node_modules/
+*.apk
+*.aab
+*.tar.gz
+*.blend
+*.blend1
+*.blend2
+*.webm
+*.mp4
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key

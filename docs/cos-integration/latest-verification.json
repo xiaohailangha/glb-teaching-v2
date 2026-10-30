@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-30T02:22:11.611Z",
+  "origin": "https://49.233.179.83",
+  "bucket": "glb-teaching-assets-1252505198",
+  "region": "ap-beijing",
+  "checks": [
+    {
+      "name": "manifest follows configured preview access mode",
+      "ok": true
+    },
+    {
+      "name": "manifest exposes only scoped temporary downloads",
+      "ok": true
+    },
+    {
+      "name": "objects are private without a signature",
+      "ok": true
+    },
+    {
+      "name": "CORS allows the actual preview origin with matching decompressed bytes",
+      "ok": true
+    },
+    {
+      "name": "other origins cannot get cross-origin read permission",
+      "ok": true
+    }
+  ],
+  "parts": 147,
+  "bytes": 153334024
+}

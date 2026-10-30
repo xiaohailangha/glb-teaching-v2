@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-30T01:49:56.327Z",
+  "origin": "https://49.233.179.83",
+  "checks": [
+    {
+      "name": "TLS trusted and private page requires authentication",
+      "ok": true
+    },
+    {
+      "name": "opening a shared link is allowed but cross-site POST is blocked",
+      "ok": true
+    },
+    {
+      "name": "Flutter release and avatar page accessible",
+      "ok": true
+    },
+    {
+      "name": "source credentials and diagnostics unavailable",
+      "ok": true
+    },
+    {
+      "name": "cross-origin paid requests rejected",
+      "ok": true
+    },
+    {
+      "name": "speech credentials configured only at backend",
+      "ok": true
+    },
+    {
+      "name": "model chunks use consistent revision and exact bytes",
+      "ok": true
+    },
+    {
+      "name": "invalid model part rejected",
+      "ok": true
+    },
+    {
+      "name": "malformed recording fails without spending assessment call",
+      "ok": true
+    },
+    {
+      "name": "real cloud teaching audio and phoneme timeline",
+      "ok": true
+    }
+  ],
+  "speech": {
+    "tts": "超自然大模型 2.0 / stream_wsv2",
+    "asr": "实时识别 V2 / 16k_zh_en_2.0",
+    "assessment": "智聆口语评测（新版） / soe/api"
+  },
+  "model": {
+    "bytes": 153334024,
+    "chunk": 1048576,
+    "etag": "\"a727ba3e745250b1502a6aed4ba135f6b5d534c0f8da2b81cb7ca87757354af3\""
+  },
+  "tts": {
+    "cues": 6,
+    "fields": [
+      "key",
+      "text",
+      "voice",
+      "speed",
+      "language",
+      "duration",
+      "subtitles",
+      "cues",
+      "phones",
+      "missing",
+      "usable",
+      "source",
+      "audioUrl",
+      "versions",
+      "cached"
+    ]
+  }
+}

@@ -1,0 +1,955 @@
+{
+  "version": "1.0",
+  "date": "2026-10-28",
+  "curriculumVersion": "1.1",
+  "rules": [
+    "情绪由教学意图、故事语义和有效交互事件触发，不随机播放情绪串。",
+    "示范时保留正常身体表达；嘴部兼容性优先，语音和口型共用音频时间。",
+    "等待有微小目光与姿态变化，但不自动给出正确反馈、不逐渐生气。",
+    "答错或请求帮助使用温和支持；未经评估的开口尝试只认可参与。",
+    "活动中断时取消旧音频与旧事件，面部和身体平滑过渡。",
+    "角色在左侧全幅画布，手可以伸到右侧文字后面，不添加分屏边界。"
+  ],
+  "units": [
+    {
+      "id": "C01",
+      "title": "认识 Snow 和打招呼",
+      "direction": "先主动问候，眼神等待回应；轮到用户时收回话轮，切换角色时重新建立目光联系。",
+      "activityTopics": [
+        "听见招呼后回应",
+        "认识和选择称呼",
+        "轮流介绍自己",
+        "给新朋友打招呼"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C02",
+      "title": "听懂动作和身体指令",
+      "direction": "先做所教动作，再邀请模仿。站起、坐下、触鼻等必须另有与指令一致的动作资产，不能拿通用挥手替代。",
+      "activityTopics": [
+        "看动作听指令",
+        "听指令选动作",
+        "给 Snow 一条指令",
+        "换顺序玩动作游戏"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C03",
+      "title": "颜色和我的玩具",
+      "direction": "视线与手势指向当前颜色和物品；选中后看回学习者。场景坐标与文字遮挡共同校准。",
+      "activityTopics": [
+        "找相同颜色",
+        "听出要找的物品",
+        "把颜色和物品连起来",
+        "介绍一个玩具"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C04",
+      "title": "数量和大小",
+      "direction": "数数时手势与数量变化对应；未有可控手指计数动画时用场景对象表达数量。",
+      "activityTopics": [
+        "数出看见的物品",
+        "听数量选一组",
+        "区分大和小",
+        "帮 Snow 打包玩具"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C05",
+      "title": "朋友家人和感受",
+      "direction": "开心、伤心等作为故事角色感受演示；明确所扮角色，退出演示后回到温暖教学状态，不用负面情绪评价孩子。",
+      "activityTopics": [
+        "认识故事中的人物",
+        "听出角色的感受",
+        "介绍一个人物",
+        "关心今天的 Snow"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C06",
+      "title": "食物喜好和礼貌请求",
+      "direction": "呈现水果、等待选择、回应请求、接受感谢；只对实际选择作对应反应。apple 是当前可交互样板。",
+      "activityTopics": [
+        "听词找食物",
+        "表达喜欢什么",
+        "礼貌地要一份",
+        "完成一次水果摊互动"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C07",
+      "title": "动物和它们的动作",
+      "direction": "看向动物及动作，表现发现与好奇；跑跳游泳需另外制作合适场景或动画。",
+      "activityTopics": [
+        "听声音找动物",
+        "配对动物和动作",
+        "说出一种能力",
+        "给小动物安排活动"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C08",
+      "title": "家里藏在哪里",
+      "direction": "视线跟随藏物位置；提问时不提前指出答案，答后才引导到对应位置。",
+      "activityTopics": [
+        "听位置找物品",
+        "移动物品说位置",
+        "向 Snow 提一个位置问题",
+        "完成寻宝任务"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C09",
+      "title": "天气和穿什么",
+      "direction": "对天气变化作适度反应，再看向衣物选择；冷、热表演用于故事含义，不能随机穿插。",
+      "activityTopics": [
+        "观察天气听描述",
+        "为天气选衣物",
+        "说明自己的选择",
+        "帮 Snow 准备出门"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C10",
+      "title": "我的一天和简单顺序",
+      "direction": "用姿态和手势标记先后；每个动作段有清晰开始与收尾，按用户排序推进。",
+      "activityTopics": [
+        "听出一天的活动",
+        "排列故事顺序",
+        "说说两个连续活动",
+        "为 Snow 安排一天"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C11",
+      "title": "一起去公园",
+      "direction": "邀请同行、指示方向、等待确认；左右方向必须按课程场景坐标统一，避免镜像误导。",
+      "activityTopics": [
+        "听懂活动邀请",
+        "在简单地图上找路",
+        "邀请 Snow 一起玩",
+        "说明要带什么"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "C12",
+      "title": "办一场小小聚会",
+      "direction": "根据实际布置选择作回应；完成任务后再庆祝，不因播放结束自动宣称学会。",
+      "activityTopics": [
+        "选择聚会需要的物品",
+        "向朋友询问喜好",
+        "一起完成布置和招待",
+        "介绍自己的安排"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A01",
+      "title": "打招呼和请求重复",
+      "direction": "自然问候和轮流交流，用户请求重复时表现理解与愿意帮助。",
+      "activityTopics": [
+        "第一次见面听什么",
+        "介绍自己的称呼",
+        "听不清时如何接话",
+        "完成两轮见面对话"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A02",
+      "title": "名字数字和联系方式",
+      "direction": "听数字和名字时专注；核对前保留疑问，不使用手指数数冒充精确数字示范。",
+      "activityTopics": [
+        "听清数字",
+        "用字母拼说名字",
+        "核对一串号码",
+        "填写虚构联络卡"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A03",
+      "title": "认识物品并简单描述",
+      "direction": "介绍物品时看内容，再回到学习者；发音局部练习中保留自然身体表达。",
+      "activityTopics": [
+        "听词认物",
+        "用一句话介绍物品",
+        "按声音选择 a 或 an",
+        "描述另一件物品"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A04",
+      "title": "喜欢什么和点一份饮品",
+      "direction": "扮演点单伙伴，等待需求并确认；被纠正订单时表现理解，不对学习者不耐烦。",
+      "activityTopics": [
+        "听懂菜单中的熟悉词",
+        "表达喜好",
+        "礼貌提出请求",
+        "完成简短点单"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A05",
+      "title": "购物数量和价格",
+      "direction": "目光跟随价格、数量和选择；核对差异使用询问手势，不提前评价购买决定。",
+      "activityTopics": [
+        "听出数量和价格",
+        "区分询问数量与价格",
+        "表达购买选择",
+        "核对一笔小订单"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A06",
+      "title": "时间和日常安排",
+      "direction": "根据时间卡突出关键数字；安排确定后才用确认姿态，不以点头代替实际答案判断。",
+      "activityTopics": [
+        "听出时间",
+        "说一个日常活动",
+        "确认活动开始时间",
+        "安排一次学习或见面"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A07",
+      "title": "介绍自己和身边的人",
+      "direction": "倾听人物介绍、适度回应与追问；不自动推断用户真实情绪或私人关系。",
+      "activityTopics": [
+        "听懂人物介绍",
+        "组织两三条个人信息",
+        "问一个相关问题",
+        "做一次简短自我介绍"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A08",
+      "title": "位置问路和到达目的地",
+      "direction": "依地图坐标指路，方向切换先移眼再转头；肢体方位需要场景标定。",
+      "activityTopics": [
+        "听位置找地点",
+        "提出问路问题",
+        "听两三步方向",
+        "确认是否到达"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A09",
+      "title": "能力请求和寻求帮助",
+      "direction": "表达请求时开放姿态；同意、婉拒与求助用不同语气和身体意图，避免嘲讽表情。",
+      "activityTopics": [
+        "听懂能力和请求",
+        "提出一个具体请求",
+        "理解同意与拒绝",
+        "在生活场景中求助"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A10",
+      "title": "出行和入住的基础交流",
+      "direction": "服务情境使用平实礼貌表现；目的地、时间、数量突出，用户确认前不提前结束。",
+      "activityTopics": [
+        "听懂关键出行信息",
+        "表达目的地或房间需求",
+        "核对时间和数量",
+        "完成出行服务对话"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A11",
+      "title": "解释不明白并修复交流",
+      "direction": "收到澄清时表现注意、理解和重新确认；角色故意误解必须属于题目脚本，不能冒充识别结果。",
+      "activityTopics": [
+        "识别自己没听清的部分",
+        "请求慢说或解释",
+        "用熟悉词重新表达",
+        "修复一次信息误会"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "A12",
+      "title": "完成一段真实用途的短交流",
+      "direction": "长对话中按话轮切换倾听与表达；收尾反馈引用真实任务表现，发音未评估时明确保持未知。",
+      "activityTopics": [
+        "选择要完成的生活任务",
+        "先听懂对方需要的信息",
+        "独立推进短对话",
+        "复盘并换情境再做"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P01",
+      "title": "建立基线和理解反馈",
+      "direction": "检查设备与说明目标时平静专注；录音不确定时使用待确认状态，不能演出失望。",
+      "activityTopics": [
+        "完成听辨与设备检查",
+        "录一段熟悉材料",
+        "比较提示与真实表现",
+        "选择本轮训练目标"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P02",
+      "title": "容易混淆的前元音",
+      "direction": "对比元音时眼神稳定、口型与音频一致；身体可自然表达，但口型精度需要额外教师校准。",
+      "activityTopics": [
+        "先听出两个词的区别",
+        "观察并尝试发音动作",
+        "在短语中保持区别",
+        "换例词和句子检查"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P03",
+      "title": "圆唇元音和双元音",
+      "direction": "双元音口型连续过渡；身体动作不将同一音素切成两次独立示范。",
+      "activityTopics": [
+        "听出目标元音",
+        "控制口形与音质",
+        "练连续的元音过渡",
+        "在短句里保持清楚"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P04",
+      "title": "摩擦音与清浊对比",
+      "direction": "嘴唇牙齿舌尖示范须精确；现有有限口型不足时使用额外审校图示，不声称普通表情就是正确舌位。",
+      "activityTopics": [
+        "听出本轮目标对比",
+        "学习可观察的发音动作",
+        "练词首和词中位置",
+        "在短句中传递意思"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P05",
+      "title": "边音和易混辅音",
+      "direction": "辅音对比与不同词位对应；当前模型不保证展示完整舌部动作，须单独制作与核验。",
+      "activityTopics": [
+        "建立目标声音的听觉区别",
+        "练起始位置的动作",
+        "练词中与词尾",
+        "在表达中保留区别"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P06",
+      "title": "词尾与辅音组合",
+      "direction": "词尾闭合与音频时间对齐，不能为了手势节拍添加元音或强迫夸张爆破。",
+      "activityTopics": [
+        "听见词尾改变的含义",
+        "保持闭合或连接动作",
+        "练复数及过去式的常见读法",
+        "放入连续短语"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P07",
+      "title": "音节重音和弱读",
+      "direction": "轻重变化对应音频中的重音，不能按界面点击块数量点三次头冒充三个音节。",
+      "activityTopics": [
+        "听出音节与突出位置",
+        "练轻重和自然时长",
+        "处理弱元音与连续尾音",
+        "在短句中保持词重音"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P08",
+      "title": "句子重点和表达节奏",
+      "direction": "手势落点与信息重点一致；同句不同强调需要不同带标记音频，不能只提高动画幅度。",
+      "activityTopics": [
+        "听出说话者强调什么",
+        "改变重点表达不同意思",
+        "用意群组织较长句子",
+        "完成简短澄清对话"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P09",
+      "title": "理解并使用连贯语流",
+      "direction": "连贯语流保持同一音频时钟；停顿和连接不由随机动画打断。",
+      "activityTopics": [
+        "从自然语速中找已知词",
+        "对比清晰慢速与自然语速",
+        "练一个常用语块的连接",
+        "听不同说话者再表达"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "P10",
+      "title": "迁移到自己的表达",
+      "direction": "倾听个人表达，结论只来自有效对比证据；保持温和认可与下一轮邀请。",
+      "activityTopics": [
+        "在新句子中使用目标",
+        "完成一段自发表达",
+        "与基线和延迟样本对比",
+        "选择继续巩固或下一个目标"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "B01",
+      "title": "认识英语声音、文字和音标工具",
+      "direction": "展示声音与符号的对应时先看内容再看用户；低龄不强制术语讲解。",
+      "activityTopics": [
+        "听声音并找到含义",
+        "认识所学词的字母形状与字母名称",
+        "比较字母名和词中的实际声音",
+        "用音标与示范音频查一个已知词"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "B02",
+      "title": "少量声音与第一批词",
+      "direction": "示范目标音，给予尝试空间；表情与发音混合时优先保留音频对应的闭唇和圆唇。",
+      "activityTopics": [
+        "从已解释含义的词中听出 /æ/",
+        "观察并尝试 /æ/ 的发音动作",
+        "在 cat、map 等已教词中合成与回听",
+        "结合 /m/、/p/、/t/ 等声音练词并回忆含义"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "B03",
+      "title": "音节、重音与自然整词",
+      "direction": "整词自然轻重与局部练习衔接；不能以夸张眨眼或点头替代语音重音。",
+      "activityTopics": [
+        "听完整 apple 并理解含义",
+        "比较两个音节的轻重",
+        "练习块衔接后回到完整单词",
+        "换一个已教词观察重音和轻读"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    },
+    {
+      "id": "B04",
+      "title": "每天怎样学词和复习",
+      "direction": "主动回忆时隐藏答案并等待；帮助由用户请求触发，隔日保持必须另测。",
+      "activityTopics": [
+        "听新词并建立含义",
+        "看物或含义尝试说词",
+        "识读准备好后认词与尝试拼写",
+        "用已教短语表达并预约隔日回忆"
+      ],
+      "performancePhases": [
+        "introduce",
+        "demonstrate",
+        "explain",
+        "invite",
+        "listen",
+        "recall",
+        "support",
+        "encourage",
+        "transfer",
+        "finish"
+      ],
+      "status": "表演设计已定义；完整逐课脚本、素材和视觉验收待完成",
+      "runtime": "共用人物表演调度；当前完整交互样板为 apple，不代表本单元全部可运行"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>腾讯语音与口型验证</title>
+<style>body{margin:0;background:#555;color:white;font:15px system-ui}iframe{display:block;width:100%;aspect-ratio:16/9;border:0}section{padding:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}button,select{padding:10px;background:#ffffff18;color:white;border:1px solid #ffffff55;border-radius:8px}option{color:black}pre{padding:16px;white-space:pre-wrap}</style>
+<iframe id="avatar" src="./index.html?layout=full&quiet=1" allow="autoplay; microphone"></iframe>
+<section><select id="voice" aria-label="音色"><option value="403007">YunLeo · 美音男声 2.0</option><option value="403006">YunMia · 美音女声 2.0</option><option value="403008">云小洋 · 男童 2.0</option></select><button id="word">测试 apple</button><button id="sentence">测试英文句子</button><button id="chinese">测试中文讲解</button><button id="record">录制教学演示</button><button id="story">录制连续表演 24 秒</button><button id="acting">录制十秒表演</button><button id="emotions">录制情绪连播</button><button id="stop">停止</button><a href="?perf=1" style="color:white">性能验证</a></section><pre id="result">正在连接人物…（此页默认静音）</pre>
+<script type="module">
+const frame=document.querySelector('#avatar'),result=document.querySelector('#result');let ready=false;
+if(new URLSearchParams(location.search).has('perf'))frame.src='./index.html?layout=full&quiet=1&perf=1';
+window.addEventListener('message',e=>{if(e.source!==frame.contentWindow||e.origin!==location.origin)return;try{const data=JSON.parse(e.data);if(data.event==='ready'){ready=true;result.textContent=JSON.stringify(data,null,2);}if(['cloud-result','error'].includes(data.event))result.textContent=JSON.stringify(data,null,2);}catch{}});
+function demo(text,language,record=false){if(!ready)return;result.textContent='正在准备云端声音和口型…';frame.contentWindow.postMessage(JSON.stringify({source:'snow-flutter',type:'cloud-demo',session:Date.now(),text,language,record,voice:Number(document.querySelector('#voice').value)}),location.origin);}
+document.querySelector('#record').onclick=()=>demo('Hello! Let\'s learn a new word. Apple. An apple is a fruit. I like apples. Now, say it with me. Apple. Well done!','en',true);
+document.querySelector('#story').onclick=()=>frame.contentWindow.postMessage(JSON.stringify({source:'snow-flutter',type:'acting-story',record:true,session:Date.now()}),location.origin);
+document.querySelector('#acting').onclick=()=>frame.contentWindow.postMessage(JSON.stringify({source:'snow-flutter',type:'performance',record:true,session:Date.now()}),location.origin);
+document.querySelector('#emotions').onclick=()=>frame.contentWindow.postMessage(JSON.stringify({source:'snow-flutter',type:'emotion',emotion:'happy',all:true,record:true,session:Date.now()}),location.origin);
+document.querySelector('#word').onclick=()=>demo('apple','en');document.querySelector('#sentence').onclick=()=>demo('I like apples.','en');document.querySelector('#chinese').onclick=()=>demo('我们一起学习这个单词。','zh');document.querySelector('#stop').onclick=()=>frame.contentWindow.postMessage(JSON.stringify({source:'snow-flutter',type:'stop'}),location.origin);
+</script></html>

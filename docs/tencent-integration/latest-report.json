@@ -1,0 +1,223 @@
+{
+  "testedAt": "2026-10-29T06:48:15.108Z",
+  "versions": {
+    "tts": "超自然大模型 2.0 / stream_wsv2",
+    "asr": "实时识别 V2 / 16k_zh_en_2.0",
+    "assessment": "智聆口语评测（新版） / soe/api"
+  },
+  "tests": [
+    {
+      "type": "tts-and-lips",
+      "text": "apple",
+      "voice": 403007,
+      "duration": 1.119,
+      "phoneCount": 4,
+      "missing": 0,
+      "subtitles": [],
+      "source": "tencent-soe-new-phone-timing",
+      "cached": true,
+      "key": "064ab80d85cf8e3a33cd7029739dc8d1c367218019498c55b6ee6125067c0efb",
+      "passed": true
+    },
+    {
+      "type": "tts-and-lips",
+      "text": "I like apples.",
+      "voice": 403007,
+      "duration": 2.119,
+      "phoneCount": 9,
+      "missing": 0,
+      "subtitles": [],
+      "source": "tencent-soe-new-phone-timing",
+      "cached": true,
+      "key": "a08f28724406afda97c3da4857eeb6383abc7d61e802f90482a9a44eb8a20a2a",
+      "passed": true
+    },
+    {
+      "type": "tts-and-lips",
+      "text": "我们一起学习这个单词。",
+      "voice": 403007,
+      "duration": 2.159,
+      "phoneCount": 20,
+      "missing": 0,
+      "subtitles": [],
+      "source": "tencent-soe-new-phone-timing",
+      "cached": false,
+      "key": "4e3e61bba54d3e06f91ab3d387708a5167831aca6938dfd4f8bb9cb67f6754f1",
+      "passed": true
+    },
+    {
+      "type": "asr",
+      "text": "I like apples.",
+      "engine": "16k_zh_en_2.0",
+      "passed": true
+    },
+    {
+      "type": "assessment",
+      "reference": "I like apples.",
+      "result": {
+        "SuggestedScore": 98.38988494873047,
+        "PronAccuracy": 98.38988494873047,
+        "PronFluency": 0.9476731419563293,
+        "PronCompletion": 1,
+        "Words": [
+          {
+            "MemBeginTime": 470,
+            "MemEndTime": 630,
+            "PronAccuracy": 95.876708984375,
+            "PronFluency": 0.9580186009407043,
+            "ReferenceWord": "i_0",
+            "Word": "i",
+            "MatchTag": 0,
+            "KeywordTag": 0,
+            "PhoneInfos": [
+              {
+                "MemBeginTime": 470,
+                "MemEndTime": 630,
+                "PronAccuracy": 95.876708984375,
+                "DetectedStress": false,
+                "Phone": "ay",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              }
+            ],
+            "Tone": {
+              "Valid": false,
+              "RefTone": -1,
+              "HypothesisTone": -1
+            }
+          },
+          {
+            "MemBeginTime": 630,
+            "MemEndTime": 980,
+            "PronAccuracy": 98.80089569091797,
+            "PronFluency": 0.9581101536750793,
+            "ReferenceWord": "like_1",
+            "Word": "like",
+            "MatchTag": 0,
+            "KeywordTag": 0,
+            "PhoneInfos": [
+              {
+                "MemBeginTime": 630,
+                "MemEndTime": 770,
+                "PronAccuracy": 98.8094711303711,
+                "DetectedStress": false,
+                "Phone": "l",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 770,
+                "MemEndTime": 870,
+                "PronAccuracy": 98.75372314453125,
+                "DetectedStress": false,
+                "Phone": "ay",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 870,
+                "MemEndTime": 980,
+                "PronAccuracy": 98.8395004272461,
+                "DetectedStress": false,
+                "Phone": "k",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              }
+            ],
+            "Tone": {
+              "Valid": false,
+              "RefTone": -1,
+              "HypothesisTone": -1
+            }
+          },
+          {
+            "MemBeginTime": 1010,
+            "MemEndTime": 1730,
+            "PronAccuracy": 98.64591217041016,
+            "PronFluency": 0.9268908500671387,
+            "ReferenceWord": "apples_2",
+            "Word": "apples",
+            "MatchTag": 0,
+            "KeywordTag": 0,
+            "PhoneInfos": [
+              {
+                "MemBeginTime": 1010,
+                "MemEndTime": 1210,
+                "PronAccuracy": 98.40644836425781,
+                "DetectedStress": false,
+                "Phone": "ae",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 1210,
+                "MemEndTime": 1290,
+                "PronAccuracy": 98.67984008789062,
+                "DetectedStress": false,
+                "Phone": "p",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 1290,
+                "MemEndTime": 1350,
+                "PronAccuracy": 98.74955749511719,
+                "DetectedStress": false,
+                "Phone": "ah",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 1350,
+                "MemEndTime": 1470,
+                "PronAccuracy": 98.70500946044922,
+                "DetectedStress": false,
+                "Phone": "l",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              },
+              {
+                "MemBeginTime": 1470,
+                "MemEndTime": 1730,
+                "PronAccuracy": 98.68875885009766,
+                "DetectedStress": false,
+                "Phone": "z",
+                "ReferencePhone": "",
+                "ReferenceLetter": "",
+                "Stress": false,
+                "MatchTag": 0
+              }
+            ],
+            "Tone": {
+              "Valid": false,
+              "RefTone": -1,
+              "HypothesisTone": -1
+            }
+          }
+        ],
+        "SentenceId": -1,
+        "RefTextId": -1,
+        "KeyWordHits": null,
+        "UnKeyWordHits": null
+      },
+      "passed": true
+    }
+  ],
+  "syntheticAudioOnly": true
+}

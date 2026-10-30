@@ -1,0 +1,25 @@
+{
+  "triangles": 59214,
+  "drawCalls": 29,
+  "deviceRenderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1050 Ti (0x00001C82) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "modelBytes": 13188580,
+  "version": "teaching-v7-emotions",
+  "animationSeconds": 10,
+  "fps": 60,
+  "frames": 4321,
+  "durationMs": 72014.2,
+  "frameP50": 16.7,
+  "frameP95": 16.8,
+  "cpuP95": 1.6,
+  "gpuP95": 3.85,
+  "over25ms": 0,
+  "mode": "emotion",
+  "valid": true,
+  "viewport": [
+    1280,
+    720
+  ],
+  "pixelRatio": 1,
+  "visibility": "visible",
+  "recordedAt": "2026-10-28T07:55:34.319Z"
+}

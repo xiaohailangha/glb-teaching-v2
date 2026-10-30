@@ -1,0 +1,27 @@
+{
+  "triangles": 425144,
+  "drawCalls": 28,
+  "deviceRenderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1050 Ti (0x00001C82) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "modelBytes": 153334024,
+  "version": "storm-v2-fidelity",
+  "animationSeconds": 10,
+  "hairBones": 42,
+  "hairPeakRadians": 0.04761895306049575,
+  "fps": 60,
+  "frames": 1801,
+  "durationMs": 30015.9,
+  "frameP50": 16.7,
+  "frameP95": 16.8,
+  "cpuP95": 2.6,
+  "gpuP95": 10.66,
+  "over25ms": 0,
+  "mode": "performance",
+  "valid": true,
+  "viewport": [
+    1280,
+    720
+  ],
+  "pixelRatio": 1,
+  "visibility": "visible",
+  "recordedAt": "2026-10-29T07:44:49.942Z"
+}

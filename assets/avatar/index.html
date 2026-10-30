@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>glb模型能力 · Storm</title>
+  <style>
+    *{box-sizing:border-box} html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent}
+    canvas{display:block;width:100%;height:100%;outline:none}
+    #message{position:absolute;inset:0;display:grid;place-content:center;font:14px system-ui;color:#eee;text-align:center;gap:12px}
+    #message:before{content:'';width:24px;height:24px;border:2px solid #d6e1da;border-top-color:#4263eb;border-radius:50%;margin:auto;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body><div id="message">正在准备 Storm…</div><audio id="voice" preload="auto" hidden></audio>
+<script type="module" src="./avatar.js"></script></body>
+</html>

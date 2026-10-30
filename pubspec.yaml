@@ -1,0 +1,33 @@
+name: snow_speaks
+description: Flutter pronunciation lesson with the official Storm character.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: 4.13.1
+  webview_flutter_android: 4.12.0
+  webview_flutter_wkwebview: 3.25.0
+  web: 1.1.1
+  shared_preferences: ^2.5.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/avatar/
+    - assets/avatar/models/storm-performance.glb
+    - assets/avatar/models/storm-rig.json
+    - assets/avatar/audio/
+    - assets/avatar/vendor/
+    - assets/avatar/vendor/loaders/
+    - assets/avatar/vendor/utils/
+    - assets/data/
+  fonts:
+    - family: NotoSansSC
+      fonts:
+        - asset: assets/fonts/NotoSansSC-ui.ttf
