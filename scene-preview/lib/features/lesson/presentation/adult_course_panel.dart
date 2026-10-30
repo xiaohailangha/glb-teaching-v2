@@ -77,9 +77,12 @@ class AdultCoursePanel extends StatelessWidget {
               Text(c.courseText),
               if (summary) ...[
                 const SizedBox(height: 12),
-                Text('正式学过：$taught / 2 个词'),
+                Text('正式学过的水果词：$taught / 2 个'),
                 Text('未用提示的听辨与选择：$correct / 5 次'),
                 Text('主动尝试回忆：$attempts / 2 个词'),
+                Text(
+                  '自主表达尝试：${(data['expressions'] as List? ?? []).length} 次（自报记录）',
+                ),
                 const Text(
                   '这是一轮练习记录，不代表已经掌握。',
                   style: TextStyle(color: Colors.white70, fontSize: 13),
@@ -96,8 +99,17 @@ class AdultCoursePanel extends StatelessWidget {
                       button(
                         option['label']!,
                         () => c.respondToCourse(option['id']!),
-                        icon: const ['apple', 'banana'].contains(option['id'])
-                            ? fruit(option['id']!, size: 55)
+                        icon:
+                            const [
+                              'apple',
+                              'banana',
+                              'choose_apple',
+                              'choose_banana',
+                            ].contains(option['id'])
+                            ? fruit(
+                                option['id']!.replaceFirst('choose_', ''),
+                                size: 55,
+                              )
                             : null,
                       ),
                   ],
@@ -127,7 +139,25 @@ class AdultCoursePanel extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 8),
                     child: Text(c.speechFeedback),
                   ),
-                if (c.lessonPhase == 'listen' && c.courseOptions.isNotEmpty)
+                if (c.courseSegments.isNotEmpty) ...[
+                  const SizedBox(height: 8),
+                  const Text('分段听，然后试着连起来说：'),
+                  Wrap(
+                    spacing: 6,
+                    runSpacing: 6,
+                    children: [
+                      for (final segment in c.courseSegments)
+                        button(
+                          segment['label']!,
+                          () => c.previewCourse(segment['clip']!),
+                        ),
+                    ],
+                  ),
+                ],
+                if (c.lessonPhase == 'listen' &&
+                    c.courseOptions.isNotEmpty &&
+                    c.courseSpeechText.isEmpty &&
+                    c.courseStep != 'extension_gate')
                   Wrap(
                     spacing: 5,
                     children: [

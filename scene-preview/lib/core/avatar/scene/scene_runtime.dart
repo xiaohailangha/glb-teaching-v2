@@ -240,7 +240,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r6-course',
+        'version': 'scene-0.2.0-r7-sentences',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -357,7 +357,9 @@ class SceneRuntime extends ChangeNotifier {
             if (original.answer.isNotEmpty) d.helped.add(original.id);
             final clip =
                 c['clip']?.toString() ??
-                (original.answer.startsWith('phrase_')
+                (original.practiceClip.isNotEmpty
+                    ? original.practiceClip
+                    : original.answer.startsWith('phrase_')
                     ? original.answer
                     : d.word);
             if (!timings.containsKey(clip)) return;
@@ -369,7 +371,7 @@ class SceneRuntime extends ChangeNotifier {
                 clip: clip,
                 wordId: d.word,
                 chapter: original.chapter,
-                display: original.display,
+                display: timings[clip]?['text']?.toString() ?? original.display,
                 picture: original.picture,
                 hide: original.hideAnswer,
                 text: '再听一次，然后回到练习。',
@@ -442,14 +444,18 @@ class SceneRuntime extends ChangeNotifier {
           await speech.startCapture(
             session: session,
             emit: emit,
-            text: director?.word ?? word,
+            text: director?.stage.speechText.isNotEmpty == true
+                ? director!.stage.speechText
+                : director?.word ?? word,
             mode: phase == 'recall' ? 'recognize' : 'assess',
           );
         case 'capture-stop':
           await speech.finishCapture(
             session: session,
             emit: emit,
-            text: director?.word ?? word,
+            text: director?.stage.speechText.isNotEmpty == true
+                ? director!.stage.speechText
+                : director?.word ?? word,
             mode: phase == 'recall' ? 'recognize' : 'assess',
           );
         case 'capture-cancel':
@@ -518,6 +524,8 @@ class SceneRuntime extends ChangeNotifier {
       if (director!.fruitCourse) ...{
         'word': word,
         'display': stage.display,
+        'speechText': stage.speechText,
+        'segments': stage.segments,
         'picture': stage.picture,
         'chapter': stage.chapter,
         'checkpoint': director!.checkpoint,

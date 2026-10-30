@@ -14,9 +14,14 @@ class Stage {
     this.chapter = '',
     this.answer = '',
     this.hide = false,
+    this.practiceClip = '',
+    this.speechText = '',
+    this.segments = const [],
   });
   final String phase, id, text, symbol;
   final String wordId, display, picture, chapter, answer;
+  final String practiceClip, speechText;
+  final List<Map<String, String>> segments;
   final bool hide;
   final String? clip;
   final double rate;
@@ -43,9 +48,12 @@ class TeachingDirector {
   final taught = <String>{},
       attempts = <String>{},
       correct = <String>{},
-      helped = <String>{};
+      helped = <String>{},
+      expressions = <String>{};
   Map<String, dynamic> get checkpoint => {
     'version': 1,
+    'courseId': 'adult-fruit-v2',
+    'expressions': expressions.toList(),
     'index': index,
     'taught': taught.toList(),
     'attempts': attempts.toList(),
@@ -98,6 +106,16 @@ class TeachingDirector {
     if (!stage.options.any((item) => item['id'] == action)) return null;
     if (fruitCourse) {
       final current = stage;
+      if (action == 'choose_apple' || action == 'choose_banana') {
+        index = stages.indexWhere(
+          (s) => s.id == 'scene_${action.substring(7)}',
+        );
+        return stage;
+      }
+      if (action == 'skip' && current.id == 'extension_gate') {
+        index = stages.indexWhere((s) => s.id == 'review_intro');
+        return stage;
+      }
       if (action == 'help' ||
           action == 'reveal' ||
           action == 'sound' ||
@@ -112,17 +130,21 @@ class TeachingDirector {
             chapter: current.chapter,
             clip: sound
                 ? 'phoneme_ae'
+                : current.practiceClip.isNotEmpty
+                ? current.practiceClip
                 : current.answer.startsWith('phrase_')
                 ? current.answer
                 : word,
             display: sound
                 ? '/æ/'
+                : current.speechText.isNotEmpty
+                ? current.speechText
                 : current.answer == 'phrase_apple'
                 ? 'an apple'
                 : current.answer == 'phrase_banana'
                 ? 'a banana'
                 : word,
-            picture: word,
+            picture: current.picture,
             text: sound
                 ? '嘴张开，先听 /æ/。再回到完整单词。'
                 : current.answer.isNotEmpty && action != 'help'
@@ -135,8 +157,18 @@ class TeachingDirector {
       if (current.answer.isNotEmpty && !helped.contains(current.id)) {
         correct.add(current.id);
       }
-      if (action == 'attempt') attempts.add(word);
-      index++;
+      if (action == 'attempt') {
+        if (current.speechText.contains(' ')) {
+          expressions.add(current.id);
+        } else {
+          attempts.add(word);
+        }
+      }
+      if (current.id.startsWith('scene_') && action == 'attempt') {
+        index = stages.indexWhere((s) => s.id == 'extension_gate');
+      } else {
+        index++;
+      }
       if (current.answer.isNotEmpty) {
         branch = [
           Stage(
@@ -204,6 +236,12 @@ class TeachingDirector {
             chapter: raw['chapter'] as String? ?? '',
             answer: raw['answer'] as String? ?? '',
             hide: raw['hide'] == true,
+            practiceClip: raw['practiceClip'] as String? ?? '',
+            speechText: raw['speechText'] as String? ?? '',
+            segments: [
+              for (final o in raw['segments'] as List? ?? [])
+                Map<String, String>.from(o as Map),
+            ],
             text: raw['text'] as String? ?? '',
             rate: rate,
             options: [
@@ -213,7 +251,7 @@ class TeachingDirector {
           ),
       ],
     )..fruitCourse = true;
-    if (saved?['version'] == 1) {
+    if (saved?['version'] == 1 && saved?['courseId'] == 'adult-fruit-v2') {
       d.index = ((saved?['index'] as num?)?.toInt() ?? 0).clamp(
         0,
         d.stages.length - 1,
@@ -223,6 +261,7 @@ class TeachingDirector {
         (d.attempts, 'attempts'),
         (d.correct, 'correct'),
         (d.helped, 'helped'),
+        (d.expressions, 'expressions'),
       ]) {
         pair.$1.addAll((saved?[pair.$2] as List? ?? []).whereType<String>());
       }

@@ -1,3 +1,5 @@
+成人水果课 r7：从单词、短语走到 I want / I want to eat，支持分段试听、自选水果后的自主表达和可跳过的红苹果扩展。课程方案见 ../docs/flutter-scene/curriculum-plan-v1.txt。新版进度使用 adult-fruit-v2；旧课进度保留，不套用到新课。Web 入口：https://49.233.179.83/scene/?r=7 。本轮不更新 Android。
+
 # Flutter Scene 人物教学验证
 
 **r6 成人首课已发布**：[打开网页](https://49.233.179.83/scene/?r=6)，点击左上角“成人入门 · 认识水果”。完整包含 apple / banana 图片认识、发音练习、听辨、看图回忆、an apple / a banana、延后复习和本节记录，支持暂停/刷新后继续。34 项 Flutter 测试、音频回归、隐藏浏览器完整走课及 8 组线上检查通过；真人录音与用户整课体验仍待反馈。本轮不更新 Android，详见 `../docs/flutter-scene/adult-fruit-course-r6-2026-10-30.md`。

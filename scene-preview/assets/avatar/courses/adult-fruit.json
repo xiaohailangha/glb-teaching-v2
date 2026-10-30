@@ -1,15 +1,15 @@
 {
-  "id": "adult-fruit-v1",
-  "title": "成人入门 · 认识水果",
+  "id": "adult-fruit-v2",
+  "title": "成人入门 · 从水果到表达",
   "stages": [
     {
       "id": "fruit_intro",
       "phase": "introduce",
       "chapter": "认识水果",
       "word": "apple",
-      "text": "这节课：认出两个水果，听懂它们，试着说出名字。",
+      "text": "从苹果、一个苹果，走到“我想要 / 我想吃一个苹果”。红苹果是可选扩展。",
       "clip": "fruit_intro",
-      "display": "APPLE · BANANA"
+      "display": "从单词到表达"
     },
     {
       "id": "apple_meaning",
@@ -221,24 +221,66 @@
       "display": "一个苹果 · 一根香蕉"
     },
     {
-      "id": "phrase_apple_model",
+      "id": "phrase_apple_practice_model",
       "phase": "demonstrate",
       "chapter": "连起来说",
       "word": "apple",
       "text": "一个苹果",
-      "picture": "apple",
       "display": "an apple",
+      "picture": "apple",
       "clip": "phrase_apple"
     },
     {
-      "id": "phrase_banana_model",
+      "id": "phrase_apple_practice",
+      "phase": "listen",
+      "chapter": "连起来说",
+      "word": "apple",
+      "text": "一个苹果",
+      "display": "an apple",
+      "picture": "apple",
+      "practiceClip": "phrase_apple",
+      "speechText": "an apple",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "phrase_banana_practice_model",
       "phase": "demonstrate",
       "chapter": "连起来说",
       "word": "banana",
       "text": "一根香蕉",
-      "picture": "banana",
       "display": "a banana",
+      "picture": "banana",
       "clip": "phrase_banana"
+    },
+    {
+      "id": "phrase_banana_practice",
+      "phase": "listen",
+      "chapter": "连起来说",
+      "word": "banana",
+      "text": "一根香蕉",
+      "display": "a banana",
+      "picture": "banana",
+      "practiceClip": "phrase_banana",
+      "speechText": "a banana",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
     },
     {
       "id": "article_tip",
@@ -279,6 +321,554 @@
         {
           "id": "help",
           "label": "再听一次"
+        }
+      ]
+    },
+    {
+      "id": "want_intro",
+      "phase": "explain",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "I = 我；want = 想要。先理解，再把它们连起来。",
+      "clip": "want_intro",
+      "display": "我想要…"
+    },
+    {
+      "id": "learn_i_model",
+      "phase": "demonstrate",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我。这里开始学习组成句子的词。",
+      "display": "I",
+      "picture": "",
+      "clip": "part_i"
+    },
+    {
+      "id": "learn_i",
+      "phase": "listen",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我。这里开始学习组成句子的词。",
+      "display": "I",
+      "picture": "",
+      "practiceClip": "part_i",
+      "speechText": "I",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "learn_want_model",
+      "phase": "demonstrate",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "想要。",
+      "display": "want",
+      "picture": "",
+      "clip": "part_want"
+    },
+    {
+      "id": "learn_want",
+      "phase": "listen",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "想要。",
+      "display": "want",
+      "picture": "",
+      "practiceClip": "part_want",
+      "speechText": "want",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "chunk_want_model",
+      "phase": "demonstrate",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我想要… 后面接想要的东西。",
+      "display": "I want",
+      "picture": "",
+      "clip": "chunk_want"
+    },
+    {
+      "id": "chunk_want",
+      "phase": "listen",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我想要… 后面接想要的东西。",
+      "display": "I want",
+      "picture": "",
+      "practiceClip": "chunk_want",
+      "speechText": "I want",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "want_apple_model",
+      "phase": "demonstrate",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我想要一个苹果。先听整句，也可以点下面分段听。",
+      "display": "I want an apple.",
+      "picture": "apple",
+      "clip": "want_apple"
+    },
+    {
+      "id": "want_apple",
+      "phase": "listen",
+      "chapter": "表达想要",
+      "word": "apple",
+      "text": "我想要一个苹果。先听整句，也可以点下面分段听。",
+      "display": "I want an apple.",
+      "picture": "apple",
+      "practiceClip": "want_apple",
+      "speechText": "I want an apple.",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ],
+      "segments": [
+        {
+          "clip": "chunk_want",
+          "label": "I want"
+        },
+        {
+          "clip": "phrase_apple",
+          "label": "an apple"
+        }
+      ]
+    },
+    {
+      "id": "want_banana_model",
+      "phase": "demonstrate",
+      "chapter": "表达想要",
+      "word": "banana",
+      "text": "我想要一根香蕉。先听整句，也可以点下面分段听。",
+      "display": "I want a banana.",
+      "picture": "banana",
+      "clip": "want_banana"
+    },
+    {
+      "id": "want_banana",
+      "phase": "listen",
+      "chapter": "表达想要",
+      "word": "banana",
+      "text": "我想要一根香蕉。先听整句，也可以点下面分段听。",
+      "display": "I want a banana.",
+      "picture": "banana",
+      "practiceClip": "want_banana",
+      "speechText": "I want a banana.",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ],
+      "segments": [
+        {
+          "clip": "chunk_want",
+          "label": "I want"
+        },
+        {
+          "clip": "phrase_banana",
+          "label": "a banana"
+        }
+      ]
+    },
+    {
+      "id": "eat_intro",
+      "phase": "explain",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "eat = 吃；want to eat = 想吃。to 在这里帮助连接 want 和 eat，先把组合记在一起。",
+      "clip": "eat_intro",
+      "display": "从“想要”到“想吃”"
+    },
+    {
+      "id": "learn_eat_model",
+      "phase": "demonstrate",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "吃。",
+      "display": "eat",
+      "picture": "",
+      "clip": "part_eat"
+    },
+    {
+      "id": "learn_eat",
+      "phase": "listen",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "吃。",
+      "display": "eat",
+      "picture": "",
+      "practiceClip": "part_eat",
+      "speechText": "eat",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "chunk_eat_model",
+      "phase": "demonstrate",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "和 I want 连起来：I want to eat… 我想吃…",
+      "display": "to eat",
+      "picture": "",
+      "clip": "chunk_eat"
+    },
+    {
+      "id": "chunk_eat",
+      "phase": "listen",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "和 I want 连起来：I want to eat… 我想吃…",
+      "display": "to eat",
+      "picture": "",
+      "practiceClip": "chunk_eat",
+      "speechText": "to eat",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "eat_apple_model",
+      "phase": "demonstrate",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "我想吃一个苹果。分段练过后，再试着完整说。",
+      "display": "I want to eat an apple.",
+      "picture": "apple",
+      "clip": "eat_apple"
+    },
+    {
+      "id": "eat_apple",
+      "phase": "listen",
+      "chapter": "表达想吃",
+      "word": "apple",
+      "text": "我想吃一个苹果。分段练过后，再试着完整说。",
+      "display": "I want to eat an apple.",
+      "picture": "apple",
+      "practiceClip": "eat_apple",
+      "speechText": "I want to eat an apple.",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ],
+      "segments": [
+        {
+          "clip": "chunk_want",
+          "label": "I want"
+        },
+        {
+          "clip": "chunk_eat",
+          "label": "to eat"
+        },
+        {
+          "clip": "phrase_apple",
+          "label": "an apple"
+        }
+      ]
+    },
+    {
+      "id": "eat_banana_model",
+      "phase": "demonstrate",
+      "chapter": "表达想吃",
+      "word": "banana",
+      "text": "我想吃一根香蕉。分段练过后，再试着完整说。",
+      "display": "I want to eat a banana.",
+      "picture": "banana",
+      "clip": "eat_banana"
+    },
+    {
+      "id": "eat_banana",
+      "phase": "listen",
+      "chapter": "表达想吃",
+      "word": "banana",
+      "text": "我想吃一根香蕉。分段练过后，再试着完整说。",
+      "display": "I want to eat a banana.",
+      "picture": "banana",
+      "practiceClip": "eat_banana",
+      "speechText": "I want to eat a banana.",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ],
+      "segments": [
+        {
+          "clip": "chunk_want",
+          "label": "I want"
+        },
+        {
+          "clip": "chunk_eat",
+          "label": "to eat"
+        },
+        {
+          "clip": "phrase_banana",
+          "label": "a banana"
+        }
+      ]
+    },
+    {
+      "id": "scene_intro",
+      "phase": "invite",
+      "chapter": "自己表达",
+      "word": "apple",
+      "text": "选你想吃的水果，再试着说出完整需求。",
+      "clip": "scene_intro",
+      "display": "轮到你来选择"
+    },
+    {
+      "id": "scene_pick",
+      "phase": "choice",
+      "chapter": "自己表达",
+      "word": "apple",
+      "text": "你想吃哪一种？这是你的选择，没有标准答案。",
+      "hide": true,
+      "options": [
+        {
+          "id": "choose_apple",
+          "label": "苹果"
+        },
+        {
+          "id": "choose_banana",
+          "label": "香蕉"
+        }
+      ]
+    },
+    {
+      "id": "scene_apple",
+      "phase": "recall",
+      "chapter": "自己表达",
+      "word": "apple",
+      "text": "没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。",
+      "picture": "apple",
+      "hide": true,
+      "practiceClip": "eat_apple",
+      "speechText": "I want to eat an apple.",
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我尝试过了"
+        },
+        {
+          "id": "help",
+          "label": "听完整示范"
+        }
+      ]
+    },
+    {
+      "id": "scene_banana",
+      "phase": "recall",
+      "chapter": "自己表达",
+      "word": "banana",
+      "text": "没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。",
+      "picture": "banana",
+      "hide": true,
+      "practiceClip": "eat_banana",
+      "speechText": "I want to eat a banana.",
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我尝试过了"
+        },
+        {
+          "id": "help",
+          "label": "听完整示范"
+        }
+      ]
+    },
+    {
+      "id": "extension_gate",
+      "phase": "listen",
+      "chapter": "可选扩展",
+      "word": "apple",
+      "text": "核心表达已练完。可以学习“红苹果”，也可以直接进入复习。",
+      "display": "要加一点颜色吗？",
+      "options": [
+        {
+          "id": "next",
+          "label": "学习红苹果"
+        },
+        {
+          "id": "skip",
+          "label": "先去复习"
+        }
+      ]
+    },
+    {
+      "id": "red_intro",
+      "phase": "explain",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "red = 红色。a red apple = 一个红苹果。这里用 a，因为它紧接 red 的辅音开头。",
+      "clip": "red_intro",
+      "display": "red → a red apple"
+    },
+    {
+      "id": "learn_red_model",
+      "phase": "demonstrate",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "红色。",
+      "display": "red",
+      "picture": "apple",
+      "clip": "part_red"
+    },
+    {
+      "id": "learn_red",
+      "phase": "listen",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "红色。",
+      "display": "red",
+      "picture": "apple",
+      "practiceClip": "part_red",
+      "speechText": "red",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "red_phrase_model",
+      "phase": "demonstrate",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "一个红苹果。",
+      "display": "a red apple",
+      "picture": "apple",
+      "clip": "chunk_red"
+    },
+    {
+      "id": "red_phrase",
+      "phase": "listen",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "一个红苹果。",
+      "display": "a red apple",
+      "picture": "apple",
+      "practiceClip": "chunk_red",
+      "speechText": "a red apple",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "red_sentence_model",
+      "phase": "demonstrate",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "我想吃一个红苹果。先分段，再连起来说。",
+      "display": "I want to eat a red apple.",
+      "picture": "apple",
+      "clip": "eat_red"
+    },
+    {
+      "id": "red_sentence",
+      "phase": "listen",
+      "chapter": "红苹果扩展",
+      "word": "apple",
+      "text": "我想吃一个红苹果。先分段，再连起来说。",
+      "display": "I want to eat a red apple.",
+      "picture": "apple",
+      "practiceClip": "eat_red",
+      "speechText": "I want to eat a red apple.",
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ],
+      "segments": [
+        {
+          "clip": "chunk_want",
+          "label": "I want"
+        },
+        {
+          "clip": "chunk_eat",
+          "label": "to eat"
+        },
+        {
+          "clip": "chunk_red",
+          "label": "a red apple"
         }
       ]
     },

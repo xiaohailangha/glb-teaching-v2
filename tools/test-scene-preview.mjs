@@ -52,7 +52,7 @@ await check('adult fruit course publishes the complete versioned lesson',async()
  assert.equal(response.status,200);
  const course=await response.json();
  assert.deepEqual(course,JSON.parse(await fs.readFile('scene-preview/assets/avatar/courses/adult-fruit.json','utf8')));
- assert.equal(course.id,'adult-fruit-v1');
+ assert.equal(course.id,'adult-fruit-v2');
  assert.equal(course.stages.at(-1).id,'summary');
  assert.equal(course.stages.filter(s=>s.answer).length,5);
 });

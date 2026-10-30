@@ -14,11 +14,20 @@ const prompts={
  fruit_review:'换个顺序，再听一次。看看现在能不能认出来。',
  fruit_finish:'这一节完成了。下次再试试，看看还能不能记住。',
  phrase_apple:'an apple',phrase_banana:'a banana',
+ want_intro:'现在说出你想要什么。先听，再分段练习。',
+ eat_intro:'想要吃，和想要一个东西，有一点不同。听听这句话。',
+ scene_intro:'现在试着表达自己的选择。先选水果，再开口说。',
+ red_intro:'红色，英文是 red。把颜色放在苹果前面。',
+ part_i:'I',part_want:'want',part_eat:'eat',part_red:'red',
+ chunk_want:'I want.',chunk_eat:'to eat.',chunk_red:'a red apple',
+ want_apple:'I want an apple.',want_banana:'I want a banana.',
+ eat_apple:'I want to eat an apple.',eat_banana:'I want to eat a banana.',
+ eat_red:'I want to eat a red apple.',
 };
 const stages=[];
 const option=(id,label)=>({id,label});
 function add(id,phase,chapter,word,text,extra={}) {stages.push({id,phase,chapter,word,text,...extra});}
-add('fruit_intro','introduce','认识水果','apple','这节课：认出两个水果，听懂它们，试着说出名字。',{clip:'fruit_intro',display:'APPLE · BANANA'});
+add('fruit_intro','introduce','认识水果','apple','从苹果、一个苹果，走到“我想要 / 我想吃一个苹果”。红苹果是可选扩展。',{clip:'fruit_intro',display:'从单词到表达'});
 for(const word of ['apple','banana']) {
  const meaning=word==='apple'?'苹果':'香蕉';
  add(`${word}_meaning`,'meaning','认识水果',word,meaning,{clip:`fruit_${word}`,picture:word,display:meaning});
@@ -39,18 +48,47 @@ add('recall_intro','invite','看图回忆','apple','先想一想，再听提示�
 for(const word of ['banana','apple']) add(`recall_${word}`,'recall','看图回忆',word,'看图试着说出英文。可以点“说出答案”录音，也可以自己轻声练习。',
  {picture:word,hide:true,options:[option('attempt','我尝试过了'),option('reveal','想不起来，听提示')]});
 add('phrase_intro','explain','连起来说','apple','从单词走到“一个苹果 / 一根香蕉”。',{clip:'fruit_phrase',display:'一个苹果 · 一根香蕉'});
-for(const word of ['apple','banana']) add(`phrase_${word}_model`,'demonstrate','连起来说',word,word==='apple'?'一个苹果':'一根香蕉',{picture:word,display:word==='apple'?'an apple':'a banana',clip:`phrase_${word}`});
+for(const word of ['apple','banana']) practice(`phrase_${word}_practice`,'连起来说',word,word==='apple'?'an apple':'a banana',word==='apple'?'一个苹果':'一根香蕉',`phrase_${word}`);
 add('article_tip','explain','连起来说','apple','an apple · a banana。先把这两组说法记在一起。',{clip:'fruit_article',display:'an apple / a banana'});
 choice('phrase_select','banana','连起来说',true,true);
+function practice(id, chapter, word, display, text, clip, extra={}) {
+ const picture=['learn_i','learn_want','learn_eat','chunk_want','chunk_eat'].includes(id)?'':word;
+ add(id+'_model','demonstrate',chapter,word,text,{display,picture,clip});
+ add(id,'listen',chapter,word,text,{display,picture,practiceClip:clip,speechText:display,
+  options:[option('next','继续'),option('help','再听示范')],...extra});
+}
+add('want_intro','explain','表达想要','apple','I = 我；want = 想要。先理解，再把它们连起来。',{clip:'want_intro',display:'我想要…'});
+practice('learn_i','表达想要','apple','I','我。这里开始学习组成句子的词。','part_i');
+practice('learn_want','表达想要','apple','want','想要。','part_want');
+practice('chunk_want','表达想要','apple','I want','我想要… 后面接想要的东西。','chunk_want');
+for (const word of ['apple','banana']) {
+ const phrase=word==='apple'?'an apple':'a banana';
+ practice(`want_${word}`,'表达想要',word,`I want ${phrase}.`,`我想要${word==='apple'?'一个苹果':'一根香蕉'}。先听整句，也可以点下面分段听。`,`want_${word}`,{segments:[{clip:'chunk_want',label:'I want'},{clip:`phrase_${word}`,label:phrase}]});
+}
+add('eat_intro','explain','表达想吃','apple','eat = 吃；want to eat = 想吃。to 在这里帮助连接 want 和 eat，先把组合记在一起。',{clip:'eat_intro',display:'从“想要”到“想吃”'});
+practice('learn_eat','表达想吃','apple','eat','吃。','part_eat');
+practice('chunk_eat','表达想吃','apple','to eat','和 I want 连起来：I want to eat… 我想吃…','chunk_eat');
+for (const word of ['apple','banana']) {
+ const phrase=word==='apple'?'an apple':'a banana';
+ practice(`eat_${word}`,'表达想吃',word,`I want to eat ${phrase}.`,`我想吃${word==='apple'?'一个苹果':'一根香蕉'}。分段练过后，再试着完整说。`,`eat_${word}`,{segments:[{clip:'chunk_want',label:'I want'},{clip:'chunk_eat',label:'to eat'},{clip:`phrase_${word}`,label:phrase}]});
+}
+add('scene_intro','invite','自己表达','apple','选你想吃的水果，再试着说出完整需求。',{clip:'scene_intro',display:'轮到你来选择'});
+add('scene_pick','choice','自己表达','apple','你想吃哪一种？这是你的选择，没有标准答案。',{hide:true,options:[option('choose_apple','苹果'),option('choose_banana','香蕉')]});
+for (const word of ['apple','banana']) add(`scene_${word}`,'recall','自己表达',word,'没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。',{picture:word,hide:true,practiceClip:`eat_${word}`,speechText:`I want to eat ${word==='apple'?'an apple':'a banana'}.`,options:[option('attempt','我尝试过了'),option('help','听完整示范')]});
+add('extension_gate','listen','可选扩展','apple','核心表达已练完。可以学习“红苹果”，也可以直接进入复习。',{display:'要加一点颜色吗？',options:[option('next','学习红苹果'),option('skip','先去复习')]});
+add('red_intro','explain','红苹果扩展','apple','red = 红色。a red apple = 一个红苹果。这里用 a，因为它紧接 red 的辅音开头。',{clip:'red_intro',display:'red → a red apple'});
+practice('learn_red','红苹果扩展','apple','red','红色。','part_red');
+practice('red_phrase','红苹果扩展','apple','a red apple','一个红苹果。','chunk_red');
+practice('red_sentence','红苹果扩展','apple','I want to eat a red apple.','我想吃一个红苹果。先分段，再连起来说。','eat_red',{segments:[{clip:'chunk_want',label:'I want'},{clip:'chunk_eat',label:'to eat'},{clip:'chunk_red',label:'a red apple'}]});
 add('review_intro','transfer','隔一会再认','apple','换个顺序，不看英文，再认一次。',{clip:'fruit_review',hide:true});
 choice('review_banana','banana','隔一会再认');choice('review_apple','apple','隔一会再认',true);
 add('close','encourage','本节小结','apple','完成了一次练习，不代表已经永久记住。',{clip:'fruit_finish',display:'完成本节练习'});
 add('summary','finish','本节小结','apple','下次可以再练一轮，检查是否还记得。',{display:'今天的学习记录',options:[]});
 fs.mkdirSync('scene-preview/assets/avatar/courses',{recursive:true});
-fs.writeFileSync('scene-preview/assets/avatar/courses/adult-fruit.json',JSON.stringify({id:'adult-fruit-v1',title:'成人入门 · 认识水果',stages},null,2)+'\n');
+fs.writeFileSync('scene-preview/assets/avatar/courses/adult-fruit.json',JSON.stringify({id:'adult-fruit-v2',title:'成人入门 · 从水果到表达',stages},null,2)+'\n');
 const result={};
 for(const [key,text] of Object.entries(prompts)) {
- const source=await teachingAudio(text,{voice:403008,language:key.startsWith('phrase_')?'en':'zh'});
+ const source=await teachingAudio(text,{voice:403008,language:/^[A-Za-z]/.test(text)?'en':'zh'});
  const {pcm}=readWave(fs.readFileSync(path.join(cacheDir,source.key+'.wav')));
  const start=Math.max(0,source.phones[0].start-.03),end=Math.min(source.duration,source.phones.at(-1).end+.08);
  const clip=pcmWave(Buffer.concat([Buffer.alloc(1600),pcm.subarray(Math.floor(start*16000)*2,Math.ceil(end*16000)*2),Buffer.alloc(2400)]));

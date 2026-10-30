@@ -19,6 +19,8 @@ class LessonController extends ChangeNotifier {
   String courseStyle = 'adult', courseText = '', courseStep = '';
   List<Map<String, String>> courseOptions = [];
   bool coursePaused = false;
+  String courseSpeechText = '';
+  List<Map<String, String>> courseSegments = [];
   String courseDisplay = '', coursePicture = '', courseChapter = '';
   int coursePosition = 0, courseTotal = 1;
   Map<String, dynamic>? courseCheckpoint;
@@ -27,7 +29,7 @@ class LessonController extends ChangeNotifier {
   Future<void> loadCourseProgress() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final saved = prefs.getString('adult-fruit-v1');
+      final saved = prefs.getString('adult-fruit-v2');
       if (!_disposed && courseCheckpoint == null && saved != null) {
         final data = jsonDecode(saved);
         if (data is Map && data['version'] == 1) {
@@ -45,7 +47,7 @@ class LessonController extends ChangeNotifier {
     _saveQueue = _saveQueue.then((_) async {
       try {
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString('adult-fruit-v1', data);
+        await prefs.setString('adult-fruit-v2', data);
       } catch (_) {}
     });
   }
@@ -80,6 +82,7 @@ class LessonController extends ChangeNotifier {
       speechAvailable &&
       !emotionMode &&
       !coursePaused &&
+      !(adultCourse && courseStep == 'extension_gate') &&
       (lessonPhase == 'listen' || lessonPhase == 'recall');
   bool get awaitingResponse =>
       !courseMode && !emotionMode && lessonPhase == 'listen';
@@ -155,7 +158,9 @@ class LessonController extends ChangeNotifier {
                   .toLowerCase()
                   .replaceAll(RegExp(r'[^a-z ]'), '')
                   .split(' ');
-              speechFeedback = heard.contains(word.id)
+              speechFeedback = courseSpeechText.contains(' ')
+                  ? '听到：$text。目标是：$courseSpeechText。请对照内容再练习，识别结果不等于整句发音评分。'
+                  : heard.contains(word.id)
                   ? '听到了 ${word.id}，这次想起来了。可以继续，也可以再练。'
                   : '听到：$text。和目标词还不一致，可以再试或听提示。';
             }
@@ -205,6 +210,11 @@ class LessonController extends ChangeNotifier {
             coursePosition = (message['stageIndex'] as num?)?.toInt() ?? 0;
             courseTotal = (message['stageCount'] as num?)?.toInt() ?? 1;
             courseDisplay = message['display']?.toString() ?? '';
+            courseSpeechText = message['speechText']?.toString() ?? '';
+            courseSegments = [
+              for (final o in message['segments'] as List? ?? [])
+                Map<String, String>.from(o as Map),
+            ];
             coursePicture = message['picture']?.toString() ?? '';
             courseChapter = message['chapter']?.toString() ?? '';
             final nextWord = lessonWords.indexWhere(

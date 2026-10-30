@@ -5,6 +5,21 @@ import {readWave} from '../services/tencent-speech.mjs';
 
 const root=new URL('../scene-preview/assets/avatar/audio/',import.meta.url);
 const read=name=>JSON.parse(fs.readFileSync(new URL(name+'.json',root)));
+
+test('every published course sound and segment resolves to a bundled asset',()=>{
+ const course=JSON.parse(fs.readFileSync(new URL('../courses/adult-fruit.json',root)));
+ const audio=Object.assign({},...['timings','fruit-prompts'].map(read));
+ const ids=new Set();
+ for(const stage of course.stages){
+  assert.ok(!ids.has(stage.id),stage.id);ids.add(stage.id);
+  for(const clip of [stage.clip,stage.practiceClip,...(stage.segments||[]).map(s=>s.clip)].filter(Boolean)){
+   assert.ok(audio[clip],`${stage.id}: missing ${clip}`);
+   assert.ok(fs.existsSync(new URL(clip+'.wav',root)),clip);
+  }
+  if(stage.speechText)assert.equal(audio[stage.practiceClip].text.replace(/[.!?]/g,''),stage.speechText.replace(/[.!?]/g,''),stage.id);
+ }
+ assert.equal(course.id,'adult-fruit-v2');
+});
 test('all scene teaching assets use one bundled boy voice with in-range matching cues',()=>{
   let count=0;
   for(const file of ['timings','teaching-prompts','course-prompts','pronunciation-units','fruit-prompts']) {
@@ -26,7 +41,7 @@ test('all scene teaching assets use one bundled boy voice with in-range matching
       count++;
     }
   }
-  assert.equal(count,77);
+  assert.equal(count,93);
 });
 test('apple ending is one continuous same-speaker cut and performance retains its authored clock',()=>{
   const group=read('pronunciation-units').group_schwa_l;

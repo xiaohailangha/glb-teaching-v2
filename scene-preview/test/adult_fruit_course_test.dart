@@ -16,16 +16,58 @@ List<dynamic> rows() =>
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUp(() => SharedPreferences.setMockInitialValues({}));
+  test('sentence help returns to the same full-sentence target', () {
+    final d = TeachingDirector.fruit(rows());
+    d.index = d.stages.indexWhere((s) => s.id == 'eat_banana');
+    final at = d.index;
+    expect(d.stage.speechText, 'I want to eat a banana.');
+    expect(d.stage.segments.length, 3);
+    d.respond('help');
+    expect(d.stage.clip, 'eat_banana');
+    expect(d.stage.display, 'I want to eat a banana.');
+    expect(d.respond('next'), isNull);
+    d.advance();
+    expect(d.index, at);
+    expect(d.stage.speechText, 'I want to eat a banana.');
+  });
+  test('both personal choices lead to their own recall and optional extension can be skipped', () {
+    for (final word in ['apple', 'banana']) {
+      final d = TeachingDirector.fruit(rows());
+      d.index = d.stages.indexWhere((s) => s.id == 'scene_pick');
+      d.respond('choose_$word');
+      expect(d.stage.id, 'scene_$word');
+      expect(d.stage.hideAnswer, true);
+      d.respond('attempt');
+      expect(d.stage.id, 'extension_gate');
+      expect(d.expressions, {'scene_$word'});
+      expect(d.correct, isEmpty);
+      d.respond('skip');
+      expect(d.stage.id, 'review_intro');
+    }
+  });
+  test('old course indexes are rejected and sentence checkpoints restore', () {
+    final old = TeachingDirector.fruit(
+      rows(),
+      saved: {'version': 1, 'index': 27},
+    );
+    expect(old.index, 0);
+    old.index = old.stages.indexWhere((s) => s.id == 'red_sentence');
+    final resumed = TeachingDirector.fruit(rows(), saved: old.checkpoint);
+    expect(resumed.stage.id, 'red_sentence');
+    expect(resumed.stage.speechText, 'I want to eat a red apple.');
+  });
   test(
     'complete course visits both words, five choices and a stable summary',
     () {
       final d = TeachingDirector.fruit(rows());
       var turns = 0;
-      while (d.stage.id != 'summary' && turns++ < 100) {
+      while (d.stage.id != 'summary' && turns++ < 180) {
         final s = d.stage;
         if (s.options.isNotEmpty) {
           d.respond(
-            s.answer.isNotEmpty
+            s.id == 'scene_pick'
+                ? 'choose_banana'
+                : s.answer.isNotEmpty
                 ? s.answer
                 : s.phase == 'recall'
                 ? 'attempt'
@@ -35,7 +77,7 @@ void main() {
           d.advance();
         }
       }
-      expect(turns, lessThan(100));
+      expect(turns, lessThan(180));
       expect(d.stage.phase, 'finish');
       expect(d.taught, {'apple', 'banana'});
       expect(d.correct.length, 5);
