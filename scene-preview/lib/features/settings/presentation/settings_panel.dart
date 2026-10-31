@@ -47,10 +47,25 @@ class SettingsPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const Text('我想要什么 · 成人入门', style: TextStyle(color: Colors.white)),
-            for (final course in courseCatalog)
+            for (final (index, course) in courseCatalog.indexed) ...[
+              if (index == 0 || index == 4)
+                Padding(
+                  padding: EdgeInsets.only(top: index == 0 ? 0 : 16, bottom: 6),
+                  child: Text(
+                    index == 0 ? '单元一 · 我想要什么' : '单元二 · 说清是哪一个',
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                ),
               ListTile(
                 dense: true,
+                titleTextStyle: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                ),
+                subtitleTextStyle: const TextStyle(
+                  color: Colors.white70,
+                  fontSize: 12,
+                ),
                 title: Text(course.title),
                 subtitle: Text(course.goal),
                 trailing: course.id == lesson.courseId
@@ -61,6 +76,7 @@ class SettingsPanel extends StatelessWidget {
                   lesson.selectCourse(course.id);
                 },
               ),
+            ],
             const SizedBox(height: 12),
             _NicknameField(lesson: lesson),
             if (onLeave != null)

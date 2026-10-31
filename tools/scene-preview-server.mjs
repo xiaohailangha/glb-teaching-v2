@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../scene-preview/build/web/',import.meta.url));
-const types={'.js':'text/javascript','.html':'text/html','.json':'application/json','.wasm':'application/wasm','.wav':'audio/wav','.png':'image/png','.bin':'application/octet-stream','.fsceneb':'application/octet-stream','.ttf':'font/ttf'};
+const types={'.js':'text/javascript','.html':'text/html','.json':'application/json','.wasm':'application/wasm','.wav':'audio/wav','.png':'image/png','.svg':'image/svg+xml','.bin':'application/octet-stream','.fsceneb':'application/octet-stream','.ttf':'font/ttf'};
+const port=Number(process.env.SCENE_PREVIEW_PORT||5303);
 http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');
  if(url.pathname.startsWith('/api/auth/')){
@@ -22,4 +23,4 @@ http.createServer((req,res)=>{
  const headers={'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache','Accept-Ranges':'bytes'};
  if(range){const start=Number(range[1]),end=range[2]?Math.min(Number(range[2]),size-1):size-1;if(start>end||start>=size){res.writeHead(416).end();return;}res.writeHead(206,{...headers,'Content-Range':`bytes ${start}-${end}/${size}`,'Content-Length':end-start+1});fs.createReadStream(file,{start,end}).pipe(res);}
  else{res.writeHead(200,{...headers,'Content-Length':size});fs.createReadStream(file).pipe(res);}
-}).listen(5303,'127.0.0.1',()=>console.log('Flutter Scene validation: http://localhost:5303/scene/'));
+}).listen(port,'127.0.0.1',()=>console.log(`Flutter Scene validation: http://localhost:${port}/scene/`));

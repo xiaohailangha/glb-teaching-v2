@@ -156,30 +156,45 @@ class LessonController extends ChangeNotifier {
 
   Future<void> selectCourse(String id) async {
     if (!courseCatalog.any((c) => c.id == id)) return;
+    final selection = ++_courseSelection;
+    selectingCourse = true;
     stop();
-    await _saveQueue;
-    final prefs = await SharedPreferences.getInstance();
-    courseId = id;
-    courseCheckpoint = null;
-    final saved = prefs.getString(_storageKey(id));
-    if (saved != null) {
-      final data = jsonDecode(saved);
-      if (data is Map && data['courseId'] == id && data['version'] == 1) {
-        courseCheckpoint = Map<String, dynamic>.from(data);
+    if (!_disposed) notifyListeners();
+    try {
+      await _saveQueue;
+      final prefs = await SharedPreferences.getInstance();
+      if (_disposed || selection != _courseSelection) return;
+      courseId = id;
+      courseCheckpoint = null;
+      final saved = prefs.getString(_storageKey(id));
+      if (saved != null) {
+        final data = jsonDecode(saved);
+        if (data is Map && data['courseId'] == id && data['version'] == 1) {
+          courseCheckpoint = Map<String, dynamic>.from(data);
+        }
+      }
+      vocabulary.newThisCourse.clear();
+      final ledger = prefs.getString(_storageKey('course-new:$id'));
+      if (ledger != null) {
+        vocabulary.newThisCourse.addAll(
+          (jsonDecode(ledger) as List).cast<String>().map(
+            VocabularyLedger.lemma,
+          ),
+        );
+      }
+      await prefs.setString(_storageKey('active-course'), id);
+      courseMode = false;
+      courseStep = '';
+    } finally {
+      if (selection == _courseSelection) {
+        selectingCourse = false;
+        if (!_disposed) notifyListeners();
       }
     }
-    vocabulary.newThisCourse.clear();
-    final ledger = prefs.getString(_storageKey('course-new:$id'));
-    if (ledger != null) {
-      vocabulary.newThisCourse.addAll(
-        (jsonDecode(ledger) as List).cast<String>(),
-      );
-    }
-    await prefs.setString(_storageKey('active-course'), id);
-    courseMode = false;
-    courseStep = '';
-    if (!_disposed) notifyListeners();
   }
+
+  bool selectingCourse = false;
+  int _courseSelection = 0;
 
   Map<String, dynamic>? courseCheckpoint;
   bool get adultCourse => courseMode && courseStyle == 'adult';
@@ -204,7 +219,11 @@ class LessonController extends ChangeNotifier {
       if (courseNew != null) {
         vocabulary.newThisCourse
           ..clear()
-          ..addAll((jsonDecode(courseNew) as List).cast<String>());
+          ..addAll(
+            (jsonDecode(courseNew) as List).cast<String>().map(
+              VocabularyLedger.lemma,
+            ),
+          );
       }
       final saved = prefs.getString(_storageKey(courseId));
       if (!_disposed && courseCheckpoint == null && saved != null) {
@@ -759,7 +778,7 @@ class LessonController extends ChangeNotifier {
     bool restart = false,
     bool skip = false,
   }) {
-    if (!ready || error != null) return;
+    if (!ready || error != null || selectingCourse) return;
     if (!const [
       'adult',
       'child46',

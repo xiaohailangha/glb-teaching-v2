@@ -30,7 +30,7 @@ class LearningText extends StatelessWidget {
     final value = status(word);
     if (value == 'good') return const Color(0xFFBDE5DD);
     if (value.isNotEmpty) return const Color(0xFFFFCB95);
-    return controller.vocabulary.seen.contains(word.toLowerCase())
+    return controller.vocabulary.hasSeen(word)
         ? const Color(0xFFADD6E4)
         : Colors.white;
   }

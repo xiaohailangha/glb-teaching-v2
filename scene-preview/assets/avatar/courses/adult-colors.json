@@ -1,0 +1,433 @@
+{
+  "id": "adult-colors-v1",
+  "title": "05 · 颜色",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "05 · 颜色",
+      "display": "05 · 颜色",
+      "text": "这节课学颜色。先读单词，再读短语，最后说出完整句子。",
+      "clip": "adult-colors_intro"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "red",
+      "text": "红色",
+      "picture": "color_red",
+      "id": "word_red_model",
+      "phase": "demonstrate",
+      "clip": "part_red"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "red",
+      "text": "红色",
+      "picture": "color_red",
+      "id": "word_red",
+      "phase": "listen",
+      "practiceClip": "part_red",
+      "speechText": "red",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "green",
+      "text": "绿色",
+      "picture": "color_green",
+      "id": "word_green_model",
+      "phase": "demonstrate",
+      "clip": "u2_green"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "green",
+      "text": "绿色",
+      "picture": "color_green",
+      "id": "word_green",
+      "phase": "listen",
+      "practiceClip": "u2_green",
+      "speechText": "green",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "yellow",
+      "text": "黄色",
+      "picture": "color_yellow",
+      "id": "word_yellow_model",
+      "phase": "demonstrate",
+      "clip": "u2_yellow"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "yellow",
+      "text": "黄色",
+      "picture": "color_yellow",
+      "id": "word_yellow",
+      "phase": "listen",
+      "practiceClip": "u2_yellow",
+      "speechText": "yellow",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "blue",
+      "text": "蓝色",
+      "picture": "color_blue",
+      "id": "word_blue_model",
+      "phase": "demonstrate",
+      "clip": "u2_blue"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "blue",
+      "text": "蓝色",
+      "picture": "color_blue",
+      "id": "word_blue",
+      "phase": "listen",
+      "practiceClip": "u2_blue",
+      "speechText": "blue",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a red apple",
+      "text": "一个红苹果。颜色放在水果前，前面用一个的说法。",
+      "picture": "red_apple",
+      "id": "red_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_red_apple"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a red apple",
+      "text": "一个红苹果。颜色放在水果前，前面用一个的说法。",
+      "picture": "red_apple",
+      "id": "red_apple",
+      "phase": "listen",
+      "practiceClip": "u2_red_apple",
+      "speechText": "a red apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a red apple.",
+      "text": "我想要一个红苹果。",
+      "picture": "red_apple",
+      "id": "want_red_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_red_apple"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a red apple.",
+      "text": "我想要一个红苹果。",
+      "picture": "red_apple",
+      "id": "want_red_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_red_apple",
+      "speechText": "I want a red apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a red apple",
+          "clip": "u2_red_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a green apple",
+      "text": "一个青苹果。先说颜色，再说苹果。",
+      "picture": "green_apple",
+      "id": "green_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_green_apple"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a green apple",
+      "text": "一个青苹果。先说颜色，再说苹果。",
+      "picture": "green_apple",
+      "id": "green_apple",
+      "phase": "listen",
+      "practiceClip": "u2_green_apple",
+      "speechText": "a green apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a green apple.",
+      "text": "我想要一个青苹果。",
+      "picture": "green_apple",
+      "id": "want_green_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_green_apple"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a green apple.",
+      "text": "我想要一个青苹果。",
+      "picture": "green_apple",
+      "id": "want_green_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_green_apple",
+      "speechText": "I want a green apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a green apple",
+          "clip": "u2_green_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a yellow banana",
+      "text": "一根黄香蕉。先说颜色，再说香蕉。",
+      "picture": "yellow_banana",
+      "id": "yellow_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_yellow_banana"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "a yellow banana",
+      "text": "一根黄香蕉。先说颜色，再说香蕉。",
+      "picture": "yellow_banana",
+      "id": "yellow_banana",
+      "phase": "listen",
+      "practiceClip": "u2_yellow_banana",
+      "speechText": "a yellow banana",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a yellow banana.",
+      "text": "我想要一根黄香蕉。",
+      "picture": "yellow_banana",
+      "id": "want_yellow_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_yellow_banana"
+    },
+    {
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a yellow banana.",
+      "text": "我想要一根黄香蕉。",
+      "picture": "yellow_banana",
+      "id": "want_yellow_banana",
+      "phase": "listen",
+      "practiceClip": "u2_want_yellow_banana",
+      "speechText": "I want a yellow banana.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a yellow banana",
+          "clip": "u2_yellow_banana"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_green",
+      "phase": "recall",
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a green apple.",
+      "text": "看青苹果，不看英文，试着说：我想要一个青苹果。",
+      "picture": "green_apple",
+      "hide": true,
+      "practiceClip": "u2_want_green_apple",
+      "speechText": "I want a green apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a green apple",
+          "clip": "u2_green_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_red",
+      "phase": "recall",
+      "chapter": "05 · 颜色",
+      "word": "apple",
+      "display": "I want a red apple.",
+      "text": "换成红苹果，试着完整说出你的需求。",
+      "picture": "red_apple",
+      "hide": true,
+      "practiceClip": "u2_want_red_apple",
+      "speechText": "I want a red apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a red apple",
+          "clip": "u2_red_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

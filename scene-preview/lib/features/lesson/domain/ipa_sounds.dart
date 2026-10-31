@@ -1,5 +1,8 @@
 // Longest match first: diphthongs and length-marked vowels stay intact.
 const ipaSounds = <String, String>{
+  'oʊ': 'ow',
+  'ɔː': 'aw',
+  'v': 'v',
   'z': 'z',
   'j': 'y',
   'i': 'iy',

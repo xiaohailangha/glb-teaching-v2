@@ -1,0 +1,780 @@
+{
+  "id": "adult-numbers-v1",
+  "title": "07 · 数量",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "07 · 数量",
+      "display": "07 · 数量",
+      "text": "这节课学一到五。先读数字，再练一个和多个，最后说出需求。",
+      "clip": "adult-numbers_intro"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "one",
+      "text": "一",
+      "picture": "count_one",
+      "id": "word_one_model",
+      "phase": "demonstrate",
+      "clip": "u2_one"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "one",
+      "text": "一",
+      "picture": "count_one",
+      "id": "word_one",
+      "phase": "listen",
+      "practiceClip": "u2_one",
+      "speechText": "one",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two",
+      "text": "二",
+      "picture": "count_two",
+      "id": "word_two_model",
+      "phase": "demonstrate",
+      "clip": "u2_two"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two",
+      "text": "二",
+      "picture": "count_two",
+      "id": "word_two",
+      "phase": "listen",
+      "practiceClip": "u2_two",
+      "speechText": "two",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "three",
+      "text": "三",
+      "picture": "count_three",
+      "id": "word_three_model",
+      "phase": "demonstrate",
+      "clip": "u2_three"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "three",
+      "text": "三",
+      "picture": "count_three",
+      "id": "word_three",
+      "phase": "listen",
+      "practiceClip": "u2_three",
+      "speechText": "three",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "four",
+      "text": "四",
+      "picture": "count_four",
+      "id": "word_four_model",
+      "phase": "demonstrate",
+      "clip": "u2_four"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "four",
+      "text": "四",
+      "picture": "count_four",
+      "id": "word_four",
+      "phase": "listen",
+      "practiceClip": "u2_four",
+      "speechText": "four",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "five",
+      "text": "五",
+      "picture": "count_five",
+      "id": "word_five_model",
+      "phase": "demonstrate",
+      "clip": "u2_five"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "five",
+      "text": "五",
+      "picture": "count_five",
+      "id": "word_five",
+      "phase": "listen",
+      "practiceClip": "u2_five",
+      "speechText": "five",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "apples",
+      "text": "多个苹果。结尾的复数音是 /z/，不要额外加一个音节。",
+      "picture": "two_apples",
+      "id": "apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "apples",
+      "text": "多个苹果。结尾的复数音是 /z/，不要额外加一个音节。",
+      "picture": "two_apples",
+      "id": "apples",
+      "phase": "listen",
+      "practiceClip": "u2_apples",
+      "speechText": "apples",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "bananas",
+      "text": "多根香蕉。结尾也读 /z/，和单数作对比。",
+      "picture": "two_bananas",
+      "id": "bananas_model",
+      "phase": "demonstrate",
+      "clip": "u2_bananas"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "bananas",
+      "text": "多根香蕉。结尾也读 /z/，和单数作对比。",
+      "picture": "two_bananas",
+      "id": "bananas",
+      "phase": "listen",
+      "practiceClip": "u2_bananas",
+      "speechText": "bananas",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "one apple",
+      "text": "一个苹果。说具体数量一，后面仍用单数。",
+      "picture": "one_apple",
+      "id": "one_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_one_apple"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "one apple",
+      "text": "一个苹果。说具体数量一，后面仍用单数。",
+      "picture": "one_apple",
+      "id": "one_apple",
+      "phase": "listen",
+      "practiceClip": "u2_one_apple",
+      "speechText": "one apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want one apple.",
+      "text": "我想要一个苹果。",
+      "picture": "one_apple",
+      "id": "want_one_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_one_apple"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want one apple.",
+      "text": "我想要一个苹果。",
+      "picture": "one_apple",
+      "id": "want_one_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_one_apple",
+      "speechText": "I want one apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "one apple",
+          "clip": "u2_one_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two bananas",
+      "text": "两根香蕉。两个及以上用复数，不再加一个的说法。",
+      "picture": "two_bananas",
+      "id": "two_bananas_model",
+      "phase": "demonstrate",
+      "clip": "u2_two_bananas"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two bananas",
+      "text": "两根香蕉。两个及以上用复数，不再加一个的说法。",
+      "picture": "two_bananas",
+      "id": "two_bananas",
+      "phase": "listen",
+      "practiceClip": "u2_two_bananas",
+      "speechText": "two bananas",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two bananas.",
+      "text": "我想要两根香蕉。",
+      "picture": "two_bananas",
+      "id": "want_two_bananas_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_two_bananas"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two bananas.",
+      "text": "我想要两根香蕉。",
+      "picture": "two_bananas",
+      "id": "want_two_bananas",
+      "phase": "listen",
+      "practiceClip": "u2_want_two_bananas",
+      "speechText": "I want two bananas.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two bananas",
+          "clip": "u2_two_bananas"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "three apples",
+      "text": "三个苹果。两个及以上用复数，不再加一个的说法。",
+      "picture": "three_apples",
+      "id": "three_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_three_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "three apples",
+      "text": "三个苹果。两个及以上用复数，不再加一个的说法。",
+      "picture": "three_apples",
+      "id": "three_apples",
+      "phase": "listen",
+      "practiceClip": "u2_three_apples",
+      "speechText": "three apples",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want three apples.",
+      "text": "我想要三个苹果。",
+      "picture": "three_apples",
+      "id": "want_three_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_three_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want three apples.",
+      "text": "我想要三个苹果。",
+      "picture": "three_apples",
+      "id": "want_three_apples",
+      "phase": "listen",
+      "practiceClip": "u2_want_three_apples",
+      "speechText": "I want three apples.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "three apples",
+          "clip": "u2_three_apples"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "four bananas",
+      "text": "四根香蕉。两个及以上用复数，不再加一个的说法。",
+      "picture": "four_bananas",
+      "id": "four_bananas_model",
+      "phase": "demonstrate",
+      "clip": "u2_four_bananas"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "four bananas",
+      "text": "四根香蕉。两个及以上用复数，不再加一个的说法。",
+      "picture": "four_bananas",
+      "id": "four_bananas",
+      "phase": "listen",
+      "practiceClip": "u2_four_bananas",
+      "speechText": "four bananas",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want four bananas.",
+      "text": "我想要四根香蕉。",
+      "picture": "four_bananas",
+      "id": "want_four_bananas_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_four_bananas"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want four bananas.",
+      "text": "我想要四根香蕉。",
+      "picture": "four_bananas",
+      "id": "want_four_bananas",
+      "phase": "listen",
+      "practiceClip": "u2_want_four_bananas",
+      "speechText": "I want four bananas.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "four bananas",
+          "clip": "u2_four_bananas"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "five apples",
+      "text": "五个苹果。两个及以上用复数，不再加一个的说法。",
+      "picture": "five_apples",
+      "id": "five_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_five_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "five apples",
+      "text": "五个苹果。两个及以上用复数，不再加一个的说法。",
+      "picture": "five_apples",
+      "id": "five_apples",
+      "phase": "listen",
+      "practiceClip": "u2_five_apples",
+      "speechText": "five apples",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want five apples.",
+      "text": "我想要五个苹果。",
+      "picture": "five_apples",
+      "id": "want_five_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_five_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want five apples.",
+      "text": "我想要五个苹果。",
+      "picture": "five_apples",
+      "id": "want_five_apples",
+      "phase": "listen",
+      "practiceClip": "u2_want_five_apples",
+      "speechText": "I want five apples.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "five apples",
+          "clip": "u2_five_apples"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two apples",
+      "text": "两个苹果。和一个苹果作对比，听清结尾的复数音。",
+      "picture": "two_apples",
+      "id": "two_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_two_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "two apples",
+      "text": "两个苹果。和一个苹果作对比，听清结尾的复数音。",
+      "picture": "two_apples",
+      "id": "two_apples",
+      "phase": "listen",
+      "practiceClip": "u2_two_apples",
+      "speechText": "two apples",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two apples.",
+      "text": "我想要两个苹果。",
+      "picture": "two_apples",
+      "id": "want_two_apples_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_two_apples"
+    },
+    {
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two apples.",
+      "text": "我想要两个苹果。",
+      "picture": "two_apples",
+      "id": "want_two_apples",
+      "phase": "listen",
+      "practiceClip": "u2_want_two_apples",
+      "speechText": "I want two apples.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two apples",
+          "clip": "u2_two_apples"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_two",
+      "phase": "recall",
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two apples.",
+      "text": "看图数一数：我想要两个苹果。试着自己说。",
+      "picture": "two_apples",
+      "hide": true,
+      "practiceClip": "u2_want_two_apples",
+      "speechText": "I want two apples.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two apples",
+          "clip": "u2_two_apples"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_bananas",
+      "phase": "recall",
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want two bananas.",
+      "text": "看两根香蕉，试着完整说出数量和需求。",
+      "picture": "two_bananas",
+      "hide": true,
+      "practiceClip": "u2_want_two_bananas",
+      "speechText": "I want two bananas.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two bananas",
+          "clip": "u2_two_bananas"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_five",
+      "phase": "recall",
+      "chapter": "07 · 数量",
+      "word": "apple",
+      "display": "I want five apples.",
+      "text": "看五个苹果，不看英文，试着表达需求。",
+      "picture": "five_apples",
+      "hide": true,
+      "practiceClip": "u2_want_five_apples",
+      "speechText": "I want five apples.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "five apples",
+          "clip": "u2_five_apples"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

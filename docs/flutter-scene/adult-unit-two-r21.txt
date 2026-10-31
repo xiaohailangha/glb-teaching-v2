@@ -1,0 +1,77 @@
+成人零基础 · 单元二「说清是哪一个」/ r21 / 2026-10-31
+
+范围与教学顺序
+沿用原规划，新增 05 颜色、06 大小、07 数量、08 按要求拿东西。
+05–07 均从单词到短语，再到完整需求句；示范后自动跟读，最后隐藏英文看图回忆。
+08 只组合复习已学词汇，不增加新词。不将接触、跳过或课文完成报告为掌握。
+原有 01–04 不改脚本；09–16 与儿童路线仍待开发。
+
+05 · 颜色（24 阶段）
+red / green / yellow / blue；red 即使首课跳过可选扩展，也在这里正式教学。
+a red apple / a green apple / a yellow banana → I want…
+颜色用独立色块，水果图片使用自然配色，不制造蓝色水果。
+青苹果、红苹果的整句回忆在末尾进行。
+
+06 · 大小（28 阶段）
+big / small → a big apple / a small apple / a big banana / a small banana → I want…
+再组合 a small red apple，简短说明先大小再颜色。
+大小单词图提供同一基线上的对比；练习图保持一致画布中的相对大小。
+
+07 · 数量（43 阶段）
+one / two / three / four / five → apples / bananas 的复数读法。
+one apple / two bananas / three apples / four bananas / five apples，再用 two apples 对比 one apple。
+每个数量短语都有完整 I want… 句子；最后看图回忆两个苹果、两根香蕉和五个苹果。
+明确一个用单数、两个及以上用复数，不叠加 a/an。此处两种水果复数结尾均读 /z/，有独立音素参考。
+没有把 water 等不可数饮品套入直接计数。
+
+08 · 按要求拿东西（20 阶段）
+短语 → 礼貌整句 → 道谢 → 隐藏英文回忆：
+a small red apple → I want a small red apple, please.
+two green apples → I want two green apples, please.
+three big bananas → I want three big bananas, please.
+Thank you.
+“拿东西”通过看图表达需求完成；未新增人物递物动画。
+
+交互与存储
+设置按单元显示八课，课后仍可选择下一课，点击人物后开始，不自动强制续课。
+切课加载旧记录期间暂不响应开始播放，避免快速点击人物重播旧课；连续选课以最后一次为准。
+麦克风权限尚未回应时不取消尚未创建的录音流，避免平台把取消排在权限请求后导致切课等待；迟到的授权结果不会启动旧课录音。已真正开启的录音流仍正常取消。
+新增课程使用独立版本 ID，沿用断点与账号隔离、跨课接触记录。
+apple/apples 和 banana/bananas 按原词去重统计；复数仍保留独立整词点读与发音反馈。
+已接触的词及对应复数标蓝；复习不重复增加新词数。历史已保存的重复词形在恢复时合并。
+延续逐词点读、错误定位单词→语块→回整句、人物重听、安静的左右导航。
+隐藏英文回忆允许重听，听完仍回原题；导航跳过不算答对。
+数量与大小对比图适当放大；课程菜单显式使用浅色文字，保证深色面板上的可读性。
+
+资源和维护
+50 段新增既有 403008 男童声线教学音频，包含四段简短开场；逐词时间与真实口型时序随课发布。
+27 张新增 SVG 图；数量图只画目标数量，不用额外淡色水果作比较。
+新增 /v/ 和 /oʊ/ 独立完整录音；/ɔː/ 使用既有 /ɔ/ 参考。
+/v/ 来源：NewDanishPhonetics/IPA-sound-files，CC0。
+/oʊ/ 来源：Wikimedia Commons En-us-O.ogg，页面确认为公有领域；只转格式，不截词。
+来源、许可、校验值保存于 pronunciation-units.json 和 IPA-reference-attribution.json。
+美式读法参考 Cambridge Dictionary：
+https://dictionary.cambridge.org/us/dictionary/english/green
+https://dictionary.cambridge.org/pronunciation/english/blue
+https://dictionary.cambridge.org/pronunciation/english/small
+数量与复数结构参考 British Council：
+https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/count-nouns
+
+生成：node tools/prepare-unit-two.mjs；--course-only 只生成课文，不调用语音服务。
+图片：node tools/prepare-unit-two-images.mjs。
+音素：node tools/extend-course-ipa.mjs --unit-two。
+开场保持简短，使现有语音服务返回逐音素时序；不以随机口型代替无效数据。
+运行时加载新 manifest，并预加载课文引用的全部图片和教学音频，再开放入口。
+
+验证记录
+Flutter 78 项测试通过，最终 analyze 无问题，release Web 构建通过。
+本地新旧课程、74 段两单元音频、33 张两单元引用图片与音素资源逐文件校验通过。
+浏览器核对四课目录、颜色/大小/数字图与音标入口、逐词点读、切课及选择刷新保留。
+390×844 竖屏与 926×428 横屏长句无页面滚动或溢出；1280×720 桌面布局正常。
+未回应麦克风授权时，大小课到颜色课切换及快速点击人物已在浏览器复验通过。
+线上浏览器核对八课目录、r21 版本、08 开场与完整礼貌请求，并沿短语、整句、道谢进入无英文泄露的看图回忆。
+线上新旧课文、74 段两单元音频、33 张引用图片及独立音素逐文件哈希一致。
+原站/场景 8 项检查、账号接口 7 项检查通过；原根站点保持一致，smsReady=false。
+发布地址：https://49.233.179.83/scene/?r=21
+最终回滚备份：/opt/glb-backups/before-scene-20261031T071708Z。
+真实麦克风识别容错仍需用户体验；没有 Android 打包、真机验证或真实短信发送。

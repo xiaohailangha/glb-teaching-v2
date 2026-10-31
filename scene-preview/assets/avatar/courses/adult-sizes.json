@@ -1,0 +1,515 @@
+{
+  "id": "adult-sizes-v1",
+  "title": "06 · 大小",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "06 · 大小",
+      "display": "06 · 大小",
+      "text": "这节课学大和小。先读单词，再读短语和句子。",
+      "clip": "adult-sizes_intro"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "big",
+      "text": "大的；看图中较大的苹果",
+      "picture": "size_big",
+      "id": "word_big_model",
+      "phase": "demonstrate",
+      "clip": "u2_big"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "big",
+      "text": "大的；看图中较大的苹果",
+      "picture": "size_big",
+      "id": "word_big",
+      "phase": "listen",
+      "practiceClip": "u2_big",
+      "speechText": "big",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "small",
+      "text": "小的；看图中较小的苹果",
+      "picture": "size_small",
+      "id": "word_small_model",
+      "phase": "demonstrate",
+      "clip": "u2_small"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "small",
+      "text": "小的；看图中较小的苹果",
+      "picture": "size_small",
+      "id": "word_small",
+      "phase": "listen",
+      "practiceClip": "u2_small",
+      "speechText": "small",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a big apple",
+      "text": "一个大苹果。大小也放在水果前。",
+      "picture": "big_apple",
+      "id": "big_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_big_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a big apple",
+      "text": "一个大苹果。大小也放在水果前。",
+      "picture": "big_apple",
+      "id": "big_apple",
+      "phase": "listen",
+      "practiceClip": "u2_big_apple",
+      "speechText": "a big apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a big apple.",
+      "text": "我想要一个大苹果。",
+      "picture": "big_apple",
+      "id": "want_big_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_big_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a big apple.",
+      "text": "我想要一个大苹果。",
+      "picture": "big_apple",
+      "id": "want_big_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_big_apple",
+      "speechText": "I want a big apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a big apple",
+          "clip": "u2_big_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small apple",
+      "text": "一个小苹果。",
+      "picture": "small_apple",
+      "id": "small_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_small_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small apple",
+      "text": "一个小苹果。",
+      "picture": "small_apple",
+      "id": "small_apple",
+      "phase": "listen",
+      "practiceClip": "u2_small_apple",
+      "speechText": "a small apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small apple.",
+      "text": "我想要一个小苹果。",
+      "picture": "small_apple",
+      "id": "want_small_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_small_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small apple.",
+      "text": "我想要一个小苹果。",
+      "picture": "small_apple",
+      "id": "want_small_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_small_apple",
+      "speechText": "I want a small apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small apple",
+          "clip": "u2_small_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a big banana",
+      "text": "一根大香蕉。",
+      "picture": "big_banana",
+      "id": "big_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_big_banana"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a big banana",
+      "text": "一根大香蕉。",
+      "picture": "big_banana",
+      "id": "big_banana",
+      "phase": "listen",
+      "practiceClip": "u2_big_banana",
+      "speechText": "a big banana",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a big banana.",
+      "text": "我想要一根大香蕉。",
+      "picture": "big_banana",
+      "id": "want_big_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_big_banana"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a big banana.",
+      "text": "我想要一根大香蕉。",
+      "picture": "big_banana",
+      "id": "want_big_banana",
+      "phase": "listen",
+      "practiceClip": "u2_want_big_banana",
+      "speechText": "I want a big banana.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a big banana",
+          "clip": "u2_big_banana"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small banana",
+      "text": "一根小香蕉。",
+      "picture": "small_banana",
+      "id": "small_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_small_banana"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small banana",
+      "text": "一根小香蕉。",
+      "picture": "small_banana",
+      "id": "small_banana",
+      "phase": "listen",
+      "practiceClip": "u2_small_banana",
+      "speechText": "a small banana",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small banana.",
+      "text": "我想要一根小香蕉。",
+      "picture": "small_banana",
+      "id": "want_small_banana_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_small_banana"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small banana.",
+      "text": "我想要一根小香蕉。",
+      "picture": "small_banana",
+      "id": "want_small_banana",
+      "phase": "listen",
+      "practiceClip": "u2_want_small_banana",
+      "speechText": "I want a small banana.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small banana",
+          "clip": "u2_small_banana"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small red apple",
+      "text": "一个小红苹果。一起描述时，先说大小，再说颜色。",
+      "picture": "small_red_apple",
+      "id": "small_red_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_small_red_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "a small red apple",
+      "text": "一个小红苹果。一起描述时，先说大小，再说颜色。",
+      "picture": "small_red_apple",
+      "id": "small_red_apple",
+      "phase": "listen",
+      "practiceClip": "u2_small_red_apple",
+      "speechText": "a small red apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small red apple.",
+      "text": "我想要一个小红苹果。",
+      "picture": "small_red_apple",
+      "id": "want_small_red_apple_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_small_red_apple"
+    },
+    {
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small red apple.",
+      "text": "我想要一个小红苹果。",
+      "picture": "small_red_apple",
+      "id": "want_small_red_apple",
+      "phase": "listen",
+      "practiceClip": "u2_want_small_red_apple",
+      "speechText": "I want a small red apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small red apple",
+          "clip": "u2_small_red_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_small",
+      "phase": "recall",
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a small apple.",
+      "text": "看小苹果，试着说：我想要一个小苹果。",
+      "picture": "small_apple",
+      "hide": true,
+      "practiceClip": "u2_want_small_apple",
+      "speechText": "I want a small apple.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small apple",
+          "clip": "u2_small_apple"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_big",
+      "phase": "recall",
+      "chapter": "06 · 大小",
+      "word": "apple",
+      "display": "I want a big banana.",
+      "text": "换成大香蕉，试着完整表达需求。",
+      "picture": "big_banana",
+      "hide": true,
+      "practiceClip": "u2_want_big_banana",
+      "speechText": "I want a big banana.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a big banana",
+          "clip": "u2_big_banana"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

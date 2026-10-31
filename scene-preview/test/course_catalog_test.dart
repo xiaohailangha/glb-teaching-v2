@@ -14,7 +14,12 @@ void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
   test('each new course has complete audio, lexicon, pictures and a reachable calm ending', () {
     final audio = <String, dynamic>{};
-    for (final file in ['timings', 'fruit-prompts', 'unit-one-prompts']) {
+    for (final file in [
+      'timings',
+      'fruit-prompts',
+      'unit-one-prompts',
+      'unit-two-prompts',
+    ]) {
       audio.addAll(
         jsonDecode(File('assets/avatar/audio/$file.json').readAsStringSync()),
       );
@@ -36,6 +41,17 @@ void main() {
           );
           expect(
             File('assets/avatar/audio/${row[key]}.wav').existsSync(),
+            true,
+          );
+        }
+        for (final part in row['segments'] as List? ?? []) {
+          expect(
+            audio.containsKey(part['clip']),
+            true,
+            reason: '${c.id}: ${part['clip']}',
+          );
+          expect(
+            File('assets/avatar/audio/${part['clip']}.wav').existsSync(),
             true,
           );
         }

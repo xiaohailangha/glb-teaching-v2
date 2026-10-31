@@ -12,8 +12,8 @@ import 'ipa_text.dart';
 class AdultCoursePanel extends StatelessWidget {
   const AdultCoursePanel({super.key, required this.controller});
   final LessonController controller;
-  Widget fruit(String word, {double size = 72}) => Semantics(
-    label: '${courseLexicon[word]?.meaning ?? word}图片',
+  Widget fruit(String word, {double size = 72, String? meaning}) => Semantics(
+    label: '${meaning ?? courseLexicon[word]?.meaning ?? word}图片',
     child: SvgPicture.asset(
       'assets/avatar/images/$word.svg',
       width: size,
@@ -49,6 +49,9 @@ class AdultCoursePanel extends StatelessWidget {
           )
           .toList();
       final choice = visibleOptions.isNotEmpty;
+      final comparisonPicture = RegExp(
+        r'^(count_|size_|(?:one|two|three|four|five)_)',
+      ).hasMatch(c.coursePicture);
       final showEnglish = !c.hideAnswer || c.coachSentence.isNotEmpty;
       final body = Column(
         mainAxisSize: MainAxisSize.min,
@@ -91,7 +94,13 @@ class AdultCoursePanel extends StatelessWidget {
                   !summary &&
                   !c.coursePaused) ...[
                 const SizedBox(width: 16),
-                fruit(c.coursePicture, size: compact ? 48 : 64),
+                fruit(
+                  c.coursePicture,
+                  meaning: c.courseText,
+                  size: comparisonPicture
+                      ? (compact ? 80 : 96)
+                      : (compact ? 48 : 64),
+                ),
               ],
             ],
           ),

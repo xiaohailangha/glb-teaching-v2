@@ -231,9 +231,13 @@ class AutomaticReader {
     requestGeneration++;
     busy = false;
     gate.reset();
-    await subscription?.cancel();
+    final activeCapture = subscription;
+    await activeCapture?.cancel();
     subscription = null;
-    await _recorder?.cancel();
+    // A recorder waiting on browser permission has no active stream. Some
+    // platforms queue cancel behind that unanswered permission request.
+    // The generation check in start() retires its eventual result safely.
+    if (activeCapture != null) await _recorder?.cancel();
   }
 
   Future<void> dispose() async {

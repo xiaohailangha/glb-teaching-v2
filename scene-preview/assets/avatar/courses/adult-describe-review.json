@@ -1,0 +1,416 @@
+{
+  "id": "adult-describe-review-v1",
+  "title": "08 · 按要求拿东西",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "08 · 按要求拿东西",
+      "display": "08 · 按要求拿东西",
+      "text": "这节课复习颜色、大小和数量。先跟读，再看图自己说。",
+      "clip": "adult-describe-review_intro"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "a small red apple",
+      "text": "一个小红苹果。先说大小，再说颜色。",
+      "picture": "small_red_apple",
+      "id": "review_small_red_model",
+      "phase": "demonstrate",
+      "clip": "u2_review_small_red"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "a small red apple",
+      "text": "一个小红苹果。先说大小，再说颜色。",
+      "picture": "small_red_apple",
+      "id": "review_small_red",
+      "phase": "listen",
+      "practiceClip": "u2_review_small_red",
+      "speechText": "a small red apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want a small red apple, please.",
+      "text": "我想要一个小红苹果，谢谢。",
+      "picture": "small_red_apple",
+      "id": "want_review_small_red_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_review_small_red"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want a small red apple, please.",
+      "text": "我想要一个小红苹果，谢谢。",
+      "picture": "small_red_apple",
+      "id": "want_review_small_red",
+      "phase": "listen",
+      "practiceClip": "u2_want_review_small_red",
+      "speechText": "I want a small red apple, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small red apple",
+          "clip": "u2_review_small_red"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "two green apples",
+      "text": "两个青苹果。数量在前，苹果用复数。",
+      "picture": "two_green_apples",
+      "id": "review_two_green_model",
+      "phase": "demonstrate",
+      "clip": "u2_review_two_green"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "two green apples",
+      "text": "两个青苹果。数量在前，苹果用复数。",
+      "picture": "two_green_apples",
+      "id": "review_two_green",
+      "phase": "listen",
+      "practiceClip": "u2_review_two_green",
+      "speechText": "two green apples",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want two green apples, please.",
+      "text": "我想要两个青苹果，谢谢。",
+      "picture": "two_green_apples",
+      "id": "want_review_two_green_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_review_two_green"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want two green apples, please.",
+      "text": "我想要两个青苹果，谢谢。",
+      "picture": "two_green_apples",
+      "id": "want_review_two_green",
+      "phase": "listen",
+      "practiceClip": "u2_want_review_two_green",
+      "speechText": "I want two green apples, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two green apples",
+          "clip": "u2_review_two_green"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "three big bananas",
+      "text": "三根大香蕉。先说数量，再说大小。",
+      "picture": "three_big_bananas",
+      "id": "review_three_big_model",
+      "phase": "demonstrate",
+      "clip": "u2_review_three_big"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "three big bananas",
+      "text": "三根大香蕉。先说数量，再说大小。",
+      "picture": "three_big_bananas",
+      "id": "review_three_big",
+      "phase": "listen",
+      "practiceClip": "u2_review_three_big",
+      "speechText": "three big bananas",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want three big bananas, please.",
+      "text": "我想要三根大香蕉，谢谢。",
+      "picture": "three_big_bananas",
+      "id": "want_review_three_big_model",
+      "phase": "demonstrate",
+      "clip": "u2_want_review_three_big"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want three big bananas, please.",
+      "text": "我想要三根大香蕉，谢谢。",
+      "picture": "three_big_bananas",
+      "id": "want_review_three_big",
+      "phase": "listen",
+      "practiceClip": "u2_want_review_three_big",
+      "speechText": "I want three big bananas, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "three big bananas",
+          "clip": "u2_review_three_big"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "拿到水果后，自然地说声谢谢。",
+      "picture": "",
+      "id": "thanks_model",
+      "phase": "demonstrate",
+      "clip": "unit_thank_you"
+    },
+    {
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "拿到水果后，自然地说声谢谢。",
+      "picture": "",
+      "id": "thanks",
+      "phase": "listen",
+      "practiceClip": "unit_thank_you",
+      "speechText": "Thank you.",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_small_red_apple",
+      "phase": "recall",
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want a small red apple, please.",
+      "text": "你想要一个小红苹果。看图，把完整需求礼貌地说出来。",
+      "picture": "small_red_apple",
+      "hide": true,
+      "practiceClip": "u2_want_review_small_red",
+      "speechText": "I want a small red apple, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "a small red apple",
+          "clip": "u2_review_small_red"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_two_green_apples",
+      "phase": "recall",
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want two green apples, please.",
+      "text": "换成两个青苹果。看清颜色和数量，试着礼貌地说出来。",
+      "picture": "two_green_apples",
+      "hide": true,
+      "practiceClip": "u2_want_review_two_green",
+      "speechText": "I want two green apples, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "two green apples",
+          "clip": "u2_review_two_green"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_three_big_bananas",
+      "phase": "recall",
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "I want three big bananas, please.",
+      "text": "这次是三根大香蕉。看清大小和数量，完整表达需求。",
+      "picture": "three_big_bananas",
+      "hide": true,
+      "practiceClip": "u2_want_review_three_big",
+      "speechText": "I want three big bananas, please.",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "three big bananas",
+          "clip": "u2_review_three_big"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "recall_thanks",
+      "phase": "recall",
+      "chapter": "08 · 按要求拿东西",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "拿到水果后，自己说声谢谢。",
+      "picture": "",
+      "hide": true,
+      "practiceClip": "unit_thank_you",
+      "speechText": "Thank you.",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

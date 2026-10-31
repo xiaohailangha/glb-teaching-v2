@@ -1,5 +1,17 @@
 // American dictionary forms. Function words also have weak forms in sentences.
 const courseLexicon = <String, ({String clip, String ipa, String meaning})>{
+  'green': (clip: 'u2_green', ipa: '/ɡriːn/', meaning: '绿色'),
+  'yellow': (clip: 'u2_yellow', ipa: '/ˈjel.oʊ/', meaning: '黄色'),
+  'blue': (clip: 'u2_blue', ipa: '/bluː/', meaning: '蓝色'),
+  'big': (clip: 'u2_big', ipa: '/bɪɡ/', meaning: '大的'),
+  'small': (clip: 'u2_small', ipa: '/smɑːl/', meaning: '小的'),
+  'one': (clip: 'u2_one', ipa: '/wʌn/', meaning: '一'),
+  'two': (clip: 'u2_two', ipa: '/tuː/', meaning: '二'),
+  'three': (clip: 'u2_three', ipa: '/θriː/', meaning: '三'),
+  'four': (clip: 'u2_four', ipa: '/fɔːr/', meaning: '四'),
+  'five': (clip: 'u2_five', ipa: '/faɪv/', meaning: '五'),
+  'apples': (clip: 'u2_apples', ipa: '/ˈæp.əlz/', meaning: '苹果的复数；多个苹果'),
+  'bananas': (clip: 'u2_bananas', ipa: '/bəˈnæn.əz/', meaning: '香蕉的复数；多根香蕉'),
   'water': (
     clip: 'unit_water',
     ipa: '/ˈwɑː.tər/',

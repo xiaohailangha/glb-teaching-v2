@@ -427,6 +427,7 @@ class SceneRuntime extends ChangeNotifier {
         'course-prompts',
         'fruit-prompts',
         'unit-one-prompts',
+        'unit-two-prompts',
         'coach-prompts',
       ]) {
         final json = jsonDecode(
@@ -530,15 +531,21 @@ class SceneRuntime extends ChangeNotifier {
           });
         },
       );
-      for (final word in [
+      final pictures = <String>{
         'apple',
         'banana',
         'water',
         'milk',
         'tea',
         'coffee',
-      ]) {
-        await rootBundle.loadString('assets/avatar/images/$word.svg');
+        for (final rows in courseStages.values)
+          for (final row in rows)
+            if (row['picture'] is String &&
+                (row['picture'] as String).isNotEmpty)
+              row['picture'] as String,
+      };
+      for (final picture in pictures) {
+        await rootBundle.loadString('assets/avatar/images/$picture.svg');
       }
       if (disposed) return;
       emit('resource-progress', {'value': .98, 'label': '点亮学习世界'});
@@ -559,7 +566,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r20-courses',
+        'version': 'scene-0.2.0-r21-unit-two',
       });
       notifyListeners();
     } catch (e, stack) {

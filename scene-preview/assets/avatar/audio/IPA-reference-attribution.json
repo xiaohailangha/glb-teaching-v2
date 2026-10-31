@@ -286,5 +286,25 @@
     "description": "Independent phonetic recording",
     "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
     "sha256": "7dcd6a99a0c29c8f3adfa6c9e5bbd7910f07086be6c1451180c51ed38654ae57"
+  },
+  {
+    "key": "phoneme_v",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/v.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "92e407c4f4c682b6fecc160e308fd410c59c5c24898ed679ccd329c63a9ad5ec"
+  },
+  {
+    "key": "phoneme_ow",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/En-us-O.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-O.ogg",
+    "license": "https://commons.wikimedia.org/wiki/File:En-us-O.ogg",
+    "author": "Wikimedia Commons contributor (PD-self)",
+    "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "ae1fb7b0a8798b4f8e644bcd97a9327130b8e40fe043f3c9729ea8ac9135deed"
   }
 ]
