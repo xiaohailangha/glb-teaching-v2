@@ -1788,7 +1788,19 @@
         "id": 0
       }
     ],
-    "sourceKey": "7d54e4392d2481ee7d3ee7f92afe670e36f60c3a40cb36de2ca5cd069180b7b4"
+    "sourceKey": "7d54e4392d2481ee7d3ee7f92afe670e36f60c3a40cb36de2ca5cd069180b7b4",
+    "wordTimings": [
+      {
+        "word": "an",
+        "start": 0.07999999999999996,
+        "end": 0.39999999999999997
+      },
+      {
+        "word": "apple",
+        "start": 0.39999999999999997,
+        "end": 1.18
+      }
+    ]
   },
   "phrase_banana": {
     "text": "a banana",
@@ -1837,7 +1849,19 @@
         "id": 0
       }
     ],
-    "sourceKey": "ceec8d0530b81f36076cb2fc69d2b849dd9efeef955f6eb30ae8dd0fef79c6e1"
+    "sourceKey": "ceec8d0530b81f36076cb2fc69d2b849dd9efeef955f6eb30ae8dd0fef79c6e1",
+    "wordTimings": [
+      {
+        "word": "a",
+        "start": 0.07999999999999996,
+        "end": 0.24999999999999994
+      },
+      {
+        "word": "banana",
+        "start": 0.24999999999999994,
+        "end": 1.15
+      }
+    ]
   },
   "word_a": {
     "text": "a",
@@ -1872,7 +1896,14 @@
         "ah"
       ]
     },
-    "sha256": "f6daa865d6ab930a463e488a46d71ae80a8ea167932efd30c44e635443723517"
+    "sha256": "f6daa865d6ab930a463e488a46d71ae80a8ea167932efd30c44e635443723517",
+    "wordTimings": [
+      {
+        "word": "a",
+        "start": 0.08000000000000002,
+        "end": 0.32
+      }
+    ]
   },
   "word_an": {
     "text": "an",
@@ -1912,7 +1943,14 @@
         "n"
       ]
     },
-    "sha256": "6a69f37c46a45fde4d58ebf7538dc4fe6fc56940c075016b13e4e580c8f9d21f"
+    "sha256": "6a69f37c46a45fde4d58ebf7538dc4fe6fc56940c075016b13e4e580c8f9d21f",
+    "wordTimings": [
+      {
+        "word": "an",
+        "start": 0.08000000000000007,
+        "end": 0.24
+      }
+    ]
   },
   "word_to": {
     "text": "to",
@@ -1952,7 +1990,14 @@
         "uw"
       ]
     },
-    "sha256": "ebc4784176d5642b226096da3d48e60783f1da6cc0c187b1ba7b3d45a96a714d"
+    "sha256": "ebc4784176d5642b226096da3d48e60783f1da6cc0c187b1ba7b3d45a96a714d",
+    "wordTimings": [
+      {
+        "word": "to",
+        "start": 0.07999999999999996,
+        "end": 0.2300000000000001
+      }
+    ]
   },
   "want_intro": {
     "text": "现在说出你想要什么。先听，再分段练习。",
@@ -2715,7 +2760,14 @@
         "ay"
       ]
     },
-    "sha256": "c3ea8bf67918982da45deb6de337d7109fcbb278878735b052fe02b5de93aada"
+    "sha256": "c3ea8bf67918982da45deb6de337d7109fcbb278878735b052fe02b5de93aada",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.21,
+        "end": 1.29
+      }
+    ]
   },
   "part_want": {
     "text": "want",
@@ -2752,7 +2804,14 @@
         "id": 0
       }
     ],
-    "sourceKey": "5f863d8c102f97024dee960352356187e9fe277cdc8d56fa4a24264d37219764"
+    "sourceKey": "5f863d8c102f97024dee960352356187e9fe277cdc8d56fa4a24264d37219764",
+    "wordTimings": [
+      {
+        "word": "want",
+        "start": 0.08000000000000002,
+        "end": 0.5700000000000001
+      }
+    ]
   },
   "part_eat": {
     "text": "eat",
@@ -2781,7 +2840,14 @@
         "id": 0
       }
     ],
-    "sourceKey": "f170f0cdca2463c2012ac742185f171c8d6cd266def7f67a5da72c3712901e48"
+    "sourceKey": "f170f0cdca2463c2012ac742185f171c8d6cd266def7f67a5da72c3712901e48",
+    "wordTimings": [
+      {
+        "word": "eat",
+        "start": 0.08000000000000002,
+        "end": 0.6300000000000001
+      }
+    ]
   },
   "part_red": {
     "text": "red",
@@ -2814,7 +2880,14 @@
         "id": 0
       }
     ],
-    "sourceKey": "dfe7422ddac44e6ce6d46945a92fa92f73aab7eece50dfb553d97c8a86fec2b2"
+    "sourceKey": "dfe7422ddac44e6ce6d46945a92fa92f73aab7eece50dfb553d97c8a86fec2b2",
+    "wordTimings": [
+      {
+        "word": "red",
+        "start": 0.07999999999999999,
+        "end": 0.64
+      }
+    ]
   },
   "chunk_want": {
     "text": "I want.",
@@ -2855,7 +2928,19 @@
         "id": 0
       }
     ],
-    "sourceKey": "a3f070b5234ec546f59e178f7152c212d2be0ac5a7cb1d5b0535ad8983449014"
+    "sourceKey": "a3f070b5234ec546f59e178f7152c212d2be0ac5a7cb1d5b0535ad8983449014",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.08000000000000002,
+        "end": 0.34
+      },
+      {
+        "word": "want",
+        "start": 0.34,
+        "end": 1.23
+      }
+    ]
   },
   "chunk_eat": {
     "text": "to eat.",
@@ -2896,7 +2981,19 @@
         "id": 0
       }
     ],
-    "sourceKey": "81cdfb299af8d88b974c3c05cdffe2101bb6ea175f2a4bd2aa6954160afcaedd"
+    "sourceKey": "81cdfb299af8d88b974c3c05cdffe2101bb6ea175f2a4bd2aa6954160afcaedd",
+    "wordTimings": [
+      {
+        "word": "to",
+        "start": 0.08000000000000002,
+        "end": 0.8
+      },
+      {
+        "word": "eat",
+        "start": 1.1199999999999999,
+        "end": 1.67
+      }
+    ]
   },
   "chunk_red": {
     "text": "a red apple",
@@ -2949,7 +3046,24 @@
         "id": 0
       }
     ],
-    "sourceKey": "4626abc5e9393b23d176c3ad54245d7710a738520585aafec44d95b16f39f0ea"
+    "sourceKey": "4626abc5e9393b23d176c3ad54245d7710a738520585aafec44d95b16f39f0ea",
+    "wordTimings": [
+      {
+        "word": "a",
+        "start": 0.08000000000000002,
+        "end": 0.32
+      },
+      {
+        "word": "red",
+        "start": 0.32,
+        "end": 0.72
+      },
+      {
+        "word": "apple",
+        "start": 0.72,
+        "end": 1.3599999999999999
+      }
+    ]
   },
   "want_apple": {
     "text": "I want an apple.",
@@ -3014,7 +3128,29 @@
         "id": 0
       }
     ],
-    "sourceKey": "5546ff6cb0dcca1236d6825cacbcb43ea9fe915fcc033a2adcdd99c9bd84e71e"
+    "sourceKey": "5546ff6cb0dcca1236d6825cacbcb43ea9fe915fcc033a2adcdd99c9bd84e71e",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.08000000000000002,
+        "end": 0.37000000000000005
+      },
+      {
+        "word": "want",
+        "start": 0.37000000000000005,
+        "end": 0.9299999999999999
+      },
+      {
+        "word": "an",
+        "start": 0.9299999999999999,
+        "end": 1.21
+      },
+      {
+        "word": "apple",
+        "start": 1.21,
+        "end": 1.83
+      }
+    ]
   },
   "want_banana": {
     "text": "I want a banana.",
@@ -3087,7 +3223,29 @@
         "id": 0
       }
     ],
-    "sourceKey": "3cc10528261bf9db5cbd66928ac95d059759ca5efedda9163a20eaf13dafce2e"
+    "sourceKey": "3cc10528261bf9db5cbd66928ac95d059759ca5efedda9163a20eaf13dafce2e",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.08000000000000002,
+        "end": 0.3
+      },
+      {
+        "word": "want",
+        "start": 0.3,
+        "end": 0.6300000000000001
+      },
+      {
+        "word": "a",
+        "start": 0.6300000000000001,
+        "end": 0.8699999999999999
+      },
+      {
+        "word": "banana",
+        "start": 0.8699999999999999,
+        "end": 1.74
+      }
+    ]
   },
   "eat_apple": {
     "text": "I want to eat an apple.",
@@ -3168,7 +3326,39 @@
         "id": 0
       }
     ],
-    "sourceKey": "bfbfdd5fe4e9c884ffac0c0795d3d9bf6ee311401c80ebb16e1ebf6fc25883ca"
+    "sourceKey": "bfbfdd5fe4e9c884ffac0c0795d3d9bf6ee311401c80ebb16e1ebf6fc25883ca",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.08000000000000002,
+        "end": 0.36000000000000004
+      },
+      {
+        "word": "want",
+        "start": 0.36000000000000004,
+        "end": 0.6499999999999999
+      },
+      {
+        "word": "to",
+        "start": 0.6499999999999999,
+        "end": 0.8
+      },
+      {
+        "word": "eat",
+        "start": 0.8,
+        "end": 1.08
+      },
+      {
+        "word": "an",
+        "start": 1.08,
+        "end": 1.24
+      },
+      {
+        "word": "apple",
+        "start": 1.24,
+        "end": 1.9
+      }
+    ]
   },
   "eat_banana": {
     "text": "I want to eat a banana.",
@@ -3257,7 +3447,39 @@
         "id": 0
       }
     ],
-    "sourceKey": "936997b715a9ce7af58bda926b12dbe293494f2fd47639b3cc477a413060fc5c"
+    "sourceKey": "936997b715a9ce7af58bda926b12dbe293494f2fd47639b3cc477a413060fc5c",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.08000000000000002,
+        "end": 0.32
+      },
+      {
+        "word": "want",
+        "start": 0.32,
+        "end": 0.6100000000000001
+      },
+      {
+        "word": "to",
+        "start": 0.6100000000000001,
+        "end": 0.76
+      },
+      {
+        "word": "eat",
+        "start": 0.76,
+        "end": 1.0599999999999998
+      },
+      {
+        "word": "a",
+        "start": 1.0599999999999998,
+        "end": 1.17
+      },
+      {
+        "word": "banana",
+        "start": 1.17,
+        "end": 2.02
+      }
+    ]
   },
   "eat_red": {
     "text": "I want to eat a red apple.",
@@ -3350,6 +3572,43 @@
         "id": 0
       }
     ],
-    "sourceKey": "9b4501bc23d0ddb5e9b17bc4c06440c4a93405ee2aa71e473176519e8b3d7685"
+    "sourceKey": "9b4501bc23d0ddb5e9b17bc4c06440c4a93405ee2aa71e473176519e8b3d7685",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.07999999999999996,
+        "end": 0.35999999999999993
+      },
+      {
+        "word": "want",
+        "start": 0.35999999999999993,
+        "end": 0.6799999999999999
+      },
+      {
+        "word": "to",
+        "start": 0.6799999999999999,
+        "end": 0.8600000000000001
+      },
+      {
+        "word": "eat",
+        "start": 0.8600000000000001,
+        "end": 1.26
+      },
+      {
+        "word": "a",
+        "start": 1.29,
+        "end": 1.62
+      },
+      {
+        "word": "red",
+        "start": 1.62,
+        "end": 2.04
+      },
+      {
+        "word": "apple",
+        "start": 2.04,
+        "end": 2.7
+      }
+    ]
   }
 }

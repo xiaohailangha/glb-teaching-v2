@@ -101,3 +101,4 @@ for(const [key,text] of Object.entries(prompts)) {
  console.log(`${key}: ${result[key].duration.toFixed(2)}s`);
 }
 await repairContextWords();
+await import('./prepare-word-highlights.mjs');

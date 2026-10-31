@@ -1,14 +1,59 @@
-// Composite display-referred premultiplied character coverage against the
-// exact Flutter page gradient before FXAA and the browser ImageBitmap bridge.
-// An opaque final image avoids platform-specific alpha fringes at silhouettes.
+// Compose light behind premultiplied character coverage, before Flutter text.
 uniform sampler2D input_color;
+uniform FireworksInfo {
+  vec4 clock; // progress, burst count, aspect, reduced motion
+  vec4 centers[5]; // x,y,start,end
+  vec4 shapes[5]; // radius,rays,color,seed
+} fireworks;
 in vec2 v_uv;
 out vec4 frag_color;
+float hash(float n) { return fract(sin(n)*43758.5453); }
+vec3 palette(float c) {
+  if(c<.5) return vec3(1.,.86,.62);
+  if(c<1.5) return vec3(.77,.94,.90);
+  if(c<2.5) return vec3(.85,.87,1.);
+  return vec3(1.,.85,.80);
+}
+vec3 sparks(vec2 uv) {
+  float t=fireworks.clock.x;
+  if(t<0. || t>=1.) return vec3(0.);
+  vec3 light=vec3(0.);
+  float aspect=fireworks.clock.z;
+  for(int b=0;b<5;b++) {
+    if(float(b)>=fireworks.clock.y) break;
+    vec4 c=fireworks.centers[b], s=fireworks.shapes[b];
+    float age=(t-c.z)/(c.w-c.z);
+    if(age<=0. || age>=1.) continue;
+    vec2 delta=(uv-c.xy)*vec2(aspect,1.);
+    if(fireworks.clock.w>.5) {
+      float d=length(delta);
+      light+=palette(s.z)*exp(-d*d/0.00002)*.3;
+      continue;
+    }
+    delta.y-=.13*age*age;
+    delta.y/=.86;
+    float radius=length(delta), angle=atan(delta.y,delta.x);
+    float sector=6.2831853/s.y;
+    float ray=floor(angle/sector+.5);
+    float rayAngle=ray*sector;
+    float across=abs(sin(angle-rayAngle))*radius;
+    float speed=s.x*(.48+.52*hash(ray*12.9898+s.w));
+    float head=speed*(1.-exp(-3.8*age));
+    float tail=speed*(1.-exp(-3.8*max(0.,age-.20)));
+    float fade=pow(1.-age,.9);
+    float line=exp(-across*across/0.000002);
+    float streak=smoothstep(tail,head+.0001,radius)*(1.-smoothstep(head,head+.003,radius));
+    float tip=exp(-pow((radius-head)/.0035,2.)-across*across/0.00001);
+    float glow=exp(-pow((radius-head)/.009,2.)-across*across/0.00009);
+    float core=exp(-radius*radius/.00015)*pow(1.-age,8.);
+    light+=palette(s.z)*fade*(line*streak*.46+tip*.72+glow*.09+core*.25);
+  }
+  return light;
+}
 void main() {
-  vec4 character = texture(input_color, v_uv);
-  float y = clamp(v_uv.y, 0.0, 1.0);
-  float gray = y <= 0.72
-      ? mix(68.0 / 255.0, 125.0 / 255.0, y / 0.72)
-      : mix(125.0 / 255.0, 128.0 / 255.0, (y - 0.72) / 0.28);
-  frag_color = vec4(character.rgb + vec3(gray) * (1.0 - character.a), 1.0);
+  vec4 character=texture(input_color,v_uv);
+  float y=clamp(v_uv.y,0.,1.);
+  float gray=y<=.72 ? mix(68./255.,125./255.,y/.72) : mix(125./255.,128./255.,(y-.72)/.28);
+  vec3 background=vec3(gray)+sparks(v_uv);
+  frag_color=vec4(character.rgb+background*(1.-character.a),1.);
 }

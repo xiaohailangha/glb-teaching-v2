@@ -66,6 +66,63 @@ void main() {
     await reader.dispose();
   });
   test(
+    'actual microphone meter is live during playback without scoring it',
+    () async {
+      final levels = <double>[];
+      var uploads = 0;
+      final reader = AutomaticReader(
+        (p) => Uri.parse('https://example.test$p'),
+        (_, _) {},
+        (_, _) {},
+        onSignal: levels.add,
+        httpClient: MockClient((_) async {
+          uploads++;
+          return http.Response('{}', 200);
+        }),
+      );
+      reader.enabled = true;
+      reader.playing = true;
+      reader.target('apple', 'apple');
+      reader.ingestPcm(voice());
+      expect(levels.last, greaterThan(.1));
+      expect(uploads, 0);
+      reader.busy = true;
+      reader.ingestPcm(Uint8List(3200));
+      expect(levels.last, 0);
+      await reader.stop();
+      expect(levels.last, 0);
+      await reader.dispose();
+    },
+  );
+  test('idle progress cannot turn the model speaking state back on', () {
+    final c = LessonController()..ready = true;
+    c.playCourse();
+    c.handle({
+      'event': 'playing',
+      'session': c.session,
+      'text': 'I want',
+      'wordTimings': [
+        {'word': 'want', 'start': .3, 'end': .7},
+      ],
+    });
+    c.handle({
+      'event': 'progress',
+      'session': c.session,
+      'speaking': true,
+      'time': .4,
+    });
+    expect(c.spokenWord, 'want');
+    c.handle({
+      'event': 'progress',
+      'session': c.session,
+      'speaking': false,
+      'time': .8,
+    });
+    expect(c.playing, false);
+    expect(c.spokenWord, isEmpty);
+    c.dispose();
+  });
+  test(
     'speaker playback is ignored and following speech receives feedback',
     () async {
       var results = 0;
@@ -112,6 +169,30 @@ void main() {
     expect(restored.seen.length, 8);
     restored.expose('I want to eat a red apple.');
     expect(restored.newThisCourse, {'red'});
+  });
+  testWidgets('microphone bars follow signal samples and clear on disconnect', (
+    tester,
+  ) async {
+    Widget page(double level, bool active) => MaterialApp(
+      home: Scaffold(
+        body: MicWave(level: level, active: active),
+      ),
+    );
+    await tester.pumpWidget(page(0, true));
+    await tester.pumpWidget(page(.8, true));
+    await tester.pump(const Duration(milliseconds: 100));
+    final bars = tester.widgetList<AnimatedContainer>(
+      find.byType(AnimatedContainer),
+    );
+    expect(bars.any((b) => b.constraints!.maxHeight > 20), isTrue);
+    await tester.pumpWidget(page(0, false));
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(
+      tester
+          .widgetList<AnimatedContainer>(find.byType(AnimatedContainer))
+          .every((b) => b.constraints!.maxHeight == 3),
+      isTrue,
+    );
   });
   test('silence never uploads; voice is emitted once after trailing silence and reset discards old input', () {
     final gate = UtteranceGate(),

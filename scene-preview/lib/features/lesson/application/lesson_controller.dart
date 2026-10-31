@@ -19,6 +19,8 @@ class LessonController extends ChangeNotifier {
   String automaticFeedback = '', selectedWord = '';
   String automaticState = '', liveTranscript = '', coachSentence = '';
   double micLevel = 0;
+  String spokenWord = '';
+  List<Map> speechWordTimings = [];
   List<Map<String, dynamic>> wordFeedback = [];
   Future<void> _saveVocabulary() async {
     final data = jsonEncode(vocabulary.toJson());
@@ -305,6 +307,8 @@ class LessonController extends ChangeNotifier {
           return;
         }
         lessonPhase = phase!;
+        spokenWord = '';
+        speechWordTimings = [];
         playing = message['speaking'] == true;
         selectedWord = '';
         speechFeedback = '';
@@ -357,14 +361,32 @@ class LessonController extends ChangeNotifier {
         emotionMode = true;
         emotionIndex = next;
       } else if (event == 'playing' || event == 'progress') {
+        if (event == 'playing') {
+          speechWordTimings = (message['wordTimings'] as List? ?? [])
+              .whereType<Map>()
+              .toList();
+        }
         if (event == 'playing' && message['text'] is String) {
           expose(message['text'] as String);
         }
         if (speechFeedback == '正在准备示范…') speechFeedback = '';
+        final isSpeaking = event == 'playing' || message['speaking'] != false;
+        final previousWord = spokenWord;
+        spokenWord = '';
+        if (isSpeaking) {
+          final at = (message['time'] as num?)?.toDouble() ?? 0;
+          for (final w in speechWordTimings) {
+            if (at >= (w['start'] as num) && at <= (w['end'] as num)) {
+              spokenWord = w['word'].toString();
+              break;
+            }
+          }
+        }
         final stateChanged =
-            !playing ||
+            playing != isSpeaking ||
+            spokenWord != previousWord ||
             iteration != ((message['iteration'] as num?)?.toInt() ?? 1);
-        playing = true;
+        playing = isSpeaking;
         progress = ((message['progress'] as num?)?.toDouble() ?? 0).clamp(0, 1);
         level = (message['level'] as num?)?.toDouble() ?? 0;
         iteration = (message['iteration'] as num?)?.toInt() ?? 1;

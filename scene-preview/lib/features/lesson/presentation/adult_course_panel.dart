@@ -62,11 +62,12 @@ class AdultCoursePanel extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'FRUIT / 01   ·   ${c.courseChapter}',
+                      c.courseChapter,
                       style: const TextStyle(
-                        fontSize: 12,
-                        letterSpacing: 1.2,
-                        color: Colors.white60,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: .6,
+                        color: Colors.white70,
                       ),
                     ),
                     const SizedBox(height: 10),
@@ -125,6 +126,37 @@ class AdultCoursePanel extends StatelessWidget {
             const SizedBox(height: 14),
             const Text('轻触人物，再练一轮。', style: TextStyle(color: Colors.white60)),
           ] else ...[
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 220),
+              child: Align(
+                key: ValueKey(
+                  '${c.lessonPhase}:${c.playing}:${c.automaticState}',
+                ),
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  choice
+                      ? '听音 · 选出图片'
+                      : c.playing ||
+                            !const {
+                              'listen',
+                              'recall',
+                              'choice',
+                            }.contains(c.lessonPhase)
+                      ? '先听示范'
+                      : c.automaticState == 'processing'
+                      ? '正在确认你的表达'
+                      : c.automaticState == 'correction'
+                      ? '一起把这一处练好'
+                      : '轮到你说了',
+                  style: const TextStyle(
+                    fontSize: 13,
+                    color: Color(0xFFBDE5DD),
+                    letterSpacing: 1.1,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 6),
             if (showEnglish && sentence.isNotEmpty)
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 350),
@@ -273,7 +305,7 @@ class ListeningLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = controller, thinking = c.automaticState == 'processing';
-    final listening = c.automaticReading && !c.playing && !thinking;
+    final listening = c.automaticReading;
     final label = c.automaticStarting
         ? '请在浏览器中允许麦克风'
         : !c.automaticReading
@@ -281,7 +313,7 @@ class ListeningLine extends StatelessWidget {
         : thinking
         ? '正在听懂你的话…'
         : c.playing
-        ? '先听，再自然接着说'
+        ? '麦克风已连接 · 示范结束后评测'
         : '我在听，直接说就好';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -289,31 +321,7 @@ class ListeningLine extends StatelessWidget {
       children: [
         Row(
           children: [
-            SizedBox(
-              width: 44,
-              height: 22,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: List.generate(
-                  7,
-                  (i) => AnimatedContainer(
-                    duration: const Duration(milliseconds: 100),
-                    width: 3,
-                    height:
-                        3 +
-                        (listening ? c.micLevel : 0) *
-                            18 *
-                            (.5 + .5 * math.sin(i * 1.9).abs()),
-                    decoration: BoxDecoration(
-                      color: listening
-                          ? const Color(0xFFBDE5DD)
-                          : Colors.white30,
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            MicWave(level: c.micLevel, active: listening),
             const SizedBox(width: 8),
             Expanded(
               child: Text(
@@ -326,7 +334,10 @@ class ListeningLine extends StatelessWidget {
         if (c.liveTranscript.isNotEmpty)
           Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: LiveTypingText(text: c.liveTranscript, listening: listening),
+            child: LiveTypingText(
+              text: c.liveTranscript,
+              listening: listening && !c.playing && !thinking,
+            ),
           ),
         if (c.automaticState == 'error')
           Text(
@@ -336,6 +347,58 @@ class ListeningLine extends StatelessWidget {
       ],
     );
   }
+}
+
+class MicWave extends StatefulWidget {
+  const MicWave({super.key, required this.level, required this.active});
+  final double level;
+  final bool active;
+  @override
+  State<MicWave> createState() => _MicWaveState();
+}
+
+class _MicWaveState extends State<MicWave> {
+  final samples = List<double>.filled(17, 0, growable: true);
+  @override
+  void didUpdateWidget(MicWave old) {
+    super.didUpdateWidget(old);
+    if (!widget.active) {
+      samples.fillRange(0, samples.length, 0);
+      return;
+    }
+    samples.removeAt(0);
+    samples.add(widget.level.clamp(0, 1));
+  }
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+    label: widget.active ? '麦克风已连接，实时音量' : '麦克风未连接',
+    child: SizedBox(
+      width: 84,
+      height: 30,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          for (var i = 0; i < samples.length; i++)
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 80),
+              width: 2.8,
+              height: 3 + samples[i] * 25,
+              decoration: BoxDecoration(
+                color: widget.active
+                    ? Color.lerp(
+                        const Color(0xFF78B8B0),
+                        const Color(0xFFE2FFF2),
+                        samples[i],
+                      )
+                    : Colors.white30,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+        ],
+      ),
+    ),
+  );
 }
 
 /// Only reveals characters received from ASR; never fills from the lesson target.

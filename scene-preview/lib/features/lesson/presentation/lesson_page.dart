@@ -6,7 +6,6 @@ import '../../settings/application/app_settings.dart';
 import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
 import 'lesson_navigation.dart';
-import 'course_celebration.dart';
 
 class LessonPage extends StatefulWidget {
   const LessonPage({super.key});
@@ -155,19 +154,6 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                         ),
                       ),
               ),
-            ),
-            AnimatedBuilder(
-              animation: controller,
-              builder: (context, _) =>
-                  controller.automaticState == 'success' &&
-                      !controller.coursePaused
-                  ? CourseCelebration(
-                      key: ValueKey(
-                        '${controller.courseStep}:${controller.automaticFeedback}',
-                      ),
-                      message: controller.automaticFeedback,
-                    )
-                  : const SizedBox.shrink(),
             ),
             Positioned(
               right: 20,

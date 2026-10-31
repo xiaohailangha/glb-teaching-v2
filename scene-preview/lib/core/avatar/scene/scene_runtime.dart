@@ -113,6 +113,7 @@ class SceneRuntime extends ChangeNotifier {
     final report = PronunciationFeedback(target, data['result'] as Map? ?? {});
     if (report.passed) {
       automatic.playing = true;
+      background.celebrate(now);
       retryCount = 0;
       _feedback(
         stage.id.startsWith('coach_')
@@ -288,6 +289,7 @@ class SceneRuntime extends ChangeNotifier {
     if (d == null || !d.fruitCourse) return;
     final wasFinished = d.stage.phase == 'finish';
     if (!d.navigate(direction)) return;
+    background.cancel();
     stageGeneration++; // Invalidate delayed passes before any asynchronous stop.
     previewReturn = null;
     coachingOriginal = null;
@@ -304,6 +306,7 @@ class SceneRuntime extends ChangeNotifier {
   final LessonController controller;
   late Scene scene;
   final frameMeter = RenderedFrameMeter();
+  final background = TeachingBackground();
   Scene _measuredScene() => _MeasuredScene(() {
     if (loaded && !disposed) frameMeter.record(now);
   });
@@ -361,7 +364,7 @@ class SceneRuntime extends ChangeNotifier {
       await Scene.initializeStaticResources();
       if (!(const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
           Uri.base.queryParameters['background'] == 'transparent')) {
-        scene.addRenderPass(TeachingBackground());
+        scene.addRenderPass(background);
       }
       scene
         ..antiAliasingMode = AntiAliasingMode.fxaa
@@ -508,7 +511,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r14-reading',
+        'version': 'scene-0.2.0-r15-responsive',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -791,6 +794,7 @@ class SceneRuntime extends ChangeNotifier {
     cues = [];
     coachingOriginal = null;
     previewReturn = null;
+    background.cancel();
     coachingWord = '';
     retryCount = 0;
     await automatic.stop();
@@ -949,6 +953,7 @@ class SceneRuntime extends ChangeNotifier {
         'session': session,
         'iteration': iteration,
         'text': timings[key]?['text']?.toString() ?? '',
+        'wordTimings': timings[key]?['wordTimings'] ?? [],
         'progress': 0,
       });
     } catch (e) {
@@ -961,6 +966,7 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   void _audioEnded() {
+    playingAudio = false;
     automatic.playing = false;
     if (director != null) {
       if (director!.stage.options.isNotEmpty) return;
@@ -993,6 +999,13 @@ class SceneRuntime extends ChangeNotifier {
     if (!loaded || disposed) return;
     frameDt = dt.clamp(0.0, .06);
     final at = now;
+    background.time = at;
+    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS')) {
+      if (Uri.base.queryParameters['celebration'] == '1' &&
+          at - background.started > 3.5) {
+        background.celebrate(at);
+      }
+    }
     final speaking = playingAudio && !loadingAudio;
     motion.update(
       frameDt,
@@ -1061,6 +1074,7 @@ class SceneRuntime extends ChangeNotifier {
             ? ((at - phaseStarted) / 24).clamp(0.0, 1.0)
             : progress,
         'time': speech.seconds,
+        'speaking': playingAudio && !loadingAudio,
         'iteration': iteration,
       });
       lastProgress = at;

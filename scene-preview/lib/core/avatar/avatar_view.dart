@@ -32,6 +32,7 @@ class _AvatarViewState extends State<AvatarView> with WidgetsBindingObserver {
     builder: (context, _) => LayoutBuilder(
       builder: (context, size) {
         runtime.aspect = size.maxWidth / size.maxHeight;
+        runtime.background.reduced = MediaQuery.disableAnimationsOf(context);
         if (!runtime.loaded) {
           return Center(
             child: Text(

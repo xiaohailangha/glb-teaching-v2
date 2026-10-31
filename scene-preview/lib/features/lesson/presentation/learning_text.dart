@@ -24,6 +24,9 @@ class LearningText extends StatelessWidget {
   }
 
   Color color(String word) {
+    if (controller.playing && controller.spokenWord == word.toLowerCase()) {
+      return const Color(0xFFFFE1AA);
+    }
     final value = status(word);
     if (value == 'good') return const Color(0xFFBDE5DD);
     if (value.isNotEmpty) return const Color(0xFFFFCB95);
@@ -71,6 +74,17 @@ class LearningText extends StatelessWidget {
                           style: TextStyle(
                             fontSize: size,
                             fontWeight: FontWeight.bold,
+                            shadows:
+                                controller.playing &&
+                                    controller.spokenWord ==
+                                        lexical(token[0]!).toLowerCase()
+                                ? const [
+                                    Shadow(
+                                      color: Color(0x70FFD99A),
+                                      blurRadius: 14,
+                                    ),
+                                  ]
+                                : null,
                             color: color(lexical(token[0]!)),
                             decoration:
                                 status(lexical(token[0]!)).isNotEmpty &&

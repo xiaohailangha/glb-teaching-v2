@@ -132,16 +132,14 @@ class AutomaticReader {
       );
       onState('listening', '自动跟读已开启；说完稍停即可收到反馈。');
     } catch (e) {
-      onState('error', e.toString());
+      onState('error', '麦克风未能开启，请在浏览器中允许麦克风后重试。');
       await stop();
     }
   }
 
   void ingestPcm(Uint8List bytes) {
-    if (!enabled || busy || text.isEmpty || playing) {
-      gate.reset();
-      live?.cancel();
-      live = null;
+    if (!enabled) {
+      onSignal?.call(0);
       return;
     }
     final samples = ByteData.sublistView(bytes);
@@ -151,7 +149,15 @@ class AutomaticReader {
       energy += v * v;
     }
     final rms = bytes.isEmpty ? 0.0 : math.sqrt(energy / (bytes.length / 2));
-    onSignal?.call((rms * 12).clamp(0, 1));
+    // Meter actual capture even while model playback/assessment suppresses scoring.
+    onSignal?.call((math.sqrt(math.max(0, rms - .002)) * 4.5).clamp(0, 1));
+    if (busy || text.isEmpty || playing) {
+      gate.reset();
+      live?.cancel();
+      live = null;
+      return;
+    }
+
     if (onTranscript != null && (gate.voiced > 0 || rms > .018)) {
       final token = generation;
       live ??= LiveTranscript(endpoint, (value) {
@@ -211,6 +217,7 @@ class AutomaticReader {
 
   Future<void> stop() async {
     enabled = false;
+    onSignal?.call(0);
     captureGeneration++;
     live?.cancel();
     finalizingLive?.cancel();
