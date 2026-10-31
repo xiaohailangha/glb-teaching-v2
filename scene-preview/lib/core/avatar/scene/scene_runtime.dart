@@ -511,7 +511,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r17-clean',
+        'version': 'scene-0.2.0-r18-auth',
       });
       notifyListeners();
     } catch (e, stack) {

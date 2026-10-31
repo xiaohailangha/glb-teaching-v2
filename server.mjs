@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {speechHttp} from './services/speech-http.mjs';
+import {authHttp} from './services/auth-http.mjs';
 import {assetHttp} from './services/cos-assets.mjs';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const port=Number(process.env.PORT||5296);
@@ -10,6 +11,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=u
 const server=http.createServer(async(req,res)=>{
   let pathname;
   try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400).end();return;}
+  if(await authHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await assetHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await speechHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(pathname==='/health'){res.writeHead(200,{'Content-Type':'application/json'}).end(JSON.stringify({app:'snow_speaks',framework:'Flutter',root}));return;}

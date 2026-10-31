@@ -55,6 +55,9 @@ echo SCENE_UPLOAD_READY
   ['services/cos-assets.mjs','glb-scene-cos-assets.mjs'],
   ['services/speech-http.mjs','glb-scene-speech-http.mjs'],
   ['services/live-recognition.mjs','glb-scene-live-recognition.mjs'],
+  ['services/auth-http.mjs','glb-auth-http.mjs'],
+  ['services/tencent-sms.mjs','glb-tencent-sms.mjs'],
+  ['server.mjs','glb-auth-server.mjs'],
   ['.secrets/cos-scene-assets.json','glb-scene-assets.json'],
  ])await command('scp',[...ssh,source,`root@${host}:/root/${target}`]);
  console.log('Scene release uploaded.');
@@ -64,6 +67,10 @@ test "$(hostname)" = VM-0-11-ubuntu
 backup=/opt/glb-backups/before-scene-$(date -u +%Y%m%dT%H%M%SZ)
 install -d -m 700 "$backup"
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
+cp /opt/glb-teaching/server.mjs "$backup/server.mjs"
+for name in auth-http tencent-sms; do
+ if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
+done
 cp /opt/glb-teaching/services/cos-assets.mjs "$backup/cos-assets.mjs"
 cp /opt/glb-teaching/services/speech-http.mjs "$backup/speech-http.mjs"
 if test -f /opt/glb-teaching/services/live-recognition.mjs; then cp /opt/glb-teaching/services/live-recognition.mjs "$backup/live-recognition.mjs"; fi
@@ -90,6 +97,10 @@ scene_installed=0
 rollback(){
  trap - ERR
  cp "$backup/nginx.conf" /etc/nginx/sites-available/glb-teaching
+ cp "$backup/server.mjs" /opt/glb-teaching/server.mjs
+ for name in auth-http tencent-sms; do
+  if test -f "$backup/$name.mjs"; then cp "$backup/$name.mjs" /opt/glb-teaching/services/$name.mjs; fi
+ done
  cp "$backup/cos-assets.mjs" /opt/glb-teaching/services/cos-assets.mjs
  cp "$backup/speech-http.mjs" /opt/glb-teaching/services/speech-http.mjs
  if test -f "$backup/live-recognition.mjs"; then cp "$backup/live-recognition.mjs" /opt/glb-teaching/services/live-recognition.mjs; fi
@@ -102,6 +113,13 @@ rollback(){
 }
 trap rollback ERR
 backend_changed=0
+/opt/glb-runtime/node/bin/node -e "require('node:sqlite')"
+for name in auth-http tencent-sms; do
+ /opt/glb-runtime/node/bin/node --check /root/glb-$name.mjs
+ if ! cmp -s /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs; then backend_changed=1; fi
+done
+/opt/glb-runtime/node/bin/node --check /root/glb-auth-server.mjs
+if ! cmp -s /root/glb-auth-server.mjs /opt/glb-teaching/server.mjs; then backend_changed=1; fi
 if ! cmp -s /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs || ! cmp -s /root/glb-scene-live-recognition.mjs /opt/glb-teaching/services/live-recognition.mjs; then backend_changed=1; fi
 /opt/glb-runtime/node/bin/node --check /root/glb-scene-speech-http.mjs
 /opt/glb-runtime/node/bin/node --check /root/glb-scene-live-recognition.mjs
@@ -109,6 +127,11 @@ if ! cmp -s /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets
 if test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$backup/scene"; fi
 mv "$stage" /opt/glb-teaching/build/web/scene
 scene_installed=1
+install -o glbapp -g glbapp -m 644 /root/glb-auth-server.mjs /opt/glb-teaching/server.mjs
+install -d -o glbapp -g glbapp -m 700 /opt/glb-teaching/work/auth-private
+for name in auth-http tencent-sms; do
+ install -o glbapp -g glbapp -m 644 /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs
+done
 install -o glbapp -g glbapp -m 644 /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs
 install -o glbapp -g glbapp -m 644 /root/glb-scene-live-recognition.mjs /opt/glb-teaching/services/live-recognition.mjs
 install -o glbapp -g glbapp -m 644 /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets.mjs
@@ -117,6 +140,24 @@ python3 - <<'PY'
 from pathlib import Path
 p=Path('/etc/nginx/sites-available/glb-teaching')
 s=p.read_text()
+if 'location ^~ /api/auth/' not in s:
+    marker='  location ^~ /api/speech/ {'
+    assert marker in s
+    block='''  location ^~ /api/auth/ {
+    proxy_pass http://127.0.0.1:5296;
+    proxy_set_header Host $http_host;
+    proxy_set_header Origin $http_origin;
+    proxy_set_header Sec-Fetch-Site $http_sec_fetch_site;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Cookie $http_cookie;
+    proxy_set_header Authorization "";
+    proxy_read_timeout 25s;
+    client_max_body_size 4k;
+    add_header Cache-Control "private, no-store" always;
+  }
+'''
+    s=s.replace(marker,block+marker)
+    p.write_text(s)
 assert 'server_name ${host}' in s and 'root /opt/glb-teaching/build/web;' in s
 if 'location = /api/assets/scene-manifest' not in s:
     marker='  location = /api/assets/model-manifest {'
@@ -138,7 +179,9 @@ nginx -t
 if test "$backend_changed" = 1; then systemctl restart glb-teaching; fi
 curl --retry 5 --retry-connrefused --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/speech/status >/dev/null
 curl --retry 3 --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/assets/scene-manifest >/dev/null
+curl --retry 3 --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/auth/status >/dev/null
 systemctl reload nginx
+curl --retry 5 --retry-all-errors --retry-delay 1 -fsS https://${host}/api/auth/status >/dev/null
 curl -fsS https://${host}/scene/ >/dev/null
 curl -fsS https://${host}/ >/dev/null
 trap - ERR

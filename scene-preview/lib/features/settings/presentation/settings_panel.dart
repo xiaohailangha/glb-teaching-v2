@@ -2,15 +2,20 @@ import 'package:flutter/material.dart';
 
 import '../application/app_settings.dart';
 import '../../lesson/application/lesson_controller.dart';
+import '../../auth/auth_api.dart';
 
 class SettingsPanel extends StatelessWidget {
   const SettingsPanel({
     super.key,
     required this.settings,
     required this.lesson,
+    this.account,
+    this.onLeave,
   });
   final AppSettings settings;
   final LessonController lesson;
+  final LearnerAccount? account;
+  final Future<void> Function()? onLeave;
 
   @override
   Widget build(BuildContext context) => AnimatedBuilder(
@@ -41,17 +46,36 @@ class SettingsPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            TextFormField(
-              initialValue: lesson.nickname,
-              maxLength: 12,
-              decoration: const InputDecoration(
-                labelText: '昵称',
-                hintText: '希望怎么称呼你',
-                counterText: '',
+            _NicknameField(lesson: lesson),
+            if (onLeave != null)
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      account?.phoneMasked ?? '体验模式 · 记录保存在此浏览器',
+                      style: const TextStyle(
+                        color: Colors.white60,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () async {
+                      final messenger = ScaffoldMessenger.of(context);
+                      Navigator.pop(context);
+                      try {
+                        await onLeave!();
+                      } catch (_) {
+                        messenger.showSnackBar(
+                          const SnackBar(content: Text('暂时无法退出，请稍后重试')),
+                        );
+                      }
+                    },
+                    child: Text(account == null ? '注册 / 登录' : '退出登录'),
+                  ),
+                ],
               ),
-              onChanged: lesson.setNickname,
-            ),
-
+            const SizedBox(height: 16),
             const Text(
               '课程与麦克风',
               style: TextStyle(fontSize: 16, color: Colors.white),
@@ -171,6 +195,58 @@ class SettingsPanel extends StatelessWidget {
               ),
           ],
         ),
+      ),
+    ),
+  );
+}
+
+class _NicknameField extends StatefulWidget {
+  const _NicknameField({required this.lesson});
+  final LessonController lesson;
+  @override
+  State<_NicknameField> createState() => _NicknameFieldState();
+}
+
+class _NicknameFieldState extends State<_NicknameField> {
+  late final text = TextEditingController(text: widget.lesson.nickname);
+  bool busy = false;
+  Future<void> save() async {
+    if (busy) return;
+    setState(() => busy = true);
+    try {
+      await widget.lesson.setNickname(text.text);
+      if (mounted) FocusScope.of(context).unfocus();
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text('昵称未保存，请检查后重试')));
+      }
+    } finally {
+      if (mounted) setState(() => busy = false);
+    }
+  }
+
+  @override
+  void dispose() {
+    text.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => TextField(
+    controller: text,
+    enabled: !busy,
+    maxLength: 12,
+    style: const TextStyle(color: Colors.white),
+    textInputAction: TextInputAction.done,
+    onSubmitted: (_) => save(),
+    decoration: InputDecoration(
+      labelText: '昵称',
+      counterText: '',
+      suffixIcon: IconButton(
+        tooltip: '保存昵称',
+        onPressed: busy ? null : save,
+        icon: const Icon(Icons.check_rounded),
       ),
     ),
   );

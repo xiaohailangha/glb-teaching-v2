@@ -6,15 +6,23 @@ import '../../settings/application/app_settings.dart';
 import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
 import 'lesson_navigation.dart';
+import '../../auth/auth_api.dart';
 
 class LessonPage extends StatefulWidget {
-  const LessonPage({super.key});
+  const LessonPage({super.key, this.account, this.auth, this.onLeave});
+  final LearnerAccount? account;
+  final AuthApi? auth;
+  final Future<void> Function()? onLeave;
   @override
   State<LessonPage> createState() => _LessonPageState();
 }
 
 class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
-  final controller = LessonController();
+  late final controller = LessonController(
+    accountId: widget.account?.id ?? '',
+    accountNickname: widget.account?.nickname,
+    saveAccountNickname: widget.account == null ? null : widget.auth?.rename,
+  );
   final settings = AppSettings();
   @override
   void initState() {
@@ -57,7 +65,12 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
         maxWidth: 520,
         maxHeight: MediaQuery.sizeOf(context).height * .86,
       ),
-      builder: (_) => SettingsPanel(settings: settings, lesson: controller),
+      builder: (_) => SettingsPanel(
+        settings: settings,
+        lesson: controller,
+        account: widget.account,
+        onLeave: widget.onLeave,
+      ),
     );
   }
 

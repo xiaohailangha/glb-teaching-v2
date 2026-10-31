@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/lesson/presentation/lesson_page.dart';
+import 'features/auth/auth_gate.dart';
 
 class SnowSpeaksApp extends StatelessWidget {
   const SnowSpeaksApp({super.key});
@@ -21,6 +21,6 @@ class SnowSpeaksApp extends StatelessWidget {
         bodyMedium: TextStyle(color: Color(0xFF283344)),
       ),
     ),
-    home: const LessonPage(),
+    home: const AuthGate(),
   );
 }

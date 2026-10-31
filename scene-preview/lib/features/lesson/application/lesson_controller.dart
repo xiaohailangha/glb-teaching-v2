@@ -15,6 +15,18 @@ import '../domain/ipa_sounds.dart';
 typedef AvatarCommand = void Function(Map<String, Object?> command);
 
 class LessonController extends ChangeNotifier {
+  LessonController({
+    this.accountId = '',
+    String? accountNickname,
+    this.saveAccountNickname,
+  }) {
+    if (accountNickname != null) nickname = accountNickname;
+  }
+  final String accountId;
+  final Future<void> Function(String)? saveAccountNickname;
+  String _storageKey(String key) =>
+      accountId.isEmpty ? key : 'account:$accountId:$key';
+
   final vocabulary = VocabularyLedger();
   String nickname = '莉莉';
   static const closingCheers = [
@@ -32,10 +44,12 @@ class LessonController extends ChangeNotifier {
   String address(String message) =>
       nickname.isEmpty ? message : '$nickname，$message';
   Future<void> setNickname(String value) async {
-    nickname = String.fromCharCodes(value.trim().runes.take(12));
-    notifyListeners();
+    final updated = String.fromCharCodes(value.trim().runes.take(12));
+    if (saveAccountNickname != null) await saveAccountNickname!(updated);
+    nickname = updated;
+    if (!_disposed) notifyListeners();
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('learner-nickname-v1', nickname);
+    await prefs.setString(_storageKey('learner-nickname-v1'), nickname);
   }
 
   bool automaticReading = false, automaticStarting = false;
@@ -50,7 +64,7 @@ class LessonController extends ChangeNotifier {
     _saveQueue = _saveQueue.then((_) async {
       try {
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString('vocabulary-exposure-v1', data);
+        await prefs.setString(_storageKey('vocabulary-exposure-v1'), data);
       } catch (_) {}
     });
   }
@@ -103,14 +117,16 @@ class LessonController extends ChangeNotifier {
   Future<void> loadCourseProgress() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      nickname = prefs.getString('learner-nickname-v1') ?? '莉莉';
+      if (accountId.isEmpty) {
+        nickname = prefs.getString(_storageKey('learner-nickname-v1')) ?? '莉莉';
+      }
       if (!_disposed) notifyListeners();
-      final vocab = prefs.getString('vocabulary-exposure-v1');
+      final vocab = prefs.getString(_storageKey('vocabulary-exposure-v1'));
       if (vocab != null) {
         final data = jsonDecode(vocab);
         if (data is Map) vocabulary.restore(data);
       }
-      final saved = prefs.getString('adult-fruit-v2');
+      final saved = prefs.getString(_storageKey('adult-fruit-v2'));
       if (!_disposed && courseCheckpoint == null && saved != null) {
         final data = jsonDecode(saved);
         if (data is Map && data['version'] == 1) {
@@ -135,7 +151,7 @@ class LessonController extends ChangeNotifier {
     _saveQueue = _saveQueue.then((_) async {
       try {
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString('adult-fruit-v2', data);
+        await prefs.setString(_storageKey('adult-fruit-v2'), data);
       } catch (_) {}
     });
   }

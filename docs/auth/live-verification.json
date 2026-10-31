@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-31T04:04:01.126Z",
+  "smsReady": false,
+  "realSmsSent": false,
+  "checks": [
+    "auth status is explicit and no credentials are returned",
+    "anonymous session is not authenticated",
+    "cross-site requests cannot send codes",
+    "nickname cannot change without a verified session",
+    "registration cannot bypass phone verification",
+    "unconfigured SMS never returns a fake code or success",
+    "account database and provider configuration cannot be downloaded"
+  ]
+}

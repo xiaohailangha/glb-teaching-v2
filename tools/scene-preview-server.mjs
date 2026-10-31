@@ -6,6 +6,10 @@ const root=fileURLToPath(new URL('../scene-preview/build/web/',import.meta.url))
 const types={'.js':'text/javascript','.html':'text/html','.json':'application/json','.wasm':'application/wasm','.wav':'audio/wav','.png':'image/png','.bin':'application/octet-stream','.fsceneb':'application/octet-stream','.ttf':'font/ttf'};
 http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');
+ if(url.pathname.startsWith('/api/auth/')){
+  const proxy=http.request({host:'127.0.0.1',port:5296,path:url.pathname,method:req.method,headers:{...req.headers,'x-real-ip':req.socket.remoteAddress}},r=>{res.writeHead(r.statusCode,r.headers);r.pipe(res);});
+  proxy.on('error',()=>res.writeHead(502).end());req.pipe(proxy);return;
+ }
  if(url.pathname.startsWith('/api/speech/')||url.pathname.startsWith('/api/assets/')){
   const proxy=http.request({host:'127.0.0.1',port:5296,path:url.pathname+url.search,method:req.method,headers:{...req.headers,host:'127.0.0.1:5296',origin:'http://127.0.0.1:5296','sec-fetch-site':'same-origin'}},r=>{res.writeHead(r.statusCode,r.headers);r.pipe(res);});
   proxy.on('error',()=>res.writeHead(502).end());req.pipe(proxy);return;
