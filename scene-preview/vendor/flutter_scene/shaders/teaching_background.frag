@@ -4,6 +4,7 @@ uniform FireworksInfo {
   vec4 clock; // progress, burst count, aspect, reduced motion
   vec4 centers[5]; // x,y,start,end
   vec4 shapes[5]; // radius,rays,color,seed
+  vec4 style; // welcome world
 } fireworks;
 in vec2 v_uv;
 out vec4 frag_color;
@@ -54,6 +55,23 @@ void main() {
   vec4 character=texture(input_color,v_uv);
   float y=clamp(v_uv.y,0.,1.);
   float gray=y<=.72 ? mix(68./255.,125./255.,y/.72) : mix(125./255.,128./255.,(y-.72)/.28);
-  vec3 background=vec3(gray)+sparks(v_uv);
+  vec3 background=vec3(gray);
+  if(fireworks.style.x>0.) {
+    vec2 uv=v_uv;
+    background=mix(vec3(.025,.19,.27),vec3(.20,.62,.63),smoothstep(0.,1.,uv.y));
+    vec2 sun=(uv-vec2(.17,.24))*vec2(fireworks.clock.z,1.);
+    float glow=exp(-dot(sun,sun)*16.);
+    background+=vec3(.28,.24,.10)*glow;
+    float disk=1.-smoothstep(.073,.076,length(sun));
+    background=mix(background,vec3(1.,.82,.43),disk);
+    float hill=.78+.06*sin(uv.x*5.5+.5);
+    background=mix(background,vec3(.08,.36,.39),smoothstep(hill,hill+.004,uv.y));
+    float front=.91+.045*sin(uv.x*9.-1.);
+    background=mix(background,vec3(.035,.24,.29),smoothstep(front,front+.004,uv.y));
+    float stars=pow(max(0.,sin(uv.x*43.)*sin(uv.y*37.)),90.)*.18*(1.-uv.y);
+    background+=vec3(stars);
+    background=mix(vec3(gray),background,fireworks.style.x);
+  }
+  background+=sparks(v_uv);
   frag_color=vec4(character.rgb+background*(1.-character.a),1.);
 }

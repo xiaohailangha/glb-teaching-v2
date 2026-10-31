@@ -9,7 +9,14 @@ import 'lesson_navigation.dart';
 import '../../auth/auth_api.dart';
 
 class LessonPage extends StatefulWidget {
-  const LessonPage({super.key, this.account, this.auth, this.onLeave});
+  const LessonPage({
+    super.key,
+    this.account,
+    this.auth,
+    this.onLeave,
+    this.sharedController,
+  });
+  final LessonController? sharedController;
   final LearnerAccount? account;
   final AuthApi? auth;
   final Future<void> Function()? onLeave;
@@ -18,11 +25,15 @@ class LessonPage extends StatefulWidget {
 }
 
 class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
-  late final controller = LessonController(
-    accountId: widget.account?.id ?? '',
-    accountNickname: widget.account?.nickname,
-    saveAccountNickname: widget.account == null ? null : widget.auth?.rename,
-  );
+  late final controller =
+      widget.sharedController ??
+      LessonController(
+        accountId: widget.account?.id ?? '',
+        accountNickname: widget.account?.nickname,
+        saveAccountNickname: widget.account == null
+            ? null
+            : widget.auth?.rename,
+      );
   final settings = AppSettings();
   @override
   void initState() {
@@ -30,7 +41,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     WidgetsBinding.instance.addObserver(this);
     settings.addListener(_applySettings);
     settings.load();
-    controller.loadCourseProgress();
+    if (widget.sharedController == null) controller.loadCourseProgress();
   }
 
   void _applySettings() => controller.setRenderSettings(settings.command);
@@ -79,25 +90,29 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     settings.removeListener(_applySettings);
     settings.dispose();
-    controller.dispose();
+    if (widget.sharedController == null) controller.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) => Scaffold(
+    backgroundColor: Colors.transparent,
     body: DecoratedBox(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Color(0xFF34393D), Color(0xFF777E80)],
-        ),
-      ),
+      decoration: widget.sharedController != null
+          ? const BoxDecoration()
+          : const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0xFF34393D), Color(0xFF777E80)],
+              ),
+            ),
       child: LayoutBuilder(
         builder: (context, box) => Stack(
           fit: StackFit.expand,
           children: [
-            Positioned.fill(child: AvatarView(controller: controller)),
+            if (widget.sharedController == null)
+              Positioned.fill(child: AvatarView(controller: controller)),
             Positioned(
               left: 0,
               top: 0,

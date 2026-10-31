@@ -35,23 +35,6 @@ class SpeechClient {
   bool finishing = false;
   Uri endpoint(String path) => origin.resolve(path);
   Future<void> init() async {
-    unawaited(
-      player.preloadAssets([
-        for (final word in [
-          'apple',
-          'banana',
-          'cat',
-          'dog',
-          'fish',
-          'moon',
-          'sun',
-          'book',
-          'hello',
-          'thank',
-        ])
-          'assets/avatar/audio/$word.wav',
-      ]),
-    );
     try {
       final r = await client
           .get(endpoint('/api/speech/status'))

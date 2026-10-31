@@ -10,6 +10,7 @@ import '../../../features/lesson/domain/firework_pattern.dart';
 class TeachingBackground extends CustomRenderPass {
   double time = -1, started = -100;
   bool reduced = false;
+  double welcomeMix = 0;
   FireworkPattern? pattern;
   void celebrate(double now) {
     started = now;
@@ -27,13 +28,14 @@ class TeachingBackground extends CustomRenderPass {
   RenderStage get stage => RenderStage.afterToneMapping;
   @override
   void execute(RenderPassContext context) {
-    final data = Float32List(44);
+    final data = Float32List(48);
     final progress = (time - started) / 1.8;
     final active = pattern != null && progress >= 0 && progress < 1;
     data[0] = active ? progress : -1;
     data[1] = active ? pattern!.bursts.length.toDouble() : 0;
     data[2] = context.dimensions.width / context.dimensions.height;
     data[3] = reduced ? 1 : 0;
+    data[44] = welcomeMix;
     if (active) {
       for (var i = 0; i < pattern!.bursts.length; i++) {
         final b = pattern!.bursts[i];

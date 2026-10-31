@@ -32,9 +32,15 @@
   <title>glb模型能力</title>
   <link rel="manifest" href="manifest.json">
   <style>
+    html,body { margin:0; background:#073645; }
+    #boot-world { position:fixed; inset:0; z-index:2147483646; display:grid; place-content:center; text-align:center; color:#ffe4a0; background:radial-gradient(ellipse at 25% 70%,#267f82,transparent 65%),linear-gradient(#052c3b,#155a68); font-family:system-ui,sans-serif; }
+    #boot-world strong { font-size:clamp(54px,10vw,96px); letter-spacing:-4px; text-shadow:0 6px #087176; }
+    #boot-world span { margin-top:24px; color:#dcf1e8; font-size:18px; letter-spacing:4px; }
+    #boot-world small { margin-top:56px; color:#a7cecd; font-size:13px; }
+
     #rotate-device { display: none; }
     @media (orientation: portrait) and (hover: none) and (pointer: coarse) {
-      #rotate-device {
+      html[data-course="true"] #rotate-device {
         position: fixed; inset: 0; z-index: 2147483647;
         display: flex; flex-direction: column; align-items: center;
         justify-content: center; gap: 16px; background: #5b5b5b;
@@ -45,6 +51,8 @@
   </style>
 </head>
 <body>
+  <div id="boot-world" role="status"><strong>HELLO!</strong><span>世界，从这一声开始</span><small>正在打开学习世界</small></div>
+  <script>window.addEventListener('flutter-first-frame',()=>document.getElementById('boot-world')?.remove());</script>
   <div id="rotate-device" role="status">
     <span>请横过手机使用</span>
     <small>若画面未旋转，请关闭竖排方向锁定</small>

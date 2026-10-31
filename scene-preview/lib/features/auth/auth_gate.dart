@@ -5,15 +5,24 @@ import 'package:flutter/services.dart';
 
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
+import 'world_loading.dart';
+import 'world_browser_stub.dart'
+    if (dart.library.js_interop) 'world_browser_web.dart';
+import '../../core/avatar/avatar_view.dart';
+import '../lesson/application/lesson_controller.dart';
 
 class AuthGate extends StatefulWidget {
-  const AuthGate({super.key, this.api});
+  const AuthGate({super.key, this.api, this.prepareScene = true});
+  final bool prepareScene;
   final AuthApi? api;
   @override
   State<AuthGate> createState() => _AuthGateState();
 }
 
 class _AuthGateState extends State<AuthGate> {
+  final shared = LessonController();
+  int sceneAttempt = 0;
+  bool introRevealed = false;
   late final api = widget.api ?? AuthApi();
   final nickname = TextEditingController(),
       phone = TextEditingController(),
@@ -32,6 +41,12 @@ class _AuthGateState extends State<AuthGate> {
   @override
   void initState() {
     super.initState();
+    if (!widget.prepareScene) {
+      introRevealed = true;
+      shared.ready = true;
+      shared.scenePresented = true;
+    }
+    WidgetsBinding.instance.addPostFrameCallback((_) => hideBootSplash());
     _restore();
   }
 
@@ -161,7 +176,30 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
+  Future<void> _enterLesson({bool guest = false}) => _perform(() async {
+    if (!shared.scenePresented) return;
+    if (guest) user = null;
+    await shared.bindAccount(
+      id: user?.id ?? '',
+      name: user?.nickname,
+      saveName: user == null ? null : api.rename,
+    );
+    if (mounted) {
+      setLessonMode(true);
+      setState(() => inLesson = true);
+    }
+  });
+  void _retryScene() {
+    shared.resetResources();
+    setState(() {
+      sceneAttempt++;
+      introRevealed = false;
+    });
+  }
+
   Future<void> _leave() async {
+    shared.stop();
+    setLessonMode(false);
     if (user != null) await api.logout();
     if (!mounted) return;
     setState(() {
@@ -181,6 +219,7 @@ class _AuthGateState extends State<AuthGate> {
   @override
   void dispose() {
     timer?.cancel();
+    shared.dispose();
     nickname.dispose();
     phone.dispose();
     code.dispose();
@@ -189,86 +228,148 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    if (inLesson) {
-      return LessonPage(
-        key: ValueKey(user?.id ?? 'guest'),
-        account: user,
-        auth: api,
-        onLeave: _leave,
-      );
-    }
-    final narrow = MediaQuery.sizeOf(context).width < 680;
-    return Scaffold(
-      backgroundColor: const Color(0xFFF6F7F2),
-      body: SafeArea(
-        child: LayoutBuilder(
-          builder: (context, box) => SingleChildScrollView(
-            padding: EdgeInsets.symmetric(
-              horizontal: narrow ? 28 : 64,
-              vertical: 24,
-            ),
-            child: ConstrainedBox(
-              constraints: BoxConstraints(
-                minHeight: (box.maxHeight - 48).clamp(0, double.infinity),
+  Widget build(BuildContext context) => AnimatedBuilder(
+    animation: shared.resourceTick,
+    builder: (context, _) => Scaffold(
+      backgroundColor: const Color(0xFF073645),
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          if (widget.prepareScene)
+            Positioned.fill(
+              child: AvatarView(
+                key: ValueKey(sceneAttempt),
+                controller: shared,
+                welcome: !inLesson,
               ),
-              child: Center(
-                child: SizedBox(
-                  width: 980,
-                  child: narrow
-                      ? Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            _art(true),
-                            const SizedBox(height: 28),
-                            _form(),
-                          ],
-                        )
-                      : Row(
-                          children: [
-                            Expanded(child: _art(false)),
-                            const SizedBox(width: 76),
-                            Expanded(child: _form()),
-                          ],
+            ),
+          if (shared.scenePresented && inLesson)
+            Positioned.fill(
+              child: LessonPage(
+                key: ValueKey(user?.id ?? 'guest'),
+                account: user,
+                auth: api,
+                onLeave: _leave,
+                sharedController: shared,
+              ),
+            ),
+          if (shared.scenePresented && !inLesson)
+            SafeArea(
+              child: LayoutBuilder(
+                builder: (context, box) {
+                  final portrait = box.maxWidth < 600;
+                  return SingleChildScrollView(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: portrait ? 22 : 44,
+                      vertical: 20,
+                    ),
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minHeight: (box.maxHeight - 40).clamp(
+                          0,
+                          double.infinity,
                         ),
+                      ),
+                      child: portrait
+                          ? Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                _brand(true),
+                                SizedBox(
+                                  height:
+                                      MediaQuery.viewInsetsOf(context).bottom >
+                                          0
+                                      ? 12
+                                      : box.maxHeight * .27,
+                                ),
+                                _form(),
+                              ],
+                            )
+                          : Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                  child: SizedBox(
+                                    height: (box.maxHeight - 40).clamp(
+                                      0,
+                                      double.infinity,
+                                    ),
+                                    child: Align(
+                                      alignment: Alignment.topLeft,
+                                      child: _brand(false),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 28),
+                                SizedBox(
+                                  width: (box.maxWidth * .46).clamp(320, 450),
+                                  child: _form(),
+                                ),
+                              ],
+                            ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          if (!introRevealed)
+            Positioned.fill(
+              child: ExcludeSemantics(
+                excluding: shared.scenePresented,
+                child: IgnorePointer(
+                  ignoring: shared.scenePresented,
+                  child: AnimatedOpacity(
+                    opacity: shared.scenePresented ? 0 : 1,
+                    duration: const Duration(milliseconds: 550),
+                    onEnd: () {
+                      if (shared.scenePresented && mounted) {
+                        setState(() => introRevealed = true);
+                      }
+                    },
+                    child: TickerMode(
+                      enabled: !shared.scenePresented,
+                      child: WorldLoading(
+                        controller: shared,
+                        retry: _retryScene,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
+        ],
+      ),
+    ),
+  );
+  Widget _brand(bool portrait) => Align(
+    alignment: Alignment.topLeft,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'HELLO, WORLD.',
+          style: TextStyle(
+            fontFamily: 'NotoSansIPA',
+            fontSize: portrait ? 26 : 38,
+            fontWeight: FontWeight.w900,
+            letterSpacing: -1,
+            color: const Color(0xFFFFE4A0),
+            shadows: const [
+              Shadow(color: Color(0xFF07545E), offset: Offset(0, 3)),
+            ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _art(bool small) => Column(
-    mainAxisSize: MainAxisSize.min,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      Semantics(
-        label: '从小小的开口开始',
-        child: SizedBox(
-          height: small ? 105 : 230,
-          width: small ? 160 : 300,
-          child: CustomPaint(painter: _WelcomeArt()),
+        const SizedBox(height: 7),
+        Text(
+          '把英语，说进生活',
+          style: TextStyle(
+            color: const Color(0xFFDCF1E8),
+            fontSize: portrait ? 13 : 17,
+            letterSpacing: 2,
+          ),
         ),
-      ),
-      const SizedBox(height: 16),
-      Text(
-        '开口，\n就是开始。',
-        style: TextStyle(
-          fontSize: small ? 32 : 46,
-          height: 1.22,
-          letterSpacing: -1.5,
-          fontWeight: FontWeight.w600,
-          color: const Color(0xFF243D36),
-        ),
-      ),
-      const SizedBox(height: 14),
-      const Text(
-        '每一次尝试，都算数。',
-        style: TextStyle(fontSize: 15, color: Color(0xFF718179)),
-      ),
-    ],
+      ],
+    ),
   );
   Widget _form() => AnimatedSwitcher(
     duration: const Duration(milliseconds: 280),
@@ -282,7 +383,20 @@ class _AuthGateState extends State<AuthGate> {
     ),
     child: Container(
       key: ValueKey(step),
-      constraints: const BoxConstraints(maxWidth: 400),
+      constraints: const BoxConstraints(maxWidth: 450),
+      padding: const EdgeInsets.fromLTRB(26, 26, 26, 22),
+      decoration: BoxDecoration(
+        color: const Color(0xF20B3543),
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(color: const Color(0x406CE2CD)),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x40001724),
+            blurRadius: 32,
+            offset: Offset(0, 14),
+          ),
+        ],
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -290,7 +404,7 @@ class _AuthGateState extends State<AuthGate> {
           if (step > 0 && step < 4) ...[
             TextButton.icon(
               style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFF537A65),
+                foregroundColor: const Color(0xFFB4DED2),
               ),
               onPressed: busy
                   ? null
@@ -315,8 +429,8 @@ class _AuthGateState extends State<AuthGate> {
                       height: 3,
                       decoration: BoxDecoration(
                         color: i <= step
-                            ? const Color(0xFF537A65)
-                            : const Color(0xFFE2E7DE),
+                            ? const Color(0xFFB4DED2)
+                            : const Color(0xFF255562),
                         borderRadius: BorderRadius.circular(4),
                       ),
                     ),
@@ -326,8 +440,8 @@ class _AuthGateState extends State<AuthGate> {
             const SizedBox(height: 28),
           ],
           if (step == 0) ...[
-            _title('很高兴认识你'),
-            _hint('一个昵称，一个手机号。\n把每一次进步，留在你的名字下。'),
+            _title('你好，新伙伴'),
+            _hint('从一个单词开始，\n和我一起，把英语说出来。'),
             _button(
               loading ? '正在准备' : '开始我的学习',
               loading
@@ -340,7 +454,7 @@ class _AuthGateState extends State<AuthGate> {
             Center(
               child: TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFF537A65),
+                  foregroundColor: const Color(0xFFB4DED2),
                 ),
                 onPressed: loading
                     ? null
@@ -356,15 +470,12 @@ class _AuthGateState extends State<AuthGate> {
             Center(
               child: TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFF537A65),
+                  foregroundColor: const Color(0xFFB4DED2),
                 ),
-                onPressed: () => setState(() {
-                  user = null;
-                  inLesson = true;
-                }),
+                onPressed: () => _enterLesson(guest: true),
                 child: const Text(
                   '先体验课程',
-                  style: TextStyle(color: Color(0xFF7C887F)),
+                  style: TextStyle(color: Color(0xFFAAC7C6)),
                 ),
               ),
             ),
@@ -412,16 +523,13 @@ class _AuthGateState extends State<AuthGate> {
               const SizedBox(height: 16),
               const Text(
                 '短信登录即将开放，你可以先体验课程。',
-                style: TextStyle(fontSize: 13, color: Color(0xFF7C887F)),
+                style: TextStyle(fontSize: 13, color: Color(0xFFAAC7C6)),
               ),
               TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFF537A65),
+                  foregroundColor: const Color(0xFFB4DED2),
                 ),
-                onPressed: () => setState(() {
-                  user = null;
-                  inLesson = true;
-                }),
+                onPressed: () => _enterLesson(guest: true),
                 child: const Text('先体验课程'),
               ),
             ],
@@ -431,7 +539,7 @@ class _AuthGateState extends State<AuthGate> {
               style: TextStyle(
                 fontSize: 12,
                 height: 1.6,
-                color: Color(0xFF839087),
+                color: Color(0xFF96B9BA),
               ),
             ),
           ],
@@ -453,7 +561,7 @@ class _AuthGateState extends State<AuthGate> {
             _button(busy ? '正在验证' : '验证并继续', busy ? null : _verify),
             TextButton(
               style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFF537A65),
+                foregroundColor: const Color(0xFFB4DED2),
               ),
               onPressed: busy || cooldown > 0 ? null : _send,
               child: Text(cooldown > 0 ? '${cooldown}s 后重新获取' : '重新获取验证码'),
@@ -462,10 +570,10 @@ class _AuthGateState extends State<AuthGate> {
           if (step == 4 && user != null) ...[
             _title('${user!.nickname}，${newlyRegistered ? '很高兴认识你' : '欢迎回来'}'),
             _hint(newlyRegistered ? '准备好了，就从第一声英语开始。' : '准备好了，就从这里继续。'),
-            _button('进入课堂', () => setState(() => inLesson = true)),
+            _button('进入课堂', () => _enterLesson()),
             TextButton(
               style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFF537A65),
+                foregroundColor: const Color(0xFFB4DED2),
               ),
               onPressed: busy ? null : () => _perform(_leave),
               child: const Text('换个账号'),
@@ -479,7 +587,7 @@ class _AuthGateState extends State<AuthGate> {
                 child: Text(
                   error,
                   style: const TextStyle(
-                    color: Color(0xFFA6533D),
+                    color: Color(0xFFFFC5A2),
                     fontSize: 13,
                   ),
                 ),
@@ -497,7 +605,7 @@ class _AuthGateState extends State<AuthGate> {
         fontSize: 28,
         height: 1.35,
         fontWeight: FontWeight.w600,
-        color: Color(0xFF243D36),
+        color: Color(0xFFF8F5DF),
       ),
     ),
   );
@@ -508,7 +616,7 @@ class _AuthGateState extends State<AuthGate> {
       style: const TextStyle(
         fontSize: 14,
         height: 1.8,
-        color: Color(0xFF718179),
+        color: Color(0xFFB5D2D1),
       ),
     ),
   );
@@ -518,9 +626,11 @@ class _AuthGateState extends State<AuthGate> {
     child: FilledButton(
       onPressed: onPressed,
       style: FilledButton.styleFrom(
-        backgroundColor: const Color(0xFF355F4C),
-        foregroundColor: Colors.white,
-        disabledBackgroundColor: const Color(0xFFDDE4DC),
+        backgroundColor: const Color(0xFFFFCE69),
+        elevation: 4,
+        shadowColor: const Color(0xFF031E2A),
+        foregroundColor: const Color(0xFF34381F),
+        disabledBackgroundColor: const Color(0xFF446369),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       ),
       child: Text(
@@ -549,15 +659,17 @@ class _AuthGateState extends State<AuthGate> {
     onSubmitted: (_) => submit(),
     style: const TextStyle(
       fontSize: 21,
-      color: Color(0xFF243D36),
+      color: Color(0xFFF8F5DF),
       letterSpacing: 1,
     ),
     decoration: InputDecoration(
       labelText: label,
+      labelStyle: const TextStyle(color: Color(0xFFBCD8D5)),
+      floatingLabelStyle: const TextStyle(color: Color(0xFFFFDE97)),
       prefixText: prefix,
       counterText: '',
       filled: true,
-      fillColor: Colors.white,
+      fillColor: const Color(0xFF174B58),
       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
@@ -565,71 +677,8 @@ class _AuthGateState extends State<AuthGate> {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(18),
-        borderSide: const BorderSide(color: Color(0xFF7E9E83), width: 1.5),
+        borderSide: const BorderSide(color: Color(0xFFFFCE69), width: 1.5),
       ),
     ),
   );
-}
-
-class _WelcomeArt extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    canvas.save();
-    canvas.scale(size.width / 300, size.height / 230);
-    final p = Paint();
-    canvas.drawCircle(
-      const Offset(133, 117),
-      95,
-      p..color = const Color(0xFFE9EDDC),
-    );
-    canvas.drawCircle(
-      const Offset(236, 45),
-      24,
-      p..color = const Color(0xFFF0CD75),
-    );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        const Rect.fromLTWH(35, 67, 168, 103),
-        const Radius.circular(36),
-      ),
-      p..color = const Color(0xFF70937D),
-    );
-    canvas.drawPath(
-      Path()
-        ..moveTo(66, 157)
-        ..lineTo(67, 190)
-        ..quadraticBezierTo(100, 178, 111, 157)
-        ..close(),
-      p,
-    );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        const Rect.fromLTWH(139, 128, 115, 70),
-        const Radius.circular(26),
-      ),
-      p..color = const Color(0xFFDCE6D2),
-    );
-    for (var i = 0; i < 3; i++) {
-      canvas.drawCircle(
-        Offset(83 + i * 35, 118),
-        6,
-        p..color = const Color(0xFFF9F9F2),
-      );
-    }
-    canvas.drawArc(
-      const Rect.fromLTWH(170, 147, 49, 26),
-      .2,
-      2.7,
-      false,
-      p
-        ..color = const Color(0xFF5E7965)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 3
-        ..strokeCap = StrokeCap.round,
-    );
-    canvas.restore();
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

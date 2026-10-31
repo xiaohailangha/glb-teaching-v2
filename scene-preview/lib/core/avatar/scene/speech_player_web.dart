@@ -25,21 +25,38 @@ class SpeechPlayer {
   bool _disposed = false;
   final _assetBlobs = <String, String>{};
 
-  Future<void> preloadAssets(List<String> paths) async {
-    // Small fixed vocabulary only; sequential downloads do not compete with
-    // model loading or create extra audio elements that need Safari unlocking.
-    for (final path in paths) {
-      if (_disposed) return;
-      try {
-        final response = await web.window.fetch(_assetUrl(path).toJS).toDart;
-        if (!response.ok) continue;
-        final blob = await response.blob().toDart;
+  Future<void> preloadAssets(
+    List<String> paths, {
+    bool strict = false,
+    void Function(int, int)? onProgress,
+  }) async {
+    var cursor = 0, completed = 0;
+    Future<void> worker() async {
+      while (cursor < paths.length) {
+        final path = paths[cursor++];
         if (_disposed) return;
-        _assetBlobs[path] = web.URL.createObjectURL(blob);
-      } catch (_) {
-        // The normal asset URL remains available; preloading is optional.
+        try {
+          if (!_assetBlobs.containsKey(path)) {
+            final response = await web.window
+                .fetch(_assetUrl(path).toJS)
+                .toDart
+                .timeout(const Duration(seconds: 30));
+            if (!response.ok) throw StateError('Audio unavailable');
+            final blob = await response.blob().toDart.timeout(
+              const Duration(seconds: 30),
+            );
+            if (_disposed) return;
+            _assetBlobs[path] = web.URL.createObjectURL(blob);
+          }
+        } catch (_) {
+          if (strict) throw StateError('课程声音暂时未能准备完成，请重试');
+        }
+        completed++;
+        onProgress?.call(completed, paths.length);
       }
     }
+
+    await Future.wait(List.generate(4, (_) => worker()));
   }
 
   Stream<ProcessingState> get processingStateStream => _states.stream;

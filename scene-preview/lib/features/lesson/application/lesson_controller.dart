@@ -22,8 +22,38 @@ class LessonController extends ChangeNotifier {
   }) {
     if (accountNickname != null) nickname = accountNickname;
   }
-  final String accountId;
-  final Future<void> Function(String)? saveAccountNickname;
+  String accountId;
+  Future<void> Function(String)? saveAccountNickname;
+  final resourceTick = ValueNotifier<int>(0);
+  bool scenePresented = false;
+  double resourceProgress = 0;
+  String resourceLabel = '准备出发';
+  Future<void> bindAccount({
+    String id = '',
+    String? name,
+    Future<void> Function(String)? saveName,
+  }) async {
+    stop();
+    await _saveQueue;
+    accountId = id;
+    saveAccountNickname = saveName;
+    nickname = name ?? '莉莉';
+    courseCheckpoint = null;
+    vocabulary.seen.clear();
+    vocabulary.newThisCourse.clear();
+    await loadCourseProgress();
+    if (!_disposed) notifyListeners();
+  }
+
+  void resetResources() {
+    ready = scenePresented = false;
+    error = null;
+    resourceProgress = 0;
+    resourceLabel = '重新准备';
+    resourceTick.value++;
+    notifyListeners();
+  }
+
   String _storageKey(String key) =>
       accountId.isEmpty ? key : 'account:$accountId:$key';
 
@@ -254,11 +284,25 @@ class LessonController extends ChangeNotifier {
   void handle(Map<String, dynamic> message) {
     if (_disposed) return;
     final event = message['event'];
-    if (event == 'ready') {
+    if (const {
+      'resource-progress',
+      'scene-presented',
+      'ready',
+      'error',
+    }.contains(event)) {
+      resourceTick.value++;
+    }
+    if (event == 'resource-progress') {
+      resourceProgress = (message['value'] as num).toDouble().clamp(0, .99);
+      resourceLabel = message['label'] as String;
+    } else if (event == 'scene-presented') {
+      scenePresented = true;
+      resourceProgress = 1;
+      resourceLabel = '准备好了';
+    } else if (event == 'ready') {
       ready = true;
       error = null;
       diagnostics = message;
-      expose(word.id);
       speechAvailable = (message['speech'] as Map?)?['configured'] == true;
       _send?.call({'type': 'focus', 'closeUp': closeUp});
       _send?.call(_renderSettings);
@@ -781,6 +825,7 @@ class LessonController extends ChangeNotifier {
     _disposed = true;
     _send?.call({'type': 'stop'});
     playbackTick.dispose();
+    resourceTick.dispose();
     super.dispose();
   }
 }

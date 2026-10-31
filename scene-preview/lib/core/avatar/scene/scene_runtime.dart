@@ -307,8 +307,18 @@ class SceneRuntime extends ChangeNotifier {
   late Scene scene;
   final frameMeter = RenderedFrameMeter();
   final background = TeachingBackground();
+  double welcomeMix = 0;
+  int _presentedFrames = 0;
   Scene _measuredScene() => _MeasuredScene(() {
-    if (loaded && !disposed) frameMeter.record(now);
+    if (loaded && !disposed) {
+      frameMeter.record(now);
+      _presentedFrames++;
+      if (_presentedFrames == 2) {
+        scheduleMicrotask(() {
+          if (!disposed) emit('scene-presented');
+        });
+      }
+    }
   });
   Node? model;
   late final AutomaticReader automatic;
@@ -360,6 +370,7 @@ class SceneRuntime extends ChangeNotifier {
 
   Future<void> init() async {
     try {
+      emit('resource-progress', {'value': .02, 'label': '布置学习世界'});
       final speechInit = speech.init();
       await Scene.initializeStaticResources();
       if (!(const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
@@ -392,13 +403,17 @@ class SceneRuntime extends ChangeNotifier {
         'assets/avatar/models/storm-performance.glb',
         bundle: kIsWeb
             ? SceneAssetBundle((completed, total) {
-                loading =
-                    '正在下载 Storm 人物… ${(completed / total * 100).round()}%';
+                loading = '正在迎接你的学习伙伴';
+                emit('resource-progress', {
+                  'value': .05 + completed / total * .65,
+                  'label': '迎接你的学习伙伴',
+                });
                 if (!disposed) notifyListeners();
               })
             : null,
       );
       if (disposed) return;
+      emit('resource-progress', {'value': .73, 'label': '布置人物与场景'});
       await repairClothingBindings(model!);
       calibrateNeutralGaze(model!);
       model!.scale = vm.Vector3.all(1.5);
@@ -494,6 +509,26 @@ class SceneRuntime extends ChangeNotifier {
           _audioEnded();
         }
       });
+      emit('resource-progress', {'value': .76, 'label': '准备本课声音'});
+      final audioPaths = timings.entries
+          .where((e) => e.value is Map && e.value['bundled'] == true)
+          .map((e) => 'assets/avatar/audio/${e.key}.wav')
+          .toList();
+      await speech.player.preloadAssets(
+        audioPaths,
+        strict: true,
+        onProgress: (done, total) {
+          emit('resource-progress', {
+            'value': .76 + done / total * .20,
+            'label': '准备本课声音',
+          });
+        },
+      );
+      for (final word in ['apple', 'banana']) {
+        await rootBundle.loadString('assets/avatar/images/$word.svg');
+      }
+      if (disposed) return;
+      emit('resource-progress', {'value': .98, 'label': '点亮学习世界'});
       loaded = true;
       if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
           Uri.base.queryParameters['capture'] == '1') {
@@ -511,7 +546,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r18-auth',
+        'version': 'scene-0.2.0-r19-world',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -1173,6 +1208,19 @@ class SceneRuntime extends ChangeNotifier {
   PerspectiveCamera camera() {
     final baseDistance = closeUp ? .78 : 1.68;
     final distance = baseDistance * math.max(1, .59 / (aspect * .55));
+    if (welcomeMix > 0) {
+      final portrait = aspect < 1;
+      return _WelcomeCamera(
+        ui.lerpDouble(distance, portrait ? 3.8 : 2.35, welcomeMix)!,
+        ui.lerpDouble(
+          1.64 - (distance - baseDistance) * .195,
+          portrait ? 1.30 : 1.47,
+          welcomeMix,
+        )!,
+        ui.lerpDouble(-.56, portrait ? 0 : -.45, welcomeMix)!,
+        (portrait ? .20 : 0) * welcomeMix,
+      );
+    }
     return _TeachingCamera(distance, 1.64 - (distance - baseDistance) * .195);
   }
 
@@ -1238,4 +1286,28 @@ class _TeachingCamera extends PerspectiveCamera {
       );
   @override
   PerspectiveProjection get projection => _TeachingProjection();
+}
+
+class _WelcomeProjection extends PerspectiveProjection {
+  _WelcomeProjection(this.x, this.y)
+    : super(fovRadiansY: 30 * math.pi / 180, near: .05, far: 12);
+  final double x, y;
+  @override
+  vm.Matrix4 getProjectionMatrix(double aspectRatio, {vm.Vector2? jitter}) {
+    final m = super.getProjectionMatrix(aspectRatio, jitter: jitter);
+    m[8] += x;
+    m[9] += y;
+    return m;
+  }
+}
+
+class _WelcomeCamera extends PerspectiveCamera {
+  _WelcomeCamera(double distance, double height, this.x, this.y)
+    : super(
+        position: vm.Vector3(.025, height, -distance),
+        target: vm.Vector3(0, height - .02, 0),
+      );
+  final double x, y;
+  @override
+  PerspectiveProjection get projection => _WelcomeProjection(x, y);
 }
