@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,6 @@ import '../application/lesson_controller.dart';
 import '../domain/course_catalog.dart';
 
 const _night = Color(0xFF111D26);
-const _mint = Color(0xFFD6F38B);
 const _palettes = [
   [Color(0xFFFFC985), Color(0xFFF48168)],
   [Color(0xFFB2EFE0), Color(0xFF56B8B6)],
@@ -50,8 +50,26 @@ const _phrases = [
   'Two green apples.',
 ];
 
-/// A full-screen, infinitely wrapping poster deck. Course identity is independent
-/// of its visual position; swiping never starts or changes a saved lesson.
+/// The teaching route stays mounted and visible through the frosted overlay.
+Future<void> showCourseLibrary(
+  BuildContext context,
+  LessonController controller,
+) {
+  final reduced = MediaQuery.disableAnimationsOf(context);
+  return Navigator.of(context).push<void>(
+    PageRouteBuilder<void>(
+      opaque: false,
+      barrierDismissible: false,
+      barrierColor: Colors.transparent,
+      transitionDuration: Duration(milliseconds: reduced ? 0 : 220),
+      reverseTransitionDuration: Duration(milliseconds: reduced ? 0 : 180),
+      pageBuilder: (_, _, _) => CourseLibraryPage(controller: controller),
+      transitionsBuilder: (_, animation, _, child) =>
+          FadeTransition(opacity: animation, child: child),
+    ),
+  );
+}
+
 class CourseLibraryPage extends StatefulWidget {
   const CourseLibraryPage({super.key, required this.controller});
   final LessonController controller;
@@ -62,10 +80,12 @@ class CourseLibraryPage extends StatefulWidget {
 class _CourseLibraryPageState extends State<CourseLibraryPage>
     with SingleTickerProviderStateMixin {
   late final AnimationController _position;
-  Map<String, Map<String, dynamic>> _records = {};
+  List<int> _indices = List.generate(courseCatalog.length, (i) => i);
+  String? _type;
   bool _opening = false;
   double _stride = 220;
-  int get _index => _position.value.round() % courseCatalog.length;
+  int get _page => _position.value.round() % _indices.length;
+  int get _index => _indices[_page];
   @override
   void initState() {
     super.initState();
@@ -74,18 +94,24 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     );
     _position = AnimationController.unbounded(
       vsync: this,
-      value: (8000 + math.max(0, initial)).toDouble(),
+      value: (courseCatalog.length * 1000 + math.max(0, initial)).toDouble(),
     );
-    _load();
   }
 
-  Future<void> _load() async {
-    try {
-      final records = await widget.controller.readCourseCheckpoints();
-      if (mounted) setState(() => _records = records);
-    } catch (_) {
-      /* The deck remains usable if local storage is unavailable. */
-    }
+  void _filter(CourseType? type) {
+    if (_opening || _type == type?.id) return;
+    final previous = _index;
+    _position.stop();
+    setState(() {
+      _type = type?.id;
+      _indices = [
+        for (var i = 0; i < courseCatalog.length; i++)
+          if (type == null || type.courseIds.contains(courseCatalog[i].id)) i,
+      ];
+      _position.value =
+          (_indices.length * 1000 + math.max(0, _indices.indexOf(previous)))
+              .toDouble();
+    });
   }
 
   void _settle(double target) {
@@ -95,7 +121,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     } else {
       _position.animateTo(
         target,
-        duration: const Duration(milliseconds: 460),
+        duration: const Duration(milliseconds: 420),
         curve: Curves.easeOutCubic,
       );
     }
@@ -125,116 +151,39 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     super.dispose();
   }
 
-  Widget _controls(bool landscape) {
-    final course = courseCatalog[_index];
-    final started = _records.containsKey(course.id);
-    return Padding(
-      padding: EdgeInsets.fromLTRB(
-        landscape ? 0 : 28,
-        8,
-        28,
-        landscape ? 12 : 20,
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: landscape
-            ? CrossAxisAlignment.start
-            : CrossAxisAlignment.center,
-        children: [
-          Text(
-            course.goal,
-            textAlign: landscape ? TextAlign.left : TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: landscape ? 21 : 19,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            started ? '接着上次的地方，继续开口。' : '听一个单词，慢慢说成一句话。',
-            textAlign: landscape ? TextAlign.left : TextAlign.center,
-            style: const TextStyle(
-              color: Color(0xFF91A5AF),
-              fontSize: 12,
-              height: 1.5,
-            ),
-          ),
-          const SizedBox(height: 20),
-          SizedBox(
-            width: landscape ? 280 : 340,
-            height: 54,
-            child: FilledButton(
-              onPressed: _opening ? null : _open,
-              style: FilledButton.styleFrom(
-                backgroundColor: _mint,
-                foregroundColor: _night,
-                disabledBackgroundColor: _mint.withValues(alpha: .4),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  if (_opening)
-                    const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: _night,
-                      ),
-                    )
-                  else
-                    Text(
-                      started ? '继续这一课' : '开始这一课',
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  const SizedBox(width: 14),
-                  const Icon(Icons.arrow_forward_rounded, size: 20),
-                ],
+  Widget _typeTab(CourseType? type) {
+    final selected = _type == type?.id;
+    return Semantics(
+      selected: selected,
+      child: TextButton(
+        onPressed: _opening ? null : () => _filter(type),
+        style: TextButton.styleFrom(
+          foregroundColor: selected ? Colors.white : Colors.white60,
+          minimumSize: const Size(48, 48),
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          shape: const RoundedRectangleBorder(),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              type?.title ?? '全部',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
               ),
             ),
-          ),
-          const SizedBox(height: 10),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              IconButton(
-                tooltip: '上一课',
-                onPressed: _opening ? null : () => _next(-1),
-                icon: const Icon(
-                  Icons.chevron_left_rounded,
-                  color: Color(0xFFAEC0C8),
-                ),
+            const SizedBox(height: 7),
+            Container(
+              height: 2,
+              width: 18,
+              decoration: BoxDecoration(
+                color: selected ? Colors.white : Colors.transparent,
+                borderRadius: BorderRadius.circular(2),
               ),
-              Semantics(
-                liveRegion: true,
-                child: Text(
-                  '${(_index + 1).toString().padLeft(2, '0')}  /  08',
-                  key: const ValueKey('course-position'),
-                  style: const TextStyle(
-                    color: Color(0xFFAEC0C8),
-                    fontSize: 12,
-                    letterSpacing: 3,
-                  ),
-                ),
-              ),
-              IconButton(
-                tooltip: '下一课',
-                onPressed: _opening ? null : () => _next(1),
-                icon: const Icon(
-                  Icons.chevron_right_rounded,
-                  color: Color(0xFFAEC0C8),
-                ),
-              ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -242,27 +191,48 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
   Widget _deck() => LayoutBuilder(
     builder: (context, box) {
       final reduced = MediaQuery.disableAnimationsOf(context);
-      final height = math.min(540.0, box.maxHeight * .91);
-      final width = math.min(math.min(370.0, box.maxWidth * .77), height * .70);
-      final cardHeight = width / .70;
-      _stride = width * .72;
+      final portrait = box.maxHeight > box.maxWidth;
+      final cardHeight = math.min(
+        portrait ? 720.0 : 570.0,
+        box.maxHeight * .93,
+      );
+      final width = math.min(
+        portrait ? box.maxWidth * .80 : 410.0,
+        cardHeight * .70,
+      );
       final position = _position.value;
       final center = position.round();
-      // Draw the nearest poster last: side cards never cover the main card.
-      final slots = [for (var i = center - 3; i <= center + 3; i++) i]
-        ..sort((a, b) => (b - position).abs().compareTo((a - position).abs()));
+      _stride = width * .72;
+      final slots =
+          _indices.length == 1
+                ? [center]
+                : [for (var i = center - 3; i <= center + 3; i++) i]
+            ..sort(
+              (a, b) => (b - position).abs().compareTo((a - position).abs()),
+            );
+      final activeRect = Rect.fromCenter(
+        center: Offset(box.maxWidth / 2, box.maxHeight / 2),
+        width: width,
+        height: cardHeight,
+      );
       return Semantics(
-        label: '课程卡片，左右滑动切换',
-        onIncrease: _opening ? null : () => _next(1),
-        onDecrease: _opening ? null : () => _next(-1),
+        container: true,
         child: GestureDetector(
           key: const ValueKey('course-deck'),
           behavior: HitTestBehavior.opaque,
-          onHorizontalDragStart: _opening ? null : (_) => _position.stop(),
-          onHorizontalDragUpdate: _opening
+          excludeFromSemantics: true,
+          onTapUp: _opening
+              ? null
+              : (event) {
+                  if (activeRect.contains(event.localPosition)) _open();
+                },
+          onHorizontalDragStart: _opening || _indices.length < 2
+              ? null
+              : (_) => _position.stop(),
+          onHorizontalDragUpdate: _opening || _indices.length < 2
               ? null
               : (event) => _position.value -= event.delta.dx / _stride,
-          onHorizontalDragEnd: _opening
+          onHorizontalDragEnd: _opening || _indices.length < 2
               ? null
               : (event) {
                   final velocity = event.primaryVelocity ?? 0;
@@ -285,30 +255,28 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                       builder: (context) {
                         final delta = slot - position;
                         final distance = delta.abs();
-                        final scale = reduced
-                            ? 1.0
-                            : math.pow(.78, distance).toDouble();
                         return Transform.translate(
                           offset: Offset(
                             delta * width * .62,
-                            reduced ? 0 : distance * 16,
+                            reduced ? 0 : distance * 12,
                           ),
                           child: Transform.scale(
-                            scale: scale,
+                            scale: reduced
+                                ? 1
+                                : math.pow(.78, distance).toDouble(),
                             child: Transform.rotate(
                               angle: reduced
                                   ? 0
-                                  : delta.clamp(-2.0, 2.0) * .045,
+                                  : delta.clamp(-2.0, 2.0) * .035,
                               child: Opacity(
                                 opacity: math.max(0.0, 1 - distance * .25),
                                 child: IgnorePointer(
                                   child: ExcludeSemantics(
-                                    excluding: slot != center,
                                     child: SizedBox(
                                       width: width,
                                       height: cardHeight,
                                       child: _Poster(
-                                        index: slot % courseCatalog.length,
+                                        index: _indices[slot % _indices.length],
                                       ),
                                     ),
                                   ),
@@ -318,6 +286,22 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                           ),
                         );
                       },
+                    ),
+                  Positioned.fromRect(
+                    rect: activeRect,
+                    child: Semantics(
+                      key: const ValueKey('active-course-target'),
+                      button: true,
+                      enabled: !_opening,
+                      label: '进入课程：${courseCatalog[_index].title}',
+                      hint: '左右滑动切换，点击当前卡片进入',
+                      onTap: _opening ? null : _open,
+                      child: const IgnorePointer(child: SizedBox.expand()),
+                    ),
+                  ),
+                  if (_opening)
+                    const Center(
+                      child: CircularProgressIndicator(color: Colors.white),
                     ),
                 ],
               ),
@@ -329,75 +313,108 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
   );
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-    backgroundColor: _night,
-    body: AnimatedBuilder(
-      animation: _position,
-      builder: (context, _) {
-        final landscape =
-            MediaQuery.sizeOf(context).width >
-            MediaQuery.sizeOf(context).height * 1.25;
-        return DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: RadialGradient(
-              center: const Alignment(0, -.25),
-              radius: 1.0,
-              colors: [Color.lerp(_night, _palettes[_index][1], .13)!, _night],
-            ),
-          ),
-          child: SafeArea(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(18, 4, 18, 0),
-                  child: Row(
-                    children: [
-                      IconButton(
-                        tooltip: '返回课堂',
-                        onPressed: _opening
-                            ? null
-                            : () => Navigator.pop(context),
-                        icon: const Icon(
-                          Icons.arrow_back_rounded,
-                          color: Colors.white,
-                        ),
-                      ),
-                      const Expanded(
-                        child: Text(
-                          '挑一课，开口说',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 48),
-                    ],
-                  ),
-                ),
-                if (landscape)
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Expanded(flex: 6, child: _deck()),
-                        Expanded(
-                          flex: 4,
-                          child: SingleChildScrollView(child: _controls(true)),
-                        ),
-                      ],
-                    ),
-                  )
-                else ...[
-                  Expanded(child: _deck()),
-                  _controls(false),
+  Widget build(BuildContext context) => PopScope(
+    canPop: !_opening,
+    child: Scaffold(
+      backgroundColor: Colors.transparent,
+      body: ClipRect(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  _night.withValues(alpha: .30),
+                  _night.withValues(alpha: .20),
+                  _night.withValues(alpha: .44),
                 ],
-              ],
+              ),
+            ),
+            child: SafeArea(
+              child: AnimatedBuilder(
+                animation: _position,
+                builder: (context, _) => Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 12,
+                        right: 10,
+                        top: 3,
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: [
+                                  _typeTab(null),
+                                  for (final type in courseTypes)
+                                    _typeTab(type),
+                                ],
+                              ),
+                            ),
+                          ),
+                          IconButton(
+                            tooltip: '关闭课程',
+                            onPressed: _opening
+                                ? null
+                                : () => Navigator.pop(context),
+                            icon: const Icon(
+                              Icons.close_rounded,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(child: _deck()),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 6),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            tooltip: '上一课',
+                            onPressed: _opening || _indices.length < 2
+                                ? null
+                                : () => _next(-1),
+                            icon: const Icon(
+                              Icons.chevron_left_rounded,
+                              color: Colors.white70,
+                            ),
+                          ),
+                          Text(
+                            '${(_page + 1).toString().padLeft(2, '0')} / ${_indices.length.toString().padLeft(2, '0')}  ·  点击卡片进入',
+                            key: const ValueKey('course-position'),
+                            style: const TextStyle(
+                              color: Colors.white70,
+                              fontSize: 11,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                          IconButton(
+                            tooltip: '下一课',
+                            onPressed: _opening || _indices.length < 2
+                                ? null
+                                : () => _next(1),
+                            icon: const Icon(
+                              Icons.chevron_right_rounded,
+                              color: Colors.white70,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
-        );
-      },
+        ),
+      ),
     ),
   );
 }
@@ -410,6 +427,7 @@ class _Poster extends StatelessWidget {
     builder: (context, box) {
       // A single scalable composition keeps the same poster proportions on small
       // phones, landscape devices and larger text settings without clipping.
+      final designHeight = box.maxHeight / box.maxWidth * 320;
       return Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(28),
@@ -427,7 +445,7 @@ class _Poster extends StatelessWidget {
             fit: BoxFit.fill,
             child: SizedBox(
               width: 320,
-              height: 457,
+              height: designHeight,
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -507,7 +525,7 @@ class _Poster extends StatelessWidget {
                     ),
                     Positioned(
                       left: 21,
-                      top: 164,
+                      top: designHeight * .36,
                       child: Transform.rotate(
                         angle: -.15,
                         child: SvgPicture.asset(
@@ -520,7 +538,7 @@ class _Poster extends StatelessWidget {
                     ),
                     Positioned(
                       right: 5,
-                      top: 217,
+                      top: designHeight * .48,
                       child: Transform.rotate(
                         angle: .18,
                         child: SvgPicture.asset(

@@ -18,3 +18,25 @@ const courseCatalog = [
     '一起复习颜色、大小和数量',
   ),
 ];
+
+/// Types group lessons directly; there is no chapter level in the picker.
+class CourseType {
+  const CourseType(this.id, this.title, this.courseIds);
+  final String id, title;
+  final List<String> courseIds;
+}
+
+const courseTypes = [
+  CourseType('basics', '基础表达', [
+    'adult-fruit-v2',
+    'adult-drinks-v1',
+    'adult-polite-v1',
+  ]),
+  CourseType('situations', '生活场景', ['adult-shop-v1']),
+  CourseType('description', '描述事物', [
+    'adult-colors-v1',
+    'adult-sizes-v1',
+    'adult-numbers-v1',
+  ]),
+  CourseType('review', '综合复习', ['adult-describe-review-v1']),
+];

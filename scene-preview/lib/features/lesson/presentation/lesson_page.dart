@@ -72,12 +72,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     if (controller.adultCourse && !controller.coursePaused) {
       controller.pauseCourse();
     }
-    await Navigator.of(context).push<void>(
-      MaterialPageRoute(
-        fullscreenDialog: true,
-        builder: (_) => CourseLibraryPage(controller: controller),
-      ),
-    );
+    await showCourseLibrary(context, controller);
   }
 
   void _settings() {

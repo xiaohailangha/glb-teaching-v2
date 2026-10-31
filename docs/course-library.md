@@ -1,13 +1,9 @@
-# Immersive course picker — 2026-10-31
+# Frosted course overlay — 2026-10-31
 
-The previous catalog/dashboard layout has been replaced completely. The Flutter APP now uses a single-screen dark stage with full-bleed illustrated course posters, one primary entry action, and a small position/navigation control. There are no filter tabs, resume panels, grids or progress percentages. The classroom has matching course and settings icon buttons, with courses on the left.
+The course picker is a non-opaque route over the existing teaching screen, using a clipped BackdropFilter and translucent tint. Opening it pauses an active lesson; closing it preserves that lesson and its checkpoint. Both classroom icon buttons retain matching size and styling.
 
-Inspired by the interaction in https://demos.gsap.com/demo/infinite-card-slider/ (source preview inspected at https://codepen.io/GreenSock/pen/RwKwLWK). No GSAP dependency or copied demo assets are included: Flutter renders the gesture-driven deck natively.
+The picker has exactly two levels: type and course. A horizontally scrollable text/underline type selector filters actual course IDs (basic expressions, situations, descriptions, review); All includes every course. The mapping lives in course_catalog.dart, with a test requiring each course to appear in exactly one type. No empty future categories are presented.
 
-- Infinite position wraps modulo the eight actual course IDs, starting at the currently selected course.
-- Custom depth-sorted Stack draws the nearest poster last; adjacent posters scale, translate, fade and rotate with drag position. Release velocity and distance determine a smoothly snapped target.
-- Touch and mouse drags browse only; the separate primary action awaits course selection and returns to the classroom without autoplay or resetting saved progress.
-- Portrait uses a bounded full-screen deck and bottom action. Landscape uses a deck with controls alongside. Reduced-motion settings remove decorative transforms and use immediate settling.
-- Account-scoped saved records determine the continue label. Storage failures do not block course browsing.
+The full remaining screen is the infinite, depth-sorted card deck in both orientations. There is no side panel, description block or separate start button. Only a tap within the centered card opens the browsed course; dragging and tapping its exposed neighbors do not enter or change the learner's active course. Opening awaits the existing selection flow without autoplay, mic activation or resetting progress. A one-course type displays one card and disables cycling. The compact footer offers accessible previous/next controls and a position hint.
 
-Verification: focused tests pass at 320×568, 390×844, 844×390 and 1280×900, including forward/backward wrap, touch/mouse swipe, reduced motion, preserved active lesson while browsing, correct selection and no autoplay. Static analysis passes.
+Tests cover transparent route and backdrop preservation, type membership, filtered selection, touch/mouse drag, wrap, outside taps, direct card entry, reopening at the selected course, single-course categories, cancellation, and reduced motion at 320×568, 390×844, 844×390 and 1280×900. No administrator code is changed.
