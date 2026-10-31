@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -7,7 +8,6 @@ import 'package:flutter/services.dart';
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
 import '../lesson/application/learning_sync.dart';
-import 'world_loading.dart';
 import 'entry_design.dart';
 import 'world_browser_stub.dart'
     if (dart.library.js_interop) 'world_browser_web.dart';
@@ -15,15 +15,21 @@ import '../../core/avatar/avatar_view.dart';
 import '../lesson/application/lesson_controller.dart';
 
 class AuthGate extends StatefulWidget {
-  const AuthGate({super.key, this.api, this.prepareScene = true});
+  const AuthGate({
+    super.key,
+    this.api,
+    this.prepareScene = true,
+    this.controller,
+  });
   final bool prepareScene;
+  final LessonController? controller;
   final AuthApi? api;
   @override
   State<AuthGate> createState() => _AuthGateState();
 }
 
 class _AuthGateState extends State<AuthGate> {
-  final shared = LessonController();
+  late final shared = widget.controller ?? LessonController();
   int sceneAttempt = 0;
   bool waitingForScene = false;
   bool pendingGuest = false;
@@ -32,21 +38,29 @@ class _AuthGateState extends State<AuthGate> {
   final nickname = TextEditingController(),
       phone = TextEditingController(),
       code = TextEditingController();
+  final phoneFocus = FocusNode(),
+      codeFocus = FocusNode(),
+      nameFocus = FocusNode();
   bool loading = true, busy = false, smsReady = false, inLesson = false;
   int step = 0, cooldown = 0;
-  DateTime? resendAt;
+  DateTime? resendAt, challengeUntil, proofUntil;
+  String sentPhone = '', verifiedCode = '';
+  bool authReady = false;
   String error = '', challenge = '', registrationToken = '';
   LearnerAccount? user;
   Timer? timer;
   @override
   void initState() {
     super.initState();
-    if (!widget.prepareScene) {
+    if (!widget.prepareScene && widget.controller == null) {
       shared.ready = true;
       shared.scenePresented = true;
     }
     WidgetsBinding.instance.addPostFrameCallback((_) => hideBootSplash());
     shared.resourceTick.addListener(_sceneChanged);
+    phone.addListener(_inputChanged);
+    code.addListener(_inputChanged);
+    nickname.addListener(_inputChanged);
     _restore();
   }
 
@@ -59,24 +73,42 @@ class _AuthGateState extends State<AuthGate> {
       if (!mounted) return;
       smsReady = results[0]['smsReady'] == true;
       testMode = results[0]['testMode'] == true;
+      authReady = true;
       if (results[1]['user'] is Map) {
         user = LearnerAccount.fromJson(results[1]['user'] as Map);
-        step = 4;
       }
     } catch (_) {
-      /* Keep the existing preview available even if auth is unavailable. */
+      error = '连接未完成，请重试';
     }
     if (mounted) {
       setState(() => loading = false);
-      if (user != null) _enterLesson();
+      _sceneChanged();
+    }
+  }
+
+  void _inputChanged() {
+    if (mounted) {
+      setState(() {
+        error = '';
+      });
     }
   }
 
   void _go(int value) {
+    final transferFocus = step != 0 && value != 4;
+    if (value == 4) FocusManager.instance.primaryFocus?.unfocus();
     setState(() {
       step = value;
       error = '';
     });
+    if (transferFocus) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && step == value) {
+          (value == 2 ? phoneFocus : (value == 3 ? codeFocus : nameFocus))
+              .requestFocus();
+        }
+      });
+    }
   }
 
   Future<void> _perform(Future<void> Function() action) async {
@@ -128,9 +160,17 @@ class _AuthGateState extends State<AuthGate> {
     });
   }
 
-  Future<void> _send() => _perform(() async {
+  Future<void> _send({bool resend = false}) => _perform(() async {
     if (!RegExp(r'^1[3-9]\d{9}$').hasMatch(phone.text.trim())) {
       throw const AuthFailure('请输入正确的手机号');
+    }
+    if (!resend &&
+        sentPhone == phone.text.trim() &&
+        challenge.isNotEmpty &&
+        challengeUntil != null &&
+        DateTime.now().isBefore(challengeUntil!)) {
+      _go(3);
+      return;
     }
     final result = await api.request(
       'code',
@@ -139,6 +179,10 @@ class _AuthGateState extends State<AuthGate> {
     );
     if (!mounted) return;
     challenge = result['challengeId'] as String;
+    sentPhone = phone.text.trim();
+    challengeUntil = DateTime.now().add(
+      Duration(seconds: (result['expiresIn'] as num?)?.toInt() ?? 300),
+    );
     code.clear();
     registrationToken = '';
     _countdown((result['retryAfter'] as num).toInt());
@@ -149,6 +193,13 @@ class _AuthGateState extends State<AuthGate> {
       code.text,
     )) {
       throw AuthFailure(testMode ? '请输入 4 位测试验证码' : '请输入 6 位验证码');
+    }
+    if (registrationToken.isNotEmpty &&
+        code.text == verifiedCode &&
+        proofUntil != null &&
+        DateTime.now().isBefore(proofUntil!)) {
+      _go(1);
+      return;
     }
     final result = await api.request(
       'verify',
@@ -162,6 +213,8 @@ class _AuthGateState extends State<AuthGate> {
       return;
     }
     registrationToken = result['registrationToken'] as String;
+    verifiedCode = code.text;
+    proofUntil = DateTime.now().add(const Duration(minutes: 5));
     nickname.clear();
     _go(1);
   });
@@ -222,16 +275,33 @@ class _AuthGateState extends State<AuthGate> {
     }
   });
   void _sceneChanged() {
-    if (waitingForScene && !busy) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted && waitingForScene && shared.scenePresented && !busy) {
-          _enterLesson(guest: pendingGuest);
+    // Resource events notify before the controller updates its fields.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || inLesson) return;
+      if (step == 0 && authReady && shared.scenePresented && !busy) {
+        if (user != null) {
+          _go(4);
+          _enterLesson();
+        } else {
+          _go(2);
         }
-      });
-    }
+      } else if (waitingForScene && shared.scenePresented && !busy) {
+        _enterLesson(guest: pendingGuest);
+      }
+      if (mounted) setState(() {});
+    });
+    WidgetsBinding.instance.ensureVisualUpdate();
   }
 
   void _retryScene() {
+    if (!authReady) {
+      setState(() {
+        loading = true;
+        error = '';
+      });
+      _restore();
+    }
+    if (shared.error == null && shared.scenePresented) return;
     shared.resetResources();
     setState(() {
       sceneAttempt++;
@@ -259,14 +329,19 @@ class _AuthGateState extends State<AuthGate> {
       code.clear();
       registrationToken = '';
       challenge = '';
+      sentPhone = '';
     });
+    _sceneChanged();
   }
 
   @override
   void dispose() {
     timer?.cancel();
     shared.resourceTick.removeListener(_sceneChanged);
-    shared.dispose();
+    if (widget.controller == null) shared.dispose();
+    phoneFocus.dispose();
+    codeFocus.dispose();
+    nameFocus.dispose();
     nickname.dispose();
     phone.dispose();
     code.dispose();
@@ -274,8 +349,17 @@ class _AuthGateState extends State<AuthGate> {
     super.dispose();
   }
 
+  bool get phoneValid => RegExp(r'^1[3-9]\d{9}$').hasMatch(phone.text.trim());
+  bool get codeValid =>
+      RegExp(testMode ? r'^\d{4}$' : r'^\d{6}$').hasMatch(code.text);
+  bool get nameValid => nickname.text.trim().isNotEmpty;
+  bool get canSend =>
+      (smsReady || testMode) &&
+      (phone.text.trim() != sentPhone || cooldown == 0 || challenge.isNotEmpty);
+
   @override
   Widget build(BuildContext context) => Scaffold(
+    resizeToAvoidBottomInset: true,
     backgroundColor: entryPaper,
     body: Stack(
       fit: StackFit.expand,
@@ -288,8 +372,6 @@ class _AuthGateState extends State<AuthGate> {
               welcome: !inLesson,
             ),
           ),
-        // Keep the warmed classroom mounted below the entry surface. Only the
-        // surface fades away; no second welcome/success route is inserted.
         if (inLesson)
           Positioned.fill(
             child: LessonPage(
@@ -306,336 +388,361 @@ class _AuthGateState extends State<AuthGate> {
             excluding: inLesson,
             child: AnimatedOpacity(
               opacity: inLesson ? 0 : 1,
-              duration: MediaQuery.disableAnimationsOf(context)
-                  ? Duration.zero
-                  : const Duration(milliseconds: 450),
-              child: ColoredBox(
-                color: entryPaper,
-                child: waitingForScene
-                    ? WorldLoading(
-                        controller: shared,
-                        retry: _retryScene,
-                        cancel: () => setState(() {
-                          waitingForScene = false;
-                          if (step == 4) step = 0;
-                        }),
-                      )
-                    : Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          if (step == 0 || step == 4)
-                            _landing()
-                          else
-                            SafeArea(
-                              child: LayoutBuilder(
-                                builder: (context, box) {
-                                  final compact = box.maxHeight < 620;
-                                  return SingleChildScrollView(
-                                    padding: const EdgeInsets.fromLTRB(
-                                      28,
-                                      24,
-                                      28,
-                                      24,
+              duration: _duration(500),
+              child: TickerMode(
+                enabled: !inLesson,
+                child: ColoredBox(
+                  color: entryPaper,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      SafeArea(
+                        child: LayoutBuilder(
+                          builder: (context, box) {
+                            final guided = step != 0 && step != 4;
+                            final h = box.maxHeight;
+                            final compact = h < 440;
+                            final panelHeight = compact ? 202.0 : 264.0;
+                            final panelTop = math.max(
+                              0.0,
+                              math.min(h * .43, h - panelHeight - 8),
+                            );
+                            final scale = !guided
+                                ? 1.0
+                                : (h < 360 ? .44 : (compact ? .58 : .76));
+                            final identityTop = !guided
+                                ? (h - 120) / 2
+                                : math.max(
+                                        2.0,
+                                        panelTop -
+                                            120 * scale -
+                                            (compact ? 6 : 32),
+                                      ) -
+                                      (120 - 120 * scale) / 2;
+                            return ClipRect(
+                              child: Stack(
+                                fit: StackFit.expand,
+                                children: [
+                                  AnimatedPositioned(
+                                    duration: _duration(750),
+                                    curve: Curves.easeInOutCubic,
+                                    top: identityTop,
+                                    left: (box.maxWidth - 240) / 2,
+                                    width: 240,
+                                    height: 120,
+                                    child: AnimatedScale(
+                                      scale: scale,
+                                      duration: _duration(750),
+                                      curve: Curves.easeInOutCubic,
+                                      child: const EntryIdentity(
+                                        key: ValueKey('guide-identity'),
+                                      ),
                                     ),
-                                    child: Center(
-                                      child: ConstrainedBox(
-                                        constraints: const BoxConstraints(
-                                          maxWidth: 340,
-                                        ),
-                                        child: Column(
-                                          children: [
-                                            SizedBox(height: compact ? 0 : 36),
-                                            EntryIdentity(compact: true),
-                                            SizedBox(height: compact ? 26 : 54),
-                                            AnimatedSwitcher(
-                                              duration:
-                                                  MediaQuery.disableAnimationsOf(
-                                                    context,
-                                                  )
-                                                  ? Duration.zero
-                                                  : const Duration(
-                                                      milliseconds: 220,
-                                                    ),
-                                              child: _form(),
+                                  ),
+                                  Positioned(
+                                    top: panelTop,
+                                    left: 24,
+                                    right: 24,
+                                    height: panelHeight,
+                                    child: IgnorePointer(
+                                      ignoring: !guided,
+                                      child: AnimatedOpacity(
+                                        opacity: guided ? 1 : 0,
+                                        duration: _duration(550),
+                                        curve: Curves.easeOutCubic,
+                                        child: Center(
+                                          child: ConstrainedBox(
+                                            constraints: const BoxConstraints(
+                                              maxWidth: 340,
                                             ),
-                                          ],
+                                            child: AnimatedSwitcher(
+                                              duration: _duration(480),
+                                              reverseDuration: _duration(380),
+                                              layoutBuilder:
+                                                  (current, previous) => Stack(
+                                                    alignment:
+                                                        Alignment.topCenter,
+                                                    children: [
+                                                      for (final child
+                                                          in previous)
+                                                        IgnorePointer(
+                                                          child:
+                                                              ExcludeSemantics(
+                                                                child: child,
+                                                              ),
+                                                        ),
+                                                      ?current,
+                                                    ],
+                                                  ),
+                                              transitionBuilder:
+                                                  (
+                                                    child,
+                                                    animation,
+                                                  ) => AnimatedBuilder(
+                                                    animation: animation,
+                                                    child: child,
+                                                    builder: (_, child) {
+                                                      final exiting =
+                                                          animation.status ==
+                                                          AnimationStatus
+                                                              .reverse;
+                                                      final t = Curves
+                                                          .easeOutCubic
+                                                          .transform(
+                                                            animation.value,
+                                                          );
+                                                      return Opacity(
+                                                        opacity: t,
+                                                        child:
+                                                            Transform.translate(
+                                                              offset: Offset(
+                                                                0,
+                                                                (exiting
+                                                                        ? -22
+                                                                        : 24) *
+                                                                    (1 - t),
+                                                              ),
+                                                              child: child,
+                                                            ),
+                                                      );
+                                                    },
+                                                  ),
+                                              child: guided
+                                                  ? _form(compact)
+                                                  : const SizedBox(
+                                                      key: ValueKey(
+                                                        'empty-guide',
+                                                      ),
+                                                    ),
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  );
-                                },
+                                  ),
+                                  if (step == 0 || step == 4)
+                                    Positioned(
+                                      left: 28,
+                                      right: 28,
+                                      bottom: 22,
+                                      child: _loadingStatus(),
+                                    ),
+                                ],
                               ),
-                            ),
-                          if (step > 0 && step < 4)
-                            Positioned(
-                              top: MediaQuery.paddingOf(context).top + 10,
-                              right: 14,
-                              child: IconButton(
-                                tooltip: '返回',
-                                onPressed: busy ? null : _back,
-                                icon: const Icon(
-                                  Icons.close_rounded,
-                                  color: entryMuted,
-                                  size: 20,
-                                ),
-                              ),
-                            ),
-                          if (loading || busy)
-                            const Positioned(
-                              left: 0,
-                              right: 0,
-                              bottom: 0,
-                              child: EntryProgress(),
-                            ),
-                        ],
-                      ),
-              ),
-            ),
-          ),
-        ),
-      ],
-    ),
-  );
-
-  Widget _landing() => Stack(
-    fit: StackFit.expand,
-    children: [
-      Align(
-        alignment: MediaQuery.sizeOf(context).height < 520
-            ? const Alignment(0, -.35)
-            : Alignment.center,
-        child: const EntryIdentity(),
-      ),
-      Positioned(
-        left: 28,
-        right: 28,
-        bottom: MediaQuery.paddingOf(context).bottom + 28,
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 320),
-            child: AnimatedOpacity(
-              opacity: loading ? 0 : 1,
-              duration: MediaQuery.disableAnimationsOf(context)
-                  ? Duration.zero
-                  : const Duration(milliseconds: 350),
-              child: IgnorePointer(
-                ignoring: loading,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (step == 0) ...[
-                      EntryButton(
-                        user == null ? '开始学习' : '继续学习',
-                        onPressed: () {
-                          if (user == null) {
-                            _go(2);
-                          } else {
-                            _enterLesson();
-                          }
-                        },
-                      ),
-                      const SizedBox(height: 8),
-                      TextButton(
-                        onPressed: busy || loading
-                            ? null
-                            : () => _enterLesson(guest: true),
-                        style: TextButton.styleFrom(
-                          foregroundColor: entryMuted,
-                          textStyle: const TextStyle(fontSize: 12),
+                            );
+                          },
                         ),
-                        child: const Text('先体验课程'),
                       ),
-                    ],
-                    if (error.isNotEmpty) ...[
-                      _error(),
-                      const SizedBox(height: 12),
-                      if (step == 4)
-                        EntryButton(
-                          '重试进入课堂',
-                          busy: busy,
-                          onPressed: () => _enterLesson(),
+                      if (step == 0 || busy)
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: EntryProgress(
+                            value: step == 0 && !loading
+                                ? shared.resourceProgress
+                                : null,
+                          ),
                         ),
                     ],
-                  ],
+                  ),
                 ),
               ),
             ),
           ),
         ),
-      ),
-    ],
+      ],
+    ),
   );
 
+  Duration _duration(int ms) => MediaQuery.disableAnimationsOf(context)
+      ? Duration.zero
+      : Duration(milliseconds: ms);
+  Widget _loadingStatus() {
+    if (shared.error != null || error.isNotEmpty) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            error.isNotEmpty ? error : '准备中断，请重试',
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: entryMuted, fontSize: 12),
+          ),
+          TextButton(
+            onPressed: busy
+                ? null
+                : (step == 4 ? () => _enterLesson() : _retryScene),
+            child: const Text('重试'),
+          ),
+        ],
+      );
+    }
+    return const SizedBox.shrink();
+  }
+
   void _back() {
-    FocusManager.instance.primaryFocus?.unfocus();
-    if (step == 3 || step == 1) {
-      registrationToken = '';
+    if (busy) return;
+    if (step == 1) {
+      _go(3);
+    } else if (step == 3) {
       _go(2);
-    } else {
-      _go(0);
     }
   }
 
-  Widget _form() => Column(
-    key: ValueKey(step),
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-    children: [
-      if (step == 2) ...[
-        _title('手机号登录 / 注册'),
-        _input(
-          phone,
-          '手机号',
-          maxLength: 11,
-          digits: true,
-          prefix: '+86  ',
-          action: TextInputAction.done,
-          submit: () {
-            if ((smsReady || testMode) && cooldown == 0) _send();
-          },
-          autofill: const [AutofillHints.telephoneNumberNational],
-        ),
-        const SizedBox(height: 22),
-        EntryButton(
-          cooldown > 0 ? '${cooldown}s 后可重发' : '获取验证码',
-          busy: busy,
-          onPressed: (!smsReady && !testMode) || cooldown > 0 ? null : _send,
-        ),
-        const SizedBox(height: 18),
-        if (testMode)
-          _testNotice()
-        else if (!smsReady)
-          const Text(
-            '短信登录暂未开放，可以先体验课程。',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: entryMuted, fontSize: 12),
+  Widget _form(bool compact) {
+    final isPhone = step == 2, isCode = step == 3, isName = step == 1;
+    final controller = isPhone ? phone : (isCode ? code : nickname);
+    final label = isPhone ? '手机号' : (isCode ? '验证码' : '昵称');
+    return SizedBox(
+      key: ValueKey('guide-step-$step'),
+      height: compact ? 202 : 264,
+      child: Column(
+        children: [
+          SizedBox(
+            height: compact ? 25 : 36,
+            child: Center(
+              child: Text(
+                isPhone ? '需要一个手机号。' : (isName ? '还需要一个昵称。' : '输入验证码。'),
+                style: TextStyle(
+                  color: entryInk,
+                  fontSize: compact ? 15 : 18,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 1,
+                ),
+              ),
+            ),
           ),
-      ],
-      if (step == 3) ...[
-        _title('输入验证码'),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 20),
-          child: Text(
-            '+86 ${_maskedPhone()}',
-            textAlign: TextAlign.center,
-            style: const TextStyle(color: entryMuted, fontSize: 13),
+          SizedBox(height: compact ? 6 : 16),
+          SizedBox(
+            height: compact ? 48 : 60,
+            child: Semantics(
+              label: label,
+              child: TextField(
+                key: ValueKey('guide-input-$step'),
+                controller: controller,
+                focusNode: isPhone
+                    ? phoneFocus
+                    : (isCode ? codeFocus : nameFocus),
+                readOnly: busy,
+                maxLength: isPhone ? 11 : (isCode ? (testMode ? 4 : 6) : 12),
+                textAlign: TextAlign.center,
+                textAlignVertical: TextAlignVertical.center,
+                keyboardType: isName
+                    ? TextInputType.name
+                    : TextInputType.number,
+                textInputAction: TextInputAction.done,
+                autofillHints: isPhone
+                    ? const [AutofillHints.telephoneNumberNational]
+                    : (isCode
+                          ? const [AutofillHints.oneTimeCode]
+                          : const [AutofillHints.nickname]),
+                inputFormatters: isName
+                    ? null
+                    : [FilteringTextInputFormatter.digitsOnly],
+                onSubmitted: (_) {
+                  if (busy) return;
+                  if (isPhone && phoneValid && canSend) {
+                    _send();
+                  } else if (isCode && codeValid) {
+                    _verify();
+                  } else if (isName && nameValid) {
+                    _nextName();
+                  }
+                },
+                style: TextStyle(
+                  color: entryInk,
+                  fontSize: compact ? 21 : 25,
+                  letterSpacing: isName ? 1 : 3,
+                ),
+                cursorColor: entryInk,
+                decoration: InputDecoration(
+                  hintText: isCode && testMode ? '8888' : null,
+                  semanticCounterText: label,
+                  counterText: '',
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: compact ? 8 : 14,
+                  ),
+                  hintStyle: TextStyle(
+                    color: entryMuted.withValues(alpha: .35),
+                  ),
+                  border: const UnderlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFFD8DBD1)),
+                  ),
+                  enabledBorder: const UnderlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFFD8DBD1)),
+                  ),
+                  focusedBorder: const UnderlineInputBorder(
+                    borderSide: BorderSide(color: entryMuted),
+                  ),
+                ),
+              ),
+            ),
           ),
-        ),
-        _input(
-          code,
-          testMode ? '4 位测试验证码' : '6 位验证码',
-          maxLength: testMode ? 4 : 6,
-          digits: true,
-          action: TextInputAction.done,
-          submit: _verify,
-          autofill: const [AutofillHints.oneTimeCode],
-        ),
-        const SizedBox(height: 22),
-        EntryButton('验证并继续', busy: busy, onPressed: _verify),
-        const SizedBox(height: 8),
-        TextButton(
-          onPressed: busy || cooldown > 0 ? null : _send,
-          style: TextButton.styleFrom(
-            foregroundColor: entryMuted,
-            textStyle: const TextStyle(fontSize: 12),
+          SizedBox(
+            height: compact ? 25 : 32,
+            child: isCode
+                ? TextButton(
+                    onPressed: busy || cooldown > 0
+                        ? null
+                        : () => _send(resend: true),
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      minimumSize: Size.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      foregroundColor: entryMuted,
+                    ),
+                    child: Text(
+                      cooldown > 0 ? '${cooldown}s 后重发' : '重新获取',
+                      style: const TextStyle(fontSize: 11),
+                    ),
+                  )
+                : const SizedBox.shrink(),
           ),
-          child: Text(cooldown > 0 ? '${cooldown}s 后重新获取' : '重新获取验证码'),
-        ),
-        if (testMode) _testNotice(),
-      ],
-      if (step == 1) ...[
-        _title('怎么称呼你？'),
-        _input(
-          nickname,
-          '你的昵称',
-          maxLength: 12,
-          action: TextInputAction.done,
-          submit: _nextName,
-          autofill: const [AutofillHints.nickname],
-        ),
-        const SizedBox(height: 22),
-        EntryButton('完成注册', busy: busy, onPressed: _nextName),
-      ],
-      if (error.isNotEmpty) _error(),
-    ],
-  );
-
-  String _maskedPhone() => phone.text.length == 11
-      ? '${phone.text.substring(0, 3)} **** ${phone.text.substring(7)}'
-      : phone.text;
-  Widget _testNotice() => const Text(
-    '测试体验 · 验证码 8888',
-    textAlign: TextAlign.center,
-    style: TextStyle(color: entryMuted, fontSize: 11),
-  );
-  Widget _error() => Padding(
-    padding: const EdgeInsets.only(top: 14),
-    child: Semantics(
-      liveRegion: true,
-      child: Text(
-        error,
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: Color(0xFFAD4F38),
-          fontSize: 12,
-          height: 1.6,
-        ),
+          GuidedActions(
+            showBack: !isPhone,
+            showNext: !isPhone || phoneValid,
+            canNext: isPhone
+                ? (phoneValid && canSend)
+                : (isCode ? codeValid : false),
+            merged: isName && nameValid,
+            busy: busy,
+            onBack: _back,
+            onNext: () {
+              if (isPhone) {
+                _send();
+              } else if (isCode) {
+                _verify();
+              }
+            },
+            onExplore: _nextName,
+          ),
+          if (error.isNotEmpty)
+            Flexible(
+              child: Semantics(
+                liveRegion: true,
+                child: Text(
+                  error,
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Color(0xFFAD4F38),
+                    fontSize: 11,
+                    height: 1.3,
+                  ),
+                ),
+              ),
+            ),
+          if (isPhone && !smsReady && !testMode)
+            const Flexible(
+              child: Text(
+                '短信暂不可用',
+                style: TextStyle(color: entryMuted, fontSize: 11),
+              ),
+            ),
+        ],
       ),
-    ),
-  );
-  Widget _title(String text) => Padding(
-    padding: const EdgeInsets.only(bottom: 26),
-    child: Text(
-      text,
-      textAlign: TextAlign.center,
-      style: const TextStyle(
-        color: entryInk,
-        fontSize: 20,
-        fontWeight: FontWeight.w500,
-      ),
-    ),
-  );
-  Widget _input(
-    TextEditingController controller,
-    String label, {
-    required int maxLength,
-    bool digits = false,
-    String? prefix,
-    required TextInputAction action,
-    required VoidCallback submit,
-    Iterable<String>? autofill,
-  }) => TextField(
-    controller: controller,
-    maxLength: maxLength,
-    enabled: !busy,
-    keyboardType: digits ? TextInputType.number : TextInputType.name,
-    textInputAction: action,
-    autofillHints: autofill,
-    inputFormatters: digits ? [FilteringTextInputFormatter.digitsOnly] : null,
-    onSubmitted: (_) => submit(),
-    cursorColor: entryInk,
-    style: const TextStyle(color: entryInk, fontSize: 23, letterSpacing: 2),
-    decoration: InputDecoration(
-      labelText: label,
-      labelStyle: const TextStyle(
-        color: entryMuted,
-        fontSize: 14,
-        letterSpacing: 0,
-      ),
-      floatingLabelStyle: const TextStyle(color: entryMuted),
-      prefixText: prefix,
-      prefixStyle: const TextStyle(color: entryMuted, fontSize: 17),
-      counterText: '',
-      filled: true,
-      fillColor: const Color(0xFFEAEAE2),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 23),
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(20),
-        borderSide: BorderSide.none,
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(20),
-        borderSide: const BorderSide(color: Color(0xFF8A9672), width: 1),
-      ),
-    ),
-  );
+    );
+  }
 }
