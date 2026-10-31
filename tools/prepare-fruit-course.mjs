@@ -77,17 +77,15 @@ for (const word of ['apple','banana']) {
 add('scene_intro','invite','自己表达','apple','选你想吃的水果，再试着说出完整需求。',{clip:'scene_intro',display:'轮到你来选择'});
 add('scene_pick','choice','自己表达','apple','你想吃哪一种？这是你的选择，没有标准答案。',{hide:true,options:[option('choose_apple','苹果'),option('choose_banana','香蕉')]});
 for (const word of ['apple','banana']) add(`scene_${word}`,'recall','自己表达',word,'没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。',{picture:word,hide:true,practiceClip:`eat_${word}`,speechText:`I want to eat ${word==='apple'?'an apple':'a banana'}.`,options:[option('attempt','我尝试过了'),option('help','听完整示范')]});
-add('extension_gate','listen','可选扩展','apple','核心表达已练完。可以学习“红苹果”，也可以直接进入复习。',{display:'要加一点颜色吗？',options:[option('next','学习红苹果'),option('skip','先去复习')]});
+add('extension_gate','listen','可选扩展','apple','核心表达已练完。可以学习“红苹果”，也可以结束本课。',{display:'要加一点颜色吗？',options:[option('next','学习红苹果'),option('skip','结束本课')]});
 add('red_intro','explain','红苹果扩展','apple','red = 红色。a red apple = 一个红苹果。这里用 a，因为它紧接 red 的辅音开头。',{clip:'red_intro',display:'red → a red apple'});
 practice('learn_red','红苹果扩展','apple','red','红色。','part_red');
 practice('red_phrase','红苹果扩展','apple','a red apple','一个红苹果。','chunk_red');
 practice('red_sentence','红苹果扩展','apple','I want to eat a red apple.','我想吃一个红苹果。先分段，再连起来说。','eat_red',{segments:[{clip:'chunk_want',label:'I want'},{clip:'chunk_eat',label:'to eat'},{clip:'chunk_red',label:'a red apple'}]});
-add('review_intro','transfer','隔一会再认','apple','换个顺序，不看英文，再认一次。',{clip:'fruit_review',hide:true});
-choice('review_banana','banana','隔一会再认');choice('review_apple','apple','隔一会再认',true);
-add('close','encourage','本节小结','apple','完成了一次练习，不代表已经永久记住。',{clip:'fruit_finish',display:'完成本节练习'});
-add('summary','finish','本节小结','apple','下次可以再练一轮，检查是否还记得。',{display:'今天的学习记录',options:[]});
+add('summary','finish','本节小结','apple','本节课我们就学到这里。',{display:'今天的学习记录',options:[]});
 fs.mkdirSync('scene-preview/assets/avatar/courses',{recursive:true});
 fs.writeFileSync('scene-preview/assets/avatar/courses/adult-fruit.json',JSON.stringify({id:'adult-fruit-v2',title:'成人入门 · 从水果到表达',stages},null,2)+'\n');
+if (process.argv.includes('--course-only')) process.exit(0);
 const result={};
 for(const [key,text] of Object.entries(prompts)) {
  const source=await teachingAudio(text,{voice:403008,language:/^[A-Za-z]/.test(text)?'en':'zh'});

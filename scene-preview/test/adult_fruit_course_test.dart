@@ -16,6 +16,27 @@ List<dynamic> rows() =>
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUp(() => SharedPreferences.setMockInitialValues({}));
+  test('nickname persists separately from English teaching targets', () async {
+    final c = LessonController();
+    await c.loadCourseProgress();
+    expect(c.nickname, '莉莉');
+    final cheer = c.closingCheer;
+    expect(c.closingSpeech, '莉莉，本节课我们就学到这里。$cheer');
+    c.ready = true;
+    c.playCourse(restart: true);
+    expect(c.closingCheer, isNot(cheer));
+    final nextCheer = c.closingCheer;
+    c.playCourse();
+    expect(c.closingCheer, nextCheer);
+    await c.setNickname('  小雨  ');
+    final restored = LessonController();
+    await restored.loadCourseProgress();
+    expect(restored.address('本节课我们就学到这里。'), '小雨，本节课我们就学到这里。');
+    await restored.setNickname('');
+    expect(restored.address('你好'), '你好');
+    c.dispose();
+    restored.dispose();
+  });
   test('sentence help returns to the same full-sentence target', () {
     final d = TeachingDirector.fruit(rows());
     d.index = d.stages.indexWhere((s) => s.id == 'eat_banana');
@@ -42,7 +63,9 @@ void main() {
       expect(d.expressions, {'scene_$word'});
       expect(d.correct, isEmpty);
       d.respond('skip');
-      expect(d.stage.id, 'review_intro');
+      expect(d.stage.id, 'summary');
+      expect(d.stage.phase, 'finish');
+      expect(d.stage.options, isEmpty);
     }
   });
   test('old course indexes are rejected and sentence checkpoints restore', () {
@@ -57,7 +80,7 @@ void main() {
     expect(resumed.stage.speechText, 'I want to eat a red apple.');
   });
   test(
-    'complete course visits both words, five choices and a stable summary',
+    'complete course visits both words, three choices and a quiet summary',
     () {
       final d = TeachingDirector.fruit(rows());
       var turns = 0;
@@ -80,7 +103,7 @@ void main() {
       expect(turns, lessThan(180));
       expect(d.stage.phase, 'finish');
       expect(d.taught, {'apple', 'banana'});
-      expect(d.correct.length, 5);
+      expect(d.correct.length, 3);
       expect(d.attempts, {'apple', 'banana'});
     },
   );

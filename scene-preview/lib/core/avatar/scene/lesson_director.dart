@@ -154,7 +154,7 @@ class TeachingDirector {
         return stage;
       }
       if (action == 'skip' && current.id == 'extension_gate') {
-        index = stages.indexWhere((s) => s.id == 'review_intro');
+        index = stages.indexWhere((s) => s.id == 'summary');
         return stage;
       }
       if (action == 'help' ||

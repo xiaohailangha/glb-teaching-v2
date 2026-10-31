@@ -511,7 +511,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r15-responsive',
+        'version': 'scene-0.2.0-r16-quiet',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -912,6 +912,24 @@ class SceneRuntime extends ChangeNotifier {
         'stageCount': director!.stages.length,
       },
     });
+    if (director!.fruitCourse && stage.id == 'summary') {
+      await _play(
+        'fruit_finish',
+        1,
+        stageToken: token,
+        speechText: controller.closingSpeech,
+      );
+      return;
+    }
+    if (director!.fruitCourse && stage.id == 'fruit_intro') {
+      await _play(
+        'fruit_intro',
+        stage.rate,
+        stageToken: token,
+        speechText: controller.address('你好。今天我们一起认识苹果和香蕉，慢慢来就好。'),
+      );
+      return;
+    }
     if (stage.clip == null) return;
     final clip = stage.clip!,
         curated = ['phoneme', 'group'].contains(units[clip]?['kind']);
@@ -923,6 +941,7 @@ class SceneRuntime extends ChangeNotifier {
     double rate, {
     bool curated = false,
     int? stageToken,
+    String? speechText,
   }) async {
     final token = stageToken ?? ++stageGeneration,
         audioGeneration = ++speech.generation,
@@ -931,11 +950,33 @@ class SceneRuntime extends ChangeNotifier {
     automatic.playing = true;
     emit('speech-loading', {'session': session});
     try {
-      final clip = await speech.prepare(
-        key,
-        Map<String, dynamic>.from(timings[key] ?? {}),
-        curated: curated,
-      );
+      SpeechClip clip;
+      if (speechText != null) {
+        try {
+          clip = await speech
+              .prepare(key, {'text': speechText})
+              .timeout(const Duration(seconds: 8));
+        } catch (_) {
+          // Greetings are optional; a network delay must not block the lesson.
+          if (key == 'fruit_finish') {
+            if (token == stageGeneration) {
+              loadingAudio = false;
+              automatic.playing = false;
+            }
+            return;
+          }
+          clip = await speech.prepare(
+            key,
+            Map<String, dynamic>.from(timings[key] ?? {}),
+          );
+        }
+      } else {
+        clip = await speech.prepare(
+          key,
+          Map<String, dynamic>.from(timings[key] ?? {}),
+          curated: curated,
+        );
+      }
       if (disposed || token != stageGeneration || session != expectedSession) {
         return;
       }
@@ -969,7 +1010,10 @@ class SceneRuntime extends ChangeNotifier {
     playingAudio = false;
     automatic.playing = false;
     if (director != null) {
-      if (director!.stage.options.isNotEmpty) return;
+      if (director!.stage.phase == 'finish' ||
+          director!.stage.options.isNotEmpty) {
+        return;
+      }
       if (director!.fruitCourse && ['support', 'success'].contains(phase)) {
         final token = stageGeneration, current = director;
         unawaited(

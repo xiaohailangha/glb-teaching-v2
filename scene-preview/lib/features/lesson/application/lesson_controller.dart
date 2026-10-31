@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 import 'dart:async';
+import 'dart:math' as math;
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -15,6 +16,28 @@ typedef AvatarCommand = void Function(Map<String, Object?> command);
 
 class LessonController extends ChangeNotifier {
   final vocabulary = VocabularyLedger();
+  String nickname = '莉莉';
+  static const closingCheers = [
+    '辛苦啦！',
+    '你真棒！',
+    '太酷啦！',
+    '给自己点个赞！',
+    '这份坚持，真不错！',
+    '为你鼓掌！',
+  ];
+  int _closingIndex = math.Random().nextInt(closingCheers.length);
+  String get closingCheer => closingCheers[_closingIndex];
+  String get closingSpeech => address('本节课我们就学到这里。$closingCheer');
+
+  String address(String message) =>
+      nickname.isEmpty ? message : '$nickname，$message';
+  Future<void> setNickname(String value) async {
+    nickname = String.fromCharCodes(value.trim().runes.take(12));
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('learner-nickname-v1', nickname);
+  }
+
   bool automaticReading = false, automaticStarting = false;
   String automaticFeedback = '', selectedWord = '';
   String automaticState = '', liveTranscript = '', coachSentence = '';
@@ -80,6 +103,8 @@ class LessonController extends ChangeNotifier {
   Future<void> loadCourseProgress() async {
     try {
       final prefs = await SharedPreferences.getInstance();
+      nickname = prefs.getString('learner-nickname-v1') ?? '莉莉';
+      if (!_disposed) notifyListeners();
       final vocab = prefs.getString('vocabulary-exposure-v1');
       if (vocab != null) {
         final data = jsonDecode(vocab);
@@ -639,7 +664,14 @@ class LessonController extends ChangeNotifier {
     liveTranscript = '';
     automaticState = 'starting';
     automaticStarting = true;
-    if (restart) courseCheckpoint = null;
+    if (restart) {
+      courseCheckpoint = null;
+      _closingIndex =
+          (_closingIndex +
+              1 +
+              math.Random().nextInt(closingCheers.length - 1)) %
+          closingCheers.length;
+    }
     if (style == 'adult') {
       vocabulary.begin(restart: restart || courseCheckpoint == null);
       unawaited(_saveVocabulary());

@@ -36,7 +36,7 @@ class AdultCoursePanel extends StatelessWidget {
           .where(
             (o) => c.courseStep == 'extension_gate'
                 ? const {'next', 'skip'}.contains(o['id']) &&
-                      const {'学习红苹果', '先去复习'}.contains(o['label'])
+                      const {'学习红苹果', '结束本课'}.contains(o['label'])
                 : c.lessonPhase == 'choice' &&
                       const {
                         'apple',
@@ -104,9 +104,9 @@ class AdultCoursePanel extends StatelessWidget {
             const SizedBox(height: 12),
             const Text('轻触人物继续，或到设置调整课程。'),
           ] else if (summary) ...[
-            const Text(
-              '今天，又向前了一步。',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+            Text(
+              c.address('本节课我们就学到这里。'),
+              style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 15),
             Text(
@@ -124,7 +124,10 @@ class AdultCoursePanel extends StatelessWidget {
               style: const TextStyle(color: Colors.white70),
             ),
             const SizedBox(height: 14),
-            const Text('轻触人物，再练一轮。', style: TextStyle(color: Colors.white60)),
+            Text(
+              c.closingCheer,
+              style: const TextStyle(color: Color(0xFFBDE5DD), fontSize: 18),
+            ),
           ] else ...[
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 220),
@@ -147,6 +150,8 @@ class AdultCoursePanel extends StatelessWidget {
                       ? '正在确认你的表达'
                       : c.automaticState == 'correction'
                       ? '一起把这一处练好'
+                      : c.courseStep == 'apple_practice'
+                      ? c.address('轮到你说了')
                       : '轮到你说了',
                   style: const TextStyle(
                     fontSize: 13,
@@ -321,7 +326,10 @@ class ListeningLine extends StatelessWidget {
       children: [
         Row(
           children: [
-            MicWave(level: c.micLevel, active: listening),
+            MicWave(
+              level: c.micLevel,
+              active: listening && !c.playing && !thinking,
+            ),
             const SizedBox(width: 8),
             Expanded(
               child: Text(
@@ -358,11 +366,11 @@ class MicWave extends StatefulWidget {
 }
 
 class _MicWaveState extends State<MicWave> {
-  final samples = List<double>.filled(17, 0, growable: true);
+  final samples = List<double>.filled(5, 0, growable: true);
   @override
   void didUpdateWidget(MicWave old) {
     super.didUpdateWidget(old);
-    if (!widget.active) {
+    if (!widget.active || widget.level <= 0) {
       samples.fillRange(0, samples.length, 0);
       return;
     }
@@ -372,23 +380,23 @@ class _MicWaveState extends State<MicWave> {
 
   @override
   Widget build(BuildContext context) => Semantics(
-    label: widget.active ? '麦克风已连接，实时音量' : '麦克风未连接',
+    label: widget.active ? '收音提示' : '收音提示静止',
     child: SizedBox(
-      width: 84,
-      height: 30,
+      width: 24,
+      height: 14,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           for (var i = 0; i < samples.length; i++)
             AnimatedContainer(
-              duration: const Duration(milliseconds: 80),
-              width: 2.8,
-              height: 3 + samples[i] * 25,
+              duration: const Duration(milliseconds: 160),
+              width: 2,
+              height: 2 + samples[i] * 7,
               decoration: BoxDecoration(
                 color: widget.active
                     ? Color.lerp(
-                        const Color(0xFF78B8B0),
-                        const Color(0xFFE2FFF2),
+                        const Color(0x6678B8B0),
+                        const Color(0x9978B8B0),
                         samples[i],
                       )
                     : Colors.white30,

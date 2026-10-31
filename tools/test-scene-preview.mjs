@@ -54,7 +54,9 @@ await check('adult fruit course publishes the complete versioned lesson',async()
  assert.deepEqual(course,JSON.parse(await fs.readFile('scene-preview/assets/avatar/courses/adult-fruit.json','utf8')));
  assert.equal(course.id,'adult-fruit-v2');
  assert.equal(course.stages.at(-1).id,'summary');
- assert.equal(course.stages.filter(s=>s.answer).length,5);
+ assert.equal(course.stages.some(s=>s.id.startsWith('review_')),false);
+ assert.equal(course.stages.at(-2).id,'red_sentence');
+ assert.equal(course.stages.filter(s=>s.answer).length,3);
 });
 await check('private files and cross-site spending remain blocked',async()=>{
  for(const path of ['/scene/.secrets/tencent.json','/scene/services/cos-assets.mjs','/.secrets/tencent.json']){const response=await get(path);assert.ok([403,404].includes(response.status));await response.arrayBuffer();}

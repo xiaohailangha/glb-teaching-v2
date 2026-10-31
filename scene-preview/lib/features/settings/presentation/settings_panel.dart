@@ -41,6 +41,17 @@ class SettingsPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
+            TextFormField(
+              initialValue: lesson.nickname,
+              maxLength: 12,
+              decoration: const InputDecoration(
+                labelText: '昵称',
+                hintText: '希望怎么称呼你',
+                counterText: '',
+              ),
+              onChanged: lesson.setNickname,
+            ),
+
             const Text(
               '课程与麦克风',
               style: TextStyle(fontSize: 16, color: Colors.white),

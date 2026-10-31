@@ -149,8 +149,12 @@ class AutomaticReader {
       energy += v * v;
     }
     final rms = bytes.isEmpty ? 0.0 : math.sqrt(energy / (bytes.length / 2));
-    // Meter actual capture even while model playback/assessment suppresses scoring.
-    onSignal?.call((math.sqrt(math.max(0, rms - .002)) * 4.5).clamp(0, 1));
+    // Keep this secondary cue still during playback, assessment and room noise.
+    onSignal?.call(
+      playing || busy || text.isEmpty || rms <= .018
+          ? 0
+          : ((rms - .018) * 6).clamp(0, 1),
+    );
     if (busy || text.isEmpty || playing) {
       gate.reset();
       live?.cancel();

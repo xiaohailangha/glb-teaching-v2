@@ -66,7 +66,7 @@ void main() {
     await reader.dispose();
   });
   test(
-    'actual microphone meter is live during playback without scoring it',
+    'microphone cue ignores playback and room noise but responds to speech',
     () async {
       final levels = <double>[];
       var uploads = 0;
@@ -83,6 +83,15 @@ void main() {
       reader.enabled = true;
       reader.playing = true;
       reader.target('apple', 'apple');
+      reader.ingestPcm(voice());
+      expect(levels.last, 0);
+      reader.playing = false;
+      final roomNoise = ByteData(3200);
+      for (var i = 0; i < 3200; i += 2) {
+        roomNoise.setInt16(i, 300, Endian.little);
+      }
+      reader.ingestPcm(roomNoise.buffer.asUint8List());
+      expect(levels.last, 0);
       reader.ingestPcm(voice());
       expect(levels.last, greaterThan(.1));
       expect(uploads, 0);
@@ -184,13 +193,18 @@ void main() {
     final bars = tester.widgetList<AnimatedContainer>(
       find.byType(AnimatedContainer),
     );
-    expect(bars.any((b) => b.constraints!.maxHeight > 20), isTrue);
-    await tester.pumpWidget(page(0, false));
+    expect(
+      bars.any(
+        (b) => b.constraints!.maxHeight > 2 && b.constraints!.maxHeight <= 9,
+      ),
+      isTrue,
+    );
+    await tester.pumpWidget(page(0, true));
     await tester.pump(const Duration(milliseconds: 100));
     expect(
       tester
           .widgetList<AnimatedContainer>(find.byType(AnimatedContainer))
-          .every((b) => b.constraints!.maxHeight == 3),
+          .every((b) => b.constraints!.maxHeight == 2),
       isTrue,
     );
   });

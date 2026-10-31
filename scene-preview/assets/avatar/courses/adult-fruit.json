@@ -743,7 +743,7 @@
       "phase": "listen",
       "chapter": "可选扩展",
       "word": "apple",
-      "text": "核心表达已练完。可以学习“红苹果”，也可以直接进入复习。",
+      "text": "核心表达已练完。可以学习“红苹果”，也可以结束本课。",
       "display": "要加一点颜色吗？",
       "options": [
         {
@@ -752,7 +752,7 @@
         },
         {
           "id": "skip",
-          "label": "先去复习"
+          "label": "结束本课"
         }
       ]
     },
@@ -873,95 +873,11 @@
       ]
     },
     {
-      "id": "review_intro",
-      "phase": "transfer",
-      "chapter": "隔一会再认",
-      "word": "apple",
-      "text": "换个顺序，不看英文，再认一次。",
-      "clip": "fruit_review",
-      "hide": true
-    },
-    {
-      "id": "review_banana_cue",
-      "phase": "choice",
-      "chapter": "隔一会再认",
-      "word": "banana",
-      "text": "听声音…",
-      "clip": "banana",
-      "hide": true
-    },
-    {
-      "id": "review_banana",
-      "phase": "choice",
-      "chapter": "隔一会再认",
-      "word": "banana",
-      "text": "刚才听到的是哪一个？",
-      "picture": "",
-      "answer": "banana",
-      "hide": true,
-      "options": [
-        {
-          "id": "apple",
-          "label": "苹果"
-        },
-        {
-          "id": "banana",
-          "label": "香蕉"
-        },
-        {
-          "id": "help",
-          "label": "再听一次"
-        }
-      ]
-    },
-    {
-      "id": "review_apple_cue",
-      "phase": "choice",
-      "chapter": "隔一会再认",
-      "word": "apple",
-      "text": "听声音…",
-      "clip": "apple",
-      "hide": true
-    },
-    {
-      "id": "review_apple",
-      "phase": "choice",
-      "chapter": "隔一会再认",
-      "word": "apple",
-      "text": "刚才听到的是哪一个？",
-      "picture": "",
-      "answer": "apple",
-      "hide": true,
-      "options": [
-        {
-          "id": "banana",
-          "label": "香蕉"
-        },
-        {
-          "id": "apple",
-          "label": "苹果"
-        },
-        {
-          "id": "help",
-          "label": "再听一次"
-        }
-      ]
-    },
-    {
-      "id": "close",
-      "phase": "encourage",
-      "chapter": "本节小结",
-      "word": "apple",
-      "text": "完成了一次练习，不代表已经永久记住。",
-      "clip": "fruit_finish",
-      "display": "完成本节练习"
-    },
-    {
       "id": "summary",
       "phase": "finish",
       "chapter": "本节小结",
       "word": "apple",
-      "text": "下次可以再练一轮，检查是否还记得。",
+      "text": "本节课我们就学到这里。",
       "display": "今天的学习记录",
       "options": []
     }
