@@ -65,7 +65,7 @@ class _EntryIdentityState extends State<EntryIdentity>
                                       .14 *
                                           math.sin(
                                             motion.value * math.pi * 2 -
-                                                i * .65,
+                                                (i - 2).abs() * .65,
                                           )),
                         margin: const EdgeInsets.symmetric(horizontal: 2.5),
                         decoration: BoxDecoration(
@@ -138,7 +138,7 @@ class _GuidedActionsState extends State<GuidedActions>
   }
 
   Widget arrow(bool back, double t) => Transform.translate(
-    offset: Offset((back ? -72 : 72) * (1 - t), 0),
+    offset: Offset((back ? -72 : (widget.showBack ? 72 : 0)) * (1 - t), 0),
     child: Opacity(
       opacity: 1 - t,
       child: IgnorePointer(

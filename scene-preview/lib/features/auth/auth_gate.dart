@@ -43,6 +43,8 @@ class _AuthGateState extends State<AuthGate> {
       nameFocus = FocusNode();
   bool loading = true, busy = false, smsReady = false, inLesson = false;
   int step = 0, cooldown = 0;
+  double slideDirection = 1;
+  bool revealingPhone = false;
   DateTime? resendAt, challengeUntil, proofUntil;
   String sentPhone = '', verifiedCode = '';
   bool authReady = false;
@@ -94,10 +96,12 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
-  void _go(int value) {
+  void _go(int value, {bool backwards = false}) {
     final transferFocus = step != 0 && value != 4;
     if (value == 4) FocusManager.instance.primaryFocus?.unfocus();
     setState(() {
+      revealingPhone = step == 0 && value == 2;
+      slideDirection = backwards ? -1 : 1;
       step = value;
       error = '';
     });
@@ -359,7 +363,7 @@ class _AuthGateState extends State<AuthGate> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    resizeToAvoidBottomInset: true,
+    resizeToAvoidBottomInset: false,
     backgroundColor: entryPaper,
     body: Stack(
       fit: StackFit.expand,
@@ -401,16 +405,19 @@ class _AuthGateState extends State<AuthGate> {
                           builder: (context, box) {
                             final guided = step != 0 && step != 4;
                             final h = box.maxHeight;
-                            final compact = h < 440;
+                            final compact = h < 700;
                             final panelHeight = compact ? 202.0 : 264.0;
                             final panelTop = math.max(
                               0.0,
-                              math.min(h * .43, h - panelHeight - 8),
+                              math.min(
+                                h * (compact ? .24 : .34),
+                                h - panelHeight - 8,
+                              ),
                             );
-                            final scale = !guided
+                            final scale = step == 0
                                 ? 1.0
                                 : (h < 360 ? .44 : (compact ? .58 : .76));
-                            final identityTop = !guided
+                            final identityTop = step == 0
                                 ? (h - 120) / 2
                                 : math.max(
                                         2.0,
@@ -439,16 +446,18 @@ class _AuthGateState extends State<AuthGate> {
                                       ),
                                     ),
                                   ),
-                                  Positioned(
-                                    top: panelTop,
+                                  AnimatedPositioned(
+                                    duration: _duration(750),
+                                    curve: Curves.easeInOutCubic,
+                                    top: step == 0 ? h + 24 : panelTop,
                                     left: 24,
                                     right: 24,
                                     height: panelHeight,
                                     child: IgnorePointer(
                                       ignoring: !guided,
                                       child: AnimatedOpacity(
-                                        opacity: guided ? 1 : 0,
-                                        duration: _duration(550),
+                                        opacity: 1,
+                                        duration: Duration.zero,
                                         curve: Curves.easeOutCubic,
                                         child: Center(
                                           child: ConstrainedBox(
@@ -456,23 +465,28 @@ class _AuthGateState extends State<AuthGate> {
                                               maxWidth: 340,
                                             ),
                                             child: AnimatedSwitcher(
-                                              duration: _duration(480),
-                                              reverseDuration: _duration(380),
+                                              duration: _duration(600),
+                                              reverseDuration: _duration(600),
                                               layoutBuilder:
-                                                  (current, previous) => Stack(
-                                                    alignment:
-                                                        Alignment.topCenter,
-                                                    children: [
-                                                      for (final child
-                                                          in previous)
-                                                        IgnorePointer(
-                                                          child:
-                                                              ExcludeSemantics(
-                                                                child: child,
-                                                              ),
-                                                        ),
-                                                      ?current,
-                                                    ],
+                                                  (
+                                                    current,
+                                                    previous,
+                                                  ) => ClipRect(
+                                                    child: Stack(
+                                                      alignment:
+                                                          Alignment.topCenter,
+                                                      children: [
+                                                        for (final child
+                                                            in previous)
+                                                          IgnorePointer(
+                                                            child:
+                                                                ExcludeSemantics(
+                                                                  child: child,
+                                                                ),
+                                                          ),
+                                                        ?current,
+                                                      ],
+                                                    ),
                                                   ),
                                               transitionBuilder:
                                                   (
@@ -482,28 +496,28 @@ class _AuthGateState extends State<AuthGate> {
                                                     animation: animation,
                                                     child: child,
                                                     builder: (_, child) {
+                                                      if (revealingPhone) {
+                                                        return child!;
+                                                      }
                                                       final exiting =
                                                           animation.status ==
                                                           AnimationStatus
                                                               .reverse;
                                                       final t = Curves
-                                                          .easeOutCubic
+                                                          .easeInOutCubic
                                                           .transform(
                                                             animation.value,
                                                           );
-                                                      return Opacity(
-                                                        opacity: t,
-                                                        child:
-                                                            Transform.translate(
-                                                              offset: Offset(
-                                                                0,
-                                                                (exiting
-                                                                        ? -22
-                                                                        : 24) *
-                                                                    (1 - t),
-                                                              ),
-                                                              child: child,
-                                                            ),
+                                                      return Transform.translate(
+                                                        offset: Offset(
+                                                          0,
+                                                          slideDirection *
+                                                              (exiting
+                                                                  ? -panelHeight
+                                                                  : panelHeight) *
+                                                              (1 - t),
+                                                        ),
+                                                        child: child,
                                                       );
                                                     },
                                                   ),
@@ -520,29 +534,51 @@ class _AuthGateState extends State<AuthGate> {
                                       ),
                                     ),
                                   ),
-                                  if (step == 0 || step == 4)
-                                    Positioned(
-                                      left: 28,
-                                      right: 28,
-                                      bottom: 22,
-                                      child: _loadingStatus(),
-                                    ),
                                 ],
                               ),
                             );
                           },
                         ),
                       ),
-                      if (step == 0 || busy)
+                      if (step == 0 || step == 4 || busy)
                         Positioned(
                           left: 0,
                           right: 0,
                           bottom: 0,
-                          child: EntryProgress(
-                            value: step == 0 && !loading
-                                ? shared.resourceProgress
-                                : null,
-                          ),
+                          child:
+                              (shared.error != null || error.isNotEmpty) &&
+                                  (step == 0 || step == 4)
+                              ? Semantics(
+                                  label: '加载中断，点击重试',
+                                  button: true,
+                                  child: GestureDetector(
+                                    key: const ValueKey('loading-retry'),
+                                    behavior: HitTestBehavior.opaque,
+                                    onTap: busy
+                                        ? null
+                                        : (step == 4
+                                              ? () => _enterLesson()
+                                              : _retryScene),
+                                    child: const SizedBox(
+                                      height: 44,
+                                      child: Align(
+                                        alignment: Alignment.bottomCenter,
+                                        child: SizedBox(
+                                          height: 2,
+                                          width: double.infinity,
+                                          child: ColoredBox(
+                                            color: Color(0xFFAD4F38),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              : EntryProgress(
+                                  value: step == 0 && !loading
+                                      ? shared.resourceProgress
+                                      : null,
+                                ),
                         ),
                     ],
                   ),
@@ -558,43 +594,23 @@ class _AuthGateState extends State<AuthGate> {
   Duration _duration(int ms) => MediaQuery.disableAnimationsOf(context)
       ? Duration.zero
       : Duration(milliseconds: ms);
-  Widget _loadingStatus() {
-    if (shared.error != null || error.isNotEmpty) {
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            error.isNotEmpty ? error : '准备中断，请重试',
-            textAlign: TextAlign.center,
-            style: const TextStyle(color: entryMuted, fontSize: 12),
-          ),
-          TextButton(
-            onPressed: busy
-                ? null
-                : (step == 4 ? () => _enterLesson() : _retryScene),
-            child: const Text('重试'),
-          ),
-        ],
-      );
-    }
-    return const SizedBox.shrink();
-  }
-
   void _back() {
     if (busy) return;
     if (step == 1) {
-      _go(3);
+      _go(3, backwards: true);
     } else if (step == 3) {
-      _go(2);
+      _go(2, backwards: true);
     }
   }
 
   Widget _form(bool compact) {
-    final isPhone = step == 2, isCode = step == 3, isName = step == 1;
+    final isPhone = step == 0 || step == 2,
+        isCode = step == 3,
+        isName = step == 1;
     final controller = isPhone ? phone : (isCode ? code : nickname);
     final label = isPhone ? '手机号' : (isCode ? '验证码' : '昵称');
     return SizedBox(
-      key: ValueKey('guide-step-$step'),
+      key: ValueKey('guide-step-${isPhone ? 2 : step}'),
       height: compact ? 202 : 264,
       child: Column(
         children: [
@@ -666,15 +682,10 @@ class _AuthGateState extends State<AuthGate> {
                   hintStyle: TextStyle(
                     color: entryMuted.withValues(alpha: .35),
                   ),
-                  border: const UnderlineInputBorder(
-                    borderSide: BorderSide(color: Color(0xFFD8DBD1)),
-                  ),
-                  enabledBorder: const UnderlineInputBorder(
-                    borderSide: BorderSide(color: Color(0xFFD8DBD1)),
-                  ),
-                  focusedBorder: const UnderlineInputBorder(
-                    borderSide: BorderSide(color: entryMuted),
-                  ),
+                  border: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  disabledBorder: InputBorder.none,
                 ),
               ),
             ),

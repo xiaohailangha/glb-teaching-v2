@@ -123,6 +123,26 @@ void main() {
         expect(find.byKey(const ValueKey('guide-next')), findsNothing);
         await tester.enterText(find.byType(TextField), '13800138000');
         await advance(tester);
+        expect(
+          tester.getCenter(find.byKey(const ValueKey('guide-next'))).dx,
+          closeTo(size.width / 2, .5),
+        );
+        expect(
+          tester
+              .widget<TextField>(find.byType(TextField))
+              .decoration!
+              .enabledBorder,
+          InputBorder.none,
+        );
+        expect(
+          tester.getSize(find.byKey(const ValueKey('voice-bar-0'))).height,
+          tester.getSize(find.byKey(const ValueKey('voice-bar-4'))).height,
+        );
+        expect(
+          tester.getSize(find.byKey(const ValueKey('voice-bar-1'))).height,
+          tester.getSize(find.byKey(const ValueKey('voice-bar-3'))).height,
+        );
+        final identityRect = tester.getRect(find.byType(EntryIdentity));
         if (size.width < 500) {
           tester.view.viewInsets = const FakeViewPadding(bottom: 260);
           await advance(tester);
@@ -134,6 +154,7 @@ void main() {
             tester.getRect(find.byType(TextField)).top,
             greaterThanOrEqualTo(0),
           );
+          expect(tester.getRect(find.byType(EntryIdentity)), identityRect);
           expect(tester.takeException(), isNull);
           tester.view.resetViewInsets();
           await advance(tester);
@@ -246,9 +267,9 @@ void main() {
       expect(find.byType(TextField), findsNothing);
       c.handle({'event': 'error', 'message': 'private failure'});
       await advance(tester);
-      expect(find.text('重试'), findsOneWidget);
+      expect(find.byKey(const ValueKey('loading-retry')), findsOneWidget);
       expect(find.text('private failure'), findsNothing);
-      await tester.tap(find.text('重试'));
+      await tester.tap(find.byKey(const ValueKey('loading-retry')));
       await advance(tester);
       c.handle({'event': 'ready'});
       c.handle({'event': 'scene-presented'});
