@@ -1,16 +1,13 @@
-# Course library — 2026-10-31
+# Immersive course picker — 2026-10-31
 
-- Flutter APP only; the independent Vue admin repository is unchanged.
-- Classroom has a dedicated Courses button beside Settings. Settings no longer contains the course catalog.
-- Full-screen course library: eight illustrated cards, two unit filters, current lesson, and saved teaching position. Wide screens use a compact two-column introduction; narrow screens use stacked cards. Return-to-classroom stays fixed.
-- Opening the library pauses an active adult lesson. Selecting a card awaits the existing course-selection flow and returns to the classroom; tapping the teacher starts/resumes learning. It does not request microphone access or autoplay from the library.
-- Progress is the saved stage index relative to the course's stage count, not a mastery score. Checkpoints are isolated using the controller's existing account-scoped storage keys; corrupt records are ignored independently.
-- Flutter-native fade, hover lift, and press feedback; reduced-motion settings disable these transitions. No GSAP/JavaScript dependency.
+The previous catalog/dashboard layout has been replaced completely. The Flutter APP now uses a single-screen dark stage with full-bleed illustrated course posters, one primary entry action, and a small position/navigation control. There are no filter tabs, resume panels, grids or progress percentages. The classroom has matching course and settings icon buttons, with courses on the left.
 
-Validation: Flutter full suite 85 passing; new course-library tests cover 320×568, 390×844, 844×390 and 1280×900, filtering/selection, no automatic playback, account isolation and malformed records. Static analysis passes. Release build passes. Online scene checks pass (8 checks), including unchanged original entry and independent models.
+Inspired by the interaction in https://demos.gsap.com/demo/infinite-card-slider/ (source preview inspected at https://codepen.io/GreenSock/pen/RwKwLWK). No GSAP dependency or copied demo assets are included: Flutter renders the gesture-driven deck natively.
 
-## Horizontal card deck
+- Infinite position wraps modulo the eight actual course IDs, starting at the currently selected course.
+- Custom depth-sorted Stack draws the nearest poster last; adjacent posters scale, translate, fade and rotate with drag position. Release velocity and distance determine a smoothly snapped target.
+- Touch and mouse drags browse only; the separate primary action awaits course selection and returns to the classroom without autoplay or resetting saved progress.
+- Portrait uses a bounded full-screen deck and bottom action. Landscape uses a deck with controls alongside. Reduced-motion settings remove decorative transforms and use immediate settling.
+- Account-scoped saved records determine the continue label. Storage failures do not block course browsing.
 
-The catalog now uses one finite PageView deck with all eight courses; unit filters scope it to four. The active card stays prominent while adjacent cards scale to 88%, shift down 18 pixels, overlap slightly and rotate by at most 0.025 radians. Snap scrolling, previous/next controls and selectable page dots provide equivalent navigation. Browsing never selects or plays a lesson, and off-center cards cannot accidentally activate. Reduced motion removes decorative transforms and uses immediate programmatic page changes. The deck adapts its viewport fraction between narrow and wide layouts.
-
-Focused tests cover swiping forward/back, the displayed position, unit filtering, selecting the correct course, and no playback during browsing at four viewport sizes (including reduced motion at 320 pixels).
+Verification: focused tests pass at 320×568, 390×844, 844×390 and 1280×900, including forward/backward wrap, touch/mouse swipe, reduced motion, preserved active lesson while browsing, correct selection and no autoplay. Static analysis passes.

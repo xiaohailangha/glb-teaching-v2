@@ -39,7 +39,7 @@ void main() {
     const Size(1280, 900),
   ]) {
     testWidgets(
-      'course cards fit $size and unit filter selects a real course',
+      'immersive deck wraps, swipes and opens the right lesson at $size',
       (tester) async {
         tester.view.physicalSize = size;
         tester.view.devicePixelRatio = 1;
@@ -69,62 +69,37 @@ void main() {
           ),
         );
         await tester.tap(find.text('open'));
-        await tester.runAsync(() async {
-          await tester.pump();
-          await Future<void>.delayed(const Duration(milliseconds: 200));
-        });
         await tester.pumpAndSettle();
         expect(tester.takeException(), isNull);
-        for (
-          var attempt = 0;
-          attempt < 12 &&
-              find.text('单元二 · 描述事物').hitTestable().evaluate().isEmpty;
-          attempt++
-        ) {
-          await tester.drag(
-            find.byType(CustomScrollView),
-            const Offset(0, -100),
-          );
-          await tester.pumpAndSettle();
-        }
-        await tester.tap(find.text('单元二 · 描述事物'));
+        expect(find.text('01  /  08'), findsOneWidget);
+        await tester.tap(find.byTooltip('上一课'));
         await tester.pumpAndSettle();
-        expect(find.text('苹果和香蕉'), findsNothing);
-        for (
-          var attempt = 0;
-          attempt < 12 && find.text('颜色').hitTestable().evaluate().isEmpty;
-          attempt++
-        ) {
-          await tester.drag(
-            find.byType(CustomScrollView),
-            const Offset(0, -140),
-          );
-          await tester.pumpAndSettle();
-        }
-        // Horizontal browsing is independent of entering a lesson.
+        expect(find.text('08  /  08'), findsOneWidget);
+        await tester.tap(find.byTooltip('下一课'));
+        await tester.pumpAndSettle();
+        expect(find.text('01  /  08'), findsOneWidget);
+        final deck = find.byKey(const ValueKey('course-deck'));
+        final bounds = tester.getRect(deck);
+        if (size.width < 650) expect(bounds.width, size.width);
+        final width = [
+          370.0,
+          bounds.width * .77,
+          bounds.height * .91 * .70,
+        ].reduce((a, b) => a < b ? a : b);
         await tester.dragFrom(
-          tester.getCenter(find.text('颜色')),
-          Offset(size.width >= 650 ? -340 : -230, 0),
+          bounds.center,
+          Offset(-width * .6, 0),
           kind: size.width >= 650
               ? PointerDeviceKind.mouse
               : PointerDeviceKind.touch,
         );
         await tester.pumpAndSettle();
-        expect(find.text('2 / 4'), findsOneWidget);
+        expect(find.text('02  /  08'), findsOneWidget);
         expect(controller.courseId, 'adult-fruit-v2');
         expect(controller.playing, false);
-        await tester.dragFrom(
-          tester.getCenter(find.text('大小')),
-          Offset(size.width >= 650 ? 340 : 230, 0),
-          kind: size.width >= 650
-              ? PointerDeviceKind.mouse
-              : PointerDeviceKind.touch,
-        );
+        await tester.tap(find.text('开始这一课'));
         await tester.pumpAndSettle();
-        expect(find.text('1 / 4'), findsOneWidget);
-        await tester.tap(find.text('颜色'));
-        await tester.pumpAndSettle();
-        expect(controller.courseId, 'adult-colors-v1');
+        expect(controller.courseId, 'adult-drinks-v1');
         expect(controller.playing, false);
         expect(find.text('open'), findsOneWidget);
         expect(tester.takeException(), isNull);

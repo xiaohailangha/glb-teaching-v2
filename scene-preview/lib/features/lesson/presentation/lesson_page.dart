@@ -154,15 +154,13 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      FilledButton.icon(
+                      IconButton(
+                        tooltip: '课程',
                         onPressed: _courses,
-                        style: FilledButton.styleFrom(
-                          backgroundColor: const Color(0xFFE1EFE6),
-                          foregroundColor: const Color(0xFF253D35),
-                          minimumSize: const Size(96, 44),
+                        icon: const Icon(
+                          Icons.auto_stories_outlined,
+                          color: Colors.white70,
                         ),
-                        icon: const Icon(Icons.auto_stories_outlined, size: 20),
-                        label: const Text('课程'),
                       ),
                       const SizedBox(width: 8),
                       IconButton(

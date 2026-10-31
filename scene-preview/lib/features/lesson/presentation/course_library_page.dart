@@ -1,27 +1,25 @@
-import 'dart:convert';
-import 'dart:ui' show PointerDeviceKind;
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../application/lesson_controller.dart';
 import '../domain/course_catalog.dart';
 
-const _ink = Color(0xFF243E35);
-const _muted = Color(0xFF738078);
-const _paper = Color(0xFFF7F6F0);
-const _covers = [
-  Color(0xFFF3D9BD),
-  Color(0xFFD8E8E4),
-  Color(0xFFE7DFF0),
-  Color(0xFFF4DDCD),
-  Color(0xFFE9E7BF),
-  Color(0xFFDDE8F0),
-  Color(0xFFF4DEDC),
-  Color(0xFFDDE6C9),
+const _night = Color(0xFF111D26);
+const _mint = Color(0xFFD6F38B);
+const _palettes = [
+  [Color(0xFFFFC985), Color(0xFFF48168)],
+  [Color(0xFFB2EFE0), Color(0xFF56B8B6)],
+  [Color(0xFFD6C8FC), Color(0xFFA18DD6)],
+  [Color(0xFFFFD69C), Color(0xFFDB927A)],
+  [Color(0xFFF2E5A4), Color(0xFF9ECFA6)],
+  [Color(0xFFB6DBF4), Color(0xFF7CA3D7)],
+  [Color(0xFFFAB9BC), Color(0xFFDC819B)],
+  [Color(0xFFD9EAA7), Color(0xFF9FBE86)],
 ];
-const _pictures = [
+const _art = [
   ('apple', 'banana'),
   ('water', 'milk'),
   ('tea', 'coffee'),
@@ -31,17 +29,29 @@ const _pictures = [
   ('two_apples', 'three_apples'),
   ('small_red_apple', 'two_green_apples'),
 ];
-const _english = [
-  'A LITTLE APPLE',
-  'SOMETHING TO DRINK',
-  'A LITTLE KINDNESS',
-  'AT THE LITTLE SHOP',
-  'A WORLD OF COLORS',
-  'BIG & SMALL',
-  'ONE, TWO, THREE',
-  'PUT IT ALL TOGETHER',
+const _titles = [
+  'Apple\n& banana.',
+  'Take\na sip.',
+  'Please\n& thanks.',
+  'Your\nlittle shop.',
+  'Pick\na color.',
+  'Big\nor small?',
+  'One, two,\nmore.',
+  'Make\nit yours.',
+];
+const _phrases = [
+  'I want an apple.',
+  'I want some water.',
+  'An apple, please.',
+  'I want a banana.',
+  'A red apple.',
+  'A big apple.',
+  'Two apples.',
+  'Two green apples.',
 ];
 
+/// A full-screen, infinitely wrapping poster deck. Course identity is independent
+/// of its visual position; swiping never starts or changes a saved lesson.
 class CourseLibraryPage extends StatefulWidget {
   const CourseLibraryPage({super.key, required this.controller});
   final LessonController controller;
@@ -51,805 +61,512 @@ class CourseLibraryPage extends StatefulWidget {
 
 class _CourseLibraryPageState extends State<CourseLibraryPage>
     with SingleTickerProviderStateMixin {
-  late final AnimationController _arrival = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 700),
-  );
+  late final AnimationController _position;
   Map<String, Map<String, dynamic>> _records = {};
-  final Map<String, int> _lengths = {};
-  bool _loading = true;
-  String? _error, _opening;
-  int _unit = 0;
+  bool _opening = false;
+  double _stride = 220;
+  int get _index => _position.value.round() % courseCatalog.length;
   @override
   void initState() {
     super.initState();
+    final initial = courseCatalog.indexWhere(
+      (c) => c.id == widget.controller.courseId,
+    );
+    _position = AnimationController.unbounded(
+      vsync: this,
+      value: (8000 + math.max(0, initial)).toDouble(),
+    );
     _load();
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (MediaQuery.disableAnimationsOf(context)) {
-      _arrival.value = 1;
-    } else {
-      _arrival.forward();
-    }
   }
 
   Future<void> _load() async {
     try {
       final records = await widget.controller.readCourseCheckpoints();
-      for (final course in courseCatalog) {
-        final data = jsonDecode(
-          await rootBundle.loadString(
-            'assets/avatar/courses/${course.asset}.json',
-          ),
-        );
-        _lengths[course.id] = (data['stages'] as List).length;
-      }
-      if (mounted) {
-        setState(() {
-          _records = records;
-          _loading = false;
-          _error = null;
-        });
-      }
+      if (mounted) setState(() => _records = records);
     } catch (_) {
-      if (mounted) {
-        setState(() {
-          _loading = false;
-          _error = '学习记录暂时未能读取';
-        });
-      }
+      /* The deck remains usable if local storage is unavailable. */
     }
   }
 
-  double _progress(String id) {
-    final index = _records[id]?['index'];
-    final total = _lengths[id] ?? 0;
-    return index is num && total > 1
-        ? (index / (total - 1)).clamp(0.0, 1.0)
-        : 0;
-  }
-
-  Future<void> _open(CourseInfo course) async {
-    if (_opening != null) return;
-    setState(() => _opening = course.id);
-    try {
-      await widget.controller.selectCourse(course.id);
-      if (!mounted) return;
-      Navigator.pop(context);
-      // Selecting a card only prepares the lesson; the learner taps the teacher to start.
-    } catch (_) {
-      if (mounted) {
-        setState(() => _opening = null);
-        ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text('暂时无法打开课程，请重试')));
-      }
-    }
-  }
-
-  @override
-  void dispose() {
-    _arrival.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final current = widget.controller.activeCourse;
-    final intro = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text(
-          'YOUR LEARNING JOURNEY',
-          style: TextStyle(
-            color: _muted,
-            fontSize: 11,
-            letterSpacing: 2.5,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        const SizedBox(height: 10),
-        const Text(
-          '每一次开口，\n都是新的开始。',
-          style: TextStyle(
-            color: _ink,
-            fontSize: 34,
-            fontWeight: FontWeight.w700,
-            height: 1.35,
-            letterSpacing: -1,
-          ),
-        ),
-        const SizedBox(height: 12),
-        const Text(
-          '从单词到短语，再把它说成一句话。',
-          style: TextStyle(color: _muted, fontSize: 14, height: 1.7),
-        ),
-      ],
-    );
-    final resume = Material(
-      color: _ink,
-      borderRadius: BorderRadius.circular(24),
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: _opening == null ? () => _open(current) : null,
-        child: Padding(
-          padding: const EdgeInsets.all(22),
-          child: Row(
-            children: [
-              const Icon(
-                Icons.bookmark_outline_rounded,
-                color: Color(0xFFD7E8BB),
-                size: 30,
-              ),
-              const SizedBox(width: 16),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      _records.containsKey(current.id)
-                          ? '接着上次的足迹'
-                          : '今天，从这一课开始',
-                      style: const TextStyle(
-                        color: Color(0xFFB8CCBF),
-                        fontSize: 12,
-                      ),
-                    ),
-                    const SizedBox(height: 6),
-                    Text(
-                      current.title,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 19,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    const SizedBox(height: 7),
-                    const Text(
-                      '进入课堂后，轻触人物开始',
-                      style: TextStyle(color: Color(0xFFB8CCBF), fontSize: 12),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              _opening == current.id
-                  ? const SizedBox(
-                      width: 22,
-                      height: 22,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: Colors.white,
-                      ),
-                    )
-                  : const Icon(
-                      Icons.arrow_forward_rounded,
-                      color: Color(0xFFD7E8BB),
-                    ),
-            ],
-          ),
-        ),
-      ),
-    );
-    return Scaffold(
-      backgroundColor: _paper,
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: _paper,
-        surfaceTintColor: _paper,
-        toolbarHeight: 68,
-        titleSpacing: 0,
-        title: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 1180),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Row(
-                children: [
-                  const Icon(Icons.spa_outlined, color: _ink, size: 24),
-                  const SizedBox(width: 10),
-                  const Expanded(
-                    child: Text(
-                      'snow speaks',
-                      style: TextStyle(
-                        color: _ink,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 18,
-                        letterSpacing: .5,
-                      ),
-                    ),
-                  ),
-                  TextButton.icon(
-                    onPressed: _opening == null
-                        ? () => Navigator.pop(context)
-                        : null,
-                    icon: const Icon(Icons.close_rounded, size: 20),
-                    label: const Text('返回课堂'),
-                    style: TextButton.styleFrom(
-                      foregroundColor: _ink,
-                      minimumSize: const Size(100, 44),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-      body: SafeArea(
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1180),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 16, 24, 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        LayoutBuilder(
-                          builder: (context, box) => box.maxWidth >= 700
-                              ? Row(
-                                  children: [
-                                    Expanded(child: intro),
-                                    const SizedBox(width: 40),
-                                    Expanded(child: resume),
-                                  ],
-                                )
-                              : Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    intro,
-                                    const SizedBox(height: 22),
-                                    resume,
-                                  ],
-                                ),
-                        ),
-                        const SizedBox(height: 28),
-                        Wrap(
-                          spacing: 8,
-                          runSpacing: 8,
-                          children: [
-                            for (final (i, title) in [
-                              '全部课程',
-                              '单元一 · 想要什么',
-                              '单元二 · 描述事物',
-                            ].indexed)
-                              ChoiceChip(
-                                label: Text(title),
-                                selected: _unit == i,
-                                onSelected: (_) => setState(() => _unit = i),
-                                showCheckmark: false,
-                                selectedColor: const Color(0xFFDDE8DA),
-                                backgroundColor: _paper,
-                                side: BorderSide(
-                                  color: _unit == i
-                                      ? const Color(0xFFDDE8DA)
-                                      : const Color(0xFFDFE3DA),
-                                ),
-                                labelStyle: TextStyle(
-                                  color: _ink,
-                                  fontSize: 12,
-                                  fontWeight: _unit == i
-                                      ? FontWeight.w600
-                                      : FontWeight.w400,
-                                ),
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 8,
-                                  vertical: 9,
-                                ),
-                              ),
-                          ],
-                        ),
-                        if (_loading)
-                          const Padding(
-                            padding: EdgeInsets.only(top: 12),
-                            child: LinearProgressIndicator(minHeight: 2),
-                          ),
-                        if (_error != null)
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  _error!,
-                                  style: const TextStyle(color: _muted),
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: _load,
-                                child: const Text('重试'),
-                              ),
-                            ],
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            SliverToBoxAdapter(
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 900),
-                  child: LayoutBuilder(
-                    builder: (context, box) {
-                      final indices = [
-                        for (var i = 0; i < courseCatalog.length; i++)
-                          if (_unit == 0 || i ~/ 4 + 1 == _unit) i,
-                      ];
-                      final fraction = box.maxWidth >= 650 ? .50 : .86;
-                      return FadeTransition(
-                        opacity: _arrival,
-                        child: _CourseDeck(
-                          key: ValueKey('$_unit:$fraction'),
-                          indices: indices,
-                          fraction: fraction,
-                          cardBuilder: (index) => _CourseCard(
-                            index: index,
-                            current: courseCatalog[index].id == current.id,
-                            progress: _progress(courseCatalog[index].id),
-                            started: _records.containsKey(
-                              courseCatalog[index].id,
-                            ),
-                            busy: _opening == courseCatalog[index].id,
-                            onTap: _opening == null
-                                ? () => _open(courseCatalog[index])
-                                : null,
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ),
-            ),
-            const SliverToBoxAdapter(
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(24, 4, 24, 32),
-                child: Text(
-                  '慢慢来，熟悉的表达会一点点变多。',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: _muted, fontSize: 12),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// A finite, snapping deck: browsing never changes the selected lesson.
-class _CourseDeck extends StatefulWidget {
-  const _CourseDeck({
-    super.key,
-    required this.indices,
-    required this.fraction,
-    required this.cardBuilder,
-  });
-  final List<int> indices;
-  final double fraction;
-  final Widget Function(int) cardBuilder;
-  @override
-  State<_CourseDeck> createState() => _CourseDeckState();
-}
-
-class _CourseDeckState extends State<_CourseDeck> {
-  late final PageController _pages = PageController(
-    viewportFraction: widget.fraction,
-  );
-  int _active = 0;
-  @override
-  void dispose() {
-    _pages.dispose();
-    super.dispose();
-  }
-
-  void _go(int page) {
-    if (page < 0 || page >= widget.indices.length) return;
+  void _settle(double target) {
+    if (_opening) return;
     if (MediaQuery.disableAnimationsOf(context)) {
-      _pages.jumpToPage(page);
+      _position.value = target;
     } else {
-      _pages.animateToPage(
-        page,
-        duration: const Duration(milliseconds: 380),
+      _position.animateTo(
+        target,
+        duration: const Duration(milliseconds: 460),
         curve: Curves.easeOutCubic,
       );
     }
   }
 
+  void _next(int delta) =>
+      _settle((_position.value.round() + delta).toDouble());
+  Future<void> _open() async {
+    if (_opening) return;
+    _position.stop();
+    final course = courseCatalog[_index];
+    setState(() => _opening = true);
+    try {
+      await widget.controller.selectCourse(course.id);
+      if (mounted) Navigator.pop(context);
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _opening = false);
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('课程暂时未能打开，请再试一次')));
+    }
+  }
+
   @override
-  Widget build(BuildContext context) {
-    final reduced = MediaQuery.disableAnimationsOf(context);
-    final index = widget.indices[_active];
-    final textScale = MediaQuery.textScalerOf(context).scale(14) / 14;
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(24, 4, 24, 0),
-          child: Row(
+  void dispose() {
+    _position.dispose();
+    super.dispose();
+  }
+
+  Widget _controls(bool landscape) {
+    final course = courseCatalog[_index];
+    final started = _records.containsKey(course.id);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(
+        landscape ? 0 : 28,
+        8,
+        28,
+        landscape ? 12 : 20,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: landscape
+            ? CrossAxisAlignment.start
+            : CrossAxisAlignment.center,
+        children: [
+          Text(
+            course.goal,
+            textAlign: landscape ? TextAlign.left : TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: landscape ? 21 : 19,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            started ? '接着上次的地方，继续开口。' : '听一个单词，慢慢说成一句话。',
+            textAlign: landscape ? TextAlign.left : TextAlign.center,
+            style: const TextStyle(
+              color: Color(0xFF91A5AF),
+              fontSize: 12,
+              height: 1.5,
+            ),
+          ),
+          const SizedBox(height: 20),
+          SizedBox(
+            width: landscape ? 280 : 340,
+            height: 54,
+            child: FilledButton(
+              onPressed: _opening ? null : _open,
+              style: FilledButton.styleFrom(
+                backgroundColor: _mint,
+                foregroundColor: _night,
+                disabledBackgroundColor: _mint.withValues(alpha: .4),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (_opening)
+                    const SizedBox(
+                      width: 18,
+                      height: 18,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: _night,
+                      ),
+                    )
+                  else
+                    Text(
+                      started ? '继续这一课' : '开始这一课',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  const SizedBox(width: 14),
+                  const Icon(Icons.arrow_forward_rounded, size: 20),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Expanded(
+              IconButton(
+                tooltip: '上一课',
+                onPressed: _opening ? null : () => _next(-1),
+                icon: const Icon(
+                  Icons.chevron_left_rounded,
+                  color: Color(0xFFAEC0C8),
+                ),
+              ),
+              Semantics(
+                liveRegion: true,
                 child: Text(
-                  index < 4 ? '单元一 · 我想要什么' : '单元二 · 说清是哪一个',
+                  '${(_index + 1).toString().padLeft(2, '0')}  /  08',
+                  key: const ValueKey('course-position'),
                   style: const TextStyle(
-                    color: _ink,
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
+                    color: Color(0xFFAEC0C8),
+                    fontSize: 12,
+                    letterSpacing: 3,
                   ),
                 ),
               ),
-              Text(
-                '${_active + 1} / ${widget.indices.length}',
-                style: const TextStyle(color: _muted, fontSize: 12),
+              IconButton(
+                tooltip: '下一课',
+                onPressed: _opening ? null : () => _next(1),
+                icon: const Icon(
+                  Icons.chevron_right_rounded,
+                  color: Color(0xFFAEC0C8),
+                ),
               ),
             ],
           ),
-        ),
-        const SizedBox(height: 6),
-        SizedBox(
-          height: 420 + (textScale - 1).clamp(0, 2) * 200,
-          child: PageView.builder(
-            scrollBehavior: ScrollConfiguration.of(context).copyWith(
-              dragDevices: {
-                PointerDeviceKind.touch,
-                PointerDeviceKind.mouse,
-                PointerDeviceKind.stylus,
-                PointerDeviceKind.trackpad,
-              },
-            ),
-            key: const ValueKey('course-deck'),
-            controller: _pages,
-            itemCount: widget.indices.length,
-            clipBehavior: Clip.none,
-            onPageChanged: (page) => setState(() => _active = page),
-            itemBuilder: (context, page) => AnimatedBuilder(
-              animation: _pages,
-              child: widget.cardBuilder(widget.indices[page]),
-              builder: (context, child) {
-                final position =
-                    _pages.hasClients && _pages.position.hasContentDimensions
-                    ? _pages.page ?? 0
-                    : 0.0;
-                final delta = (page - position).clamp(-1.0, 1.0);
-                final distance = delta.abs();
-                return Transform.translate(
-                  offset: Offset(
-                    reduced ? 0 : -delta * 50,
-                    reduced ? 0 : distance * 18,
-                  ),
-                  child: Transform.scale(
-                    scale: reduced ? 1 : 1 - distance * .12,
-                    child: Transform.rotate(
-                      angle: reduced ? 0 : delta * .025,
-                      child: Opacity(
-                        opacity: reduced ? 1 : 1 - distance * .2,
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(8, 18, 8, 16),
-                          child: Align(
-                            alignment: Alignment.topCenter,
-                            child: ExcludeSemantics(
-                              excluding: page != _active,
-                              child: IgnorePointer(
-                                ignoring: page != _active,
-                                child: child,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            IconButton(
-              tooltip: '上一课',
-              onPressed: _active == 0 ? null : () => _go(_active - 1),
-              icon: const Icon(Icons.arrow_back_rounded),
-              color: _ink,
-            ),
-            const SizedBox(width: 8),
-            for (var page = 0; page < widget.indices.length; page++)
-              Semantics(
-                button: true,
-                selected: page == _active,
-                label: '查看第${widget.indices[page] + 1}课',
-                child: InkResponse(
-                  onTap: () => _go(page),
-                  radius: 22,
-                  child: SizedBox(
-                    width: 26,
-                    height: 44,
-                    child: Center(
-                      child: AnimatedContainer(
-                        duration: Duration(milliseconds: reduced ? 0 : 200),
-                        width: page == _active ? 22 : 6,
-                        height: 6,
-                        decoration: BoxDecoration(
-                          color: page == _active
-                              ? _ink
-                              : const Color(0xFFD4DCD2),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            const SizedBox(width: 8),
-            IconButton(
-              tooltip: '下一课',
-              onPressed: _active == widget.indices.length - 1
-                  ? null
-                  : () => _go(_active + 1),
-              icon: const Icon(Icons.arrow_forward_rounded),
-              color: _ink,
-            ),
-          ],
-        ),
-        const Padding(
-          padding: EdgeInsets.only(top: 4, bottom: 20),
-          child: Text(
-            '左右滑动挑选 · 轻触卡片进入课堂',
-            style: TextStyle(color: _muted, fontSize: 11),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _CourseCard extends StatefulWidget {
-  const _CourseCard({
-    required this.index,
-    required this.current,
-    required this.progress,
-    required this.started,
-    required this.busy,
-    this.onTap,
-  });
-  final int index;
-  final bool current, started, busy;
-  final double progress;
-  final VoidCallback? onTap;
-  @override
-  State<_CourseCard> createState() => _CourseCardState();
-}
-
-class _CourseCardState extends State<_CourseCard> {
-  bool _hover = false, _pressed = false;
-  @override
-  Widget build(BuildContext context) {
-    final i = widget.index;
-    final course = courseCatalog[i];
-    final reduced = MediaQuery.disableAnimationsOf(context);
-    return MouseRegion(
-      onEnter: (_) => setState(() => _hover = true),
-      onExit: (_) => setState(() => _hover = false),
-      child: AnimatedContainer(
-        duration: Duration(milliseconds: reduced ? 0 : 180),
-        transform: Matrix4.translationValues(0, _hover ? -5 : 0, 0)
-          ..scaleByDouble(_pressed ? .98 : 1, _pressed ? .98 : 1, 1, 1),
-        transformAlignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
-          boxShadow: [
-            BoxShadow(
-              color: _ink.withValues(alpha: _hover ? .12 : .035),
-              blurRadius: _hover ? 24 : 12,
-              offset: const Offset(0, 8),
-            ),
-          ],
-        ),
-        child: Material(
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
-            side: BorderSide(
-              color: widget.current
-                  ? const Color(0xFF6C8C73)
-                  : const Color(0xFFE8E9E1),
-              width: widget.current ? 1.5 : 1,
-            ),
-          ),
-          clipBehavior: Clip.antiAlias,
-          child: InkWell(
-            onTap: widget.onTap,
-            onHighlightChanged: (value) => setState(() => _pressed = value),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  height: 176,
-                  margin: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: _covers[i],
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                  clipBehavior: Clip.antiAlias,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        right: -18,
-                        bottom: -48,
-                        child: Container(
-                          width: 190,
-                          height: 190,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.white.withValues(alpha: .28),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 16,
-                        top: 12,
-                        child: Text(
-                          '${i + 1}'.padLeft(2, '0'),
-                          style: TextStyle(
-                            fontSize: 34,
-                            height: 1,
-                            fontWeight: FontWeight.w300,
-                            color: _ink.withValues(alpha: .45),
-                          ),
-                        ),
-                      ),
-                      if (widget.current)
-                        Positioned(
-                          right: 12,
-                          top: 12,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 9,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: .8),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: const Text(
-                              '当前课程',
-                              style: TextStyle(
-                                color: _ink,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                        ),
-                      Positioned.fill(
-                        top: 25,
-                        child: Center(
-                          child: SizedBox(
-                            width: 230,
-                            height: 140,
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  left: 18,
-                                  top: 0,
-                                  child: Transform.rotate(
-                                    angle: -.15,
-                                    child: SvgPicture.asset(
-                                      'assets/avatar/images/${_pictures[i].$1}.svg',
-                                      width: 120,
-                                      height: 120,
-                                      excludeFromSemantics: true,
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  right: 4,
-                                  bottom: 0,
-                                  child: Transform.rotate(
-                                    angle: .15,
-                                    child: SvgPicture.asset(
-                                      'assets/avatar/images/${_pictures[i].$2}.svg',
-                                      width: 105,
-                                      height: 105,
-                                      excludeFromSemantics: true,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(18, 10, 18, 18),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        _english[i],
-                        style: const TextStyle(
-                          color: _muted,
-                          fontSize: 9,
-                          letterSpacing: 1.3,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                      const SizedBox(height: 7),
-                      Text(
-                        course.title.split(' · ').last,
-                        style: const TextStyle(
-                          color: _ink,
-                          fontSize: 21,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        course.goal,
-                        style: const TextStyle(
-                          color: _muted,
-                          fontSize: 12,
-                          height: 1.6,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              i == 3 || i == 7 ? '综合复习 · 场景表达' : '单词 → 短语 → 句子',
-                              style: const TextStyle(
-                                color: _muted,
-                                fontSize: 11,
-                              ),
-                            ),
-                          ),
-                          const Icon(
-                            Icons.north_east_rounded,
-                            color: _ink,
-                            size: 19,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 14),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(4),
-                        child: ExcludeSemantics(
-                          child: LinearProgressIndicator(
-                            value: widget.progress,
-                            minHeight: 3,
-                            backgroundColor: const Color(0xFFF0F1EB),
-                            color: const Color(0xFF6C8C73),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        widget.busy
-                            ? '正在准备…'
-                            : widget.started
-                            ? '已有学习记录 · ${(widget.progress * 100).round()}% 教学进度'
-                            : '准备好，就从这里开始',
-                        style: const TextStyle(color: _muted, fontSize: 10),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
+        ],
       ),
     );
   }
+
+  Widget _deck() => LayoutBuilder(
+    builder: (context, box) {
+      final reduced = MediaQuery.disableAnimationsOf(context);
+      final height = math.min(540.0, box.maxHeight * .91);
+      final width = math.min(math.min(370.0, box.maxWidth * .77), height * .70);
+      final cardHeight = width / .70;
+      _stride = width * .72;
+      final position = _position.value;
+      final center = position.round();
+      // Draw the nearest poster last: side cards never cover the main card.
+      final slots = [for (var i = center - 3; i <= center + 3; i++) i]
+        ..sort((a, b) => (b - position).abs().compareTo((a - position).abs()));
+      return Semantics(
+        label: '课程卡片，左右滑动切换',
+        onIncrease: _opening ? null : () => _next(1),
+        onDecrease: _opening ? null : () => _next(-1),
+        child: GestureDetector(
+          key: const ValueKey('course-deck'),
+          behavior: HitTestBehavior.opaque,
+          onHorizontalDragStart: _opening ? null : (_) => _position.stop(),
+          onHorizontalDragUpdate: _opening
+              ? null
+              : (event) => _position.value -= event.delta.dx / _stride,
+          onHorizontalDragEnd: _opening
+              ? null
+              : (event) {
+                  final velocity = event.primaryVelocity ?? 0;
+                  final target = velocity.abs() > 450
+                      ? (velocity < 0
+                            ? _position.value.floor() + 1
+                            : _position.value.ceil() - 1)
+                      : _position.value.round();
+                  _settle(target.toDouble());
+                },
+          onHorizontalDragCancel: () =>
+              _settle(_position.value.roundToDouble()),
+          child: ClipRect(
+            child: SizedBox.expand(
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  for (final slot in slots)
+                    Builder(
+                      builder: (context) {
+                        final delta = slot - position;
+                        final distance = delta.abs();
+                        final scale = reduced
+                            ? 1.0
+                            : math.pow(.78, distance).toDouble();
+                        return Transform.translate(
+                          offset: Offset(
+                            delta * width * .62,
+                            reduced ? 0 : distance * 16,
+                          ),
+                          child: Transform.scale(
+                            scale: scale,
+                            child: Transform.rotate(
+                              angle: reduced
+                                  ? 0
+                                  : delta.clamp(-2.0, 2.0) * .045,
+                              child: Opacity(
+                                opacity: math.max(0.0, 1 - distance * .25),
+                                child: IgnorePointer(
+                                  child: ExcludeSemantics(
+                                    excluding: slot != center,
+                                    child: SizedBox(
+                                      width: width,
+                                      height: cardHeight,
+                                      child: _Poster(
+                                        index: slot % courseCatalog.length,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    },
+  );
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    backgroundColor: _night,
+    body: AnimatedBuilder(
+      animation: _position,
+      builder: (context, _) {
+        final landscape =
+            MediaQuery.sizeOf(context).width >
+            MediaQuery.sizeOf(context).height * 1.25;
+        return DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: RadialGradient(
+              center: const Alignment(0, -.25),
+              radius: 1.0,
+              colors: [Color.lerp(_night, _palettes[_index][1], .13)!, _night],
+            ),
+          ),
+          child: SafeArea(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(18, 4, 18, 0),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        tooltip: '返回课堂',
+                        onPressed: _opening
+                            ? null
+                            : () => Navigator.pop(context),
+                        icon: const Icon(
+                          Icons.arrow_back_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const Expanded(
+                        child: Text(
+                          '挑一课，开口说',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 48),
+                    ],
+                  ),
+                ),
+                if (landscape)
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(flex: 6, child: _deck()),
+                        Expanded(
+                          flex: 4,
+                          child: SingleChildScrollView(child: _controls(true)),
+                        ),
+                      ],
+                    ),
+                  )
+                else ...[
+                  Expanded(child: _deck()),
+                  _controls(false),
+                ],
+              ],
+            ),
+          ),
+        );
+      },
+    ),
+  );
+}
+
+class _Poster extends StatelessWidget {
+  const _Poster({required this.index});
+  final int index;
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, box) {
+      // A single scalable composition keeps the same poster proportions on small
+      // phones, landscape devices and larger text settings without clipping.
+      return Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(28),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: .35),
+              blurRadius: 28,
+              offset: const Offset(0, 18),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(28),
+          child: FittedBox(
+            fit: BoxFit.fill,
+            child: SizedBox(
+              width: 320,
+              height: 457,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: _palettes[index],
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      right: -90,
+                      top: 130,
+                      child: Container(
+                        width: 350,
+                        height: 350,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white.withValues(alpha: .16),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: -80,
+                      top: 210,
+                      child: Container(
+                        width: 260,
+                        height: 260,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: .22),
+                            width: 1,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 24,
+                      top: 24,
+                      right: 24,
+                      child: Row(
+                        children: [
+                          Text(
+                            'LESSON ${(index + 1).toString().padLeft(2, '0')}',
+                            style: const TextStyle(
+                              color: Color(0xFF34434A),
+                              fontSize: 10,
+                              letterSpacing: 2,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.auto_awesome,
+                            size: 17,
+                            color: Color(0xFF34434A),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Positioned(
+                      left: 23,
+                      top: 60,
+                      child: Text(
+                        _titles[index],
+                        textScaler: TextScaler.noScaling,
+                        style: const TextStyle(
+                          fontFamily: 'Arial',
+                          fontSize: 49,
+                          height: .98,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: -2.5,
+                          color: Color(0xFF20343D),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 21,
+                      top: 164,
+                      child: Transform.rotate(
+                        angle: -.15,
+                        child: SvgPicture.asset(
+                          'assets/avatar/images/${_art[index].$1}.svg',
+                          width: 190,
+                          height: 190,
+                          excludeFromSemantics: true,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: 5,
+                      top: 217,
+                      child: Transform.rotate(
+                        angle: .18,
+                        child: SvgPicture.asset(
+                          'assets/avatar/images/${_art[index].$2}.svg',
+                          width: 155,
+                          height: 155,
+                          excludeFromSemantics: true,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 25,
+                      bottom: 27,
+                      right: 25,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            courseCatalog[index].title.split(' · ').last,
+                            textScaler: TextScaler.noScaling,
+                            style: const TextStyle(
+                              color: Color(0xFF20343D),
+                              fontSize: 23,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            _phrases[index],
+                            textScaler: TextScaler.noScaling,
+                            style: const TextStyle(
+                              color: Color(0xFF34434A),
+                              fontSize: 13,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    },
+  );
 }
