@@ -18,6 +18,7 @@ class _EntryIdentityState extends State<EntryIdentity>
   late final motion = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 3800),
+    value: (DateTime.now().millisecondsSinceEpoch % 3800) / 3800,
   );
   @override
   void didChangeDependencies() {
@@ -251,6 +252,47 @@ class EntryProgress extends StatelessWidget {
       color: entryInk,
       backgroundColor: const Color(0xFFE2E3DC),
       semanticsLabel: value == null ? '正在准备应用' : '正在准备课堂',
+    ),
+  );
+}
+
+/// A visual invitation to type, without requesting focus or opening a keyboard.
+class EntryIdleCaret extends StatefulWidget {
+  const EntryIdleCaret({super.key});
+  @override
+  State<EntryIdleCaret> createState() => _EntryIdleCaretState();
+}
+
+class _EntryIdleCaretState extends State<EntryIdleCaret>
+    with SingleTickerProviderStateMixin {
+  late final blink = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 700),
+  )..repeat(reverse: true);
+  @override
+  void dispose() {
+    blink.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => ExcludeSemantics(
+    child: AnimatedBuilder(
+      animation: blink,
+      builder: (context, _) => Opacity(
+        opacity: MediaQuery.disableAnimationsOf(context)
+            ? .65
+            : .15 + .65 * Curves.easeInOut.transform(blink.value),
+        child: Container(
+          key: const ValueKey('idle-input-caret'),
+          width: 1.5,
+          height: 25,
+          decoration: BoxDecoration(
+            color: entryInk,
+            borderRadius: BorderRadius.circular(1),
+          ),
+        ),
+      ),
     ),
   );
 }

@@ -18,7 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Snow Speaks · 把英语，说进生活。">
+  <meta name="description" content="Snow Speaks · 把英语，说进生活">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -32,9 +32,11 @@
   <title>Snow Speaks · 开口说英语</title>
   <link rel="manifest" href="manifest.json">
   <link rel="preload" href="main.dart.js" as="script">
+  <link rel="preload" href="assets/assets/fonts/NotoSansSC-ui.ttf" as="font" type="font/ttf" crossorigin>
   <style>
+    @font-face { font-family:EntrySC; src:url("assets/assets/fonts/NotoSansSC-ui.ttf") format("truetype"); font-display:block; }
     html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#f4f2eb; }
-    #boot-world { position:fixed; inset:0; z-index:2147483646; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#252b27; background:#f4f2eb; font-family:system-ui,sans-serif; }
+    #boot-world { box-sizing:border-box; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); position:fixed; inset:0; z-index:2147483646; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#252b27; background:#f4f2eb; font-family:EntrySC,sans-serif; }
     #boot-world .mark { display:flex; align-items:center; gap:5px; height:72px; margin-bottom:24px; }
     #boot-world i { width:7px; height:26px; border-radius:8px; background:#252b27; animation:breathe 3.8s linear infinite; animation-delay:-3.014s; }
     #boot-world i:nth-child(2),#boot-world i:nth-child(4) { height:45px; animation-delay:-3.407s; }
@@ -68,15 +70,23 @@
   <script>
     (() => {
       const splash=document.getElementById('boot-world'),line=document.getElementById('boot-line');
-      let finished=false;
+      let finished=false,frame;
+      const bars=[...splash.querySelectorAll('i')];
+      const reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+      bars.forEach(bar=>bar.style.animation='none');
+      function animateMark(){
+        const phase=(Date.now()%3800)/3800*Math.PI*2;
+        bars.forEach((bar,i)=>bar.style.transform=`scaleY(${reduced ? .9 : .86+.14*Math.sin(phase-Math.abs(i-2)*.65)})`);
+        if(!finished)frame=requestAnimationFrame(animateMark);
+      }
+      animateMark();
       window.sceneBootFailed=()=>{
         if(finished)return;
         line.classList.add('failed');line.setAttribute('role','button');
         line.setAttribute('aria-label','加载中断，点击重试');line.tabIndex=0;
         line.onclick=()=>location.reload();line.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')location.reload();};
       };
-      const finish=()=>{if(finished)return;finished=true;splash.remove();};
-      window.addEventListener('flutter-first-frame',finish,{once:true});
+      const finish=()=>{if(finished)return;finished=true;cancelAnimationFrame(frame);splash.remove();};
       window.addEventListener('scene-ui-ready',finish,{once:true});
     })();
   </script>

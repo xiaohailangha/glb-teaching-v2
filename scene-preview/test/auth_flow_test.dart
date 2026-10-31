@@ -105,10 +105,15 @@ void main() {
           MaterialApp(home: AuthGate(api: api, prepareScene: false)),
         );
         await advance(tester);
-        expect(find.text('需要一个手机号。'), findsOneWidget);
+        expect(find.text('需要一个手机号'), findsOneWidget);
         expect(find.text('snow speaks'), findsNothing);
         expect(find.byType(SingleChildScrollView), findsNothing);
         expect(find.byKey(const ValueKey('guide-next')), findsNothing);
+        expect(find.byKey(const ValueKey('idle-input-caret')), findsOneWidget);
+        expect(
+          tester.widget<TextField>(find.byType(TextField)).focusNode!.hasFocus,
+          false,
+        );
         final identity = tester.state(find.byType(EntryIdentity));
         final before = tester
             .getSize(find.byKey(const ValueKey('voice-bar-0')))
@@ -160,11 +165,11 @@ void main() {
           await advance(tester);
         }
         await next();
-        expect(find.text('输入验证码。'), findsOneWidget);
+        expect(find.text('输入验证码'), findsOneWidget);
         expect(sends, 1);
         expect(tester.state(find.byType(EntryIdentity)), same(identity));
         await back();
-        expect(find.text('需要一个手机号。'), findsOneWidget);
+        expect(find.text('需要一个手机号'), findsOneWidget);
         await next();
         expect(sends, 1);
         await tester.enterText(find.byType(TextField), '0000');
@@ -174,10 +179,10 @@ void main() {
         await tester.enterText(find.byType(TextField), '8888');
         await advance(tester);
         await next();
-        expect(find.text('还需要一个昵称。'), findsOneWidget);
+        expect(find.text('还需要一个昵称'), findsOneWidget);
         await back();
         await next();
-        expect(find.text('还需要一个昵称。'), findsOneWidget);
+        expect(find.text('还需要一个昵称'), findsOneWidget);
         await tester.enterText(find.byType(TextField), '莉莉');
         await tester.pump(const Duration(milliseconds: 180));
         await tester.enterText(find.byType(TextField), '');
@@ -215,7 +220,7 @@ void main() {
         );
         await tester.widget<LessonPage>(find.byType(LessonPage)).onLeave!();
         await advance(tester);
-        expect(find.text('需要一个手机号。'), findsOneWidget);
+        expect(find.text('需要一个手机号'), findsOneWidget);
         await tester.enterText(find.byType(TextField), '13800138000');
         await advance(tester);
         await next();
@@ -274,7 +279,7 @@ void main() {
       c.handle({'event': 'ready'});
       c.handle({'event': 'scene-presented'});
       await advance(tester);
-      expect(find.text('需要一个手机号。'), findsOneWidget);
+      expect(find.text('需要一个手机号'), findsOneWidget);
       await tester.pumpWidget(const SizedBox());
       c.dispose();
       api.dispose();

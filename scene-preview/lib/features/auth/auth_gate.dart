@@ -63,6 +63,9 @@ class _AuthGateState extends State<AuthGate> {
     phone.addListener(_inputChanged);
     code.addListener(_inputChanged);
     nickname.addListener(_inputChanged);
+    phoneFocus.addListener(_focusChanged);
+    codeFocus.addListener(_focusChanged);
+    nameFocus.addListener(_focusChanged);
     _restore();
   }
 
@@ -88,6 +91,10 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
+  void _focusChanged() {
+    if (mounted) setState(() {});
+  }
+
   void _inputChanged() {
     if (mounted) {
       setState(() {
@@ -97,7 +104,9 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   void _go(int value, {bool backwards = false}) {
-    final transferFocus = step != 0 && value != 4;
+    final transferFocus =
+        value != 4 &&
+        (phoneFocus.hasFocus || codeFocus.hasFocus || nameFocus.hasFocus);
     if (value == 4) FocusManager.instance.primaryFocus?.unfocus();
     setState(() {
       revealingPhone = step == 0 && value == 2;
@@ -401,6 +410,7 @@ class _AuthGateState extends State<AuthGate> {
                     fit: StackFit.expand,
                     children: [
                       SafeArea(
+                        maintainBottomViewPadding: true,
                         child: LayoutBuilder(
                           builder: (context, box) {
                             final guided = step != 0 && step != 4;
@@ -410,7 +420,7 @@ class _AuthGateState extends State<AuthGate> {
                             final panelTop = math.max(
                               0.0,
                               math.min(
-                                h * (compact ? .24 : .34),
+                                h * (compact ? .24 : .45),
                                 h - panelHeight - 8,
                               ),
                             );
@@ -456,8 +466,8 @@ class _AuthGateState extends State<AuthGate> {
                                     child: IgnorePointer(
                                       ignoring: !guided,
                                       child: AnimatedOpacity(
-                                        opacity: 1,
-                                        duration: Duration.zero,
+                                        opacity: guided ? 1 : 0,
+                                        duration: _duration(750),
                                         curve: Curves.easeOutCubic,
                                         child: Center(
                                           child: ConstrainedBox(
@@ -465,8 +475,8 @@ class _AuthGateState extends State<AuthGate> {
                                               maxWidth: 340,
                                             ),
                                             child: AnimatedSwitcher(
-                                              duration: _duration(600),
-                                              reverseDuration: _duration(600),
+                                              duration: _duration(720),
+                                              reverseDuration: _duration(720),
                                               layoutBuilder:
                                                   (
                                                     current,
@@ -517,7 +527,14 @@ class _AuthGateState extends State<AuthGate> {
                                                                   : panelHeight) *
                                                               (1 - t),
                                                         ),
-                                                        child: child,
+                                                        child: Opacity(
+                                                          opacity: Curves
+                                                              .easeInOut
+                                                              .transform(
+                                                                animation.value,
+                                                              ),
+                                                          child: child,
+                                                        ),
                                                       );
                                                     },
                                                   ),
@@ -618,7 +635,7 @@ class _AuthGateState extends State<AuthGate> {
             height: compact ? 25 : 36,
             child: Center(
               child: Text(
-                isPhone ? '需要一个手机号。' : (isName ? '还需要一个昵称。' : '输入验证码。'),
+                isPhone ? '需要一个手机号' : (isName ? '还需要一个昵称' : '输入验证码'),
                 style: TextStyle(
                   color: entryInk,
                   fontSize: compact ? 15 : 18,
@@ -633,60 +650,71 @@ class _AuthGateState extends State<AuthGate> {
             height: compact ? 48 : 60,
             child: Semantics(
               label: label,
-              child: TextField(
-                key: ValueKey('guide-input-$step'),
-                controller: controller,
-                focusNode: isPhone
-                    ? phoneFocus
-                    : (isCode ? codeFocus : nameFocus),
-                readOnly: busy,
-                maxLength: isPhone ? 11 : (isCode ? (testMode ? 4 : 6) : 12),
-                textAlign: TextAlign.center,
-                textAlignVertical: TextAlignVertical.center,
-                keyboardType: isName
-                    ? TextInputType.name
-                    : TextInputType.number,
-                textInputAction: TextInputAction.done,
-                autofillHints: isPhone
-                    ? const [AutofillHints.telephoneNumberNational]
-                    : (isCode
-                          ? const [AutofillHints.oneTimeCode]
-                          : const [AutofillHints.nickname]),
-                inputFormatters: isName
-                    ? null
-                    : [FilteringTextInputFormatter.digitsOnly],
-                onSubmitted: (_) {
-                  if (busy) return;
-                  if (isPhone && phoneValid && canSend) {
-                    _send();
-                  } else if (isCode && codeValid) {
-                    _verify();
-                  } else if (isName && nameValid) {
-                    _nextName();
-                  }
-                },
-                style: TextStyle(
-                  color: entryInk,
-                  fontSize: compact ? 21 : 25,
-                  letterSpacing: isName ? 1 : 3,
-                ),
-                cursorColor: entryInk,
-                decoration: InputDecoration(
-                  hintText: isCode && testMode ? '8888' : null,
-                  semanticCounterText: label,
-                  counterText: '',
-                  contentPadding: EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: compact ? 8 : 14,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  TextField(
+                    key: ValueKey('guide-input-$step'),
+                    controller: controller,
+                    focusNode: isPhone
+                        ? phoneFocus
+                        : (isCode ? codeFocus : nameFocus),
+                    readOnly: busy,
+                    maxLength: isPhone
+                        ? 11
+                        : (isCode ? (testMode ? 4 : 6) : 12),
+                    textAlign: TextAlign.center,
+                    textAlignVertical: TextAlignVertical.center,
+                    keyboardType: isName
+                        ? TextInputType.name
+                        : TextInputType.number,
+                    textInputAction: TextInputAction.done,
+                    autofillHints: isPhone
+                        ? const [AutofillHints.telephoneNumberNational]
+                        : (isCode
+                              ? const [AutofillHints.oneTimeCode]
+                              : const [AutofillHints.nickname]),
+                    inputFormatters: isName
+                        ? null
+                        : [FilteringTextInputFormatter.digitsOnly],
+                    onSubmitted: (_) {
+                      if (busy) return;
+                      if (isPhone && phoneValid && canSend) {
+                        _send();
+                      } else if (isCode && codeValid) {
+                        _verify();
+                      } else if (isName && nameValid) {
+                        _nextName();
+                      }
+                    },
+                    style: TextStyle(
+                      color: entryInk,
+                      fontSize: compact ? 21 : 25,
+                      letterSpacing: isName ? 1 : 3,
+                    ),
+                    cursorColor: entryInk,
+                    decoration: InputDecoration(
+                      hintText: null,
+                      semanticCounterText: label,
+                      counterText: '',
+                      contentPadding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: compact ? 8 : 14,
+                      ),
+                      hintStyle: TextStyle(
+                        color: entryMuted.withValues(alpha: .35),
+                      ),
+                      border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      disabledBorder: InputBorder.none,
+                    ),
                   ),
-                  hintStyle: TextStyle(
-                    color: entryMuted.withValues(alpha: .35),
-                  ),
-                  border: InputBorder.none,
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
-                  disabledBorder: InputBorder.none,
-                ),
+                  if (controller.text.isEmpty &&
+                      !(isPhone ? phoneFocus : (isCode ? codeFocus : nameFocus))
+                          .hasFocus)
+                    const IgnorePointer(child: EntryIdleCaret()),
+                ],
               ),
             ),
           ),
