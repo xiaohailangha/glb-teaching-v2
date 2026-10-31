@@ -18,6 +18,15 @@
     "sha256": "516394cd3d4defd6114d87ffc010dbb8721e9f284e03f7a4308d984e92149a4c"
   },
   {
+    "key": "phoneme_schwa",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mid-central_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Mid-central_vowel.ogg",
+    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+    "sha256": "5b0e21c9e7cefdc46f3822881cc24419d959994b6c7bad278d21ac4487c804f5"
+  },
+  {
     "key": "phoneme_l",
     "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/l.wav",
     "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
@@ -99,6 +108,15 @@
     "sha256": "6922ee3dd3dbce1b86dd0cec470c67a6c40187b3f82f9bd7feda68de3d56406c"
   },
   {
+    "key": "phoneme_ih",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Near-close_near-front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg",
+    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+    "sha256": "3c07d0a3b413821a926d46286c7631de22119e5dff24f1971bb46b577cb5cbee"
+  },
+  {
     "key": "phoneme_sh",
     "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%CA%83.wav",
     "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
@@ -144,6 +162,15 @@
     "sha256": "b2fd256180235d4b6786f7e6bc913ab73e2e61682b3f34cd70ab71b6e037d5b3"
   },
   {
+    "key": "phoneme_uh",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Near-close_near-back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg",
+    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+    "sha256": "63673408c8fee51b24023fa10a0728e3e2f2a1cbb2c6492f59bcdb7824ba0b92"
+  },
+  {
     "key": "phoneme_h",
     "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/h.wav",
     "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
@@ -171,30 +198,73 @@
     "sha256": "ac47a754a585001b7f0c2f2d2ad03bc9d89f85b5588900890260e6c12cae1d68"
   },
   {
-    "key": "phoneme_schwa",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mid-central_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "page": "https://commons.wikimedia.org/wiki/File:Mid-central_vowel.ogg",
-    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
-    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
-    "sha256": "5b0e21c9e7cefdc46f3822881cc24419d959994b6c7bad278d21ac4487c804f5"
+    "key": "phoneme_w",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/w.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "39504007315052794fd239ffa0cc1a50a29f86a486bb554563f605d5067f6563"
   },
   {
-    "key": "phoneme_ih",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Near-close_near-front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg",
-    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
-    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
-    "sha256": "3c07d0a3b413821a926d46286c7631de22119e5dff24f1971bb46b577cb5cbee"
+    "key": "phoneme_aa",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%91.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "44895f4b28686d2843e9323ab3f35c883027f9cdcbbc031683b5834c356c85ed"
   },
   {
-    "key": "phoneme_uh",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Near-close_near-back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg",
-    "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
-    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
-    "sha256": "63673408c8fee51b24023fa10a0728e3e2f2a1cbb2c6492f59bcdb7824ba0b92"
+    "key": "phoneme_iy",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/i.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "31d0987aa6b277fc7e7328f771a19e0eed261be5cd8a88afec81a76abc7575d9"
+  },
+  {
+    "key": "phoneme_eh",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%9B.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "a2118ee780bc8483d73f571b21c31b7f240ce159bf09feda6401ec091b345968"
+  },
+  {
+    "key": "phoneme_r",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%BB.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Retroflex approximant [ɻ], an American English /r/ realization, not a trill",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "c25f3f040698bb7910ef5a7ef9924fb5125e61537ce3b862cc80ffb29487dee2"
+  },
+  {
+    "key": "phoneme_ay",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/En-us-I.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+    "license": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+    "author": "Wikimedia Commons contributor (PD-self)",
+    "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "7a3a70a505356fd642b866f7c9fb69c28b1861a0242a2b385f6fe36c89f78720"
+  },
+  {
+    "key": "phoneme_ey",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/En-us-A.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+    "license": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+    "author": "Wikimedia Commons contributor (PD-self)",
+    "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "9421662073d8e879c6140d89bd1b496e5a9cbb4c92cebde05b0cc1301923c284"
   }
 ]

@@ -40,4 +40,4 @@ for(const id of [...Object.keys(symbols),...Object.keys(commons)]) {
 delete original.group_schwa_l;delete original.phoneme_ow;
 for(const key of ['group_schwa_l','phoneme_ow'])fs.rmSync(path.join(dir,key+'.wav'),{force:true});
 fs.writeFileSync(path.join(dir,'pronunciation-units.json'),JSON.stringify(original,null,2)+'\n');
-fs.writeFileSync(path.join(dir,'IPA-reference-attribution.json'),JSON.stringify(report,null,2)+'\n');
+fs.writeFileSync(path.join(dir,'IPA-reference-attribution.json'),JSON.stringify(Object.entries(original).filter(([,v])=>v.reference).map(([key,v])=>({key,...v.source})),null,2)+'\n');

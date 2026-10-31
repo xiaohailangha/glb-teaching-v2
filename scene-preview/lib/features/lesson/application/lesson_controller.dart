@@ -9,6 +9,7 @@ import '../domain/lesson_word.dart';
 import '../domain/emotion.dart';
 import '../domain/vocabulary_ledger.dart';
 import '../domain/course_lexicon.dart';
+import '../domain/ipa_sounds.dart';
 
 typedef AvatarCommand = void Function(Map<String, Object?> command);
 
@@ -128,6 +129,26 @@ class LessonController extends ChangeNotifier {
     if (!adultCourse || coursePaused || !ready) return;
     captureState = 'idle';
     _send?.call({'type': 'course-preview', 'clip': clip, 'session': session});
+  }
+
+  void previewIpa(String symbol) {
+    final id = ipaSounds[symbol];
+    if (id == null || !adultCourse || coursePaused || !ready) return;
+    _send?.call({
+      'type': 'course-sound',
+      'clip': 'phoneme_$id',
+      'symbol': symbol,
+      'session': session,
+    });
+  }
+
+  void navigateCourse(int direction) {
+    if (!adultCourse || coursePaused || !ready) return;
+    _send?.call({
+      'type': 'course-navigate',
+      'direction': direction < 0 ? -1 : 1,
+      'session': session,
+    });
   }
 
   int emotionIndex = 0;

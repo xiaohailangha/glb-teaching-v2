@@ -65,6 +65,47 @@ class TeachingDirector {
   final List<Stage> stages;
   int index = 0;
   List<Stage> branch = [];
+  bool navigate(int direction) {
+    if (!fruitCourse || stages.isEmpty) return false;
+    bool practice(Stage s) =>
+        s.clip == null &&
+        const {'listen', 'recall', 'choice', 'finish'}.contains(s.phase);
+    var current = index;
+    while (current < stages.length - 1 && !practice(stages[current])) {
+      current++;
+    }
+    int next;
+    if (direction > 0) {
+      if (stages[current].id == 'summary') return false;
+      next = stages[current].id.startsWith('scene_')
+          ? stages.indexWhere((s) => s.id == 'extension_gate')
+          : current + 1;
+    } else {
+      next = current - 1;
+      while (next >= 0 && !practice(stages[next])) {
+        next--;
+      }
+      if (next < 0) {
+        next = 0;
+      }
+      // The unchosen scene alternative is never a previous exercise.
+      if (stages[next].id == 'scene_banana' ||
+          stages[next].id == 'scene_apple') {
+        next = stages.indexWhere((s) => s.id == 'scene_pick');
+      }
+      if (next > 0 &&
+          (stages[next - 1].phase == 'demonstrate' ||
+              stages[next - 1].id.endsWith('_cue'))) {
+        next--;
+      }
+    }
+    if (next < 0 || next >= stages.length) return false;
+    branch = [];
+    index = next;
+    // Navigation is never a successful attempt or a correct answer.
+    return true;
+  }
+
   Stage get stage => branch.isNotEmpty
       ? branch.first
       : index < stages.length

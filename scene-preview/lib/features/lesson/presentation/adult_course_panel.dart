@@ -7,6 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../application/lesson_controller.dart';
 import '../domain/course_lexicon.dart';
 import 'learning_text.dart';
+import 'ipa_text.dart';
 
 class AdultCoursePanel extends StatelessWidget {
   const AdultCoursePanel({super.key, required this.controller});
@@ -124,8 +125,9 @@ class AdultCoursePanel extends StatelessWidget {
                 ),
               ),
             if (entry != null && !c.hideAnswer && c.coachSentence.isEmpty)
-              Text(
+              IpaText(
                 entry.ipa,
+                controller: c,
                 style: const TextStyle(
                   fontFamily: 'NotoSansIPA',
                   fontSize: 17,
@@ -133,8 +135,9 @@ class AdultCoursePanel extends StatelessWidget {
                 ),
               ),
             const SizedBox(height: 10),
-            Text(
+            IpaText(
               c.courseText,
+              controller: c,
               style: TextStyle(
                 fontSize: compact ? 13 : 15,
                 color: Colors.white70,
@@ -187,8 +190,7 @@ class AdultCoursePanel extends StatelessWidget {
                 ),
               ),
             const SizedBox(height: 16),
-            if (c.automaticState == 'correction' ||
-                c.automaticState == 'success')
+            if (c.automaticState == 'correction')
               AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
                 padding: c.automaticState == 'success'
@@ -200,8 +202,9 @@ class AdultCoursePanel extends StatelessWidget {
                       : const Color(0xFFFFD1A2).withValues(alpha: .12),
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child: Text(
+                child: IpaText(
                   c.automaticFeedback,
+                  controller: c,
                   style: TextStyle(
                     color: c.automaticState == 'success'
                         ? const Color(0xFFBDE5DD)
@@ -212,7 +215,7 @@ class AdultCoursePanel extends StatelessWidget {
                 ),
               ),
             const SizedBox(height: 10),
-            ListeningLine(controller: c),
+            if (c.automaticState != 'success') ListeningLine(controller: c),
           ],
         ],
       );
@@ -234,25 +237,7 @@ class AdultCoursePanel extends StatelessWidget {
               child: Semantics(
                 container: true,
                 explicitChildNodes: true,
-                child: Stack(
-                  children: [
-                    body,
-                    if (c.automaticState == 'success')
-                      Positioned.fill(
-                        child: IgnorePointer(
-                          child: TweenAnimationBuilder<double>(
-                            key: ValueKey(
-                              '${c.courseStep}:${c.liveTranscript}',
-                            ),
-                            tween: Tween(begin: 0, end: 1),
-                            duration: const Duration(milliseconds: 1000),
-                            builder: (context, t, _) =>
-                                CustomPaint(painter: _SuccessSparkles(t)),
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
+                child: body,
               ),
             ),
           ),
@@ -331,34 +316,6 @@ class ListeningLine extends StatelessWidget {
       ],
     );
   }
-}
-
-class _SuccessSparkles extends CustomPainter {
-  const _SuccessSparkles(this.t);
-  final double t;
-  @override
-  void paint(Canvas canvas, Size size) {
-    for (var i = 0; i < 12; i++) {
-      final angle = i * math.pi * 2 / 12, radius = (.12 + .33 * t) * size.width;
-      final p = Offset(
-        size.width * .5 + math.cos(angle) * radius,
-        size.height * .45 + math.sin(angle) * radius * .7,
-      );
-      final paint = Paint()
-        ..color = (i.isEven ? const Color(0xFFBDE5DD) : const Color(0xFFFFD6A8))
-            .withValues(alpha: (1 - t) * .75)
-        ..strokeWidth = 2
-        ..strokeCap = StrokeCap.round;
-      canvas.drawLine(
-        p,
-        p + Offset(math.cos(angle) * 5, math.sin(angle) * 5),
-        paint,
-      );
-    }
-  }
-
-  @override
-  bool shouldRepaint(_SuccessSparkles old) => t != old.t;
 }
 
 /// Only reveals characters received from ASR; never fills from the lesson target.

@@ -5,6 +5,8 @@ import '../application/lesson_controller.dart';
 import '../../settings/application/app_settings.dart';
 import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
+import 'lesson_navigation.dart';
+import 'course_celebration.dart';
 
 class LessonPage extends StatefulWidget {
   const LessonPage({super.key});
@@ -113,7 +115,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
               left: box.maxWidth * .60,
               right: box.maxWidth * .06,
               top: box.maxHeight * .10,
-              bottom: box.maxHeight * .06,
+              bottom: 62,
               child: AnimatedBuilder(
                 animation: controller,
                 builder: (context, _) => controller.adultCourse
@@ -152,6 +154,32 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                           ],
                         ),
                       ),
+              ),
+            ),
+            AnimatedBuilder(
+              animation: controller,
+              builder: (context, _) =>
+                  controller.automaticState == 'success' &&
+                      !controller.coursePaused
+                  ? CourseCelebration(
+                      key: ValueKey(
+                        '${controller.courseStep}:${controller.automaticFeedback}',
+                      ),
+                      message: controller.automaticFeedback,
+                    )
+                  : const SizedBox.shrink(),
+            ),
+            Positioned(
+              right: 20,
+              bottom: 8,
+              child: SafeArea(
+                child: AnimatedBuilder(
+                  animation: controller,
+                  builder: (context, _) =>
+                      controller.adultCourse && !controller.coursePaused
+                      ? LessonNavigation(controller: controller)
+                      : const SizedBox.shrink(),
+                ),
               ),
             ),
             AnimatedBuilder(

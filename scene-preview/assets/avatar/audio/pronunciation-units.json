@@ -972,5 +972,194 @@
     "bundled": true,
     "duration": 1.319,
     "sourceKey": "74ab9ddcd40146280bb75d0796769e4115a4fb84a98def3929d60897929c35cd"
+  },
+  "phoneme_w": {
+    "symbol": "w",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.6913125,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.6913125,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/w.wav",
+      "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Ruben Schachtenhaufen",
+      "description": "Independent phonetic recording",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "39504007315052794fd239ffa0cc1a50a29f86a486bb554563f605d5067f6563"
+    }
+  },
+  "phoneme_aa": {
+    "symbol": "ɑː",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.6844375,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.6844375,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%91.wav",
+      "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Ruben Schachtenhaufen",
+      "description": "Independent phonetic recording",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "44895f4b28686d2843e9323ab3f35c883027f9cdcbbc031683b5834c356c85ed"
+    }
+  },
+  "phoneme_iy": {
+    "symbol": "iː",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.8576875,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.8576875,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/i.wav",
+      "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Ruben Schachtenhaufen",
+      "description": "Independent phonetic recording",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "31d0987aa6b277fc7e7328f771a19e0eed261be5cd8a88afec81a76abc7575d9"
+    }
+  },
+  "phoneme_eh": {
+    "symbol": "e",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.66275,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.66275,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%9B.wav",
+      "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Ruben Schachtenhaufen",
+      "description": "Independent phonetic recording",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "a2118ee780bc8483d73f571b21c31b7f240ce159bf09feda6401ec091b345968"
+    }
+  },
+  "phoneme_r": {
+    "symbol": "ɹ",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.7791875,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.7791875,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%BB.wav",
+      "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Ruben Schachtenhaufen",
+      "description": "Retroflex approximant [ɻ], an American English /r/ realization, not a trill",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "c25f3f040698bb7910ef5a7ef9924fb5125e61537ce3b862cc80ffb29487dee2"
+    }
+  },
+  "phoneme_ay": {
+    "symbol": "aɪ",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 0.487625,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.487625,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/En-us-I.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+      "license": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+      "author": "Wikimedia Commons contributor (PD-self)",
+      "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "7a3a70a505356fd642b866f7c9fb69c28b1861a0242a2b385f6fe36c89f78720"
+    }
+  },
+  "phoneme_ey": {
+    "symbol": "eɪ",
+    "kind": "phoneme",
+    "bundled": true,
+    "reference": true,
+    "voice": "phonetic-reference",
+    "duration": 1.161,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 1.161,
+        "id": 0
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/En-us-A.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+      "license": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+      "author": "Wikimedia Commons contributor (PD-self)",
+      "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+      "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+      "sha256": "9421662073d8e879c6140d89bd1b496e5a9cbb4c92cebde05b0cc1301923c284"
+    }
   }
 }
