@@ -1,267 +1,160 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 
 import '../lesson/application/lesson_controller.dart';
+import 'entry_design.dart';
 
-class WorldLoading extends StatefulWidget {
+class WorldLoading extends StatelessWidget {
   const WorldLoading({
     super.key,
     required this.controller,
     required this.retry,
+    this.cancel,
   });
   final LessonController controller;
   final VoidCallback retry;
+  final VoidCallback? cancel;
   @override
-  State<WorldLoading> createState() => _WorldLoadingState();
-}
-
-class _WorldLoadingState extends State<WorldLoading>
-    with SingleTickerProviderStateMixin {
-  late final motion = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 12),
-  )..repeat();
-  @override
-  void dispose() {
-    motion.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) => AnimatedBuilder(
-    animation: Listenable.merge([widget.controller.resourceTick, motion]),
-    builder: (context, _) {
-      final c = widget.controller,
-          portrait = MediaQuery.sizeOf(context).aspectRatio < 1;
-      final reduced = MediaQuery.disableAnimationsOf(context);
-      return ColoredBox(
-        color: const Color(0xFF073645),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            CustomPaint(painter: _AdventureSky(reduced ? 0 : motion.value)),
-            SafeArea(
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: portrait ? 32 : 70,
-                  vertical: 24,
-                ),
-                child: Column(
-                  children: [
-                    const Spacer(flex: 2),
-                    const Text(
-                      '一场开口说英语的小冒险',
-                      style: TextStyle(
-                        color: Color(0xFFE1F1E6),
-                        fontSize: 15,
-                        letterSpacing: 3,
-                      ),
-                    ),
-                    const SizedBox(height: 18),
-                    Stack(
-                      children: [
-                        Transform.translate(
-                          offset: const Offset(0, 6),
-                          child: Text(
-                            'HELLO!',
-                            style: TextStyle(
-                              fontFamily: 'NotoSansIPA',
-                              fontSize: portrait ? 72 : 100,
-                              fontWeight: FontWeight.w900,
-                              height: 1,
-                              color: const Color(0xFF087176),
-                              letterSpacing: -3,
-                            ),
+  Widget build(BuildContext context) => ColoredBox(
+    color: entryPaper,
+    child: SafeArea(
+      child: AnimatedBuilder(
+        animation: controller.resourceTick,
+        builder: (context, _) => LayoutBuilder(
+          builder: (context, box) => SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(28, 24, 28, 26),
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: (box.maxHeight - 50).clamp(0, double.infinity),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const EntryBrand(),
+                      if (cancel != null)
+                        IconButton(
+                          tooltip: '返回',
+                          onPressed: cancel,
+                          icon: const Icon(
+                            Icons.close_rounded,
+                            color: entryInk,
+                            size: 21,
                           ),
                         ),
-                        Text(
-                          'HELLO!',
-                          style: TextStyle(
-                            fontFamily: 'NotoSansIPA',
-                            fontSize: portrait ? 72 : 100,
-                            fontWeight: FontWeight.w900,
-                            height: 1,
-                            color: const Color(0xFFFFE8A2),
-                            letterSpacing: -3,
+                    ],
+                  ),
+                  SizedBox(
+                    height: box.maxHeight > 560 ? box.maxHeight * .14 : 20,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    height: 150,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        SizedBox.expand(
+                          child: CircularProgressIndicator(
+                            value: controller.resourceProgress,
+                            strokeWidth: 2,
+                            color: entryInk,
+                            backgroundColor: const Color(0xFFDDDFD4),
+                          ),
+                        ),
+                        Container(
+                          width: 116,
+                          height: 116,
+                          decoration: const BoxDecoration(
+                            color: entryLime,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.graphic_eq_rounded,
+                            size: 48,
+                            color: entryInk,
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 20),
-                    const Text(
-                      '世界，从这一声开始',
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
+                  ),
+                  const SizedBox(height: 34),
+                  Text(
+                    controller.error != null ? '再准备一下。' : '让课堂，准备好。',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: entryInk,
+                      fontSize: 28,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: -1,
                     ),
-                    const Spacer(flex: 3),
-                    ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 380),
-                      child: Column(
-                        children: [
-                          if (c.error != null) ...[
-                            const Text(
-                              '这次准备没有完成',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            const Text(
-                              '检查网络后，我们再试一次。',
-                              style: TextStyle(color: Colors.white70),
-                            ),
-                            const SizedBox(height: 16),
-                            FilledButton(
-                              onPressed: widget.retry,
-                              child: const Text('重新准备'),
-                            ),
-                          ] else ...[
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  c.resourceLabel,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 14,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    controller.error != null
+                        ? '网络似乎慢了一点，请重试。'
+                        : '人物、声音，还有你的第一句话。',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: entryMuted, fontSize: 13),
+                  ),
+                  SizedBox(
+                    height: box.maxHeight > 560 ? box.maxHeight * .12 : 24,
+                  ),
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 340),
+                    child: controller.error != null
+                        ? EntryButton('重新准备', onPressed: retry)
+                        : Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      controller.resourceLabel,
+                                      style: const TextStyle(
+                                        color: entryMuted,
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                Text(
-                                  '${(c.resourceProgress * 100).floor()}%',
-                                  style: const TextStyle(
-                                    fontFamily: 'NotoSansIPA',
-                                    color: Color(0xFFFFE8A2),
-                                    fontSize: 18,
+                                  Text(
+                                    '${(controller.resourceProgress * 100).floor()}%',
+                                    style: const TextStyle(
+                                      color: entryInk,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 12),
-                            Container(
-                              padding: const EdgeInsets.all(4),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF052B39),
-                                borderRadius: BorderRadius.circular(20),
-                                border: Border.all(color: Colors.white24),
+                                ],
                               ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(16),
+                              const SizedBox(height: 14),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(2),
                                 child: LinearProgressIndicator(
-                                  value: c.resourceProgress,
-                                  minHeight: 12,
-                                  backgroundColor: Colors.transparent,
-                                  color: const Color(0xFFFFCF66),
+                                  value: controller.resourceProgress,
+                                  minHeight: 2,
+                                  color: entryInk,
+                                  backgroundColor: const Color(0xFFDDDFD4),
                                 ),
                               ),
-                            ),
-                            const SizedBox(height: 16),
-                            const Text(
-                              '人物和声音准备好，就可以出发',
-                              style: TextStyle(
-                                color: Color(0xFFB1D8D5),
-                                fontSize: 12,
+                              const SizedBox(height: 18),
+                              const Text(
+                                '首次准备需要一点时间，下次会更快',
+                                style: TextStyle(
+                                  color: entryMuted,
+                                  fontSize: 11,
+                                ),
                               ),
-                            ),
-                          ],
-                        ],
-                      ),
-                    ),
-                    const Spacer(),
-                  ],
-                ),
+                            ],
+                          ),
+                  ),
+                ],
               ),
             ),
-          ],
-        ),
-      );
-    },
-  );
-}
-
-class _AdventureSky extends CustomPainter {
-  _AdventureSky(this.t);
-  final double t;
-  @override
-  void paint(Canvas canvas, Size size) {
-    final w = size.width, h = size.height, p = Paint();
-    canvas.drawRect(
-      Offset.zero & size,
-      p
-        ..shader = const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Color(0xFF06303E), Color(0xFF12636E), Color(0xFF40A49A)],
-        ).createShader(Offset.zero & size),
-    );
-    p.shader = null;
-    canvas.drawCircle(
-      Offset(w * .17, h * .23),
-      math.min(w, h) * .10,
-      p..color = const Color(0xFFEFCA77),
-    );
-    for (var i = 0; i < 34; i++) {
-      final x = ((i * .61803398875) % 1) * w, y = ((i * .371) % 1) * h * .65;
-      canvas.drawCircle(
-        Offset(x, y),
-        i % 3 == 0 ? 1.7 : .8,
-        p
-          ..color = Colors.white.withValues(
-            alpha: .15 + .2 * (.5 + .5 * math.sin(t * math.pi * 2 + i)),
           ),
-      );
-    }
-    for (var i = 0; i < 3; i++) {
-      final x = w * (.13 + i * .38) + math.sin(t * math.pi * 2 + i) * 12,
-          y = h * (.16 + i * .16);
-      canvas.drawOval(
-        Rect.fromCenter(center: Offset(x, y), width: 100 + i * 35, height: 18),
-        p..color = Colors.white.withValues(alpha: .06),
-      );
-    }
-    for (var i = 0; i < 3; i++) {
-      final y = h * (.68 + i * .10);
-      final hill = Path()
-        ..moveTo(0, y)
-        ..cubicTo(w * .3, y - 80, w * .55, y + 100, w, y - 18)
-        ..lineTo(w, h)
-        ..lineTo(0, h)
-        ..close();
-      canvas.drawPath(
-        hill,
-        p
-          ..color = [
-            const Color(0xFF246B70),
-            const Color(0xFF15505B),
-            const Color(0xFF0A3646),
-          ][i],
-      );
-    }
-    // A small paper plane travels through the world, not a fake loading animation.
-    final x = w * .76, y = h * .52 + math.sin(t * math.pi * 2) * 10;
-    canvas.drawPath(
-      Path()
-        ..moveTo(x - 42, y - 12)
-        ..lineTo(x + 45, y - 35)
-        ..lineTo(x + 10, y + 28)
-        ..lineTo(x - 4, y + 4)
-        ..close(),
-      p..color = const Color(0xFFFFE8A2),
-    );
-    canvas.drawPath(
-      Path()
-        ..moveTo(x - 4, y + 4)
-        ..lineTo(x + 45, y - 35)
-        ..lineTo(x + 7, y + 11)
-        ..close(),
-      p..color = const Color(0xFFE3B95C),
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _AdventureSky old) => old.t != t;
+        ),
+      ),
+    ),
+  );
 }

@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import {spawn} from 'node:child_process';
 import {api} from './tencent-deploy-api.mjs';
 
+const enableTestAuth=process.argv.includes('--test-auth');
 const instance='lhins-52h0i09a',host='49.233.179.83',label='glb-temporary-deploy-20261030';
 async function run(source,name){
  const request=await api('tat','RunCommand',{InstanceIds:[instance],CommandName:name,CommandType:'SHELL',Content:Buffer.from(source).toString('base64'),SaveCommand:false,Timeout:120,Username:'root'});
@@ -70,6 +71,7 @@ test "$(hostname)" = VM-0-11-ubuntu
 backup=/opt/glb-backups/before-scene-$(date -u +%Y%m%dT%H%M%SZ)
 install -d -m 700 "$backup"
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
+if test -f /etc/systemd/system/glb-teaching.service.d/auth-test.conf; then cp /etc/systemd/system/glb-teaching.service.d/auth-test.conf "$backup/auth-test.conf"; fi
 cp /opt/glb-teaching/server.mjs "$backup/server.mjs"
 for name in auth-http tencent-sms learning-http learning-store; do
  if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
@@ -111,6 +113,8 @@ rollback(){
  if test -f "$backup/scene-config.json"; then install -o glbapp -g glbapp -m 600 "$backup/scene-config.json" /opt/glb-teaching/.secrets/cos-scene-assets.json; fi
  if test "$scene_installed" = 1 && test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$stage.failed"; fi
  if test -d "$backup/scene"; then mv "$backup/scene" /opt/glb-teaching/build/web/scene; fi
+ if test -f "$backup/auth-test.conf"; then cp "$backup/auth-test.conf" /etc/systemd/system/glb-teaching.service.d/auth-test.conf; elif test '${enableTestAuth}' = true; then rm -f /etc/systemd/system/glb-teaching.service.d/auth-test.conf; fi
+ systemctl daemon-reload
  systemctl restart glb-teaching
  nginx -t && systemctl reload nginx
  echo SCENE_RELEASE_ROLLED_BACK >&2
@@ -184,6 +188,12 @@ if 'location = /api/assets/scene-manifest' not in s:
     p.write_text(s.replace(marker,block+marker))
 PY
 nginx -t
+if test '${enableTestAuth}' = true; then
+ install -d -m 755 /etc/systemd/system/glb-teaching.service.d
+ printf '[Service]\\nEnvironment=AUTH_TEST_MODE=1\\n' > /etc/systemd/system/glb-teaching.service.d/auth-test.conf
+ systemctl daemon-reload
+ backend_changed=1
+fi
 if test "$backend_changed" = 1; then systemctl restart glb-teaching; fi
 curl --retry 5 --retry-connrefused --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/speech/status >/dev/null
 curl --retry 3 --retry-delay 1 -fsS -H 'Host: 127.0.0.1:5296' http://127.0.0.1:5296/api/assets/scene-manifest >/dev/null

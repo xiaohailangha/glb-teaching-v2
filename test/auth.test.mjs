@@ -72,3 +72,39 @@ test('HTTP rejects cross-site requests, sets HttpOnly cookie, never returns sess
   const me=await fetch(origin+'/api/auth/me',{headers:{Cookie:cookie}});assert.equal((await me.json()).user.nickname,'莉莉');
   await post('logout',{}, {Cookie:cookie});const after=await fetch(origin+'/api/auth/me',{headers:{Cookie:cookie}});assert.equal((await after.json()).user,null);
 });
+
+test('preview 8888 uses real challenges and sessions without SMS or access to live phone accounts', async t=>{
+  const {store,sent,tick}=setup(t);
+  const liveCode=await store.requestCode('13800138000','live');
+  const liveProof=store.verify({...liveCode,code:sent[0].code},'live');
+  const live=store.register(liveProof.registrationToken,'正式学习者');
+  tick(61000);store.testMode=true;
+  const request=await store.requestCode('13800138000','preview');
+  assert.equal(request.testMode,true);assert.equal(sent.length,1);
+  assert.throws(()=>store.verify({...request,code:'0000'},'preview'),/不正确/);
+  const proof=store.verify({...request,code:'8888'},'preview');
+  assert.ok(proof.registrationToken);
+  const preview=store.register(proof.registrationToken,'测试学习者');
+  assert.notEqual(preview.user.id,live.user.id);
+  assert.equal(store.current(preview.token).nickname,'测试学习者');
+  assert.throws(()=>store.verify({...request,code:'8888'},'preview'),/失效/);
+  store.logout(preview.token);assert.equal(store.current(preview.token),null);
+  tick(61000);const second=await store.requestCode('13800138000','preview');
+  const login=store.verify({...second,code:'8888'},'preview');
+  assert.equal(login.user.id,preview.user.id);
+  store.testMode=false;tick(61000);
+  const real=await store.requestCode('13800138000','live');
+  assert.throws(()=>store.verify({...real,code:'8888'},'live'),/6 位/);
+  assert.equal(store.verify({...real,code:sent[1].code},'live').user.id,live.user.id);
+});
+
+test('preview status is explicit; cooldown, expiry and attempts still apply without SMS configuration',async t=>{
+  const {store,sent,tick}=setup(t,{testMode:true,configured:()=>false});
+  const first=await store.requestCode('13800138001','preview');
+  await assert.rejects(store.requestCode('13800138001','preview'),e=>e.status===429);
+  for(let i=0;i<5;i++)assert.throws(()=>store.verify({...first,code:'0000'},'preview'),/不正确/);
+  assert.throws(()=>store.verify({...first,code:'8888'},'preview'),/失效/);
+  tick(61000);const second=await store.requestCode('13800138001','preview');tick(301000);
+  assert.throws(()=>store.verify({...second,code:'8888'},'preview'),/失效/);
+  assert.equal(sent.length,0);
+});

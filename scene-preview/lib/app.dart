@@ -6,7 +6,7 @@ class SnowSpeaksApp extends StatelessWidget {
   const SnowSpeaksApp({super.key});
   @override
   Widget build(BuildContext context) => MaterialApp(
-    title: 'glb模型能力',
+    title: 'Snow Speaks · 开口说英语',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
       useMaterial3: true,

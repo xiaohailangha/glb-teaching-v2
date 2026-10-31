@@ -1,12 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
 import '../lesson/application/learning_sync.dart';
 import 'world_loading.dart';
+import 'entry_design.dart';
 import 'world_browser_stub.dart'
     if (dart.library.js_interop) 'world_browser_web.dart';
 import '../../core/avatar/avatar_view.dart';
@@ -23,7 +25,9 @@ class AuthGate extends StatefulWidget {
 class _AuthGateState extends State<AuthGate> {
   final shared = LessonController();
   int sceneAttempt = 0;
-  bool introRevealed = false;
+  bool waitingForScene = false;
+  bool pendingGuest = false;
+  bool testMode = false;
   late final api = widget.api ?? AuthApi();
   final nickname = TextEditingController(),
       phone = TextEditingController(),
@@ -43,11 +47,11 @@ class _AuthGateState extends State<AuthGate> {
   void initState() {
     super.initState();
     if (!widget.prepareScene) {
-      introRevealed = true;
       shared.ready = true;
       shared.scenePresented = true;
     }
     WidgetsBinding.instance.addPostFrameCallback((_) => hideBootSplash());
+    shared.resourceTick.addListener(_sceneChanged);
     _restore();
   }
 
@@ -59,6 +63,7 @@ class _AuthGateState extends State<AuthGate> {
       ]);
       if (!mounted) return;
       smsReady = results[0]['smsReady'] == true;
+      testMode = results[0]['testMode'] == true;
       if (results[1]['user'] is Map) {
         user = LearnerAccount.fromJson(results[1]['user'] as Map);
         step = 4;
@@ -92,7 +97,13 @@ class _AuthGateState extends State<AuthGate> {
     } catch (_) {
       if (mounted) setState(() => error = '暂时无法完成，请稍后再试');
     } finally {
-      if (mounted) setState(() => busy = false);
+      if (mounted) {
+        setState(() {
+          busy = false;
+          if (error.isNotEmpty) waitingForScene = false;
+        });
+        _sceneChanged();
+      }
     }
   }
 
@@ -129,8 +140,10 @@ class _AuthGateState extends State<AuthGate> {
     _go(3);
   });
   Future<void> _verify() => _perform(() async {
-    if (!RegExp(r'^\d{6}$').hasMatch(code.text)) {
-      throw const AuthFailure('请输入 6 位验证码');
+    if (!(testMode ? RegExp(r'^\d{4}$') : RegExp(r'^\d{6}$')).hasMatch(
+      code.text,
+    )) {
+      throw AuthFailure(testMode ? '请输入 4 位测试验证码' : '请输入 6 位验证码');
     }
     final result = await api.request(
       'verify',
@@ -144,11 +157,8 @@ class _AuthGateState extends State<AuthGate> {
       return;
     }
     registrationToken = result['registrationToken'] as String;
-    if (!login && nickname.text.trim().isNotEmpty) {
-      await _register();
-    } else {
-      _go(1);
-    }
+    nickname.clear();
+    _go(1);
   });
   Future<void> _register() async {
     final result = await api.request(
@@ -178,24 +188,49 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   Future<void> _enterLesson({bool guest = false}) => _perform(() async {
-    if (!shared.scenePresented) return;
-    if (guest || Uri.base.queryParameters['adminPreview']=='1') user = null;
+    FocusManager.instance.primaryFocus?.unfocus();
+    if (!shared.scenePresented) {
+      setState(() {
+        waitingForScene = true;
+        pendingGuest = guest;
+      });
+      return;
+    }
+    if (guest || Uri.base.queryParameters['adminPreview'] == '1') user = null;
     if (user != null) await restoreCloudLearning(user!.id);
     await shared.bindAccount(
       id: user?.id ?? '',
       name: user?.nickname,
       saveName: user == null ? null : api.rename,
     );
+    if (!kIsWeb) {
+      await SystemChrome.setPreferredOrientations(const [
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+      ]);
+    }
     if (mounted) {
       setLessonMode(true);
-      setState(() => inLesson = true);
+      setState(() {
+        inLesson = true;
+        waitingForScene = false;
+      });
     }
   });
+  void _sceneChanged() {
+    if (waitingForScene && !busy) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && waitingForScene && shared.scenePresented && !busy) {
+          _enterLesson(guest: pendingGuest);
+        }
+      });
+    }
+  }
+
   void _retryScene() {
     shared.resetResources();
     setState(() {
       sceneAttempt++;
-      introRevealed = false;
     });
   }
 
@@ -203,11 +238,17 @@ class _AuthGateState extends State<AuthGate> {
     shared.stop();
     setLessonMode(false);
     if (user != null) await api.logout();
+    if (!kIsWeb) {
+      await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+    }
     if (!mounted) return;
     setState(() {
       user = null;
       newlyRegistered = false;
       inLesson = false;
+      waitingForScene = false;
+      timer?.cancel();
+      cooldown = 0;
       step = 0;
       error = '';
       nickname.clear();
@@ -221,6 +262,7 @@ class _AuthGateState extends State<AuthGate> {
   @override
   void dispose() {
     timer?.cancel();
+    shared.resourceTick.removeListener(_sceneChanged);
     shared.dispose();
     nickname.dispose();
     phone.dispose();
@@ -230,372 +272,406 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   @override
-  Widget build(BuildContext context) => AnimatedBuilder(
-    animation: shared.resourceTick,
-    builder: (context, _) => Scaffold(
-      backgroundColor: const Color(0xFF073645),
-      body: Stack(
-        fit: StackFit.expand,
-        children: [
-          if (widget.prepareScene)
-            Positioned.fill(
-              child: AvatarView(
-                key: ValueKey(sceneAttempt),
-                controller: shared,
-                welcome: !inLesson,
-              ),
+  Widget build(BuildContext context) => Scaffold(
+    backgroundColor: entryPaper,
+    body: Stack(
+      fit: StackFit.expand,
+      children: [
+        if (widget.prepareScene)
+          Positioned.fill(
+            child: AvatarView(
+              key: ValueKey(sceneAttempt),
+              controller: shared,
+              welcome: !inLesson,
             ),
-          if (shared.scenePresented && inLesson)
-            Positioned.fill(
-              child: LessonPage(
-                key: ValueKey(user?.id ?? 'guest'),
-                account: user,
-                auth: api,
-                onLeave: _leave,
-                sharedController: shared,
-              ),
+          ),
+        if (inLesson)
+          Positioned.fill(
+            child: LessonPage(
+              key: ValueKey(user?.id ?? 'guest'),
+              account: user,
+              auth: api,
+              onLeave: _leave,
+              sharedController: shared,
             ),
-          if (shared.scenePresented && !inLesson)
-            SafeArea(
-              child: LayoutBuilder(
-                builder: (context, box) {
-                  final portrait = box.maxWidth < 600;
-                  return SingleChildScrollView(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: portrait ? 22 : 44,
-                      vertical: 20,
-                    ),
-                    child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                        minHeight: (box.maxHeight - 40).clamp(
-                          0,
-                          double.infinity,
-                        ),
+          )
+        else if (waitingForScene)
+          Positioned.fill(
+            child: WorldLoading(
+              controller: shared,
+              retry: _retryScene,
+              cancel: () => setState(() => waitingForScene = false),
+            ),
+          )
+        else
+          Positioned.fill(
+            child: ColoredBox(
+              color: entryPaper,
+              child: SafeArea(
+                child: LayoutBuilder(
+                  builder: (context, box) {
+                    final wide = box.maxWidth >= 760;
+                    final keyboard =
+                        MediaQuery.viewInsetsOf(context).bottom > 0;
+                    return SingleChildScrollView(
+                      padding: EdgeInsets.fromLTRB(
+                        wide ? 48 : 26,
+                        18,
+                        wide ? 48 : 26,
+                        20,
                       ),
-                      child: portrait
-                          ? Column(
-                              mainAxisSize: MainAxisSize.min,
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          minHeight: mathMax(0, box.maxHeight - 38),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                _brand(true),
-                                SizedBox(
-                                  height:
-                                      MediaQuery.viewInsetsOf(context).bottom >
-                                          0
-                                      ? 12
-                                      : box.maxHeight * .27,
-                                ),
-                                _form(),
-                              ],
-                            )
-                          : Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: (box.maxHeight - 40).clamp(
-                                      0,
-                                      double.infinity,
+                                const EntryBrand(),
+                                if (step > 0 && step < 4)
+                                  IconButton(
+                                    tooltip: '返回',
+                                    onPressed: busy ? null : _back,
+                                    icon: const Icon(
+                                      Icons.close_rounded,
+                                      color: entryInk,
+                                      size: 21,
                                     ),
-                                    child: Align(
-                                      alignment: Alignment.topLeft,
-                                      child: _brand(false),
+                                  )
+                                else
+                                  const Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 14),
+                                    child: Text(
+                                      'EN / 中文',
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        letterSpacing: 1,
+                                        color: entryMuted,
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: keyboard || box.maxHeight < 650 ? 12 : 30,
+                            ),
+                            if (step == 0)
+                              _welcome(wide, box.maxHeight)
+                            else
+                              Center(
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    maxWidth: 420,
+                                  ),
+                                  child: AnimatedSwitcher(
+                                    duration:
+                                        MediaQuery.disableAnimationsOf(context)
+                                        ? Duration.zero
+                                        : const Duration(milliseconds: 250),
+                                    child: _form(
+                                      keyboard || box.maxHeight < 500,
                                     ),
                                   ),
                                 ),
-                                const SizedBox(width: 28),
-                                SizedBox(
-                                  width: (box.maxWidth * .46).clamp(320, 450),
-                                  child: _form(),
-                                ),
-                              ],
-                            ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          if (!introRevealed)
-            Positioned.fill(
-              child: ExcludeSemantics(
-                excluding: shared.scenePresented,
-                child: IgnorePointer(
-                  ignoring: shared.scenePresented,
-                  child: AnimatedOpacity(
-                    opacity: shared.scenePresented ? 0 : 1,
-                    duration: const Duration(milliseconds: 550),
-                    onEnd: () {
-                      if (shared.scenePresented && mounted) {
-                        setState(() => introRevealed = true);
-                      }
-                    },
-                    child: TickerMode(
-                      enabled: !shared.scenePresented,
-                      child: WorldLoading(
-                        controller: shared,
-                        retry: _retryScene,
+                              ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ),
+                    );
+                  },
                 ),
               ),
             ),
-        ],
-      ),
+          ),
+      ],
     ),
   );
-  Widget _brand(bool portrait) => Align(
-    alignment: Alignment.topLeft,
-    child: Column(
+
+  double mathMax(double a, double b) => a > b ? a : b;
+
+  void _back() {
+    FocusManager.instance.primaryFocus?.unfocus();
+    if (step == 3 || step == 1) {
+      registrationToken = '';
+      _go(2);
+    } else {
+      _go(0);
+    }
+  }
+
+  Widget _welcome(bool wide, double height) {
+    final compact = height < 650;
+    final copy = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: [
+        const Text(
+          'LESS SCROLLING. MORE SPEAKING.',
+          style: TextStyle(fontSize: 9, letterSpacing: 1.5, color: entryMuted),
+        ),
+        SizedBox(height: compact ? 10 : 16),
         Text(
-          'HELLO, WORLD.',
+          '把英语，\n说进生活。',
           style: TextStyle(
-            fontFamily: 'NotoSansIPA',
-            fontSize: portrait ? 26 : 38,
-            fontWeight: FontWeight.w900,
-            letterSpacing: -1,
-            color: const Color(0xFFFFE4A0),
-            shadows: const [
-              Shadow(color: Color(0xFF07545E), offset: Offset(0, 3)),
-            ],
+            color: entryInk,
+            fontSize: compact ? 34 : (wide ? 52 : 40),
+            height: 1.2,
+            letterSpacing: -1.5,
+            fontWeight: FontWeight.w700,
           ),
+        ),
+        SizedBox(height: compact ? 10 : 15),
+        const Text(
+          '一个单词，一句表达。\n和你的学习伙伴，从容开口。',
+          style: TextStyle(color: entryMuted, fontSize: 14, height: 1.8),
+        ),
+        SizedBox(height: compact ? 18 : 30),
+        EntryButton(
+          loading ? '正在连接' : '开始我的学习',
+          busy: loading,
+          onPressed: () {
+            login = false;
+            _go(2);
+          },
         ),
         const SizedBox(height: 7),
-        Text(
-          '把英语，说进生活',
-          style: TextStyle(
-            color: const Color(0xFFDCF1E8),
-            fontSize: portrait ? 13 : 17,
-            letterSpacing: 2,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            TextButton(
+              onPressed: loading
+                  ? null
+                  : () {
+                      login = true;
+                      _go(2);
+                    },
+              child: const Text('已有账号，登录'),
+            ),
+            TextButton(
+              onPressed: busy || loading
+                  ? null
+                  : () => _enterLesson(guest: true),
+              child: const Text('先体验课程'),
+            ),
+          ],
+        ),
+        if (error.isNotEmpty) _error(),
+      ],
+    );
+    return Theme(
+      data: Theme.of(context).copyWith(
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            foregroundColor: entryMuted,
+            textStyle: const TextStyle(fontSize: 12),
+          ),
+        ),
+      ),
+      child: wide
+          ? Padding(
+              padding: EdgeInsets.symmetric(vertical: compact ? 0 : 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: SizedBox(
+                      height: compact ? 240 : 350,
+                      child: const HelloComposition(),
+                    ),
+                  ),
+                  const SizedBox(width: 48),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 380),
+                        child: copy,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  height: (height * (compact ? .24 : .31)).clamp(120, 290),
+                  child: const HelloComposition(),
+                ),
+                SizedBox(height: compact ? 16 : 28),
+                copy,
+              ],
+            ),
+    );
+  }
+
+  Widget _form(bool keyboard) => Column(
+    key: ValueKey(step),
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      if (!keyboard) ...[
+        const SizedBox(height: 12),
+        Container(
+          width: 62,
+          height: 62,
+          decoration: BoxDecoration(
+            color: step == 4 ? entryLime : const Color(0xFFE8E8DE),
+            borderRadius: BorderRadius.circular(21),
+          ),
+          child: Icon(
+            switch (step) {
+              1 => Icons.person_outline_rounded,
+              3 => Icons.password_rounded,
+              4 => Icons.check_rounded,
+              _ => Icons.phone_iphone_rounded,
+            },
+            color: entryInk,
+            size: 27,
+          ),
+        ),
+        const SizedBox(height: 32),
+      ],
+      Text(
+        switch (step) {
+          1 => 'MAKE IT YOURS',
+          3 => 'ONE MORE STEP',
+          4 => 'READY WHEN YOU ARE',
+          _ => 'YOUR LEARNING SPACE',
+        },
+        style: const TextStyle(
+          color: entryMuted,
+          fontSize: 10,
+          letterSpacing: 2,
+        ),
+      ),
+      const SizedBox(height: 12),
+      if (step == 2) ...[
+        _title(login ? '欢迎回来。' : '从这里开始。'),
+        _hint('用手机号登录或注册，\n让每一次进步都有记录。'),
+        _input(
+          phone,
+          '手机号',
+          maxLength: 11,
+          digits: true,
+          prefix: '+86  ',
+          action: TextInputAction.done,
+          submit: () {
+            if ((smsReady || testMode) && cooldown == 0) _send();
+          },
+          autofill: const [AutofillHints.telephoneNumberNational],
+        ),
+        const SizedBox(height: 24),
+        EntryButton(
+          cooldown > 0 ? '${cooldown}s 后可重发' : '获取验证码',
+          busy: busy,
+          onPressed: (!smsReady && !testMode) || cooldown > 0 ? null : _send,
+        ),
+        const SizedBox(height: 20),
+        if (testMode)
+          _testNotice()
+        else if (!smsReady)
+          _hint('短信登录暂未开放，可以先体验课程。'),
+        const SizedBox(height: 12),
+        const Text(
+          '仅用于登录和保存学习进度，手机号不会公开。',
+          style: TextStyle(color: entryMuted, fontSize: 11, height: 1.7),
+        ),
+      ],
+      if (step == 3) ...[
+        _title('输入验证码。'),
+        _hint(
+          testMode
+              ? '正在验证 +86 ${_maskedPhone()}\n本次使用测试验证码，无需接收短信。'
+              : '验证码已发送至\n+86 ${_maskedPhone()}',
+        ),
+        _input(
+          code,
+          testMode ? '4 位测试验证码' : '6 位验证码',
+          maxLength: testMode ? 4 : 6,
+          digits: true,
+          action: TextInputAction.done,
+          submit: _verify,
+          autofill: const [AutofillHints.oneTimeCode],
+        ),
+        const SizedBox(height: 24),
+        EntryButton('验证并继续', busy: busy, onPressed: _verify),
+        const SizedBox(height: 12),
+        TextButton(
+          onPressed: busy || cooldown > 0 ? null : _send,
+          style: TextButton.styleFrom(foregroundColor: entryMuted),
+          child: Text(cooldown > 0 ? '${cooldown}s 后重新获取' : '重新获取验证码'),
+        ),
+        if (testMode) _testNotice(),
+      ],
+      if (step == 1) ...[
+        _title('怎么称呼你？'),
+        _hint('只差一个名字，\n你的专属课堂就准备好了。'),
+        _input(
+          nickname,
+          '你的昵称',
+          maxLength: 12,
+          action: TextInputAction.done,
+          submit: _nextName,
+          autofill: const [AutofillHints.nickname],
+        ),
+        const SizedBox(height: 24),
+        EntryButton('完成注册', busy: busy, onPressed: _nextName),
+      ],
+      if (step == 4 && user != null) ...[
+        _title('${user!.nickname}，\n${newlyRegistered ? '很高兴认识你。' : '欢迎回来。'}'),
+        _hint(
+          newlyRegistered ? '从一个单词开始，\n慢慢说出自己的世界。' : '你的学习进度已为你保留。\n今天，也向前一点。',
+        ),
+        const SizedBox(height: 20),
+        EntryButton('进入课堂', busy: busy, onPressed: () => _enterLesson()),
+        const SizedBox(height: 12),
+        TextButton(
+          onPressed: busy ? null : () => _perform(_leave),
+          style: TextButton.styleFrom(foregroundColor: entryMuted),
+          child: const Text('换个账号'),
+        ),
+      ],
+      if (error.isNotEmpty) _error(),
+    ],
+  );
+
+  String _maskedPhone() => phone.text.length == 11
+      ? '${phone.text.substring(0, 3)} **** ${phone.text.substring(7)}'
+      : phone.text;
+  Widget _testNotice() => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+    decoration: BoxDecoration(
+      color: const Color(0xFFE9EDDB),
+      borderRadius: BorderRadius.circular(14),
+    ),
+    child: const Row(
+      children: [
+        Icon(Icons.science_outlined, size: 16, color: entryMuted),
+        SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            '测试体验 · 验证码 8888',
+            style: TextStyle(color: entryMuted, fontSize: 12),
           ),
         ),
       ],
     ),
   );
-  Widget _form() => AnimatedSwitcher(
-    duration: const Duration(milliseconds: 280),
-    layoutBuilder: (current, previous) => Stack(
-      alignment: Alignment.centerLeft,
-      children: [
-        for (final child in previous)
-          IgnorePointer(child: ExcludeSemantics(child: child)),
-        ?current,
-      ],
-    ),
-    child: Container(
-      key: ValueKey(step),
-      constraints: const BoxConstraints(maxWidth: 450),
-      padding: const EdgeInsets.fromLTRB(26, 26, 26, 22),
-      decoration: BoxDecoration(
-        color: const Color(0xF20B3543),
-        borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: const Color(0x406CE2CD)),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x40001724),
-            blurRadius: 32,
-            offset: Offset(0, 14),
-          ),
-        ],
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          if (step > 0 && step < 4) ...[
-            TextButton.icon(
-              style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFFB4DED2),
-              ),
-              onPressed: busy
-                  ? null
-                  : () {
-                      if (registrationToken.isNotEmpty) {
-                        registrationToken = '';
-                        _go(2);
-                      } else {
-                        _go(step == 2 && login ? 0 : step - 1);
-                      }
-                    },
-              icon: const Icon(Icons.arrow_back_rounded, size: 18),
-              label: const Text('返回'),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                for (var i = 1; i <= 3; i++)
-                  Expanded(
-                    child: Container(
-                      margin: const EdgeInsets.only(right: 6),
-                      height: 3,
-                      decoration: BoxDecoration(
-                        color: i <= step
-                            ? const Color(0xFFB4DED2)
-                            : const Color(0xFF255562),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-            const SizedBox(height: 28),
-          ],
-          if (step == 0) ...[
-            _title('你好，新伙伴'),
-            _hint('从一个单词开始，\n和我一起，把英语说出来。'),
-            _button(
-              loading ? '正在准备' : '开始我的学习',
-              loading
-                  ? null
-                  : () {
-                      login = false;
-                      _go(1);
-                    },
-            ),
-            Center(
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFFB4DED2),
-                ),
-                onPressed: loading
-                    ? null
-                    : () {
-                        login = true;
-                        nickname.clear();
-                        _go(2);
-                      },
-                child: const Text('已有账号，登录'),
-              ),
-            ),
-            const SizedBox(height: 8),
-            Center(
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFFB4DED2),
-                ),
-                onPressed: () => _enterLesson(guest: true),
-                child: const Text(
-                  '先体验课程',
-                  style: TextStyle(color: Color(0xFFAAC7C6)),
-                ),
-              ),
-            ),
-          ],
-          if (step == 1) ...[
-            _title('怎么称呼你？'),
-            _hint('课堂里，我会这样叫你。'),
-            _input(
-              nickname,
-              '你的昵称',
-              maxLength: 12,
-              action: TextInputAction.next,
-              submit: _nextName,
-            ),
-            const SizedBox(height: 24),
-            _button(
-              registrationToken.isEmpty ? '下一步' : '开始学习',
-              busy ? null : _nextName,
-            ),
-          ],
-          if (step == 2) ...[
-            _title(login ? '欢迎回来' : '${nickname.text.trim()}，你好'),
-            _hint('用手机号验证身份，不用记密码。'),
-            _input(
-              phone,
-              '手机号',
-              maxLength: 11,
-              digits: true,
-              prefix: '+86  ',
-              action: TextInputAction.done,
-              submit: () {
-                if (smsReady && cooldown == 0) _send();
-              },
-            ),
-            const SizedBox(height: 24),
-            _button(
-              busy
-                  ? '正在发送'
-                  : cooldown > 0
-                  ? '${cooldown}s 后可重发'
-                  : '获取验证码',
-              busy || !smsReady || cooldown > 0 ? null : _send,
-            ),
-            if (!smsReady) ...[
-              const SizedBox(height: 16),
-              const Text(
-                '短信登录即将开放，你可以先体验课程。',
-                style: TextStyle(fontSize: 13, color: Color(0xFFAAC7C6)),
-              ),
-              TextButton(
-                style: TextButton.styleFrom(
-                  foregroundColor: const Color(0xFFB4DED2),
-                ),
-                onPressed: () => _enterLesson(guest: true),
-                child: const Text('先体验课程'),
-              ),
-            ],
-            const SizedBox(height: 14),
-            const Text(
-              '手机号用于验证身份和找回账号，不在课堂公开。',
-              style: TextStyle(
-                fontSize: 12,
-                height: 1.6,
-                color: Color(0xFF96B9BA),
-              ),
-            ),
-          ],
-          if (step == 3) ...[
-            _title('输入验证码'),
-            _hint(
-              '已发送至 +86 ${phone.text.substring(0, 3)} **** ${phone.text.substring(7)}',
-            ),
-            _input(
-              code,
-              '6 位验证码',
-              maxLength: 6,
-              digits: true,
-              action: TextInputAction.done,
-              submit: _verify,
-              autofill: const [AutofillHints.oneTimeCode],
-            ),
-            const SizedBox(height: 24),
-            _button(busy ? '正在验证' : '验证并继续', busy ? null : _verify),
-            TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFFB4DED2),
-              ),
-              onPressed: busy || cooldown > 0 ? null : _send,
-              child: Text(cooldown > 0 ? '${cooldown}s 后重新获取' : '重新获取验证码'),
-            ),
-          ],
-          if (step == 4 && user != null) ...[
-            _title('${user!.nickname}，${newlyRegistered ? '很高兴认识你' : '欢迎回来'}'),
-            _hint(newlyRegistered ? '准备好了，就从第一声英语开始。' : '准备好了，就从这里继续。'),
-            _button('进入课堂', () => _enterLesson()),
-            TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: const Color(0xFFB4DED2),
-              ),
-              onPressed: busy ? null : () => _perform(_leave),
-              child: const Text('换个账号'),
-            ),
-          ],
-          if (error.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.only(top: 12),
-              child: Semantics(
-                liveRegion: true,
-                child: Text(
-                  error,
-                  style: const TextStyle(
-                    color: Color(0xFFFFC5A2),
-                    fontSize: 13,
-                  ),
-                ),
-              ),
-            ),
-        ],
+  Widget _error() => Padding(
+    padding: const EdgeInsets.only(top: 16),
+    child: Semantics(
+      liveRegion: true,
+      child: Text(
+        error,
+        style: const TextStyle(
+          color: Color(0xFFAD4F38),
+          fontSize: 13,
+          height: 1.6,
+        ),
       ),
     ),
   );
@@ -604,41 +680,19 @@ class _AuthGateState extends State<AuthGate> {
     child: Text(
       text,
       style: const TextStyle(
-        fontSize: 28,
-        height: 1.35,
+        color: entryInk,
+        fontSize: 34,
+        height: 1.25,
+        letterSpacing: -1,
         fontWeight: FontWeight.w600,
-        color: Color(0xFFF8F5DF),
       ),
     ),
   );
   Widget _hint(String text) => Padding(
-    padding: const EdgeInsets.only(bottom: 28),
+    padding: const EdgeInsets.only(bottom: 30),
     child: Text(
       text,
-      style: const TextStyle(
-        fontSize: 14,
-        height: 1.8,
-        color: Color(0xFFB5D2D1),
-      ),
-    ),
-  );
-  Widget _button(String text, VoidCallback? onPressed) => SizedBox(
-    width: double.infinity,
-    height: 54,
-    child: FilledButton(
-      onPressed: onPressed,
-      style: FilledButton.styleFrom(
-        backgroundColor: const Color(0xFFFFCE69),
-        elevation: 4,
-        shadowColor: const Color(0xFF031E2A),
-        foregroundColor: const Color(0xFF34381F),
-        disabledBackgroundColor: const Color(0xFF446369),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-      ),
-      child: Text(
-        text,
-        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-      ),
+      style: const TextStyle(color: entryMuted, fontSize: 14, height: 1.8),
     ),
   );
   Widget _input(
@@ -654,32 +708,34 @@ class _AuthGateState extends State<AuthGate> {
     controller: controller,
     maxLength: maxLength,
     enabled: !busy,
-    keyboardType: digits ? TextInputType.phone : TextInputType.name,
+    keyboardType: digits ? TextInputType.number : TextInputType.name,
     textInputAction: action,
     autofillHints: autofill,
     inputFormatters: digits ? [FilteringTextInputFormatter.digitsOnly] : null,
     onSubmitted: (_) => submit(),
-    style: const TextStyle(
-      fontSize: 21,
-      color: Color(0xFFF8F5DF),
-      letterSpacing: 1,
-    ),
+    cursorColor: entryInk,
+    style: const TextStyle(color: entryInk, fontSize: 23, letterSpacing: 2),
     decoration: InputDecoration(
       labelText: label,
-      labelStyle: const TextStyle(color: Color(0xFFBCD8D5)),
-      floatingLabelStyle: const TextStyle(color: Color(0xFFFFDE97)),
+      labelStyle: const TextStyle(
+        color: entryMuted,
+        fontSize: 14,
+        letterSpacing: 0,
+      ),
+      floatingLabelStyle: const TextStyle(color: entryMuted),
       prefixText: prefix,
+      prefixStyle: const TextStyle(color: entryMuted, fontSize: 17),
       counterText: '',
       filled: true,
-      fillColor: const Color(0xFF174B58),
-      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      fillColor: const Color(0xFFEAEAE2),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 23),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(20),
         borderSide: BorderSide.none,
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(18),
-        borderSide: const BorderSide(color: Color(0xFFFFCE69), width: 1.5),
+        borderRadius: BorderRadius.circular(20),
+        borderSide: const BorderSide(color: Color(0xFF8A9672), width: 1),
       ),
     ),
   );

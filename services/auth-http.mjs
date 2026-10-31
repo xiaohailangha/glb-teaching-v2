@@ -21,12 +21,12 @@ export function normalizeNickname(value){
   return n;
 }
 export class AuthStore {
-  constructor({directory=path.join(projectRoot,'work/auth-private'),secret,send=sendLoginCode,configured=smsConfigured,now=Date.now}={}){
+  constructor({directory=path.join(projectRoot,'work/auth-private'),secret,send=sendLoginCode,configured=smsConfigured,now=Date.now,testMode=false}={}){
     fs.mkdirSync(directory,{recursive:true,mode:0o700});
     const keyFile=path.join(directory,'encryption.key');
     if(!secret){if(!fs.existsSync(keyFile))fs.writeFileSync(keyFile,crypto.randomBytes(32),{mode:0o600,flag:'wx'});secret=fs.readFileSync(keyFile);}
     if(secret.length!==32)throw new Error('Invalid auth encryption key');
-    this.key=secret;this.send=send;this.configured=configured;this.now=now;
+    this.key=secret;this.send=send;this.configured=configured;this.now=now;this.testMode=testMode;
     this.db=new DatabaseSync(path.join(directory,'accounts.sqlite'));
     this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
       CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,phone_key TEXT UNIQUE NOT NULL,phone_cipher TEXT NOT NULL,nickname TEXT NOT NULL,created INTEGER NOT NULL);
@@ -48,23 +48,23 @@ export class AuthStore {
   hit(kind,key){this.db.prepare('INSERT INTO hits VALUES(?,?,?)').run(kind,key,this.now());}
   async requestCode(phone,ip){
     phone=normalizePhone(phone);
-    if(!this.configured())fail(503,'短信验证正在准备中，请先体验课程');
-    this.cleanup();const pk=this.digest(phone),ik=this.digest(ip);
+    if(!this.testMode&&!this.configured())fail(503,'短信验证正在准备中，请先体验课程');
+    this.cleanup();const pk=this.digest((this.testMode?'preview:':'')+phone),ik=this.digest(ip);
     if(this.count('phone',pk,minute))fail(429,'请稍后再获取验证码',60);
     if(this.count('phone',pk,60*minute)>=3||this.count('phone',pk,day)>=5||this.count('ip',ik,60*minute)>=10||this.count('ip',ik,day)>=30||this.count('global','all',day)>=100)fail(429,'获取次数较多，请稍后再试',3600);
     this.hit('phone',pk);this.hit('ip',ik);this.hit('global','all');
-    const id=opaque(),code=String(crypto.randomInt(0,1000000)).padStart(6,'0');
+    const id=opaque(),code=this.testMode?'8888':String(crypto.randomInt(0,1000000)).padStart(6,'0');
     this.db.prepare('DELETE FROM challenges WHERE phone_key=?').run(pk);
     this.db.prepare('INSERT INTO challenges(id,phone_key,phone_cipher,code_hash,expires) VALUES(?,?,?,?,?)').run(id,pk,this.encrypt(phone),this.digest(id+':'+code),this.now()+5*minute);
-    try{await this.send(phone,code);}catch{this.db.prepare('DELETE FROM challenges WHERE id=?').run(id);fail(503,'验证码未能发送，请稍后重试');}
+    try{if(!this.testMode)await this.send(phone,code);}catch{this.db.prepare('DELETE FROM challenges WHERE id=?').run(id);fail(503,'验证码未能发送，请稍后重试');}
     this.db.prepare('UPDATE challenges SET ready=1 WHERE id=?').run(id);
-    return {challengeId:id,retryAfter:60,expiresIn:300};
+    return {challengeId:id,retryAfter:60,expiresIn:300,testMode:this.testMode};
   }
   profile(row){const phone=this.decrypt(row.phone_cipher);return {id:row.id,nickname:row.nickname,phoneMasked:phone.slice(3,6)+'****'+phone.slice(-4)};}
   createSession(user){if(this.db.prepare('SELECT 1 FROM blocked_users WHERE user_id=?').get(user.id))fail(403,'账号已停用');const token=opaque();this.db.prepare('INSERT INTO sessions VALUES(?,?,?)').run(hash(token),user.id,this.now()+30*day);return {token,user:this.profile(user)};}
   verify({challengeId,code},ip){
     this.cleanup();const ik=this.digest(ip);if(this.count('verify',ik,15*minute)>=30)fail(429,'尝试次数较多，请稍后再试',900);this.hit('verify',ik);
-    if(typeof challengeId!=='string'||typeof code!=='string'||!/^\d{6}$/.test(code))fail(400,'请输入 6 位短信验证码');
+    if(typeof challengeId!=='string'||typeof code!=='string'||!(this.testMode?/^\d{4}$/:/^\d{6}$/).test(code))fail(400,this.testMode?'请输入 4 位测试验证码':'请输入 6 位短信验证码');
     const row=this.db.prepare('SELECT * FROM challenges WHERE id=?').get(challengeId);
     if(!row||!row.ready||row.attempts>=5)fail(400,'验证码已失效，请重新获取');
     this.db.prepare('UPDATE challenges SET attempts=attempts+1 WHERE id=?').run(challengeId);
@@ -108,7 +108,7 @@ export function createAuthHttp(store,{secure=true}={}){
     const token=learnerCookie(req),sessionCookie=t=>`scene_session=${t}; HttpOnly; SameSite=Lax; Path=/api/auth; Max-Age=${t?2592000:0}${secure?'; Secure':''}`;
     try{
       const route=url.pathname.slice('/api/auth/'.length);
-      if(req.method==='GET'&&route==='status'){reply(res,200,{smsReady:store.configured()});return true;}
+      if(req.method==='GET'&&route==='status'){reply(res,200,{smsReady:store.configured(),testMode:store.testMode,codeLength:store.testMode?4:6});return true;}
       if(req.method==='GET'&&route==='me'){reply(res,200,{user:store.current(token)});return true;}
       if(!['POST','PATCH'].includes(req.method)||!req.headers['content-type']?.startsWith('application/json'))fail(400,'请求格式不正确');
       const chunks=[];let size=0;for await(const part of req){size+=part.length;if(size>4096)fail(413,'请求内容过大');chunks.push(part);}
@@ -130,7 +130,7 @@ export function createAuthHttp(store,{secure=true}={}){
   };
 }
 let handler, sharedStore;
-export function getAuthStore(){return sharedStore??=new AuthStore();}
+export function getAuthStore(){return sharedStore??=new AuthStore({testMode:process.env.AUTH_TEST_MODE==='1'});}
 export async function authHttp(req,res,url){
   if(!url.pathname.startsWith('/api/auth/'))return false;
   try{handler??=createAuthHttp(getAuthStore(),{secure:process.env.AUTH_SECURE_COOKIE!=='0'});}catch{reply(res,503,{error:'账号服务暂时不可用，请稍后重试'});return true;}

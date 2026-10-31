@@ -6,12 +6,9 @@ import 'app.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // Safari does not support a reliable orientation lock; native apps do.
+  // Entry screens support portrait; the native classroom locks landscape on entry.
   if (!kIsWeb) {
-    await SystemChrome.setPreferredOrientations(const [
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
+    await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
   }
   runApp(const SnowSpeaksApp());
 }
