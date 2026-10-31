@@ -83,15 +83,21 @@ void main() {
           ModalRoute.of(tester.element(find.byType(CourseLibraryPage)))!.opaque,
           false,
         );
-        expect(find.text('01 / 08  ·  点击卡片进入'), findsOneWidget);
-        await tester.tap(find.byTooltip('上一课'));
-        await tester.pumpAndSettle();
-        expect(find.text('08 / 08  ·  点击卡片进入'), findsOneWidget);
-        await tester.tap(find.byTooltip('下一课'));
-        await tester.pumpAndSettle();
+        String activeLabel() => tester
+            .widget<Semantics>(
+              find.byKey(const ValueKey('active-course-target')),
+            )
+            .properties
+            .label!;
+        expect(activeLabel(), contains('01 · 苹果和香蕉'));
+        expect(find.byTooltip('下一课'), findsNothing);
+        expect(find.byKey(const ValueKey('course-position')), findsNothing);
         final deck = find.byKey(const ValueKey('course-deck'));
         final bounds = tester.getRect(deck);
         expect(bounds.width, size.width);
+        final card = tester.getRect(
+          find.byKey(const ValueKey('active-course-target')),
+        );
         expect(
           tester
               .getSemantics(find.byKey(const ValueKey('active-course-target')))
@@ -99,41 +105,37 @@ void main() {
               .width,
           lessThan(bounds.width),
         );
-        expect(
-          tester
-              .getRect(find.byKey(const ValueKey('active-course-target')))
-              .width,
-          lessThan(bounds.width),
+        // Exposed side cards move to the center without entering a lesson.
+        await tester.tapAt(
+          Offset(bounds.center.dx + card.width * .58, bounds.center.dy),
         );
-        // Side/background taps must not open the centered lesson.
-        await tester.tapAt(Offset(bounds.left + 2, bounds.center.dy));
         await tester.pumpAndSettle();
-        expect(find.byType(CourseLibraryPage), findsOneWidget);
-        await tester.ensureVisible(find.text('描述事物'));
-        await tester.tap(find.text('描述事物'));
-        await tester.pumpAndSettle();
-        expect(find.text('01 / 03  ·  点击卡片进入'), findsOneWidget);
-        final cardHeight = (bounds.height * .93).clamp(
-          0,
-          bounds.height > bounds.width ? 720 : 570,
+        expect(activeLabel(), contains('02 · 水和饮料'));
+        expect(controller.courseId, 'adult-fruit-v2');
+        await tester.tapAt(
+          Offset(bounds.center.dx - card.width * .58, bounds.center.dy),
         );
-        final widthLimit = bounds.height > bounds.width
-            ? bounds.width * .80
-            : 410.0;
-        final width = widthLimit < cardHeight * .70
-            ? widthLimit
-            : cardHeight * .70;
+        await tester.pumpAndSettle();
+        expect(activeLabel(), contains('01 · 苹果和香蕉'));
         await tester.dragFrom(
           bounds.center,
-          Offset(-width * .6, 0),
+          Offset(-card.width * .6, 0),
           kind: size.width >= 650
               ? PointerDeviceKind.mouse
               : PointerDeviceKind.touch,
         );
         await tester.pumpAndSettle();
-        expect(find.text('02 / 03  ·  点击卡片进入'), findsOneWidget);
-        expect(controller.courseId, 'adult-fruit-v2');
+        expect(activeLabel(), contains('02 · 水和饮料'));
         expect(controller.playing, false);
+        await tester.ensureVisible(find.text('描述事物'));
+        await tester.tap(find.text('描述事物'));
+        await tester.pumpAndSettle();
+        expect(activeLabel(), contains('05 · 颜色'));
+        await tester.tapAt(
+          Offset(bounds.center.dx + card.width * .58, bounds.center.dy),
+        );
+        await tester.pumpAndSettle();
+        expect(activeLabel(), contains('06 · 大小'));
         await tester.tapAt(bounds.center);
         await tester.pumpAndSettle();
         expect(controller.courseId, 'adult-sizes-v1');
@@ -141,24 +143,22 @@ void main() {
         expect(find.text('open'), findsOneWidget);
         await tester.tap(find.text('open'));
         await tester.pumpAndSettle();
-        expect(find.text('06 / 08  ·  点击卡片进入'), findsOneWidget);
+        expect(activeLabel(), contains('06 · 大小'));
+        expect(find.byTooltip('全部类型'), findsNothing);
+        expect(find.byType(TextField), findsNothing);
         await tester.ensureVisible(find.text('综合复习'));
         await tester.tap(find.text('综合复习'));
         await tester.pumpAndSettle();
-        expect(find.text('01 / 01  ·  点击卡片进入'), findsOneWidget);
-        expect(
-          tester
-              .widget<IconButton>(
-                find.widgetWithIcon(IconButton, Icons.chevron_right_rounded),
-              )
-              .onPressed,
-          isNull,
+        expect(activeLabel(), contains('08 · 按要求拿东西'));
+        await tester.tapAt(
+          Offset(bounds.center.dx + card.width * .58, bounds.center.dy),
         );
+        await tester.pumpAndSettle();
+        expect(find.byType(CourseLibraryPage), findsOneWidget);
         await tester.tap(find.byTooltip('关闭课程'));
         await tester.pumpAndSettle();
         expect(controller.courseId, 'adult-sizes-v1');
         expect(find.byType(CourseLibraryPage), findsNothing);
-
         expect(tester.takeException(), isNull);
         await tester.pumpWidget(const SizedBox());
         semantics.dispose();
@@ -166,4 +166,43 @@ void main() {
       },
     );
   }
+  testWidgets('dozens of types can be swiped without search or a menu', (
+    tester,
+  ) async {
+    CourseType? chosen;
+    final types = List.generate(
+      48,
+      (i) => CourseType('type${i + 1}', '类型${i + 1}', const []),
+    );
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            width: 320,
+            child: CourseTypeStrip(
+              types: types,
+              selected: null,
+              onSelected: (type) => chosen = type,
+            ),
+          ),
+        ),
+      ),
+    );
+    expect(find.byType(TextField), findsNothing);
+    expect(find.byTooltip('全部类型'), findsNothing);
+    await tester.drag(
+      find.byKey(const ValueKey('course-type-strip')),
+      const Offset(-260, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      Scrollable.of(tester.element(find.text('类型1'))).position.pixels,
+      greaterThan(0),
+    );
+    await tester.ensureVisible(find.text('类型48'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('类型48'));
+    expect(chosen?.id, 'type48');
+    expect(tester.takeException(), isNull);
+  });
 }

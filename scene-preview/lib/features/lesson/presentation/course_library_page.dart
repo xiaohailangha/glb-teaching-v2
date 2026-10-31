@@ -127,8 +127,15 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     }
   }
 
-  void _next(int delta) =>
-      _settle((_position.value.round() + delta).toDouble());
+  void _activate(int slot) {
+    if (_opening) return;
+    if (slot == _position.value.round()) {
+      _open();
+    } else {
+      _settle(slot.toDouble());
+    }
+  }
+
   Future<void> _open() async {
     if (_opening) return;
     _position.stop();
@@ -149,43 +156,6 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
   void dispose() {
     _position.dispose();
     super.dispose();
-  }
-
-  Widget _typeTab(CourseType? type) {
-    final selected = _type == type?.id;
-    return Semantics(
-      selected: selected,
-      child: TextButton(
-        onPressed: _opening ? null : () => _filter(type),
-        style: TextButton.styleFrom(
-          foregroundColor: selected ? Colors.white : Colors.white60,
-          minimumSize: const Size(48, 48),
-          padding: const EdgeInsets.symmetric(horizontal: 14),
-          shape: const RoundedRectangleBorder(),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              type?.title ?? '全部',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
-              ),
-            ),
-            const SizedBox(height: 7),
-            Container(
-              height: 2,
-              width: 18,
-              decoration: BoxDecoration(
-                color: selected ? Colors.white : Colors.transparent,
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 
   Widget _deck() => LayoutBuilder(
@@ -210,11 +180,6 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
             ..sort(
               (a, b) => (b - position).abs().compareTo((a - position).abs()),
             );
-      final activeRect = Rect.fromCenter(
-        center: Offset(box.maxWidth / 2, box.maxHeight / 2),
-        width: width,
-        height: cardHeight,
-      );
       return Semantics(
         container: true,
         explicitChildNodes: true,
@@ -222,11 +187,6 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
           key: const ValueKey('course-deck'),
           behavior: HitTestBehavior.opaque,
           excludeFromSemantics: true,
-          onTapUp: _opening
-              ? null
-              : (event) {
-                  if (activeRect.contains(event.localPosition)) _open();
-                },
           onHorizontalDragStart: _opening || _indices.length < 2
               ? null
               : (_) => _position.stop(),
@@ -271,13 +231,32 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                                   : delta.clamp(-2.0, 2.0) * .035,
                               child: Opacity(
                                 opacity: math.max(0.0, 1 - distance * .25),
-                                child: IgnorePointer(
-                                  child: ExcludeSemantics(
-                                    child: SizedBox(
-                                      width: width,
-                                      height: cardHeight,
-                                      child: _Poster(
-                                        index: _indices[slot % _indices.length],
+                                child: SizedBox(
+                                  width: width,
+                                  height: cardHeight,
+                                  child: Semantics(
+                                    key: slot == center
+                                        ? const ValueKey('active-course-target')
+                                        : ValueKey('side-course-$slot'),
+                                    container: true,
+                                    button: true,
+                                    enabled: !_opening,
+                                    label:
+                                        '${slot == center ? '进入课程' : '居中课程'}：${courseCatalog[_indices[slot % _indices.length]].title}',
+                                    onTap: _opening
+                                        ? null
+                                        : () => _activate(slot),
+                                    child: GestureDetector(
+                                      behavior: HitTestBehavior.opaque,
+                                      excludeFromSemantics: true,
+                                      onTap: _opening
+                                          ? null
+                                          : () => _activate(slot),
+                                      child: ExcludeSemantics(
+                                        child: _Poster(
+                                          index:
+                                              _indices[slot % _indices.length],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -288,19 +267,6 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                         );
                       },
                     ),
-                  Positioned.fromRect(
-                    rect: activeRect,
-                    child: Semantics(
-                      key: const ValueKey('active-course-target'),
-                      container: true,
-                      button: true,
-                      enabled: !_opening,
-                      label: '进入课程：${courseCatalog[_index].title}',
-                      hint: '左右滑动切换，点击当前卡片进入',
-                      onTap: _opening ? null : _open,
-                      child: const IgnorePointer(child: SizedBox.expand()),
-                    ),
-                  ),
                   if (_opening)
                     const Center(
                       child: CircularProgressIndicator(color: Colors.white),
@@ -348,15 +314,10 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                       child: Row(
                         children: [
                           Expanded(
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                children: [
-                                  _typeTab(null),
-                                  for (final type in courseTypes)
-                                    _typeTab(type),
-                                ],
-                              ),
+                            child: CourseTypeStrip(
+                              selected: _type,
+                              enabled: !_opening,
+                              onSelected: _filter,
                             ),
                           ),
                           IconButton(
@@ -373,43 +334,6 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                       ),
                     ),
                     Expanded(child: _deck()),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          IconButton(
-                            tooltip: '上一课',
-                            onPressed: _opening || _indices.length < 2
-                                ? null
-                                : () => _next(-1),
-                            icon: const Icon(
-                              Icons.chevron_left_rounded,
-                              color: Colors.white70,
-                            ),
-                          ),
-                          Text(
-                            '${(_page + 1).toString().padLeft(2, '0')} / ${_indices.length.toString().padLeft(2, '0')}  ·  点击卡片进入',
-                            key: const ValueKey('course-position'),
-                            style: const TextStyle(
-                              color: Colors.white70,
-                              fontSize: 11,
-                              letterSpacing: 1,
-                            ),
-                          ),
-                          IconButton(
-                            tooltip: '下一课',
-                            onPressed: _opening || _indices.length < 2
-                                ? null
-                                : () => _next(1),
-                            icon: const Icon(
-                              Icons.chevron_right_rounded,
-                              color: Colors.white70,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -417,6 +341,91 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
           ),
         ),
       ),
+    ),
+  );
+}
+
+/// A horizontal type strip only. No search, menu button, or secondary picker.
+class CourseTypeStrip extends StatefulWidget {
+  const CourseTypeStrip({
+    super.key,
+    this.types = courseTypes,
+    required this.selected,
+    required this.onSelected,
+    this.enabled = true,
+  });
+  final List<CourseType> types;
+  final String? selected;
+  final ValueChanged<CourseType?> onSelected;
+  final bool enabled;
+  @override
+  State<CourseTypeStrip> createState() => _CourseTypeStripState();
+}
+
+class _CourseTypeStripState extends State<CourseTypeStrip> {
+  final _keys = <String, GlobalKey>{};
+  void _reveal() => WidgetsBinding.instance.addPostFrameCallback((_) {
+    if (!mounted) return;
+    final target = _keys[widget.selected ?? 'all']?.currentContext;
+    if (target != null) {
+      Scrollable.ensureVisible(
+        target,
+        alignment: .5,
+        duration: Duration(
+          milliseconds: MediaQuery.disableAnimationsOf(context) ? 0 : 220,
+        ),
+      );
+    }
+  });
+  @override
+  void didUpdateWidget(CourseTypeStrip oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.selected != widget.selected) _reveal();
+  }
+
+  @override
+  Widget build(BuildContext context) => SingleChildScrollView(
+    key: const ValueKey('course-type-strip'),
+    scrollDirection: Axis.horizontal,
+    child: Row(
+      children: [
+        for (final type in <CourseType?>[null, ...widget.types])
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: Semantics(
+              selected: widget.selected == type?.id,
+              child: TextButton(
+                key: _keys.putIfAbsent(type?.id ?? 'all', () => GlobalKey()),
+                onPressed: widget.enabled
+                    ? () {
+                        widget.onSelected(type);
+                        _reveal();
+                      }
+                    : null,
+                style: TextButton.styleFrom(
+                  foregroundColor: widget.selected == type?.id
+                      ? _night
+                      : Colors.white70,
+                  backgroundColor: widget.selected == type?.id
+                      ? Colors.white.withValues(alpha: .92)
+                      : Colors.white.withValues(alpha: .08),
+                  minimumSize: const Size(48, 44),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  shape: const StadiumBorder(),
+                ),
+                child: Text(
+                  type?.title ?? '全部',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: widget.selected == type?.id
+                        ? FontWeight.w700
+                        : FontWeight.w500,
+                  ),
+                ),
+              ),
+            ),
+          ),
+      ],
     ),
   );
 }
@@ -431,16 +440,7 @@ class _Poster extends StatelessWidget {
       // phones, landscape devices and larger text settings without clipping.
       final designHeight = box.maxHeight / box.maxWidth * 320;
       return Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: .35),
-              blurRadius: 28,
-              offset: const Offset(0, 18),
-            ),
-          ],
-        ),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(28)),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(28),
           child: FittedBox(

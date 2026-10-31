@@ -1,0 +1,1619 @@
+{
+  "version": "adult-types-v2",
+  "date": "2026-10-31",
+  "scope": "成人入门课程设计，类型 → 课程，两级结构",
+  "types": [
+    {
+      "id": "basics",
+      "title": "基础表达",
+      "minimum_lessons": 12
+    },
+    {
+      "id": "situations",
+      "title": "生活场景",
+      "minimum_lessons": 12
+    },
+    {
+      "id": "description",
+      "title": "描述事物",
+      "minimum_lessons": 12
+    },
+    {
+      "id": "review",
+      "title": "综合复习",
+      "minimum_lessons": 12
+    }
+  ],
+  "implemented_count": 8,
+  "designed_not_implemented_count": 40,
+  "teaching_flow": [
+    "复习相关旧词",
+    "单词：含义、听辨、整词示范与尝试",
+    "短语：组合、点读、替换",
+    "句子：先教必要语言材料，再整句和语块练习",
+    "情境：选择、请求或问答",
+    "无提示迁移：隐藏英文，换一个条件再表达",
+    "轻松收尾：记录接触与表达，不宣称长期掌握"
+  ],
+  "principles": [
+    "类型是浏览分组，不强制按类型顺序学习；前置依赖跨类型串联。",
+    "每课集中一个交流目标；普通课通常2–4个重点新词，必要时不超过6个，功能词和固定结构也要单独教学。",
+    "熟悉内容可快速通过，但不得直接跳过单词与短语教学。",
+    "可重听、暂停、继续；提示后重试返回原题，跳过和自报尝试不计独立正确。",
+    "新计划不改已上线课ID或按索引重置进度；新课完整生成并验收后才进入APP可学目录。",
+    "人物只使用已有示范、等待、支持、肯定动作；不把未实现的递物等动作写成已支持。"
+  ],
+  "legacy_plan_mapping": {
+    "09": "B04",
+    "10": "B05",
+    "11": "B06",
+    "12": "R03",
+    "13": "B07",
+    "14": "B08",
+    "15": "B09",
+    "16": "R05"
+  },
+  "lessons": [
+    {
+      "code": "B01",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 1,
+      "title": "苹果和香蕉",
+      "status": "implemented",
+      "runtime_course_id": "adult-fruit-v2",
+      "goal": "从辨认水果走到表达想要和想吃。",
+      "core_words": [
+        "apple",
+        "banana",
+        "eat"
+      ],
+      "phrases": [
+        "an apple",
+        "a banana",
+        "want to eat"
+      ],
+      "sentences": [
+        "I want an apple.",
+        "I want to eat a banana."
+      ],
+      "scene_task": "选自己想吃的水果，再在没有英文提示时向人物提出请求。",
+      "prerequisites": [],
+      "language_notes": "a/an 按后接发音区分；I、want、to、eat 都要教，red 维持可选扩展。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "B02",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 2,
+      "title": "水和饮料",
+      "status": "implemented",
+      "runtime_course_id": "adult-drinks-v1",
+      "goal": "表达想喝哪一种饮品。",
+      "core_words": [
+        "water",
+        "milk",
+        "tea",
+        "coffee"
+      ],
+      "phrases": [
+        "some water",
+        "some milk"
+      ],
+      "sentences": [
+        "I want some water.",
+        "I want some tea."
+      ],
+      "scene_task": "在四种饮品中做真实偏好选择，再完整说出需求。",
+      "prerequisites": [
+        "B01"
+      ],
+      "language_notes": "water/milk 按不可数用法学 some，不机械套 an；复用 I want。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "B03",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 3,
+      "title": "礼貌请求",
+      "status": "implemented",
+      "runtime_course_id": "adult-polite-v1",
+      "goal": "把熟悉的需求说得礼貌。",
+      "core_words": [
+        "please",
+        "thank",
+        "you"
+      ],
+      "phrases": [
+        "an apple, please",
+        "some water, please"
+      ],
+      "sentences": [
+        "An apple, please.",
+        "I want some water, please.",
+        "Thank you."
+      ],
+      "scene_task": "先索取水果或饮品，拿到后道谢，替换对象再试一次。",
+      "prerequisites": [
+        "B01",
+        "B02"
+      ],
+      "language_notes": "短请求也是自然完整表达；先教 please 和 Thank you，不提前塞入 Can I have。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "B04",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 4,
+      "title": "打招呼与名字",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "主动问候并交换名字。",
+      "core_words": [
+        "hello",
+        "hi",
+        "name",
+        "meet"
+      ],
+      "phrases": [
+        "my name",
+        "nice to meet you"
+      ],
+      "sentences": [
+        "My name is Lily.",
+        "What is your name?",
+        "Nice to meet you."
+      ],
+      "scene_task": "人物自我介绍后，学习者说自己的名字并反问。",
+      "prerequisites": [
+        "B03"
+      ],
+      "language_notes": "my/your/is/what 分步解释；真实昵称不按固定姓名判错。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B05",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 5,
+      "title": "来自哪里",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "介绍来源并询问对方。",
+      "core_words": [
+        "from",
+        "China",
+        "Japan",
+        "Canada"
+      ],
+      "phrases": [
+        "from China",
+        "from Japan"
+      ],
+      "sentences": [
+        "I am from China.",
+        "Where are you from?"
+      ],
+      "scene_task": "为两位新朋友匹配来源，再选择自己的国家作答。",
+      "prerequisites": [
+        "B04"
+      ],
+      "language_notes": "am/are 与 I/you 搭配分别示范；地名可按个人需要替换，不把国籍等同母语。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B06",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 6,
+      "title": "喜欢与不喜欢",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "表达日常偏好。",
+      "core_words": [
+        "like",
+        "love",
+        "not"
+      ],
+      "phrases": [
+        "like apples",
+        "like tea"
+      ],
+      "sentences": [
+        "I like apples.",
+        "I do not like coffee."
+      ],
+      "scene_task": "在水果和饮品中选喜欢与不喜欢的各一项并说明。",
+      "prerequisites": [
+        "B01",
+        "B02"
+      ],
+      "language_notes": "一般喜好使用 apples 等复数或不可数；do not 与 don't 对照，不能只说 not like。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B07",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 7,
+      "title": "吃与喝",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用简单句说吃喝行为。",
+      "core_words": [
+        "eat",
+        "drink",
+        "bread",
+        "rice"
+      ],
+      "phrases": [
+        "eat bread",
+        "drink milk"
+      ],
+      "sentences": [
+        "I eat bread.",
+        "I drink milk."
+      ],
+      "scene_task": "依次看早餐图片，分别说吃什么、喝什么。",
+      "prerequisites": [
+        "B01",
+        "B02"
+      ],
+      "language_notes": "eat 是复用词；区分 I eat 与 I want to eat，不把行为与愿望混为一类。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B08",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 8,
+      "title": "一天中的时间",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "给熟悉的活动添加时间。",
+      "core_words": [
+        "morning",
+        "afternoon",
+        "evening",
+        "night"
+      ],
+      "phrases": [
+        "in the morning",
+        "at night"
+      ],
+      "sentences": [
+        "I drink milk in the morning.",
+        "I eat rice in the evening."
+      ],
+      "scene_task": "将早餐和晚餐放到时间轴，再各说一句。",
+      "prerequisites": [
+        "B07"
+      ],
+      "language_notes": "in the morning/afternoon/evening 与 at night 整块教学，the 的作用简短说明。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B09",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 9,
+      "title": "我的日常活动",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用短句描述工作、学习和休息。",
+      "core_words": [
+        "work",
+        "study",
+        "sleep",
+        "English"
+      ],
+      "phrases": [
+        "study English",
+        "go to work"
+      ],
+      "sentences": [
+        "I study English.",
+        "I sleep at night."
+      ],
+      "scene_task": "从个人日常中选两件事，按时间顺序介绍。",
+      "prerequisites": [
+        "B08"
+      ],
+      "language_notes": "go/to 为语言材料单独教；不在本课加入第三人称单数变化。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B10",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 10,
+      "title": "我的家人",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "介绍家人和家庭关系。",
+      "core_words": [
+        "mother",
+        "father",
+        "sister",
+        "brother"
+      ],
+      "phrases": [
+        "my mother",
+        "my brother"
+      ],
+      "sentences": [
+        "This is my mother.",
+        "I have a sister."
+      ],
+      "scene_task": "用自选人物卡介绍两位家人，也允许虚构角色。",
+      "prerequisites": [
+        "B04"
+      ],
+      "language_notes": "this/is/have 分步教；尊重不同家庭结构，不强制披露真实家庭信息。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B11",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 11,
+      "title": "我现在的感受",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用简单句表达状态与基本需求。",
+      "core_words": [
+        "happy",
+        "tired",
+        "hungry",
+        "thirsty"
+      ],
+      "phrases": [
+        "very tired",
+        "a little hungry"
+      ],
+      "sentences": [
+        "I am happy.",
+        "I am thirsty."
+      ],
+      "scene_task": "看人物状态猜感受，再说自己当前或自选角色的状态。",
+      "prerequisites": [
+        "B02",
+        "B04"
+      ],
+      "language_notes": "very/a little 是扩展语块，先保证 I am + 状态；不引申健康诊断。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "B12",
+      "type_id": "basics",
+      "type": "基础表达",
+      "order": 12,
+      "title": "没听懂也能继续",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "听不清时主动请求重复或放慢。",
+      "core_words": [
+        "again",
+        "slowly",
+        "understand",
+        "say",
+        "help"
+      ],
+      "phrases": [
+        "say that again",
+        "speak slowly"
+      ],
+      "sentences": [
+        "Please say that again.",
+        "Please speak slowly.",
+        "I do not understand."
+      ],
+      "scene_task": "人物先说一句陌生内容，学习者用澄清句请求帮助后再回答。",
+      "prerequisites": [
+        "B03",
+        "B04"
+      ],
+      "language_notes": "speak/that 为必要语言材料；不要把请求重复当作答错或扣分。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S01",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 1,
+      "title": "水果饮品店",
+      "status": "implemented",
+      "runtime_course_id": "adult-shop-v1",
+      "goal": "在简短交易情境中提出需求并道谢。",
+      "core_words": [
+        "复用 B01–B03"
+      ],
+      "phrases": [
+        "an apple, please",
+        "some water, please"
+      ],
+      "sentences": [
+        "I want a banana, please.",
+        "Thank you."
+      ],
+      "scene_task": "完成一次选购，再换成另一种已学物品独立表达。",
+      "prerequisites": [
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "language_notes": "沿用已上线第04课；无新增核心词，不杜撰模型递物动作。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "S02",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 2,
+      "title": "咖啡店点饮品",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "在咖啡店提出饮品请求。",
+      "core_words": [
+        "cup",
+        "glass"
+      ],
+      "phrases": [
+        "a cup of tea",
+        "a glass of water"
+      ],
+      "sentences": [
+        "Can I have a cup of tea, please?",
+        "Can I have some water, please?"
+      ],
+      "scene_task": "选择杯装饮品并提出请求，第二次换杯型或饮品。",
+      "prerequisites": [
+        "B02",
+        "B03",
+        "D02",
+        "D06"
+      ],
+      "language_notes": "Can I have 作为请求结构先拆解教学；of 是必要连接词，冷热先复习再使用。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S03",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 3,
+      "title": "餐厅点一份饭",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "根据简单菜单点餐。",
+      "core_words": [
+        "rice",
+        "noodles",
+        "egg",
+        "soup",
+        "menu"
+      ],
+      "phrases": [
+        "some rice",
+        "an egg"
+      ],
+      "sentences": [
+        "I would like some rice.",
+        "I would like some soup, please."
+      ],
+      "scene_task": "从四项简化菜单中选主食和一道配餐并下单。",
+      "prerequisites": [
+        "B03",
+        "B07",
+        "S02"
+      ],
+      "language_notes": "rice 复用；I'd like 与 I would like 对照；不引入未教的复杂规格和过敏说明。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S04",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 4,
+      "title": "水果摊问价格",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "询问并听懂五以内的简单价格。",
+      "core_words": [
+        "price",
+        "dollar",
+        "much"
+      ],
+      "phrases": [
+        "two dollars",
+        "three apples"
+      ],
+      "sentences": [
+        "How much is it?",
+        "I want three apples, please."
+      ],
+      "scene_task": "询问一件水果的价格，再按数量购买。",
+      "prerequisites": [
+        "S01",
+        "D03"
+      ],
+      "language_notes": "用虚构练习价格，不展示真实报价；is it 与数量请求分别教。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S05",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 5,
+      "title": "超市找东西",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "询问商品位置并索取购物袋。",
+      "core_words": [
+        "supermarket",
+        "aisle",
+        "bag"
+      ],
+      "phrases": [
+        "in this aisle",
+        "a shopping bag"
+      ],
+      "sentences": [
+        "Where is the milk?",
+        "I need a bag, please."
+      ],
+      "scene_task": "先找牛奶，再根据简化货架指示找到商品。",
+      "prerequisites": [
+        "B02",
+        "B03",
+        "D04"
+      ],
+      "language_notes": "where/is/the/need 是语言材料；不把货架编号扩大到尚未学习的数字范围。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S06",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 6,
+      "title": "买一件衣服",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "表达衣服颜色和尺码需求。",
+      "core_words": [
+        "shirt",
+        "dress",
+        "shoes",
+        "size"
+      ],
+      "phrases": [
+        "a blue shirt",
+        "a small size"
+      ],
+      "sentences": [
+        "I want a blue shirt.",
+        "Do you have a smaller size?"
+      ],
+      "scene_task": "选衣服后发现偏大，请求换小一号。",
+      "prerequisites": [
+        "D01",
+        "D02",
+        "D08",
+        "D11",
+        "B03"
+      ],
+      "language_notes": "shoes 使用复数；Do you have 先独立示范，颜色/尺寸不一次全叠到长句。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S07",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 7,
+      "title": "在街上问路",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "问一个地点并理解两步路线。",
+      "core_words": [
+        "left",
+        "right",
+        "straight",
+        "street"
+      ],
+      "phrases": [
+        "turn left",
+        "go straight"
+      ],
+      "sentences": [
+        "Where is the station?",
+        "Go straight and turn left."
+      ],
+      "scene_task": "看简化地图问车站位置，再按两条指令移动标记。",
+      "prerequisites": [
+        "B12",
+        "D09"
+      ],
+      "language_notes": "and 连接两个已学动作；地图只给两步，不用真实定位数据。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S08",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 8,
+      "title": "买车票",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "说明车票数量并完成简短请求。",
+      "core_words": [
+        "ticket",
+        "bus",
+        "one-way"
+      ],
+      "phrases": [
+        "a bus ticket",
+        "two tickets"
+      ],
+      "sentences": [
+        "I want one ticket, please.",
+        "Two tickets, please."
+      ],
+      "scene_task": "根据一个人或两个人出行的情境选择数量并购票。",
+      "prerequisites": [
+        "B03",
+        "D03",
+        "S04"
+      ],
+      "language_notes": "一程票 one-way 仅作可选扩展；不涉及真实支付、班次或票价。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S09",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 9,
+      "title": "坐出租车去哪里",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "说清乘车目的地。",
+      "core_words": [
+        "taxi",
+        "hotel",
+        "airport"
+      ],
+      "phrases": [
+        "to the hotel",
+        "to the airport"
+      ],
+      "sentences": [
+        "To the hotel, please.",
+        "Please take me to the airport."
+      ],
+      "scene_task": "从两个目的地中选择一个告诉司机，必要时请求重复确认。",
+      "prerequisites": [
+        "B03",
+        "B12",
+        "S07"
+      ],
+      "language_notes": "take/me/to 单独教；先接受自然短请求，再扩展完整句。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S10",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 10,
+      "title": "酒店入住",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用简短表达完成模拟入住。",
+      "core_words": [
+        "room",
+        "key",
+        "reservation",
+        "passport"
+      ],
+      "phrases": [
+        "a room key",
+        "my reservation"
+      ],
+      "sentences": [
+        "I have a reservation.",
+        "Can I have my room key, please?"
+      ],
+      "scene_task": "报有预订并索取房卡，再回应一个简化确认问题。",
+      "prerequisites": [
+        "B04",
+        "B10",
+        "S02",
+        "S09"
+      ],
+      "language_notes": "仅使用虚构姓名与预订卡，不索取真实证件号码；have 复用。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S11",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 11,
+      "title": "预约一个时间",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "表达预约需求并选择时间。",
+      "core_words": [
+        "appointment",
+        "today",
+        "tomorrow",
+        "Tuesday"
+      ],
+      "phrases": [
+        "an appointment",
+        "tomorrow morning"
+      ],
+      "sentences": [
+        "I want an appointment.",
+        "Tomorrow morning, please."
+      ],
+      "scene_task": "在今天下午和明天上午之间选择一个可用时段。",
+      "prerequisites": [
+        "B08",
+        "B03"
+      ],
+      "language_notes": "暂不教复杂钟点读法；预约为一般办事情境，不提供医疗建议。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "S12",
+      "type_id": "situations",
+      "type": "生活场景",
+      "order": 12,
+      "title": "寻求现场帮助",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "物品找不到时请求帮助。",
+      "core_words": [
+        "lost",
+        "find",
+        "phone",
+        "bag"
+      ],
+      "phrases": [
+        "my bag",
+        "find my phone"
+      ],
+      "sentences": [
+        "Can you help me, please?",
+        "I cannot find my bag."
+      ],
+      "scene_task": "从丢手机或找包中选一个情境，说明困难并请求帮助。",
+      "prerequisites": [
+        "B12",
+        "D04",
+        "S05"
+      ],
+      "language_notes": "cannot/can't 先教含义；Can you help me 与 Can I have 区分用途。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D01",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 1,
+      "title": "颜色",
+      "status": "implemented",
+      "runtime_course_id": "adult-colors-v1",
+      "goal": "用颜色区分熟悉物品。",
+      "core_words": [
+        "red",
+        "green",
+        "yellow",
+        "blue"
+      ],
+      "phrases": [
+        "a red apple",
+        "a yellow banana"
+      ],
+      "sentences": [
+        "I want a red apple.",
+        "I want a green apple."
+      ],
+      "scene_task": "从同形不同色的水果中辨认并提出具体需求。",
+      "prerequisites": [
+        "B01"
+      ],
+      "language_notes": "沿用已上线第05课；a/an 看紧接的词，a red apple 不说 an red apple。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "D02",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 2,
+      "title": "大小",
+      "status": "implemented",
+      "runtime_course_id": "adult-sizes-v1",
+      "goal": "说清物品大小。",
+      "core_words": [
+        "big",
+        "small"
+      ],
+      "phrases": [
+        "a big apple",
+        "a small banana"
+      ],
+      "sentences": [
+        "I want a big apple.",
+        "I want a small banana."
+      ],
+      "scene_task": "比较一大一小的同种物品并表达自己的选择。",
+      "prerequisites": [
+        "B01"
+      ],
+      "language_notes": "沿用已上线第06课；保持同类物品对比，避免以远近造成错觉。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "D03",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 3,
+      "title": "一到五的数量",
+      "status": "implemented",
+      "runtime_course_id": "adult-numbers-v1",
+      "goal": "表达五以内的数量并使用复数。",
+      "core_words": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five"
+      ],
+      "phrases": [
+        "one apple",
+        "two apples"
+      ],
+      "sentences": [
+        "I want two apples.",
+        "I want three bananas."
+      ],
+      "scene_task": "根据所需数量点选物品，再说完整请求。",
+      "prerequisites": [
+        "B01"
+      ],
+      "language_notes": "沿用已上线第07课；apples/bananas 的复数和词尾发音单独教，词形不重复计词量。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "D04",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 4,
+      "title": "东西在哪里",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用位置短语说明物品所在。",
+      "core_words": [
+        "in",
+        "on",
+        "under",
+        "box",
+        "table"
+      ],
+      "phrases": [
+        "in the box",
+        "on the table"
+      ],
+      "sentences": [
+        "The apple is in the box.",
+        "The banana is on the table."
+      ],
+      "scene_task": "先按位置找水果，再改变位置让学习者描述。",
+      "prerequisites": [
+        "B01"
+      ],
+      "language_notes": "the/is 先用已知物品示范；位置变化必须在图片中真实可见。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D05",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 5,
+      "title": "形状有什么不同",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "辨认基本形状并描述熟悉物品。",
+      "core_words": [
+        "circle",
+        "square",
+        "triangle",
+        "round"
+      ],
+      "phrases": [
+        "a round plate",
+        "a square box"
+      ],
+      "sentences": [
+        "This is a circle.",
+        "The box is square."
+      ],
+      "scene_task": "把形状卡与物品配对，再说出一个形状句。",
+      "prerequisites": [
+        "B10",
+        "D04"
+      ],
+      "language_notes": "plate 是必要补充词；区分名词 circle 和形容词 round，不能混用。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D06",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 6,
+      "title": "热的还是冷的",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "说清饮品温度。",
+      "core_words": [
+        "hot",
+        "cold",
+        "warm",
+        "cool"
+      ],
+      "phrases": [
+        "hot tea",
+        "cold water"
+      ],
+      "sentences": [
+        "The tea is hot.",
+        "I want some cold water."
+      ],
+      "scene_task": "按人物需求选择冷热饮品，并说一句温度或请求。",
+      "prerequisites": [
+        "B02",
+        "D02"
+      ],
+      "language_notes": "先教 hot/cold，warm/cool 为第二轮；不要求儿童或成人实际触摸热液体。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D07",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 7,
+      "title": "软与硬",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用触感词描述物品。",
+      "core_words": [
+        "soft",
+        "hard",
+        "bread",
+        "stone"
+      ],
+      "phrases": [
+        "soft bread",
+        "a hard stone"
+      ],
+      "sentences": [
+        "The bread is soft.",
+        "The stone is hard."
+      ],
+      "scene_task": "观察两种材质的示意图并匹配触感，再自行描述。",
+      "prerequisites": [
+        "B07",
+        "D04"
+      ],
+      "language_notes": "bread 复用；用示意图表达触感，避免把图片猜测当作真实触觉测量。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D08",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 8,
+      "title": "长与短",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "比较长度并提出具体请求。",
+      "core_words": [
+        "long",
+        "short",
+        "rope",
+        "stick"
+      ],
+      "phrases": [
+        "a long rope",
+        "a short stick"
+      ],
+      "sentences": [
+        "The rope is long.",
+        "I want a short stick."
+      ],
+      "scene_task": "选择适合任务的长绳或短棍，再说出选择。",
+      "prerequisites": [
+        "D02",
+        "D04"
+      ],
+      "language_notes": "同尺度同起点比较；本课先不引入 longer/shorter 的词形变化。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D09",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 9,
+      "title": "近与远",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "描述地点之间的远近关系。",
+      "core_words": [
+        "near",
+        "far",
+        "home",
+        "station"
+      ],
+      "phrases": [
+        "near home",
+        "far from here"
+      ],
+      "sentences": [
+        "The station is near home.",
+        "The station is far from here."
+      ],
+      "scene_task": "根据两张简化地图选近处目的地并说明。",
+      "prerequisites": [
+        "B05",
+        "D04"
+      ],
+      "language_notes": "here/from 与 near 的搭配单独教；地图距离仅用于语言练习。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D10",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 10,
+      "title": "轻与重",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "表达重量感受并选择物品。",
+      "core_words": [
+        "heavy",
+        "light",
+        "bag",
+        "box"
+      ],
+      "phrases": [
+        "a heavy bag",
+        "a light box"
+      ],
+      "sentences": [
+        "The bag is heavy.",
+        "I want a light bag."
+      ],
+      "scene_task": "为短途出行选择轻的包，再对比另一件重物。",
+      "prerequisites": [
+        "D02",
+        "D04"
+      ],
+      "language_notes": "box 复用；light 仅教“轻”的词义，不同时引入灯光含义。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D11",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 11,
+      "title": "哪个更大",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用基础比较级对比两件物品。",
+      "core_words": [
+        "bigger",
+        "smaller",
+        "than"
+      ],
+      "phrases": [
+        "bigger than this",
+        "smaller than that"
+      ],
+      "sentences": [
+        "This apple is bigger.",
+        "This box is smaller than that box."
+      ],
+      "scene_task": "先选更大/更小的物品，再比较两个盒子。",
+      "prerequisites": [
+        "D02",
+        "D04"
+      ],
+      "language_notes": "bigger/smaller 作为 big/small 的词形教学；this/that/than 都要解释，比较句是扩展。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "D12",
+      "type_id": "description",
+      "type": "描述事物",
+      "order": 12,
+      "title": "物品的状态",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "描述空满和开关状态。",
+      "core_words": [
+        "empty",
+        "full",
+        "open",
+        "closed"
+      ],
+      "phrases": [
+        "an empty box",
+        "a full bag"
+      ],
+      "sentences": [
+        "The box is empty.",
+        "The bag is full."
+      ],
+      "scene_task": "根据装东西的任务找空盒，再辨认袋子是否装满。",
+      "prerequisites": [
+        "D04",
+        "D10"
+      ],
+      "language_notes": "先教 empty/full，open/closed 为可选扩展；an empty box 单独练冠词。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "开场用一个已学例子唤回前置知识；收尾安排一次无英文提示的迁移。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R01",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 1,
+      "title": "按要求拿东西",
+      "status": "implemented",
+      "runtime_course_id": "adult-describe-review-v1",
+      "goal": "综合已学描述条件提出请求。",
+      "core_words": [
+        "复用颜色、大小、数量"
+      ],
+      "phrases": [
+        "two green apples",
+        "a small red apple"
+      ],
+      "sentences": [
+        "I want two green apples.",
+        "I want a small red apple."
+      ],
+      "scene_task": "听两种条件找物品，再隐藏英文主动提出需求。",
+      "prerequisites": [
+        "B01",
+        "B03",
+        "D01",
+        "D02",
+        "D03"
+      ],
+      "language_notes": "沿用已上线第08课；无新增核心词，颜色与大小条件分轮增加。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "复用已上线资源"
+    },
+    {
+      "code": "R02",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 2,
+      "title": "我来准备点心",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "迁移已有请求到准备点心的任务。",
+      "core_words": [
+        "复用水果、饮品、礼貌请求"
+      ],
+      "phrases": [
+        "an apple, please",
+        "some milk, please"
+      ],
+      "sentences": [
+        "I want an apple, please.",
+        "I want some milk, please."
+      ],
+      "scene_task": "给自己搭配一份水果和饮品，用两句话说明，再道谢。",
+      "prerequisites": [
+        "B01",
+        "B02",
+        "B03",
+        "S01"
+      ],
+      "language_notes": "不加新食品词；偏好选择没有标准答案，评估的是表达是否完整。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R03",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 3,
+      "title": "认识新朋友",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "完成相互认识的小对话。",
+      "core_words": [
+        "复用问候、名字、来源"
+      ],
+      "phrases": [
+        "my name",
+        "from China"
+      ],
+      "sentences": [
+        "My name is Lily.",
+        "I am from China.",
+        "Where are you from?"
+      ],
+      "scene_task": "自我介绍、听对方介绍、再问一个问题。",
+      "prerequisites": [
+        "B04",
+        "B05"
+      ],
+      "language_notes": "承接旧规划第12课；不强制真实个人信息，不把记住人物资料当作唯一目标。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R04",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 4,
+      "title": "我们喜欢什么",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "主动表达并比较简单偏好。",
+      "core_words": [
+        "复用喜好、食物饮品"
+      ],
+      "phrases": [
+        "like apples",
+        "do not like coffee"
+      ],
+      "sentences": [
+        "I like tea.",
+        "I do not like coffee."
+      ],
+      "scene_task": "为自己和一个角色各选饮品，用两句表达不同偏好。",
+      "prerequisites": [
+        "B06",
+        "B02"
+      ],
+      "language_notes": "先维持第一人称角色扮演，不临时增加 he/she likes 的语法负担。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R05",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 5,
+      "title": "说说我的一天",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "用三句熟悉表达串起一天。",
+      "core_words": [
+        "复用吃喝、时间、日常活动"
+      ],
+      "phrases": [
+        "in the morning",
+        "at night"
+      ],
+      "sentences": [
+        "I drink milk in the morning.",
+        "I study English.",
+        "I sleep at night."
+      ],
+      "scene_task": "排列三张日常卡，再按顺序讲述；允许换成个人习惯。",
+      "prerequisites": [
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "language_notes": "承接旧规划第16课；不以句子数量推断长期口语水平。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R06",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 6,
+      "title": "向朋友介绍家人",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "在家庭图片情境中迁移介绍和位置表达。",
+      "core_words": [
+        "复用家庭、位置"
+      ],
+      "phrases": [
+        "my mother",
+        "on the table"
+      ],
+      "sentences": [
+        "This is my mother.",
+        "The apple is on the table."
+      ],
+      "scene_task": "介绍一位家人，再描述画面里一个物品的位置。",
+      "prerequisites": [
+        "B10",
+        "D04"
+      ],
+      "language_notes": "使用自选或虚构家庭图，避免预设家庭成员构成。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R07",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 7,
+      "title": "今天感觉怎么样",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "根据状态表达需求，并在听不懂时澄清。",
+      "core_words": [
+        "复用状态、求助、饮品"
+      ],
+      "phrases": [
+        "a little hungry",
+        "some water"
+      ],
+      "sentences": [
+        "I am thirsty.",
+        "I want some water.",
+        "Please say that again."
+      ],
+      "scene_task": "人物说一个状态，学习者回应自己的状态与需求。",
+      "prerequisites": [
+        "B11",
+        "B12",
+        "B02"
+      ],
+      "language_notes": "不增加诊断或治疗内容；请求帮助和重复均计为有效交流策略。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R08",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 8,
+      "title": "独立完成点餐",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "在新菜单版式中独立点餐。",
+      "core_words": [
+        "复用咖啡店、餐厅"
+      ],
+      "phrases": [
+        "a cup of tea",
+        "some rice"
+      ],
+      "sentences": [
+        "Can I have a cup of tea, please?",
+        "I would like some rice."
+      ],
+      "scene_task": "不显示英文提示完成饮品和主食的两个请求。",
+      "prerequisites": [
+        "S02",
+        "S03"
+      ],
+      "language_notes": "只换菜单排版和已学搭配，不加入新菜名；分别评估两个已学句式。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R09",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 9,
+      "title": "完成购物清单",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "按简单清单完成购买。",
+      "core_words": [
+        "复用数量、价格、超市"
+      ],
+      "phrases": [
+        "three apples",
+        "a shopping bag"
+      ],
+      "sentences": [
+        "I want three apples.",
+        "How much is it?",
+        "I need a bag, please."
+      ],
+      "scene_task": "买指定数量水果，询价，再索取购物袋。",
+      "prerequisites": [
+        "S04",
+        "S05",
+        "D03"
+      ],
+      "language_notes": "清单数量与价格限定在已学范围；不做真实下单或支付。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R10",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 10,
+      "title": "挑到合适的衣服",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "先表达目标，再根据不合适之处调整请求。",
+      "core_words": [
+        "复用颜色、大小、比较"
+      ],
+      "phrases": [
+        "a blue shirt",
+        "a smaller size"
+      ],
+      "sentences": [
+        "I want a blue shirt.",
+        "Do you have a smaller size?"
+      ],
+      "scene_task": "第一次给偏大的衣服，学习者提出换小尺码。",
+      "prerequisites": [
+        "S06",
+        "D01",
+        "D02",
+        "D11"
+      ],
+      "language_notes": "使用中性尺码表达，不评价身体或外貌。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R11",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 11,
+      "title": "从车站到酒店",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "在连续出行情境中调用熟悉表达。",
+      "core_words": [
+        "复用路线、车票、目的地、入住"
+      ],
+      "phrases": [
+        "a bus ticket",
+        "to the hotel"
+      ],
+      "sentences": [
+        "I want one ticket, please.",
+        "To the hotel, please.",
+        "I have a reservation."
+      ],
+      "scene_task": "依次完成购票、说明目的地和入住中的三个短任务。",
+      "prerequisites": [
+        "S07",
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "language_notes": "每次只呈现一个任务，不用未学的长问句突然增加难度。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    },
+    {
+      "code": "R12",
+      "type_id": "review",
+      "type": "综合复习",
+      "order": 12,
+      "title": "我的一次外出",
+      "status": "designed",
+      "runtime_course_id": null,
+      "goal": "在变化情境里自主选用已学表达。",
+      "core_words": [
+        "复用购物、出行、求助"
+      ],
+      "phrases": [
+        "my bag",
+        "go straight"
+      ],
+      "sentences": [
+        "Can you help me, please?",
+        "I cannot find my bag.",
+        "Please speak slowly."
+      ],
+      "scene_task": "在购物或出行中自选一个情境，完成请求、澄清和结束对话。",
+      "prerequisites": [
+        "R09",
+        "R11",
+        "S12",
+        "B12"
+      ],
+      "language_notes": "作为本轮迁移复习，不引入新词；按独立表达、提示后表达、主动澄清分别记录。",
+      "independent_check": "隐藏英文后完成本课场景任务，并替换一个已学条件再表达；不得只识别到关键词就判整句通过。",
+      "review_policy": "先复习前置课中的相关词，再学习新内容；复习课不新增核心词。",
+      "assets_status": "待开发：课文阶段 JSON、图片、示范/练习音频、逐词时间与口型数据"
+    }
+  ]
+}
