@@ -415,27 +415,36 @@ class _AuthGateState extends State<AuthGate> {
                           builder: (context, box) {
                             final guided = step != 0 && step != 4;
                             final h = box.maxHeight;
-                            final compact = h < 700;
-                            final panelHeight = compact ? 202.0 : 264.0;
-                            final panelTop = math.max(
-                              0.0,
-                              math.min(
-                                h * (compact ? .24 : .45),
-                                h - panelHeight - 8,
-                              ),
+                            final compact = h < 600;
+                            final gap = compact ? 16.0 : 24.0;
+                            const identityHeight = 104.0;
+                            final formCoreHeight = 24 + gap + 48 + gap + 48;
+                            final panelHeight = formCoreHeight + 48;
+                            final groupHeight =
+                                identityHeight +
+                                gap +
+                                formCoreHeight -
+                                (compact ? 0 : 48);
+                            final groupTop = math.max(
+                              8.0,
+                              (h - groupHeight) / 2,
                             );
-                            final scale = step == 0
-                                ? 1.0
-                                : (h < 360 ? .44 : (compact ? .58 : .76));
+                            final keyboard = MediaQuery.viewInsetsOf(context)
+                                .bottom;
+                            final keyboardCompact =
+                                keyboard > 0 &&
+                                box.maxWidth < 500 &&
+                                groupTop +
+                                        identityHeight +
+                                        gap +
+                                        formCoreHeight >
+                                    h - keyboard;
+                            final panelTop = keyboardCompact
+                                ? h - keyboard - 56
+                                : groupTop + identityHeight + gap;
                             final identityTop = step == 0
                                 ? (h - 120) / 2
-                                : math.max(
-                                        2.0,
-                                        panelTop -
-                                            120 * scale -
-                                            (compact ? 6 : 32),
-                                      ) -
-                                      (120 - 120 * scale) / 2;
+                                : groupTop;
                             return ClipRect(
                               child: Stack(
                                 fit: StackFit.expand,
@@ -446,14 +455,10 @@ class _AuthGateState extends State<AuthGate> {
                                     top: identityTop,
                                     left: (box.maxWidth - 240) / 2,
                                     width: 240,
-                                    height: 120,
-                                    child: AnimatedScale(
-                                      scale: scale,
-                                      duration: _duration(750),
-                                      curve: Curves.easeInOutCubic,
-                                      child: const EntryIdentity(
-                                        key: ValueKey('guide-identity'),
-                                      ),
+                                    height: step == 0 ? 120 : identityHeight,
+                                    child: EntryIdentity(
+                                      key: const ValueKey('guide-identity'),
+                                      compact: step != 0,
                                     ),
                                   ),
                                   AnimatedPositioned(
@@ -469,7 +474,8 @@ class _AuthGateState extends State<AuthGate> {
                                         opacity: guided ? 1 : 0,
                                         duration: _duration(750),
                                         curve: Curves.easeOutCubic,
-                                        child: Center(
+                                        child: Align(
+                                          alignment: Alignment.topCenter,
                                           child: ConstrainedBox(
                                             constraints: const BoxConstraints(
                                               maxWidth: 340,
@@ -539,7 +545,11 @@ class _AuthGateState extends State<AuthGate> {
                                                     },
                                                   ),
                                               child: guided
-                                                  ? _form(compact)
+                                                  ? _form(
+                                                      compact,
+                                                      keyboardCompact:
+                                                          keyboardCompact,
+                                                    )
                                                   : const SizedBox(
                                                       key: ValueKey(
                                                         'empty-guide',
@@ -620,124 +630,137 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
-  Widget _form(bool compact) {
+  Widget _form(bool compact, {bool keyboardCompact = false}) {
     final isPhone = step == 0 || step == 2,
         isCode = step == 3,
         isName = step == 1;
     final controller = isPhone ? phone : (isCode ? code : nickname);
     final label = isPhone ? '手机号' : (isCode ? '验证码' : '昵称');
+    final input = SizedBox(
+      height: 48,
+      child: Semantics(
+        label: label,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            TextField(
+              key: ValueKey('guide-input-$step'),
+              controller: controller,
+              focusNode: isPhone
+                  ? phoneFocus
+                  : (isCode ? codeFocus : nameFocus),
+              readOnly: busy,
+              maxLength: isPhone ? 11 : (isCode ? (testMode ? 4 : 6) : 12),
+              textAlign: TextAlign.center,
+              textAlignVertical: TextAlignVertical.center,
+              keyboardType: isName ? TextInputType.name : TextInputType.number,
+              textInputAction: TextInputAction.done,
+              autofillHints: isPhone
+                  ? const [AutofillHints.telephoneNumberNational]
+                  : (isCode
+                        ? const [AutofillHints.oneTimeCode]
+                        : const [AutofillHints.nickname]),
+              inputFormatters: isName
+                  ? null
+                  : [FilteringTextInputFormatter.digitsOnly],
+              onSubmitted: (_) {
+                if (busy) return;
+                if (isPhone && phoneValid && canSend) {
+                  _send();
+                } else if (isCode && codeValid) {
+                  _verify();
+                } else if (isName && nameValid) {
+                  _nextName();
+                }
+              },
+              style: TextStyle(
+                color: entryInk,
+                fontSize: 22,
+                letterSpacing: isName ? 1 : 3,
+              ),
+              cursorColor: entryInk,
+              decoration: InputDecoration(
+                hintText: null,
+                semanticCounterText: label,
+                counterText: '',
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 8,
+                ),
+                hintStyle: TextStyle(color: entryMuted.withValues(alpha: .35)),
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                disabledBorder: InputBorder.none,
+              ),
+            ),
+            if (controller.text.isEmpty &&
+                !(isPhone ? phoneFocus : (isCode ? codeFocus : nameFocus))
+                    .hasFocus)
+              const IgnorePointer(child: EntryIdleCaret()),
+          ],
+        ),
+      ),
+    );
+    if (keyboardCompact) {
+      return SizedBox(
+        height: 48,
+        child: Row(
+          children: [
+            if (!isPhone)
+              IconButton(
+                key: const ValueKey('guide-back'),
+                onPressed: busy ? null : _back,
+                icon: const Icon(Icons.arrow_back_rounded),
+              ),
+            Expanded(child: input),
+            if (isName && nameValid)
+              TextButton(
+                key: const ValueKey('guide-explore'),
+                onPressed: busy ? null : _nextName,
+                child: const Text('开始探索'),
+              )
+            else if (!isPhone || phoneValid)
+              IconButton(
+                key: const ValueKey('guide-next'),
+                onPressed:
+                    busy || !(isPhone ? phoneValid && canSend : codeValid)
+                    ? null
+                    : () {
+                        if (isPhone) {
+                          _send();
+                        } else {
+                          _verify();
+                        }
+                      },
+                icon: const Icon(Icons.arrow_forward_rounded),
+              ),
+          ],
+        ),
+      );
+    }
     return SizedBox(
       key: ValueKey('guide-step-${isPhone ? 2 : step}'),
-      height: compact ? 202 : 264,
+      height: (compact ? 152 : 168) + 48,
       child: Column(
         children: [
           SizedBox(
-            height: compact ? 25 : 36,
+            height: 24,
             child: Center(
               child: Text(
                 isPhone ? '需要一个手机号' : (isName ? '还需要一个昵称' : '输入验证码'),
                 style: TextStyle(
                   color: entryInk,
-                  fontSize: compact ? 15 : 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.w400,
                   letterSpacing: 1,
                 ),
               ),
             ),
           ),
-          SizedBox(height: compact ? 6 : 16),
-          SizedBox(
-            height: compact ? 48 : 60,
-            child: Semantics(
-              label: label,
-              child: Stack(
-                alignment: Alignment.center,
-                children: [
-                  TextField(
-                    key: ValueKey('guide-input-$step'),
-                    controller: controller,
-                    focusNode: isPhone
-                        ? phoneFocus
-                        : (isCode ? codeFocus : nameFocus),
-                    readOnly: busy,
-                    maxLength: isPhone
-                        ? 11
-                        : (isCode ? (testMode ? 4 : 6) : 12),
-                    textAlign: TextAlign.center,
-                    textAlignVertical: TextAlignVertical.center,
-                    keyboardType: isName
-                        ? TextInputType.name
-                        : TextInputType.number,
-                    textInputAction: TextInputAction.done,
-                    autofillHints: isPhone
-                        ? const [AutofillHints.telephoneNumberNational]
-                        : (isCode
-                              ? const [AutofillHints.oneTimeCode]
-                              : const [AutofillHints.nickname]),
-                    inputFormatters: isName
-                        ? null
-                        : [FilteringTextInputFormatter.digitsOnly],
-                    onSubmitted: (_) {
-                      if (busy) return;
-                      if (isPhone && phoneValid && canSend) {
-                        _send();
-                      } else if (isCode && codeValid) {
-                        _verify();
-                      } else if (isName && nameValid) {
-                        _nextName();
-                      }
-                    },
-                    style: TextStyle(
-                      color: entryInk,
-                      fontSize: compact ? 21 : 25,
-                      letterSpacing: isName ? 1 : 3,
-                    ),
-                    cursorColor: entryInk,
-                    decoration: InputDecoration(
-                      hintText: null,
-                      semanticCounterText: label,
-                      counterText: '',
-                      contentPadding: EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: compact ? 8 : 14,
-                      ),
-                      hintStyle: TextStyle(
-                        color: entryMuted.withValues(alpha: .35),
-                      ),
-                      border: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                      disabledBorder: InputBorder.none,
-                    ),
-                  ),
-                  if (controller.text.isEmpty &&
-                      !(isPhone ? phoneFocus : (isCode ? codeFocus : nameFocus))
-                          .hasFocus)
-                    const IgnorePointer(child: EntryIdleCaret()),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: compact ? 25 : 32,
-            child: isCode
-                ? TextButton(
-                    onPressed: busy || cooldown > 0
-                        ? null
-                        : () => _send(resend: true),
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: Size.zero,
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      foregroundColor: entryMuted,
-                    ),
-                    child: Text(
-                      cooldown > 0 ? '${cooldown}s 后重发' : '重新获取',
-                      style: const TextStyle(fontSize: 11),
-                    ),
-                  )
-                : const SizedBox.shrink(),
-          ),
+          SizedBox(height: compact ? 16 : 24),
+          input,
+          SizedBox(height: compact ? 16 : 24),
           GuidedActions(
             showBack: !isPhone,
             showNext: !isPhone || phoneValid,
@@ -755,6 +778,26 @@ class _AuthGateState extends State<AuthGate> {
               }
             },
             onExplore: _nextName,
+          ),
+          SizedBox(
+            height: 24,
+            child: isCode
+                ? TextButton(
+                    onPressed: busy || cooldown > 0
+                        ? null
+                        : () => _send(resend: true),
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      minimumSize: Size.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      foregroundColor: entryMuted,
+                    ),
+                    child: Text(
+                      cooldown > 0 ? '${cooldown}s 后重发' : '重新获取',
+                      style: const TextStyle(fontSize: 11),
+                    ),
+                  )
+                : const SizedBox.shrink(),
           ),
           if (error.isNotEmpty)
             Flexible(

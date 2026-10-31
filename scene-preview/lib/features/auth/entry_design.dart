@@ -37,58 +37,64 @@ class _EntryIdentityState extends State<EntryIdentity>
   }
 
   @override
-  Widget build(BuildContext context) => Semantics(
-    label: '为每一次开口',
-    child: ExcludeSemantics(
-      child: SizedBox(
-        width: 240,
-        height: 120,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 72,
-              child: AnimatedBuilder(
-                animation: motion,
-                builder: (context, _) => Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    for (var i = 0; i < 5; i++)
-                      Container(
-                        key: ValueKey('voice-bar-$i'),
-                        width: 7,
-                        height:
-                            [26.0, 45.0, 64.0, 45.0, 26.0][i] *
-                            (MediaQuery.disableAnimationsOf(context)
-                                ? .9
-                                : .86 +
-                                      .14 *
-                                          math.sin(
-                                            motion.value * math.pi * 2 -
-                                                (i - 2).abs() * .65,
-                                          )),
-                        margin: const EdgeInsets.symmetric(horizontal: 2.5),
-                        decoration: BoxDecoration(
-                          color: entryInk,
-                          borderRadius: BorderRadius.circular(8),
+  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
+    tween: Tween(end: widget.compact ? 1 : 0),
+    duration: MediaQuery.disableAnimationsOf(context)
+        ? Duration.zero
+        : const Duration(milliseconds: 750),
+    curve: Curves.easeInOutCubic,
+    builder: (context, t, _) => Semantics(
+      label: '为每一次开口',
+      child: ExcludeSemantics(
+        child: SizedBox(
+          width: 240,
+          height: 120 - 16 * t,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 72 - 16 * t,
+                child: AnimatedBuilder(
+                  animation: motion,
+                  builder: (context, _) => Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      for (var i = 0; i < 5; i++)
+                        Container(
+                          key: ValueKey('voice-bar-$i'),
+                          width: 7,
+                          height:
+                              [26.0, 45.0, 64.0, 45.0, 26.0][i] *
+                              (1 - .1875 * t) *
+                              (MediaQuery.disableAnimationsOf(context)
+                                  ? .9
+                                  : .86 +
+                                        .14 *
+                                            math.sin(
+                                              motion.value * math.pi * 2 -
+                                                  (i - 2).abs() * .65,
+                                            )),
+                          margin: const EdgeInsets.symmetric(horizontal: 2.5),
+                          decoration: BoxDecoration(
+                            color: entryInk,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                      ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 24),
-            const Text(
-              '为每一次开口',
-              style: TextStyle(
-                color: entryMuted,
-                fontSize: 12,
-                height: 1.2,
-                letterSpacing: 2,
+              const SizedBox(height: 24),
+              Text(
+                '为每一次开口',
+                style: TextStyle(
+                  color: entryInk,
+                  fontSize: 18 - 2 * t,
+                  height: 24 / (18 - 2 * t),
+                  letterSpacing: 2,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     ),
@@ -166,7 +172,7 @@ class _GuidedActionsState extends State<GuidedActions>
   @override
   Widget build(BuildContext context) => SizedBox(
     width: 240,
-    height: 56,
+    height: 48,
     child: AnimatedBuilder(
       animation: merge,
       builder: (context, _) => Stack(
@@ -281,12 +287,12 @@ class _EntryIdleCaretState extends State<EntryIdleCaret>
       animation: blink,
       builder: (context, _) => Opacity(
         opacity: MediaQuery.disableAnimationsOf(context)
-            ? .65
-            : .15 + .65 * Curves.easeInOut.transform(blink.value),
+            ? .8
+            : .4 + .6 * Curves.easeInOut.transform(blink.value),
         child: Container(
           key: const ValueKey('idle-input-caret'),
-          width: 1.5,
-          height: 25,
+          width: 2,
+          height: 24,
           decoration: BoxDecoration(
             color: entryInk,
             borderRadius: BorderRadius.circular(1),

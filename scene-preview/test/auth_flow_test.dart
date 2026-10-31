@@ -148,6 +148,19 @@ void main() {
           tester.getSize(find.byKey(const ValueKey('voice-bar-3'))).height,
         );
         final identityRect = tester.getRect(find.byType(EntryIdentity));
+        expect(
+          identityRect.top,
+          closeTo(
+            size.height -
+                tester
+                    .getRect(find.byKey(const ValueKey('guide-next')))
+                    .bottom +
+                (size.height < 600 ? 0 : 48),
+            1,
+          ),
+        );
+        expect(tester.widget<Text>(find.text('为每一次开口')).style!.fontSize, 16);
+
         if (size.width < 500) {
           tester.view.viewInsets = const FakeViewPadding(bottom: 260);
           await advance(tester);
