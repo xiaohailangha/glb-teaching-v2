@@ -7,7 +7,7 @@ const types={'.js':'text/javascript','.html':'text/html','.json':'application/js
 const port=Number(process.env.SCENE_PREVIEW_PORT||5303);
 http.createServer((req,res)=>{
  const url=new URL(req.url,'http://localhost');
- if(url.pathname.startsWith('/api/auth/')||url.pathname.startsWith('/api/admin/')||url.pathname.startsWith('/admin/')){
+ if(url.pathname.startsWith('/api/auth/')){
   const proxy=http.request({host:'127.0.0.1',port:5296,path:url.pathname+url.search,method:req.method,headers:{...req.headers,'x-real-ip':req.socket.remoteAddress}},r=>{res.writeHead(r.statusCode,r.headers);r.pipe(res);});
   proxy.on('error',()=>res.writeHead(502).end());req.pipe(proxy);return;
  }

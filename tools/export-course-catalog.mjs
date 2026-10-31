@@ -21,6 +21,6 @@ const planned=['问候与名字','来自哪里','喜好','认识新朋友','吃�
 planned.forEach((title,i)=>courses.push({id:`planned-${i+9}`,title:`${String(i+9).padStart(2,'0')} · ${title}`,unit:Math.floor(i/4)+3,status:'planned',stages:[],goal:'按现有课程规划继续开发'}));
 const lexicon=[...read('scene-preview/lib/features/lesson/domain/course_lexicon.dart').matchAll(/'([^']+)':\s*\(\s*clip:\s*'([^']+)',\s*ipa:\s*'([^']+)',\s*meaning:\s*'([^']+)'/g)].map(m=>({word:m[1],ipa:m[3],meaning:m[4],audio:audio[m[2]]||null,courses:courses.filter(c=>c.stages.some(s=>new RegExp(`\\b${m[1]}\\b`,'i').test(s.display||s.speechText||''))).map(c=>c.title)}));
 const phonemes=[...read('scene-preview/lib/features/lesson/domain/ipa_sounds.dart').matchAll(/'([^']+)': '([^']+)'/g)].map(m=>({symbol:m[1],url:'/scene/assets/assets/avatar/audio/phoneme_'+m[2]+'.wav'}));
-fs.mkdirSync('admin/data',{recursive:true});
-fs.writeFileSync('admin/data/catalog.json',JSON.stringify({release:'r21 · 成人 01–08',courses,lexicon,phonemes},null,2));
+fs.mkdirSync('data',{recursive:true});
+fs.writeFileSync('data/course-catalog.json',JSON.stringify({release:'r21 · 成人 01–08',courses,lexicon,phonemes},null,2));
 console.log(`Exported ${courses.length} course entries and ${lexicon.length} words.`);

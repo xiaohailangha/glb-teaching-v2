@@ -56,6 +56,9 @@ echo SCENE_UPLOAD_READY
   ['services/speech-http.mjs','glb-scene-speech-http.mjs'],
   ['services/live-recognition.mjs','glb-scene-live-recognition.mjs'],
   ['services/auth-http.mjs','glb-auth-http.mjs'],
+  ['services/learning-http.mjs','glb-learning-http.mjs'],
+  ['services/learning-store.mjs','glb-learning-store.mjs'],
+  ['data/course-catalog.json','glb-course-catalog.json'],
   ['services/tencent-sms.mjs','glb-tencent-sms.mjs'],
   ['server.mjs','glb-auth-server.mjs'],
   ['.secrets/cos-scene-assets.json','glb-scene-assets.json'],
@@ -68,7 +71,7 @@ backup=/opt/glb-backups/before-scene-$(date -u +%Y%m%dT%H%M%SZ)
 install -d -m 700 "$backup"
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
 cp /opt/glb-teaching/server.mjs "$backup/server.mjs"
-for name in auth-http tencent-sms; do
+for name in auth-http tencent-sms learning-http learning-store; do
  if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
 done
 cp /opt/glb-teaching/services/cos-assets.mjs "$backup/cos-assets.mjs"
@@ -98,7 +101,8 @@ rollback(){
  trap - ERR
  cp "$backup/nginx.conf" /etc/nginx/sites-available/glb-teaching
  cp "$backup/server.mjs" /opt/glb-teaching/server.mjs
- for name in auth-http tencent-sms; do
+ if test -f "$backup/course-catalog.json"; then cp "$backup/course-catalog.json" /opt/glb-teaching/data/course-catalog.json; fi
+ for name in auth-http tencent-sms learning-http learning-store; do
   if test -f "$backup/$name.mjs"; then cp "$backup/$name.mjs" /opt/glb-teaching/services/$name.mjs; fi
  done
  cp "$backup/cos-assets.mjs" /opt/glb-teaching/services/cos-assets.mjs
@@ -113,8 +117,10 @@ rollback(){
 }
 trap rollback ERR
 backend_changed=0
+if ! cmp -s /root/glb-course-catalog.json /opt/glb-teaching/data/course-catalog.json; then backend_changed=1; fi
+if test -f /opt/glb-teaching/data/course-catalog.json; then cp /opt/glb-teaching/data/course-catalog.json "$backup/course-catalog.json"; fi
 /opt/glb-runtime/node/bin/node -e "require('node:sqlite')"
-for name in auth-http tencent-sms; do
+for name in auth-http tencent-sms learning-http learning-store; do
  /opt/glb-runtime/node/bin/node --check /root/glb-$name.mjs
  if ! cmp -s /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs; then backend_changed=1; fi
 done
@@ -127,9 +133,11 @@ if ! cmp -s /root/glb-scene-cos-assets.mjs /opt/glb-teaching/services/cos-assets
 if test -d /opt/glb-teaching/build/web/scene; then mv /opt/glb-teaching/build/web/scene "$backup/scene"; fi
 mv "$stage" /opt/glb-teaching/build/web/scene
 scene_installed=1
+install -d -o glbapp -g glbapp -m 755 /opt/glb-teaching/data
+install -o glbapp -g glbapp -m 644 /root/glb-course-catalog.json /opt/glb-teaching/data/course-catalog.json
 install -o glbapp -g glbapp -m 644 /root/glb-auth-server.mjs /opt/glb-teaching/server.mjs
 install -d -o glbapp -g glbapp -m 700 /opt/glb-teaching/work/auth-private
-for name in auth-http tencent-sms; do
+for name in auth-http tencent-sms learning-http learning-store; do
  install -o glbapp -g glbapp -m 644 /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs
 done
 install -o glbapp -g glbapp -m 644 /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs
