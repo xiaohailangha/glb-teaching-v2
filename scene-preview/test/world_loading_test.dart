@@ -25,20 +25,32 @@ void main() {
     expect(c.ready, isFalse);
     c.dispose();
   });
-  testWidgets('loading shows real progress and offers retry instead of entering on failure', (tester) async {
-    final c = LessonController(); var retries = 0;
-    await tester.pumpWidget(MaterialApp(home: WorldLoading(controller: c, retry: () => retries++)));
-    c.handle({'event': 'resource-progress', 'value': .73, 'label': '布置人物与场景'});
-    await tester.pump();
-    expect(find.text('73%'), findsOneWidget);
-    expect(find.text('布置人物与场景'), findsOneWidget);
-    expect(find.text('进入课堂'), findsNothing);
-    c.handle({'event': 'error', 'message': 'test failure'});
-    await tester.pump();
-    await tester.tap(find.text('重新准备'));
-    expect(retries, 1);
-    expect(find.text('test failure'), findsNothing);
-    await tester.pumpWidget(const SizedBox());
-    c.dispose();
-  });
+  testWidgets(
+    'loading shows real progress and offers retry instead of entering on failure',
+    (tester) async {
+      final c = LessonController();
+      var retries = 0;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: WorldLoading(controller: c, retry: () => retries++),
+        ),
+      );
+      c.handle({
+        'event': 'resource-progress',
+        'value': .73,
+        'label': '布置人物与场景',
+      });
+      await tester.pump();
+      expect(find.text('73%'), findsOneWidget);
+      expect(find.text('布置人物与场景'), findsOneWidget);
+      expect(find.text('进入课堂'), findsNothing);
+      c.handle({'event': 'error', 'message': 'test failure'});
+      await tester.pump();
+      await tester.tap(find.text('重新准备'));
+      expect(retries, 1);
+      expect(find.text('test failure'), findsNothing);
+      await tester.pumpWidget(const SizedBox());
+      c.dispose();
+    },
+  );
 }

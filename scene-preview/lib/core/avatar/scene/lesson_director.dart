@@ -45,6 +45,7 @@ class TeachingDirector {
   final String _word, style;
   String get word => stage.wordId.isEmpty ? _word : stage.wordId;
   bool fruitCourse = false;
+  String courseId = 'adult-fruit-v2';
   final taught = <String>{},
       attempts = <String>{},
       correct = <String>{},
@@ -52,7 +53,7 @@ class TeachingDirector {
       expressions = <String>{};
   Map<String, dynamic> get checkpoint => {
     'version': 1,
-    'courseId': 'adult-fruit-v2',
+    'courseId': courseId,
     'expressions': expressions.toList(),
     'index': index,
     'taught': taught.toList(),
@@ -259,6 +260,7 @@ class TeachingDirector {
 
   factory TeachingDirector.fruit(
     List<dynamic> rows, {
+    String courseId = 'adult-fruit-v2',
     double rate = 1,
     Map<String, dynamic>? saved,
   }) {
@@ -292,7 +294,8 @@ class TeachingDirector {
           ),
       ],
     )..fruitCourse = true;
-    if (saved?['version'] == 1 && saved?['courseId'] == 'adult-fruit-v2') {
+    d.courseId = courseId;
+    if (saved?['version'] == 1 && saved?['courseId'] == courseId) {
       d.index = ((saved?['index'] as num?)?.toInt() ?? 0).clamp(
         0,
         d.stages.length - 1,

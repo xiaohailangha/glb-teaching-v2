@@ -11,6 +11,7 @@ import 'package:vector_math/vector_math.dart' as vm;
 
 import '../../../features/lesson/application/lesson_controller.dart';
 import 'lesson_director.dart';
+import '../../../features/lesson/domain/course_catalog.dart';
 import 'secondary_motion.dart';
 import 'speech_client.dart';
 import 'automatic_reader.dart';
@@ -327,6 +328,7 @@ class SceneRuntime extends ChangeNotifier {
   final timings = <String, dynamic>{};
   Map<String, dynamic> units = {};
   List<dynamic> fruitStages = [];
+  final courseStages = <String, List<dynamic>>{};
   SecondaryMotion? secondary;
   AttachmentProbe? attachmentProbe;
   CornealHighlights? highlights;
@@ -424,6 +426,7 @@ class SceneRuntime extends ChangeNotifier {
         'pronunciation-units',
         'course-prompts',
         'fruit-prompts',
+        'unit-one-prompts',
         'coach-prompts',
       ]) {
         final json = jsonDecode(
@@ -437,13 +440,16 @@ class SceneRuntime extends ChangeNotifier {
           'assets/avatar/audio/performance-cues.json',
         ),
       );
-      fruitStages =
-          (jsonDecode(
-                await rootBundle.loadString(
-                  'assets/avatar/courses/adult-fruit.json',
-                ),
-              ) as Map)['stages']
-              as List;
+      for (final course in courseCatalog) {
+        courseStages[course.id] =
+            (jsonDecode(
+                  await rootBundle.loadString(
+                    'assets/avatar/courses/${course.asset}.json',
+                  ),
+                ) as Map)['stages']
+                as List;
+      }
+      fruitStages = courseStages['adult-fruit-v2']!;
       final rig = jsonDecode(
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
       ) as Map<String, dynamic>;
@@ -524,7 +530,14 @@ class SceneRuntime extends ChangeNotifier {
           });
         },
       );
-      for (final word in ['apple', 'banana']) {
+      for (final word in [
+        'apple',
+        'banana',
+        'water',
+        'milk',
+        'tea',
+        'coffee',
+      ]) {
         await rootBundle.loadString('assets/avatar/images/$word.svg');
       }
       if (disposed) return;
@@ -546,7 +559,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r19-world',
+        'version': 'scene-0.2.0-r20-courses',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -645,7 +658,8 @@ class SceneRuntime extends ChangeNotifier {
           mode = 'course';
           director = c['style'] == 'adult'
               ? TeachingDirector.fruit(
-                  fruitStages,
+                  courseStages[c['courseId']] ?? fruitStages,
+                  courseId: c['courseId']?.toString() ?? 'adult-fruit-v2',
                   rate: (c['rate'] as num? ?? 1).toDouble(),
                   saved: c['checkpoint'] as Map<String, dynamic>?,
                 )

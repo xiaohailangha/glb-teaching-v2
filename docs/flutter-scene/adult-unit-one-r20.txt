@@ -1,0 +1,46 @@
+成人零基础 · 单元一「我想要什么」/ r20 / 2026-10-31
+
+本轮范围
+保留 01 苹果和香蕉，新增 02 水和饮料、03 礼貌请求、04 水果饮品店。
+儿童路线和 05–16 仍待开发；不把课程数量当作掌握程度。
+
+02：water / milk / tea / coffee → some → some water 等短语 → I want some water. 等替换句。
+重点是饮品作为物质的用法，先学 some，不把 an apple 生硬套用到 water。
+03：please → An apple, please. / A banana, please. / Some water, please.
+然后 thank / you → Thank you. → I want some water, please.
+短请求可直接用于熟悉情境；后续课程再教 Can I have… / I'd like…，本课不突然增加新结构。
+04：有示范的水果饮品店复习，用熟悉的请求与道谢；不增加新词，也不以选择题或更长句子收尾。
+三课都以轻松小结结束，显示本课新接触及累计接触词数。统计表示接触，不表示已经掌握。
+
+交互与存储
+设置内有四课目录；课后可选择下一课。切换到新课后轻触人物开始，避免未经选择自动开始下一节。
+每课使用独立版本 ID 保存断点，保留原 adult-fruit-v2 进度兼容。
+词汇接触记录跨课共享、账号隔离；本课新增词按课程独立保存，复习重复词不重复计数。
+每个英文词可点读；长句沿用逐词反馈和分段纠正。← / → 保留，不把跳过算作答对。
+所有新课程 JSON、音频、口型及逐词时间数据、SVG 图片随网页发布，进入课程前预加载。
+图片使用简洁 SVG；未生成写实图片。
+
+教学参考
+词条美式读法参考 Cambridge Dictionary，整词/句子使用既有 403008 男童声线。
+https://dictionary.cambridge.org/us/pronunciation/english/coffee
+https://dictionary.cambridge.org/us/pronunciation/english/milk
+https://dictionary.cambridge.org/us/pronunciation/english/tea
+https://dictionary.cambridge.org/us/grammar/british-grammar/please-and-thank-you
+water 采用美式音位写法 /ˈwɑː.tər/，说明自然语流 t 的闪音变体；不要求学习者把闪音硬读为 d。
+音标 /z/ 与 /j/ 使用独立 CC0 音素录音，保留完整录音，仅格式转换，不截取单词。
+https://github.com/NewDanishPhonetics/IPA-sound-files
+每段录音来源、许可与校验值保存在 IPA-reference-attribution.json。
+
+维护
+tools/prepare-unit-one.mjs 维护三课及新教学音频；--course-only 只生成课文。
+tools/prepare-drink-images.mjs 维护四张饮品 SVG。
+未来课程继续以交流任务组织，先完成一个单元的实际体验，再扩展下一单元。
+
+本轮验收
+- 新增 24 段教学音频，约 1.83 MiB；三课分别 28 / 18 / 12 个教学阶段。
+- Flutter 70 项测试通过；最终 analyze 无问题；release Web 构建通过。
+- 浏览器验证四课目录、切课、整词和完整句显示，926×428 手机横屏无滚动或溢出。
+- 新课线上文件校验全部通过，三份课文、24 段音频、词时序、四张 SVG、两段独立音标录音与发布文件一致。
+- 线上地址：https://49.233.179.83/scene/?r=20
+- 回滚备份：/opt/glb-backups/before-scene-20261031T051725Z
+- 真人麦克风的识别容错仍需用户体验，本轮浏览器检查不替代真人发音验收。

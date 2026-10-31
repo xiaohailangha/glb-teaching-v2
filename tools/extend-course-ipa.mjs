@@ -4,7 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {readWave} from '../services/tencent-speech.mjs';
 const dir='scene-preview/assets/avatar/audio',work='work/ipa-reference';
 const file=dir+'/pronunciation-units.json',data=JSON.parse(fs.readFileSync(file));
-const additions={w:['w','w'],aa:['ɑː','ɑ'],iy:['iː','i'],eh:['e','ɛ'],r:['ɹ','ɻ'],ay:['aɪ','En-us-I.ogg'],ey:['eɪ','En-us-A.ogg']};
+const additions=process.argv.includes('--unit-one')?{z:['z','z'],y:['j','j']}:{w:['w','w'],aa:['ɑː','ɑ'],iy:['iː','i'],eh:['e','ɛ'],r:['ɹ','ɻ'],ay:['aɪ','En-us-I.ogg'],ey:['eɪ','En-us-A.ogg']};
 for(const [id,[symbol,recording]]of Object.entries(additions)){
  let url,page,license,author,description='Independent phonetic recording';
  if(recording.endsWith('.ogg')){

@@ -13,9 +13,9 @@ class AdultCoursePanel extends StatelessWidget {
   const AdultCoursePanel({super.key, required this.controller});
   final LessonController controller;
   Widget fruit(String word, {double size = 72}) => Semantics(
-    label: word == 'apple' ? '苹果图片' : '香蕉图片',
+    label: '${courseLexicon[word]?.meaning ?? word}图片',
     child: SvgPicture.asset(
-      'assets/avatar/images/${word == 'apple' ? 'apple' : 'banana'}.svg',
+      'assets/avatar/images/$word.svg',
       width: size,
       height: size,
     ),
@@ -128,6 +128,11 @@ class AdultCoursePanel extends StatelessWidget {
               c.closingCheer,
               style: const TextStyle(color: Color(0xFFBDE5DD), fontSize: 18),
             ),
+            if (c.nextCourse != null)
+              TextButton(
+                onPressed: () => c.selectCourse(c.nextCourse!.id),
+                child: Text('下一课 · ${c.nextCourse!.title.substring(5)} →'),
+              ),
           ] else ...[
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 220),

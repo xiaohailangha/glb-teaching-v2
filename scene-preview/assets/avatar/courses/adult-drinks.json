@@ -1,0 +1,476 @@
+{
+  "id": "adult-drinks-v1",
+  "title": "02 · 水和饮料",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "02 · 水和饮料",
+      "word": "apple",
+      "display": "02 · 水和饮料",
+      "text": "这节课认识四种饮品。先读单词，再用学过的表达，说说你想要什么。",
+      "clip": "drinks_intro"
+    },
+    {
+      "id": "word_water_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "water",
+      "text": "水",
+      "clip": "unit_water",
+      "picture": "water"
+    },
+    {
+      "id": "word_water",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "water",
+      "text": "水",
+      "practiceClip": "unit_water",
+      "speechText": "water",
+      "picture": "water",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "word_milk_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "milk",
+      "text": "牛奶",
+      "clip": "unit_milk",
+      "picture": "milk"
+    },
+    {
+      "id": "word_milk",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "milk",
+      "text": "牛奶",
+      "practiceClip": "unit_milk",
+      "speechText": "milk",
+      "picture": "milk",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "word_tea_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "tea",
+      "text": "茶",
+      "clip": "unit_tea",
+      "picture": "tea"
+    },
+    {
+      "id": "word_tea",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "tea",
+      "text": "茶",
+      "practiceClip": "unit_tea",
+      "speechText": "tea",
+      "picture": "tea",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "word_coffee_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "coffee",
+      "text": "咖啡",
+      "clip": "unit_coffee",
+      "picture": "coffee"
+    },
+    {
+      "id": "word_coffee",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "coffee",
+      "text": "咖啡",
+      "practiceClip": "unit_coffee",
+      "speechText": "coffee",
+      "picture": "coffee",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "some_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "some",
+      "text": "一些；这里不说具体数量。",
+      "clip": "unit_some",
+      "picture": ""
+    },
+    {
+      "id": "some",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "some",
+      "text": "一些；这里不说具体数量。",
+      "practiceClip": "unit_some",
+      "speechText": "some",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "some_water_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "some water",
+      "text": "一些水。这里不按一个、两个来数。",
+      "clip": "unit_some_water",
+      "picture": "water"
+    },
+    {
+      "id": "some_water",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "some water",
+      "text": "一些水。这里不按一个、两个来数。",
+      "practiceClip": "unit_some_water",
+      "speechText": "some water",
+      "picture": "water",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "want_water_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "I want some water.",
+      "text": "我想要一些水。",
+      "clip": "unit_want_water",
+      "picture": "water"
+    },
+    {
+      "id": "want_water",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "water",
+      "display": "I want some water.",
+      "text": "我想要一些水。",
+      "practiceClip": "unit_want_water",
+      "speechText": "I want some water.",
+      "picture": "water",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "some water",
+          "clip": "unit_some_water"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "some_milk_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "some milk",
+      "text": "一些牛奶。这里不按一个、两个来数。",
+      "clip": "unit_some_milk",
+      "picture": "milk"
+    },
+    {
+      "id": "some_milk",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "some milk",
+      "text": "一些牛奶。这里不按一个、两个来数。",
+      "practiceClip": "unit_some_milk",
+      "speechText": "some milk",
+      "picture": "milk",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "want_milk_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "I want some milk.",
+      "text": "我想要一些牛奶。",
+      "clip": "unit_want_milk",
+      "picture": "milk"
+    },
+    {
+      "id": "want_milk",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "milk",
+      "display": "I want some milk.",
+      "text": "我想要一些牛奶。",
+      "practiceClip": "unit_want_milk",
+      "speechText": "I want some milk.",
+      "picture": "milk",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "some milk",
+          "clip": "unit_some_milk"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "some_tea_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "some tea",
+      "text": "一些茶。这里不按一个、两个来数。",
+      "clip": "unit_some_tea",
+      "picture": "tea"
+    },
+    {
+      "id": "some_tea",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "some tea",
+      "text": "一些茶。这里不按一个、两个来数。",
+      "practiceClip": "unit_some_tea",
+      "speechText": "some tea",
+      "picture": "tea",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "want_tea_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "I want some tea.",
+      "text": "我想要一些茶。",
+      "clip": "unit_want_tea",
+      "picture": "tea"
+    },
+    {
+      "id": "want_tea",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "tea",
+      "display": "I want some tea.",
+      "text": "我想要一些茶。",
+      "practiceClip": "unit_want_tea",
+      "speechText": "I want some tea.",
+      "picture": "tea",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "some tea",
+          "clip": "unit_some_tea"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "some_coffee_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "some coffee",
+      "text": "一些咖啡。这里不按一个、两个来数。",
+      "clip": "unit_some_coffee",
+      "picture": "coffee"
+    },
+    {
+      "id": "some_coffee",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "some coffee",
+      "text": "一些咖啡。这里不按一个、两个来数。",
+      "practiceClip": "unit_some_coffee",
+      "speechText": "some coffee",
+      "picture": "coffee",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "want_coffee_model",
+      "phase": "demonstrate",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "I want some coffee.",
+      "text": "我想要一些咖啡。",
+      "clip": "unit_want_coffee",
+      "picture": "coffee"
+    },
+    {
+      "id": "want_coffee",
+      "phase": "listen",
+      "chapter": "02 · 水和饮料",
+      "word": "coffee",
+      "display": "I want some coffee.",
+      "text": "我想要一些咖啡。",
+      "practiceClip": "unit_want_coffee",
+      "speechText": "I want some coffee.",
+      "picture": "coffee",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "some coffee",
+          "clip": "unit_some_coffee"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "word": "apple",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

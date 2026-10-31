@@ -153,7 +153,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "${controller.address('你好')}\n从一个苹果开始",
+                              "${controller.address('你好')}\n${controller.activeCourse.goal}",
                               style: const TextStyle(
                                 fontSize: 36,
                                 height: 1.3,

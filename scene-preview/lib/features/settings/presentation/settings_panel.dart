@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../application/app_settings.dart';
 import '../../lesson/application/lesson_controller.dart';
 import '../../auth/auth_api.dart';
+import '../../lesson/domain/course_catalog.dart';
 
 class SettingsPanel extends StatelessWidget {
   const SettingsPanel({
@@ -46,6 +47,21 @@ class SettingsPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
+            const Text('我想要什么 · 成人入门', style: TextStyle(color: Colors.white)),
+            for (final course in courseCatalog)
+              ListTile(
+                dense: true,
+                title: Text(course.title),
+                subtitle: Text(course.goal),
+                trailing: course.id == lesson.courseId
+                    ? const Icon(Icons.check, color: Color(0xFFBDE5DD))
+                    : null,
+                onTap: () {
+                  Navigator.pop(context);
+                  lesson.selectCourse(course.id);
+                },
+              ),
+            const SizedBox(height: 12),
             _NicknameField(lesson: lesson),
             if (onLeave != null)
               Row(

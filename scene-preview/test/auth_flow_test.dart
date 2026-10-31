@@ -29,7 +29,9 @@ void main() {
         );
       }),
     );
-    await tester.pumpWidget(MaterialApp(home: AuthGate(api: api, prepareScene: false)));
+    await tester.pumpWidget(
+      MaterialApp(home: AuthGate(api: api, prepareScene: false)),
+    );
     await tester.pumpAndSettle();
     await tester.tap(find.text('开始我的学习'));
     await tester.pumpAndSettle();
@@ -79,7 +81,9 @@ void main() {
           );
         }),
       );
-      await tester.pumpWidget(MaterialApp(home: AuthGate(api: api, prepareScene: false)));
+      await tester.pumpWidget(
+        MaterialApp(home: AuthGate(api: api, prepareScene: false)),
+      );
       await tester.pumpAndSettle();
       await tester.tap(find.text('开始我的学习'));
       await tester.pumpAndSettle();

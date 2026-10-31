@@ -1,0 +1,320 @@
+{
+  "id": "adult-polite-v1",
+  "title": "03 · 礼貌请求",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "03 · 礼貌请求",
+      "text": "这节课练习礼貌请求。先听，再跟着说。",
+      "clip": "polite_intro"
+    },
+    {
+      "id": "please_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "please",
+      "text": "请；让请求更礼貌。",
+      "clip": "unit_please",
+      "picture": ""
+    },
+    {
+      "id": "please",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "please",
+      "text": "请；让请求更礼貌。",
+      "practiceClip": "unit_please",
+      "speechText": "please",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "request_apple_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "An apple, please.",
+      "text": "请给我一个苹果。",
+      "clip": "unit_request_apple",
+      "picture": "apple"
+    },
+    {
+      "id": "request_apple",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "An apple, please.",
+      "text": "请给我一个苹果。",
+      "practiceClip": "unit_request_apple",
+      "speechText": "An apple, please.",
+      "picture": "apple",
+      "segments": [
+        {
+          "label": "an apple",
+          "clip": "phrase_apple"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "request_banana_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "banana",
+      "display": "A banana, please.",
+      "text": "请给我一根香蕉。",
+      "clip": "unit_request_banana",
+      "picture": "banana"
+    },
+    {
+      "id": "request_banana",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "banana",
+      "display": "A banana, please.",
+      "text": "请给我一根香蕉。",
+      "practiceClip": "unit_request_banana",
+      "speechText": "A banana, please.",
+      "picture": "banana",
+      "segments": [
+        {
+          "label": "a banana",
+          "clip": "phrase_banana"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "request_water_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "water",
+      "display": "Some water, please.",
+      "text": "请给我一些水。",
+      "clip": "unit_request_water",
+      "picture": "water"
+    },
+    {
+      "id": "request_water",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "water",
+      "display": "Some water, please.",
+      "text": "请给我一些水。",
+      "practiceClip": "unit_request_water",
+      "speechText": "Some water, please.",
+      "picture": "water",
+      "segments": [
+        {
+          "label": "some water",
+          "clip": "unit_some_water"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "thank_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "thank",
+      "text": "感谢；接下来和 you 连起来说。",
+      "clip": "unit_thank",
+      "picture": ""
+    },
+    {
+      "id": "thank",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "thank",
+      "text": "感谢；接下来和 you 连起来说。",
+      "practiceClip": "unit_thank",
+      "speechText": "thank",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "you_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "you",
+      "text": "你；和 thank 连起来就是谢谢你。",
+      "clip": "unit_you",
+      "picture": ""
+    },
+    {
+      "id": "you",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "you",
+      "text": "你；和 thank 连起来就是谢谢你。",
+      "practiceClip": "unit_you",
+      "speechText": "you",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "thanks_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "谢谢你。收到东西后可以这样回应。",
+      "clip": "unit_thank_you",
+      "picture": ""
+    },
+    {
+      "id": "thanks",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "谢谢你。收到东西后可以这样回应。",
+      "practiceClip": "unit_thank_you",
+      "speechText": "Thank you.",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "complete_model",
+      "phase": "demonstrate",
+      "chapter": "03 · 礼貌请求",
+      "word": "water",
+      "display": "I want some water, please.",
+      "text": "我想要一些水，谢谢。完整说出需求，也可以用前面的简短请求。",
+      "clip": "unit_polite_water",
+      "picture": "water"
+    },
+    {
+      "id": "complete",
+      "phase": "listen",
+      "chapter": "03 · 礼貌请求",
+      "word": "water",
+      "display": "I want some water, please.",
+      "text": "我想要一些水，谢谢。完整说出需求，也可以用前面的简短请求。",
+      "practiceClip": "unit_polite_water",
+      "speechText": "I want some water, please.",
+      "picture": "water",
+      "segments": [
+        {
+          "label": "I want",
+          "clip": "chunk_want"
+        },
+        {
+          "label": "some water",
+          "clip": "unit_some_water"
+        },
+        {
+          "label": "please",
+          "clip": "unit_please"
+        }
+      ],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "word": "apple",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

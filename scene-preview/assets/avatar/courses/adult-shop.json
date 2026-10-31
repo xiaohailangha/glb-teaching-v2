@@ -1,0 +1,184 @@
+{
+  "id": "adult-shop-v1",
+  "title": "04 · 水果饮品店",
+  "stages": [
+    {
+      "id": "intro",
+      "phase": "introduce",
+      "chapter": "04 · 水果饮品店",
+      "word": "apple",
+      "display": "04 · 水果饮品店",
+      "text": "这节课一起复习。听听示范，再说说你想要什么。",
+      "clip": "shop_intro"
+    },
+    {
+      "id": "apple_model",
+      "phase": "demonstrate",
+      "chapter": "04 · 水果饮品店",
+      "word": "apple",
+      "display": "An apple, please.",
+      "text": "来到水果摊：请给我一个苹果。",
+      "clip": "unit_request_apple",
+      "picture": "apple"
+    },
+    {
+      "id": "apple",
+      "phase": "listen",
+      "chapter": "04 · 水果饮品店",
+      "word": "apple",
+      "display": "An apple, please.",
+      "text": "来到水果摊：请给我一个苹果。",
+      "practiceClip": "unit_request_apple",
+      "speechText": "An apple, please.",
+      "picture": "apple",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "thanks_one_model",
+      "phase": "demonstrate",
+      "chapter": "04 · 水果饮品店",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "收到苹果，向对方说谢谢。",
+      "clip": "unit_thank_you",
+      "picture": ""
+    },
+    {
+      "id": "thanks_one",
+      "phase": "listen",
+      "chapter": "04 · 水果饮品店",
+      "word": "apple",
+      "display": "Thank you.",
+      "text": "收到苹果，向对方说谢谢。",
+      "practiceClip": "unit_thank_you",
+      "speechText": "Thank you.",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "milk_model",
+      "phase": "demonstrate",
+      "chapter": "04 · 水果饮品店",
+      "word": "milk",
+      "display": "I want some milk.",
+      "text": "看看饮品柜：我想要一些牛奶。",
+      "clip": "unit_want_milk",
+      "picture": "milk"
+    },
+    {
+      "id": "milk",
+      "phase": "listen",
+      "chapter": "04 · 水果饮品店",
+      "word": "milk",
+      "display": "I want some milk.",
+      "text": "看看饮品柜：我想要一些牛奶。",
+      "practiceClip": "unit_want_milk",
+      "speechText": "I want some milk.",
+      "picture": "milk",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "water_model",
+      "phase": "demonstrate",
+      "chapter": "04 · 水果饮品店",
+      "word": "water",
+      "display": "Some water, please.",
+      "text": "再练一种简短请求：请给我一些水。",
+      "clip": "unit_request_water",
+      "picture": "water"
+    },
+    {
+      "id": "water",
+      "phase": "listen",
+      "chapter": "04 · 水果饮品店",
+      "word": "water",
+      "display": "Some water, please.",
+      "text": "再练一种简短请求：请给我一些水。",
+      "practiceClip": "unit_request_water",
+      "speechText": "Some water, please.",
+      "picture": "water",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "thanks_two_model",
+      "phase": "demonstrate",
+      "chapter": "04 · 水果饮品店",
+      "word": "water",
+      "display": "Thank you.",
+      "text": "拿到饮品，再自然地说声谢谢。",
+      "clip": "unit_thank_you",
+      "picture": ""
+    },
+    {
+      "id": "thanks_two",
+      "phase": "listen",
+      "chapter": "04 · 水果饮品店",
+      "word": "water",
+      "display": "Thank you.",
+      "text": "拿到饮品，再自然地说声谢谢。",
+      "practiceClip": "unit_thank_you",
+      "speechText": "Thank you.",
+      "picture": "",
+      "segments": [],
+      "options": [
+        {
+          "id": "next",
+          "label": "继续"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "phase": "finish",
+      "chapter": "本节小结",
+      "word": "apple",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

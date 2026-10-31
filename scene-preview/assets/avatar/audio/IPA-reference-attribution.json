@@ -266,5 +266,25 @@
     "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
     "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
     "sha256": "9421662073d8e879c6140d89bd1b496e5a9cbb4c92cebde05b0cc1301923c284"
+  },
+  {
+    "key": "phoneme_z",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/z.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "07ab2b899bb6920ef8fdd62e4c09c0cd1a103b61b35979bf133d15d3cda9f77e"
+  },
+  {
+    "key": "phoneme_y",
+    "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/j.wav",
+    "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ruben Schachtenhaufen",
+    "description": "Independent phonetic recording",
+    "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+    "sha256": "7dcd6a99a0c29c8f3adfa6c9e5bbd7910f07086be6c1451180c51ed38654ae57"
   }
 ]

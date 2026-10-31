@@ -10,6 +10,7 @@ import '../domain/lesson_word.dart';
 import '../domain/emotion.dart';
 import '../domain/vocabulary_ledger.dart';
 import '../domain/course_lexicon.dart';
+import '../domain/course_catalog.dart';
 import '../domain/ipa_sounds.dart';
 
 typedef AvatarCommand = void Function(Map<String, Object?> command);
@@ -91,10 +92,14 @@ class LessonController extends ChangeNotifier {
   List<Map<String, dynamic>> wordFeedback = [];
   Future<void> _saveVocabulary() async {
     final data = jsonEncode(vocabulary.toJson());
+    final key = _storageKey('vocabulary-exposure-v1');
+    final courseKey = _storageKey('course-new:$courseId');
+    final newlySeen = jsonEncode(vocabulary.newThisCourse.toList());
     _saveQueue = _saveQueue.then((_) async {
       try {
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString(_storageKey('vocabulary-exposure-v1'), data);
+        await prefs.setString(key, data);
+        await prefs.setString(courseKey, newlySeen);
       } catch (_) {}
     });
   }
@@ -141,6 +146,41 @@ class LessonController extends ChangeNotifier {
   List<Map<String, String>> courseSegments = [];
   String courseDisplay = '', coursePicture = '', courseChapter = '';
   int coursePosition = 0, courseTotal = 1;
+  String courseId = 'adult-fruit-v2';
+  CourseInfo get activeCourse =>
+      courseCatalog.firstWhere((c) => c.id == courseId);
+  CourseInfo? get nextCourse {
+    final i = courseCatalog.indexOf(activeCourse);
+    return i + 1 < courseCatalog.length ? courseCatalog[i + 1] : null;
+  }
+
+  Future<void> selectCourse(String id) async {
+    if (!courseCatalog.any((c) => c.id == id)) return;
+    stop();
+    await _saveQueue;
+    final prefs = await SharedPreferences.getInstance();
+    courseId = id;
+    courseCheckpoint = null;
+    final saved = prefs.getString(_storageKey(id));
+    if (saved != null) {
+      final data = jsonDecode(saved);
+      if (data is Map && data['courseId'] == id && data['version'] == 1) {
+        courseCheckpoint = Map<String, dynamic>.from(data);
+      }
+    }
+    vocabulary.newThisCourse.clear();
+    final ledger = prefs.getString(_storageKey('course-new:$id'));
+    if (ledger != null) {
+      vocabulary.newThisCourse.addAll(
+        (jsonDecode(ledger) as List).cast<String>(),
+      );
+    }
+    await prefs.setString(_storageKey('active-course'), id);
+    courseMode = false;
+    courseStep = '';
+    if (!_disposed) notifyListeners();
+  }
+
   Map<String, dynamic>? courseCheckpoint;
   bool get adultCourse => courseMode && courseStyle == 'adult';
   Future<void> _saveQueue = Future.value();
@@ -156,7 +196,17 @@ class LessonController extends ChangeNotifier {
         final data = jsonDecode(vocab);
         if (data is Map) vocabulary.restore(data);
       }
-      final saved = prefs.getString(_storageKey('adult-fruit-v2'));
+      final active = prefs.getString(_storageKey('active-course'));
+      courseId = courseCatalog.any((c) => c.id == active)
+          ? active!
+          : 'adult-fruit-v2';
+      final courseNew = prefs.getString(_storageKey('course-new:$courseId'));
+      if (courseNew != null) {
+        vocabulary.newThisCourse
+          ..clear()
+          ..addAll((jsonDecode(courseNew) as List).cast<String>());
+      }
+      final saved = prefs.getString(_storageKey(courseId));
       if (!_disposed && courseCheckpoint == null && saved != null) {
         final data = jsonDecode(saved);
         if (data is Map && data['version'] == 1) {
@@ -178,10 +228,11 @@ class LessonController extends ChangeNotifier {
 
   void _saveCourse() {
     final data = jsonEncode(courseCheckpoint);
+    final key = _storageKey(courseId);
     _saveQueue = _saveQueue.then((_) async {
       try {
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString(_storageKey('adult-fruit-v2'), data);
+        await prefs.setString(key, data);
       } catch (_) {}
     });
   }
@@ -747,6 +798,7 @@ class LessonController extends ChangeNotifier {
     courseText = '先听声音，再试着读。';
     _send?.call({
       'type': 'course',
+      'courseId': courseId,
       'skip': skip,
       'style': style,
       'rate': rate,
