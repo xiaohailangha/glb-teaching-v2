@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ owns this window. Do not add a splash Activity or delay. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/entry_paper</item>
+        <item name="android:windowSplashScreenBackground">@color/entry_paper</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/launch_empty_icon</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/entry_paper</item>
+    </style>
+</resources>

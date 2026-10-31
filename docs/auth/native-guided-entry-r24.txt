@@ -23,3 +23,5 @@
 柔和交接修订：步骤推移延长至720ms，叠加easeInOut透明度；首次输入面板与标识仍共享750ms移动节奏并渐显。常规高度的表单锚点由34%下调至45%，紧凑屏仍保持操作可见。空白未聚焦输入框用独立动画绘制闪烁光标，IgnorePointer不拦截点击、不请求焦点；点击后交给原生光标。切换仅在已有输入焦点时转移焦点，不主动唤起键盘。Web启动壳复用NotoSansSC字体、安全区和同一3800ms全局声纹相位；只在scene-ui-ready交接，移除可能早于引导页绘制的flutter-first-frame交接。
 
 最终启动方案：取消HTML启动标识和文案，HTML仅保留纸色背景及底部进度线；收到Flutter引导首帧通知后背景轻柔退去。声纹和“为每一次开口”只由Flutter绘制一次，不再做两套字体与声纹的交接。前述HTML字体和声纹同步方案被本方案取代。
+
+原生安装包启动约定（2026-11-01）：Android 12+系统启动窗口与iOS Launch Screen需要纳入设计，不代表增加业务欢迎页。系统层仅采用#F4F2EB背景，不放重复标识/文字/进度、不增加计时；Flutter负责唯一声纹、加载进度和引导表单。Android旧版本启动背景、NormalTheme、深色模式以及API31+启动窗口已统一；API31+使用透明图标避免默认Flutter图标重复出现。不增加Splash Activity，不延长系统启动窗口。iOS工程目前不存在，后续建立时用同色纯背景LaunchScreen.storyboard（或符合目标SDK要求的UILaunchScreen配置），绑定Runner，不含动画/网络/倒计时，交给Flutter首帧；必须在macOS/Xcode与真机验收后才算iOS接入完成。浏览器入口只作Web预览，不用于判断系统启动窗口实际行为。
