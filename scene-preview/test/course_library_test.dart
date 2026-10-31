@@ -50,6 +50,7 @@ void main() {
         tester.view.devicePixelRatio = 1;
         addTearDown(tester.view.resetPhysicalSize);
         addTearDown(tester.view.resetDevicePixelRatio);
+        final semantics = tester.ensureSemantics();
         final controller = LessonController();
         await tester.pumpWidget(
           MaterialApp(
@@ -91,6 +92,13 @@ void main() {
         final deck = find.byKey(const ValueKey('course-deck'));
         final bounds = tester.getRect(deck);
         expect(bounds.width, size.width);
+        expect(
+          tester
+              .getSemantics(find.byKey(const ValueKey('active-course-target')))
+              .rect
+              .width,
+          lessThan(bounds.width),
+        );
         expect(
           tester
               .getRect(find.byKey(const ValueKey('active-course-target')))
@@ -153,6 +161,7 @@ void main() {
 
         expect(tester.takeException(), isNull);
         await tester.pumpWidget(const SizedBox());
+        semantics.dispose();
         controller.dispose();
       },
     );

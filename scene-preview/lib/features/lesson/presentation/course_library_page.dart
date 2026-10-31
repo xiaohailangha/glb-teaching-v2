@@ -217,6 +217,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
       );
       return Semantics(
         container: true,
+        explicitChildNodes: true,
         child: GestureDetector(
           key: const ValueKey('course-deck'),
           behavior: HitTestBehavior.opaque,
@@ -291,6 +292,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                     rect: activeRect,
                     child: Semantics(
                       key: const ValueKey('active-course-target'),
+                      container: true,
                       button: true,
                       enabled: !_opening,
                       label: '进入课程：${courseCatalog[_index].title}',
