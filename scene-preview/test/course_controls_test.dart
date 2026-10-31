@@ -145,7 +145,7 @@ void main() {
     },
   );
   testWidgets(
-    'success is an explicit noninteractive result and respects reduced motion',
+    'success is transparent fireworks without visible text or popup',
     (tester) async {
       tester.view.resetPhysicalSize();
       tester.view.physicalSize = const Size(926, 428);
@@ -165,7 +165,9 @@ void main() {
         ),
       );
       await tester.pump(const Duration(milliseconds: 650));
-      expect(find.text('整句通过！'), findsOneWidget);
+      expect(find.text('整句通过！'), findsNothing);
+      expect(find.byType(Card), findsNothing);
+      expect(find.byType(DecoratedBox), findsNothing);
       expect(find.byType(IgnorePointer), findsWidgets);
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(
@@ -177,7 +179,7 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      expect(find.text('读对了！'), findsOneWidget);
+      expect(find.text('读对了！'), findsNothing);
       expect(tester.takeException(), isNull);
     },
   );

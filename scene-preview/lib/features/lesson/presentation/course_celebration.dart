@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-/// A clearly visible, non-interactive result. Only a scored pass shows it.
+/// Transparent fireworks over the lesson. No card, scrim, badge or visible text.
 class CourseCelebration extends StatelessWidget {
   const CourseCelebration({super.key, required this.message});
   final String message;
@@ -13,91 +13,16 @@ class CourseCelebration extends StatelessWidget {
       child: Semantics(
         liveRegion: true,
         label: message,
-        child: TweenAnimationBuilder<double>(
-          tween: Tween(begin: 0, end: 1),
-          duration: reduced
-              ? Duration.zero
-              : const Duration(milliseconds: 1800),
-          builder: (context, t, _) => Stack(
-            fit: StackFit.expand,
-            children: [
-              if (!reduced) CustomPaint(painter: CelebrationPainter(t)),
-              Align(
-                alignment: const Alignment(.65, -.03),
-                child: FractionallySizedBox(
-                  widthFactor: .34,
-                  child: Opacity(
-                    opacity: reduced ? 1 : (t * 7).clamp(0, 1),
-                    child: Transform.scale(
-                      scale: reduced
-                          ? 1
-                          : .82 +
-                                .18 *
-                                    Curves.easeOutBack.transform(
-                                      (t * 4).clamp(0, 1),
-                                    ),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 24,
-                          horizontal: 12,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(28),
-                          gradient: const LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Color(0xF02A514B), Color(0xF01B3339)],
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: const Color(0xFFBDE5DD)
-                                  .withValues(alpha: .28),
-                              blurRadius: 45,
-                              spreadRadius: 5,
-                            ),
-                          ],
-                          border: Border.all(
-                            color: const Color(0xFFBDE5DD)
-                                .withValues(alpha: .5),
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const CustomPaint(
-                              size: Size(64, 64),
-                              painter: CheckSealPainter(),
-                            ),
-                            const SizedBox(height: 12),
-                            FittedBox(
-                              child: Text(
-                                message,
-                                style: const TextStyle(
-                                  fontFamily: 'NotoSansSC',
-                                  color: Colors.white,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 9),
-                            const Text(
-                              '很好，保持这个感觉',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontFamily: 'NotoSansSC',
-                                color: Color(0xFFCCE7DE),
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
+        child: RepaintBoundary(
+          child: TweenAnimationBuilder<double>(
+            tween: Tween(begin: 0, end: 1),
+            duration: reduced
+                ? Duration.zero
+                : const Duration(milliseconds: 1800),
+            builder: (context, t, _) => CustomPaint(
+              painter: CelebrationPainter(t, reduced: reduced),
+              size: Size.infinite,
+            ),
           ),
         ),
       ),
@@ -105,90 +30,132 @@ class CourseCelebration extends StatelessWidget {
   }
 }
 
-class CheckSealPainter extends CustomPainter {
-  const CheckSealPainter();
-  @override
-  void paint(Canvas canvas, Size size) {
-    canvas.drawCircle(
-      size.center(Offset.zero),
-      size.width / 2,
-      Paint()..color = const Color(0xFFBDE5DD),
-    );
-    final path = Path()
-      ..moveTo(size.width * .25, size.height * .51)
-      ..lineTo(size.width * .43, size.height * .68)
-      ..lineTo(size.width * .76, size.height * .33);
-    canvas.drawPath(
-      path,
-      Paint()
-        ..color = const Color(0xFF234C44)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 5
-        ..strokeCap = StrokeCap.round
-        ..strokeJoin = StrokeJoin.round,
-    );
+class CelebrationPainter extends CustomPainter {
+  const CelebrationPainter(this.t, {this.reduced = false});
+  final double t;
+  final bool reduced;
+  static const colors = [
+    Color(0xFFFFDB9E),
+    Color(0xFFC5EEE5),
+    Color(0xFFD9DEFF),
+  ];
+
+  void light(
+    Canvas canvas,
+    Offset p,
+    Color color,
+    double alpha,
+    double radius,
+  ) {
+    if (alpha <= 0) return;
+    final paint = Paint()..color = color.withValues(alpha: alpha * .07);
+    canvas.drawCircle(p, radius * 4.5, paint);
+    paint.color = color.withValues(alpha: alpha * .20);
+    canvas.drawCircle(p, radius * 2.2, paint);
+    paint.color = color.withValues(alpha: alpha * .80);
+    canvas.drawCircle(p, radius, paint);
+    paint.color = const Color(0xFFFFFCF0).withValues(alpha: alpha);
+    canvas.drawCircle(p, radius * .38, paint);
   }
 
   @override
-  bool shouldRepaint(CheckSealPainter old) => false;
-}
-
-class CelebrationPainter extends CustomPainter {
-  const CelebrationPainter(this.t);
-  final double t;
-  @override
   void paint(Canvas canvas, Size size) {
-    const colors = [
-      Color(0xFFFFD587),
-      Color(0xFFBDE5DD),
-      Color(0xFFFFF5DA),
-      Color(0xFF8BDCD6),
-    ];
-    for (var burst = 0; burst < 2; burst++) {
-      final progress = ((t - burst * .14) / .85).clamp(0.0, 1.0);
-      if (progress <= 0) continue;
+    if (size.isEmpty) return;
+    if (reduced) {
+      // A few stationary highlights; no replacement popup for reduced motion.
+      for (var i = 0; i < 7; i++) {
+        light(
+          canvas,
+          Offset(size.width * (.61 + i * .045), size.height * .23),
+          colors[i % 3],
+          .6,
+          1.7,
+        );
+      }
+      return;
+    }
+    if (t <= 0 || t >= 1) return;
+    final unit = math.min(size.height, size.width * .55);
+    canvas.save();
+    canvas.clipRect(
+      Rect.fromLTWH(size.width * .48, 0, size.width * .52, size.height * .87),
+    );
+    for (var burst = 0; burst < 3; burst++) {
+      final start = .055 + burst * .115;
+      final age = (t - start) / (.84 - burst * .115);
       final origin = Offset(
-        size.width * (burst == 0 ? .64 : .90),
-        size.height * (burst == 0 ? .38 : .54),
+        size.width * [.64, .88, .77][burst],
+        size.height * [.30, .44, .20][burst],
       );
-      final fade = (1 - progress).clamp(0.0, 1.0);
-      final ring = Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 2
-        ..color = colors[burst].withValues(alpha: fade * .65);
-      canvas.drawCircle(origin, progress * size.shortestSide * .37, ring);
-      for (var i = 0; i < 40; i++) {
-        final angle = i * 2.399963 + burst, speed = 75 + (i % 7) * 19.0;
-        final distance = speed * Curves.easeOutCubic.transform(progress);
-        final p =
-            origin +
-            Offset(
-              math.cos(angle) * distance,
-              math.sin(angle) * distance + progress * progress * 45,
-            );
-        final paint = Paint()
-          ..color = colors[i % colors.length].withValues(alpha: fade)
-          ..strokeWidth = 2.5
-          ..strokeCap = StrokeCap.round;
-        canvas.save();
-        canvas.translate(p.dx, p.dy);
-        canvas.rotate(angle + progress * 5);
-        if (i % 3 == 0) {
-          canvas.drawCircle(Offset.zero, 2.5, paint);
-        } else {
-          canvas.drawRRect(
-            RRect.fromRectAndRadius(
-              const Rect.fromLTWH(-2, -5, 4, 10),
-              const Radius.circular(1),
-            ),
-            paint,
+      final color = colors[burst];
+      if (age < 0 && age > -.09) {
+        final launch = (age + .09) / .09;
+        final head =
+            origin + Offset(-8 * (1 - launch), unit * .22 * (1 - launch));
+        canvas.drawLine(
+          head,
+          head + Offset(-2, 24 * launch),
+          Paint()
+            ..shader = LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [color.withValues(alpha: .8), color.withValues(alpha: 0)],
+            ).createShader(Rect.fromLTWH(head.dx - 2, head.dy, 4, 25))
+            ..strokeWidth = 1.3
+            ..strokeCap = StrokeCap.round,
+        );
+        light(canvas, head, color, launch * .8, 1.4);
+        continue;
+      }
+      if (age <= 0 || age >= 1) continue;
+      final count = [76, 64, 56][burst];
+      final radius = unit * [.30, .25, .20][burst];
+      final fade = math.pow(1 - age, .9).toDouble();
+      // Short luminous core, then multiple uneven, curved trails and tiny embers.
+      light(canvas, origin, color, math.pow(1 - age, 8).toDouble(), 5);
+      for (var i = 0; i < count; i++) {
+        final angle = i * math.pi * 2 / count + burst * .47;
+        final hash = math.sin(i * 12.9898 + burst * 78.233) * 43758.5453;
+        final variation = .48 + .52 * (hash - hash.floor());
+        final speed = radius * variation;
+        Offset point(double a) {
+          final travel = 1 - math.exp(-3.8 * a);
+          return origin +
+              Offset(
+                math.cos(angle) * speed * travel,
+                math.sin(angle) * speed * travel * .85 + unit * .15 * a * a,
+              );
+        }
+
+        final p = point(age);
+        for (var segment = 0; segment < 5; segment++) {
+          final tailAge = math.max(0.0, age - (segment + 1) * .04);
+          final tipAge = math.max(0.0, age - segment * .04);
+          canvas.drawLine(
+            point(tailAge),
+            point(tipAge),
+            Paint()
+              ..color = color.withValues(alpha: fade * (1 - segment / 5) * .63)
+              ..strokeWidth = (i % 4 == 0 ? 1.25 : .7) * (1 - segment * .11)
+              ..strokeCap = StrokeCap.round,
           );
         }
-        canvas.restore();
+        final shimmer = .72 + .28 * math.sin(age * 32 + i * 2.4);
+        light(canvas, p, color, fade * shimmer, i % 7 == 0 ? 1.9 : 1.05);
+        if (i % 4 == 0 && age > .25) {
+          final ember = (age - .25) / .75;
+          final offset = Offset(
+            math.sin(i * 8.1) * unit * .035 * ember,
+            unit * .055 * ember,
+          );
+          light(canvas, p + offset, color, fade * (1 - ember) * .65, .75);
+        }
       }
     }
+    canvas.restore();
   }
 
   @override
-  bool shouldRepaint(CelebrationPainter old) => old.t != t;
+  bool shouldRepaint(CelebrationPainter old) =>
+      old.t != t || old.reduced != reduced;
 }
