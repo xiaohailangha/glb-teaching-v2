@@ -24,6 +24,7 @@ class LessonController extends ChangeNotifier {
     if (accountNickname != null) nickname = accountNickname;
   }
   String accountId;
+  void Function(String, [Map<String, dynamic>])? onLearningEvent;
   Future<void> Function(String)? saveAccountNickname;
   final resourceTick = ValueNotifier<int>(0);
   bool scenePresented = false;
@@ -106,6 +107,7 @@ class LessonController extends ChangeNotifier {
 
   void expose(String text) {
     if (vocabulary.expose(text)) {
+      onLearningEvent?.call('expose', {'words': vocabulary.seen.toList()});
       unawaited(_saveVocabulary());
     }
   }
@@ -258,6 +260,7 @@ class LessonController extends ChangeNotifier {
 
   void pauseCourse() {
     if (!adultCourse || coursePaused) return;
+    onLearningEvent?.call('pause');
     coursePaused = true;
     vocabulary.inCourse = false;
     automaticReading = automaticStarting = false;
@@ -269,6 +272,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void previewCourse(String clip) {
+    onLearningEvent?.call('help');
     if (!adultCourse || coursePaused || !ready) return;
     captureState = 'idle';
     _send?.call({'type': 'course-preview', 'clip': clip, 'session': session});
@@ -286,6 +290,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void navigateCourse(int direction) {
+    onLearningEvent?.call('skip', {'direction': direction});
     if (!adultCourse || coursePaused || !ready) return;
     _send?.call({
       'type': 'course-navigate',
@@ -395,6 +400,8 @@ class LessonController extends ChangeNotifier {
           automaticStarting = false;
         }
         automaticFeedback = message['message']?.toString() ?? '';
+        final outcome = {'success':'pass','correction':'correct','uncertain':'uncertain','error':'uncertain'}[message['state']];
+        if (outcome != null) onLearningEvent?.call(outcome);
         automaticState = message['state']?.toString() ?? automaticState;
         if (message['sentence'] is String) {
           coachSentence = message['sentence'] as String;
@@ -491,7 +498,10 @@ class LessonController extends ChangeNotifier {
             _saveCourse();
           }
           courseText = message['text']?.toString() ?? '';
-          courseStep = message['step']?.toString() ?? '';
+          final nextStep = message['step']?.toString() ?? '';
+          final changedStep = courseStep != nextStep;
+          courseStep = nextStep;
+          if (changedStep) onLearningEvent?.call(courseStep == 'summary' ? 'finish' : 'stage');
           hideAnswer = message['hideAnswer'] == true;
           if (!hideAnswer && phase != 'phoneme') {
             expose(courseDisplay);
@@ -809,6 +819,7 @@ class LessonController extends ChangeNotifier {
     coursePaused = false;
     courseMode = true;
     courseStyle = style;
+    onLearningEvent?.call('start', {'restart':restart});
     emotionMode = false;
     index = 0;
     playing = true;

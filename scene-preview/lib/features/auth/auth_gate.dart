@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
+import '../lesson/application/learning_sync.dart';
 import 'world_loading.dart';
 import 'world_browser_stub.dart'
     if (dart.library.js_interop) 'world_browser_web.dart';
@@ -178,7 +179,8 @@ class _AuthGateState extends State<AuthGate> {
 
   Future<void> _enterLesson({bool guest = false}) => _perform(() async {
     if (!shared.scenePresented) return;
-    if (guest) user = null;
+    if (guest || Uri.base.queryParameters['adminPreview']=='1') user = null;
+    if (user != null) await restoreCloudLearning(user!.id);
     await shared.bindAccount(
       id: user?.id ?? '',
       name: user?.nickname,

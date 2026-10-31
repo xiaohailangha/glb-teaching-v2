@@ -35,6 +35,7 @@ export class AuthStore {
       CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY,user_id TEXT NOT NULL,expires INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS hits(kind TEXT NOT NULL,subject TEXT NOT NULL,at INTEGER NOT NULL);
       CREATE INDEX IF NOT EXISTS hits_lookup ON hits(kind,subject,at);
+      CREATE TABLE IF NOT EXISTS blocked_users(user_id TEXT PRIMARY KEY);
     `);
     try{fs.chmodSync(path.join(directory,'accounts.sqlite'),0o600);}catch{}
   }
@@ -60,7 +61,7 @@ export class AuthStore {
     return {challengeId:id,retryAfter:60,expiresIn:300};
   }
   profile(row){const phone=this.decrypt(row.phone_cipher);return {id:row.id,nickname:row.nickname,phoneMasked:phone.slice(3,6)+'****'+phone.slice(-4)};}
-  createSession(user){const token=opaque();this.db.prepare('INSERT INTO sessions VALUES(?,?,?)').run(hash(token),user.id,this.now()+30*day);return {token,user:this.profile(user)};}
+  createSession(user){if(this.db.prepare('SELECT 1 FROM blocked_users WHERE user_id=?').get(user.id))fail(403,'账号已停用');const token=opaque();this.db.prepare('INSERT INTO sessions VALUES(?,?,?)').run(hash(token),user.id,this.now()+30*day);return {token,user:this.profile(user)};}
   verify({challengeId,code},ip){
     this.cleanup();const ik=this.digest(ip);if(this.count('verify',ik,15*minute)>=30)fail(429,'尝试次数较多，请稍后再试',900);this.hit('verify',ik);
     if(typeof challengeId!=='string'||typeof code!=='string'||!/^\d{6}$/.test(code))fail(400,'请输入 6 位短信验证码');
@@ -90,12 +91,12 @@ export class AuthStore {
       const result=this.createSession(user);this.db.exec('COMMIT');return result;
     }catch(e){this.db.exec('ROLLBACK');throw e;}
   }
-  current(token){if(!token)return null;const row=this.db.prepare('SELECT u.* FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires>?').get(hash(token),this.now());return row?this.profile(row):null;}
+  current(token){if(!token)return null;const row=this.db.prepare('SELECT u.* FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires>? AND NOT EXISTS(SELECT 1 FROM blocked_users b WHERE b.user_id=u.id)').get(hash(token),this.now());return row?this.profile(row):null;}
   logout(token){if(token)this.db.prepare('DELETE FROM sessions WHERE token_hash=?').run(hash(token));}
   rename(token,nickname){const user=this.current(token);if(!user)fail(401,'请重新登录');nickname=normalizeNickname(nickname);this.db.prepare('UPDATE users SET nickname=? WHERE id=?').run(nickname,user.id);return {...user,nickname};}
   close(){this.db.close();}
 }
-function cookie(req){return /(?:^|;\s*)scene_session=([A-Za-z0-9_-]{43})(?:;|$)/.exec(req.headers.cookie||'')?.[1];}
+export function learnerCookie(req){return /(?:^|;\s*)scene_session=([A-Za-z0-9_-]{43})(?:;|$)/.exec(req.headers.cookie||'')?.[1];}
 function reply(res,status,data,headers={}){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store',...headers}).end(JSON.stringify(data));}
 export function createAuthHttp(store,{secure=true}={}){
   return async(req,res,url)=>{
@@ -104,7 +105,7 @@ export function createAuthHttp(store,{secure=true}={}){
     if(!host||req.headers['sec-fetch-site']==='cross-site'||(req.headers.origin&&req.headers.origin!==`${scheme}://${host}`)||(['POST','PATCH'].includes(req.method)&&req.headers.origin!==`${scheme}://${host}`)){
       reply(res,403,{error:'请从本站页面发起请求'});return true;
     }
-    const token=cookie(req),sessionCookie=t=>`scene_session=${t}; HttpOnly; SameSite=Lax; Path=/api/auth; Max-Age=${t?2592000:0}${secure?'; Secure':''}`;
+    const token=learnerCookie(req),sessionCookie=t=>`scene_session=${t}; HttpOnly; SameSite=Lax; Path=/api/auth; Max-Age=${t?2592000:0}${secure?'; Secure':''}`;
     try{
       const route=url.pathname.slice('/api/auth/'.length);
       if(req.method==='GET'&&route==='status'){reply(res,200,{smsReady:store.configured()});return true;}
@@ -128,9 +129,10 @@ export function createAuthHttp(store,{secure=true}={}){
     return true;
   };
 }
-let handler;
+let handler, sharedStore;
+export function getAuthStore(){return sharedStore??=new AuthStore();}
 export async function authHttp(req,res,url){
   if(!url.pathname.startsWith('/api/auth/'))return false;
-  try{handler??=createAuthHttp(new AuthStore(),{secure:process.env.AUTH_SECURE_COOKIE!=='0'});}catch{reply(res,503,{error:'账号服务暂时不可用，请稍后重试'});return true;}
+  try{handler??=createAuthHttp(getAuthStore(),{secure:process.env.AUTH_SECURE_COOKIE!=='0'});}catch{reply(res,503,{error:'账号服务暂时不可用，请稍后重试'});return true;}
   return handler(req,res,url);
 }

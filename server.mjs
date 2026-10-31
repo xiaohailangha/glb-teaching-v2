@@ -3,14 +3,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {speechHttp} from './services/speech-http.mjs';
+import {adminHttp} from './services/admin-http.mjs';
 import {authHttp} from './services/auth-http.mjs';
 import {assetHttp} from './services/cos-assets.mjs';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const port=Number(process.env.PORT||5296);
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.css':'text/css','.glb':'model/gltf-binary','.wav':'audio/wav','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.ttf':'font/ttf','.bin':'application/octet-stream'};
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.css':'text/css','.glb':'model/gltf-binary','.wav':'audio/wav','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.ttf':'font/ttf','.bin':'application/octet-stream','.svg':'image/svg+xml'};
 const server=http.createServer(async(req,res)=>{
   let pathname;
   try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400).end();return;}
+  if(await adminHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await authHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await assetHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await speechHttp(req,res,new URL(req.url,'http://localhost')))return;
@@ -48,6 +50,9 @@ const server=http.createServer(async(req,res)=>{
   }
   let base=path.join(root,'build/web');
   if(pathname.startsWith('/avatar-dev/')){base=path.join(root,'assets/avatar');pathname=pathname.slice('/avatar-dev'.length);}
+  if(pathname.startsWith('/scene/')){base=path.join(root,'scene-preview/build/web');pathname=pathname.slice('/scene'.length);}
+  if(pathname==='/admin'){res.writeHead(302,{Location:'/admin/'}).end();return;}
+  if(pathname.startsWith('/admin/')){base=path.join(root,'admin/build');pathname=pathname.slice('/admin'.length);}
   const file=path.resolve(base,'.'+(pathname==='/'?'/index.html':pathname));
   if(!file.startsWith(path.resolve(base)+path.sep)){res.writeHead(403).end();return;}
   fs.stat(file,(err,stat)=>{

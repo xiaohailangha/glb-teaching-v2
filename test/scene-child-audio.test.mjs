@@ -51,11 +51,12 @@ test('teaching words use boy voice and isolated IPA uses attributed standalone r
       count++;
     }
   }
-  assert.equal(count,111);
+  assert.equal(count,115);
 });
 test('retired word cuts stay absent and performance retains its authored clock',()=>{
   assert.equal(read('pronunciation-units').group_schwa_l,undefined);
-  assert.equal(read('pronunciation-units').phoneme_ow,undefined);
+  assert.equal(read('pronunciation-units').phoneme_ow.reference,true);
+  assert.match(read('pronunciation-units').phoneme_ow.source.change,/complete recording/);
   const performance=read('performance-cues');
   assert.equal(performance.voice,403008);
   assert.equal(readWave(fs.readFileSync(new URL('performance.wav',root))).duration,10);

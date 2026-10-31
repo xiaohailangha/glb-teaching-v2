@@ -1,0 +1,6011 @@
+{
+  "release": "r21 · 成人 01–08",
+  "courses": [
+    {
+      "id": "adult-fruit-v2",
+      "asset": "adult-fruit",
+      "title": "01 · 苹果和香蕉",
+      "goal": "从一个苹果开始",
+      "unit": 1,
+      "status": "published",
+      "version": "f3a2faf5dfe8",
+      "stages": [
+        {
+          "id": "fruit_intro",
+          "phase": "introduce",
+          "chapter": "认识水果",
+          "word": "apple",
+          "text": "从苹果、一个苹果，走到“我想要 / 我想吃一个苹果”。红苹果是可选扩展。",
+          "clip": "fruit_intro",
+          "display": "从单词到表达",
+          "audio": {
+            "text": "今天认识苹果和香蕉。先听，再选择，最后试着自己说。随时可以暂停。",
+            "duration": 8.354,
+            "url": "/scene/assets/assets/avatar/audio/fruit_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "apple_meaning",
+          "phase": "meaning",
+          "chapter": "认识水果",
+          "word": "apple",
+          "text": "苹果",
+          "clip": "fruit_apple",
+          "picture": "apple",
+          "display": "苹果",
+          "audio": {
+            "text": "这是苹果。听听它的英文。",
+            "duration": 2.7350625,
+            "url": "/scene/assets/assets/avatar/audio/fruit_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "apple_model",
+          "phase": "demonstrate",
+          "chapter": "认识水果",
+          "word": "apple",
+          "text": "先听完整单词。",
+          "clip": "apple",
+          "picture": "apple",
+          "display": "apple",
+          "audio": {
+            "text": "apple",
+            "duration": 0.87,
+            "url": "/scene/assets/assets/avatar/audio/apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "apple_practice",
+          "phase": "listen",
+          "chapter": "试着发音",
+          "word": "apple",
+          "text": "先读完整单词，留意开头的 /æ/。轻触人物可重听。",
+          "picture": "apple",
+          "display": "apple",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听整词"
+            }
+          ],
+          "audio": null,
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "banana_meaning",
+          "phase": "meaning",
+          "chapter": "认识水果",
+          "word": "banana",
+          "text": "香蕉",
+          "clip": "fruit_banana",
+          "picture": "banana",
+          "display": "香蕉",
+          "audio": {
+            "text": "这是香蕉。它的英文和苹果不一样，仔细听。",
+            "duration": 5.054,
+            "url": "/scene/assets/assets/avatar/audio/fruit_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "banana_model",
+          "phase": "demonstrate",
+          "chapter": "认识水果",
+          "word": "banana",
+          "text": "先听完整单词。",
+          "clip": "banana",
+          "picture": "banana",
+          "display": "banana",
+          "audio": {
+            "text": "banana",
+            "duration": 0.98,
+            "url": "/scene/assets/assets/avatar/audio/banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "banana_practice",
+          "phase": "listen",
+          "chapter": "试着发音",
+          "word": "banana",
+          "text": "中间的 /næ/ 读重一些，开头和结尾轻一些。",
+          "picture": "banana",
+          "display": "banana",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听整词"
+            }
+          ],
+          "audio": null,
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "choose_intro",
+          "phase": "explain",
+          "chapter": "听音辨认",
+          "word": "apple",
+          "text": "只听声音，选图片。",
+          "clip": "fruit_choose",
+          "hide": true,
+          "audio": {
+            "text": "接下来只听声音，选出对应的水果。",
+            "duration": 3.915,
+            "url": "/scene/assets/assets/avatar/audio/fruit_choose.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "hear_apple_cue",
+          "phase": "choice",
+          "chapter": "听音辨认",
+          "word": "apple",
+          "text": "听声音…",
+          "clip": "apple",
+          "hide": true,
+          "audio": {
+            "text": "apple",
+            "duration": 0.87,
+            "url": "/scene/assets/assets/avatar/audio/apple.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "hear_apple",
+          "phase": "choice",
+          "chapter": "听音辨认",
+          "word": "apple",
+          "text": "刚才听到的是哪一个？",
+          "picture": "",
+          "answer": "apple",
+          "hide": true,
+          "options": [
+            {
+              "id": "apple",
+              "label": "苹果"
+            },
+            {
+              "id": "banana",
+              "label": "香蕉"
+            },
+            {
+              "id": "help",
+              "label": "再听一次"
+            }
+          ],
+          "audio": null,
+          "image": null
+        },
+        {
+          "id": "hear_banana_cue",
+          "phase": "choice",
+          "chapter": "听音辨认",
+          "word": "banana",
+          "text": "听声音…",
+          "clip": "banana",
+          "hide": true,
+          "audio": {
+            "text": "banana",
+            "duration": 0.98,
+            "url": "/scene/assets/assets/avatar/audio/banana.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "hear_banana",
+          "phase": "choice",
+          "chapter": "听音辨认",
+          "word": "banana",
+          "text": "刚才听到的是哪一个？",
+          "picture": "",
+          "answer": "banana",
+          "hide": true,
+          "options": [
+            {
+              "id": "banana",
+              "label": "香蕉"
+            },
+            {
+              "id": "apple",
+              "label": "苹果"
+            },
+            {
+              "id": "help",
+              "label": "再听一次"
+            }
+          ],
+          "audio": null,
+          "image": null
+        },
+        {
+          "id": "recall_intro",
+          "phase": "invite",
+          "chapter": "看图回忆",
+          "word": "apple",
+          "text": "先想一想，再听提示。",
+          "clip": "fruit_recall",
+          "hide": true,
+          "audio": {
+            "text": "现在看图片，试着想起英文。想不起来可以听提示。",
+            "duration": 5.034,
+            "url": "/scene/assets/assets/avatar/audio/fruit_recall.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "recall_banana",
+          "phase": "recall",
+          "chapter": "看图回忆",
+          "word": "banana",
+          "text": "看图直接说出英文。想再听一次，轻触人物。",
+          "picture": "banana",
+          "hide": true,
+          "options": [
+            {
+              "id": "attempt",
+              "label": "我尝试过了"
+            },
+            {
+              "id": "reveal",
+              "label": "想不起来，听提示"
+            }
+          ],
+          "audio": null,
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "recall_apple",
+          "phase": "recall",
+          "chapter": "看图回忆",
+          "word": "apple",
+          "text": "看图直接说出英文。想再听一次，轻触人物。",
+          "picture": "apple",
+          "hide": true,
+          "options": [
+            {
+              "id": "attempt",
+              "label": "我尝试过了"
+            },
+            {
+              "id": "reveal",
+              "label": "想不起来，听提示"
+            }
+          ],
+          "audio": null,
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "phrase_intro",
+          "phase": "explain",
+          "chapter": "连起来说",
+          "word": "apple",
+          "text": "从单词走到“一个苹果 / 一根香蕉”。",
+          "clip": "fruit_phrase",
+          "display": "一个苹果 · 一根香蕉",
+          "audio": {
+            "text": "说一个苹果和一根香蕉时，前面还要加一个短词。先听这两种说法。",
+            "duration": 6.8840625,
+            "url": "/scene/assets/assets/avatar/audio/fruit_phrase.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "phrase_apple_practice_model",
+          "phase": "demonstrate",
+          "chapter": "连起来说",
+          "word": "apple",
+          "text": "一个苹果",
+          "display": "an apple",
+          "picture": "apple",
+          "clip": "phrase_apple",
+          "audio": {
+            "text": "an apple",
+            "duration": 1.335,
+            "url": "/scene/assets/assets/avatar/audio/phrase_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "phrase_apple_practice",
+          "phase": "listen",
+          "chapter": "连起来说",
+          "word": "apple",
+          "text": "一个苹果",
+          "display": "an apple",
+          "picture": "apple",
+          "practiceClip": "phrase_apple",
+          "speechText": "an apple",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "an apple",
+            "duration": 1.335,
+            "url": "/scene/assets/assets/avatar/audio/phrase_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "phrase_banana_practice_model",
+          "phase": "demonstrate",
+          "chapter": "连起来说",
+          "word": "banana",
+          "text": "一根香蕉",
+          "display": "a banana",
+          "picture": "banana",
+          "clip": "phrase_banana",
+          "audio": {
+            "text": "a banana",
+            "duration": 1.264,
+            "url": "/scene/assets/assets/avatar/audio/phrase_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "phrase_banana_practice",
+          "phase": "listen",
+          "chapter": "连起来说",
+          "word": "banana",
+          "text": "一根香蕉",
+          "display": "a banana",
+          "picture": "banana",
+          "practiceClip": "phrase_banana",
+          "speechText": "a banana",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a banana",
+            "duration": 1.264,
+            "url": "/scene/assets/assets/avatar/audio/phrase_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "article_tip",
+          "phase": "explain",
+          "chapter": "连起来说",
+          "word": "apple",
+          "text": "an apple · a banana。先把这两组说法记在一起。",
+          "clip": "fruit_article",
+          "display": "an apple / a banana",
+          "audio": {
+            "text": "前面的短词不同。跟着示范，连起来说。",
+            "duration": 4.004,
+            "url": "/scene/assets/assets/avatar/audio/fruit_article.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "phrase_select_cue",
+          "phase": "choice",
+          "chapter": "连起来说",
+          "word": "banana",
+          "text": "听声音…",
+          "clip": "phrase_banana",
+          "hide": true,
+          "audio": {
+            "text": "a banana",
+            "duration": 1.264,
+            "url": "/scene/assets/assets/avatar/audio/phrase_banana.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "phrase_select",
+          "phase": "choice",
+          "chapter": "连起来说",
+          "word": "banana",
+          "text": "图里的水果，应该怎样说？",
+          "picture": "banana",
+          "answer": "phrase_banana",
+          "hide": true,
+          "options": [
+            {
+              "id": "phrase_banana",
+              "label": "a banana"
+            },
+            {
+              "id": "phrase_apple",
+              "label": "an apple"
+            },
+            {
+              "id": "help",
+              "label": "再听一次"
+            }
+          ],
+          "audio": null,
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "want_intro",
+          "phase": "explain",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "I = 我；want = 想要。先理解，再把它们连起来。",
+          "clip": "want_intro",
+          "display": "我想要…",
+          "audio": {
+            "text": "现在说出你想要什么。先听，再分段练习。",
+            "duration": 4.415,
+            "url": "/scene/assets/assets/avatar/audio/want_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_i_model",
+          "phase": "demonstrate",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我。这里开始学习组成句子的词。",
+          "display": "I",
+          "picture": "",
+          "clip": "part_i",
+          "audio": {
+            "text": "I",
+            "duration": 1.839,
+            "url": "/scene/assets/assets/avatar/audio/part_i.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_i",
+          "phase": "listen",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我。这里开始学习组成句子的词。",
+          "display": "I",
+          "picture": "",
+          "practiceClip": "part_i",
+          "speechText": "I",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I",
+            "duration": 1.839,
+            "url": "/scene/assets/assets/avatar/audio/part_i.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_want_model",
+          "phase": "demonstrate",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "想要。",
+          "display": "want",
+          "picture": "",
+          "clip": "part_want",
+          "audio": {
+            "text": "want",
+            "duration": 0.725,
+            "url": "/scene/assets/assets/avatar/audio/part_want.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_want",
+          "phase": "listen",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "想要。",
+          "display": "want",
+          "picture": "",
+          "practiceClip": "part_want",
+          "speechText": "want",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "want",
+            "duration": 0.725,
+            "url": "/scene/assets/assets/avatar/audio/part_want.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "chunk_want_model",
+          "phase": "demonstrate",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我想要… 后面接想要的东西。",
+          "display": "I want",
+          "picture": "",
+          "clip": "chunk_want",
+          "audio": {
+            "text": "I want.",
+            "duration": 1.274,
+            "url": "/scene/assets/assets/avatar/audio/chunk_want.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "chunk_want",
+          "phase": "listen",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我想要… 后面接想要的东西。",
+          "display": "I want",
+          "picture": "",
+          "practiceClip": "chunk_want",
+          "speechText": "I want",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want.",
+            "duration": 1.274,
+            "url": "/scene/assets/assets/avatar/audio/chunk_want.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "want_apple_model",
+          "phase": "demonstrate",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我想要一个苹果。听完直接说。需要时轻触人物重听。",
+          "display": "I want an apple.",
+          "picture": "apple",
+          "clip": "want_apple",
+          "audio": {
+            "text": "I want an apple.",
+            "duration": 1.985,
+            "url": "/scene/assets/assets/avatar/audio/want_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "want_apple",
+          "phase": "listen",
+          "chapter": "表达想要",
+          "word": "apple",
+          "text": "我想要一个苹果。听完直接说。需要时轻触人物重听。",
+          "display": "I want an apple.",
+          "picture": "apple",
+          "practiceClip": "want_apple",
+          "speechText": "I want an apple.",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "segments": [
+            {
+              "clip": "chunk_want",
+              "label": "I want"
+            },
+            {
+              "clip": "phrase_apple",
+              "label": "an apple"
+            }
+          ],
+          "audio": {
+            "text": "I want an apple.",
+            "duration": 1.985,
+            "url": "/scene/assets/assets/avatar/audio/want_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "want_banana_model",
+          "phase": "demonstrate",
+          "chapter": "表达想要",
+          "word": "banana",
+          "text": "我想要一根香蕉。听完直接说。需要时轻触人物重听。",
+          "display": "I want a banana.",
+          "picture": "banana",
+          "clip": "want_banana",
+          "audio": {
+            "text": "I want a banana.",
+            "duration": 1.7940625,
+            "url": "/scene/assets/assets/avatar/audio/want_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "want_banana",
+          "phase": "listen",
+          "chapter": "表达想要",
+          "word": "banana",
+          "text": "我想要一根香蕉。听完直接说。需要时轻触人物重听。",
+          "display": "I want a banana.",
+          "picture": "banana",
+          "practiceClip": "want_banana",
+          "speechText": "I want a banana.",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "segments": [
+            {
+              "clip": "chunk_want",
+              "label": "I want"
+            },
+            {
+              "clip": "phrase_banana",
+              "label": "a banana"
+            }
+          ],
+          "audio": {
+            "text": "I want a banana.",
+            "duration": 1.7940625,
+            "url": "/scene/assets/assets/avatar/audio/want_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "eat_intro",
+          "phase": "explain",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "eat = 吃；want to eat = 想吃。to 在这里帮助连接 want 和 eat，先把组合记在一起。",
+          "clip": "eat_intro",
+          "display": "从“想要”到“想吃”",
+          "audio": {
+            "text": "想要吃，和想要一个东西，有一点不同。听听这句话。",
+            "duration": 5.524,
+            "url": "/scene/assets/assets/avatar/audio/eat_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_eat_model",
+          "phase": "demonstrate",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "吃。",
+          "display": "eat",
+          "picture": "",
+          "clip": "part_eat",
+          "audio": {
+            "text": "eat",
+            "duration": 0.7850625,
+            "url": "/scene/assets/assets/avatar/audio/part_eat.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_eat",
+          "phase": "listen",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "吃。",
+          "display": "eat",
+          "picture": "",
+          "practiceClip": "part_eat",
+          "speechText": "eat",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "eat",
+            "duration": 0.7850625,
+            "url": "/scene/assets/assets/avatar/audio/part_eat.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "chunk_eat_model",
+          "phase": "demonstrate",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "和 I want 连起来：I want to eat… 我想吃…",
+          "display": "to eat",
+          "picture": "",
+          "clip": "chunk_eat",
+          "audio": {
+            "text": "to eat.",
+            "duration": 1.825,
+            "url": "/scene/assets/assets/avatar/audio/chunk_eat.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "chunk_eat",
+          "phase": "listen",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "和 I want 连起来：I want to eat… 我想吃…",
+          "display": "to eat",
+          "picture": "",
+          "practiceClip": "chunk_eat",
+          "speechText": "to eat",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "to eat.",
+            "duration": 1.825,
+            "url": "/scene/assets/assets/avatar/audio/chunk_eat.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "eat_apple_model",
+          "phase": "demonstrate",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "我想吃一个苹果。分段练过后，再试着完整说。",
+          "display": "I want to eat an apple.",
+          "picture": "apple",
+          "clip": "eat_apple",
+          "audio": {
+            "text": "I want to eat an apple.",
+            "duration": 2.0550625,
+            "url": "/scene/assets/assets/avatar/audio/eat_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "eat_apple",
+          "phase": "listen",
+          "chapter": "表达想吃",
+          "word": "apple",
+          "text": "我想吃一个苹果。分段练过后，再试着完整说。",
+          "display": "I want to eat an apple.",
+          "picture": "apple",
+          "practiceClip": "eat_apple",
+          "speechText": "I want to eat an apple.",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "segments": [
+            {
+              "clip": "chunk_want",
+              "label": "I want"
+            },
+            {
+              "clip": "chunk_eat",
+              "label": "to eat"
+            },
+            {
+              "clip": "phrase_apple",
+              "label": "an apple"
+            }
+          ],
+          "audio": {
+            "text": "I want to eat an apple.",
+            "duration": 2.0550625,
+            "url": "/scene/assets/assets/avatar/audio/eat_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "eat_banana_model",
+          "phase": "demonstrate",
+          "chapter": "表达想吃",
+          "word": "banana",
+          "text": "我想吃一根香蕉。分段练过后，再试着完整说。",
+          "display": "I want to eat a banana.",
+          "picture": "banana",
+          "clip": "eat_banana",
+          "audio": {
+            "text": "I want to eat a banana.",
+            "duration": 2.074,
+            "url": "/scene/assets/assets/avatar/audio/eat_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "eat_banana",
+          "phase": "listen",
+          "chapter": "表达想吃",
+          "word": "banana",
+          "text": "我想吃一根香蕉。分段练过后，再试着完整说。",
+          "display": "I want to eat a banana.",
+          "picture": "banana",
+          "practiceClip": "eat_banana",
+          "speechText": "I want to eat a banana.",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "segments": [
+            {
+              "clip": "chunk_want",
+              "label": "I want"
+            },
+            {
+              "clip": "chunk_eat",
+              "label": "to eat"
+            },
+            {
+              "clip": "phrase_banana",
+              "label": "a banana"
+            }
+          ],
+          "audio": {
+            "text": "I want to eat a banana.",
+            "duration": 2.074,
+            "url": "/scene/assets/assets/avatar/audio/eat_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "scene_intro",
+          "phase": "invite",
+          "chapter": "自己表达",
+          "word": "apple",
+          "text": "选你想吃的水果，再试着说出完整需求。",
+          "clip": "scene_intro",
+          "display": "轮到你来选择",
+          "audio": {
+            "text": "现在试着表达自己的选择。先选水果，再开口说。",
+            "duration": 5.044,
+            "url": "/scene/assets/assets/avatar/audio/scene_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "scene_pick",
+          "phase": "choice",
+          "chapter": "自己表达",
+          "word": "apple",
+          "text": "你想吃哪一种？这是你的选择，没有标准答案。",
+          "hide": true,
+          "options": [
+            {
+              "id": "choose_apple",
+              "label": "苹果"
+            },
+            {
+              "id": "choose_banana",
+              "label": "香蕉"
+            }
+          ],
+          "audio": null,
+          "image": null
+        },
+        {
+          "id": "scene_apple",
+          "phase": "recall",
+          "chapter": "自己表达",
+          "word": "apple",
+          "text": "没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。",
+          "picture": "apple",
+          "hide": true,
+          "practiceClip": "eat_apple",
+          "speechText": "I want to eat an apple.",
+          "options": [
+            {
+              "id": "attempt",
+              "label": "我尝试过了"
+            },
+            {
+              "id": "help",
+              "label": "听完整示范"
+            }
+          ],
+          "audio": {
+            "text": "I want to eat an apple.",
+            "duration": 2.0550625,
+            "url": "/scene/assets/assets/avatar/audio/eat_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "scene_banana",
+          "phase": "recall",
+          "chapter": "自己表达",
+          "word": "banana",
+          "text": "没有英文提示，试着说“我想吃…”；录音不是必选，也可以自己轻声说。",
+          "picture": "banana",
+          "hide": true,
+          "practiceClip": "eat_banana",
+          "speechText": "I want to eat a banana.",
+          "options": [
+            {
+              "id": "attempt",
+              "label": "我尝试过了"
+            },
+            {
+              "id": "help",
+              "label": "听完整示范"
+            }
+          ],
+          "audio": {
+            "text": "I want to eat a banana.",
+            "duration": 2.074,
+            "url": "/scene/assets/assets/avatar/audio/eat_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "extension_gate",
+          "phase": "listen",
+          "chapter": "可选扩展",
+          "word": "apple",
+          "text": "核心表达已练完。可以学习“红苹果”，也可以结束本课。",
+          "display": "要加一点颜色吗？",
+          "options": [
+            {
+              "id": "next",
+              "label": "学习红苹果"
+            },
+            {
+              "id": "skip",
+              "label": "结束本课"
+            }
+          ],
+          "audio": null,
+          "image": null
+        },
+        {
+          "id": "red_intro",
+          "phase": "explain",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "red = 红色。a red apple = 一个红苹果。这里用 a，因为它紧接 red 的辅音开头。",
+          "clip": "red_intro",
+          "display": "red → a red apple",
+          "audio": {
+            "text": "红色，英文是 red。把颜色放在苹果前面。",
+            "duration": 4.8240625,
+            "url": "/scene/assets/assets/avatar/audio/red_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "learn_red_model",
+          "phase": "demonstrate",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "红色。",
+          "display": "red",
+          "picture": "apple",
+          "clip": "part_red",
+          "audio": {
+            "text": "red",
+            "duration": 0.795,
+            "url": "/scene/assets/assets/avatar/audio/part_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "learn_red",
+          "phase": "listen",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "红色。",
+          "display": "red",
+          "picture": "apple",
+          "practiceClip": "part_red",
+          "speechText": "red",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "red",
+            "duration": 0.795,
+            "url": "/scene/assets/assets/avatar/audio/part_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "red_phrase_model",
+          "phase": "demonstrate",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "一个红苹果。",
+          "display": "a red apple",
+          "picture": "apple",
+          "clip": "chunk_red",
+          "audio": {
+            "text": "a red apple",
+            "duration": 1.515,
+            "url": "/scene/assets/assets/avatar/audio/chunk_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "red_phrase",
+          "phase": "listen",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "一个红苹果。",
+          "display": "a red apple",
+          "picture": "apple",
+          "practiceClip": "chunk_red",
+          "speechText": "a red apple",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a red apple",
+            "duration": 1.515,
+            "url": "/scene/assets/assets/avatar/audio/chunk_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "red_sentence_model",
+          "phase": "demonstrate",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "我想吃一个红苹果。先分段，再连起来说。",
+          "display": "I want to eat a red apple.",
+          "picture": "apple",
+          "clip": "eat_red",
+          "audio": {
+            "text": "I want to eat a red apple.",
+            "duration": 2.844,
+            "url": "/scene/assets/assets/avatar/audio/eat_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "red_sentence",
+          "phase": "listen",
+          "chapter": "红苹果扩展",
+          "word": "apple",
+          "text": "我想吃一个红苹果。先分段，再连起来说。",
+          "display": "I want to eat a red apple.",
+          "picture": "apple",
+          "practiceClip": "eat_red",
+          "speechText": "I want to eat a red apple.",
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "segments": [
+            {
+              "clip": "chunk_want",
+              "label": "I want"
+            },
+            {
+              "clip": "chunk_eat",
+              "label": "to eat"
+            },
+            {
+              "clip": "chunk_red",
+              "label": "a red apple"
+            }
+          ],
+          "audio": {
+            "text": "I want to eat a red apple.",
+            "duration": 2.844,
+            "url": "/scene/assets/assets/avatar/audio/eat_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "word": "apple",
+          "text": "本节课我们就学到这里。",
+          "display": "今天的学习记录",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-drinks-v1",
+      "asset": "adult-drinks",
+      "title": "02 · 水和饮料",
+      "goal": "说说你想要什么饮品",
+      "unit": 1,
+      "status": "published",
+      "version": "1ed155281f26",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "02 · 水和饮料",
+          "word": "apple",
+          "display": "02 · 水和饮料",
+          "text": "这节课认识四种饮品。先读单词，再用学过的表达，说说你想要什么。",
+          "clip": "drinks_intro",
+          "audio": {
+            "text": "这节课认识四种饮品。先读单词，再用学过的表达，说说你想要什么。",
+            "duration": 7.359,
+            "url": "/scene/assets/assets/avatar/audio/drinks_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "word_water_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "water",
+          "text": "水",
+          "clip": "unit_water",
+          "picture": "water",
+          "audio": {
+            "text": "water",
+            "duration": 2.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "word_water",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "water",
+          "text": "水",
+          "practiceClip": "unit_water",
+          "speechText": "water",
+          "picture": "water",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "water",
+            "duration": 2.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "word_milk_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "milk",
+          "text": "牛奶",
+          "clip": "unit_milk",
+          "picture": "milk",
+          "audio": {
+            "text": "milk",
+            "duration": 1.879,
+            "url": "/scene/assets/assets/avatar/audio/unit_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "word_milk",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "milk",
+          "text": "牛奶",
+          "practiceClip": "unit_milk",
+          "speechText": "milk",
+          "picture": "milk",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "milk",
+            "duration": 1.879,
+            "url": "/scene/assets/assets/avatar/audio/unit_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "word_tea_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "tea",
+          "text": "茶",
+          "clip": "unit_tea",
+          "picture": "tea",
+          "audio": {
+            "text": "tea",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "word_tea",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "tea",
+          "text": "茶",
+          "practiceClip": "unit_tea",
+          "speechText": "tea",
+          "picture": "tea",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "tea",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "word_coffee_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "coffee",
+          "text": "咖啡",
+          "clip": "unit_coffee",
+          "picture": "coffee",
+          "audio": {
+            "text": "coffee",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "word_coffee",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "coffee",
+          "text": "咖啡",
+          "practiceClip": "unit_coffee",
+          "speechText": "coffee",
+          "picture": "coffee",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "coffee",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "some_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "some",
+          "text": "一些；这里不说具体数量。",
+          "clip": "unit_some",
+          "picture": "",
+          "audio": {
+            "text": "some",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_some.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "some",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "some",
+          "text": "一些；这里不说具体数量。",
+          "practiceClip": "unit_some",
+          "speechText": "some",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "some",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_some.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "some_water_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "some water",
+          "text": "一些水。这里不按一个、两个来数。",
+          "clip": "unit_some_water",
+          "picture": "water",
+          "audio": {
+            "text": "some water",
+            "duration": 1.479,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "some_water",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "some water",
+          "text": "一些水。这里不按一个、两个来数。",
+          "practiceClip": "unit_some_water",
+          "speechText": "some water",
+          "picture": "water",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "some water",
+            "duration": 1.479,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "want_water_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "I want some water.",
+          "text": "我想要一些水。",
+          "clip": "unit_want_water",
+          "picture": "water",
+          "audio": {
+            "text": "I want some water.",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "want_water",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "water",
+          "display": "I want some water.",
+          "text": "我想要一些水。",
+          "practiceClip": "unit_want_water",
+          "speechText": "I want some water.",
+          "picture": "water",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "some water",
+              "clip": "unit_some_water"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some water.",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "some_milk_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "some milk",
+          "text": "一些牛奶。这里不按一个、两个来数。",
+          "clip": "unit_some_milk",
+          "picture": "milk",
+          "audio": {
+            "text": "some milk",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "some_milk",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "some milk",
+          "text": "一些牛奶。这里不按一个、两个来数。",
+          "practiceClip": "unit_some_milk",
+          "speechText": "some milk",
+          "picture": "milk",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "some milk",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "want_milk_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "I want some milk.",
+          "text": "我想要一些牛奶。",
+          "clip": "unit_want_milk",
+          "picture": "milk",
+          "audio": {
+            "text": "I want some milk.",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "want_milk",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "milk",
+          "display": "I want some milk.",
+          "text": "我想要一些牛奶。",
+          "practiceClip": "unit_want_milk",
+          "speechText": "I want some milk.",
+          "picture": "milk",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "some milk",
+              "clip": "unit_some_milk"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some milk.",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "some_tea_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "some tea",
+          "text": "一些茶。这里不按一个、两个来数。",
+          "clip": "unit_some_tea",
+          "picture": "tea",
+          "audio": {
+            "text": "some tea",
+            "duration": 1.599,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "some_tea",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "some tea",
+          "text": "一些茶。这里不按一个、两个来数。",
+          "practiceClip": "unit_some_tea",
+          "speechText": "some tea",
+          "picture": "tea",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "some tea",
+            "duration": 1.599,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "want_tea_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "I want some tea.",
+          "text": "我想要一些茶。",
+          "clip": "unit_want_tea",
+          "picture": "tea",
+          "audio": {
+            "text": "I want some tea.",
+            "duration": 1.999,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "want_tea",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "tea",
+          "display": "I want some tea.",
+          "text": "我想要一些茶。",
+          "practiceClip": "unit_want_tea",
+          "speechText": "I want some tea.",
+          "picture": "tea",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "some tea",
+              "clip": "unit_some_tea"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some tea.",
+            "duration": 1.999,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_tea.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/tea.svg"
+        },
+        {
+          "id": "some_coffee_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "some coffee",
+          "text": "一些咖啡。这里不按一个、两个来数。",
+          "clip": "unit_some_coffee",
+          "picture": "coffee",
+          "audio": {
+            "text": "some coffee",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "some_coffee",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "some coffee",
+          "text": "一些咖啡。这里不按一个、两个来数。",
+          "practiceClip": "unit_some_coffee",
+          "speechText": "some coffee",
+          "picture": "coffee",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "some coffee",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_some_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "want_coffee_model",
+          "phase": "demonstrate",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "I want some coffee.",
+          "text": "我想要一些咖啡。",
+          "clip": "unit_want_coffee",
+          "picture": "coffee",
+          "audio": {
+            "text": "I want some coffee.",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "want_coffee",
+          "phase": "listen",
+          "chapter": "02 · 水和饮料",
+          "word": "coffee",
+          "display": "I want some coffee.",
+          "text": "我想要一些咖啡。",
+          "practiceClip": "unit_want_coffee",
+          "speechText": "I want some coffee.",
+          "picture": "coffee",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "some coffee",
+              "clip": "unit_some_coffee"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some coffee.",
+            "duration": 1.719,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_coffee.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/coffee.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "word": "apple",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-polite-v1",
+      "asset": "adult-polite",
+      "title": "03 · 礼貌请求",
+      "goal": "让请求多一点礼貌",
+      "unit": 1,
+      "status": "published",
+      "version": "7817185c7173",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "03 · 礼貌请求",
+          "text": "这节课练习礼貌请求。先听，再跟着说。",
+          "clip": "polite_intro",
+          "audio": {
+            "text": "这节课练习礼貌请求。先听，再跟着说。",
+            "duration": 5.039,
+            "url": "/scene/assets/assets/avatar/audio/polite_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "please_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "please",
+          "text": "请；让请求更礼貌。",
+          "clip": "unit_please",
+          "picture": "",
+          "audio": {
+            "text": "please",
+            "duration": 1.239,
+            "url": "/scene/assets/assets/avatar/audio/unit_please.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "please",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "please",
+          "text": "请；让请求更礼貌。",
+          "practiceClip": "unit_please",
+          "speechText": "please",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "please",
+            "duration": 1.239,
+            "url": "/scene/assets/assets/avatar/audio/unit_please.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "request_apple_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "An apple, please.",
+          "text": "请给我一个苹果。",
+          "clip": "unit_request_apple",
+          "picture": "apple",
+          "audio": {
+            "text": "An apple, please.",
+            "duration": 3.438,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "request_apple",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "An apple, please.",
+          "text": "请给我一个苹果。",
+          "practiceClip": "unit_request_apple",
+          "speechText": "An apple, please.",
+          "picture": "apple",
+          "segments": [
+            {
+              "label": "an apple",
+              "clip": "phrase_apple"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "An apple, please.",
+            "duration": 3.438,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "request_banana_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "banana",
+          "display": "A banana, please.",
+          "text": "请给我一根香蕉。",
+          "clip": "unit_request_banana",
+          "picture": "banana",
+          "audio": {
+            "text": "A banana, please.",
+            "duration": 3.238,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "request_banana",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "banana",
+          "display": "A banana, please.",
+          "text": "请给我一根香蕉。",
+          "practiceClip": "unit_request_banana",
+          "speechText": "A banana, please.",
+          "picture": "banana",
+          "segments": [
+            {
+              "label": "a banana",
+              "clip": "phrase_banana"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "A banana, please.",
+            "duration": 3.238,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/banana.svg"
+        },
+        {
+          "id": "request_water_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "water",
+          "display": "Some water, please.",
+          "text": "请给我一些水。",
+          "clip": "unit_request_water",
+          "picture": "water",
+          "audio": {
+            "text": "Some water, please.",
+            "duration": 3.558,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "request_water",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "water",
+          "display": "Some water, please.",
+          "text": "请给我一些水。",
+          "practiceClip": "unit_request_water",
+          "speechText": "Some water, please.",
+          "picture": "water",
+          "segments": [
+            {
+              "label": "some water",
+              "clip": "unit_some_water"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Some water, please.",
+            "duration": 3.558,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "thank_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "thank",
+          "text": "感谢；接下来和 you 连起来说。",
+          "clip": "unit_thank",
+          "picture": "",
+          "audio": {
+            "text": "thank",
+            "duration": 1.079,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "thank",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "thank",
+          "text": "感谢；接下来和 you 连起来说。",
+          "practiceClip": "unit_thank",
+          "speechText": "thank",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "thank",
+            "duration": 1.079,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "you_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "you",
+          "text": "你；和 thank 连起来就是谢谢你。",
+          "clip": "unit_you",
+          "picture": "",
+          "audio": {
+            "text": "you",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "you",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "you",
+          "text": "你；和 thank 连起来就是谢谢你。",
+          "practiceClip": "unit_you",
+          "speechText": "you",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "you",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/unit_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "thanks_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "谢谢你。收到东西后可以这样回应。",
+          "clip": "unit_thank_you",
+          "picture": "",
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "thanks",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "谢谢你。收到东西后可以这样回应。",
+          "practiceClip": "unit_thank_you",
+          "speechText": "Thank you.",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "complete_model",
+          "phase": "demonstrate",
+          "chapter": "03 · 礼貌请求",
+          "word": "water",
+          "display": "I want some water, please.",
+          "text": "我想要一些水，谢谢。完整说出需求，也可以用前面的简短请求。",
+          "clip": "unit_polite_water",
+          "picture": "water",
+          "audio": {
+            "text": "I want some water, please.",
+            "duration": 4.318,
+            "url": "/scene/assets/assets/avatar/audio/unit_polite_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "complete",
+          "phase": "listen",
+          "chapter": "03 · 礼貌请求",
+          "word": "water",
+          "display": "I want some water, please.",
+          "text": "我想要一些水，谢谢。完整说出需求，也可以用前面的简短请求。",
+          "practiceClip": "unit_polite_water",
+          "speechText": "I want some water, please.",
+          "picture": "water",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "some water",
+              "clip": "unit_some_water"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some water, please.",
+            "duration": 4.318,
+            "url": "/scene/assets/assets/avatar/audio/unit_polite_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "word": "apple",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-shop-v1",
+      "asset": "adult-shop",
+      "title": "04 · 水果饮品店",
+      "goal": "用熟悉的短句点东西",
+      "unit": 1,
+      "status": "published",
+      "version": "22774781d680",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "04 · 水果饮品店",
+          "word": "apple",
+          "display": "04 · 水果饮品店",
+          "text": "这节课一起复习。听听示范，再说说你想要什么。",
+          "clip": "shop_intro",
+          "audio": {
+            "text": "这节课一起复习。听听示范，再说说你想要什么。",
+            "duration": 4.839,
+            "url": "/scene/assets/assets/avatar/audio/shop_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "apple_model",
+          "phase": "demonstrate",
+          "chapter": "04 · 水果饮品店",
+          "word": "apple",
+          "display": "An apple, please.",
+          "text": "来到水果摊：请给我一个苹果。",
+          "clip": "unit_request_apple",
+          "picture": "apple",
+          "audio": {
+            "text": "An apple, please.",
+            "duration": 3.438,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "apple",
+          "phase": "listen",
+          "chapter": "04 · 水果饮品店",
+          "word": "apple",
+          "display": "An apple, please.",
+          "text": "来到水果摊：请给我一个苹果。",
+          "practiceClip": "unit_request_apple",
+          "speechText": "An apple, please.",
+          "picture": "apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "An apple, please.",
+            "duration": 3.438,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/apple.svg"
+        },
+        {
+          "id": "thanks_one_model",
+          "phase": "demonstrate",
+          "chapter": "04 · 水果饮品店",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "收到苹果，向对方说谢谢。",
+          "clip": "unit_thank_you",
+          "picture": "",
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "thanks_one",
+          "phase": "listen",
+          "chapter": "04 · 水果饮品店",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "收到苹果，向对方说谢谢。",
+          "practiceClip": "unit_thank_you",
+          "speechText": "Thank you.",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "milk_model",
+          "phase": "demonstrate",
+          "chapter": "04 · 水果饮品店",
+          "word": "milk",
+          "display": "I want some milk.",
+          "text": "看看饮品柜：我想要一些牛奶。",
+          "clip": "unit_want_milk",
+          "picture": "milk",
+          "audio": {
+            "text": "I want some milk.",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "milk",
+          "phase": "listen",
+          "chapter": "04 · 水果饮品店",
+          "word": "milk",
+          "display": "I want some milk.",
+          "text": "看看饮品柜：我想要一些牛奶。",
+          "practiceClip": "unit_want_milk",
+          "speechText": "I want some milk.",
+          "picture": "milk",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want some milk.",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/unit_want_milk.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/milk.svg"
+        },
+        {
+          "id": "water_model",
+          "phase": "demonstrate",
+          "chapter": "04 · 水果饮品店",
+          "word": "water",
+          "display": "Some water, please.",
+          "text": "再练一种简短请求：请给我一些水。",
+          "clip": "unit_request_water",
+          "picture": "water",
+          "audio": {
+            "text": "Some water, please.",
+            "duration": 3.558,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "water",
+          "phase": "listen",
+          "chapter": "04 · 水果饮品店",
+          "word": "water",
+          "display": "Some water, please.",
+          "text": "再练一种简短请求：请给我一些水。",
+          "practiceClip": "unit_request_water",
+          "speechText": "Some water, please.",
+          "picture": "water",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Some water, please.",
+            "duration": 3.558,
+            "url": "/scene/assets/assets/avatar/audio/unit_request_water.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/water.svg"
+        },
+        {
+          "id": "thanks_two_model",
+          "phase": "demonstrate",
+          "chapter": "04 · 水果饮品店",
+          "word": "water",
+          "display": "Thank you.",
+          "text": "拿到饮品，再自然地说声谢谢。",
+          "clip": "unit_thank_you",
+          "picture": "",
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "thanks_two",
+          "phase": "listen",
+          "chapter": "04 · 水果饮品店",
+          "word": "water",
+          "display": "Thank you.",
+          "text": "拿到饮品，再自然地说声谢谢。",
+          "practiceClip": "unit_thank_you",
+          "speechText": "Thank you.",
+          "picture": "",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "word": "apple",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-colors-v1",
+      "asset": "adult-colors",
+      "title": "05 · 颜色",
+      "goal": "说清你想要哪种颜色",
+      "unit": 2,
+      "status": "published",
+      "version": "3bef4a45803f",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "05 · 颜色",
+          "display": "05 · 颜色",
+          "text": "这节课学颜色。先读单词，再读短语，最后说出完整句子。",
+          "clip": "adult-colors_intro",
+          "audio": {
+            "text": "这节课学颜色。先读单词，再读短语，最后说出完整句子。",
+            "duration": 6.719,
+            "url": "/scene/assets/assets/avatar/audio/adult-colors_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "red",
+          "text": "红色",
+          "picture": "color_red",
+          "id": "word_red_model",
+          "phase": "demonstrate",
+          "clip": "part_red",
+          "audio": {
+            "text": "red",
+            "duration": 0.795,
+            "url": "/scene/assets/assets/avatar/audio/part_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_red.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "red",
+          "text": "红色",
+          "picture": "color_red",
+          "id": "word_red",
+          "phase": "listen",
+          "practiceClip": "part_red",
+          "speechText": "red",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "red",
+            "duration": 0.795,
+            "url": "/scene/assets/assets/avatar/audio/part_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_red.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "green",
+          "text": "绿色",
+          "picture": "color_green",
+          "id": "word_green_model",
+          "phase": "demonstrate",
+          "clip": "u2_green",
+          "audio": {
+            "text": "green",
+            "duration": 2.439,
+            "url": "/scene/assets/assets/avatar/audio/u2_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_green.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "green",
+          "text": "绿色",
+          "picture": "color_green",
+          "id": "word_green",
+          "phase": "listen",
+          "practiceClip": "u2_green",
+          "speechText": "green",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "green",
+            "duration": 2.439,
+            "url": "/scene/assets/assets/avatar/audio/u2_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_green.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "yellow",
+          "text": "黄色",
+          "picture": "color_yellow",
+          "id": "word_yellow_model",
+          "phase": "demonstrate",
+          "clip": "u2_yellow",
+          "audio": {
+            "text": "yellow",
+            "duration": 1.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_yellow.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_yellow.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "yellow",
+          "text": "黄色",
+          "picture": "color_yellow",
+          "id": "word_yellow",
+          "phase": "listen",
+          "practiceClip": "u2_yellow",
+          "speechText": "yellow",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "yellow",
+            "duration": 1.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_yellow.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_yellow.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "blue",
+          "text": "蓝色",
+          "picture": "color_blue",
+          "id": "word_blue_model",
+          "phase": "demonstrate",
+          "clip": "u2_blue",
+          "audio": {
+            "text": "blue",
+            "duration": 1.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_blue.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_blue.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "blue",
+          "text": "蓝色",
+          "picture": "color_blue",
+          "id": "word_blue",
+          "phase": "listen",
+          "practiceClip": "u2_blue",
+          "speechText": "blue",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "blue",
+            "duration": 1.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_blue.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/color_blue.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a red apple",
+          "text": "一个红苹果。颜色放在水果前，前面用一个的说法。",
+          "picture": "red_apple",
+          "id": "red_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_red_apple",
+          "audio": {
+            "text": "a red apple",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/red_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a red apple",
+          "text": "一个红苹果。颜色放在水果前，前面用一个的说法。",
+          "picture": "red_apple",
+          "id": "red_apple",
+          "phase": "listen",
+          "practiceClip": "u2_red_apple",
+          "speechText": "a red apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a red apple",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/red_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a red apple.",
+          "text": "我想要一个红苹果。",
+          "picture": "red_apple",
+          "id": "want_red_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_red_apple",
+          "audio": {
+            "text": "I want a red apple.",
+            "duration": 3.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/red_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a red apple.",
+          "text": "我想要一个红苹果。",
+          "picture": "red_apple",
+          "id": "want_red_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_red_apple",
+          "speechText": "I want a red apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a red apple",
+              "clip": "u2_red_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a red apple.",
+            "duration": 3.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/red_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a green apple",
+          "text": "一个青苹果。先说颜色，再说苹果。",
+          "picture": "green_apple",
+          "id": "green_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_green_apple",
+          "audio": {
+            "text": "a green apple",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_green_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/green_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a green apple",
+          "text": "一个青苹果。先说颜色，再说苹果。",
+          "picture": "green_apple",
+          "id": "green_apple",
+          "phase": "listen",
+          "practiceClip": "u2_green_apple",
+          "speechText": "a green apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a green apple",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_green_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/green_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a green apple.",
+          "text": "我想要一个青苹果。",
+          "picture": "green_apple",
+          "id": "want_green_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_green_apple",
+          "audio": {
+            "text": "I want a green apple.",
+            "duration": 2.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_green_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/green_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a green apple.",
+          "text": "我想要一个青苹果。",
+          "picture": "green_apple",
+          "id": "want_green_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_green_apple",
+          "speechText": "I want a green apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a green apple",
+              "clip": "u2_green_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a green apple.",
+            "duration": 2.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_green_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/green_apple.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a yellow banana",
+          "text": "一根黄香蕉。先说颜色，再说香蕉。",
+          "picture": "yellow_banana",
+          "id": "yellow_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_yellow_banana",
+          "audio": {
+            "text": "a yellow banana",
+            "duration": 1.639,
+            "url": "/scene/assets/assets/avatar/audio/u2_yellow_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/yellow_banana.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "a yellow banana",
+          "text": "一根黄香蕉。先说颜色，再说香蕉。",
+          "picture": "yellow_banana",
+          "id": "yellow_banana",
+          "phase": "listen",
+          "practiceClip": "u2_yellow_banana",
+          "speechText": "a yellow banana",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a yellow banana",
+            "duration": 1.639,
+            "url": "/scene/assets/assets/avatar/audio/u2_yellow_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/yellow_banana.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a yellow banana.",
+          "text": "我想要一根黄香蕉。",
+          "picture": "yellow_banana",
+          "id": "want_yellow_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_yellow_banana",
+          "audio": {
+            "text": "I want a yellow banana.",
+            "duration": 2.439,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_yellow_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/yellow_banana.svg"
+        },
+        {
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a yellow banana.",
+          "text": "我想要一根黄香蕉。",
+          "picture": "yellow_banana",
+          "id": "want_yellow_banana",
+          "phase": "listen",
+          "practiceClip": "u2_want_yellow_banana",
+          "speechText": "I want a yellow banana.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a yellow banana",
+              "clip": "u2_yellow_banana"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a yellow banana.",
+            "duration": 2.439,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_yellow_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/yellow_banana.svg"
+        },
+        {
+          "id": "recall_green",
+          "phase": "recall",
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a green apple.",
+          "text": "看青苹果，不看英文，试着说：我想要一个青苹果。",
+          "picture": "green_apple",
+          "hide": true,
+          "practiceClip": "u2_want_green_apple",
+          "speechText": "I want a green apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a green apple",
+              "clip": "u2_green_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a green apple.",
+            "duration": 2.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_green_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/green_apple.svg"
+        },
+        {
+          "id": "recall_red",
+          "phase": "recall",
+          "chapter": "05 · 颜色",
+          "word": "apple",
+          "display": "I want a red apple.",
+          "text": "换成红苹果，试着完整说出你的需求。",
+          "picture": "red_apple",
+          "hide": true,
+          "practiceClip": "u2_want_red_apple",
+          "speechText": "I want a red apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a red apple",
+              "clip": "u2_red_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a red apple.",
+            "duration": 3.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/red_apple.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-sizes-v1",
+      "asset": "adult-sizes",
+      "title": "06 · 大小",
+      "goal": "说清水果的大小",
+      "unit": 2,
+      "status": "published",
+      "version": "dee80120176a",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "06 · 大小",
+          "display": "06 · 大小",
+          "text": "这节课学大和小。先读单词，再读短语和句子。",
+          "clip": "adult-sizes_intro",
+          "audio": {
+            "text": "这节课学大和小。先读单词，再读短语和句子。",
+            "duration": 5.359,
+            "url": "/scene/assets/assets/avatar/audio/adult-sizes_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "big",
+          "text": "大的；看图中较大的苹果",
+          "picture": "size_big",
+          "id": "word_big_model",
+          "phase": "demonstrate",
+          "clip": "u2_big",
+          "audio": {
+            "text": "big",
+            "duration": 2.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/size_big.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "big",
+          "text": "大的；看图中较大的苹果",
+          "picture": "size_big",
+          "id": "word_big",
+          "phase": "listen",
+          "practiceClip": "u2_big",
+          "speechText": "big",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "big",
+            "duration": 2.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/size_big.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "small",
+          "text": "小的；看图中较小的苹果",
+          "picture": "size_small",
+          "id": "word_small_model",
+          "phase": "demonstrate",
+          "clip": "u2_small",
+          "audio": {
+            "text": "small",
+            "duration": 1.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_small.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/size_small.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "small",
+          "text": "小的；看图中较小的苹果",
+          "picture": "size_small",
+          "id": "word_small",
+          "phase": "listen",
+          "practiceClip": "u2_small",
+          "speechText": "small",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "small",
+            "duration": 1.559,
+            "url": "/scene/assets/assets/avatar/audio/u2_small.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/size_small.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a big apple",
+          "text": "一个大苹果。大小也放在水果前。",
+          "picture": "big_apple",
+          "id": "big_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_big_apple",
+          "audio": {
+            "text": "a big apple",
+            "duration": 1.959,
+            "url": "/scene/assets/assets/avatar/audio/u2_big_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a big apple",
+          "text": "一个大苹果。大小也放在水果前。",
+          "picture": "big_apple",
+          "id": "big_apple",
+          "phase": "listen",
+          "practiceClip": "u2_big_apple",
+          "speechText": "a big apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a big apple",
+            "duration": 1.959,
+            "url": "/scene/assets/assets/avatar/audio/u2_big_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a big apple.",
+          "text": "我想要一个大苹果。",
+          "picture": "big_apple",
+          "id": "want_big_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_big_apple",
+          "audio": {
+            "text": "I want a big apple.",
+            "duration": 2.519,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_big_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a big apple.",
+          "text": "我想要一个大苹果。",
+          "picture": "big_apple",
+          "id": "want_big_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_big_apple",
+          "speechText": "I want a big apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a big apple",
+              "clip": "u2_big_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a big apple.",
+            "duration": 2.519,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_big_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small apple",
+          "text": "一个小苹果。",
+          "picture": "small_apple",
+          "id": "small_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_small_apple",
+          "audio": {
+            "text": "a small apple",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small apple",
+          "text": "一个小苹果。",
+          "picture": "small_apple",
+          "id": "small_apple",
+          "phase": "listen",
+          "practiceClip": "u2_small_apple",
+          "speechText": "a small apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a small apple",
+            "duration": 2.039,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small apple.",
+          "text": "我想要一个小苹果。",
+          "picture": "small_apple",
+          "id": "want_small_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_small_apple",
+          "audio": {
+            "text": "I want a small apple.",
+            "duration": 2.879,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small apple.",
+          "text": "我想要一个小苹果。",
+          "picture": "small_apple",
+          "id": "want_small_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_small_apple",
+          "speechText": "I want a small apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small apple",
+              "clip": "u2_small_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small apple.",
+            "duration": 2.879,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a big banana",
+          "text": "一根大香蕉。",
+          "picture": "big_banana",
+          "id": "big_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_big_banana",
+          "audio": {
+            "text": "a big banana",
+            "duration": 1.879,
+            "url": "/scene/assets/assets/avatar/audio/u2_big_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a big banana",
+          "text": "一根大香蕉。",
+          "picture": "big_banana",
+          "id": "big_banana",
+          "phase": "listen",
+          "practiceClip": "u2_big_banana",
+          "speechText": "a big banana",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a big banana",
+            "duration": 1.879,
+            "url": "/scene/assets/assets/avatar/audio/u2_big_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a big banana.",
+          "text": "我想要一根大香蕉。",
+          "picture": "big_banana",
+          "id": "want_big_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_big_banana",
+          "audio": {
+            "text": "I want a big banana.",
+            "duration": 2.599,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_big_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a big banana.",
+          "text": "我想要一根大香蕉。",
+          "picture": "big_banana",
+          "id": "want_big_banana",
+          "phase": "listen",
+          "practiceClip": "u2_want_big_banana",
+          "speechText": "I want a big banana.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a big banana",
+              "clip": "u2_big_banana"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a big banana.",
+            "duration": 2.599,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_big_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small banana",
+          "text": "一根小香蕉。",
+          "picture": "small_banana",
+          "id": "small_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_small_banana",
+          "audio": {
+            "text": "a small banana",
+            "duration": 1.799,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small banana",
+          "text": "一根小香蕉。",
+          "picture": "small_banana",
+          "id": "small_banana",
+          "phase": "listen",
+          "practiceClip": "u2_small_banana",
+          "speechText": "a small banana",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a small banana",
+            "duration": 1.799,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small banana.",
+          "text": "我想要一根小香蕉。",
+          "picture": "small_banana",
+          "id": "want_small_banana_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_small_banana",
+          "audio": {
+            "text": "I want a small banana.",
+            "duration": 2.359,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small banana.",
+          "text": "我想要一根小香蕉。",
+          "picture": "small_banana",
+          "id": "want_small_banana",
+          "phase": "listen",
+          "practiceClip": "u2_want_small_banana",
+          "speechText": "I want a small banana.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small banana",
+              "clip": "u2_small_banana"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small banana.",
+            "duration": 2.359,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_banana.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small red apple",
+          "text": "一个小红苹果。一起描述时，先说大小，再说颜色。",
+          "picture": "small_red_apple",
+          "id": "small_red_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_small_red_apple",
+          "audio": {
+            "text": "a small red apple",
+            "duration": 2.399,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "a small red apple",
+          "text": "一个小红苹果。一起描述时，先说大小，再说颜色。",
+          "picture": "small_red_apple",
+          "id": "small_red_apple",
+          "phase": "listen",
+          "practiceClip": "u2_small_red_apple",
+          "speechText": "a small red apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a small red apple",
+            "duration": 2.399,
+            "url": "/scene/assets/assets/avatar/audio/u2_small_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small red apple.",
+          "text": "我想要一个小红苹果。",
+          "picture": "small_red_apple",
+          "id": "want_small_red_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_small_red_apple",
+          "audio": {
+            "text": "I want a small red apple.",
+            "duration": 4.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small red apple.",
+          "text": "我想要一个小红苹果。",
+          "picture": "small_red_apple",
+          "id": "want_small_red_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_small_red_apple",
+          "speechText": "I want a small red apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small red apple",
+              "clip": "u2_small_red_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small red apple.",
+            "duration": 4.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_red_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "id": "recall_small",
+          "phase": "recall",
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a small apple.",
+          "text": "看小苹果，试着说：我想要一个小苹果。",
+          "picture": "small_apple",
+          "hide": true,
+          "practiceClip": "u2_want_small_apple",
+          "speechText": "I want a small apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small apple",
+              "clip": "u2_small_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small apple.",
+            "duration": 2.879,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_small_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_apple.svg"
+        },
+        {
+          "id": "recall_big",
+          "phase": "recall",
+          "chapter": "06 · 大小",
+          "word": "apple",
+          "display": "I want a big banana.",
+          "text": "换成大香蕉，试着完整表达需求。",
+          "picture": "big_banana",
+          "hide": true,
+          "practiceClip": "u2_want_big_banana",
+          "speechText": "I want a big banana.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a big banana",
+              "clip": "u2_big_banana"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a big banana.",
+            "duration": 2.599,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_big_banana.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/big_banana.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-numbers-v1",
+      "asset": "adult-numbers",
+      "title": "07 · 数量",
+      "goal": "从一个练到多个",
+      "unit": 2,
+      "status": "published",
+      "version": "bc7c03b72b7d",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "07 · 数量",
+          "display": "07 · 数量",
+          "text": "这节课学一到五。先读数字，再练一个和多个，最后说出需求。",
+          "clip": "adult-numbers_intro",
+          "audio": {
+            "text": "这节课学一到五。先读数字，再练一个和多个，最后说出需求。",
+            "duration": 7.079,
+            "url": "/scene/assets/assets/avatar/audio/adult-numbers_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "one",
+          "text": "一",
+          "picture": "count_one",
+          "id": "word_one_model",
+          "phase": "demonstrate",
+          "clip": "u2_one",
+          "audio": {
+            "text": "one",
+            "duration": 1.079,
+            "url": "/scene/assets/assets/avatar/audio/u2_one.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_one.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "one",
+          "text": "一",
+          "picture": "count_one",
+          "id": "word_one",
+          "phase": "listen",
+          "practiceClip": "u2_one",
+          "speechText": "one",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "one",
+            "duration": 1.079,
+            "url": "/scene/assets/assets/avatar/audio/u2_one.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_one.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two",
+          "text": "二",
+          "picture": "count_two",
+          "id": "word_two_model",
+          "phase": "demonstrate",
+          "clip": "u2_two",
+          "audio": {
+            "text": "two",
+            "duration": 1.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_two.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_two.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two",
+          "text": "二",
+          "picture": "count_two",
+          "id": "word_two",
+          "phase": "listen",
+          "practiceClip": "u2_two",
+          "speechText": "two",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "two",
+            "duration": 1.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_two.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_two.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "three",
+          "text": "三",
+          "picture": "count_three",
+          "id": "word_three_model",
+          "phase": "demonstrate",
+          "clip": "u2_three",
+          "audio": {
+            "text": "three",
+            "duration": 1.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_three.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_three.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "three",
+          "text": "三",
+          "picture": "count_three",
+          "id": "word_three",
+          "phase": "listen",
+          "practiceClip": "u2_three",
+          "speechText": "three",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "three",
+            "duration": 1.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_three.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_three.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "four",
+          "text": "四",
+          "picture": "count_four",
+          "id": "word_four_model",
+          "phase": "demonstrate",
+          "clip": "u2_four",
+          "audio": {
+            "text": "four",
+            "duration": 1.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_four.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_four.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "four",
+          "text": "四",
+          "picture": "count_four",
+          "id": "word_four",
+          "phase": "listen",
+          "practiceClip": "u2_four",
+          "speechText": "four",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "four",
+            "duration": 1.119,
+            "url": "/scene/assets/assets/avatar/audio/u2_four.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_four.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "five",
+          "text": "五",
+          "picture": "count_five",
+          "id": "word_five_model",
+          "phase": "demonstrate",
+          "clip": "u2_five",
+          "audio": {
+            "text": "five",
+            "duration": 1.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_five.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_five.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "five",
+          "text": "五",
+          "picture": "count_five",
+          "id": "word_five",
+          "phase": "listen",
+          "practiceClip": "u2_five",
+          "speechText": "five",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "five",
+            "duration": 1.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_five.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/count_five.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "apples",
+          "text": "多个苹果。结尾的复数音是 /z/，不要额外加一个音节。",
+          "picture": "two_apples",
+          "id": "apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_apples",
+          "audio": {
+            "text": "apples",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/u2_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "apples",
+          "text": "多个苹果。结尾的复数音是 /z/，不要额外加一个音节。",
+          "picture": "two_apples",
+          "id": "apples",
+          "phase": "listen",
+          "practiceClip": "u2_apples",
+          "speechText": "apples",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "apples",
+            "duration": 1.319,
+            "url": "/scene/assets/assets/avatar/audio/u2_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "bananas",
+          "text": "多根香蕉。结尾也读 /z/，和单数作对比。",
+          "picture": "two_bananas",
+          "id": "bananas_model",
+          "phase": "demonstrate",
+          "clip": "u2_bananas",
+          "audio": {
+            "text": "bananas",
+            "duration": 2.279,
+            "url": "/scene/assets/assets/avatar/audio/u2_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "bananas",
+          "text": "多根香蕉。结尾也读 /z/，和单数作对比。",
+          "picture": "two_bananas",
+          "id": "bananas",
+          "phase": "listen",
+          "practiceClip": "u2_bananas",
+          "speechText": "bananas",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "bananas",
+            "duration": 2.279,
+            "url": "/scene/assets/assets/avatar/audio/u2_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "one apple",
+          "text": "一个苹果。说具体数量一，后面仍用单数。",
+          "picture": "one_apple",
+          "id": "one_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_one_apple",
+          "audio": {
+            "text": "one apple",
+            "duration": 1.479,
+            "url": "/scene/assets/assets/avatar/audio/u2_one_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/one_apple.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "one apple",
+          "text": "一个苹果。说具体数量一，后面仍用单数。",
+          "picture": "one_apple",
+          "id": "one_apple",
+          "phase": "listen",
+          "practiceClip": "u2_one_apple",
+          "speechText": "one apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "one apple",
+            "duration": 1.479,
+            "url": "/scene/assets/assets/avatar/audio/u2_one_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/one_apple.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want one apple.",
+          "text": "我想要一个苹果。",
+          "picture": "one_apple",
+          "id": "want_one_apple_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_one_apple",
+          "audio": {
+            "text": "I want one apple.",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_one_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/one_apple.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want one apple.",
+          "text": "我想要一个苹果。",
+          "picture": "one_apple",
+          "id": "want_one_apple",
+          "phase": "listen",
+          "practiceClip": "u2_want_one_apple",
+          "speechText": "I want one apple.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "one apple",
+              "clip": "u2_one_apple"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want one apple.",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_one_apple.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/one_apple.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two bananas",
+          "text": "两根香蕉。两个及以上用复数，不再加一个的说法。",
+          "picture": "two_bananas",
+          "id": "two_bananas_model",
+          "phase": "demonstrate",
+          "clip": "u2_two_bananas",
+          "audio": {
+            "text": "two bananas",
+            "duration": 1.639,
+            "url": "/scene/assets/assets/avatar/audio/u2_two_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two bananas",
+          "text": "两根香蕉。两个及以上用复数，不再加一个的说法。",
+          "picture": "two_bananas",
+          "id": "two_bananas",
+          "phase": "listen",
+          "practiceClip": "u2_two_bananas",
+          "speechText": "two bananas",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "two bananas",
+            "duration": 1.639,
+            "url": "/scene/assets/assets/avatar/audio/u2_two_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two bananas.",
+          "text": "我想要两根香蕉。",
+          "picture": "two_bananas",
+          "id": "want_two_bananas_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_two_bananas",
+          "audio": {
+            "text": "I want two bananas.",
+            "duration": 2.759,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two bananas.",
+          "text": "我想要两根香蕉。",
+          "picture": "two_bananas",
+          "id": "want_two_bananas",
+          "phase": "listen",
+          "practiceClip": "u2_want_two_bananas",
+          "speechText": "I want two bananas.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two bananas",
+              "clip": "u2_two_bananas"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two bananas.",
+            "duration": 2.759,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "three apples",
+          "text": "三个苹果。两个及以上用复数，不再加一个的说法。",
+          "picture": "three_apples",
+          "id": "three_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_three_apples",
+          "audio": {
+            "text": "three apples",
+            "duration": 2.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_three_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "three apples",
+          "text": "三个苹果。两个及以上用复数，不再加一个的说法。",
+          "picture": "three_apples",
+          "id": "three_apples",
+          "phase": "listen",
+          "practiceClip": "u2_three_apples",
+          "speechText": "three apples",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "three apples",
+            "duration": 2.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_three_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want three apples.",
+          "text": "我想要三个苹果。",
+          "picture": "three_apples",
+          "id": "want_three_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_three_apples",
+          "audio": {
+            "text": "I want three apples.",
+            "duration": 2.959,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_three_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want three apples.",
+          "text": "我想要三个苹果。",
+          "picture": "three_apples",
+          "id": "want_three_apples",
+          "phase": "listen",
+          "practiceClip": "u2_want_three_apples",
+          "speechText": "I want three apples.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "three apples",
+              "clip": "u2_three_apples"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want three apples.",
+            "duration": 2.959,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_three_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "four bananas",
+          "text": "四根香蕉。两个及以上用复数，不再加一个的说法。",
+          "picture": "four_bananas",
+          "id": "four_bananas_model",
+          "phase": "demonstrate",
+          "clip": "u2_four_bananas",
+          "audio": {
+            "text": "four bananas",
+            "duration": 2.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_four_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/four_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "four bananas",
+          "text": "四根香蕉。两个及以上用复数，不再加一个的说法。",
+          "picture": "four_bananas",
+          "id": "four_bananas",
+          "phase": "listen",
+          "practiceClip": "u2_four_bananas",
+          "speechText": "four bananas",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "four bananas",
+            "duration": 2.159,
+            "url": "/scene/assets/assets/avatar/audio/u2_four_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/four_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want four bananas.",
+          "text": "我想要四根香蕉。",
+          "picture": "four_bananas",
+          "id": "want_four_bananas_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_four_bananas",
+          "audio": {
+            "text": "I want four bananas.",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_four_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/four_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want four bananas.",
+          "text": "我想要四根香蕉。",
+          "picture": "four_bananas",
+          "id": "want_four_bananas",
+          "phase": "listen",
+          "practiceClip": "u2_want_four_bananas",
+          "speechText": "I want four bananas.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "four bananas",
+              "clip": "u2_four_bananas"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want four bananas.",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_four_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/four_bananas.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "five apples",
+          "text": "五个苹果。两个及以上用复数，不再加一个的说法。",
+          "picture": "five_apples",
+          "id": "five_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_five_apples",
+          "audio": {
+            "text": "five apples",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_five_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/five_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "five apples",
+          "text": "五个苹果。两个及以上用复数，不再加一个的说法。",
+          "picture": "five_apples",
+          "id": "five_apples",
+          "phase": "listen",
+          "practiceClip": "u2_five_apples",
+          "speechText": "five apples",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "five apples",
+            "duration": 2.239,
+            "url": "/scene/assets/assets/avatar/audio/u2_five_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/five_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want five apples.",
+          "text": "我想要五个苹果。",
+          "picture": "five_apples",
+          "id": "want_five_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_five_apples",
+          "audio": {
+            "text": "I want five apples.",
+            "duration": 2.999,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_five_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/five_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want five apples.",
+          "text": "我想要五个苹果。",
+          "picture": "five_apples",
+          "id": "want_five_apples",
+          "phase": "listen",
+          "practiceClip": "u2_want_five_apples",
+          "speechText": "I want five apples.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "five apples",
+              "clip": "u2_five_apples"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want five apples.",
+            "duration": 2.999,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_five_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/five_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two apples",
+          "text": "两个苹果。和一个苹果作对比，听清结尾的复数音。",
+          "picture": "two_apples",
+          "id": "two_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_two_apples",
+          "audio": {
+            "text": "two apples",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_two_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "two apples",
+          "text": "两个苹果。和一个苹果作对比，听清结尾的复数音。",
+          "picture": "two_apples",
+          "id": "two_apples",
+          "phase": "listen",
+          "practiceClip": "u2_two_apples",
+          "speechText": "two apples",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "two apples",
+            "duration": 1.919,
+            "url": "/scene/assets/assets/avatar/audio/u2_two_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two apples.",
+          "text": "我想要两个苹果。",
+          "picture": "two_apples",
+          "id": "want_two_apples_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_two_apples",
+          "audio": {
+            "text": "I want two apples.",
+            "duration": 2.319,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two apples.",
+          "text": "我想要两个苹果。",
+          "picture": "two_apples",
+          "id": "want_two_apples",
+          "phase": "listen",
+          "practiceClip": "u2_want_two_apples",
+          "speechText": "I want two apples.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two apples",
+              "clip": "u2_two_apples"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two apples.",
+            "duration": 2.319,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "id": "recall_two",
+          "phase": "recall",
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two apples.",
+          "text": "看图数一数：我想要两个苹果。试着自己说。",
+          "picture": "two_apples",
+          "hide": true,
+          "practiceClip": "u2_want_two_apples",
+          "speechText": "I want two apples.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two apples",
+              "clip": "u2_two_apples"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two apples.",
+            "duration": 2.319,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_apples.svg"
+        },
+        {
+          "id": "recall_bananas",
+          "phase": "recall",
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want two bananas.",
+          "text": "看两根香蕉，试着完整说出数量和需求。",
+          "picture": "two_bananas",
+          "hide": true,
+          "practiceClip": "u2_want_two_bananas",
+          "speechText": "I want two bananas.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two bananas",
+              "clip": "u2_two_bananas"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two bananas.",
+            "duration": 2.759,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_two_bananas.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_bananas.svg"
+        },
+        {
+          "id": "recall_five",
+          "phase": "recall",
+          "chapter": "07 · 数量",
+          "word": "apple",
+          "display": "I want five apples.",
+          "text": "看五个苹果，不看英文，试着表达需求。",
+          "picture": "five_apples",
+          "hide": true,
+          "practiceClip": "u2_want_five_apples",
+          "speechText": "I want five apples.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "five apples",
+              "clip": "u2_five_apples"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want five apples.",
+            "duration": 2.999,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_five_apples.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/five_apples.svg"
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "adult-describe-review-v1",
+      "asset": "adult-describe-review",
+      "title": "08 · 按要求拿东西",
+      "goal": "一起复习颜色、大小和数量",
+      "unit": 2,
+      "status": "published",
+      "version": "033985112721",
+      "stages": [
+        {
+          "id": "intro",
+          "phase": "introduce",
+          "chapter": "08 · 按要求拿东西",
+          "display": "08 · 按要求拿东西",
+          "text": "这节课复习颜色、大小和数量。先跟读，再看图自己说。",
+          "clip": "adult-describe-review_intro",
+          "audio": {
+            "text": "这节课复习颜色、大小和数量。先跟读，再看图自己说。",
+            "duration": 6.399,
+            "url": "/scene/assets/assets/avatar/audio/adult-describe-review_intro.wav"
+          },
+          "image": null
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "a small red apple",
+          "text": "一个小红苹果。先说大小，再说颜色。",
+          "picture": "small_red_apple",
+          "id": "review_small_red_model",
+          "phase": "demonstrate",
+          "clip": "u2_review_small_red",
+          "audio": {
+            "text": "a small red apple",
+            "duration": 2.399,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_small_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "a small red apple",
+          "text": "一个小红苹果。先说大小，再说颜色。",
+          "picture": "small_red_apple",
+          "id": "review_small_red",
+          "phase": "listen",
+          "practiceClip": "u2_review_small_red",
+          "speechText": "a small red apple",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "a small red apple",
+            "duration": 2.399,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_small_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want a small red apple, please.",
+          "text": "我想要一个小红苹果，谢谢。",
+          "picture": "small_red_apple",
+          "id": "want_review_small_red_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_review_small_red",
+          "audio": {
+            "text": "I want a small red apple, please.",
+            "duration": 3.758,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_small_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want a small red apple, please.",
+          "text": "我想要一个小红苹果，谢谢。",
+          "picture": "small_red_apple",
+          "id": "want_review_small_red",
+          "phase": "listen",
+          "practiceClip": "u2_want_review_small_red",
+          "speechText": "I want a small red apple, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small red apple",
+              "clip": "u2_review_small_red"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small red apple, please.",
+            "duration": 3.758,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_small_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "two green apples",
+          "text": "两个青苹果。数量在前，苹果用复数。",
+          "picture": "two_green_apples",
+          "id": "review_two_green_model",
+          "phase": "demonstrate",
+          "clip": "u2_review_two_green",
+          "audio": {
+            "text": "two green apples",
+            "duration": 2.199,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_two_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_green_apples.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "two green apples",
+          "text": "两个青苹果。数量在前，苹果用复数。",
+          "picture": "two_green_apples",
+          "id": "review_two_green",
+          "phase": "listen",
+          "practiceClip": "u2_review_two_green",
+          "speechText": "two green apples",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "two green apples",
+            "duration": 2.199,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_two_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_green_apples.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want two green apples, please.",
+          "text": "我想要两个青苹果，谢谢。",
+          "picture": "two_green_apples",
+          "id": "want_review_two_green_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_review_two_green",
+          "audio": {
+            "text": "I want two green apples, please.",
+            "duration": 4.318,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_two_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_green_apples.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want two green apples, please.",
+          "text": "我想要两个青苹果，谢谢。",
+          "picture": "two_green_apples",
+          "id": "want_review_two_green",
+          "phase": "listen",
+          "practiceClip": "u2_want_review_two_green",
+          "speechText": "I want two green apples, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two green apples",
+              "clip": "u2_review_two_green"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two green apples, please.",
+            "duration": 4.318,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_two_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_green_apples.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "three big bananas",
+          "text": "三根大香蕉。先说数量，再说大小。",
+          "picture": "three_big_bananas",
+          "id": "review_three_big_model",
+          "phase": "demonstrate",
+          "clip": "u2_review_three_big",
+          "audio": {
+            "text": "three big bananas",
+            "duration": 2.279,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_three_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_big_bananas.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "three big bananas",
+          "text": "三根大香蕉。先说数量，再说大小。",
+          "picture": "three_big_bananas",
+          "id": "review_three_big",
+          "phase": "listen",
+          "practiceClip": "u2_review_three_big",
+          "speechText": "three big bananas",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "three big bananas",
+            "duration": 2.279,
+            "url": "/scene/assets/assets/avatar/audio/u2_review_three_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_big_bananas.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want three big bananas, please.",
+          "text": "我想要三根大香蕉，谢谢。",
+          "picture": "three_big_bananas",
+          "id": "want_review_three_big_model",
+          "phase": "demonstrate",
+          "clip": "u2_want_review_three_big",
+          "audio": {
+            "text": "I want three big bananas, please.",
+            "duration": 4.958,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_three_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_big_bananas.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want three big bananas, please.",
+          "text": "我想要三根大香蕉，谢谢。",
+          "picture": "three_big_bananas",
+          "id": "want_review_three_big",
+          "phase": "listen",
+          "practiceClip": "u2_want_review_three_big",
+          "speechText": "I want three big bananas, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "three big bananas",
+              "clip": "u2_review_three_big"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want three big bananas, please.",
+            "duration": 4.958,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_three_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_big_bananas.svg"
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "拿到水果后，自然地说声谢谢。",
+          "picture": "",
+          "id": "thanks_model",
+          "phase": "demonstrate",
+          "clip": "unit_thank_you",
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "拿到水果后，自然地说声谢谢。",
+          "picture": "",
+          "id": "thanks",
+          "phase": "listen",
+          "practiceClip": "unit_thank_you",
+          "speechText": "Thank you.",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "recall_small_red_apple",
+          "phase": "recall",
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want a small red apple, please.",
+          "text": "你想要一个小红苹果。看图，把完整需求礼貌地说出来。",
+          "picture": "small_red_apple",
+          "hide": true,
+          "practiceClip": "u2_want_review_small_red",
+          "speechText": "I want a small red apple, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "a small red apple",
+              "clip": "u2_review_small_red"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want a small red apple, please.",
+            "duration": 3.758,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_small_red.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/small_red_apple.svg"
+        },
+        {
+          "id": "recall_two_green_apples",
+          "phase": "recall",
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want two green apples, please.",
+          "text": "换成两个青苹果。看清颜色和数量，试着礼貌地说出来。",
+          "picture": "two_green_apples",
+          "hide": true,
+          "practiceClip": "u2_want_review_two_green",
+          "speechText": "I want two green apples, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "two green apples",
+              "clip": "u2_review_two_green"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want two green apples, please.",
+            "duration": 4.318,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_two_green.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/two_green_apples.svg"
+        },
+        {
+          "id": "recall_three_big_bananas",
+          "phase": "recall",
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "I want three big bananas, please.",
+          "text": "这次是三根大香蕉。看清大小和数量，完整表达需求。",
+          "picture": "three_big_bananas",
+          "hide": true,
+          "practiceClip": "u2_want_review_three_big",
+          "speechText": "I want three big bananas, please.",
+          "segments": [
+            {
+              "label": "I want",
+              "clip": "chunk_want"
+            },
+            {
+              "label": "three big bananas",
+              "clip": "u2_review_three_big"
+            },
+            {
+              "label": "please",
+              "clip": "unit_please"
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "I want three big bananas, please.",
+            "duration": 4.958,
+            "url": "/scene/assets/assets/avatar/audio/u2_want_review_three_big.wav"
+          },
+          "image": "/scene/assets/assets/avatar/images/three_big_bananas.svg"
+        },
+        {
+          "id": "recall_thanks",
+          "phase": "recall",
+          "chapter": "08 · 按要求拿东西",
+          "word": "apple",
+          "display": "Thank you.",
+          "text": "拿到水果后，自己说声谢谢。",
+          "picture": "",
+          "hide": true,
+          "practiceClip": "unit_thank_you",
+          "speechText": "Thank you.",
+          "segments": [],
+          "options": [
+            {
+              "id": "next",
+              "label": "继续"
+            },
+            {
+              "id": "help",
+              "label": "再听示范"
+            }
+          ],
+          "audio": {
+            "text": "Thank you.",
+            "duration": 1.519,
+            "url": "/scene/assets/assets/avatar/audio/unit_thank_you.wav"
+          },
+          "image": null
+        },
+        {
+          "id": "summary",
+          "phase": "finish",
+          "chapter": "本节小结",
+          "display": "本节学习记录",
+          "text": "本节课我们就学到这里。",
+          "options": [],
+          "audio": null,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "planned-9",
+      "title": "09 · 问候与名字",
+      "unit": 3,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-10",
+      "title": "10 · 来自哪里",
+      "unit": 3,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-11",
+      "title": "11 · 喜好",
+      "unit": 3,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-12",
+      "title": "12 · 认识新朋友",
+      "unit": 3,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-13",
+      "title": "13 · 吃喝",
+      "unit": 4,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-14",
+      "title": "14 · 时间",
+      "unit": 4,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-15",
+      "title": "15 · 日常活动",
+      "unit": 4,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    },
+    {
+      "id": "planned-16",
+      "title": "16 · 我的一天",
+      "unit": 4,
+      "status": "planned",
+      "stages": [],
+      "goal": "按现有课程规划继续开发"
+    }
+  ],
+  "lexicon": [
+    {
+      "word": "green",
+      "ipa": "/ɡriːn/",
+      "meaning": "绿色",
+      "audio": {
+        "text": "green",
+        "duration": 2.439,
+        "url": "/scene/assets/assets/avatar/audio/u2_green.wav"
+      },
+      "courses": [
+        "05 · 颜色",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "yellow",
+      "ipa": "/ˈjel.oʊ/",
+      "meaning": "黄色",
+      "audio": {
+        "text": "yellow",
+        "duration": 1.119,
+        "url": "/scene/assets/assets/avatar/audio/u2_yellow.wav"
+      },
+      "courses": [
+        "05 · 颜色"
+      ]
+    },
+    {
+      "word": "blue",
+      "ipa": "/bluː/",
+      "meaning": "蓝色",
+      "audio": {
+        "text": "blue",
+        "duration": 1.559,
+        "url": "/scene/assets/assets/avatar/audio/u2_blue.wav"
+      },
+      "courses": [
+        "05 · 颜色"
+      ]
+    },
+    {
+      "word": "big",
+      "ipa": "/bɪɡ/",
+      "meaning": "大的",
+      "audio": {
+        "text": "big",
+        "duration": 2.559,
+        "url": "/scene/assets/assets/avatar/audio/u2_big.wav"
+      },
+      "courses": [
+        "06 · 大小",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "small",
+      "ipa": "/smɑːl/",
+      "meaning": "小的",
+      "audio": {
+        "text": "small",
+        "duration": 1.559,
+        "url": "/scene/assets/assets/avatar/audio/u2_small.wav"
+      },
+      "courses": [
+        "06 · 大小",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "one",
+      "ipa": "/wʌn/",
+      "meaning": "一",
+      "audio": {
+        "text": "one",
+        "duration": 1.079,
+        "url": "/scene/assets/assets/avatar/audio/u2_one.wav"
+      },
+      "courses": [
+        "07 · 数量"
+      ]
+    },
+    {
+      "word": "two",
+      "ipa": "/tuː/",
+      "meaning": "二",
+      "audio": {
+        "text": "two",
+        "duration": 1.159,
+        "url": "/scene/assets/assets/avatar/audio/u2_two.wav"
+      },
+      "courses": [
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "three",
+      "ipa": "/θriː/",
+      "meaning": "三",
+      "audio": {
+        "text": "three",
+        "duration": 1.239,
+        "url": "/scene/assets/assets/avatar/audio/u2_three.wav"
+      },
+      "courses": [
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "four",
+      "ipa": "/fɔːr/",
+      "meaning": "四",
+      "audio": {
+        "text": "four",
+        "duration": 1.119,
+        "url": "/scene/assets/assets/avatar/audio/u2_four.wav"
+      },
+      "courses": [
+        "07 · 数量"
+      ]
+    },
+    {
+      "word": "five",
+      "ipa": "/faɪv/",
+      "meaning": "五",
+      "audio": {
+        "text": "five",
+        "duration": 1.159,
+        "url": "/scene/assets/assets/avatar/audio/u2_five.wav"
+      },
+      "courses": [
+        "07 · 数量"
+      ]
+    },
+    {
+      "word": "apples",
+      "ipa": "/ˈæp.əlz/",
+      "meaning": "苹果的复数；多个苹果",
+      "audio": {
+        "text": "apples",
+        "duration": 1.319,
+        "url": "/scene/assets/assets/avatar/audio/u2_apples.wav"
+      },
+      "courses": [
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "bananas",
+      "ipa": "/bəˈnæn.əz/",
+      "meaning": "香蕉的复数；多根香蕉",
+      "audio": {
+        "text": "bananas",
+        "duration": 2.279,
+        "url": "/scene/assets/assets/avatar/audio/u2_bananas.wav"
+      },
+      "courses": [
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "water",
+      "ipa": "/ˈwɑː.tər/",
+      "meaning": "水；美式自然语流中的 t 常读成轻快的闪音",
+      "audio": {
+        "text": "water",
+        "duration": 2.519,
+        "url": "/scene/assets/assets/avatar/audio/unit_water.wav"
+      },
+      "courses": [
+        "02 · 水和饮料",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店"
+      ]
+    },
+    {
+      "word": "milk",
+      "ipa": "/mɪlk/",
+      "meaning": "牛奶",
+      "audio": {
+        "text": "milk",
+        "duration": 1.879,
+        "url": "/scene/assets/assets/avatar/audio/unit_milk.wav"
+      },
+      "courses": [
+        "02 · 水和饮料",
+        "04 · 水果饮品店"
+      ]
+    },
+    {
+      "word": "tea",
+      "ipa": "/tiː/",
+      "meaning": "茶",
+      "audio": {
+        "text": "tea",
+        "duration": 2.039,
+        "url": "/scene/assets/assets/avatar/audio/unit_tea.wav"
+      },
+      "courses": [
+        "02 · 水和饮料"
+      ]
+    },
+    {
+      "word": "coffee",
+      "ipa": "/ˈkɑː.fi/",
+      "meaning": "咖啡",
+      "audio": {
+        "text": "coffee",
+        "duration": 1.319,
+        "url": "/scene/assets/assets/avatar/audio/unit_coffee.wav"
+      },
+      "courses": [
+        "02 · 水和饮料"
+      ]
+    },
+    {
+      "word": "some",
+      "ipa": "/sʌm/",
+      "meaning": "一些；句中可以轻读",
+      "audio": {
+        "text": "some",
+        "duration": 1.519,
+        "url": "/scene/assets/assets/avatar/audio/unit_some.wav"
+      },
+      "courses": [
+        "02 · 水和饮料",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店"
+      ]
+    },
+    {
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请；使请求更礼貌",
+      "audio": {
+        "text": "please",
+        "duration": 1.239,
+        "url": "/scene/assets/assets/avatar/audio/unit_please.wav"
+      },
+      "courses": [
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "thank",
+      "ipa": "/θæŋk/",
+      "meaning": "感谢",
+      "audio": {
+        "text": "thank",
+        "duration": 1.079,
+        "url": "/scene/assets/assets/avatar/audio/unit_thank.wav"
+      },
+      "courses": [
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "you",
+      "ipa": "/juː/",
+      "meaning": "你；你们",
+      "audio": {
+        "text": "you",
+        "duration": 1.319,
+        "url": "/scene/assets/assets/avatar/audio/unit_you.wav"
+      },
+      "courses": [
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "apple",
+      "ipa": "/ˈæp.əl/",
+      "meaning": "苹果；两个音节，重音在前",
+      "audio": {
+        "text": "apple",
+        "duration": 0.87,
+        "url": "/scene/assets/assets/avatar/audio/apple.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "05 · 颜色",
+        "06 · 大小",
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "banana",
+      "ipa": "/bəˈnæn.ə/",
+      "meaning": "香蕉；三个音节，重音在中间",
+      "audio": {
+        "text": "banana",
+        "duration": 0.98,
+        "url": "/scene/assets/assets/avatar/audio/banana.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "03 · 礼貌请求",
+        "05 · 颜色",
+        "06 · 大小"
+      ]
+    },
+    {
+      "word": "i",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "audio": {
+        "text": "I",
+        "duration": 1.839,
+        "url": "/scene/assets/assets/avatar/audio/part_i.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "02 · 水和饮料",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "05 · 颜色",
+        "06 · 大小",
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "want",
+      "ipa": "/wɑːnt/",
+      "meaning": "想要",
+      "audio": {
+        "text": "want",
+        "duration": 0.725,
+        "url": "/scene/assets/assets/avatar/audio/part_want.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "02 · 水和饮料",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店",
+        "05 · 颜色",
+        "06 · 大小",
+        "07 · 数量",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "eat",
+      "ipa": "/iːt/",
+      "meaning": "吃",
+      "audio": {
+        "text": "eat",
+        "duration": 0.7850625,
+        "url": "/scene/assets/assets/avatar/audio/part_eat.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉"
+      ]
+    },
+    {
+      "word": "red",
+      "ipa": "/red/",
+      "meaning": "红色",
+      "audio": {
+        "text": "red",
+        "duration": 0.795,
+        "url": "/scene/assets/assets/avatar/audio/part_red.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "05 · 颜色",
+        "06 · 大小",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "a",
+      "ipa": "/ə/；强读 /eɪ/",
+      "meaning": "一个；这里示范句中弱读",
+      "audio": {
+        "text": "a",
+        "duration": 0.47,
+        "url": "/scene/assets/assets/avatar/audio/word_a.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "03 · 礼貌请求",
+        "05 · 颜色",
+        "06 · 大小",
+        "08 · 按要求拿东西"
+      ]
+    },
+    {
+      "word": "an",
+      "ipa": "/ən/；强读 /æn/",
+      "meaning": "一个；这里示范句中弱读",
+      "audio": {
+        "text": "an",
+        "duration": 0.39,
+        "url": "/scene/assets/assets/avatar/audio/word_an.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉",
+        "03 · 礼貌请求",
+        "04 · 水果饮品店"
+      ]
+    },
+    {
+      "word": "to",
+      "ipa": "/tuː/；弱读 /tə/",
+      "meaning": "在 want to eat 中连接动作；句中可弱读",
+      "audio": {
+        "text": "to",
+        "duration": 0.38,
+        "url": "/scene/assets/assets/avatar/audio/word_to.wav"
+      },
+      "courses": [
+        "01 · 苹果和香蕉"
+      ]
+    }
+  ],
+  "phonemes": [
+    {
+      "symbol": "oʊ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ow.wav"
+    },
+    {
+      "symbol": "ɔː",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_aw.wav"
+    },
+    {
+      "symbol": "v",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_v.wav"
+    },
+    {
+      "symbol": "z",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_z.wav"
+    },
+    {
+      "symbol": "j",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_y.wav"
+    },
+    {
+      "symbol": "i",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_iy.wav"
+    },
+    {
+      "symbol": "aɪ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ay.wav"
+    },
+    {
+      "symbol": "eɪ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ey.wav"
+    },
+    {
+      "symbol": "iː",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_iy.wav"
+    },
+    {
+      "symbol": "ɑː",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_aa.wav"
+    },
+    {
+      "symbol": "uː",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_uu.wav"
+    },
+    {
+      "symbol": "æ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ae.wav"
+    },
+    {
+      "symbol": "ə",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_schwa.wav"
+    },
+    {
+      "symbol": "ɪ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ih.wav"
+    },
+    {
+      "symbol": "ʊ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_uh.wav"
+    },
+    {
+      "symbol": "ʌ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ah.wav"
+    },
+    {
+      "symbol": "ɑ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_aa.wav"
+    },
+    {
+      "symbol": "ɔ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_aw.wav"
+    },
+    {
+      "symbol": "e",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_eh.wav"
+    },
+    {
+      "symbol": "ɛ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_eh.wav"
+    },
+    {
+      "symbol": "ɹ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_r.wav"
+    },
+    {
+      "symbol": "r",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_r.wav"
+    },
+    {
+      "symbol": "w",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_w.wav"
+    },
+    {
+      "symbol": "p",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_p.wav"
+    },
+    {
+      "symbol": "b",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_b.wav"
+    },
+    {
+      "symbol": "t",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_t.wav"
+    },
+    {
+      "symbol": "d",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_d.wav"
+    },
+    {
+      "symbol": "k",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_k.wav"
+    },
+    {
+      "symbol": "ɡ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_g.wav"
+    },
+    {
+      "symbol": "g",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_g.wav"
+    },
+    {
+      "symbol": "f",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_f.wav"
+    },
+    {
+      "symbol": "s",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_s.wav"
+    },
+    {
+      "symbol": "ʃ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_sh.wav"
+    },
+    {
+      "symbol": "h",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_h.wav"
+    },
+    {
+      "symbol": "m",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_m.wav"
+    },
+    {
+      "symbol": "n",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_n.wav"
+    },
+    {
+      "symbol": "ŋ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_ng.wav"
+    },
+    {
+      "symbol": "l",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_l.wav"
+    },
+    {
+      "symbol": "θ",
+      "url": "/scene/assets/assets/avatar/audio/phoneme_th.wav"
+    }
+  ]
+}

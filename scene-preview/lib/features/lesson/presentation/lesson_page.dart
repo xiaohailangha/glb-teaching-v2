@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../application/learning_sync.dart';
 
 import '../../../core/avatar/avatar_view.dart';
 import '../application/lesson_controller.dart';
@@ -35,12 +36,14 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
             : widget.auth?.rename,
       );
   final settings = AppSettings();
+  late final learningSync = LearningSync(controller);
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     settings.addListener(_applySettings);
     settings.load();
+    learningSync.start();
     if (widget.sharedController == null) controller.loadCourseProgress();
   }
 
@@ -90,12 +93,15 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     settings.removeListener(_applySettings);
     settings.dispose();
+    learningSync.dispose();
     if (widget.sharedController == null) controller.dispose();
     super.dispose();
   }
 
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context) => Listener(
+    onPointerDown: (_) => learningSync.interact(),
+    child: Scaffold(
     backgroundColor: Colors.transparent,
     body: DecoratedBox(
       decoration: widget.sharedController != null
@@ -211,5 +217,5 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
         ),
       ),
     ),
-  );
+  ));
 }
