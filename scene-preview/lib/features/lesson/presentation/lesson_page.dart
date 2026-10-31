@@ -90,7 +90,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
               left: 0,
               top: 0,
               bottom: 0,
-              width: box.maxWidth * .59,
+              width: box.maxWidth * .44,
               child: Semantics(
                 button: true,
                 label: '点击人物，开始或重听示范',
@@ -112,8 +112,8 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
               ),
             ),
             Positioned(
-              left: box.maxWidth * .60,
-              right: box.maxWidth * .06,
+              left: box.maxWidth * .45,
+              right: box.maxWidth * .04,
               top: box.maxHeight * .10,
               bottom: 62,
               child: AnimatedBuilder(
@@ -128,7 +128,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                             const Text(
                               '从一个苹果\n开始说英语',
                               style: TextStyle(
-                                fontSize: 30,
+                                fontSize: 36,
                                 height: 1.3,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600,
@@ -139,7 +139,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                               controller.ready ? '轻触人物，开始学习' : '人物正在准备…',
                               style: const TextStyle(
                                 color: Color(0xFFBDE5DD),
-                                fontSize: 16,
+                                fontSize: 18,
                               ),
                             ),
                             const SizedBox(height: 10),
@@ -147,7 +147,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                               '首次允许麦克风，之后直接开口。\n练习语音用于在线识别与发音评测。',
                               style: TextStyle(
                                 color: Colors.white60,
-                                fontSize: 12,
+                                fontSize: 14,
                                 height: 1.6,
                               ),
                             ),

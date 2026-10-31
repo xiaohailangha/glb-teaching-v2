@@ -13,6 +13,7 @@ class LearningText extends StatelessWidget {
   final String text;
   final LessonController controller;
   final double size;
+  String lexical(String token) => token.replaceAll(RegExp(r'[.,!?;:]+$'), '');
   String status(String word) {
     for (final row in controller.wordFeedback) {
       if (row['word'] == word.toLowerCase()) {
@@ -33,7 +34,7 @@ class LearningText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tokens = RegExp(r"[A-Za-z]+(?:'[A-Za-z]+)?|[^A-Za-z]+")
+    final tokens = RegExp(r"[A-Za-z]+(?:'[A-Za-z]+)?[.,!?;:]*|[^A-Za-z]+")
         .allMatches(text);
     return Text.rich(
       TextSpan(
@@ -44,10 +45,12 @@ class LearningText extends StatelessWidget {
                 alignment: PlaceholderAlignment.baseline,
                 baseline: TextBaseline.alphabetic,
                 child: Semantics(
-                  button: courseLexicon.containsKey(token[0]!.toLowerCase()),
-                  label: '单词 ${token[0]}',
+                  button: courseLexicon.containsKey(
+                    lexical(token[0]!).toLowerCase(),
+                  ),
+                  label: '单词 ${lexical(token[0]!)}',
                   child: InkWell(
-                    onTap: () => controller.previewWord(token[0]!),
+                    onTap: () => controller.previewWord(lexical(token[0]!)),
                     child: TweenAnimationBuilder<double>(
                       tween: Tween(begin: 0, end: 1),
                       duration: Duration(
@@ -68,10 +71,10 @@ class LearningText extends StatelessWidget {
                           style: TextStyle(
                             fontSize: size,
                             fontWeight: FontWeight.bold,
-                            color: color(token[0]!),
+                            color: color(lexical(token[0]!)),
                             decoration:
-                                status(token[0]!).isNotEmpty &&
-                                    status(token[0]!) != 'good'
+                                status(lexical(token[0]!)).isNotEmpty &&
+                                    status(lexical(token[0]!)) != 'good'
                                 ? TextDecoration.underline
                                 : TextDecoration.none,
                             decorationStyle: TextDecorationStyle.wavy,

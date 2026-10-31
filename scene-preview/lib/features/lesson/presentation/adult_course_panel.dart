@@ -54,23 +54,45 @@ class AdultCoursePanel extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'FRUIT / 01   ·   ${c.courseChapter}',
-            style: const TextStyle(
-              fontSize: 11,
-              letterSpacing: 1.3,
-              color: Colors.white60,
-            ),
-          ),
-          const SizedBox(height: 9),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: LinearProgressIndicator(
-              value: ((c.coursePosition + 1) / c.courseTotal).clamp(0, 1),
-              minHeight: 2,
-              color: const Color(0xFFBDE5DD),
-              backgroundColor: Colors.white12,
-            ),
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'FRUIT / 01   ·   ${c.courseChapter}',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        letterSpacing: 1.2,
+                        color: Colors.white60,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: LinearProgressIndicator(
+                        value: ((c.coursePosition + 1) / c.courseTotal).clamp(
+                          0,
+                          1,
+                        ),
+                        minHeight: 2,
+                        color: const Color(0xFFBDE5DD),
+                        backgroundColor: Colors.white12,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (c.coursePicture.isNotEmpty &&
+                  !choice &&
+                  !summary &&
+                  !c.coursePaused) ...[
+                const SizedBox(width: 16),
+                fruit(c.coursePicture, size: compact ? 48 : 64),
+              ],
+            ],
           ),
           SizedBox(height: compact ? 12 : 22),
           if (c.coursePaused) ...[
@@ -103,8 +125,6 @@ class AdultCoursePanel extends StatelessWidget {
             const SizedBox(height: 14),
             const Text('轻触人物，再练一轮。', style: TextStyle(color: Colors.white60)),
           ] else ...[
-            if (c.coursePicture.isNotEmpty && !choice)
-              fruit(c.coursePicture, size: compact ? 66 : 100),
             if (showEnglish && sentence.isNotEmpty)
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 350),
@@ -121,7 +141,7 @@ class AdultCoursePanel extends StatelessWidget {
                   sentence,
                   key: ValueKey(sentence),
                   controller: c,
-                  size: compact ? 25 : 34,
+                  size: compact ? 34 : 42,
                 ),
               ),
             if (entry != null && !c.hideAnswer && c.coachSentence.isEmpty)
@@ -130,7 +150,7 @@ class AdultCoursePanel extends StatelessWidget {
                 controller: c,
                 style: const TextStyle(
                   fontFamily: 'NotoSansIPA',
-                  fontSize: 17,
+                  fontSize: 21,
                   color: Colors.white60,
                 ),
               ),
@@ -139,7 +159,7 @@ class AdultCoursePanel extends StatelessWidget {
               c.courseText,
               controller: c,
               style: TextStyle(
-                fontSize: compact ? 13 : 15,
+                fontSize: compact ? 16 : 18,
                 color: Colors.white70,
                 height: 1.5,
               ),
@@ -209,7 +229,7 @@ class AdultCoursePanel extends StatelessWidget {
                     color: c.automaticState == 'success'
                         ? const Color(0xFFBDE5DD)
                         : const Color(0xFFFFD1A2),
-                    fontSize: compact ? 12 : 14,
+                    fontSize: compact ? 15 : 17,
                     height: 1.5,
                   ),
                 ),
@@ -298,7 +318,7 @@ class ListeningLine extends StatelessWidget {
             Expanded(
               child: Text(
                 label,
-                style: const TextStyle(fontSize: 12, color: Colors.white60),
+                style: const TextStyle(fontSize: 14, color: Colors.white60),
               ),
             ),
           ],

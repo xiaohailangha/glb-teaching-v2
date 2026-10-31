@@ -508,7 +508,7 @@ class SceneRuntime extends ChangeNotifier {
         'runtime': kIsWeb
             ? 'flutter_scene · WebGL2'
             : 'Flutter GPU · flutter_scene',
-        'version': 'scene-0.2.0-r13-fireworks',
+        'version': 'scene-0.2.0-r14-reading',
       });
       notifyListeners();
     } catch (e, stack) {
@@ -1113,7 +1113,7 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   PerspectiveCamera camera() {
-    final baseDistance = closeUp ? .78 : 1.51;
+    final baseDistance = closeUp ? .78 : 1.68;
     final distance = baseDistance * math.max(1, .59 / (aspect * .55));
     return _TeachingCamera(distance, 1.64 - (distance - baseDistance) * .195);
   }
@@ -1167,7 +1167,7 @@ class _TeachingProjection extends PerspectiveProjection {
   @override
   vm.Matrix4 getProjectionMatrix(double aspectRatio, {vm.Vector2? jitter}) {
     final m = super.getProjectionMatrix(aspectRatio, jitter: jitter);
-    m[8] -= .45;
+    m[8] -= .56;
     return m;
   }
 }
