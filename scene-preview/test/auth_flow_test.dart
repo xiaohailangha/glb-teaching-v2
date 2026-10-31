@@ -9,6 +9,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:snow_speaks/features/auth/auth_api.dart';
 import 'package:snow_speaks/features/auth/auth_gate.dart';
 import 'package:snow_speaks/features/auth/entry_design.dart';
+import 'package:snow_speaks/features/auth/world_loading.dart';
+import 'package:snow_speaks/features/lesson/presentation/lesson_page.dart';
 import 'package:snow_speaks/features/lesson/application/lesson_controller.dart';
 
 void main() {
@@ -93,8 +95,8 @@ void main() {
           MaterialApp(home: AuthGate(api: api, prepareScene: false)),
         );
         await tester.pumpAndSettle();
-        expect(find.text('把英语，\n说进生活。'), findsOneWidget);
-        await tap('开始我的学习');
+        expect(find.text('为每一次开口'), findsOneWidget);
+        await tap('开始学习');
         expect(find.text('手机号'), findsOneWidget);
         await tester.enterText(find.byType(TextField), '123');
         await tap('获取验证码');
@@ -113,15 +115,24 @@ void main() {
         expect(find.text('告诉我怎么称呼你吧'), findsOneWidget);
         await tester.enterText(find.byType(TextField), '莉莉');
         await tap('完成注册');
-        expect(find.text('进入课堂'), findsOneWidget);
+        expect(find.byType(LessonPage), findsOneWidget);
+        expect(
+          tester.widget<LessonPage>(find.byType(LessonPage)).account?.nickname,
+          '莉莉',
+        );
         expect(registrations, 1);
-        await tap('换个账号');
-        await tap('已有账号，登录');
+        await tester.widget<LessonPage>(find.byType(LessonPage)).onLeave!();
+        await tester.pumpAndSettle();
+        await tap('开始学习');
         await tester.enterText(find.byType(TextField), '13800138000');
         await tap('获取验证码');
         await tester.enterText(find.byType(TextField), '8888');
         await tap('验证并继续');
-        expect(find.text('莉莉，\n欢迎回来。'), findsOneWidget);
+        expect(find.byType(LessonPage), findsOneWidget);
+        expect(
+          tester.widget<LessonPage>(find.byType(LessonPage)).account?.nickname,
+          '莉莉',
+        );
         expect(registrations, 1);
         expect(tester.takeException(), isNull);
         await tester.pumpWidget(const SizedBox());
@@ -149,7 +160,7 @@ void main() {
       MaterialApp(home: AuthGate(api: api, prepareScene: false)),
     );
     await tester.pumpAndSettle();
-    await tester.tap(find.text('开始我的学习'));
+    await tester.tap(find.text('开始学习'));
     await tester.pumpAndSettle();
     expect(find.text('短信登录暂未开放，可以先体验课程。'), findsOneWidget);
     expect(
@@ -183,19 +194,61 @@ void main() {
       final dynamic state = tester.state(find.byType(AuthGate));
       final c = state.shared as LessonController;
       c.scenePresented = false;
-      expect(find.text('开始我的学习'), findsOneWidget);
+      expect(find.text('开始学习'), findsOneWidget);
       await tester.ensureVisible(find.text('先体验课程'));
       await tester.tap(find.text('先体验课程'));
       await tester.pumpAndSettle();
-      expect(find.text('让课堂，准备好。'), findsOneWidget);
+      expect(find.byType(WorldLoading), findsOneWidget);
+      await tester.tap(find.byTooltip('返回'));
+      await tester.pumpAndSettle();
+      expect(find.text('开始学习'), findsOneWidget);
+      await tester.tap(find.text('先体验课程'));
+      await tester.pumpAndSettle();
       c.handle({'event': 'ready'});
       await tester.pump();
-      expect(find.text('让课堂，准备好。'), findsOneWidget);
+      expect(find.byType(WorldLoading), findsOneWidget);
       c.handle({'event': 'scene-presented'});
       await tester.pumpAndSettle();
-      expect(find.text('让课堂，准备好。'), findsNothing);
+      expect(find.byType(WorldLoading), findsNothing);
       expect(c.accountId, isEmpty);
       expect(c.playing, false);
+      await tester.pumpWidget(const SizedBox());
+      api.dispose();
+    },
+  );
+  testWidgets(
+    'restored session enters directly without a welcome confirmation',
+    (tester) async {
+      final api = AuthApi(
+        origin: Uri.parse('https://example.test'),
+        client: MockClient(
+          (req) async => http.Response(
+            jsonEncode(
+              req.url.path.endsWith('status')
+                  ? {'smsReady': false, 'testMode': true}
+                  : {
+                      'user': {
+                        'id': 'restored',
+                        'nickname': '小禾',
+                        'phoneMasked': '199****1032',
+                      },
+                    },
+            ),
+            200,
+            headers: {'content-type': 'application/json; charset=utf-8'},
+          ),
+        ),
+      );
+      await tester.pumpWidget(
+        MaterialApp(home: AuthGate(api: api, prepareScene: false)),
+      );
+      await tester.pumpAndSettle();
+      expect(find.byType(LessonPage), findsOneWidget);
+      expect(
+        tester.widget<LessonPage>(find.byType(LessonPage)).account?.id,
+        'restored',
+      );
+      expect(find.text('进入课堂'), findsNothing);
       await tester.pumpWidget(const SizedBox());
       api.dispose();
     },

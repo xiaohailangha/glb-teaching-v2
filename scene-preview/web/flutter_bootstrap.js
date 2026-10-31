@@ -11,5 +11,16 @@
       if (registration.scope === scope) await registration.unregister();
     }
   } } catch (_) { /* Storage restrictions must not block startup. */ }
-  _flutter.loader.load({config:{canvasKitBaseUrl:'canvaskit/'}});
+  const config={canvasKitBaseUrl:'canvaskit/'};
+  try {
+    await _flutter.loader.load({
+      config,
+      onEntrypointLoaded: async engineInitializer => {
+        try {
+          const runner=await engineInitializer.initializeEngine(config);
+          await runner.runApp();
+        } catch (_) { window.sceneBootFailed?.(); }
+      },
+    });
+  } catch (_) { window.sceneBootFailed?.(); }
 })();

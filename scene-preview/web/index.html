@@ -31,6 +31,7 @@
 
   <title>Snow Speaks · 开口说英语</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="main.dart.js" as="script">
   <style>
     html,body { margin:0; background:#f4f2eb; }
     #boot-world { position:fixed; inset:0; z-index:2147483646; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#252b27; background:#f4f2eb; font-family:system-ui,sans-serif; }
@@ -40,8 +41,17 @@
     #boot-world i:nth-child(3) { height:64px; animation-delay:.3s; }
     #boot-world strong { font-size:23px; font-weight:600; letter-spacing:-1px; }
     #boot-world small { margin-top:18px; color:#777c73; font-size:11px; letter-spacing:2px; }
+    #boot-world { transition:opacity .38s ease; }
+    #boot-world.is-ready { opacity:0; pointer-events:none; }
+    #boot-line { position:absolute; bottom:0; left:0; right:0; height:2px; overflow:hidden; background:#e2e3dc; }
+    #boot-line::after { content:""; position:absolute; inset:0; background:#252b27; transform:translateX(-100%); animation:loading-line 1.8s ease-in-out infinite; }
+    #boot-world.is-ready #boot-line::after { animation:none; transform:translateX(0); }
+    #boot-status { position:absolute; bottom:24px; left:24px; right:24px; font:11px system-ui,sans-serif; color:#777c73; letter-spacing:0; opacity:0; transition:opacity .3s; }
+    #boot-status.visible { opacity:1; }
+    #boot-status button { font:inherit; border:0; border-bottom:1px solid #777c73; padding:4px 0; margin-left:12px; background:none; color:#252b27; cursor:pointer; }
+    @keyframes loading-line { 0% { transform:translateX(-100%); } 60%,100% { transform:translateX(100%); } }
     @keyframes breathe { to { transform:scaleY(.65); opacity:.55; } }
-    @media(prefers-reduced-motion:reduce) { #boot-world i { animation:none; } }
+    @media(prefers-reduced-motion:reduce) { #boot-world i { animation:none; } #boot-line::after { animation:none; transform:none; opacity:.3; } #boot-world { transition:none; } }
 
     #rotate-device { display: none; }
     @media (orientation: portrait) and (hover: none) and (pointer: coarse) {
@@ -56,12 +66,27 @@
   </style>
 </head>
 <body>
-  <div id="boot-world" role="status"><div class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><strong>snow speaks</strong><small>为每一次开口</small></div>
-  <script>window.addEventListener('flutter-first-frame',()=>document.getElementById('boot-world')?.remove());</script>
+  <div id="boot-world" role="status"><div class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><strong>snow speaks</strong><small>为每一次开口</small><div id="boot-status" aria-live="polite"></div><div id="boot-line" role="progressbar" aria-label="正在准备应用"></div></div>
+  <script>
+    (() => {
+      const splash=document.getElementById('boot-world'),status=document.getElementById('boot-status');
+      let finished=false;
+      const slow=setTimeout(()=>{if(!finished){status.textContent='正在准备，首次进入会稍久一些';status.classList.add('visible');}},8000);
+      window.sceneBootFailed=()=>{
+        if(finished)return;
+        clearTimeout(slow);status.replaceChildren(document.createTextNode('准备中断，请检查网络'));
+        const retry=document.createElement('button');retry.textContent='重新打开';retry.onclick=()=>location.reload();status.append(retry);status.classList.add('visible');
+        document.getElementById('boot-line').hidden=true;
+      };
+      const finish=()=>{if(finished)return;finished=true;clearTimeout(slow);splash.classList.add('is-ready');setTimeout(()=>splash.remove(),420);};
+      window.addEventListener('flutter-first-frame',finish,{once:true});
+      window.addEventListener('scene-ui-ready',finish,{once:true});
+    })();
+  </script>
   <div id="rotate-device" role="status">
     <span>请横过手机使用</span>
     <small>若画面未旋转，请关闭竖排方向锁定</small>
   </div>
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter_bootstrap.js" async onerror="window.sceneBootFailed()"></script>
 </body>
 </html>
