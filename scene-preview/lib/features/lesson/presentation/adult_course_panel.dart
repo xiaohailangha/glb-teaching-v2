@@ -311,33 +311,13 @@ class ListeningLine extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = controller, thinking = c.automaticState == 'processing';
     final listening = c.automaticReading;
-    final label = c.automaticStarting
-        ? '请在浏览器中允许麦克风'
-        : !c.automaticReading
-        ? '麦克风未开启 · 到设置重试'
-        : thinking
-        ? '正在听懂你的话…'
-        : c.playing
-        ? '麦克风已连接 · 示范结束后评测'
-        : '我在听，直接说就好';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
-          children: [
-            MicWave(
-              level: c.micLevel,
-              active: listening && !c.playing && !thinking,
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                label,
-                style: const TextStyle(fontSize: 14, color: Colors.white60),
-              ),
-            ),
-          ],
+        MicWave(
+          level: c.micLevel,
+          active: listening && !c.playing && !thinking,
         ),
         if (c.liveTranscript.isNotEmpty)
           Padding(
@@ -469,7 +449,7 @@ class _LiveTypingTextState extends State<LiveTypingText> {
 
   @override
   Widget build(BuildContext context) => Text(
-    '${MediaQuery.disableAnimationsOf(context) ? widget.text : shown}${widget.listening ? ' ▍' : ''}',
+    MediaQuery.disableAnimationsOf(context) ? widget.text : shown,
     style: const TextStyle(fontSize: 18, color: Color(0xFFD2E6E2), height: 1.5),
   );
 }

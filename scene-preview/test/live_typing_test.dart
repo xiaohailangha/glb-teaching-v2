@@ -10,13 +10,13 @@ void main() {
         MaterialApp(home: LiveTypingText(text: text, listening: true));
     await tester.pumpWidget(view('I want'));
     await tester.pump(const Duration(milliseconds: 160));
-    expect(find.text('I want ▍'), findsOneWidget);
+    expect(find.text('I want'), findsOneWidget);
     await tester.pumpWidget(view('I went'));
     await tester.pump(const Duration(milliseconds: 160));
-    expect(find.text('I went ▍'), findsOneWidget);
-    expect(find.text('I want ▍'), findsNothing);
+    expect(find.text('I went'), findsOneWidget);
+    expect(find.text('I want'), findsNothing);
     await tester.pump(const Duration(seconds: 2));
-    expect(find.text('I went ▍'), findsOneWidget);
+    expect(find.text('I went'), findsOneWidget);
     await tester.pumpWidget(const SizedBox());
     expect(tester.takeException(), isNull);
   });
