@@ -80,8 +80,8 @@ class CourseLibraryPage extends StatefulWidget {
 class _CourseLibraryPageState extends State<CourseLibraryPage>
     with SingleTickerProviderStateMixin {
   late final AnimationController _position;
-  List<int> _indices = List.generate(courseCatalog.length, (i) => i);
-  String? _type;
+  late List<int> _indices;
+  late String _type;
   bool _opening = false;
   double _stride = 220;
   int get _page => _position.value.round() % _indices.length;
@@ -92,21 +92,31 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     final initial = courseCatalog.indexWhere(
       (c) => c.id == widget.controller.courseId,
     );
+    final type = courseTypes.firstWhere(
+      (type) => type.courseIds.contains(widget.controller.courseId),
+      orElse: () => courseTypes.first,
+    );
+    _type = type.id;
+    _indices = [
+      for (var i = 0; i < courseCatalog.length; i++)
+        if (type.courseIds.contains(courseCatalog[i].id)) i,
+    ];
     _position = AnimationController.unbounded(
       vsync: this,
-      value: (courseCatalog.length * 1000 + math.max(0, initial)).toDouble(),
+      value: (_indices.length * 1000 + math.max(0, _indices.indexOf(initial)))
+          .toDouble(),
     );
   }
 
-  void _filter(CourseType? type) {
-    if (_opening || _type == type?.id) return;
+  void _filter(CourseType type) {
+    if (_opening || _type == type.id) return;
     final previous = _index;
     _position.stop();
     setState(() {
-      _type = type?.id;
+      _type = type.id;
       _indices = [
         for (var i = 0; i < courseCatalog.length; i++)
-          if (type == null || type.courseIds.contains(courseCatalog[i].id)) i,
+          if (type.courseIds.contains(courseCatalog[i].id)) i,
       ];
       _position.value =
           (_indices.length * 1000 + math.max(0, _indices.indexOf(previous)))
@@ -334,6 +344,24 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                       ),
                     ),
                     Expanded(child: _deck()),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4, bottom: 14),
+                      child: Semantics(
+                        label: '当前类型第${_page + 1}节，共${_indices.length}节课程',
+                        child: ExcludeSemantics(
+                          child: Text(
+                            '${(_page + 1).toString().padLeft(2, '0')} / ${_indices.length.toString().padLeft(2, '0')}',
+                            key: const ValueKey('course-position'),
+                            style: const TextStyle(
+                              color: Colors.white70,
+                              fontSize: 12,
+                              letterSpacing: 2,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -355,8 +383,8 @@ class CourseTypeStrip extends StatefulWidget {
     this.enabled = true,
   });
   final List<CourseType> types;
-  final String? selected;
-  final ValueChanged<CourseType?> onSelected;
+  final String selected;
+  final ValueChanged<CourseType> onSelected;
   final bool enabled;
   @override
   State<CourseTypeStrip> createState() => _CourseTypeStripState();
@@ -364,9 +392,15 @@ class CourseTypeStrip extends StatefulWidget {
 
 class _CourseTypeStripState extends State<CourseTypeStrip> {
   final _keys = <String, GlobalKey>{};
+  @override
+  void initState() {
+    super.initState();
+    _reveal();
+  }
+
   void _reveal() => WidgetsBinding.instance.addPostFrameCallback((_) {
     if (!mounted) return;
-    final target = _keys[widget.selected ?? 'all']?.currentContext;
+    final target = _keys[widget.selected]?.currentContext;
     if (target != null) {
       Scrollable.ensureVisible(
         target,
@@ -389,13 +423,13 @@ class _CourseTypeStripState extends State<CourseTypeStrip> {
     scrollDirection: Axis.horizontal,
     child: Row(
       children: [
-        for (final type in <CourseType?>[null, ...widget.types])
+        for (final type in widget.types)
           Padding(
             padding: const EdgeInsets.only(right: 8),
             child: Semantics(
-              selected: widget.selected == type?.id,
+              selected: widget.selected == type.id,
               child: TextButton(
-                key: _keys.putIfAbsent(type?.id ?? 'all', () => GlobalKey()),
+                key: _keys.putIfAbsent(type.id, () => GlobalKey()),
                 onPressed: widget.enabled
                     ? () {
                         widget.onSelected(type);
@@ -403,10 +437,10 @@ class _CourseTypeStripState extends State<CourseTypeStrip> {
                       }
                     : null,
                 style: TextButton.styleFrom(
-                  foregroundColor: widget.selected == type?.id
+                  foregroundColor: widget.selected == type.id
                       ? _night
                       : Colors.white70,
-                  backgroundColor: widget.selected == type?.id
+                  backgroundColor: widget.selected == type.id
                       ? Colors.white.withValues(alpha: .92)
                       : Colors.white.withValues(alpha: .08),
                   minimumSize: const Size(48, 44),
@@ -414,10 +448,10 @@ class _CourseTypeStripState extends State<CourseTypeStrip> {
                   shape: const StadiumBorder(),
                 ),
                 child: Text(
-                  type?.title ?? '全部',
+                  type.title,
                   style: TextStyle(
                     fontSize: 13,
-                    fontWeight: widget.selected == type?.id
+                    fontWeight: widget.selected == type.id
                         ? FontWeight.w700
                         : FontWeight.w500,
                   ),

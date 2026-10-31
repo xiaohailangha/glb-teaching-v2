@@ -91,7 +91,8 @@ void main() {
             .label!;
         expect(activeLabel(), contains('01 · 苹果和香蕉'));
         expect(find.byTooltip('下一课'), findsNothing);
-        expect(find.byKey(const ValueKey('course-position')), findsNothing);
+        expect(find.text('全部'), findsNothing);
+        expect(find.text('01 / 03'), findsOneWidget);
         final deck = find.byKey(const ValueKey('course-deck'));
         final bounds = tester.getRect(deck);
         expect(bounds.width, size.width);
@@ -111,6 +112,7 @@ void main() {
         );
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('02 · 水和饮料'));
+        expect(find.text('02 / 03'), findsOneWidget);
         expect(controller.courseId, 'adult-fruit-v2');
         await tester.tapAt(
           Offset(bounds.center.dx - card.width * .58, bounds.center.dy),
@@ -126,16 +128,19 @@ void main() {
         );
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('02 · 水和饮料'));
+        expect(find.text('02 / 03'), findsOneWidget);
         expect(controller.playing, false);
         await tester.ensureVisible(find.text('描述事物'));
         await tester.tap(find.text('描述事物'));
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('05 · 颜色'));
+        expect(find.text('01 / 03'), findsOneWidget);
         await tester.tapAt(
           Offset(bounds.center.dx + card.width * .58, bounds.center.dy),
         );
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('06 · 大小'));
+        expect(find.text('02 / 03'), findsOneWidget);
         await tester.tapAt(bounds.center);
         await tester.pumpAndSettle();
         expect(controller.courseId, 'adult-sizes-v1');
@@ -144,12 +149,14 @@ void main() {
         await tester.tap(find.text('open'));
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('06 · 大小'));
+        expect(find.text('02 / 03'), findsOneWidget);
         expect(find.byTooltip('全部类型'), findsNothing);
         expect(find.byType(TextField), findsNothing);
         await tester.ensureVisible(find.text('综合复习'));
         await tester.tap(find.text('综合复习'));
         await tester.pumpAndSettle();
         expect(activeLabel(), contains('08 · 按要求拿东西'));
+        expect(find.text('01 / 01'), findsOneWidget);
         await tester.tapAt(
           Offset(bounds.center.dx + card.width * .58, bounds.center.dy),
         );
@@ -181,7 +188,7 @@ void main() {
             width: 320,
             child: CourseTypeStrip(
               types: types,
-              selected: null,
+              selected: 'type1',
               onSelected: (type) => chosen = type,
             ),
           ),
