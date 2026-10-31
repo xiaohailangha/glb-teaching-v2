@@ -3,16 +3,23 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 /// Transparent fireworks over the lesson. No card, scrim, badge or visible text.
-class CourseCelebration extends StatelessWidget {
+class CourseCelebration extends StatefulWidget {
   const CourseCelebration({super.key, required this.message});
   final String message;
+  @override
+  State<CourseCelebration> createState() => _CourseCelebrationState();
+}
+
+class _CourseCelebrationState extends State<CourseCelebration> {
+  // One composition per successful attempt, stable across mic/renderer rebuilds.
+  late final pattern = FireworkPattern.generate(math.Random().nextInt(1 << 30));
   @override
   Widget build(BuildContext context) {
     final reduced = MediaQuery.disableAnimationsOf(context);
     return IgnorePointer(
       child: Semantics(
         liveRegion: true,
-        label: message,
+        label: widget.message,
         child: RepaintBoundary(
           child: TweenAnimationBuilder<double>(
             tween: Tween(begin: 0, end: 1),
@@ -20,7 +27,11 @@ class CourseCelebration extends StatelessWidget {
                 ? Duration.zero
                 : const Duration(milliseconds: 1800),
             builder: (context, t, _) => CustomPaint(
-              painter: CelebrationPainter(t, reduced: reduced),
+              painter: CelebrationPainter(
+                t,
+                pattern: pattern,
+                reduced: reduced,
+              ),
               size: Size.infinite,
             ),
           ),
@@ -30,14 +41,70 @@ class CourseCelebration extends StatelessWidget {
   }
 }
 
+class FireworkBurst {
+  const FireworkBurst({
+    required this.center,
+    required this.start,
+    required this.end,
+    required this.radius,
+    required this.rays,
+    required this.color,
+    required this.rotation,
+    required this.gravity,
+    required this.aspect,
+    required this.seed,
+  });
+  final Offset center;
+  final double start, end, radius, rotation, gravity, aspect, seed;
+  final int rays, color;
+}
+
+class FireworkPattern {
+  const FireworkPattern(this.bursts);
+  final List<FireworkBurst> bursts;
+  factory FireworkPattern.generate(int seed) {
+    final random = math.Random(seed), count = 4 + math.Random(seed).nextInt(2);
+    // Stratified horizontal zones guarantee both sides, then randomize firing order.
+    final zones = List.generate(count, (i) => i)..shuffle(random);
+    return FireworkPattern(
+      List.unmodifiable(
+        List.generate(count, (i) {
+          final x =
+              .10 + .80 * (zones[i] + .2 + random.nextDouble() * .6) / count;
+          final y = .18 + random.nextDouble() * .52;
+          final start = .035 + i * .055 + random.nextDouble() * .035;
+          return FireworkBurst(
+            center: Offset(x, y),
+            start: start,
+            end: .86 + random.nextDouble() * .11,
+            radius: .19 + random.nextDouble() * .095,
+            rays: 44 + random.nextInt(17),
+            color: random.nextInt(4),
+            rotation: random.nextDouble() * math.pi * 2,
+            gravity: .08 + random.nextDouble() * .09,
+            aspect: .74 + random.nextDouble() * .22,
+            seed: random.nextDouble() * 1000,
+          );
+        }),
+      ),
+    );
+  }
+}
+
 class CelebrationPainter extends CustomPainter {
-  const CelebrationPainter(this.t, {this.reduced = false});
+  const CelebrationPainter(
+    this.t, {
+    required this.pattern,
+    this.reduced = false,
+  });
+  final FireworkPattern pattern;
   final double t;
   final bool reduced;
   static const colors = [
     Color(0xFFFFDB9E),
     Color(0xFFC5EEE5),
     Color(0xFFD9DEFF),
+    Color(0xFFFFD9CC),
   ];
 
   void light(
@@ -66,8 +133,8 @@ class CelebrationPainter extends CustomPainter {
       for (var i = 0; i < 7; i++) {
         light(
           canvas,
-          Offset(size.width * (.61 + i * .045), size.height * .23),
-          colors[i % 3],
+          Offset(size.width * (.12 + i * .125), size.height * .23),
+          colors[i % colors.length],
           .6,
           1.7,
         );
@@ -77,17 +144,14 @@ class CelebrationPainter extends CustomPainter {
     if (t <= 0 || t >= 1) return;
     final unit = math.min(size.height, size.width * .55);
     canvas.save();
-    canvas.clipRect(
-      Rect.fromLTWH(size.width * .48, 0, size.width * .52, size.height * .87),
-    );
-    for (var burst = 0; burst < 3; burst++) {
-      final start = .055 + burst * .115;
-      final age = (t - start) / (.84 - burst * .115);
+    canvas.clipRect(Offset.zero & size);
+    for (final burst in pattern.bursts) {
+      final age = (t - burst.start) / (burst.end - burst.start);
       final origin = Offset(
-        size.width * [.64, .88, .77][burst],
-        size.height * [.30, .44, .20][burst],
+        size.width * burst.center.dx,
+        size.height * burst.center.dy,
       );
-      final color = colors[burst];
+      final color = colors[burst.color];
       if (age < 0 && age > -.09) {
         final launch = (age + .09) / .09;
         final head =
@@ -108,14 +172,14 @@ class CelebrationPainter extends CustomPainter {
         continue;
       }
       if (age <= 0 || age >= 1) continue;
-      final count = [76, 64, 56][burst];
-      final radius = unit * [.30, .25, .20][burst];
+      final count = burst.rays;
+      final radius = unit * burst.radius;
       final fade = math.pow(1 - age, .9).toDouble();
       // Short luminous core, then multiple uneven, curved trails and tiny embers.
       light(canvas, origin, color, math.pow(1 - age, 8).toDouble(), 5);
       for (var i = 0; i < count; i++) {
-        final angle = i * math.pi * 2 / count + burst * .47;
-        final hash = math.sin(i * 12.9898 + burst * 78.233) * 43758.5453;
+        final angle = i * math.pi * 2 / count + burst.rotation;
+        final hash = math.sin(i * 12.9898 + burst.seed * 78.233) * 43758.5453;
         final variation = .48 + .52 * (hash - hash.floor());
         final speed = radius * variation;
         Offset point(double a) {
@@ -123,7 +187,8 @@ class CelebrationPainter extends CustomPainter {
           return origin +
               Offset(
                 math.cos(angle) * speed * travel,
-                math.sin(angle) * speed * travel * .85 + unit * .15 * a * a,
+                math.sin(angle) * speed * travel * burst.aspect +
+                    unit * burst.gravity * a * a,
               );
         }
 
@@ -157,5 +222,5 @@ class CelebrationPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(CelebrationPainter old) =>
-      old.t != t || old.reduced != reduced;
+      old.t != t || old.reduced != reduced || old.pattern != pattern;
 }
