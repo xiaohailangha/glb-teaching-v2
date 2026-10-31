@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui' show PointerDeviceKind;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -47,6 +48,11 @@ void main() {
         final controller = LessonController();
         await tester.pumpWidget(
           MaterialApp(
+            builder: (context, child) => MediaQuery(
+              data: MediaQuery.of(context)
+                  .copyWith(disableAnimations: size.width == 320),
+              child: child!,
+            ),
             home: Builder(
               builder: (context) => Scaffold(
                 body: TextButton(
@@ -95,6 +101,27 @@ void main() {
           );
           await tester.pumpAndSettle();
         }
+        // Horizontal browsing is independent of entering a lesson.
+        await tester.dragFrom(
+          tester.getCenter(find.text('颜色')),
+          Offset(size.width >= 650 ? -340 : -230, 0),
+          kind: size.width >= 650
+              ? PointerDeviceKind.mouse
+              : PointerDeviceKind.touch,
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('2 / 4'), findsOneWidget);
+        expect(controller.courseId, 'adult-fruit-v2');
+        expect(controller.playing, false);
+        await tester.dragFrom(
+          tester.getCenter(find.text('大小')),
+          Offset(size.width >= 650 ? 340 : 230, 0),
+          kind: size.width >= 650
+              ? PointerDeviceKind.mouse
+              : PointerDeviceKind.touch,
+        );
+        await tester.pumpAndSettle();
+        expect(find.text('1 / 4'), findsOneWidget);
         await tester.tap(find.text('颜色'));
         await tester.pumpAndSettle();
         expect(controller.courseId, 'adult-colors-v1');

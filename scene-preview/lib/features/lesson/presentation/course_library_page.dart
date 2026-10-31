@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui' show PointerDeviceKind;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -370,105 +371,42 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                 ),
               ),
             ),
-            for (final unit in [1, 2])
-              if (_unit == 0 || _unit == unit)
-                SliverToBoxAdapter(
-                  child: Center(
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 1180),
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(24, 8, 24, 28),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  '0$unit',
-                                  style: const TextStyle(
-                                    color: _muted,
-                                    fontSize: 13,
-                                  ),
-                                ),
-                                const SizedBox(width: 10),
-                                Expanded(
-                                  child: Text(
-                                    unit == 1 ? '我想要什么' : '说清是哪一个',
-                                    style: const TextStyle(
-                                      color: _ink,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ),
-                                const Text(
-                                  '4 节课',
-                                  style: TextStyle(color: _muted, fontSize: 12),
-                                ),
-                              ],
+            SliverToBoxAdapter(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 900),
+                  child: LayoutBuilder(
+                    builder: (context, box) {
+                      final indices = [
+                        for (var i = 0; i < courseCatalog.length; i++)
+                          if (_unit == 0 || i ~/ 4 + 1 == _unit) i,
+                      ];
+                      final fraction = box.maxWidth >= 650 ? .50 : .86;
+                      return FadeTransition(
+                        opacity: _arrival,
+                        child: _CourseDeck(
+                          key: ValueKey('$_unit:$fraction'),
+                          indices: indices,
+                          fraction: fraction,
+                          cardBuilder: (index) => _CourseCard(
+                            index: index,
+                            current: courseCatalog[index].id == current.id,
+                            progress: _progress(courseCatalog[index].id),
+                            started: _records.containsKey(
+                              courseCatalog[index].id,
                             ),
-                            const SizedBox(height: 16),
-                            LayoutBuilder(
-                              builder: (context, constraints) {
-                                final columns = constraints.maxWidth >= 1000
-                                    ? 4
-                                    : constraints.maxWidth >= 650
-                                    ? 3
-                                    : constraints.maxWidth >= 430
-                                    ? 2
-                                    : 1;
-                                return Wrap(
-                                  spacing: 16,
-                                  runSpacing: 20,
-                                  children: [
-                                    for (
-                                      var i = (unit - 1) * 4;
-                                      i < unit * 4;
-                                      i++
-                                    )
-                                      SizedBox(
-                                        width:
-                                            (constraints.maxWidth -
-                                                (columns - 1) * 16) /
-                                            columns,
-                                        child: FadeTransition(
-                                          opacity: CurvedAnimation(
-                                            parent: _arrival,
-                                            curve: Interval(
-                                              (i % 4) * .09,
-                                              1,
-                                              curve: Curves.easeOut,
-                                            ),
-                                          ),
-                                          child: _CourseCard(
-                                            index: i,
-                                            current:
-                                                courseCatalog[i].id ==
-                                                current.id,
-                                            progress: _progress(
-                                              courseCatalog[i].id,
-                                            ),
-                                            started: _records.containsKey(
-                                              courseCatalog[i].id,
-                                            ),
-                                            busy:
-                                                _opening == courseCatalog[i].id,
-                                            onTap: _opening == null
-                                                ? () => _open(courseCatalog[i])
-                                                : null,
-                                          ),
-                                        ),
-                                      ),
-                                  ],
-                                );
-                              },
-                            ),
-                          ],
+                            busy: _opening == courseCatalog[index].id,
+                            onTap: _opening == null
+                                ? () => _open(courseCatalog[index])
+                                : null,
+                          ),
                         ),
-                      ),
-                    ),
+                      );
+                    },
                   ),
                 ),
+              ),
+            ),
             const SliverToBoxAdapter(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(24, 4, 24, 32),
@@ -482,6 +420,192 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
           ],
         ),
       ),
+    );
+  }
+}
+
+/// A finite, snapping deck: browsing never changes the selected lesson.
+class _CourseDeck extends StatefulWidget {
+  const _CourseDeck({
+    super.key,
+    required this.indices,
+    required this.fraction,
+    required this.cardBuilder,
+  });
+  final List<int> indices;
+  final double fraction;
+  final Widget Function(int) cardBuilder;
+  @override
+  State<_CourseDeck> createState() => _CourseDeckState();
+}
+
+class _CourseDeckState extends State<_CourseDeck> {
+  late final PageController _pages = PageController(
+    viewportFraction: widget.fraction,
+  );
+  int _active = 0;
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
+  }
+
+  void _go(int page) {
+    if (page < 0 || page >= widget.indices.length) return;
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _pages.jumpToPage(page);
+    } else {
+      _pages.animateToPage(
+        page,
+        duration: const Duration(milliseconds: 380),
+        curve: Curves.easeOutCubic,
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final reduced = MediaQuery.disableAnimationsOf(context);
+    final index = widget.indices[_active];
+    final textScale = MediaQuery.textScalerOf(context).scale(14) / 14;
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(24, 4, 24, 0),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  index < 4 ? '单元一 · 我想要什么' : '单元二 · 说清是哪一个',
+                  style: const TextStyle(
+                    color: _ink,
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              Text(
+                '${_active + 1} / ${widget.indices.length}',
+                style: const TextStyle(color: _muted, fontSize: 12),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        SizedBox(
+          height: 420 + (textScale - 1).clamp(0, 2) * 200,
+          child: PageView.builder(
+            scrollBehavior: ScrollConfiguration.of(context).copyWith(
+              dragDevices: {
+                PointerDeviceKind.touch,
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.stylus,
+                PointerDeviceKind.trackpad,
+              },
+            ),
+            key: const ValueKey('course-deck'),
+            controller: _pages,
+            itemCount: widget.indices.length,
+            clipBehavior: Clip.none,
+            onPageChanged: (page) => setState(() => _active = page),
+            itemBuilder: (context, page) => AnimatedBuilder(
+              animation: _pages,
+              child: widget.cardBuilder(widget.indices[page]),
+              builder: (context, child) {
+                final position =
+                    _pages.hasClients && _pages.position.hasContentDimensions
+                    ? _pages.page ?? 0
+                    : 0.0;
+                final delta = (page - position).clamp(-1.0, 1.0);
+                final distance = delta.abs();
+                return Transform.translate(
+                  offset: Offset(
+                    reduced ? 0 : -delta * 50,
+                    reduced ? 0 : distance * 18,
+                  ),
+                  child: Transform.scale(
+                    scale: reduced ? 1 : 1 - distance * .12,
+                    child: Transform.rotate(
+                      angle: reduced ? 0 : delta * .025,
+                      child: Opacity(
+                        opacity: reduced ? 1 : 1 - distance * .2,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 18, 8, 16),
+                          child: Align(
+                            alignment: Alignment.topCenter,
+                            child: ExcludeSemantics(
+                              excluding: page != _active,
+                              child: IgnorePointer(
+                                ignoring: page != _active,
+                                child: child,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            IconButton(
+              tooltip: '上一课',
+              onPressed: _active == 0 ? null : () => _go(_active - 1),
+              icon: const Icon(Icons.arrow_back_rounded),
+              color: _ink,
+            ),
+            const SizedBox(width: 8),
+            for (var page = 0; page < widget.indices.length; page++)
+              Semantics(
+                button: true,
+                selected: page == _active,
+                label: '查看第${widget.indices[page] + 1}课',
+                child: InkResponse(
+                  onTap: () => _go(page),
+                  radius: 22,
+                  child: SizedBox(
+                    width: 26,
+                    height: 44,
+                    child: Center(
+                      child: AnimatedContainer(
+                        duration: Duration(milliseconds: reduced ? 0 : 200),
+                        width: page == _active ? 22 : 6,
+                        height: 6,
+                        decoration: BoxDecoration(
+                          color: page == _active
+                              ? _ink
+                              : const Color(0xFFD4DCD2),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            const SizedBox(width: 8),
+            IconButton(
+              tooltip: '下一课',
+              onPressed: _active == widget.indices.length - 1
+                  ? null
+                  : () => _go(_active + 1),
+              icon: const Icon(Icons.arrow_forward_rounded),
+              color: _ink,
+            ),
+          ],
+        ),
+        const Padding(
+          padding: EdgeInsets.only(top: 4, bottom: 20),
+          child: Text(
+            '左右滑动挑选 · 轻触卡片进入课堂',
+            style: TextStyle(color: _muted, fontSize: 11),
+          ),
+        ),
+      ],
     );
   }
 }

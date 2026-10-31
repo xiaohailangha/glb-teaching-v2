@@ -8,3 +8,9 @@
 - Flutter-native fade, hover lift, and press feedback; reduced-motion settings disable these transitions. No GSAP/JavaScript dependency.
 
 Validation: Flutter full suite 85 passing; new course-library tests cover 320×568, 390×844, 844×390 and 1280×900, filtering/selection, no automatic playback, account isolation and malformed records. Static analysis passes. Release build passes. Online scene checks pass (8 checks), including unchanged original entry and independent models.
+
+## Horizontal card deck
+
+The catalog now uses one finite PageView deck with all eight courses; unit filters scope it to four. The active card stays prominent while adjacent cards scale to 88%, shift down 18 pixels, overlap slightly and rotate by at most 0.025 radians. Snap scrolling, previous/next controls and selectable page dots provide equivalent navigation. Browsing never selects or plays a lesson, and off-center cards cannot accidentally activate. Reduced motion removes decorative transforms and uses immediate programmatic page changes. The deck adapts its viewport fraction between narrow and wide layouts.
+
+Focused tests cover swiping forward/back, the displayed position, unit filtering, selecting the correct course, and no playback during browsing at four viewport sizes (including reduced motion at 320 pixels).
