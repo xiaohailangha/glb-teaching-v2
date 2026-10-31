@@ -111,7 +111,7 @@ class AdultCoursePanel extends StatelessWidget {
               style: TextStyle(fontSize: 28, color: Colors.white),
             ),
             const SizedBox(height: 12),
-            const Text('轻触人物继续，或到设置调整课程。'),
+            const Text('轻触人物继续，或从「课程」选择下一课。'),
           ] else if (summary) ...[
             Text(
               c.address('本节课我们就学到这里。'),

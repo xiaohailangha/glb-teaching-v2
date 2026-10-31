@@ -201,6 +201,29 @@ class LessonController extends ChangeNotifier {
   Map<String, dynamic>? courseCheckpoint;
   bool get adultCourse => courseMode && courseStyle == 'adult';
   Future<void> _saveQueue = Future.value();
+
+  /// Read only this learner's persisted checkpoints, after pending writes finish.
+  Future<Map<String, Map<String, dynamic>>> readCourseCheckpoints() async {
+    await _saveQueue;
+    final prefs = await SharedPreferences.getInstance();
+    final result = <String, Map<String, dynamic>>{};
+    for (final course in courseCatalog) {
+      try {
+        final raw = prefs.getString(_storageKey(course.id));
+        if (raw == null) continue;
+        final data = jsonDecode(raw);
+        if (data is Map &&
+            data['version'] == 1 &&
+            data['courseId'] == course.id) {
+          result[course.id] = Map<String, dynamic>.from(data);
+        }
+      } catch (_) {
+        // One damaged local record must not hide the other courses.
+      }
+    }
+    return result;
+  }
+
   Future<void> loadCourseProgress() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -400,7 +423,12 @@ class LessonController extends ChangeNotifier {
           automaticStarting = false;
         }
         automaticFeedback = message['message']?.toString() ?? '';
-        final outcome = {'success':'pass','correction':'correct','uncertain':'uncertain','error':'uncertain'}[message['state']];
+        final outcome = {
+          'success': 'pass',
+          'correction': 'correct',
+          'uncertain': 'uncertain',
+          'error': 'uncertain',
+        }[message['state']];
         if (outcome != null) onLearningEvent?.call(outcome);
         automaticState = message['state']?.toString() ?? automaticState;
         if (message['sentence'] is String) {
@@ -501,7 +529,9 @@ class LessonController extends ChangeNotifier {
           final nextStep = message['step']?.toString() ?? '';
           final changedStep = courseStep != nextStep;
           courseStep = nextStep;
-          if (changedStep) onLearningEvent?.call(courseStep == 'summary' ? 'finish' : 'stage');
+          if (changedStep) {
+            onLearningEvent?.call(courseStep == 'summary' ? 'finish' : 'stage');
+          }
           hideAnswer = message['hideAnswer'] == true;
           if (!hideAnswer && phase != 'phoneme') {
             expose(courseDisplay);
@@ -819,7 +849,7 @@ class LessonController extends ChangeNotifier {
     coursePaused = false;
     courseMode = true;
     courseStyle = style;
-    onLearningEvent?.call('start', {'restart':restart});
+    onLearningEvent?.call('start', {'restart': restart});
     emotionMode = false;
     index = 0;
     playing = true;

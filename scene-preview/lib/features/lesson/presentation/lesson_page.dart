@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../application/learning_sync.dart';
 
 import '../../../core/avatar/avatar_view.dart';
@@ -6,6 +7,7 @@ import '../application/lesson_controller.dart';
 import '../../settings/application/app_settings.dart';
 import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
+import 'course_library_page.dart';
 import 'lesson_navigation.dart';
 import '../../auth/auth_api.dart';
 
@@ -66,6 +68,18 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     }
   }
 
+  Future<void> _courses() async {
+    if (controller.adultCourse && !controller.coursePaused) {
+      controller.pauseCourse();
+    }
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute(
+        fullscreenDialog: true,
+        builder: (_) => CourseLibraryPage(controller: controller),
+      ),
+    );
+  }
+
   void _settings() {
     if (controller.adultCourse && !controller.coursePaused) {
       controller.pauseCourse();
@@ -102,120 +116,140 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
   Widget build(BuildContext context) => Listener(
     onPointerDown: (_) => learningSync.interact(),
     child: Scaffold(
-    backgroundColor: Colors.transparent,
-    body: DecoratedBox(
-      decoration: widget.sharedController != null
-          ? const BoxDecoration()
-          : const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color(0xFF34393D), Color(0xFF777E80)],
-              ),
-            ),
-      child: LayoutBuilder(
-        builder: (context, box) => Stack(
-          fit: StackFit.expand,
-          children: [
-            if (widget.sharedController == null)
-              Positioned.fill(child: AvatarView(controller: controller)),
-            Positioned(
-              left: 0,
-              top: 0,
-              bottom: 0,
-              width: box.maxWidth * .44,
-              child: Semantics(
-                button: true,
-                label: '点击人物，开始或重听示范',
-                child: GestureDetector(
-                  behavior: HitTestBehavior.opaque,
-                  onTap: _character,
+      backgroundColor: Colors.transparent,
+      body: DecoratedBox(
+        decoration: widget.sharedController != null
+            ? const BoxDecoration()
+            : const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color(0xFF34393D), Color(0xFF777E80)],
                 ),
               ),
-            ),
-            Positioned(
-              top: 12,
-              right: 18,
-              child: SafeArea(
-                child: IconButton(
-                  tooltip: '设置',
-                  onPressed: _settings,
-                  icon: const Icon(Icons.tune_rounded, color: Colors.white70),
+        child: LayoutBuilder(
+          builder: (context, box) => Stack(
+            fit: StackFit.expand,
+            children: [
+              if (widget.sharedController == null)
+                Positioned.fill(child: AvatarView(controller: controller)),
+              Positioned(
+                left: 0,
+                top: 0,
+                bottom: 0,
+                width: box.maxWidth * .44,
+                child: Semantics(
+                  button: true,
+                  label: '点击人物，开始或重听示范',
+                  child: GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: _character,
+                  ),
                 ),
               ),
-            ),
-            Positioned(
-              left: box.maxWidth * .45,
-              right: box.maxWidth * .04,
-              top: box.maxHeight * .10,
-              bottom: 62,
-              child: AnimatedBuilder(
+              Positioned(
+                top: 12,
+                right: 18,
+                child: SafeArea(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      FilledButton.icon(
+                        onPressed: _courses,
+                        style: FilledButton.styleFrom(
+                          backgroundColor: const Color(0xFFE1EFE6),
+                          foregroundColor: const Color(0xFF253D35),
+                          minimumSize: const Size(96, 44),
+                        ),
+                        icon: const Icon(Icons.auto_stories_outlined, size: 20),
+                        label: const Text('课程'),
+                      ),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        tooltip: '设置',
+                        onPressed: _settings,
+                        icon: const Icon(
+                          Icons.tune_rounded,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: box.maxWidth * .45,
+                right: box.maxWidth * .04,
+                top: box.maxHeight * .10,
+                bottom: 62,
+                child: AnimatedBuilder(
+                  animation: controller,
+                  builder: (context, _) => controller.adultCourse
+                      ? AdultCoursePanel(controller: controller)
+                      : Center(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "${controller.address('你好')}\n${controller.activeCourse.goal}",
+                                style: const TextStyle(
+                                  fontSize: 36,
+                                  height: 1.3,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              Text(
+                                controller.ready ? '轻触人物，开始学习' : '人物正在准备…',
+                                style: const TextStyle(
+                                  color: Color(0xFFBDE5DD),
+                                  fontSize: 18,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              const Text(
+                                '首次允许麦克风，之后直接开口。\n练习语音用于在线识别与发音评测。',
+                                style: TextStyle(
+                                  color: Colors.white60,
+                                  fontSize: 14,
+                                  height: 1.6,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                ),
+              ),
+              Positioned(
+                right: 20,
+                bottom: 8,
+                child: SafeArea(
+                  child: AnimatedBuilder(
+                    animation: controller,
+                    builder: (context, _) =>
+                        controller.adultCourse && !controller.coursePaused
+                        ? LessonNavigation(controller: controller)
+                        : const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+              AnimatedBuilder(
                 animation: controller,
-                builder: (context, _) => controller.adultCourse
-                    ? AdultCoursePanel(controller: controller)
+                builder: (context, _) => controller.error == null
+                    ? const SizedBox.shrink()
                     : Center(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "${controller.address('你好')}\n${controller.activeCourse.goal}",
-                              style: const TextStyle(
-                                fontSize: 36,
-                                height: 1.3,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            const SizedBox(height: 20),
-                            Text(
-                              controller.ready ? '轻触人物，开始学习' : '人物正在准备…',
-                              style: const TextStyle(
-                                color: Color(0xFFBDE5DD),
-                                fontSize: 18,
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            const Text(
-                              '首次允许麦克风，之后直接开口。\n练习语音用于在线识别与发音评测。',
-                              style: TextStyle(
-                                color: Colors.white60,
-                                fontSize: 14,
-                                height: 1.6,
-                              ),
-                            ),
-                          ],
+                        child: Text(
+                          controller.error!,
+                          style: const TextStyle(color: Colors.white),
                         ),
                       ),
               ),
-            ),
-            Positioned(
-              right: 20,
-              bottom: 8,
-              child: SafeArea(
-                child: AnimatedBuilder(
-                  animation: controller,
-                  builder: (context, _) =>
-                      controller.adultCourse && !controller.coursePaused
-                      ? LessonNavigation(controller: controller)
-                      : const SizedBox.shrink(),
-                ),
-              ),
-            ),
-            AnimatedBuilder(
-              animation: controller,
-              builder: (context, _) => controller.error == null
-                  ? const SizedBox.shrink()
-                  : Center(
-                      child: Text(
-                        controller.error!,
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                    ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     ),
-  ));
+  );
 }

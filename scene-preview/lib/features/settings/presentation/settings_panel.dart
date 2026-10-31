@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../application/app_settings.dart';
 import '../../lesson/application/lesson_controller.dart';
 import '../../auth/auth_api.dart';
-import '../../lesson/domain/course_catalog.dart';
 
 class SettingsPanel extends StatelessWidget {
   const SettingsPanel({
@@ -47,36 +46,6 @@ class SettingsPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            for (final (index, course) in courseCatalog.indexed) ...[
-              if (index == 0 || index == 4)
-                Padding(
-                  padding: EdgeInsets.only(top: index == 0 ? 0 : 16, bottom: 6),
-                  child: Text(
-                    index == 0 ? '单元一 · 我想要什么' : '单元二 · 说清是哪一个',
-                    style: const TextStyle(color: Colors.white),
-                  ),
-                ),
-              ListTile(
-                dense: true,
-                titleTextStyle: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                subtitleTextStyle: const TextStyle(
-                  color: Colors.white70,
-                  fontSize: 12,
-                ),
-                title: Text(course.title),
-                subtitle: Text(course.goal),
-                trailing: course.id == lesson.courseId
-                    ? const Icon(Icons.check, color: Color(0xFFBDE5DD))
-                    : null,
-                onTap: () {
-                  Navigator.pop(context);
-                  lesson.selectCourse(course.id);
-                },
-              ),
-            ],
             const SizedBox(height: 12),
             _NicknameField(lesson: lesson),
             if (onLeave != null)
@@ -109,7 +78,7 @@ class SettingsPanel extends StatelessWidget {
               ),
             const SizedBox(height: 16),
             const Text(
-              '课程与麦克风',
+              '练习与麦克风',
               style: TextStyle(fontSize: 16, color: Colors.white),
             ),
             Wrap(
