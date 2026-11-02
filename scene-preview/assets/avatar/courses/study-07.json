@@ -1,0 +1,482 @@
+{
+  "id": "study-07-v1",
+  "title": "07 · 描述学习计划",
+  "category": "study",
+  "goal": "说明学习内容、时间和简单目标",
+  "prerequisites": [
+    "study-06-v1"
+  ],
+  "scenario": "你向朋友介绍示范计划：每天学英语、晚上练习，目标是开口说英语。",
+  "stages": [
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "07 · 描述学习计划",
+      "text": "说明学习内容、时间和简单目标",
+      "clip": "c96_99d01d1883e475befbd1"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "learn",
+      "text": "学习",
+      "clip": "c96_584fe24aa9871ad17f7c"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "learn",
+      "text": "学习",
+      "clip": "c96_4d546e933a77709268dc",
+      "speechText": "learn"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "learn",
+      "text": "学习",
+      "practiceClip": "c96_4d546e933a77709268dc",
+      "speechText": "learn",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "practice",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "practice",
+      "text": "练习",
+      "clip": "c96_6535aa540f98c29b6ffc"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "practice",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "practice",
+      "text": "练习",
+      "clip": "c96_3d507c3f440a6ec085c0",
+      "speechText": "practice"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "practice",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "practice",
+      "text": "练习",
+      "practiceClip": "c96_3d507c3f440a6ec085c0",
+      "speechText": "practice",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "every",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "every",
+      "text": "每一个",
+      "clip": "c96_501a54186c2aa94a98b0"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "every",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "every",
+      "text": "每一个",
+      "clip": "c96_646dd819d8fdb4cc25d5",
+      "speechText": "every"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "every",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "every",
+      "text": "每一个",
+      "practiceClip": "c96_646dd819d8fdb4cc25d5",
+      "speechText": "every",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "every day",
+      "text": "每天",
+      "clip": "c96_4b1d8dab0782bc9f86a1",
+      "speechText": "every day"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "every day",
+      "text": "每天",
+      "practiceClip": "c96_4b1d8dab0782bc9f86a1",
+      "speechText": "every day",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "practice English",
+      "text": "练习英语",
+      "clip": "c96_9403ed5963a8a76f21ac",
+      "speechText": "practice English"
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "practice English",
+      "text": "练习英语",
+      "practiceClip": "c96_9403ed5963a8a76f21ac",
+      "speechText": "practice English",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I learn English every day.",
+      "text": "我每天学英语。",
+      "clip": "c96_57b5cbb5252826b8dd1d",
+      "speechText": "I learn English every day."
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I learn English every day.",
+      "text": "我每天学英语。",
+      "practiceClip": "c96_57b5cbb5252826b8dd1d",
+      "speechText": "I learn English every day.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I practice in the evening.",
+      "text": "我晚上练习。",
+      "clip": "c96_d2c2c8685f3551afe8e5",
+      "speechText": "I practice in the evening."
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I practice in the evening.",
+      "text": "我晚上练习。",
+      "practiceClip": "c96_d2c2c8685f3551afe8e5",
+      "speechText": "I practice in the evening.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I want to speak English.",
+      "text": "我想说英语。",
+      "clip": "c96_dd6207279b5a87945f07",
+      "speechText": "I want to speak English."
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I want to speak English.",
+      "text": "我想说英语。",
+      "practiceClip": "c96_dd6207279b5a87945f07",
+      "speechText": "I want to speak English.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_4d546e933a77709268dc",
+      "hide": true
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_4d546e933a77709268dc",
+      "speechText": "learn",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "练习"
+        },
+        {
+          "id": "answer_2",
+          "label": "每一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "学习"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_3d507c3f440a6ec085c0",
+      "hide": true
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "practice",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_3d507c3f440a6ec085c0",
+      "speechText": "practice",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "每一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "学习"
+        },
+        {
+          "id": "answer_1",
+          "label": "练习"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "every day",
+      "text": "不看英文，请表达：每天",
+      "practiceClip": "c96_4b1d8dab0782bc9f86a1",
+      "speechText": "every day",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "practice English",
+      "text": "不看英文，请表达：练习英语",
+      "practiceClip": "c96_9403ed5963a8a76f21ac",
+      "speechText": "practice English",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I learn English every day.",
+      "text": "情境练习：你向朋友介绍示范计划：每天学英语、晚上练习，目标是开口说英语。\n这一句请表达：我每天学英语。",
+      "practiceClip": "c96_57b5cbb5252826b8dd1d",
+      "speechText": "I learn English every day.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I practice in the evening.",
+      "text": "情境练习：你向朋友介绍示范计划：每天学英语、晚上练习，目标是开口说英语。\n这一句请表达：我晚上练习。",
+      "practiceClip": "c96_d2c2c8685f3551afe8e5",
+      "speechText": "I practice in the evening.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I want to speak English.",
+      "text": "情境练习：你向朋友介绍示范计划：每天学英语、晚上练习，目标是开口说英语。\n这一句请表达：我想说英语。",
+      "practiceClip": "c96_dd6207279b5a87945f07",
+      "speechText": "I want to speak English.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述学习计划",
+      "word": "learn",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

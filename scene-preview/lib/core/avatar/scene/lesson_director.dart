@@ -220,7 +220,7 @@ class TeachingDirector {
             chapter: current.chapter,
             clip: 'fruit_correct',
             display: current.display,
-            picture: current.wordId,
+            picture: current.picture,
             text: helped.contains(current.id)
                 ? '这次选对了。稍后再试一次。'
                 : '听出来了！换一个再试试。',

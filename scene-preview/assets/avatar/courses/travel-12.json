@@ -1,0 +1,425 @@
+{
+  "id": "travel-12-v1",
+  "title": "12 · 城市出行综合练习",
+  "category": "travel",
+  "goal": "完成问路、确认路线和礼貌回应",
+  "prerequisites": [
+    "travel-11-v1"
+  ],
+  "scenario": "你先问车站位置，再复述直走左转的路线，最后在车站买一张票。",
+  "stages": [
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "12 · 城市出行综合练习",
+      "text": "完成问路、确认路线和礼貌回应",
+      "clip": "c96_b2d0e4c4eb0a86fb00b9"
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "review_word_0",
+      "phase": "recall",
+      "display": "station",
+      "text": "回想学过的表达：车站",
+      "practiceClip": "c96_25ac8894b130b8ba8640",
+      "speechText": "station",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "review_word_1",
+      "phase": "recall",
+      "display": "left",
+      "text": "回想学过的表达：左边；向左",
+      "practiceClip": "c96_d6ccf5df5a26694243d3",
+      "speechText": "left",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "review_word_2",
+      "phase": "recall",
+      "display": "ticket",
+      "text": "回想学过的表达：票",
+      "practiceClip": "c96_87f60ef9585059cba812",
+      "speechText": "ticket",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "go straight",
+      "text": "直走",
+      "clip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight"
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "go straight",
+      "text": "直走",
+      "practiceClip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "one ticket",
+      "text": "一张票",
+      "clip": "c96_fe680a2fffc40566ccf0",
+      "speechText": "one ticket"
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "one ticket",
+      "text": "一张票",
+      "practiceClip": "c96_fe680a2fffc40566ccf0",
+      "speechText": "one ticket",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Excuse me, where is the station?",
+      "text": "请问，车站在哪里？",
+      "clip": "c96_95f63309cdbe9b21234c",
+      "speechText": "Excuse me, where is the station?"
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Excuse me, where is the station?",
+      "text": "请问，车站在哪里？",
+      "practiceClip": "c96_95f63309cdbe9b21234c",
+      "speechText": "Excuse me, where is the station?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Go straight and turn left.",
+      "text": "直走然后左转。",
+      "clip": "c96_04cbc5322a785e2c51a6",
+      "speechText": "Go straight and turn left."
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Go straight and turn left.",
+      "text": "直走然后左转。",
+      "practiceClip": "c96_04cbc5322a785e2c51a6",
+      "speechText": "Go straight and turn left.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "One ticket, please.",
+      "text": "请给我一张票。",
+      "clip": "c96_5dab0f57ee52f2481573",
+      "speechText": "One ticket, please."
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "One ticket, please.",
+      "text": "请给我一张票。",
+      "practiceClip": "c96_5dab0f57ee52f2481573",
+      "speechText": "One ticket, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_25ac8894b130b8ba8640",
+      "hide": true
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_25ac8894b130b8ba8640",
+      "speechText": "station",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "左边"
+        },
+        {
+          "id": "answer_2",
+          "label": "票"
+        },
+        {
+          "id": "answer_0",
+          "label": "车站"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_d6ccf5df5a26694243d3",
+      "hide": true
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "left",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_d6ccf5df5a26694243d3",
+      "speechText": "left",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "票"
+        },
+        {
+          "id": "answer_0",
+          "label": "车站"
+        },
+        {
+          "id": "answer_1",
+          "label": "左边"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "go straight",
+      "text": "不看英文，请表达：直走",
+      "practiceClip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "one ticket",
+      "text": "不看英文，请表达：一张票",
+      "practiceClip": "c96_fe680a2fffc40566ccf0",
+      "speechText": "one ticket",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Excuse me, where is the station?",
+      "text": "情境练习：你先问车站位置，再复述直走左转的路线，最后在车站买一张票。\n这一句请表达：请问，车站在哪里？",
+      "practiceClip": "c96_95f63309cdbe9b21234c",
+      "speechText": "Excuse me, where is the station?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Go straight and turn left.",
+      "text": "情境练习：你先问车站位置，再复述直走左转的路线，最后在车站买一张票。\n这一句请表达：直走然后左转。",
+      "practiceClip": "c96_04cbc5322a785e2c51a6",
+      "speechText": "Go straight and turn left.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "One ticket, please.",
+      "text": "情境练习：你先问车站位置，再复述直走左转的路线，最后在车站买一张票。\n这一句请表达：请给我一张票。",
+      "practiceClip": "c96_5dab0f57ee52f2481573",
+      "speechText": "One ticket, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "城市出行综合练习",
+      "word": "station",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

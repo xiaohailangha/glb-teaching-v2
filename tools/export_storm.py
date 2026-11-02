@@ -2,13 +2,13 @@
 Keep source rigs intact. Bake their evaluated faces, original material colors,
 and constrained body joints into the app's existing animation contract.
 """
-import bpy, pathlib, sys, json, re, math, ast
+import bpy, pathlib, sys, json, re, math
 import numpy as np
 from mathutils import Vector
 from mathutils.kdtree import KDTree
 root=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(root/'tools'))
-from performance_skeleton import TRACKS,sample
+from storm_motion import TRACKS,sample,body
 from storm_materials import bake_material
 r=bpy.data.objects['RIG-storm']; out=root/'work/storm';out.mkdir(exist_ok=True,parents=True)
 if r.animation_data:
@@ -167,7 +167,7 @@ for name in names:
  parent=r.data.bones[name].parent
  while parent and parent.name not in names:parent=parent.parent
  hair.append({'name':name,'parent':parent.name if parent and 'Hair' in parent.name else None})
-(root/'assets/avatar/models/storm-rig.json').write_text(json.dumps({'hair':hair,'eyes':['FK-Eye.L','FK-Eye.R'],'head':'DEF-Head'},indent=2))
+(root/'scene-preview/assets/avatar/models/storm-rig.json').write_text(json.dumps({'hair':hair,'eyes':['FK-Eye.L','FK-Eye.R'],'head':'DEF-Head'},indent=2))
 er=r.evaluated_get(dg);rest={n:er.pose.bones[n].matrix.copy() for n in names}
 arm=bpy.data.armatures.new('Storm_Runtime_Skeleton');actor=bpy.data.objects.new('Storm_Performance',arm);col.objects.link(actor);actor.matrix_world=r.matrix_world.copy()
 for o in bpy.context.selected_objects:o.select_set(False)
@@ -207,9 +207,7 @@ for src in sources:
 
 # Reauthor the established performance on Storm's body controls, preserving
 # evaluated constraints rather than copying Snow's mesh/skeleton transforms.
-bodydata=None
-for node in ast.parse((root/'tools/build_emotions.py').read_text()).body:
- if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='body' for t in node.targets):bodydata=ast.literal_eval(node.value)
+bodydata=body
 bind={n:actor.data.bones[n].matrix_local.copy() for n in names}
 hidden={o:o.hide_viewport for o in bpy.context.scene.objects if o.type=='MESH'}
 for o in hidden:o.hide_viewport=True
@@ -262,7 +260,7 @@ for o in col.objects:o.hide_render=False;o.select_set(True)
 bpy.context.view_layer.objects.active=actor
 scene.frame_start=0;scene.frame_end=72*fps
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'storm-runtime.blend'))
-dest=root/'assets/avatar/models/storm-performance.glb'
+dest=root/'scene-preview/assets/avatar/models/storm-performance.glb'
 bpy.ops.export_scene.gltf(filepath=str(dest),export_format='GLB',use_selection=True,export_animations=True,export_animation_mode='NLA_TRACKS',export_force_sampling=False,export_morph=True,export_morph_normal=True,export_skins=True,export_yup=True,export_cameras=False,export_lights=False)
 from pack_glb import pack
 stats['packing']=pack(dest,'Storm')

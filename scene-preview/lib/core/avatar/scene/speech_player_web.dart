@@ -1,3 +1,5 @@
+import 'course_resources.dart';
+
 import 'dart:async';
 import 'dart:js_interop';
 
@@ -10,7 +12,7 @@ class SpeechPlayer {
   SpeechPlayer() {
     _audio
       ..preload = 'auto'
-      ..src = _assetUrl('assets/avatar/audio/silence.wav');
+      ..src = _assetUrl('assets/bootstrap/silence.wav');
     _audio.addEventListener('ended', _onEnded);
     _audio.load();
   }
@@ -23,6 +25,7 @@ class SpeechPlayer {
   }).toJS;
   bool _unlocked = false;
   bool _disposed = false;
+  int _sourceGeneration = 0;
   final _assetBlobs = <String, String>{};
 
   Future<void> preloadAssets(
@@ -82,9 +85,24 @@ class SpeechPlayer {
     });
   }
 
+  Future<void> setCourseAsset(String path) async {
+    final generation = ++_sourceGeneration;
+    if (!_assetBlobs.containsKey(path)) {
+      final data = await CourseResources.instance.load(path);
+      if (_disposed || generation != _sourceGeneration) return;
+      _assetBlobs[path] = Uri.dataFromBytes(
+        data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes),
+        mimeType: 'audio/wav',
+      ).toString();
+    }
+    if (_disposed || generation != _sourceGeneration) return;
+    await setUrl(_assetBlobs[path]!);
+  }
+
   Future<void> setAsset(String path) =>
       setUrl(_assetBlobs[path] ?? _assetUrl(path));
   Future<void> setUrl(String url) async {
+    ++_sourceGeneration;
     _audio.pause();
     _audio.src = url;
     _audio.load();
@@ -101,12 +119,14 @@ class SpeechPlayer {
   }
 
   Future<void> stop() async {
+    ++_sourceGeneration;
     _audio.pause();
     _audio.currentTime = 0;
   }
 
   Future<void> dispose() async {
     _disposed = true;
+    ++_sourceGeneration;
     _audio.pause();
     _audio.removeEventListener('ended', _onEnded);
     _audio.removeAttribute('src');

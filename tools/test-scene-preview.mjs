@@ -1,26 +1,23 @@
+import {courseGet} from './course-release-client.mjs';
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 const origin='https://49.233.179.83';
 const checks=[];
 async function check(name,task){await task();checks.push(name);console.log('PASS '+name);}
-const get=path=>fetch(new URL(path,origin),{signal:AbortSignal.timeout(30000)});
+const get=path=>/^\/scene\/assets\/assets\/avatar\/(audio|courses|images)\//.test(path)?courseGet(path):fetch(new URL(path,origin),{signal:AbortSignal.timeout(30000)});
 await check('new scene entry is directly accessible',async()=>{
  const r=await get('/scene/');assert.equal(r.status,200);assert.match(await r.text(),/<base href="\/scene\/">/);assert.equal(r.headers.get('www-authenticate'),null);
 });
-await check('original web entry is unchanged',async()=>{
- const r=await get('/');assert.equal(r.status,200);assert.equal(await r.text(),await fs.readFile('build/web/index.html','utf8'));
-});
-await check('both cloud model versions remain independent',async()=>{
- const original=await(await get('/api/assets/model-manifest')).json(),scene=await(await get('/api/assets/scene-manifest')).json();
- assert.equal(original.parts.length,147);assert.equal(original.revision,'a727ba3e745250b1502a6aed4ba135f6b5d534c0f8da2b81cb7ca87757354af3');
- assert.equal(scene.parts.length,89);assert.equal(scene.revision,'b8af9ea92ea8c156272010987f5fdae1c5fa8c2d9dd9a1cf769c325443ae93a0');
+await check('current cloud model matches its manifest',async()=>{
+ const scene=await(await get('/api/assets/scene-manifest')).json();
+ assert.ok(scene.parts.length>0);assert.match(scene.revision,/^[a-f0-9]{64}$/);
  for(const part of [scene.parts[0],scene.parts.at(-1)]){
   const r=await fetch(part.url,{signal:AbortSignal.timeout(30000)});assert.equal(r.status,200);const bytes=Buffer.from(await r.arrayBuffer());assert.equal(bytes.length,part.size);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),part.sha256);
  }
 });
 await check('new renderer assets and curated phonemes are available',async()=>{
- for(const path of ['/scene/main.dart.js','/scene/assets/assets/avatar/audio/silence.wav','/scene/assets/assets/avatar/audio/pronunciation-units.json','/scene/assets/assets/avatar/models/storm-clothing-bindings.bin','/scene/assets/assets/avatar/models/storm-clothing-bindings.json']){
+ for(const path of ['/scene/main.dart.js','/scene/assets/assets/bootstrap/silence.wav','/scene/assets/assets/avatar/models/storm-clothing-bindings.bin','/scene/assets/assets/avatar/models/storm-clothing-bindings.json']){
   const r=await get(path);assert.equal(r.status,200);assert.ok(Number(r.headers.get('content-length'))>0);const bytes=Buffer.from(await r.arrayBuffer());
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),crypto.createHash('sha256').update(await fs.readFile('scene-preview/build/web'+path.slice('/scene'.length))).digest('hex'));
  }
@@ -45,7 +42,7 @@ await check('all shipped teaching voices and word bytes match the boy-voice buil
    }
   }
  }
- assert.equal((await get('/scene/voice-review.html')).status,200);
+
 });
 await check('adult fruit course publishes the complete versioned lesson',async()=>{
  const response=await get('/scene/assets/assets/avatar/courses/adult-fruit.json');

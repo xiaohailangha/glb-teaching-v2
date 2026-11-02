@@ -1,3 +1,4 @@
+import {getContentStore,previewToken} from './content-store.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -7,7 +8,7 @@ import {getAuthStore,learnerCookie} from './auth-http.mjs';
 import {projectRoot,configured} from './tencent-speech.mjs';
 const json=(res,status,data)=>res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}).end(JSON.stringify(data));
 const error=(status,message)=>{throw Object.assign(Error(message),{status});};
-export function createLearningHttp(store,auth,{secure=true,catalog=JSON.parse(fs.readFileSync(path.join(projectRoot,'data/course-catalog.json'),'utf8')),bridgeToken=''}={}){
+export function createLearningHttp(store,auth,{secure=true,catalog=JSON.parse(fs.readFileSync(path.join(projectRoot,'data/course-catalog.json'),'utf8')),bridgeToken='',content=null}={}){
  function users(){return auth.db.prepare('SELECT u.*,b.user_id IS NOT NULL AS blocked FROM users u LEFT JOIN blocked_users b ON b.user_id=u.id ORDER BY created DESC').all().map(row=>({...auth.profile(row),created:row.created,blocked:!!row.blocked}));}
  function range(url){const today=beijingDay(store.now()),from=url.searchParams.get('from')||today,to=url.searchParams.get('to')||today;
  if(![from,to].every(v=>/^\d{4}-\d{2}-\d{2}$/.test(v)&&!isNaN(Date.parse(v)))||from>to||Date.parse(to)-Date.parse(from)>366*86400000)error(400,'请选择一年以内的有效日期范围');return {from,to,start:Date.parse(from+'T00:00:00+08:00'),end:Date.parse(to+'T00:00:00+08:00')+86400000};}
@@ -25,10 +26,12 @@ export function createLearningHttp(store,auth,{secure=true,catalog=JSON.parse(fs
   const origin=`${secure?'https':'http'}://${req.headers.host}`;
   if(req.headers['sec-fetch-site']==='cross-site'||(req.headers.origin&&req.headers.origin!==origin)||(!['GET','HEAD'].includes(req.method)&&req.headers.origin!==origin))error(403,'请从本站发起请求');
  }
+ if(content)catalog=content.catalog();
  const input=['POST','PATCH'].includes(req.method)?await body(req):{};
  if(learning){
  const user=auth.current(learnerCookie(req));if(!user)error(401,'请登录后同步');
  const route=url.pathname.slice('/api/auth/learning/'.length);
+ if(route==='summary'&&req.method==='GET'){json(res,200,store.summary(user.id,catalog));return true;}
  if(route==='batch'&&req.method==='POST'){json(res,200,store.ingest(user.id,input,catalog));return true;}
  if(route==='state'&&req.method==='GET'){json(res,200,{rows:store.db.prepare('SELECT course,payload,updated,revision FROM checkpoints WHERE user_id=?').all(user.id).map(r=>({...r,payload:JSON.parse(r.payload)}))});return true;}
  if(route==='state'&&req.method==='POST'){
@@ -42,7 +45,10 @@ export function createLearningHttp(store,auth,{secure=true,catalog=JSON.parse(fs
  }
  const route=url.pathname.slice('/internal/management/v1/'.length);
  if(!['GET','POST'].includes(req.method))error(405,'请求方法无效');
- if(route==='catalog'){json(res,200,catalog);return true;}
+ if(route==='catalog'){json(res,200,content?await content.managementCatalog():catalog);return true;}
+ if(route==='storage'){json(res,200,content?.status()||{active:null,releases:[]});return true;}
+ if(route==='content/activate'&&req.method==='POST'){if(!content)error(503,'课程存储未配置');json(res,200,content.activate(input.id,input.expected));return true;}
+ if(route==='content/preview'&&req.method==='POST'){json(res,200,{token:previewToken(bridgeToken)});return true;}
  if(route==='overview'||route==='users'||route==='daily'||route==='events'){
  const {from,to,start,end}=range(url),all=users(),id=url.searchParams.get('user')||'',daily=store.daily(from,to,id),names=new Map(all.map(u=>[u.id,u]));
  const events=store.db.prepare('SELECT * FROM events WHERE at>=? AND at<? AND (?=\'\' OR user_id=?) ORDER BY at DESC LIMIT 10000').all(start,end,id,id).map(e=>({...e,nickname:names.get(e.user_id)?.nickname||'未知用户',detail:JSON.parse(e.detail)}));
@@ -71,14 +77,14 @@ export function createLearningHttp(store,auth,{secure=true,catalog=JSON.parse(fs
  }
  const {from,to,start,end}=range(url);json(res,200,{user,daily:store.daily(from,to,id),checkpoints:store.db.prepare('SELECT course,payload,updated FROM checkpoints WHERE user_id=?').all(id).map(r=>({...r,payload:JSON.parse(r.payload)})),intervals:store.db.prepare('SELECT session_id,start,end,active,course FROM activity WHERE user_id=? AND end>? AND start<? ORDER BY start DESC LIMIT 500').all(id,start,end)});return true;
  }
- if(route==='system'){json(res,200,{release:catalog.release,database:'SQLite · WAL',speechConfigured:configured(),smsReady:auth.configured(),started:Number(store.db.prepare('SELECT value FROM meta WHERE key=\'started\'').get().value),backup:Number(store.db.prepare('SELECT value FROM meta WHERE key=\'backup\'').get()?.value)||null,backupError:store.backupError||null,backupScope:'服务端本机备份；异地备份尚未配置',courseCount:catalog.courses.filter(c=>c.status==='published').length});return true;}
+ if(route==='system'){json(res,200,{release:catalog.release,database:'SQLite · WAL',speechConfigured:configured(),smsReady:auth.configured(),started:Number(store.db.prepare('SELECT value FROM meta WHERE key=\'started\'').get().value),backup:Number(store.db.prepare('SELECT value FROM meta WHERE key=\'backup\'').get()?.value)||null,backupError:store.backupError||null,backupScope:content?.status().storage.backup?.lastSuccess?'本机快照与独立 COS 加密备份':'本机快照；云备份尚未完成',storage:content?.status().storage||null,courseCount:catalog.courses.filter(c=>c.status==='published').length});return true;}
 
  error(404,'接口不存在');
  }catch(e){json(res,e.status||503,{error:e.status?e.message:'学习服务暂时不可用'});}return true;
  };
  handler.maintenance=async()=>{
  try{await store.backup();await backup(auth.db,path.join(store.directory,'backups',`accounts-${beijingDay(store.now())}.sqlite`));
- fs.copyFileSync(path.join(projectRoot,'work/auth-private/encryption.key'),path.join(store.directory,'backups','encryption.key'));
+ fs.copyFileSync(path.join(auth.directory,'encryption.key'),path.join(store.directory,'backups','encryption.key'));
  store.db.prepare('INSERT OR REPLACE INTO meta VALUES(?,?)').run('backup',String(store.now()));store.backupError=null;
  }catch{store.backupError='最近备份未完整完成';}
  };
@@ -90,7 +96,7 @@ export async function learningHttp(req,res,url){
  try{if(!handler){
  const file=path.join(projectRoot,'.secrets/management-bridge.json');
  const bridgeToken=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).token:'';
- handler=createLearningHttp(new LearningStore(),getAuthStore(),{secure:process.env.AUTH_SECURE_COOKIE!=='0',bridgeToken});
+ handler=createLearningHttp(new LearningStore(),getAuthStore(),{secure:process.env.AUTH_SECURE_COOKIE!=='0',bridgeToken,content:getContentStore()});
  setInterval(()=>handler.maintenance(),86400000).unref();setTimeout(()=>handler.maintenance(),5000).unref();
  }return await handler(req,res,url);}catch{json(res,503,{error:'学习服务尚未准备好'});return true;}
 }

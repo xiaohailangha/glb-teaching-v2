@@ -3,8 +3,9 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
-export const projectRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-export const cacheDir=path.join(projectRoot,'work/tencent-cache');
+import {projectRoot,cacheRoot} from './storage-paths.mjs';
+export {projectRoot} from './storage-paths.mjs';
+export const cacheDir=path.join(cacheRoot,'tts');
 export const versions={tts:'超自然大模型 2.0 / stream_wsv2',asr:'实时识别 V2 / 16k_zh_en_2.0',assessment:'智聆口语评测（新版） / soe/api'};
 export function credentials(){
   let c={};const file=path.join(projectRoot,'.secrets/tencent.json');
@@ -94,9 +95,10 @@ export async function assess(wav,{text,language='en',strictness=2,signal}={}){
     if(m.final===1)lastResult?finish(null,lastResult):finish(new Error('评测未返回有效结果'));
   }});
 }
-export async function recognize(wav,{signal,onEvent}={}){
+export async function recognize(wav,{signal,onEvent,engine='16k_zh_en_2.0'}={}){
+  if(!['16k_zh_en_2.0','16k_en_large','16k_en'].includes(engine))throw new Error('Unsupported recognition engine');
   const {pcm,duration}=validateAudio(wav),c=auth(),now=Math.floor(Date.now()/1000);
-  const params={secretid:c.secretId,timestamp:now,expired:now+300,nonce:nonce(),engine_model_type:'16k_zh_en_2.0',voice_id:crypto.randomUUID(),voice_format:1,filter_dirty:0,filter_modal:0,filter_punc:0,filter_empty_result:0,convert_num_mode:0};
+  const params={secretid:c.secretId,timestamp:now,expired:now+300,nonce:nonce(),engine_model_type:engine,voice_id:crypto.randomUUID(),voice_format:1,filter_dirty:0,filter_modal:0,filter_punc:0,filter_empty_result:0,convert_num_mode:0};
   let sent=false,timer;const sentences=new Map();
   try{return await exchange(signedUrl(`asr.cloud.tencent.com/asr/v2/${c.appId}`,params,c.secretKey),{signal,timeout:duration*1000+25000,onMessage:(m,ws,finish)=>{
     onEvent?.(m);

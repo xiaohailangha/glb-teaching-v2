@@ -1,0 +1,482 @@
+{
+  "id": "home-05-v1",
+  "title": "05 · 物品在哪里",
+  "category": "home",
+  "goal": "询问物品位置并使用 in 回答",
+  "prerequisites": [
+    "home-04-v1"
+  ],
+  "scenario": "你正在找钥匙，先询问位置，再分别练习钥匙在包里和盒子里的回答。",
+  "stages": [
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "05 · 物品在哪里",
+      "text": "询问物品位置并使用 in 回答",
+      "clip": "c96_4af17577ee1f814cf3d8"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_f24852007d2cf1f2b524"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "bag",
+      "text": "包",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "key",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "key",
+      "text": "钥匙",
+      "clip": "c96_8bc921f9dd832253cdf5"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "key",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "key",
+      "text": "钥匙",
+      "clip": "c96_691793115a9c53081366",
+      "speechText": "key"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "key",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "key",
+      "text": "钥匙",
+      "practiceClip": "c96_691793115a9c53081366",
+      "speechText": "key",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "box",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "box",
+      "text": "盒子",
+      "clip": "c96_14e185579fe282b97ce2"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "box",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "box",
+      "text": "盒子",
+      "clip": "c96_3ee6133c3bd2f66c84e3",
+      "speechText": "box"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "box",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "box",
+      "text": "盒子",
+      "practiceClip": "c96_3ee6133c3bd2f66c84e3",
+      "speechText": "box",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "in the bag",
+      "text": "在包里",
+      "clip": "c96_b93cfd9dd329e15d601a",
+      "speechText": "in the bag"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "in the bag",
+      "text": "在包里",
+      "practiceClip": "c96_b93cfd9dd329e15d601a",
+      "speechText": "in the bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "in the box",
+      "text": "在盒子里",
+      "clip": "c96_b773e776a3837523ffcd",
+      "speechText": "in the box"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "in the box",
+      "text": "在盒子里",
+      "practiceClip": "c96_b773e776a3837523ffcd",
+      "speechText": "in the box",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Where is my key?",
+      "text": "我的钥匙在哪里？",
+      "clip": "c96_a17bc5b0dea7b5da22a0",
+      "speechText": "Where is my key?"
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Where is my key?",
+      "text": "我的钥匙在哪里？",
+      "practiceClip": "c96_a17bc5b0dea7b5da22a0",
+      "speechText": "Where is my key?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "It is in the bag.",
+      "text": "它在包里。",
+      "clip": "c96_d3891031b294893c7559",
+      "speechText": "It is in the bag."
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "It is in the bag.",
+      "text": "它在包里。",
+      "practiceClip": "c96_d3891031b294893c7559",
+      "speechText": "It is in the bag.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "The key is in the box.",
+      "text": "钥匙在盒子里。",
+      "clip": "c96_7b3b9b2a73a2476123ab",
+      "speechText": "The key is in the box."
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "The key is in the box.",
+      "text": "钥匙在盒子里。",
+      "practiceClip": "c96_7b3b9b2a73a2476123ab",
+      "speechText": "The key is in the box.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "hide": true
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "钥匙"
+        },
+        {
+          "id": "answer_2",
+          "label": "盒子"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_691793115a9c53081366",
+      "hide": true
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "key",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_691793115a9c53081366",
+      "speechText": "key",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "盒子"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        },
+        {
+          "id": "answer_1",
+          "label": "钥匙"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "in the bag",
+      "text": "不看英文，请表达：在包里",
+      "practiceClip": "c96_b93cfd9dd329e15d601a",
+      "speechText": "in the bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "in the box",
+      "text": "不看英文，请表达：在盒子里",
+      "practiceClip": "c96_b773e776a3837523ffcd",
+      "speechText": "in the box",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Where is my key?",
+      "text": "情境练习：你正在找钥匙，先询问位置，再分别练习钥匙在包里和盒子里的回答。\n这一句请表达：我的钥匙在哪里？",
+      "practiceClip": "c96_a17bc5b0dea7b5da22a0",
+      "speechText": "Where is my key?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "It is in the bag.",
+      "text": "情境练习：你正在找钥匙，先询问位置，再分别练习钥匙在包里和盒子里的回答。\n这一句请表达：它在包里。",
+      "practiceClip": "c96_d3891031b294893c7559",
+      "speechText": "It is in the bag.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "The key is in the box.",
+      "text": "情境练习：你正在找钥匙，先询问位置，再分别练习钥匙在包里和盒子里的回答。\n这一句请表达：钥匙在盒子里。",
+      "practiceClip": "c96_7b3b9b2a73a2476123ab",
+      "speechText": "The key is in the box.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "物品在哪里",
+      "word": "bag",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

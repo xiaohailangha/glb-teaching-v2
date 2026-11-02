@@ -1,0 +1,425 @@
+{
+  "id": "daily-12-v1",
+  "title": "12 · 我的一天综合练习",
+  "category": "daily",
+  "goal": "整合时间、动作和一天的顺序",
+  "prerequisites": [
+    "daily-11-v1"
+  ],
+  "scenario": "根据示范日程，不看英文说出七点起床、八点上班、晚上阅读。",
+  "stages": [
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "12 · 我的一天综合练习",
+      "text": "整合时间、动作和一天的顺序",
+      "clip": "c96_bf267715ab276dfb04a2"
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "review_word_0",
+      "phase": "recall",
+      "display": "morning",
+      "text": "回想学过的表达：早晨",
+      "practiceClip": "c96_08ddeb6786d6b8dd8b68",
+      "speechText": "morning",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "review_word_1",
+      "phase": "recall",
+      "display": "work",
+      "text": "回想学过的表达：工作",
+      "practiceClip": "c96_579733ff6f80edbf816f",
+      "speechText": "work",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "review_word_2",
+      "phase": "recall",
+      "display": "evening",
+      "text": "回想学过的表达：晚上",
+      "practiceClip": "c96_9467612f595e343021a7",
+      "speechText": "evening",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "at seven",
+      "text": "在七点",
+      "clip": "c96_046350df9fbce24670d0",
+      "speechText": "at seven"
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "at seven",
+      "text": "在七点",
+      "practiceClip": "c96_046350df9fbce24670d0",
+      "speechText": "at seven",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "after work",
+      "text": "下班后",
+      "clip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work"
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "after work",
+      "text": "下班后",
+      "practiceClip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I get up at seven.",
+      "text": "我七点起床。",
+      "clip": "c96_026c690ef19d5e071553",
+      "speechText": "I get up at seven."
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I get up at seven.",
+      "text": "我七点起床。",
+      "practiceClip": "c96_026c690ef19d5e071553",
+      "speechText": "I get up at seven.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I go to work at eight.",
+      "text": "我八点去上班。",
+      "clip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight."
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I go to work at eight.",
+      "text": "我八点去上班。",
+      "practiceClip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I read in the evening.",
+      "text": "我晚上阅读。",
+      "clip": "c96_1bfb0370b5bab4d93a03",
+      "speechText": "I read in the evening."
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I read in the evening.",
+      "text": "我晚上阅读。",
+      "practiceClip": "c96_1bfb0370b5bab4d93a03",
+      "speechText": "I read in the evening.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_08ddeb6786d6b8dd8b68",
+      "hide": true
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_08ddeb6786d6b8dd8b68",
+      "speechText": "morning",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "工作"
+        },
+        {
+          "id": "answer_2",
+          "label": "晚上"
+        },
+        {
+          "id": "answer_0",
+          "label": "早晨"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_579733ff6f80edbf816f",
+      "hide": true
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "work",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_579733ff6f80edbf816f",
+      "speechText": "work",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "晚上"
+        },
+        {
+          "id": "answer_0",
+          "label": "早晨"
+        },
+        {
+          "id": "answer_1",
+          "label": "工作"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "at seven",
+      "text": "不看英文，请表达：在七点",
+      "practiceClip": "c96_046350df9fbce24670d0",
+      "speechText": "at seven",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "after work",
+      "text": "不看英文，请表达：下班后",
+      "practiceClip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I get up at seven.",
+      "text": "情境练习：根据示范日程，不看英文说出七点起床、八点上班、晚上阅读。\n这一句请表达：我七点起床。",
+      "practiceClip": "c96_026c690ef19d5e071553",
+      "speechText": "I get up at seven.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I go to work at eight.",
+      "text": "情境练习：根据示范日程，不看英文说出七点起床、八点上班、晚上阅读。\n这一句请表达：我八点去上班。",
+      "practiceClip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I read in the evening.",
+      "text": "情境练习：根据示范日程，不看英文说出七点起床、八点上班、晚上阅读。\n这一句请表达：我晚上阅读。",
+      "practiceClip": "c96_1bfb0370b5bab4d93a03",
+      "speechText": "I read in the evening.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "我的一天综合练习",
+      "word": "morning",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

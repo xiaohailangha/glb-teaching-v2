@@ -1,0 +1,782 @@
+[
+  {
+    "id": "food-01-v1",
+    "asset": "food-01",
+    "order": 1,
+    "title": "认识水果并表达想要",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "认识三种水果，用完整表达说明想要哪一种",
+    "vocabulary": [
+      {
+        "text": "apple",
+        "meaning": "苹果"
+      },
+      {
+        "text": "banana",
+        "meaning": "香蕉"
+      },
+      {
+        "text": "orange",
+        "meaning": "橙子"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "an apple",
+        "meaning": "一个苹果"
+      },
+      {
+        "text": "a banana",
+        "meaning": "一根香蕉"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "This is an apple.",
+        "meaning": "这是一个苹果。"
+      },
+      {
+        "text": "This is a banana.",
+        "meaning": "这是一根香蕉。"
+      },
+      {
+        "text": "I want an orange.",
+        "meaning": "我想要一个橙子。"
+      }
+    ],
+    "scenario": "先向朋友介绍苹果和香蕉，再在水果摊说明自己想要一个橙子。",
+    "prerequisites": [
+      "introductions-12-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "singular plural and countability",
+        "scenario roles and target responses",
+        "category progression and retrieval"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "新编课程，替换原八节测试课；数量练习保留完整复数词尾，商品描述按数量、大小、颜色、名词顺序。"
+    },
+    "coverTitle": "Fresh\nfruit."
+  },
+  {
+    "id": "food-02-v1",
+    "asset": "food-02",
+    "order": 2,
+    "title": "选择日常饮品",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用 some 表达想要水、牛奶或茶",
+    "vocabulary": [
+      {
+        "text": "water",
+        "meaning": "水"
+      },
+      {
+        "text": "milk",
+        "meaning": "牛奶"
+      },
+      {
+        "text": "tea",
+        "meaning": "茶"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "some water",
+        "meaning": "一些水"
+      },
+      {
+        "text": "some milk",
+        "meaning": "一些牛奶"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want some water.",
+        "meaning": "我想要一些水。"
+      },
+      {
+        "text": "I want some milk.",
+        "meaning": "我想要一些牛奶。"
+      },
+      {
+        "text": "I want some tea.",
+        "meaning": "我想要一些茶。"
+      }
+    ],
+    "scenario": "分别扮演想喝水、牛奶和茶的三位顾客，说清各自的选择。",
+    "prerequisites": [
+      "food-01-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "singular plural and countability",
+        "scenario roles and target responses",
+        "category progression and retrieval"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "新编课程，替换原八节测试课；数量练习保留完整复数词尾，商品描述按数量、大小、颜色、名词顺序。"
+    },
+    "coverTitle": "Everyday\ndrinks."
+  },
+  {
+    "id": "food-03-v1",
+    "asset": "food-03",
+    "order": 3,
+    "title": "早餐选择",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说出早餐食物并表达自己的选择",
+    "vocabulary": [
+      {
+        "text": "breakfast",
+        "meaning": "早餐"
+      },
+      {
+        "text": "egg",
+        "meaning": "鸡蛋"
+      },
+      {
+        "text": "bread",
+        "meaning": "面包"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "an egg",
+        "meaning": "一个鸡蛋"
+      },
+      {
+        "text": "some bread",
+        "meaning": "一些面包"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want an egg.",
+        "meaning": "我想要一个鸡蛋。"
+      },
+      {
+        "text": "I want some bread.",
+        "meaning": "我想要一些面包。"
+      },
+      {
+        "text": "I have eggs for breakfast.",
+        "meaning": "我早餐吃鸡蛋。"
+      }
+    ],
+    "scenario": "早餐桌上有鸡蛋和面包，请先说想要一个鸡蛋，再说想要一些面包。",
+    "prerequisites": [
+      "food-02-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Breakfast\ntime."
+  },
+  {
+    "id": "food-04-v1",
+    "asset": "food-04",
+    "order": 4,
+    "title": "米饭与面条",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "区分米饭与面条并表达午餐选择",
+    "vocabulary": [
+      {
+        "text": "rice",
+        "meaning": "米饭"
+      },
+      {
+        "text": "noodles",
+        "meaning": "面条"
+      },
+      {
+        "text": "lunch",
+        "meaning": "午餐"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "some rice",
+        "meaning": "一些米饭"
+      },
+      {
+        "text": "some noodles",
+        "meaning": "一些面条"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want some rice.",
+        "meaning": "我想要一些米饭。"
+      },
+      {
+        "text": "I want some noodles.",
+        "meaning": "我想要一些面条。"
+      },
+      {
+        "text": "I have rice for lunch.",
+        "meaning": "我午餐吃米饭。"
+      }
+    ],
+    "scenario": "午餐时，你先想要一些米饭，再改为一些面条，请分别把两个选择说完整。",
+    "prerequisites": [
+      "food-03-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Rice\n& noodles."
+  },
+  {
+    "id": "food-05-v1",
+    "asset": "food-05",
+    "order": 5,
+    "title": "面包与三明治",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "表达可数与不可数食物的数量",
+    "vocabulary": [
+      {
+        "text": "sandwich",
+        "meaning": "三明治"
+      },
+      {
+        "text": "cheese",
+        "meaning": "奶酪"
+      },
+      {
+        "text": "bread",
+        "meaning": "面包"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "a sandwich",
+        "meaning": "一个三明治"
+      },
+      {
+        "text": "some cheese",
+        "meaning": "一些奶酪"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want a sandwich.",
+        "meaning": "我想要一个三明治。"
+      },
+      {
+        "text": "I want some cheese.",
+        "meaning": "我想要一些奶酪。"
+      },
+      {
+        "text": "I want a cheese sandwich.",
+        "meaning": "我想要一个奶酪三明治。"
+      }
+    ],
+    "scenario": "你在柜台点一个奶酪三明治，请把食物种类说完整，而不只说三明治。",
+    "prerequisites": [
+      "food-04-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Bread\n& bites."
+  },
+  {
+    "id": "food-06-v1",
+    "asset": "food-06",
+    "order": 6,
+    "title": "蔬菜与水果",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "认识蔬果并表达想吃什么",
+    "vocabulary": [
+      {
+        "text": "carrot",
+        "meaning": "胡萝卜"
+      },
+      {
+        "text": "tomato",
+        "meaning": "番茄"
+      },
+      {
+        "text": "orange",
+        "meaning": "橙子"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "a carrot",
+        "meaning": "一根胡萝卜"
+      },
+      {
+        "text": "an orange",
+        "meaning": "一个橙子"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want a carrot.",
+        "meaning": "我想要一根胡萝卜。"
+      },
+      {
+        "text": "I want a tomato.",
+        "meaning": "我想要一个番茄。"
+      },
+      {
+        "text": "I want an orange.",
+        "meaning": "我想要一个橙子。"
+      }
+    ],
+    "scenario": "你在挑选食物，请分别提出想要一根胡萝卜、一个番茄和一个橙子。",
+    "prerequisites": [
+      "food-05-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Fruit\n& veggies."
+  },
+  {
+    "id": "food-07-v1",
+    "asset": "food-07",
+    "order": 7,
+    "title": "鸡肉与鱼肉",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "在餐食中表达肉类选择",
+    "vocabulary": [
+      {
+        "text": "chicken",
+        "meaning": "鸡肉"
+      },
+      {
+        "text": "fish",
+        "meaning": "鱼肉；鱼"
+      },
+      {
+        "text": "dinner",
+        "meaning": "晚餐"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "some chicken",
+        "meaning": "一些鸡肉"
+      },
+      {
+        "text": "some fish",
+        "meaning": "一些鱼肉"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want some chicken.",
+        "meaning": "我想要一些鸡肉。"
+      },
+      {
+        "text": "I want some fish.",
+        "meaning": "我想要一些鱼肉。"
+      },
+      {
+        "text": "I have fish for dinner.",
+        "meaning": "我晚餐吃鱼。"
+      }
+    ],
+    "scenario": "晚餐时，你想选鱼肉而不是鸡肉。先练两种表达，再说自己的指定选择。",
+    "prerequisites": [
+      "food-06-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Chicken\nor fish?"
+  },
+  {
+    "id": "food-08-v1",
+    "asset": "food-08",
+    "order": 8,
+    "title": "冷饮与热饮",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "把冷热要求加到饮品中",
+    "vocabulary": [
+      {
+        "text": "hot",
+        "meaning": "热的"
+      },
+      {
+        "text": "cold",
+        "meaning": "冷的"
+      },
+      {
+        "text": "juice",
+        "meaning": "果汁"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "hot tea",
+        "meaning": "热茶"
+      },
+      {
+        "text": "cold water",
+        "meaning": "冷水"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I want hot tea.",
+        "meaning": "我想要热茶。"
+      },
+      {
+        "text": "I want cold water.",
+        "meaning": "我想要冷水。"
+      },
+      {
+        "text": "I want some juice.",
+        "meaning": "我想要一些果汁。"
+      }
+    ],
+    "scenario": "分别扮演想要热茶、冷水和果汁的顾客，说清自己的饮品要求。",
+    "prerequisites": [
+      "food-07-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Hot\nor cold?"
+  },
+  {
+    "id": "food-09-v1",
+    "asset": "food-09",
+    "order": 9,
+    "title": "表达食物喜好",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明喜欢和不喜欢的食物",
+    "vocabulary": [
+      {
+        "text": "like",
+        "meaning": "喜欢"
+      },
+      {
+        "text": "love",
+        "meaning": "很喜欢"
+      },
+      {
+        "text": "food",
+        "meaning": "食物"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "like apples",
+        "meaning": "喜欢苹果"
+      },
+      {
+        "text": "do not like",
+        "meaning": "不喜欢"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I like apples.",
+        "meaning": "我喜欢苹果。"
+      },
+      {
+        "text": "I do not like milk.",
+        "meaning": "我不喜欢牛奶。"
+      },
+      {
+        "text": "I love noodles.",
+        "meaning": "我很喜欢面条。"
+      }
+    ],
+    "scenario": "朋友问你的口味，请说喜欢苹果、不喜欢牛奶，并且很喜欢面条。",
+    "prerequisites": [
+      "food-08-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Food\nI like."
+  },
+  {
+    "id": "food-10-v1",
+    "asset": "food-10",
+    "order": 10,
+    "title": "简单点餐",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "礼貌地点餐并结束本轮点单",
+    "vocabulary": [
+      {
+        "text": "menu",
+        "meaning": "菜单"
+      },
+      {
+        "text": "order",
+        "meaning": "点餐；订单"
+      },
+      {
+        "text": "ready",
+        "meaning": "准备好的"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the menu",
+        "meaning": "菜单"
+      },
+      {
+        "text": "ready to order",
+        "meaning": "准备好点餐"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Can I have the menu, please?",
+        "meaning": "请给我菜单，好吗？"
+      },
+      {
+        "text": "I would like some rice, please.",
+        "meaning": "我想要一些米饭，谢谢。"
+      },
+      {
+        "text": "That is all, thank you.",
+        "meaning": "就这些，谢谢。"
+      }
+    ],
+    "scenario": "你在餐厅先要菜单，再点米饭，最后告诉服务员已经点完了。",
+    "prerequisites": [
+      "food-09-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Ready\nto order."
+  },
+  {
+    "id": "food-11-v1",
+    "asset": "food-11",
+    "order": 11,
+    "title": "说明不想要的配料",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用 without 表达明确的配料要求",
+    "vocabulary": [
+      {
+        "text": "sugar",
+        "meaning": "食糖"
+      },
+      {
+        "text": "salt",
+        "meaning": "食盐"
+      },
+      {
+        "text": "without",
+        "meaning": "不添加；没有"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "without sugar",
+        "meaning": "不加糖"
+      },
+      {
+        "text": "without salt",
+        "meaning": "不加盐"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Tea without sugar, please.",
+        "meaning": "请给我不加糖的茶。"
+      },
+      {
+        "text": "Rice without salt, please.",
+        "meaning": "请给我不加盐的米饭。"
+      },
+      {
+        "text": "No milk, please.",
+        "meaning": "请不要加牛奶。"
+      }
+    ],
+    "scenario": "分别练习点不加糖的茶、不加盐的米饭，以及说明饮品不加牛奶。",
+    "prerequisites": [
+      "food-10-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "No sugar,\nplease."
+  },
+  {
+    "id": "food-12-v1",
+    "asset": "food-12",
+    "order": 12,
+    "title": "餐厅综合练习",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "整合点餐、饮品要求与结束表达",
+    "vocabulary": [
+      {
+        "text": "menu",
+        "meaning": "菜单"
+      },
+      {
+        "text": "rice",
+        "meaning": "米饭"
+      },
+      {
+        "text": "tea",
+        "meaning": "茶"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "hot tea",
+        "meaning": "热茶"
+      },
+      {
+        "text": "without sugar",
+        "meaning": "不加糖"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I would like some rice, please.",
+        "meaning": "我想要一些米饭，谢谢。"
+      },
+      {
+        "text": "Hot tea without sugar, please.",
+        "meaning": "请给我不加糖的热茶。"
+      },
+      {
+        "text": "That is all, thank you.",
+        "meaning": "就这些，谢谢。"
+      }
+    ],
+    "scenario": "完成一轮点单：一些米饭、一杯不加糖的热茶，然后礼貌地结束点单。",
+    "prerequisites": [
+      "food-11-v1"
+    ],
+    "review": true,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "At the\nrestaurant."
+  }
+]

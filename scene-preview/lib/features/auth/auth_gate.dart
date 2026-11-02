@@ -1,3 +1,5 @@
+import '../../core/avatar/scene/course_resources.dart';
+
 import 'dart:async';
 import 'dart:math' as math;
 
@@ -8,6 +10,7 @@ import 'package:flutter/services.dart';
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
 import '../lesson/application/learning_sync.dart';
+import '../lesson/application/app_session_clock.dart';
 import 'entry_design.dart';
 import 'world_browser_stub.dart'
     if (dart.library.js_interop) 'world_browser_web.dart';
@@ -43,6 +46,7 @@ class _AuthGateState extends State<AuthGate> {
       nameFocus = FocusNode();
   bool loading = true, busy = false, smsReady = false, inLesson = false;
   int step = 0, cooldown = 0;
+  int lastInputStep = 0;
   double slideDirection = 1;
   bool revealingPhone = false;
   DateTime? resendAt, challengeUntil, proofUntil;
@@ -79,8 +83,17 @@ class _AuthGateState extends State<AuthGate> {
       smsReady = results[0]['smsReady'] == true;
       testMode = results[0]['testMode'] == true;
       authReady = true;
+      if (Uri.base.queryParameters['adminPreview'] == '1' &&
+          Uri.base.queryParameters['previewToken'] != null) {
+        pendingGuest = true;
+        waitingForScene = true;
+        step = 4;
+        unawaited(_prepareContent());
+      }
       if (results[1]['user'] is Map) {
         user = LearnerAccount.fromJson(results[1]['user'] as Map);
+        AppSessionClock.begin(user!.id);
+        unawaited(_prepareContent());
       }
     } catch (_) {
       error = '连接未完成，请重试';
@@ -103,7 +116,23 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
+  Future<void> _prepareContent() async {
+    if (!widget.prepareScene) return;
+    try {
+      await CourseResources.instance.initialize(
+        previewToken: Uri.base.queryParameters['previewToken'],
+      );
+    } catch (_) {
+      if (mounted) {
+        shared.handle({'event':'error','message':'课程资源暂时未能加载，请重试'});
+        setState(() {});
+      }
+    }
+  }
+
   void _go(int value, {bool backwards = false}) {
+    if (value == 4) unawaited(_prepareContent());
+    if (value == 4 && user != null) AppSessionClock.begin(user!.id);
     final transferFocus =
         value != 4 &&
         (phoneFocus.hasFocus || codeFocus.hasFocus || nameFocus.hasFocus);
@@ -112,6 +141,7 @@ class _AuthGateState extends State<AuthGate> {
       revealingPhone = step == 0 && value == 2;
       slideDirection = backwards ? -1 : 1;
       step = value;
+      if (value != 4) lastInputStep = value;
       error = '';
     });
     if (transferFocus) {
@@ -266,13 +296,19 @@ class _AuthGateState extends State<AuthGate> {
       });
       return;
     }
-    if (guest || Uri.base.queryParameters['adminPreview'] == '1') user = null;
+    final preview = Uri.base.queryParameters['adminPreview'] == '1';
+    if (guest || preview) user = null;
     if (user != null) await restoreCloudLearning(user!.id);
     await shared.bindAccount(
-      id: user?.id ?? '',
-      name: user?.nickname,
+      id: preview ? 'admin-preview' : user?.id ?? '',
+      name: preview ? '老师' : user?.nickname,
       saveName: user == null ? null : api.rename,
     );
+    if (preview) {
+      final course = Uri.base.queryParameters['course'];
+      if (course != null) await shared.selectCourse(course);
+      shared.courseCheckpoint = null;
+    }
     if (!kIsWeb) {
       await SystemChrome.setPreferredOrientations(const [
         DeviceOrientation.landscapeLeft,
@@ -291,8 +327,9 @@ class _AuthGateState extends State<AuthGate> {
     // Resource events notify before the controller updates its fields.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted || inLesson) return;
-      if (step == 0 && authReady && shared.scenePresented && !busy) {
+      if (step == 0 && authReady && !busy) {
         if (user != null) {
+          if (!shared.scenePresented) return;
           _go(4);
           _enterLesson();
         } else {
@@ -307,6 +344,7 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   void _retryScene() {
+    if (user != null || pendingGuest) unawaited(_prepareContent());
     if (!authReady) {
       setState(() {
         loading = true;
@@ -325,6 +363,7 @@ class _AuthGateState extends State<AuthGate> {
     shared.stop();
     setLessonMode(false);
     if (user != null) await api.logout();
+    AppSessionClock.end();
     if (!kIsWeb) {
       await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
     }
@@ -377,31 +416,32 @@ class _AuthGateState extends State<AuthGate> {
     body: Stack(
       fit: StackFit.expand,
       children: [
-        if (widget.prepareScene)
-          Positioned.fill(
-            child: AvatarView(
-              key: ValueKey(sceneAttempt),
-              controller: shared,
-              welcome: !inLesson,
+        Positioned.fill(
+          child: _pageSlide(
+            incoming: true,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                if (widget.prepareScene)
+                  AvatarView(key: ValueKey(sceneAttempt), controller: shared),
+                if (inLesson)
+                  LessonPage(
+                    key: ValueKey(user?.id ?? 'guest'),
+                    account: user,
+                    auth: api,
+                    onLeave: _leave,
+                    sharedController: shared,
+                  ),
+              ],
             ),
           ),
-        if (inLesson)
-          Positioned.fill(
-            child: LessonPage(
-              key: ValueKey(user?.id ?? 'guest'),
-              account: user,
-              auth: api,
-              onLeave: _leave,
-              sharedController: shared,
-            ),
-          ),
+        ),
         IgnorePointer(
           ignoring: inLesson,
           child: ExcludeSemantics(
             excluding: inLesson,
-            child: AnimatedOpacity(
-              opacity: inLesson ? 0 : 1,
-              duration: _duration(500),
+            child: _pageSlide(
+              incoming: false,
               child: TickerMode(
                 enabled: !inLesson,
                 child: ColoredBox(
@@ -413,18 +453,16 @@ class _AuthGateState extends State<AuthGate> {
                         maintainBottomViewPadding: true,
                         child: LayoutBuilder(
                           builder: (context, box) {
-                            final guided = step != 0 && step != 4;
+                            final guided =
+                                step != 0 && (step != 4 || lastInputStep != 0);
                             final h = box.maxHeight;
                             final compact = h < 600;
-                            final gap = compact ? 16.0 : 24.0;
+                            final gap = compact ? 32.0 : 48.0;
                             const identityHeight = 104.0;
-                            final formCoreHeight = 24 + gap + 48 + gap + 48;
+                            const formCoreHeight = 24.0 + 12 + 48 + 20 + 48;
                             final panelHeight = formCoreHeight + 48;
                             final groupHeight =
-                                identityHeight +
-                                gap +
-                                formCoreHeight -
-                                (compact ? 0 : 48);
+                                identityHeight + gap + formCoreHeight;
                             final groupTop = math.max(
                               8.0,
                               (h - groupHeight) / 2,
@@ -618,6 +656,22 @@ class _AuthGateState extends State<AuthGate> {
     ),
   );
 
+  Widget _pageSlide({required bool incoming, required Widget child}) =>
+      TweenAnimationBuilder<double>(
+        tween: Tween(begin: 0, end: inLesson ? 1 : 0),
+        duration: _duration(750),
+        curve: Curves.easeInOutCubic,
+        child: child,
+        builder: (context, progress, child) => FractionalTranslation(
+          key: ValueKey(incoming ? 'lesson-page-slide' : 'entry-page-slide'),
+          translation: Offset(
+            0,
+            incoming ? (inLesson ? 1 - progress : 0) : -progress,
+          ),
+          child: child,
+        ),
+      );
+
   Duration _duration(int ms) => MediaQuery.disableAnimationsOf(context)
       ? Duration.zero
       : Duration(milliseconds: ms);
@@ -631,9 +685,10 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   Widget _form(bool compact, {bool keyboardCompact = false}) {
-    final isPhone = step == 0 || step == 2,
-        isCode = step == 3,
-        isName = step == 1;
+    final displayStep = step == 4 ? lastInputStep : step;
+    final isPhone = displayStep == 0 || displayStep == 2,
+        isCode = displayStep == 3,
+        isName = displayStep == 1;
     final controller = isPhone ? phone : (isCode ? code : nickname);
     final label = isPhone ? '手机号' : (isCode ? '验证码' : '昵称');
     final input = SizedBox(
@@ -644,7 +699,7 @@ class _AuthGateState extends State<AuthGate> {
           alignment: Alignment.center,
           children: [
             TextField(
-              key: ValueKey('guide-input-$step'),
+              key: ValueKey('guide-input-$displayStep'),
               controller: controller,
               focusNode: isPhone
                   ? phoneFocus
@@ -675,8 +730,8 @@ class _AuthGateState extends State<AuthGate> {
               },
               style: TextStyle(
                 color: entryInk,
-                fontSize: 22,
-                letterSpacing: isName ? 1 : 3,
+                fontSize: 26,
+                letterSpacing: isName ? 1 : 2,
               ),
               cursorColor: entryInk,
               decoration: InputDecoration(
@@ -740,8 +795,8 @@ class _AuthGateState extends State<AuthGate> {
       );
     }
     return SizedBox(
-      key: ValueKey('guide-step-${isPhone ? 2 : step}'),
-      height: (compact ? 152 : 168) + 48,
+      key: ValueKey('guide-step-${isPhone ? 2 : displayStep}'),
+      height: 152 + 48,
       child: Column(
         children: [
           SizedBox(
@@ -750,17 +805,17 @@ class _AuthGateState extends State<AuthGate> {
               child: Text(
                 isPhone ? '需要一个手机号' : (isName ? '还需要一个昵称' : '输入验证码'),
                 style: TextStyle(
-                  color: entryInk,
-                  fontSize: 16,
+                  color: entryMuted,
+                  fontSize: 15,
                   fontWeight: FontWeight.w400,
                   letterSpacing: 1,
                 ),
               ),
             ),
           ),
-          SizedBox(height: compact ? 16 : 24),
+          const SizedBox(height: 12),
           input,
-          SizedBox(height: compact ? 16 : 24),
+          const SizedBox(height: 20),
           GuidedActions(
             showBack: !isPhone,
             showNext: !isPhone || phoneValid,

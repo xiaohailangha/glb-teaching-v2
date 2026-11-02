@@ -1,3 +1,4 @@
+import '../../../core/avatar/scene/course_resources.dart';
 import 'dart:math' as math;
 import 'dart:async';
 
@@ -8,6 +9,7 @@ import '../application/lesson_controller.dart';
 import '../domain/course_lexicon.dart';
 import 'learning_text.dart';
 import 'ipa_text.dart';
+import 'lesson_content_frame.dart';
 
 class AdultCoursePanel extends StatelessWidget {
   const AdultCoursePanel({super.key, required this.controller});
@@ -15,6 +17,7 @@ class AdultCoursePanel extends StatelessWidget {
   Widget fruit(String word, {double size = 72, String? meaning}) => Semantics(
     label: '${meaning ?? courseLexicon[word]?.meaning ?? word}图片',
     child: SvgPicture.asset(
+      bundle: CourseResources.instance,
       'assets/avatar/images/$word.svg',
       width: size,
       height: size,
@@ -38,14 +41,14 @@ class AdultCoursePanel extends StatelessWidget {
                 ? const {'next', 'skip'}.contains(o['id']) &&
                       const {'学习红苹果', '结束本课'}.contains(o['label'])
                 : c.lessonPhase == 'choice' &&
-                      const {
+                      (o['id']!.startsWith('answer_') || const {
                         'apple',
                         'banana',
                         'choose_apple',
                         'choose_banana',
                         'phrase_apple',
                         'phrase_banana',
-                      }.contains(o['id']),
+                      }.contains(o['id'])),
           )
           .toList();
       final choice = visibleOptions.isNotEmpty;
@@ -57,61 +60,63 @@ class AdultCoursePanel extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      c.courseChapter,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: .6,
-                        color: Colors.white70,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: LinearProgressIndicator(
-                        value: ((c.coursePosition + 1) / c.courseTotal).clamp(
-                          0,
-                          1,
+          SizedBox(
+            height: lessonHeaderHeight,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        c.courseChapter,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: .6,
+                          color: Colors.white70,
                         ),
-                        minHeight: 2,
-                        color: const Color(0xFFBDE5DD),
-                        backgroundColor: Colors.white12,
                       ),
-                    ),
-                  ],
+                      const SizedBox(height: 10),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: LinearProgressIndicator(
+                          value: ((c.coursePosition + 1) / c.courseTotal).clamp(
+                            0,
+                            1,
+                          ),
+                          minHeight: 2,
+                          color: const Color(0xFFBDE5DD),
+                          backgroundColor: Colors.white12,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              if (c.coursePicture.isNotEmpty &&
-                  !choice &&
-                  !summary &&
-                  !c.coursePaused) ...[
-                const SizedBox(width: 16),
-                fruit(
-                  c.coursePicture,
-                  meaning: c.courseText,
-                  size: comparisonPicture
-                      ? (compact ? 80 : 96)
-                      : (compact ? 48 : 64),
-                ),
+                if (c.coursePicture.isNotEmpty &&
+                    !choice &&
+                    !summary &&
+                    !c.coursePaused) ...[
+                  const SizedBox(width: 16),
+                  fruit(
+                    c.coursePicture,
+                    meaning: c.courseText,
+                    size: comparisonPicture ? 72 : (compact ? 48 : 64),
+                  ),
+                ],
               ],
-            ],
+            ),
           ),
-          SizedBox(height: compact ? 12 : 22),
+          if (c.coursePaused || summary)
+            const SizedBox(height: lessonPhaseHeight),
           if (c.coursePaused) ...[
             const Text(
               '休息一下',
               style: TextStyle(fontSize: 28, color: Colors.white),
             ),
             const SizedBox(height: 12),
-            const Text('轻触人物继续，或从「课程」选择下一课。'),
+            const Text('轻触任意位置继续，或从「课程」选择下一课。'),
           ] else if (summary) ...[
             Text(
               c.address('本节课我们就学到这里。'),
@@ -143,51 +148,49 @@ class AdultCoursePanel extends StatelessWidget {
                 child: Text('下一课 · ${c.nextCourse!.title.substring(5)} →'),
               ),
           ] else ...[
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 220),
-              child: Align(
-                key: ValueKey(
-                  '${c.lessonPhase}:${c.playing}:${c.automaticState}',
-                ),
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  choice
-                      ? '听音 · 选出图片'
-                      : c.playing ||
-                            !const {
-                              'listen',
-                              'recall',
-                              'choice',
-                            }.contains(c.lessonPhase)
-                      ? '先听示范'
-                      : c.automaticState == 'processing'
-                      ? '正在确认你的表达'
-                      : c.automaticState == 'correction'
-                      ? '一起把这一处练好'
-                      : c.courseStep == 'apple_practice'
-                      ? c.address('轮到你说了')
-                      : '轮到你说了',
-                  style: const TextStyle(
-                    fontSize: 13,
-                    color: Color(0xFFBDE5DD),
-                    letterSpacing: 1.1,
+            SizedBox(
+              height: lessonPhaseHeight,
+              child: AnimatedSwitcher(
+                layoutBuilder: lessonSwitchLayout,
+                duration: const Duration(milliseconds: 220),
+                child: Align(
+                  key: ValueKey(
+                    '${c.lessonPhase}:${c.playing}:${c.automaticState}',
+                  ),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    choice
+                        ? (visibleOptions.any((o) => o['id']!.startsWith('answer_'))
+                            ? '听音 · 选择意思' : '听音 · 选出图片')
+                        : c.playing ||
+                              !const {
+                                'listen',
+                                'recall',
+                                'choice',
+                              }.contains(c.lessonPhase)
+                        ? '先听示范'
+                        : c.automaticState == 'processing'
+                        ? '正在确认你的表达'
+                        : c.automaticState == 'correction'
+                        ? '一起把这一处练好'
+                        : c.courseStep == 'apple_practice'
+                        ? c.address('轮到你说了')
+                        : '轮到你说了',
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFFBDE5DD),
+                      letterSpacing: 1.1,
+                    ),
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 6),
             if (showEnglish && sentence.isNotEmpty)
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 350),
-                transitionBuilder: (child, a) => FadeTransition(
-                  opacity: a,
-                  child: ScaleTransition(
-                    scale: Tween<double>(begin: .96, end: 1).animate(
-                      CurvedAnimation(parent: a, curve: Curves.easeOutBack),
-                    ),
-                    child: child,
-                  ),
-                ),
+                layoutBuilder: lessonSwitchLayout,
+                transitionBuilder: (child, a) =>
+                    FadeTransition(opacity: a, child: child),
                 child: LearningText(
                   sentence,
                   key: ValueKey(sentence),
@@ -290,26 +293,23 @@ class AdultCoursePanel extends StatelessWidget {
           ],
         ],
       );
-      return Align(
-        alignment: Alignment.centerLeft,
-        child: FittedBox(
-          fit: BoxFit.scaleDown,
-          alignment: Alignment.centerLeft,
-          child: SizedBox(
-            width: box.maxWidth,
-            child: DefaultTextStyle(
-              style: const TextStyle(
-                color: Colors.white,
-                fontFamily: 'NotoSansIPA',
-                fontFamilyFallback: ['NotoSansSC'],
-                fontSize: 14,
-                height: 1.4,
-              ),
-              child: Semantics(
-                container: true,
-                explicitChildNodes: true,
-                child: body,
-              ),
+      return LessonContentFrame(
+        header: Column(children: body.children.take(2).toList()),
+        child: DefaultTextStyle(
+          style: const TextStyle(
+            color: Colors.white,
+            fontFamily: 'NotoSansIPA',
+            fontFamilyFallback: ['NotoSansSC'],
+            fontSize: 14,
+            height: 1.4,
+          ),
+          child: Semantics(
+            container: true,
+            explicitChildNodes: true,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: body.children.skip(2).toList(),
             ),
           ),
         ),

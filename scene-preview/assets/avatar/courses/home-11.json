@@ -1,0 +1,482 @@
+{
+  "id": "home-11-v1",
+  "title": "11 · 家中的小问题",
+  "category": "home",
+  "goal": "描述生活设施的简单问题",
+  "prerequisites": [
+    "home-10-v1"
+  ],
+  "scenario": "灯坏了，门也开着。请分别说明这两种状态，再礼貌地请求帮助。",
+  "stages": [
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "11 · 家中的小问题",
+      "text": "描述生活设施的简单问题",
+      "clip": "c96_62cf9cf072f920966247"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "light",
+      "text": "电灯",
+      "clip": "c96_0abc09905de9b54b2351"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "light",
+      "text": "电灯",
+      "clip": "c96_3392d281d1a2adec2645",
+      "speechText": "light"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "light",
+      "text": "电灯",
+      "practiceClip": "c96_3392d281d1a2adec2645",
+      "speechText": "light",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "door",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "door",
+      "text": "门",
+      "clip": "c96_9c7c121f6578b58ceff3"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "door",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "door",
+      "text": "门",
+      "clip": "c96_c724b849bea2344aefa2",
+      "speechText": "door"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "door",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "door",
+      "text": "门",
+      "practiceClip": "c96_c724b849bea2344aefa2",
+      "speechText": "door",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "broken",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "broken",
+      "text": "坏了的",
+      "clip": "c96_06dfd4ffa36bcb41d259"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "broken",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "broken",
+      "text": "坏了的",
+      "clip": "c96_bc5e0e34c7518d118498",
+      "speechText": "broken"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "broken",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "broken",
+      "text": "坏了的",
+      "practiceClip": "c96_bc5e0e34c7518d118498",
+      "speechText": "broken",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "the light",
+      "text": "这盏灯",
+      "clip": "c96_1c174082085364b4b204",
+      "speechText": "the light"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "the light",
+      "text": "这盏灯",
+      "practiceClip": "c96_1c174082085364b4b204",
+      "speechText": "the light",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "the door",
+      "text": "这扇门",
+      "clip": "c96_ed03274cc273bbb407ef",
+      "speechText": "the door"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "the door",
+      "text": "这扇门",
+      "practiceClip": "c96_ed03274cc273bbb407ef",
+      "speechText": "the door",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "The light is broken.",
+      "text": "这盏灯坏了。",
+      "clip": "c96_0d9f35533e1e30491570",
+      "speechText": "The light is broken."
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "The light is broken.",
+      "text": "这盏灯坏了。",
+      "practiceClip": "c96_0d9f35533e1e30491570",
+      "speechText": "The light is broken.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "The door is open.",
+      "text": "这扇门开着。",
+      "clip": "c96_31e73de12749fc99075b",
+      "speechText": "The door is open."
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "The door is open.",
+      "text": "这扇门开着。",
+      "practiceClip": "c96_31e73de12749fc99075b",
+      "speechText": "The door is open.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Can you help me, please?",
+      "text": "请问你能帮帮我吗？",
+      "clip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?"
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Can you help me, please?",
+      "text": "请问你能帮帮我吗？",
+      "practiceClip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_3392d281d1a2adec2645",
+      "hide": true
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_3392d281d1a2adec2645",
+      "speechText": "light",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "门"
+        },
+        {
+          "id": "answer_2",
+          "label": "坏了的"
+        },
+        {
+          "id": "answer_0",
+          "label": "电灯"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c724b849bea2344aefa2",
+      "hide": true
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "door",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_c724b849bea2344aefa2",
+      "speechText": "door",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "坏了的"
+        },
+        {
+          "id": "answer_0",
+          "label": "电灯"
+        },
+        {
+          "id": "answer_1",
+          "label": "门"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "the light",
+      "text": "不看英文，请表达：这盏灯",
+      "practiceClip": "c96_1c174082085364b4b204",
+      "speechText": "the light",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "the door",
+      "text": "不看英文，请表达：这扇门",
+      "practiceClip": "c96_ed03274cc273bbb407ef",
+      "speechText": "the door",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "The light is broken.",
+      "text": "情境练习：灯坏了，门也开着。请分别说明这两种状态，再礼貌地请求帮助。\n这一句请表达：这盏灯坏了。",
+      "practiceClip": "c96_0d9f35533e1e30491570",
+      "speechText": "The light is broken.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "The door is open.",
+      "text": "情境练习：灯坏了，门也开着。请分别说明这两种状态，再礼貌地请求帮助。\n这一句请表达：这扇门开着。",
+      "practiceClip": "c96_31e73de12749fc99075b",
+      "speechText": "The door is open.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Can you help me, please?",
+      "text": "情境练习：灯坏了，门也开着。请分别说明这两种状态，再礼貌地请求帮助。\n这一句请表达：请问你能帮帮我吗？",
+      "practiceClip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "家中的小问题",
+      "word": "light",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "id": "shopping-06-v1",
+  "title": "06 · 把数量颜色大小说清楚",
+  "category": "shopping",
+  "goal": "组合已学的数量、颜色和大小，提出准确要求",
+  "prerequisites": [
+    "shopping-05-v1"
+  ],
+  "scenario": "你分别替三个人购物，依次说清两个小包、红色瓶子和蓝色大包的要求。",
+  "stages": [
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "06 · 把数量颜色大小说清楚",
+      "text": "组合已学的数量、颜色和大小，提出准确要求",
+      "clip": "c96_7629937f7d29f7b7817d"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_f24852007d2cf1f2b524"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "bag",
+      "text": "包",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bottle",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "bottle",
+      "text": "瓶子",
+      "clip": "c96_9fb9acc16208c5205191"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bottle",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "bottle",
+      "text": "瓶子",
+      "clip": "c96_5cad89f880178012584a",
+      "speechText": "bottle"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bottle",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "bottle",
+      "text": "瓶子",
+      "practiceClip": "c96_5cad89f880178012584a",
+      "speechText": "bottle",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "red",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "red",
+      "text": "红色的",
+      "clip": "c96_d87a7bbd5ebe2edac878"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "red",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "red",
+      "text": "红色的",
+      "clip": "c96_c9f12e7078e2138221eb",
+      "speechText": "red"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "red",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "red",
+      "text": "红色的",
+      "practiceClip": "c96_c9f12e7078e2138221eb",
+      "speechText": "red",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "two small bags",
+      "text": "两个小包",
+      "clip": "c96_bd67456072972e662640",
+      "speechText": "two small bags"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "two small bags",
+      "text": "两个小包",
+      "practiceClip": "c96_bd67456072972e662640",
+      "speechText": "two small bags",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a big blue bag",
+      "text": "一个蓝色的大包",
+      "clip": "c96_5f1018a11f9f2ecf7557",
+      "speechText": "a big blue bag"
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a big blue bag",
+      "text": "一个蓝色的大包",
+      "practiceClip": "c96_5f1018a11f9f2ecf7557",
+      "speechText": "a big blue bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Two small bags, please.",
+      "text": "请给我两个小包。",
+      "clip": "c96_3910883b062783ca16f4",
+      "speechText": "Two small bags, please."
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Two small bags, please.",
+      "text": "请给我两个小包。",
+      "practiceClip": "c96_3910883b062783ca16f4",
+      "speechText": "Two small bags, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "The red bottle, please.",
+      "text": "请给我红色的那个瓶子。",
+      "clip": "c96_06ae7556a81a76a79e02",
+      "speechText": "The red bottle, please."
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "The red bottle, please.",
+      "text": "请给我红色的那个瓶子。",
+      "practiceClip": "c96_06ae7556a81a76a79e02",
+      "speechText": "The red bottle, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I want a big blue bag.",
+      "text": "我想要一个蓝色的大包。",
+      "clip": "c96_ef1ae1bd40a019fe8732",
+      "speechText": "I want a big blue bag."
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I want a big blue bag.",
+      "text": "我想要一个蓝色的大包。",
+      "practiceClip": "c96_ef1ae1bd40a019fe8732",
+      "speechText": "I want a big blue bag.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "hide": true
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "瓶子"
+        },
+        {
+          "id": "answer_2",
+          "label": "红色的"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_5cad89f880178012584a",
+      "hide": true
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bottle",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_5cad89f880178012584a",
+      "speechText": "bottle",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "红色的"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        },
+        {
+          "id": "answer_1",
+          "label": "瓶子"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "two small bags",
+      "text": "不看英文，请表达：两个小包",
+      "practiceClip": "c96_bd67456072972e662640",
+      "speechText": "two small bags",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a big blue bag",
+      "text": "不看英文，请表达：一个蓝色的大包",
+      "practiceClip": "c96_5f1018a11f9f2ecf7557",
+      "speechText": "a big blue bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Two small bags, please.",
+      "text": "情境练习：你分别替三个人购物，依次说清两个小包、红色瓶子和蓝色大包的要求。\n这一句请表达：请给我两个小包。",
+      "practiceClip": "c96_3910883b062783ca16f4",
+      "speechText": "Two small bags, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "The red bottle, please.",
+      "text": "情境练习：你分别替三个人购物，依次说清两个小包、红色瓶子和蓝色大包的要求。\n这一句请表达：请给我红色的那个瓶子。",
+      "practiceClip": "c96_06ae7556a81a76a79e02",
+      "speechText": "The red bottle, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I want a big blue bag.",
+      "text": "情境练习：你分别替三个人购物，依次说清两个小包、红色瓶子和蓝色大包的要求。\n这一句请表达：我想要一个蓝色的大包。",
+      "practiceClip": "c96_ef1ae1bd40a019fe8732",
+      "speechText": "I want a big blue bag.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "把数量颜色大小说清楚",
+      "word": "bag",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

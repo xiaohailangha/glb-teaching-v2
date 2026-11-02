@@ -1,5 +1,5 @@
 // Isolated /scene/ release on the already authorized Tencent preview host.
-// The original Three.js page and its model remain in place.
+// Application release; persistent data remains outside the code directory.
 import fs from 'node:fs/promises';
 import {spawn} from 'node:child_process';
 import {api} from './tencent-deploy-api.mjs';
@@ -24,7 +24,7 @@ function command(program,args){return new Promise((resolve,reject)=>{
 });}
 await fs.access('scene-preview/build/web/main.dart.js');
 await fs.access('.secrets/cos-scene-assets.json');
-await command('tar',['-czf','work/cloud-deploy/scene-preview.tar.gz','-C','scene-preview/build/web','.']);
+await command('tar',['-czf','work/cloud-deploy/scene-preview.tar.gz','--exclude=./assets/flutter_scene_generated/*.fsceneb','-C','scene-preview/build/web','.']);
 console.log('Scene release archive prepared.');
 const publicKey=(await fs.readFile('.secrets/lighthouse-deploy.pub','utf8')).trim();
 const cleanup=`set -eu
@@ -56,6 +56,11 @@ echo SCENE_UPLOAD_READY
   ['services/cos-assets.mjs','glb-scene-cos-assets.mjs'],
   ['services/speech-http.mjs','glb-scene-speech-http.mjs'],
   ['services/live-recognition.mjs','glb-scene-live-recognition.mjs'],
+  ['services/storage-paths.mjs','glb-storage-paths.mjs'],
+  ['services/content-store.mjs','glb-content-store.mjs'],
+  ['services/content-http.mjs','glb-content-http.mjs'],
+  ['services/backup-codec.mjs','glb-backup-codec.mjs'],
+  ['services/tencent-speech.mjs','glb-tencent-speech.mjs'],
   ['services/auth-http.mjs','glb-auth-http.mjs'],
   ['services/learning-http.mjs','glb-learning-http.mjs'],
   ['services/learning-store.mjs','glb-learning-store.mjs'],
@@ -73,7 +78,7 @@ install -d -m 700 "$backup"
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
 if test -f /etc/systemd/system/glb-teaching.service.d/auth-test.conf; then cp /etc/systemd/system/glb-teaching.service.d/auth-test.conf "$backup/auth-test.conf"; fi
 cp /opt/glb-teaching/server.mjs "$backup/server.mjs"
-for name in auth-http tencent-sms learning-http learning-store; do
+for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
  if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
 done
 cp /opt/glb-teaching/services/cos-assets.mjs "$backup/cos-assets.mjs"
@@ -104,7 +109,7 @@ rollback(){
  cp "$backup/nginx.conf" /etc/nginx/sites-available/glb-teaching
  cp "$backup/server.mjs" /opt/glb-teaching/server.mjs
  if test -f "$backup/course-catalog.json"; then cp "$backup/course-catalog.json" /opt/glb-teaching/data/course-catalog.json; fi
- for name in auth-http tencent-sms learning-http learning-store; do
+ for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
   if test -f "$backup/$name.mjs"; then cp "$backup/$name.mjs" /opt/glb-teaching/services/$name.mjs; fi
  done
  cp "$backup/cos-assets.mjs" /opt/glb-teaching/services/cos-assets.mjs
@@ -124,7 +129,7 @@ backend_changed=0
 if ! cmp -s /root/glb-course-catalog.json /opt/glb-teaching/data/course-catalog.json; then backend_changed=1; fi
 if test -f /opt/glb-teaching/data/course-catalog.json; then cp /opt/glb-teaching/data/course-catalog.json "$backup/course-catalog.json"; fi
 /opt/glb-runtime/node/bin/node -e "require('node:sqlite')"
-for name in auth-http tencent-sms learning-http learning-store; do
+for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
  /opt/glb-runtime/node/bin/node --check /root/glb-$name.mjs
  if ! cmp -s /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs; then backend_changed=1; fi
 done
@@ -141,7 +146,7 @@ install -d -o glbapp -g glbapp -m 755 /opt/glb-teaching/data
 install -o glbapp -g glbapp -m 644 /root/glb-course-catalog.json /opt/glb-teaching/data/course-catalog.json
 install -o glbapp -g glbapp -m 644 /root/glb-auth-server.mjs /opt/glb-teaching/server.mjs
 install -d -o glbapp -g glbapp -m 700 /opt/glb-teaching/work/auth-private
-for name in auth-http tencent-sms learning-http learning-store; do
+for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
  install -o glbapp -g glbapp -m 644 /root/glb-$name.mjs /opt/glb-teaching/services/$name.mjs
 done
 install -o glbapp -g glbapp -m 644 /root/glb-scene-speech-http.mjs /opt/glb-teaching/services/speech-http.mjs

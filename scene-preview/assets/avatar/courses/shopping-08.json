@@ -1,0 +1,482 @@
+{
+  "id": "shopping-08-v1",
+  "title": "08 · 选择这件或那件",
+  "category": "shopping",
+  "goal": "用 this 和 that 指明要选的商品",
+  "prerequisites": [
+    "shopping-07-v1"
+  ],
+  "scenario": "柜台上有红色和蓝色两件商品，请先练近处与远处的指代，最后明确要红色的那个。",
+  "stages": [
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "08 · 选择这件或那件",
+      "text": "用 this 和 that 指明要选的商品",
+      "clip": "c96_dd978ae8bfde33ca1139"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "this",
+      "text": "这个",
+      "clip": "c96_5de3c585a67d9048ed0a"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "this",
+      "text": "这个",
+      "clip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "this",
+      "text": "这个",
+      "practiceClip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "that",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "that",
+      "text": "那个",
+      "clip": "c96_4462a33ddafe8134d7c3"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "that",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "that",
+      "text": "那个",
+      "clip": "c96_48fb41e515f0557b142c",
+      "speechText": "that"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "that",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "that",
+      "text": "那个",
+      "practiceClip": "c96_48fb41e515f0557b142c",
+      "speechText": "that",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "one",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "one",
+      "text": "一个；用于代指物品",
+      "clip": "c96_138211a244097bb18ad4"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "one",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "one",
+      "text": "一个；用于代指物品",
+      "clip": "c96_47df727a7f6c186217a2",
+      "speechText": "one"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "one",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "one",
+      "text": "一个；用于代指物品",
+      "practiceClip": "c96_47df727a7f6c186217a2",
+      "speechText": "one",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "this one",
+      "text": "这一个",
+      "clip": "c96_0670120baa2751be7918",
+      "speechText": "this one"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "this one",
+      "text": "这一个",
+      "practiceClip": "c96_0670120baa2751be7918",
+      "speechText": "this one",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "that one",
+      "text": "那一个",
+      "clip": "c96_48776d8c382bd9b72d79",
+      "speechText": "that one"
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "that one",
+      "text": "那一个",
+      "practiceClip": "c96_48776d8c382bd9b72d79",
+      "speechText": "that one",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I want this one.",
+      "text": "我想要这一个。",
+      "clip": "c96_170267986e47262efdd6",
+      "speechText": "I want this one."
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I want this one.",
+      "text": "我想要这一个。",
+      "practiceClip": "c96_170267986e47262efdd6",
+      "speechText": "I want this one.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I want that one.",
+      "text": "我想要那一个。",
+      "clip": "c96_3fc86cae7c52bcf7ffcc",
+      "speechText": "I want that one."
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I want that one.",
+      "text": "我想要那一个。",
+      "practiceClip": "c96_3fc86cae7c52bcf7ffcc",
+      "speechText": "I want that one.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "The red one, please.",
+      "text": "请给我红色的那个。",
+      "clip": "c96_f7b2f9f2280b0103724a",
+      "speechText": "The red one, please."
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "The red one, please.",
+      "text": "请给我红色的那个。",
+      "practiceClip": "c96_f7b2f9f2280b0103724a",
+      "speechText": "The red one, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_a6d2d26e0ac16e513dbb",
+      "hide": true
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "那个"
+        },
+        {
+          "id": "answer_2",
+          "label": "一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "这个"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_48fb41e515f0557b142c",
+      "hide": true
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "that",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_48fb41e515f0557b142c",
+      "speechText": "that",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "这个"
+        },
+        {
+          "id": "answer_1",
+          "label": "那个"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "this one",
+      "text": "不看英文，请表达：这一个",
+      "practiceClip": "c96_0670120baa2751be7918",
+      "speechText": "this one",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "that one",
+      "text": "不看英文，请表达：那一个",
+      "practiceClip": "c96_48776d8c382bd9b72d79",
+      "speechText": "that one",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I want this one.",
+      "text": "情境练习：柜台上有红色和蓝色两件商品，请先练近处与远处的指代，最后明确要红色的那个。\n这一句请表达：我想要这一个。",
+      "practiceClip": "c96_170267986e47262efdd6",
+      "speechText": "I want this one.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I want that one.",
+      "text": "情境练习：柜台上有红色和蓝色两件商品，请先练近处与远处的指代，最后明确要红色的那个。\n这一句请表达：我想要那一个。",
+      "practiceClip": "c96_3fc86cae7c52bcf7ffcc",
+      "speechText": "I want that one.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "The red one, please.",
+      "text": "情境练习：柜台上有红色和蓝色两件商品，请先练近处与远处的指代，最后明确要红色的那个。\n这一句请表达：请给我红色的那个。",
+      "practiceClip": "c96_f7b2f9f2280b0103724a",
+      "speechText": "The red one, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "选择这件或那件",
+      "word": "this",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

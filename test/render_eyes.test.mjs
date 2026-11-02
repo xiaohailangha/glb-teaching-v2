@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 test('shipping model uses textured render eyes and a separate cornea with matching gaze targets',()=>{
-  const bytes=fs.readFileSync(new URL('../assets/avatar/models/storm-performance.glb',import.meta.url));
+  const bytes=fs.readFileSync(new URL('../scene-preview/assets/avatar/models/storm-performance.glb',import.meta.url));
   const doc=JSON.parse(bytes.toString('utf8',20,20+bytes.readUInt32LE(12)));
   assert.ok(!doc.nodes.some(n=>/eye.*anim/i.test(n.name)),'animation proxy must not ship');
   for(const name of ['Storm_eye.L','Storm_eye.R','Storm_eye_cornea.L','Storm_eye_cornea.R']){
@@ -22,7 +22,7 @@ test('shipping model uses textured render eyes and a separate cornea with matchi
 });
 
 test('Storm retains subdivision, original shader detail, and separately weighted hair chains',()=>{
-  const bytes=fs.readFileSync(new URL('../assets/avatar/models/storm-performance.glb',import.meta.url));
+  const bytes=fs.readFileSync(new URL('../scene-preview/assets/avatar/models/storm-performance.glb',import.meta.url));
   const doc=JSON.parse(bytes.toString('utf8',20,20+bytes.readUInt32LE(12)));
   for(const part of ['head','hair_clumps','hair_base']){
     const material=doc.materials.find(m=>m.name==='Runtime_storm_'+part);

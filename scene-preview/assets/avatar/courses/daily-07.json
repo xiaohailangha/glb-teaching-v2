@@ -1,0 +1,482 @@
+{
+  "id": "daily-07-v1",
+  "title": "07 · 上班与回家",
+  "category": "daily",
+  "goal": "说明工作日的出发和回家时间",
+  "prerequisites": [
+    "daily-06-v1"
+  ],
+  "scenario": "你按示范日程八点上班、五点离开单位、六点回家，请依次说明。",
+  "stages": [
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "07 · 上班与回家",
+      "text": "说明工作日的出发和回家时间",
+      "clip": "c96_007bc39b17a7f5483311"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "work",
+      "text": "工作",
+      "clip": "c96_6dd1967886e10144d5d3"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "work",
+      "text": "工作",
+      "clip": "c96_579733ff6f80edbf816f",
+      "speechText": "work"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "work",
+      "text": "工作",
+      "practiceClip": "c96_579733ff6f80edbf816f",
+      "speechText": "work",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "leave",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "leave",
+      "text": "离开",
+      "clip": "c96_0af4ef4a8b40bd3eb7b4"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "leave",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "leave",
+      "text": "离开",
+      "clip": "c96_78a47db76d804c051f47",
+      "speechText": "leave"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "leave",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "leave",
+      "text": "离开",
+      "practiceClip": "c96_78a47db76d804c051f47",
+      "speechText": "leave",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "home",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "home",
+      "text": "家",
+      "clip": "c96_a789dc068c900266d581"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "home",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "home",
+      "text": "家",
+      "clip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "home",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "home",
+      "text": "家",
+      "practiceClip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "go to work",
+      "text": "去上班",
+      "clip": "c96_9ca5bcbc0af277413745",
+      "speechText": "go to work"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "go to work",
+      "text": "去上班",
+      "practiceClip": "c96_9ca5bcbc0af277413745",
+      "speechText": "go to work",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "go home",
+      "text": "回家",
+      "clip": "c96_2e151a7a43abcdecf59d",
+      "speechText": "go home"
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "go home",
+      "text": "回家",
+      "practiceClip": "c96_2e151a7a43abcdecf59d",
+      "speechText": "go home",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I go to work at eight.",
+      "text": "我八点去上班。",
+      "clip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight."
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I go to work at eight.",
+      "text": "我八点去上班。",
+      "practiceClip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I leave work at five.",
+      "text": "我五点下班离开。",
+      "clip": "c96_d0a3b58c4c2a96c35dc0",
+      "speechText": "I leave work at five."
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I leave work at five.",
+      "text": "我五点下班离开。",
+      "practiceClip": "c96_d0a3b58c4c2a96c35dc0",
+      "speechText": "I leave work at five.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I go home at six.",
+      "text": "我六点回家。",
+      "clip": "c96_496b8ad5b03a9bb661d4",
+      "speechText": "I go home at six."
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I go home at six.",
+      "text": "我六点回家。",
+      "practiceClip": "c96_496b8ad5b03a9bb661d4",
+      "speechText": "I go home at six.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_579733ff6f80edbf816f",
+      "hide": true
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_579733ff6f80edbf816f",
+      "speechText": "work",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "离开"
+        },
+        {
+          "id": "answer_2",
+          "label": "家"
+        },
+        {
+          "id": "answer_0",
+          "label": "工作"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_78a47db76d804c051f47",
+      "hide": true
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "leave",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_78a47db76d804c051f47",
+      "speechText": "leave",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "家"
+        },
+        {
+          "id": "answer_0",
+          "label": "工作"
+        },
+        {
+          "id": "answer_1",
+          "label": "离开"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "go to work",
+      "text": "不看英文，请表达：去上班",
+      "practiceClip": "c96_9ca5bcbc0af277413745",
+      "speechText": "go to work",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "go home",
+      "text": "不看英文，请表达：回家",
+      "practiceClip": "c96_2e151a7a43abcdecf59d",
+      "speechText": "go home",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I go to work at eight.",
+      "text": "情境练习：你按示范日程八点上班、五点离开单位、六点回家，请依次说明。\n这一句请表达：我八点去上班。",
+      "practiceClip": "c96_15112a50214d59102f2b",
+      "speechText": "I go to work at eight.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I leave work at five.",
+      "text": "情境练习：你按示范日程八点上班、五点离开单位、六点回家，请依次说明。\n这一句请表达：我五点下班离开。",
+      "practiceClip": "c96_d0a3b58c4c2a96c35dc0",
+      "speechText": "I leave work at five.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I go home at six.",
+      "text": "情境练习：你按示范日程八点上班、五点离开单位、六点回家，请依次说明。\n这一句请表达：我六点回家。",
+      "practiceClip": "c96_496b8ad5b03a9bb661d4",
+      "speechText": "I go home at six.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "上班与回家",
+      "word": "work",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

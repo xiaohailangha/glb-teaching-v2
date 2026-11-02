@@ -1,0 +1,482 @@
+{
+  "id": "travel-10-v1",
+  "title": "10 · 酒店办理入住",
+  "category": "travel",
+  "goal": "介绍姓名，说明订房和住宿需求",
+  "prerequisites": [
+    "travel-09-v1"
+  ],
+  "scenario": "你扮演本，在酒店说明已有预订并报姓名；另练习没有预订时要一晚房间的表达。",
+  "stages": [
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 酒店办理入住",
+      "text": "介绍姓名，说明订房和住宿需求",
+      "clip": "c96_5100c59c5669762405dc"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "reservation",
+      "text": "酒店预订",
+      "clip": "c96_8f47e2b82c0f75e43420"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "reservation",
+      "text": "酒店预订",
+      "clip": "c96_4ac151d4e20f4931f017",
+      "speechText": "reservation"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "reservation",
+      "text": "酒店预订",
+      "practiceClip": "c96_4ac151d4e20f4931f017",
+      "speechText": "reservation",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "room",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "room",
+      "text": "房间",
+      "clip": "c96_84ca2e70f4a60faf45b5"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "room",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "room",
+      "text": "房间",
+      "clip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "room",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "room",
+      "text": "房间",
+      "practiceClip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "night",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "night",
+      "text": "夜晚；住宿的一晚",
+      "clip": "c96_97be1a83589e4bb5aa52"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "night",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "night",
+      "text": "夜晚；住宿的一晚",
+      "clip": "c96_b6102212015d43042f17",
+      "speechText": "night"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "night",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "night",
+      "text": "夜晚；住宿的一晚",
+      "practiceClip": "c96_b6102212015d43042f17",
+      "speechText": "night",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a reservation",
+      "text": "一个预订",
+      "clip": "c96_4f3952b776aa83725dd0",
+      "speechText": "a reservation"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a reservation",
+      "text": "一个预订",
+      "practiceClip": "c96_4f3952b776aa83725dd0",
+      "speechText": "a reservation",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "one night",
+      "text": "一晚",
+      "clip": "c96_07a5d13b7727a5f7e892",
+      "speechText": "one night"
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "one night",
+      "text": "一晚",
+      "practiceClip": "c96_07a5d13b7727a5f7e892",
+      "speechText": "one night",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I have a reservation.",
+      "text": "我有预订。",
+      "clip": "c96_be5d01558a54911bd94b",
+      "speechText": "I have a reservation."
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I have a reservation.",
+      "text": "我有预订。",
+      "practiceClip": "c96_be5d01558a54911bd94b",
+      "speechText": "I have a reservation.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "My name is Ben.",
+      "text": "我的名字是本。",
+      "clip": "c96_2f3b2b09f43551e48315",
+      "speechText": "My name is Ben."
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "My name is Ben.",
+      "text": "我的名字是本。",
+      "practiceClip": "c96_2f3b2b09f43551e48315",
+      "speechText": "My name is Ben.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "A room for one night, please.",
+      "text": "请给我一个住一晚的房间。",
+      "clip": "c96_ee7bd351024de7bc18d1",
+      "speechText": "A room for one night, please."
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "A room for one night, please.",
+      "text": "请给我一个住一晚的房间。",
+      "practiceClip": "c96_ee7bd351024de7bc18d1",
+      "speechText": "A room for one night, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_4ac151d4e20f4931f017",
+      "hide": true
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_4ac151d4e20f4931f017",
+      "speechText": "reservation",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "房间"
+        },
+        {
+          "id": "answer_2",
+          "label": "夜晚"
+        },
+        {
+          "id": "answer_0",
+          "label": "酒店预订"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_1f5e55ced27ab380c909",
+      "hide": true
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "room",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "夜晚"
+        },
+        {
+          "id": "answer_0",
+          "label": "酒店预订"
+        },
+        {
+          "id": "answer_1",
+          "label": "房间"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a reservation",
+      "text": "不看英文，请表达：一个预订",
+      "practiceClip": "c96_4f3952b776aa83725dd0",
+      "speechText": "a reservation",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "one night",
+      "text": "不看英文，请表达：一晚",
+      "practiceClip": "c96_07a5d13b7727a5f7e892",
+      "speechText": "one night",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I have a reservation.",
+      "text": "情境练习：你扮演本，在酒店说明已有预订并报姓名；另练习没有预订时要一晚房间的表达。\n这一句请表达：我有预订。",
+      "practiceClip": "c96_be5d01558a54911bd94b",
+      "speechText": "I have a reservation.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "My name is Ben.",
+      "text": "情境练习：你扮演本，在酒店说明已有预订并报姓名；另练习没有预订时要一晚房间的表达。\n这一句请表达：我的名字是本。",
+      "practiceClip": "c96_2f3b2b09f43551e48315",
+      "speechText": "My name is Ben.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "A room for one night, please.",
+      "text": "情境练习：你扮演本，在酒店说明已有预订并报姓名；另练习没有预订时要一晚房间的表达。\n这一句请表达：请给我一个住一晚的房间。",
+      "practiceClip": "c96_ee7bd351024de7bc18d1",
+      "speechText": "A room for one night, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "酒店办理入住",
+      "word": "reservation",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

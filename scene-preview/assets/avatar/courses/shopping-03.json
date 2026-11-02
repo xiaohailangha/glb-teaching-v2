@@ -1,0 +1,482 @@
+{
+  "id": "shopping-03-v1",
+  "title": "03 · 描述商品的大小",
+  "category": "shopping",
+  "goal": "区分大小与长度，说明自己的选择或问题",
+  "prerequisites": [
+    "shopping-02-v1"
+  ],
+  "scenario": "先选一个小包，再描述大瓶子；试穿衬衫时说明它太长。",
+  "stages": [
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "03 · 描述商品的大小",
+      "text": "区分大小与长度，说明自己的选择或问题",
+      "clip": "c96_e27d7c31cabfc75fdf6d"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "big",
+      "text": "大的",
+      "clip": "c96_fb75765b86880c53c842"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "big",
+      "text": "大的",
+      "clip": "c96_be00dc070226f3065cb1",
+      "speechText": "big"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "big",
+      "text": "大的",
+      "practiceClip": "c96_be00dc070226f3065cb1",
+      "speechText": "big",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "small",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "small",
+      "text": "小的",
+      "clip": "c96_1a12d8e7dc6d435e8082"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "small",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "small",
+      "text": "小的",
+      "clip": "c96_5319b2090e6c583502fb",
+      "speechText": "small"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "small",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "small",
+      "text": "小的",
+      "practiceClip": "c96_5319b2090e6c583502fb",
+      "speechText": "small",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "long",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "long",
+      "text": "长的",
+      "clip": "c96_7c03344dd3de52c57fea"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "long",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "long",
+      "text": "长的",
+      "clip": "c96_8b5e3b886921aa437c42",
+      "speechText": "long"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "long",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "long",
+      "text": "长的",
+      "practiceClip": "c96_8b5e3b886921aa437c42",
+      "speechText": "long",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a small bag",
+      "text": "一个小包",
+      "clip": "c96_fb1d4a07696f87338fc9",
+      "speechText": "a small bag"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a small bag",
+      "text": "一个小包",
+      "practiceClip": "c96_fb1d4a07696f87338fc9",
+      "speechText": "a small bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a big bottle",
+      "text": "一个大瓶子",
+      "clip": "c96_0482f1b13cee5bb14a6f",
+      "speechText": "a big bottle"
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a big bottle",
+      "text": "一个大瓶子",
+      "practiceClip": "c96_0482f1b13cee5bb14a6f",
+      "speechText": "a big bottle",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I want a small bag.",
+      "text": "我想要一个小包。",
+      "clip": "c96_629ead54723469929994",
+      "speechText": "I want a small bag."
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I want a small bag.",
+      "text": "我想要一个小包。",
+      "practiceClip": "c96_629ead54723469929994",
+      "speechText": "I want a small bag.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This bottle is big.",
+      "text": "这个瓶子很大。",
+      "clip": "c96_281c7a9d118172518bb3",
+      "speechText": "This bottle is big."
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This bottle is big.",
+      "text": "这个瓶子很大。",
+      "practiceClip": "c96_281c7a9d118172518bb3",
+      "speechText": "This bottle is big.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "This shirt is too long.",
+      "text": "这件衬衫太长了。",
+      "clip": "c96_8a96eed32ef68539ac36",
+      "speechText": "This shirt is too long."
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "This shirt is too long.",
+      "text": "这件衬衫太长了。",
+      "practiceClip": "c96_8a96eed32ef68539ac36",
+      "speechText": "This shirt is too long.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_be00dc070226f3065cb1",
+      "hide": true
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_be00dc070226f3065cb1",
+      "speechText": "big",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "小的"
+        },
+        {
+          "id": "answer_2",
+          "label": "长的"
+        },
+        {
+          "id": "answer_0",
+          "label": "大的"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_5319b2090e6c583502fb",
+      "hide": true
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "small",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_5319b2090e6c583502fb",
+      "speechText": "small",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "长的"
+        },
+        {
+          "id": "answer_0",
+          "label": "大的"
+        },
+        {
+          "id": "answer_1",
+          "label": "小的"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a small bag",
+      "text": "不看英文，请表达：一个小包",
+      "practiceClip": "c96_fb1d4a07696f87338fc9",
+      "speechText": "a small bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a big bottle",
+      "text": "不看英文，请表达：一个大瓶子",
+      "practiceClip": "c96_0482f1b13cee5bb14a6f",
+      "speechText": "a big bottle",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I want a small bag.",
+      "text": "情境练习：先选一个小包，再描述大瓶子；试穿衬衫时说明它太长。\n这一句请表达：我想要一个小包。",
+      "practiceClip": "c96_629ead54723469929994",
+      "speechText": "I want a small bag.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This bottle is big.",
+      "text": "情境练习：先选一个小包，再描述大瓶子；试穿衬衫时说明它太长。\n这一句请表达：这个瓶子很大。",
+      "practiceClip": "c96_281c7a9d118172518bb3",
+      "speechText": "This bottle is big.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "This shirt is too long.",
+      "text": "情境练习：先选一个小包，再描述大瓶子；试穿衬衫时说明它太长。\n这一句请表达：这件衬衫太长了。",
+      "practiceClip": "c96_8a96eed32ef68539ac36",
+      "speechText": "This shirt is too long.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述商品的大小",
+      "word": "big",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

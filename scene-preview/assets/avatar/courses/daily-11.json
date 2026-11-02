@@ -1,0 +1,482 @@
+{
+  "id": "daily-11-v1",
+  "title": "11 · 约定见面时间",
+  "category": "daily",
+  "goal": "提出时间并确认见面安排",
+  "prerequisites": [
+    "daily-10-v1"
+  ],
+  "scenario": "你想约朋友星期六三点见面，请先询问是否有空，再提出时间并确认。",
+  "stages": [
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "11 · 约定见面时间",
+      "text": "提出时间并确认见面安排",
+      "clip": "c96_6251bc97e5166b7e9d49"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "meet",
+      "text": "会面",
+      "clip": "c96_4cdd03a694f4fd3ac5bc"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "meet",
+      "text": "会面",
+      "clip": "c96_18fbe6d0313edc190df7",
+      "speechText": "meet"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "meet",
+      "text": "会面",
+      "practiceClip": "c96_18fbe6d0313edc190df7",
+      "speechText": "meet",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "free",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "free",
+      "text": "有空的",
+      "clip": "c96_56556394bffe65c9cb20"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "free",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "free",
+      "text": "有空的",
+      "clip": "c96_247b8579d41392ec8d65",
+      "speechText": "free"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "free",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "free",
+      "text": "有空的",
+      "practiceClip": "c96_247b8579d41392ec8d65",
+      "speechText": "free",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "saturday",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "Saturday",
+      "text": "星期六",
+      "clip": "c96_d1e313128bdc34439b1d"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "saturday",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "Saturday",
+      "text": "星期六",
+      "clip": "c96_c4b145f9b6122aff400c",
+      "speechText": "Saturday"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "saturday",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "Saturday",
+      "text": "星期六",
+      "practiceClip": "c96_c4b145f9b6122aff400c",
+      "speechText": "Saturday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "on Saturday",
+      "text": "在星期六",
+      "clip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "on Saturday",
+      "text": "在星期六",
+      "practiceClip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "at three",
+      "text": "在三点",
+      "clip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "at three",
+      "text": "在三点",
+      "practiceClip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Are you free on Saturday?",
+      "text": "你星期六有空吗？",
+      "clip": "c96_d4017b59d354842919b2",
+      "speechText": "Are you free on Saturday?"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Are you free on Saturday?",
+      "text": "你星期六有空吗？",
+      "practiceClip": "c96_d4017b59d354842919b2",
+      "speechText": "Are you free on Saturday?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Can we meet at three?",
+      "text": "我们可以三点见面吗？",
+      "clip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?"
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Can we meet at three?",
+      "text": "我们可以三点见面吗？",
+      "practiceClip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "See you at three.",
+      "text": "三点见。",
+      "clip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three."
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "See you at three.",
+      "text": "三点见。",
+      "practiceClip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_18fbe6d0313edc190df7",
+      "hide": true
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_18fbe6d0313edc190df7",
+      "speechText": "meet",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "有空的"
+        },
+        {
+          "id": "answer_2",
+          "label": "星期六"
+        },
+        {
+          "id": "answer_0",
+          "label": "会面"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_247b8579d41392ec8d65",
+      "hide": true
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "free",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_247b8579d41392ec8d65",
+      "speechText": "free",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "星期六"
+        },
+        {
+          "id": "answer_0",
+          "label": "会面"
+        },
+        {
+          "id": "answer_1",
+          "label": "有空的"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "on Saturday",
+      "text": "不看英文，请表达：在星期六",
+      "practiceClip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "at three",
+      "text": "不看英文，请表达：在三点",
+      "practiceClip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Are you free on Saturday?",
+      "text": "情境练习：你想约朋友星期六三点见面，请先询问是否有空，再提出时间并确认。\n这一句请表达：你星期六有空吗？",
+      "practiceClip": "c96_d4017b59d354842919b2",
+      "speechText": "Are you free on Saturday?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Can we meet at three?",
+      "text": "情境练习：你想约朋友星期六三点见面，请先询问是否有空，再提出时间并确认。\n这一句请表达：我们可以三点见面吗？",
+      "practiceClip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "See you at three.",
+      "text": "情境练习：你想约朋友星期六三点见面，请先询问是否有空，再提出时间并确认。\n这一句请表达：三点见。",
+      "practiceClip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "约定见面时间",
+      "word": "meet",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

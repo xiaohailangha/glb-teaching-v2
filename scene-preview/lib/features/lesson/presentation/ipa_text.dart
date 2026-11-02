@@ -13,7 +13,9 @@ class IpaText extends StatelessWidget {
   Widget build(BuildContext context) {
     final spans = <InlineSpan>[];
     var last = 0;
-    final symbols = ipaSounds.keys.toList()
+    // Never split an unsupported affricate/diphthong into misleading sounds.
+    // Its whole-word pronunciation remains available through LearningText.
+    final symbols = {...ipaSounds.keys, 'tʃ', 'dʒ', 'aʊ', 'ɔɪ', 'ɜːr', 'ər'}.toList()
       ..sort((a, b) => b.length.compareTo(a.length));
     for (final match in RegExp(r'/[^/\n]+/').allMatches(text)) {
       spans.add(TextSpan(text: text.substring(last, match.start)));
@@ -25,6 +27,11 @@ class IpaText extends StatelessWidget {
           spans.add(TextSpan(text: ipa[i++]));
         } else {
           final symbol = found.first;
+          if (!ipaSounds.containsKey(symbol)) {
+            spans.add(TextSpan(text: symbol));
+            i += symbol.length;
+            continue;
+          }
           spans.add(
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline,

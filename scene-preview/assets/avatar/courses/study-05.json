@@ -1,0 +1,482 @@
+{
+  "id": "study-05-v1",
+  "title": "05 · 看听说写",
+  "category": "study",
+  "goal": "用四种学习动作说明课堂任务",
+  "prerequisites": [
+    "study-04-v1"
+  ],
+  "scenario": "你带领同伴做练习，先请他听，再读句子，最后写名字。",
+  "stages": [
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "05 · 看听说写",
+      "text": "用四种学习动作说明课堂任务",
+      "clip": "c96_cb69bc5119c384f1b488"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "read",
+      "text": "读",
+      "clip": "c96_79270c16a270870dcde4"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "read",
+      "text": "读",
+      "clip": "c96_5c2c892621d37f1a2bb9",
+      "speechText": "read"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "read",
+      "text": "读",
+      "practiceClip": "c96_5c2c892621d37f1a2bb9",
+      "speechText": "read",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "listen",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "listen",
+      "text": "听",
+      "clip": "c96_7dead6946a8cde3b2c0c"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "listen",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "listen",
+      "text": "听",
+      "clip": "c96_731381e2d859287d04fe",
+      "speechText": "listen"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "listen",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "listen",
+      "text": "听",
+      "practiceClip": "c96_731381e2d859287d04fe",
+      "speechText": "listen",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "write",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "write",
+      "text": "写",
+      "clip": "c96_cffa6fc5080f3aefd7f1"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "write",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "write",
+      "text": "写",
+      "clip": "c96_4b5b9e56a0f9821f5af0",
+      "speechText": "write"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "write",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "write",
+      "text": "写",
+      "practiceClip": "c96_4b5b9e56a0f9821f5af0",
+      "speechText": "write",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "read the sentence",
+      "text": "读这个句子",
+      "clip": "c96_6de01bcd4407fd8c2721",
+      "speechText": "read the sentence"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "read the sentence",
+      "text": "读这个句子",
+      "practiceClip": "c96_6de01bcd4407fd8c2721",
+      "speechText": "read the sentence",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "write your name",
+      "text": "写你的名字",
+      "clip": "c96_95dccdf600f28152e287",
+      "speechText": "write your name"
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "write your name",
+      "text": "写你的名字",
+      "practiceClip": "c96_95dccdf600f28152e287",
+      "speechText": "write your name",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Please listen.",
+      "text": "请听。",
+      "clip": "c96_efde36391b9057234e47",
+      "speechText": "Please listen."
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Please listen.",
+      "text": "请听。",
+      "practiceClip": "c96_efde36391b9057234e47",
+      "speechText": "Please listen.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Read the sentence, please.",
+      "text": "请读这个句子。",
+      "clip": "c96_7075a332410d54b881c0",
+      "speechText": "Read the sentence, please."
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Read the sentence, please.",
+      "text": "请读这个句子。",
+      "practiceClip": "c96_7075a332410d54b881c0",
+      "speechText": "Read the sentence, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Write your name, please.",
+      "text": "请写你的名字。",
+      "clip": "c96_89e06ca22297960ce0c3",
+      "speechText": "Write your name, please."
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Write your name, please.",
+      "text": "请写你的名字。",
+      "practiceClip": "c96_89e06ca22297960ce0c3",
+      "speechText": "Write your name, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_5c2c892621d37f1a2bb9",
+      "hide": true
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_5c2c892621d37f1a2bb9",
+      "speechText": "read",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "听"
+        },
+        {
+          "id": "answer_2",
+          "label": "写"
+        },
+        {
+          "id": "answer_0",
+          "label": "读"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_731381e2d859287d04fe",
+      "hide": true
+    },
+    {
+      "chapter": "看听说写",
+      "word": "listen",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_731381e2d859287d04fe",
+      "speechText": "listen",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "写"
+        },
+        {
+          "id": "answer_0",
+          "label": "读"
+        },
+        {
+          "id": "answer_1",
+          "label": "听"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "read the sentence",
+      "text": "不看英文，请表达：读这个句子",
+      "practiceClip": "c96_6de01bcd4407fd8c2721",
+      "speechText": "read the sentence",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "write your name",
+      "text": "不看英文，请表达：写你的名字",
+      "practiceClip": "c96_95dccdf600f28152e287",
+      "speechText": "write your name",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Please listen.",
+      "text": "情境练习：你带领同伴做练习，先请他听，再读句子，最后写名字。\n这一句请表达：请听。",
+      "practiceClip": "c96_efde36391b9057234e47",
+      "speechText": "Please listen.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Read the sentence, please.",
+      "text": "情境练习：你带领同伴做练习，先请他听，再读句子，最后写名字。\n这一句请表达：请读这个句子。",
+      "practiceClip": "c96_7075a332410d54b881c0",
+      "speechText": "Read the sentence, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Write your name, please.",
+      "text": "情境练习：你带领同伴做练习，先请他听，再读句子，最后写名字。\n这一句请表达：请写你的名字。",
+      "practiceClip": "c96_89e06ca22297960ce0c3",
+      "speechText": "Write your name, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "看听说写",
+      "word": "read",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

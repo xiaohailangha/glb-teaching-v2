@@ -1,3 +1,4 @@
+import {learningDirectory} from './storage-paths.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -7,7 +8,7 @@ export const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
 export const beijingDay=t=>new Date(t+28800000).toISOString().slice(0,10);
 export function unionMs(rows){let end=-Infinity,total=0;for(const [a,b]of rows.sort((a,b)=>a[0]-b[0])){total+=Math.max(0,b-Math.max(a,end));end=Math.max(end,b);}return total;}
 export class LearningStore{
- constructor({directory=path.join(projectRoot,'work/learning-private'),now=Date.now}={}){
+ constructor({directory=learningDirectory,now=Date.now}={}){
  this.directory=directory;this.now=now;fs.mkdirSync(directory,{recursive:true,mode:0o700});this.db=new DatabaseSync(path.join(directory,'learning.sqlite'));
  this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
  CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY,value TEXT);
@@ -40,8 +41,32 @@ export class LearningStore{
  const start=Date.parse(from+'T00:00:00+08:00'),end=Date.parse(to+'T00:00:00+08:00')+86400000;
  const rows=this.db.prepare('SELECT * FROM activity WHERE end>? AND start<? AND (?=\'\' OR user_id=?) ORDER BY start').all(start,end,user,user),groups=new Map();
  for(const r of rows){for(let a=Math.max(start,r.start);a<Math.min(end,r.end);){const day=beijingDay(a),b=Math.min(end,r.end,Date.parse(day+'T00:00:00+08:00')+86400000),key=r.user_id+':'+day;
- if(!groups.has(key))groups.set(key,{userId:r.user_id,date:day,all:[],active:[],sessions:new Set(),courses:new Set(),first:a,last:b});const g=groups.get(key);g.all.push([a,b]);if(r.active)g.active.push([a,b]);g.sessions.add(r.session_id);if(r.course)g.courses.add(r.course);g.first=Math.min(g.first,a);g.last=Math.max(g.last,b);a=b;}}
- return [...groups.values()].map(g=>({userId:g.userId,date:g.date,foregroundMs:unionMs(g.all),learningMs:unionMs(g.active),sessions:g.sessions.size,courses:g.courses.size,first:g.first,last:g.last}));
+ if(!groups.has(key))groups.set(key,{userId:r.user_id,date:day,all:[],allSessions:new Map(),active:[],activeSessions:new Map(),sessions:new Set(),courses:new Set(),first:a,last:b});const g=groups.get(key);g.all.push([a,b]);if(!g.allSessions.has(r.session_id))g.allSessions.set(r.session_id,[]);g.allSessions.get(r.session_id).push([a,b]);if(r.active){g.active.push([a,b]);if(!g.activeSessions.has(r.session_id))g.activeSessions.set(r.session_id,[]);g.activeSessions.get(r.session_id).push([a,b]);}g.sessions.add(r.session_id);if(r.course)g.courses.add(r.course);g.first=Math.min(g.first,a);g.last=Math.max(g.last,b);a=b;}}
+ return [...groups.values()].map(g=>({userId:g.userId,date:g.date,foregroundMs:[...g.allSessions.values()].reduce((total,rows)=>total+unionMs(rows),0),learningMs:[...g.activeSessions.values()].reduce((total,rows)=>total+unionMs(rows),0),sessions:g.sessions.size,courses:g.courses.size,first:g.first,last:g.last}));
+ }
+ summary(user,catalog){
+ const events=this.db.prepare('SELECT course,stage,type,detail FROM events WHERE user_id=?').all(user);
+ const courses=new Set(),finished=new Set(),chapters=new Set(),words=new Set();
+ const addWords=list=>{for(const word of list||[]){if(typeof word==='string'&&/^[a-z]+(?:'[a-z]+)?$/i.test(word)){const w=word.toLowerCase();words.add(({apples:'apple',bananas:'banana',eggs:'egg',cups:'cup',bags:'bag',dollars:'dollar',tickets:'ticket',sports:'sport',parents:'parent',dishes:'dish',teeth:'tooth',noodles:'noodle',learning:'learn',reading:'read',going:'go',visited:'visit',watched:'watch',sounds:'sound',fits:'fit',does:'do',am:'be',are:'be',is:'be',was:'be'})[w]||w);}}};
+ const lookup=new Map(catalog.courses.map(c=>[c.id,c]));
+ for(const event of events){
+  if(['start','stage','finish'].includes(event.type))courses.add(event.course);
+  if(event.type==='finish')finished.add(event.course);
+  if(event.type==='stage'){
+   const stage=lookup.get(event.course)?.stages?.find(s=>s.id===event.stage);
+   if(stage?.chapter)chapters.add(lookup.get(event.course)?.category||event.course+':'+stage.chapter);
+  }
+  if(event.type==='expose'){try{addWords(JSON.parse(event.detail).words);}catch{}}
+ }
+ for(const row of this.db.prepare('SELECT payload FROM checkpoints WHERE user_id=?').all(user)){
+  try{addWords(JSON.parse(row.payload).vocabulary?.seen);}catch{}
+ }
+ const first=this.db.prepare('SELECT min(start) AS at FROM activity WHERE user_id=?').get(user).at;
+ const today=beijingDay(this.now());
+ const daily=first==null?[]:this.daily(beijingDay(first),today,user);
+ const days=Array.from({length:7},(_,i)=>beijingDay(this.now()-(6-i)*86400000));
+ const trend=days.map(date=>({date,learningMs:daily.find(r=>r.date===date)?.foregroundMs||0}));
+ return {chapters:chapters.size,courses:courses.size,completedCourses:finished.size,words:words.size,learningDays:daily.filter(r=>r.foregroundMs>0).length,learningMs:daily.reduce((n,r)=>n+r.foregroundMs,0),averageDailyHours:trend.reduce((n,r)=>n+r.learningMs,0)/7/3600000,trend,updatedAt:this.now()};
  }
  async backup(){const dir=path.join(this.directory,'backups');fs.mkdirSync(dir,{recursive:true,mode:0o700});const file=path.join(dir,`learning-${beijingDay(this.now())}.sqlite`);await backup(this.db,file);return file;}
  close(){this.db.close();}

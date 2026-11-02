@@ -1,0 +1,482 @@
+{
+  "id": "food-09-v1",
+  "title": "09 · 表达食物喜好",
+  "category": "food",
+  "goal": "说明喜欢和不喜欢的食物",
+  "prerequisites": [
+    "food-08-v1"
+  ],
+  "scenario": "朋友问你的口味，请说喜欢苹果、不喜欢牛奶，并且很喜欢面条。",
+  "stages": [
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "09 · 表达食物喜好",
+      "text": "说明喜欢和不喜欢的食物",
+      "clip": "c96_dd895c3b6603779984b7"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "like",
+      "text": "喜欢",
+      "clip": "c96_670348a27f1615a626ad"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "like",
+      "text": "喜欢",
+      "clip": "c96_f06ff4b855c0f39e40f2",
+      "speechText": "like"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "like",
+      "text": "喜欢",
+      "practiceClip": "c96_f06ff4b855c0f39e40f2",
+      "speechText": "like",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "love",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "love",
+      "text": "很喜欢",
+      "clip": "c96_c71e395f345b8c1839ef"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "love",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "love",
+      "text": "很喜欢",
+      "clip": "c96_32af7a1b7cd511099bed",
+      "speechText": "love"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "love",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "love",
+      "text": "很喜欢",
+      "practiceClip": "c96_32af7a1b7cd511099bed",
+      "speechText": "love",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "food",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "food",
+      "text": "食物",
+      "clip": "c96_cce32e9e6d02cbc6f0c3"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "food",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "food",
+      "text": "食物",
+      "clip": "c96_e2cd8cc5ea6a8d314978",
+      "speechText": "food"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "food",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "food",
+      "text": "食物",
+      "practiceClip": "c96_e2cd8cc5ea6a8d314978",
+      "speechText": "food",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "like apples",
+      "text": "喜欢苹果",
+      "clip": "c96_69ed39a118158029004b",
+      "speechText": "like apples"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "like apples",
+      "text": "喜欢苹果",
+      "practiceClip": "c96_69ed39a118158029004b",
+      "speechText": "like apples",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "do not like",
+      "text": "不喜欢",
+      "clip": "c96_bd4ccee7b079bb947b9b",
+      "speechText": "do not like"
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "do not like",
+      "text": "不喜欢",
+      "practiceClip": "c96_bd4ccee7b079bb947b9b",
+      "speechText": "do not like",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I like apples.",
+      "text": "我喜欢苹果。",
+      "clip": "c96_cc8b485ef302cc7f7ae2",
+      "speechText": "I like apples."
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I like apples.",
+      "text": "我喜欢苹果。",
+      "practiceClip": "c96_cc8b485ef302cc7f7ae2",
+      "speechText": "I like apples.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I do not like milk.",
+      "text": "我不喜欢牛奶。",
+      "clip": "c96_758eb7df6c66198d7389",
+      "speechText": "I do not like milk."
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I do not like milk.",
+      "text": "我不喜欢牛奶。",
+      "practiceClip": "c96_758eb7df6c66198d7389",
+      "speechText": "I do not like milk.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I love noodles.",
+      "text": "我很喜欢面条。",
+      "clip": "c96_07f347f331969ca37afb",
+      "speechText": "I love noodles."
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I love noodles.",
+      "text": "我很喜欢面条。",
+      "practiceClip": "c96_07f347f331969ca37afb",
+      "speechText": "I love noodles.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_f06ff4b855c0f39e40f2",
+      "hide": true
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_f06ff4b855c0f39e40f2",
+      "speechText": "like",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "很喜欢"
+        },
+        {
+          "id": "answer_2",
+          "label": "食物"
+        },
+        {
+          "id": "answer_0",
+          "label": "喜欢"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_32af7a1b7cd511099bed",
+      "hide": true
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "love",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_32af7a1b7cd511099bed",
+      "speechText": "love",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "食物"
+        },
+        {
+          "id": "answer_0",
+          "label": "喜欢"
+        },
+        {
+          "id": "answer_1",
+          "label": "很喜欢"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "like apples",
+      "text": "不看英文，请表达：喜欢苹果",
+      "practiceClip": "c96_69ed39a118158029004b",
+      "speechText": "like apples",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "do not like",
+      "text": "不看英文，请表达：不喜欢",
+      "practiceClip": "c96_bd4ccee7b079bb947b9b",
+      "speechText": "do not like",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I like apples.",
+      "text": "情境练习：朋友问你的口味，请说喜欢苹果、不喜欢牛奶，并且很喜欢面条。\n这一句请表达：我喜欢苹果。",
+      "practiceClip": "c96_cc8b485ef302cc7f7ae2",
+      "speechText": "I like apples.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I do not like milk.",
+      "text": "情境练习：朋友问你的口味，请说喜欢苹果、不喜欢牛奶，并且很喜欢面条。\n这一句请表达：我不喜欢牛奶。",
+      "practiceClip": "c96_758eb7df6c66198d7389",
+      "speechText": "I do not like milk.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I love noodles.",
+      "text": "情境练习：朋友问你的口味，请说喜欢苹果、不喜欢牛奶，并且很喜欢面条。\n这一句请表达：我很喜欢面条。",
+      "practiceClip": "c96_07f347f331969ca37afb",
+      "speechText": "I love noodles.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达食物喜好",
+      "word": "like",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

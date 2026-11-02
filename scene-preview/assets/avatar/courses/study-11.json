@@ -1,0 +1,482 @@
+{
+  "id": "study-11-v1",
+  "title": "11 · 安排简单会议",
+  "category": "study",
+  "goal": "提议会议时间并确认是否方便",
+  "prerequisites": [
+    "study-10-v1"
+  ],
+  "scenario": "你想约星期二十点开会，请确认对方是否有空，提出时间，再复述安排。",
+  "stages": [
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "11 · 安排简单会议",
+      "text": "提议会议时间并确认是否方便",
+      "clip": "c96_2f164b028be866a14f50"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "meeting",
+      "text": "会议",
+      "clip": "c96_05bfdb33066540a9f938"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "meeting",
+      "text": "会议",
+      "clip": "c96_6e56e2990edfaa8f1a95",
+      "speechText": "meeting"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "meeting",
+      "text": "会议",
+      "practiceClip": "c96_6e56e2990edfaa8f1a95",
+      "speechText": "meeting",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "tuesday",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "Tuesday",
+      "text": "星期二",
+      "clip": "c96_8053901d33143078218b"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "tuesday",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "Tuesday",
+      "text": "星期二",
+      "clip": "c96_d9483cf7bc3666fc2556",
+      "speechText": "Tuesday"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "tuesday",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "Tuesday",
+      "text": "星期二",
+      "practiceClip": "c96_d9483cf7bc3666fc2556",
+      "speechText": "Tuesday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "available",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "available",
+      "text": "有空的；可用的",
+      "clip": "c96_56556394bffe65c9cb20"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "available",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "available",
+      "text": "有空的；可用的",
+      "clip": "c96_311087fe50611c12dad5",
+      "speechText": "available"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "available",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "available",
+      "text": "有空的；可用的",
+      "practiceClip": "c96_311087fe50611c12dad5",
+      "speechText": "available",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a meeting",
+      "text": "一次会议",
+      "clip": "c96_e7fd9be6e946d82d9e97",
+      "speechText": "a meeting"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a meeting",
+      "text": "一次会议",
+      "practiceClip": "c96_e7fd9be6e946d82d9e97",
+      "speechText": "a meeting",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "on Tuesday",
+      "text": "在星期二",
+      "clip": "c96_443f148f883fee05c281",
+      "speechText": "on Tuesday"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "on Tuesday",
+      "text": "在星期二",
+      "practiceClip": "c96_443f148f883fee05c281",
+      "speechText": "on Tuesday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Are you available on Tuesday?",
+      "text": "你星期二有空吗？",
+      "clip": "c96_63e47fa862fcaf285cf5",
+      "speechText": "Are you available on Tuesday?"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Are you available on Tuesday?",
+      "text": "你星期二有空吗？",
+      "practiceClip": "c96_63e47fa862fcaf285cf5",
+      "speechText": "Are you available on Tuesday?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Can we meet at ten?",
+      "text": "我们可以十点见面吗？",
+      "clip": "c96_49880f81bf8ef978ad32",
+      "speechText": "Can we meet at ten?"
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Can we meet at ten?",
+      "text": "我们可以十点见面吗？",
+      "practiceClip": "c96_49880f81bf8ef978ad32",
+      "speechText": "Can we meet at ten?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "The meeting is at ten.",
+      "text": "会议在十点。",
+      "clip": "c96_5ea4cf6e1d763850b377",
+      "speechText": "The meeting is at ten."
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "The meeting is at ten.",
+      "text": "会议在十点。",
+      "practiceClip": "c96_5ea4cf6e1d763850b377",
+      "speechText": "The meeting is at ten.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_6e56e2990edfaa8f1a95",
+      "hide": true
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_6e56e2990edfaa8f1a95",
+      "speechText": "meeting",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "星期二"
+        },
+        {
+          "id": "answer_2",
+          "label": "有空的"
+        },
+        {
+          "id": "answer_0",
+          "label": "会议"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_d9483cf7bc3666fc2556",
+      "hide": true
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "tuesday",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_d9483cf7bc3666fc2556",
+      "speechText": "Tuesday",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "有空的"
+        },
+        {
+          "id": "answer_0",
+          "label": "会议"
+        },
+        {
+          "id": "answer_1",
+          "label": "星期二"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a meeting",
+      "text": "不看英文，请表达：一次会议",
+      "practiceClip": "c96_e7fd9be6e946d82d9e97",
+      "speechText": "a meeting",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "on Tuesday",
+      "text": "不看英文，请表达：在星期二",
+      "practiceClip": "c96_443f148f883fee05c281",
+      "speechText": "on Tuesday",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Are you available on Tuesday?",
+      "text": "情境练习：你想约星期二十点开会，请确认对方是否有空，提出时间，再复述安排。\n这一句请表达：你星期二有空吗？",
+      "practiceClip": "c96_63e47fa862fcaf285cf5",
+      "speechText": "Are you available on Tuesday?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Can we meet at ten?",
+      "text": "情境练习：你想约星期二十点开会，请确认对方是否有空，提出时间，再复述安排。\n这一句请表达：我们可以十点见面吗？",
+      "practiceClip": "c96_49880f81bf8ef978ad32",
+      "speechText": "Can we meet at ten?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "The meeting is at ten.",
+      "text": "情境练习：你想约星期二十点开会，请确认对方是否有空，提出时间，再复述安排。\n这一句请表达：会议在十点。",
+      "practiceClip": "c96_5ea4cf6e1d763850b377",
+      "speechText": "The meeting is at ten.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "安排简单会议",
+      "word": "meeting",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

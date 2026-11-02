@@ -6,7 +6,7 @@ import crypto from 'node:crypto';
 import {gzipSync} from 'node:zlib';
 
 const credentials=JSON.parse((await fs.readFile('.secrets/tencent.json','utf8')).replace(/^\uFEFF/,''));
-const base=JSON.parse(await fs.readFile('.secrets/cos-assets.json','utf8'));
+const base=JSON.parse(await fs.readFile('.secrets/cos-scene-assets.json','utf8'));
 const cos=new COS({SecretId:credentials.secretId,SecretKey:credentials.secretKey,Protocol:'https:',Timeout:60000});
 const call=(method,params)=>new Promise((resolve,reject)=>cos[method](params,(error,result)=>error?reject(Error(`${method}: ${error.code||error.statusCode}`)):resolve(result)));
 const params={Bucket:base.bucket,Region:base.region};

@@ -1,0 +1,482 @@
+{
+  "id": "social-01-v1",
+  "title": "01 · 介绍兴趣爱好",
+  "category": "social",
+  "goal": "询问兴趣并表达喜欢做什么",
+  "prerequisites": [
+    "introductions-12-v1"
+  ],
+  "scenario": "新朋友问你的爱好，请回答喜欢阅读和音乐，再询问他的爱好。",
+  "stages": [
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "01 · 介绍兴趣爱好",
+      "text": "询问兴趣并表达喜欢做什么",
+      "clip": "c96_519de1147368033f31d6"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "hobby",
+      "text": "爱好",
+      "clip": "c96_86434e0d2562b29b7ac7"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "hobby",
+      "text": "爱好",
+      "clip": "c96_0d5b4b02023d708995b6",
+      "speechText": "hobby"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "hobby",
+      "text": "爱好",
+      "practiceClip": "c96_0d5b4b02023d708995b6",
+      "speechText": "hobby",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "music",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "music",
+      "text": "音乐",
+      "clip": "c96_49edacff1ae24658f349"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "music",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "music",
+      "text": "音乐",
+      "clip": "c96_4933b22f6936a7460065",
+      "speechText": "music"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "music",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "music",
+      "text": "音乐",
+      "practiceClip": "c96_4933b22f6936a7460065",
+      "speechText": "music",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "reading",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "reading",
+      "text": "阅读活动",
+      "clip": "c96_d21651d5834952e8c101"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "reading",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "reading",
+      "text": "阅读活动",
+      "clip": "c96_23d874d9ecf5e11b2158",
+      "speechText": "reading"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "reading",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "reading",
+      "text": "阅读活动",
+      "practiceClip": "c96_23d874d9ecf5e11b2158",
+      "speechText": "reading",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "my hobby",
+      "text": "我的爱好",
+      "clip": "c96_f44a4c87567532cbc9bf",
+      "speechText": "my hobby"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "my hobby",
+      "text": "我的爱好",
+      "practiceClip": "c96_f44a4c87567532cbc9bf",
+      "speechText": "my hobby",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "like reading",
+      "text": "喜欢阅读",
+      "clip": "c96_e961ecbbb4f9992f78f4",
+      "speechText": "like reading"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "like reading",
+      "text": "喜欢阅读",
+      "practiceClip": "c96_e961ecbbb4f9992f78f4",
+      "speechText": "like reading",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "What is your hobby?",
+      "text": "你的爱好是什么？",
+      "clip": "c96_7a7ca9fa0a06c3589bf7",
+      "speechText": "What is your hobby?"
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "What is your hobby?",
+      "text": "你的爱好是什么？",
+      "practiceClip": "c96_7a7ca9fa0a06c3589bf7",
+      "speechText": "What is your hobby?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I like reading.",
+      "text": "我喜欢阅读。",
+      "clip": "c96_a3b3a6cdd8c9ad1399eb",
+      "speechText": "I like reading."
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I like reading.",
+      "text": "我喜欢阅读。",
+      "practiceClip": "c96_a3b3a6cdd8c9ad1399eb",
+      "speechText": "I like reading.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I like music.",
+      "text": "我喜欢音乐。",
+      "clip": "c96_df212863335181a88941",
+      "speechText": "I like music."
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I like music.",
+      "text": "我喜欢音乐。",
+      "practiceClip": "c96_df212863335181a88941",
+      "speechText": "I like music.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_0d5b4b02023d708995b6",
+      "hide": true
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_0d5b4b02023d708995b6",
+      "speechText": "hobby",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "音乐"
+        },
+        {
+          "id": "answer_2",
+          "label": "阅读活动"
+        },
+        {
+          "id": "answer_0",
+          "label": "爱好"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_4933b22f6936a7460065",
+      "hide": true
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "music",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_4933b22f6936a7460065",
+      "speechText": "music",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "阅读活动"
+        },
+        {
+          "id": "answer_0",
+          "label": "爱好"
+        },
+        {
+          "id": "answer_1",
+          "label": "音乐"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "my hobby",
+      "text": "不看英文，请表达：我的爱好",
+      "practiceClip": "c96_f44a4c87567532cbc9bf",
+      "speechText": "my hobby",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "like reading",
+      "text": "不看英文，请表达：喜欢阅读",
+      "practiceClip": "c96_e961ecbbb4f9992f78f4",
+      "speechText": "like reading",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "What is your hobby?",
+      "text": "情境练习：新朋友问你的爱好，请回答喜欢阅读和音乐，再询问他的爱好。\n这一句请表达：你的爱好是什么？",
+      "practiceClip": "c96_7a7ca9fa0a06c3589bf7",
+      "speechText": "What is your hobby?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I like reading.",
+      "text": "情境练习：新朋友问你的爱好，请回答喜欢阅读和音乐，再询问他的爱好。\n这一句请表达：我喜欢阅读。",
+      "practiceClip": "c96_a3b3a6cdd8c9ad1399eb",
+      "speechText": "I like reading.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I like music.",
+      "text": "情境练习：新朋友问你的爱好，请回答喜欢阅读和音乐，再询问他的爱好。\n这一句请表达：我喜欢音乐。",
+      "practiceClip": "c96_df212863335181a88941",
+      "speechText": "I like music.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍兴趣爱好",
+      "word": "hobby",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

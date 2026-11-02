@@ -1,5 +1,5 @@
 // American dictionary forms. Function words also have weak forms in sentences.
-const courseLexicon = <String, ({String clip, String ipa, String meaning})>{
+final courseLexicon = <String, ({String clip, String ipa, String meaning})>{
   'green': (clip: 'u2_green', ipa: '/ɡriːn/', meaning: '绿色'),
   'yellow': (clip: 'u2_yellow', ipa: '/ˈjel.oʊ/', meaning: '黄色'),
   'blue': (clip: 'u2_blue', ipa: '/bluː/', meaning: '蓝色'),
@@ -38,3 +38,21 @@ const courseLexicon = <String, ({String clip, String ipa, String meaning})>{
     meaning: '在 want to eat 中连接动作；句中可弱读',
   ),
 };
+
+/// Install vocabulary from the same immutable release as lesson and audio data.
+void installCourseLexicon(Map<String, dynamic> catalog) {
+  final rows = catalog['lexicon'] as List?;
+  if (rows == null) return;
+  final next = <String, ({String clip, String ipa, String meaning})>{};
+  for (final row in rows) {
+    final word = (row['word'] as String).toLowerCase();
+    final clip = row['clip'] as String? ??
+        Uri.parse(row['audio']['url'] as String).pathSegments.last.replaceFirst('.wav', '');
+    if (!RegExp(r'^[a-zA-Z0-9_-]+$').hasMatch(clip) || next.containsKey(word)) {
+      throw const FormatException('课程词库无效');
+    }
+    next[word] = (clip: clip, ipa: row['ipa'] as String, meaning: row['meaning'] as String);
+  }
+  if (next.isEmpty) throw const FormatException('课程词库为空');
+  courseLexicon..clear()..addAll(next);
+}

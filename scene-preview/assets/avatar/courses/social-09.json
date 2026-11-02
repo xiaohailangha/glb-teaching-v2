@@ -1,0 +1,482 @@
+{
+  "id": "social-09-v1",
+  "title": "09 · 表达简单感受",
+  "category": "social",
+  "goal": "表达开心、疲惫和饥饿的状态",
+  "prerequisites": [
+    "social-08-v1"
+  ],
+  "scenario": "在见到朋友、忙完一天和准备吃饭的三个情境中，分别表达相应感受。",
+  "stages": [
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "09 · 表达简单感受",
+      "text": "表达开心、疲惫和饥饿的状态",
+      "clip": "c96_d76e4ff4afc913548185"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "happy",
+      "text": "开心的",
+      "clip": "c96_cdc1bfe622aacf1792c0"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "happy",
+      "text": "开心的",
+      "clip": "c96_9016e921bafae61943ab",
+      "speechText": "happy"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "happy",
+      "text": "开心的",
+      "practiceClip": "c96_9016e921bafae61943ab",
+      "speechText": "happy",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "tired",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "tired",
+      "text": "疲惫的",
+      "clip": "c96_89e64011cbde5133d547"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "tired",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "tired",
+      "text": "疲惫的",
+      "clip": "c96_58c407d1664cdff0eab6",
+      "speechText": "tired"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "tired",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "tired",
+      "text": "疲惫的",
+      "practiceClip": "c96_58c407d1664cdff0eab6",
+      "speechText": "tired",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "hungry",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "hungry",
+      "text": "饥饿的",
+      "clip": "c96_5a1afa6408a93d9c9448"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "hungry",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "hungry",
+      "text": "饥饿的",
+      "clip": "c96_99b0da87cc332b1d8f9a",
+      "speechText": "hungry"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "hungry",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "hungry",
+      "text": "饥饿的",
+      "practiceClip": "c96_99b0da87cc332b1d8f9a",
+      "speechText": "hungry",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "feel happy",
+      "text": "感到开心",
+      "clip": "c96_ca9bf04c6a0aa168c9d7",
+      "speechText": "feel happy"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "feel happy",
+      "text": "感到开心",
+      "practiceClip": "c96_ca9bf04c6a0aa168c9d7",
+      "speechText": "feel happy",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "feel tired",
+      "text": "感到疲惫",
+      "clip": "c96_3c32b531e98ed3c9583a",
+      "speechText": "feel tired"
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "feel tired",
+      "text": "感到疲惫",
+      "practiceClip": "c96_3c32b531e98ed3c9583a",
+      "speechText": "feel tired",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I am happy.",
+      "text": "我很开心。",
+      "clip": "c96_dfd6862ae75597230c43",
+      "speechText": "I am happy."
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I am happy.",
+      "text": "我很开心。",
+      "practiceClip": "c96_dfd6862ae75597230c43",
+      "speechText": "I am happy.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I am tired.",
+      "text": "我很累。",
+      "clip": "c96_79df4624562a39c3cbcd",
+      "speechText": "I am tired."
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I am tired.",
+      "text": "我很累。",
+      "practiceClip": "c96_79df4624562a39c3cbcd",
+      "speechText": "I am tired.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I am hungry.",
+      "text": "我饿了。",
+      "clip": "c96_381fd9b0256323c3bf7e",
+      "speechText": "I am hungry."
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I am hungry.",
+      "text": "我饿了。",
+      "practiceClip": "c96_381fd9b0256323c3bf7e",
+      "speechText": "I am hungry.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_9016e921bafae61943ab",
+      "hide": true
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_9016e921bafae61943ab",
+      "speechText": "happy",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "疲惫的"
+        },
+        {
+          "id": "answer_2",
+          "label": "饥饿的"
+        },
+        {
+          "id": "answer_0",
+          "label": "开心的"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_58c407d1664cdff0eab6",
+      "hide": true
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "tired",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_58c407d1664cdff0eab6",
+      "speechText": "tired",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "饥饿的"
+        },
+        {
+          "id": "answer_0",
+          "label": "开心的"
+        },
+        {
+          "id": "answer_1",
+          "label": "疲惫的"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "feel happy",
+      "text": "不看英文，请表达：感到开心",
+      "practiceClip": "c96_ca9bf04c6a0aa168c9d7",
+      "speechText": "feel happy",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "feel tired",
+      "text": "不看英文，请表达：感到疲惫",
+      "practiceClip": "c96_3c32b531e98ed3c9583a",
+      "speechText": "feel tired",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I am happy.",
+      "text": "情境练习：在见到朋友、忙完一天和准备吃饭的三个情境中，分别表达相应感受。\n这一句请表达：我很开心。",
+      "practiceClip": "c96_dfd6862ae75597230c43",
+      "speechText": "I am happy.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I am tired.",
+      "text": "情境练习：在见到朋友、忙完一天和准备吃饭的三个情境中，分别表达相应感受。\n这一句请表达：我很累。",
+      "practiceClip": "c96_79df4624562a39c3cbcd",
+      "speechText": "I am tired.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I am hungry.",
+      "text": "情境练习：在见到朋友、忙完一天和准备吃饭的三个情境中，分别表达相应感受。\n这一句请表达：我饿了。",
+      "practiceClip": "c96_381fd9b0256323c3bf7e",
+      "speechText": "I am hungry.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达简单感受",
+      "word": "happy",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

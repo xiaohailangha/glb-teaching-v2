@@ -1,3 +1,5 @@
+import 'course_resources.dart';
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
@@ -94,7 +96,12 @@ class SpeechClient {
     if (clip.remote) {
       await player.setUrl(clip.path);
     } else {
-      await player.setAsset('assets/avatar/audio/${clip.path}.wav');
+      final path = 'assets/avatar/audio/${clip.path}.wav';
+      if (CourseResources.instance.release != null) {
+        await player.setCourseAsset(path);
+      } else {
+        await player.setAsset(path);
+      }
     }
     if (token != generation) return;
     await player.setSpeed(rate);

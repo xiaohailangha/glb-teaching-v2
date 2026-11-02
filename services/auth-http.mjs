@@ -1,3 +1,4 @@
+import {authDirectory} from './storage-paths.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -21,12 +22,12 @@ export function normalizeNickname(value){
   return n;
 }
 export class AuthStore {
-  constructor({directory=path.join(projectRoot,'work/auth-private'),secret,send=sendLoginCode,configured=smsConfigured,now=Date.now,testMode=false}={}){
+  constructor({directory=authDirectory,secret,send=sendLoginCode,configured=smsConfigured,now=Date.now,testMode=false}={}){
     fs.mkdirSync(directory,{recursive:true,mode:0o700});
     const keyFile=path.join(directory,'encryption.key');
     if(!secret){if(!fs.existsSync(keyFile))fs.writeFileSync(keyFile,crypto.randomBytes(32),{mode:0o600,flag:'wx'});secret=fs.readFileSync(keyFile);}
     if(secret.length!==32)throw new Error('Invalid auth encryption key');
-    this.key=secret;this.send=send;this.configured=configured;this.now=now;this.testMode=testMode;
+    this.directory=directory;this.key=secret;this.send=send;this.configured=configured;this.now=now;this.testMode=testMode;
     this.db=new DatabaseSync(path.join(directory,'accounts.sqlite'));
     this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
       CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,phone_key TEXT UNIQUE NOT NULL,phone_cipher TEXT NOT NULL,nickname TEXT NOT NULL,created INTEGER NOT NULL);

@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import {signedUrl,pcmWave,readWave,validateAudio,alignmentCues,phoneViseme,speechText} from '../services/tencent-speech.mjs';
 import {trustedRequest} from '../services/speech-http.mjs';
-import {wavFromFloat} from '../assets/avatar/cloud-speech.js';
 
 test('Tencent signing uses raw sorted values, then percent-encodes transport values',()=>{
   const params={ref_text:'I like apples.',timestamp:123,nonce:2};
@@ -13,11 +12,10 @@ test('Tencent signing uses raw sorted values, then percent-encodes transport val
   const tts=new URL(signedUrl('tts.cloud.tencent.com/stream_wsv2',{Text:'苹果 & apple'},'test-key',{tts:true}));
   assert.equal(tts.searchParams.get('Signature'),crypto.createHmac('sha1','test-key').update('GETtts.cloud.tencent.com/stream_wsv2?Text=苹果 & apple').digest('base64'));
 });
-test('recording resamples 48k/44.1k to valid PCM16 and rejects silent or malformed uploads',()=>{
-  for(const rate of [48000,44100,16000]){
-    const samples=Float32Array.from({length:rate},(_,i)=>Math.sin(i*2*Math.PI*440/rate)*.2);
-    const wav=Buffer.from(wavFromFloat(samples,rate));assert.equal(validateAudio(wav).duration,1);
-  }
+test('speech uploads accept PCM16 and reject silent or malformed audio',()=>{
+  const pcm=Buffer.alloc(32000);
+  for(let i=0;i<16000;i++)pcm.writeInt16LE(Math.round(Math.sin(i*2*Math.PI*440/16000)*6500),i*2);
+  assert.equal(validateAudio(pcmWave(pcm)).duration,1);
   assert.throws(()=>validateAudio(pcmWave(Buffer.alloc(32000))),/没有听到/);
   assert.throws(()=>readWave(Buffer.from('not audio')),/PCM WAV/);
   const bad=pcmWave(Buffer.alloc(32000));bad.writeUInt32LE(48000,24);assert.throws(()=>readWave(bad),/16kHz/);

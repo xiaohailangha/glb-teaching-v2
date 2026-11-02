@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T14:35:03.158Z",
+  "checkedAt": "2026-11-01T08:49:47.653Z",
   "smsReady": false,
   "testMode": true,
   "realSmsSent": false,
@@ -9,7 +9,6 @@
     "cross-site requests cannot send codes",
     "nickname cannot change without a verified session",
     "registration cannot bypass phone verification",
-    "8888 challenge, registration or login, session restoration, rename and logout",
     "account database and provider configuration cannot be downloaded"
   ]
 }

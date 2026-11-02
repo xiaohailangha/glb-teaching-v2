@@ -1,0 +1,482 @@
+{
+  "id": "study-01-v1",
+  "title": "01 · 介绍自己的职业",
+  "category": "study",
+  "goal": "用合适的冠词介绍常见职业",
+  "prerequisites": [
+    "introductions-12-v1"
+  ],
+  "scenario": "分别扮演教师、医生和工程师，用完整句子介绍职业，留意 a 和 an。",
+  "stages": [
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "01 · 介绍自己的职业",
+      "text": "用合适的冠词介绍常见职业",
+      "clip": "c96_1adcb75f5a9f2c4c6db6"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "teacher",
+      "text": "教师",
+      "clip": "c96_25c856e024dec60be8b3"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "teacher",
+      "text": "教师",
+      "clip": "c96_20dfbf5d9c6b31dc1f3c",
+      "speechText": "teacher"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "teacher",
+      "text": "教师",
+      "practiceClip": "c96_20dfbf5d9c6b31dc1f3c",
+      "speechText": "teacher",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "doctor",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "doctor",
+      "text": "医生",
+      "clip": "c96_bb95223c4adc19510c95"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "doctor",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "doctor",
+      "text": "医生",
+      "clip": "c96_a06dde2fc9d66139127e",
+      "speechText": "doctor"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "doctor",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "doctor",
+      "text": "医生",
+      "practiceClip": "c96_a06dde2fc9d66139127e",
+      "speechText": "doctor",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "engineer",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "engineer",
+      "text": "工程师",
+      "clip": "c96_9527aeb8467c0072c907"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "engineer",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "engineer",
+      "text": "工程师",
+      "clip": "c96_60370be1b052927b67a2",
+      "speechText": "engineer"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "engineer",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "engineer",
+      "text": "工程师",
+      "practiceClip": "c96_60370be1b052927b67a2",
+      "speechText": "engineer",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a teacher",
+      "text": "一位教师",
+      "clip": "c96_338e0ce1e966b82571e6",
+      "speechText": "a teacher"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a teacher",
+      "text": "一位教师",
+      "practiceClip": "c96_338e0ce1e966b82571e6",
+      "speechText": "a teacher",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "an engineer",
+      "text": "一位工程师",
+      "clip": "c96_bbbc30d7c901a5f0839c",
+      "speechText": "an engineer"
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "an engineer",
+      "text": "一位工程师",
+      "practiceClip": "c96_bbbc30d7c901a5f0839c",
+      "speechText": "an engineer",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I am a teacher.",
+      "text": "我是一名教师。",
+      "clip": "c96_56b54b740b570f89b759",
+      "speechText": "I am a teacher."
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I am a teacher.",
+      "text": "我是一名教师。",
+      "practiceClip": "c96_56b54b740b570f89b759",
+      "speechText": "I am a teacher.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I am a doctor.",
+      "text": "我是一名医生。",
+      "clip": "c96_2a007d79e23812692360",
+      "speechText": "I am a doctor."
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I am a doctor.",
+      "text": "我是一名医生。",
+      "practiceClip": "c96_2a007d79e23812692360",
+      "speechText": "I am a doctor.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I am an engineer.",
+      "text": "我是一名工程师。",
+      "clip": "c96_fb94a4ba1dbd228256d6",
+      "speechText": "I am an engineer."
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I am an engineer.",
+      "text": "我是一名工程师。",
+      "practiceClip": "c96_fb94a4ba1dbd228256d6",
+      "speechText": "I am an engineer.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_20dfbf5d9c6b31dc1f3c",
+      "hide": true
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_20dfbf5d9c6b31dc1f3c",
+      "speechText": "teacher",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "医生"
+        },
+        {
+          "id": "answer_2",
+          "label": "工程师"
+        },
+        {
+          "id": "answer_0",
+          "label": "教师"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_a06dde2fc9d66139127e",
+      "hide": true
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "doctor",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_a06dde2fc9d66139127e",
+      "speechText": "doctor",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "工程师"
+        },
+        {
+          "id": "answer_0",
+          "label": "教师"
+        },
+        {
+          "id": "answer_1",
+          "label": "医生"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a teacher",
+      "text": "不看英文，请表达：一位教师",
+      "practiceClip": "c96_338e0ce1e966b82571e6",
+      "speechText": "a teacher",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "an engineer",
+      "text": "不看英文，请表达：一位工程师",
+      "practiceClip": "c96_bbbc30d7c901a5f0839c",
+      "speechText": "an engineer",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I am a teacher.",
+      "text": "情境练习：分别扮演教师、医生和工程师，用完整句子介绍职业，留意 a 和 an。\n这一句请表达：我是一名教师。",
+      "practiceClip": "c96_56b54b740b570f89b759",
+      "speechText": "I am a teacher.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I am a doctor.",
+      "text": "情境练习：分别扮演教师、医生和工程师，用完整句子介绍职业，留意 a 和 an。\n这一句请表达：我是一名医生。",
+      "practiceClip": "c96_2a007d79e23812692360",
+      "speechText": "I am a doctor.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I am an engineer.",
+      "text": "情境练习：分别扮演教师、医生和工程师，用完整句子介绍职业，留意 a 和 an。\n这一句请表达：我是一名工程师。",
+      "practiceClip": "c96_fb94a4ba1dbd228256d6",
+      "speechText": "I am an engineer.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍自己的职业",
+      "word": "teacher",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

@@ -23,7 +23,7 @@ class SceneAssetBundle extends CachingAssetBundle {
       final response = await client
           .get(Uri.base.resolve('/api/assets/scene-manifest'))
           .timeout(const Duration(seconds: 20));
-      if (response.statusCode != 200) return await rootBundle.load(key);
+      if (response.statusCode != 200) { throw StateError('人物资源暂时不可用，请重试'); }
       final manifest = jsonDecode(response.body) as Map<String, dynamic>;
       validateSceneManifest(manifest);
       final bytes = await downloadSceneParts(
@@ -33,10 +33,8 @@ class SceneAssetBundle extends CachingAssetBundle {
       );
       return ByteData.sublistView(bytes);
     } catch (_) {
-      debugPrint(
-        'Scene cloud assets unavailable; using the same bundled model.',
-      );
-      return rootBundle.load(key);
+      if (kDebugMode) return rootBundle.load(key);
+      rethrow;
     } finally {
       client.close();
     }

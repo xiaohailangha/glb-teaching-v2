@@ -1,0 +1,482 @@
+{
+  "id": "daily-10-v1",
+  "title": "10 · 说明自己的日程",
+  "category": "daily",
+  "goal": "按先后顺序描述一天的安排",
+  "prerequisites": [
+    "daily-09-v1"
+  ],
+  "scenario": "把早餐、上班和下班后阅读按顺序连起来，说明一个普通工作日。",
+  "stages": [
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 说明自己的日程",
+      "text": "按先后顺序描述一天的安排",
+      "clip": "c96_42cafc90b02818785950"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "first",
+      "text": "首先",
+      "clip": "c96_a9aed60ca183c912ecbf"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "first",
+      "text": "首先",
+      "clip": "c96_69e00ab3da07bc6d8404",
+      "speechText": "first"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "first",
+      "text": "首先",
+      "practiceClip": "c96_69e00ab3da07bc6d8404",
+      "speechText": "first",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "then",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "then",
+      "text": "然后",
+      "clip": "c96_71102fcd43968bfddc77"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "then",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "then",
+      "text": "然后",
+      "clip": "c96_8d3d5b32f23c14fa5321",
+      "speechText": "then"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "then",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "then",
+      "text": "然后",
+      "practiceClip": "c96_8d3d5b32f23c14fa5321",
+      "speechText": "then",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "after",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "after",
+      "text": "在……之后",
+      "clip": "c96_8f2ed3ad8185a825dc8c"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "after",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "after",
+      "text": "在……之后",
+      "clip": "c96_83fff3ffed50247f6f67",
+      "speechText": "after"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "after",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "after",
+      "text": "在……之后",
+      "practiceClip": "c96_83fff3ffed50247f6f67",
+      "speechText": "after",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "after lunch",
+      "text": "午饭后",
+      "clip": "c96_eb2eb56f5fa3da14a9a1",
+      "speechText": "after lunch"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "after lunch",
+      "text": "午饭后",
+      "practiceClip": "c96_eb2eb56f5fa3da14a9a1",
+      "speechText": "after lunch",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "after work",
+      "text": "下班后",
+      "clip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work"
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "after work",
+      "text": "下班后",
+      "practiceClip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "First, I have breakfast.",
+      "text": "首先，我吃早餐。",
+      "clip": "c96_77f1dc846c5061e82f51",
+      "speechText": "First, I have breakfast."
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "First, I have breakfast.",
+      "text": "首先，我吃早餐。",
+      "practiceClip": "c96_77f1dc846c5061e82f51",
+      "speechText": "First, I have breakfast.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Then I go to work.",
+      "text": "然后我去上班。",
+      "clip": "c96_25ce005d4fd5f22487bd",
+      "speechText": "Then I go to work."
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Then I go to work.",
+      "text": "然后我去上班。",
+      "practiceClip": "c96_25ce005d4fd5f22487bd",
+      "speechText": "Then I go to work.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I read after work.",
+      "text": "我下班后阅读。",
+      "clip": "c96_c9a1e9968f9919d236a7",
+      "speechText": "I read after work."
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I read after work.",
+      "text": "我下班后阅读。",
+      "practiceClip": "c96_c9a1e9968f9919d236a7",
+      "speechText": "I read after work.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_69e00ab3da07bc6d8404",
+      "hide": true
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_69e00ab3da07bc6d8404",
+      "speechText": "first",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "然后"
+        },
+        {
+          "id": "answer_2",
+          "label": "在……之后"
+        },
+        {
+          "id": "answer_0",
+          "label": "首先"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_8d3d5b32f23c14fa5321",
+      "hide": true
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "then",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_8d3d5b32f23c14fa5321",
+      "speechText": "then",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "在……之后"
+        },
+        {
+          "id": "answer_0",
+          "label": "首先"
+        },
+        {
+          "id": "answer_1",
+          "label": "然后"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "after lunch",
+      "text": "不看英文，请表达：午饭后",
+      "practiceClip": "c96_eb2eb56f5fa3da14a9a1",
+      "speechText": "after lunch",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "after work",
+      "text": "不看英文，请表达：下班后",
+      "practiceClip": "c96_32cc08de77b088a2d71d",
+      "speechText": "after work",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "First, I have breakfast.",
+      "text": "情境练习：把早餐、上班和下班后阅读按顺序连起来，说明一个普通工作日。\n这一句请表达：首先，我吃早餐。",
+      "practiceClip": "c96_77f1dc846c5061e82f51",
+      "speechText": "First, I have breakfast.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Then I go to work.",
+      "text": "情境练习：把早餐、上班和下班后阅读按顺序连起来，说明一个普通工作日。\n这一句请表达：然后我去上班。",
+      "practiceClip": "c96_25ce005d4fd5f22487bd",
+      "speechText": "Then I go to work.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I read after work.",
+      "text": "情境练习：把早餐、上班和下班后阅读按顺序连起来，说明一个普通工作日。\n这一句请表达：我下班后阅读。",
+      "practiceClip": "c96_c9a1e9968f9919d236a7",
+      "speechText": "I read after work.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明自己的日程",
+      "word": "first",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

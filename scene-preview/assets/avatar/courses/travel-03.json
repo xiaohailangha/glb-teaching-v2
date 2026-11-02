@@ -1,0 +1,482 @@
+{
+  "id": "travel-03-v1",
+  "title": "03 · 直走与转弯",
+  "category": "travel",
+  "goal": "理解并说出三种基本方向指令",
+  "prerequisites": [
+    "travel-02-v1"
+  ],
+  "scenario": "朋友向你问路，你按示范路线依次说直走、左转、右转。",
+  "stages": [
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "03 · 直走与转弯",
+      "text": "理解并说出三种基本方向指令",
+      "clip": "c96_38032c54a46229831c4e"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "straight",
+      "text": "笔直地",
+      "clip": "c96_a796837ab0a408c338be"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "straight",
+      "text": "笔直地",
+      "clip": "c96_2c10dd14db5e9a78deae",
+      "speechText": "straight"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "straight",
+      "text": "笔直地",
+      "practiceClip": "c96_2c10dd14db5e9a78deae",
+      "speechText": "straight",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "left",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "left",
+      "text": "左边；向左",
+      "clip": "c96_f36dd32906654aa66496"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "left",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "left",
+      "text": "左边；向左",
+      "clip": "c96_d6ccf5df5a26694243d3",
+      "speechText": "left"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "left",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "left",
+      "text": "左边；向左",
+      "practiceClip": "c96_d6ccf5df5a26694243d3",
+      "speechText": "left",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "right",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "right",
+      "text": "右边；向右",
+      "clip": "c96_a8093823363c5aa63cbc"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "right",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "right",
+      "text": "右边；向右",
+      "clip": "c96_d5b6a3a6a8d96cdf0e6c",
+      "speechText": "right"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "right",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "right",
+      "text": "右边；向右",
+      "practiceClip": "c96_d5b6a3a6a8d96cdf0e6c",
+      "speechText": "right",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "go straight",
+      "text": "直走",
+      "clip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "go straight",
+      "text": "直走",
+      "practiceClip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "turn left",
+      "text": "左转",
+      "clip": "c96_b1bcd64a3143e2f18eaa",
+      "speechText": "turn left"
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "turn left",
+      "text": "左转",
+      "practiceClip": "c96_b1bcd64a3143e2f18eaa",
+      "speechText": "turn left",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Go straight.",
+      "text": "直走。",
+      "clip": "c96_3ab2f71f37a9101620dc",
+      "speechText": "Go straight."
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Go straight.",
+      "text": "直走。",
+      "practiceClip": "c96_3ab2f71f37a9101620dc",
+      "speechText": "Go straight.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Turn left.",
+      "text": "左转。",
+      "clip": "c96_065cdf14941a0a4afd86",
+      "speechText": "Turn left."
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Turn left.",
+      "text": "左转。",
+      "practiceClip": "c96_065cdf14941a0a4afd86",
+      "speechText": "Turn left.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Turn right.",
+      "text": "右转。",
+      "clip": "c96_14e177b766aa0f029d3a",
+      "speechText": "Turn right."
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Turn right.",
+      "text": "右转。",
+      "practiceClip": "c96_14e177b766aa0f029d3a",
+      "speechText": "Turn right.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_2c10dd14db5e9a78deae",
+      "hide": true
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_2c10dd14db5e9a78deae",
+      "speechText": "straight",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "左边"
+        },
+        {
+          "id": "answer_2",
+          "label": "右边"
+        },
+        {
+          "id": "answer_0",
+          "label": "笔直地"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_d6ccf5df5a26694243d3",
+      "hide": true
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "left",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_d6ccf5df5a26694243d3",
+      "speechText": "left",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "右边"
+        },
+        {
+          "id": "answer_0",
+          "label": "笔直地"
+        },
+        {
+          "id": "answer_1",
+          "label": "左边"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "go straight",
+      "text": "不看英文，请表达：直走",
+      "practiceClip": "c96_d0b3624c0cd7ff5832b7",
+      "speechText": "go straight",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "turn left",
+      "text": "不看英文，请表达：左转",
+      "practiceClip": "c96_b1bcd64a3143e2f18eaa",
+      "speechText": "turn left",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Go straight.",
+      "text": "情境练习：朋友向你问路，你按示范路线依次说直走、左转、右转。\n这一句请表达：直走。",
+      "practiceClip": "c96_3ab2f71f37a9101620dc",
+      "speechText": "Go straight.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Turn left.",
+      "text": "情境练习：朋友向你问路，你按示范路线依次说直走、左转、右转。\n这一句请表达：左转。",
+      "practiceClip": "c96_065cdf14941a0a4afd86",
+      "speechText": "Turn left.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Turn right.",
+      "text": "情境练习：朋友向你问路，你按示范路线依次说直走、左转、右转。\n这一句请表达：右转。",
+      "practiceClip": "c96_14e177b766aa0f029d3a",
+      "speechText": "Turn right.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "直走与转弯",
+      "word": "straight",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

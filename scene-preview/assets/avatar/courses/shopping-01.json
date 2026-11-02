@@ -1,0 +1,482 @@
+{
+  "id": "shopping-01-v1",
+  "title": "01 · 说明需要的商品",
+  "category": "shopping",
+  "goal": "用 need 说明需要，用提问确认商店是否有货",
+  "prerequisites": [
+    "introductions-12-v1"
+  ],
+  "scenario": "你准备买包和瓶子，再询问店员是否有杯子。",
+  "stages": [
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "01 · 说明需要的商品",
+      "text": "用 need 说明需要，用提问确认商店是否有货",
+      "clip": "c96_9aba5e8931067a436342"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_f24852007d2cf1f2b524"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "bag",
+      "text": "包",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "bag",
+      "text": "包",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bottle",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "bottle",
+      "text": "瓶子",
+      "clip": "c96_9fb9acc16208c5205191"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bottle",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "bottle",
+      "text": "瓶子",
+      "clip": "c96_5cad89f880178012584a",
+      "speechText": "bottle"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bottle",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "bottle",
+      "text": "瓶子",
+      "practiceClip": "c96_5cad89f880178012584a",
+      "speechText": "bottle",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "cup",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "cup",
+      "text": "杯子",
+      "clip": "c96_15e7ebc4040daf254a1d"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "cup",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "cup",
+      "text": "杯子",
+      "clip": "c96_293132abe83a5ab1b6de",
+      "speechText": "cup"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "cup",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "cup",
+      "text": "杯子",
+      "practiceClip": "c96_293132abe83a5ab1b6de",
+      "speechText": "cup",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a bag",
+      "text": "一个包",
+      "clip": "c96_a9660c27774fd76363b3",
+      "speechText": "a bag"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a bag",
+      "text": "一个包",
+      "practiceClip": "c96_a9660c27774fd76363b3",
+      "speechText": "a bag",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a bottle",
+      "text": "一个瓶子",
+      "clip": "c96_d1b639ab40bd1687667c",
+      "speechText": "a bottle"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a bottle",
+      "text": "一个瓶子",
+      "practiceClip": "c96_d1b639ab40bd1687667c",
+      "speechText": "a bottle",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I need a bag.",
+      "text": "我需要一个包。",
+      "clip": "c96_420e3b0ec4b74f40ef93",
+      "speechText": "I need a bag."
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I need a bag.",
+      "text": "我需要一个包。",
+      "practiceClip": "c96_420e3b0ec4b74f40ef93",
+      "speechText": "I need a bag.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I need a bottle.",
+      "text": "我需要一个瓶子。",
+      "clip": "c96_015a5281711a656f340f",
+      "speechText": "I need a bottle."
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I need a bottle.",
+      "text": "我需要一个瓶子。",
+      "practiceClip": "c96_015a5281711a656f340f",
+      "speechText": "I need a bottle.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Do you have a cup?",
+      "text": "你们有杯子吗？",
+      "clip": "c96_47f263cb9fec8c46ea5c",
+      "speechText": "Do you have a cup?"
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Do you have a cup?",
+      "text": "你们有杯子吗？",
+      "practiceClip": "c96_47f263cb9fec8c46ea5c",
+      "speechText": "Do you have a cup?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c3295bb40ff36e0441ce",
+      "hide": true
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_c3295bb40ff36e0441ce",
+      "speechText": "bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "瓶子"
+        },
+        {
+          "id": "answer_2",
+          "label": "杯子"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_5cad89f880178012584a",
+      "hide": true
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bottle",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_5cad89f880178012584a",
+      "speechText": "bottle",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "杯子"
+        },
+        {
+          "id": "answer_0",
+          "label": "包"
+        },
+        {
+          "id": "answer_1",
+          "label": "瓶子"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a bag",
+      "text": "不看英文，请表达：一个包",
+      "practiceClip": "c96_a9660c27774fd76363b3",
+      "speechText": "a bag",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a bottle",
+      "text": "不看英文，请表达：一个瓶子",
+      "practiceClip": "c96_d1b639ab40bd1687667c",
+      "speechText": "a bottle",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I need a bag.",
+      "text": "情境练习：你准备买包和瓶子，再询问店员是否有杯子。\n这一句请表达：我需要一个包。",
+      "practiceClip": "c96_420e3b0ec4b74f40ef93",
+      "speechText": "I need a bag.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I need a bottle.",
+      "text": "情境练习：你准备买包和瓶子，再询问店员是否有杯子。\n这一句请表达：我需要一个瓶子。",
+      "practiceClip": "c96_015a5281711a656f340f",
+      "speechText": "I need a bottle.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Do you have a cup?",
+      "text": "情境练习：你准备买包和瓶子，再询问店员是否有杯子。\n这一句请表达：你们有杯子吗？",
+      "practiceClip": "c96_47f263cb9fec8c46ea5c",
+      "speechText": "Do you have a cup?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明需要的商品",
+      "word": "bag",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

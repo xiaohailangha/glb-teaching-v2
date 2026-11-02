@@ -1,0 +1,482 @@
+{
+  "id": "introductions-05-v1",
+  "title": "05 · 说说使用的语言",
+  "category": "introductions",
+  "goal": "说明自己会说的语言与学习中的语言",
+  "prerequisites": [
+    "introductions-04-v1"
+  ],
+  "scenario": "你想告诉新朋友自己会说中文、会一点英语，并且正在学习英语。",
+  "stages": [
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "05 · 说说使用的语言",
+      "text": "说明自己会说的语言与学习中的语言",
+      "clip": "c96_e452b4e8ae7dc6970a46"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "speak",
+      "text": "说某种语言",
+      "clip": "c96_12d8fc31c421f78287cf"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "speak",
+      "text": "说某种语言",
+      "clip": "c96_e75288a2d623110f10e4",
+      "speechText": "speak"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "speak",
+      "text": "说某种语言",
+      "practiceClip": "c96_e75288a2d623110f10e4",
+      "speechText": "speak",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "english",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "English",
+      "text": "英语",
+      "clip": "c96_ac95b89663ccad226fcf"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "english",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "English",
+      "text": "英语",
+      "clip": "c96_8f01b0eff97357f8326f",
+      "speechText": "English"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "english",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "English",
+      "text": "英语",
+      "practiceClip": "c96_8f01b0eff97357f8326f",
+      "speechText": "English",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "chinese",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "Chinese",
+      "text": "中文",
+      "clip": "c96_3928cb0f144c94663eb0"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "chinese",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "Chinese",
+      "text": "中文",
+      "clip": "c96_fccb8f2455c57fb3946a",
+      "speechText": "Chinese"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "chinese",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "Chinese",
+      "text": "中文",
+      "practiceClip": "c96_fccb8f2455c57fb3946a",
+      "speechText": "Chinese",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "speak English",
+      "text": "说英语",
+      "clip": "c96_f1a4846d445a9c866ff4",
+      "speechText": "speak English"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "speak English",
+      "text": "说英语",
+      "practiceClip": "c96_f1a4846d445a9c866ff4",
+      "speechText": "speak English",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "speak Chinese",
+      "text": "说中文",
+      "clip": "c96_87400a1189f97f2fdf99",
+      "speechText": "speak Chinese"
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "speak Chinese",
+      "text": "说中文",
+      "practiceClip": "c96_87400a1189f97f2fdf99",
+      "speechText": "speak Chinese",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I speak Chinese.",
+      "text": "我说中文。",
+      "clip": "c96_7d9819a249da2b800fe6",
+      "speechText": "I speak Chinese."
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I speak Chinese.",
+      "text": "我说中文。",
+      "practiceClip": "c96_7d9819a249da2b800fe6",
+      "speechText": "I speak Chinese.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I speak a little English.",
+      "text": "我会说一点英语。",
+      "clip": "c96_934d197312f80bfdf407",
+      "speechText": "I speak a little English."
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I speak a little English.",
+      "text": "我会说一点英语。",
+      "practiceClip": "c96_934d197312f80bfdf407",
+      "speechText": "I speak a little English.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I am learning English.",
+      "text": "我正在学习英语。",
+      "clip": "c96_0e1f6c3c7052877918a2",
+      "speechText": "I am learning English."
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I am learning English.",
+      "text": "我正在学习英语。",
+      "practiceClip": "c96_0e1f6c3c7052877918a2",
+      "speechText": "I am learning English.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_e75288a2d623110f10e4",
+      "hide": true
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_e75288a2d623110f10e4",
+      "speechText": "speak",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "英语"
+        },
+        {
+          "id": "answer_2",
+          "label": "中文"
+        },
+        {
+          "id": "answer_0",
+          "label": "说某种语言"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_8f01b0eff97357f8326f",
+      "hide": true
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "english",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_8f01b0eff97357f8326f",
+      "speechText": "English",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "中文"
+        },
+        {
+          "id": "answer_0",
+          "label": "说某种语言"
+        },
+        {
+          "id": "answer_1",
+          "label": "英语"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "speak English",
+      "text": "不看英文，请表达：说英语",
+      "practiceClip": "c96_f1a4846d445a9c866ff4",
+      "speechText": "speak English",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "speak Chinese",
+      "text": "不看英文，请表达：说中文",
+      "practiceClip": "c96_87400a1189f97f2fdf99",
+      "speechText": "speak Chinese",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I speak Chinese.",
+      "text": "情境练习：你想告诉新朋友自己会说中文、会一点英语，并且正在学习英语。\n这一句请表达：我说中文。",
+      "practiceClip": "c96_7d9819a249da2b800fe6",
+      "speechText": "I speak Chinese.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I speak a little English.",
+      "text": "情境练习：你想告诉新朋友自己会说中文、会一点英语，并且正在学习英语。\n这一句请表达：我会说一点英语。",
+      "practiceClip": "c96_934d197312f80bfdf407",
+      "speechText": "I speak a little English.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I am learning English.",
+      "text": "情境练习：你想告诉新朋友自己会说中文、会一点英语，并且正在学习英语。\n这一句请表达：我正在学习英语。",
+      "practiceClip": "c96_0e1f6c3c7052877918a2",
+      "speechText": "I am learning English.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说说使用的语言",
+      "word": "speak",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

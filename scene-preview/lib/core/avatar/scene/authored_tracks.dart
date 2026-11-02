@@ -1,4 +1,5 @@
-// Generated from the current, user-approved Three.js authored tracks.
+// Authored motion source for the current renderer.
+// Preserve the approved timing and mouth poses when editing these tracks.
 const Map<String, dynamic> performanceTracks = {
   "gaze": [
     [0, 0.08],

@@ -1,0 +1,780 @@
+[
+  {
+    "id": "introductions-01-v1",
+    "asset": "introductions-01",
+    "order": 1,
+    "title": "打招呼与告别",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "在见面和离开时选择合适的招呼",
+    "vocabulary": [
+      {
+        "text": "hello",
+        "meaning": "你好"
+      },
+      {
+        "text": "goodbye",
+        "meaning": "再见"
+      },
+      {
+        "text": "morning",
+        "meaning": "早晨"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "good morning",
+        "meaning": "早上好"
+      },
+      {
+        "text": "good afternoon",
+        "meaning": "下午好"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Hello.",
+        "meaning": "你好。"
+      },
+      {
+        "text": "Good morning.",
+        "meaning": "早上好。"
+      },
+      {
+        "text": "Goodbye.",
+        "meaning": "再见。"
+      }
+    ],
+    "scenario": "早上第一次见到同事，请说早上好；离开时再向他道别。",
+    "prerequisites": [],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Hello\n& goodbye."
+  },
+  {
+    "id": "introductions-02-v1",
+    "asset": "introductions-02",
+    "order": 2,
+    "title": "介绍自己的名字",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用完整句子说出自己的名字",
+    "vocabulary": [
+      {
+        "text": "name",
+        "meaning": "名字"
+      },
+      {
+        "text": "my",
+        "meaning": "我的"
+      },
+      {
+        "text": "is",
+        "meaning": "是"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "my name",
+        "meaning": "我的名字"
+      },
+      {
+        "text": "my name is",
+        "meaning": "我的名字是"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "My name is Lily.",
+        "meaning": "我的名字是莉莉。"
+      },
+      {
+        "text": "I am Ben.",
+        "meaning": "我是本。"
+      },
+      {
+        "text": "Hello, my name is Lily.",
+        "meaning": "你好，我的名字是莉莉。"
+      }
+    ],
+    "scenario": "先扮演莉莉，再扮演本，分别介绍名字；最后以莉莉的身份打招呼并自我介绍。",
+    "prerequisites": [
+      "introductions-01-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "My\nname is..."
+  },
+  {
+    "id": "introductions-03-v1",
+    "asset": "introductions-03",
+    "order": 3,
+    "title": "询问对方名字",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "询问名字并作简单回应",
+    "vocabulary": [
+      {
+        "text": "what",
+        "meaning": "什么"
+      },
+      {
+        "text": "your",
+        "meaning": "你的"
+      },
+      {
+        "text": "nice",
+        "meaning": "令人愉快的"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "your name",
+        "meaning": "你的名字"
+      },
+      {
+        "text": "nice to meet you",
+        "meaning": "很高兴认识你"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "What is your name?",
+        "meaning": "你叫什么名字？"
+      },
+      {
+        "text": "My name is Ben.",
+        "meaning": "我的名字是本。"
+      },
+      {
+        "text": "Nice to meet you.",
+        "meaning": "很高兴认识你。"
+      }
+    ],
+    "scenario": "先询问新邻居的名字，再扮演本回答，最后回应很高兴认识对方。",
+    "prerequisites": [
+      "introductions-02-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "What is\nyour name?"
+  },
+  {
+    "id": "introductions-04-v1",
+    "asset": "introductions-04",
+    "order": 4,
+    "title": "介绍来自哪里",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用 from 表达来自的地方",
+    "vocabulary": [
+      {
+        "text": "from",
+        "meaning": "来自"
+      },
+      {
+        "text": "China",
+        "meaning": "中国"
+      },
+      {
+        "text": "Canada",
+        "meaning": "加拿大"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "from China",
+        "meaning": "来自中国"
+      },
+      {
+        "text": "from Canada",
+        "meaning": "来自加拿大"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Where are you from?",
+        "meaning": "你来自哪里？"
+      },
+      {
+        "text": "I am from China.",
+        "meaning": "我来自中国。"
+      },
+      {
+        "text": "I am from Canada.",
+        "meaning": "我来自加拿大。"
+      }
+    ],
+    "scenario": "先询问对方来自哪里，再分别扮演来自中国和加拿大的人回答。",
+    "prerequisites": [
+      "introductions-03-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Where\nI am from."
+  },
+  {
+    "id": "introductions-05-v1",
+    "asset": "introductions-05",
+    "order": 5,
+    "title": "说说使用的语言",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明自己会说的语言与学习中的语言",
+    "vocabulary": [
+      {
+        "text": "speak",
+        "meaning": "说某种语言"
+      },
+      {
+        "text": "English",
+        "meaning": "英语"
+      },
+      {
+        "text": "Chinese",
+        "meaning": "中文"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "speak English",
+        "meaning": "说英语"
+      },
+      {
+        "text": "speak Chinese",
+        "meaning": "说中文"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I speak Chinese.",
+        "meaning": "我说中文。"
+      },
+      {
+        "text": "I speak a little English.",
+        "meaning": "我会说一点英语。"
+      },
+      {
+        "text": "I am learning English.",
+        "meaning": "我正在学习英语。"
+      }
+    ],
+    "scenario": "你想告诉新朋友自己会说中文、会一点英语，并且正在学习英语。",
+    "prerequisites": [
+      "introductions-04-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Languages\nwe speak."
+  },
+  {
+    "id": "introductions-06-v1",
+    "asset": "introductions-06",
+    "order": 6,
+    "title": "礼貌地引起注意",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用礼貌开场获得帮助",
+    "vocabulary": [
+      {
+        "text": "excuse",
+        "meaning": "原谅或请对方注意"
+      },
+      {
+        "text": "help",
+        "meaning": "帮助"
+      },
+      {
+        "text": "please",
+        "meaning": "请"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "excuse me",
+        "meaning": "劳驾；打扰一下"
+      },
+      {
+        "text": "help me",
+        "meaning": "帮帮我"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Excuse me.",
+        "meaning": "劳驾。"
+      },
+      {
+        "text": "Can you help me, please?",
+        "meaning": "请问你能帮帮我吗？"
+      },
+      {
+        "text": "Yes, of course.",
+        "meaning": "可以，当然。"
+      }
+    ],
+    "scenario": "你在服务台前需要帮助，先礼貌地引起工作人员注意，再请求帮助。",
+    "prerequisites": [
+      "introductions-05-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Excuse\nme."
+  },
+  {
+    "id": "introductions-07-v1",
+    "asset": "introductions-07",
+    "order": 7,
+    "title": "感谢与回应",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "感谢帮助并自然回应感谢",
+    "vocabulary": [
+      {
+        "text": "thank",
+        "meaning": "感谢"
+      },
+      {
+        "text": "welcome",
+        "meaning": "受欢迎的；用于回应感谢"
+      },
+      {
+        "text": "much",
+        "meaning": "很多；程度高"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "thank you",
+        "meaning": "谢谢你"
+      },
+      {
+        "text": "thank you very much",
+        "meaning": "非常感谢你"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Thank you.",
+        "meaning": "谢谢你。"
+      },
+      {
+        "text": "Thank you very much.",
+        "meaning": "非常感谢你。"
+      },
+      {
+        "text": "You are welcome.",
+        "meaning": "不客气。"
+      }
+    ],
+    "scenario": "朋友帮你拿来了东西，请表示感谢；再练习回应朋友对你的感谢。",
+    "prerequisites": [
+      "introductions-06-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Thank\nyou."
+  },
+  {
+    "id": "introductions-08-v1",
+    "asset": "introductions-08",
+    "order": 8,
+    "title": "道歉与回应",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "为小失误道歉并回应道歉",
+    "vocabulary": [
+      {
+        "text": "sorry",
+        "meaning": "抱歉的"
+      },
+      {
+        "text": "okay",
+        "meaning": "没关系；好的"
+      },
+      {
+        "text": "problem",
+        "meaning": "问题"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "I am sorry",
+        "meaning": "我很抱歉"
+      },
+      {
+        "text": "no problem",
+        "meaning": "没问题"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I am sorry.",
+        "meaning": "我很抱歉。"
+      },
+      {
+        "text": "That is okay.",
+        "meaning": "没关系。"
+      },
+      {
+        "text": "No problem.",
+        "meaning": "没问题。"
+      }
+    ],
+    "scenario": "你不小心挡住了别人的路，请道歉；对方道歉时，你也能说没关系。",
+    "prerequisites": [
+      "introductions-07-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "I am\nsorry."
+  },
+  {
+    "id": "introductions-09-v1",
+    "asset": "introductions-09",
+    "order": 9,
+    "title": "表达听不懂",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "礼貌说明没有听懂",
+    "vocabulary": [
+      {
+        "text": "understand",
+        "meaning": "理解；听懂"
+      },
+      {
+        "text": "again",
+        "meaning": "再一次"
+      },
+      {
+        "text": "know",
+        "meaning": "知道"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "I do not understand",
+        "meaning": "我不明白；我没听懂"
+      },
+      {
+        "text": "do not know",
+        "meaning": "不知道"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I do not understand.",
+        "meaning": "我没听懂。"
+      },
+      {
+        "text": "I do not know.",
+        "meaning": "我不知道。"
+      },
+      {
+        "text": "Sorry, I do not understand.",
+        "meaning": "抱歉，我没听懂。"
+      }
+    ],
+    "scenario": "服务人员说得太快，你没听懂。请先道歉，再说明自己没听懂。",
+    "prerequisites": [
+      "introductions-08-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "I do not\nunderstand."
+  },
+  {
+    "id": "introductions-10-v1",
+    "asset": "introductions-10",
+    "order": 10,
+    "title": "请对方重复或放慢",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "请对方再说一遍，或者说慢一点",
+    "vocabulary": [
+      {
+        "text": "repeat",
+        "meaning": "重复"
+      },
+      {
+        "text": "slowly",
+        "meaning": "慢慢地"
+      },
+      {
+        "text": "say",
+        "meaning": "说"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "say that again",
+        "meaning": "再说一遍"
+      },
+      {
+        "text": "speak slowly",
+        "meaning": "慢慢说"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Can you say that again, please?",
+        "meaning": "请你再说一遍，好吗？"
+      },
+      {
+        "text": "Please speak slowly.",
+        "meaning": "请慢慢说。"
+      },
+      {
+        "text": "Can you repeat that, please?",
+        "meaning": "请你重复一下，好吗？"
+      }
+    ],
+    "scenario": "你听到了对方的话但没有听清，先请他再说一遍，再请他慢一点。",
+    "prerequisites": [
+      "introductions-09-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Say it\nagain."
+  },
+  {
+    "id": "introductions-11-v1",
+    "asset": "introductions-11",
+    "order": 11,
+    "title": "介绍一位朋友",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "把第三个人介绍给对方",
+    "vocabulary": [
+      {
+        "text": "friend",
+        "meaning": "朋友"
+      },
+      {
+        "text": "this",
+        "meaning": "这；这位"
+      },
+      {
+        "text": "meet",
+        "meaning": "认识；见面"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "my friend",
+        "meaning": "我的朋友"
+      },
+      {
+        "text": "this is",
+        "meaning": "这是；这位是"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "This is my friend.",
+        "meaning": "这是我的朋友。"
+      },
+      {
+        "text": "This is Ben.",
+        "meaning": "这位是本。"
+      },
+      {
+        "text": "Nice to meet you, Ben.",
+        "meaning": "本，很高兴认识你。"
+      }
+    ],
+    "scenario": "你带朋友本见新同学，先介绍他，再练习新同学向本打招呼的回应。",
+    "prerequisites": [
+      "introductions-10-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Meet\nmy friend."
+  },
+  {
+    "id": "introductions-12-v1",
+    "asset": "introductions-12",
+    "order": 12,
+    "title": "初次见面综合练习",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "串联招呼、姓名、来处和认识回应",
+    "vocabulary": [
+      {
+        "text": "hello",
+        "meaning": "你好"
+      },
+      {
+        "text": "name",
+        "meaning": "名字"
+      },
+      {
+        "text": "from",
+        "meaning": "来自"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "my name is",
+        "meaning": "我的名字是"
+      },
+      {
+        "text": "from China",
+        "meaning": "来自中国"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Hello, my name is Lily.",
+        "meaning": "你好，我的名字是莉莉。"
+      },
+      {
+        "text": "I am from China.",
+        "meaning": "我来自中国。"
+      },
+      {
+        "text": "Nice to meet you.",
+        "meaning": "很高兴认识你。"
+      }
+    ],
+    "scenario": "你扮演来自中国的莉莉，完成一次从招呼到认识回应的简短自我介绍。",
+    "prerequisites": [
+      "introductions-11-v1"
+    ],
+    "review": true,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Nice to\nmeet you."
+  }
+]

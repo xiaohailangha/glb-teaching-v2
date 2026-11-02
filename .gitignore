@@ -33,6 +33,11 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Retired root Flutter project: local generated platform remnants only.
+# The maintained platform project lives under scene-preview/.
+/android/
+/ios/
+
 # Symbolication related
 app.*.symbols
 
@@ -52,8 +57,6 @@ app.*.map.json
 /work/tencent-cache/
 /work/tencent-private/
 /node_modules/
-/work/tunnel/session.json
-/work/tunnel/access-link.txt
 /work/lan-preview-session.json
 
 # Local SDKs, caches, recordings and release artifacts are reproducible outputs.
@@ -80,3 +83,9 @@ app.*.map.json
 *.p12
 *.pem
 *.key
+
+# Retired tunnel credentials retained locally; never commit.
+/work/tunnel/
+
+/var/
+/cache/

@@ -1,0 +1,482 @@
+{
+  "id": "shopping-10-v1",
+  "title": "10 · 寻找合适尺码",
+  "category": "shopping",
+  "goal": "描述大小问题并询问其他尺码",
+  "prerequisites": [
+    "shopping-09-v1"
+  ],
+  "scenario": "你试穿的衣服太小，请告诉店员，并询问是否有中号。",
+  "stages": [
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 寻找合适尺码",
+      "text": "描述大小问题并询问其他尺码",
+      "clip": "c96_b649c5573bd8670a14af"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "size",
+      "text": "尺码",
+      "clip": "c96_759febb522089329b5bb"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "size",
+      "text": "尺码",
+      "clip": "c96_7d9de981bc90a68c0448",
+      "speechText": "size"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "size",
+      "text": "尺码",
+      "practiceClip": "c96_7d9de981bc90a68c0448",
+      "speechText": "size",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "large",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "large",
+      "text": "大的；大号的",
+      "clip": "c96_fb75765b86880c53c842"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "large",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "large",
+      "text": "大的；大号的",
+      "clip": "c96_063845d0290758f1ef4c",
+      "speechText": "large"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "large",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "large",
+      "text": "大的；大号的",
+      "practiceClip": "c96_063845d0290758f1ef4c",
+      "speechText": "large",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "medium",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "medium",
+      "text": "中等的；中号的",
+      "clip": "c96_a9f35eef8ea1f1ca5e4a"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "medium",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "medium",
+      "text": "中等的；中号的",
+      "clip": "c96_31eb6e7934a540d16f32",
+      "speechText": "medium"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "medium",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "medium",
+      "text": "中等的；中号的",
+      "practiceClip": "c96_31eb6e7934a540d16f32",
+      "speechText": "medium",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "too small",
+      "text": "太小",
+      "clip": "c96_93b2522df8da6dab26b0",
+      "speechText": "too small"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "too small",
+      "text": "太小",
+      "practiceClip": "c96_93b2522df8da6dab26b0",
+      "speechText": "too small",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "too big",
+      "text": "太大",
+      "clip": "c96_ba8152d11de8751d4e1f",
+      "speechText": "too big"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "too big",
+      "text": "太大",
+      "practiceClip": "c96_ba8152d11de8751d4e1f",
+      "speechText": "too big",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is too small.",
+      "text": "这件太小了。",
+      "clip": "c96_b86b06d6b91cbc2165e1",
+      "speechText": "This is too small."
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is too small.",
+      "text": "这件太小了。",
+      "practiceClip": "c96_b86b06d6b91cbc2165e1",
+      "speechText": "This is too small.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This is too big.",
+      "text": "这件太大了。",
+      "clip": "c96_9343486662c1d6e67c4e",
+      "speechText": "This is too big."
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This is too big.",
+      "text": "这件太大了。",
+      "practiceClip": "c96_9343486662c1d6e67c4e",
+      "speechText": "This is too big.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Do you have a medium?",
+      "text": "你们有中号的吗？",
+      "clip": "c96_e5ae1c33e3b62b6a7b17",
+      "speechText": "Do you have a medium?"
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Do you have a medium?",
+      "text": "你们有中号的吗？",
+      "practiceClip": "c96_e5ae1c33e3b62b6a7b17",
+      "speechText": "Do you have a medium?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_7d9de981bc90a68c0448",
+      "hide": true
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_7d9de981bc90a68c0448",
+      "speechText": "size",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "大的"
+        },
+        {
+          "id": "answer_2",
+          "label": "中等的"
+        },
+        {
+          "id": "answer_0",
+          "label": "尺码"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_063845d0290758f1ef4c",
+      "hide": true
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "large",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_063845d0290758f1ef4c",
+      "speechText": "large",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "中等的"
+        },
+        {
+          "id": "answer_0",
+          "label": "尺码"
+        },
+        {
+          "id": "answer_1",
+          "label": "大的"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "too small",
+      "text": "不看英文，请表达：太小",
+      "practiceClip": "c96_93b2522df8da6dab26b0",
+      "speechText": "too small",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "too big",
+      "text": "不看英文，请表达：太大",
+      "practiceClip": "c96_ba8152d11de8751d4e1f",
+      "speechText": "too big",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is too small.",
+      "text": "情境练习：你试穿的衣服太小，请告诉店员，并询问是否有中号。\n这一句请表达：这件太小了。",
+      "practiceClip": "c96_b86b06d6b91cbc2165e1",
+      "speechText": "This is too small.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This is too big.",
+      "text": "情境练习：你试穿的衣服太小，请告诉店员，并询问是否有中号。\n这一句请表达：这件太大了。",
+      "practiceClip": "c96_9343486662c1d6e67c4e",
+      "speechText": "This is too big.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Do you have a medium?",
+      "text": "情境练习：你试穿的衣服太小，请告诉店员，并询问是否有中号。\n这一句请表达：你们有中号的吗？",
+      "practiceClip": "c96_e5ae1c33e3b62b6a7b17",
+      "speechText": "Do you have a medium?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "寻找合适尺码",
+      "word": "size",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

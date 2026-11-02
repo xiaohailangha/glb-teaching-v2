@@ -1,0 +1,482 @@
+{
+  "id": "food-01-v1",
+  "title": "01 · 认识水果并表达想要",
+  "category": "food",
+  "goal": "认识三种水果，用完整表达说明想要哪一种",
+  "prerequisites": [
+    "introductions-12-v1"
+  ],
+  "scenario": "先向朋友介绍苹果和香蕉，再在水果摊说明自己想要一个橙子。",
+  "stages": [
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "01 · 认识水果并表达想要",
+      "text": "认识三种水果，用完整表达说明想要哪一种",
+      "clip": "c96_0cd82a2232a82debc464"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "apple",
+      "text": "苹果",
+      "clip": "c96_b94bb3129730c1fd442e"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "apple",
+      "text": "苹果",
+      "clip": "c96_b7a47eabc0611a3727e1",
+      "speechText": "apple"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "apple",
+      "text": "苹果",
+      "practiceClip": "c96_b7a47eabc0611a3727e1",
+      "speechText": "apple",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "banana",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "banana",
+      "text": "香蕉",
+      "clip": "c96_60304cf298fccabc9532"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "banana",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "banana",
+      "text": "香蕉",
+      "clip": "c96_61234f236e3841232330",
+      "speechText": "banana"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "banana",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "banana",
+      "text": "香蕉",
+      "practiceClip": "c96_61234f236e3841232330",
+      "speechText": "banana",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "orange",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "orange",
+      "text": "橙子",
+      "clip": "c96_d70f0af2714f812cefdb"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "orange",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "orange",
+      "text": "橙子",
+      "clip": "c96_c7912f0f4e07e4ad4204",
+      "speechText": "orange"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "orange",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "orange",
+      "text": "橙子",
+      "practiceClip": "c96_c7912f0f4e07e4ad4204",
+      "speechText": "orange",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "an apple",
+      "text": "一个苹果",
+      "clip": "c96_998bd8af628376838a12",
+      "speechText": "an apple"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "an apple",
+      "text": "一个苹果",
+      "practiceClip": "c96_998bd8af628376838a12",
+      "speechText": "an apple",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a banana",
+      "text": "一根香蕉",
+      "clip": "c96_2d49534a6cc2459ded00",
+      "speechText": "a banana"
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a banana",
+      "text": "一根香蕉",
+      "practiceClip": "c96_2d49534a6cc2459ded00",
+      "speechText": "a banana",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is an apple.",
+      "text": "这是一个苹果。",
+      "clip": "c96_75cd8601624a75453997",
+      "speechText": "This is an apple."
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is an apple.",
+      "text": "这是一个苹果。",
+      "practiceClip": "c96_75cd8601624a75453997",
+      "speechText": "This is an apple.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This is a banana.",
+      "text": "这是一根香蕉。",
+      "clip": "c96_6e834b2cf6ebb91f8ad6",
+      "speechText": "This is a banana."
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This is a banana.",
+      "text": "这是一根香蕉。",
+      "practiceClip": "c96_6e834b2cf6ebb91f8ad6",
+      "speechText": "This is a banana.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I want an orange.",
+      "text": "我想要一个橙子。",
+      "clip": "c96_2db64a56148cbfda5ae8",
+      "speechText": "I want an orange."
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I want an orange.",
+      "text": "我想要一个橙子。",
+      "practiceClip": "c96_2db64a56148cbfda5ae8",
+      "speechText": "I want an orange.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_b7a47eabc0611a3727e1",
+      "hide": true
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_b7a47eabc0611a3727e1",
+      "speechText": "apple",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "香蕉"
+        },
+        {
+          "id": "answer_2",
+          "label": "橙子"
+        },
+        {
+          "id": "answer_0",
+          "label": "苹果"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_61234f236e3841232330",
+      "hide": true
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "banana",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_61234f236e3841232330",
+      "speechText": "banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "橙子"
+        },
+        {
+          "id": "answer_0",
+          "label": "苹果"
+        },
+        {
+          "id": "answer_1",
+          "label": "香蕉"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "an apple",
+      "text": "不看英文，请表达：一个苹果",
+      "practiceClip": "c96_998bd8af628376838a12",
+      "speechText": "an apple",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a banana",
+      "text": "不看英文，请表达：一根香蕉",
+      "practiceClip": "c96_2d49534a6cc2459ded00",
+      "speechText": "a banana",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is an apple.",
+      "text": "情境练习：先向朋友介绍苹果和香蕉，再在水果摊说明自己想要一个橙子。\n这一句请表达：这是一个苹果。",
+      "practiceClip": "c96_75cd8601624a75453997",
+      "speechText": "This is an apple.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This is a banana.",
+      "text": "情境练习：先向朋友介绍苹果和香蕉，再在水果摊说明自己想要一个橙子。\n这一句请表达：这是一根香蕉。",
+      "practiceClip": "c96_6e834b2cf6ebb91f8ad6",
+      "speechText": "This is a banana.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I want an orange.",
+      "text": "情境练习：先向朋友介绍苹果和香蕉，再在水果摊说明自己想要一个橙子。\n这一句请表达：我想要一个橙子。",
+      "practiceClip": "c96_2db64a56148cbfda5ae8",
+      "speechText": "I want an orange.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识水果并表达想要",
+      "word": "apple",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

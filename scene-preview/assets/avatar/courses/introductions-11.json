@@ -1,0 +1,482 @@
+{
+  "id": "introductions-11-v1",
+  "title": "11 · 介绍一位朋友",
+  "category": "introductions",
+  "goal": "把第三个人介绍给对方",
+  "prerequisites": [
+    "introductions-10-v1"
+  ],
+  "scenario": "你带朋友本见新同学，先介绍他，再练习新同学向本打招呼的回应。",
+  "stages": [
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "11 · 介绍一位朋友",
+      "text": "把第三个人介绍给对方",
+      "clip": "c96_b265efc94bbdf332cb00"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "friend",
+      "text": "朋友",
+      "clip": "c96_46d0d23397e5750162a2"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "friend",
+      "text": "朋友",
+      "clip": "c96_feaae7a9982678b85c09",
+      "speechText": "friend"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "friend",
+      "text": "朋友",
+      "practiceClip": "c96_feaae7a9982678b85c09",
+      "speechText": "friend",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "this",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "this",
+      "text": "这；这位",
+      "clip": "c96_755bb9997d344ae10e29"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "this",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "this",
+      "text": "这；这位",
+      "clip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "this",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "this",
+      "text": "这；这位",
+      "practiceClip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "meet",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "meet",
+      "text": "认识；见面",
+      "clip": "c96_a863df5e58027ae10def"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "meet",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "meet",
+      "text": "认识；见面",
+      "clip": "c96_18fbe6d0313edc190df7",
+      "speechText": "meet"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "meet",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "meet",
+      "text": "认识；见面",
+      "practiceClip": "c96_18fbe6d0313edc190df7",
+      "speechText": "meet",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "my friend",
+      "text": "我的朋友",
+      "clip": "c96_99c7c931267c18c9e3d2",
+      "speechText": "my friend"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "my friend",
+      "text": "我的朋友",
+      "practiceClip": "c96_99c7c931267c18c9e3d2",
+      "speechText": "my friend",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "this is",
+      "text": "这是；这位是",
+      "clip": "c96_6766340c0345f4b10703",
+      "speechText": "this is"
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "this is",
+      "text": "这是；这位是",
+      "practiceClip": "c96_6766340c0345f4b10703",
+      "speechText": "this is",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is my friend.",
+      "text": "这是我的朋友。",
+      "clip": "c96_a4fd984d6e5bac89d8b1",
+      "speechText": "This is my friend."
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is my friend.",
+      "text": "这是我的朋友。",
+      "practiceClip": "c96_a4fd984d6e5bac89d8b1",
+      "speechText": "This is my friend.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This is Ben.",
+      "text": "这位是本。",
+      "clip": "c96_44141cc0f74ba5be7718",
+      "speechText": "This is Ben."
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This is Ben.",
+      "text": "这位是本。",
+      "practiceClip": "c96_44141cc0f74ba5be7718",
+      "speechText": "This is Ben.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Nice to meet you, Ben.",
+      "text": "本，很高兴认识你。",
+      "clip": "c96_60d0b55e7cb2ad734d5f",
+      "speechText": "Nice to meet you, Ben."
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Nice to meet you, Ben.",
+      "text": "本，很高兴认识你。",
+      "practiceClip": "c96_60d0b55e7cb2ad734d5f",
+      "speechText": "Nice to meet you, Ben.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_feaae7a9982678b85c09",
+      "hide": true
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_feaae7a9982678b85c09",
+      "speechText": "friend",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "这"
+        },
+        {
+          "id": "answer_2",
+          "label": "认识"
+        },
+        {
+          "id": "answer_0",
+          "label": "朋友"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_a6d2d26e0ac16e513dbb",
+      "hide": true
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "this",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_a6d2d26e0ac16e513dbb",
+      "speechText": "this",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "认识"
+        },
+        {
+          "id": "answer_0",
+          "label": "朋友"
+        },
+        {
+          "id": "answer_1",
+          "label": "这"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "my friend",
+      "text": "不看英文，请表达：我的朋友",
+      "practiceClip": "c96_99c7c931267c18c9e3d2",
+      "speechText": "my friend",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "this is",
+      "text": "不看英文，请表达：这是；这位是",
+      "practiceClip": "c96_6766340c0345f4b10703",
+      "speechText": "this is",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is my friend.",
+      "text": "情境练习：你带朋友本见新同学，先介绍他，再练习新同学向本打招呼的回应。\n这一句请表达：这是我的朋友。",
+      "practiceClip": "c96_a4fd984d6e5bac89d8b1",
+      "speechText": "This is my friend.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This is Ben.",
+      "text": "情境练习：你带朋友本见新同学，先介绍他，再练习新同学向本打招呼的回应。\n这一句请表达：这位是本。",
+      "practiceClip": "c96_44141cc0f74ba5be7718",
+      "speechText": "This is Ben.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Nice to meet you, Ben.",
+      "text": "情境练习：你带朋友本见新同学，先介绍他，再练习新同学向本打招呼的回应。\n这一句请表达：本，很高兴认识你。",
+      "practiceClip": "c96_60d0b55e7cb2ad734d5f",
+      "speechText": "Nice to meet you, Ben.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍一位朋友",
+      "word": "friend",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

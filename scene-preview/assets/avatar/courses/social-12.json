@@ -1,0 +1,477 @@
+{
+  "id": "social-12-v1",
+  "title": "12 · 朋友相聚综合练习",
+  "category": "social",
+  "goal": "完成邀请、约时间、见面和回应",
+  "prerequisites": [
+    "social-11-v1"
+  ],
+  "scenario": "你邀请朋友星期六喝咖啡，提出三点见面；再扮演朋友接受邀请并确认时间。",
+  "stages": [
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "12 · 朋友相聚综合练习",
+      "text": "完成邀请、约时间、见面和回应",
+      "clip": "c96_92c1e048fe14f137951b"
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "review_word_0",
+      "phase": "recall",
+      "display": "friend",
+      "text": "回想学过的表达：朋友",
+      "practiceClip": "c96_feaae7a9982678b85c09",
+      "speechText": "friend",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "review_word_1",
+      "phase": "recall",
+      "display": "Saturday",
+      "text": "回想学过的表达：星期六",
+      "practiceClip": "c96_c4b145f9b6122aff400c",
+      "speechText": "Saturday",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "review_word_2",
+      "phase": "recall",
+      "display": "coffee",
+      "text": "回想学过的表达：咖啡",
+      "practiceClip": "c96_6e172fb2f865c401d136",
+      "speechText": "coffee",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "on Saturday",
+      "text": "在星期六",
+      "clip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday"
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "on Saturday",
+      "text": "在星期六",
+      "practiceClip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "at three",
+      "text": "在三点",
+      "clip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three"
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "at three",
+      "text": "在三点",
+      "practiceClip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Would you like to have coffee on Saturday?",
+      "text": "你愿意星期六一起喝咖啡吗？",
+      "clip": "c96_bbb14f19ce30d4a623ad",
+      "speechText": "Would you like to have coffee on Saturday?"
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Would you like to have coffee on Saturday?",
+      "text": "你愿意星期六一起喝咖啡吗？",
+      "practiceClip": "c96_bbb14f19ce30d4a623ad",
+      "speechText": "Would you like to have coffee on Saturday?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Can we meet at three?",
+      "text": "我们可以三点见面吗？",
+      "clip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?"
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Can we meet at three?",
+      "text": "我们可以三点见面吗？",
+      "practiceClip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "That sounds great.",
+      "text": "听起来很棒。",
+      "clip": "c96_8e377fe1dc022800fb08",
+      "speechText": "That sounds great."
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "That sounds great.",
+      "text": "听起来很棒。",
+      "practiceClip": "c96_8e377fe1dc022800fb08",
+      "speechText": "That sounds great.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_3_model",
+      "phase": "demonstrate",
+      "display": "See you at three.",
+      "text": "三点见。",
+      "clip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three."
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "sentence_3",
+      "phase": "listen",
+      "display": "See you at three.",
+      "text": "三点见。",
+      "practiceClip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_feaae7a9982678b85c09",
+      "hide": true
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_feaae7a9982678b85c09",
+      "speechText": "friend",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "星期六"
+        },
+        {
+          "id": "answer_2",
+          "label": "咖啡"
+        },
+        {
+          "id": "answer_0",
+          "label": "朋友"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c4b145f9b6122aff400c",
+      "hide": true
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "saturday",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_c4b145f9b6122aff400c",
+      "speechText": "Saturday",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "咖啡"
+        },
+        {
+          "id": "answer_0",
+          "label": "朋友"
+        },
+        {
+          "id": "answer_1",
+          "label": "星期六"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "on Saturday",
+      "text": "不看英文，请表达：在星期六",
+      "practiceClip": "c96_22f3c3d405c3ffa279dc",
+      "speechText": "on Saturday",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "at three",
+      "text": "不看英文，请表达：在三点",
+      "practiceClip": "c96_6e4ee22501a3a94f16be",
+      "speechText": "at three",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Would you like to have coffee on Saturday?",
+      "text": "情境练习：你邀请朋友星期六喝咖啡，提出三点见面；再扮演朋友接受邀请并确认时间。\n这一句请表达：你愿意星期六一起喝咖啡吗？",
+      "practiceClip": "c96_bbb14f19ce30d4a623ad",
+      "speechText": "Would you like to have coffee on Saturday?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Can we meet at three?",
+      "text": "情境练习：你邀请朋友星期六喝咖啡，提出三点见面；再扮演朋友接受邀请并确认时间。\n这一句请表达：我们可以三点见面吗？",
+      "practiceClip": "c96_5b9468496d804c91d601",
+      "speechText": "Can we meet at three?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "That sounds great.",
+      "text": "情境练习：你邀请朋友星期六喝咖啡，提出三点见面；再扮演朋友接受邀请并确认时间。\n这一句请表达：听起来很棒。",
+      "practiceClip": "c96_8e377fe1dc022800fb08",
+      "speechText": "That sounds great.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "transfer_3",
+      "phase": "recall",
+      "display": "See you at three.",
+      "text": "情境练习：你邀请朋友星期六喝咖啡，提出三点见面；再扮演朋友接受邀请并确认时间。\n这一句请表达：三点见。",
+      "practiceClip": "c96_4e9f298fd3317214d6ba",
+      "speechText": "See you at three.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "朋友相聚综合练习",
+      "word": "friend",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

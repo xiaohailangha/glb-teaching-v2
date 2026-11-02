@@ -1,0 +1,425 @@
+{
+  "id": "home-12-v1",
+  "title": "12 · 邀请朋友到家里",
+  "category": "home",
+  "goal": "整合欢迎、指引位置和待客请求",
+  "prerequisites": [
+    "home-11-v1"
+  ],
+  "scenario": "朋友第一次来家里，请欢迎他、请他坐下，并询问是否想喝水。",
+  "stages": [
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "12 · 邀请朋友到家里",
+      "text": "整合欢迎、指引位置和待客请求",
+      "clip": "c96_ad8585d8a9644a392741"
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "review_word_0",
+      "phase": "recall",
+      "display": "welcome",
+      "text": "回想学过的表达：欢迎",
+      "practiceClip": "c96_8f945b73047112fab9e4",
+      "speechText": "welcome",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "review_word_1",
+      "phase": "recall",
+      "display": "home",
+      "text": "回想学过的表达：家",
+      "practiceClip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "review_word_2",
+      "phase": "recall",
+      "display": "water",
+      "text": "回想学过的表达：水",
+      "practiceClip": "c96_64351fa189db1fad970c",
+      "speechText": "water",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "welcome to my home",
+      "text": "欢迎来我家",
+      "clip": "c96_ea08bfb624a2961c14b4",
+      "speechText": "welcome to my home"
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "welcome to my home",
+      "text": "欢迎来我家",
+      "practiceClip": "c96_ea08bfb624a2961c14b4",
+      "speechText": "welcome to my home",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "some water",
+      "text": "一些水",
+      "clip": "c96_deff49202f6757cfa1e1",
+      "speechText": "some water"
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "some water",
+      "text": "一些水",
+      "practiceClip": "c96_deff49202f6757cfa1e1",
+      "speechText": "some water",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Welcome to my home.",
+      "text": "欢迎来我家。",
+      "clip": "c96_75dcfb1cadeb5d1335e0",
+      "speechText": "Welcome to my home."
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Welcome to my home.",
+      "text": "欢迎来我家。",
+      "practiceClip": "c96_75dcfb1cadeb5d1335e0",
+      "speechText": "Welcome to my home.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Please sit here.",
+      "text": "请坐这里。",
+      "clip": "c96_36a1a195e2802a6b86d8",
+      "speechText": "Please sit here."
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Please sit here.",
+      "text": "请坐这里。",
+      "practiceClip": "c96_36a1a195e2802a6b86d8",
+      "speechText": "Please sit here.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Would you like some water?",
+      "text": "你想喝点水吗？",
+      "clip": "c96_5b3f6e15a6b35610d255",
+      "speechText": "Would you like some water?"
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Would you like some water?",
+      "text": "你想喝点水吗？",
+      "practiceClip": "c96_5b3f6e15a6b35610d255",
+      "speechText": "Would you like some water?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_8f945b73047112fab9e4",
+      "hide": true
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_8f945b73047112fab9e4",
+      "speechText": "welcome",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "家"
+        },
+        {
+          "id": "answer_2",
+          "label": "水"
+        },
+        {
+          "id": "answer_0",
+          "label": "欢迎"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_e41d6fbfc85e5380feda",
+      "hide": true
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "home",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "水"
+        },
+        {
+          "id": "answer_0",
+          "label": "欢迎"
+        },
+        {
+          "id": "answer_1",
+          "label": "家"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "welcome to my home",
+      "text": "不看英文，请表达：欢迎来我家",
+      "practiceClip": "c96_ea08bfb624a2961c14b4",
+      "speechText": "welcome to my home",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "some water",
+      "text": "不看英文，请表达：一些水",
+      "practiceClip": "c96_deff49202f6757cfa1e1",
+      "speechText": "some water",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Welcome to my home.",
+      "text": "情境练习：朋友第一次来家里，请欢迎他、请他坐下，并询问是否想喝水。\n这一句请表达：欢迎来我家。",
+      "practiceClip": "c96_75dcfb1cadeb5d1335e0",
+      "speechText": "Welcome to my home.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Please sit here.",
+      "text": "情境练习：朋友第一次来家里，请欢迎他、请他坐下，并询问是否想喝水。\n这一句请表达：请坐这里。",
+      "practiceClip": "c96_36a1a195e2802a6b86d8",
+      "speechText": "Please sit here.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Would you like some water?",
+      "text": "情境练习：朋友第一次来家里，请欢迎他、请他坐下，并询问是否想喝水。\n这一句请表达：你想喝点水吗？",
+      "practiceClip": "c96_5b3f6e15a6b35610d255",
+      "speechText": "Would you like some water?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "邀请朋友到家里",
+      "word": "welcome",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "id": "shopping-04-v1",
+  "title": "04 · 说明购买数量",
+  "category": "shopping",
+  "goal": "用一、二、三表达购买数量，并保留复数词尾",
+  "prerequisites": [
+    "shopping-03-v1"
+  ],
+  "scenario": "根据三张购物清单，分别购买一个苹果、两根香蕉和三个杯子。",
+  "stages": [
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "04 · 说明购买数量",
+      "text": "用一、二、三表达购买数量，并保留复数词尾",
+      "clip": "c96_a59e7b49036831dab2c2"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "one",
+      "text": "一",
+      "clip": "c96_6c8822b204daa294c8d8"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "one",
+      "text": "一",
+      "clip": "c96_47df727a7f6c186217a2",
+      "speechText": "one"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "one",
+      "text": "一",
+      "practiceClip": "c96_47df727a7f6c186217a2",
+      "speechText": "one",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "two",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "two",
+      "text": "二",
+      "clip": "c96_798340f6357ab0bc3160"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "two",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "two",
+      "text": "二",
+      "clip": "c96_31ac9658280a0e375378",
+      "speechText": "two"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "two",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "two",
+      "text": "二",
+      "practiceClip": "c96_31ac9658280a0e375378",
+      "speechText": "two",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "three",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "three",
+      "text": "三",
+      "clip": "c96_0dcce3d606e2b0cfb175"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "three",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "three",
+      "text": "三",
+      "clip": "c96_3bdb45b64f330f0d0888",
+      "speechText": "three"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "three",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "three",
+      "text": "三",
+      "practiceClip": "c96_3bdb45b64f330f0d0888",
+      "speechText": "three",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "two bananas",
+      "text": "两根香蕉",
+      "clip": "c96_1e3215c1687bed95d32d",
+      "speechText": "two bananas"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "two bananas",
+      "text": "两根香蕉",
+      "practiceClip": "c96_1e3215c1687bed95d32d",
+      "speechText": "two bananas",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "three cups",
+      "text": "三个杯子",
+      "clip": "c96_caf6c4ead422047b1fba",
+      "speechText": "three cups"
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "three cups",
+      "text": "三个杯子",
+      "practiceClip": "c96_caf6c4ead422047b1fba",
+      "speechText": "three cups",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "One apple, please.",
+      "text": "请给我一个苹果。",
+      "clip": "c96_ec130b930c59b97ac75b",
+      "speechText": "One apple, please."
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "One apple, please.",
+      "text": "请给我一个苹果。",
+      "practiceClip": "c96_ec130b930c59b97ac75b",
+      "speechText": "One apple, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Two bananas, please.",
+      "text": "请给我两根香蕉。",
+      "clip": "c96_d38ba3388955e050ae27",
+      "speechText": "Two bananas, please."
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Two bananas, please.",
+      "text": "请给我两根香蕉。",
+      "practiceClip": "c96_d38ba3388955e050ae27",
+      "speechText": "Two bananas, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Three cups, please.",
+      "text": "请给我三个杯子。",
+      "clip": "c96_52f7e214d742833eb77f",
+      "speechText": "Three cups, please."
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Three cups, please.",
+      "text": "请给我三个杯子。",
+      "practiceClip": "c96_52f7e214d742833eb77f",
+      "speechText": "Three cups, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_47df727a7f6c186217a2",
+      "hide": true
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_47df727a7f6c186217a2",
+      "speechText": "one",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "二"
+        },
+        {
+          "id": "answer_2",
+          "label": "三"
+        },
+        {
+          "id": "answer_0",
+          "label": "一"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_31ac9658280a0e375378",
+      "hide": true
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "two",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_31ac9658280a0e375378",
+      "speechText": "two",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "三"
+        },
+        {
+          "id": "answer_0",
+          "label": "一"
+        },
+        {
+          "id": "answer_1",
+          "label": "二"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "two bananas",
+      "text": "不看英文，请表达：两根香蕉",
+      "practiceClip": "c96_1e3215c1687bed95d32d",
+      "speechText": "two bananas",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "three cups",
+      "text": "不看英文，请表达：三个杯子",
+      "practiceClip": "c96_caf6c4ead422047b1fba",
+      "speechText": "three cups",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "One apple, please.",
+      "text": "情境练习：根据三张购物清单，分别购买一个苹果、两根香蕉和三个杯子。\n这一句请表达：请给我一个苹果。",
+      "practiceClip": "c96_ec130b930c59b97ac75b",
+      "speechText": "One apple, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Two bananas, please.",
+      "text": "情境练习：根据三张购物清单，分别购买一个苹果、两根香蕉和三个杯子。\n这一句请表达：请给我两根香蕉。",
+      "practiceClip": "c96_d38ba3388955e050ae27",
+      "speechText": "Two bananas, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Three cups, please.",
+      "text": "情境练习：根据三张购物清单，分别购买一个苹果、两根香蕉和三个杯子。\n这一句请表达：请给我三个杯子。",
+      "practiceClip": "c96_52f7e214d742833eb77f",
+      "speechText": "Three cups, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明购买数量",
+      "word": "one",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

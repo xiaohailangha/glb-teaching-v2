@@ -152,10 +152,7 @@ void main() {
           identityRect.top,
           closeTo(
             size.height -
-                tester
-                    .getRect(find.byKey(const ValueKey('guide-next')))
-                    .bottom +
-                (size.height < 600 ? 0 : 48),
+                tester.getRect(find.byKey(const ValueKey('guide-next'))).bottom,
             1,
           ),
         );
@@ -223,6 +220,30 @@ void main() {
           true,
         );
         await tester.tap(find.byKey(const ValueKey('guide-explore')));
+        for (
+          var frame = 0;
+          frame < 30 && find.byType(LessonPage).evaluate().isEmpty;
+          frame++
+        ) {
+          await tester.pump(const Duration(milliseconds: 10));
+        }
+        await tester.pump(const Duration(milliseconds: 200));
+        final incoming = tester
+            .widget<FractionalTranslation>(
+              find.byKey(const ValueKey('lesson-page-slide')),
+            )
+            .translation
+            .dy;
+        final outgoing = tester
+            .widget<FractionalTranslation>(
+              find.byKey(const ValueKey('entry-page-slide')),
+            )
+            .translation
+            .dy;
+        expect(incoming, greaterThan(0));
+        expect(incoming, lessThan(1));
+        expect(incoming - outgoing, closeTo(1, .001));
+        expect(find.text('还需要一个昵称'), findsOneWidget);
         await advance(tester);
         await advance(tester);
         expect(find.byType(LessonPage), findsOneWidget);
@@ -250,52 +271,16 @@ void main() {
     );
   }
   testWidgets(
-    'all scene resources and first render precede phone input; restored user enters directly',
+    'signed course loading does not block anonymous phone input',
     (tester) async {
       final c = LessonController();
-      final api = AuthApi(
-        origin: Uri.parse('https://example.test'),
-        client: MockClient(
-          (req) async => http.Response(
-            jsonEncode(
-              req.url.path.endsWith('status')
-                  ? {'testMode': true}
-                  : {'user': null},
-            ),
-            200,
-          ),
-        ),
-      );
-      await tester.pumpWidget(
-        MaterialApp(
-          home: AuthGate(api: api, prepareScene: false, controller: c),
-        ),
-      );
-      await advance(tester);
-      expect(find.byType(TextField), findsNothing);
-      expect(find.text('为每一次开口'), findsOneWidget);
-      c.handle({'event': 'resource-progress', 'value': .73, 'label': '资源'});
-      await advance(tester);
-      expect(
-        tester.widget<EntryProgress>(find.byType(EntryProgress)).value,
-        .73,
-      );
-      c.handle({'event': 'ready'});
-      await advance(tester);
-      expect(find.byType(TextField), findsNothing);
-      c.handle({'event': 'error', 'message': 'private failure'});
-      await advance(tester);
-      expect(find.byKey(const ValueKey('loading-retry')), findsOneWidget);
-      expect(find.text('private failure'), findsNothing);
-      await tester.tap(find.byKey(const ValueKey('loading-retry')));
-      await advance(tester);
-      c.handle({'event': 'ready'});
-      c.handle({'event': 'scene-presented'});
+      final api = AuthApi(origin: Uri.parse('https://example.test'), client: MockClient((req) async => http.Response(jsonEncode(req.url.path.endsWith('status') ? {'testMode':true} : {'user':null}),200)));
+      await tester.pumpWidget(MaterialApp(home: AuthGate(api:api,prepareScene:false,controller:c)));
       await advance(tester);
       expect(find.text('需要一个手机号'), findsOneWidget);
+      expect(find.byType(LessonPage), findsNothing);
       await tester.pumpWidget(const SizedBox());
-      c.dispose();
-      api.dispose();
+      c.dispose(); api.dispose();
     },
   );
   testWidgets(

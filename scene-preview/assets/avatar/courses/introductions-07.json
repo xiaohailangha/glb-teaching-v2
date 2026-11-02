@@ -1,0 +1,482 @@
+{
+  "id": "introductions-07-v1",
+  "title": "07 · 感谢与回应",
+  "category": "introductions",
+  "goal": "感谢帮助并自然回应感谢",
+  "prerequisites": [
+    "introductions-06-v1"
+  ],
+  "scenario": "朋友帮你拿来了东西，请表示感谢；再练习回应朋友对你的感谢。",
+  "stages": [
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "07 · 感谢与回应",
+      "text": "感谢帮助并自然回应感谢",
+      "clip": "c96_e16c38dc1d72958e5491"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "thank",
+      "text": "感谢",
+      "clip": "c96_fd2c85834ff80d3f3dd0"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "thank",
+      "text": "感谢",
+      "clip": "c96_2fbfb65d0eb7e7d206b9",
+      "speechText": "thank"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "thank",
+      "text": "感谢",
+      "practiceClip": "c96_2fbfb65d0eb7e7d206b9",
+      "speechText": "thank",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "welcome",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "welcome",
+      "text": "受欢迎的；用于回应感谢",
+      "clip": "c96_07aa8a4d65ccaa235981"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "welcome",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "welcome",
+      "text": "受欢迎的；用于回应感谢",
+      "clip": "c96_8f945b73047112fab9e4",
+      "speechText": "welcome"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "welcome",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "welcome",
+      "text": "受欢迎的；用于回应感谢",
+      "practiceClip": "c96_8f945b73047112fab9e4",
+      "speechText": "welcome",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "much",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "much",
+      "text": "很多；程度高",
+      "clip": "c96_108de89354941a45d73f"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "much",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "much",
+      "text": "很多；程度高",
+      "clip": "c96_4acca87417bda0074ff0",
+      "speechText": "much"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "much",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "much",
+      "text": "很多；程度高",
+      "practiceClip": "c96_4acca87417bda0074ff0",
+      "speechText": "much",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "thank you",
+      "text": "谢谢你",
+      "clip": "c96_0af8fbd44affa319e0a5",
+      "speechText": "thank you"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "thank you",
+      "text": "谢谢你",
+      "practiceClip": "c96_0af8fbd44affa319e0a5",
+      "speechText": "thank you",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "thank you very much",
+      "text": "非常感谢你",
+      "clip": "c96_d42a9ea51dcc3788813b",
+      "speechText": "thank you very much"
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "thank you very much",
+      "text": "非常感谢你",
+      "practiceClip": "c96_d42a9ea51dcc3788813b",
+      "speechText": "thank you very much",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Thank you.",
+      "text": "谢谢你。",
+      "clip": "c96_6f1b00b2e05753796f89",
+      "speechText": "Thank you."
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Thank you.",
+      "text": "谢谢你。",
+      "practiceClip": "c96_6f1b00b2e05753796f89",
+      "speechText": "Thank you.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Thank you very much.",
+      "text": "非常感谢你。",
+      "clip": "c96_c510b3730aef0c82217c",
+      "speechText": "Thank you very much."
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Thank you very much.",
+      "text": "非常感谢你。",
+      "practiceClip": "c96_c510b3730aef0c82217c",
+      "speechText": "Thank you very much.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "You are welcome.",
+      "text": "不客气。",
+      "clip": "c96_263a8f1b437ff283b6f2",
+      "speechText": "You are welcome."
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "You are welcome.",
+      "text": "不客气。",
+      "practiceClip": "c96_263a8f1b437ff283b6f2",
+      "speechText": "You are welcome.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_2fbfb65d0eb7e7d206b9",
+      "hide": true
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_2fbfb65d0eb7e7d206b9",
+      "speechText": "thank",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "受欢迎的"
+        },
+        {
+          "id": "answer_2",
+          "label": "很多"
+        },
+        {
+          "id": "answer_0",
+          "label": "感谢"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_8f945b73047112fab9e4",
+      "hide": true
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "welcome",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_8f945b73047112fab9e4",
+      "speechText": "welcome",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "很多"
+        },
+        {
+          "id": "answer_0",
+          "label": "感谢"
+        },
+        {
+          "id": "answer_1",
+          "label": "受欢迎的"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "thank you",
+      "text": "不看英文，请表达：谢谢你",
+      "practiceClip": "c96_0af8fbd44affa319e0a5",
+      "speechText": "thank you",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "thank you very much",
+      "text": "不看英文，请表达：非常感谢你",
+      "practiceClip": "c96_d42a9ea51dcc3788813b",
+      "speechText": "thank you very much",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Thank you.",
+      "text": "情境练习：朋友帮你拿来了东西，请表示感谢；再练习回应朋友对你的感谢。\n这一句请表达：谢谢你。",
+      "practiceClip": "c96_6f1b00b2e05753796f89",
+      "speechText": "Thank you.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Thank you very much.",
+      "text": "情境练习：朋友帮你拿来了东西，请表示感谢；再练习回应朋友对你的感谢。\n这一句请表达：非常感谢你。",
+      "practiceClip": "c96_c510b3730aef0c82217c",
+      "speechText": "Thank you very much.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "You are welcome.",
+      "text": "情境练习：朋友帮你拿来了东西，请表示感谢；再练习回应朋友对你的感谢。\n这一句请表达：不客气。",
+      "practiceClip": "c96_263a8f1b437ff283b6f2",
+      "speechText": "You are welcome.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "感谢与回应",
+      "word": "thank",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

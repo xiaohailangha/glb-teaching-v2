@@ -1,9 +1,9 @@
 class CourseInfo {
-  const CourseInfo(this.id, this.asset, this.title, this.goal);
-  final String id, asset, title, goal;
+  const CourseInfo(this.id, this.asset, this.title, this.goal, {this.category = '', this.coverTitle = '', this.example = ''});
+  final String id, asset, title, goal, category, coverTitle, example;
 }
 
-const courseCatalog = [
+final List<CourseInfo> courseCatalog = [
   CourseInfo('adult-fruit-v2', 'adult-fruit', '01 · 苹果和香蕉', '从一个苹果开始'),
   CourseInfo('adult-drinks-v1', 'adult-drinks', '02 · 水和饮料', '说说你想要什么饮品'),
   CourseInfo('adult-polite-v1', 'adult-polite', '03 · 礼貌请求', '让请求多一点礼貌'),
@@ -26,7 +26,7 @@ class CourseType {
   final List<String> courseIds;
 }
 
-const courseTypes = [
+final List<CourseType> courseTypes = [
   CourseType('basics', '基础表达', [
     'adult-fruit-v2',
     'adult-drinks-v1',
@@ -40,3 +40,46 @@ const courseTypes = [
   ]),
   CourseType('review', '综合复习', ['adult-describe-review-v1']),
 ];
+
+void installCourseCatalog(Map<String, dynamic> catalog) {
+  final rows = (catalog['courses'] as List)
+      .where((c) => c['status'] == 'published')
+      .toList();
+  final next = rows
+      .map(
+        (c) => CourseInfo(
+          c['id'] as String,
+          c['asset'] as String,
+          c['title'] as String,
+          c['goal'] as String,
+          category: c['category'] as String? ?? '',
+          coverTitle: c['coverTitle'] as String? ?? '',
+          example: c['example'] as String? ?? '',
+        ),
+      )
+      .toList();
+  if (next.isEmpty ||
+      next.map((c) => c.id).toSet().length != next.length) {
+    throw const FormatException('课程目录无效');
+  }
+  final ids = next.map((c) => c.id).toSet();
+  final types = (catalog['types'] as List? ?? [])
+      .map(
+        (t) => CourseType(
+          t['id'] as String,
+          t['title'] as String,
+          (t['courseIds'] as List).cast<String>().where(ids.contains).toList(),
+        ),
+      )
+      .where((t) => t.courseIds.isNotEmpty)
+      .toList();
+  final grouped = types.expand((t) => t.courseIds).toSet();
+  final remaining = ids.difference(grouped).toList();
+  if (remaining.isNotEmpty) types.add(CourseType('more', '更多课程', remaining));
+  courseCatalog
+    ..clear()
+    ..addAll(next);
+  courseTypes
+    ..clear()
+    ..addAll(types);
+}

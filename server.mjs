@@ -1,3 +1,4 @@
+import {contentHttp} from './services/content-http.mjs';
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -13,44 +14,15 @@ const server=http.createServer(async(req,res)=>{
   let pathname;
   try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400).end();return;}
   if(await learningHttp(req,res,new URL(req.url,'http://localhost')))return;
+  if(await contentHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await authHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await assetHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(await speechHttp(req,res,new URL(req.url,'http://localhost')))return;
   if(pathname==='/health'){res.writeHead(200,{'Content-Type':'application/json'}).end(JSON.stringify({app:'snow_speaks',framework:'Flutter',root}));return;}
-  if(pathname==='/performance-recording'&&req.method==='POST'){
-    if(!['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress)||req.headers['content-type']!=='video/webm'){
-      res.writeHead(403).end();return;
-    }
-    const chunks=[];let size=0;
-    req.on('data',chunk=>{size+=chunk.length;if(size>50000000){req.destroy();return;}chunks.push(chunk);});
-    req.on('end',()=>{
-      if(size<1000){res.writeHead(400).end();return;}
-      const folder=path.join(root,'docs/performance-recordings');fs.mkdirSync(folder,{recursive:true});
-      const name=new Date().toISOString().replace(/[:.]/g,'-')+'.webm';
-      fs.writeFileSync(path.join(folder,name),Buffer.concat(chunks));
-      res.writeHead(201,{'Content-Type':'application/json'}).end(JSON.stringify({saved:name}));
-    });return;
-  }
-  if(pathname==='/benchmark'&&req.method==='POST'){
-    if(!['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress)){
-      res.writeHead(403).end();return;
-    }
-    let body='';
-    req.on('data',chunk=>{body+=chunk;if(body.length>20000)req.destroy();});
-    req.on('end',()=>{
-      try{
-        const report=JSON.parse(body);
-        if(typeof report.fps!=='number'||!Number.isFinite(report.fps)||report.durationMs<29000)throw Error('Incomplete measurement');
-        const dir=path.join(root,'docs/performance-reports');fs.mkdirSync(dir,{recursive:true});
-        const name=new Date().toISOString().replace(/[:.]/g,'-')+'.json';
-        fs.writeFileSync(path.join(dir,name),JSON.stringify(report,null,2));
-        res.writeHead(201,{'Content-Type':'application/json'}).end(JSON.stringify({saved:name}));
-      }catch{res.writeHead(400).end('Invalid benchmark report');}
-    });return;
-  }
-  let base=path.join(root,'build/web');
-  if(pathname.startsWith('/avatar-dev/')){base=path.join(root,'assets/avatar');pathname=pathname.slice('/avatar-dev'.length);}
-  if(pathname.startsWith('/scene/')){base=path.join(root,'scene-preview/build/web');pathname=pathname.slice('/scene'.length);}
+  if(pathname==='/'){res.writeHead(302,{Location:'/scene/'}).end();return;}
+  if(!pathname.startsWith('/scene/')){res.writeHead(404).end('Not found');return;}
+  const base=path.join(root,'scene-preview/build/web');
+  pathname=pathname.slice('/scene'.length);
   const file=path.resolve(base,'.'+(pathname==='/'?'/index.html':pathname));
   if(!file.startsWith(path.resolve(base)+path.sep)){res.writeHead(403).end();return;}
   fs.stat(file,(err,stat)=>{
@@ -65,4 +37,4 @@ const server=http.createServer(async(req,res)=>{
     }else{res.writeHead(200,{...headers,'Content-Length':stat.size});fs.createReadStream(file).pipe(res);}
   });
 });
-server.listen(port,'127.0.0.1',()=>console.log(`Storm Flutter preview: http://localhost:${port}\nProject: ${root}`));
+server.listen(port,'127.0.0.1',()=>console.log(`Snow Speaks: http://127.0.0.1:${server.address().port}/scene/`));

@@ -2,8 +2,9 @@ import 'dart:math' as math;
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
-
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../core/avatar/scene/course_resources.dart';
+
 
 import '../application/lesson_controller.dart';
 import '../domain/course_catalog.dart';
@@ -19,37 +20,6 @@ const _palettes = [
   [Color(0xFFFAB9BC), Color(0xFFDC819B)],
   [Color(0xFFD9EAA7), Color(0xFF9FBE86)],
 ];
-const _art = [
-  ('apple', 'banana'),
-  ('water', 'milk'),
-  ('tea', 'coffee'),
-  ('banana', 'coffee'),
-  ('red_apple', 'green_apple'),
-  ('big_apple', 'small_apple'),
-  ('two_apples', 'three_apples'),
-  ('small_red_apple', 'two_green_apples'),
-];
-const _titles = [
-  'Apple\n& banana.',
-  'Take\na sip.',
-  'Please\n& thanks.',
-  'Your\nlittle shop.',
-  'Pick\na color.',
-  'Big\nor small?',
-  'One, two,\nmore.',
-  'Make\nit yours.',
-];
-const _phrases = [
-  'I want an apple.',
-  'I want some water.',
-  'An apple, please.',
-  'I want a banana.',
-  'A red apple.',
-  'A big apple.',
-  'Two apples.',
-  'Two green apples.',
-];
-
 /// The teaching route stays mounted and visible through the frosted overlay.
 Future<void> showCourseLibrary(
   BuildContext context,
@@ -377,12 +347,15 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
 class CourseTypeStrip extends StatefulWidget {
   const CourseTypeStrip({
     super.key,
-    this.types = courseTypes,
+    // ignore: prefer_initializing_formals
+    List<CourseType>? types,
     required this.selected,
     required this.onSelected,
     this.enabled = true,
-  });
-  final List<CourseType> types;
+  // ignore: prefer_initializing_formals
+  }) : _types = types;
+  final List<CourseType>? _types;
+  List<CourseType> get types => _types ?? courseTypes;
   final String selected;
   final ValueChanged<CourseType> onSelected;
   final bool enabled;
@@ -487,7 +460,7 @@ class _Poster extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: _palettes[index],
+                    colors: _palettes[(courseTypes.indexWhere((t) => t.courseIds.contains(courseCatalog[index].id)).clamp(0, _palettes.length - 1))],
                   ),
                 ),
                 child: Stack(
@@ -526,7 +499,7 @@ class _Poster extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'LESSON ${(index + 1).toString().padLeft(2, '0')}',
+                            'LESSON ${courseCatalog[index].title.split(' · ').first}',
                             style: const TextStyle(
                               color: Color(0xFF34434A),
                               fontSize: 10,
@@ -546,8 +519,12 @@ class _Poster extends StatelessWidget {
                     Positioned(
                       left: 23,
                       top: 60,
-                      child: Text(
-                        _titles[index],
+                      right: 23,
+                      child: FittedBox(
+                        alignment: Alignment.topLeft,
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                        courseCatalog[index].coverTitle.isEmpty ? 'Learn\n& grow.' : courseCatalog[index].coverTitle,
                         textScaler: TextScaler.noScaling,
                         style: const TextStyle(
                           fontFamily: 'Arial',
@@ -557,32 +534,22 @@ class _Poster extends StatelessWidget {
                           letterSpacing: -2.5,
                           color: Color(0xFF20343D),
                         ),
+                        ),
                       ),
                     ),
                     Positioned(
-                      left: 21,
+                      left: 0,
+                      right: 0,
                       top: designHeight * .36,
-                      child: Transform.rotate(
-                        angle: -.15,
-                        child: SvgPicture.asset(
-                          'assets/avatar/images/${_art[index].$1}.svg',
-                          width: 190,
-                          height: 190,
-                          excludeFromSemantics: true,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      right: 5,
-                      top: designHeight * .48,
-                      child: Transform.rotate(
-                        angle: .18,
-                        child: SvgPicture.asset(
-                          'assets/avatar/images/${_art[index].$2}.svg',
-                          width: 155,
-                          height: 155,
-                          excludeFromSemantics: true,
-                        ),
+                      height: designHeight * .42,
+                      child: SvgPicture.asset(
+                        courseCatalog[index].asset.startsWith('adult-')
+                            ? 'assets/avatar/images/apple.svg'
+                            : 'assets/avatar/images/cover-${courseCatalog[index].asset}.svg',
+                        bundle: CourseResources.instance,
+                        semanticsLabel: '${courseCatalog[index].title.split(' · ').last}主题插图',
+                        fit: BoxFit.contain,
+                        placeholderBuilder: (_) => const SizedBox.shrink(),
                       ),
                     ),
                     Positioned(
@@ -603,7 +570,7 @@ class _Poster extends StatelessWidget {
                           ),
                           const SizedBox(height: 6),
                           Text(
-                            _phrases[index],
+                            courseCatalog[index].example.isEmpty ? courseCatalog[index].goal : courseCatalog[index].example,
                             textScaler: TextScaler.noScaling,
                             style: const TextStyle(
                               color: Color(0xFF34434A),

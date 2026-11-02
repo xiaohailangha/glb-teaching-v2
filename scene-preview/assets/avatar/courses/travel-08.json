@@ -1,0 +1,482 @@
+{
+  "id": "travel-08-v1",
+  "title": "08 · 购买车票",
+  "category": "travel",
+  "goal": "说明车票数量和目的地",
+  "prerequisites": [
+    "travel-07-v1"
+  ],
+  "scenario": "你在示范车站买去伦敦的单程票，再分别练习往返票和两张票的说法。",
+  "stages": [
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "08 · 购买车票",
+      "text": "说明车票数量和目的地",
+      "clip": "c96_644722c3372ba75b5f01"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "train",
+      "text": "火车",
+      "clip": "c96_7fbc11e429e41864bbd4"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "train",
+      "text": "火车",
+      "clip": "c96_86335d76cc0fb461eae2",
+      "speechText": "train"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "train",
+      "text": "火车",
+      "practiceClip": "c96_86335d76cc0fb461eae2",
+      "speechText": "train",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "single",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "single",
+      "text": "单程的；单个的",
+      "clip": "c96_ae2b896877ea44b2f92b"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "single",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "single",
+      "text": "单程的；单个的",
+      "clip": "c96_ada6b6d70ac4ba6bc1ec",
+      "speechText": "single"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "single",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "single",
+      "text": "单程的；单个的",
+      "practiceClip": "c96_ada6b6d70ac4ba6bc1ec",
+      "speechText": "single",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "return",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "return",
+      "text": "往返的；返回",
+      "clip": "c96_285db7793d2270f9b82b"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "return",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "return",
+      "text": "往返的；返回",
+      "clip": "c96_703e5b58f3da2034cf0d",
+      "speechText": "return"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "return",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "return",
+      "text": "往返的；返回",
+      "practiceClip": "c96_703e5b58f3da2034cf0d",
+      "speechText": "return",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a single ticket",
+      "text": "一张单程票",
+      "clip": "c96_af2e623f24c35d26d424",
+      "speechText": "a single ticket"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a single ticket",
+      "text": "一张单程票",
+      "practiceClip": "c96_af2e623f24c35d26d424",
+      "speechText": "a single ticket",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a return ticket",
+      "text": "一张往返票",
+      "clip": "c96_4ef9e353d226905acb51",
+      "speechText": "a return ticket"
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a return ticket",
+      "text": "一张往返票",
+      "practiceClip": "c96_4ef9e353d226905acb51",
+      "speechText": "a return ticket",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "A single ticket to London, please.",
+      "text": "请给我一张去伦敦的单程票。",
+      "clip": "c96_e7ee1b609ecb10a1bae3",
+      "speechText": "A single ticket to London, please."
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "A single ticket to London, please.",
+      "text": "请给我一张去伦敦的单程票。",
+      "practiceClip": "c96_e7ee1b609ecb10a1bae3",
+      "speechText": "A single ticket to London, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "A return ticket, please.",
+      "text": "请给我一张往返票。",
+      "clip": "c96_0dd5af8a7b91250af202",
+      "speechText": "A return ticket, please."
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "A return ticket, please.",
+      "text": "请给我一张往返票。",
+      "practiceClip": "c96_0dd5af8a7b91250af202",
+      "speechText": "A return ticket, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Two tickets, please.",
+      "text": "请给我两张票。",
+      "clip": "c96_038d8d8b446d9a91e613",
+      "speechText": "Two tickets, please."
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Two tickets, please.",
+      "text": "请给我两张票。",
+      "practiceClip": "c96_038d8d8b446d9a91e613",
+      "speechText": "Two tickets, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_86335d76cc0fb461eae2",
+      "hide": true
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_86335d76cc0fb461eae2",
+      "speechText": "train",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "单程的"
+        },
+        {
+          "id": "answer_2",
+          "label": "往返的"
+        },
+        {
+          "id": "answer_0",
+          "label": "火车"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_ada6b6d70ac4ba6bc1ec",
+      "hide": true
+    },
+    {
+      "chapter": "购买车票",
+      "word": "single",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_ada6b6d70ac4ba6bc1ec",
+      "speechText": "single",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "往返的"
+        },
+        {
+          "id": "answer_0",
+          "label": "火车"
+        },
+        {
+          "id": "answer_1",
+          "label": "单程的"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a single ticket",
+      "text": "不看英文，请表达：一张单程票",
+      "practiceClip": "c96_af2e623f24c35d26d424",
+      "speechText": "a single ticket",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a return ticket",
+      "text": "不看英文，请表达：一张往返票",
+      "practiceClip": "c96_4ef9e353d226905acb51",
+      "speechText": "a return ticket",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "A single ticket to London, please.",
+      "text": "情境练习：你在示范车站买去伦敦的单程票，再分别练习往返票和两张票的说法。\n这一句请表达：请给我一张去伦敦的单程票。",
+      "practiceClip": "c96_e7ee1b609ecb10a1bae3",
+      "speechText": "A single ticket to London, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "A return ticket, please.",
+      "text": "情境练习：你在示范车站买去伦敦的单程票，再分别练习往返票和两张票的说法。\n这一句请表达：请给我一张往返票。",
+      "practiceClip": "c96_0dd5af8a7b91250af202",
+      "speechText": "A return ticket, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Two tickets, please.",
+      "text": "情境练习：你在示范车站买去伦敦的单程票，再分别练习往返票和两张票的说法。\n这一句请表达：请给我两张票。",
+      "practiceClip": "c96_038d8d8b446d9a91e613",
+      "speechText": "Two tickets, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "购买车票",
+      "word": "train",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

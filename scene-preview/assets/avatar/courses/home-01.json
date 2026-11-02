@@ -1,0 +1,482 @@
+{
+  "id": "home-01-v1",
+  "title": "01 · 介绍家人",
+  "category": "home",
+  "goal": "用 this is 介绍父母和家庭",
+  "prerequisites": [
+    "introductions-12-v1"
+  ],
+  "scenario": "你向朋友介绍一张家庭照片，先说这是家人，再分别介绍母亲和父亲。",
+  "stages": [
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "01 · 介绍家人",
+      "text": "用 this is 介绍父母和家庭",
+      "clip": "c96_5307d4e279accf2483a8"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "family",
+      "text": "家庭；家人",
+      "clip": "c96_b750d64efac4e6e302f0"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "family",
+      "text": "家庭；家人",
+      "clip": "c96_26088dc1ee3bb64af339",
+      "speechText": "family"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "family",
+      "text": "家庭；家人",
+      "practiceClip": "c96_26088dc1ee3bb64af339",
+      "speechText": "family",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "mother",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "mother",
+      "text": "母亲",
+      "clip": "c96_33107f83d6c6676dfd16"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "mother",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "mother",
+      "text": "母亲",
+      "clip": "c96_59f3992657b922e176d1",
+      "speechText": "mother"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "mother",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "mother",
+      "text": "母亲",
+      "practiceClip": "c96_59f3992657b922e176d1",
+      "speechText": "mother",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "father",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "father",
+      "text": "父亲",
+      "clip": "c96_e280852ac6be80e09f49"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "father",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "father",
+      "text": "父亲",
+      "clip": "c96_8c5535dfce6aa9d63c35",
+      "speechText": "father"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "father",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "father",
+      "text": "父亲",
+      "practiceClip": "c96_8c5535dfce6aa9d63c35",
+      "speechText": "father",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "my mother",
+      "text": "我的母亲",
+      "clip": "c96_3b416655d82a49fa1d6d",
+      "speechText": "my mother"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "my mother",
+      "text": "我的母亲",
+      "practiceClip": "c96_3b416655d82a49fa1d6d",
+      "speechText": "my mother",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "my father",
+      "text": "我的父亲",
+      "clip": "c96_af7689828bd7d8ebd420",
+      "speechText": "my father"
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "my father",
+      "text": "我的父亲",
+      "practiceClip": "c96_af7689828bd7d8ebd420",
+      "speechText": "my father",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is my family.",
+      "text": "这是我的家人。",
+      "clip": "c96_aa91682315cdd3207558",
+      "speechText": "This is my family."
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is my family.",
+      "text": "这是我的家人。",
+      "practiceClip": "c96_aa91682315cdd3207558",
+      "speechText": "This is my family.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This is my mother.",
+      "text": "这是我的母亲。",
+      "clip": "c96_ce1eecb6de9fe8812437",
+      "speechText": "This is my mother."
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This is my mother.",
+      "text": "这是我的母亲。",
+      "practiceClip": "c96_ce1eecb6de9fe8812437",
+      "speechText": "This is my mother.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "This is my father.",
+      "text": "这是我的父亲。",
+      "clip": "c96_56da253935cca5731cbf",
+      "speechText": "This is my father."
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "This is my father.",
+      "text": "这是我的父亲。",
+      "practiceClip": "c96_56da253935cca5731cbf",
+      "speechText": "This is my father.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_26088dc1ee3bb64af339",
+      "hide": true
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_26088dc1ee3bb64af339",
+      "speechText": "family",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "母亲"
+        },
+        {
+          "id": "answer_2",
+          "label": "父亲"
+        },
+        {
+          "id": "answer_0",
+          "label": "家庭"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_59f3992657b922e176d1",
+      "hide": true
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "mother",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_59f3992657b922e176d1",
+      "speechText": "mother",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "父亲"
+        },
+        {
+          "id": "answer_0",
+          "label": "家庭"
+        },
+        {
+          "id": "answer_1",
+          "label": "母亲"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "my mother",
+      "text": "不看英文，请表达：我的母亲",
+      "practiceClip": "c96_3b416655d82a49fa1d6d",
+      "speechText": "my mother",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "my father",
+      "text": "不看英文，请表达：我的父亲",
+      "practiceClip": "c96_af7689828bd7d8ebd420",
+      "speechText": "my father",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is my family.",
+      "text": "情境练习：你向朋友介绍一张家庭照片，先说这是家人，再分别介绍母亲和父亲。\n这一句请表达：这是我的家人。",
+      "practiceClip": "c96_aa91682315cdd3207558",
+      "speechText": "This is my family.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This is my mother.",
+      "text": "情境练习：你向朋友介绍一张家庭照片，先说这是家人，再分别介绍母亲和父亲。\n这一句请表达：这是我的母亲。",
+      "practiceClip": "c96_ce1eecb6de9fe8812437",
+      "speechText": "This is my mother.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "This is my father.",
+      "text": "情境练习：你向朋友介绍一张家庭照片，先说这是家人，再分别介绍母亲和父亲。\n这一句请表达：这是我的父亲。",
+      "practiceClip": "c96_56da253935cca5731cbf",
+      "speechText": "This is my father.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家人",
+      "word": "family",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

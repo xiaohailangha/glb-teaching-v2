@@ -1,0 +1,482 @@
+{
+  "id": "travel-04-v1",
+  "title": "04 · 附近与远处",
+  "category": "travel",
+  "goal": "描述目的地的远近及相邻位置",
+  "prerequisites": [
+    "travel-03-v1"
+  ],
+  "scenario": "你先问酒店是否在附近，再练习告诉别人酒店紧挨着银行。",
+  "stages": [
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "04 · 附近与远处",
+      "text": "描述目的地的远近及相邻位置",
+      "clip": "c96_20026525a074184069ec"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "near",
+      "text": "在……附近",
+      "clip": "c96_f1ef2107d3ec368ea604"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "near",
+      "text": "在……附近",
+      "clip": "c96_308bb7d26dad86719eb2",
+      "speechText": "near"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "near",
+      "text": "在……附近",
+      "practiceClip": "c96_308bb7d26dad86719eb2",
+      "speechText": "near",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "far",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "far",
+      "text": "远的",
+      "clip": "c96_80b684150ba468b60839"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "far",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "far",
+      "text": "远的",
+      "clip": "c96_6badfe9e09b67665058a",
+      "speechText": "far"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "far",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "far",
+      "text": "远的",
+      "practiceClip": "c96_6badfe9e09b67665058a",
+      "speechText": "far",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "next",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "next",
+      "text": "下一个；用于 next to 表示紧挨着",
+      "clip": "c96_b10dd343320ca0e5c042"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "next",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "next",
+      "text": "下一个；用于 next to 表示紧挨着",
+      "clip": "c96_78fb17dab5146f4a0fb7",
+      "speechText": "next"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "next",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "next",
+      "text": "下一个；用于 next to 表示紧挨着",
+      "practiceClip": "c96_78fb17dab5146f4a0fb7",
+      "speechText": "next",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "near here",
+      "text": "在这附近",
+      "clip": "c96_85240f642f569ebe2191",
+      "speechText": "near here"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "near here",
+      "text": "在这附近",
+      "practiceClip": "c96_85240f642f569ebe2191",
+      "speechText": "near here",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "next to the bank",
+      "text": "紧挨着银行",
+      "clip": "c96_9f8d29a9652ce17b304f",
+      "speechText": "next to the bank"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "next to the bank",
+      "text": "紧挨着银行",
+      "practiceClip": "c96_9f8d29a9652ce17b304f",
+      "speechText": "next to the bank",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Is it near here?",
+      "text": "它在这附近吗？",
+      "clip": "c96_0ff75360487304464ace",
+      "speechText": "Is it near here?"
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Is it near here?",
+      "text": "它在这附近吗？",
+      "practiceClip": "c96_0ff75360487304464ace",
+      "speechText": "Is it near here?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "It is far from here.",
+      "text": "它离这里很远。",
+      "clip": "c96_759d5d317392dd840ab8",
+      "speechText": "It is far from here."
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "It is far from here.",
+      "text": "它离这里很远。",
+      "practiceClip": "c96_759d5d317392dd840ab8",
+      "speechText": "It is far from here.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "The hotel is next to the bank.",
+      "text": "酒店紧挨着银行。",
+      "clip": "c96_eb50d2ae72a7305b08ed",
+      "speechText": "The hotel is next to the bank."
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "The hotel is next to the bank.",
+      "text": "酒店紧挨着银行。",
+      "practiceClip": "c96_eb50d2ae72a7305b08ed",
+      "speechText": "The hotel is next to the bank.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_308bb7d26dad86719eb2",
+      "hide": true
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_308bb7d26dad86719eb2",
+      "speechText": "near",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "远的"
+        },
+        {
+          "id": "answer_2",
+          "label": "下一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "在……附近"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_6badfe9e09b67665058a",
+      "hide": true
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "far",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_6badfe9e09b67665058a",
+      "speechText": "far",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "下一个"
+        },
+        {
+          "id": "answer_0",
+          "label": "在……附近"
+        },
+        {
+          "id": "answer_1",
+          "label": "远的"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "near here",
+      "text": "不看英文，请表达：在这附近",
+      "practiceClip": "c96_85240f642f569ebe2191",
+      "speechText": "near here",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "next to the bank",
+      "text": "不看英文，请表达：紧挨着银行",
+      "practiceClip": "c96_9f8d29a9652ce17b304f",
+      "speechText": "next to the bank",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Is it near here?",
+      "text": "情境练习：你先问酒店是否在附近，再练习告诉别人酒店紧挨着银行。\n这一句请表达：它在这附近吗？",
+      "practiceClip": "c96_0ff75360487304464ace",
+      "speechText": "Is it near here?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "It is far from here.",
+      "text": "情境练习：你先问酒店是否在附近，再练习告诉别人酒店紧挨着银行。\n这一句请表达：它离这里很远。",
+      "practiceClip": "c96_759d5d317392dd840ab8",
+      "speechText": "It is far from here.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "The hotel is next to the bank.",
+      "text": "情境练习：你先问酒店是否在附近，再练习告诉别人酒店紧挨着银行。\n这一句请表达：酒店紧挨着银行。",
+      "practiceClip": "c96_eb50d2ae72a7305b08ed",
+      "speechText": "The hotel is next to the bank.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "附近与远处",
+      "word": "near",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

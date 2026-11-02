@@ -1,0 +1,482 @@
+{
+  "id": "social-11-v1",
+  "title": "11 · 说明过去的周末",
+  "category": "social",
+  "goal": "用少量规则过去式描述已发生的活动",
+  "prerequisites": [
+    "social-10-v1"
+  ],
+  "scenario": "这是过去时间的入门练习：按示范说昨天看朋友、上周末看电影，并给出简单感受。",
+  "stages": [
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "11 · 说明过去的周末",
+      "text": "用少量规则过去式描述已发生的活动",
+      "clip": "c96_80266a5e6b4b7b1a3a5a"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "yesterday",
+      "text": "昨天",
+      "clip": "c96_b8d3df8cfacba5ab0d95"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "yesterday",
+      "text": "昨天",
+      "clip": "c96_7952675c36b069ede14c",
+      "speechText": "yesterday"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "yesterday",
+      "text": "昨天",
+      "practiceClip": "c96_7952675c36b069ede14c",
+      "speechText": "yesterday",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "visited",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "visited",
+      "text": "看望了；visit 的过去式",
+      "clip": "c96_4766291f64d05ce7c1ad"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "visited",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "visited",
+      "text": "看望了；visit 的过去式",
+      "clip": "c96_cadcf220bce99cd3f4cf",
+      "speechText": "visited"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "visited",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "visited",
+      "text": "看望了；visit 的过去式",
+      "practiceClip": "c96_cadcf220bce99cd3f4cf",
+      "speechText": "visited",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "watched",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "watched",
+      "text": "观看了；watch 的过去式",
+      "clip": "c96_d4fcd2456bc228eea529"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "watched",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "watched",
+      "text": "观看了；watch 的过去式",
+      "clip": "c96_d658ec0e6e7568fd3c46",
+      "speechText": "watched"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "watched",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "watched",
+      "text": "观看了；watch 的过去式",
+      "practiceClip": "c96_d658ec0e6e7568fd3c46",
+      "speechText": "watched",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "last weekend",
+      "text": "上个周末",
+      "clip": "c96_e79f1349df9fc092b512",
+      "speechText": "last weekend"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "last weekend",
+      "text": "上个周末",
+      "practiceClip": "c96_e79f1349df9fc092b512",
+      "speechText": "last weekend",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "watched a movie",
+      "text": "看了一部电影",
+      "clip": "c96_6cdedb1c4d96b0a7b1d7",
+      "speechText": "watched a movie"
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "watched a movie",
+      "text": "看了一部电影",
+      "practiceClip": "c96_6cdedb1c4d96b0a7b1d7",
+      "speechText": "watched a movie",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I visited a friend yesterday.",
+      "text": "我昨天看望了一位朋友。",
+      "clip": "c96_8999b3120d77b60d0341",
+      "speechText": "I visited a friend yesterday."
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I visited a friend yesterday.",
+      "text": "我昨天看望了一位朋友。",
+      "practiceClip": "c96_8999b3120d77b60d0341",
+      "speechText": "I visited a friend yesterday.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I watched a movie last weekend.",
+      "text": "我上周末看了一部电影。",
+      "clip": "c96_3d21926dc246a7e0a8cb",
+      "speechText": "I watched a movie last weekend."
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I watched a movie last weekend.",
+      "text": "我上周末看了一部电影。",
+      "practiceClip": "c96_3d21926dc246a7e0a8cb",
+      "speechText": "I watched a movie last weekend.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "It was fun.",
+      "text": "那很有趣。",
+      "clip": "c96_c6bdd215ad68716e5349",
+      "speechText": "It was fun."
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "It was fun.",
+      "text": "那很有趣。",
+      "practiceClip": "c96_c6bdd215ad68716e5349",
+      "speechText": "It was fun.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_7952675c36b069ede14c",
+      "hide": true
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_7952675c36b069ede14c",
+      "speechText": "yesterday",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "看望了"
+        },
+        {
+          "id": "answer_2",
+          "label": "观看了"
+        },
+        {
+          "id": "answer_0",
+          "label": "昨天"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_cadcf220bce99cd3f4cf",
+      "hide": true
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "visited",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_cadcf220bce99cd3f4cf",
+      "speechText": "visited",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "观看了"
+        },
+        {
+          "id": "answer_0",
+          "label": "昨天"
+        },
+        {
+          "id": "answer_1",
+          "label": "看望了"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "last weekend",
+      "text": "不看英文，请表达：上个周末",
+      "practiceClip": "c96_e79f1349df9fc092b512",
+      "speechText": "last weekend",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "watched a movie",
+      "text": "不看英文，请表达：看了一部电影",
+      "practiceClip": "c96_6cdedb1c4d96b0a7b1d7",
+      "speechText": "watched a movie",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I visited a friend yesterday.",
+      "text": "情境练习：这是过去时间的入门练习：按示范说昨天看朋友、上周末看电影，并给出简单感受。\n这一句请表达：我昨天看望了一位朋友。",
+      "practiceClip": "c96_8999b3120d77b60d0341",
+      "speechText": "I visited a friend yesterday.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I watched a movie last weekend.",
+      "text": "情境练习：这是过去时间的入门练习：按示范说昨天看朋友、上周末看电影，并给出简单感受。\n这一句请表达：我上周末看了一部电影。",
+      "practiceClip": "c96_3d21926dc246a7e0a8cb",
+      "speechText": "I watched a movie last weekend.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "It was fun.",
+      "text": "情境练习：这是过去时间的入门练习：按示范说昨天看朋友、上周末看电影，并给出简单感受。\n这一句请表达：那很有趣。",
+      "practiceClip": "c96_c6bdd215ad68716e5349",
+      "speechText": "It was fun.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明过去的周末",
+      "word": "yesterday",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

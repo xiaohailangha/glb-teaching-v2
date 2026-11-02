@@ -1,0 +1,482 @@
+{
+  "id": "home-03-v1",
+  "title": "03 · 认识房间",
+  "category": "home",
+  "goal": "说出家中的房间及自己所在之处",
+  "prerequisites": [
+    "home-02-v1"
+  ],
+  "scenario": "朋友到家里做客，你先介绍厨房；随后练习询问卫生间在哪里。",
+  "stages": [
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "03 · 认识房间",
+      "text": "说出家中的房间及自己所在之处",
+      "clip": "c96_ab543aa383daa8244569"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "bedroom",
+      "text": "卧室",
+      "clip": "c96_3d5252f52613cae3381f"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "bedroom",
+      "text": "卧室",
+      "clip": "c96_4e916541241a903495a2",
+      "speechText": "bedroom"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "bedroom",
+      "text": "卧室",
+      "practiceClip": "c96_4e916541241a903495a2",
+      "speechText": "bedroom",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "kitchen",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "kitchen",
+      "text": "厨房",
+      "clip": "c96_57dfa055e2ef713dc75a"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "kitchen",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "kitchen",
+      "text": "厨房",
+      "clip": "c96_69d29e022fc10a549674",
+      "speechText": "kitchen"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "kitchen",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "kitchen",
+      "text": "厨房",
+      "practiceClip": "c96_69d29e022fc10a549674",
+      "speechText": "kitchen",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bathroom",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "bathroom",
+      "text": "浴室；卫生间",
+      "clip": "c96_ac0a5d8ca374559f3402"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bathroom",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "bathroom",
+      "text": "浴室；卫生间",
+      "clip": "c96_b9aceb434800b257cfbc",
+      "speechText": "bathroom"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bathroom",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "bathroom",
+      "text": "浴室；卫生间",
+      "practiceClip": "c96_b9aceb434800b257cfbc",
+      "speechText": "bathroom",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "the kitchen",
+      "text": "厨房",
+      "clip": "c96_c3b22b219072167a27c7",
+      "speechText": "the kitchen"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "the kitchen",
+      "text": "厨房",
+      "practiceClip": "c96_c3b22b219072167a27c7",
+      "speechText": "the kitchen",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "in the bedroom",
+      "text": "在卧室里",
+      "clip": "c96_6d089dc622742c7bf7c2",
+      "speechText": "in the bedroom"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "in the bedroom",
+      "text": "在卧室里",
+      "practiceClip": "c96_6d089dc622742c7bf7c2",
+      "speechText": "in the bedroom",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is the kitchen.",
+      "text": "这是厨房。",
+      "clip": "c96_53f11067992b2753f79c",
+      "speechText": "This is the kitchen."
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is the kitchen.",
+      "text": "这是厨房。",
+      "practiceClip": "c96_53f11067992b2753f79c",
+      "speechText": "This is the kitchen.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I am in the bedroom.",
+      "text": "我在卧室里。",
+      "clip": "c96_fc893b2e857caeb4f3db",
+      "speechText": "I am in the bedroom."
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I am in the bedroom.",
+      "text": "我在卧室里。",
+      "practiceClip": "c96_fc893b2e857caeb4f3db",
+      "speechText": "I am in the bedroom.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Where is the bathroom?",
+      "text": "卫生间在哪里？",
+      "clip": "c96_0093e1a7f923af98c135",
+      "speechText": "Where is the bathroom?"
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Where is the bathroom?",
+      "text": "卫生间在哪里？",
+      "practiceClip": "c96_0093e1a7f923af98c135",
+      "speechText": "Where is the bathroom?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_4e916541241a903495a2",
+      "hide": true
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_4e916541241a903495a2",
+      "speechText": "bedroom",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "厨房"
+        },
+        {
+          "id": "answer_2",
+          "label": "浴室"
+        },
+        {
+          "id": "answer_0",
+          "label": "卧室"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_69d29e022fc10a549674",
+      "hide": true
+    },
+    {
+      "chapter": "认识房间",
+      "word": "kitchen",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_69d29e022fc10a549674",
+      "speechText": "kitchen",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "浴室"
+        },
+        {
+          "id": "answer_0",
+          "label": "卧室"
+        },
+        {
+          "id": "answer_1",
+          "label": "厨房"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "the kitchen",
+      "text": "不看英文，请表达：厨房",
+      "practiceClip": "c96_c3b22b219072167a27c7",
+      "speechText": "the kitchen",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "in the bedroom",
+      "text": "不看英文，请表达：在卧室里",
+      "practiceClip": "c96_6d089dc622742c7bf7c2",
+      "speechText": "in the bedroom",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is the kitchen.",
+      "text": "情境练习：朋友到家里做客，你先介绍厨房；随后练习询问卫生间在哪里。\n这一句请表达：这是厨房。",
+      "practiceClip": "c96_53f11067992b2753f79c",
+      "speechText": "This is the kitchen.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I am in the bedroom.",
+      "text": "情境练习：朋友到家里做客，你先介绍厨房；随后练习询问卫生间在哪里。\n这一句请表达：我在卧室里。",
+      "practiceClip": "c96_fc893b2e857caeb4f3db",
+      "speechText": "I am in the bedroom.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Where is the bathroom?",
+      "text": "情境练习：朋友到家里做客，你先介绍厨房；随后练习询问卫生间在哪里。\n这一句请表达：卫生间在哪里？",
+      "practiceClip": "c96_0093e1a7f923af98c135",
+      "speechText": "Where is the bathroom?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "认识房间",
+      "word": "bedroom",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "id": "social-03-v1",
+  "title": "03 · 运动与游戏",
+  "category": "social",
+  "goal": "表达运动爱好并邀请一起活动",
+  "prerequisites": [
+    "social-02-v1"
+  ],
+  "scenario": "告诉朋友你喜欢运动、平时打网球，再邀请他一起玩游戏。",
+  "stages": [
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "03 · 运动与游戏",
+      "text": "表达运动爱好并邀请一起活动",
+      "clip": "c96_e236f006c48f44c6d287"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "sport",
+      "text": "运动",
+      "clip": "c96_d3e3671a0c60144ad257"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "sport",
+      "text": "运动",
+      "clip": "c96_ae082c48d264e3263fdb",
+      "speechText": "sport"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "sport",
+      "text": "运动",
+      "practiceClip": "c96_ae082c48d264e3263fdb",
+      "speechText": "sport",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "tennis",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "tennis",
+      "text": "网球",
+      "clip": "c96_0ca04a4afb8e8c84565d"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "tennis",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "tennis",
+      "text": "网球",
+      "clip": "c96_d648b5b231e4bf127a05",
+      "speechText": "tennis"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "tennis",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "tennis",
+      "text": "网球",
+      "practiceClip": "c96_d648b5b231e4bf127a05",
+      "speechText": "tennis",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "game",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "game",
+      "text": "游戏；比赛",
+      "clip": "c96_a1ec4455a9c75ce2820d"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "game",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "game",
+      "text": "游戏；比赛",
+      "clip": "c96_aaa0e454d2e7e4295aab",
+      "speechText": "game"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "game",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "game",
+      "text": "游戏；比赛",
+      "practiceClip": "c96_aaa0e454d2e7e4295aab",
+      "speechText": "game",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "play tennis",
+      "text": "打网球",
+      "clip": "c96_cc5fdf12b35c03f1fa03",
+      "speechText": "play tennis"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "play tennis",
+      "text": "打网球",
+      "practiceClip": "c96_cc5fdf12b35c03f1fa03",
+      "speechText": "play tennis",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "play a game",
+      "text": "玩一个游戏",
+      "clip": "c96_cd08f5d05e9c24881fef",
+      "speechText": "play a game"
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "play a game",
+      "text": "玩一个游戏",
+      "practiceClip": "c96_cd08f5d05e9c24881fef",
+      "speechText": "play a game",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I like sports.",
+      "text": "我喜欢运动。",
+      "clip": "c96_49e1025ccbc1e2dcb4d4",
+      "speechText": "I like sports."
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I like sports.",
+      "text": "我喜欢运动。",
+      "practiceClip": "c96_49e1025ccbc1e2dcb4d4",
+      "speechText": "I like sports.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I play tennis.",
+      "text": "我打网球。",
+      "clip": "c96_8dad864a84e8936a5b92",
+      "speechText": "I play tennis."
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I play tennis.",
+      "text": "我打网球。",
+      "practiceClip": "c96_8dad864a84e8936a5b92",
+      "speechText": "I play tennis.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Let's play a game.",
+      "text": "我们玩个游戏吧。",
+      "clip": "c96_465be169c46b0e5e2ef9",
+      "speechText": "Let's play a game."
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Let's play a game.",
+      "text": "我们玩个游戏吧。",
+      "practiceClip": "c96_465be169c46b0e5e2ef9",
+      "speechText": "Let's play a game.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_ae082c48d264e3263fdb",
+      "hide": true
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_ae082c48d264e3263fdb",
+      "speechText": "sport",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "网球"
+        },
+        {
+          "id": "answer_2",
+          "label": "游戏"
+        },
+        {
+          "id": "answer_0",
+          "label": "运动"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_d648b5b231e4bf127a05",
+      "hide": true
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "tennis",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_d648b5b231e4bf127a05",
+      "speechText": "tennis",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "游戏"
+        },
+        {
+          "id": "answer_0",
+          "label": "运动"
+        },
+        {
+          "id": "answer_1",
+          "label": "网球"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "play tennis",
+      "text": "不看英文，请表达：打网球",
+      "practiceClip": "c96_cc5fdf12b35c03f1fa03",
+      "speechText": "play tennis",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "play a game",
+      "text": "不看英文，请表达：玩一个游戏",
+      "practiceClip": "c96_cd08f5d05e9c24881fef",
+      "speechText": "play a game",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I like sports.",
+      "text": "情境练习：告诉朋友你喜欢运动、平时打网球，再邀请他一起玩游戏。\n这一句请表达：我喜欢运动。",
+      "practiceClip": "c96_49e1025ccbc1e2dcb4d4",
+      "speechText": "I like sports.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I play tennis.",
+      "text": "情境练习：告诉朋友你喜欢运动、平时打网球，再邀请他一起玩游戏。\n这一句请表达：我打网球。",
+      "practiceClip": "c96_8dad864a84e8936a5b92",
+      "speechText": "I play tennis.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Let's play a game.",
+      "text": "情境练习：告诉朋友你喜欢运动、平时打网球，再邀请他一起玩游戏。\n这一句请表达：我们玩个游戏吧。",
+      "practiceClip": "c96_465be169c46b0e5e2ef9",
+      "speechText": "Let's play a game.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "运动与游戏",
+      "word": "sport",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

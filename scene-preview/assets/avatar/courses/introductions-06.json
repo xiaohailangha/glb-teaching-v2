@@ -1,0 +1,482 @@
+{
+  "id": "introductions-06-v1",
+  "title": "06 · 礼貌地引起注意",
+  "category": "introductions",
+  "goal": "用礼貌开场获得帮助",
+  "prerequisites": [
+    "introductions-05-v1"
+  ],
+  "scenario": "你在服务台前需要帮助，先礼貌地引起工作人员注意，再请求帮助。",
+  "stages": [
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "06 · 礼貌地引起注意",
+      "text": "用礼貌开场获得帮助",
+      "clip": "c96_dd7ae1c55d3353a3227c"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "excuse",
+      "text": "原谅或请对方注意",
+      "clip": "c96_6d013c672b809a9f870d"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "excuse",
+      "text": "原谅或请对方注意",
+      "clip": "c96_37ce573f78681c839cd0",
+      "speechText": "excuse"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "excuse",
+      "text": "原谅或请对方注意",
+      "practiceClip": "c96_37ce573f78681c839cd0",
+      "speechText": "excuse",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "help",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "help",
+      "text": "帮助",
+      "clip": "c96_4c7503c223de9ccbbeb2"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "help",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "help",
+      "text": "帮助",
+      "clip": "c96_2158eaece6e592f2cc15",
+      "speechText": "help"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "help",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "help",
+      "text": "帮助",
+      "practiceClip": "c96_2158eaece6e592f2cc15",
+      "speechText": "help",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "please",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "please",
+      "text": "请",
+      "clip": "c96_9e7d4054be8fda77873e"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "please",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "please",
+      "text": "请",
+      "clip": "c96_119c942deb8552028da1",
+      "speechText": "please"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "please",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "please",
+      "text": "请",
+      "practiceClip": "c96_119c942deb8552028da1",
+      "speechText": "please",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "excuse me",
+      "text": "劳驾；打扰一下",
+      "clip": "c96_cdab01692a28b58d886b",
+      "speechText": "excuse me"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "excuse me",
+      "text": "劳驾；打扰一下",
+      "practiceClip": "c96_cdab01692a28b58d886b",
+      "speechText": "excuse me",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "help me",
+      "text": "帮帮我",
+      "clip": "c96_d328ee6490d2e90d0d07",
+      "speechText": "help me"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "help me",
+      "text": "帮帮我",
+      "practiceClip": "c96_d328ee6490d2e90d0d07",
+      "speechText": "help me",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Excuse me.",
+      "text": "劳驾。",
+      "clip": "c96_3aff91377d584c74a109",
+      "speechText": "Excuse me."
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Excuse me.",
+      "text": "劳驾。",
+      "practiceClip": "c96_3aff91377d584c74a109",
+      "speechText": "Excuse me.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Can you help me, please?",
+      "text": "请问你能帮帮我吗？",
+      "clip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?"
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Can you help me, please?",
+      "text": "请问你能帮帮我吗？",
+      "practiceClip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Yes, of course.",
+      "text": "可以，当然。",
+      "clip": "c96_66e41602428e404bd433",
+      "speechText": "Yes, of course."
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Yes, of course.",
+      "text": "可以，当然。",
+      "practiceClip": "c96_66e41602428e404bd433",
+      "speechText": "Yes, of course.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_37ce573f78681c839cd0",
+      "hide": true
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_37ce573f78681c839cd0",
+      "speechText": "excuse",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "帮助"
+        },
+        {
+          "id": "answer_2",
+          "label": "请"
+        },
+        {
+          "id": "answer_0",
+          "label": "原谅或请对方注意"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_2158eaece6e592f2cc15",
+      "hide": true
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "help",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_2158eaece6e592f2cc15",
+      "speechText": "help",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "请"
+        },
+        {
+          "id": "answer_0",
+          "label": "原谅或请对方注意"
+        },
+        {
+          "id": "answer_1",
+          "label": "帮助"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "excuse me",
+      "text": "不看英文，请表达：劳驾；打扰一下",
+      "practiceClip": "c96_cdab01692a28b58d886b",
+      "speechText": "excuse me",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "help me",
+      "text": "不看英文，请表达：帮帮我",
+      "practiceClip": "c96_d328ee6490d2e90d0d07",
+      "speechText": "help me",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Excuse me.",
+      "text": "情境练习：你在服务台前需要帮助，先礼貌地引起工作人员注意，再请求帮助。\n这一句请表达：劳驾。",
+      "practiceClip": "c96_3aff91377d584c74a109",
+      "speechText": "Excuse me.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Can you help me, please?",
+      "text": "情境练习：你在服务台前需要帮助，先礼貌地引起工作人员注意，再请求帮助。\n这一句请表达：请问你能帮帮我吗？",
+      "practiceClip": "c96_f56db0d9b2b8032ccc97",
+      "speechText": "Can you help me, please?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Yes, of course.",
+      "text": "情境练习：你在服务台前需要帮助，先礼貌地引起工作人员注意，再请求帮助。\n这一句请表达：可以，当然。",
+      "practiceClip": "c96_66e41602428e404bd433",
+      "speechText": "Yes, of course.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "礼貌地引起注意",
+      "word": "excuse",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

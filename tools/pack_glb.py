@@ -70,12 +70,3 @@ def pack(path,character='Snow'):
     face_normals=sum('NORMAL' in target for i in face_meshes for p in doc['meshes'][i]['primitives'] for target in p.get('targets',[]))
     assert face_normals>0,'Facial morph normals must be exported before packing'
     return {'before_bytes':len(data),'after_bytes':len(result),'removed_rigid_normal_targets':removed,'facial_normal_targets':face_normals,'accessors':len(accessors)}
-
-if __name__=='__main__':
-    root=pathlib.Path(__file__).resolve().parent.parent
-    report=pack(root/'assets/avatar/models/snow.glb')
-    (root/'docs/model-packing.json').write_text(json.dumps(report,indent=2))
-    details=json.loads((root/'docs/model-report.json').read_text())
-    details['file_bytes']=report['after_bytes']
-    (root/'docs/model-report.json').write_text(json.dumps(details,indent=2))
-    print(json.dumps(report))

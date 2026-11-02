@@ -1,0 +1,482 @@
+{
+  "id": "study-10-v1",
+  "title": "10 · 请求工作协助",
+  "category": "study",
+  "goal": "向同事提出清楚而礼貌的帮助请求",
+  "prerequisites": [
+    "study-09-v1"
+  ],
+  "scenario": "你不会操作一个任务，请同事帮忙、演示，并通过邮件补充说明。",
+  "stages": [
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 请求工作协助",
+      "text": "向同事提出清楚而礼貌的帮助请求",
+      "clip": "c96_2a1a16c1608c1bad1eff"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "show",
+      "text": "展示；给……看",
+      "clip": "c96_49db0d3ffd711342c5ad"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "show",
+      "text": "展示；给……看",
+      "clip": "c96_07205cf5314bbeb1b160",
+      "speechText": "show"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "show",
+      "text": "展示；给……看",
+      "practiceClip": "c96_07205cf5314bbeb1b160",
+      "speechText": "show",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "send",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "send",
+      "text": "发送",
+      "clip": "c96_8b3c409a70a1d0ab7a19"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "send",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "send",
+      "text": "发送",
+      "clip": "c96_d5b8c2f1900549a41c6b",
+      "speechText": "send"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "send",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "send",
+      "text": "发送",
+      "practiceClip": "c96_d5b8c2f1900549a41c6b",
+      "speechText": "send",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "email",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "email",
+      "text": "电子邮件",
+      "clip": "c96_abd703d721b10529e5bd"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "email",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "email",
+      "text": "电子邮件",
+      "clip": "c96_4fe059ae6940c1e847e1",
+      "speechText": "email"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "email",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "email",
+      "text": "电子邮件",
+      "practiceClip": "c96_4fe059ae6940c1e847e1",
+      "speechText": "email",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "show me",
+      "text": "给我看",
+      "clip": "c96_3a0bf34fd5a4e643fc0e",
+      "speechText": "show me"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "show me",
+      "text": "给我看",
+      "practiceClip": "c96_3a0bf34fd5a4e643fc0e",
+      "speechText": "show me",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "send an email",
+      "text": "发一封邮件",
+      "clip": "c96_b594d63cd6608015ff7a",
+      "speechText": "send an email"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "send an email",
+      "text": "发一封邮件",
+      "practiceClip": "c96_b594d63cd6608015ff7a",
+      "speechText": "send an email",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Can you help me with this?",
+      "text": "你能帮我处理这个吗？",
+      "clip": "c96_5fcd3b96d33e01b86c4f",
+      "speechText": "Can you help me with this?"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Can you help me with this?",
+      "text": "你能帮我处理这个吗？",
+      "practiceClip": "c96_5fcd3b96d33e01b86c4f",
+      "speechText": "Can you help me with this?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "Can you show me, please?",
+      "text": "请给我演示一下，好吗？",
+      "clip": "c96_5f85f22aeb796d8fbe22",
+      "speechText": "Can you show me, please?"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "Can you show me, please?",
+      "text": "请给我演示一下，好吗？",
+      "practiceClip": "c96_5f85f22aeb796d8fbe22",
+      "speechText": "Can you show me, please?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Can you send me an email?",
+      "text": "你能给我发一封邮件吗？",
+      "clip": "c96_6f028bba6b47a1aa1428",
+      "speechText": "Can you send me an email?"
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Can you send me an email?",
+      "text": "你能给我发一封邮件吗？",
+      "practiceClip": "c96_6f028bba6b47a1aa1428",
+      "speechText": "Can you send me an email?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_07205cf5314bbeb1b160",
+      "hide": true
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_07205cf5314bbeb1b160",
+      "speechText": "show",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "发送"
+        },
+        {
+          "id": "answer_2",
+          "label": "电子邮件"
+        },
+        {
+          "id": "answer_0",
+          "label": "展示"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_d5b8c2f1900549a41c6b",
+      "hide": true
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "send",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_d5b8c2f1900549a41c6b",
+      "speechText": "send",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "电子邮件"
+        },
+        {
+          "id": "answer_0",
+          "label": "展示"
+        },
+        {
+          "id": "answer_1",
+          "label": "发送"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "show me",
+      "text": "不看英文，请表达：给我看",
+      "practiceClip": "c96_3a0bf34fd5a4e643fc0e",
+      "speechText": "show me",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "send an email",
+      "text": "不看英文，请表达：发一封邮件",
+      "practiceClip": "c96_b594d63cd6608015ff7a",
+      "speechText": "send an email",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Can you help me with this?",
+      "text": "情境练习：你不会操作一个任务，请同事帮忙、演示，并通过邮件补充说明。\n这一句请表达：你能帮我处理这个吗？",
+      "practiceClip": "c96_5fcd3b96d33e01b86c4f",
+      "speechText": "Can you help me with this?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "Can you show me, please?",
+      "text": "情境练习：你不会操作一个任务，请同事帮忙、演示，并通过邮件补充说明。\n这一句请表达：请给我演示一下，好吗？",
+      "practiceClip": "c96_5f85f22aeb796d8fbe22",
+      "speechText": "Can you show me, please?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Can you send me an email?",
+      "text": "情境练习：你不会操作一个任务，请同事帮忙、演示，并通过邮件补充说明。\n这一句请表达：你能给我发一封邮件吗？",
+      "practiceClip": "c96_6f028bba6b47a1aa1428",
+      "speechText": "Can you send me an email?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "请求工作协助",
+      "word": "show",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

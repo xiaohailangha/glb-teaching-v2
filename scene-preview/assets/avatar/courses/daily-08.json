@@ -1,0 +1,482 @@
+{
+  "id": "daily-08-v1",
+  "title": "08 · 经常和有时",
+  "category": "daily",
+  "goal": "用频率词描述日常习惯",
+  "prerequisites": [
+    "daily-07-v1"
+  ],
+  "scenario": "扮演示范人物，用第一人称描述习惯：通常步行上班，有时做晚饭，总会刷牙。",
+  "stages": [
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "08 · 经常和有时",
+      "text": "用频率词描述日常习惯",
+      "clip": "c96_3e9fa847ddee881a2780"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "always",
+      "text": "总是",
+      "clip": "c96_385dbe0a6b67fb598db1"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "always",
+      "text": "总是",
+      "clip": "c96_664899dd09c9c9a4c3c7",
+      "speechText": "always"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "always",
+      "text": "总是",
+      "practiceClip": "c96_664899dd09c9c9a4c3c7",
+      "speechText": "always",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "usually",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "usually",
+      "text": "通常",
+      "clip": "c96_142788b5a46a05a0dd91"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "usually",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "usually",
+      "text": "通常",
+      "clip": "c96_64fbc5bc3a70dcdfe7cd",
+      "speechText": "usually"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "usually",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "usually",
+      "text": "通常",
+      "practiceClip": "c96_64fbc5bc3a70dcdfe7cd",
+      "speechText": "usually",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "sometimes",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "sometimes",
+      "text": "有时",
+      "clip": "c96_8ba4b31086dc81b85e00"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "sometimes",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "sometimes",
+      "text": "有时",
+      "clip": "c96_da836634712e8fe92b15",
+      "speechText": "sometimes"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "sometimes",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "sometimes",
+      "text": "有时",
+      "practiceClip": "c96_da836634712e8fe92b15",
+      "speechText": "sometimes",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "usually walk",
+      "text": "通常步行",
+      "clip": "c96_6b3b1922539060b0ed25",
+      "speechText": "usually walk"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "usually walk",
+      "text": "通常步行",
+      "practiceClip": "c96_6b3b1922539060b0ed25",
+      "speechText": "usually walk",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "sometimes cook",
+      "text": "有时做饭",
+      "clip": "c96_8001240434894c7c8444",
+      "speechText": "sometimes cook"
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "sometimes cook",
+      "text": "有时做饭",
+      "practiceClip": "c96_8001240434894c7c8444",
+      "speechText": "sometimes cook",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I usually walk to work.",
+      "text": "我通常步行上班。",
+      "clip": "c96_519471c5aee7d53977ce",
+      "speechText": "I usually walk to work."
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I usually walk to work.",
+      "text": "我通常步行上班。",
+      "practiceClip": "c96_519471c5aee7d53977ce",
+      "speechText": "I usually walk to work.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I sometimes cook dinner.",
+      "text": "我有时做晚饭。",
+      "clip": "c96_cc9545727d65ffc0b91d",
+      "speechText": "I sometimes cook dinner."
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I sometimes cook dinner.",
+      "text": "我有时做晚饭。",
+      "practiceClip": "c96_cc9545727d65ffc0b91d",
+      "speechText": "I sometimes cook dinner.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I always brush my teeth.",
+      "text": "我总会刷牙。",
+      "clip": "c96_1855fff6277477588f5b",
+      "speechText": "I always brush my teeth."
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I always brush my teeth.",
+      "text": "我总会刷牙。",
+      "practiceClip": "c96_1855fff6277477588f5b",
+      "speechText": "I always brush my teeth.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_664899dd09c9c9a4c3c7",
+      "hide": true
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_664899dd09c9c9a4c3c7",
+      "speechText": "always",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "通常"
+        },
+        {
+          "id": "answer_2",
+          "label": "有时"
+        },
+        {
+          "id": "answer_0",
+          "label": "总是"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_64fbc5bc3a70dcdfe7cd",
+      "hide": true
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "usually",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_64fbc5bc3a70dcdfe7cd",
+      "speechText": "usually",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "有时"
+        },
+        {
+          "id": "answer_0",
+          "label": "总是"
+        },
+        {
+          "id": "answer_1",
+          "label": "通常"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "usually walk",
+      "text": "不看英文，请表达：通常步行",
+      "practiceClip": "c96_6b3b1922539060b0ed25",
+      "speechText": "usually walk",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "sometimes cook",
+      "text": "不看英文，请表达：有时做饭",
+      "practiceClip": "c96_8001240434894c7c8444",
+      "speechText": "sometimes cook",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I usually walk to work.",
+      "text": "情境练习：扮演示范人物，用第一人称描述习惯：通常步行上班，有时做晚饭，总会刷牙。\n这一句请表达：我通常步行上班。",
+      "practiceClip": "c96_519471c5aee7d53977ce",
+      "speechText": "I usually walk to work.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I sometimes cook dinner.",
+      "text": "情境练习：扮演示范人物，用第一人称描述习惯：通常步行上班，有时做晚饭，总会刷牙。\n这一句请表达：我有时做晚饭。",
+      "practiceClip": "c96_cc9545727d65ffc0b91d",
+      "speechText": "I sometimes cook dinner.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I always brush my teeth.",
+      "text": "情境练习：扮演示范人物，用第一人称描述习惯：通常步行上班，有时做晚饭，总会刷牙。\n这一句请表达：我总会刷牙。",
+      "practiceClip": "c96_1855fff6277477588f5b",
+      "speechText": "I always brush my teeth.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "经常和有时",
+      "word": "always",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

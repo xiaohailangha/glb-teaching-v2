@@ -122,20 +122,6 @@ class LessonController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void toggleAutomatic() {
-    if (!speechAvailable || !adultCourse || coursePaused) return;
-    if (automaticReading || automaticStarting) {
-      automaticReading = automaticStarting = false;
-      automaticFeedback = '自动跟读已关闭';
-      _send?.call({'type': 'auto-stop', 'session': session});
-    } else {
-      automaticStarting = true;
-      automaticFeedback = '请允许麦克风；只上传本次练习的语音片段用于评测。';
-      _send?.call({'type': 'auto-start', 'session': session});
-    }
-    notifyListeners();
-  }
-
   final playbackTick = ValueNotifier<int>(0);
   int index = 0, iteration = 0, session = 0;
   bool ready = false, playing = false, repeating = false, closeUp = false;
@@ -239,7 +225,7 @@ class LessonController extends ChangeNotifier {
       final active = prefs.getString(_storageKey('active-course'));
       courseId = courseCatalog.any((c) => c.id == active)
           ? active!
-          : 'adult-fruit-v2';
+          : courseCatalog.first.id;
       final courseNew = prefs.getString(_storageKey('course-new:$courseId'));
       if (courseNew != null) {
         vocabulary.newThisCourse
@@ -656,22 +642,6 @@ class LessonController extends ChangeNotifier {
     play();
   }
 
-  void playActingStory() {
-    if (!ready || error != null) return;
-    stop();
-    emotionMode = false;
-    courseMode = false;
-    coursePaused = false;
-    index = 0;
-    closeUp = false;
-    session++;
-    playing = true;
-    iteration = 1;
-    _send?.call({'type': 'focus', 'closeUp': false});
-    _send?.call({'type': 'acting-story', 'session': session});
-    notifyListeners();
-  }
-
   void playPerformance() {
     if (!ready || error != null) return;
     stop();
@@ -684,13 +654,6 @@ class LessonController extends ChangeNotifier {
     iteration = 1;
     _send?.call({'type': 'performance', 'session': session});
     notifyListeners();
-  }
-
-  void showEmotions() {
-    stop();
-    emotionMode = true;
-    notifyListeners();
-    if (ready) playEmotion(emotionIndex);
   }
 
   void playEmotion(int value, {bool all = false}) {
@@ -734,23 +697,6 @@ class LessonController extends ChangeNotifier {
     courseStep = '';
     courseOptions = [];
     _send?.call({'type': 'stop', 'session': session});
-  }
-
-  void togglePlayback() {
-    if (adultCourse) {
-      if (coursePaused) {
-        playCourse();
-      } else {
-        pauseCourse();
-      }
-      return;
-    }
-    if (playing) {
-      stop();
-      notifyListeners();
-    } else {
-      play();
-    }
   }
 
   void replayLesson() {

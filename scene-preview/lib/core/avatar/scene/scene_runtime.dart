@@ -1,3 +1,5 @@
+import 'course_resources.dart';
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
@@ -22,7 +24,6 @@ import 'scene_asset_bundle.dart';
 import 'corneal_highlights.dart';
 import 'rendered_frame_meter.dart';
 import 'teaching_background.dart';
-import 'scene_diagnostics.dart';
 import 'clothing_bindings.dart';
 import 'intent_motion.dart';
 import 'neutral_gaze.dart';
@@ -86,6 +87,10 @@ class SceneRuntime extends ChangeNotifier {
     if (d.stage.id == 'extension_gate') {
       if (RegExp(r'红|学习|继续|yes|red').hasMatch(text)) action = 'next';
       if (RegExp(r'复习|跳过|no|skip').hasMatch(text)) action = 'skip';
+    } else if (d.stage.options.any((o) => o['id']!.startsWith('answer_'))) {
+      String normalize(String value) => value.replaceAll(RegExp(r'[\s，。！？,.!?；;]'), '');
+      final matches = d.stage.options.where((o) => normalize(o['label']!.toLowerCase()) == normalize(text)).toList();
+      if (matches.length == 1) action = matches.single['id'];
     } else {
       final apple = RegExp(r'apple|苹果').hasMatch(text),
           banana = RegExp(r'banana|香蕉').hasMatch(text);
@@ -102,7 +107,9 @@ class SceneRuntime extends ChangeNotifier {
       d.respond(action);
       unawaited(_enterStage());
     } else {
-      _feedback('没听清你的选择，可以说水果名称，也可以点图片。');
+      _feedback(d.stage.options.any((o) => o['id']!.startsWith('answer_'))
+          ? '请点选声音对应的意思，也可以说出选项文字。'
+          : '没听清你的选择，可以说水果名称，也可以点图片。');
     }
   }
 
@@ -178,7 +185,7 @@ class SceneRuntime extends ChangeNotifier {
         ? coachingOriginal!.speechText
         : target;
     _feedback(
-      report.message + (retryCount >= 3 ? ' 不着急，随时可以在设置里暂停。' : ''),
+      report.message + (retryCount >= 3 ? ' 不着急，可以暂停后再练。' : ''),
       state: 'correction',
       words: report.words.map((w) => w.toJson()).toList(),
       sentence: sentence,
@@ -330,7 +337,6 @@ class SceneRuntime extends ChangeNotifier {
   List<dynamic> fruitStages = [];
   final courseStages = <String, List<dynamic>>{};
   SecondaryMotion? secondary;
-  AttachmentProbe? attachmentProbe;
   CornealHighlights? highlights;
   AnimationClip? teachingClip, emotionClip;
   List<Node> meshes = [];
@@ -420,6 +426,8 @@ class SceneRuntime extends ChangeNotifier {
       calibrateNeutralGaze(model!);
       model!.scale = vm.Vector3.all(1.5);
       scene.add(model!);
+      await CourseResources.instance.ready.future;
+      if (disposed) return;
       for (final file in [
         'timings',
         'teaching-prompts',
@@ -429,36 +437,42 @@ class SceneRuntime extends ChangeNotifier {
         'unit-one-prompts',
         'unit-two-prompts',
         'coach-prompts',
+        if (CourseResources.instance.assets.containsKey(
+          'assets/avatar/audio/curriculum-prompts.json',
+        )) 'curriculum-prompts',
       ]) {
         final json = jsonDecode(
-          await rootBundle.loadString('assets/avatar/audio/$file.json'),
+          await CourseResources.instance.loadString(
+            'assets/avatar/audio/$file.json',
+          ),
         ) as Map<String, dynamic>;
         timings.addAll(json);
         if (file == 'pronunciation-units') units = json;
       }
       timings['performance'] = jsonDecode(
-        await rootBundle.loadString(
+        await CourseResources.instance.loadString(
           'assets/avatar/audio/performance-cues.json',
         ),
       );
-      for (final course in courseCatalog) {
-        courseStages[course.id] =
-            (jsonDecode(
-                  await rootBundle.loadString(
-                    'assets/avatar/courses/${course.asset}.json',
-                  ),
-                ) as Map)['stages']
-                as List;
+      // Fetch independently checksummed course documents with bounded concurrency.
+      var courseCursor = 0;
+      Future<void> loadCourses() async {
+        while (courseCursor < courseCatalog.length && !disposed) {
+          final course = courseCatalog[courseCursor++];
+          courseStages[course.id] = (jsonDecode(
+            await CourseResources.instance.loadString(
+              'assets/avatar/courses/${course.asset}.json',
+            ),
+          ) as Map)['stages'] as List;
+        }
       }
-      fruitStages = courseStages['adult-fruit-v2']!;
+      await Future.wait(List.generate(6, (_) => loadCourses()));
+      if (disposed) return;
+      fruitStages = courseStages[courseCatalog.first.id]!;
       final rig = jsonDecode(
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
       ) as Map<String, dynamic>;
       secondary = SecondaryMotion(model!, rig);
-      if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
-          Uri.base.queryParameters['probe'] == '1') {
-        attachmentProbe = AttachmentProbe(secondary!);
-      }
       model!.addComponent(RestoreSecondaryMotion(secondary!));
       final teaching = model!.findAnimationByName('Teaching_Apple_10s'),
           emotions = model!.findAnimationByName('Emotion_Reel');
@@ -517,20 +531,6 @@ class SceneRuntime extends ChangeNotifier {
         }
       });
       emit('resource-progress', {'value': .76, 'label': '准备本课声音'});
-      final audioPaths = timings.entries
-          .where((e) => e.value is Map && e.value['bundled'] == true)
-          .map((e) => 'assets/avatar/audio/${e.key}.wav')
-          .toList();
-      await speech.player.preloadAssets(
-        audioPaths,
-        strict: true,
-        onProgress: (done, total) {
-          emit('resource-progress', {
-            'value': .76 + done / total * .20,
-            'label': '准备本课声音',
-          });
-        },
-      );
       final pictures = <String>{
         'apple',
         'banana',
@@ -545,18 +545,13 @@ class SceneRuntime extends ChangeNotifier {
               row['picture'] as String,
       };
       for (final picture in pictures) {
-        await rootBundle.loadString('assets/avatar/images/$picture.svg');
+        await CourseResources.instance.loadString(
+          'assets/avatar/images/$picture.svg',
+        );
       }
       if (disposed) return;
       emit('resource-progress', {'value': .98, 'label': '点亮学习世界'});
       loaded = true;
-      if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
-          Uri.base.queryParameters['capture'] == '1') {
-        Future<void>.delayed(
-          const Duration(seconds: 3),
-          () => probeDisplayCoverage(scene),
-        );
-      }
       loading = '';
       emit('ready', {
         'triangles': 425144,
@@ -634,10 +629,6 @@ class SceneRuntime extends ChangeNotifier {
           scene.antiAliasingMode = quality == 'low'
               ? AntiAliasingMode.none
               : AntiAliasingMode.fxaa;
-          if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
-              Uri.base.queryParameters['aa'] == 'off') {
-            scene.antiAliasingMode = AntiAliasingMode.none;
-          }
           notifyListeners();
         case 'focus':
           closeUp = c['closeUp'] == true;
@@ -666,7 +657,9 @@ class SceneRuntime extends ChangeNotifier {
           director = c['style'] == 'adult'
               ? TeachingDirector.fruit(
                   courseStages[c['courseId']] ?? fruitStages,
-                  courseId: c['courseId']?.toString() ?? 'adult-fruit-v2',
+                  courseId: courseStages.containsKey(c['courseId'])
+                      ? c['courseId'].toString()
+                      : courseCatalog.first.id,
                   rate: (c['rate'] as num? ?? 1).toDouble(),
                   saved: c['checkpoint'] as Map<String, dynamic>?,
                 )
@@ -1100,12 +1093,6 @@ class SceneRuntime extends ChangeNotifier {
     frameDt = dt.clamp(0.0, .06);
     final at = now;
     background.time = at;
-    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS')) {
-      if (Uri.base.queryParameters['celebration'] == '1' &&
-          at - background.started > 3.5) {
-        background.celebrate(at);
-      }
-    }
     final speaking = playingAudio && !loadingAudio;
     motion.update(
       frameDt,
@@ -1221,9 +1208,6 @@ class SceneRuntime extends ChangeNotifier {
       }
     }
     highlights?.update(camera(), motion.weights);
-    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS')) {
-      attachmentProbe?.sample();
-    }
   }
 
   PerspectiveCamera camera() {

@@ -132,7 +132,7 @@
 - 用户决定：正式原生包内置Storm/基础动作/渲染能力，避免首次下载。**课程内容不打进安装包**，服务端更新；课程编排、词句/顺序与资源版本动态获取、缓存。新能力仍可能需要发版。
 - 文件存储用于课程音频/图片/时间轴/额外资源。家庭初期可先放服务器硬盘，COS不是立即必购；账号/学习进度是数据库，不是对象存储。Web与原生资源分发不同，Web仍需下载模型。
 - 先前临时localhost.run域名失效返回no tunnel，SSH存活也不代表域名有效；Cloudflare Quick Tunnel也不保证持久在线，不能给用户旧token链接。
-- tools/start-public-preview.ps1 / stop-public-preview.ps1 / public-preview.mjs / check-public-preview.mjs / test-public-preview.mjs和根目录手机外网cmd为历史方案；5297网关有12小时访问凭据，不可原样当永久服务。
+- 2026-11-01 清理更新：旧临时外网隧道、网关、检查脚本和启动入口已删除；外网访问使用腾讯云服务器。
 - model-download.js支持HEAD广告的1MiB分块、3并发/重试、120秒请求超时；无广告时回退单fetch，支持需与服务器一致。不要无证据强行加入跨域或部署限制。
 - 临时内网5298入口HTTP不能覆盖手机麦克风测试；真实iPhone模型完整加载、录音/性能仍待验证。
 

@@ -1,0 +1,482 @@
+{
+  "id": "home-06-v1",
+  "title": "06 · 桌上与桌下",
+  "category": "home",
+  "goal": "区分 on 和 under 的位置关系",
+  "prerequisites": [
+    "home-05-v1"
+  ],
+  "scenario": "你帮助朋友找东西，请说明书在桌上，包在椅子下面。",
+  "stages": [
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "06 · 桌上与桌下",
+      "text": "区分 on 和 under 的位置关系",
+      "clip": "c96_3f41654ad2249d878534"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "on",
+      "text": "在……上面",
+      "clip": "c96_f5f1d27a650465cce038"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "on",
+      "text": "在……上面",
+      "clip": "c96_63bd49c494e8b5704287",
+      "speechText": "on"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "on",
+      "text": "在……上面",
+      "practiceClip": "c96_63bd49c494e8b5704287",
+      "speechText": "on",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "under",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "under",
+      "text": "在……下面",
+      "clip": "c96_3d00dd153723cea48f1a"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "under",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "under",
+      "text": "在……下面",
+      "clip": "c96_ddb78981c84a18737eb0",
+      "speechText": "under"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "under",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "under",
+      "text": "在……下面",
+      "practiceClip": "c96_ddb78981c84a18737eb0",
+      "speechText": "under",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "book",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "book",
+      "text": "书",
+      "clip": "c96_3421c0fe75c7493dd29e"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "book",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "book",
+      "text": "书",
+      "clip": "c96_ee8b7f797ef6e33c228a",
+      "speechText": "book"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "book",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "book",
+      "text": "书",
+      "practiceClip": "c96_ee8b7f797ef6e33c228a",
+      "speechText": "book",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "on the table",
+      "text": "在桌子上",
+      "clip": "c96_059b449e8cb2fb50baaf",
+      "speechText": "on the table"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "on the table",
+      "text": "在桌子上",
+      "practiceClip": "c96_059b449e8cb2fb50baaf",
+      "speechText": "on the table",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "under the chair",
+      "text": "在椅子下面",
+      "clip": "c96_5481252f81c719ae0b9e",
+      "speechText": "under the chair"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "under the chair",
+      "text": "在椅子下面",
+      "practiceClip": "c96_5481252f81c719ae0b9e",
+      "speechText": "under the chair",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "The book is on the table.",
+      "text": "书在桌子上。",
+      "clip": "c96_a6e613b77a0606e2847c",
+      "speechText": "The book is on the table."
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "The book is on the table.",
+      "text": "书在桌子上。",
+      "practiceClip": "c96_a6e613b77a0606e2847c",
+      "speechText": "The book is on the table.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "The bag is under the chair.",
+      "text": "包在椅子下面。",
+      "clip": "c96_c0a530ec077e9c1a2d17",
+      "speechText": "The bag is under the chair."
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "The bag is under the chair.",
+      "text": "包在椅子下面。",
+      "practiceClip": "c96_c0a530ec077e9c1a2d17",
+      "speechText": "The bag is under the chair.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "Where is the book?",
+      "text": "书在哪里？",
+      "clip": "c96_2d1419e1c7cb07bbb699",
+      "speechText": "Where is the book?"
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "Where is the book?",
+      "text": "书在哪里？",
+      "practiceClip": "c96_2d1419e1c7cb07bbb699",
+      "speechText": "Where is the book?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_63bd49c494e8b5704287",
+      "hide": true
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_63bd49c494e8b5704287",
+      "speechText": "on",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "在……下面"
+        },
+        {
+          "id": "answer_2",
+          "label": "书"
+        },
+        {
+          "id": "answer_0",
+          "label": "在……上面"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_ddb78981c84a18737eb0",
+      "hide": true
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "under",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_ddb78981c84a18737eb0",
+      "speechText": "under",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "书"
+        },
+        {
+          "id": "answer_0",
+          "label": "在……上面"
+        },
+        {
+          "id": "answer_1",
+          "label": "在……下面"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "on the table",
+      "text": "不看英文，请表达：在桌子上",
+      "practiceClip": "c96_059b449e8cb2fb50baaf",
+      "speechText": "on the table",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "under the chair",
+      "text": "不看英文，请表达：在椅子下面",
+      "practiceClip": "c96_5481252f81c719ae0b9e",
+      "speechText": "under the chair",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "The book is on the table.",
+      "text": "情境练习：你帮助朋友找东西，请说明书在桌上，包在椅子下面。\n这一句请表达：书在桌子上。",
+      "practiceClip": "c96_a6e613b77a0606e2847c",
+      "speechText": "The book is on the table.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "The bag is under the chair.",
+      "text": "情境练习：你帮助朋友找东西，请说明书在桌上，包在椅子下面。\n这一句请表达：包在椅子下面。",
+      "practiceClip": "c96_c0a530ec077e9c1a2d17",
+      "speechText": "The bag is under the chair.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "Where is the book?",
+      "text": "情境练习：你帮助朋友找东西，请说明书在桌上，包在椅子下面。\n这一句请表达：书在哪里？",
+      "practiceClip": "c96_2d1419e1c7cb07bbb699",
+      "speechText": "Where is the book?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "桌上与桌下",
+      "word": "on",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

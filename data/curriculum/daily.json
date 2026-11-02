@@ -1,0 +1,782 @@
+[
+  {
+    "id": "daily-01-v1",
+    "asset": "daily-01",
+    "order": 1,
+    "title": "星期与安排",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说出星期并询问今天星期几",
+    "vocabulary": [
+      {
+        "text": "Monday",
+        "meaning": "星期一"
+      },
+      {
+        "text": "Friday",
+        "meaning": "星期五"
+      },
+      {
+        "text": "Sunday",
+        "meaning": "星期日"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "on Monday",
+        "meaning": "在星期一"
+      },
+      {
+        "text": "on Sunday",
+        "meaning": "在星期日"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "What day is it today?",
+        "meaning": "今天星期几？"
+      },
+      {
+        "text": "It is Monday.",
+        "meaning": "今天是星期一。"
+      },
+      {
+        "text": "I work on Friday.",
+        "meaning": "我星期五工作。"
+      }
+    ],
+    "scenario": "你查看一份标为星期一的日程，回答今天星期几，再说明星期五要工作。",
+    "prerequisites": [
+      "introductions-12-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Days\nof the week."
+  },
+  {
+    "id": "daily-02-v1",
+    "asset": "daily-02",
+    "order": 2,
+    "title": "早上中午和晚上",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用一天中的时段描述简单安排",
+    "vocabulary": [
+      {
+        "text": "morning",
+        "meaning": "早晨"
+      },
+      {
+        "text": "afternoon",
+        "meaning": "下午"
+      },
+      {
+        "text": "evening",
+        "meaning": "晚上"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "in the morning",
+        "meaning": "在早上"
+      },
+      {
+        "text": "in the evening",
+        "meaning": "在晚上"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I study in the morning.",
+        "meaning": "我早上学习。"
+      },
+      {
+        "text": "I work in the afternoon.",
+        "meaning": "我下午工作。"
+      },
+      {
+        "text": "I read in the evening.",
+        "meaning": "我晚上阅读。"
+      }
+    ],
+    "scenario": "根据示范日程，依次说明早上学习、下午工作、晚上阅读。",
+    "prerequisites": [
+      "daily-01-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Morning\nto night."
+  },
+  {
+    "id": "daily-03-v1",
+    "asset": "daily-03",
+    "order": 3,
+    "title": "整点与半点",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "询问时间并说整点和半点",
+    "vocabulary": [
+      {
+        "text": "time",
+        "meaning": "时间"
+      },
+      {
+        "text": "clock",
+        "meaning": "时钟"
+      },
+      {
+        "text": "half",
+        "meaning": "一半"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "six o'clock",
+        "meaning": "六点"
+      },
+      {
+        "text": "half past six",
+        "meaning": "六点半"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "What time is it?",
+        "meaning": "现在几点？"
+      },
+      {
+        "text": "It is six o'clock.",
+        "meaning": "现在六点。"
+      },
+      {
+        "text": "It is half past six.",
+        "meaning": "现在六点半。"
+      }
+    ],
+    "scenario": "你先询问时间，再分别练习钟表显示六点和六点半时的回答。",
+    "prerequisites": [
+      "daily-02-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "What\ntime is it?"
+  },
+  {
+    "id": "daily-04-v1",
+    "asset": "daily-04",
+    "order": 4,
+    "title": "起床与睡觉",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明起床和睡觉时间",
+    "vocabulary": [
+      {
+        "text": "bed",
+        "meaning": "床"
+      },
+      {
+        "text": "early",
+        "meaning": "早；提早"
+      },
+      {
+        "text": "sleep",
+        "meaning": "睡觉"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "get up",
+        "meaning": "起床"
+      },
+      {
+        "text": "go to bed",
+        "meaning": "上床睡觉"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I get up at seven.",
+        "meaning": "我七点起床。"
+      },
+      {
+        "text": "I go to bed at ten.",
+        "meaning": "我十点上床睡觉。"
+      },
+      {
+        "text": "What time do you get up?",
+        "meaning": "你几点起床？"
+      }
+    ],
+    "scenario": "你按示范作息七点起床、十点睡觉，请说出作息，再询问朋友几点起床。",
+    "prerequisites": [
+      "daily-03-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Wake up\n& sleep."
+  },
+  {
+    "id": "daily-05-v1",
+    "asset": "daily-05",
+    "order": 5,
+    "title": "洗漱与准备",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说出出门前的准备动作",
+    "vocabulary": [
+      {
+        "text": "brush",
+        "meaning": "刷"
+      },
+      {
+        "text": "teeth",
+        "meaning": "牙齿的复数"
+      },
+      {
+        "text": "face",
+        "meaning": "脸"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "brush my teeth",
+        "meaning": "刷牙"
+      },
+      {
+        "text": "wash my face",
+        "meaning": "洗脸"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I brush my teeth.",
+        "meaning": "我刷牙。"
+      },
+      {
+        "text": "I wash my face.",
+        "meaning": "我洗脸。"
+      },
+      {
+        "text": "I am ready.",
+        "meaning": "我准备好了。"
+      }
+    ],
+    "scenario": "出门前先刷牙、洗脸，再告诉家人已经准备好了。",
+    "prerequisites": [
+      "daily-04-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Get\nready."
+  },
+  {
+    "id": "daily-06-v1",
+    "asset": "daily-06",
+    "order": 6,
+    "title": "一日三餐时间",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用 at 说明吃饭时间",
+    "vocabulary": [
+      {
+        "text": "breakfast",
+        "meaning": "早餐"
+      },
+      {
+        "text": "lunch",
+        "meaning": "午餐"
+      },
+      {
+        "text": "dinner",
+        "meaning": "晚餐"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "have breakfast",
+        "meaning": "吃早餐"
+      },
+      {
+        "text": "have dinner",
+        "meaning": "吃晚餐"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I have breakfast at seven.",
+        "meaning": "我七点吃早餐。"
+      },
+      {
+        "text": "I have lunch at twelve.",
+        "meaning": "我十二点吃午餐。"
+      },
+      {
+        "text": "I have dinner at six.",
+        "meaning": "我六点吃晚餐。"
+      }
+    ],
+    "scenario": "根据给定作息，完整说明七点早餐、十二点午餐、六点晚餐。",
+    "prerequisites": [
+      "daily-05-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Time\nto eat."
+  },
+  {
+    "id": "daily-07-v1",
+    "asset": "daily-07",
+    "order": 7,
+    "title": "上班与回家",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明工作日的出发和回家时间",
+    "vocabulary": [
+      {
+        "text": "work",
+        "meaning": "工作"
+      },
+      {
+        "text": "leave",
+        "meaning": "离开"
+      },
+      {
+        "text": "home",
+        "meaning": "家"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "go to work",
+        "meaning": "去上班"
+      },
+      {
+        "text": "go home",
+        "meaning": "回家"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I go to work at eight.",
+        "meaning": "我八点去上班。"
+      },
+      {
+        "text": "I leave work at five.",
+        "meaning": "我五点下班离开。"
+      },
+      {
+        "text": "I go home at six.",
+        "meaning": "我六点回家。"
+      }
+    ],
+    "scenario": "你按示范日程八点上班、五点离开单位、六点回家，请依次说明。",
+    "prerequisites": [
+      "daily-06-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Off\nto work."
+  },
+  {
+    "id": "daily-08-v1",
+    "asset": "daily-08",
+    "order": 8,
+    "title": "经常和有时",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "用频率词描述日常习惯",
+    "vocabulary": [
+      {
+        "text": "always",
+        "meaning": "总是"
+      },
+      {
+        "text": "usually",
+        "meaning": "通常"
+      },
+      {
+        "text": "sometimes",
+        "meaning": "有时"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "usually walk",
+        "meaning": "通常步行"
+      },
+      {
+        "text": "sometimes cook",
+        "meaning": "有时做饭"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I usually walk to work.",
+        "meaning": "我通常步行上班。"
+      },
+      {
+        "text": "I sometimes cook dinner.",
+        "meaning": "我有时做晚饭。"
+      },
+      {
+        "text": "I always brush my teeth.",
+        "meaning": "我总会刷牙。"
+      }
+    ],
+    "scenario": "扮演示范人物，用第一人称描述习惯：通常步行上班，有时做晚饭，总会刷牙。",
+    "prerequisites": [
+      "daily-07-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Often or\nsometimes."
+  },
+  {
+    "id": "daily-09-v1",
+    "asset": "daily-09",
+    "order": 9,
+    "title": "今天与明天",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "区分今天和明天的简单安排",
+    "vocabulary": [
+      {
+        "text": "today",
+        "meaning": "今天"
+      },
+      {
+        "text": "tomorrow",
+        "meaning": "明天"
+      },
+      {
+        "text": "busy",
+        "meaning": "忙的"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "busy today",
+        "meaning": "今天忙"
+      },
+      {
+        "text": "free tomorrow",
+        "meaning": "明天有空"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I am busy today.",
+        "meaning": "我今天很忙。"
+      },
+      {
+        "text": "I am free tomorrow.",
+        "meaning": "我明天有空。"
+      },
+      {
+        "text": "Are you free tomorrow?",
+        "meaning": "你明天有空吗？"
+      }
+    ],
+    "scenario": "朋友今天想见你，但你今天忙、明天有空。请说明情况，并询问朋友明天是否有空。",
+    "prerequisites": [
+      "daily-08-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Today\n& tomorrow."
+  },
+  {
+    "id": "daily-10-v1",
+    "asset": "daily-10",
+    "order": 10,
+    "title": "说明自己的日程",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "按先后顺序描述一天的安排",
+    "vocabulary": [
+      {
+        "text": "first",
+        "meaning": "首先"
+      },
+      {
+        "text": "then",
+        "meaning": "然后"
+      },
+      {
+        "text": "after",
+        "meaning": "在……之后"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "after lunch",
+        "meaning": "午饭后"
+      },
+      {
+        "text": "after work",
+        "meaning": "下班后"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "First, I have breakfast.",
+        "meaning": "首先，我吃早餐。"
+      },
+      {
+        "text": "Then I go to work.",
+        "meaning": "然后我去上班。"
+      },
+      {
+        "text": "I read after work.",
+        "meaning": "我下班后阅读。"
+      }
+    ],
+    "scenario": "把早餐、上班和下班后阅读按顺序连起来，说明一个普通工作日。",
+    "prerequisites": [
+      "daily-09-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "My daily\nschedule."
+  },
+  {
+    "id": "daily-11-v1",
+    "asset": "daily-11",
+    "order": 11,
+    "title": "约定见面时间",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "提出时间并确认见面安排",
+    "vocabulary": [
+      {
+        "text": "meet",
+        "meaning": "会面"
+      },
+      {
+        "text": "free",
+        "meaning": "有空的"
+      },
+      {
+        "text": "Saturday",
+        "meaning": "星期六"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "on Saturday",
+        "meaning": "在星期六"
+      },
+      {
+        "text": "at three",
+        "meaning": "在三点"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Are you free on Saturday?",
+        "meaning": "你星期六有空吗？"
+      },
+      {
+        "text": "Can we meet at three?",
+        "meaning": "我们可以三点见面吗？"
+      },
+      {
+        "text": "See you at three.",
+        "meaning": "三点见。"
+      }
+    ],
+    "scenario": "你想约朋友星期六三点见面，请先询问是否有空，再提出时间并确认。",
+    "prerequisites": [
+      "daily-10-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Let us\nmeet at..."
+  },
+  {
+    "id": "daily-12-v1",
+    "asset": "daily-12",
+    "order": 12,
+    "title": "我的一天综合练习",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "整合时间、动作和一天的顺序",
+    "vocabulary": [
+      {
+        "text": "morning",
+        "meaning": "早晨"
+      },
+      {
+        "text": "work",
+        "meaning": "工作"
+      },
+      {
+        "text": "evening",
+        "meaning": "晚上"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "at seven",
+        "meaning": "在七点"
+      },
+      {
+        "text": "after work",
+        "meaning": "下班后"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I get up at seven.",
+        "meaning": "我七点起床。"
+      },
+      {
+        "text": "I go to work at eight.",
+        "meaning": "我八点去上班。"
+      },
+      {
+        "text": "I read in the evening.",
+        "meaning": "我晚上阅读。"
+      }
+    ],
+    "scenario": "根据示范日程，不看英文说出七点起床、八点上班、晚上阅读。",
+    "prerequisites": [
+      "daily-11-v1"
+    ],
+    "review": true,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "A day\nin my life."
+  }
+]

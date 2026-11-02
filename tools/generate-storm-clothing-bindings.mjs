@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-const source=fs.readFileSync('assets/avatar/models/storm-performance.glb');
+const source=fs.readFileSync('scene-preview/assets/avatar/models/storm-performance.glb');
 const length=source.readUInt32LE(12),g=JSON.parse(source.subarray(20,20+length)),bin=source.subarray(28+length);
 function read(index){
  const a=g.accessors[index],v=g.bufferViews[a.bufferView],n={SCALAR:1,VEC2:2,VEC3:3,VEC4:4}[a.type];

@@ -1,0 +1,482 @@
+{
+  "id": "food-10-v1",
+  "title": "10 · 简单点餐",
+  "category": "food",
+  "goal": "礼貌地点餐并结束本轮点单",
+  "prerequisites": [
+    "food-09-v1"
+  ],
+  "scenario": "你在餐厅先要菜单，再点米饭，最后告诉服务员已经点完了。",
+  "stages": [
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 简单点餐",
+      "text": "礼貌地点餐并结束本轮点单",
+      "clip": "c96_b2a1007520e1f80d2fdd"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "menu",
+      "text": "菜单",
+      "clip": "c96_ca66eddbfcd6ed403dc8"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "menu",
+      "text": "菜单",
+      "clip": "c96_e4fd6e9105546720aace",
+      "speechText": "menu"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "menu",
+      "text": "菜单",
+      "practiceClip": "c96_e4fd6e9105546720aace",
+      "speechText": "menu",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "order",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "order",
+      "text": "点餐；订单",
+      "clip": "c96_c105d9fd4d55480d10dc"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "order",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "order",
+      "text": "点餐；订单",
+      "clip": "c96_3436e1323e4a00cedb7c",
+      "speechText": "order"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "order",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "order",
+      "text": "点餐；订单",
+      "practiceClip": "c96_3436e1323e4a00cedb7c",
+      "speechText": "order",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "ready",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "ready",
+      "text": "准备好的",
+      "clip": "c96_94103a305579ee893c52"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "ready",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "ready",
+      "text": "准备好的",
+      "clip": "c96_36fef37b696946976691",
+      "speechText": "ready"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "ready",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "ready",
+      "text": "准备好的",
+      "practiceClip": "c96_36fef37b696946976691",
+      "speechText": "ready",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "the menu",
+      "text": "菜单",
+      "clip": "c96_05de2f95585b17e16cd3",
+      "speechText": "the menu"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "the menu",
+      "text": "菜单",
+      "practiceClip": "c96_05de2f95585b17e16cd3",
+      "speechText": "the menu",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "ready to order",
+      "text": "准备好点餐",
+      "clip": "c96_b4c54ad9f1211cc83515",
+      "speechText": "ready to order"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "ready to order",
+      "text": "准备好点餐",
+      "practiceClip": "c96_b4c54ad9f1211cc83515",
+      "speechText": "ready to order",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "Can I have the menu, please?",
+      "text": "请给我菜单，好吗？",
+      "clip": "c96_47cd449979109269c7f2",
+      "speechText": "Can I have the menu, please?"
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "Can I have the menu, please?",
+      "text": "请给我菜单，好吗？",
+      "practiceClip": "c96_47cd449979109269c7f2",
+      "speechText": "Can I have the menu, please?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I would like some rice, please.",
+      "text": "我想要一些米饭，谢谢。",
+      "clip": "c96_528ad3dc6df77792ee49",
+      "speechText": "I would like some rice, please."
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I would like some rice, please.",
+      "text": "我想要一些米饭，谢谢。",
+      "practiceClip": "c96_528ad3dc6df77792ee49",
+      "speechText": "I would like some rice, please.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "That is all, thank you.",
+      "text": "就这些，谢谢。",
+      "clip": "c96_6becce70d075b4aea891",
+      "speechText": "That is all, thank you."
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "That is all, thank you.",
+      "text": "就这些，谢谢。",
+      "practiceClip": "c96_6becce70d075b4aea891",
+      "speechText": "That is all, thank you.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_e4fd6e9105546720aace",
+      "hide": true
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_e4fd6e9105546720aace",
+      "speechText": "menu",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "点餐"
+        },
+        {
+          "id": "answer_2",
+          "label": "准备好的"
+        },
+        {
+          "id": "answer_0",
+          "label": "菜单"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_3436e1323e4a00cedb7c",
+      "hide": true
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "order",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_3436e1323e4a00cedb7c",
+      "speechText": "order",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "准备好的"
+        },
+        {
+          "id": "answer_0",
+          "label": "菜单"
+        },
+        {
+          "id": "answer_1",
+          "label": "点餐"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "the menu",
+      "text": "不看英文，请表达：菜单",
+      "practiceClip": "c96_05de2f95585b17e16cd3",
+      "speechText": "the menu",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "ready to order",
+      "text": "不看英文，请表达：准备好点餐",
+      "practiceClip": "c96_b4c54ad9f1211cc83515",
+      "speechText": "ready to order",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "Can I have the menu, please?",
+      "text": "情境练习：你在餐厅先要菜单，再点米饭，最后告诉服务员已经点完了。\n这一句请表达：请给我菜单，好吗？",
+      "practiceClip": "c96_47cd449979109269c7f2",
+      "speechText": "Can I have the menu, please?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I would like some rice, please.",
+      "text": "情境练习：你在餐厅先要菜单，再点米饭，最后告诉服务员已经点完了。\n这一句请表达：我想要一些米饭，谢谢。",
+      "practiceClip": "c96_528ad3dc6df77792ee49",
+      "speechText": "I would like some rice, please.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "That is all, thank you.",
+      "text": "情境练习：你在餐厅先要菜单，再点米饭，最后告诉服务员已经点完了。\n这一句请表达：就这些，谢谢。",
+      "practiceClip": "c96_6becce70d075b4aea891",
+      "speechText": "That is all, thank you.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "简单点餐",
+      "word": "menu",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

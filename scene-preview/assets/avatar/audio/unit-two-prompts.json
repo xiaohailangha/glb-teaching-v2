@@ -213,260 +213,396 @@
     "text": "green",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.439,
+    "duration": 1.06,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 1.24,
+        "time": 0.13,
         "id": 20
       },
       {
-        "time": 1.48,
+        "time": 0.24,
         "id": 13
       },
       {
-        "time": 1.58,
+        "time": 0.36,
         "id": 6
       },
       {
-        "time": 1.83,
+        "time": 0.67,
         "id": 19
       },
       {
-        "time": 2.08,
+        "time": 0.87,
+        "id": 0
+      },
+      {
+        "time": 0.94,
+        "id": 0
+      },
+      {
+        "time": 1.06,
         "id": 0
       }
     ],
-    "sourceKey": "e746122d9fcf2051d20c30be6e136c35252ba80471f13feb251869418400a97e",
+    "sourceKey": "935ea62bd419ff21958311f4c1535bd17462d9ed19f5da36dca38a34b02a3e2e",
     "wordTimings": [
       {
         "word": "green",
-        "start": 1.24,
-        "end": 2.08
+        "start": 0.13,
+        "end": 0.87
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.11,
+      "end": 0.97,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "green.",
+    "speed": -0.2,
+    "sha256": "0adde546993afb4ede71e581487af5d6b77a17e8d2cf3832b2cbc1f273dae645",
+    "quality": {
+      "version": 3,
+      "sha256": "0adde546993afb4ede71e581487af5d6b77a17e8d2cf3832b2cbc1f273dae645",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Green.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:02.013Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_yellow": {
     "text": "yellow",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.119,
+    "duration": 0.98,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.27,
+        "time": 0.13,
         "id": 6
       },
       {
-        "time": 0.43,
+        "time": 0.26,
         "id": 4
       },
       {
-        "time": 0.58,
+        "time": 0.41,
         "id": 14
       },
       {
-        "time": 0.68,
+        "time": 0.5,
         "id": 8
       },
       {
-        "time": 0.89,
+        "time": 0.79,
+        "id": 0
+      },
+      {
+        "time": 0.86,
+        "id": 0
+      },
+      {
+        "time": 0.98,
         "id": 0
       }
     ],
-    "sourceKey": "366723dfec002c7f59e37b1deb9eb7cb6b476816be65e89873abcfeed0c38d1d",
+    "sourceKey": "1d3514879bda25204a788627cd26446f8a4e8a2104e69ab08ec0ecc2edf52aea",
     "wordTimings": [
       {
         "word": "yellow",
-        "start": 0.27,
-        "end": 0.89
+        "start": 0.13,
+        "end": 0.7899999999999999
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.23000000000000004,
+      "end": 1.01,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "yellow.",
+    "speed": 0,
+    "sha256": "cb35ec681f30d6c9f974c42891515355a2c3325cf617da8d349ac4ac2146d995",
+    "quality": {
+      "version": 3,
+      "sha256": "cb35ec681f30d6c9f974c42891515355a2c3325cf617da8d349ac4ac2146d995",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Yellow.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:03.222Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_blue": {
     "text": "blue",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.559,
+    "duration": 0.8800625,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.19,
+        "time": 0.13,
         "id": 21
       },
       {
-        "time": 0.36,
+        "time": 0.21,
         "id": 14
       },
       {
-        "time": 0.83,
+        "time": 0.31,
         "id": 7
       },
       {
-        "time": 1.24,
+        "time": 0.69,
+        "id": 0
+      },
+      {
+        "time": 0.7600625,
+        "id": 0
+      },
+      {
+        "time": 0.8800625,
         "id": 0
       }
     ],
-    "sourceKey": "263163731a3a646649babe960d4b489a9edfc4f2a50a3e005c85fb61998c82ac",
+    "sourceKey": "4d11ac386451b5abcc53fc0a6c924db8f5220eacbd4c3821ebffbbafccd3ef26",
     "wordTimings": [
       {
         "word": "blue",
-        "start": 0.19,
-        "end": 1.24
+        "start": 0.13,
+        "end": 0.6900000000000001
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.19,
+      "end": 0.8700000000000001,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "blue.",
+    "speed": 0,
+    "sha256": "80c937bede6cc83f27723b3da33cb368f719e7fb6dbf9d6d0a29fb5f10f42b0b",
+    "quality": {
+      "version": 3,
+      "sha256": "80c937bede6cc83f27723b3da33cb368f719e7fb6dbf9d6d0a29fb5f10f42b0b",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Blue.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:04.447Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_red_apple": {
     "text": "a red apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.919,
+    "duration": 1.64,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.4,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.64,
+        "time": 0.37,
         "id": 13
       },
       {
-        "time": 0.76,
+        "time": 0.45,
         "id": 4
       },
       {
-        "time": 0.9,
+        "time": 0.63,
         "id": 19
       },
       {
-        "time": 1.04,
+        "time": 0.78,
+        "id": 0
+      },
+      {
+        "time": 0.81,
         "id": 1
       },
       {
-        "time": 1.26,
+        "time": 1.03,
         "id": 21
       },
       {
-        "time": 1.34,
+        "time": 1.15,
         "id": 1
       },
       {
-        "time": 1.44,
+        "time": 1.25,
         "id": 14
       },
       {
-        "time": 1.68,
+        "time": 1.45,
+        "id": 0
+      },
+      {
+        "time": 1.52,
+        "id": 0
+      },
+      {
+        "time": 1.64,
         "id": 0
       }
     ],
-    "sourceKey": "4626abc5e9393b23d176c3ad54245d7710a738520585aafec44d95b16f39f0ea",
+    "sourceKey": "714e4d246a6bc1f25b0f5f6d26adb2d4249b686f5c6b732d5a9f84bbe7dc8b36",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.4,
-        "end": 0.64
+        "start": 0.13,
+        "end": 0.37000000000000005
       },
       {
         "word": "red",
-        "start": 0.64,
-        "end": 1.04
+        "start": 0.37000000000000005,
+        "end": 0.78
       },
       {
         "word": "apple",
-        "start": 1.04,
-        "end": 1.68
+        "start": 0.81,
+        "end": 1.4500000000000002
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.37,
+      "end": 1.81,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a red apple.",
+    "speed": 0,
+    "sha256": "de9c2d9607fc9562b0bda326f118320c9556600392f3f03ac3bd40be9207f604",
+    "quality": {
+      "version": 3,
+      "sha256": "de9c2d9607fc9562b0bda326f118320c9556600392f3f03ac3bd40be9207f604",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A red apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:01.887Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_red_apple": {
     "text": "I want a red apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 3.239,
+    "duration": 3.169,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.32,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.66,
+        "time": 0.47,
         "id": 7
       },
       {
-        "time": 0.8,
+        "time": 0.61,
         "id": 3
       },
       {
-        "time": 0.98,
+        "time": 0.79,
         "id": 19
       },
       {
-        "time": 1.1,
+        "time": 0.91,
         "id": 19
       },
       {
-        "time": 1.3,
+        "time": 1.11,
         "id": 0
       },
       {
-        "time": 1.33,
+        "time": 1.14,
         "id": 11
       },
       {
-        "time": 1.42,
+        "time": 1.23,
         "id": 2
       },
       {
-        "time": 1.78,
+        "time": 1.59,
         "id": 13
       },
       {
-        "time": 1.86,
+        "time": 1.67,
         "id": 4
       },
       {
-        "time": 2.1,
+        "time": 1.91,
         "id": 19
       },
       {
-        "time": 2.27,
+        "time": 2.08,
         "id": 0
       },
       {
-        "time": 2.3,
+        "time": 2.11,
         "id": 1
       },
       {
-        "time": 2.62,
+        "time": 2.43,
         "id": 21
       },
       {
-        "time": 2.74,
+        "time": 2.55,
         "id": 1
       },
       {
-        "time": 2.84,
+        "time": 2.65,
         "id": 14
       },
       {
-        "time": 3.18,
+        "time": 2.99,
+        "id": 0
+      },
+      {
+        "time": 3.049,
+        "id": 0
+      },
+      {
+        "time": 3.169,
         "id": 0
       }
     ],
@@ -474,177 +610,239 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.32,
-        "end": 0.66
+        "start": 0.13,
+        "end": 0.47000000000000003
       },
       {
         "word": "want",
-        "start": 0.66,
-        "end": 1.3
+        "start": 0.47000000000000003,
+        "end": 1.11
       },
       {
         "word": "a",
-        "start": 1.33,
-        "end": 1.78
+        "start": 1.1400000000000001,
+        "end": 1.59
       },
       {
         "word": "red",
-        "start": 1.78,
-        "end": 2.27
+        "start": 1.59,
+        "end": 2.08
       },
       {
         "word": "apple",
-        "start": 2.3,
-        "end": 3.18
+        "start": 2.11,
+        "end": 2.99
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.27,
+      "end": 3.239,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a red apple.",
+    "speed": 0,
+    "sha256": "7561201235b93453be2c6e5902558507239daead14187acfdfab3d6f4ebfac1e",
+    "quality": {
+      "version": 3,
+      "sha256": "7561201235b93453be2c6e5902558507239daead14187acfdfab3d6f4ebfac1e",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a red apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:07.994Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_green_apple": {
     "text": "a green apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.919,
+    "duration": 1.62,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.4,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.59,
+        "time": 0.33,
         "id": 20
       },
       {
-        "time": 0.69,
+        "time": 0.43,
         "id": 13
       },
       {
-        "time": 0.81,
+        "time": 0.57,
         "id": 6
       },
       {
-        "time": 0.88,
+        "time": 0.68,
         "id": 19
       },
       {
-        "time": 0.97,
+        "time": 0.79,
+        "id": 1
+      },
+      {
+        "time": 1.01,
+        "id": 21
+      },
+      {
+        "time": 1.09,
         "id": 1
       },
       {
         "time": 1.19,
-        "id": 21
-      },
-      {
-        "time": 1.29,
-        "id": 1
-      },
-      {
-        "time": 1.37,
         "id": 14
       },
       {
-        "time": 1.65,
+        "time": 1.43,
+        "id": 0
+      },
+      {
+        "time": 1.5,
+        "id": 0
+      },
+      {
+        "time": 1.62,
         "id": 0
       }
     ],
-    "sourceKey": "1500613ff8fc09d3ced19c533d30de8a584828f658e3bbc3c75a0e6607fb8865",
+    "sourceKey": "f97b24beacb647841a2a0bb91c5252ababd2fd9231066f5a1f467ec025723616",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.4,
-        "end": 0.59
+        "start": 0.13,
+        "end": 0.32999999999999996
       },
       {
         "word": "green",
-        "start": 0.59,
-        "end": 0.97
+        "start": 0.32999999999999996,
+        "end": 0.7899999999999999
       },
       {
         "word": "apple",
-        "start": 0.97,
-        "end": 1.65
+        "start": 0.7899999999999999,
+        "end": 1.43
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.35000000000000003,
+      "end": 1.77,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a green apple.",
+    "speed": 0,
+    "sha256": "281a0edf3cacb9a38142e8c18084343b7826d0d522eceb690e00267e4ce31c32",
+    "quality": {
+      "version": 3,
+      "sha256": "281a0edf3cacb9a38142e8c18084343b7826d0d522eceb690e00267e4ce31c32",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A green apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:10.056Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_green_apple": {
     "text": "I want a green apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.919,
+    "duration": 2.869,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.3,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.62,
+        "time": 0.45,
         "id": 7
       },
       {
-        "time": 0.74,
+        "time": 0.57,
         "id": 3
       },
       {
-        "time": 0.94,
+        "time": 0.77,
+        "id": 19
+      },
+      {
+        "time": 0.91,
         "id": 19
       },
       {
         "time": 1.08,
-        "id": 19
-      },
-      {
-        "time": 1.25,
         "id": 0
       },
       {
-        "time": 1.28,
+        "time": 1.11,
         "id": 11
       },
       {
-        "time": 1.34,
+        "time": 1.17,
         "id": 2
       },
       {
-        "time": 1.5,
+        "time": 1.33,
         "id": 20
       },
       {
-        "time": 1.6,
+        "time": 1.43,
         "id": 13
       },
       {
-        "time": 1.74,
+        "time": 1.57,
         "id": 6
       },
       {
-        "time": 1.9,
+        "time": 1.73,
         "id": 19
       },
       {
-        "time": 2.06,
+        "time": 1.89,
         "id": 1
       },
       {
-        "time": 2.32,
+        "time": 2.15,
         "id": 21
       },
       {
-        "time": 2.44,
+        "time": 2.27,
         "id": 1
       },
       {
-        "time": 2.54,
+        "time": 2.37,
         "id": 14
       },
       {
-        "time": 2.86,
+        "time": 2.69,
+        "id": 0
+      },
+      {
+        "time": 2.749,
+        "id": 0
+      },
+      {
+        "time": 2.869,
         "id": 0
       }
     ],
@@ -652,193 +850,247 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.3,
-        "end": 0.62
+        "start": 0.13,
+        "end": 0.45
       },
       {
         "word": "want",
-        "start": 0.62,
-        "end": 1.25
+        "start": 0.45,
+        "end": 1.08
       },
       {
         "word": "a",
-        "start": 1.28,
-        "end": 1.5
+        "start": 1.11,
+        "end": 1.33
       },
       {
         "word": "green",
-        "start": 1.5,
-        "end": 2.06
+        "start": 1.33,
+        "end": 1.8900000000000001
       },
       {
         "word": "apple",
-        "start": 2.06,
-        "end": 2.86
+        "start": 1.8900000000000001,
+        "end": 2.69
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.25,
+      "end": 2.919,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a green apple.",
+    "speed": 0,
+    "sha256": "ecfe2c5c56b52e09d69f96c772f5c946de148d839141bc534da4ef2d088a9726",
+    "quality": {
+      "version": 3,
+      "sha256": "ecfe2c5c56b52e09d69f96c772f5c946de148d839141bc534da4ef2d088a9726",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a green apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:13.473Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_yellow_banana": {
     "text": "a yellow banana",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.639,
+    "duration": 1.719,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.34,
-        "id": 11
-      },
-      {
-        "time": 0.38,
+        "time": 0.13,
         "id": 2
       },
       {
-        "time": 0.52,
+        "time": 0.29,
         "id": 6
       },
       {
-        "time": 0.6,
+        "time": 0.41,
         "id": 4
       },
       {
-        "time": 0.69,
+        "time": 0.53,
         "id": 14
       },
       {
-        "time": 0.76,
+        "time": 0.61,
         "id": 8
       },
       {
-        "time": 0.84,
+        "time": 0.73,
         "id": 21
       },
       {
-        "time": 0.9,
+        "time": 0.81,
         "id": 1
       },
       {
-        "time": 0.96,
+        "time": 0.87,
         "id": 19
       },
       {
-        "time": 1.04,
+        "time": 0.99,
         "id": 1
       },
       {
-        "time": 1.16,
+        "time": 1.11,
         "id": 19
       },
       {
-        "time": 1.28,
+        "time": 1.21,
         "id": 1
       },
       {
-        "time": 1.58,
+        "time": 1.599,
+        "id": 0
+      },
+      {
+        "time": 1.719,
         "id": 0
       }
     ],
-    "sourceKey": "a9f65bf3430f22794069eed8252fc92eb85ebae8974182c23a6b697268d08c70",
+    "sourceKey": "c1829269fc4cb17b9597de4105543ec883c8d0092f4fa9efa204235619a4b15e",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.34,
-        "end": 0.52
+        "start": 0.13,
+        "end": 0.29000000000000004
       },
       {
         "word": "yellow",
-        "start": 0.52,
-        "end": 0.84
+        "start": 0.29000000000000004,
+        "end": 0.7299999999999999
       },
       {
         "word": "banana",
-        "start": 0.84,
-        "end": 1.58
+        "start": 0.7299999999999999,
+        "end": 1.61
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.32,
+      "end": 1.839,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a yellow banana.",
+    "speed": 0,
+    "sha256": "a853ea8a3ef715b2aa415cd795efe4ee3efb987e884c7f3ef85b673a59cbafb7",
+    "quality": {
+      "version": 3,
+      "sha256": "a853ea8a3ef715b2aa415cd795efe4ee3efb987e884c7f3ef85b673a59cbafb7",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A yellow banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:13.855Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_yellow_banana": {
     "text": "I want a yellow banana.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.439,
+    "duration": 2.409,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.28,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.54,
+        "time": 0.39,
         "id": 7
       },
       {
-        "time": 0.64,
+        "time": 0.49,
         "id": 2
       },
       {
-        "time": 0.78,
+        "time": 0.63,
         "id": 19
       },
       {
-        "time": 0.84,
+        "time": 0.69,
         "id": 19
       },
       {
-        "time": 0.9,
+        "time": 0.75,
         "id": 11
       },
       {
-        "time": 0.98,
+        "time": 0.83,
         "id": 2
       },
       {
-        "time": 1.12,
+        "time": 0.97,
         "id": 6
       },
       {
-        "time": 1.22,
+        "time": 1.07,
         "id": 4
       },
       {
-        "time": 1.36,
+        "time": 1.21,
         "id": 14
       },
       {
-        "time": 1.44,
+        "time": 1.29,
         "id": 8
       },
       {
-        "time": 1.6,
+        "time": 1.45,
         "id": 21
       },
       {
-        "time": 1.68,
+        "time": 1.53,
         "id": 1
       },
       {
-        "time": 1.74,
+        "time": 1.59,
         "id": 19
       },
       {
-        "time": 1.84,
+        "time": 1.69,
         "id": 1
       },
       {
-        "time": 1.98,
+        "time": 1.83,
         "id": 19
       },
       {
-        "time": 2.12,
+        "time": 1.97,
         "id": 1
       },
       {
-        "time": 2.43,
+        "time": 2.28,
+        "id": 0
+      },
+      {
+        "time": 2.289,
+        "id": 0
+      },
+      {
+        "time": 2.409,
         "id": 0
       }
     ],
@@ -846,30 +1098,53 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.28,
-        "end": 0.54
+        "start": 0.13,
+        "end": 0.39
       },
       {
         "word": "want",
-        "start": 0.54,
-        "end": 0.9
+        "start": 0.39,
+        "end": 0.7499999999999999
       },
       {
         "word": "a",
-        "start": 0.9,
-        "end": 1.12
+        "start": 0.7499999999999999,
+        "end": 0.9700000000000001
       },
       {
         "word": "yellow",
-        "start": 1.12,
-        "end": 1.6
+        "start": 0.9700000000000001,
+        "end": 1.4500000000000002
       },
       {
         "word": "banana",
-        "start": 1.6,
-        "end": 2.43
+        "start": 1.4500000000000002,
+        "end": 2.2800000000000002
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.23000000000000004,
+      "end": 2.439,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a yellow banana.",
+    "speed": 0,
+    "sha256": "1691f82e63b92de6e0f836f89a6556e97932a618b74ab7090453ef3d69d9d831",
+    "quality": {
+      "version": 3,
+      "sha256": "1691f82e63b92de6e0f836f89a6556e97932a618b74ab7090453ef3d69d9d831",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a yellow banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:16.395Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "adult-sizes_intro": {
     "text": "这节课学大和小。先读单词，再读短语和句子。",
@@ -1057,220 +1332,321 @@
     "text": "big",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.559,
+    "duration": 0.89,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.15,
+        "time": 0.13,
         "id": 21
       },
       {
-        "time": 0.21,
+        "time": 0.24,
         "id": 6
       },
       {
-        "time": 0.48,
+        "time": 0.59,
         "id": 20
       },
       {
-        "time": 0.63,
+        "time": 0.7,
+        "id": 0
+      },
+      {
+        "time": 0.77,
+        "id": 0
+      },
+      {
+        "time": 0.89,
         "id": 0
       }
     ],
-    "sourceKey": "6df73087130fddd824697e16fa1c632185bcd554b36a7980544f215bf2ff3f80",
+    "sourceKey": "751d597fde1eb1388b086a055703e23ebbaff70fe4284d81cce42c1109f6e1e2",
     "wordTimings": [
       {
         "word": "big",
-        "start": 0.15,
-        "end": 0.63
+        "start": 0.13,
+        "end": 0.7
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.11,
+      "end": 0.8,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "big.",
+    "speed": 0,
+    "sha256": "b7ebdd0c7bff12c37fadd7c1d3b0c7c2118fc0ba294ab06245ed656f2d3270db",
+    "quality": {
+      "version": 3,
+      "sha256": "b7ebdd0c7bff12c37fadd7c1d3b0c7c2118fc0ba294ab06245ed656f2d3270db",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Big.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:15.088Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_small": {
     "text": "small",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.559,
+    "duration": 1.0100625,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.37,
+        "time": 0.13,
         "id": 15
       },
       {
-        "time": 0.48,
+        "time": 0.24,
         "id": 21
       },
       {
-        "time": 0.58,
+        "time": 0.32,
         "id": 3
       },
       {
-        "time": 0.96,
+        "time": 0.48,
         "id": 14
       },
       {
-        "time": 1.07,
+        "time": 0.82,
+        "id": 0
+      },
+      {
+        "time": 0.8900625,
+        "id": 0
+      },
+      {
+        "time": 1.0100625,
         "id": 0
       }
     ],
-    "sourceKey": "ad346727790d81092496d0b35b40be98ed8233891ce138bcfa34394e08131d09",
+    "sourceKey": "a8276a8486ab54d905412d5d2def72f1689ef4c448265bd421ddc1b258ab6c48",
     "wordTimings": [
       {
         "word": "small",
-        "start": 0.37,
-        "end": 1.07
+        "start": 0.13,
+        "end": 0.82
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.32,
+      "end": 1.1300000000000001,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "small.",
+    "speed": 0,
+    "sha256": "eb8f4d9da6126acfec238076f7d18b0996b0ef3d496cf7b846b3509e7052ad39",
+    "quality": {
+      "version": 3,
+      "sha256": "eb8f4d9da6126acfec238076f7d18b0996b0ef3d496cf7b846b3509e7052ad39",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Small.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:16.570Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_big_apple": {
     "text": "a big apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.959,
+    "duration": 1.63,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.39,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.66,
+        "time": 0.34,
         "id": 21
       },
       {
-        "time": 0.74,
+        "time": 0.4,
         "id": 6
       },
       {
-        "time": 0.94,
+        "time": 0.56,
         "id": 20
       },
       {
-        "time": 1.08,
+        "time": 0.68,
         "id": 0
       },
       {
-        "time": 1.11,
+        "time": 0.71,
         "id": 1
       },
       {
-        "time": 1.34,
+        "time": 0.92,
         "id": 21
       },
       {
-        "time": 1.46,
+        "time": 1.06,
         "id": 1
       },
       {
-        "time": 1.56,
+        "time": 1.14,
         "id": 14
       },
       {
-        "time": 1.9,
+        "time": 1.44,
+        "id": 0
+      },
+      {
+        "time": 1.51,
+        "id": 0
+      },
+      {
+        "time": 1.63,
         "id": 0
       }
     ],
-    "sourceKey": "b6f5af068a9f3aa5551e7d97c45964e373e0d7541dd2e6724e1c9a8e8f7993b2",
+    "sourceKey": "4fe471557ba27e3399bb684b783c08ae30800532285f5e768e0fba7bf18daf1e",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.39,
-        "end": 0.66
+        "start": 0.13,
+        "end": 0.33999999999999997
       },
       {
         "word": "big",
-        "start": 0.66,
-        "end": 1.08
+        "start": 0.33999999999999997,
+        "end": 0.6799999999999998
       },
       {
         "word": "apple",
-        "start": 1.11,
-        "end": 1.9
+        "start": 0.7099999999999999,
+        "end": 1.44
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.34,
+      "end": 1.77,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a big apple.",
+    "speed": 0,
+    "sha256": "b2b6180d5202b1bc10498eef6f1e6ced817e1c677fa6bc051533cba7ea22d8ce",
+    "quality": {
+      "version": 3,
+      "sha256": "b2b6180d5202b1bc10498eef6f1e6ced817e1c677fa6bc051533cba7ea22d8ce",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A big apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:18.505Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_big_apple": {
     "text": "I want a big apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.519,
+    "duration": 2.48,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.25,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.61,
+        "time": 0.49,
         "id": 7
       },
       {
-        "time": 0.75,
+        "time": 0.63,
         "id": 3
       },
       {
-        "time": 0.87,
+        "time": 0.75,
         "id": 19
       },
       {
-        "time": 0.97,
+        "time": 0.85,
         "id": 19
       },
       {
-        "time": 1.05,
+        "time": 0.93,
         "id": 11
       },
       {
-        "time": 1.12,
+        "time": 1,
         "id": 2
       },
       {
-        "time": 1.27,
+        "time": 1.15,
         "id": 21
       },
       {
-        "time": 1.37,
+        "time": 1.25,
         "id": 6
       },
       {
-        "time": 1.58,
+        "time": 1.46,
         "id": 20
       },
       {
-        "time": 1.7,
+        "time": 1.58,
         "id": 0
       },
       {
-        "time": 1.73,
+        "time": 1.61,
         "id": 1
       },
       {
-        "time": 1.97,
+        "time": 1.85,
         "id": 21
       },
       {
-        "time": 2.07,
+        "time": 1.95,
         "id": 1
       },
       {
-        "time": 2.17,
+        "time": 2.05,
         "id": 14
       },
       {
-        "time": 2.41,
+        "time": 2.29,
+        "id": 0
+      },
+      {
+        "time": 2.36,
+        "id": 0
+      },
+      {
+        "time": 2.48,
         "id": 0
       }
     ],
@@ -1278,173 +1654,235 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.25,
-        "end": 0.61
+        "start": 0.13,
+        "end": 0.49
       },
       {
         "word": "want",
-        "start": 0.61,
-        "end": 1.05
+        "start": 0.49,
+        "end": 0.93
       },
       {
         "word": "a",
-        "start": 1.05,
-        "end": 1.27
+        "start": 0.93,
+        "end": 1.1500000000000001
       },
       {
         "word": "big",
-        "start": 1.27,
-        "end": 1.7
+        "start": 1.1500000000000001,
+        "end": 1.58
       },
       {
         "word": "apple",
-        "start": 1.73,
-        "end": 2.41
+        "start": 1.61,
+        "end": 2.29
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.2,
+      "end": 2.48,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a big apple.",
+    "speed": 0,
+    "sha256": "84ec51b883bbd183187700b1fe44bd5bfd18465004af35fdd3c1b4da5a46a98a",
+    "quality": {
+      "version": 3,
+      "sha256": "84ec51b883bbd183187700b1fe44bd5bfd18465004af35fdd3c1b4da5a46a98a",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a big apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:19.484Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_small_apple": {
     "text": "a small apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.039,
+    "duration": 1.68,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.41,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.61,
+        "time": 0.29,
         "id": 15
       },
       {
-        "time": 0.75,
+        "time": 0.41,
         "id": 21
       },
       {
-        "time": 0.87,
+        "time": 0.55,
         "id": 3
       },
       {
-        "time": 1.11,
+        "time": 0.72,
         "id": 14
       },
       {
-        "time": 1.27,
+        "time": 0.89,
         "id": 1
       },
       {
-        "time": 1.45,
+        "time": 1.07,
         "id": 21
       },
       {
-        "time": 1.55,
+        "time": 1.17,
         "id": 1
       },
       {
-        "time": 1.65,
+        "time": 1.25,
         "id": 14
       },
       {
-        "time": 1.93,
+        "time": 1.49,
+        "id": 0
+      },
+      {
+        "time": 1.56,
+        "id": 0
+      },
+      {
+        "time": 1.68,
         "id": 0
       }
     ],
-    "sourceKey": "0278ff90d159a6daec32140e5f7218349df544b38e097a4bc3368492ddad2da2",
+    "sourceKey": "17a3b61c9d78598338da175edb83cc39bc317f3f39f8296c613c099a7f90cb14",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.41,
-        "end": 0.61
+        "start": 0.13,
+        "end": 0.29
       },
       {
         "word": "small",
-        "start": 0.61,
-        "end": 1.27
+        "start": 0.29,
+        "end": 0.89
       },
       {
         "word": "apple",
-        "start": 1.27,
-        "end": 1.93
+        "start": 0.89,
+        "end": 1.49
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.27,
+      "end": 1.75,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a small apple.",
+    "speed": 0,
+    "sha256": "9de0a31bd3fdaf8ae080b7f9a8ddc5aa4766e8b26ad31ee006e09b4245c66b02",
+    "quality": {
+      "version": 3,
+      "sha256": "9de0a31bd3fdaf8ae080b7f9a8ddc5aa4766e8b26ad31ee006e09b4245c66b02",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A small apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:20.606Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_small_apple": {
     "text": "I want a small apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.879,
+    "duration": 2.48,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.42,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.7,
+        "time": 0.41,
         "id": 7
       },
       {
-        "time": 0.8,
+        "time": 0.51,
         "id": 2
       },
       {
-        "time": 0.96,
+        "time": 0.67,
         "id": 19
       },
       {
-        "time": 1.06,
+        "time": 0.77,
         "id": 19
       },
       {
-        "time": 1.13,
+        "time": 0.84,
         "id": 11
       },
       {
-        "time": 1.22,
+        "time": 0.93,
         "id": 2
       },
       {
-        "time": 1.32,
+        "time": 1.03,
         "id": 15
       },
       {
-        "time": 1.48,
+        "time": 1.19,
         "id": 21
       },
       {
-        "time": 1.56,
+        "time": 1.27,
         "id": 3
       },
       {
-        "time": 1.75,
+        "time": 1.46,
         "id": 14
       },
       {
-        "time": 1.92,
+        "time": 1.63,
         "id": 1
       },
       {
-        "time": 2.1,
+        "time": 1.81,
         "id": 21
       },
       {
-        "time": 2.2,
+        "time": 1.91,
         "id": 1
       },
       {
-        "time": 2.3,
+        "time": 2.01,
         "id": 14
       },
       {
-        "time": 2.58,
+        "time": 2.29,
+        "id": 0
+      },
+      {
+        "time": 2.36,
+        "id": 0
+      },
+      {
+        "time": 2.48,
         "id": 0
       }
     ],
@@ -1452,181 +1890,243 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.42,
-        "end": 0.7
+        "start": 0.13,
+        "end": 0.41
       },
       {
         "word": "want",
-        "start": 0.7,
-        "end": 1.13
+        "start": 0.41,
+        "end": 0.8399999999999999
       },
       {
         "word": "a",
-        "start": 1.13,
-        "end": 1.32
+        "start": 0.8399999999999999,
+        "end": 1.03
       },
       {
         "word": "small",
-        "start": 1.32,
-        "end": 1.92
+        "start": 1.03,
+        "end": 1.63
       },
       {
         "word": "apple",
-        "start": 1.92,
-        "end": 2.58
+        "start": 1.63,
+        "end": 2.29
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.37,
+      "end": 2.65,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a small apple.",
+    "speed": 0,
+    "sha256": "7b1c5a2c36fca9062f94e8558c4ccac67d6d8ebc516b7fe623fa6cb53465965a",
+    "quality": {
+      "version": 3,
+      "sha256": "7b1c5a2c36fca9062f94e8558c4ccac67d6d8ebc516b7fe623fa6cb53465965a",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a small apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:22.325Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_big_banana": {
     "text": "a big banana",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.879,
+    "duration": 1.619,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.38,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.6,
+        "time": 0.33,
         "id": 21
       },
       {
-        "time": 0.68,
+        "time": 0.39,
         "id": 6
       },
       {
-        "time": 0.86,
+        "time": 0.55,
         "id": 20
       },
       {
-        "time": 0.98,
+        "time": 0.63,
         "id": 21
       },
       {
-        "time": 1.04,
+        "time": 0.69,
         "id": 1
       },
       {
-        "time": 1.12,
+        "time": 0.77,
         "id": 19
       },
       {
-        "time": 1.21,
+        "time": 0.84,
         "id": 1
       },
       {
-        "time": 1.4,
+        "time": 0.97,
         "id": 19
       },
       {
-        "time": 1.52,
+        "time": 1.07,
         "id": 1
       },
       {
-        "time": 1.8,
+        "time": 1.43,
+        "id": 0
+      },
+      {
+        "time": 1.499,
+        "id": 0
+      },
+      {
+        "time": 1.619,
         "id": 0
       }
     ],
-    "sourceKey": "4c779350b4812e1615fb8fe90a74e0638dabf3dafc4d0d840a4cc2f6190b3538",
+    "sourceKey": "c238ced97d23077b2a45833ea43f8143fd52f7ae8d459e77b2fb6d54a2780c0f",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.38,
-        "end": 0.6
+        "start": 0.13,
+        "end": 0.33
       },
       {
         "word": "big",
-        "start": 0.6,
-        "end": 0.98
+        "start": 0.33,
+        "end": 0.63
       },
       {
         "word": "banana",
-        "start": 0.98,
-        "end": 1.8
+        "start": 0.63,
+        "end": 1.4300000000000002
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.38,
+      "end": 1.799,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a big banana.",
+    "speed": 0,
+    "sha256": "ec3e4b7898a7e1be8f663e41a1f11d52ae8946dd4c475ace7aa87303520b1800",
+    "quality": {
+      "version": 3,
+      "sha256": "ec3e4b7898a7e1be8f663e41a1f11d52ae8946dd4c475ace7aa87303520b1800",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A big banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:22.715Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_big_banana": {
     "text": "I want a big banana.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.599,
+    "duration": 2.54,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.24,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.58,
+        "time": 0.47,
         "id": 7
       },
       {
-        "time": 0.7,
+        "time": 0.59,
         "id": 3
       },
       {
-        "time": 0.84,
+        "time": 0.73,
         "id": 19
       },
       {
-        "time": 0.96,
+        "time": 0.85,
         "id": 19
       },
       {
-        "time": 1.03,
+        "time": 0.92,
         "id": 11
       },
       {
-        "time": 1.11,
+        "time": 1,
         "id": 2
       },
       {
-        "time": 1.26,
+        "time": 1.15,
         "id": 21
       },
       {
-        "time": 1.36,
+        "time": 1.25,
         "id": 6
       },
       {
-        "time": 1.5,
+        "time": 1.39,
         "id": 20
       },
       {
-        "time": 1.64,
+        "time": 1.53,
         "id": 21
       },
       {
-        "time": 1.7,
+        "time": 1.59,
         "id": 1
       },
       {
-        "time": 1.76,
+        "time": 1.65,
         "id": 19
       },
       {
-        "time": 1.86,
+        "time": 1.75,
         "id": 1
       },
       {
-        "time": 2,
+        "time": 1.89,
         "id": 19
       },
       {
-        "time": 2.12,
+        "time": 2.01,
         "id": 1
       },
       {
-        "time": 2.46,
+        "time": 2.35,
+        "id": 0
+      },
+      {
+        "time": 2.42,
+        "id": 0
+      },
+      {
+        "time": 2.54,
         "id": 0
       }
     ],
@@ -1634,400 +2134,532 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.24,
-        "end": 0.58
+        "start": 0.13,
+        "end": 0.47
       },
       {
         "word": "want",
-        "start": 0.58,
-        "end": 1.03
+        "start": 0.47,
+        "end": 0.92
       },
       {
         "word": "a",
-        "start": 1.03,
-        "end": 1.26
+        "start": 0.92,
+        "end": 1.1500000000000001
       },
       {
         "word": "big",
-        "start": 1.26,
-        "end": 1.64
+        "start": 1.1500000000000001,
+        "end": 1.53
       },
       {
         "word": "banana",
-        "start": 1.64,
-        "end": 2.46
+        "start": 1.53,
+        "end": 2.35
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.19,
+      "end": 2.53,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a big banana.",
+    "speed": 0,
+    "sha256": "bc9504c4a251b36c75987f57dfc5031cc531acf1056d9c73dac21f807c0f9cfe",
+    "quality": {
+      "version": 3,
+      "sha256": "bc9504c4a251b36c75987f57dfc5031cc531acf1056d9c73dac21f807c0f9cfe",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a big banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:25.256Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_small_banana": {
     "text": "a small banana",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.799,
+    "duration": 1.739,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.36,
-        "id": 1
-      },
-      {
-        "time": 0.5,
-        "id": 15
-      },
-      {
-        "time": 0.62,
-        "id": 21
-      },
-      {
-        "time": 0.72,
-        "id": 3
-      },
-      {
-        "time": 0.9,
-        "id": 14
-      },
-      {
-        "time": 0.96,
-        "id": 21
-      },
-      {
-        "time": 1.02,
-        "id": 1
-      },
-      {
-        "time": 1.08,
-        "id": 19
-      },
-      {
-        "time": 1.18,
-        "id": 1
-      },
-      {
-        "time": 1.32,
-        "id": 19
-      },
-      {
-        "time": 1.44,
-        "id": 1
-      },
-      {
-        "time": 1.78,
-        "id": 0
-      }
-    ],
-    "sourceKey": "08afa984fee2a9ca7bc0d6203f064c43d4c58f4304f26f451172de35ce4415ed",
-    "wordTimings": [
-      {
-        "word": "a",
-        "start": 0.36,
-        "end": 0.5
-      },
-      {
-        "word": "small",
-        "start": 0.5,
-        "end": 0.96
-      },
-      {
-        "word": "banana",
-        "start": 0.96,
-        "end": 1.78
-      }
-    ]
-  },
-  "u2_want_small_banana": {
-    "text": "I want a small banana.",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 2.359,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.24,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.54,
-        "id": 7
+        "time": 0.23,
+        "id": 2
       },
       {
-        "time": 0.64,
+        "time": 0.31,
+        "id": 15
+      },
+      {
+        "time": 0.47,
+        "id": 21
+      },
+      {
+        "time": 0.55,
         "id": 3
       },
       {
-        "time": 0.76,
-        "id": 19
+        "time": 0.68,
+        "id": 14
+      },
+      {
+        "time": 0.77,
+        "id": 21
+      },
+      {
+        "time": 0.85,
+        "id": 1
       },
       {
         "time": 0.89,
         "id": 19
       },
       {
-        "time": 0.94,
-        "id": 11
-      },
-      {
-        "time": 1.03,
-        "id": 2
-      },
-      {
-        "time": 1.14,
-        "id": 15
-      },
-      {
-        "time": 1.28,
-        "id": 21
-      },
-      {
-        "time": 1.38,
-        "id": 3
-      },
-      {
-        "time": 1.56,
-        "id": 14
-      },
-      {
-        "time": 1.64,
-        "id": 21
-      },
-      {
-        "time": 1.72,
+        "time": 0.99,
         "id": 1
       },
       {
-        "time": 1.76,
+        "time": 1.11,
         "id": 19
       },
       {
-        "time": 1.86,
+        "time": 1.23,
         "id": 1
       },
       {
-        "time": 2,
-        "id": 19
+        "time": 1.58,
+        "id": 0
       },
       {
-        "time": 2.1,
-        "id": 1
+        "time": 1.619,
+        "id": 0
       },
       {
-        "time": 2.359,
+        "time": 1.739,
         "id": 0
       }
     ],
-    "sourceKey": "b9855c3c6a1d4d40daa5dc50b37368bf7c51ae4e0823be03c04e860e49a84474",
+    "sourceKey": "74b3287dc1956abc0b65de68dbf581ec6a1aeb351649590403536be293176401",
     "wordTimings": [
       {
-        "word": "i",
-        "start": 0.24,
-        "end": 0.54
-      },
-      {
-        "word": "want",
-        "start": 0.54,
-        "end": 0.94
-      },
-      {
         "word": "a",
-        "start": 0.94,
-        "end": 1.14
+        "start": 0.13,
+        "end": 0.31
       },
       {
         "word": "small",
-        "start": 1.14,
-        "end": 1.64
+        "start": 0.31,
+        "end": 0.7699999999999999
       },
       {
         "word": "banana",
-        "start": 1.64,
-        "end": 2.38
+        "start": 0.7699999999999999,
+        "end": 1.58
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 1.719,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a small banana.",
+    "speed": 0,
+    "sha256": "057ece6b1ed443f8ea8318fc7996056ecd1f1ec105b38481824a6cb88692b315",
+    "quality": {
+      "version": 3,
+      "sha256": "057ece6b1ed443f8ea8318fc7996056ecd1f1ec105b38481824a6cb88692b315",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A small banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:24.766Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_want_small_banana": {
+    "text": "I want a small banana.",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 2.88,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 11
+      },
+      {
+        "time": 0.43,
+        "id": 7
+      },
+      {
+        "time": 0.55,
+        "id": 3
+      },
+      {
+        "time": 0.71,
+        "id": 19
+      },
+      {
+        "time": 0.82,
+        "id": 19
+      },
+      {
+        "time": 1.05,
+        "id": 0
+      },
+      {
+        "time": 1.08,
+        "id": 11
+      },
+      {
+        "time": 1.17,
+        "id": 2
+      },
+      {
+        "time": 1.29,
+        "id": 15
+      },
+      {
+        "time": 1.45,
+        "id": 21
+      },
+      {
+        "time": 1.55,
+        "id": 3
+      },
+      {
+        "time": 1.71,
+        "id": 14
+      },
+      {
+        "time": 1.81,
+        "id": 21
+      },
+      {
+        "time": 1.89,
+        "id": 1
+      },
+      {
+        "time": 1.95,
+        "id": 19
+      },
+      {
+        "time": 2.07,
+        "id": 1
+      },
+      {
+        "time": 2.15,
+        "id": 19
+      },
+      {
+        "time": 2.35,
+        "id": 1
+      },
+      {
+        "time": 2.69,
+        "id": 0
+      },
+      {
+        "time": 2.76,
+        "id": 0
+      },
+      {
+        "time": 2.88,
+        "id": 0
+      }
+    ],
+    "sourceKey": "0cc800b268ac94d28833caea2d0e8a6cc316f0f1c3d2da4316018439e370f88f",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.13,
+        "end": 0.42999999999999994
+      },
+      {
+        "word": "want",
+        "start": 0.42999999999999994,
+        "end": 1.05
+      },
+      {
+        "word": "a",
+        "start": 1.08,
+        "end": 1.29
+      },
+      {
+        "word": "small",
+        "start": 1.29,
+        "end": 1.81
+      },
+      {
+        "word": "banana",
+        "start": 1.81,
+        "end": 2.69
+      }
+    ],
+    "trim": {
+      "start": 0.35000000000000003,
+      "end": 3.03,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a small banana.",
+    "speed": -0.2,
+    "sha256": "90d0eafe8dc2f4ac13d4ed2b99ffa245fbdb2ac86361d709a9fc8e8d32c3e6c8",
+    "quality": {
+      "version": 3,
+      "sha256": "90d0eafe8dc2f4ac13d4ed2b99ffa245fbdb2ac86361d709a9fc8e8d32c3e6c8",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a small banana.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:30.168Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_small_red_apple": {
     "text": "a small red apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.399,
+    "duration": 2.02,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.44,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.6,
+        "time": 0.33,
         "id": 15
       },
       {
-        "time": 0.72,
+        "time": 0.43,
         "id": 21
       },
       {
-        "time": 0.84,
+        "time": 0.53,
         "id": 3
       },
       {
-        "time": 1.04,
+        "time": 0.71,
         "id": 14
       },
       {
-        "time": 1.16,
+        "time": 0.87,
         "id": 13
       },
       {
-        "time": 1.24,
+        "time": 0.95,
         "id": 4
       },
       {
-        "time": 1.36,
+        "time": 1.07,
         "id": 19
       },
       {
-        "time": 1.48,
+        "time": 1.19,
         "id": 1
       },
       {
-        "time": 1.72,
+        "time": 1.39,
         "id": 21
       },
       {
-        "time": 1.82,
+        "time": 1.51,
         "id": 1
       },
       {
-        "time": 1.92,
+        "time": 1.59,
         "id": 14
       },
       {
-        "time": 2.18,
+        "time": 1.83,
+        "id": 0
+      },
+      {
+        "time": 1.9,
+        "id": 0
+      },
+      {
+        "time": 2.02,
         "id": 0
       }
     ],
-    "sourceKey": "e71a0432bf6977a41e2f5a59bb1800b419b0a397251ac855b12299ee72c8fe80",
+    "sourceKey": "ac8b078c244d6c4c5c0061aa2d650e10745acbf6190855a7172d275a2c767ed3",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.44,
-        "end": 0.6
+        "start": 0.13,
+        "end": 0.33
       },
       {
         "word": "small",
-        "start": 0.6,
-        "end": 1.16
+        "start": 0.33,
+        "end": 0.87
       },
       {
         "word": "red",
-        "start": 1.16,
-        "end": 1.48
+        "start": 0.87,
+        "end": 1.1900000000000002
       },
       {
         "word": "apple",
-        "start": 1.48,
-        "end": 2.18
+        "start": 1.1900000000000002,
+        "end": 1.83
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 2,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a small red apple.",
+    "speed": 0,
+    "sha256": "247ab6aeb8af39bf067e93bded7928415a4853e28120b10a0487880996e3c554",
+    "quality": {
+      "version": 3,
+      "sha256": "247ab6aeb8af39bf067e93bded7928415a4853e28120b10a0487880996e3c554",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A small red apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:27.702Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_small_red_apple": {
     "text": "I want a small red apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 4.119,
+    "duration": 3.9600625,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.36,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.82,
+        "time": 0.59,
         "id": 0
       },
       {
-        "time": 0.85,
+        "time": 0.62,
         "id": 7
       },
       {
-        "time": 0.96,
+        "time": 0.73,
         "id": 3
       },
       {
-        "time": 1.18,
+        "time": 0.95,
         "id": 19
       },
       {
-        "time": 1.29,
+        "time": 1.06,
         "id": 19
       },
       {
-        "time": 1.48,
+        "time": 1.25,
         "id": 0
       },
       {
-        "time": 1.54,
+        "time": 1.31,
         "id": 11
       },
       {
-        "time": 1.62,
+        "time": 1.39,
         "id": 2
       },
       {
-        "time": 1.78,
+        "time": 1.55,
         "id": 15
       },
       {
-        "time": 1.96,
+        "time": 1.73,
         "id": 21
       },
       {
-        "time": 2.12,
+        "time": 1.89,
         "id": 3
       },
       {
-        "time": 2.44,
+        "time": 2.21,
         "id": 14
       },
       {
-        "time": 2.64,
+        "time": 2.41,
         "id": 13
       },
       {
-        "time": 2.74,
+        "time": 2.51,
         "id": 4
       },
       {
-        "time": 2.98,
+        "time": 2.75,
         "id": 19
       },
       {
-        "time": 3.18,
+        "time": 2.95,
         "id": 1
       },
       {
-        "time": 3.42,
+        "time": 3.19,
         "id": 21
       },
       {
-        "time": 3.56,
+        "time": 3.33,
         "id": 1
       },
       {
-        "time": 3.66,
+        "time": 3.43,
         "id": 14
       },
       {
-        "time": 4,
+        "time": 3.77,
+        "id": 0
+      },
+      {
+        "time": 3.8400625,
+        "id": 0
+      },
+      {
+        "time": 3.9600625,
         "id": 0
       }
     ],
@@ -2035,35 +2667,58 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.36,
-        "end": 0.82
+        "start": 0.13,
+        "end": 0.59
       },
       {
         "word": "want",
-        "start": 0.85,
-        "end": 1.48
+        "start": 0.62,
+        "end": 1.25
       },
       {
         "word": "a",
-        "start": 1.54,
-        "end": 1.78
+        "start": 1.31,
+        "end": 1.55
       },
       {
         "word": "small",
-        "start": 1.78,
-        "end": 2.64
+        "start": 1.55,
+        "end": 2.41
       },
       {
         "word": "red",
-        "start": 2.64,
-        "end": 3.18
+        "start": 2.41,
+        "end": 2.95
       },
       {
         "word": "apple",
-        "start": 3.18,
-        "end": 4
+        "start": 2.95,
+        "end": 3.77
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.31,
+      "end": 4.07,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a small red apple.",
+    "speed": 0,
+    "sha256": "bad2bf64d0a6c63c917e54c8e5e5197f05a2a00e7fea206ded2604b23b06a0a1",
+    "quality": {
+      "version": 3,
+      "sha256": "bad2bf64d0a6c63c917e54c8e5e5197f05a2a00e7fea206ded2604b23b06a0a1",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a small red apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:32.076Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "adult-numbers_intro": {
     "text": "这节课学一到五。先读数字，再练一个和多个，最后说出需求。",
@@ -2299,118 +2954,216 @@
     "text": "one",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.079,
+    "duration": 0.91,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.23,
+        "time": 0.13,
         "id": 7
       },
       {
-        "time": 0.41,
+        "time": 0.37,
         "id": 1
       },
       {
-        "time": 0.7,
+        "time": 0.6,
         "id": 19
       },
       {
-        "time": 0.84,
+        "time": 0.72,
+        "id": 0
+      },
+      {
+        "time": 0.79,
+        "id": 0
+      },
+      {
+        "time": 0.91,
         "id": 0
       }
     ],
-    "sourceKey": "cd5ecf5cf74f5a3390d205cf830f4b7673f79521edc92fa6c70248ee6fd181ac",
+    "sourceKey": "f988c746aab3435537f93453dd18ad733b5d7a4ba2661066f112430e47a82295",
     "wordTimings": [
       {
         "word": "one",
-        "start": 0.23,
-        "end": 0.84
+        "start": 0.13,
+        "end": 0.72
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.26,
+      "end": 0.97,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "one.",
+    "speed": 0,
+    "sha256": "9167181287f167b14bf1fac9639b231424743d421426367f50a2bb5cc075ce66",
+    "quality": {
+      "version": 3,
+      "sha256": "9167181287f167b14bf1fac9639b231424743d421426367f50a2bb5cc075ce66",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "One.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:31.419Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_two": {
     "text": "two",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.159,
+    "duration": 0.9000625,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.16,
+        "time": 0.13,
         "id": 19
       },
       {
-        "time": 0.41,
+        "time": 0.26,
         "id": 7
       },
       {
-        "time": 0.94,
+        "time": 0.71,
+        "id": 0
+      },
+      {
+        "time": 0.7800625,
+        "id": 0
+      },
+      {
+        "time": 0.9000625,
         "id": 0
       }
     ],
-    "sourceKey": "6b84c0726811d8e5741fb3088b1017b1b10addfb6b4fcec26c173c2b4664f33e",
+    "sourceKey": "599f7cfef7cbbf82f12f6ec89a066b04284ab0e703d5ea556d5d64ae59472a05",
     "wordTimings": [
       {
         "word": "two",
-        "start": 0.16,
-        "end": 0.94
+        "start": 0.13,
+        "end": 0.7100000000000001
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 0.8800000000000001,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "two.",
+    "speed": 0,
+    "sha256": "293edf6201dace7d90a8c839a9fbd8b21386cac5f605fc7a2af13e1ac0c0bb61",
+    "quality": {
+      "version": 3,
+      "sha256": "293edf6201dace7d90a8c839a9fbd8b21386cac5f605fc7a2af13e1ac0c0bb61",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Tool.",
+          "accepted": false
+        },
+        {
+          "engine": "16k_zh_en_2.0",
+          "text": "Two.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:33.981Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_three": {
     "text": "three",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.239,
+    "duration": 0.97,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.3,
+        "time": 0.13,
         "id": 17
       },
       {
-        "time": 0.39,
+        "time": 0.28,
         "id": 13
       },
       {
-        "time": 0.48,
+        "time": 0.38,
         "id": 6
       },
       {
-        "time": 0.82,
+        "time": 0.78,
+        "id": 0
+      },
+      {
+        "time": 0.85,
+        "id": 0
+      },
+      {
+        "time": 0.97,
         "id": 0
       }
     ],
-    "sourceKey": "fa966f01b032442a5bb0238fe0c7d2143f4f2d275188b6c118a3070801bb6514",
+    "sourceKey": "c8d315d181364b63c92fff38ab46b07f7a20b0fad755cf5daf152b05b6f6548d",
     "wordTimings": [
       {
         "word": "three",
-        "start": 0.3,
-        "end": 0.82
+        "start": 0.13,
+        "end": 0.7799999999999999
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.22000000000000003,
+      "end": 0.99,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "three.",
+    "speed": 0,
+    "sha256": "72396ba8ffb7704e1abc61a4750c033fcb175fe862ef64b023ff4cdc277d7d9d",
+    "quality": {
+      "version": 3,
+      "sha256": "72396ba8ffb7704e1abc61a4750c033fcb175fe862ef64b023ff4cdc277d7d9d",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Three.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:33.307Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_four": {
     "text": "four",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.119,
+    "duration": 1.05,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.27,
+        "time": 0.13,
         "id": 18
       },
       {
@@ -2418,339 +3171,420 @@
         "id": 3
       },
       {
-        "time": 0.7,
+        "time": 0.75,
         "id": 13
-      },
-      {
-        "time": 0.79,
-        "id": 0
-      }
-    ],
-    "sourceKey": "440e7b2a3f5efffda7f4afa908875ce5ecf701da98c2b7734be7547664766176",
-    "wordTimings": [
-      {
-        "word": "four",
-        "start": 0.27,
-        "end": 0.79
-      }
-    ]
-  },
-  "u2_five": {
-    "text": "five",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 1.159,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.33,
-        "id": 18
-      },
-      {
-        "time": 0.4,
-        "id": 11
-      },
-      {
-        "time": 0.69,
-        "id": 18
-      },
-      {
-        "time": 0.77,
-        "id": 0
-      }
-    ],
-    "sourceKey": "89df3aa6fcb43cbf73fb76c528aba3db7942718efb1e6f3cc52f052bc260d083",
-    "wordTimings": [
-      {
-        "word": "five",
-        "start": 0.33,
-        "end": 0.77
-      }
-    ]
-  },
-  "u2_apples": {
-    "text": "apples",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 1.319,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.27,
-        "id": 1
-      },
-      {
-        "time": 0.5,
-        "id": 21
-      },
-      {
-        "time": 0.61,
-        "id": 1
-      },
-      {
-        "time": 0.63,
-        "id": 14
-      },
-      {
-        "time": 0.8,
-        "id": 15
       },
       {
         "time": 0.86,
         "id": 0
-      }
-    ],
-    "sourceKey": "59dcbe25bbc6de66a2cc25319c5b7d81b83958deb853b1ae7ab00276aa4d0e39",
-    "wordTimings": [
+      },
       {
-        "word": "apples",
-        "start": 0.27,
-        "end": 0.86
-      }
-    ]
-  },
-  "u2_bananas": {
-    "text": "bananas",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 2.279,
-    "cues": [
-      {
-        "time": 0,
+        "time": 0.93,
         "id": 0
-      },
-      {
-        "time": 0.27,
-        "id": 21
-      },
-      {
-        "time": 0.33,
-        "id": 1
-      },
-      {
-        "time": 0.39,
-        "id": 19
-      },
-      {
-        "time": 0.49,
-        "id": 2
-      },
-      {
-        "time": 0.71,
-        "id": 19
-      },
-      {
-        "time": 0.77,
-        "id": 1
-      },
-      {
-        "time": 1.02,
-        "id": 15
       },
       {
         "time": 1.05,
         "id": 0
       }
     ],
-    "sourceKey": "eabdf14bb0f6df2e29382ca0cef081d92c326b4f19aea886b44764112df7e80c",
+    "sourceKey": "51bd1bb2e1b286185688d55dca207b4995cad000df79fe673b3e9cc500e671a3",
+    "wordTimings": [
+      {
+        "word": "four",
+        "start": 0.13,
+        "end": 0.86
+      }
+    ],
+    "trim": {
+      "start": 0.14,
+      "end": 0.99,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "four.",
+    "speed": 0,
+    "sha256": "aeb4e3f1c5dc2707aa5d2d77aafc272c5ca9d7076b8bb1372a7c3e2dd46d0014",
+    "quality": {
+      "version": 3,
+      "sha256": "aeb4e3f1c5dc2707aa5d2d77aafc272c5ca9d7076b8bb1372a7c3e2dd46d0014",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Four.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:34.753Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_five": {
+    "text": "five",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 0.77,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 18
+      },
+      {
+        "time": 0.21,
+        "id": 11
+      },
+      {
+        "time": 0.47,
+        "id": 18
+      },
+      {
+        "time": 0.58,
+        "id": 0
+      },
+      {
+        "time": 0.65,
+        "id": 0
+      },
+      {
+        "time": 0.77,
+        "id": 0
+      }
+    ],
+    "sourceKey": "295ce4b065f04b5f3c8d5bc2bcece8232bc98210dcdca5a5ed25cf53d0016854",
+    "wordTimings": [
+      {
+        "word": "five",
+        "start": 0.13,
+        "end": 0.58
+      }
+    ],
+    "trim": {
+      "start": 0.22000000000000003,
+      "end": 0.79,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "five.",
+    "speed": 0,
+    "sha256": "a998bd49eb7a08372b2798c2b340dc4ea3a3316c1f10cdb41bcc7d42763b3000",
+    "quality": {
+      "version": 3,
+      "sha256": "a998bd49eb7a08372b2798c2b340dc4ea3a3316c1f10cdb41bcc7d42763b3000",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Five.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:35.002Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_apples": {
+    "text": "apples",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 0.96,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 1
+      },
+      {
+        "time": 0.43,
+        "id": 21
+      },
+      {
+        "time": 0.52,
+        "id": 1
+      },
+      {
+        "time": 0.54,
+        "id": 14
+      },
+      {
+        "time": 0.71,
+        "id": 15
+      },
+      {
+        "time": 0.77,
+        "id": 0
+      },
+      {
+        "time": 0.84,
+        "id": 0
+      },
+      {
+        "time": 0.96,
+        "id": 0
+      }
+    ],
+    "sourceKey": "f595cf7d84ae3ce2dc6e1293a7c3f9b755d618808c44d6c5a99f0ce38a84c8df",
+    "wordTimings": [
+      {
+        "word": "apples",
+        "start": 0.13,
+        "end": 0.7699999999999999
+      }
+    ],
+    "trim": {
+      "start": 0.15000000000000002,
+      "end": 0.9099999999999999,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "apples.",
+    "speed": 0,
+    "sha256": "5910c7a57600d02d0bdc1e5129052db2a98a4599f7f0769c187d30dd306cda5f",
+    "quality": {
+      "version": 3,
+      "sha256": "5910c7a57600d02d0bdc1e5129052db2a98a4599f7f0769c187d30dd306cda5f",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Apple, s.",
+          "accepted": false
+        },
+        {
+          "engine": "16k_zh_en_2.0",
+          "text": "Apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:37.211Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_bananas": {
+    "text": "bananas",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.24,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 21
+      },
+      {
+        "time": 0.25,
+        "id": 1
+      },
+      {
+        "time": 0.3,
+        "id": 19
+      },
+      {
+        "time": 0.39,
+        "id": 1
+      },
+      {
+        "time": 0.95,
+        "id": 19
+      },
+      {
+        "time": 0.97,
+        "id": 1
+      },
+      {
+        "time": 1,
+        "id": 15
+      },
+      {
+        "time": 1.05,
+        "id": 0
+      },
+      {
+        "time": 1.12,
+        "id": 0
+      },
+      {
+        "time": 1.24,
+        "id": 0
+      }
+    ],
+    "sourceKey": "60c5c75e4392f8f31f4499c95347d5c5ad70dd272158342fba8d50b7fa9246fb",
     "wordTimings": [
       {
         "word": "bananas",
-        "start": 0.27,
+        "start": 0.13,
         "end": 1.05
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.06,
+      "end": 1.1,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "bananas.",
+    "speed": 0,
+    "sha256": "9887203fc80cfee894ae4d219c8eebae68fd9210aa2dd61d182c7fb862a953d0",
+    "quality": {
+      "version": 3,
+      "sha256": "9887203fc80cfee894ae4d219c8eebae68fd9210aa2dd61d182c7fb862a953d0",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:36.674Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_one_apple": {
     "text": "one apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.479,
+    "duration": 1.66,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.36,
+        "time": 0.13,
         "id": 12
       },
       {
-        "time": 0.42,
+        "time": 0.23,
         "id": 7
       },
       {
-        "time": 0.48,
+        "time": 0.31,
         "id": 1
       },
       {
-        "time": 0.66,
+        "time": 0.53,
         "id": 19
       },
       {
-        "time": 0.76,
+        "time": 0.7,
+        "id": 0
+      },
+      {
+        "time": 0.73,
         "id": 1
       },
       {
-        "time": 1.04,
+        "time": 0.97,
         "id": 21
       },
       {
-        "time": 1.14,
+        "time": 1.07,
         "id": 1
       },
       {
-        "time": 1.24,
+        "time": 1.19,
         "id": 14
       },
       {
-        "time": 1.479,
+        "time": 1.47,
+        "id": 0
+      },
+      {
+        "time": 1.54,
+        "id": 0
+      },
+      {
+        "time": 1.66,
         "id": 0
       }
     ],
-    "sourceKey": "2abc9aaff27114600315ee8bd660677b974eb3bcd5f7202bfae4d406ca000541",
+    "sourceKey": "a928724c6263f48a1afb2c41d27180d21190dee7f6a7fb44f9139d480568ca61",
     "wordTimings": [
       {
         "word": "one",
-        "start": 0.36,
-        "end": 0.76
+        "start": 0.13,
+        "end": 0.7
       },
       {
         "word": "apple",
-        "start": 0.76,
-        "end": 1.48
+        "start": 0.73,
+        "end": 1.4700000000000002
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.39,
+      "end": 1.85,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "one apple.",
+    "speed": 0,
+    "sha256": "75e20c87bec1db8636a1bdd875a411b348f79c2927ea98b61acac691041ce651",
+    "quality": {
+      "version": 3,
+      "sha256": "75e20c87bec1db8636a1bdd875a411b348f79c2927ea98b61acac691041ce651",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "One apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:38.773Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_one_apple": {
     "text": "I want one apple.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.239,
+    "duration": 2.1,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.34,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.66,
+        "time": 0.45,
         "id": 7
-      },
-      {
-        "time": 0.76,
-        "id": 3
-      },
-      {
-        "time": 0.9,
-        "id": 19
-      },
-      {
-        "time": 0.97,
-        "id": 19
-      },
-      {
-        "time": 1.07,
-        "id": 7
-      },
-      {
-        "time": 1.14,
-        "id": 1
-      },
-      {
-        "time": 1.32,
-        "id": 19
-      },
-      {
-        "time": 1.44,
-        "id": 1
-      },
-      {
-        "time": 1.66,
-        "id": 21
-      },
-      {
-        "time": 1.78,
-        "id": 1
-      },
-      {
-        "time": 1.86,
-        "id": 14
-      },
-      {
-        "time": 2.12,
-        "id": 0
-      }
-    ],
-    "sourceKey": "0e4ce9e20a25ab8570b1980f7a309f084954146b64d6232330e132a42398823b",
-    "wordTimings": [
-      {
-        "word": "i",
-        "start": 0.34,
-        "end": 0.66
-      },
-      {
-        "word": "want",
-        "start": 0.66,
-        "end": 1.07
-      },
-      {
-        "word": "one",
-        "start": 1.07,
-        "end": 1.44
-      },
-      {
-        "word": "apple",
-        "start": 1.44,
-        "end": 2.12
-      }
-    ]
-  },
-  "u2_two_bananas": {
-    "text": "two bananas",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 1.639,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.35,
-        "id": 19
       },
       {
         "time": 0.55,
-        "id": 7
+        "id": 3
       },
       {
-        "time": 0.71,
-        "id": 21
-      },
-      {
-        "time": 0.79,
-        "id": 1
-      },
-      {
-        "time": 0.87,
+        "time": 0.69,
         "id": 19
       },
       {
-        "time": 0.97,
+        "time": 0.76,
+        "id": 19
+      },
+      {
+        "time": 0.86,
+        "id": 7
+      },
+      {
+        "time": 0.93,
         "id": 1
       },
       {
-        "time": 1.13,
+        "time": 1.11,
         "id": 19
       },
       {
@@ -2758,96 +3592,245 @@
         "id": 1
       },
       {
-        "time": 1.46,
-        "id": 15
+        "time": 1.45,
+        "id": 21
       },
       {
-        "time": 1.49,
+        "time": 1.57,
+        "id": 1
+      },
+      {
+        "time": 1.65,
+        "id": 14
+      },
+      {
+        "time": 1.91,
+        "id": 0
+      },
+      {
+        "time": 1.98,
+        "id": 0
+      },
+      {
+        "time": 2.1,
         "id": 0
       }
     ],
-    "sourceKey": "e85c7ce18e571e37d3c0b21264ccbc59ae29df4a4d48fdaff38c2afedb4c45a0",
+    "sourceKey": "0e4ce9e20a25ab8570b1980f7a309f084954146b64d6232330e132a42398823b",
     "wordTimings": [
       {
-        "word": "two",
-        "start": 0.35,
-        "end": 0.71
+        "word": "i",
+        "start": 0.13,
+        "end": 0.45
       },
       {
-        "word": "bananas",
-        "start": 0.71,
-        "end": 1.49
+        "word": "want",
+        "start": 0.45,
+        "end": 0.86
+      },
+      {
+        "word": "one",
+        "start": 0.86,
+        "end": 1.23
+      },
+      {
+        "word": "apple",
+        "start": 1.23,
+        "end": 1.9100000000000001
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.29000000000000004,
+      "end": 2.19,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want one apple.",
+    "speed": 0,
+    "sha256": "49eb3a8cb852cfb64a61fadd02346862ef87f753fd2e32e222bb1540d523548a",
+    "quality": {
+      "version": 3,
+      "sha256": "49eb3a8cb852cfb64a61fadd02346862ef87f753fd2e32e222bb1540d523548a",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want one apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:39.663Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
-  "u2_want_two_bananas": {
-    "text": "I want two bananas.",
+  "u2_two_bananas": {
+    "text": "two bananas",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.759,
+    "duration": 2.06,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.23,
-        "id": 11
+        "time": 0.13,
+        "id": 19
       },
       {
-        "time": 0.62,
+        "time": 0.32,
         "id": 7
       },
       {
-        "time": 0.74,
-        "id": 3
-      },
-      {
-        "time": 0.9,
-        "id": 19
-      },
-      {
-        "time": 1.09,
-        "id": 19
-      },
-      {
-        "time": 1.14,
-        "id": 19
-      },
-      {
-        "time": 1.28,
-        "id": 7
-      },
-      {
-        "time": 1.58,
+        "time": 0.56,
         "id": 21
       },
       {
-        "time": 1.66,
+        "time": 0.64,
         "id": 1
       },
       {
-        "time": 1.74,
+        "time": 0.72,
         "id": 19
       },
       {
-        "time": 1.88,
+        "time": 0.82,
         "id": 1
       },
       {
-        "time": 2.06,
+        "time": 0.98,
         "id": 19
       },
       {
-        "time": 2.18,
+        "time": 1.12,
         "id": 1
       },
       {
-        "time": 2.42,
+        "time": 1.54,
         "id": 15
       },
       {
-        "time": 2.759,
+        "time": 1.87,
+        "id": 0
+      },
+      {
+        "time": 1.94,
+        "id": 0
+      },
+      {
+        "time": 2.06,
+        "id": 0
+      }
+    ],
+    "sourceKey": "82abb50fa190528fc4f387a730c671559ee680e4ab4ea46137f28d18a06972da",
+    "wordTimings": [
+      {
+        "word": "two",
+        "start": 0.13,
+        "end": 0.5599999999999999
+      },
+      {
+        "word": "bananas",
+        "start": 0.5599999999999999,
+        "end": 1.87
+      }
+    ],
+    "trim": {
+      "start": 0.21000000000000002,
+      "end": 2.07,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "two bananas.",
+    "speed": 0,
+    "sha256": "c510684a58f92447ccbf875cb61be0db531dd569041d68f070c707dcc465f580",
+    "quality": {
+      "version": 3,
+      "sha256": "c510684a58f92447ccbf875cb61be0db531dd569041d68f070c707dcc465f580",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Two bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:41.243Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_want_two_bananas": {
+    "text": "I want two bananas.",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 2.779,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 11
+      },
+      {
+        "time": 0.52,
+        "id": 7
+      },
+      {
+        "time": 0.64,
+        "id": 3
+      },
+      {
+        "time": 0.8,
+        "id": 19
+      },
+      {
+        "time": 0.99,
+        "id": 19
+      },
+      {
+        "time": 1.04,
+        "id": 19
+      },
+      {
+        "time": 1.18,
+        "id": 7
+      },
+      {
+        "time": 1.48,
+        "id": 21
+      },
+      {
+        "time": 1.56,
+        "id": 1
+      },
+      {
+        "time": 1.64,
+        "id": 19
+      },
+      {
+        "time": 1.78,
+        "id": 1
+      },
+      {
+        "time": 1.96,
+        "id": 19
+      },
+      {
+        "time": 2.08,
+        "id": 1
+      },
+      {
+        "time": 2.32,
+        "id": 15
+      },
+      {
+        "time": 2.659,
+        "id": 0
+      },
+      {
+        "time": 2.779,
         "id": 0
       }
     ],
@@ -2855,155 +3838,217 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.23,
-        "end": 0.62
+        "start": 0.13,
+        "end": 0.52
       },
       {
         "word": "want",
-        "start": 0.62,
-        "end": 1.14
+        "start": 0.52,
+        "end": 1.04
       },
       {
         "word": "two",
-        "start": 1.14,
-        "end": 1.58
+        "start": 1.04,
+        "end": 1.4800000000000002
       },
       {
         "word": "bananas",
-        "start": 1.58,
-        "end": 2.76
+        "start": 1.4800000000000002,
+        "end": 2.6599999999999997
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 2.759,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want two bananas.",
+    "speed": 0,
+    "sha256": "866192e258d11c68d93c6f7fade9048bbbc0046a3e4c133e6b160a46789d26d7",
+    "quality": {
+      "version": 3,
+      "sha256": "866192e258d11c68d93c6f7fade9048bbbc0046a3e4c133e6b160a46789d26d7",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want two bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:42.771Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_three_apples": {
     "text": "three apples",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.159,
+    "duration": 1.5600625,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.32,
+        "time": 0.13,
         "id": 17
       },
       {
-        "time": 0.5,
+        "time": 0.23,
         "id": 13
       },
       {
-        "time": 0.66,
+        "time": 0.39,
         "id": 6
       },
       {
-        "time": 0.82,
+        "time": 0.53,
         "id": 1
       },
       {
-        "time": 1.06,
+        "time": 0.75,
         "id": 21
       },
       {
-        "time": 1.16,
+        "time": 0.85,
         "id": 1
       },
       {
-        "time": 1.24,
+        "time": 0.93,
         "id": 14
       },
       {
-        "time": 1.58,
+        "time": 1.09,
         "id": 15
       },
       {
-        "time": 2,
+        "time": 1.37,
+        "id": 0
+      },
+      {
+        "time": 1.4400625,
+        "id": 0
+      },
+      {
+        "time": 1.5600625,
         "id": 0
       }
     ],
-    "sourceKey": "2bddf9a70d42364f819aa5e15e1d8706a14f8dca36ed109890b4c94e56d8bdd1",
+    "sourceKey": "ed031a20a78a028b3fc9caf0ff89caf351796d55a5849b56ed1138ab43713b3e",
     "wordTimings": [
       {
         "word": "three",
-        "start": 0.32,
-        "end": 0.82
+        "start": 0.13,
+        "end": 0.53
       },
       {
         "word": "apples",
-        "start": 0.82,
-        "end": 2
+        "start": 0.53,
+        "end": 1.37
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.33,
+      "end": 1.6900000000000002,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "three apples.",
+    "speed": 0,
+    "sha256": "2575cf4e41340b588891f9a0059fcbdcdbd3f99da6abddec49b4dfb408b04bd3",
+    "quality": {
+      "version": 3,
+      "sha256": "2575cf4e41340b588891f9a0059fcbdcdbd3f99da6abddec49b4dfb408b04bd3",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Three apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:43.121Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_three_apples": {
     "text": "I want three apples.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.959,
+    "duration": 2.84,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.35,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.65,
+        "time": 0.43,
         "id": 7
       },
       {
-        "time": 0.77,
+        "time": 0.55,
         "id": 3
       },
       {
-        "time": 0.93,
+        "time": 0.71,
         "id": 19
       },
       {
-        "time": 1.05,
+        "time": 0.83,
         "id": 19
       },
       {
-        "time": 1.25,
+        "time": 1.03,
         "id": 0
       },
       {
-        "time": 1.28,
+        "time": 1.06,
         "id": 17
       },
       {
-        "time": 1.55,
+        "time": 1.33,
         "id": 13
       },
       {
-        "time": 1.75,
+        "time": 1.53,
         "id": 6
       },
       {
-        "time": 1.95,
+        "time": 1.73,
         "id": 1
       },
       {
-        "time": 2.17,
+        "time": 1.95,
         "id": 21
       },
       {
-        "time": 2.27,
+        "time": 2.05,
         "id": 1
       },
       {
-        "time": 2.33,
+        "time": 2.11,
         "id": 14
       },
       {
-        "time": 2.53,
+        "time": 2.31,
         "id": 15
       },
       {
-        "time": 2.87,
+        "time": 2.65,
+        "id": 0
+      },
+      {
+        "time": 2.72,
+        "id": 0
+      },
+      {
+        "time": 2.84,
         "id": 0
       }
     ],
@@ -3011,167 +4056,229 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.35,
-        "end": 0.65
+        "start": 0.13,
+        "end": 0.43000000000000005
       },
       {
         "word": "want",
-        "start": 0.65,
-        "end": 1.25
+        "start": 0.43000000000000005,
+        "end": 1.03
       },
       {
         "word": "three",
-        "start": 1.28,
-        "end": 1.95
+        "start": 1.06,
+        "end": 1.73
       },
       {
         "word": "apples",
-        "start": 1.95,
-        "end": 2.87
+        "start": 1.73,
+        "end": 2.6500000000000004
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.3,
+      "end": 2.94,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want three apples.",
+    "speed": 0,
+    "sha256": "5c44c7416f277a22fdce8a030fcea3e7ed77eecaab99a9ccc77a8bf88899f248",
+    "quality": {
+      "version": 3,
+      "sha256": "5c44c7416f277a22fdce8a030fcea3e7ed77eecaab99a9ccc77a8bf88899f248",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want three apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:46.063Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_four_bananas": {
     "text": "four bananas",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.159,
+    "duration": 2.06,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.26,
+        "time": 0.13,
         "id": 18
       },
       {
-        "time": 0.48,
+        "time": 0.27,
         "id": 3
       },
       {
-        "time": 0.66,
+        "time": 0.47,
         "id": 13
       },
       {
-        "time": 0.78,
+        "time": 0.63,
         "id": 21
       },
       {
-        "time": 0.84,
+        "time": 0.71,
         "id": 1
       },
       {
-        "time": 0.9,
+        "time": 0.79,
         "id": 19
       },
       {
-        "time": 1,
+        "time": 0.93,
         "id": 1
       },
       {
-        "time": 1.18,
+        "time": 1.09,
         "id": 19
       },
       {
-        "time": 1.3,
+        "time": 1.25,
         "id": 1
       },
       {
-        "time": 1.6,
+        "time": 1.59,
         "id": 15
       },
       {
-        "time": 1.96,
+        "time": 1.87,
+        "id": 0
+      },
+      {
+        "time": 1.94,
+        "id": 0
+      },
+      {
+        "time": 2.06,
         "id": 0
       }
     ],
-    "sourceKey": "1cddafe239f375cc9c745d7f80f5f6b6028de0251097a5b96d7aca479103d4f8",
+    "sourceKey": "0e691e417aff8f4503955c402d9e852ff7ac52d61008fa410fa2568e282b9b95",
     "wordTimings": [
       {
         "word": "four",
-        "start": 0.26,
-        "end": 0.78
+        "start": 0.13,
+        "end": 0.63
       },
       {
         "word": "bananas",
-        "start": 0.78,
-        "end": 1.96
+        "start": 0.63,
+        "end": 1.87
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.35000000000000003,
+      "end": 2.21,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "four bananas.",
+    "speed": 0,
+    "sha256": "764894b18d55d05417a2d33d496fda7be2ac36c67881922b9101be93fd8069b2",
+    "quality": {
+      "version": 3,
+      "sha256": "764894b18d55d05417a2d33d496fda7be2ac36c67881922b9101be93fd8069b2",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Four bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:45.555Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_four_bananas": {
     "text": "I want four bananas.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.239,
+    "duration": 2.1,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.34,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.58,
+        "time": 0.37,
         "id": 7
       },
       {
-        "time": 0.68,
+        "time": 0.47,
         "id": 2
       },
       {
-        "time": 0.8,
+        "time": 0.59,
         "id": 19
       },
       {
-        "time": 0.87,
+        "time": 0.66,
         "id": 19
       },
       {
-        "time": 0.94,
+        "time": 0.73,
         "id": 18
       },
       {
-        "time": 1.02,
+        "time": 0.81,
         "id": 3
       },
       {
-        "time": 1.12,
+        "time": 0.91,
         "id": 13
       },
       {
-        "time": 1.26,
+        "time": 1.05,
         "id": 21
       },
       {
-        "time": 1.32,
+        "time": 1.11,
         "id": 1
       },
       {
-        "time": 1.36,
+        "time": 1.15,
         "id": 19
       },
       {
-        "time": 1.44,
+        "time": 1.23,
         "id": 1
       },
       {
-        "time": 1.58,
+        "time": 1.37,
         "id": 19
       },
       {
-        "time": 1.68,
+        "time": 1.47,
         "id": 1
       },
       {
-        "time": 1.86,
+        "time": 1.65,
         "id": 15
       },
       {
-        "time": 2.12,
+        "time": 1.91,
+        "id": 0
+      },
+      {
+        "time": 1.98,
+        "id": 0
+      },
+      {
+        "time": 2.1,
         "id": 0
       }
     ],
@@ -3179,108 +4286,166 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.34,
-        "end": 0.58
+        "start": 0.13,
+        "end": 0.36999999999999994
       },
       {
         "word": "want",
-        "start": 0.58,
-        "end": 0.94
+        "start": 0.36999999999999994,
+        "end": 0.7299999999999999
       },
       {
         "word": "four",
-        "start": 0.94,
-        "end": 1.26
+        "start": 0.7299999999999999,
+        "end": 1.05
       },
       {
         "word": "bananas",
-        "start": 1.26,
-        "end": 2.12
+        "start": 1.05,
+        "end": 1.9100000000000001
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.29000000000000004,
+      "end": 2.19,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want four bananas.",
+    "speed": 0,
+    "sha256": "c8b04c301f4a35301cabce52d17eaaa4981bfdca9c0535fa4eaa9f8e45b51396",
+    "quality": {
+      "version": 3,
+      "sha256": "c8b04c301f4a35301cabce52d17eaaa4981bfdca9c0535fa4eaa9f8e45b51396",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want four bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:48.081Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_five_apples": {
     "text": "five apples",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.239,
+    "duration": 1.859,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.3,
+        "time": 0.13,
         "id": 18
       },
       {
-        "time": 0.5,
+        "time": 0.31,
         "id": 11
       },
       {
-        "time": 0.78,
+        "time": 0.59,
         "id": 18
       },
       {
-        "time": 0.96,
+        "time": 0.79,
         "id": 1
       },
       {
-        "time": 1.16,
+        "time": 0.97,
         "id": 21
       },
       {
-        "time": 1.28,
+        "time": 1.07,
         "id": 1
       },
       {
-        "time": 1.36,
+        "time": 1.17,
         "id": 14
       },
       {
-        "time": 1.6,
+        "time": 1.43,
         "id": 15
       },
       {
-        "time": 1.9,
+        "time": 1.69,
+        "id": 0
+      },
+      {
+        "time": 1.739,
+        "id": 0
+      },
+      {
+        "time": 1.859,
         "id": 0
       }
     ],
-    "sourceKey": "4d24161ab6b5a3e2774c966acd84f26d22aaf5a55f230f003df579707afefc58",
+    "sourceKey": "b1f341edfd9f86fd9e9464aa76be6ccef6ef68f1bf5be4358e513b91d9863991",
     "wordTimings": [
       {
         "word": "five",
-        "start": 0.3,
-        "end": 0.96
+        "start": 0.13,
+        "end": 0.7899999999999999
       },
       {
         "word": "apples",
-        "start": 0.96,
-        "end": 1.9
+        "start": 0.7899999999999999,
+        "end": 1.69
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.3,
+      "end": 1.959,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "five apples.",
+    "speed": 0,
+    "sha256": "37d2f57358d89434297a3fe24f084bc1bc04220c245e17b77851cd251a649129",
+    "quality": {
+      "version": 3,
+      "sha256": "37d2f57358d89434297a3fe24f084bc1bc04220c245e17b77851cd251a649129",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Five apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:48.322Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_five_apples": {
     "text": "I want five apples.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.999,
+    "duration": 2.98,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.23,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.59,
+        "time": 0.49,
         "id": 7
       },
       {
-        "time": 0.73,
+        "time": 0.63,
         "id": 3
+      },
+      {
+        "time": 0.89,
+        "id": 19
       },
       {
         "time": 0.99,
@@ -3288,42 +4453,46 @@
       },
       {
         "time": 1.09,
-        "id": 19
-      },
-      {
-        "time": 1.19,
         "id": 18
       },
       {
-        "time": 1.37,
+        "time": 1.27,
         "id": 11
       },
       {
-        "time": 1.71,
+        "time": 1.61,
         "id": 18
       },
       {
-        "time": 1.93,
+        "time": 1.83,
         "id": 1
       },
       {
-        "time": 2.17,
+        "time": 2.07,
         "id": 21
       },
       {
-        "time": 2.29,
+        "time": 2.19,
         "id": 1
       },
       {
-        "time": 2.39,
+        "time": 2.29,
         "id": 14
       },
       {
-        "time": 2.63,
+        "time": 2.53,
         "id": 15
       },
       {
-        "time": 2.89,
+        "time": 2.79,
+        "id": 0
+      },
+      {
+        "time": 2.86,
+        "id": 0
+      },
+      {
+        "time": 2.98,
         "id": 0
       }
     ],
@@ -3331,143 +4500,209 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.23,
-        "end": 0.59
+        "start": 0.13,
+        "end": 0.49
       },
       {
         "word": "want",
-        "start": 0.59,
-        "end": 1.19
+        "start": 0.49,
+        "end": 1.09
       },
       {
         "word": "five",
-        "start": 1.19,
-        "end": 1.93
+        "start": 1.09,
+        "end": 1.83
       },
       {
         "word": "apples",
-        "start": 1.93,
-        "end": 2.89
+        "start": 1.83,
+        "end": 2.79
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 2.96,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want five apples.",
+    "speed": 0,
+    "sha256": "11c0bbcbe4151228584ec61d1431019ad8028b73f5b06f4a5f7f7579827fb8e2",
+    "quality": {
+      "version": 3,
+      "sha256": "11c0bbcbe4151228584ec61d1431019ad8028b73f5b06f4a5f7f7579827fb8e2",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want five apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:51.396Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_two_apples": {
     "text": "two apples",
     "voice": 403008,
     "bundled": true,
-    "duration": 1.919,
+    "duration": 2.04,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.36,
+        "time": 0.13,
         "id": 19
       },
       {
-        "time": 0.48,
+        "time": 0.31,
         "id": 7
       },
       {
-        "time": 0.66,
+        "time": 0.75,
+        "id": 0
+      },
+      {
+        "time": 0.78,
         "id": 1
       },
       {
-        "time": 0.86,
+        "time": 1.05,
         "id": 21
       },
       {
-        "time": 0.96,
+        "time": 1.17,
         "id": 1
       },
       {
-        "time": 1.04,
+        "time": 1.27,
         "id": 14
       },
       {
-        "time": 1.2,
+        "time": 1.59,
         "id": 15
       },
       {
-        "time": 1.56,
+        "time": 1.85,
+        "id": 0
+      },
+      {
+        "time": 1.92,
+        "id": 0
+      },
+      {
+        "time": 2.04,
         "id": 0
       }
     ],
-    "sourceKey": "bc89b07ade462029eec4bb0f10c31f097920222189c08cd59ea05c3809eb3eb1",
+    "sourceKey": "5f94c708fbebff647be8010bf708c9400749aa4a62b802404bf72cd1771172c9",
     "wordTimings": [
       {
         "word": "two",
-        "start": 0.36,
-        "end": 0.66
+        "start": 0.13,
+        "end": 0.7499999999999999
       },
       {
         "word": "apples",
-        "start": 0.66,
-        "end": 1.56
+        "start": 0.7799999999999999,
+        "end": 1.8499999999999999
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.28,
+      "end": 2.1199999999999997,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "two apples.",
+    "speed": 0,
+    "sha256": "68edcb60588dc7fcb1f09c0665e84bef7c9c890664edf0c711ba6e3805465cf8",
+    "quality": {
+      "version": 3,
+      "sha256": "68edcb60588dc7fcb1f09c0665e84bef7c9c890664edf0c711ba6e3805465cf8",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Two apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:50.849Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_two_apples": {
     "text": "I want two apples.",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.319,
+    "duration": 2.03,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.39,
+        "time": 0.13,
         "id": 11
       },
       {
-        "time": 0.57,
+        "time": 0.31,
         "id": 7
       },
       {
-        "time": 0.67,
+        "time": 0.41,
         "id": 2
       },
       {
+        "time": 0.55,
+        "id": 19
+      },
+      {
+        "time": 0.67,
+        "id": 19
+      },
+      {
+        "time": 0.71,
+        "id": 19
+      },
+      {
         "time": 0.81,
-        "id": 19
-      },
-      {
-        "time": 0.93,
-        "id": 19
-      },
-      {
-        "time": 0.97,
-        "id": 19
-      },
-      {
-        "time": 1.07,
         "id": 7
       },
       {
-        "time": 1.21,
+        "time": 0.95,
         "id": 1
       },
       {
-        "time": 1.43,
+        "time": 1.17,
         "id": 21
       },
       {
-        "time": 1.53,
+        "time": 1.27,
         "id": 1
       },
       {
-        "time": 1.61,
+        "time": 1.35,
         "id": 14
       },
       {
-        "time": 1.83,
+        "time": 1.57,
         "id": 15
       },
       {
-        "time": 2.1,
+        "time": 1.84,
+        "id": 0
+      },
+      {
+        "time": 1.91,
+        "id": 0
+      },
+      {
+        "time": 2.03,
         "id": 0
       }
     ],
@@ -3475,25 +4710,48 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.39,
-        "end": 0.57
+        "start": 0.13,
+        "end": 0.30999999999999994
       },
       {
         "word": "want",
-        "start": 0.57,
-        "end": 0.97
+        "start": 0.30999999999999994,
+        "end": 0.7099999999999999
       },
       {
         "word": "two",
-        "start": 0.97,
-        "end": 1.21
+        "start": 0.7099999999999999,
+        "end": 0.9499999999999998
       },
       {
         "word": "apples",
-        "start": 1.21,
-        "end": 2.1
+        "start": 0.9499999999999998,
+        "end": 1.84
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.34,
+      "end": 2.17,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want two apples.",
+    "speed": 0,
+    "sha256": "5f7ff6aab529f2b57dac0ad9450af91c691f3e25ec13b031f01e61cf3bbaec6d",
+    "quality": {
+      "version": 3,
+      "sha256": "5f7ff6aab529f2b57dac0ad9450af91c691f3e25ec13b031f01e61cf3bbaec6d",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want two apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:53.351Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "adult-describe-review_intro": {
     "text": "这节课复习颜色、大小和数量。先跟读，再看图自己说。",
@@ -3709,620 +4967,220 @@
     "text": "a small red apple",
     "voice": 403008,
     "bundled": true,
-    "duration": 2.399,
+    "duration": 2.02,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.44,
+        "time": 0.13,
         "id": 1
       },
       {
-        "time": 0.6,
+        "time": 0.33,
         "id": 15
       },
       {
-        "time": 0.72,
+        "time": 0.43,
         "id": 21
       },
       {
-        "time": 0.84,
+        "time": 0.53,
         "id": 3
       },
       {
-        "time": 1.04,
+        "time": 0.71,
         "id": 14
       },
       {
-        "time": 1.16,
+        "time": 0.87,
         "id": 13
       },
       {
-        "time": 1.24,
+        "time": 0.95,
         "id": 4
       },
       {
-        "time": 1.36,
+        "time": 1.07,
         "id": 19
       },
       {
-        "time": 1.48,
+        "time": 1.19,
         "id": 1
       },
       {
-        "time": 1.72,
+        "time": 1.39,
         "id": 21
       },
       {
-        "time": 1.82,
+        "time": 1.51,
         "id": 1
       },
       {
-        "time": 1.92,
+        "time": 1.59,
         "id": 14
       },
       {
-        "time": 2.18,
+        "time": 1.83,
+        "id": 0
+      },
+      {
+        "time": 1.9,
+        "id": 0
+      },
+      {
+        "time": 2.02,
         "id": 0
       }
     ],
-    "sourceKey": "e71a0432bf6977a41e2f5a59bb1800b419b0a397251ac855b12299ee72c8fe80",
+    "sourceKey": "ac8b078c244d6c4c5c0061aa2d650e10745acbf6190855a7172d275a2c767ed3",
     "wordTimings": [
       {
         "word": "a",
-        "start": 0.44,
-        "end": 0.6
+        "start": 0.13,
+        "end": 0.33
       },
       {
         "word": "small",
-        "start": 0.6,
-        "end": 1.16
+        "start": 0.33,
+        "end": 0.87
       },
       {
         "word": "red",
-        "start": 1.16,
-        "end": 1.48
+        "start": 0.87,
+        "end": 1.1900000000000002
       },
       {
         "word": "apple",
-        "start": 1.48,
-        "end": 2.18
+        "start": 1.1900000000000002,
+        "end": 1.83
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 2,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "a small red apple.",
+    "speed": 0,
+    "sha256": "247ab6aeb8af39bf067e93bded7928415a4853e28120b10a0487880996e3c554",
+    "quality": {
+      "version": 3,
+      "sha256": "247ab6aeb8af39bf067e93bded7928415a4853e28120b10a0487880996e3c554",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "A small red apple.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:27.702Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "u2_want_review_small_red": {
     "text": "I want a small red apple, please.",
     "voice": 403008,
     "bundled": true,
-    "duration": 3.758,
+    "duration": 3.76,
     "cues": [
       {
         "time": 0,
         "id": 0
       },
       {
-        "time": 0.23,
+        "time": 0.13,
         "id": 11
+      },
+      {
+        "time": 0.39,
+        "id": 7
       },
       {
         "time": 0.49,
-        "id": 7
+        "id": 3
       },
       {
         "time": 0.59,
-        "id": 3
-      },
-      {
-        "time": 0.69,
         "id": 19
       },
       {
-        "time": 0.81,
+        "time": 0.71,
         "id": 19
       },
       {
-        "time": 0.86,
+        "time": 0.76,
         "id": 11
       },
       {
-        "time": 0.94,
+        "time": 0.84,
         "id": 2
-      },
-      {
-        "time": 1.05,
-        "id": 15
-      },
-      {
-        "time": 1.19,
-        "id": 21
-      },
-      {
-        "time": 1.29,
-        "id": 3
-      },
-      {
-        "time": 1.47,
-        "id": 14
-      },
-      {
-        "time": 1.61,
-        "id": 13
-      },
-      {
-        "time": 1.69,
-        "id": 4
-      },
-      {
-        "time": 1.81,
-        "id": 19
-      },
-      {
-        "time": 1.91,
-        "id": 1
-      },
-      {
-        "time": 2.11,
-        "id": 21
-      },
-      {
-        "time": 2.19,
-        "id": 1
-      },
-      {
-        "time": 2.27,
-        "id": 14
-      },
-      {
-        "time": 2.49,
-        "id": 0
-      },
-      {
-        "time": 2.79,
-        "id": 21
-      },
-      {
-        "time": 3.01,
-        "id": 14
-      },
-      {
-        "time": 3.09,
-        "id": 6
-      },
-      {
-        "time": 3.41,
-        "id": 15
-      },
-      {
-        "time": 3.67,
-        "id": 0
-      }
-    ],
-    "sourceKey": "75666f84d124f2d44a68fcd65c8b9ec496aaef66b2ecc084a0ae40ddb6d9ef02",
-    "wordTimings": [
-      {
-        "word": "i",
-        "start": 0.23,
-        "end": 0.49
-      },
-      {
-        "word": "want",
-        "start": 0.49,
-        "end": 0.86
-      },
-      {
-        "word": "a",
-        "start": 0.86,
-        "end": 1.05
-      },
-      {
-        "word": "small",
-        "start": 1.05,
-        "end": 1.61
-      },
-      {
-        "word": "red",
-        "start": 1.61,
-        "end": 1.91
-      },
-      {
-        "word": "apple",
-        "start": 1.91,
-        "end": 2.49
-      },
-      {
-        "word": "please",
-        "start": 2.79,
-        "end": 3.67
-      }
-    ]
-  },
-  "u2_review_two_green": {
-    "text": "two green apples",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 2.199,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.34,
-        "id": 19
-      },
-      {
-        "time": 0.5,
-        "id": 7
-      },
-      {
-        "time": 0.68,
-        "id": 20
-      },
-      {
-        "time": 0.78,
-        "id": 13
-      },
-      {
-        "time": 0.88,
-        "id": 6
-      },
-      {
-        "time": 0.98,
-        "id": 19
-      },
-      {
-        "time": 1.06,
-        "id": 1
-      },
-      {
-        "time": 1.32,
-        "id": 21
-      },
-      {
-        "time": 1.44,
-        "id": 1
-      },
-      {
-        "time": 1.52,
-        "id": 14
-      },
-      {
-        "time": 1.8,
-        "id": 15
-      },
-      {
-        "time": 2.14,
-        "id": 0
-      }
-    ],
-    "sourceKey": "0bf34a206526c2683dbbfe7240e0d2ac48303429b809ba1cec0fd07757d9ac30",
-    "wordTimings": [
-      {
-        "word": "two",
-        "start": 0.34,
-        "end": 0.68
-      },
-      {
-        "word": "green",
-        "start": 0.68,
-        "end": 1.06
-      },
-      {
-        "word": "apples",
-        "start": 1.06,
-        "end": 2.14
-      }
-    ]
-  },
-  "u2_want_review_two_green": {
-    "text": "I want two green apples, please.",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 4.318,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.32,
-        "id": 11
-      },
-      {
-        "time": 0.6,
-        "id": 7
-      },
-      {
-        "time": 0.7,
-        "id": 3
-      },
-      {
-        "time": 0.86,
-        "id": 19
-      },
-      {
-        "time": 0.97,
-        "id": 19
-      },
-      {
-        "time": 1.15,
-        "id": 0
-      },
-      {
-        "time": 1.18,
-        "id": 19
-      },
-      {
-        "time": 1.36,
-        "id": 7
-      },
-      {
-        "time": 1.58,
-        "id": 20
-      },
-      {
-        "time": 1.66,
-        "id": 13
-      },
-      {
-        "time": 1.78,
-        "id": 6
-      },
-      {
-        "time": 1.88,
-        "id": 19
-      },
-      {
-        "time": 2,
-        "id": 1
-      },
-      {
-        "time": 2.2,
-        "id": 21
-      },
-      {
-        "time": 2.28,
-        "id": 1
-      },
-      {
-        "time": 2.38,
-        "id": 14
-      },
-      {
-        "time": 2.56,
-        "id": 15
-      },
-      {
-        "time": 2.92,
-        "id": 0
-      },
-      {
-        "time": 3.18,
-        "id": 21
-      },
-      {
-        "time": 3.4,
-        "id": 14
-      },
-      {
-        "time": 3.5,
-        "id": 6
-      },
-      {
-        "time": 3.96,
-        "id": 15
-      },
-      {
-        "time": 4.24,
-        "id": 0
-      }
-    ],
-    "sourceKey": "9dd2581ee5f7079aca80aa475a0b7d12dabf596d5cdf91f1d329614ae040f7df",
-    "wordTimings": [
-      {
-        "word": "i",
-        "start": 0.32,
-        "end": 0.6
-      },
-      {
-        "word": "want",
-        "start": 0.6,
-        "end": 1.15
-      },
-      {
-        "word": "two",
-        "start": 1.18,
-        "end": 1.58
-      },
-      {
-        "word": "green",
-        "start": 1.58,
-        "end": 2
-      },
-      {
-        "word": "apples",
-        "start": 2,
-        "end": 2.92
-      },
-      {
-        "word": "please",
-        "start": 3.18,
-        "end": 4.24
-      }
-    ]
-  },
-  "u2_review_three_big": {
-    "text": "three big bananas",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 2.279,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.32,
-        "id": 17
-      },
-      {
-        "time": 0.52,
-        "id": 13
-      },
-      {
-        "time": 0.68,
-        "id": 6
-      },
-      {
-        "time": 0.86,
-        "id": 21
-      },
-      {
-        "time": 0.96,
-        "id": 6
-      },
-      {
-        "time": 1.14,
-        "id": 20
-      },
-      {
-        "time": 1.26,
-        "id": 21
-      },
-      {
-        "time": 1.34,
-        "id": 1
-      },
-      {
-        "time": 1.4,
-        "id": 19
-      },
-      {
-        "time": 1.48,
-        "id": 1
-      },
-      {
-        "time": 1.62,
-        "id": 19
-      },
-      {
-        "time": 1.76,
-        "id": 1
-      },
-      {
-        "time": 1.98,
-        "id": 15
-      },
-      {
-        "time": 2.279,
-        "id": 0
-      }
-    ],
-    "sourceKey": "37e8bdbe7e3cab0ef91775585b759ee16dcb3ee519a9f6ed0e5679c3fa965010",
-    "wordTimings": [
-      {
-        "word": "three",
-        "start": 0.32,
-        "end": 0.86
-      },
-      {
-        "word": "big",
-        "start": 0.86,
-        "end": 1.26
-      },
-      {
-        "word": "bananas",
-        "start": 1.26,
-        "end": 2.3
-      }
-    ]
-  },
-  "u2_want_review_three_big": {
-    "text": "I want three big bananas, please.",
-    "voice": 403008,
-    "bundled": true,
-    "duration": 4.958,
-    "cues": [
-      {
-        "time": 0,
-        "id": 0
-      },
-      {
-        "time": 0.35,
-        "id": 11
-      },
-      {
-        "time": 0.61,
-        "id": 7
-      },
-      {
-        "time": 0.73,
-        "id": 2
-      },
-      {
-        "time": 0.85,
-        "id": 19
       },
       {
         "time": 0.95,
-        "id": 19
+        "id": 15
       },
       {
-        "time": 1.03,
-        "id": 17
+        "time": 1.09,
+        "id": 21
       },
       {
-        "time": 1.21,
+        "time": 1.19,
+        "id": 3
+      },
+      {
+        "time": 1.37,
+        "id": 14
+      },
+      {
+        "time": 1.51,
         "id": 13
       },
       {
-        "time": 1.45,
-        "id": 6
+        "time": 1.59,
+        "id": 4
       },
       {
-        "time": 1.86,
+        "time": 1.71,
+        "id": 19
+      },
+      {
+        "time": 1.81,
+        "id": 1
+      },
+      {
+        "time": 2.01,
+        "id": 21
+      },
+      {
+        "time": 2.09,
+        "id": 1
+      },
+      {
+        "time": 2.17,
+        "id": 14
+      },
+      {
+        "time": 2.39,
         "id": 0
       },
       {
-        "time": 1.89,
+        "time": 2.69,
         "id": 21
       },
       {
-        "time": 1.97,
+        "time": 2.91,
+        "id": 14
+      },
+      {
+        "time": 2.99,
         "id": 6
       },
       {
-        "time": 2.22,
-        "id": 20
-      },
-      {
-        "time": 2.37,
-        "id": 21
-      },
-      {
-        "time": 2.43,
-        "id": 1
-      },
-      {
-        "time": 2.53,
-        "id": 19
-      },
-      {
-        "time": 2.65,
-        "id": 1
-      },
-      {
-        "time": 2.87,
-        "id": 19
-      },
-      {
-        "time": 3.01,
-        "id": 1
-      },
-      {
-        "time": 3.29,
+        "time": 3.31,
         "id": 15
       },
       {
@@ -4330,23 +5188,582 @@
         "id": 0
       },
       {
-        "time": 3.97,
-        "id": 21
+        "time": 3.64,
+        "id": 0
       },
       {
-        "time": 4.23,
-        "id": 14
+        "time": 3.76,
+        "id": 0
+      }
+    ],
+    "sourceKey": "75666f84d124f2d44a68fcd65c8b9ec496aaef66b2ecc084a0ae40ddb6d9ef02",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.13,
+        "end": 0.39
       },
       {
-        "time": 4.31,
+        "word": "want",
+        "start": 0.39,
+        "end": 0.7599999999999999
+      },
+      {
+        "word": "a",
+        "start": 0.7599999999999999,
+        "end": 0.9500000000000001
+      },
+      {
+        "word": "small",
+        "start": 0.9500000000000001,
+        "end": 1.5100000000000002
+      },
+      {
+        "word": "red",
+        "start": 1.5100000000000002,
+        "end": 1.81
+      },
+      {
+        "word": "apple",
+        "start": 1.81,
+        "end": 2.39
+      },
+      {
+        "word": "please",
+        "start": 2.69,
+        "end": 3.57
+      }
+    ],
+    "trim": {
+      "start": 0.18,
+      "end": 3.7399999999999998,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want a small red apple, please.",
+    "speed": 0,
+    "sha256": "d0f9bddd544f3fd705c8c9f0984c7ac0f719637ece72014a84aa80cba0dd3a8c",
+    "quality": {
+      "version": 3,
+      "sha256": "d0f9bddd544f3fd705c8c9f0984c7ac0f719637ece72014a84aa80cba0dd3a8c",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want a small red apple, please.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:55.586Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_review_two_green": {
+    "text": "two green apples",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.989,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 19
+      },
+      {
+        "time": 0.31,
+        "id": 7
+      },
+      {
+        "time": 0.53,
+        "id": 20
+      },
+      {
+        "time": 0.63,
+        "id": 13
+      },
+      {
+        "time": 0.73,
         "id": 6
       },
       {
-        "time": 4.57,
+        "time": 0.85,
+        "id": 19
+      },
+      {
+        "time": 0.93,
+        "id": 1
+      },
+      {
+        "time": 1.15,
+        "id": 21
+      },
+      {
+        "time": 1.25,
+        "id": 1
+      },
+      {
+        "time": 1.35,
+        "id": 14
+      },
+      {
+        "time": 1.53,
         "id": 15
       },
       {
-        "time": 4.87,
+        "time": 1.869,
+        "id": 0
+      },
+      {
+        "time": 1.989,
+        "id": 0
+      }
+    ],
+    "sourceKey": "4423fa790b7bce6d23e8d57c1af481c0a0d92699138e137c51ff43ff2e3ad24a",
+    "wordTimings": [
+      {
+        "word": "two",
+        "start": 0.13,
+        "end": 0.53
+      },
+      {
+        "word": "green",
+        "start": 0.53,
+        "end": 0.9299999999999998
+      },
+      {
+        "word": "apples",
+        "start": 0.9299999999999998,
+        "end": 1.87
+      }
+    ],
+    "trim": {
+      "start": 0.33,
+      "end": 2.119,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "two green apples.",
+    "speed": 0,
+    "sha256": "de6929343e49eb370b2698242d3a7143f9846aca32088b018fc5eba38238c727",
+    "quality": {
+      "version": 3,
+      "sha256": "de6929343e49eb370b2698242d3a7143f9846aca32088b018fc5eba38238c727",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Two green apples.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:55.637Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_want_review_two_green": {
+    "text": "I want two green apples, please.",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 4.2400625,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 11
+      },
+      {
+        "time": 0.41,
+        "id": 7
+      },
+      {
+        "time": 0.51,
+        "id": 3
+      },
+      {
+        "time": 0.67,
+        "id": 19
+      },
+      {
+        "time": 0.78,
+        "id": 19
+      },
+      {
+        "time": 0.96,
+        "id": 0
+      },
+      {
+        "time": 0.99,
+        "id": 19
+      },
+      {
+        "time": 1.17,
+        "id": 7
+      },
+      {
+        "time": 1.39,
+        "id": 20
+      },
+      {
+        "time": 1.47,
+        "id": 13
+      },
+      {
+        "time": 1.59,
+        "id": 6
+      },
+      {
+        "time": 1.69,
+        "id": 19
+      },
+      {
+        "time": 1.81,
+        "id": 1
+      },
+      {
+        "time": 2.01,
+        "id": 21
+      },
+      {
+        "time": 2.09,
+        "id": 1
+      },
+      {
+        "time": 2.19,
+        "id": 14
+      },
+      {
+        "time": 2.37,
+        "id": 15
+      },
+      {
+        "time": 2.73,
+        "id": 0
+      },
+      {
+        "time": 2.99,
+        "id": 21
+      },
+      {
+        "time": 3.21,
+        "id": 14
+      },
+      {
+        "time": 3.31,
+        "id": 6
+      },
+      {
+        "time": 3.77,
+        "id": 15
+      },
+      {
+        "time": 4.05,
+        "id": 0
+      },
+      {
+        "time": 4.1200625,
+        "id": 0
+      },
+      {
+        "time": 4.2400625,
+        "id": 0
+      }
+    ],
+    "sourceKey": "9dd2581ee5f7079aca80aa475a0b7d12dabf596d5cdf91f1d329614ae040f7df",
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.13,
+        "end": 0.41
+      },
+      {
+        "word": "want",
+        "start": 0.41,
+        "end": 0.9599999999999999
+      },
+      {
+        "word": "two",
+        "start": 0.9899999999999999,
+        "end": 1.3900000000000001
+      },
+      {
+        "word": "green",
+        "start": 1.3900000000000001,
+        "end": 1.81
+      },
+      {
+        "word": "apples",
+        "start": 1.81,
+        "end": 2.73
+      },
+      {
+        "word": "please",
+        "start": 2.99,
+        "end": 4.05
+      }
+    ],
+    "trim": {
+      "start": 0.27,
+      "end": 4.3100000000000005,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want two green apples, please.",
+    "speed": 0,
+    "sha256": "9a4eb0340cd2af865a10ef6ed5af4ea27ccaaddf524f6e2b7cc08150aade55e8",
+    "quality": {
+      "version": 3,
+      "sha256": "9a4eb0340cd2af865a10ef6ed5af4ea27ccaaddf524f6e2b7cc08150aade55e8",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want two green apples, please.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:06:00.330Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_review_three_big": {
+    "text": "three big bananas",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 1.829,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 17
+      },
+      {
+        "time": 0.21,
+        "id": 13
+      },
+      {
+        "time": 0.37,
+        "id": 6
+      },
+      {
+        "time": 0.49,
+        "id": 21
+      },
+      {
+        "time": 0.57,
+        "id": 6
+      },
+      {
+        "time": 0.67,
+        "id": 20
+      },
+      {
+        "time": 0.75,
+        "id": 21
+      },
+      {
+        "time": 0.81,
+        "id": 1
+      },
+      {
+        "time": 0.87,
+        "id": 19
+      },
+      {
+        "time": 0.95,
+        "id": 1
+      },
+      {
+        "time": 1.07,
+        "id": 19
+      },
+      {
+        "time": 1.17,
+        "id": 1
+      },
+      {
+        "time": 1.37,
+        "id": 15
+      },
+      {
+        "time": 1.65,
+        "id": 0
+      },
+      {
+        "time": 1.709,
+        "id": 0
+      },
+      {
+        "time": 1.829,
+        "id": 0
+      }
+    ],
+    "sourceKey": "acb1cd1de1770b906e34e924d9d5a62c0bf170c3f4e5e5c4c29089de3f32ca63",
+    "wordTimings": [
+      {
+        "word": "three",
+        "start": 0.13,
+        "end": 0.49
+      },
+      {
+        "word": "big",
+        "start": 0.49,
+        "end": 0.7499999999999999
+      },
+      {
+        "word": "bananas",
+        "start": 0.7499999999999999,
+        "end": 1.65
+      }
+    ],
+    "trim": {
+      "start": 0.33,
+      "end": 1.959,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "three big bananas.",
+    "speed": 0,
+    "sha256": "628a417b71f180f5bd09f5981eb271adaa3cf974c073d330b7947221b47b29ea",
+    "quality": {
+      "version": 3,
+      "sha256": "628a417b71f180f5bd09f5981eb271adaa3cf974c073d330b7947221b47b29ea",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Three big bananas.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:05:57.957Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
+  },
+  "u2_want_review_three_big": {
+    "text": "I want three big bananas, please.",
+    "voice": 403008,
+    "bundled": true,
+    "duration": 4.84,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 11
+      },
+      {
+        "time": 0.39,
+        "id": 7
+      },
+      {
+        "time": 0.51,
+        "id": 2
+      },
+      {
+        "time": 0.63,
+        "id": 19
+      },
+      {
+        "time": 0.73,
+        "id": 19
+      },
+      {
+        "time": 0.81,
+        "id": 17
+      },
+      {
+        "time": 0.99,
+        "id": 13
+      },
+      {
+        "time": 1.23,
+        "id": 6
+      },
+      {
+        "time": 1.64,
+        "id": 0
+      },
+      {
+        "time": 1.67,
+        "id": 21
+      },
+      {
+        "time": 1.75,
+        "id": 6
+      },
+      {
+        "time": 2,
+        "id": 20
+      },
+      {
+        "time": 2.15,
+        "id": 21
+      },
+      {
+        "time": 2.21,
+        "id": 1
+      },
+      {
+        "time": 2.31,
+        "id": 19
+      },
+      {
+        "time": 2.43,
+        "id": 1
+      },
+      {
+        "time": 2.65,
+        "id": 19
+      },
+      {
+        "time": 2.79,
+        "id": 1
+      },
+      {
+        "time": 3.07,
+        "id": 15
+      },
+      {
+        "time": 3.35,
+        "id": 0
+      },
+      {
+        "time": 3.75,
+        "id": 21
+      },
+      {
+        "time": 4.01,
+        "id": 14
+      },
+      {
+        "time": 4.09,
+        "id": 6
+      },
+      {
+        "time": 4.35,
+        "id": 15
+      },
+      {
+        "time": 4.65,
+        "id": 0
+      },
+      {
+        "time": 4.72,
+        "id": 0
+      },
+      {
+        "time": 4.84,
         "id": 0
       }
     ],
@@ -4354,34 +5771,57 @@
     "wordTimings": [
       {
         "word": "i",
-        "start": 0.35,
-        "end": 0.61
+        "start": 0.13,
+        "end": 0.39
       },
       {
         "word": "want",
-        "start": 0.61,
-        "end": 1.03
+        "start": 0.39,
+        "end": 0.8099999999999999
       },
       {
         "word": "three",
-        "start": 1.03,
-        "end": 1.86
+        "start": 0.8099999999999999,
+        "end": 1.6400000000000001
       },
       {
         "word": "big",
-        "start": 1.89,
-        "end": 2.37
+        "start": 1.67,
+        "end": 2.1500000000000004
       },
       {
         "word": "bananas",
-        "start": 2.37,
-        "end": 3.57
+        "start": 2.1500000000000004,
+        "end": 3.35
       },
       {
         "word": "please",
-        "start": 3.97,
-        "end": 4.87
+        "start": 3.7500000000000004,
+        "end": 4.65
       }
-    ]
+    ],
+    "trim": {
+      "start": 0.3,
+      "end": 4.94,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "sourceText": "I want three big bananas, please.",
+    "speed": 0,
+    "sha256": "20a49ec6fed19a54acef2e4e40f8f50b21e18026321cd02e5bb7864d00535231",
+    "quality": {
+      "version": 3,
+      "sha256": "20a49ec6fed19a54acef2e4e40f8f50b21e18026321cd02e5bb7864d00535231",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "I want three big bananas, please.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:06:03.388Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   }
 }

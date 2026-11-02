@@ -1,0 +1,482 @@
+{
+  "id": "daily-03-v1",
+  "title": "03 · 整点与半点",
+  "category": "daily",
+  "goal": "询问时间并说整点和半点",
+  "prerequisites": [
+    "daily-02-v1"
+  ],
+  "scenario": "你先询问时间，再分别练习钟表显示六点和六点半时的回答。",
+  "stages": [
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "03 · 整点与半点",
+      "text": "询问时间并说整点和半点",
+      "clip": "c96_b13c4eaf56d2dd09c0db"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "time",
+      "text": "时间",
+      "clip": "c96_f5d30a98c69769b19965"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "time",
+      "text": "时间",
+      "clip": "c96_70c33e8c804bf4e6e887",
+      "speechText": "time"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "time",
+      "text": "时间",
+      "practiceClip": "c96_70c33e8c804bf4e6e887",
+      "speechText": "time",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "clock",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "clock",
+      "text": "时钟",
+      "clip": "c96_5831dfa9d44fe1e4f492"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "clock",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "clock",
+      "text": "时钟",
+      "clip": "c96_bc8d267e6e56d53f9cb3",
+      "speechText": "clock"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "clock",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "clock",
+      "text": "时钟",
+      "practiceClip": "c96_bc8d267e6e56d53f9cb3",
+      "speechText": "clock",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "half",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "half",
+      "text": "一半",
+      "clip": "c96_4e1db9001735805c4911"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "half",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "half",
+      "text": "一半",
+      "clip": "c96_f4a9d8e8b0775de481ca",
+      "speechText": "half"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "half",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "half",
+      "text": "一半",
+      "practiceClip": "c96_f4a9d8e8b0775de481ca",
+      "speechText": "half",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "six o'clock",
+      "text": "六点",
+      "clip": "c96_4aadaf1cb1688a6b2eb6",
+      "speechText": "six o'clock"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "six o'clock",
+      "text": "六点",
+      "practiceClip": "c96_4aadaf1cb1688a6b2eb6",
+      "speechText": "six o'clock",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "half past six",
+      "text": "六点半",
+      "clip": "c96_8c22deb304c99766ea61",
+      "speechText": "half past six"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "half past six",
+      "text": "六点半",
+      "practiceClip": "c96_8c22deb304c99766ea61",
+      "speechText": "half past six",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "What time is it?",
+      "text": "现在几点？",
+      "clip": "c96_c1596631fbf6042a88ae",
+      "speechText": "What time is it?"
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "What time is it?",
+      "text": "现在几点？",
+      "practiceClip": "c96_c1596631fbf6042a88ae",
+      "speechText": "What time is it?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "It is six o'clock.",
+      "text": "现在六点。",
+      "clip": "c96_ababda9d1ec9f6b2854c",
+      "speechText": "It is six o'clock."
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "It is six o'clock.",
+      "text": "现在六点。",
+      "practiceClip": "c96_ababda9d1ec9f6b2854c",
+      "speechText": "It is six o'clock.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "It is half past six.",
+      "text": "现在六点半。",
+      "clip": "c96_df4b677896c606fd0860",
+      "speechText": "It is half past six."
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "It is half past six.",
+      "text": "现在六点半。",
+      "practiceClip": "c96_df4b677896c606fd0860",
+      "speechText": "It is half past six.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_70c33e8c804bf4e6e887",
+      "hide": true
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_70c33e8c804bf4e6e887",
+      "speechText": "time",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "时钟"
+        },
+        {
+          "id": "answer_2",
+          "label": "一半"
+        },
+        {
+          "id": "answer_0",
+          "label": "时间"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_bc8d267e6e56d53f9cb3",
+      "hide": true
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "clock",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_bc8d267e6e56d53f9cb3",
+      "speechText": "clock",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "一半"
+        },
+        {
+          "id": "answer_0",
+          "label": "时间"
+        },
+        {
+          "id": "answer_1",
+          "label": "时钟"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "six o'clock",
+      "text": "不看英文，请表达：六点",
+      "practiceClip": "c96_4aadaf1cb1688a6b2eb6",
+      "speechText": "six o'clock",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "half past six",
+      "text": "不看英文，请表达：六点半",
+      "practiceClip": "c96_8c22deb304c99766ea61",
+      "speechText": "half past six",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "What time is it?",
+      "text": "情境练习：你先询问时间，再分别练习钟表显示六点和六点半时的回答。\n这一句请表达：现在几点？",
+      "practiceClip": "c96_c1596631fbf6042a88ae",
+      "speechText": "What time is it?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "It is six o'clock.",
+      "text": "情境练习：你先询问时间，再分别练习钟表显示六点和六点半时的回答。\n这一句请表达：现在六点。",
+      "practiceClip": "c96_ababda9d1ec9f6b2854c",
+      "speechText": "It is six o'clock.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "It is half past six.",
+      "text": "情境练习：你先询问时间，再分别练习钟表显示六点和六点半时的回答。\n这一句请表达：现在六点半。",
+      "practiceClip": "c96_df4b677896c606fd0860",
+      "speechText": "It is half past six.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "整点与半点",
+      "word": "time",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

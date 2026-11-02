@@ -1,0 +1,482 @@
+{
+  "id": "home-02-v1",
+  "title": "02 · 介绍家庭成员",
+  "category": "home",
+  "goal": "介绍兄弟姐妹并说明简单关系",
+  "prerequisites": [
+    "home-01-v1"
+  ],
+  "scenario": "你扮演有一个兄弟和一个姐妹的人，向朋友说明家人关系，再介绍父母。",
+  "stages": [
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "02 · 介绍家庭成员",
+      "text": "介绍兄弟姐妹并说明简单关系",
+      "clip": "c96_fa4b54c973983cead4b0"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "brother",
+      "text": "兄弟",
+      "clip": "c96_03291a39da3370777ea8"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "brother",
+      "text": "兄弟",
+      "clip": "c96_4d4cc0f74d9274576231",
+      "speechText": "brother"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "brother",
+      "text": "兄弟",
+      "practiceClip": "c96_4d4cc0f74d9274576231",
+      "speechText": "brother",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "sister",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "sister",
+      "text": "姐妹",
+      "clip": "c96_b0bc50fb0102be39498b"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "sister",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "sister",
+      "text": "姐妹",
+      "clip": "c96_471612ba113e3f2f5b13",
+      "speechText": "sister"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "sister",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "sister",
+      "text": "姐妹",
+      "practiceClip": "c96_471612ba113e3f2f5b13",
+      "speechText": "sister",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "parents",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "parents",
+      "text": "父母",
+      "clip": "c96_f6b035c8ecbb13063125"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "parents",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "parents",
+      "text": "父母",
+      "clip": "c96_5e6bbf00a092a03e94ee",
+      "speechText": "parents"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "parents",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "parents",
+      "text": "父母",
+      "practiceClip": "c96_5e6bbf00a092a03e94ee",
+      "speechText": "parents",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "my brother",
+      "text": "我的兄弟",
+      "clip": "c96_36faa853fc42b7a2dc7e",
+      "speechText": "my brother"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "my brother",
+      "text": "我的兄弟",
+      "practiceClip": "c96_36faa853fc42b7a2dc7e",
+      "speechText": "my brother",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "my sister",
+      "text": "我的姐妹",
+      "clip": "c96_5d54a62e80375f1022dd",
+      "speechText": "my sister"
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "my sister",
+      "text": "我的姐妹",
+      "practiceClip": "c96_5d54a62e80375f1022dd",
+      "speechText": "my sister",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I have a brother.",
+      "text": "我有一个兄弟。",
+      "clip": "c96_6a83806725dbc08789d8",
+      "speechText": "I have a brother."
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I have a brother.",
+      "text": "我有一个兄弟。",
+      "practiceClip": "c96_6a83806725dbc08789d8",
+      "speechText": "I have a brother.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I have a sister.",
+      "text": "我有一个姐妹。",
+      "clip": "c96_a076b2de28aea8c58d72",
+      "speechText": "I have a sister."
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I have a sister.",
+      "text": "我有一个姐妹。",
+      "practiceClip": "c96_a076b2de28aea8c58d72",
+      "speechText": "I have a sister.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "These are my parents.",
+      "text": "这两位是我的父母。",
+      "clip": "c96_a23b7b27697b637bfa51",
+      "speechText": "These are my parents."
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "These are my parents.",
+      "text": "这两位是我的父母。",
+      "practiceClip": "c96_a23b7b27697b637bfa51",
+      "speechText": "These are my parents.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_4d4cc0f74d9274576231",
+      "hide": true
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_4d4cc0f74d9274576231",
+      "speechText": "brother",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "姐妹"
+        },
+        {
+          "id": "answer_2",
+          "label": "父母"
+        },
+        {
+          "id": "answer_0",
+          "label": "兄弟"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_471612ba113e3f2f5b13",
+      "hide": true
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "sister",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_471612ba113e3f2f5b13",
+      "speechText": "sister",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "父母"
+        },
+        {
+          "id": "answer_0",
+          "label": "兄弟"
+        },
+        {
+          "id": "answer_1",
+          "label": "姐妹"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "my brother",
+      "text": "不看英文，请表达：我的兄弟",
+      "practiceClip": "c96_36faa853fc42b7a2dc7e",
+      "speechText": "my brother",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "my sister",
+      "text": "不看英文，请表达：我的姐妹",
+      "practiceClip": "c96_5d54a62e80375f1022dd",
+      "speechText": "my sister",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I have a brother.",
+      "text": "情境练习：你扮演有一个兄弟和一个姐妹的人，向朋友说明家人关系，再介绍父母。\n这一句请表达：我有一个兄弟。",
+      "practiceClip": "c96_6a83806725dbc08789d8",
+      "speechText": "I have a brother.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I have a sister.",
+      "text": "情境练习：你扮演有一个兄弟和一个姐妹的人，向朋友说明家人关系，再介绍父母。\n这一句请表达：我有一个姐妹。",
+      "practiceClip": "c96_a076b2de28aea8c58d72",
+      "speechText": "I have a sister.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "These are my parents.",
+      "text": "情境练习：你扮演有一个兄弟和一个姐妹的人，向朋友说明家人关系，再介绍父母。\n这一句请表达：这两位是我的父母。",
+      "practiceClip": "c96_a23b7b27697b637bfa51",
+      "speechText": "These are my parents.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "介绍家庭成员",
+      "word": "brother",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "id": "study-09-v1",
+  "title": "09 · 说明完成情况",
+  "category": "study",
+  "goal": "区分已经准备好、还没完成和已完成",
+  "prerequisites": [
+    "study-08-v1"
+  ],
+  "scenario": "在练习开始、进行中和结束时，分别说明准备好、还没完成、已经完成。",
+  "stages": [
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "09 · 说明完成情况",
+      "text": "区分已经准备好、还没完成和已完成",
+      "clip": "c96_0c3ac11ba3848c480653"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "ready",
+      "text": "准备好的",
+      "clip": "c96_94103a305579ee893c52"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "ready",
+      "text": "准备好的",
+      "clip": "c96_36fef37b696946976691",
+      "speechText": "ready"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "ready",
+      "text": "准备好的",
+      "practiceClip": "c96_36fef37b696946976691",
+      "speechText": "ready",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "done",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "done",
+      "text": "完成了的",
+      "clip": "c96_783d1b1174cea1b5344d"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "done",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "done",
+      "text": "完成了的",
+      "clip": "c96_a82fb6c2f979b389b835",
+      "speechText": "done"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "done",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "done",
+      "text": "完成了的",
+      "practiceClip": "c96_a82fb6c2f979b389b835",
+      "speechText": "done",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "yet",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "yet",
+      "text": "还；用于否定表达",
+      "clip": "c96_d2c3c593021de1785005"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "yet",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "yet",
+      "text": "还；用于否定表达",
+      "clip": "c96_9df795e79d3dbaabaad3",
+      "speechText": "yet"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "yet",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "yet",
+      "text": "还；用于否定表达",
+      "practiceClip": "c96_9df795e79d3dbaabaad3",
+      "speechText": "yet",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "not yet",
+      "text": "还没有",
+      "clip": "c96_07eafe4c556ca2dd6652",
+      "speechText": "not yet"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "not yet",
+      "text": "还没有",
+      "practiceClip": "c96_07eafe4c556ca2dd6652",
+      "speechText": "not yet",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "I am ready",
+      "text": "我准备好了",
+      "clip": "c96_0189a25679d7ce5e7692",
+      "speechText": "I am ready"
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "I am ready",
+      "text": "我准备好了",
+      "practiceClip": "c96_0189a25679d7ce5e7692",
+      "speechText": "I am ready",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I am ready.",
+      "text": "我准备好了。",
+      "clip": "c96_057c742590bdc11f66c9",
+      "speechText": "I am ready."
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I am ready.",
+      "text": "我准备好了。",
+      "practiceClip": "c96_057c742590bdc11f66c9",
+      "speechText": "I am ready.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I am not done yet.",
+      "text": "我还没有完成。",
+      "clip": "c96_f8f007eef2a117b7146d",
+      "speechText": "I am not done yet."
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I am not done yet.",
+      "text": "我还没有完成。",
+      "practiceClip": "c96_f8f007eef2a117b7146d",
+      "speechText": "I am not done yet.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I am done.",
+      "text": "我完成了。",
+      "clip": "c96_67b808c7233f7edaf405",
+      "speechText": "I am done."
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I am done.",
+      "text": "我完成了。",
+      "practiceClip": "c96_67b808c7233f7edaf405",
+      "speechText": "I am done.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_36fef37b696946976691",
+      "hide": true
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_36fef37b696946976691",
+      "speechText": "ready",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "完成了的"
+        },
+        {
+          "id": "answer_2",
+          "label": "还"
+        },
+        {
+          "id": "answer_0",
+          "label": "准备好的"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_a82fb6c2f979b389b835",
+      "hide": true
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "done",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_a82fb6c2f979b389b835",
+      "speechText": "done",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "还"
+        },
+        {
+          "id": "answer_0",
+          "label": "准备好的"
+        },
+        {
+          "id": "answer_1",
+          "label": "完成了的"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "not yet",
+      "text": "不看英文，请表达：还没有",
+      "practiceClip": "c96_07eafe4c556ca2dd6652",
+      "speechText": "not yet",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "I am ready",
+      "text": "不看英文，请表达：我准备好了",
+      "practiceClip": "c96_0189a25679d7ce5e7692",
+      "speechText": "I am ready",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I am ready.",
+      "text": "情境练习：在练习开始、进行中和结束时，分别说明准备好、还没完成、已经完成。\n这一句请表达：我准备好了。",
+      "practiceClip": "c96_057c742590bdc11f66c9",
+      "speechText": "I am ready.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I am not done yet.",
+      "text": "情境练习：在练习开始、进行中和结束时，分别说明准备好、还没完成、已经完成。\n这一句请表达：我还没有完成。",
+      "practiceClip": "c96_f8f007eef2a117b7146d",
+      "speechText": "I am not done yet.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I am done.",
+      "text": "情境练习：在练习开始、进行中和结束时，分别说明准备好、还没完成、已经完成。\n这一句请表达：我完成了。",
+      "practiceClip": "c96_67b808c7233f7edaf405",
+      "speechText": "I am done.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "说明完成情况",
+      "word": "ready",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

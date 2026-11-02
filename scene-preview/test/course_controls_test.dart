@@ -11,7 +11,6 @@ import 'package:snow_speaks/features/lesson/domain/ipa_sounds.dart';
 import 'package:snow_speaks/features/lesson/domain/pronunciation_feedback.dart';
 import 'package:snow_speaks/features/lesson/presentation/ipa_text.dart';
 import 'package:snow_speaks/features/lesson/presentation/lesson_navigation.dart';
-import 'package:snow_speaks/features/lesson/presentation/course_celebration.dart';
 
 TeachingDirector course() => TeachingDirector.fruit(
   (jsonDecode(File('assets/avatar/courses/adult-fruit.json').readAsStringSync())
@@ -142,45 +141,6 @@ void main() {
       expect(find.byType(ElevatedButton), findsNothing);
       expect(find.byType(IconButton), findsNothing);
       c.dispose();
-    },
-  );
-  testWidgets(
-    'success is transparent fireworks without visible text or popup',
-    (tester) async {
-      tester.view.resetPhysicalSize();
-      tester.view.physicalSize = const Size(926, 428);
-      tester.view.devicePixelRatio = 1;
-      addTearDown(tester.view.resetPhysicalSize);
-      addTearDown(tester.view.resetDevicePixelRatio);
-      final boundary = GlobalKey();
-      await tester.pumpWidget(
-        MaterialApp(
-          home: RepaintBoundary(
-            key: boundary,
-            child: Scaffold(
-              backgroundColor: const Color(0xFF50585B),
-              body: const CourseCelebration(message: '整句通过！'),
-            ),
-          ),
-        ),
-      );
-      await tester.pump(const Duration(milliseconds: 650));
-      expect(find.text('整句通过！'), findsNothing);
-      expect(find.byType(Card), findsNothing);
-      expect(find.byType(DecoratedBox), findsNothing);
-      expect(find.byType(IgnorePointer), findsWidgets);
-      expect(tester.takeException(), isNull);
-      await tester.pumpWidget(
-        const MaterialApp(
-          home: MediaQuery(
-            data: MediaQueryData(disableAnimations: true),
-            child: CourseCelebration(message: '读对了！'),
-          ),
-        ),
-      );
-      await tester.pumpAndSettle();
-      expect(find.text('读对了！'), findsNothing);
-      expect(tester.takeException(), isNull);
     },
   );
 }

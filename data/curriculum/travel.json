@@ -1,0 +1,782 @@
+[
+  {
+    "id": "travel-01-v1",
+    "asset": "travel-01",
+    "order": 1,
+    "title": "认识常见地点",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "认识城市地点并说出想去哪里",
+    "vocabulary": [
+      {
+        "text": "bank",
+        "meaning": "银行"
+      },
+      {
+        "text": "station",
+        "meaning": "车站"
+      },
+      {
+        "text": "park",
+        "meaning": "公园"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the station",
+        "meaning": "车站"
+      },
+      {
+        "text": "the park",
+        "meaning": "公园"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "This is a bank.",
+        "meaning": "这是一家银行。"
+      },
+      {
+        "text": "I want to go to the station.",
+        "meaning": "我想去车站。"
+      },
+      {
+        "text": "I want to go to the park.",
+        "meaning": "我想去公园。"
+      }
+    ],
+    "scenario": "你向工作人员说明目的地，请分别练习想去车站和想去公园。",
+    "prerequisites": [
+      "introductions-12-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Places\nin town."
+  },
+  {
+    "id": "travel-02-v1",
+    "asset": "travel-02",
+    "order": 2,
+    "title": "询问地点位置",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "礼貌询问城市地点在哪里",
+    "vocabulary": [
+      {
+        "text": "where",
+        "meaning": "哪里"
+      },
+      {
+        "text": "hotel",
+        "meaning": "酒店"
+      },
+      {
+        "text": "supermarket",
+        "meaning": "超市"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the hotel",
+        "meaning": "酒店"
+      },
+      {
+        "text": "the supermarket",
+        "meaning": "超市"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Where is the hotel?",
+        "meaning": "酒店在哪里？"
+      },
+      {
+        "text": "Where is the supermarket?",
+        "meaning": "超市在哪里？"
+      },
+      {
+        "text": "Excuse me, where is the station?",
+        "meaning": "请问，车站在哪里？"
+      }
+    ],
+    "scenario": "你初到一个地方，需要找车站。先礼貌地引起注意，再询问位置。",
+    "prerequisites": [
+      "travel-01-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Where\nis the bank?"
+  },
+  {
+    "id": "travel-03-v1",
+    "asset": "travel-03",
+    "order": 3,
+    "title": "直走与转弯",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "理解并说出三种基本方向指令",
+    "vocabulary": [
+      {
+        "text": "straight",
+        "meaning": "笔直地"
+      },
+      {
+        "text": "left",
+        "meaning": "左边；向左"
+      },
+      {
+        "text": "right",
+        "meaning": "右边；向右"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "go straight",
+        "meaning": "直走"
+      },
+      {
+        "text": "turn left",
+        "meaning": "左转"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Go straight.",
+        "meaning": "直走。"
+      },
+      {
+        "text": "Turn left.",
+        "meaning": "左转。"
+      },
+      {
+        "text": "Turn right.",
+        "meaning": "右转。"
+      }
+    ],
+    "scenario": "朋友向你问路，你按示范路线依次说直走、左转、右转。",
+    "prerequisites": [
+      "travel-02-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Go\nthis way."
+  },
+  {
+    "id": "travel-04-v1",
+    "asset": "travel-04",
+    "order": 4,
+    "title": "附近与远处",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "描述目的地的远近及相邻位置",
+    "vocabulary": [
+      {
+        "text": "near",
+        "meaning": "在……附近"
+      },
+      {
+        "text": "far",
+        "meaning": "远的"
+      },
+      {
+        "text": "next",
+        "meaning": "下一个；用于 next to 表示紧挨着"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "near here",
+        "meaning": "在这附近"
+      },
+      {
+        "text": "next to the bank",
+        "meaning": "紧挨着银行"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Is it near here?",
+        "meaning": "它在这附近吗？"
+      },
+      {
+        "text": "It is far from here.",
+        "meaning": "它离这里很远。"
+      },
+      {
+        "text": "The hotel is next to the bank.",
+        "meaning": "酒店紧挨着银行。"
+      }
+    ],
+    "scenario": "你先问酒店是否在附近，再练习告诉别人酒店紧挨着银行。",
+    "prerequisites": [
+      "travel-03-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Near\nor far?"
+  },
+  {
+    "id": "travel-05-v1",
+    "asset": "travel-05",
+    "order": 5,
+    "title": "步行与骑车",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明简单的出行方式",
+    "vocabulary": [
+      {
+        "text": "walk",
+        "meaning": "走路"
+      },
+      {
+        "text": "bike",
+        "meaning": "自行车"
+      },
+      {
+        "text": "bus",
+        "meaning": "公交车"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "by bike",
+        "meaning": "骑自行车"
+      },
+      {
+        "text": "by bus",
+        "meaning": "乘公交车"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I walk to the park.",
+        "meaning": "我步行去公园。"
+      },
+      {
+        "text": "I go to work by bike.",
+        "meaning": "我骑自行车上班。"
+      },
+      {
+        "text": "I go home by bus.",
+        "meaning": "我乘公交车回家。"
+      }
+    ],
+    "scenario": "按给定安排说明去公园、上班和回家的不同方式。",
+    "prerequisites": [
+      "travel-04-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Walk\nor ride."
+  },
+  {
+    "id": "travel-06-v1",
+    "asset": "travel-06",
+    "order": 6,
+    "title": "乘坐公交车",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "询问公交车是否到达目的地",
+    "vocabulary": [
+      {
+        "text": "stop",
+        "meaning": "车站；停止"
+      },
+      {
+        "text": "bus",
+        "meaning": "公交车"
+      },
+      {
+        "text": "ticket",
+        "meaning": "票"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the bus stop",
+        "meaning": "公交车站"
+      },
+      {
+        "text": "to the station",
+        "meaning": "到车站"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Where is the bus stop?",
+        "meaning": "公交车站在哪里？"
+      },
+      {
+        "text": "Does this bus go to the station?",
+        "meaning": "这辆公交车到车站吗？"
+      },
+      {
+        "text": "One ticket, please.",
+        "meaning": "请给我一张票。"
+      }
+    ],
+    "scenario": "你要坐公交去车站，请先找公交站，再确认路线并买一张票。",
+    "prerequisites": [
+      "travel-05-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Take\nthe bus."
+  },
+  {
+    "id": "travel-07-v1",
+    "asset": "travel-07",
+    "order": 7,
+    "title": "乘坐地铁",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "询问地铁入口与线路",
+    "vocabulary": [
+      {
+        "text": "subway",
+        "meaning": "地铁"
+      },
+      {
+        "text": "line",
+        "meaning": "线路"
+      },
+      {
+        "text": "entrance",
+        "meaning": "入口"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the subway entrance",
+        "meaning": "地铁入口"
+      },
+      {
+        "text": "the blue line",
+        "meaning": "蓝线"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Where is the subway entrance?",
+        "meaning": "地铁入口在哪里？"
+      },
+      {
+        "text": "Take the blue line.",
+        "meaning": "乘坐蓝线。"
+      },
+      {
+        "text": "Is this the right line?",
+        "meaning": "这是正确的线路吗？"
+      }
+    ],
+    "scenario": "你找到了地铁入口，别人建议坐蓝线，请练习建议并再次确认线路。",
+    "prerequisites": [
+      "travel-06-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "On\nthe subway."
+  },
+  {
+    "id": "travel-08-v1",
+    "asset": "travel-08",
+    "order": 8,
+    "title": "购买车票",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "说明车票数量和目的地",
+    "vocabulary": [
+      {
+        "text": "train",
+        "meaning": "火车"
+      },
+      {
+        "text": "single",
+        "meaning": "单程的；单个的"
+      },
+      {
+        "text": "return",
+        "meaning": "往返的；返回"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "a single ticket",
+        "meaning": "一张单程票"
+      },
+      {
+        "text": "a return ticket",
+        "meaning": "一张往返票"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "A single ticket to London, please.",
+        "meaning": "请给我一张去伦敦的单程票。"
+      },
+      {
+        "text": "A return ticket, please.",
+        "meaning": "请给我一张往返票。"
+      },
+      {
+        "text": "Two tickets, please.",
+        "meaning": "请给我两张票。"
+      }
+    ],
+    "scenario": "你在示范车站买去伦敦的单程票，再分别练习往返票和两张票的说法。",
+    "prerequisites": [
+      "travel-07-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "One ticket,\nplease."
+  },
+  {
+    "id": "travel-09-v1",
+    "asset": "travel-09",
+    "order": 9,
+    "title": "乘坐出租车",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "告诉司机目的地并礼貌结束行程",
+    "vocabulary": [
+      {
+        "text": "taxi",
+        "meaning": "出租车"
+      },
+      {
+        "text": "airport",
+        "meaning": "机场"
+      },
+      {
+        "text": "here",
+        "meaning": "这里"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "to the airport",
+        "meaning": "去机场"
+      },
+      {
+        "text": "stop here",
+        "meaning": "停在这里"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "To the airport, please.",
+        "meaning": "请去机场。"
+      },
+      {
+        "text": "Can you stop here, please?",
+        "meaning": "请在这里停车，好吗？"
+      },
+      {
+        "text": "How much is it?",
+        "meaning": "多少钱？"
+      }
+    ],
+    "scenario": "你乘出租车去机场，请说明目的地；到达后请求停车并询问车费。",
+    "prerequisites": [
+      "travel-08-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Call\na taxi."
+  },
+  {
+    "id": "travel-10-v1",
+    "asset": "travel-10",
+    "order": 10,
+    "title": "酒店办理入住",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "介绍姓名，说明订房和住宿需求",
+    "vocabulary": [
+      {
+        "text": "reservation",
+        "meaning": "酒店预订"
+      },
+      {
+        "text": "room",
+        "meaning": "房间"
+      },
+      {
+        "text": "night",
+        "meaning": "夜晚；住宿的一晚"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "a reservation",
+        "meaning": "一个预订"
+      },
+      {
+        "text": "one night",
+        "meaning": "一晚"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I have a reservation.",
+        "meaning": "我有预订。"
+      },
+      {
+        "text": "My name is Ben.",
+        "meaning": "我的名字是本。"
+      },
+      {
+        "text": "A room for one night, please.",
+        "meaning": "请给我一个住一晚的房间。"
+      }
+    ],
+    "scenario": "你扮演本，在酒店说明已有预订并报姓名；另练习没有预订时要一晚房间的表达。",
+    "prerequisites": [
+      "travel-09-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "At the\nhotel."
+  },
+  {
+    "id": "travel-11-v1",
+    "asset": "travel-11",
+    "order": 11,
+    "title": "在车站寻求帮助",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "在没找到路线时请求工作人员帮助",
+    "vocabulary": [
+      {
+        "text": "platform",
+        "meaning": "站台"
+      },
+      {
+        "text": "lost",
+        "meaning": "迷路的"
+      },
+      {
+        "text": "help",
+        "meaning": "帮助"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "the platform",
+        "meaning": "站台"
+      },
+      {
+        "text": "I am lost",
+        "meaning": "我迷路了"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "I am lost.",
+        "meaning": "我迷路了。"
+      },
+      {
+        "text": "Where is the platform?",
+        "meaning": "站台在哪里？"
+      },
+      {
+        "text": "Can you help me, please?",
+        "meaning": "请问你能帮帮我吗？"
+      }
+    ],
+    "scenario": "你在车站迷路了，请说明情况、询问站台，并请求工作人员帮助。",
+    "prerequisites": [
+      "travel-10-v1"
+    ],
+    "review": false,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Station\nhelp."
+  },
+  {
+    "id": "travel-12-v1",
+    "asset": "travel-12",
+    "order": 12,
+    "title": "城市出行综合练习",
+    "status": "authoring",
+    "legacy": false,
+    "goal": "完成问路、确认路线和礼貌回应",
+    "vocabulary": [
+      {
+        "text": "station",
+        "meaning": "车站"
+      },
+      {
+        "text": "left",
+        "meaning": "左边；向左"
+      },
+      {
+        "text": "ticket",
+        "meaning": "票"
+      }
+    ],
+    "chunks": [
+      {
+        "text": "go straight",
+        "meaning": "直走"
+      },
+      {
+        "text": "one ticket",
+        "meaning": "一张票"
+      }
+    ],
+    "sentences": [
+      {
+        "text": "Excuse me, where is the station?",
+        "meaning": "请问，车站在哪里？"
+      },
+      {
+        "text": "Go straight and turn left.",
+        "meaning": "直走然后左转。"
+      },
+      {
+        "text": "One ticket, please.",
+        "meaning": "请给我一张票。"
+      }
+    ],
+    "scenario": "你先问车站位置，再复述直走左转的路线，最后在车站买一张票。",
+    "prerequisites": [
+      "travel-11-v1"
+    ],
+    "review": true,
+    "editorialStatus": "second-pass-reviewed",
+    "level": "A1",
+    "editorialReview": {
+      "checks": [
+        "English grammar and Chinese meaning",
+        "countability and articles",
+        "scenario roles and target responses",
+        "progression and review scope"
+      ],
+      "reviewedAt": "2026-11-01",
+      "note": "固定姓名、时间、职业均为明确的角色练习，不要求用户提供个人信息。"
+    },
+    "coverTitle": "Explore\nthe city."
+  }
+]

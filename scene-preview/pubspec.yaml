@@ -18,6 +18,7 @@ dependencies:
   crypto: ^3.0.7
   hooks: ^2.0.2
   web: ^1.1.1
+  url_launcher: ^6.3.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -29,8 +30,7 @@ flutter:
     - assets/avatar/models/storm-rig.json
     - assets/avatar/models/storm-clothing-bindings.json
     - assets/avatar/models/storm-clothing-bindings.bin
-    - assets/avatar/audio/
-    - assets/avatar/courses/
+    - assets/bootstrap/
     - assets/avatar/images/
     - assets/fonts/NotoSans-OFL.txt
     - path: flutter_scene_generated/metal_ios/

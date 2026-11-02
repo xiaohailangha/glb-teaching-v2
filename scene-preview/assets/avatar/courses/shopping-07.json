@@ -1,0 +1,482 @@
+{
+  "id": "shopping-07-v1",
+  "title": "07 · 询问价格",
+  "category": "shopping",
+  "goal": "询问单件和多件商品的价格",
+  "prerequisites": [
+    "shopping-06-v1"
+  ],
+  "scenario": "你在商店先问一件商品多少钱，再询问一组苹果的价格；听到价格后练习说五美元。",
+  "stages": [
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "07 · 询问价格",
+      "text": "询问单件和多件商品的价格",
+      "clip": "c96_4da960d42f84969948de"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "price",
+      "text": "价格",
+      "clip": "c96_f085067265de8c58e4b2"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "price",
+      "text": "价格",
+      "clip": "c96_c9c66396932e1604cd22",
+      "speechText": "price"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "price",
+      "text": "价格",
+      "practiceClip": "c96_c9c66396932e1604cd22",
+      "speechText": "price",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "dollar",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "dollar",
+      "text": "美元",
+      "clip": "c96_bba11601ea66484b5af8"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "dollar",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "dollar",
+      "text": "美元",
+      "clip": "c96_472c04e4d5d6a13f764f",
+      "speechText": "dollar"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "dollar",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "dollar",
+      "text": "美元",
+      "practiceClip": "c96_472c04e4d5d6a13f764f",
+      "speechText": "dollar",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "cost",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "cost",
+      "text": "花费；价钱为",
+      "clip": "c96_101ff5123da10226451b"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "cost",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "cost",
+      "text": "花费；价钱为",
+      "clip": "c96_e1ea8f2d01c0efbc6df7",
+      "speechText": "cost"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "cost",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "cost",
+      "text": "花费；价钱为",
+      "practiceClip": "c96_e1ea8f2d01c0efbc6df7",
+      "speechText": "cost",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "how much",
+      "text": "多少钱",
+      "clip": "c96_7e01035e49c05d94ea0a",
+      "speechText": "how much"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "how much",
+      "text": "多少钱",
+      "practiceClip": "c96_7e01035e49c05d94ea0a",
+      "speechText": "how much",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "five dollars",
+      "text": "五美元",
+      "clip": "c96_3152c35ed69efe200895",
+      "speechText": "five dollars"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "five dollars",
+      "text": "五美元",
+      "practiceClip": "c96_3152c35ed69efe200895",
+      "speechText": "five dollars",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "How much is this?",
+      "text": "这个多少钱？",
+      "clip": "c96_df28e9225ad30276ba4e",
+      "speechText": "How much is this?"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "How much is this?",
+      "text": "这个多少钱？",
+      "practiceClip": "c96_df28e9225ad30276ba4e",
+      "speechText": "How much is this?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "It is five dollars.",
+      "text": "它是五美元。",
+      "clip": "c96_bc2b52e9acd17f7abd0b",
+      "speechText": "It is five dollars."
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "It is five dollars.",
+      "text": "它是五美元。",
+      "practiceClip": "c96_bc2b52e9acd17f7abd0b",
+      "speechText": "It is five dollars.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "How much are these apples?",
+      "text": "这些苹果多少钱？",
+      "clip": "c96_1cbd1e9f7a0e7d96848a",
+      "speechText": "How much are these apples?"
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "How much are these apples?",
+      "text": "这些苹果多少钱？",
+      "practiceClip": "c96_1cbd1e9f7a0e7d96848a",
+      "speechText": "How much are these apples?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_c9c66396932e1604cd22",
+      "hide": true
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_c9c66396932e1604cd22",
+      "speechText": "price",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "美元"
+        },
+        {
+          "id": "answer_2",
+          "label": "花费"
+        },
+        {
+          "id": "answer_0",
+          "label": "价格"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_472c04e4d5d6a13f764f",
+      "hide": true
+    },
+    {
+      "chapter": "询问价格",
+      "word": "dollar",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_472c04e4d5d6a13f764f",
+      "speechText": "dollar",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "花费"
+        },
+        {
+          "id": "answer_0",
+          "label": "价格"
+        },
+        {
+          "id": "answer_1",
+          "label": "美元"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "how much",
+      "text": "不看英文，请表达：多少钱",
+      "practiceClip": "c96_7e01035e49c05d94ea0a",
+      "speechText": "how much",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "five dollars",
+      "text": "不看英文，请表达：五美元",
+      "practiceClip": "c96_3152c35ed69efe200895",
+      "speechText": "five dollars",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "How much is this?",
+      "text": "情境练习：你在商店先问一件商品多少钱，再询问一组苹果的价格；听到价格后练习说五美元。\n这一句请表达：这个多少钱？",
+      "practiceClip": "c96_df28e9225ad30276ba4e",
+      "speechText": "How much is this?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "It is five dollars.",
+      "text": "情境练习：你在商店先问一件商品多少钱，再询问一组苹果的价格；听到价格后练习说五美元。\n这一句请表达：它是五美元。",
+      "practiceClip": "c96_bc2b52e9acd17f7abd0b",
+      "speechText": "It is five dollars.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "How much are these apples?",
+      "text": "情境练习：你在商店先问一件商品多少钱，再询问一组苹果的价格；听到价格后练习说五美元。\n这一句请表达：这些苹果多少钱？",
+      "practiceClip": "c96_1cbd1e9f7a0e7d96848a",
+      "speechText": "How much are these apples?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "询问价格",
+      "word": "price",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

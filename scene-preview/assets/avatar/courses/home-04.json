@@ -1,0 +1,482 @@
+{
+  "id": "home-04-v1",
+  "title": "04 · 常见家具",
+  "category": "home",
+  "goal": "认识家具并作简单描述",
+  "prerequisites": [
+    "home-03-v1"
+  ],
+  "scenario": "你向朋友介绍房间，请指出椅子，并描述桌子小、床大。",
+  "stages": [
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "04 · 常见家具",
+      "text": "认识家具并作简单描述",
+      "clip": "c96_bb07e63f29e58b0cd671"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "table",
+      "text": "桌子",
+      "clip": "c96_745e997ed33e430a1aef"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "table",
+      "text": "桌子",
+      "clip": "c96_0c3d14995e952e12c14f",
+      "speechText": "table"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "table",
+      "text": "桌子",
+      "practiceClip": "c96_0c3d14995e952e12c14f",
+      "speechText": "table",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "chair",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "chair",
+      "text": "椅子",
+      "clip": "c96_827bea612dbfb5a0e291"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "chair",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "chair",
+      "text": "椅子",
+      "clip": "c96_e105abda26c783b40330",
+      "speechText": "chair"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "chair",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "chair",
+      "text": "椅子",
+      "practiceClip": "c96_e105abda26c783b40330",
+      "speechText": "chair",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "bed",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "bed",
+      "text": "床",
+      "clip": "c96_c6f3b11ae28feb45933d"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "bed",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "bed",
+      "text": "床",
+      "clip": "c96_cc50f1da04c0836557d2",
+      "speechText": "bed"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "bed",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "bed",
+      "text": "床",
+      "practiceClip": "c96_cc50f1da04c0836557d2",
+      "speechText": "bed",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a small table",
+      "text": "一张小桌子",
+      "clip": "c96_cb5a2f88e5160e316411",
+      "speechText": "a small table"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a small table",
+      "text": "一张小桌子",
+      "practiceClip": "c96_cb5a2f88e5160e316411",
+      "speechText": "a small table",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a big bed",
+      "text": "一张大床",
+      "clip": "c96_75c57c92d63ceda25a8b",
+      "speechText": "a big bed"
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a big bed",
+      "text": "一张大床",
+      "practiceClip": "c96_75c57c92d63ceda25a8b",
+      "speechText": "a big bed",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "This is a chair.",
+      "text": "这是一把椅子。",
+      "clip": "c96_546a2d84e6110552e86b",
+      "speechText": "This is a chair."
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "This is a chair.",
+      "text": "这是一把椅子。",
+      "practiceClip": "c96_546a2d84e6110552e86b",
+      "speechText": "This is a chair.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "The table is small.",
+      "text": "这张桌子很小。",
+      "clip": "c96_14b0324013ad80b8fb76",
+      "speechText": "The table is small."
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "The table is small.",
+      "text": "这张桌子很小。",
+      "practiceClip": "c96_14b0324013ad80b8fb76",
+      "speechText": "The table is small.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "The bed is big.",
+      "text": "这张床很大。",
+      "clip": "c96_1e666ba93fe2aee219a9",
+      "speechText": "The bed is big."
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "The bed is big.",
+      "text": "这张床很大。",
+      "practiceClip": "c96_1e666ba93fe2aee219a9",
+      "speechText": "The bed is big.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_0c3d14995e952e12c14f",
+      "hide": true
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_0c3d14995e952e12c14f",
+      "speechText": "table",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "椅子"
+        },
+        {
+          "id": "answer_2",
+          "label": "床"
+        },
+        {
+          "id": "answer_0",
+          "label": "桌子"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_e105abda26c783b40330",
+      "hide": true
+    },
+    {
+      "chapter": "常见家具",
+      "word": "chair",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_e105abda26c783b40330",
+      "speechText": "chair",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "床"
+        },
+        {
+          "id": "answer_0",
+          "label": "桌子"
+        },
+        {
+          "id": "answer_1",
+          "label": "椅子"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a small table",
+      "text": "不看英文，请表达：一张小桌子",
+      "practiceClip": "c96_cb5a2f88e5160e316411",
+      "speechText": "a small table",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a big bed",
+      "text": "不看英文，请表达：一张大床",
+      "practiceClip": "c96_75c57c92d63ceda25a8b",
+      "speechText": "a big bed",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "This is a chair.",
+      "text": "情境练习：你向朋友介绍房间，请指出椅子，并描述桌子小、床大。\n这一句请表达：这是一把椅子。",
+      "practiceClip": "c96_546a2d84e6110552e86b",
+      "speechText": "This is a chair.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "The table is small.",
+      "text": "情境练习：你向朋友介绍房间，请指出椅子，并描述桌子小、床大。\n这一句请表达：这张桌子很小。",
+      "practiceClip": "c96_14b0324013ad80b8fb76",
+      "speechText": "The table is small.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "The bed is big.",
+      "text": "情境练习：你向朋友介绍房间，请指出椅子，并描述桌子小、床大。\n这一句请表达：这张床很大。",
+      "practiceClip": "c96_1e666ba93fe2aee219a9",
+      "speechText": "The bed is big.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "常见家具",
+      "word": "table",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

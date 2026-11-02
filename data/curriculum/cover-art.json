@@ -1,0 +1,962 @@
+[
+  {
+    "id": "introductions-01-v1",
+    "title": "打招呼与告别",
+    "category": "introductions",
+    "icons": [
+      "Hand",
+      "Sun"
+    ],
+    "file": "cover-introductions-01.svg"
+  },
+  {
+    "id": "introductions-02-v1",
+    "title": "介绍自己的名字",
+    "category": "introductions",
+    "icons": [
+      "Contact",
+      "Pencil"
+    ],
+    "file": "cover-introductions-02.svg"
+  },
+  {
+    "id": "introductions-03-v1",
+    "title": "询问对方名字",
+    "category": "introductions",
+    "icons": [
+      "MessageCircleQuestion",
+      "UserRound"
+    ],
+    "file": "cover-introductions-03.svg"
+  },
+  {
+    "id": "introductions-04-v1",
+    "title": "介绍来自哪里",
+    "category": "introductions",
+    "icons": [
+      "Globe",
+      "MapPin"
+    ],
+    "file": "cover-introductions-04.svg"
+  },
+  {
+    "id": "introductions-05-v1",
+    "title": "说说使用的语言",
+    "category": "introductions",
+    "icons": [
+      "Languages",
+      "MessagesSquare"
+    ],
+    "file": "cover-introductions-05.svg"
+  },
+  {
+    "id": "introductions-06-v1",
+    "title": "礼貌地引起注意",
+    "category": "introductions",
+    "icons": [
+      "BellRing",
+      "Hand"
+    ],
+    "file": "cover-introductions-06.svg"
+  },
+  {
+    "id": "introductions-07-v1",
+    "title": "感谢与回应",
+    "category": "introductions",
+    "icons": [
+      "HeartHandshake",
+      "Sparkles"
+    ],
+    "file": "cover-introductions-07.svg"
+  },
+  {
+    "id": "introductions-08-v1",
+    "title": "道歉与回应",
+    "category": "introductions",
+    "icons": [
+      "HandHeart",
+      "MessageCircle"
+    ],
+    "file": "cover-introductions-08.svg"
+  },
+  {
+    "id": "introductions-09-v1",
+    "title": "表达听不懂",
+    "category": "introductions",
+    "icons": [
+      "CircleHelp",
+      "Ear"
+    ],
+    "file": "cover-introductions-09.svg"
+  },
+  {
+    "id": "introductions-10-v1",
+    "title": "请对方重复或放慢",
+    "category": "introductions",
+    "icons": [
+      "Repeat2",
+      "AudioLines"
+    ],
+    "file": "cover-introductions-10.svg"
+  },
+  {
+    "id": "introductions-11-v1",
+    "title": "介绍一位朋友",
+    "category": "introductions",
+    "icons": [
+      "UsersRound",
+      "Smile"
+    ],
+    "file": "cover-introductions-11.svg"
+  },
+  {
+    "id": "introductions-12-v1",
+    "title": "初次见面综合练习",
+    "category": "introductions",
+    "icons": [
+      "MessagesSquare",
+      "Coffee"
+    ],
+    "file": "cover-introductions-12.svg"
+  },
+  {
+    "id": "food-01-v1",
+    "title": "认识水果并表达想要",
+    "category": "food",
+    "icons": [
+      "Apple",
+      "Banana"
+    ],
+    "file": "cover-food-01.svg"
+  },
+  {
+    "id": "food-02-v1",
+    "title": "选择日常饮品",
+    "category": "food",
+    "icons": [
+      "Milk",
+      "CupSoda"
+    ],
+    "file": "cover-food-02.svg"
+  },
+  {
+    "id": "food-03-v1",
+    "title": "早餐选择",
+    "category": "food",
+    "icons": [
+      "EggFried",
+      "Croissant"
+    ],
+    "file": "cover-food-03.svg"
+  },
+  {
+    "id": "food-04-v1",
+    "title": "米饭与面条",
+    "category": "food",
+    "icons": [
+      "Soup",
+      "Wheat"
+    ],
+    "file": "cover-food-04.svg"
+  },
+  {
+    "id": "food-05-v1",
+    "title": "面包与三明治",
+    "category": "food",
+    "icons": [
+      "Sandwich",
+      "Croissant"
+    ],
+    "file": "cover-food-05.svg"
+  },
+  {
+    "id": "food-06-v1",
+    "title": "蔬菜与水果",
+    "category": "food",
+    "icons": [
+      "Carrot",
+      "Apple"
+    ],
+    "file": "cover-food-06.svg"
+  },
+  {
+    "id": "food-07-v1",
+    "title": "鸡肉与鱼肉",
+    "category": "food",
+    "icons": [
+      "Fish",
+      "Drumstick"
+    ],
+    "file": "cover-food-07.svg"
+  },
+  {
+    "id": "food-08-v1",
+    "title": "冷饮与热饮",
+    "category": "food",
+    "icons": [
+      "Coffee",
+      "Snowflake"
+    ],
+    "file": "cover-food-08.svg"
+  },
+  {
+    "id": "food-09-v1",
+    "title": "表达食物喜好",
+    "category": "food",
+    "icons": [
+      "Cherry",
+      "Heart"
+    ],
+    "file": "cover-food-09.svg"
+  },
+  {
+    "id": "food-10-v1",
+    "title": "简单点餐",
+    "category": "food",
+    "icons": [
+      "Utensils",
+      "NotebookPen"
+    ],
+    "file": "cover-food-10.svg"
+  },
+  {
+    "id": "food-11-v1",
+    "title": "说明不想要的配料",
+    "category": "food",
+    "icons": [
+      "CupSoda",
+      "Ban"
+    ],
+    "file": "cover-food-11.svg"
+  },
+  {
+    "id": "food-12-v1",
+    "title": "餐厅综合练习",
+    "category": "food",
+    "icons": [
+      "CookingPot",
+      "UtensilsCrossed"
+    ],
+    "file": "cover-food-12.svg"
+  },
+  {
+    "id": "shopping-01-v1",
+    "title": "说明需要的商品",
+    "category": "shopping",
+    "icons": [
+      "ShoppingBag",
+      "Package"
+    ],
+    "file": "cover-shopping-01.svg"
+  },
+  {
+    "id": "shopping-02-v1",
+    "title": "选择商品的颜色",
+    "category": "shopping",
+    "icons": [
+      "Palette",
+      "Shirt"
+    ],
+    "file": "cover-shopping-02.svg"
+  },
+  {
+    "id": "shopping-03-v1",
+    "title": "描述商品的大小",
+    "category": "shopping",
+    "icons": [
+      "Ruler",
+      "Box"
+    ],
+    "file": "cover-shopping-03.svg"
+  },
+  {
+    "id": "shopping-04-v1",
+    "title": "说明购买数量",
+    "category": "shopping",
+    "icons": [
+      "ShoppingBasket",
+      "Hash"
+    ],
+    "file": "cover-shopping-04.svg"
+  },
+  {
+    "id": "shopping-05-v1",
+    "title": "寻找商品与询问有货",
+    "category": "shopping",
+    "icons": [
+      "Store",
+      "Search"
+    ],
+    "file": "cover-shopping-05.svg"
+  },
+  {
+    "id": "shopping-06-v1",
+    "title": "把数量颜色大小说清楚",
+    "category": "shopping",
+    "icons": [
+      "PackageCheck",
+      "Palette"
+    ],
+    "file": "cover-shopping-06.svg"
+  },
+  {
+    "id": "shopping-07-v1",
+    "title": "询问价格",
+    "category": "shopping",
+    "icons": [
+      "Tag",
+      "CircleDollarSign"
+    ],
+    "file": "cover-shopping-07.svg"
+  },
+  {
+    "id": "shopping-08-v1",
+    "title": "选择这件或那件",
+    "category": "shopping",
+    "icons": [
+      "MousePointer2",
+      "ShoppingBag"
+    ],
+    "file": "cover-shopping-08.svg"
+  },
+  {
+    "id": "shopping-09-v1",
+    "title": "试穿衣服",
+    "category": "shopping",
+    "icons": [
+      "Shirt",
+      "ScanLine"
+    ],
+    "file": "cover-shopping-09.svg"
+  },
+  {
+    "id": "shopping-10-v1",
+    "title": "寻找合适尺码",
+    "category": "shopping",
+    "icons": [
+      "Ruler",
+      "Shirt"
+    ],
+    "file": "cover-shopping-10.svg"
+  },
+  {
+    "id": "shopping-11-v1",
+    "title": "结账与付款",
+    "category": "shopping",
+    "icons": [
+      "CreditCard",
+      "Receipt"
+    ],
+    "file": "cover-shopping-11.svg"
+  },
+  {
+    "id": "shopping-12-v1",
+    "title": "商店综合练习",
+    "category": "shopping",
+    "icons": [
+      "Store",
+      "ShoppingCart"
+    ],
+    "file": "cover-shopping-12.svg"
+  },
+  {
+    "id": "home-01-v1",
+    "title": "介绍家人",
+    "category": "home",
+    "icons": [
+      "House",
+      "Heart"
+    ],
+    "file": "cover-home-01.svg"
+  },
+  {
+    "id": "home-02-v1",
+    "title": "介绍家庭成员",
+    "category": "home",
+    "icons": [
+      "Users",
+      "Baby"
+    ],
+    "file": "cover-home-02.svg"
+  },
+  {
+    "id": "home-03-v1",
+    "title": "认识房间",
+    "category": "home",
+    "icons": [
+      "DoorOpen",
+      "Lamp"
+    ],
+    "file": "cover-home-03.svg"
+  },
+  {
+    "id": "home-04-v1",
+    "title": "常见家具",
+    "category": "home",
+    "icons": [
+      "Sofa",
+      "LampFloor"
+    ],
+    "file": "cover-home-04.svg"
+  },
+  {
+    "id": "home-05-v1",
+    "title": "物品在哪里",
+    "category": "home",
+    "icons": [
+      "MapPinHouse",
+      "KeyRound"
+    ],
+    "file": "cover-home-05.svg"
+  },
+  {
+    "id": "home-06-v1",
+    "title": "桌上与桌下",
+    "category": "home",
+    "icons": [
+      "Table",
+      "ArrowDownUp"
+    ],
+    "file": "cover-home-06.svg"
+  },
+  {
+    "id": "home-07-v1",
+    "title": "描述自己的家",
+    "category": "home",
+    "icons": [
+      "HousePlus",
+      "Fence"
+    ],
+    "file": "cover-home-07.svg"
+  },
+  {
+    "id": "home-08-v1",
+    "title": "简单家务",
+    "category": "home",
+    "icons": [
+      "Brush",
+      "Sparkles"
+    ],
+    "file": "cover-home-08.svg"
+  },
+  {
+    "id": "home-09-v1",
+    "title": "寻找日常物品",
+    "category": "home",
+    "icons": [
+      "KeyRound",
+      "Search"
+    ],
+    "file": "cover-home-09.svg"
+  },
+  {
+    "id": "home-10-v1",
+    "title": "借用家中物品",
+    "category": "home",
+    "icons": [
+      "HandHelping",
+      "CupSoda"
+    ],
+    "file": "cover-home-10.svg"
+  },
+  {
+    "id": "home-11-v1",
+    "title": "家中的小问题",
+    "category": "home",
+    "icons": [
+      "Wrench",
+      "Lightbulb"
+    ],
+    "file": "cover-home-11.svg"
+  },
+  {
+    "id": "home-12-v1",
+    "title": "邀请朋友到家里",
+    "category": "home",
+    "icons": [
+      "House",
+      "UserRoundPlus"
+    ],
+    "file": "cover-home-12.svg"
+  },
+  {
+    "id": "daily-01-v1",
+    "title": "星期与安排",
+    "category": "daily",
+    "icons": [
+      "CalendarDays",
+      "Check"
+    ],
+    "file": "cover-daily-01.svg"
+  },
+  {
+    "id": "daily-02-v1",
+    "title": "早上中午和晚上",
+    "category": "daily",
+    "icons": [
+      "SunMoon",
+      "CloudSun"
+    ],
+    "file": "cover-daily-02.svg"
+  },
+  {
+    "id": "daily-03-v1",
+    "title": "整点与半点",
+    "category": "daily",
+    "icons": [
+      "Clock3",
+      "Timer"
+    ],
+    "file": "cover-daily-03.svg"
+  },
+  {
+    "id": "daily-04-v1",
+    "title": "起床与睡觉",
+    "category": "daily",
+    "icons": [
+      "BedDouble",
+      "AlarmClock"
+    ],
+    "file": "cover-daily-04.svg"
+  },
+  {
+    "id": "daily-05-v1",
+    "title": "洗漱与准备",
+    "category": "daily",
+    "icons": [
+      "Bath",
+      "Shirt"
+    ],
+    "file": "cover-daily-05.svg"
+  },
+  {
+    "id": "daily-06-v1",
+    "title": "一日三餐时间",
+    "category": "daily",
+    "icons": [
+      "UtensilsCrossed",
+      "Clock9"
+    ],
+    "file": "cover-daily-06.svg"
+  },
+  {
+    "id": "daily-07-v1",
+    "title": "上班与回家",
+    "category": "daily",
+    "icons": [
+      "BriefcaseBusiness",
+      "House"
+    ],
+    "file": "cover-daily-07.svg"
+  },
+  {
+    "id": "daily-08-v1",
+    "title": "经常和有时",
+    "category": "daily",
+    "icons": [
+      "Repeat",
+      "CalendarCheck"
+    ],
+    "file": "cover-daily-08.svg"
+  },
+  {
+    "id": "daily-09-v1",
+    "title": "今天与明天",
+    "category": "daily",
+    "icons": [
+      "CalendarArrowUp",
+      "Sun"
+    ],
+    "file": "cover-daily-09.svg"
+  },
+  {
+    "id": "daily-10-v1",
+    "title": "说明自己的日程",
+    "category": "daily",
+    "icons": [
+      "ListTodo",
+      "Clock4"
+    ],
+    "file": "cover-daily-10.svg"
+  },
+  {
+    "id": "daily-11-v1",
+    "title": "约定见面时间",
+    "category": "daily",
+    "icons": [
+      "CalendarClock",
+      "Users"
+    ],
+    "file": "cover-daily-11.svg"
+  },
+  {
+    "id": "daily-12-v1",
+    "title": "我的一天综合练习",
+    "category": "daily",
+    "icons": [
+      "Sunrise",
+      "Moon"
+    ],
+    "file": "cover-daily-12.svg"
+  },
+  {
+    "id": "travel-01-v1",
+    "title": "认识常见地点",
+    "category": "travel",
+    "icons": [
+      "MapPinned",
+      "Building2"
+    ],
+    "file": "cover-travel-01.svg"
+  },
+  {
+    "id": "travel-02-v1",
+    "title": "询问地点位置",
+    "category": "travel",
+    "icons": [
+      "Signpost",
+      "MapPin"
+    ],
+    "file": "cover-travel-02.svg"
+  },
+  {
+    "id": "travel-03-v1",
+    "title": "直走与转弯",
+    "category": "travel",
+    "icons": [
+      "Route",
+      "CornerUpRight"
+    ],
+    "file": "cover-travel-03.svg"
+  },
+  {
+    "id": "travel-04-v1",
+    "title": "附近与远处",
+    "category": "travel",
+    "icons": [
+      "Navigation",
+      "MoveHorizontal"
+    ],
+    "file": "cover-travel-04.svg"
+  },
+  {
+    "id": "travel-05-v1",
+    "title": "步行与骑车",
+    "category": "travel",
+    "icons": [
+      "Bike",
+      "Footprints"
+    ],
+    "file": "cover-travel-05.svg"
+  },
+  {
+    "id": "travel-06-v1",
+    "title": "乘坐公交车",
+    "category": "travel",
+    "icons": [
+      "BusFront",
+      "Ticket"
+    ],
+    "file": "cover-travel-06.svg"
+  },
+  {
+    "id": "travel-07-v1",
+    "title": "乘坐地铁",
+    "category": "travel",
+    "icons": [
+      "TramFront",
+      "Map"
+    ],
+    "file": "cover-travel-07.svg"
+  },
+  {
+    "id": "travel-08-v1",
+    "title": "购买车票",
+    "category": "travel",
+    "icons": [
+      "Ticket",
+      "Coins"
+    ],
+    "file": "cover-travel-08.svg"
+  },
+  {
+    "id": "travel-09-v1",
+    "title": "乘坐出租车",
+    "category": "travel",
+    "icons": [
+      "CarTaxiFront",
+      "MapPin"
+    ],
+    "file": "cover-travel-09.svg"
+  },
+  {
+    "id": "travel-10-v1",
+    "title": "酒店办理入住",
+    "category": "travel",
+    "icons": [
+      "Hotel",
+      "KeyRound"
+    ],
+    "file": "cover-travel-10.svg"
+  },
+  {
+    "id": "travel-11-v1",
+    "title": "在车站寻求帮助",
+    "category": "travel",
+    "icons": [
+      "TrainFront",
+      "MessageCircleQuestion"
+    ],
+    "file": "cover-travel-11.svg"
+  },
+  {
+    "id": "travel-12-v1",
+    "title": "城市出行综合练习",
+    "category": "travel",
+    "icons": [
+      "Luggage",
+      "Compass"
+    ],
+    "file": "cover-travel-12.svg"
+  },
+  {
+    "id": "study-01-v1",
+    "title": "介绍自己的职业",
+    "category": "study",
+    "icons": [
+      "Briefcase",
+      "ContactRound"
+    ],
+    "file": "cover-study-01.svg"
+  },
+  {
+    "id": "study-02-v1",
+    "title": "常见工作地点",
+    "category": "study",
+    "icons": [
+      "Building2",
+      "MapPin"
+    ],
+    "file": "cover-study-02.svg"
+  },
+  {
+    "id": "study-03-v1",
+    "title": "学习用品",
+    "category": "study",
+    "icons": [
+      "PencilRuler",
+      "Book"
+    ],
+    "file": "cover-study-03.svg"
+  },
+  {
+    "id": "study-04-v1",
+    "title": "课堂上的请求",
+    "category": "study",
+    "icons": [
+      "Hand",
+      "GraduationCap"
+    ],
+    "file": "cover-study-04.svg"
+  },
+  {
+    "id": "study-05-v1",
+    "title": "看听说写",
+    "category": "study",
+    "icons": [
+      "BookOpen",
+      "PencilLine"
+    ],
+    "file": "cover-study-05.svg"
+  },
+  {
+    "id": "study-06-v1",
+    "title": "电脑与手机",
+    "category": "study",
+    "icons": [
+      "Laptop",
+      "Smartphone"
+    ],
+    "file": "cover-study-06.svg"
+  },
+  {
+    "id": "study-07-v1",
+    "title": "描述学习计划",
+    "category": "study",
+    "icons": [
+      "NotebookPen",
+      "CalendarDays"
+    ],
+    "file": "cover-study-07.svg"
+  },
+  {
+    "id": "study-08-v1",
+    "title": "询问任务要求",
+    "category": "study",
+    "icons": [
+      "ClipboardList",
+      "CircleHelp"
+    ],
+    "file": "cover-study-08.svg"
+  },
+  {
+    "id": "study-09-v1",
+    "title": "说明完成情况",
+    "category": "study",
+    "icons": [
+      "ListChecks",
+      "CircleCheck"
+    ],
+    "file": "cover-study-09.svg"
+  },
+  {
+    "id": "study-10-v1",
+    "title": "请求工作协助",
+    "category": "study",
+    "icons": [
+      "HandHelping",
+      "Laptop"
+    ],
+    "file": "cover-study-10.svg"
+  },
+  {
+    "id": "study-11-v1",
+    "title": "安排简单会议",
+    "category": "study",
+    "icons": [
+      "Presentation",
+      "CalendarClock"
+    ],
+    "file": "cover-study-11.svg"
+  },
+  {
+    "id": "study-12-v1",
+    "title": "工作学习综合练习",
+    "category": "study",
+    "icons": [
+      "GraduationCap",
+      "BriefcaseBusiness"
+    ],
+    "file": "cover-study-12.svg"
+  },
+  {
+    "id": "social-01-v1",
+    "title": "介绍兴趣爱好",
+    "category": "social",
+    "icons": [
+      "Puzzle",
+      "Heart"
+    ],
+    "file": "cover-social-01.svg"
+  },
+  {
+    "id": "social-02-v1",
+    "title": "阅读与音乐",
+    "category": "social",
+    "icons": [
+      "Headphones",
+      "BookOpen"
+    ],
+    "file": "cover-social-02.svg"
+  },
+  {
+    "id": "social-03-v1",
+    "title": "运动与游戏",
+    "category": "social",
+    "icons": [
+      "Volleyball",
+      "Gamepad2"
+    ],
+    "file": "cover-social-03.svg"
+  },
+  {
+    "id": "social-04-v1",
+    "title": "周末安排",
+    "category": "social",
+    "icons": [
+      "CalendarHeart",
+      "Tent"
+    ],
+    "file": "cover-social-04.svg"
+  },
+  {
+    "id": "social-05-v1",
+    "title": "邀请朋友参加",
+    "category": "social",
+    "icons": [
+      "PartyPopper",
+      "UserRoundPlus"
+    ],
+    "file": "cover-social-05.svg"
+  },
+  {
+    "id": "social-06-v1",
+    "title": "接受与婉拒邀请",
+    "category": "social",
+    "icons": [
+      "MailCheck",
+      "Hand"
+    ],
+    "file": "cover-social-06.svg"
+  },
+  {
+    "id": "social-07-v1",
+    "title": "询问天气",
+    "category": "social",
+    "icons": [
+      "CloudSunRain",
+      "ThermometerSun"
+    ],
+    "file": "cover-social-07.svg"
+  },
+  {
+    "id": "social-08-v1",
+    "title": "根据天气安排活动",
+    "category": "social",
+    "icons": [
+      "Umbrella",
+      "Footprints"
+    ],
+    "file": "cover-social-08.svg"
+  },
+  {
+    "id": "social-09-v1",
+    "title": "表达简单感受",
+    "category": "social",
+    "icons": [
+      "SmilePlus",
+      "Heart"
+    ],
+    "file": "cover-social-09.svg"
+  },
+  {
+    "id": "social-10-v1",
+    "title": "表达想法与偏好",
+    "category": "social",
+    "icons": [
+      "Lightbulb",
+      "MessageCircle"
+    ],
+    "file": "cover-social-10.svg"
+  },
+  {
+    "id": "social-11-v1",
+    "title": "说明过去的周末",
+    "category": "social",
+    "icons": [
+      "History",
+      "Mountain"
+    ],
+    "file": "cover-social-11.svg"
+  },
+  {
+    "id": "social-12-v1",
+    "title": "朋友相聚综合练习",
+    "category": "social",
+    "icons": [
+      "UsersRound",
+      "PartyPopper"
+    ],
+    "file": "cover-social-12.svg"
+  }
+]

@@ -1,0 +1,482 @@
+{
+  "id": "social-10-v1",
+  "title": "10 · 表达想法与偏好",
+  "category": "social",
+  "goal": "表达对事物的简单看法和偏好",
+  "prerequisites": [
+    "social-09-v1"
+  ],
+  "scenario": "朋友介绍一个活动，你说它有趣并询问他的看法；随后在茶和咖啡间表达更喜欢茶。",
+  "stages": [
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "10 · 表达想法与偏好",
+      "text": "表达对事物的简单看法和偏好",
+      "clip": "c96_78697f09d842f8a31f47"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "think",
+      "text": "认为",
+      "clip": "c96_6e30a6d11afe7a092e8f"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "think",
+      "text": "认为",
+      "clip": "c96_1ac0fde4bf82e1afc73d",
+      "speechText": "think"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "think",
+      "text": "认为",
+      "practiceClip": "c96_1ac0fde4bf82e1afc73d",
+      "speechText": "think",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "prefer",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "prefer",
+      "text": "更喜欢",
+      "clip": "c96_089f5976875f5ce06335"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "prefer",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "prefer",
+      "text": "更喜欢",
+      "clip": "c96_0d1f87b0f21f8e317758",
+      "speechText": "prefer"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "prefer",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "prefer",
+      "text": "更喜欢",
+      "practiceClip": "c96_0d1f87b0f21f8e317758",
+      "speechText": "prefer",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "interesting",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "interesting",
+      "text": "有趣的",
+      "clip": "c96_a1fbe7accb07e83d3f54"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "interesting",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "interesting",
+      "text": "有趣的",
+      "clip": "c96_afe0864ea5f1f2dadf04",
+      "speechText": "interesting"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "interesting",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "interesting",
+      "text": "有趣的",
+      "practiceClip": "c96_afe0864ea5f1f2dadf04",
+      "speechText": "interesting",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "I think",
+      "text": "我认为",
+      "clip": "c96_7d3e17faebe53174e906",
+      "speechText": "I think"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "I think",
+      "text": "我认为",
+      "practiceClip": "c96_7d3e17faebe53174e906",
+      "speechText": "I think",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "prefer tea",
+      "text": "更喜欢茶",
+      "clip": "c96_c8149ad3374c79041867",
+      "speechText": "prefer tea"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "prefer tea",
+      "text": "更喜欢茶",
+      "practiceClip": "c96_c8149ad3374c79041867",
+      "speechText": "prefer tea",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "I think it is interesting.",
+      "text": "我认为它很有趣。",
+      "clip": "c96_1768c1e1d627c55e5319",
+      "speechText": "I think it is interesting."
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "I think it is interesting.",
+      "text": "我认为它很有趣。",
+      "practiceClip": "c96_1768c1e1d627c55e5319",
+      "speechText": "I think it is interesting.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "I prefer tea.",
+      "text": "我更喜欢茶。",
+      "clip": "c96_9e1c6db1f642c3fac123",
+      "speechText": "I prefer tea."
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "I prefer tea.",
+      "text": "我更喜欢茶。",
+      "practiceClip": "c96_9e1c6db1f642c3fac123",
+      "speechText": "I prefer tea.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "What do you think?",
+      "text": "你怎么看？",
+      "clip": "c96_1a3a5bafc84afc222043",
+      "speechText": "What do you think?"
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "What do you think?",
+      "text": "你怎么看？",
+      "practiceClip": "c96_1a3a5bafc84afc222043",
+      "speechText": "What do you think?",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_1ac0fde4bf82e1afc73d",
+      "hide": true
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_1ac0fde4bf82e1afc73d",
+      "speechText": "think",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "更喜欢"
+        },
+        {
+          "id": "answer_2",
+          "label": "有趣的"
+        },
+        {
+          "id": "answer_0",
+          "label": "认为"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_0d1f87b0f21f8e317758",
+      "hide": true
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "prefer",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_0d1f87b0f21f8e317758",
+      "speechText": "prefer",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "有趣的"
+        },
+        {
+          "id": "answer_0",
+          "label": "认为"
+        },
+        {
+          "id": "answer_1",
+          "label": "更喜欢"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "I think",
+      "text": "不看英文，请表达：我认为",
+      "practiceClip": "c96_7d3e17faebe53174e906",
+      "speechText": "I think",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "prefer tea",
+      "text": "不看英文，请表达：更喜欢茶",
+      "practiceClip": "c96_c8149ad3374c79041867",
+      "speechText": "prefer tea",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "I think it is interesting.",
+      "text": "情境练习：朋友介绍一个活动，你说它有趣并询问他的看法；随后在茶和咖啡间表达更喜欢茶。\n这一句请表达：我认为它很有趣。",
+      "practiceClip": "c96_1768c1e1d627c55e5319",
+      "speechText": "I think it is interesting.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "I prefer tea.",
+      "text": "情境练习：朋友介绍一个活动，你说它有趣并询问他的看法；随后在茶和咖啡间表达更喜欢茶。\n这一句请表达：我更喜欢茶。",
+      "practiceClip": "c96_9e1c6db1f642c3fac123",
+      "speechText": "I prefer tea.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "What do you think?",
+      "text": "情境练习：朋友介绍一个活动，你说它有趣并询问他的看法；随后在茶和咖啡间表达更喜欢茶。\n这一句请表达：你怎么看？",
+      "practiceClip": "c96_1a3a5bafc84afc222043",
+      "speechText": "What do you think?",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "表达想法与偏好",
+      "word": "think",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

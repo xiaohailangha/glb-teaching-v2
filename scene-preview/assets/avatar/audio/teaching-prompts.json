@@ -7,66 +7,119 @@
         "id": 0
       },
       {
-        "time": 0.32,
+        "time": 0.13,
         "id": 14
       },
       {
-        "time": 0.42,
+        "time": 0.23,
         "id": 4
       },
       {
-        "time": 0.5,
+        "time": 0.31,
         "id": 19
       },
       {
-        "time": 0.56,
+        "time": 0.37,
         "id": 15
       },
       {
-        "time": 0.64,
+        "time": 0.45,
         "id": 19
       },
       {
-        "time": 0.7,
+        "time": 0.51,
         "id": 13
       },
       {
-        "time": 0.78,
+        "time": 0.59,
         "id": 11
       },
       {
-        "time": 0.92,
+        "time": 0.73,
         "id": 17
       },
       {
-        "time": 0.98,
+        "time": 0.79,
         "id": 6
       },
       {
-        "time": 1.08,
+        "time": 0.89,
         "id": 15
       },
       {
-        "time": 1.18,
+        "time": 0.99,
         "id": 7
       },
       {
-        "time": 1.3,
+        "time": 1.11,
         "id": 5
       },
       {
-        "time": 1.52,
+        "time": 1.33,
         "id": 19
       },
       {
-        "time": 1.7,
+        "time": 1.51,
+        "id": 0
+      },
+      {
+        "time": 1.569,
+        "id": 0
+      },
+      {
+        "time": 1.689,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.759,
-    "sourceKey": "7ed29dd4d98d7ca0ec70498dd2255767a9cf4cdace50acaab87332ea24f0d0f6"
+    "duration": 1.689,
+    "sourceKey": "7ed29dd4d98d7ca0ec70498dd2255767a9cf4cdace50acaab87332ea24f0d0f6",
+    "trim": {
+      "start": 0.27,
+      "end": 1.759,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "let's",
+        "start": 0.13,
+        "end": 0.45
+      },
+      {
+        "word": "try",
+        "start": 0.45,
+        "end": 0.73
+      },
+      {
+        "word": "this",
+        "start": 0.73,
+        "end": 0.9899999999999999
+      },
+      {
+        "word": "word",
+        "start": 0.9899999999999999,
+        "end": 1.51
+      }
+    ],
+    "sourceText": "Let's try this word.",
+    "speed": 0,
+    "sha256": "a883656ea8ce65f27136f593d41f661b3c50585b49ea3871f69ca81c3312db15",
+    "quality": {
+      "version": 3,
+      "sha256": "a883656ea8ce65f27136f593d41f661b3c50585b49ea3871f69ca81c3312db15",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Let's try this word.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:08.776Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "intro_listen": {
     "text": "Listen to this.",
@@ -76,54 +129,102 @@
         "id": 0
       },
       {
-        "time": 0.38,
+        "time": 0.13,
         "id": 14
       },
       {
-        "time": 0.54,
+        "time": 0.29,
         "id": 6
       },
       {
-        "time": 0.64,
+        "time": 0.39,
         "id": 15
       },
       {
-        "time": 0.72,
+        "time": 0.47,
         "id": 1
       },
       {
-        "time": 0.8,
+        "time": 0.55,
         "id": 19
       },
       {
-        "time": 0.88,
+        "time": 0.63,
         "id": 19
       },
       {
-        "time": 0.98,
+        "time": 0.73,
         "id": 7
       },
       {
-        "time": 1.04,
+        "time": 0.79,
         "id": 17
       },
       {
-        "time": 1.13,
+        "time": 0.88,
         "id": 6
       },
       {
-        "time": 1.52,
+        "time": 1.27,
         "id": 15
       },
       {
-        "time": 1.82,
+        "time": 1.57,
+        "id": 0
+      },
+      {
+        "time": 1.629,
+        "id": 0
+      },
+      {
+        "time": 1.749,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.879,
-    "sourceKey": "00ae6f683b5eae3a0bb1c02fee85b265569588a281209120629c3c5a271d487c"
+    "duration": 1.749,
+    "sourceKey": "00ae6f683b5eae3a0bb1c02fee85b265569588a281209120629c3c5a271d487c",
+    "trim": {
+      "start": 0.33,
+      "end": 1.879,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "listen",
+        "start": 0.13,
+        "end": 0.63
+      },
+      {
+        "word": "to",
+        "start": 0.63,
+        "end": 0.7899999999999999
+      },
+      {
+        "word": "this",
+        "start": 0.7899999999999999,
+        "end": 1.57
+      }
+    ],
+    "sourceText": "Listen to this.",
+    "speed": 0,
+    "sha256": "eed75a2911fc3d1a6d2b3792415f15a70b17a88ddd2da7a22ffdedcf6af6ef68",
+    "quality": {
+      "version": 3,
+      "sha256": "eed75a2911fc3d1a6d2b3792415f15a70b17a88ddd2da7a22ffdedcf6af6ef68",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Listen to this.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:10.869Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "intro_next": {
     "text": "Here's our next word.",
@@ -133,70 +234,123 @@
         "id": 0
       },
       {
-        "time": 0.38,
+        "time": 0.13,
         "id": 12
       },
       {
-        "time": 0.52,
+        "time": 0.27,
         "id": 6
       },
       {
-        "time": 0.64,
+        "time": 0.39,
         "id": 13
       },
       {
-        "time": 0.74,
+        "time": 0.49,
         "id": 15
       },
       {
-        "time": 0.84,
+        "time": 0.59,
         "id": 2
       },
       {
-        "time": 0.96,
+        "time": 0.71,
         "id": 13
       },
       {
-        "time": 1.04,
+        "time": 0.79,
         "id": 19
       },
       {
-        "time": 1.14,
+        "time": 0.89,
         "id": 4
       },
       {
-        "time": 1.24,
+        "time": 0.99,
         "id": 20
       },
       {
-        "time": 1.32,
+        "time": 1.07,
         "id": 15
       },
       {
-        "time": 1.36,
+        "time": 1.11,
         "id": 19
       },
       {
-        "time": 1.44,
+        "time": 1.19,
         "id": 7
       },
       {
-        "time": 1.54,
+        "time": 1.29,
         "id": 5
       },
       {
-        "time": 1.76,
+        "time": 1.51,
         "id": 19
       },
       {
-        "time": 1.92,
+        "time": 1.67,
+        "id": 0
+      },
+      {
+        "time": 1.74,
+        "id": 0
+      },
+      {
+        "time": 1.86,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.999,
-    "sourceKey": "3d8fcbc2f9b0085bfac035c3f6018aa7937c3b9a16794778aeaed63cb00c4924"
+    "duration": 1.86,
+    "sourceKey": "3d8fcbc2f9b0085bfac035c3f6018aa7937c3b9a16794778aeaed63cb00c4924",
+    "trim": {
+      "start": 0.33,
+      "end": 1.99,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "here's",
+        "start": 0.13,
+        "end": 0.59
+      },
+      {
+        "word": "our",
+        "start": 0.59,
+        "end": 0.7899999999999999
+      },
+      {
+        "word": "next",
+        "start": 0.7899999999999999,
+        "end": 1.19
+      },
+      {
+        "word": "word",
+        "start": 1.19,
+        "end": 1.67
+      }
+    ],
+    "sourceText": "Here's our next word.",
+    "speed": 0,
+    "sha256": "f4c484c531ae320ff0c0adc2f95a27fd5f084a1c82e699eed0cfa082ec5a9f02",
+    "quality": {
+      "version": 3,
+      "sha256": "f4c484c531ae320ff0c0adc2f95a27fd5f084a1c82e699eed0cfa082ec5a9f02",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Here's our next word.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:12.246Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "intro_retry": {
     "text": "Let's try it together.",
@@ -206,74 +360,127 @@
         "id": 0
       },
       {
-        "time": 0.33,
+        "time": 0.13,
         "id": 14
       },
       {
-        "time": 0.45,
+        "time": 0.25,
         "id": 4
       },
       {
-        "time": 0.55,
+        "time": 0.35,
         "id": 19
       },
       {
-        "time": 0.61,
+        "time": 0.41,
         "id": 15
       },
       {
-        "time": 0.69,
+        "time": 0.49,
         "id": 19
       },
       {
-        "time": 0.75,
+        "time": 0.55,
         "id": 13
       },
       {
-        "time": 0.85,
+        "time": 0.65,
         "id": 11
       },
       {
-        "time": 0.93,
+        "time": 0.73,
         "id": 6
       },
       {
-        "time": 1.04,
+        "time": 0.84,
         "id": 19
       },
       {
-        "time": 1.11,
+        "time": 0.91,
         "id": 19
       },
       {
-        "time": 1.15,
+        "time": 0.95,
         "id": 1
       },
       {
-        "time": 1.23,
+        "time": 1.03,
         "id": 20
       },
       {
-        "time": 1.31,
+        "time": 1.11,
         "id": 4
       },
       {
-        "time": 1.43,
+        "time": 1.23,
         "id": 17
       },
       {
-        "time": 1.51,
+        "time": 1.31,
         "id": 5
       },
       {
-        "time": 1.75,
+        "time": 1.55,
+        "id": 0
+      },
+      {
+        "time": 1.62,
+        "id": 0
+      },
+      {
+        "time": 1.74,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.839,
-    "sourceKey": "23680d6bd3d36d77010ed9a02849c192338c2333d800a2a26af2cedf029213c4"
+    "duration": 1.74,
+    "sourceKey": "23680d6bd3d36d77010ed9a02849c192338c2333d800a2a26af2cedf029213c4",
+    "trim": {
+      "start": 0.28,
+      "end": 1.82,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "let's",
+        "start": 0.13,
+        "end": 0.48999999999999994
+      },
+      {
+        "word": "try",
+        "start": 0.48999999999999994,
+        "end": 0.73
+      },
+      {
+        "word": "it",
+        "start": 0.73,
+        "end": 0.91
+      },
+      {
+        "word": "together",
+        "start": 0.91,
+        "end": 1.55
+      }
+    ],
+    "sourceText": "Let's try it together.",
+    "speed": 0,
+    "sha256": "1b4939d5ea35840fe0a428a3ec43ae0ab97d5bcaef33847cbed8ea3d3a60fcac",
+    "quality": {
+      "version": 3,
+      "sha256": "1b4939d5ea35840fe0a428a3ec43ae0ab97d5bcaef33847cbed8ea3d3a60fcac",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Let's try it together.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:13.022Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "intro_slow": {
     "text": "Listen closely.",
@@ -283,58 +490,97 @@
         "id": 0
       },
       {
-        "time": 0.31,
+        "time": 0.13,
         "id": 14
+      },
+      {
+        "time": 0.25,
+        "id": 6
+      },
+      {
+        "time": 0.33,
+        "id": 15
       },
       {
         "time": 0.43,
-        "id": 6
-      },
-      {
-        "time": 0.51,
-        "id": 15
-      },
-      {
-        "time": 0.61,
         "id": 1
       },
       {
-        "time": 0.69,
+        "time": 0.51,
         "id": 19
       },
       {
-        "time": 0.77,
+        "time": 0.59,
         "id": 20
       },
       {
-        "time": 0.85,
+        "time": 0.67,
         "id": 14
       },
       {
-        "time": 0.93,
+        "time": 0.75,
         "id": 8
       },
       {
-        "time": 1.07,
+        "time": 0.89,
         "id": 15
       },
       {
-        "time": 1.17,
+        "time": 0.99,
         "id": 14
       },
       {
-        "time": 1.27,
+        "time": 1.09,
         "id": 6
       },
       {
-        "time": 1.519,
+        "time": 1.339,
+        "id": 0
+      },
+      {
+        "time": 1.459,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.519,
-    "sourceKey": "a3ab52f387a64e3479353a1536f9c3939ed1dadbf59e0a34406df20e31754f30"
+    "duration": 1.459,
+    "sourceKey": "a3ab52f387a64e3479353a1536f9c3939ed1dadbf59e0a34406df20e31754f30",
+    "trim": {
+      "start": 0.26,
+      "end": 1.519,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "listen",
+        "start": 0.13,
+        "end": 0.59
+      },
+      {
+        "word": "closely",
+        "start": 0.59,
+        "end": 1.37
+      }
+    ],
+    "sourceText": "Listen closely.",
+    "speed": 0,
+    "sha256": "b894314c3a5239ef5204c01fe538613e6b5c3af4ae43f03791e4074cb87f4459",
+    "quality": {
+      "version": 3,
+      "sha256": "b894314c3a5239ef5204c01fe538613e6b5c3af4ae43f03791e4074cb87f4459",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Listen closely.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:14.144Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "invite_one": {
     "text": "Your turn.",
@@ -344,38 +590,81 @@
         "id": 0
       },
       {
-        "time": 0.25,
+        "time": 0.13,
         "id": 6
       },
       {
-        "time": 0.42,
+        "time": 0.3,
         "id": 3
       },
       {
-        "time": 0.51,
+        "time": 0.37,
         "id": 13
       },
       {
-        "time": 0.61,
+        "time": 0.49,
         "id": 19
       },
       {
-        "time": 0.73,
+        "time": 0.61,
         "id": 5
       },
       {
-        "time": 1.01,
+        "time": 0.84,
         "id": 19
       },
       {
-        "time": 1.13,
+        "time": 0.99,
+        "id": 0
+      },
+      {
+        "time": 1.06,
+        "id": 0
+      },
+      {
+        "time": 1.18,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.199,
-    "sourceKey": "f2d0d0de2ba29902d7488f63ebf4c1002ddd167727c9d2c3c39269737cb06084"
+    "duration": 1.18,
+    "sourceKey": "b37b09d02f040da3a8d4b282c0b8ca5fd9f1bca4d6c2433f0f8c866c5b31e8e9",
+    "trim": {
+      "start": 0.31,
+      "end": 1.29,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "your",
+        "start": 0.13,
+        "end": 0.49
+      },
+      {
+        "word": "turn",
+        "start": 0.49,
+        "end": 0.9899999999999999
+      }
+    ],
+    "sourceText": "Your turn!",
+    "speed": 0,
+    "sha256": "ffe3f37051df253ea4b2f6fc6ce7e6837e368616621f32bfa9a206a94671a00d",
+    "quality": {
+      "version": 3,
+      "sha256": "ffe3f37051df253ea4b2f6fc6ce7e6837e368616621f32bfa9a206a94671a00d",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Your turn.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:07:23.668Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "invite_two": {
     "text": "Now, you try.",
@@ -385,50 +674,98 @@
         "id": 0
       },
       {
-        "time": 0.34,
+        "time": 0.13,
         "id": 19
       },
       {
-        "time": 0.52,
+        "time": 0.31,
         "id": 9
       },
       {
-        "time": 1.28,
+        "time": 1.07,
         "id": 0
       },
       {
-        "time": 1.5,
+        "time": 1.29,
         "id": 6
       },
       {
-        "time": 1.76,
+        "time": 1.55,
         "id": 6
       },
       {
-        "time": 1.82,
+        "time": 1.61,
         "id": 8
       },
       {
-        "time": 1.96,
+        "time": 1.75,
         "id": 19
       },
       {
-        "time": 2.12,
+        "time": 1.91,
         "id": 13
       },
       {
-        "time": 2.2,
+        "time": 1.99,
         "id": 11
       },
       {
-        "time": 2.62,
+        "time": 2.41,
+        "id": 0
+      },
+      {
+        "time": 2.48,
+        "id": 0
+      },
+      {
+        "time": 2.6,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 2.758,
-    "sourceKey": "abece26a3922d2de4fe7066cc4dc71ee7181f3adabc685e40a88de1df9b2311e"
+    "duration": 2.6,
+    "sourceKey": "abece26a3922d2de4fe7066cc4dc71ee7181f3adabc685e40a88de1df9b2311e",
+    "trim": {
+      "start": 0.29000000000000004,
+      "end": 2.69,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "now",
+        "start": 0.13,
+        "end": 1.07
+      },
+      {
+        "word": "you",
+        "start": 1.29,
+        "end": 1.75
+      },
+      {
+        "word": "try",
+        "start": 1.75,
+        "end": 2.41
+      }
+    ],
+    "sourceText": "Now, you try.",
+    "speed": 0,
+    "sha256": "48e0c2734d1ab8248ae044233d802e8e239ba8024be75240637128b8ca5331bb",
+    "quality": {
+      "version": 3,
+      "sha256": "48e0c2734d1ab8248ae044233d802e8e239ba8024be75240637128b8ca5331bb",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Now you try.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:17.007Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "encourage_one": {
     "text": "Let's keep going.",
@@ -438,58 +775,106 @@
         "id": 0
       },
       {
-        "time": 0.35,
+        "time": 0.13,
         "id": 14
       },
       {
-        "time": 0.45,
+        "time": 0.23,
         "id": 4
       },
       {
-        "time": 0.57,
+        "time": 0.35,
         "id": 19
       },
       {
-        "time": 0.63,
+        "time": 0.41,
         "id": 15
       },
       {
-        "time": 0.69,
+        "time": 0.47,
         "id": 20
       },
       {
-        "time": 0.77,
+        "time": 0.55,
         "id": 6
       },
       {
-        "time": 0.89,
+        "time": 0.67,
         "id": 21
       },
       {
-        "time": 0.95,
+        "time": 0.73,
         "id": 20
       },
       {
-        "time": 1.03,
+        "time": 0.81,
         "id": 8
       },
       {
-        "time": 1.21,
+        "time": 0.99,
         "id": 6
       },
       {
-        "time": 1.31,
+        "time": 1.09,
         "id": 20
       },
       {
-        "time": 1.51,
+        "time": 1.29,
+        "id": 0
+      },
+      {
+        "time": 1.36,
+        "id": 0
+      },
+      {
+        "time": 1.48,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.599,
-    "sourceKey": "cc719a7b90cd96f591b1b8acd46f553a555f459faf50fe3ab8e1bfcc285077f8"
+    "duration": 1.48,
+    "sourceKey": "cc719a7b90cd96f591b1b8acd46f553a555f459faf50fe3ab8e1bfcc285077f8",
+    "trim": {
+      "start": 0.3,
+      "end": 1.58,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "let's",
+        "start": 0.13,
+        "end": 0.47
+      },
+      {
+        "word": "keep",
+        "start": 0.47,
+        "end": 0.7299999999999999
+      },
+      {
+        "word": "going",
+        "start": 0.7299999999999999,
+        "end": 1.29
+      }
+    ],
+    "sourceText": "Let's keep going.",
+    "speed": 0,
+    "sha256": "6c3527a3f35cc7e0b337898a5ca9688c0eb5f41d550f593e1a1324a10c3e08a3",
+    "quality": {
+      "version": 3,
+      "sha256": "6c3527a3f35cc7e0b337898a5ca9688c0eb5f41d550f593e1a1324a10c3e08a3",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Let's keep going.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:17.839Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   },
   "encourage_two": {
     "text": "Thanks for trying.",
@@ -499,65 +884,113 @@
         "id": 0
       },
       {
-        "time": 0.27,
+        "time": 0.13,
         "id": 17
       },
       {
-        "time": 0.41,
+        "time": 0.27,
         "id": 1
       },
       {
-        "time": 0.53,
+        "time": 0.39,
         "id": 20
       },
       {
-        "time": 0.59,
+        "time": 0.45,
         "id": 20
       },
       {
-        "time": 0.65,
+        "time": 0.51,
         "id": 15
       },
       {
-        "time": 0.71,
+        "time": 0.57,
         "id": 18
       },
       {
-        "time": 0.77,
+        "time": 0.63,
         "id": 3
       },
       {
-        "time": 0.83,
+        "time": 0.69,
         "id": 13
       },
       {
-        "time": 0.91,
+        "time": 0.77,
         "id": 19
       },
       {
-        "time": 1.01,
+        "time": 0.87,
         "id": 13
       },
       {
-        "time": 1.09,
+        "time": 0.95,
         "id": 11
       },
       {
-        "time": 1.25,
+        "time": 1.11,
         "id": 6
       },
       {
-        "time": 1.49,
+        "time": 1.35,
         "id": 20
       },
       {
-        "time": 1.69,
+        "time": 1.55,
+        "id": 0
+      },
+      {
+        "time": 1.619,
+        "id": 0
+      },
+      {
+        "time": 1.739,
         "id": 0
       }
     ],
     "voice": 403008,
     "bundled": true,
-    "duration": 1.759,
-    "sourceKey": "f342f2e64c066e17e1f102cad172e90a81c681268a43c0a0d438e33652fb73c1"
+    "duration": 1.739,
+    "sourceKey": "f342f2e64c066e17e1f102cad172e90a81c681268a43c0a0d438e33652fb73c1",
+    "trim": {
+      "start": 0.22000000000000003,
+      "end": 1.759,
+      "lead": 0.08,
+      "tail": 0.12
+    },
+    "wordTimings": [
+      {
+        "word": "thanks",
+        "start": 0.13,
+        "end": 0.57
+      },
+      {
+        "word": "for",
+        "start": 0.57,
+        "end": 0.7699999999999999
+      },
+      {
+        "word": "trying",
+        "start": 0.7699999999999999,
+        "end": 1.55
+      }
+    ],
+    "sourceText": "Thanks for trying.",
+    "speed": 0,
+    "sha256": "1eeb01cd5384fef215fba0c42c080badb38785cccdbcb3889909c545e8648d3e",
+    "quality": {
+      "version": 3,
+      "sha256": "1eeb01cd5384fef215fba0c42c080badb38785cccdbcb3889909c545e8648d3e",
+      "observations": [
+        {
+          "engine": "16k_en_large",
+          "text": "Thanks for trying.",
+          "accepted": true
+        }
+      ],
+      "checkedAt": "2026-11-01T14:04:19.070Z",
+      "alignmentChecked": true,
+      "method": "word alignment plus independent unrestricted ASR; explicit isolated homophones only"
+    }
   }
 }

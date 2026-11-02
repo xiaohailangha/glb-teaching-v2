@@ -1,0 +1,482 @@
+{
+  "id": "home-07-v1",
+  "title": "07 · 描述自己的家",
+  "category": "home",
+  "goal": "用大小和明亮描述居住环境",
+  "prerequisites": [
+    "home-06-v1"
+  ],
+  "scenario": "你向新朋友描述自己的家：家不大，房间明亮，你很喜欢它。",
+  "stages": [
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "intro",
+      "phase": "introduce",
+      "display": "07 · 描述自己的家",
+      "text": "用大小和明亮描述居住环境",
+      "clip": "c96_8c6442d4298b8c0a252d"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "word_0_meaning",
+      "phase": "meaning",
+      "display": "home",
+      "text": "家",
+      "clip": "c96_a789dc068c900266d581"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "word_0_model",
+      "phase": "demonstrate",
+      "display": "home",
+      "text": "家",
+      "clip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "word_0",
+      "phase": "listen",
+      "display": "home",
+      "text": "家",
+      "practiceClip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "room",
+      "id": "word_1_meaning",
+      "phase": "meaning",
+      "display": "room",
+      "text": "房间",
+      "clip": "c96_84ca2e70f4a60faf45b5"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "room",
+      "id": "word_1_model",
+      "phase": "demonstrate",
+      "display": "room",
+      "text": "房间",
+      "clip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "room",
+      "id": "word_1",
+      "phase": "listen",
+      "display": "room",
+      "text": "房间",
+      "practiceClip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "bright",
+      "id": "word_2_meaning",
+      "phase": "meaning",
+      "display": "bright",
+      "text": "明亮的",
+      "clip": "c96_b673365a454495b14841"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "bright",
+      "id": "word_2_model",
+      "phase": "demonstrate",
+      "display": "bright",
+      "text": "明亮的",
+      "clip": "c96_5065039a8d4d5f89b1f2",
+      "speechText": "bright"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "bright",
+      "id": "word_2",
+      "phase": "listen",
+      "display": "bright",
+      "text": "明亮的",
+      "practiceClip": "c96_5065039a8d4d5f89b1f2",
+      "speechText": "bright",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "chunk_0_model",
+      "phase": "demonstrate",
+      "display": "a small home",
+      "text": "一个小家",
+      "clip": "c96_b9474ae11b840697f19e",
+      "speechText": "a small home"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "chunk_0",
+      "phase": "listen",
+      "display": "a small home",
+      "text": "一个小家",
+      "practiceClip": "c96_b9474ae11b840697f19e",
+      "speechText": "a small home",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "chunk_1_model",
+      "phase": "demonstrate",
+      "display": "a bright room",
+      "text": "一个明亮的房间",
+      "clip": "c96_8bf1435b28f4e1fc581d",
+      "speechText": "a bright room"
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "chunk_1",
+      "phase": "listen",
+      "display": "a bright room",
+      "text": "一个明亮的房间",
+      "practiceClip": "c96_8bf1435b28f4e1fc581d",
+      "speechText": "a bright room",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_0_model",
+      "phase": "demonstrate",
+      "display": "My home is small.",
+      "text": "我的家很小。",
+      "clip": "c96_8483f7f3053d84988266",
+      "speechText": "My home is small."
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_0",
+      "phase": "listen",
+      "display": "My home is small.",
+      "text": "我的家很小。",
+      "practiceClip": "c96_8483f7f3053d84988266",
+      "speechText": "My home is small.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_1_model",
+      "phase": "demonstrate",
+      "display": "This room is bright.",
+      "text": "这个房间很明亮。",
+      "clip": "c96_852b38641c67c527e560",
+      "speechText": "This room is bright."
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_1",
+      "phase": "listen",
+      "display": "This room is bright.",
+      "text": "这个房间很明亮。",
+      "practiceClip": "c96_852b38641c67c527e560",
+      "speechText": "This room is bright.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_2_model",
+      "phase": "demonstrate",
+      "display": "I like my home.",
+      "text": "我喜欢我的家。",
+      "clip": "c96_b2d4b1f940b2d521b789",
+      "speechText": "I like my home."
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "sentence_2",
+      "phase": "listen",
+      "display": "I like my home.",
+      "text": "我喜欢我的家。",
+      "practiceClip": "c96_b2d4b1f940b2d521b789",
+      "speechText": "I like my home.",
+      "hide": false,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "identify_0_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_e41d6fbfc85e5380feda",
+      "hide": true
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "identify_0",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_0",
+      "practiceClip": "c96_e41d6fbfc85e5380feda",
+      "speechText": "home",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_1",
+          "label": "房间"
+        },
+        {
+          "id": "answer_2",
+          "label": "明亮的"
+        },
+        {
+          "id": "answer_0",
+          "label": "家"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "identify_1_cue",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "先听声音，再选择意思。",
+      "clip": "c96_1f5e55ced27ab380c909",
+      "hide": true
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "room",
+      "id": "identify_1",
+      "phase": "choice",
+      "display": "听音辨意",
+      "text": "刚才听到的表达是什么意思？",
+      "answer": "answer_1",
+      "practiceClip": "c96_1f5e55ced27ab380c909",
+      "speechText": "room",
+      "hide": true,
+      "options": [
+        {
+          "id": "answer_2",
+          "label": "明亮的"
+        },
+        {
+          "id": "answer_0",
+          "label": "家"
+        },
+        {
+          "id": "answer_1",
+          "label": "房间"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "recall_chunk_0",
+      "phase": "recall",
+      "display": "a small home",
+      "text": "不看英文，请表达：一个小家",
+      "practiceClip": "c96_b9474ae11b840697f19e",
+      "speechText": "a small home",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "recall_chunk_1",
+      "phase": "recall",
+      "display": "a bright room",
+      "text": "不看英文，请表达：一个明亮的房间",
+      "practiceClip": "c96_8bf1435b28f4e1fc581d",
+      "speechText": "a bright room",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "transfer_0",
+      "phase": "recall",
+      "display": "My home is small.",
+      "text": "情境练习：你向新朋友描述自己的家：家不大，房间明亮，你很喜欢它。\n这一句请表达：我的家很小。",
+      "practiceClip": "c96_8483f7f3053d84988266",
+      "speechText": "My home is small.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "transfer_1",
+      "phase": "recall",
+      "display": "This room is bright.",
+      "text": "情境练习：你向新朋友描述自己的家：家不大，房间明亮，你很喜欢它。\n这一句请表达：这个房间很明亮。",
+      "practiceClip": "c96_852b38641c67c527e560",
+      "speechText": "This room is bright.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "transfer_2",
+      "phase": "recall",
+      "display": "I like my home.",
+      "text": "情境练习：你向新朋友描述自己的家：家不大，房间明亮，你很喜欢它。\n这一句请表达：我喜欢我的家。",
+      "practiceClip": "c96_b2d4b1f940b2d521b789",
+      "speechText": "I like my home.",
+      "hide": true,
+      "options": [
+        {
+          "id": "attempt",
+          "label": "我读好了"
+        },
+        {
+          "id": "help",
+          "label": "再听示范"
+        }
+      ]
+    },
+    {
+      "chapter": "描述自己的家",
+      "word": "home",
+      "id": "summary",
+      "phase": "finish",
+      "display": "本节学习记录",
+      "text": "本节课我们就学到这里。",
+      "options": []
+    }
+  ]
+}

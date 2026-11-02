@@ -36,12 +36,9 @@ try {
     $taskModelHash = Get-EntryHash $taskModels[0]
     $taskSource = Join-Path $taskRoot ('scene-preview\flutter_scene_generated\' + $taskModels[0].Name)
     if ($taskModelHash -ne (Get-FileHash -LiteralPath $taskSource).Hash.ToLowerInvariant()) { throw 'Model hash mismatch' }
-    $taskAudioCount = 0
-    foreach ($taskFile in Get-ChildItem (Join-Path $taskRoot 'scene-preview\assets\avatar\audio') -File) {
-        $taskEntry = $taskZip.GetEntry('assets/flutter_assets/assets/avatar/audio/' + $taskFile.Name)
-        if ($null -eq $taskEntry -or (Get-EntryHash $taskEntry) -ne (Get-FileHash -LiteralPath $taskFile.FullName).Hash.ToLowerInvariant()) { throw "Audio asset mismatch: $($taskFile.Name)" }
-        $taskAudioCount++
-    }
+    $taskAudioCount = 1
+    if ($null -eq $taskZip.GetEntry('assets/flutter_assets/assets/bootstrap/silence.wav')) { throw 'Bootstrap silence missing' }
+    if ($taskZip.Entries | Where-Object { $_.FullName -match 'assets/flutter_assets/assets/avatar/(audio|courses)/' }) { throw 'Course payload must be delivered by signed COS release' }
     $taskSecrets = Get-Content -LiteralPath (Join-Path $taskRoot '.secrets\tencent.json') -Raw | ConvertFrom-Json
     foreach ($taskEntry in $taskZip.Entries) {
         if ($taskEntry.FullName -notmatch '\.(so|js|json|xml|dex)$') { continue }

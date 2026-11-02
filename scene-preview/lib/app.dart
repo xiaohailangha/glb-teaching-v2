@@ -1,3 +1,5 @@
+import 'core/avatar/scene/course_resources.dart';
+
 import 'package:flutter/material.dart';
 
 import 'features/auth/auth_gate.dart';
@@ -8,6 +10,7 @@ class SnowSpeaksApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
     title: 'Snow Speaks · 开口说英语',
     debugShowCheckedModeBanner: false,
+    scrollBehavior: const MaterialScrollBehavior().copyWith(scrollbars: false),
     theme: ThemeData(
       useMaterial3: true,
       fontFamily: 'NotoSansSC',
@@ -21,6 +24,9 @@ class SnowSpeaksApp extends StatelessWidget {
         bodyMedium: TextStyle(color: Color(0xFF283344)),
       ),
     ),
-    home: const AuthGate(),
+    home: DefaultAssetBundle(
+      bundle: CourseResources.instance,
+      child: const AuthGate(),
+    ),
   );
 }
