@@ -1,4 +1,5 @@
 import 'course_resources.dart';
+import '../../app_origin.dart';
 
 import 'dart:async';
 import 'dart:convert';
@@ -22,8 +23,63 @@ class SpeechClip {
 
 class SpeechClient {
   Future<SpeechClip> prepareVerified(Map<String, dynamic> item) async {
+    if (item['kind'] == 'teaching-pilot') {
+      if (item['voice'] != 403008 ||
+          item['revision'] != 'stable-teaching-20261110-v1' ||
+          item['inlineAudio'] is! String ||
+          (item['inlineAudio'] as String).length > 2000000 ||
+          item['size'] is! int ||
+          item['size'] <= 0 ||
+          item['size'] > 1500000) {
+        throw StateError('试用声音资料无效');
+      }
+      final bytes = base64Decode(item['inlineAudio'] as String);
+      final digest = sha256.convert(bytes).toString();
+      if (bytes.length != item['size'] || digest != item['sha256']) {
+        throw StateError('试用声音校验失败');
+      }
+      return cache[digest] ??= SpeechClip(
+        digest,
+        MouthCue.fromJson(item['cues']),
+        bytes: bytes,
+      );
+    }
+    if (item['kind'] == 'phonetic-reference') {
+      if (item['voice'] != 'phonetic-reference' ||
+          item['inlineAudio'] is! String ||
+          (item['inlineAudio'] as String).length > 270000 ||
+          item['size'] is! int ||
+          item['size'] <= 0 ||
+          item['size'] > 200000)
+        throw StateError('音标声音资料无效');
+      final bytes = base64Decode(item['inlineAudio'] as String),
+          digest = sha256
+              .convert(base64Decode(item['inlineAudio'] as String))
+              .toString();
+      if (bytes.length != item['size'] || digest != item['sha256'])
+        throw StateError('音标声音校验失败');
+      return cache[digest] ??= SpeechClip(
+        digest,
+        MouthCue.fromJson(item['cues']),
+        bytes: bytes,
+      );
+    }
+    if (item['voice'] != 403008) {
+      throw StateError('当前声音与课程声线不一致，已停止播放');
+    }
     final hash = item['sha256'] as String;
     if (!RegExp(r'^[a-f0-9]{64}$').hasMatch(hash)) throw StateError('声音校验信息无效');
+    final uri = Uri.parse(item['url'] as String);
+    if (uri.scheme != 'https' ||
+        uri.port != 443 ||
+        uri.userInfo.isNotEmpty ||
+        uri.host !=
+            'glb-teaching-assets-1252505198.cos.ap-beijing.myqcloud.com' ||
+        !uri.path.startsWith(
+          '/courses/releases/${item['release']}/runtime/audio/',
+        )) {
+      throw StateError('正式声音地址无效');
+    }
     if (cache.containsKey(hash)) return cache[hash]!;
     final response = await client
         .get(Uri.parse(item['url'] as String))
@@ -43,9 +99,7 @@ class SpeechClient {
   final http.Client client = http.Client();
   AudioRecorder? _recorder;
   final cache = <String, SpeechClip>{};
-  final Uri origin = kIsWeb
-      ? Uri.base.replace(path: '', query: '', fragment: '')
-      : Uri.parse('https://49.233.179.83');
+  final Uri origin = applicationOrigin;
   bool configured = false;
   int generation = 0;
   Timer? _limit;

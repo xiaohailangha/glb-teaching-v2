@@ -8,7 +8,8 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'dart:ui_web' as ui_web;
 
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart'
+    show debugPrint;
 import 'package:web/web.dart' as web;
 
 import '../../../generated_assets/generated_asset_fetch_web.dart';

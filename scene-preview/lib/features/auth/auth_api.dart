@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import '../../core/app_origin.dart';
+
 import 'package:http/http.dart' as http;
 
 class LearnerAccount {
@@ -27,7 +29,7 @@ class AuthFailure implements Exception {
 class AuthApi {
   AuthApi({http.Client? client, Uri? origin})
     : client = client ?? http.Client(),
-      origin = origin ?? Uri.base;
+      origin = origin ?? applicationOrigin;
   final http.Client client;
   final Uri origin;
   Future<Map<String, dynamic>> request(

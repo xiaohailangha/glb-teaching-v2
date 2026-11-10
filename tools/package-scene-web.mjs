@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {gzipSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
 
 export function packageSceneWeb(app,revision){
@@ -40,10 +41,19 @@ export function packageSceneWeb(app,revision){
  for(const name of priorEntries)fs.writeFileSync(path.join(dir,name),html);
  fs.copyFileSync(path.join(app,'web/retire_service_worker.js'),path.join(dir,'flutter_service_worker.js'));
  fs.writeFileSync(path.join(dir,'scene-release.json'),JSON.stringify({...release,bootstrapFile,indexFile},null,2));
+ // nginx gzip_static serves these directly, including binary shader bundles.
+ // Do not recompress model parts; their delivery/cache contract is separate.
+ for(const entry of fs.readdirSync(dir,{recursive:true,withFileTypes:true})){
+  if(!entry.isFile()||! /\.(js|json|html|wasm|shaderbundle)$/.test(entry.name))continue;
+  const file=path.join(entry.parentPath,entry.name),bytes=fs.readFileSync(file);
+  if(bytes.length<1024)continue;
+  fs.writeFileSync(file+'.gz',gzipSync(bytes,{level:6}));
+  const stat=fs.statSync(file);fs.utimesSync(file+'.gz',stat.atime,stat.mtime);
+ }
  return {...release,bootstrapFile,indexFile};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const app=process.argv[2];if(!app)throw Error('Pass the Flutter application directory');
- const revision=JSON.parse(fs.readFileSync(new URL('../data/teaching-pilot/current.json',import.meta.url))).revision;
+ const app=process.argv[2]||fileURLToPath(new URL('../scene-preview',import.meta.url));
+ const revision=JSON.parse(fs.readFileSync(new URL('../release.json',import.meta.url))).revision;
  console.log(JSON.stringify(packageSceneWeb(path.resolve(app),revision)));
 }

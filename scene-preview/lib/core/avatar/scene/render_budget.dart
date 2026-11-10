@@ -19,19 +19,19 @@ class RenderBudget {
     if (mobileBrowser) {
       return switch (quality) {
         'low' => const RenderBudget(
-          fps: 24,
+          fps: 30,
           scale: .7,
           minScale: .65,
           shadows: false,
         ),
         'high' => const RenderBudget(
-          fps: 30,
+          fps: 60,
           scale: 1,
           minScale: .65,
           shadows: true,
         ),
         _ => const RenderBudget(
-          fps: 30,
+          fps: 60,
           scale: .85,
           minScale: .65,
           shadows: false,

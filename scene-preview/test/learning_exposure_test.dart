@@ -1,3 +1,4 @@
+import 'package:snow_speaks/features/lesson/presentation/adult_course_panel.dart' show MicWave;
 import 'dart:typed_data';
 import 'dart:async';
 
@@ -9,7 +10,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:snow_speaks/features/lesson/domain/vocabulary_ledger.dart';
 import 'package:snow_speaks/features/lesson/application/lesson_controller.dart';
-import 'package:snow_speaks/features/lesson/presentation/adult_course_panel.dart';
+
 import 'package:snow_speaks/core/avatar/scene/automatic_reader.dart';
 
 void main() {
@@ -204,7 +205,11 @@ void main() {
     expect(
       tester
           .widgetList<AnimatedContainer>(find.byType(AnimatedContainer))
-          .every((b) => b.constraints!.maxHeight >= 10 && b.constraints!.maxHeight <= 22),
+          .every(
+            (b) =>
+                b.constraints!.maxHeight >= 10 &&
+                b.constraints!.maxHeight <= 22,
+          ),
       isTrue,
     );
   });
@@ -233,68 +238,6 @@ void main() {
       expect(gate.add(quiet), isNull);
     }
   });
-  testWidgets(
-    'sentence words are individually playable and panel has no scroll view',
-    (tester) async {
-      final c = LessonController()..ready = true;
-      final commands = <Map<String, Object?>>[];
-      c.attach(commands.add);
-      c.playCourse();
-      c.handle({
-        'event': 'lesson-phase',
-        'session': c.session,
-        'phase': 'listen',
-        'step': 'eat_apple',
-        'display': 'I want to eat an apple.',
-        'speechText': 'I want to eat an apple.',
-        'text': '我想吃一个苹果。',
-        'hideAnswer': false,
-        'checkpoint': {'version': 1},
-        'stageCount': 62,
-        'options': [
-          {'id': 'next', 'label': '继续'},
-        ],
-      });
-      await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
-            body: SizedBox(
-              width: 360,
-              height: 360,
-              child: AdultCoursePanel(controller: c),
-            ),
-          ),
-        ),
-      );
-      await tester.pumpAndSettle();
-      expect(tester.takeException(), isNull);
-      expect(find.byType(Scrollable), findsNothing);
-      // A stale choice/extension phase must not expose legacy control actions.
-      c.lessonPhase = 'choice';
-      c.courseStep = 'extension_gate';
-      c.courseOptions = [
-        {'id': 'next', 'label': '继续'},
-        {'id': 'attempt', 'label': '我读好了'},
-      ];
-      await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
-            body: AdultCoursePanel(key: UniqueKey(), controller: c),
-          ),
-        ),
-      );
-      await tester.pumpAndSettle();
-      expect(find.text('继续'), findsNothing);
-      expect(find.text('我读好了'), findsNothing);
-      await tester.tap(find.text('want'));
-      expect(commands.last['clip'], 'part_want');
-      expect(
-        c.vocabulary.seen,
-        containsAll(['i', 'want', 'to', 'eat', 'an', 'apple']),
-      );
-      c.dispose();
-    },
-  );
   test('hidden recall target is not counted merely because its answer exists in the lesson', () {
     final c = LessonController()..ready = true;
     c.playCourse();

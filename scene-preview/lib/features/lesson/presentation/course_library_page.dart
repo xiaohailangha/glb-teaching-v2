@@ -28,6 +28,7 @@ Future<void> showCourseLibrary(
   List<CourseInfo> additions = const [],
   FormalDirectory? directory,
   Future<void> Function(String)? onAdditionalSelected,
+  Future<void> Function(String)? onTrialSelected,
 }) {
   final reduced = MediaQuery.disableAnimationsOf(context);
   return Navigator.of(context).push<void>(
@@ -42,6 +43,7 @@ Future<void> showCourseLibrary(
         additions: additions,
         directory: directory,
         onAdditionalSelected: onAdditionalSelected,
+        onTrialSelected: onTrialSelected,
       ),
       transitionsBuilder: (_, animation, _, child) =>
           FadeTransition(opacity: animation, child: child),
@@ -56,10 +58,12 @@ class CourseLibraryPage extends StatefulWidget {
     this.additions = const [],
     this.directory,
     this.onAdditionalSelected,
+    this.onTrialSelected,
   });
   final List<CourseInfo> additions;
   final FormalDirectory? directory;
   final Future<void> Function(String)? onAdditionalSelected;
+  final Future<void> Function(String)? onTrialSelected;
   final LessonController controller;
   @override
   State<CourseLibraryPage> createState() => _CourseLibraryPageState();
@@ -67,7 +71,7 @@ class CourseLibraryPage extends StatefulWidget {
 
 class _CourseLibraryPageState extends State<CourseLibraryPage>
     with SingleTickerProviderStateMixin {
-  bool _formal = false;
+  late final bool _formal;
   String _unit = '';
   List<CourseInfo> get catalog => _formal
       ? widget.directory!.courses
@@ -89,7 +93,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
           if (widget.additions.isNotEmpty)
             CourseType(
               'b101',
-              '体验测试 · B1.01',
+              '正式课程',
               widget.additions.map((c) => c.id).toList(),
             ),
         ];
@@ -109,7 +113,10 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     );
     final type = types.firstWhere(
       (type) => type.courseIds.contains(widget.controller.courseId),
-      orElse: () => types.first,
+      orElse: () => types.firstWhere(
+        (t) => t.courseIds.contains(catalog.first.id),
+        orElse: () => types.first,
+      ),
     );
     _type = type.id;
     if (_formal) {
@@ -157,36 +164,14 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     });
   }
 
-  void _source(bool formal) {
-    if (_opening || _formal == formal) return;
+  void _selectUnit(String? value) {
+    if (_opening || value == null || value == _unit) return;
     _position.stop();
     setState(() {
-      _formal = formal;
-      _type = types.first.id;
-      _unit = formal
-          ? widget.directory!.units.firstWhere(
-                  (u) => u['category'] == _type,
-                )['id']
-                as String
-          : '';
+      _unit = value;
       _indices = [
         for (var i = 0; i < catalog.length; i++)
-          if (types.first.courseIds.contains(catalog[i].id) &&
-              (!formal || catalog[i].unit == _unit))
-            i,
-      ];
-      _position.value = (_indices.length * 1000).toDouble();
-    });
-  }
-
-  void _selectUnit(CourseType unit) {
-    if (_opening || _unit == unit.id) return;
-    _position.stop();
-    setState(() {
-      _unit = unit.id;
-      _indices = [
-        for (var i = 0; i < catalog.length; i++)
-          if (catalog[i].unit == _unit) i,
+          if (catalog[i].category == _type && catalog[i].unit == _unit) i,
       ];
       _position.value = (_indices.length * 1000).toDouble();
     });
@@ -225,18 +210,18 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     }
     setState(() => _opening = true);
     try {
-      if (widget.additions.any((c) => c.id == course.id)) {
+      if (_formal || widget.additions.any((c) => c.id == course.id)) {
         await widget.onAdditionalSelected?.call(course.id);
       } else {
         await widget.onAdditionalSelected?.call('');
         await widget.controller.selectCourse(course.id);
       }
       if (mounted) Navigator.pop(context);
-    } catch (_) {
+    } catch (error) {
       if (!mounted) return;
       setState(() => _opening = false);
       ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('课程暂时未能打开，请再试一次')));
+          .showSnackBar(SnackBar(content: Text(error.toString())));
     }
   }
 
@@ -396,33 +381,53 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                 animation: _position,
                 builder: (context, _) => Column(
                   children: [
-                    if (widget.directory != null)
+                    const Padding(
+                      padding: EdgeInsets.all(12),
+                      child: Text(
+                        '正式课程',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    if (widget.onTrialSelected != null)
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: Row(
+                        child: Wrap(
+                          spacing: 8,
                           children: [
-                            TextButton(
-                              onPressed: _opening ? null : () => _source(true),
-                              child: Text(
-                                '新体系 · ${widget.directory!.courses.length}课',
-                                style: TextStyle(
-                                  color: _formal
-                                      ? Colors.white
-                                      : Colors.white60,
+                            for (final entry in const {
+                              'N26-U006-L04': '试教 · and / or',
+                              'N26-U084-L01': '试教 · 承认不同，再说想法',
+                            }.entries)
+                              TextButton(
+                                onPressed: _opening
+                                    ? null
+                                    : () async {
+                                        setState(() => _opening = true);
+                                        try {
+                                          await widget.onTrialSelected!(
+                                            entry.key,
+                                          );
+                                          if (mounted) Navigator.pop(context);
+                                        } catch (error) {
+                                          if (mounted) {
+                                            setState(() => _opening = false);
+                                            ScaffoldMessenger.of(
+                                              context,
+                                            ).showSnackBar(
+                                              SnackBar(
+                                                content: Text(error.toString()),
+                                              ),
+                                            );
+                                          }
+                                        }
+                                      },
+                                child: Text(
+                                  entry.value,
+                                  style: const TextStyle(
+                                    color: Color(0xFFBDE5DD),
+                                  ),
                                 ),
                               ),
-                            ),
-                            TextButton(
-                              onPressed: _opening ? null : () => _source(false),
-                              child: Text(
-                                '原正式课',
-                                style: TextStyle(
-                                  color: !_formal
-                                      ? Colors.white
-                                      : Colors.white60,
-                                ),
-                              ),
-                            ),
                           ],
                         ),
                       ),
@@ -471,7 +476,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                           ],
                           selected: _unit,
                           enabled: !_opening,
-                          onSelected: _selectUnit,
+                          onSelected: (unit) => _selectUnit(unit.id),
                         ),
                       ),
                     Expanded(child: _deck()),
@@ -695,7 +700,7 @@ class _Poster extends StatelessWidget {
                               : info.coverTitle,
                           textScaler: TextScaler.noScaling,
                           style: const TextStyle(
-                            fontFamily: 'Arial',
+                            fontFamily: 'NotoSansSC',
                             fontSize: 49,
                             height: .98,
                             fontWeight: FontWeight.w900,

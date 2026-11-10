@@ -6,7 +6,10 @@ import 'package:flutter/foundation.dart';
 import '../../../core/avatar/scene/automatic_reader.dart';
 import '../../auth/auth_api.dart';
 import '../domain/course_catalog.dart';
+import '../domain/ipa_sounds.dart';
 import 'lesson_controller.dart';
+import 'cloud_lesson.dart';
+import '../../../core/avatar/scene/course_resources.dart';
 
 class CurriculumBeat {
   const CurriculumBeat({
@@ -36,8 +39,7 @@ class CurriculumLessonController extends LessonController {
     reader =
         readerFactory?.call(this) ??
         AutomaticReader(
-          (path) => (kIsWeb ? Uri.base : Uri.parse('https://49.233.179.83'))
-              .resolve(path),
+          (path) => api.origin.resolve(path),
           (state, message) {
             if (_closed) return;
             automaticState = state;
@@ -47,6 +49,7 @@ class CurriculumLessonController extends LessonController {
             notifyListeners();
           },
           (_, _) {},
+          liveTranscription: false,
           onSignal: (value) {
             if (_closed) return;
             micLevel = value;
@@ -77,7 +80,35 @@ class CurriculumLessonController extends LessonController {
   Map<String, dynamic>? _progress;
   List<Map<String, dynamic>> _courses = [];
   int _epoch = 0, _revision = 0, _mediaExpires = 0;
-  bool _closed = false, _answering = false;
+  List<Map<String, dynamic>> _actualWords = [];
+  String? _resumeStep;
+  Future<Map<String, dynamic>> _request(
+    String route, {
+    String method = 'GET',
+    Map<String, dynamic>? data,
+  }) => api.request(
+    route,
+    method: method,
+    data: method == 'GET'
+        ? data
+        : {'version': catalog['version'], 'course': courseId, ...?data},
+  );
+  bool _closed = false, _answering = false, _navigating = false;
+  Future<void> flushProgress() => _saves.catchError((Object _) {});
+  @override
+  double get courseProgress {
+    if (courseStep == 'summary') return 1;
+    if (beats.isEmpty) return 0;
+    final completed = beats
+        .where(
+          (b) =>
+              _visited.contains(b.step['id']) &&
+              (b.modelStep == null || _visited.contains(b.modelStep!['id'])),
+        )
+        .length;
+    return (completed / beats.length).clamp(0.0, .99);
+  }
+
   CurriculumBeat get beat => beats[coursePosition];
   bool valid(int token) => !_closed && token == _epoch && !coursePaused;
   @override
@@ -100,47 +131,59 @@ class CurriculumLessonController extends LessonController {
   }
 
   @override
-  Future<void> selectCourse(String id) => onSelect(id);
+  Future<void> selectCourse(String id) async {
+    await flushProgress();
+    if (!_closed) await onSelect(id);
+  }
 
   Future<void> initialize() async {
-    catalog = await api.request('learning/curriculum');
+    final release = CourseResources.instance.release;
+    if (release == null) throw StateError('正式课程尚未载入');
+    catalog = {
+      ...CourseResources.instance.catalog,
+      'version': release,
+      'state': await api.request(
+        'learning/curriculum/state?release=' + release,
+      ),
+    };
     if (_closed) return;
     if (catalog['state']['level'] == null) {
-      catalog['state'] = await api.request(
+      catalog['state'] = await _request(
         'learning/curriculum/start',
         method: 'POST',
         data: {'level': 1, 'revision': catalog['state']['revision']},
       );
     }
-    if (_closed) return;
-    final testData = catalog['testData'] as Map? ?? catalog;
-    _courses = (testData['courses'] as List)
-        .where((c) => c['status'] == 'test' || c['status'] == 'pilot')
+    _courses = (catalog['courses'] as List)
         .map((c) => Map<String, dynamic>.from(c as Map))
         .toList();
-    final outerState = catalog['state'] as Map;
-    final state = outerState['testData'] as Map? ?? outerState;
-    _progress = Map<String, dynamic>.from(state['evidence'] as Map? ?? {});
-    _initialWords.addAll(
-      (_progress!['words'] as List? ?? [])
-          .where((w) => w['learned'] == true)
-          .map((w) => w['word'] as String),
-    );
+    final state = catalog['state'] as Map;
+    _progress = Map<String, dynamic>.from(state['evidence'] as Map);
     final old = (state['progress'] as List)
         .where((p) => p['course'] == courseId)
         .firstOrNull;
     _revision = old?['revision'] as int? ?? 0;
-    final sample = testData['sample'] as Map;
-    final steps = (sample['steps'] as List)
-        .where((s) => s['course'] == courseId)
+    _resumeStep = old?['step'] as String?;
+    _visited.addAll((old?['visitedSteps'] as List? ?? []).cast<String>());
+    final doc = await loadCloudLesson(
+      api,
+      courseId,
+      catalog['version'] as String,
+    );
+    if (_closed) return;
+    final lesson = doc['lesson'] as Map;
+    _actualWords = (lesson['actualWords'] as List)
+        .map((w) => Map<String, dynamic>.from(w as Map))
+        .toList();
+    catalog['sample'] = {'audio': doc['audio']};
+    final steps = (lesson['steps'] as List)
         .map((s) => Map<String, dynamic>.from(s as Map))
         .toList();
-    final checks = (sample['checks'] as List)
-        .where((c) => c['course'] == courseId)
+    final checks = (lesson['checks'] as List)
         .map((c) => Map<String, dynamic>.from(c as Map))
         .toList();
-    final guided = (sample['guidedLessons'] as Map?)?[courseId] as List?;
-    if (guided != null) {
+    final guided = steps;
+    {
       for (var i = 0; i < guided.length; i++) {
         var step = Map<String, dynamic>.from(guided[i] as Map);
         Map<String, dynamic>? modelStep;
@@ -166,59 +209,29 @@ class CurriculumLessonController extends LessonController {
                 ? [modelStep['audio'] as String]
                 : check == null
                 ? (step['audio'] == '' ? [] : [step['audio'] as String])
+                : step['model'] is String &&
+                      (step['model'] as String).isNotEmpty
+                ? [step['model'] as String]
                 : (check['audio'] as List).cast<String>(),
           ),
         );
       }
-    } else {
-      final assigned = <String>{};
-      // Bind assessments to their authored situations; listening tasks use their
-      // own recorded questions and are never preceded by an exposed answer.
-      for (final s in steps.where((s) => s['phase'] != '收束')) {
-        final ids = (s['audio'] as String)
-            .split('、')
-            .where((id) => id.isNotEmpty)
-            .toList();
-        final attached = checks
-            .where(
-              (c) =>
-                  !assigned.contains(c['id']) &&
-                  (c['kind'] != 'word'
-                      ? RegExp('\\b${c['id']}\\b')
-                            .hasMatch(s['evidence'] as String)
-                      : (s['phase'] == '听辨' || s['phase'] == '欢迎') &&
-                            c['variant'] == 'a' &&
-                            (c['audio'] as List).any(ids.contains)),
-            )
-            .toList();
-        if (attached.isEmpty) {
-          beats.add(CurriculumBeat(step: s, audio: ids));
-        } else {
-          for (final c in attached) {
-            assigned.add(c['id'] as String);
-            beats.add(
-              CurriculumBeat(
-                step: s,
-                check: c,
-                audio: (c['audio'] as List).cast<String>(),
-              ),
-            );
-          }
-        }
-      }
-      final closing = steps.last;
-      for (final c in checks.where((c) => !assigned.contains(c['id']))) {
-        beats.add(
-          CurriculumBeat(
-            step: closing,
-            check: c,
-            audio: (c['audio'] as List).cast<String>(),
-          ),
-        );
-      }
-      beats.add(CurriculumBeat(step: closing));
     }
     courseTotal = beats.length;
+    final pendingStep = old?['pendingStep'] as String?;
+    if (pendingStep != null) {
+      final i = beats.indexWhere(
+        (b) => b.step['id'] == pendingStep || b.modelStep?['id'] == pendingStep,
+      );
+      if (i >= 0) coursePosition = i;
+    } else if (_resumeStep != null) {
+      final i = beats.indexWhere(
+        (b) => b.step['id'] == _resumeStep || b.modelStep?['id'] == _resumeStep,
+      );
+      if (i >= 0)
+        coursePosition = (i + (beats[i].step['id'] == _resumeStep ? 1 : 0))
+            .clamp(0, beats.length - 1);
+    }
     courseChapter = activeCourse.title;
     ready = true;
     notifyListeners();
@@ -226,17 +239,24 @@ class CurriculumLessonController extends LessonController {
 
   Future<void> _media() async {
     if (_mediaExpires > DateTime.now().millisecondsSinceEpoch + 60000) return;
-    final r = await api.request('learning/curriculum/media');
+    final r = await _request(
+      'learning/curriculum/media?course=$courseId&release=${catalog['version']}',
+    );
+    if (r['release'] != catalog['version'])
+      throw const FormatException('课程版本不一致');
     _mediaExpires = (r['expiresAt'] as num).toInt();
     for (final a in r['assets'] as List) {
-      _audio[a['id'] as String] = Map<String, dynamic>.from(a as Map);
+      _audio[a['id'] as String] = {
+        ...Map<String, dynamic>.from(a as Map),
+        'release': r['release'],
+      };
     }
   }
 
   Future<void> _visit(Map<String, dynamic> step) =>
       _saves = _saves.catchError((Object _) {}).then((_) async {
         if (_visited.contains(step['id']) || _closed) return;
-        final r = await api.request(
+        final r = await _request(
           'learning/curriculum/progress',
           method: 'POST',
           data: {
@@ -252,7 +272,7 @@ class CurriculumLessonController extends LessonController {
   Future<void> _newChallenge(int token) async {
     final c = beat.check;
     if (c == null) return;
-    final next = await api.request(
+    final next = await _request(
       'learning/curriculum/challenge',
       method: 'POST',
       data: {
@@ -263,7 +283,7 @@ class CurriculumLessonController extends LessonController {
     );
     if (!valid(token)) return;
     if (_helpedBeats.contains(coursePosition)) {
-      await api.request(
+      await _request(
         'learning/curriculum/hint',
         method: 'POST',
         data: {'challenge': next['id']},
@@ -302,7 +322,7 @@ class CurriculumLessonController extends LessonController {
     unawaited(_enter());
   }
 
-  Future<void> _enter({bool replay = false}) async {
+  Future<void> _enter({bool correction = false}) async {
     final token = ++_epoch;
     avatar.stopCurriculumAudio();
     reader.target('', 'stage:$token');
@@ -310,11 +330,13 @@ class CurriculumLessonController extends LessonController {
     _answering = false;
     challenge = null;
     liveTranscript = '';
-    coachSentence = '';
+    coachSentence = correction
+        ? (_audio[beat.step['model']]?['text'] as String? ?? '')
+        : '';
     wordFeedback = [];
     courseOptions = [];
-    automaticFeedback = '';
-    automaticState = 'listening';
+    automaticFeedback = correction ? '慢慢来，老师再陪你说一次。' : '';
+    automaticState = correction ? 'correction' : 'listening';
     playing = true;
     courseStep = beat.step['id'] as String;
     hideAnswer = beat.check != null && beat.step['supported'] != true;
@@ -334,12 +356,6 @@ class CurriculumLessonController extends LessonController {
     if (beat.step['supported'] == true) _helpedBeats.add(coursePosition);
     notifyListeners();
     try {
-      if (beat.modelStep != null) {
-        await _visit(beat.modelStep!);
-        if (!valid(token)) return;
-      }
-      await _visit(beat.step);
-      if (!valid(token)) return;
       if (beat.check != null) {
         await _newChallenge(token);
         if (!valid(token)) return;
@@ -358,18 +374,25 @@ class CurriculumLessonController extends LessonController {
         notifyListeners();
         await avatar.playCurriculumAudio({
           ..._audio[id]!,
-          'teachingPhase': beat.check != null ? 'demonstrate' : lessonPhase,
+          'teachingPhase': beat.check != null
+              ? (correction ? 'support' : 'demonstrate')
+              : lessonPhase,
         });
         if (!valid(token)) return;
-        if (challenge != null && (beat.check!['audio'] as List).contains(id)) {
-          await api.request(
+        {
+          final heard = <String, dynamic>{'step': beat.step['id'], 'audio': id};
+          if (challenge != null && (challenge!['audio'] as List).contains(id))
+            heard['challenge'] = challenge!['id'];
+          await _request(
             'learning/curriculum/heard',
             method: 'POST',
-            data: {'challenge': challenge!['id'], 'audio': id},
+            data: heard,
           );
           if (!valid(token)) return;
         }
       }
+      if (beat.modelStep != null) await _visit(beat.modelStep!);
+      if (beat.check == null) await _visit(beat.step);
       playing = false;
       if (coursePosition == beats.length - 1 && beat.check == null) {
         await _finish(token);
@@ -412,7 +435,7 @@ class CurriculumLessonController extends LessonController {
         playing ||
         challenge == null ||
         _answering ||
-        courseOptions.isNotEmpty) {
+        courseOptions.any((o) => o['id']!.startsWith('answer_'))) {
       return;
     }
     await _answer({'mode': 'oral', 'wav': base64Encode(wav)});
@@ -431,7 +454,7 @@ class CurriculumLessonController extends LessonController {
     automaticState = 'processing';
     notifyListeners();
     try {
-      final r = await api.request(
+      final r = await _request(
         'learning/curriculum/oral',
         method: 'POST',
         data: {'challenge': id, ...answer},
@@ -450,34 +473,21 @@ class CurriculumLessonController extends LessonController {
         automaticState = 'success';
         automaticFeedback = '说出来了，我们接着聊。';
         notifyListeners();
+        await _visit(beat.step);
         await Future<void>.delayed(feedbackDelay);
         if (valid(token)) await _advance();
       } else {
         _helpedBeats.add(coursePosition);
         beat.step['supported'] = true;
-        await api.request(
+        await _request(
           'learning/curriculum/hint',
           method: 'POST',
           data: {'challenge': id},
         );
         if (!valid(token)) return;
-        automaticState = 'correction';
-        avatar.setCurriculumPhase('support');
-        automaticFeedback = '慢慢来，老师再陪你说一次。';
-        final model = beat.step['model'] as String?;
-        if (model != null && _audio[model] != null) {
-          coachSentence = _audio[model]!['text'] as String;
-          beat.step['display'] = coachSentence;
-          hideAnswer = false;
-          playing = true;
-          notifyListeners();
-          await avatar.playCurriculumAudio({
-            ..._audio[model]!,
-            'teachingPhase': 'support',
-          });
-          if (!valid(token)) return;
-        }
-        await _enter(replay: true);
+        // Re-entering prepares the next helped challenge and plays its model
+        // once. A separate correction playback here used to double the clip.
+        await _enter(correction: true);
       }
     } catch (_) {
       if (valid(token)) {
@@ -494,14 +504,34 @@ class CurriculumLessonController extends LessonController {
   }
 
   Future<void> _finish(int token) async {
-    await reader.stop();
+    await _saves;
     if (!valid(token)) return;
-    final r = await api.request('learning/curriculum');
+    final r = {
+      'state': await _request(
+        'learning/curriculum/state?release=' + catalog['version'].toString(),
+      ),
+    };
     if (!valid(token)) return;
     final state = r['state'] as Map;
-    _progress = Map<String, dynamic>.from(
-      (state['testData'] as Map? ?? state)['evidence'] as Map,
-    );
+    catalog['state'] = state;
+    if (!(state['evidence']['completedCourses'] as List).contains(courseId)) {
+      final progress = (state['progress'] as List)
+          .where((p) => p['course'] == courseId)
+          .firstOrNull;
+      final pendingStep = progress?['pendingStep'];
+      final i = beats.indexWhere(
+        (b) => b.step['id'] == pendingStep || b.modelStep?['id'] == pendingStep,
+      );
+      if (pendingStep == null || i < 0) {
+        throw StateError('课程进度尚未确认，请重新打开本课');
+      }
+      coursePosition = i;
+      await _enter();
+      return;
+    }
+    await reader.stop();
+    if (!valid(token)) return;
+    _progress = Map<String, dynamic>.from(state['evidence'] as Map);
     final words = (_progress!['words'] as List)
         .where((w) => w['learned'] == true)
         .map((w) => w['word'] as String)
@@ -521,15 +551,56 @@ class CurriculumLessonController extends LessonController {
 
   @override
   void navigateCourse(int direction) {
-    if (_closed || coursePaused || !courseMode) return;
-    if (direction > 0 && courseStep == 'summary') return;
-    coursePosition = (coursePosition + (direction < 0 ? -1 : 1)).clamp(
-      0,
-      beats.length - 1,
-    );
-    unawaited(
-      _enter(),
-    ); // Navigation never submits an answer or grants evidence.
+    if (_closed || coursePaused || !courseMode || _navigating) return;
+    if (direction > 0 && courseStep == 'summary' ||
+        direction < 0 && coursePosition == 0)
+      return;
+    unawaited(_navigate(direction));
+  }
+
+  Future<void> _navigate(int direction) async {
+    _navigating = true;
+    final token = ++_epoch, current = beat;
+    reader.target('', 'navigate:$token');
+    reader.playing = true;
+    avatar.stopCurriculumAudio();
+    playing = true;
+    challenge = null;
+    courseOptions = [];
+    notifyListeners();
+    try {
+      await flushProgress();
+      if (!valid(token)) return;
+      if (direction > 0 && !_visited.contains(current.step['id'])) {
+        _saves =
+            _request(
+              'learning/curriculum/skip',
+              method: 'POST',
+              data: {'step': current.step['id'], 'revision': _revision},
+            ).then((r) {
+              _revision = r['revision'] as int;
+              _visited.addAll((r['skippedSteps'] as List).cast<String>());
+            });
+        await _saves;
+      }
+      if (!valid(token)) return;
+      if (direction > 0 && coursePosition == beats.length - 1) {
+        await _finish(token);
+      } else {
+        coursePosition += direction < 0 ? -1 : 1;
+        if (!reader.enabled) unawaited(reader.start());
+        unawaited(_enter());
+      }
+    } catch (_) {
+      if (valid(token)) {
+        playing = false;
+        automaticState = 'error';
+        automaticFeedback = '切换暂时未能保存，请再次点击箭头。';
+        notifyListeners();
+      }
+    } finally {
+      _navigating = false;
+    }
   }
 
   @override
@@ -540,7 +611,7 @@ class CurriculumLessonController extends LessonController {
       return;
     }
     if (!coursePaused && courseStep != 'summary') {
-      unawaited(_enter(replay: true));
+      unawaited(_enter());
     }
   }
 
@@ -574,7 +645,7 @@ class CurriculumLessonController extends LessonController {
     try {
       if (challenge != null) {
         _helpedBeats.add(coursePosition);
-        await api.request(
+        await _request(
           'learning/curriculum/hint',
           method: 'POST',
           data: {'challenge': challenge!['id']},
@@ -597,7 +668,7 @@ class CurriculumLessonController extends LessonController {
       if (match != null) {
         await avatar.playCurriculumAudio(match);
       } else {
-        avatar.previewWord(text);
+        throw StateError('当前课程没有该词的独立示范');
       }
       if (!valid(token)) return;
       // Resume the same task with its helped challenge, rather than minting a
@@ -612,7 +683,7 @@ class CurriculumLessonController extends LessonController {
       reader.target(
         'oral response',
         'answer:$token',
-        recognizeOnly: courseOptions.isNotEmpty,
+        recognizeOnly: courseOptions.any((o) => o['id']!.startsWith('answer_')),
       );
       reader.playing = false;
       avatar.setCurriculumPhase(hideAnswer ? 'recall' : 'listen');
@@ -631,33 +702,83 @@ class CurriculumLessonController extends LessonController {
     }
   }
 
+  final _phonemes = <String, Map<String, dynamic>>{};
+  @override
+  void previewIpa(String symbol) {
+    if (!ipaSounds.containsKey(symbol) || _closed || coursePaused || _answering)
+      return;
+    avatar.unlockCurriculumAudio();
+    unawaited(_previewIpa(symbol));
+  }
+
+  Future<void> _previewIpa(String symbol) async {
+    final resumeModel = playing, summary = courseStep == 'summary';
+    final token = ++_epoch;
+    reader.target('', 'ipa:$token');
+    reader.playing = true;
+    avatar.stopCurriculumAudio();
+    playing = true;
+    notifyListeners();
+    try {
+      if (challenge != null) {
+        await _request(
+          'learning/curriculum/hint',
+          method: 'POST',
+          data: {'challenge': challenge!['id']},
+        );
+        if (!valid(token)) return;
+        challenge!['helped'] = true;
+      }
+      var asset = _phonemes[symbol];
+      if (asset == null) {
+        final result = await _request(
+          'learning/curriculum/phoneme?course=$courseId&release=${catalog['version']}&symbol=${Uri.encodeComponent(symbol)}',
+        );
+        if (result['release'] != catalog['version'] ||
+            result['course'] != courseId ||
+            result['asset']['symbol'] != symbol)
+          throw const FormatException('音标资料不一致');
+        asset = Map<String, dynamic>.from(result['asset'] as Map);
+        _phonemes[symbol] = asset;
+      }
+      if (!valid(token)) return;
+      await avatar.playCurriculumAudio({...asset, 'teachingPhase': 'phoneme'});
+      if (!valid(token)) return;
+      playing = false;
+      if (summary) {
+        avatar.setCurriculumPhase('finish');
+        notifyListeners();
+      } else if (resumeModel || beat.check == null) {
+        await _enter();
+      } else {
+        reader.target(
+          _audio[beat.step['model']]?['text'] as String? ?? 'oral response',
+          'answer:$token',
+        );
+        reader.playing = false;
+        avatar.setCurriculumPhase(hideAnswer ? 'recall' : 'listen');
+        notifyListeners();
+      }
+    } catch (_) {
+      if (valid(token)) {
+        playing = false;
+        automaticState = 'error';
+        automaticFeedback = '音标声音暂时未能播放，请再点一次。';
+        notifyListeners();
+      }
+    }
+  }
+
   @override
   String reviewIpa(String word) =>
-      const {
-        'hello': '/həˈloʊ/',
-        'hi': '/haɪ/',
-        'goodbye': '/ˌɡʊdˈbaɪ/',
-        'bye': '/baɪ/',
-        'welcome': '/ˈwelkəm/',
-        'good': '/ɡʊd/',
-        'ok': '/ˌoʊˈkeɪ/',
-        'how': '/haʊ/',
-        'are': '/ɑːr/',
-        'you': '/juː/',
-        'i': '/aɪ/',
-        'am': '/æm/',
-        'me': '/miː/',
-        'li': '/liː/',
-        'my': '/maɪ/',
-        'your': '/jʊr/',
-        'name': '/neɪm/',
-        'is': '/ɪz/',
-        'country': '/ˈkʌntri/',
-        'from': '/frʌm/',
-        'where': '/wer/',
-        'china': '/ˈtʃaɪnə/',
-      }[word] ??
-      super.reviewIpa(word);
+      _actualWords
+              .where(
+                (w) =>
+                    (w['word'] as String).toLowerCase() == word.toLowerCase(),
+              )
+              .firstOrNull?['ipa']
+          as String? ??
+      '';
 
   @override
   void dispose() {
@@ -669,26 +790,9 @@ class CurriculumLessonController extends LessonController {
   }
 
   @override
-  List<String> get courseReviewWords {
-    final result = <String>{};
-    for (final b in beats) {
-      for (final id in b.audio) {
-        final row = (catalog['sample']['audio'] as List)
-            .where((a) => a['id'] == id)
-            .firstOrNull;
-        if (row != null) {
-          result.addAll(
-            RegExp(r"[A-Za-z]+(?:'[A-Za-z]+)?")
-                .allMatches(
-                  (row['text'] as String)
-                      .replaceAll('I’m', 'I am')
-                      .replaceAll("I'm", 'I am'),
-                )
-                .map((m) => m[0]!.toLowerCase()),
-          );
-        }
-      }
-    }
-    return result.toList();
-  }
+  List<String> get courseReviewWords => _actualWords
+      .where((w) => w['standalonePreview'] != false)
+      .map((w) => w['word'] as String)
+      .toSet()
+      .toList();
 }

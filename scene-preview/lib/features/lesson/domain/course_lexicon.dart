@@ -1,43 +1,5 @@
 // American dictionary forms. Function words also have weak forms in sentences.
-final courseLexicon = <String, ({String clip, String ipa, String meaning})>{
-  'green': (clip: 'u2_green', ipa: '/ɡriːn/', meaning: '绿色'),
-  'yellow': (clip: 'u2_yellow', ipa: '/ˈjel.oʊ/', meaning: '黄色'),
-  'blue': (clip: 'u2_blue', ipa: '/bluː/', meaning: '蓝色'),
-  'big': (clip: 'u2_big', ipa: '/bɪɡ/', meaning: '大的'),
-  'small': (clip: 'u2_small', ipa: '/smɑːl/', meaning: '小的'),
-  'one': (clip: 'u2_one', ipa: '/wʌn/', meaning: '一'),
-  'two': (clip: 'u2_two', ipa: '/tuː/', meaning: '二'),
-  'three': (clip: 'u2_three', ipa: '/θriː/', meaning: '三'),
-  'four': (clip: 'u2_four', ipa: '/fɔːr/', meaning: '四'),
-  'five': (clip: 'u2_five', ipa: '/faɪv/', meaning: '五'),
-  'apples': (clip: 'u2_apples', ipa: '/ˈæp.əlz/', meaning: '苹果的复数；多个苹果'),
-  'bananas': (clip: 'u2_bananas', ipa: '/bəˈnæn.əz/', meaning: '香蕉的复数；多根香蕉'),
-  'water': (
-    clip: 'unit_water',
-    ipa: '/ˈwɑː.tər/',
-    meaning: '水；美式自然语流中的 t 常读成轻快的闪音',
-  ),
-  'milk': (clip: 'unit_milk', ipa: '/mɪlk/', meaning: '牛奶'),
-  'tea': (clip: 'unit_tea', ipa: '/tiː/', meaning: '茶'),
-  'coffee': (clip: 'unit_coffee', ipa: '/ˈkɑː.fi/', meaning: '咖啡'),
-  'some': (clip: 'unit_some', ipa: '/sʌm/', meaning: '一些；句中可以轻读'),
-  'please': (clip: 'unit_please', ipa: '/pliːz/', meaning: '请；使请求更礼貌'),
-  'thank': (clip: 'unit_thank', ipa: '/θæŋk/', meaning: '感谢'),
-  'you': (clip: 'unit_you', ipa: '/juː/', meaning: '你；你们'),
-  'apple': (clip: 'apple', ipa: '/ˈæp.əl/', meaning: '苹果；两个音节，重音在前'),
-  'banana': (clip: 'banana', ipa: '/bəˈnæn.ə/', meaning: '香蕉；三个音节，重音在中间'),
-  'i': (clip: 'part_i', ipa: '/aɪ/', meaning: '我'),
-  'want': (clip: 'part_want', ipa: '/wɑːnt/', meaning: '想要'),
-  'eat': (clip: 'part_eat', ipa: '/iːt/', meaning: '吃'),
-  'red': (clip: 'part_red', ipa: '/red/', meaning: '红色'),
-  'a': (clip: 'word_a', ipa: '/ə/；强读 /eɪ/', meaning: '一个；这里示范句中弱读'),
-  'an': (clip: 'word_an', ipa: '/ən/；强读 /æn/', meaning: '一个；这里示范句中弱读'),
-  'to': (
-    clip: 'word_to',
-    ipa: '/tuː/；弱读 /tə/',
-    meaning: '在 want to eat 中连接动作；句中可弱读',
-  ),
-};
+final courseLexicon = <String, ({String clip, String ipa, String meaning})>{};
 
 /// Install vocabulary from the same immutable release as lesson and audio data.
 void installCourseLexicon(Map<String, dynamic> catalog) {
@@ -46,13 +8,21 @@ void installCourseLexicon(Map<String, dynamic> catalog) {
   final next = <String, ({String clip, String ipa, String meaning})>{};
   for (final row in rows) {
     final word = (row['word'] as String).toLowerCase();
-    final clip = row['clip'] as String? ??
-        Uri.parse(row['audio']['url'] as String).pathSegments.last.replaceFirst('.wav', '');
+    final clip =
+        row['clip'] as String? ??
+        Uri.parse(row['audio']['url'] as String).pathSegments.last
+            .replaceFirst('.wav', '');
     if (!RegExp(r'^[a-zA-Z0-9_-]+$').hasMatch(clip) || next.containsKey(word)) {
       throw const FormatException('课程词库无效');
     }
-    next[word] = (clip: clip, ipa: row['ipa'] as String, meaning: row['meaning'] as String);
+    next[word] = (
+      clip: clip,
+      ipa: row['ipa'] as String,
+      meaning: row['meaning'] as String,
+    );
   }
   if (next.isEmpty) throw const FormatException('课程词库为空');
-  courseLexicon..clear()..addAll(next);
+  courseLexicon
+    ..clear()
+    ..addAll(next);
 }

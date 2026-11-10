@@ -3,9 +3,9 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 
 // Check all maintained server and tooling modules, not a stale hand-picked list.
-const files=['server.mjs'];
+const files=fs.existsSync('server.mjs')?['server.mjs']:[];
 for(const directory of ['services','tools','test']) {
-  for(const name of fs.readdirSync(directory)) {
+  for(const name of (fs.existsSync(directory)?fs.readdirSync(directory):[])) {
     if(/\.(mjs|js)$/.test(name))files.push(path.join(directory,name));
   }
 }

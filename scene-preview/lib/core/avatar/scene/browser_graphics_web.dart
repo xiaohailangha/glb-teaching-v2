@@ -1,24 +1,27 @@
 import 'dart:js_interop';
-
 import 'package:web/web.dart' as web;
 
+/// Watches only the scene context. No frame-count or timeout heuristic.
 class BrowserGraphicsWatch {
-  BrowserGraphicsWatch(void Function() onLost) {
-    _callback = ((web.Event event) {
-      onLost();
+  BrowserGraphicsWatch(void Function() onLost, {void Function()? onFrame}) {
+    _lost = ((web.Event _) => onLost()).toJS;
+    _frame = ((web.Event _) {
+      if (_seenFrame) return;
+      _seenFrame = true;
+      onFrame?.call();
     }).toJS;
-    web.window.addEventListener('flutter-scene-context-lost', _callback);
-    // Also observe the framework's visible canvas; the offscreen character
-    // context dispatches the explicit event above from the renderer backend.
-    web.window.addEventListener('webglcontextlost', _callback, true.toJS);
+    web.window.addEventListener('flutter-scene-context-lost', _lost);
+    web.window.addEventListener('flutter-scene-frame-presented', _frame);
   }
-  late final JSFunction _callback;
+  late final JSFunction _lost;
+  late final JSFunction _frame;
+  bool _seenFrame = false;
+  String get lastReason => 'G1';
   void dispose() {
-    web.window.removeEventListener('flutter-scene-context-lost', _callback);
-    web.window.removeEventListener('webglcontextlost', _callback, true.toJS);
+    web.window.removeEventListener('flutter-scene-context-lost', _lost);
+    web.window.removeEventListener('flutter-scene-frame-presented', _frame);
   }
 }
 
-// Only called by the user's recovery button, after checkpoint persistence.
-// Context loss, visibility and ordinary render errors never reload the page.
+// Recovery is requested by the user after saving their learning position.
 void reloadForGraphicsRecovery() => web.window.location.reload();

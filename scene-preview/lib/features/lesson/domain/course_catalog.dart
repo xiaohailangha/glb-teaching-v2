@@ -47,21 +47,7 @@ class FormalDirectory {
   final List<CourseInfo> courses;
 }
 
-final List<CourseInfo> courseCatalog = [
-  CourseInfo('adult-fruit-v2', 'adult-fruit', '01 · 苹果和香蕉', '从一个苹果开始'),
-  CourseInfo('adult-drinks-v1', 'adult-drinks', '02 · 水和饮料', '说说你想要什么饮品'),
-  CourseInfo('adult-polite-v1', 'adult-polite', '03 · 礼貌请求', '让请求多一点礼貌'),
-  CourseInfo('adult-shop-v1', 'adult-shop', '04 · 水果饮品店', '用熟悉的短句点东西'),
-  CourseInfo('adult-colors-v1', 'adult-colors', '05 · 颜色', '说清你想要哪种颜色'),
-  CourseInfo('adult-sizes-v1', 'adult-sizes', '06 · 大小', '说清水果的大小'),
-  CourseInfo('adult-numbers-v1', 'adult-numbers', '07 · 数量', '从一个练到多个'),
-  CourseInfo(
-    'adult-describe-review-v1',
-    'adult-describe-review',
-    '08 · 按要求拿东西',
-    '一起复习颜色、大小和数量',
-  ),
-];
+final List<CourseInfo> courseCatalog = [];
 
 /// Types group lessons directly; there is no chapter level in the picker.
 class CourseType {
@@ -70,20 +56,7 @@ class CourseType {
   final List<String> courseIds;
 }
 
-final List<CourseType> courseTypes = [
-  CourseType('basics', '基础表达', [
-    'adult-fruit-v2',
-    'adult-drinks-v1',
-    'adult-polite-v1',
-  ]),
-  CourseType('situations', '生活场景', ['adult-shop-v1']),
-  CourseType('description', '描述事物', [
-    'adult-colors-v1',
-    'adult-sizes-v1',
-    'adult-numbers-v1',
-  ]),
-  CourseType('review', '综合复习', ['adult-describe-review-v1']),
-];
+final List<CourseType> courseTypes = [];
 
 void installCourseCatalog(Map<String, dynamic> catalog) {
   final rows = (catalog['courses'] as List)

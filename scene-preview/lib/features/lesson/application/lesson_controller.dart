@@ -17,6 +17,21 @@ import '../../../core/avatar/scene/render_budget.dart';
 typedef AvatarCommand = void Function(Map<String, Object?> command);
 
 class LessonController extends ChangeNotifier {
+  Map<String, dynamic>? get teachingCard => null;
+  bool get canNavigateForward => courseStep != 'summary';
+  bool get canNavigateBackward => coursePosition > 0;
+  String get forwardNavigationLabel => '跳过当前小段';
+  String get backwardNavigationLabel => '返回上一小段';
+  int reviewPage = 0, reviewPageSize = 8;
+  int get reviewPageCount =>
+      (courseReviewWords.length / reviewPageSize).ceil().clamp(1, 100);
+  void configureReviewPageSize(int value) {
+    if (reviewPageSize == value) return;
+    reviewPageSize = value;
+    reviewPage = reviewPage.clamp(0, reviewPageCount - 1);
+    notifyListeners();
+  }
+
   void setCurriculumPhase(String phase) =>
       _send?.call({'type': 'curriculum-phase', 'phase': phase});
   void unlockCurriculumAudio() => _send?.call({'type': 'audio-unlock'});
@@ -56,6 +71,7 @@ class LessonController extends ChangeNotifier {
   final resourceTick = ValueNotifier<int>(0);
   bool scenePresented = false;
   bool graphicsLost = false;
+  String graphicsFailureReason = '';
   double resourceProgress = 0;
   String resourceLabel = '准备出发';
   Future<void> bindAccount({
@@ -168,6 +184,8 @@ class LessonController extends ChangeNotifier {
   List<Map<String, String>> courseSegments = [];
   String courseDisplay = '', coursePicture = '', courseChapter = '';
   int coursePosition = 0, courseTotal = 1;
+  double get courseProgress =>
+      ((coursePosition + 1) / courseTotal).clamp(0.0, 1.0);
   final encounteredCourseWords = <String>{};
   List<String> get courseReviewWords {
     final row = courseCatalog.where((c) => c.id == courseId).firstOrNull;
@@ -441,6 +459,7 @@ class LessonController extends ChangeNotifier {
       resourceTick.value++;
     }
     if (event == 'graphics-lost') {
+      graphicsFailureReason = message['reason'] as String? ?? 'G1';
       graphicsLost = true;
       ready = false;
       playing = false;

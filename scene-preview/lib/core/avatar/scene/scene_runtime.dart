@@ -54,6 +54,8 @@ class SceneRuntime extends ChangeNotifier {
       onRecognized: _recognized,
     );
     speech.onPlaybackError = (error) {
+      curriculumCaptureTimer?.cancel();
+      curriculumCaptureReady = null;
       playingAudio = false;
       if (mode == 'curriculum') {
         cues = [];
@@ -335,7 +337,8 @@ class SceneRuntime extends ChangeNotifier {
     if (loaded && !disposed) {
       frameMeter.record(now);
       _presentedFrames++;
-      if (_presentedFrames == 2) {
+      if (_presentedFrames == 2 &&
+          !(kIsWeb && defaultTargetPlatform == TargetPlatform.iOS)) {
         scheduleMicrotask(() {
           if (!disposed) emit('scene-presented');
         });
@@ -384,6 +387,8 @@ class SceneRuntime extends ChangeNotifier {
   TeachingDirector? director;
   List<MouthCue> cues = [];
   void Function(Object?)? curriculumComplete;
+  Timer? curriculumCaptureTimer;
+  void Function()? curriculumCaptureReady;
   SpeechClip? currentClip;
   double get now => stopwatch.elapsedMicroseconds / 1e6;
   String get phase =>
@@ -396,9 +401,6 @@ class SceneRuntime extends ChangeNotifier {
       ? (speech.seconds / speech.duration).clamp(0.0, 1.0)
       : 0;
   void emit(String event, [Map<String, dynamic> data = const {}]) {
-    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') && event == 'stats') {
-      debugPrint('SCENE_PERF ${jsonEncode(data)}');
-    }
     if (!disposed) controller.handle({'event': event, ...data});
   }
 
@@ -410,6 +412,7 @@ class SceneRuntime extends ChangeNotifier {
       // fetching every course after the entire model has decoded.
       final lessonInit = () async {
         await CourseResources.instance.ready.future;
+        if (CourseResources.instance.formal) return;
         await lessonResources.loadCommon(
           curriculum: CourseResources.instance.assets.containsKey(
             'assets/avatar/audio/curriculum-prompts.json',
@@ -421,11 +424,13 @@ class SceneRuntime extends ChangeNotifier {
       // Attach an error handler immediately while the parallel model load runs.
       final lessonReady = Future.wait([lessonInit]);
       unawaited(lessonReady.then<void>((_) {}, onError: (Object _) {}));
-      await Scene.initializeStaticResources();
-      if (!(const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
-          Uri.base.queryParameters['background'] == 'transparent')) {
-        scene.addRenderPass(background);
-      }
+      await Scene.preload(physicalMaterials: true).timeout(
+        const Duration(seconds: 45),
+        onTimeout: () => throw StateError('图形资源准备超时，请重试'),
+      );
+      if (disposed) return;
+      emit('resource-progress', {'value': .04, 'label': '加载学习伙伴'});
+      scene.addRenderPass(background);
       scene
         ..antiAliasingMode = AntiAliasingMode.fxaa
         ..environmentIntensity = .8
@@ -449,20 +454,22 @@ class SceneRuntime extends ChangeNotifier {
       _applyRenderSettings(quality, true);
       loading = '正在加载 Storm 人物…';
       notifyListeners();
-      _modelBundle = kIsWeb
-          ? SceneAssetBundle((completed, total) {
-              loading = '正在迎接你的学习伙伴';
-              emit('resource-progress', {
-                'value': .05 + completed / total * .65,
-                'label': '迎接你的学习伙伴',
-              });
-              if (!disposed) notifyListeners();
-            })
-          : null;
-      model = await loadScene(
-        'assets/avatar/models/storm-performance.glb',
-        bundle: _modelBundle,
-      );
+      _modelBundle = SceneAssetBundle((completed, total) {
+        loading = '正在迎接你的学习伙伴';
+        emit('resource-progress', {
+          'value': .05 + completed / total * .65,
+          'label': '迎接你的学习伙伴',
+        });
+        if (!disposed) notifyListeners();
+      });
+      model =
+          await loadScene(
+            'assets/avatar/models/storm-performance.glb',
+            bundle: _modelBundle,
+          ).timeout(
+            const Duration(seconds: 120),
+            onTimeout: () => throw StateError('人物加载超时，请重试'),
+          );
       _modelClaimed = true;
       if (disposed) {
         await _releaseModel();
@@ -473,7 +480,7 @@ class SceneRuntime extends ChangeNotifier {
       calibrateNeutralGaze(model!);
       model!.scale = vm.Vector3.all(1.5);
       scene.add(model!);
-      await lessonReady;
+      await lessonReady.timeout(const Duration(seconds: 30));
       if (disposed) return;
       final rig = jsonDecode(
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
@@ -646,9 +653,12 @@ class SceneRuntime extends ChangeNotifier {
           break;
         case 'curriculum-audio':
           await stop();
+          if (disposed || c['session'] != controller.session) return;
           session = c['session'] as int;
           final token = stageGeneration;
           curriculumComplete = c['complete'] as void Function(Object?);
+          curriculumCaptureReady =
+              (c['audio'] as Map)['onSpeechReady'] as void Function()?;
           mode = 'curriculum';
           curriculumPhase =
               (c['audio'] as Map)['teachingPhase'] as String? ?? 'demonstrate';
@@ -666,7 +676,31 @@ class SceneRuntime extends ChangeNotifier {
             loadingAudio = false;
             playingAudio = true;
             phaseStarted = now;
+            final boundary = (c['audio'] as Map)['speechEndMs'] as num?;
+            if (curriculumCaptureReady != null &&
+                boundary != null &&
+                boundary > 0) {
+              curriculumCaptureTimer = Timer.periodic(
+                const Duration(milliseconds: 20),
+                (timer) {
+                  if (disposed || token != stageGeneration) {
+                    timer.cancel();
+                    return;
+                  }
+                  if (speech.seconds * 1000 >= boundary) {
+                    timer.cancel();
+                    final ready = curriculumCaptureReady;
+                    curriculumCaptureReady = null;
+                    ready?.call();
+                  }
+                },
+              );
+            }
           } catch (e) {
+            if (disposed || token != stageGeneration || session != c['session'])
+              return;
+            curriculumCaptureTimer?.cancel();
+            curriculumCaptureReady = null;
             loadingAudio = false;
             playingAudio = false;
             cues = [];
@@ -892,6 +926,8 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   Future<void> stop() async {
+    curriculumCaptureTimer?.cancel();
+    curriculumCaptureReady = null;
     final done = curriculumComplete;
     curriculumComplete = null;
     done?.call(StateError('声音播放已取消'));
@@ -1120,6 +1156,10 @@ class SceneRuntime extends ChangeNotifier {
     playingAudio = false;
     automatic.playing = false;
     if (mode == 'curriculum') {
+      curriculumCaptureTimer?.cancel();
+      final ready = curriculumCaptureReady;
+      curriculumCaptureReady = null;
+      ready?.call();
       cues = [];
       final done = curriculumComplete;
       curriculumComplete = null;
@@ -1288,7 +1328,9 @@ class SceneRuntime extends ChangeNotifier {
 
   PerspectiveCamera camera() {
     final baseDistance = closeUp ? .78 : 1.68;
-    final distance = baseDistance * math.max(1, .59 / (aspect * .55));
+    final distance =
+        baseDistance *
+        math.max(1, .59 / (aspect * (centeredTeaching ? .9 : .55)));
     if (welcomeMix > 0) {
       final portrait = aspect < 1;
       return _WelcomeCamera(
@@ -1302,8 +1344,21 @@ class SceneRuntime extends ChangeNotifier {
         (portrait ? .20 : 0) * welcomeMix,
       );
     }
-    return _TeachingCamera(distance, 1.64 - (distance - baseDistance) * .195);
+    return _TeachingCamera(
+      distance,
+      1.64 - (distance - baseDistance) * .195,
+      // Storm's visible head is about .44 world units wide at this scale.
+      // Align its left silhouette with the same outer inset as the text's
+      // right edge, instead of centering a narrow figure inside a wide lane.
+      centeredTeaching
+          ? (.44 / (2 * math.tan(15 * math.pi / 180) * distance * aspect))
+                    .clamp(.3, 1.0) -
+                1
+          : -.56,
+    );
   }
+
+  bool centeredTeaching = false;
 
   void resetFrameSamples() {
     frameMeter.reset();
@@ -1321,6 +1376,8 @@ class SceneRuntime extends ChangeNotifier {
   @override
   void dispose() {
     disposed = true;
+    curriculumCaptureTimer?.cancel();
+    curriculumCaptureReady = null;
     unawaited(endedSubscription?.cancel());
     unawaited(automatic.dispose());
     unawaited(speech.dispose());
@@ -1360,24 +1417,27 @@ class _PoseDriver extends Component {
 }
 
 class _TeachingProjection extends PerspectiveProjection {
-  _TeachingProjection()
+  _TeachingProjection(this.offset)
     : super(fovRadiansY: 30 * math.pi / 180, near: .05, far: 12);
   @override
   vm.Matrix4 getProjectionMatrix(double aspectRatio, {vm.Vector2? jitter}) {
     final m = super.getProjectionMatrix(aspectRatio, jitter: jitter);
-    m[8] -= .56;
+    m[8] += offset;
     return m;
   }
+
+  final double offset;
 }
 
 class _TeachingCamera extends PerspectiveCamera {
-  _TeachingCamera(double distance, double height)
+  _TeachingCamera(double distance, double height, this.offset)
     : super(
         position: vm.Vector3(.025, height, -distance),
         target: vm.Vector3(0, height - .02, 0),
       );
   @override
-  PerspectiveProjection get projection => _TeachingProjection();
+  PerspectiveProjection get projection => _TeachingProjection(offset);
+  final double offset;
 }
 
 class _WelcomeProjection extends PerspectiveProjection {

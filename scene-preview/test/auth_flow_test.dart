@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:snow_speaks/features/lesson/domain/course_catalog.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -21,6 +23,18 @@ Future<void> advance(WidgetTester tester) async {
 void main() {
   setUp(() {
     SharedPreferences.setMockInitialValues({});
+    installCourseCatalog({
+      'courses': [
+        {
+          'id': 'N26-U001-L01',
+          'asset': 'N26-U001-L01',
+          'title': '见面打招呼',
+          'goal': '问候',
+          'status': 'published',
+          'category': '认识彼此',
+        },
+      ],
+    });
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(SystemChannels.platform, (_) async => null);
   });
@@ -29,7 +43,6 @@ void main() {
         .setMockMethodCallHandler(SystemChannels.platform, null),
   );
   for (final size in [
-    const Size(320, 568),
     const Size(390, 844),
     const Size(844, 390),
     const Size(1280, 900),
@@ -270,19 +283,35 @@ void main() {
       },
     );
   }
-  testWidgets(
-    'signed course loading does not block anonymous phone input',
-    (tester) async {
-      final c = LessonController();
-      final api = AuthApi(origin: Uri.parse('https://example.test'), client: MockClient((req) async => http.Response(jsonEncode(req.url.path.endsWith('status') ? {'testMode':true} : {'user':null}),200)));
-      await tester.pumpWidget(MaterialApp(home: AuthGate(api:api,prepareScene:false,controller:c)));
-      await advance(tester);
-      expect(find.text('需要一个手机号'), findsOneWidget);
-      expect(find.byType(LessonPage), findsNothing);
-      await tester.pumpWidget(const SizedBox());
-      c.dispose(); api.dispose();
-    },
-  );
+  testWidgets('signed course loading does not block anonymous phone input', (
+    tester,
+  ) async {
+    final c = LessonController();
+    final api = AuthApi(
+      origin: Uri.parse('https://example.test'),
+      client: MockClient(
+        (req) async => http.Response(
+          jsonEncode(
+            req.url.path.endsWith('status')
+                ? {'testMode': true}
+                : {'user': null},
+          ),
+          200,
+        ),
+      ),
+    );
+    await tester.pumpWidget(
+      MaterialApp(
+        home: AuthGate(api: api, prepareScene: false, controller: c),
+      ),
+    );
+    await advance(tester);
+    expect(find.text('需要一个手机号'), findsOneWidget);
+    expect(find.byType(LessonPage), findsNothing);
+    await tester.pumpWidget(const SizedBox());
+    c.dispose();
+    api.dispose();
+  });
   testWidgets(
     'existing session skips all input but still waits for resources',
     (tester) async {

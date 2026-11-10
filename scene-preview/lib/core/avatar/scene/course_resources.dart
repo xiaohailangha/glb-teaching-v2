@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 
+import '../../app_origin.dart';
+
 import 'package:crypto/crypto.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -13,7 +15,7 @@ import 'asset_cache.dart';
 class CourseResources extends CachingAssetBundle {
   CourseResources({http.Client? client, Uri? origin})
     : client = client ?? http.Client(),
-      origin = origin ?? Uri.base;
+      origin = origin ?? applicationOrigin;
   static final instance = CourseResources();
   final http.Client client;
   final Uri origin;
@@ -21,6 +23,8 @@ class CourseResources extends CachingAssetBundle {
   final Map<String, Map<String, dynamic>> assets = {};
   final Map<String, Future<ByteData>> pending = {};
   String? release, preview;
+  bool formal = false;
+  Map<String, dynamic> catalog = {};
   int expiresAt = 0;
   Future<void>? refreshing;
 
@@ -36,12 +40,7 @@ class CourseResources extends CachingAssetBundle {
   Future<void> _fetchManifest() async {
     final uri = origin
         .resolve('/api/auth/content')
-        .replace(
-          queryParameters: {
-            'release': ?release,
-            'preview': ?preview,
-          },
-        );
+        .replace(queryParameters: {'release': ?release, 'preview': ?preview});
     final response = await client.get(uri).timeout(const Duration(seconds: 25));
     if (response.statusCode != 200) throw StateError('课程加载未完成，请重试');
     final data = jsonDecode(response.body) as Map<String, dynamic>;
@@ -72,6 +71,8 @@ class CourseResources extends CachingAssetBundle {
       next[asset['path'] as String] = asset;
     }
     final catalog = Map<String, dynamic>.from(data['catalog'] as Map);
+    formal = data['formal'] == true;
+    this.catalog = catalog;
     if (release == null) {
       installCourseLexicon(catalog);
       installCourseCatalog(catalog);
@@ -90,7 +91,9 @@ class CourseResources extends CachingAssetBundle {
     if (!handles(key) || release == null) return rootBundle.load(key);
     return pending.putIfAbsent(
       key,
-      () => _load(key).whenComplete(() { pending.remove(key); }),
+      () => _load(key).whenComplete(() {
+        pending.remove(key);
+      }),
     );
   }
 
@@ -123,7 +126,9 @@ class CourseResources extends CachingAssetBundle {
           break;
         } on Exception {
           if (attempt >= 2) rethrow;
-          await Future<void>.delayed(Duration(milliseconds: 250 * (attempt + 1)));
+          await Future<void>.delayed(
+            Duration(milliseconds: 250 * (attempt + 1)),
+          );
         }
       }
       if (response.statusCode != 200 || !valid(response.bodyBytes)) {

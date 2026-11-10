@@ -1,0 +1,35 @@
+{
+  "app": "D:/AI语言训练/scene-preview",
+  "admin": "D:/AI语言训练/admin",
+  "server": "D:/AI语言训练/server",
+  "oldCDeletion": "blocked by automatic approval policy; old C project remains",
+  "adminTests": 5,
+  "appToolTests": 7,
+  "separateDeployPackages": "validated, not deployed",
+  "appSourceFilesCompared": 2270,
+  "webBuild": "passed",
+  "productionMigration": {
+    "production": {
+      "files": 186972,
+      "bytes": 7778006106,
+      "mismatches": []
+    },
+    "curriculum": {
+      "files": 8545,
+      "bytes": 393670492,
+      "mismatches": []
+    },
+    "records": {
+      "files": 12094,
+      "bytes": 308557656,
+      "mismatches": []
+    }
+  },
+  "serverTests": 65,
+  "currentFlutterTests": 117,
+  "adminBuild": "passed",
+  "localSmoke": "API health, App entry and proxied speech status: 200",
+  "sourceDifferencesBeforeFixturePathUpdates": 0,
+  "flutterFullSuite": "passed: 117 tests, no failures or skips",
+  "testCleanup": "Deleted 11 retired test files and the obsolete local fruit-board case; updated current authentication, 555-course directory, mobile render budgets and cache isolation; cache tests passed on repeat."
+}

@@ -9,7 +9,6 @@ import 'package:flutter/services.dart';
 
 import '../lesson/presentation/lesson_page.dart';
 import 'auth_api.dart';
-import '../lesson/application/learning_sync.dart';
 import '../lesson/application/app_session_clock.dart';
 import 'entry_design.dart';
 import 'world_browser_stub.dart'
@@ -85,13 +84,6 @@ class _AuthGateState extends State<AuthGate> {
       smsReady = results[0]['smsReady'] == true;
       testMode = results[0]['testMode'] == true;
       authReady = true;
-      if (Uri.base.queryParameters['adminPreview'] == '1' &&
-          Uri.base.queryParameters['previewToken'] != null) {
-        pendingGuest = true;
-        waitingForScene = true;
-        step = 4;
-        unawaited(_prepareContent());
-      }
       if (results[1]['user'] is Map) {
         user = LearnerAccount.fromJson(results[1]['user'] as Map);
         AppSessionClock.begin(user!.id);
@@ -121,9 +113,7 @@ class _AuthGateState extends State<AuthGate> {
   Future<void> _prepareContent() async {
     if (!widget.prepareScene) return;
     try {
-      await CourseResources.instance.initialize(
-        previewToken: Uri.base.queryParameters['previewToken'],
-      );
+      await CourseResources.instance.initialize();
     } catch (_) {
       if (mounted) {
         shared.handle({'event': 'error', 'message': '课程资源暂时未能加载，请重试'});
@@ -237,7 +227,7 @@ class _AuthGateState extends State<AuthGate> {
     if (!(testMode ? RegExp(r'^\d{4}$') : RegExp(r'^\d{6}$')).hasMatch(
       code.text,
     )) {
-      throw AuthFailure(testMode ? '请输入 4 位测试验证码' : '请输入 6 位验证码');
+      throw AuthFailure(testMode ? '请输入 4 位验证码' : '请输入 6 位验证码');
     }
     if (registrationToken.isNotEmpty &&
         code.text == verifiedCode &&
@@ -289,28 +279,22 @@ class _AuthGateState extends State<AuthGate> {
     }
   }
 
-  Future<void> _enterLesson({bool guest = false}) => _perform(() async {
+  Future<void> _enterLesson() => _perform(() async {
     FocusManager.instance.primaryFocus?.unfocus();
     if (!shared.scenePresented) {
       setState(() {
         waitingForScene = true;
-        pendingGuest = guest;
+        pendingGuest = false;
       });
       return;
     }
-    final preview = Uri.base.queryParameters['adminPreview'] == '1';
-    if (guest || preview) user = null;
-    if (user != null) await restoreCloudLearning(user!.id);
+    if (user == null) throw const AuthFailure('请先登录');
+
     await shared.bindAccount(
-      id: preview ? 'admin-preview' : user?.id ?? '',
-      name: preview ? '老师' : user?.nickname,
-      saveName: user == null ? null : api.rename,
+      id: user!.id,
+      name: user!.nickname,
+      saveName: api.rename,
     );
-    if (preview) {
-      final course = Uri.base.queryParameters['course'];
-      if (course != null) await shared.selectCourse(course);
-      shared.courseCheckpoint = null;
-    }
     if (!kIsWeb) {
       await SystemChrome.setPreferredOrientations(const [
         DeviceOrientation.landscapeLeft,
@@ -342,7 +326,7 @@ class _AuthGateState extends State<AuthGate> {
           _go(2);
         }
       } else if (waitingForScene && shared.scenePresented && !busy) {
-        _enterLesson(guest: pendingGuest);
+        _enterLesson();
       }
       if (mounted) setState(() {});
     });
@@ -350,7 +334,7 @@ class _AuthGateState extends State<AuthGate> {
   }
 
   void _retryScene() {
-    if (user != null || pendingGuest) unawaited(_prepareContent());
+    if (user != null) unawaited(_prepareContent());
     if (!authReady) {
       setState(() {
         loading = true;
@@ -430,10 +414,15 @@ class _AuthGateState extends State<AuthGate> {
               children: [
                 if (widget.prepareScene)
                   TickerMode(
-                    enabled: inLesson || step == 0 || step == 4,
+                    enabled:
+                        (inLesson || step == 0 || step == 4) &&
+                        (!inLesson ||
+                            MediaQuery.sizeOf(context).width >=
+                                MediaQuery.sizeOf(context).height),
                     child: AvatarView(
                       key: ValueKey(sceneAttempt),
                       controller: shared,
+                      teachingLayout: inLesson,
                     ),
                   ),
                 if (inLesson)
@@ -631,21 +620,27 @@ class _AuthGateState extends State<AuthGate> {
                                   child: GestureDetector(
                                     key: const ValueKey('loading-retry'),
                                     behavior: HitTestBehavior.opaque,
-                                    onTap: busy
-                                        ? null
-                                        : (step == 4
-                                              ? () => _enterLesson()
-                                              : _retryScene),
-                                    child: const SizedBox(
-                                      height: 44,
-                                      child: Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: SizedBox(
-                                          height: 2,
-                                          width: double.infinity,
-                                          child: ColoredBox(
-                                            color: Color(0xFFAD4F38),
-                                          ),
+                                    onTap: busy ? null : _retryScene,
+                                    child: SafeArea(
+                                      top: false,
+                                      child: Container(
+                                        padding: const EdgeInsets.all(16),
+                                        color: entryPaper,
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            Text(
+                                              error.isNotEmpty
+                                                  ? error
+                                                  : shared.error!,
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                color: Color(0xFFAD4F38),
+                                              ),
+                                            ),
+                                            const SizedBox(height: 8),
+                                            const Text('点击重新加载'),
+                                          ],
                                         ),
                                       ),
                                     ),
@@ -666,6 +661,7 @@ class _AuthGateState extends State<AuthGate> {
         ),
         if (shared.graphicsLost)
           GraphicsRecoveryPanel(
+            reason: shared.graphicsFailureReason,
             onRecover: () async {
               await shared.persistBeforeRecovery();
               reloadForGraphicsRecovery();

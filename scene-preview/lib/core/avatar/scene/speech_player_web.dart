@@ -85,7 +85,8 @@ class SpeechPlayer {
         )
       : null;
 
-  String _assetUrl(String path) => Uri.base.resolve('assets/$path').toString();
+  String _assetUrl(String path) =>
+      Uri.parse(web.document.baseURI).resolve('assets/$path').toString();
 
   /// Called synchronously from the original tap, before any network request.
   Future<void> unlockFromGesture() {

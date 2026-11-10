@@ -11,6 +11,9 @@ import 'speech_client.dart' show pcmToWav;
 
 /// Local endpoint detector. No speech/no target means no upload.
 class UtteranceGate {
+  UtteranceGate({this.threshold = .018, this.preRollBytes = 6400});
+  final double threshold;
+  final int preRollBytes;
   BytesBuilder buffer = BytesBuilder(copy: false);
   Uint8List lead = Uint8List(0);
   int voiced = 0, quiet = 0, total = 0;
@@ -29,11 +32,12 @@ class UtteranceGate {
       sum += v * v;
     }
     final speech =
-        bytes.isNotEmpty && math.sqrt(sum / (bytes.length / 2)) > .018;
+        bytes.isNotEmpty && math.sqrt(sum / (bytes.length / 2)) > threshold;
     if (voiced == 0 && !speech) {
-      lead = bytes.length <= 6400
-          ? Uint8List.fromList(bytes)
-          : Uint8List.fromList(bytes.sublist(bytes.length - 6400));
+      final history = Uint8List.fromList([...lead, ...bytes]);
+      lead = history.length <= preRollBytes
+          ? history
+          : Uint8List.sublistView(history, history.length - preRollBytes);
       return null;
     }
     if (voiced == 0) buffer.add(lead);
@@ -67,7 +71,12 @@ class AutomaticReader {
     this.onTranscript,
     this.onRecognized,
     this.onUtterance,
-  }) : _recorder = audioRecorder,
+    this.wordPauseMs = 800,
+    this.sentencePauseMs = 1200,
+    this.liveTranscription = true,
+    UtteranceGate? utteranceGate,
+  }) : gate = utteranceGate ?? UtteranceGate(),
+       _recorder = audioRecorder,
        client = httpClient ?? http.Client();
   final Uri Function(String) endpoint;
   final void Function(String, String) onState;
@@ -75,6 +84,7 @@ class AutomaticReader {
   final void Function(double)? onSignal;
   final void Function(String)? onTranscript;
   final void Function(String)? onRecognized;
+
   /// Account-backed courses may evaluate the same completed utterance on their
   /// evidence endpoint; microphone gating and live transcription stay shared.
   final Future<void> Function(Uint8List)? onUtterance;
@@ -82,15 +92,19 @@ class AutomaticReader {
   bool recognitionOnly = false;
   AudioRecorder? _recorder;
   AudioRecorder get recorder => _recorder ??= AudioRecorder();
-  final gate = UtteranceGate();
+  final UtteranceGate gate;
+  final int wordPauseMs, sentencePauseMs;
+  final bool liveTranscription;
   final http.Client client;
   StreamSubscription<Uint8List>? subscription;
   bool enabled = false, playing = false, busy = false;
   String text = '', key = '';
   int generation = 0, requestGeneration = 0, captureGeneration = 0;
+  Map<String, int> lastCaptureTimings = {};
   void target(String nextText, String nextKey, {bool recognizeOnly = false}) {
     recognitionOnly = recognizeOnly;
-    gate.pauseBytes = nextText.trim().contains(' ') ? 38400 : 25600;
+    gate.pauseBytes =
+        (nextText.trim().contains(' ') ? sentencePauseMs : wordPauseMs) * 32;
     if (nextKey != key || nextText != text) {
       generation++;
       requestGeneration++;
@@ -103,6 +117,15 @@ class AutomaticReader {
     }
     text = nextText;
     key = nextKey;
+  }
+
+  /// A new listening turn may begin before the previous callback unwinds.
+  /// Retire its cleanup so it cannot reset PCM already arriving for this turn.
+  void resumeCapture() {
+    requestGeneration++;
+    busy = false;
+    playing = false;
+    gate.reset();
   }
 
   Future<void> start() async {
@@ -155,9 +178,9 @@ class AutomaticReader {
     final rms = bytes.isEmpty ? 0.0 : math.sqrt(energy / (bytes.length / 2));
     // Keep this secondary cue still during playback, assessment and room noise.
     onSignal?.call(
-      playing || busy || text.isEmpty || rms <= .018
+      playing || busy || text.isEmpty || rms <= gate.threshold
           ? 0
-          : ((rms - .018) * 6).clamp(0, 1),
+          : ((rms - gate.threshold) * 6).clamp(0, 1),
     );
     if (busy || text.isEmpty || playing) {
       gate.reset();
@@ -166,7 +189,9 @@ class AutomaticReader {
       return;
     }
 
-    if (onTranscript != null && (gate.voiced > 0 || rms > .018)) {
+    if (liveTranscription &&
+        onTranscript != null &&
+        (gate.voiced > 0 || rms > gate.threshold)) {
       final token = generation;
       live ??= LiveTranscript(endpoint, (value) {
         if (enabled && generation == token) onTranscript?.call(value);
@@ -174,7 +199,13 @@ class AutomaticReader {
       live!.add(bytes);
     }
     final pcm = gate.add(bytes);
-    if (pcm != null) unawaited(_assess(pcm));
+    if (pcm != null) {
+      lastCaptureTimings = {
+        'endpointWaitMs': gate.pauseBytes ~/ 32,
+        'recordedMs': pcm.length ~/ 32,
+      };
+      unawaited(_assess(pcm));
+    }
   }
 
   Future<void> _assess(Uint8List pcm) async {
@@ -193,7 +224,10 @@ class AutomaticReader {
         return;
       }
       if (onUtterance != null) {
-        if (recognition != null) await recognition;
+        // The account endpoint performs authoritative recognition itself.
+        // Live captions must never delay submission of the completed recording.
+        if (recognition != null)
+          unawaited(recognition.catchError((Object _) => ''));
         if (!enabled || token != generation || expectedKey != key) return;
         await onUtterance!(pcmToWav(pcm));
         return;

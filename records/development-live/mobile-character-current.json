@@ -1,0 +1,49 @@
+{
+  "mainSha256": "85abd241a4b09e896d083d3f31499c27879570a960d9b0da233b8adb547c7337",
+  "phone": {
+    "browser": "Safari",
+    "frames": 8780,
+    "seconds": 151,
+    "contextLost": 0,
+    "outputMismatch": 0,
+    "os": "iOS 26.3.1"
+  },
+  "fix": "Use CustomRenderPass.enabled = !teachingLayout. Remove transparent early-return branch. Official WebGL rendering restored.",
+  "rootCause": "TeachingBackground remained enabled but returned without writing the final display texture; mobile AA none exposed it, desktop FXAA masked it.",
+  "checks": {
+    "tests": 36,
+    "chromiumSeconds": 30,
+    "analyze": "passed"
+  },
+  "startup": {
+    "finalFirstFrameSeconds": 12.489,
+    "changes": [
+      "Browser asynchronous SHA-256 preserves part and assembled-model integrity",
+      "Scene.preload loads physical material resources alongside base resources",
+      "Packager generates gzip static assets including shader bundles"
+    ],
+    "baselineFirstFrameSeconds": 36.5,
+    "cdn": "Not enabled; improves first download, requires acceleration domain and mainland ICP filing",
+    "mainAndShaderTransferBytesBefore": 9097464,
+    "modelDigestMs": 126,
+    "modelCachePreserved": true,
+    "modelParts": 89,
+    "fullUncachedModelDownloadTested": false,
+    "warmPreviousCandidateSeconds": 9.921,
+    "mainAndShaderTransferBytesAfter": 2026676
+  },
+  "status": "fixed-and-startup-optimized-deployed",
+  "cleanup": {
+    "tests": 36,
+    "published": true,
+    "sourceChanges": [
+      "Removed retired rendering debug flags",
+      "Removed obsolete preference-clearing migration"
+    ],
+    "lastPhysicalPhoneVerifiedMain": "7d355fe88d1a4e660c59ffe52c6d4bb3bd714acde58f001e507b3656a3e557d7",
+    "analysis": "passed",
+    "build": "passed",
+    "deletedFiles": 61,
+    "recursiveDirectoryDeletion": "Blocked by automatic approval policy; obsolete build and experiment directories remain"
+  }
+}

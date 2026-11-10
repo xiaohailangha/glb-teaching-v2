@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 class GraphicsRecoveryPanel extends StatefulWidget {
-  const GraphicsRecoveryPanel({super.key, required this.onRecover});
+  const GraphicsRecoveryPanel({
+    super.key,
+    required this.onRecover,
+    this.reason = '',
+  });
   final Future<void> Function() onRecover;
+  final String reason;
   @override
   State<GraphicsRecoveryPanel> createState() => _GraphicsRecoveryPanelState();
 }
@@ -22,6 +27,13 @@ class _GraphicsRecoveryPanelState extends State<GraphicsRecoveryPanel> {
             const Text('人物显示已中断', style: TextStyle(fontSize: 20)),
             const SizedBox(height: 12),
             const Text('恢复后可从当前学习位置继续。', textAlign: TextAlign.center),
+            if (widget.reason.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Text(
+                '显示检查：${widget.reason}',
+                style: const TextStyle(fontSize: 12, color: Colors.black54),
+              ),
+            ],
             const SizedBox(height: 20),
             if (failed)
               const Padding(

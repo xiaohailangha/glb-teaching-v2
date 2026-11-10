@@ -22,6 +22,7 @@ class LearningSync with WidgetsBindingObserver {
   final revisions = <String, int>{};
   final saved = <String, String>{};
   bool curriculumOverlay = false;
+  String curriculumCourse = '';
   Timer? timer;
   bool visible = true, sending = false, disposed = false, initialized = false;
   int lastTick = 0,
@@ -29,9 +30,8 @@ class LearningSync with WidgetsBindingObserver {
       lastInteraction = 0,
       sequence = 0;
   late final String account = controller.accountId;
-  String get key => 'account:$account:learning-upload-v1';
-  bool get enabled =>
-      account.isNotEmpty && Uri.base.queryParameters['adminPreview'] != '1';
+  String get key => 'account:$account:formal-learning-upload-v2';
+  bool get enabled => account.isNotEmpty;
   Future<void> start() async {
     if (!enabled) return;
     WidgetsBinding.instance.addObserver(this);
@@ -51,7 +51,7 @@ class LearningSync with WidgetsBindingObserver {
     } catch (_) {}
     if (disposed) return;
     final storedRevisions = jsonDecode(
-      prefs.getString('account:$account:cloud-revisions') ?? '{}',
+      prefs.getString('account:$account:formal-cloud-revisions') ?? '{}',
     ) as Map;
     for (final entry in storedRevisions.entries) {
       if (entry.value is int) {
@@ -108,9 +108,9 @@ class LearningSync with WidgetsBindingObserver {
           'start': start,
           'end': end,
           'active': true,
-          'course': !curriculumOverlay && controller.adultCourse
-              ? controller.courseId
-              : '',
+          'course': curriculumOverlay
+              ? curriculumCourse
+              : (controller.adultCourse ? controller.courseId : ''),
         });
         start = end;
       }
@@ -151,43 +151,17 @@ class LearningSync with WidgetsBindingObserver {
         await api.request(
           'learning/batch',
           method: 'POST',
-          data: {'intervals': batch, 'events': actions},
+          data: {
+            'epoch': 'formal555-reset-v2',
+            'intervals': batch,
+            'events': actions,
+          },
         );
         final ids = batch.map((r) => r['id']).toSet(),
             eids = actions.map((r) => r['id']).toSet();
         intervals.removeWhere((r) => ids.contains(r['id']));
         events.removeWhere((r) => eids.contains(r['id']));
         await persist();
-      }
-      if (controller.courseCheckpoint != null) {
-        final course = controller.courseId;
-        final payload = {
-          'checkpoint': controller.courseCheckpoint,
-          'vocabulary': controller.vocabulary.toJson(),
-          'stageId': controller.courseStep,
-        };
-        final encoded = jsonEncode(payload);
-        if (saved[course] != encoded) {
-          final remote = await api.request('learning/state');
-          final rows = (remote['rows'] as List).cast<Map>();
-          final match = rows.where((r) => r['course'] == course).firstOrNull;
-          final revision = (match?['revision'] as num?)?.toInt() ?? 0;
-          // Do not overwrite a checkpoint updated by another active device.
-          if ((revisions[course] ?? 0) != revision) return;
-          revisions[course] = revision;
-          final result = await api.request(
-            'learning/state',
-            method: 'POST',
-            data: {'course': course, 'revision': revision, 'payload': payload},
-          );
-          revisions[course] = (result['revision'] as num).toInt();
-          saved[course] = encoded;
-          final prefs = await SharedPreferences.getInstance();
-          await prefs.setString(
-            'account:$account:cloud-revisions',
-            jsonEncode(revisions),
-          );
-        }
       }
     } catch (_) {
       /* Retry only while authenticated as the queue owner. */
@@ -213,60 +187,5 @@ class LearningSync with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     disposed = true;
     unawaited(flush());
-  }
-}
-
-Future<void> restoreCloudLearning(String account) async {
-  if (account.isEmpty || Uri.base.queryParameters['adminPreview'] == '1') {
-    return;
-  }
-  final api = AuthApi();
-  try {
-    final data = await api.request('learning/state'),
-        prefs = await SharedPreferences.getInstance();
-    final rows = (data['rows'] as List).cast<Map>()
-      ..sort((a, b) => (a['updated'] as num).compareTo(b['updated'] as num));
-    final pending = jsonDecode(
-      prefs.getString('account:$account:learning-upload-v1') ?? '{}',
-    ) as Map;
-    if ((pending['events'] as List? ?? []).isNotEmpty ||
-        (pending['intervals'] as List? ?? []).isNotEmpty) {
-      return;
-    }
-    final revisions = <String, int>{};
-    final seen = <String>{};
-    for (final r in rows) {
-      revisions[r['course'] as String] = (r['revision'] as num).toInt();
-      final payload = r['payload'] as Map;
-      await prefs.setString(
-        'account:$account:${r['course']}',
-        jsonEncode(payload['checkpoint']),
-      );
-      await prefs.setString(
-        'account:$account:active-course',
-        r['course'] as String,
-      );
-      if (payload['vocabulary'] is Map) {
-        final vocabulary = payload['vocabulary'] as Map;
-        seen.addAll((vocabulary['seen'] as List? ?? []).whereType<String>());
-        await prefs.setString(
-          'account:$account:course-new:${r['course']}',
-          jsonEncode(vocabulary['new'] ?? []),
-        );
-      }
-    }
-    if (rows.isNotEmpty) {
-      await prefs.setString(
-        'account:$account:vocabulary-exposure-v1',
-        jsonEncode({'seen': seen.toList(), 'new': [], 'inCourse': false}),
-      );
-      await prefs.setString(
-        'account:$account:cloud-revisions',
-        jsonEncode(revisions),
-      );
-    }
-  } catch (_) {
-  } finally {
-    api.dispose();
   }
 }

@@ -8,10 +8,14 @@ import '../../settings/application/app_settings.dart';
 import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
 import 'lesson_content_frame.dart';
+import 'lesson_layout.dart';
 import 'course_library_page.dart';
 import '../application/curriculum_lesson_controller.dart';
+import '../application/teaching_trial_controller.dart';
 import '../domain/course_catalog.dart';
+import '../../../core/avatar/scene/course_resources.dart';
 import 'lesson_navigation.dart';
+import 'landscape_classroom.dart';
 import '../../auth/auth_api.dart';
 
 class LessonPage extends StatefulWidget {
@@ -43,7 +47,23 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
   final settings = AppSettings();
   late final learningSync = LearningSync(controller);
   CurriculumLessonController? pilot;
-  LessonController get teaching => pilot ?? controller;
+  TeachingTrialController? trial;
+  bool _resumeAfterRotate = false;
+  void _portraitClassroom() {
+    _resumeAfterRotate =
+        teaching.adultCourse &&
+        !teaching.coursePaused &&
+        teaching.courseStep != 'summary';
+    if (_resumeAfterRotate) teaching.pauseCourse();
+  }
+
+  void _landscapeClassroom() {
+    if (!_resumeAfterRotate) return;
+    _resumeAfterRotate = false;
+    if (teaching.ready && teaching.coursePaused) teaching.playCourse();
+  }
+
+  LessonController get teaching => trial ?? pilot ?? controller;
   @override
   void initState() {
     super.initState();
@@ -51,7 +71,30 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     settings.addListener(_applySettings);
     settings.load();
     learningSync.start();
-    if (widget.sharedController == null) controller.loadCourseProgress();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      try {
+        final state = await learningSync.api.request(
+          'learning/curriculum/state?release=' +
+              CourseResources.instance.release!,
+        );
+        final progress =
+            (state['progress'] as List)
+                .where((p) => courseCatalog.any((c) => c.id == p['course']))
+                .toList()
+              ..sort(
+                (a, b) => (b['updated'] as int).compareTo(a['updated'] as int),
+              );
+        await _selectPilot(
+          progress.isEmpty
+              ? courseCatalog.first.id
+              : progress.first['course'] as String,
+        );
+      } catch (error) {
+        if (mounted)
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(error.toString())));
+      }
+    });
   }
 
   void _applySettings() => controller.setRenderSettings(settings.command);
@@ -63,7 +106,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
   }
 
   void _character() {
-    if (!controller.ready) return;
+    if (!controller.ready || (pilot == null && trial == null)) return;
     if (teaching.adultCourse &&
         !teaching.coursePaused &&
         teaching.courseStep != 'summary') {
@@ -78,10 +121,11 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
       controller.pauseCourse();
     }
     pilot?.pauseCourse();
+    trial?.pauseCourse();
     FormalDirectory? directory;
     if (widget.account != null) {
       try {
-        final data = await learningSync.api.request('learning/curriculum');
+        final data = CourseResources.instance.catalog;
         directory = FormalDirectory(data);
       } catch (_) {
         if (mounted) {
@@ -93,14 +137,18 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     if (!mounted) return;
     await showCourseLibrary(
       context,
-      controller,
+      teaching,
       directory: directory,
       onAdditionalSelected: _selectPilot,
+      onTrialSelected: _selectTrial,
     );
   }
 
   Future<void> _selectPilot(String id) async {
+    await trial?.flushProgress();
+    await pilot?.flushProgress();
     CurriculumLessonController? next;
+    if (!id.startsWith('N26-')) throw StateError('请选择正式课程');
     if (id.isNotEmpty) {
       next = CurriculumLessonController(
         api: learningSync.api,
@@ -121,10 +169,47 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     }
     learningSync.tick();
     learningSync.curriculumOverlay = id.isNotEmpty;
+    learningSync.curriculumCourse = id;
     final old = pilot;
+    final oldTrial = trial;
+    trial = null;
     setState(() => pilot = next);
     old?.dispose();
+    oldTrial?.dispose();
     await WidgetsBinding.instance.endOfFrame;
+  }
+
+  Future<void> _selectTrial(String id) async {
+    await pilot?.flushProgress();
+    await trial?.flushProgress();
+    final next = TeachingTrialController(
+      api: learningSync.api,
+      avatar: controller,
+      id: id,
+      onSelect: _selectTrial,
+    );
+    try {
+      await next.initialize();
+    } catch (_) {
+      next.dispose();
+      rethrow;
+    }
+    if (!mounted) {
+      next.dispose();
+      return;
+    }
+    final old = pilot, oldTrial = trial;
+    learningSync.tick();
+    learningSync.curriculumOverlay = true;
+    learningSync.curriculumCourse = '';
+    setState(() {
+      pilot = null;
+      trial = next;
+    });
+    old?.dispose();
+    oldTrial?.dispose();
+    await WidgetsBinding.instance.endOfFrame;
+    // First speech starts from the existing character gesture, after its full load.
   }
 
   Future<void> _settings() async {
@@ -166,171 +251,188 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     settings.dispose();
     learningSync.dispose();
     pilot?.dispose();
+    trial?.dispose();
     if (widget.sharedController == null) controller.dispose();
     super.dispose();
   }
 
   @override
-  Widget build(BuildContext context) => Listener(
-    onPointerDown: (_) => learningSync.interact(),
-    child: Scaffold(
-      backgroundColor: Colors.transparent,
-      body: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: () {
-          if (controller.ready &&
-              (!teaching.adultCourse || teaching.coursePaused)) {
-            teaching.playCourse();
-          }
-        },
-        child: DecoratedBox(
-          decoration: widget.sharedController != null
-              ? const BoxDecoration()
-              : const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [Color(0xFF34393D), Color(0xFF777E80)],
-                  ),
-                ),
-          child: LayoutBuilder(
-            builder: (context, box) => Stack(
-              fit: StackFit.expand,
-              children: [
-                if (widget.sharedController == null)
-                  Positioned.fill(child: AvatarView(controller: controller)),
-                Positioned(
-                  left: 0,
-                  top: 0,
-                  bottom: 0,
-                  width: box.maxWidth * .44,
-                  child: Semantics(
-                    button: true,
-                    label: '点击人物，开始或重听示范',
-                    child: GestureDetector(
-                      behavior: HitTestBehavior.opaque,
-                      onTap: _character,
+  Widget build(BuildContext context) => LandscapeClassroom(
+    onPortrait: _portraitClassroom,
+    onLandscape: _landscapeClassroom,
+    child: Listener(
+      onPointerDown: (_) => learningSync.interact(),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {
+            if (controller.ready &&
+                (pilot != null || trial != null) &&
+                (!teaching.adultCourse || teaching.coursePaused)) {
+              teaching.playCourse();
+            }
+          },
+          child: DecoratedBox(
+            decoration: widget.sharedController != null
+                ? const BoxDecoration()
+                : const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Color(0xFF34393D), Color(0xFF777E80)],
                     ),
                   ),
-                ),
-                Positioned(
-                  top: 12,
-                  right: 18,
-                  child: SafeArea(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        IconButton(
-                          tooltip: '课程',
-                          onPressed: _courses,
-                          icon: const Icon(
-                            Icons.auto_stories_outlined,
-                            color: Colors.white70,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        IconButton(
-                          tooltip: '我的',
-                          onPressed: _settings,
-                          icon: const Icon(
-                            Icons.person_outline_rounded,
-                            color: Colors.white70,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Positioned(
-                  left: box.maxWidth * .45,
-                  right: box.maxWidth * .04,
-                  top: box.maxHeight * .10,
-                  bottom: 62,
-                  child: AnimatedBuilder(
-                    animation: teaching,
-                    builder: (context, _) => AnimatedSwitcher(
-                      duration: MediaQuery.disableAnimationsOf(context)
-                          ? Duration.zero
-                          : const Duration(milliseconds: 320),
-                      layoutBuilder: (current, previous) => Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          for (final child in previous)
-                            IgnorePointer(
-                              child: ExcludeSemantics(child: child),
-                            ),
-                          ?current,
-                        ],
+            child: LayoutBuilder(
+              builder: (context, box) {
+                final layout = LessonLayout(
+                  box.biggest,
+                  safe: MediaQuery.paddingOf(context),
+                );
+                final type = LessonType(layout.reading.size);
+                return Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    if (widget.sharedController == null)
+                      Positioned.fill(
+                        child: AvatarView(controller: controller),
                       ),
-                      child: teaching.adultCourse
-                          ? AdultCoursePanel(
-                              key: const ValueKey('active-lesson'),
-                              controller: teaching,
-                            )
-                          : LessonContentFrame(
-                              key: const ValueKey('welcome-lesson'),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    key: const ValueKey('welcome-main-text'),
-                                    "${teaching.address('你好')}\n${teaching.activeCourse.goal}",
-                                    style: const TextStyle(
-                                      fontSize: 36,
-                                      height: 1.3,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                    Positioned.fromRect(
+                      rect: layout.avatar,
+                      child: Semantics(
+                        button: true,
+                        label: '点击人物，开始或重听示范',
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: _character,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 12,
+                      right: layout.margin,
+                      child: SafeArea(
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            IconButton(
+                              tooltip: '课程',
+                              onPressed: _courses,
+                              icon: const Icon(
+                                Icons.auto_stories_outlined,
+                                color: Colors.white70,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            IconButton(
+                              tooltip: '我的',
+                              onPressed: _settings,
+                              icon: const Icon(
+                                Icons.person_outline_rounded,
+                                color: Colors.white70,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Positioned.fromRect(
+                      rect: layout.reading,
+                      child: AnimatedBuilder(
+                        animation: teaching,
+                        builder: (context, _) => AnimatedSwitcher(
+                          duration: MediaQuery.disableAnimationsOf(context)
+                              ? Duration.zero
+                              : const Duration(milliseconds: 320),
+                          layoutBuilder: (current, previous) => Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              for (final child in previous)
+                                IgnorePointer(
+                                  child: ExcludeSemantics(child: child),
+                                ),
+                              ?current,
+                            ],
+                          ),
+                          child: teaching.adultCourse
+                              ? AdultCoursePanel(
+                                  key: const ValueKey('active-lesson'),
+                                  controller: teaching,
+                                )
+                              : LessonContentFrame(
+                                  key: const ValueKey('welcome-lesson'),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        key: const ValueKey(
+                                          'welcome-main-text',
+                                        ),
+                                        "${teaching.address('你好')}\n${teaching.activeCourse.title}",
+                                        style: TextStyle(
+                                          fontSize: type
+                                              .main(teaching.activeCourse.title)
+                                              .clamp(28, 72),
+                                          height: 1.3,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 20),
+                                      Text(
+                                        teaching.ready
+                                            ? '轻触任意位置，开始学习'
+                                            : '人物正在准备…',
+                                        style: TextStyle(
+                                          color: Color(0xFFBDE5DD),
+                                          fontSize: type.body,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Text(
+                                        '首次允许麦克风，之后直接开口。\n练习语音用于在线识别与发音评测。',
+                                        style: TextStyle(
+                                          color: Colors.white60,
+                                          fontSize: type.caption,
+                                          height: 1.6,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  const SizedBox(height: 20),
-                                  Text(
-                                    teaching.ready ? '轻触任意位置，开始学习' : '人物正在准备…',
-                                    style: const TextStyle(
-                                      color: Color(0xFFBDE5DD),
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    '首次允许麦克风，之后直接开口。\n练习语音用于在线识别与发音评测。',
-                                    style: TextStyle(
-                                      color: Colors.white60,
-                                      fontSize: 14,
-                                      height: 1.6,
-                                    ),
-                                  ),
-                                ],
+                                ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: layout.margin,
+                      bottom: 8,
+                      child: SafeArea(
+                        child: AnimatedBuilder(
+                          animation: teaching,
+                          builder: (context, _) =>
+                              teaching.adultCourse &&
+                                  (trial != null || !teaching.coursePaused)
+                              ? LessonNavigation(controller: teaching)
+                              : const SizedBox.shrink(),
+                        ),
+                      ),
+                    ),
+                    AnimatedBuilder(
+                      animation: controller,
+                      builder: (context, _) => controller.error == null
+                          ? const SizedBox.shrink()
+                          : Center(
+                              child: Text(
+                                controller.error!,
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ),
                     ),
-                  ),
-                ),
-                Positioned(
-                  right: 20,
-                  bottom: 8,
-                  child: SafeArea(
-                    child: AnimatedBuilder(
-                      animation: teaching,
-                      builder: (context, _) =>
-                          teaching.adultCourse && !teaching.coursePaused
-                          ? LessonNavigation(controller: teaching)
-                          : const SizedBox.shrink(),
-                    ),
-                  ),
-                ),
-                AnimatedBuilder(
-                  animation: controller,
-                  builder: (context, _) => controller.error == null
-                      ? const SizedBox.shrink()
-                      : Center(
-                          child: Text(
-                            controller.error!,
-                            style: const TextStyle(color: Colors.white),
-                          ),
-                        ),
-                ),
-              ],
+                  ],
+                );
+              },
             ),
           ),
         ),

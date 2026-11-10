@@ -1,51 +1,63 @@
 import 'dart:convert';
 
-import 'package:crypto/crypto.dart';
-import 'package:flutter/foundation.dart';
+import 'asset_digest.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
+import '../../app_origin.dart';
 import 'asset_cache.dart';
 
-/// Web delivery only. Native builds use their embedded, preprocessed model.
+/// The same immutable cloud model contract is used on Web, Android and iOS.
 class SceneAssetBundle extends CachingAssetBundle {
   SceneAssetBundle(this.onProgress);
   final void Function(int completed, int total) onProgress;
-  final _client = http.Client();
+  final _clients = <http.Client>{};
+  final _pending = <String, Future<ByteData>>{};
   bool _closed = false;
   void close() {
     _closed = true;
-    _client.close();
+    for (final client in _clients) {
+      client.close();
+    }
+    _clients.clear();
   }
 
   @override
-  Future<ByteData> load(String key) async {
+  Future<ByteData> load(String key) {
     if (!key.startsWith('flutter_scene_generated/scene.storm-performance.') ||
-        !key.endsWith('.fsceneb')) {
+        !key.endsWith('.fsceneb'))
       return rootBundle.load(key);
-    }
-    if (_closed) throw StateError('Scene load cancelled');
-    final client = _client;
+    if (_closed) return Future.error(StateError('人物加载已取消'));
+    return _pending.putIfAbsent(
+      key,
+      () => _download().whenComplete(() {
+        _pending.remove(key);
+      }),
+    );
+  }
+
+  Future<ByteData> _download() async {
+    final client = http.Client();
+    _clients.add(client);
     try {
       final response = await client
-          .get(Uri.base.resolve('/api/assets/scene-manifest'))
+          .get(applicationOrigin.resolve('/api/assets/scene-manifest'))
           .timeout(const Duration(seconds: 20));
-      if (response.statusCode != 200) {
-        throw StateError('人物资源暂时不可用，请重试');
-      }
+      if (response.statusCode != 200) throw StateError('人物资源暂时不可用，请重试');
       final manifest = jsonDecode(response.body) as Map<String, dynamic>;
       validateSceneManifest(manifest);
       final bytes = await downloadSceneParts(
         manifest,
         client: client,
-        onProgress: onProgress,
+        onProgress: (completed, total) {
+          if (!_closed) onProgress(completed, total);
+        },
       );
+      if (_closed) throw StateError('人物加载已取消');
       return ByteData.sublistView(bytes);
-    } catch (_) {
-      if (kDebugMode && !_closed) return rootBundle.load(key);
-      rethrow;
     } finally {
       client.close();
+      _clients.remove(client);
     }
   }
 }
@@ -95,24 +107,24 @@ Future<Uint8List> downloadSceneParts(
   Future<void> worker() async {
     while (next < parts.length) {
       final index = next++, part = parts[index];
-      final cacheKey = Uri.base
+      final cacheKey = applicationOrigin
           .resolve('/scene/asset-cache/${manifest['revision']}/$index')
           .toString();
-      bool valid(Uint8List? data) =>
+      Future<bool> valid(Uint8List? data) async =>
           data != null &&
           data.length == part['size'] &&
-          sha256.convert(data).toString() == part['sha256'];
+          await assetDigest(data) == part['sha256'];
       Uint8List? bytes;
       try {
-        bytes = await cacheRead(cacheKey);
+        bytes = await cacheRead(cacheKey).timeout(const Duration(seconds: 2));
       } catch (_) {}
-      if (!valid(bytes)) {
+      if (!await valid(bytes)) {
         for (var attempt = 0; attempt < 3; attempt++) {
           try {
             final response = await client
                 .get(Uri.parse(part['url'] as String))
                 .timeout(const Duration(seconds: 30));
-            if (response.statusCode != 200 || !valid(response.bodyBytes)) {
+            if (response.statusCode != 200 || !await valid(response.bodyBytes)) {
               throw const FormatException('Scene asset integrity mismatch');
             }
             bytes = response.bodyBytes;
@@ -122,7 +134,10 @@ Future<Uint8List> downloadSceneParts(
           }
         }
         try {
-          await cacheWrite(cacheKey, bytes!);
+          await cacheWrite(
+            cacheKey,
+            bytes!,
+          ).timeout(const Duration(seconds: 2));
         } catch (_) {}
       }
       output.setRange(
@@ -138,27 +153,8 @@ Future<Uint8List> downloadSceneParts(
   }
 
   await Future.wait(List.generate(3, (_) => worker()));
-  final digest = _SceneDigest();
-  final hasher = sha256.startChunkedConversion(digest);
-  for (var start = 0; start < output.length; start += 4 * 1024 * 1024) {
-    final end = (start + 4 * 1024 * 1024).clamp(0, output.length);
-    hasher.add(Uint8List.sublistView(output, start, end));
-    await Future<void>.delayed(Duration.zero);
-  }
-  hasher.close();
-  if (digest.value.toString() != manifest['revision']) {
+  if (await assetDigest(output) != manifest['revision']) {
     throw const FormatException('Scene model revision mismatch');
   }
   return output;
-}
-
-class _SceneDigest implements Sink<Digest> {
-  Digest? value;
-  @override
-  void add(Digest data) {
-    value = data;
-  }
-
-  @override
-  void close() {}
 }

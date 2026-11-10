@@ -1,114 +1,138 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../application/lesson_controller.dart';
-import '../domain/course_lexicon.dart';
 
-class LearningText extends StatelessWidget {
+/// Native shaping owns spaces and wrapping; word hit testing does not create
+/// independent layout boxes that waste the available reading width.
+class LearningText extends StatefulWidget {
   const LearningText(
     this.text, {
     super.key,
     required this.controller,
     this.size = 30,
+    this.animate = true,
   });
   final String text;
   final LessonController controller;
   final double size;
-  String lexical(String token) => token.replaceAll(RegExp(r'[.,!?;:]+$'), '');
-  String status(String word) {
-    for (final row in controller.wordFeedback) {
-      if (row['word'] == word.toLowerCase()) {
-        return row['status']?.toString() ?? '';
-      }
-    }
-    return '';
-  }
+  final bool animate;
+  @override
+  State<LearningText> createState() => _LearningTextState();
+}
 
-  Color color(String word) {
-    if (controller.playing && controller.spokenWord == word.toLowerCase()) {
-      return const Color(0xFFFFE1AA);
+class _LearningTextState extends State<LearningText> {
+  final _taps = <int, TapGestureRecognizer>{};
+  void _clearTaps() {
+    for (final tap in _taps.values) {
+      tap.dispose();
     }
-    final value = status(word);
-    if (value == 'good') return const Color(0xFFBDE5DD);
-    if (value.isNotEmpty) return const Color(0xFFFFCB95);
-    return controller.vocabulary.hasSeen(word)
-        ? const Color(0xFFADD6E4)
-        : Colors.white;
+    _taps.clear();
   }
 
   @override
-  Widget build(BuildContext context) {
-    final tokens = RegExp(r"[A-Za-z]+(?:'[A-Za-z]+)?[.,!?;:]*|[^A-Za-z]+")
-        .allMatches(text);
-    return Text.rich(
-      TextSpan(
-        children: [
-          for (final token in tokens)
-            if (RegExp(r'^[A-Za-z]').hasMatch(token[0]!))
-              WidgetSpan(
-                alignment: PlaceholderAlignment.baseline,
-                baseline: TextBaseline.alphabetic,
-                child: Semantics(
-                  button: courseLexicon.containsKey(
-                    lexical(token[0]!).toLowerCase(),
-                  ),
-                  label: '单词 ${lexical(token[0]!)}',
-                  child: InkWell(
-                    onTap: () => controller.previewWord(lexical(token[0]!)),
-                    child: TweenAnimationBuilder<double>(
-                      tween: Tween(begin: 0, end: 1),
-                      duration: Duration(
-                        milliseconds: 480 + token.start.clamp(0, 40) * 12,
-                      ),
-                      curve: Curves.easeOutCubic,
-                      builder: (context, value, child) => Opacity(
-                        opacity: value,
-                        child: Transform.translate(
-                          offset: Offset(0, 14 * (1 - value)),
-                          child: child,
-                        ),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 5),
-                        child: Text(
-                          token[0]!,
-                          style: TextStyle(
-                            fontSize: size,
-                            fontWeight: FontWeight.bold,
-                            shadows:
-                                controller.playing &&
-                                    controller.spokenWord ==
-                                        lexical(token[0]!).toLowerCase()
-                                ? const [
-                                    Shadow(
-                                      color: Color(0x70FFD99A),
-                                      blurRadius: 14,
-                                    ),
-                                  ]
-                                : null,
-                            color: color(lexical(token[0]!)),
-                            decoration:
-                                status(lexical(token[0]!)).isNotEmpty &&
-                                    status(lexical(token[0]!)) != 'good'
-                                ? TextDecoration.underline
-                                : TextDecoration.none,
-                            decorationStyle: TextDecorationStyle.wavy,
-                            decorationColor: const Color(0xFFFFCB95),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              )
-            else
-              TextSpan(text: token[0]),
-        ],
-      ),
-      style: TextStyle(
-        fontSize: size,
-        color: Colors.white,
-        fontWeight: FontWeight.bold,
-      ),
-    );
+  void didUpdateWidget(LearningText old) {
+    super.didUpdateWidget(old);
+    if (old.text != widget.text || old.controller != widget.controller)
+      _clearTaps();
   }
+
+  @override
+  void dispose() {
+    _clearTaps();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, box) {
+      final c = widget.controller,
+          focus = c.teachingCard?['focus'] as List? ?? const [];
+      var size = widget.size;
+      final base = TextStyle(
+        fontFamily: 'NotoSansIPA',
+        fontSize: size,
+        height: 1.22,
+        fontWeight: FontWeight.w600,
+        color: Colors.white,
+      );
+      if (RegExp(r"^[A-Za-z]+[.,!?;:]*$").hasMatch(widget.text.trim())) {
+        final p = TextPainter(
+          text: TextSpan(text: widget.text, style: base),
+          textDirection: Directionality.of(context),
+          textScaler: MediaQuery.textScalerOf(context),
+        )..layout();
+        if (p.width > box.maxWidth) size *= box.maxWidth / p.width;
+        p.dispose();
+      }
+      final spans = <InlineSpan>[];
+      for (final token in RegExp(
+        r"[A-Za-z]+(?:'[A-Za-z]+)?|[^A-Za-z]+",
+      ).allMatches(widget.text)) {
+        final value = token[0]!;
+        if (!RegExp(r'^[A-Za-z]').hasMatch(value)) {
+          spans.add(TextSpan(text: value));
+          continue;
+        }
+        final key = value.toLowerCase();
+        final status = c.wordFeedback
+            .where((w) => w['word'] == key)
+            .firstOrNull?['status'];
+        final speaking = c.playing && c.spokenWord == key,
+            emphasized = focus.contains(key);
+        final wrong = status != null && status != 'good';
+        final color = wrong || emphasized || speaking
+            ? const Color(0xFFFFD4A3)
+            : status == 'good'
+            ? const Color(0xFFBDE5DD)
+            : Colors.white;
+        final tap = _taps.putIfAbsent(token.start, TapGestureRecognizer.new)
+          ..onTap = () => c.previewWord(value);
+        spans.add(
+          TextSpan(
+            text: value,
+            recognizer: tap,
+            mouseCursor: SystemMouseCursors.click,
+            style: TextStyle(
+              color: color,
+              shadows: emphasized || speaking
+                  ? const [Shadow(color: Color(0x38FFCE91), blurRadius: 10)]
+                  : null,
+              decoration: wrong || emphasized
+                  ? TextDecoration.underline
+                  : TextDecoration.none,
+              decorationStyle: wrong
+                  ? TextDecorationStyle.wavy
+                  : TextDecorationStyle.solid,
+              decorationColor: color.withValues(alpha: .65),
+              decorationThickness: 1.3,
+            ),
+          ),
+        );
+      }
+      final text = SizedBox(
+        width: box.maxWidth,
+        child: Text.rich(
+          TextSpan(children: spans),
+          key: const ValueKey('learning-shaped-text'),
+          style: base.copyWith(fontSize: size),
+        ),
+      );
+      if (!widget.animate || MediaQuery.disableAnimationsOf(context)) return text;
+      return TweenAnimationBuilder<double>(
+        key: ValueKey(widget.text),
+        tween: Tween(begin: 0, end: 1),
+        duration: const Duration(milliseconds: 360),
+        curve: Curves.easeOutCubic,
+        child: text,
+        builder: (context, value, child) => Opacity(
+          opacity: value,
+          child: Transform.translate(
+            offset: Offset(0, 7 * (1 - value)),
+            child: child,
+          ),
+        ),
+      );
+    },
+  );
 }

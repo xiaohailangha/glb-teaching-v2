@@ -18,6 +18,7 @@ import 'package:flutter_scene/src/resource_group.dart';
 import 'package:flutter_scene/src/scene.dart';
 import 'package:flutter_scene/src/scene_pointer.dart';
 import 'package:flutter_scene/src/widgets/scene_view_semantics.dart';
+import 'scene_tick_clock.dart';
 import 'package:flutter_scene/src/widget_texture.dart';
 
 /// Builds a [Camera] for the current frame from the [elapsed] time since the
@@ -342,7 +343,7 @@ class _SceneViewState extends State<SceneView>
 
   // When the next frame is due under [SceneView.maxFrameRate], in ticker
   // time; null renders the next tick.
-  Duration? _frameDue;
+  final _tickClock = SceneTickClock();
 
   Clock get _clock => widget.clock ?? clock;
 
@@ -443,9 +444,13 @@ class _SceneViewState extends State<SceneView>
   @override
   void didUpdateWidget(SceneView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.maxFrameRate != oldWidget.maxFrameRate) _frameDue = null;
+    if (widget.maxFrameRate != oldWidget.maxFrameRate) {
+      _tickClock.clearDeadline();
+    }
     if (widget.autoTick != oldWidget.autoTick) {
       _ticker?.dispose();
+      _tickClock.restart();
+      _lastTickTime = _clock.now();
       _ticker = widget.autoTick ? (createTicker(_onTick)..start()) : null;
     }
     final oldScene = oldWidget.scene ?? _ownedScene;
@@ -561,7 +566,8 @@ class _SceneViewState extends State<SceneView>
       ? _viewsForFrame()
       : [RenderView(camera: _cameraForFrame())];
 
-  void _onTick(Duration elapsed) {
+  void _onTick(Duration rawElapsed) {
+    final elapsed = _tickClock.normalize(rawElapsed);
     final now = _clock.now();
     if (!_revealed) {
       // Hold the origin at the latest tick so the first revealed frame's delta
@@ -570,18 +576,7 @@ class _SceneViewState extends State<SceneView>
       _lastTickTime = now;
       return;
     }
-    final rate = widget.maxFrameRate;
-    if (rate != null && rate > 0) {
-      final period = Duration(microseconds: (1e6 / rate).round());
-      final due = _frameDue;
-      // A quarter period of slack picks the refresh nearest the deadline.
-      if (due != null && elapsed < due - period ~/ 4) return;
-      // Deadlines advance by whole periods to hold the average rate; one
-      // missed by more than a period restarts from this frame.
-      _frameDue = due == null || elapsed - due > period
-          ? elapsed + period
-          : due + period;
-    }
+    if (!_tickClock.isDue(elapsed, widget.maxFrameRate)) return;
     final revealElapsed = elapsed - _tickOrigin;
     final deltaSeconds = _lastTickTime == null
         ? revealElapsed.inMicroseconds / 1e6

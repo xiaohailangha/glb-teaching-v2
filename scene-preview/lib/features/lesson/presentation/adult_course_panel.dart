@@ -11,6 +11,8 @@ import '../domain/course_lexicon.dart';
 import 'learning_text.dart';
 import 'ipa_text.dart';
 import 'lesson_content_frame.dart';
+import 'lesson_layout.dart';
+import 'teaching_trial_panel.dart';
 
 class AdultCoursePanel extends StatelessWidget {
   const AdultCoursePanel({super.key, required this.controller});
@@ -27,9 +29,16 @@ class AdultCoursePanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, box) {
+      if (controller.teachingCard != null) {
+        return TeachingTrialPanel(controller: controller);
+      }
       final c = controller,
-          compact = box.maxHeight < 440,
+          type = LessonType(box.biggest),
           summary = c.courseStep == 'summary';
+      final headerHeight = math.max(
+        type.header,
+        MediaQuery.textScalerOf(context).scale(type.title) * 2.6 + 14,
+      );
       final sentence = c.coachSentence.isNotEmpty
           ? c.coachSentence
           : c.courseDisplay;
@@ -43,7 +52,7 @@ class AdultCoursePanel extends StatelessWidget {
       // actions can still exist in director data but must never flash here.
       final visibleOptions = c.courseOptions
           .where(
-            (o) => c.courseStep == 'extension_gate'
+            (o) => (c.courseStep == 'extension_gate'
                 ? const {'next', 'skip'}.contains(o['id']) &&
                       const {'学习红苹果', '结束本课'}.contains(o['label'])
                 : c.lessonPhase == 'choice' &&
@@ -55,7 +64,7 @@ class AdultCoursePanel extends StatelessWidget {
                             'choose_banana',
                             'phrase_apple',
                             'phrase_banana',
-                          }.contains(o['id'])),
+                          }.contains(o['id']))),
           )
           .toList();
       final choice = visibleOptions.isNotEmpty;
@@ -68,7 +77,7 @@ class AdultCoursePanel extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: lessonHeaderHeight,
+            height: headerHeight,
             child: Row(
               children: [
                 Expanded(
@@ -78,8 +87,10 @@ class AdultCoursePanel extends StatelessWidget {
                     children: [
                       Text(
                         c.courseChapter,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: type.title,
                           fontWeight: FontWeight.w600,
                           letterSpacing: .6,
                           color: Colors.white70,
@@ -89,10 +100,7 @@ class AdultCoursePanel extends StatelessWidget {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: LinearProgressIndicator(
-                          value: ((c.coursePosition + 1) / c.courseTotal).clamp(
-                            0,
-                            1,
-                          ),
+                          value: c.courseProgress,
                           minHeight: 2,
                           color: const Color(0xFFBDE5DD),
                           backgroundColor: Colors.white12,
@@ -109,31 +117,33 @@ class AdultCoursePanel extends StatelessWidget {
                   fruit(
                     c.coursePicture,
                     meaning: c.courseText,
-                    size: comparisonPicture ? 72 : (compact ? 48 : 64),
+                    size: (comparisonPicture ? 72 : 64) * type.scale,
                   ),
                 ],
               ],
             ),
           ),
-          if (c.coursePaused || summary)
-            const SizedBox(height: lessonPhaseHeight),
+          if (c.coursePaused || summary) SizedBox(height: type.gap),
           if (c.coursePaused) ...[
-            const Text(
+            Text(
               '休息一下',
-              style: TextStyle(fontSize: 28, color: Colors.white),
+              style: TextStyle(fontSize: type.title + 6, color: Colors.white),
             ),
             const SizedBox(height: 12),
             const Text('轻触任意位置继续，或从「课程」选择下一课。'),
           ] else if (summary) ...[
             Text(
               c.verifiedCourseClosing ?? c.address('本节课我们就学到这里。'),
-              style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+              style: TextStyle(
+                fontSize: type.title + 4,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             const SizedBox(height: 15),
             Text(
               '+${c.confirmedCourseWords?.length ?? c.vocabulary.newThisCourse.length}',
-              style: const TextStyle(
-                fontSize: 58,
+              style: TextStyle(
+                fontSize: 66 * type.scale,
                 fontWeight: FontWeight.w300,
                 color: Color(0xFFBDE5DD),
               ),
@@ -159,9 +169,9 @@ class AdultCoursePanel extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(vertical: 5),
                           child: Text(
                             word == 'i' ? 'I' : word,
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: type.body,
                             ),
                           ),
                         ),
@@ -170,11 +180,12 @@ class AdultCoursePanel extends StatelessWidget {
                         onTap: () => c.previewWord(word),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 5),
-                          child: Text(
+                          child: IpaText(
                             c.reviewIpa(word),
-                            style: const TextStyle(
+                            controller: c,
+                            style: TextStyle(
                               color: Color(0xFFBDE5DD),
-                              fontSize: 14,
+                              fontSize: type.caption,
                             ),
                           ),
                         ),
@@ -186,7 +197,10 @@ class AdultCoursePanel extends StatelessWidget {
             const SizedBox(height: 14),
             Text(
               c.closingCheer,
-              style: const TextStyle(color: Color(0xFFBDE5DD), fontSize: 18),
+              style: TextStyle(
+                color: const Color(0xFFBDE5DD),
+                fontSize: type.body,
+              ),
             ),
             if (c.nextCourse != null) const SizedBox(height: 24),
             if (c.nextCourse != null)
@@ -203,7 +217,8 @@ class AdultCoursePanel extends StatelessWidget {
               ),
           ] else ...[
             SizedBox(
-              height: lessonPhaseHeight,
+              height:
+                  MediaQuery.textScalerOf(context).scale(type.caption) * 1.8,
               child: AnimatedSwitcher(
                 layoutBuilder: lessonSwitchLayout,
                 duration: const Duration(milliseconds: 220),
@@ -235,8 +250,8 @@ class AdultCoursePanel extends StatelessWidget {
                         : c.courseStep == 'apple_practice'
                         ? c.address('轮到你说了')
                         : '轮到你说了',
-                    style: const TextStyle(
-                      fontSize: 13,
+                    style: TextStyle(
+                      fontSize: type.caption,
                       color: Color(0xFFBDE5DD),
                       letterSpacing: 1.1,
                     ),
@@ -244,6 +259,21 @@ class AdultCoursePanel extends StatelessWidget {
                 ),
               ),
             ),
+            if (displayIpa.isNotEmpty &&
+                !c.hideAnswer &&
+                c.coachSentence.isEmpty)
+              Padding(
+                padding: EdgeInsets.only(top: type.gap / 2, bottom: type.gap),
+                child: IpaText(
+                  displayIpa,
+                  controller: c,
+                  style: TextStyle(
+                    fontFamily: 'NotoSansIPA',
+                    fontSize: type.ipa,
+                    color: Colors.white70,
+                  ),
+                ),
+              ),
             if (showEnglish && sentence.isNotEmpty)
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 350),
@@ -254,32 +284,20 @@ class AdultCoursePanel extends StatelessWidget {
                   sentence,
                   key: ValueKey(sentence),
                   controller: c,
-                  size: compact ? 34 : 42,
+                  size: type.main(sentence),
                 ),
               ),
-            if (displayIpa.isNotEmpty &&
-                !c.hideAnswer &&
-                c.coachSentence.isEmpty)
-              IpaText(
-                displayIpa,
-                controller: c,
-                style: const TextStyle(
-                  fontFamily: 'NotoSansIPA',
-                  fontSize: 21,
-                  color: Colors.white60,
-                ),
-              ),
-            const SizedBox(height: 10),
+            SizedBox(height: type.gap),
             IpaText(
               c.courseText,
               controller: c,
               style: TextStyle(
-                fontSize: compact ? 16 : 18,
+                fontSize: type.body,
                 color: Colors.white70,
                 height: 1.5,
               ),
             ),
-            if (choice)
+            if (visibleOptions.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.only(top: 14),
                 child: Wrap(
@@ -344,7 +362,7 @@ class AdultCoursePanel extends StatelessWidget {
                     color: c.automaticState == 'success'
                         ? const Color(0xFFBDE5DD)
                         : const Color(0xFFFFD1A2),
-                    fontSize: compact ? 15 : 17,
+                    fontSize: type.body,
                     height: 1.5,
                   ),
                 ),
@@ -355,13 +373,15 @@ class AdultCoursePanel extends StatelessWidget {
         ],
       );
       return LessonContentFrame(
-        header: Column(children: body.children.take(2).toList()),
+        headerHeight: headerHeight,
+        topPadding: 0,
+        header: body.children.first,
         child: DefaultTextStyle(
-          style: const TextStyle(
+          style: TextStyle(
             color: Colors.white,
             fontFamily: 'NotoSansIPA',
             fontFamilyFallback: ['NotoSansSC'],
-            fontSize: 14,
+            fontSize: type.body,
             height: 1.4,
           ),
           child: Semantics(
@@ -370,7 +390,7 @@ class AdultCoursePanel extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: body.children.skip(2).toList(),
+              children: body.children.skip(1).toList(),
             ),
           ),
         ),

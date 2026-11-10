@@ -1,14 +1,14 @@
 {
-  "name": "snow-avatar-tools",
+  "name": "snow-speaks-scene-preview",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.mjs",
+    "start": "node tools/serve-web.mjs",
     "check": "node tools/check-source.mjs",
     "test": "node --test test/*.test.mjs",
-    "test:cloud": "node tools/test-tencent.mjs",
-    "prestart": "node tools/prepare-local-storage.mjs"
+    "build": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-web.ps1",
+    "deploy": "node tools/deploy-scene-preview.mjs"
   },
   "dependencies": {
     "cos-nodejs-sdk-v5": "3.0.0",

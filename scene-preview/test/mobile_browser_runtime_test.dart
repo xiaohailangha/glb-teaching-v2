@@ -86,8 +86,11 @@ void main() {
   test('mobile rendering never inherits desktop 120 fps or expensive balanced shadows', () {
     for (final quality in ['high', 'medium', 'low']) {
       final b = RenderBudget.resolve(quality, mobileBrowser: true);
-      expect(b.fps, lessThanOrEqualTo(30));
+      expect(b.fps, lessThanOrEqualTo(60));
     }
+    expect(RenderBudget.resolve('low', mobileBrowser: true).fps, 30);
+    expect(RenderBudget.resolve('medium', mobileBrowser: true).fps, 60);
+    expect(RenderBudget.resolve('high', mobileBrowser: true).fps, 60);
     expect(RenderBudget.resolve('medium', mobileBrowser: true).shadows, false);
     expect(
       RenderBudget.resolve('medium', mobileBrowser: true).scale,

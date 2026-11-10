@@ -1,5 +1,6 @@
 class BrowserGraphicsWatch {
-  BrowserGraphicsWatch(void Function() onLost);
+  String get lastReason => 'G1';
+  BrowserGraphicsWatch(void Function() onLost, {void Function()? onFrame});
   void dispose() {}
 }
 

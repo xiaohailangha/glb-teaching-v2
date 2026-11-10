@@ -1,0 +1,584 @@
+{
+  "at": "2026-11-10T04:02:48.729Z",
+  "deployed": {
+    "revision": "stable-teaching-20261110-v1",
+    "web": "75e69cc3008e03f6917de47790934d02ad4ed20dabfae223d593c966d85206cb",
+    "content": "20bd25cac996487da3ed4b26b3e47c86836609d05c2f763dc5d398fd0faa21c2",
+    "assets": 213,
+    "steps": [
+      8,
+      21
+    ],
+    "at": "2026-11-10T03:57:11.850Z"
+  },
+  "scope": [
+    "N26-U006-L04",
+    "N26-U084-L01"
+  ],
+  "minimumPhone": "iPhone 13 Pro landscape 844x390; safe insets checked",
+  "assetCheck": {
+    "chinese": 168,
+    "english": 45,
+    "total": 213,
+    "allVerified": true,
+    "replacedBadAudio": [
+      "an"
+    ],
+    "newAnAccuracy": 93.852294921875
+  },
+  "tests": {
+    "flutter": 33,
+    "flutterPassed": 33,
+    "analysis": "No issues",
+    "backendTrial": 11,
+    "backendTrialPassed": 11,
+    "englishReferenceOral": 20,
+    "englishReferenceOralPassed": 20,
+    "sourceModules": 102,
+    "backendFull": {
+      "passed": 71,
+      "failed": 4,
+      "preexistingMissingFile": "D:/AI语言训练/v2/data/curriculum/plan-3000.json",
+      "affected": [
+        "b101-guided-authoring",
+        "curriculum-evidence",
+        "curriculum",
+        "formal-curriculum"
+      ]
+    }
+  },
+  "proof": [
+    {
+      "run": "accepted-word-mobile",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "webHash": "75e69cc3008e03f6917de47790934d02ad4ed20dabfae223d593c966d85206cb",
+      "clips": 4,
+      "continuous": true,
+      "mediaPauseOrSeekInjected": false,
+      "formalProgressWrites": 0,
+      "paidCalls": 0,
+      "optionalNetworkBlocked": [
+        "blocked remote fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "run": "accepted-word-desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "webHash": "75e69cc3008e03f6917de47790934d02ad4ed20dabfae223d593c966d85206cb",
+      "clips": 4,
+      "continuous": true,
+      "mediaPauseOrSeekInjected": false,
+      "formalProgressWrites": 0,
+      "paidCalls": 0,
+      "optionalNetworkBlocked": [
+        "blocked remote fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "run": "release-complex-direct-comparison-mobile",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "webHash": "75e69cc3008e03f6917de47790934d02ad4ed20dabfae223d593c966d85206cb",
+      "clips": 9,
+      "continuous": true,
+      "mediaPauseOrSeekInjected": false,
+      "formalProgressWrites": 0,
+      "paidCalls": 0,
+      "optionalNetworkBlocked": [
+        "blocked remote fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "run": "release-complex-direct-comparison-desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "webHash": "75e69cc3008e03f6917de47790934d02ad4ed20dabfae223d593c966d85206cb",
+      "clips": 9,
+      "continuous": true,
+      "mediaPauseOrSeekInjected": false,
+      "formalProgressWrites": 0,
+      "paidCalls": 0,
+      "optionalNetworkBlocked": [
+        "blocked remote fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    }
+  ],
+  "cleanup": {
+    "local": {
+      "at": "2026-11-10T03:53:10.6470981Z",
+      "retiredAudioBytes": 41594840,
+      "oldVersions": [
+        {
+          "bytes": 2259571,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\classroom-layout"
+        },
+        {
+          "bytes": 3479672,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\layout-review"
+        },
+        {
+          "bytes": 152398,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-plan-v5"
+        },
+        {
+          "bytes": 7975,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\build-teaching-proposal.mjs"
+        },
+        {
+          "bytes": 808,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chinese-explanations-live-verification.json"
+        },
+        {
+          "bytes": 17322541,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chinese-explanations-web.tar.gz"
+        },
+        {
+          "bytes": 97949,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chrome-mobile-landscape-trial-goal.png"
+        },
+        {
+          "bytes": 99293,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chrome-mobile-landscape-trial-paused.png"
+        },
+        {
+          "bytes": 106684,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chrome-mobile-landscape-trial-word.png"
+        },
+        {
+          "bytes": 69828,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\chrome-mobile-trial.png"
+        },
+        {
+          "bytes": 14687500,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\classroom-layout-content.tar.gz"
+        },
+        {
+          "bytes": 17321163,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\classroom-layout-web.tar.gz"
+        },
+        {
+          "bytes": 10102,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\classroom-trial-browser-probe.mjs"
+        },
+        {
+          "bytes": 2374,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-chinese-explanations.mjs"
+        },
+        {
+          "bytes": 4473,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-classroom-layout.mjs"
+        },
+        {
+          "bytes": 2348,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-header-audio-sync.mjs"
+        },
+        {
+          "bytes": 2973,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-layout-review.mjs"
+        },
+        {
+          "bytes": 3943,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-scenarios-v3.mjs"
+        },
+        {
+          "bytes": 4320,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-teacher-plan-v5.mjs"
+        },
+        {
+          "bytes": 3868,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-teacher-v4.mjs"
+        },
+        {
+          "bytes": 3340,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-teaching-trial.mjs"
+        },
+        {
+          "bytes": 2725,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-trial-arrows.mjs"
+        },
+        {
+          "bytes": 1876,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\deploy-trial-mic-retry.mjs"
+        },
+        {
+          "bytes": 12094,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-browser-probe.mjs"
+        },
+        {
+          "bytes": 1388,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-browser-verification.json"
+        },
+        {
+          "bytes": 106633,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-narration.png"
+        },
+        {
+          "bytes": 97651,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-phrase.png"
+        },
+        {
+          "bytes": 102091,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-sentence.png"
+        },
+        {
+          "bytes": 802,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-sync-live-verification.json"
+        },
+        {
+          "bytes": 17322255,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\header-audio-sync-web.tar.gz"
+        },
+        {
+          "bytes": 1093843,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\layout-review.tar.gz"
+        },
+        {
+          "bytes": 529,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\prepare-scenario-content.mjs"
+        },
+        {
+          "bytes": 515,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\prepare-teacher-deploy.mjs"
+        },
+        {
+          "bytes": 2721,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\prepare-teacher-v4.mjs"
+        },
+        {
+          "bytes": 2901,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-chinese-explanations.mjs"
+        },
+        {
+          "bytes": 2839,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-classroom-layout.mjs"
+        },
+        {
+          "bytes": 3944,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-header-audio-sync.mjs"
+        },
+        {
+          "bytes": 7506,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-scenarios-v3.mjs"
+        },
+        {
+          "bytes": 4354,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-teacher-plan-v5.mjs"
+        },
+        {
+          "bytes": 2624,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-teacher-v4.mjs"
+        },
+        {
+          "bytes": 6592,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\record-teaching-trial.mjs"
+        },
+        {
+          "bytes": 1459,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\refresh-layout-review.mjs"
+        },
+        {
+          "bytes": 1090,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\refresh-scenario-font.py"
+        },
+        {
+          "bytes": 278,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\rewrite-trial-panel.mjs"
+        },
+        {
+          "bytes": 13314659,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\scenarios-v3-api.tar.gz"
+        },
+        {
+          "bytes": 10817,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\scenarios-v3-files.txt"
+        },
+        {
+          "bytes": 397,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\scenarios-v3-live-check.json"
+        },
+        {
+          "bytes": 17320613,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\scenarios-v3-web.tar.gz"
+        },
+        {
+          "bytes": 14568407,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-plan-v5-api.tar.gz"
+        },
+        {
+          "bytes": 12073,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-plan-v5-files.txt"
+        },
+        {
+          "bytes": 2279,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-plan-v5-live-verification.json"
+        },
+        {
+          "bytes": 17315692,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-plan-v5-web.tar.gz"
+        },
+        {
+          "bytes": 10999143,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-v4-api.tar.gz"
+        },
+        {
+          "bytes": 9962,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-v4-files.txt"
+        },
+        {
+          "bytes": 17314482,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teacher-v4-web.tar.gz"
+        },
+        {
+          "bytes": 9730,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching_trial_panel_v2.dart"
+        },
+        {
+          "bytes": 18545,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching-flow-proposal.txt"
+        },
+        {
+          "bytes": 10307600,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching-pilot-api.tar.gz"
+        },
+        {
+          "bytes": 13040,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching-pilot-content-v2.mjs"
+        },
+        {
+          "bytes": 17309615,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching-pilot-web.tar.gz"
+        },
+        {
+          "bytes": 393,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\teaching-proposal-check.json"
+        },
+        {
+          "bytes": 8864,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\trial-file-list.txt"
+        },
+        {
+          "bytes": 1039,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\update-scenario-tests.mjs"
+        },
+        {
+          "bytes": 713,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\update-teacher-v4-tests.mjs"
+        },
+        {
+          "bytes": 2189,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\verify-chinese-explanations.mjs"
+        },
+        {
+          "bytes": 2185,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\verify-header-audio-sync.mjs"
+        },
+        {
+          "bytes": 3292,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\verify-scenarios-v3.mjs"
+        },
+        {
+          "bytes": 4117,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\verify-teacher-plan-v5.mjs"
+        },
+        {
+          "bytes": 78982,
+          "path": "C:\\Users\\dyw\\Documents\\CodexActive\\2026-11-04\\snow-speaks-app-development-20261104\\work\\webkit-mobile-trial.png"
+        }
+      ],
+      "retiredSourceFiles": 5,
+      "retiredAudioFiles": 513
+    },
+    "remote": {
+      "removed": [
+        {
+          "name": "approved-trial-20261110",
+          "bytes": 93837558
+        },
+        {
+          "name": "chinese-explanations-20261109-r1-previous",
+          "bytes": 53430104
+        },
+        {
+          "name": "chinese-explanations-web.tar.gz",
+          "bytes": 17322541
+        },
+        {
+          "name": "classroom-layout-20261106-r1-content",
+          "bytes": 21457547
+        },
+        {
+          "name": "classroom-layout-20261106-r1-previous",
+          "bytes": 53968729
+        },
+        {
+          "name": "classroom-layout-content.tar.gz",
+          "bytes": 14687500
+        },
+        {
+          "name": "classroom-layout-web.tar.gz",
+          "bytes": 17321163
+        },
+        {
+          "name": "header-audio-sync-20261109-r1-previous",
+          "bytes": 53440106
+        },
+        {
+          "name": "header-audio-sync-web.tar.gz",
+          "bytes": 17322255
+        },
+        {
+          "name": "layout-review-20261104.tar.gz",
+          "bytes": 1093843
+        },
+        {
+          "name": "scenarios-v3-api.tar.gz",
+          "bytes": 13314659
+        },
+        {
+          "name": "scenarios-v3-web.tar.gz",
+          "bytes": 17320613
+        },
+        {
+          "name": "teacher-plan-v5-acceptance.test.mjs",
+          "bytes": 9675
+        },
+        {
+          "name": "teacher-plan-v5-api.tar.gz",
+          "bytes": 14568407
+        },
+        {
+          "name": "teacher-plan-v5-web.tar.gz",
+          "bytes": 17315692
+        },
+        {
+          "name": "teacher-v4-api.tar.gz",
+          "bytes": 10999143
+        },
+        {
+          "name": "teacher-v4-web.tar.gz",
+          "bytes": 17314482
+        },
+        {
+          "name": "teaching-pilot-20261105-api",
+          "bytes": 36537
+        },
+        {
+          "name": "teaching-pilot-20261105-before-arrow-fix",
+          "bytes": 53383895
+        },
+        {
+          "name": "teaching-pilot-20261105-before-mic-retry",
+          "bytes": 53383636
+        },
+        {
+          "name": "teaching-pilot-20261105-capture-v2-api",
+          "bytes": 30173
+        },
+        {
+          "name": "teaching-pilot-20261105-capture-v2-previous",
+          "bytes": 68380679
+        },
+        {
+          "name": "teaching-pilot-20261105-deployed",
+          "bytes": 0
+        },
+        {
+          "name": "teaching-pilot-20261105-previous",
+          "bytes": 53365527
+        },
+        {
+          "name": "teaching-pilot-20261105-scenarios-v3-api",
+          "bytes": 35361
+        },
+        {
+          "name": "teaching-pilot-20261105-scenarios-v3-previous",
+          "bytes": 68737110
+        },
+        {
+          "name": "teaching-pilot-20261106-teacher-plan-v5-api",
+          "bytes": 58524
+        },
+        {
+          "name": "teaching-pilot-20261106-teacher-plan-v5-previous",
+          "bytes": 69432241
+        },
+        {
+          "name": "teaching-pilot-20261106-teacher-v4-api",
+          "bytes": 47704
+        },
+        {
+          "name": "teaching-pilot-20261106-teacher-v4-previous",
+          "bytes": 72802378
+        },
+        {
+          "name": "teaching-pilot-api-20261105.tar.gz",
+          "bytes": 10307600
+        },
+        {
+          "name": "teaching-pilot-web-20261105.tar.gz",
+          "bytes": 17309615
+        },
+        {
+          "name": "teaching-trial-arrows.tar.gz",
+          "bytes": 17309608
+        },
+        {
+          "name": "teaching-trial-mic-retry.tar.gz",
+          "bytes": 17309651
+        }
+      ],
+      "bytes": 936654256,
+      "preserved": []
+    },
+    "finalCleanup": {
+      "removed": [
+        {
+          "name": "stable-teaching-20261110-v1-next",
+          "bytes": 37136548
+        },
+        {
+          "name": "stable-teaching-20261110-v1-rollback",
+          "bytes": 74912349
+        },
+        {
+          "name": "stable-teaching-web-accepted-previous",
+          "bytes": 53409077
+        },
+        {
+          "name": "stable-teaching-web-accepted.tar.gz",
+          "bytes": 17317917
+        },
+        {
+          "name": "stable-teaching-web-final-previous",
+          "bytes": 53409380
+        },
+        {
+          "name": "stable-teaching-web-final.tar.gz",
+          "bytes": 17318179
+        }
+      ],
+      "bytes": 253503450
+    },
+    "bytes": 1424803207
+  },
+  "formalRelease": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+  "productionPaused": true,
+  "automationPaused": true,
+  "realUserProgressWrites": 0,
+  "physicalIphoneTested": false,
+  "humanMicrophoneTested": false
+}
