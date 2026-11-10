@@ -15,17 +15,18 @@ const uploaded='/root/snow-scene-preview-'+Date.now()+'.tar.gz';
 await upload([[archive,uploaded]]);
 console.log(await remote(`#!/bin/bash
 set -eu
-target=/opt/glb-teaching
+webroot=/opt/glb-teaching/build/web/scene
 stage=$(mktemp -d /opt/snow-scene-preview-XXXXXX)
 backup=/opt/snow-scene-preview-backup-$(date +%s)
 tar -xzf ${uploaded} -C "$stage"
 mkdir -p "$backup"
-cp -a "$target/build/web" "$backup/web"
-rollback() { cp -a "$backup/web/." "$target/build/web/"; }
+cp -a "$webroot" "$backup/web"
+rollback() { cp -a "$backup/web/." "$webroot/"; }
 trap rollback ERR
-cp -a "$stage/"* "$target/build/web/"
-chown -R glbapp:glbapp "$target/build/web"
-curl -kfsS https://49.233.179.83/scene/ >/dev/null
+cp -a "$stage/"* "$webroot/"
+chown -R glbapp:glbapp "$webroot"
+curl -kfsS https://49.233.179.83/scene/ | grep -Fq "${release.bootstrapFile}" 
+curl -kfsS https://49.233.179.83/scene/scene-release.json | grep -Fq "${release.mainSha256}"
 trap - ERR
 printf 'Published scene-preview. Backup: %s\n' "$backup"
 `,'snow-scene-preview-deploy'));
