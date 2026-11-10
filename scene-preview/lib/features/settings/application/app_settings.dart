@@ -2,10 +2,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/avatar/scene/render_budget.dart';
+
 enum RenderPreset { high, medium, low }
 
 class AppSettings extends ChangeNotifier {
-  RenderPreset preset = RenderPreset.high;
+  RenderPreset preset = isMobileBrowser
+      ? RenderPreset.medium
+      : RenderPreset.high;
   bool adaptive = true;
   bool _disposed = false;
   int _revision = 0;
@@ -27,7 +31,7 @@ class AppSettings extends ChangeNotifier {
       final saved = store.getString('render.quality');
       preset =
           RenderPreset.values.where((p) => p.name == saved).firstOrNull ??
-          RenderPreset.high;
+          (isMobileBrowser ? RenderPreset.medium : RenderPreset.high);
       adaptive = store.getBool('render.adaptive') ?? true;
       notifyListeners();
       await _requestPlatformRate();

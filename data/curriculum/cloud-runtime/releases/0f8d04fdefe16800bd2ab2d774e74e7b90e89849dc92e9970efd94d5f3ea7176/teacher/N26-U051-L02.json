@@ -1,0 +1,1432 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit051-v1",
+  "courseId": "N26-U051-L02",
+  "unitId": "N26-U051",
+  "category": "时间与日常",
+  "title": "还没定下的安排",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "9a60c6aa7903674b48188977d0b92ae9268a0432e683616836656d14fa263b94",
+  "newWords": [
+    "may",
+    "might",
+    "shall"
+  ],
+  "prerequisites": [
+    "N26-U051-L01"
+  ],
+  "goal": "按当前语境教一项用法；不同词形、语序和语气先示范，不列助动词表。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "may",
+        "surface": "may",
+        "meaning": "可能，表示事情有可能发生",
+        "kind": "new_word"
+      },
+      {
+        "key": "might",
+        "surface": "might",
+        "meaning": "可能，语气更不确定",
+        "kind": "new_word"
+      },
+      {
+        "key": "shall",
+        "surface": "shall",
+        "meaning": "用于征询共同提议",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U051-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U051-L02-S002",
+        "N26-U051-L02-S003",
+        "N26-U051-L02-S004",
+        "N26-U051-L02-S005",
+        "N26-U051-L02-S006",
+        "N26-U051-L02-S007",
+        "N26-U051-L02-S008",
+        "N26-U051-L02-S009",
+        "N26-U051-L02-S010"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U051-L02-S011",
+        "N26-U051-L02-S012",
+        "N26-U051-L02-S013",
+        "N26-U051-L02-S014",
+        "N26-U051-L02-S015",
+        "N26-U051-L02-S016",
+        "N26-U051-L02-S017",
+        "N26-U051-L02-S018",
+        "N26-U051-L02-S019"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U051-L02-S020",
+        "N26-U051-L02-S021",
+        "N26-U051-L02-S022",
+        "N26-U051-L02-S023",
+        "N26-U051-L02-S024",
+        "N26-U051-L02-S025"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U051-L02-S026",
+        "N26-U051-L02-S027",
+        "N26-U051-L02-S028",
+        "N26-U051-L02-S029"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U051-L02-S030",
+        "N26-U051-L02-S031",
+        "N26-U051-L02-S032",
+        "N26-U051-L02-S033",
+        "N26-U051-L02-S034",
+        "N26-U051-L02-S035"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U051-L02-S001",
+      "course": "N26-U051-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象安排还没有完全确定。今天分清可能的两种说法，也练向对方提议一起走。",
+      "display": "",
+      "audio": "N26A-4ecf83d33c58b8a0f957",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S002",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "可能，表示事情有可能发生。这里不是请求许可。",
+      "display": "may",
+      "audio": "N26A-37aa0d99b4f4eabb3a11",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S003",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "可能，表示事情有可能发生",
+      "display": "may",
+      "audio": "N26A-b6d580e7692d3feca3e1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "可能，表示事情有可能发生",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S004",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "may",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C001",
+      "model": "N26A-b6d580e7692d3feca3e1",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S005",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "可能，语气更不确定。这里说可能，语气更不确定，先听完整的声音。",
+      "display": "might",
+      "audio": "N26A-4da8446a42be49728437",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S006",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "可能，语气更不确定",
+      "display": "might",
+      "audio": "N26A-bbc7d16789d798a562b3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "可能，语气更不确定",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S007",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "might",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C002",
+      "model": "N26A-bbc7d16789d798a562b3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S008",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "用于征询共同提议。整体听提议句，不把将来所有句子都换成它。",
+      "display": "shall",
+      "audio": "N26A-a16c4e879ee251a075f0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S009",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "用于征询共同提议",
+      "display": "shall",
+      "audio": "N26A-a32a3becb3e582d9fc3a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用于征询共同提议",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S010",
+      "course": "N26-U051-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "shall",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C003",
+      "model": "N26A-a32a3becb3e582d9fc3a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L02-S011",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可能明天去。这里不是请求许可。",
+      "display": "I may go tomorrow",
+      "audio": "N26A-dd3fb4fa4c2d00d9500f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S012",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可能明天去。",
+      "display": "I may go tomorrow.",
+      "audio": "N26A-ba3fe7813d03c5eb8ba7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可能明天去。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S013",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I may go tomorrow.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C004",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S014",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我也许明天去。先听这一组，再连起来说。",
+      "display": "I might go tomorrow",
+      "audio": "N26A-bff4e34fa991b981efe1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S015",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我也许明天去。",
+      "display": "I might go tomorrow.",
+      "audio": "N26A-5e02a5248b74b53b74d8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我也许明天去。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S016",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I might go tomorrow.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C005",
+      "model": "N26A-5e02a5248b74b53b74d8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S017",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我们走好吗。整体听提议句，不把将来所有句子都换成它。",
+      "display": "Shall we go",
+      "audio": "N26A-17b27422dad27aca97e7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S018",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我们走好吗？",
+      "display": "Shall we go?",
+      "audio": "N26A-e9820f4fedab8bab2fce",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我们走好吗？",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S019",
+      "course": "N26-U051-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Shall we go?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L02-C006",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L02-S020",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可能明天去。",
+      "display": "I may go tomorrow.",
+      "audio": "N26A-ba3fe7813d03c5eb8ba7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可能明天去。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U051-L02-S021",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "明天去不去还未定，先听可能的安排。",
+      "display": "",
+      "audio": "N26A-9e0dea8bdfa70a36f6da",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S022",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I may go tomorrow.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C007",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S023",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我们走好吗？",
+      "display": "Shall we go?",
+      "audio": "N26A-e9820f4fedab8bab2fce",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我们走好吗？",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U051-L02-S024",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你想提议和朋友一起走，先听问句。",
+      "display": "",
+      "audio": "N26A-9345c9a8b3b0dc424f98",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S025",
+      "course": "N26-U051-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Shall we go?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C008",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S026",
+      "course": "N26-U051-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说可能明天去。",
+      "display": "",
+      "audio": "N26A-3ead1a91da4b22d07712",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S027",
+      "course": "N26-U051-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I may go tomorrow.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C009",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S028",
+      "course": "N26-U051-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示提议我们走好吗。",
+      "display": "",
+      "audio": "N26A-005643a97d7b3eb3193f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S029",
+      "course": "N26-U051-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Shall we go?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C010",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S030",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对明天的安排，你说明自己可能明天去。",
+      "display": "",
+      "audio": "N26A-2d5416d981c65a2cfd77",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S031",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I may go tomorrow.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C011",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S032",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象活动结束，你向朋友提议一起走。",
+      "display": "",
+      "audio": "N26A-979a21b06be6a7266e21",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S033",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Shall we go?",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L02-C012",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U051-L02-S034",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L02-S035",
+      "course": "N26-U051-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U051-L02-C001",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "可能，表示事情有可能发生",
+      "answers": [
+        "may"
+      ],
+      "hint": "may",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S004",
+      "help": "N26-U051-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C002",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "可能，语气更不确定",
+      "answers": [
+        "might"
+      ],
+      "hint": "might",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S007",
+      "help": "N26-U051-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C003",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "用于征询共同提议",
+      "answers": [
+        "shall"
+      ],
+      "hint": "shall",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S010",
+      "help": "N26-U051-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C004",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可能明天去。",
+      "answers": [
+        "I may go tomorrow."
+      ],
+      "hint": "I may go tomorrow.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S013",
+      "help": "N26-U051-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C005",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我也许明天去。",
+      "answers": [
+        "I might go tomorrow."
+      ],
+      "hint": "I might go tomorrow.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S016",
+      "help": "N26-U051-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C006",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我们走好吗？",
+      "answers": [
+        "Shall we go?"
+      ],
+      "hint": "Shall we go?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S019",
+      "help": "N26-U051-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C007",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "明天去不去还未定，先听可能的安排。",
+      "answers": [
+        "I may go tomorrow."
+      ],
+      "hint": "I may go tomorrow.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S022",
+      "help": "N26-U051-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C008",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你想提议和朋友一起走，先听问句。",
+      "answers": [
+        "Shall we go?"
+      ],
+      "hint": "Shall we go?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S025",
+      "help": "N26-U051-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C009",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说可能明天去。",
+      "answers": [
+        "I may go tomorrow."
+      ],
+      "hint": "I may go tomorrow.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S027",
+      "help": "N26-U051-L02-S027-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C010",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示提议我们走好吗。",
+      "answers": [
+        "Shall we go?"
+      ],
+      "hint": "Shall we go?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L02-S029",
+      "help": "N26-U051-L02-S029-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C011",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对明天的安排，你说明自己可能明天去。",
+      "answers": [
+        "I may go tomorrow."
+      ],
+      "hint": "I may go tomorrow.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U051-L02-S031",
+      "help": "N26-U051-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U051-L02-C012",
+      "course": "N26-U051-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象活动结束，你向朋友提议一起走。",
+      "answers": [
+        "Shall we go?"
+      ],
+      "hint": "Shall we go?",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U051-L02-S033",
+      "help": "N26-U051-L02-S033-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U051-L02-S004-HELP",
+      "forStep": "N26-U051-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b6d580e7692d3feca3e1",
+      "display": "may",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S007-HELP",
+      "forStep": "N26-U051-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbc7d16789d798a562b3",
+      "display": "might",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S010-HELP",
+      "forStep": "N26-U051-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a32a3becb3e582d9fc3a",
+      "display": "shall",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S013-HELP",
+      "forStep": "N26-U051-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "display": "I may go tomorrow.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S016-HELP",
+      "forStep": "N26-U051-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5e02a5248b74b53b74d8",
+      "display": "I might go tomorrow.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S019-HELP",
+      "forStep": "N26-U051-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "display": "Shall we go?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S022-HELP",
+      "forStep": "N26-U051-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "display": "I may go tomorrow.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S025-HELP",
+      "forStep": "N26-U051-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "display": "Shall we go?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S027-HELP",
+      "forStep": "N26-U051-L02-S027",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "display": "I may go tomorrow.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S027",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S029-HELP",
+      "forStep": "N26-U051-L02-S029",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "display": "Shall we go?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S029",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S031-HELP",
+      "forStep": "N26-U051-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba3fe7813d03c5eb8ba7",
+      "display": "I may go tomorrow.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L02-S033-HELP",
+      "forStep": "N26-U051-L02-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9820f4fedab8bab2fce",
+      "display": "Shall we go?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L02-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "may",
+      "word": "may",
+      "ipa": "/meɪ/",
+      "meaning": "可能，表示事情有可能发生",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b6d580e7692d3feca3e1"
+    },
+    {
+      "key": "might",
+      "word": "might",
+      "ipa": "/maɪt/",
+      "meaning": "可能，语气更不确定",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-bbc7d16789d798a562b3"
+    },
+    {
+      "key": "shall",
+      "word": "shall",
+      "ipa": "/ʃæl/",
+      "meaning": "用于征询共同提议",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a32a3becb3e582d9fc3a"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "go",
+      "word": "go",
+      "ipa": "/ɡoʊ/",
+      "meaning": "去，朝另一个地方离开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5297ca7fc196cba0063f"
+    },
+    {
+      "key": "tomorrow",
+      "word": "tomorrow",
+      "ipa": "/təˈmɑːr.oʊ/",
+      "meaning": "明天",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7050b05c53611ebda542"
+    },
+    {
+      "key": "we",
+      "word": "we",
+      "ipa": "/wiː/",
+      "meaning": "我们，作句子主语",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5525da766843cb8e6d1f"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：may=可能，表示事情有可能发生；might=可能，语气更不确定；shall=用于征询共同提议。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "go",
+      "sourceCourse": "N26-U005-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "tomorrow",
+      "sourceCourse": "N26-U013-L05",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "we",
+      "sourceCourse": "N26-U020-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 27,
+    "availableExactAssets": 27,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-4ecf83d33c58b8a0f957",
+      "N26A-37aa0d99b4f4eabb3a11",
+      "N26A-b6d580e7692d3feca3e1",
+      "N26A-4da8446a42be49728437",
+      "N26A-bbc7d16789d798a562b3",
+      "N26A-a16c4e879ee251a075f0",
+      "N26A-a32a3becb3e582d9fc3a",
+      "N26A-dd3fb4fa4c2d00d9500f",
+      "N26A-ba3fe7813d03c5eb8ba7",
+      "N26A-bff4e34fa991b981efe1",
+      "N26A-5e02a5248b74b53b74d8",
+      "N26A-17b27422dad27aca97e7",
+      "N26A-e9820f4fedab8bab2fce",
+      "N26A-9e0dea8bdfa70a36f6da",
+      "N26A-9345c9a8b3b0dc424f98",
+      "N26A-3ead1a91da4b22d07712",
+      "N26A-005643a97d7b3eb3193f",
+      "N26A-2d5416d981c65a2cfd77",
+      "N26A-979a21b06be6a7266e21",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-5297ca7fc196cba0063f",
+      "N26A-7050b05c53611ebda542",
+      "N26A-5525da766843cb8e6d1f",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

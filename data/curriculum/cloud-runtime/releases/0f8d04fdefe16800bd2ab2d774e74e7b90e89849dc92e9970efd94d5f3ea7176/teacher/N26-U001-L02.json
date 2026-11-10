@@ -1,0 +1,1178 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch01-v1",
+  "courseId": "N26-U001-L02",
+  "unitId": "N26-U001",
+  "category": "食物与饮品",
+  "title": "一个苹果，一根香蕉",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "a0646838c6a153efa2c243893874584067f9774edea2f11a780b1479882335e3",
+  "newWords": [
+    "a"
+  ],
+  "prerequisites": [
+    "N26-U001-L01"
+  ],
+  "goal": "只使用已教水果，冠词、is和want随表达需要逐项示范。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "a",
+        "surface": "a",
+        "meaning": "一个，放在水果的名字前面",
+        "kind": "new_word"
+      },
+      {
+        "key": "a",
+        "surface": "an",
+        "meaning": "一个，用在苹果这个词前面",
+        "kind": "explicit_form_or_sense"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U001-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U001-L02-S002",
+        "N26-U001-L02-S003",
+        "N26-U001-L02-S004",
+        "N26-U001-L02-S005",
+        "N26-U001-L02-S006",
+        "N26-U001-L02-S007"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U001-L02-S008",
+        "N26-U001-L02-S009",
+        "N26-U001-L02-S010",
+        "N26-U001-L02-S011",
+        "N26-U001-L02-S012",
+        "N26-U001-L02-S013"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U001-L02-S014",
+        "N26-U001-L02-S015",
+        "N26-U001-L02-S016",
+        "N26-U001-L02-S017",
+        "N26-U001-L02-S018",
+        "N26-U001-L02-S019"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U001-L02-S020",
+        "N26-U001-L02-S021",
+        "N26-U001-L02-S022",
+        "N26-U001-L02-S023"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U001-L02-S024",
+        "N26-U001-L02-S025",
+        "N26-U001-L02-S026",
+        "N26-U001-L02-S027",
+        "N26-U001-L02-S028",
+        "N26-U001-L02-S029"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U001-L02-S001",
+      "course": "N26-U001-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "苹果和香蕉已经认识了。今天把一个的说法放到水果前面，先听搭配，再跟着说。",
+      "display": "",
+      "audio": "N26A-16d422410b2741d4183d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S002",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "一个，放在水果的名字前面。在短语里，这个声音通常很轻。我们先听，再跟着说。",
+      "display": "a",
+      "audio": "N26A-08d9b4a828f2180a6e03",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S003",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "一个，放在水果的名字前面",
+      "display": "a",
+      "audio": "N26A-2112c00aabb1042badb5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个，放在水果的名字前面",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U001-L02-S004",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U001-L02-C001",
+      "model": "N26A-2112c00aabb1042badb5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U001-L02-S005",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "一个，用在苹果这个词前面。今天把这两个样子一起学：接苹果时用这个带鼻音的样子，接香蕉时用刚才那个样子。",
+      "display": "an",
+      "audio": "N26A-084d8bde71642486488c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S006",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "一个，用在苹果这个词前面",
+      "display": "an",
+      "audio": "N26A-0fb02158f7daf9b06979",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个，用在苹果这个词前面",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U001-L02-S007",
+      "course": "N26-U001-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U001-L02-C002",
+      "model": "N26A-0fb02158f7daf9b06979",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U001-L02-S008",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个苹果。先听整组：前面的一个和苹果连在一起。",
+      "display": "an apple",
+      "audio": "N26A-41ba320299fb029fec72",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S009",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个苹果",
+      "display": "an apple",
+      "audio": "N26A-998bd8af628376838a12",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个苹果",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U001-L02-S010",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an apple",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U001-L02-C003",
+      "model": "N26A-998bd8af628376838a12",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U001-L02-S011",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一根香蕉。这里换回不带鼻音的那个样子；中文说一根，英文仍表示一个。",
+      "display": "a banana",
+      "audio": "N26A-811fc803ddbc205a2f5d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S012",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一根香蕉",
+      "display": "a banana",
+      "audio": "N26A-2d49534a6cc2459ded00",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一根香蕉",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U001-L02-S013",
+      "course": "N26-U001-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a banana",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U001-L02-C004",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U001-L02-S014",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一个苹果",
+      "display": "an apple",
+      "audio": "N26A-998bd8af628376838a12",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个苹果",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U001-L02-S015",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "我在清点一个苹果，听到后用同样的短语接上。",
+      "display": "",
+      "audio": "N26A-b44c4eb1f224fbad8bff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S016",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "an apple",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C005",
+      "model": "N26A-998bd8af628376838a12",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S017",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一根香蕉",
+      "display": "a banana",
+      "audio": "N26A-2d49534a6cc2459ded00",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一根香蕉",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U001-L02-S018",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "现在说的是一根香蕉，听完用这组话接上。",
+      "display": "",
+      "audio": "N26A-754c73897f1d94a377e2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S019",
+      "course": "N26-U001-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a banana",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C006",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S020",
+      "course": "N26-U001-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "把一个苹果说清楚，先看着这组词说。",
+      "display": "",
+      "audio": "N26A-9955393dab624512c392",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S021",
+      "course": "N26-U001-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "an apple",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C007",
+      "model": "N26A-998bd8af628376838a12",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S022",
+      "course": "N26-U001-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "把一根香蕉说清楚，先看着这组词说。",
+      "display": "",
+      "audio": "N26A-b94c637e312598fe9758",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S023",
+      "course": "N26-U001-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a banana",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C008",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S024",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "对方准备递给你一个苹果。你说出这一份水果。",
+      "display": "",
+      "audio": "N26A-0431231427fc5d5daf0c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S025",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "an apple",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C009",
+      "model": "N26A-998bd8af628376838a12",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S026",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "另一份是一根香蕉，你说出这一份。",
+      "display": "",
+      "audio": "N26A-9ed3ee3efd092f1d6f3a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S027",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a banana",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U001-L02-C010",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U001-L02-S028",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U001-L02-S029",
+      "course": "N26-U001-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U001-L02-C001",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个，放在水果的名字前面",
+      "answers": [
+        "a"
+      ],
+      "hint": "a",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S004",
+      "help": "N26-U001-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C002",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个，用在苹果这个词前面",
+      "answers": [
+        "an"
+      ],
+      "hint": "an",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S007",
+      "help": "N26-U001-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C003",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个苹果",
+      "answers": [
+        "an apple"
+      ],
+      "hint": "an apple",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S010",
+      "help": "N26-U001-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C004",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一根香蕉",
+      "answers": [
+        "a banana"
+      ],
+      "hint": "a banana",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S013",
+      "help": "N26-U001-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C005",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我在清点一个苹果，听到后用同样的短语接上。",
+      "answers": [
+        "an apple"
+      ],
+      "hint": "an apple",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S016",
+      "help": "N26-U001-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C006",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "现在说的是一根香蕉，听完用这组话接上。",
+      "answers": [
+        "a banana"
+      ],
+      "hint": "a banana",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S019",
+      "help": "N26-U001-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C007",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把一个苹果说清楚，先看着这组词说。",
+      "answers": [
+        "an apple"
+      ],
+      "hint": "an apple",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S021",
+      "help": "N26-U001-L02-S021-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C008",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把一根香蕉说清楚，先看着这组词说。",
+      "answers": [
+        "a banana"
+      ],
+      "hint": "a banana",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U001-L02-S023",
+      "help": "N26-U001-L02-S023-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C009",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "对方准备递给你一个苹果。你说出这一份水果。",
+      "answers": [
+        "an apple"
+      ],
+      "hint": "an apple",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U001-L02-S025",
+      "help": "N26-U001-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U001-L02-C010",
+      "course": "N26-U001-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "另一份是一根香蕉，你说出这一份。",
+      "answers": [
+        "a banana"
+      ],
+      "hint": "a banana",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U001-L02-S027",
+      "help": "N26-U001-L02-S027-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U001-L02-S004-HELP",
+      "forStep": "N26-U001-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2112c00aabb1042badb5",
+      "display": "a",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S007-HELP",
+      "forStep": "N26-U001-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0fb02158f7daf9b06979",
+      "display": "an",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S010-HELP",
+      "forStep": "N26-U001-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-998bd8af628376838a12",
+      "display": "an apple",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S013-HELP",
+      "forStep": "N26-U001-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "display": "a banana",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S016-HELP",
+      "forStep": "N26-U001-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-998bd8af628376838a12",
+      "display": "an apple",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S019-HELP",
+      "forStep": "N26-U001-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "display": "a banana",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S021-HELP",
+      "forStep": "N26-U001-L02-S021",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-998bd8af628376838a12",
+      "display": "an apple",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S021",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S023-HELP",
+      "forStep": "N26-U001-L02-S023",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "display": "a banana",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S023",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S025-HELP",
+      "forStep": "N26-U001-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-998bd8af628376838a12",
+      "display": "an apple",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U001-L02-S027-HELP",
+      "forStep": "N26-U001-L02-S027",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2d49534a6cc2459ded00",
+      "display": "a banana",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U001-L02-S027",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "apple",
+      "word": "apple",
+      "ipa": "/ˈæp.əl/",
+      "meaning": "苹果",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b7a47eabc0611a3727e1"
+    },
+    {
+      "key": "banana",
+      "word": "banana",
+      "ipa": "/bəˈnæn.ə/",
+      "meaning": "香蕉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-61234f236e3841232330"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "a/an同一规范词，两种实际形式都先释义和示范；不讲复数，不加入表示想要的句子。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "changed_since_review_pending_recheck",
+      "reviewedContentHash": "23af4b215afca5e43c879bd105114ae96717688f9da1a72c76b6133142d39342",
+      "findingIds": [],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 21,
+    "availableExactAssets": 21,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-16d422410b2741d4183d",
+      "N26A-08d9b4a828f2180a6e03",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-084d8bde71642486488c",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-41ba320299fb029fec72",
+      "N26A-998bd8af628376838a12",
+      "N26A-811fc803ddbc205a2f5d",
+      "N26A-2d49534a6cc2459ded00",
+      "N26A-b44c4eb1f224fbad8bff",
+      "N26A-754c73897f1d94a377e2",
+      "N26A-9955393dab624512c392",
+      "N26A-b94c637e312598fe9758",
+      "N26A-0431231427fc5d5daf0c",
+      "N26A-9ed3ee3efd092f1d6f3a",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-b7a47eabc0611a3727e1",
+      "N26A-61234f236e3841232330",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

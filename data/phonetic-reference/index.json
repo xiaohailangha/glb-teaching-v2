@@ -1,0 +1,864 @@
+{
+  "schema": "snow-speaks.phonetic-reference/1",
+  "symbols": {
+    "oʊ": "phoneme_ow",
+    "ð": "phoneme_dh",
+    "ʒ": "phoneme_zh",
+    "ɔː": "phoneme_aw",
+    "v": "phoneme_v",
+    "z": "phoneme_z",
+    "j": "phoneme_y",
+    "i": "phoneme_iy",
+    "aɪ": "phoneme_ay",
+    "eɪ": "phoneme_ey",
+    "iː": "phoneme_iy",
+    "ɑː": "phoneme_aa",
+    "uː": "phoneme_uu",
+    "æ": "phoneme_ae",
+    "ə": "phoneme_schwa",
+    "ɪ": "phoneme_ih",
+    "ʊ": "phoneme_uh",
+    "ʌ": "phoneme_ah",
+    "ɑ": "phoneme_aa",
+    "ɔ": "phoneme_aw",
+    "e": "phoneme_eh",
+    "ɛ": "phoneme_eh",
+    "ɹ": "phoneme_r",
+    "r": "phoneme_r",
+    "w": "phoneme_w",
+    "p": "phoneme_p",
+    "b": "phoneme_b",
+    "t": "phoneme_t",
+    "d": "phoneme_d",
+    "k": "phoneme_k",
+    "ɡ": "phoneme_g",
+    "g": "phoneme_g",
+    "f": "phoneme_f",
+    "s": "phoneme_s",
+    "ʃ": "phoneme_sh",
+    "h": "phoneme_h",
+    "m": "phoneme_m",
+    "n": "phoneme_n",
+    "ŋ": "phoneme_ng",
+    "l": "phoneme_l",
+    "θ": "phoneme_th"
+  },
+  "assets": {
+    "phoneme_ow": {
+      "file": "phoneme_ow.wav",
+      "sha256": "0ca30ed4a1bfd8a19585f78dcf17efb7ceb880a07767ffce2f2db0b3babf3d03",
+      "size": 20140,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6269375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/En-us-O.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-O.ogg",
+        "license": "https://commons.wikimedia.org/wiki/File:En-us-O.ogg",
+        "author": "Wikimedia Commons contributor (PD-self)",
+        "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "ae1fb7b0a8798b4f8e644bcd97a9327130b8e40fe043f3c9729ea8ac9135deed"
+      }
+    },
+    "phoneme_dh": {
+      "file": "phoneme_dh.wav",
+      "sha256": "f9696e401d21eea867309dceb3f19adf37cec203b4527bff955018d669e55c82",
+      "size": 20490,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.637875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C3%B0.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled only; complete isolated phonetic recording",
+        "sha256": "ba7c043be8e1676638395b80beff5feab8e780af8fefd3aed16f58426c9b896a"
+      }
+    },
+    "phoneme_zh": {
+      "file": "phoneme_zh.wav",
+      "sha256": "e11d171c9ae4afc11ddc4af3bc0847455f9733addd73f271a88893aa3a70895c",
+      "size": 21590,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.67225,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%CA%92.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled only; complete isolated phonetic recording",
+        "sha256": "c681aac87fbb60cf66812d473f57faff79223a07b296c5bfdd863ef627bf2330"
+      }
+    },
+    "phoneme_aw": {
+      "file": "phoneme_aw.wav",
+      "sha256": "ffa74c2ea0020f9afdc113c43a92eebc78b5b8b6587c8b8403ac86f31b5aafb6",
+      "size": 21702,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.67575,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%94.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "f2aa6b0628485e67e8e5b600144e467f8fea0f2dab0b6d91ac8f7c570fe242cc"
+      }
+    },
+    "phoneme_v": {
+      "file": "phoneme_v.wav",
+      "sha256": "3688d994321f4bfefaed729f5abc3bdcd0bbba3544724da0bc2873680f308b55",
+      "size": 23668,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.7371875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/v.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "92e407c4f4c682b6fecc160e308fd410c59c5c24898ed679ccd329c63a9ad5ec"
+      }
+    },
+    "phoneme_z": {
+      "file": "phoneme_z.wav",
+      "sha256": "edd2070bb9cac6a14ecf7ff196614d572ca5001126cc22df7a5562965c9394e2",
+      "size": 23424,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.7295625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/z.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "07ab2b899bb6920ef8fdd62e4c09c0cd1a103b61b35979bf133d15d3cda9f77e"
+      }
+    },
+    "phoneme_y": {
+      "file": "phoneme_y.wav",
+      "sha256": "62405e757fa53ef4fa4a8fd7a6d528982cfa8f3a39dc506ec3f7fdc53954998f",
+      "size": 22324,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6951875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/j.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "7dcd6a99a0c29c8f3adfa6c9e5bbd7910f07086be6c1451180c51ed38654ae57"
+      }
+    },
+    "phoneme_iy": {
+      "file": "phoneme_iy.wav",
+      "sha256": "32f78081078d0c903249e65c8ab1cc77c0341d840f905d51180b1ac60659cfaf",
+      "size": 27524,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.8576875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/i.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "31d0987aa6b277fc7e7328f771a19e0eed261be5cd8a88afec81a76abc7575d9"
+      }
+    },
+    "phoneme_ay": {
+      "file": "phoneme_ay.wav",
+      "sha256": "fc7fc468110207261302ec2afa5e8f2d61af84f477973309d062e08a16c7976a",
+      "size": 15682,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.487625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/En-us-I.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+        "license": "https://commons.wikimedia.org/wiki/File:En-us-I.ogg",
+        "author": "Wikimedia Commons contributor (PD-self)",
+        "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "7a3a70a505356fd642b866f7c9fb69c28b1861a0242a2b385f6fe36c89f78720"
+      }
+    },
+    "phoneme_ey": {
+      "file": "phoneme_ey.wav",
+      "sha256": "f771b2bcb1eee3a9f9473eab777516c928a1b0da46c7405652fb41d51db3efe9",
+      "size": 37230,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 1.161,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/En-us-A.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+        "license": "https://commons.wikimedia.org/wiki/File:En-us-A.ogg",
+        "author": "Wikimedia Commons contributor (PD-self)",
+        "description": "Complete General American single-phoneme letter name; no word cuts or splicing",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "9421662073d8e879c6140d89bd1b496e5a9cbb4c92cebde05b0cc1301923c284"
+      }
+    },
+    "phoneme_aa": {
+      "file": "phoneme_aa.wav",
+      "sha256": "692f4c147336e4170b23fcdf215882868de9b7a41772ee9da123a1b9468f45b0",
+      "size": 21980,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6844375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%91.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "44895f4b28686d2843e9323ab3f35c883027f9cdcbbc031683b5834c356c85ed"
+      }
+    },
+    "phoneme_uu": {
+      "file": "phoneme_uu.wav",
+      "sha256": "1c79485c059a1f1dd1c3659b80f985efa871440854962b25f6f787cea0553388",
+      "size": 20594,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.641125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/u.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "97d7424ffaf614c756aca27157e2f6bccae7b20dcf0db8651a77aed70674a6e6"
+      }
+    },
+    "phoneme_ae": {
+      "file": "phoneme_ae.wav",
+      "sha256": "db72a6b3d505b518d8f851d38f24d84f51642a13814567e33e0c1221300a44ea",
+      "size": 20456,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6368125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C3%A6.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "7261ce78dc69a2e8cf315cadb44e63774aca9079b71419c4ba93930c997794c7"
+      }
+    },
+    "phoneme_schwa": {
+      "file": "phoneme_schwa.wav",
+      "sha256": "482711aec3d584ba5733e269975e8723d36af5d5ca1f9c9a4959647abc6c79f1",
+      "size": 19300,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6006875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mid-central_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Mid-central_vowel.ogg",
+        "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+        "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "5b0e21c9e7cefdc46f3822881cc24419d959994b6c7bad278d21ac4487c804f5"
+      }
+    },
+    "phoneme_ih": {
+      "file": "phoneme_ih.wav",
+      "sha256": "4b7622b64a938831c783b4dcf8a48ed506a37e21aec0c9ce1e31bfbbd21d8117",
+      "size": 18392,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.5723125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Near-close_near-front_unrounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg",
+        "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+        "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "3c07d0a3b413821a926d46286c7631de22119e5dff24f1971bb46b577cb5cbee"
+      }
+    },
+    "phoneme_uh": {
+      "file": "phoneme_uh.wav",
+      "sha256": "e184ad1916b1530468e38dc40d348af4bfd42eedbf1b348699b4d9d2a6de6458",
+      "size": 19498,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.606875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Near-close_near-back_rounded_vowel.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "page": "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg",
+        "author": "No machine-readable author provided. Denelson83 assumed (based on copyright claims).",
+        "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "63673408c8fee51b24023fa10a0728e3e2f2a1cbb2c6492f59bcdb7824ba0b92"
+      }
+    },
+    "phoneme_ah": {
+      "file": "phoneme_ah.wav",
+      "sha256": "fa84e8d9e966ba98e9ba33d7a3d18d0b40b4134903160a8b7b2627b8c6653e31",
+      "size": 23642,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.736375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%CA%8C.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "b2fd256180235d4b6786f7e6bc913ab73e2e61682b3f34cd70ab71b6e037d5b3"
+      }
+    },
+    "phoneme_eh": {
+      "file": "phoneme_eh.wav",
+      "sha256": "a711a96a8c8474675ff88decd0d3e50a39c73303e0a5a937a2142f604ea339b3",
+      "size": 21286,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.66275,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%9B.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "a2118ee780bc8483d73f571b21c31b7f240ce159bf09feda6401ec091b345968"
+      }
+    },
+    "phoneme_r": {
+      "file": "phoneme_r.wav",
+      "sha256": "13d4de7bca5cce9d5562197bdc4124e2b191fb1b87be20e01edffa39aaf417d8",
+      "size": 25012,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.7791875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C9%BB.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Retroflex approximant [ɻ], an American English /r/ realization, not a trill",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "c25f3f040698bb7910ef5a7ef9924fb5125e61537ce3b862cc80ffb29487dee2"
+      }
+    },
+    "phoneme_w": {
+      "file": "phoneme_w.wav",
+      "sha256": "5038dede33edf3c8fca46df81c7e012c109735703cb95e0020f8159ef959fb5e",
+      "size": 22200,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6913125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/w.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author": "Ruben Schachtenhaufen",
+        "description": "Independent phonetic recording",
+        "change": "Resampled only; complete recording, no linguistic cuts, pitch changes or concatenation",
+        "sha256": "39504007315052794fd239ffa0cc1a50a29f86a486bb554563f605d5067f6563"
+      }
+    },
+    "phoneme_p": {
+      "file": "phoneme_p.wav",
+      "sha256": "a9aeb04205539a67d42cda8ddef1d13df2e572c02efb8c86a67778a8d331c224",
+      "size": 14960,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.4650625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/p.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "516394cd3d4defd6114d87ffc010dbb8721e9f284e03f7a4308d984e92149a4c"
+      }
+    },
+    "phoneme_b": {
+      "file": "phoneme_b.wav",
+      "sha256": "52ed4ebdd1006e2d8701c8721cb61fd29477ab914396fdcc5c2e9cad8edec6ca",
+      "size": 20244,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6301875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/b.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "a4fdda5ab74b454dc5bde7609c43ccba43c14529897c261444ee2b9b3520c6e8"
+      }
+    },
+    "phoneme_t": {
+      "file": "phoneme_t.wav",
+      "sha256": "b5b6d668afc79769c8c68ed8922635522348d5d77e98c89329959c25dfefb6af",
+      "size": 19146,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.595875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/t.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "6b5d678e8907ee6a8c7fab61fec59d2226c6c6d7766392c7747af822f56c1631"
+      }
+    },
+    "phoneme_d": {
+      "file": "phoneme_d.wav",
+      "sha256": "ae42154c794218531e4bf3b6931406233eb74a82902106b26e35b6c429468c17",
+      "size": 20000,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6225625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/d.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "e24ee7413e8509b56f069d591a096ce289eeb7faa044b57bbe3bc585be279320"
+      }
+    },
+    "phoneme_k": {
+      "file": "phoneme_k.wav",
+      "sha256": "8498c5543288471f4f9375f70431cd5577252c8c4d06cb0807293042c85184a0",
+      "size": 17312,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.5385625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/k.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "9055ce48916d617dd7edff3f17439592c7e8823b83a934b44806d878c6a0e65f"
+      }
+    },
+    "phoneme_g": {
+      "file": "phoneme_g.wav",
+      "sha256": "b365077ca805a141b3a9a22a216a165e2cf7f3046edf451bf92d91b979aede08",
+      "size": 19634,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.611125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/g.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "6d89c0d0d416d1e8bf28eaea7692f5c46ce705ee9c57688dece32768b37a6fae"
+      }
+    },
+    "phoneme_f": {
+      "file": "phoneme_f.wav",
+      "sha256": "45d05468f59e4ea39fe18de0a0923d57bb400d814bc2070de523b67ddc8c463c",
+      "size": 21100,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6569375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/f.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "6922ee3dd3dbce1b86dd0cec470c67a6c40187b3f82f9bd7feda68de3d56406c"
+      }
+    },
+    "phoneme_s": {
+      "file": "phoneme_s.wav",
+      "sha256": "f463b41311896d1631ac4213e3b2ef33f5b07064f3212ffcd1565bf5c5ce455d",
+      "size": 22690,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.706625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/s.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "e4565dc3eae6418c7ac701a37fbadce67d622e4d9e8c5d26da4d187eed18b4bd"
+      }
+    },
+    "phoneme_sh": {
+      "file": "phoneme_sh.wav",
+      "sha256": "304006616dde710966e748ff9c4b03fc131f6c63be87dfb4c8f3315df20f8d39",
+      "size": 22812,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.7104375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%CA%83.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "8f7f812880cc6c898b19fd525aa7d03e002092a17274bb34ea67a7966aa221c2"
+      }
+    },
+    "phoneme_h": {
+      "file": "phoneme_h.wav",
+      "sha256": "ef44961957064d6f66af587c9766c71a2b8482500406d39f950025024f7c3e04",
+      "size": 22202,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.691375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/h.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "9130f27073048034023a28f681285dcf23263aad84920f06cc05e6a837c3e789"
+      }
+    },
+    "phoneme_m": {
+      "file": "phoneme_m.wav",
+      "sha256": "a6026d7b554ff44a9404e46cc1dfa5444b93fdf46b8ce0acd980c0118e056288",
+      "size": 19144,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.5958125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/m.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "cb23a4b99e9321d86ef63c5c61552854674391d25acab719aa69871f57bc7690"
+      }
+    },
+    "phoneme_n": {
+      "file": "phoneme_n.wav",
+      "sha256": "9e335462e7c1be1fa8d5efd9248dce536bb0d61ff11e05b17aaa42e6df8be408",
+      "size": 24034,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.748625,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/n.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "c795ab124e4215402b06f73c1d8beee3eabfaeea5a65a55fb7cef518894c9e3c"
+      }
+    },
+    "phoneme_ng": {
+      "file": "phoneme_ng.wav",
+      "sha256": "dfa7798279c6e5b03da08ebc99f0c4701a300c69dbd40821648d909d1b6dd8b5",
+      "size": 21834,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.679875,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%C5%8B.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "ac47a754a585001b7f0c2f2d2ad03bc9d89f85b5588900890260e6c12cae1d68"
+      }
+    },
+    "phoneme_l": {
+      "file": "phoneme_l.wav",
+      "sha256": "276e994f7f5f1af41bbaf1218a805fd355badb1d66902764104347025f436d57",
+      "size": 22200,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.6913125,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/l.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "ca7143edc40dbbcc0b840e3f2ff3bac31cd35a05e86bee1d35ab195caf177d5a"
+      }
+    },
+    "phoneme_th": {
+      "file": "phoneme_th.wav",
+      "sha256": "4c45782f16944d9679233fc114a4e42d7754b7897b898fc62eb2f5027b132744",
+      "size": 20122,
+      "cues": [
+        {
+          "time": 0,
+          "id": 0
+        },
+        {
+          "time": 0.626375,
+          "id": 0
+        }
+      ],
+      "source": {
+        "url": "https://raw.githubusercontent.com/NewDanishPhonetics/IPA-sound-files/main/%CE%B8.wav",
+        "page": "https://github.com/NewDanishPhonetics/IPA-sound-files",
+        "author": "Ruben Schachtenhaufen",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "change": "Resampled to 16 kHz mono PCM; no linguistic cuts, no pitch/time changes",
+        "sha256": "050b8e192a2af1edc0fba4ac241aac5605a2e0a7cdb33d0ac7386595a9b56ef8"
+      }
+    }
+  }
+}

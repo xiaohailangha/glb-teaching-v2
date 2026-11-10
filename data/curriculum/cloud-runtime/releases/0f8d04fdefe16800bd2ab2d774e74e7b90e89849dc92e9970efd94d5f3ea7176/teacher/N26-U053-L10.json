@@ -1,0 +1,1642 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit053-v1",
+  "courseId": "N26-U053-L10",
+  "unitId": "N26-U053",
+  "category": "食物与饮品",
+  "title": "照着食谱煮一锅",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "f8f8c840cd8eb7288a7e2542ebfe546246f76b6caf44fa379aac718e396aeebc",
+  "newWords": [
+    "saucepan",
+    "tray",
+    "recipe",
+    "boil"
+  ],
+  "prerequisites": [
+    "N26-U053-L09"
+  ],
+  "goal": "围绕“厨房器具、烹调动作”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "saucepan",
+        "surface": "saucepan",
+        "meaning": "有柄深锅",
+        "kind": "new_word"
+      },
+      {
+        "key": "tray",
+        "surface": "tray",
+        "meaning": "托盘",
+        "kind": "new_word"
+      },
+      {
+        "key": "recipe",
+        "surface": "recipe",
+        "meaning": "食谱",
+        "kind": "new_word"
+      },
+      {
+        "key": "boil",
+        "surface": "boil",
+        "meaning": "煮沸，烧开",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U053-L10-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U053-L10-S002",
+        "N26-U053-L10-S003",
+        "N26-U053-L10-S004",
+        "N26-U053-L10-S005",
+        "N26-U053-L10-S006",
+        "N26-U053-L10-S007",
+        "N26-U053-L10-S008",
+        "N26-U053-L10-S009",
+        "N26-U053-L10-S010",
+        "N26-U053-L10-S011",
+        "N26-U053-L10-S012",
+        "N26-U053-L10-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U053-L10-S014",
+        "N26-U053-L10-S015",
+        "N26-U053-L10-S016",
+        "N26-U053-L10-S017",
+        "N26-U053-L10-S018",
+        "N26-U053-L10-S019",
+        "N26-U053-L10-S020",
+        "N26-U053-L10-S021",
+        "N26-U053-L10-S022",
+        "N26-U053-L10-S023",
+        "N26-U053-L10-S024",
+        "N26-U053-L10-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U053-L10-S026",
+        "N26-U053-L10-S027",
+        "N26-U053-L10-S028",
+        "N26-U053-L10-S029",
+        "N26-U053-L10-S030",
+        "N26-U053-L10-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U053-L10-S032",
+        "N26-U053-L10-S033",
+        "N26-U053-L10-S034",
+        "N26-U053-L10-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U053-L10-S036",
+        "N26-U053-L10-S037",
+        "N26-U053-L10-S038",
+        "N26-U053-L10-S039",
+        "N26-U053-L10-S040",
+        "N26-U053-L10-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U053-L10-S001",
+      "course": "N26-U053-L10",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象按食谱准备烹饪。今天认识有柄深锅、托盘和食谱，再练烧开水的口头请求。",
+      "display": "",
+      "audio": "N26A-6864894e6c107d588c54",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S002",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "有柄深锅。这里说有柄深锅，先听完整的声音。",
+      "display": "saucepan",
+      "audio": "N26A-a04c172c8b3e4f5fd25f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S003",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "有柄深锅",
+      "display": "saucepan",
+      "audio": "N26A-0670e631cef1d21f4dd9",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "有柄深锅",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S004",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "saucepan",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C001",
+      "model": "N26A-0670e631cef1d21f4dd9",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S005",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "托盘。这里说托盘，先听完整的声音。",
+      "display": "tray",
+      "audio": "N26A-9314356902779fba6dbd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S006",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "托盘",
+      "display": "tray",
+      "audio": "N26A-7d4da9c08bd66e3fb1f3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "托盘",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S007",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "tray",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C002",
+      "model": "N26A-7d4da9c08bd66e3fb1f3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S008",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "食谱。这里说食谱，先听完整的声音。",
+      "display": "recipe",
+      "audio": "N26A-e9c7f1cdb8514f971273",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S009",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "食谱",
+      "display": "recipe",
+      "audio": "N26A-65067daace8d2d9458d1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "食谱",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S010",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "recipe",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C003",
+      "model": "N26A-65067daace8d2d9458d1",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S011",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "煮沸，烧开。只作想象厨房协作的口头请求。",
+      "display": "boil",
+      "audio": "N26A-e8b87bb70fdf9c79cc83",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S012",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "煮沸，烧开",
+      "display": "boil",
+      "audio": "N26A-c8eb8e8e3defbea35cb8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "煮沸，烧开",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S013",
+      "course": "N26-U053-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "boil",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C004",
+      "model": "N26A-c8eb8e8e3defbea35cb8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L10-S014",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一口有柄深锅。先听这一组，再连起来说。",
+      "display": "a saucepan",
+      "audio": "N26A-747fac2af296228f5d2b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S015",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一口有柄深锅",
+      "display": "a saucepan",
+      "audio": "N26A-642e6630a484835b347d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一口有柄深锅",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S016",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a saucepan",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C005",
+      "model": "N26A-642e6630a484835b347d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S017",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个托盘。先听这一组，再连起来说。",
+      "display": "a tray",
+      "audio": "N26A-ed41ea95d7e42e07a9ef",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S018",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个托盘",
+      "display": "a tray",
+      "audio": "N26A-17cca3744480a8b841b9",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个托盘",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S019",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a tray",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C006",
+      "model": "N26A-17cca3744480a8b841b9",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S020",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这份食谱。先听这一组，再连起来说。",
+      "display": "the recipe",
+      "audio": "N26A-b8290865298f06608e03",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S021",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这份食谱",
+      "display": "the recipe",
+      "audio": "N26A-1b9b048a0a2cd9c84faf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这份食谱",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S022",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the recipe",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C007",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S023",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请把水烧开。只作想象厨房协作的口头请求。",
+      "display": "Boil the water, please",
+      "audio": "N26A-9a4b118babb41856df2a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S024",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请把水烧开。",
+      "display": "Boil the water, please.",
+      "audio": "N26A-ff6d93ff29665810aa13",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请把水烧开。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S025",
+      "course": "N26-U053-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Boil the water, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L10-C008",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L10-S026",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "请把水烧开。",
+      "display": "Boil the water, please.",
+      "audio": "N26A-ff6d93ff29665810aa13",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请把水烧开。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L10-S027",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口头排练请人烧开水，先听请求。",
+      "display": "",
+      "audio": "N26A-15ae6f2a301a62128b9f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S028",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Boil the water, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C009",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S029",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "这份食谱",
+      "display": "the recipe",
+      "audio": "N26A-1b9b048a0a2cd9c84faf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这份食谱",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L10-S030",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "正在谈指导做菜的食谱，先听短语。",
+      "display": "",
+      "audio": "N26A-d6e0354e401ab0df9272",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S031",
+      "course": "N26-U053-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the recipe",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C010",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S032",
+      "course": "N26-U053-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示请人把水烧开。",
+      "display": "",
+      "audio": "N26A-9f59e2162ac981c6ea92",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S033",
+      "course": "N26-U053-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Boil the water, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C011",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S034",
+      "course": "N26-U053-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说这份食谱。",
+      "display": "",
+      "audio": "N26A-c10f7c1bc2dc0a01d98c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S035",
+      "course": "N26-U053-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the recipe",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C012",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S036",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象厨房协作中，你礼貌提出把水烧开的请求。",
+      "display": "",
+      "audio": "N26A-dbae413db2ce3112f85b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S037",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Boil the water, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C013",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S038",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对你在看哪项资料，你说明这份食谱。",
+      "display": "",
+      "audio": "N26A-f08e091f467ac081d3db",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S039",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "the recipe",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L10-C014",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L10-S040",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L10-S041",
+      "course": "N26-U053-L10",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U053-L10-C001",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "有柄深锅",
+      "answers": [
+        "saucepan"
+      ],
+      "hint": "saucepan",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S004",
+      "help": "N26-U053-L10-S004-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C002",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "托盘",
+      "answers": [
+        "tray"
+      ],
+      "hint": "tray",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S007",
+      "help": "N26-U053-L10-S007-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C003",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "食谱",
+      "answers": [
+        "recipe"
+      ],
+      "hint": "recipe",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S010",
+      "help": "N26-U053-L10-S010-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C004",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "煮沸，烧开",
+      "answers": [
+        "boil"
+      ],
+      "hint": "boil",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S013",
+      "help": "N26-U053-L10-S013-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C005",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一口有柄深锅",
+      "answers": [
+        "a saucepan"
+      ],
+      "hint": "a saucepan",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S016",
+      "help": "N26-U053-L10-S016-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C006",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个托盘",
+      "answers": [
+        "a tray"
+      ],
+      "hint": "a tray",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S019",
+      "help": "N26-U053-L10-S019-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C007",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这份食谱",
+      "answers": [
+        "the recipe"
+      ],
+      "hint": "the recipe",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S022",
+      "help": "N26-U053-L10-S022-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C008",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请把水烧开。",
+      "answers": [
+        "Boil the water, please."
+      ],
+      "hint": "Boil the water, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S025",
+      "help": "N26-U053-L10-S025-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C009",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口头排练请人烧开水，先听请求。",
+      "answers": [
+        "Boil the water, please."
+      ],
+      "hint": "Boil the water, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S028",
+      "help": "N26-U053-L10-S028-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C010",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "正在谈指导做菜的食谱，先听短语。",
+      "answers": [
+        "the recipe"
+      ],
+      "hint": "the recipe",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S031",
+      "help": "N26-U053-L10-S031-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C011",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示请人把水烧开。",
+      "answers": [
+        "Boil the water, please."
+      ],
+      "hint": "Boil the water, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S033",
+      "help": "N26-U053-L10-S033-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C012",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说这份食谱。",
+      "answers": [
+        "the recipe"
+      ],
+      "hint": "the recipe",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L10-S035",
+      "help": "N26-U053-L10-S035-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C013",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象厨房协作中，你礼貌提出把水烧开的请求。",
+      "answers": [
+        "Boil the water, please."
+      ],
+      "hint": "Boil the water, please.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L10-S037",
+      "help": "N26-U053-L10-S037-HELP"
+    },
+    {
+      "id": "N26-U053-L10-C014",
+      "course": "N26-U053-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对你在看哪项资料，你说明这份食谱。",
+      "answers": [
+        "the recipe"
+      ],
+      "hint": "the recipe",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L10-S039",
+      "help": "N26-U053-L10-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U053-L10-S004-HELP",
+      "forStep": "N26-U053-L10-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0670e631cef1d21f4dd9",
+      "display": "saucepan",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S007-HELP",
+      "forStep": "N26-U053-L10-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7d4da9c08bd66e3fb1f3",
+      "display": "tray",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S010-HELP",
+      "forStep": "N26-U053-L10-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-65067daace8d2d9458d1",
+      "display": "recipe",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S013-HELP",
+      "forStep": "N26-U053-L10-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c8eb8e8e3defbea35cb8",
+      "display": "boil",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S016-HELP",
+      "forStep": "N26-U053-L10-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-642e6630a484835b347d",
+      "display": "a saucepan",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S019-HELP",
+      "forStep": "N26-U053-L10-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-17cca3744480a8b841b9",
+      "display": "a tray",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S022-HELP",
+      "forStep": "N26-U053-L10-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "display": "the recipe",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S025-HELP",
+      "forStep": "N26-U053-L10-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "display": "Boil the water, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S028-HELP",
+      "forStep": "N26-U053-L10-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "display": "Boil the water, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S031-HELP",
+      "forStep": "N26-U053-L10-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "display": "the recipe",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S033-HELP",
+      "forStep": "N26-U053-L10-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "display": "Boil the water, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S035-HELP",
+      "forStep": "N26-U053-L10-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "display": "the recipe",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S037-HELP",
+      "forStep": "N26-U053-L10-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ff6d93ff29665810aa13",
+      "display": "Boil the water, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L10-S039-HELP",
+      "forStep": "N26-U053-L10-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b9b048a0a2cd9c84faf",
+      "display": "the recipe",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L10-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "saucepan",
+      "word": "saucepan",
+      "ipa": "/ˈsɔːspæn/",
+      "meaning": "有柄深锅",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0670e631cef1d21f4dd9"
+    },
+    {
+      "key": "tray",
+      "word": "tray",
+      "ipa": "/treɪ/",
+      "meaning": "托盘",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7d4da9c08bd66e3fb1f3"
+    },
+    {
+      "key": "recipe",
+      "word": "recipe",
+      "ipa": "/ˈrɛsəpi/",
+      "meaning": "食谱",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-65067daace8d2d9458d1"
+    },
+    {
+      "key": "boil",
+      "word": "boil",
+      "ipa": "/bɔɪl/",
+      "meaning": "煮沸，烧开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c8eb8e8e3defbea35cb8"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "water",
+      "word": "water",
+      "ipa": "/ˈwɑː.t̬ɚ/",
+      "meaning": "水",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-64351fa189db1fad970c"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：saucepan=有柄深锅；tray=托盘；recipe=食谱；boil=煮沸，烧开。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "please",
+      "sourceCourse": "N26-U004-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 31,
+    "availableExactAssets": 31,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-6864894e6c107d588c54",
+      "N26A-a04c172c8b3e4f5fd25f",
+      "N26A-0670e631cef1d21f4dd9",
+      "N26A-9314356902779fba6dbd",
+      "N26A-7d4da9c08bd66e3fb1f3",
+      "N26A-e9c7f1cdb8514f971273",
+      "N26A-65067daace8d2d9458d1",
+      "N26A-e8b87bb70fdf9c79cc83",
+      "N26A-c8eb8e8e3defbea35cb8",
+      "N26A-747fac2af296228f5d2b",
+      "N26A-642e6630a484835b347d",
+      "N26A-ed41ea95d7e42e07a9ef",
+      "N26A-17cca3744480a8b841b9",
+      "N26A-b8290865298f06608e03",
+      "N26A-1b9b048a0a2cd9c84faf",
+      "N26A-9a4b118babb41856df2a",
+      "N26A-ff6d93ff29665810aa13",
+      "N26A-15ae6f2a301a62128b9f",
+      "N26A-d6e0354e401ab0df9272",
+      "N26A-9f59e2162ac981c6ea92",
+      "N26A-c10f7c1bc2dc0a01d98c",
+      "N26A-dbae413db2ce3112f85b",
+      "N26A-f08e091f467ac081d3db",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-64351fa189db1fad970c",
+      "N26A-119c942deb8552028da1",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

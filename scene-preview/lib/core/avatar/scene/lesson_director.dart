@@ -54,6 +54,7 @@ class TeachingDirector {
   Map<String, dynamic> get checkpoint => {
     'version': 1,
     'courseId': courseId,
+    'sequence': stages.map((s) => s.id).join('|'),
     'expressions': expressions.toList(),
     'index': index,
     'taught': taught.toList(),
@@ -296,10 +297,11 @@ class TeachingDirector {
     )..fruitCourse = true;
     d.courseId = courseId;
     if (saved?['version'] == 1 && saved?['courseId'] == courseId) {
-      d.index = ((saved?['index'] as num?)?.toInt() ?? 0).clamp(
-        0,
-        d.stages.length - 1,
-      );
+      final compatible =
+          courseId != 'food-01-v1' ||
+          saved?['sequence'] == d.stages.map((s) => s.id).join('|');
+      d.index = (compatible ? ((saved?['index'] as num?)?.toInt() ?? 0) : 0)
+          .clamp(0, d.stages.length - 1);
       for (final pair in [
         (d.taught, 'taught'),
         (d.attempts, 'attempts'),

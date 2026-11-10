@@ -9,6 +9,8 @@ import '../../settings/presentation/settings_panel.dart';
 import 'adult_course_panel.dart';
 import 'lesson_content_frame.dart';
 import 'course_library_page.dart';
+import '../application/curriculum_lesson_controller.dart';
+import '../domain/course_catalog.dart';
 import 'lesson_navigation.dart';
 import '../../auth/auth_api.dart';
 
@@ -40,6 +42,8 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
       );
   final settings = AppSettings();
   late final learningSync = LearningSync(controller);
+  CurriculumLessonController? pilot;
+  LessonController get teaching => pilot ?? controller;
   @override
   void initState() {
     super.initState();
@@ -53,19 +57,19 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
   void _applySettings() => controller.setRenderSettings(settings.command);
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state != AppLifecycleState.resumed && controller.adultCourse) {
-      controller.pauseCourse();
+    if (state != AppLifecycleState.resumed && teaching.adultCourse) {
+      teaching.pauseCourse();
     }
   }
 
   void _character() {
     if (!controller.ready) return;
-    if (controller.adultCourse &&
-        !controller.coursePaused &&
-        controller.courseStep != 'summary') {
-      controller.replayLesson();
+    if (teaching.adultCourse &&
+        !teaching.coursePaused &&
+        teaching.courseStep != 'summary') {
+      teaching.replayLesson();
     } else {
-      controller.playCourse(restart: controller.courseStep == 'summary');
+      teaching.playCourse(restart: teaching.courseStep == 'summary');
     }
   }
 
@@ -73,17 +77,65 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     if (controller.adultCourse && !controller.coursePaused) {
       controller.pauseCourse();
     }
-    await showCourseLibrary(context, controller);
+    pilot?.pauseCourse();
+    FormalDirectory? directory;
+    if (widget.account != null) {
+      try {
+        final data = await learningSync.api.request('learning/curriculum');
+        directory = FormalDirectory(data);
+      } catch (_) {
+        if (mounted) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(const SnackBar(content: Text('新增课程暂时未能加载，请稍后再试')));
+        }
+      }
+    }
+    if (!mounted) return;
+    await showCourseLibrary(
+      context,
+      controller,
+      directory: directory,
+      onAdditionalSelected: _selectPilot,
+    );
+  }
+
+  Future<void> _selectPilot(String id) async {
+    CurriculumLessonController? next;
+    if (id.isNotEmpty) {
+      next = CurriculumLessonController(
+        api: learningSync.api,
+        avatar: controller,
+        id: id,
+        onSelect: _selectPilot,
+      );
+      try {
+        await next.initialize();
+      } catch (_) {
+        next.dispose();
+        rethrow;
+      }
+    }
+    if (!mounted) {
+      next?.dispose();
+      return;
+    }
+    learningSync.tick();
+    learningSync.curriculumOverlay = id.isNotEmpty;
+    final old = pilot;
+    setState(() => pilot = next);
+    old?.dispose();
+    await WidgetsBinding.instance.endOfFrame;
   }
 
   Future<void> _settings() async {
+    final current = teaching;
     final resume =
-        controller.adultCourse &&
-        !controller.coursePaused &&
-        controller.courseStep != 'summary';
-    final courseId = controller.courseId;
-    if (controller.adultCourse && !controller.coursePaused) {
-      controller.pauseCourse();
+        current.adultCourse &&
+        !current.coursePaused &&
+        current.courseStep != 'summary';
+    final courseId = current.courseId;
+    if (current.adultCourse && !current.coursePaused) {
+      current.pauseCourse();
     }
     final leaving = await showLearningSettings(
       context,
@@ -100,10 +152,10 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     if (mounted &&
         leaving != true &&
         resume &&
-        controller.courseId == courseId &&
-        controller.coursePaused &&
+        current.courseId == courseId &&
+        current.coursePaused &&
         WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed) {
-      controller.playCourse();
+      current.playCourse();
     }
   }
 
@@ -113,6 +165,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
     settings.removeListener(_applySettings);
     settings.dispose();
     learningSync.dispose();
+    pilot?.dispose();
     if (widget.sharedController == null) controller.dispose();
     super.dispose();
   }
@@ -126,8 +179,8 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
         behavior: HitTestBehavior.opaque,
         onTap: () {
           if (controller.ready &&
-              (!controller.adultCourse || controller.coursePaused)) {
-            controller.playCourse();
+              (!teaching.adultCourse || teaching.coursePaused)) {
+            teaching.playCourse();
           }
         },
         child: DecoratedBox(
@@ -194,7 +247,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                   top: box.maxHeight * .10,
                   bottom: 62,
                   child: AnimatedBuilder(
-                    animation: controller,
+                    animation: teaching,
                     builder: (context, _) => AnimatedSwitcher(
                       duration: MediaQuery.disableAnimationsOf(context)
                           ? Duration.zero
@@ -209,10 +262,10 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                           ?current,
                         ],
                       ),
-                      child: controller.adultCourse
+                      child: teaching.adultCourse
                           ? AdultCoursePanel(
                               key: const ValueKey('active-lesson'),
-                              controller: controller,
+                              controller: teaching,
                             )
                           : LessonContentFrame(
                               key: const ValueKey('welcome-lesson'),
@@ -222,7 +275,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                                 children: [
                                   Text(
                                     key: const ValueKey('welcome-main-text'),
-                                    "${controller.address('你好')}\n${controller.activeCourse.goal}",
+                                    "${teaching.address('你好')}\n${teaching.activeCourse.goal}",
                                     style: const TextStyle(
                                       fontSize: 36,
                                       height: 1.3,
@@ -232,9 +285,7 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                                   ),
                                   const SizedBox(height: 20),
                                   Text(
-                                    controller.ready
-                                        ? '轻触任意位置，开始学习'
-                                        : '人物正在准备…',
+                                    teaching.ready ? '轻触任意位置，开始学习' : '人物正在准备…',
                                     style: const TextStyle(
                                       color: Color(0xFFBDE5DD),
                                       fontSize: 18,
@@ -260,10 +311,10 @@ class _LessonPageState extends State<LessonPage> with WidgetsBindingObserver {
                   bottom: 8,
                   child: SafeArea(
                     child: AnimatedBuilder(
-                      animation: controller,
+                      animation: teaching,
                       builder: (context, _) =>
-                          controller.adultCourse && !controller.coursePaused
-                          ? LessonNavigation(controller: controller)
+                          teaching.adultCourse && !teaching.coursePaused
+                          ? LessonNavigation(controller: teaching)
                           : const SizedBox.shrink(),
                     ),
                   ),

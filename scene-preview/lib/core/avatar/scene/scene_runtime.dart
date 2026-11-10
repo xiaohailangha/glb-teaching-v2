@@ -27,6 +27,8 @@ import 'teaching_background.dart';
 import 'clothing_bindings.dart';
 import 'intent_motion.dart';
 import 'neutral_gaze.dart';
+import 'lesson_resources.dart';
+import 'render_budget.dart';
 
 class SceneRuntime extends ChangeNotifier {
   SceneRuntime(
@@ -53,6 +55,13 @@ class SceneRuntime extends ChangeNotifier {
     );
     speech.onPlaybackError = (error) {
       playingAudio = false;
+      if (mode == 'curriculum') {
+        cues = [];
+        loadingAudio = false;
+        final done = curriculumComplete;
+        curriculumComplete = null;
+        done?.call(error);
+      }
       emit('speech-error', {
         'session': session,
         'message': '语音播放失败，请再点击一次：$error',
@@ -88,8 +97,11 @@ class SceneRuntime extends ChangeNotifier {
       if (RegExp(r'红|学习|继续|yes|red').hasMatch(text)) action = 'next';
       if (RegExp(r'复习|跳过|no|skip').hasMatch(text)) action = 'skip';
     } else if (d.stage.options.any((o) => o['id']!.startsWith('answer_'))) {
-      String normalize(String value) => value.replaceAll(RegExp(r'[\s，。！？,.!?；;]'), '');
-      final matches = d.stage.options.where((o) => normalize(o['label']!.toLowerCase()) == normalize(text)).toList();
+      String normalize(String value) =>
+          value.replaceAll(RegExp(r'[\s，。！？,.!?；;]'), '');
+      final matches = d.stage.options
+          .where((o) => normalize(o['label']!.toLowerCase()) == normalize(text))
+          .toList();
       if (matches.length == 1) action = matches.single['id'];
     } else {
       final apple = RegExp(r'apple|苹果').hasMatch(text),
@@ -107,9 +119,11 @@ class SceneRuntime extends ChangeNotifier {
       d.respond(action);
       unawaited(_enterStage());
     } else {
-      _feedback(d.stage.options.any((o) => o['id']!.startsWith('answer_'))
-          ? '请点选声音对应的意思，也可以说出选项文字。'
-          : '没听清你的选择，可以说水果名称，也可以点图片。');
+      _feedback(
+        d.stage.options.any((o) => o['id']!.startsWith('answer_'))
+            ? '请点选声音对应的意思，也可以说出选项文字。'
+            : '没听清你的选择，可以说水果名称，也可以点图片。',
+      );
     }
   }
 
@@ -329,13 +343,16 @@ class SceneRuntime extends ChangeNotifier {
     }
   });
   Node? model;
+  SceneAssetBundle? _modelBundle;
+  bool _modelClaimed = false, _modelReleased = false;
   late final AutomaticReader automatic;
   final speech = SpeechClient(), motion = NaturalMotion();
   final stopwatch = Stopwatch()..start();
-  final timings = <String, dynamic>{};
-  Map<String, dynamic> units = {};
+  final lessonResources = LessonResources(CourseResources.instance);
+  Map<String, dynamic> get timings => lessonResources.timings;
+  Map<String, dynamic> get units => lessonResources.units;
   List<dynamic> fruitStages = [];
-  final courseStages = <String, List<dynamic>>{};
+  Map<String, List<dynamic>> get courseStages => lessonResources.courses;
   SecondaryMotion? secondary;
   CornealHighlights? highlights;
   AnimationClip? teachingClip, emotionClip;
@@ -346,7 +363,8 @@ class SceneRuntime extends ChangeNotifier {
       closeUp = false,
       playingAudio = false,
       loadingAudio = false;
-  String loading = '正在准备 Flutter Scene…', quality = 'high';
+  String loading = '正在准备 Flutter Scene…',
+      quality = isMobileBrowser ? 'medium' : 'high';
   double frameDt = .016,
       aspect = 16 / 9,
       lastStats = 0,
@@ -362,17 +380,25 @@ class SceneRuntime extends ChangeNotifier {
       triangles = 0;
   bool emotionAll = false;
   String mode = 'idle', word = 'apple';
+  String curriculumPhase = 'introduce';
   TeachingDirector? director;
   List<MouthCue> cues = [];
+  void Function(Object?)? curriculumComplete;
   SpeechClip? currentClip;
   double get now => stopwatch.elapsedMicroseconds / 1e6;
   String get phase =>
-      director?.stage.phase ?? (mode == 'idle' ? 'idle' : 'demonstrate');
+      director?.stage.phase ??
+      (mode == 'curriculum'
+          ? curriculumPhase
+          : (mode == 'idle' ? 'idle' : 'demonstrate'));
   bool get waiting => director?.stage.clip == null || loadingAudio;
   double get progress => speech.duration > 0
       ? (speech.seconds / speech.duration).clamp(0.0, 1.0)
       : 0;
   void emit(String event, [Map<String, dynamic> data = const {}]) {
+    if (const bool.fromEnvironment('SCENE_DIAGNOSTICS') && event == 'stats') {
+      debugPrint('SCENE_PERF ${jsonEncode(data)}');
+    }
     if (!disposed) controller.handle({'event': event, ...data});
   }
 
@@ -380,6 +406,21 @@ class SceneRuntime extends ChangeNotifier {
     try {
       emit('resource-progress', {'value': .02, 'label': '布置学习世界'});
       final speechInit = speech.init();
+      // Fetch the initial teaching documents alongside the model rather than
+      // fetching every course after the entire model has decoded.
+      final lessonInit = () async {
+        await CourseResources.instance.ready.future;
+        await lessonResources.loadCommon(
+          curriculum: CourseResources.instance.assets.containsKey(
+            'assets/avatar/audio/curriculum-prompts.json',
+          ),
+        );
+        final first = courseCatalog.first;
+        fruitStages = await lessonResources.loadCourse(first.id, first.asset);
+      }();
+      // Attach an error handler immediately while the parallel model load runs.
+      final lessonReady = Future.wait([lessonInit]);
+      unawaited(lessonReady.then<void>((_) {}, onError: (Object _) {}));
       await Scene.initializeStaticResources();
       if (!(const bool.fromEnvironment('SCENE_DIAGNOSTICS') &&
           Uri.base.queryParameters['background'] == 'transparent')) {
@@ -405,70 +446,35 @@ class SceneRuntime extends ChangeNotifier {
         ..adaptive = true
         ..targetFrameRate = 60
         ..minRenderScale = .75;
+      _applyRenderSettings(quality, true);
       loading = '正在加载 Storm 人物…';
       notifyListeners();
+      _modelBundle = kIsWeb
+          ? SceneAssetBundle((completed, total) {
+              loading = '正在迎接你的学习伙伴';
+              emit('resource-progress', {
+                'value': .05 + completed / total * .65,
+                'label': '迎接你的学习伙伴',
+              });
+              if (!disposed) notifyListeners();
+            })
+          : null;
       model = await loadScene(
         'assets/avatar/models/storm-performance.glb',
-        bundle: kIsWeb
-            ? SceneAssetBundle((completed, total) {
-                loading = '正在迎接你的学习伙伴';
-                emit('resource-progress', {
-                  'value': .05 + completed / total * .65,
-                  'label': '迎接你的学习伙伴',
-                });
-                if (!disposed) notifyListeners();
-              })
-            : null,
+        bundle: _modelBundle,
       );
-      if (disposed) return;
+      _modelClaimed = true;
+      if (disposed) {
+        await _releaseModel();
+        return;
+      }
       emit('resource-progress', {'value': .73, 'label': '布置人物与场景'});
       await repairClothingBindings(model!);
       calibrateNeutralGaze(model!);
       model!.scale = vm.Vector3.all(1.5);
       scene.add(model!);
-      await CourseResources.instance.ready.future;
+      await lessonReady;
       if (disposed) return;
-      for (final file in [
-        'timings',
-        'teaching-prompts',
-        'pronunciation-units',
-        'course-prompts',
-        'fruit-prompts',
-        'unit-one-prompts',
-        'unit-two-prompts',
-        'coach-prompts',
-        if (CourseResources.instance.assets.containsKey(
-          'assets/avatar/audio/curriculum-prompts.json',
-        )) 'curriculum-prompts',
-      ]) {
-        final json = jsonDecode(
-          await CourseResources.instance.loadString(
-            'assets/avatar/audio/$file.json',
-          ),
-        ) as Map<String, dynamic>;
-        timings.addAll(json);
-        if (file == 'pronunciation-units') units = json;
-      }
-      timings['performance'] = jsonDecode(
-        await CourseResources.instance.loadString(
-          'assets/avatar/audio/performance-cues.json',
-        ),
-      );
-      // Fetch independently checksummed course documents with bounded concurrency.
-      var courseCursor = 0;
-      Future<void> loadCourses() async {
-        while (courseCursor < courseCatalog.length && !disposed) {
-          final course = courseCatalog[courseCursor++];
-          courseStages[course.id] = (jsonDecode(
-            await CourseResources.instance.loadString(
-              'assets/avatar/courses/${course.asset}.json',
-            ),
-          ) as Map)['stages'] as List;
-        }
-      }
-      await Future.wait(List.generate(6, (_) => loadCourses()));
-      if (disposed) return;
-      fruitStages = courseStages[courseCatalog.first.id]!;
       final rig = jsonDecode(
         await rootBundle.loadString('assets/avatar/models/storm-rig.json'),
       ) as Map<String, dynamic>;
@@ -531,26 +537,14 @@ class SceneRuntime extends ChangeNotifier {
         }
       });
       emit('resource-progress', {'value': .76, 'label': '准备本课声音'});
-      final pictures = <String>{
-        'apple',
-        'banana',
-        'water',
-        'milk',
-        'tea',
-        'coffee',
-        for (final rows in courseStages.values)
-          for (final row in rows)
-            if (row['picture'] is String &&
-                (row['picture'] as String).isNotEmpty)
-              row['picture'] as String,
-      };
-      for (final picture in pictures) {
-        await CourseResources.instance.loadString(
-          'assets/avatar/images/$picture.svg',
-        );
-      }
+      // Lesson widgets load their own current picture; unrelated illustrations
+      // do not delay the character or fill the browser cache at startup.
       if (disposed) return;
       emit('resource-progress', {'value': .98, 'label': '点亮学习世界'});
+      // The app owns one live character. Its nodes retain the realized GPU
+      // resources; a release browser need not also pin the import document and
+      // encoded source textures for a second copy of that same character.
+      if (kIsWeb && kReleaseMode) await _releaseModel();
       loaded = true;
       loading = '';
       emit('ready', {
@@ -565,11 +559,36 @@ class SceneRuntime extends ChangeNotifier {
       });
       notifyListeners();
     } catch (e, stack) {
+      if (disposed) return;
       loading = '人物加载失败：$e';
       emit('error', {'message': loading});
       debugPrint('$e\n$stack');
       notifyListeners();
     }
+  }
+
+  void _applyRenderSettings(String value, bool adaptive) {
+    quality = value;
+    final budget = RenderBudget.resolve(
+      quality,
+      mobileBrowser: isMobileBrowser,
+    );
+    targetFps = budget.fps;
+    scene.renderScale = budget.scale;
+    scene.renderQuality
+      ..adaptive = adaptive
+      ..targetFrameRate = math.min(targetFps, 60)
+      ..minRenderScale = budget.minScale
+      ..tier = quality == 'high'
+          ? RenderQualityTier.high
+          : quality == 'low'
+          ? RenderQualityTier.low
+          : RenderQualityTier.medium;
+    scene.directionalLight?.castsShadow = budget.shadows;
+    scene.antiAliasingMode =
+        quality == 'low' || (isMobileBrowser && quality != 'high')
+        ? AntiAliasingMode.none
+        : AntiAliasingMode.fxaa;
   }
 
   void command(Map<String, Object?> data) {
@@ -582,6 +601,8 @@ class SceneRuntime extends ChangeNotifier {
       'course-preview',
       'course-sound',
       'course-navigate',
+      'curriculum-audio',
+      'audio-unlock',
     ].contains(data['type'])) {
       // The controller sends stop immediately before a new play command.
       // Pause now, before the new gesture unlock, so an older queued stop
@@ -604,6 +625,9 @@ class SceneRuntime extends ChangeNotifier {
       }
       await _command(data);
     } catch (error) {
+      if (data['type'] == 'curriculum-audio') {
+        (data['complete'] as void Function(Object?))(error);
+      }
       emit('speech-error', {
         'session': data['session'],
         'message': '请再次点击播放：$error',
@@ -614,21 +638,47 @@ class SceneRuntime extends ChangeNotifier {
   Future<void> _command(Map<String, Object?> c) async {
     try {
       switch (c['type']) {
+        case 'curriculum-phase':
+          curriculumPhase = c['phase'] as String;
+          mode = 'curriculum';
+          phaseStarted = now;
+        case 'audio-unlock':
+          break;
+        case 'curriculum-audio':
+          await stop();
+          session = c['session'] as int;
+          final token = stageGeneration;
+          curriculumComplete = c['complete'] as void Function(Object?);
+          mode = 'curriculum';
+          curriculumPhase =
+              (c['audio'] as Map)['teachingPhase'] as String? ?? 'demonstrate';
+          loadingAudio = true;
+          try {
+            final clip = await speech.prepareVerified(
+              Map<String, dynamic>.from(c['audio'] as Map),
+            );
+            if (disposed || token != stageGeneration) return;
+            cues = clip.cues;
+            currentClip = clip;
+            playRate = 1;
+            await speech.play(clip, 1, speech.generation);
+            if (disposed || token != stageGeneration) return;
+            loadingAudio = false;
+            playingAudio = true;
+            phaseStarted = now;
+          } catch (e) {
+            loadingAudio = false;
+            playingAudio = false;
+            cues = [];
+            final done = curriculumComplete;
+            curriculumComplete = null;
+            done?.call(e);
+          }
         case 'render-settings':
-          quality = c['quality']?.toString() ?? 'high';
-          targetFps =
-              {'high': 120.0, 'medium': 60.0, 'low': 30.0}[quality] ?? 120;
-          scene.renderQuality
-            ..adaptive = c['adaptive'] == true
-            ..targetFrameRate = math.min(targetFps, 60)
-            ..tier = quality == 'low'
-                ? RenderQualityTier.low
-                : quality == 'medium'
-                ? RenderQualityTier.medium
-                : RenderQualityTier.high;
-          scene.antiAliasingMode = quality == 'low'
-              ? AntiAliasingMode.none
-              : AntiAliasingMode.fxaa;
+          _applyRenderSettings(
+            c['quality']?.toString() ?? 'medium',
+            c['adaptive'] == true,
+          );
           notifyListeners();
         case 'focus':
           closeUp = c['closeUp'] == true;
@@ -652,6 +702,14 @@ class SceneRuntime extends ChangeNotifier {
           await stop();
           if (c['session'] != controller.session) return;
           session = c['session'] as int;
+          if (c['style'] == 'adult' && presentStage == null) {
+            final selected = courseCatalog.firstWhere(
+              (course) => course.id == c['courseId'],
+              orElse: () => courseCatalog.first,
+            );
+            await lessonResources.loadCourse(selected.id, selected.asset);
+            if (disposed || c['session'] != controller.session) return;
+          }
           word = 'apple';
           mode = 'course';
           director = c['style'] == 'adult'
@@ -834,6 +892,9 @@ class SceneRuntime extends ChangeNotifier {
   }
 
   Future<void> stop() async {
+    final done = curriculumComplete;
+    curriculumComplete = null;
+    done?.call(StateError('声音播放已取消'));
     stageGeneration++;
     director = null;
     mode = 'idle';
@@ -1058,6 +1119,13 @@ class SceneRuntime extends ChangeNotifier {
   void _audioEnded() {
     playingAudio = false;
     automatic.playing = false;
+    if (mode == 'curriculum') {
+      cues = [];
+      final done = curriculumComplete;
+      curriculumComplete = null;
+      done?.call(null);
+      return;
+    }
     if (director != null) {
       if (director!.stage.phase == 'finish' ||
           director!.stage.options.isNotEmpty) {
@@ -1134,7 +1202,7 @@ class SceneRuntime extends ChangeNotifier {
           ..seek(math.min(age, 18) / 18 * 9.999);
         emotionClip!.weight = 0;
         applyPerformanceFace(w, math.min(age, 18) / 18 * 9.999);
-      } else if (director != null) {
+      } else if (director != null || mode == 'curriculum') {
         final p = loadingAudio ? 0.0 : progress;
         // Select one coherent authored gesture per thought; do not scrub or
         // loop the whole ten-second reel on each spoken word.
@@ -1142,7 +1210,14 @@ class SceneRuntime extends ChangeNotifier {
           ..weight = 1
           ..seek(lessonPoseTime(phase, age));
         emotionClip!.weight = 0;
-        applyCourseFace(w, phase, p, age, director!.variation, director!.style);
+        applyCourseFace(
+          w,
+          phase,
+          p,
+          age,
+          director?.variation ?? 0,
+          director?.style ?? 'adult',
+        );
         w['SmileLeft'] = math.min(w['SmileLeft']!, 1 - .78 * articulation(w));
         w['SmileRight'] = math.min(w['SmileRight']!, 1 - .78 * articulation(w));
       } else {
@@ -1180,6 +1255,7 @@ class SceneRuntime extends ChangeNotifier {
         'quality': quality,
         'targetFps': targetFps,
         'renderScale': scene.renderScale * scene.adaptiveRenderScale,
+        'frameImagesHeld': scene.heldFrameImages,
         'sourceClock': 'audio playback position',
         'fpsSource': 'new scene draws, excluding held GPU frames',
         'modelBytes': 153334024,
@@ -1233,6 +1309,15 @@ class SceneRuntime extends ChangeNotifier {
     frameMeter.reset();
   }
 
+  Future<void> _releaseModel() async {
+    if (!_modelClaimed || _modelReleased) return;
+    _modelReleased = true;
+    await releaseScene(
+      'assets/avatar/models/storm-performance.glb',
+      bundle: _modelBundle,
+    );
+  }
+
   @override
   void dispose() {
     disposed = true;
@@ -1240,6 +1325,8 @@ class SceneRuntime extends ChangeNotifier {
     unawaited(automatic.dispose());
     unawaited(speech.dispose());
     if (presentStage == null) scene.dispose();
+    _modelBundle?.close();
+    unawaited(_releaseModel());
     super.dispose();
   }
 }

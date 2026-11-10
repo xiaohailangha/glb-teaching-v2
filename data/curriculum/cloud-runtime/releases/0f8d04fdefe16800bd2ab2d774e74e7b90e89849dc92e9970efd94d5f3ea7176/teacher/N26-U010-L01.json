@@ -1,0 +1,2209 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch05-v1",
+  "courseId": "N26-U010-L01",
+  "unitId": "N26-U010",
+  "category": "社交与休闲",
+  "title": "拼出你的姓名",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "d96a04ce9863a724e959b1298b8b35ad13900d68572b3bd8b168b58ccd4a2d2c",
+  "newWords": [
+    "alphabet",
+    "letter",
+    "spell",
+    "spelling",
+    "surname",
+    "initial",
+    "title"
+  ],
+  "prerequisites": [
+    "N26-U003"
+  ],
+  "goal": "在“字母与拼写 1”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "alphabet",
+        "surface": "alphabet",
+        "meaning": "字母表",
+        "kind": "new_word"
+      },
+      {
+        "key": "letter",
+        "surface": "letter",
+        "meaning": "字母",
+        "kind": "new_word"
+      },
+      {
+        "key": "spell",
+        "surface": "spell",
+        "meaning": "拼写，按字母说清一个词",
+        "kind": "new_word"
+      },
+      {
+        "key": "spelling",
+        "surface": "spelling",
+        "meaning": "拼写，一个词具体怎样写",
+        "kind": "new_word"
+      },
+      {
+        "key": "surname",
+        "surface": "surname",
+        "meaning": "姓，姓名里的姓氏",
+        "kind": "new_word"
+      },
+      {
+        "key": "initial",
+        "surface": "initial",
+        "meaning": "姓名的首字母",
+        "kind": "new_word"
+      },
+      {
+        "key": "title",
+        "surface": "title",
+        "meaning": "称谓，姓名旁边使用的称呼",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "本课教会姓名拼写相关词和请求，不把未列出的26个字母音强行塞入本课；实际逐字母拼写能力不在本课判定。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U010-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U010-L01-S002",
+        "N26-U010-L01-S003",
+        "N26-U010-L01-S004",
+        "N26-U010-L01-S005",
+        "N26-U010-L01-S006",
+        "N26-U010-L01-S007",
+        "N26-U010-L01-S008",
+        "N26-U010-L01-S009",
+        "N26-U010-L01-S010",
+        "N26-U010-L01-S011",
+        "N26-U010-L01-S012",
+        "N26-U010-L01-S013",
+        "N26-U010-L01-S014",
+        "N26-U010-L01-S015",
+        "N26-U010-L01-S016",
+        "N26-U010-L01-S017",
+        "N26-U010-L01-S018",
+        "N26-U010-L01-S019",
+        "N26-U010-L01-S020",
+        "N26-U010-L01-S021",
+        "N26-U010-L01-S022"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U010-L01-S023",
+        "N26-U010-L01-S024",
+        "N26-U010-L01-S025",
+        "N26-U010-L01-S026",
+        "N26-U010-L01-S027",
+        "N26-U010-L01-S028",
+        "N26-U010-L01-S029",
+        "N26-U010-L01-S030",
+        "N26-U010-L01-S031",
+        "N26-U010-L01-S032",
+        "N26-U010-L01-S033",
+        "N26-U010-L01-S034",
+        "N26-U010-L01-S035",
+        "N26-U010-L01-S036",
+        "N26-U010-L01-S037",
+        "N26-U010-L01-S038",
+        "N26-U010-L01-S039",
+        "N26-U010-L01-S040"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U010-L01-S041",
+        "N26-U010-L01-S042",
+        "N26-U010-L01-S043",
+        "N26-U010-L01-S044",
+        "N26-U010-L01-S045",
+        "N26-U010-L01-S046"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U010-L01-S047",
+        "N26-U010-L01-S048",
+        "N26-U010-L01-S049",
+        "N26-U010-L01-S050"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U010-L01-S051",
+        "N26-U010-L01-S052",
+        "N26-U010-L01-S053",
+        "N26-U010-L01-S054",
+        "N26-U010-L01-S055",
+        "N26-U010-L01-S056"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U010-L01-S001",
+      "course": "N26-U010-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天认识姓名资料里和拼写有关的词。继续扮演小李，练习说明自己的姓名。",
+      "display": "",
+      "audio": "N26A-39b738fd1ec2395488ff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S002",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "字母表。先认识字母表这个名字，字母的逐个读法不在这里突然加进来。",
+      "display": "alphabet",
+      "audio": "N26A-b0642b3a46688f758a14",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S003",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "字母表",
+      "display": "alphabet",
+      "audio": "N26A-46d5b92d62b8a3970258",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "字母表",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S004",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "alphabet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C001",
+      "model": "N26A-46d5b92d62b8a3970258",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S005",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "字母。写名字时用到一个个字母，先听这个词。",
+      "display": "letter",
+      "audio": "N26A-4ed0f6e74237fbc50da0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S006",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "字母",
+      "display": "letter",
+      "audio": "N26A-f421c1da3ee72f4c8401",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "字母",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S007",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "letter",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C002",
+      "model": "N26A-f421c1da3ee72f4c8401",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S008",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "拼写，按字母说清一个词。今天先学提出拼写姓名这个请求。",
+      "display": "spell",
+      "audio": "N26A-8c178c29c7e6c1fc4ebf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S009",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "拼写，按字母说清一个词",
+      "display": "spell",
+      "audio": "N26A-52986d8a12c821f6b9ba",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拼写，按字母说清一个词",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S010",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "spell",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C003",
+      "model": "N26A-52986d8a12c821f6b9ba",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S011",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "拼写，一个词具体怎样写。这个整词本身不只表示姓名，先听清它的意思。",
+      "display": "spelling",
+      "audio": "N26A-0ce1d0cee4b377ed23a7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S012",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "拼写，一个词具体怎样写",
+      "display": "spelling",
+      "audio": "N26A-ab529971dc5632fcd005",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拼写，一个词具体怎样写",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S013",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "spelling",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C004",
+      "model": "N26A-ab529971dc5632fcd005",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S014",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "姓，姓名里的姓氏。本课固定的姓仍然是李。",
+      "display": "surname",
+      "audio": "N26A-f944eca3149e1f748bef",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S015",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "姓，姓名里的姓氏",
+      "display": "surname",
+      "audio": "N26A-0e3dd9731eb7ba31d0c3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "姓，姓名里的姓氏",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S016",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "surname",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C005",
+      "model": "N26A-0e3dd9731eb7ba31d0c3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S017",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "姓名的首字母。这里只认识姓名最前面的字母这一项。",
+      "display": "initial",
+      "audio": "N26A-56cffc2d3b9b3350e4e6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S018",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "姓名的首字母",
+      "display": "initial",
+      "audio": "N26A-d3bf6a82e31a3b61db40",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "姓名的首字母",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S019",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "initial",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C006",
+      "model": "N26A-d3bf6a82e31a3b61db40",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S020",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "称谓，姓名旁边使用的称呼。想象姓名旁边有一栏称谓，先认识这个栏目的名称。",
+      "display": "title",
+      "audio": "N26A-e1244d9a4b756b8788dc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S021",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "称谓，姓名旁边使用的称呼",
+      "display": "title",
+      "audio": "N26A-d5f9605d9c2d125fc7c0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "称谓，姓名旁边使用的称呼",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S022",
+      "course": "N26-U010-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "title",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C007",
+      "model": "N26A-d5f9605d9c2d125fc7c0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L01-S023",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个字母。这里的一个不是一封信。",
+      "display": "a letter",
+      "audio": "N26A-f1c46b6e8d29006eba4e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S024",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个字母",
+      "display": "a letter",
+      "audio": "N26A-9619feb04f776f47d9f0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个字母",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S025",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a letter",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C008",
+      "model": "N26A-9619feb04f776f47d9f0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S026",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "拼写我的名字。我指开口请求的人。你说这句时，请对方拼的是你本人的名字。",
+      "display": "Spell my name",
+      "audio": "N26A-51066838032dec8240fa",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S027",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "拼写我的名字。",
+      "display": "Spell my name.",
+      "audio": "N26A-b47b62fb3dd879aa68be",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拼写我的名字。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S028",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Spell my name.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C009",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S029",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "拼写。这个词说一个词具体怎样写，不专指姓名。",
+      "display": "spelling",
+      "audio": "N26A-633b068b178899590f41",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S030",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "拼写",
+      "display": "spelling",
+      "audio": "N26A-ab529971dc5632fcd005",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拼写",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S031",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "spelling",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C010",
+      "model": "N26A-ab529971dc5632fcd005",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S032",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我姓李。仍然扮演小李，先听整句。",
+      "display": "My surname is Li",
+      "audio": "N26A-fdc1d4da2c05b4039198",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S033",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我姓李。",
+      "display": "My surname is Li.",
+      "audio": "N26A-0615e37edecc431b2a4b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我姓李。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S034",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "My surname is Li.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C011",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S035",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的姓名首字母。这是姓名中开头字母的名称，先把整组表达听清。",
+      "display": "my initial",
+      "audio": "N26A-407904647440aa350f12",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S036",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的姓名首字母",
+      "display": "my initial",
+      "audio": "N26A-967e4b62a911fd96fed7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的姓名首字母",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S037",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my initial",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C012",
+      "model": "N26A-967e4b62a911fd96fed7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S038",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的称谓。先能听懂和说出这一项。",
+      "display": "my title",
+      "audio": "N26A-83c545da6edb4e202a88",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S039",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的称谓",
+      "display": "my title",
+      "audio": "N26A-48e93ef0a9da9da0772c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的称谓",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S040",
+      "course": "N26-U010-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my title",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L01-C013",
+      "model": "N26A-48e93ef0a9da9da0772c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L01-S041",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我姓李。",
+      "display": "My surname is Li.",
+      "audio": "N26A-0615e37edecc431b2a4b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我姓李。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U010-L01-S042",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "对方用中文核对你的姓，继续扮演小李，先听完整回应。",
+      "display": "",
+      "audio": "N26A-e4f928756e4649925a67",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S043",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "My surname is Li.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C014",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S044",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "拼写我的名字。",
+      "display": "Spell my name.",
+      "audio": "N26A-b47b62fb3dd879aa68be",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拼写我的名字。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U010-L01-S045",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你向伙伴提出请求，请伙伴拼写你本人的名字。先听示范，再开口。",
+      "display": "",
+      "audio": "N26A-894a96d4ed02a6753d61",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S046",
+      "course": "N26-U010-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Spell my name.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C015",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S047",
+      "course": "N26-U010-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说到资料里的拼写这一项，先看着提示用这个整词表达。",
+      "display": "",
+      "audio": "N26A-cdd4d424dafe636381db",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S048",
+      "course": "N26-U010-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "spelling",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C016",
+      "model": "N26A-ab529971dc5632fcd005",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S049",
+      "course": "N26-U010-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说到自己姓名的首字母，看着提示表达这一项。",
+      "display": "",
+      "audio": "N26A-e57d335769b233d6b078",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S050",
+      "course": "N26-U010-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my initial",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C017",
+      "model": "N26A-967e4b62a911fd96fed7",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S051",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "填写资料时，对方用中文问你的姓，仍以小李的身份回答。",
+      "display": "",
+      "audio": "N26A-7857ea3a083b361cb2b5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S052",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "My surname is Li.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C018",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S053",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "你要请练习伙伴拼写你本人的名字。你向对方提出这个请求。",
+      "display": "",
+      "audio": "N26A-ad16e25fec8f7d4bdfc0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S054",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Spell my name.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L01-C019",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U010-L01-S055",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L01-S056",
+      "course": "N26-U010-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U010-L01-C001",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "字母表",
+      "answers": [
+        "alphabet"
+      ],
+      "hint": "alphabet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S004",
+      "help": "N26-U010-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C002",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "字母",
+      "answers": [
+        "letter"
+      ],
+      "hint": "letter",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S007",
+      "help": "N26-U010-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C003",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拼写，按字母说清一个词",
+      "answers": [
+        "spell"
+      ],
+      "hint": "spell",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S010",
+      "help": "N26-U010-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C004",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拼写，一个词具体怎样写",
+      "answers": [
+        "spelling"
+      ],
+      "hint": "spelling",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S013",
+      "help": "N26-U010-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C005",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "姓，姓名里的姓氏",
+      "answers": [
+        "surname"
+      ],
+      "hint": "surname",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S016",
+      "help": "N26-U010-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C006",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "姓名的首字母",
+      "answers": [
+        "initial"
+      ],
+      "hint": "initial",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S019",
+      "help": "N26-U010-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C007",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "称谓，姓名旁边使用的称呼",
+      "answers": [
+        "title"
+      ],
+      "hint": "title",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S022",
+      "help": "N26-U010-L01-S022-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C008",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个字母",
+      "answers": [
+        "a letter"
+      ],
+      "hint": "a letter",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S025",
+      "help": "N26-U010-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C009",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拼写我的名字。",
+      "answers": [
+        "Spell my name."
+      ],
+      "hint": "Spell my name.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S028",
+      "help": "N26-U010-L01-S028-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C010",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拼写",
+      "answers": [
+        "spelling"
+      ],
+      "hint": "spelling",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S031",
+      "help": "N26-U010-L01-S031-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C011",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我姓李。",
+      "answers": [
+        "My surname is Li."
+      ],
+      "hint": "My surname is Li.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S034",
+      "help": "N26-U010-L01-S034-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C012",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的姓名首字母",
+      "answers": [
+        "my initial"
+      ],
+      "hint": "my initial",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S037",
+      "help": "N26-U010-L01-S037-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C013",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的称谓",
+      "answers": [
+        "my title"
+      ],
+      "hint": "my title",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S040",
+      "help": "N26-U010-L01-S040-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C014",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "对方用中文核对你的姓，继续扮演小李，先听完整回应。",
+      "answers": [
+        "My surname is Li."
+      ],
+      "hint": "My surname is Li.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S043",
+      "help": "N26-U010-L01-S043-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C015",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你向伙伴提出请求，请伙伴拼写你本人的名字。先听示范，再开口。",
+      "answers": [
+        "Spell my name."
+      ],
+      "hint": "Spell my name.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S046",
+      "help": "N26-U010-L01-S046-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C016",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说到资料里的拼写这一项，先看着提示用这个整词表达。",
+      "answers": [
+        "spelling"
+      ],
+      "hint": "spelling",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S048",
+      "help": "N26-U010-L01-S048-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C017",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说到自己姓名的首字母，看着提示表达这一项。",
+      "answers": [
+        "my initial"
+      ],
+      "hint": "my initial",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L01-S050",
+      "help": "N26-U010-L01-S050-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C018",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "填写资料时，对方用中文问你的姓，仍以小李的身份回答。",
+      "answers": [
+        "My surname is Li."
+      ],
+      "hint": "My surname is Li.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U010-L01-S052",
+      "help": "N26-U010-L01-S052-HELP"
+    },
+    {
+      "id": "N26-U010-L01-C019",
+      "course": "N26-U010-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你要请练习伙伴拼写你本人的名字。你向对方提出这个请求。",
+      "answers": [
+        "Spell my name."
+      ],
+      "hint": "Spell my name.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U010-L01-S054",
+      "help": "N26-U010-L01-S054-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U010-L01-S004-HELP",
+      "forStep": "N26-U010-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-46d5b92d62b8a3970258",
+      "display": "alphabet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S007-HELP",
+      "forStep": "N26-U010-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f421c1da3ee72f4c8401",
+      "display": "letter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S010-HELP",
+      "forStep": "N26-U010-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-52986d8a12c821f6b9ba",
+      "display": "spell",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S013-HELP",
+      "forStep": "N26-U010-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ab529971dc5632fcd005",
+      "display": "spelling",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S016-HELP",
+      "forStep": "N26-U010-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0e3dd9731eb7ba31d0c3",
+      "display": "surname",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S019-HELP",
+      "forStep": "N26-U010-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d3bf6a82e31a3b61db40",
+      "display": "initial",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S022-HELP",
+      "forStep": "N26-U010-L01-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d5f9605d9c2d125fc7c0",
+      "display": "title",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S025-HELP",
+      "forStep": "N26-U010-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9619feb04f776f47d9f0",
+      "display": "a letter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S028-HELP",
+      "forStep": "N26-U010-L01-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "display": "Spell my name.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S031-HELP",
+      "forStep": "N26-U010-L01-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ab529971dc5632fcd005",
+      "display": "spelling",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S034-HELP",
+      "forStep": "N26-U010-L01-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "display": "My surname is Li.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S037-HELP",
+      "forStep": "N26-U010-L01-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-967e4b62a911fd96fed7",
+      "display": "my initial",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S040-HELP",
+      "forStep": "N26-U010-L01-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-48e93ef0a9da9da0772c",
+      "display": "my title",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S043-HELP",
+      "forStep": "N26-U010-L01-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "display": "My surname is Li.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S046-HELP",
+      "forStep": "N26-U010-L01-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "display": "Spell my name.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S048-HELP",
+      "forStep": "N26-U010-L01-S048",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ab529971dc5632fcd005",
+      "display": "spelling",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S048",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S050-HELP",
+      "forStep": "N26-U010-L01-S050",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-967e4b62a911fd96fed7",
+      "display": "my initial",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S050",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S052-HELP",
+      "forStep": "N26-U010-L01-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0615e37edecc431b2a4b",
+      "display": "My surname is Li.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L01-S054-HELP",
+      "forStep": "N26-U010-L01-S054",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b47b62fb3dd879aa68be",
+      "display": "Spell my name.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L01-S054",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "alphabet",
+      "word": "alphabet",
+      "ipa": "/ˈæl.fə.bet/",
+      "meaning": "字母表",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-46d5b92d62b8a3970258"
+    },
+    {
+      "key": "letter",
+      "word": "letter",
+      "ipa": "/ˈlet̬.ɚ/",
+      "meaning": "字母",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f421c1da3ee72f4c8401"
+    },
+    {
+      "key": "spell",
+      "word": "spell",
+      "ipa": "/spel/",
+      "meaning": "拼写，按字母说清一个词",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-52986d8a12c821f6b9ba"
+    },
+    {
+      "key": "spelling",
+      "word": "spelling",
+      "ipa": "/ˈspel.ɪŋ/",
+      "meaning": "拼写，一个词具体怎样写",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ab529971dc5632fcd005"
+    },
+    {
+      "key": "surname",
+      "word": "surname",
+      "ipa": "/ˈsɝː.neɪm/",
+      "meaning": "姓，姓名里的姓氏",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0e3dd9731eb7ba31d0c3"
+    },
+    {
+      "key": "initial",
+      "word": "initial",
+      "ipa": "/ɪˈnɪʃ.əl/",
+      "meaning": "姓名的首字母",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d3bf6a82e31a3b61db40"
+    },
+    {
+      "key": "title",
+      "word": "title",
+      "ipa": "/ˈtaɪ.t̬əl/",
+      "meaning": "称谓，姓名旁边使用的称呼",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d5f9605d9c2d125fc7c0"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "name",
+      "word": "name",
+      "ipa": "/neɪm/",
+      "meaning": "名字",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-9db203ca52e864da2c29"
+    },
+    {
+      "key": "be",
+      "word": "is",
+      "ipa": "/ɪz/",
+      "meaning": "是",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-78777013595e3ab65c2f"
+    },
+    {
+      "key": null,
+      "word": "Li",
+      "ipa": "/liː/",
+      "meaning": "李，本课固定角色姓名",
+      "properName": true,
+      "countIn3000": false,
+      "audio": "N26A-1cd1a33966a9ecd3ccea"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "Li沿用U003已说明角色；spelling作为独立词显式示范；title不加Mr/Ms；不把认识alphabet误报成已会26字母或完整拼读。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "revised_pending_independent_recheck",
+      "reviewedContentHash": "306dadcfa930fd8dd4f6ef3b93437f8fc4112b9f5239a42dceba977846d6e348",
+      "findingIds": [
+        "Q04",
+        "Q05"
+      ],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 41,
+    "availableExactAssets": 41,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-39b738fd1ec2395488ff",
+      "N26A-b0642b3a46688f758a14",
+      "N26A-46d5b92d62b8a3970258",
+      "N26A-4ed0f6e74237fbc50da0",
+      "N26A-f421c1da3ee72f4c8401",
+      "N26A-8c178c29c7e6c1fc4ebf",
+      "N26A-52986d8a12c821f6b9ba",
+      "N26A-0ce1d0cee4b377ed23a7",
+      "N26A-ab529971dc5632fcd005",
+      "N26A-f944eca3149e1f748bef",
+      "N26A-0e3dd9731eb7ba31d0c3",
+      "N26A-56cffc2d3b9b3350e4e6",
+      "N26A-d3bf6a82e31a3b61db40",
+      "N26A-e1244d9a4b756b8788dc",
+      "N26A-d5f9605d9c2d125fc7c0",
+      "N26A-f1c46b6e8d29006eba4e",
+      "N26A-9619feb04f776f47d9f0",
+      "N26A-51066838032dec8240fa",
+      "N26A-b47b62fb3dd879aa68be",
+      "N26A-633b068b178899590f41",
+      "N26A-fdc1d4da2c05b4039198",
+      "N26A-0615e37edecc431b2a4b",
+      "N26A-407904647440aa350f12",
+      "N26A-967e4b62a911fd96fed7",
+      "N26A-83c545da6edb4e202a88",
+      "N26A-48e93ef0a9da9da0772c",
+      "N26A-e4f928756e4649925a67",
+      "N26A-894a96d4ed02a6753d61",
+      "N26A-cdd4d424dafe636381db",
+      "N26A-e57d335769b233d6b078",
+      "N26A-7857ea3a083b361cb2b5",
+      "N26A-ad16e25fec8f7d4bdfc0",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-9db203ca52e864da2c29",
+      "N26A-78777013595e3ab65c2f",
+      "N26A-1cd1a33966a9ecd3ccea",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

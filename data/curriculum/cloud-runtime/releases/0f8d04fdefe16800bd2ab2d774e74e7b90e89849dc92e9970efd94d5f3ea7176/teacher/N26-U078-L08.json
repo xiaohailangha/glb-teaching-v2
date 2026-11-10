@@ -1,0 +1,1643 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit078-v1",
+  "courseId": "N26-U078-L08",
+  "unitId": "N26-U078",
+  "category": "工作与学习",
+  "title": "参会与投票表态",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "4c520bf7a061e0bd3b75041fa67affb09e738ca23f8f4dede4dec09a7e46879e",
+  "newWords": [
+    "presence",
+    "vote",
+    "election",
+    "opposition"
+  ],
+  "prerequisites": [
+    "N26-U078-L07"
+  ],
+  "goal": "围绕“会议结果”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "presence",
+        "surface": "presence",
+        "meaning": "出席，在场",
+        "kind": "new_word"
+      },
+      {
+        "key": "vote",
+        "surface": "vote",
+        "meaning": "投票",
+        "kind": "new_word"
+      },
+      {
+        "key": "election",
+        "surface": "election",
+        "meaning": "选举",
+        "kind": "new_word"
+      },
+      {
+        "key": "opposition",
+        "surface": "opposition",
+        "meaning": "反对",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U078-L08-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U078-L08-S002",
+        "N26-U078-L08-S003",
+        "N26-U078-L08-S004",
+        "N26-U078-L08-S005",
+        "N26-U078-L08-S006",
+        "N26-U078-L08-S007",
+        "N26-U078-L08-S008",
+        "N26-U078-L08-S009",
+        "N26-U078-L08-S010",
+        "N26-U078-L08-S011",
+        "N26-U078-L08-S012",
+        "N26-U078-L08-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U078-L08-S014",
+        "N26-U078-L08-S015",
+        "N26-U078-L08-S016",
+        "N26-U078-L08-S017",
+        "N26-U078-L08-S018",
+        "N26-U078-L08-S019",
+        "N26-U078-L08-S020",
+        "N26-U078-L08-S021",
+        "N26-U078-L08-S022",
+        "N26-U078-L08-S023",
+        "N26-U078-L08-S024",
+        "N26-U078-L08-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U078-L08-S026",
+        "N26-U078-L08-S027",
+        "N26-U078-L08-S028",
+        "N26-U078-L08-S029",
+        "N26-U078-L08-S030",
+        "N26-U078-L08-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U078-L08-S032",
+        "N26-U078-L08-S033",
+        "N26-U078-L08-S034",
+        "N26-U078-L08-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U078-L08-S036",
+        "N26-U078-L08-S037",
+        "N26-U078-L08-S038",
+        "N26-U078-L08-S039",
+        "N26-U078-L08-S040",
+        "N26-U078-L08-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U078-L08-S001",
+      "course": "N26-U078-L08",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象讨论参会与表态，认识出席、投票、选举和反对方。",
+      "display": "",
+      "audio": "N26A-832b93feeecf45ebbe4a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S002",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "出席，在场。说人在场这件事。",
+      "display": "presence",
+      "audio": "N26A-fdecef086487dfe19e36",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S003",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "出席，在场",
+      "display": "presence",
+      "audio": "N26A-c713b6ff3aacad5402ce",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "出席，在场",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S004",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "presence",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C001",
+      "model": "N26A-c713b6ff3aacad5402ce",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S005",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "投票。这里用动词。",
+      "display": "vote",
+      "audio": "N26A-4ad87dec3e5a1b0abfdb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S006",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "投票",
+      "display": "vote",
+      "audio": "N26A-bbb5491482c343d44e59",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "投票",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S007",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "vote",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C002",
+      "model": "N26A-bbb5491482c343d44e59",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S008",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "选举。先说活动名称。",
+      "display": "election",
+      "audio": "N26A-14b6bbf76b8dd45713b6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S009",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "选举",
+      "display": "election",
+      "audio": "N26A-d290db77445061ca4c4b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "选举",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S010",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "election",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C003",
+      "model": "N26A-d290db77445061ca4c4b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S011",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "反对。这里指反对意见的存在。",
+      "display": "opposition",
+      "audio": "N26A-7c8cebbfcc676da60c45",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S012",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "反对",
+      "display": "opposition",
+      "audio": "N26A-d401e99dba067f59dadd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "反对",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S013",
+      "course": "N26-U078-L08",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "opposition",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C004",
+      "model": "N26A-d401e99dba067f59dadd",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U078-L08-S014",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的出席。说人在场这件事。",
+      "display": "my presence",
+      "audio": "N26A-36269a17146aee31b602",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S015",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的出席",
+      "display": "my presence",
+      "audio": "N26A-1b7057d61bf86ff9648e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的出席",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S016",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my presence",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C005",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S017",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可以投票。这里用动词。",
+      "display": "I can vote",
+      "audio": "N26A-607eb5f8f1f4595d83ad",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S018",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可以投票。",
+      "display": "I can vote.",
+      "audio": "N26A-ac6e34cf1e85ef8c4278",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以投票。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S019",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can vote.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C006",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S020",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一次选举。先说活动名称。",
+      "display": "an election",
+      "audio": "N26A-520482bf42b62f56919e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S021",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一次选举",
+      "display": "an election",
+      "audio": "N26A-0c40771de223298a6b32",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一次选举",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S022",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an election",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C007",
+      "model": "N26A-0c40771de223298a6b32",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S023",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这些反对意见。这里指反对意见的存在。",
+      "display": "the opposition",
+      "audio": "N26A-79cab1273693075d8462",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S024",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这些反对意见",
+      "display": "the opposition",
+      "audio": "N26A-f83dff256b8680169721",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这些反对意见",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S025",
+      "course": "N26-U078-L08",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the opposition",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U078-L08-C008",
+      "model": "N26A-f83dff256b8680169721",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U078-L08-S026",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可以投票。",
+      "display": "I can vote.",
+      "audio": "N26A-ac6e34cf1e85ef8c4278",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以投票。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U078-L08-S027",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "排练中要说可以投票，先听完整句。",
+      "display": "",
+      "audio": "N26A-e2f2ec1d04369d0f596a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S028",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can vote.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C009",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S029",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我的出席",
+      "display": "my presence",
+      "audio": "N26A-1b7057d61bf86ff9648e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的出席",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U078-L08-S030",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "要谈自己的出席，听后说。",
+      "display": "",
+      "audio": "N26A-7e9132de2601e5235c13",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S031",
+      "course": "N26-U078-L08",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my presence",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C010",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S032",
+      "course": "N26-U078-L08",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说一次选举，看短语练习。",
+      "display": "",
+      "audio": "N26A-c844c883da891a5047c0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S033",
+      "course": "N26-U078-L08",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "an election",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C011",
+      "model": "N26A-0c40771de223298a6b32",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S034",
+      "course": "N26-U078-L08",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "点明反对意见，看提示说。",
+      "display": "",
+      "audio": "N26A-5efc2f8da3e67eceaff0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S035",
+      "course": "N26-U078-L08",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the opposition",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C012",
+      "model": "N26A-f83dff256b8680169721",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S036",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象讨论一次虚构表决，你说明自己可以投票。",
+      "display": "",
+      "audio": "N26A-51d49a8e63e6fc8b1620",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S037",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I can vote.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C013",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S038",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友用中文问需要核对哪项参会信息，情境明确是你本人的出席情况，你用短语说出这一项。",
+      "display": "",
+      "audio": "N26A-614bced5ddf05b83f4ab",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S039",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "my presence",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U078-L08-C014",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U078-L08-S040",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U078-L08-S041",
+      "course": "N26-U078-L08",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U078-L08-C001",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "出席，在场",
+      "answers": [
+        "presence"
+      ],
+      "hint": "presence",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S004",
+      "help": "N26-U078-L08-S004-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C002",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "投票",
+      "answers": [
+        "vote"
+      ],
+      "hint": "vote",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S007",
+      "help": "N26-U078-L08-S007-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C003",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "选举",
+      "answers": [
+        "election"
+      ],
+      "hint": "election",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S010",
+      "help": "N26-U078-L08-S010-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C004",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "反对",
+      "answers": [
+        "opposition"
+      ],
+      "hint": "opposition",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S013",
+      "help": "N26-U078-L08-S013-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C005",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的出席",
+      "answers": [
+        "my presence"
+      ],
+      "hint": "my presence",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S016",
+      "help": "N26-U078-L08-S016-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C006",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可以投票。",
+      "answers": [
+        "I can vote."
+      ],
+      "hint": "I can vote.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S019",
+      "help": "N26-U078-L08-S019-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C007",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一次选举",
+      "answers": [
+        "an election"
+      ],
+      "hint": "an election",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S022",
+      "help": "N26-U078-L08-S022-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C008",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这些反对意见",
+      "answers": [
+        "the opposition"
+      ],
+      "hint": "the opposition",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S025",
+      "help": "N26-U078-L08-S025-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C009",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "排练中要说可以投票，先听完整句。",
+      "answers": [
+        "I can vote."
+      ],
+      "hint": "I can vote.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S028",
+      "help": "N26-U078-L08-S028-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C010",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "要谈自己的出席，听后说。",
+      "answers": [
+        "my presence"
+      ],
+      "hint": "my presence",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S031",
+      "help": "N26-U078-L08-S031-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C011",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说一次选举，看短语练习。",
+      "answers": [
+        "an election"
+      ],
+      "hint": "an election",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S033",
+      "help": "N26-U078-L08-S033-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C012",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "点明反对意见，看提示说。",
+      "answers": [
+        "the opposition"
+      ],
+      "hint": "the opposition",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U078-L08-S035",
+      "help": "N26-U078-L08-S035-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C013",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象讨论一次虚构表决，你说明自己可以投票。",
+      "answers": [
+        "I can vote."
+      ],
+      "hint": "I can vote.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U078-L08-S037",
+      "help": "N26-U078-L08-S037-HELP"
+    },
+    {
+      "id": "N26-U078-L08-C014",
+      "course": "N26-U078-L08",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友用中文问需要核对哪项参会信息，情境明确是你本人的出席情况，你用短语说出这一项。",
+      "answers": [
+        "my presence"
+      ],
+      "hint": "my presence",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U078-L08-S039",
+      "help": "N26-U078-L08-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U078-L08-S004-HELP",
+      "forStep": "N26-U078-L08-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c713b6ff3aacad5402ce",
+      "display": "presence",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S007-HELP",
+      "forStep": "N26-U078-L08-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbb5491482c343d44e59",
+      "display": "vote",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S010-HELP",
+      "forStep": "N26-U078-L08-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d290db77445061ca4c4b",
+      "display": "election",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S013-HELP",
+      "forStep": "N26-U078-L08-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d401e99dba067f59dadd",
+      "display": "opposition",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S016-HELP",
+      "forStep": "N26-U078-L08-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "display": "my presence",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S019-HELP",
+      "forStep": "N26-U078-L08-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "display": "I can vote.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S022-HELP",
+      "forStep": "N26-U078-L08-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0c40771de223298a6b32",
+      "display": "an election",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S025-HELP",
+      "forStep": "N26-U078-L08-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f83dff256b8680169721",
+      "display": "the opposition",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S028-HELP",
+      "forStep": "N26-U078-L08-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "display": "I can vote.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S031-HELP",
+      "forStep": "N26-U078-L08-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "display": "my presence",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S033-HELP",
+      "forStep": "N26-U078-L08-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0c40771de223298a6b32",
+      "display": "an election",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S035-HELP",
+      "forStep": "N26-U078-L08-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f83dff256b8680169721",
+      "display": "the opposition",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S037-HELP",
+      "forStep": "N26-U078-L08-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ac6e34cf1e85ef8c4278",
+      "display": "I can vote.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U078-L08-S039-HELP",
+      "forStep": "N26-U078-L08-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1b7057d61bf86ff9648e",
+      "display": "my presence",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U078-L08-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "presence",
+      "word": "presence",
+      "ipa": "/ˈprɛzəns/",
+      "meaning": "出席，在场",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c713b6ff3aacad5402ce"
+    },
+    {
+      "key": "vote",
+      "word": "vote",
+      "ipa": "/voʊt/",
+      "meaning": "投票",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-bbb5491482c343d44e59"
+    },
+    {
+      "key": "election",
+      "word": "election",
+      "ipa": "/ɪˈlɛkʃən/",
+      "meaning": "选举",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d290db77445061ca4c4b"
+    },
+    {
+      "key": "opposition",
+      "word": "opposition",
+      "ipa": "/ˌɑpəˈzɪʃən/",
+      "meaning": "反对",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d401e99dba067f59dadd"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "can",
+      "word": "can",
+      "ipa": "/kæn/",
+      "meaning": "能，可以",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac940722cc38a8e45268"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "vote仅能力句不授予真实投票资格；election/opposition仅词义，不涉及现实政治行动；presence为在场名词。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 32,
+    "availableExactAssets": 32,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-832b93feeecf45ebbe4a",
+      "N26A-fdecef086487dfe19e36",
+      "N26A-c713b6ff3aacad5402ce",
+      "N26A-4ad87dec3e5a1b0abfdb",
+      "N26A-bbb5491482c343d44e59",
+      "N26A-14b6bbf76b8dd45713b6",
+      "N26A-d290db77445061ca4c4b",
+      "N26A-7c8cebbfcc676da60c45",
+      "N26A-d401e99dba067f59dadd",
+      "N26A-36269a17146aee31b602",
+      "N26A-1b7057d61bf86ff9648e",
+      "N26A-607eb5f8f1f4595d83ad",
+      "N26A-ac6e34cf1e85ef8c4278",
+      "N26A-520482bf42b62f56919e",
+      "N26A-0c40771de223298a6b32",
+      "N26A-79cab1273693075d8462",
+      "N26A-f83dff256b8680169721",
+      "N26A-e2f2ec1d04369d0f596a",
+      "N26A-7e9132de2601e5235c13",
+      "N26A-c844c883da891a5047c0",
+      "N26A-5efc2f8da3e67eceaff0",
+      "N26A-51d49a8e63e6fc8b1620",
+      "N26A-614bced5ddf05b83f4ab",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-ac940722cc38a8e45268",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

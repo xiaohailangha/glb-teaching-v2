@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-02T07:28:20.209Z",
+  "checks": [
+    "App login, registration and session restoration",
+    "App deployed bundle hash matches release",
+    "Updated fruit release loaded without orange or choices",
+    "Guided automatic playback and hands-free oral practice without choice tasks",
+    "Original course picker, teaching controls, My page and pause are intact"
+  ],
+  "scope": "Production services; dedicated test account and synthetic microphone recording. Not a human study.",
+  "completed": true,
+  "deployment": {
+    "appBackup": "/opt/glb-backups/before-scene-20261102T072806Z",
+    "contentRollback": "/opt/glb-backups/before-scene-20261102T072125Z/content-current.json",
+    "release": "d4a5f9668949ce8da76c54fb71ccf3ec090aeabbbfd65a7a04f9a2f24556df90",
+    "baseHref": "/scene/",
+    "localServerStopped": true
+  }
+}

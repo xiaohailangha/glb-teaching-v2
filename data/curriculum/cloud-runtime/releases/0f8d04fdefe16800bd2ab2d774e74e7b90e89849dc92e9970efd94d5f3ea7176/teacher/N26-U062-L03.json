@@ -1,0 +1,1494 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit062-v1",
+  "courseId": "N26-U062-L03",
+  "unitId": "N26-U062",
+  "category": "旅行与住宿",
+  "title": "续住与借用物品",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "40e800eb7a1d2b3e3efd50cf16d0bafe7004a083d2a6542a282b6c42e46412f3",
+  "newWords": [
+    "extend",
+    "loss",
+    "adapter"
+  ],
+  "prerequisites": [
+    "N26-U062-L02"
+  ],
+  "goal": "在“延长住宿／寄存与设备 3”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "extend",
+        "surface": "extend",
+        "meaning": "延长，增加原来的持续时间",
+        "kind": "new_word"
+      },
+      {
+        "key": "loss",
+        "surface": "loss",
+        "meaning": "遗失，东西丢失的情况",
+        "kind": "new_word"
+      },
+      {
+        "key": "adapter",
+        "surface": "adapter",
+        "meaning": "转换插头，连接不同接口的配件",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U062-L03-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U062-L03-S002",
+        "N26-U062-L03-S003",
+        "N26-U062-L03-S004",
+        "N26-U062-L03-S005",
+        "N26-U062-L03-S006",
+        "N26-U062-L03-S007",
+        "N26-U062-L03-S008",
+        "N26-U062-L03-S009",
+        "N26-U062-L03-S010"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U062-L03-S011",
+        "N26-U062-L03-S012",
+        "N26-U062-L03-S013",
+        "N26-U062-L03-S014",
+        "N26-U062-L03-S015",
+        "N26-U062-L03-S016",
+        "N26-U062-L03-S017",
+        "N26-U062-L03-S018",
+        "N26-U062-L03-S019"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U062-L03-S020",
+        "N26-U062-L03-S021",
+        "N26-U062-L03-S022",
+        "N26-U062-L03-S023",
+        "N26-U062-L03-S024",
+        "N26-U062-L03-S025"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U062-L03-S026",
+        "N26-U062-L03-S027",
+        "N26-U062-L03-S028",
+        "N26-U062-L03-S029"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U062-L03-S030",
+        "N26-U062-L03-S031",
+        "N26-U062-L03-S032",
+        "N26-U062-L03-S033",
+        "N26-U062-L03-S034",
+        "N26-U062-L03-S035"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U062-L03-S001",
+      "course": "N26-U062-L03",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象联系酒店续住或询问用品。今天认识延长、遗失和转换插头，先说清需要。",
+      "display": "",
+      "audio": "N26A-5f1657c15a29f5281742",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S002",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "延长，增加原来的持续时间。这里说延长，增加原来的持续时间，先听完整的声音。",
+      "display": "extend",
+      "audio": "N26A-788ab0f62e6c190654e0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S003",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "延长，增加原来的持续时间",
+      "display": "extend",
+      "audio": "N26A-aa3867f4ca0f2236362e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "延长，增加原来的持续时间",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S004",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "extend",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C001",
+      "model": "N26A-aa3867f4ca0f2236362e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S005",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "遗失，东西丢失的情况。这里说遗失，东西丢失的情况，先听完整的声音。",
+      "display": "loss",
+      "audio": "N26A-1645c8489455e18052ff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S006",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "遗失，东西丢失的情况",
+      "display": "loss",
+      "audio": "N26A-ca67e8f02311668ca928",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "遗失，东西丢失的情况",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S007",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "loss",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C002",
+      "model": "N26A-ca67e8f02311668ca928",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S008",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "转换插头，连接不同接口的配件。这里说转换插头，连接不同接口的配件，先听完整的声音。",
+      "display": "adapter",
+      "audio": "N26A-768991c5f8c974221e2b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S009",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "转换插头，连接不同接口的配件",
+      "display": "adapter",
+      "audio": "N26A-e61ec43dd026fd266d69",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "转换插头，连接不同接口的配件",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S010",
+      "course": "N26-U062-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "adapter",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C003",
+      "model": "N26A-e61ec43dd026fd266d69",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L03-S011",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想延长我的预订。中间的小词把想要或愿意和后面要做的动作接起来，先听整句。 这个小词接出后面的动作，整句一起理解。",
+      "display": "I want to extend my booking",
+      "audio": "N26A-92ab2e049f16cb8bd783",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S012",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想延长我的预订。",
+      "display": "I want to extend my booking.",
+      "audio": "N26A-c263ffb6202f27256915",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想延长我的预订。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S013",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want to extend my booking.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C004",
+      "model": "N26A-c263ffb6202f27256915",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S014",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的钥匙遗失。先听这一组，再连起来说。",
+      "display": "the loss of my key",
+      "audio": "N26A-c5fb31ae5b2d1cafee44",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S015",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的钥匙遗失",
+      "display": "the loss of my key",
+      "audio": "N26A-0f2ef0595c935827879c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的钥匙遗失",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S016",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the loss of my key",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C005",
+      "model": "N26A-0f2ef0595c935827879c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S017",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我需要一个转换插头。先听这一组，再连起来说。",
+      "display": "I need an adapter",
+      "audio": "N26A-acef046e5b5fb60385b7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S018",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我需要一个转换插头。",
+      "display": "I need an adapter.",
+      "audio": "N26A-74330ca3409522de7648",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要一个转换插头。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S019",
+      "course": "N26-U062-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I need an adapter.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L03-C006",
+      "model": "N26A-74330ca3409522de7648",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L03-S020",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我想延长我的预订。",
+      "display": "I want to extend my booking.",
+      "audio": "N26A-c263ffb6202f27256915",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想延长我的预订。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U062-L03-S021",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "角色想续住，先听延长预订的表达。",
+      "display": "",
+      "audio": "N26A-d6e557264af39dcdf1bd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S022",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want to extend my booking.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C007",
+      "model": "N26A-c263ffb6202f27256915",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S023",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我需要一个转换插头。",
+      "display": "I need an adapter.",
+      "audio": "N26A-74330ca3409522de7648",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要一个转换插头。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U062-L03-S024",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "角色需要转换插头，先听整句。",
+      "display": "",
+      "audio": "N26A-921b65b1879fc5921812",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S025",
+      "course": "N26-U062-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I need an adapter.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C008",
+      "model": "N26A-74330ca3409522de7648",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S026",
+      "course": "N26-U062-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说想延长预订。",
+      "display": "",
+      "audio": "N26A-034a05452b2b230b5116",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S027",
+      "course": "N26-U062-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want to extend my booking.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C009",
+      "model": "N26A-c263ffb6202f27256915",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S028",
+      "course": "N26-U062-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说需要一个转换插头。",
+      "display": "",
+      "audio": "N26A-d33198e98d13caffd542",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S029",
+      "course": "N26-U062-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I need an adapter.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C010",
+      "model": "N26A-74330ca3409522de7648",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S030",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象联系酒店，你说明想延长自己的预订。",
+      "display": "",
+      "audio": "N26A-7af9284f89eb852bf3b3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S031",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I want to extend my booking.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C011",
+      "model": "N26A-c263ffb6202f27256915",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S032",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象向前台表达用品需求，你说需要一个转换插头。",
+      "display": "",
+      "audio": "N26A-9bfed4a5d7b751415be3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S033",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I need an adapter.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L03-C012",
+      "model": "N26A-74330ca3409522de7648",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U062-L03-S034",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L03-S035",
+      "course": "N26-U062-L03",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U062-L03-C001",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "延长，增加原来的持续时间",
+      "answers": [
+        "extend"
+      ],
+      "hint": "extend",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S004",
+      "help": "N26-U062-L03-S004-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C002",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "遗失，东西丢失的情况",
+      "answers": [
+        "loss"
+      ],
+      "hint": "loss",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S007",
+      "help": "N26-U062-L03-S007-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C003",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "转换插头，连接不同接口的配件",
+      "answers": [
+        "adapter"
+      ],
+      "hint": "adapter",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S010",
+      "help": "N26-U062-L03-S010-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C004",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想延长我的预订。",
+      "answers": [
+        "I want to extend my booking."
+      ],
+      "hint": "I want to extend my booking.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S013",
+      "help": "N26-U062-L03-S013-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C005",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的钥匙遗失",
+      "answers": [
+        "the loss of my key"
+      ],
+      "hint": "the loss of my key",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S016",
+      "help": "N26-U062-L03-S016-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C006",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我需要一个转换插头。",
+      "answers": [
+        "I need an adapter."
+      ],
+      "hint": "I need an adapter.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S019",
+      "help": "N26-U062-L03-S019-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C007",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "角色想续住，先听延长预订的表达。",
+      "answers": [
+        "I want to extend my booking."
+      ],
+      "hint": "I want to extend my booking.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S022",
+      "help": "N26-U062-L03-S022-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C008",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "角色需要转换插头，先听整句。",
+      "answers": [
+        "I need an adapter."
+      ],
+      "hint": "I need an adapter.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S025",
+      "help": "N26-U062-L03-S025-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C009",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说想延长预订。",
+      "answers": [
+        "I want to extend my booking."
+      ],
+      "hint": "I want to extend my booking.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S027",
+      "help": "N26-U062-L03-S027-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C010",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说需要一个转换插头。",
+      "answers": [
+        "I need an adapter."
+      ],
+      "hint": "I need an adapter.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L03-S029",
+      "help": "N26-U062-L03-S029-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C011",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象联系酒店，你说明想延长自己的预订。",
+      "answers": [
+        "I want to extend my booking."
+      ],
+      "hint": "I want to extend my booking.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U062-L03-S031",
+      "help": "N26-U062-L03-S031-HELP"
+    },
+    {
+      "id": "N26-U062-L03-C012",
+      "course": "N26-U062-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象向前台表达用品需求，你说需要一个转换插头。",
+      "answers": [
+        "I need an adapter."
+      ],
+      "hint": "I need an adapter.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U062-L03-S033",
+      "help": "N26-U062-L03-S033-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U062-L03-S004-HELP",
+      "forStep": "N26-U062-L03-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-aa3867f4ca0f2236362e",
+      "display": "extend",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S007-HELP",
+      "forStep": "N26-U062-L03-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ca67e8f02311668ca928",
+      "display": "loss",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S010-HELP",
+      "forStep": "N26-U062-L03-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e61ec43dd026fd266d69",
+      "display": "adapter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S013-HELP",
+      "forStep": "N26-U062-L03-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c263ffb6202f27256915",
+      "display": "I want to extend my booking.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S016-HELP",
+      "forStep": "N26-U062-L03-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0f2ef0595c935827879c",
+      "display": "the loss of my key",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S019-HELP",
+      "forStep": "N26-U062-L03-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-74330ca3409522de7648",
+      "display": "I need an adapter.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S022-HELP",
+      "forStep": "N26-U062-L03-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c263ffb6202f27256915",
+      "display": "I want to extend my booking.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S025-HELP",
+      "forStep": "N26-U062-L03-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-74330ca3409522de7648",
+      "display": "I need an adapter.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S027-HELP",
+      "forStep": "N26-U062-L03-S027",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c263ffb6202f27256915",
+      "display": "I want to extend my booking.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S027",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S029-HELP",
+      "forStep": "N26-U062-L03-S029",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-74330ca3409522de7648",
+      "display": "I need an adapter.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S029",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S031-HELP",
+      "forStep": "N26-U062-L03-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c263ffb6202f27256915",
+      "display": "I want to extend my booking.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L03-S033-HELP",
+      "forStep": "N26-U062-L03-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-74330ca3409522de7648",
+      "display": "I need an adapter.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L03-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "extend",
+      "word": "extend",
+      "ipa": "/ɪkˈstɛnd/",
+      "meaning": "延长，增加原来的持续时间",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-aa3867f4ca0f2236362e"
+    },
+    {
+      "key": "loss",
+      "word": "loss",
+      "ipa": "/lɔːs/",
+      "meaning": "遗失，东西丢失的情况",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ca67e8f02311668ca928"
+    },
+    {
+      "key": "adapter",
+      "word": "adapter",
+      "ipa": "/əˈdæptər/",
+      "meaning": "转换插头，连接不同接口的配件",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e61ec43dd026fd266d69"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "want",
+      "word": "want",
+      "ipa": "/wɑːnt/",
+      "meaning": "想要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1d75c03d2f2c3a602f7a"
+    },
+    {
+      "key": "to",
+      "word": "to",
+      "ipa": "/tuː/",
+      "meaning": "在想要或愿意做某事的表达中，引出后面的动作",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-88ae8049c1f9bdf7fcca"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "booking",
+      "word": "booking",
+      "ipa": "/ˈbʊkɪŋ/",
+      "meaning": "预订，提前订好的安排",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e47f37f3ad9b099d410a"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "of",
+      "word": "of",
+      "ipa": "/əv/",
+      "meaning": "……的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-9c041cf467a5062b8a24"
+    },
+    {
+      "key": "key",
+      "word": "key",
+      "ipa": "/kiː/",
+      "meaning": "钥匙",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-691793115a9c53081366"
+    },
+    {
+      "key": "need",
+      "word": "need",
+      "ipa": "/niːd/",
+      "meaning": "需要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-41d4daf3bebc573aa688"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": [
+      {
+        "word": "to",
+        "meaning": "在想要或愿意做某事的表达中，引出后面的动作",
+        "model": "I want to extend my booking.",
+        "modeledAt": "N26-U062-L03-S012"
+      }
+    ]
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：extend=延长，增加原来的持续时间；loss=遗失，东西丢失的情况；adapter=转换插头，连接不同接口的配件。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R002，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "booking",
+      "sourceCourse": "N26-U061-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "key",
+      "sourceCourse": "N26-U028-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 33,
+    "availableExactAssets": 33,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-5f1657c15a29f5281742",
+      "N26A-788ab0f62e6c190654e0",
+      "N26A-aa3867f4ca0f2236362e",
+      "N26A-1645c8489455e18052ff",
+      "N26A-ca67e8f02311668ca928",
+      "N26A-768991c5f8c974221e2b",
+      "N26A-e61ec43dd026fd266d69",
+      "N26A-92ab2e049f16cb8bd783",
+      "N26A-c263ffb6202f27256915",
+      "N26A-c5fb31ae5b2d1cafee44",
+      "N26A-0f2ef0595c935827879c",
+      "N26A-acef046e5b5fb60385b7",
+      "N26A-74330ca3409522de7648",
+      "N26A-d6e557264af39dcdf1bd",
+      "N26A-921b65b1879fc5921812",
+      "N26A-034a05452b2b230b5116",
+      "N26A-d33198e98d13caffd542",
+      "N26A-7af9284f89eb852bf3b3",
+      "N26A-9bfed4a5d7b751415be3",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-1d75c03d2f2c3a602f7a",
+      "N26A-88ae8049c1f9bdf7fcca",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-e47f37f3ad9b099d410a",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-9c041cf467a5062b8a24",
+      "N26A-691793115a9c53081366",
+      "N26A-41d4daf3bebc573aa688",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

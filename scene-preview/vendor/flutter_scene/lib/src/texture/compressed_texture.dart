@@ -25,6 +25,14 @@ import 'package:flutter_scene/src/texture/block/transcode_bc3.dart';
 import 'package:flutter_scene/src/texture/block/transcode_etc2.dart';
 import 'package:flutter_scene/src/texture/ktx2/ktx2.dart';
 import 'package:flutter_scene/src/texture/ktx2_image.dart';
+import 'texture_mip_budget.dart';
+
+int? get _browserTextureLimit =>
+    kIsWeb &&
+        (defaultTargetPlatform == TargetPlatform.iOS ||
+            defaultTargetPlatform == TargetPlatform.android)
+    ? 1024
+    : null;
 
 /// The order in which compressed families are preferred when the device
 /// supports more than one: ASTC (highest quality) > BC (desktop) > ETC2
@@ -61,6 +69,7 @@ Future<gpu.Texture> gpuTextureFromKtx2Async(Uint8List bytes) async {
     ktx2: bytes,
     mode: mode,
     mips: mips,
+    maxSide: _browserTextureLimit,
   ));
   return _upload(prepared);
 }
@@ -74,7 +83,14 @@ gpu.Texture gpuTextureFromKtx2(Uint8List bytes) =>
 /// As [gpuTextureFromKtx2], for an already-parsed [texture].
 gpu.Texture gpuTextureFromKtx2Texture(Ktx2Texture texture) {
   _logFamiliesOnce();
-  return _upload(_prepare(texture, _selectMode(), mips: uploadableMipChains));
+  return _upload(
+    _prepare(
+      texture,
+      _selectMode(),
+      mips: uploadableMipChains,
+      maxSide: _browserTextureLimit,
+    ),
+  );
 }
 
 /// Whether a hand-uploaded mip chain is worth transcoding and uploading: the
@@ -103,20 +119,40 @@ int _selectMode() {
 }
 
 /// Isolate entry point: parse and transcode. Pure Dart, no GPU.
-_Prepared _prepareFromBytes(({Uint8List ktx2, int mode, bool mips}) input) =>
-    _prepare(readKtx2(input.ktx2), input.mode, mips: input.mips);
+_Prepared _prepareFromBytes(
+  ({Uint8List ktx2, int mode, bool mips, int? maxSide}) input,
+) => _prepare(
+  readKtx2(input.ktx2),
+  input.mode,
+  mips: input.mips,
+  maxSide: input.maxSide,
+);
 
 /// Transcodes the stored mip levels of [texture] to [mode]. Pure Dart, no GPU.
 /// When [mips] is false (the backend cannot sample hand-uploaded mip chains),
 /// only the base level is produced.
-_Prepared _prepare(Ktx2Texture texture, int mode, {required bool mips}) {
-  final width = texture.pixelWidth;
-  final height = math.max(1, texture.pixelHeight);
+_Prepared _prepare(
+  Ktx2Texture texture,
+  int mode, {
+  required bool mips,
+  int? maxSide,
+}) {
+  final baseMip = textureBaseMip(
+    texture.pixelWidth,
+    math.max(1, texture.pixelHeight),
+    texture.levels.length,
+    maxSide: maxSide,
+  );
+  final width = math.max(1, texture.pixelWidth >> baseMip);
+  final height = math.max(1, texture.pixelHeight >> baseMip);
   // The container may carry fewer levels than the allocator's chain (a
   // base-only file) or more (a chain reaching 1x1); clamp to what
   // `createTexture(mipLevelCount:)` accepts.
   final levelCount = mips
-      ? math.min(texture.levels.length, engineMipLevelCount(width, height))
+      ? math.min(
+          texture.levels.length - baseMip,
+          engineMipLevelCount(width, height),
+        )
       : 1;
   // A texture marked as carrying alpha upgrades to the family's alpha
   // format. ASTC needs no upgrade: its transcoder switches non-opaque blocks
@@ -131,14 +167,14 @@ _Prepared _prepare(Ktx2Texture texture, int mode, {required bool mips}) {
   if (mode == _modeRgba8) {
     final levels = [
       for (var level = 0; level < levelCount; level++)
-        decodeKtx2Level(texture, level: level).rgba,
+        decodeKtx2Level(texture, level: level + baseMip).rgba,
     ];
     return (levels: levels, mode: _modeRgba8, width: width, height: height);
   }
   final levels = <Uint8List>[];
   for (var level = 0; level < levelCount; level++) {
     final size = mipSize(width, height, level);
-    final blocks = ktx2LevelBlocks(texture, level);
+    final blocks = ktx2LevelBlocks(texture, level + baseMip);
     final blockCount = ((size.width + 3) ~/ 4) * ((size.height + 3) ~/ 4);
     levels.add(switch (mode) {
       _modeBc1 => transcodeUniversalToBc1(blocks, blockCount),

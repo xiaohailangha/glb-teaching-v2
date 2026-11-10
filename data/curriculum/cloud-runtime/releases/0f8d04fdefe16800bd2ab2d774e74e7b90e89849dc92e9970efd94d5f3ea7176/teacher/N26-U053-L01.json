@@ -1,0 +1,1635 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit053-v1",
+  "courseId": "N26-U053-L01",
+  "unitId": "N26-U053",
+  "category": "食物与饮品",
+  "title": "杯盖、吸管与甜度",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "5db93f76cbaf73a4c38990485630ecbf2aa5744bea18025b61c9c21c8e692c12",
+  "newWords": [
+    "lid",
+    "straw",
+    "cream",
+    "sweetness"
+  ],
+  "prerequisites": [
+    "N26-U001",
+    "N26-U023",
+    "N26-U024",
+    "N26-U025"
+  ],
+  "goal": "围绕“温度与杯具、饮品配料”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "lid",
+        "surface": "lid",
+        "meaning": "杯盖，容器上面的盖子",
+        "kind": "new_word"
+      },
+      {
+        "key": "straw",
+        "surface": "straw",
+        "meaning": "吸管",
+        "kind": "new_word"
+      },
+      {
+        "key": "cream",
+        "surface": "cream",
+        "meaning": "奶油，饮品中加入的乳制品",
+        "kind": "new_word"
+      },
+      {
+        "key": "sweetness",
+        "surface": "sweetness",
+        "meaning": "甜度",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U053-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U053-L01-S002",
+        "N26-U053-L01-S003",
+        "N26-U053-L01-S004",
+        "N26-U053-L01-S005",
+        "N26-U053-L01-S006",
+        "N26-U053-L01-S007",
+        "N26-U053-L01-S008",
+        "N26-U053-L01-S009",
+        "N26-U053-L01-S010",
+        "N26-U053-L01-S011",
+        "N26-U053-L01-S012",
+        "N26-U053-L01-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U053-L01-S014",
+        "N26-U053-L01-S015",
+        "N26-U053-L01-S016",
+        "N26-U053-L01-S017",
+        "N26-U053-L01-S018",
+        "N26-U053-L01-S019",
+        "N26-U053-L01-S020",
+        "N26-U053-L01-S021",
+        "N26-U053-L01-S022",
+        "N26-U053-L01-S023",
+        "N26-U053-L01-S024",
+        "N26-U053-L01-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U053-L01-S026",
+        "N26-U053-L01-S027",
+        "N26-U053-L01-S028",
+        "N26-U053-L01-S029",
+        "N26-U053-L01-S030",
+        "N26-U053-L01-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U053-L01-S032",
+        "N26-U053-L01-S033",
+        "N26-U053-L01-S034",
+        "N26-U053-L01-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U053-L01-S036",
+        "N26-U053-L01-S037",
+        "N26-U053-L01-S038",
+        "N26-U053-L01-S039",
+        "N26-U053-L01-S040",
+        "N26-U053-L01-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U053-L01-S001",
+      "course": "N26-U053-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象点一杯饮品。今天认识杯盖、吸管、奶油和甜度，先把要求里会用到的名字说清楚。",
+      "display": "",
+      "audio": "N26A-ed54427897284dd2cf79",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S002",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "杯盖，容器上面的盖子。这里说杯盖，容器上面的盖子，先听完整的声音。",
+      "display": "lid",
+      "audio": "N26A-2a8f072a4a407fc42052",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S003",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "杯盖，容器上面的盖子",
+      "display": "lid",
+      "audio": "N26A-0fff72ad7d37beef5114",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "杯盖，容器上面的盖子",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S004",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "lid",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C001",
+      "model": "N26A-0fff72ad7d37beef5114",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S005",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "吸管。这里说吸管，先听完整的声音。",
+      "display": "straw",
+      "audio": "N26A-2ef6dccada7ea5c21c6f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S006",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "吸管",
+      "display": "straw",
+      "audio": "N26A-ad64ab643139398b2712",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "吸管",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S007",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "straw",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C002",
+      "model": "N26A-ad64ab643139398b2712",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S008",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "奶油，饮品中加入的乳制品。这里说奶油，饮品中加入的乳制品，先听完整的声音。",
+      "display": "cream",
+      "audio": "N26A-988814830008d6ba0ed5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S009",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "奶油，饮品中加入的乳制品",
+      "display": "cream",
+      "audio": "N26A-ff46924674387402eed2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "奶油，饮品中加入的乳制品",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S010",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "cream",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C003",
+      "model": "N26A-ff46924674387402eed2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S011",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "甜度。这里说甜度，先听完整的声音。",
+      "display": "sweetness",
+      "audio": "N26A-86df1d46c58622f26635",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S012",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "甜度",
+      "display": "sweetness",
+      "audio": "N26A-8e29e3d4cc838cc49193",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "甜度",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S013",
+      "course": "N26-U053-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "sweetness",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C004",
+      "model": "N26A-8e29e3d4cc838cc49193",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L01-S014",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个杯盖。先听这一组，再连起来说。",
+      "display": "a lid",
+      "audio": "N26A-b2233f2e747120d3ee65",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S015",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个杯盖",
+      "display": "a lid",
+      "audio": "N26A-1cd760c8d27a6d06ec23",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个杯盖",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S016",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a lid",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C005",
+      "model": "N26A-1cd760c8d27a6d06ec23",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S017",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一根吸管。先听这一组，再连起来说。",
+      "display": "a straw",
+      "audio": "N26A-e813cb8e1e974fa03436",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S018",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一根吸管",
+      "display": "a straw",
+      "audio": "N26A-cc8a45fe61811c90c183",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一根吸管",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S019",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a straw",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C006",
+      "model": "N26A-cc8a45fe61811c90c183",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S020",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "不加奶油。先听这一组，再连起来说。",
+      "display": "without cream",
+      "audio": "N26A-4e456e0201074ac217c5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S021",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "不加奶油",
+      "display": "without cream",
+      "audio": "N26A-281293e5034356e83e5d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "不加奶油",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S022",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "without cream",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C007",
+      "model": "N26A-281293e5034356e83e5d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S023",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这杯饮品的甜度。先听这一组，再连起来说。",
+      "display": "the sweetness",
+      "audio": "N26A-50982be0d48b4755f9d3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S024",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这杯饮品的甜度",
+      "display": "the sweetness",
+      "audio": "N26A-9b769fed174dcdc13a28",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这杯饮品的甜度",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S025",
+      "course": "N26-U053-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the sweetness",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L01-C008",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L01-S026",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "不加奶油",
+      "display": "without cream",
+      "audio": "N26A-281293e5034356e83e5d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "不加奶油",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L01-S027",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "饮品要求是不加奶油，先听再说。",
+      "display": "",
+      "audio": "N26A-c47798d309aea59d78fe",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S028",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "without cream",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C009",
+      "model": "N26A-281293e5034356e83e5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S029",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "这杯饮品的甜度",
+      "display": "the sweetness",
+      "audio": "N26A-9b769fed174dcdc13a28",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这杯饮品的甜度",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L01-S030",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想谈的是这杯饮品的甜度，听后接上。",
+      "display": "",
+      "audio": "N26A-d3846ade429882419211",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S031",
+      "course": "N26-U053-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the sweetness",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C010",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S032",
+      "course": "N26-U053-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说不加奶油。",
+      "display": "",
+      "audio": "N26A-d908a549a986abcc3c62",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S033",
+      "course": "N26-U053-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "without cream",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C011",
+      "model": "N26A-281293e5034356e83e5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S034",
+      "course": "N26-U053-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说这杯饮品的甜度。",
+      "display": "",
+      "audio": "N26A-f6f286c38a50d468a90f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S035",
+      "course": "N26-U053-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the sweetness",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C012",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S036",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象点饮品，你用短语说明不加奶油。",
+      "display": "",
+      "audio": "N26A-f8d61ab86410afd65189",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S037",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "without cream",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C013",
+      "model": "N26A-281293e5034356e83e5d",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S038",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对你关注什么，你说明这杯饮品的甜度。",
+      "display": "",
+      "audio": "N26A-0e52d43ae9c24e6d94ac",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S039",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "the sweetness",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L01-C014",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L01-S040",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L01-S041",
+      "course": "N26-U053-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U053-L01-C001",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "杯盖，容器上面的盖子",
+      "answers": [
+        "lid"
+      ],
+      "hint": "lid",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S004",
+      "help": "N26-U053-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C002",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "吸管",
+      "answers": [
+        "straw"
+      ],
+      "hint": "straw",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S007",
+      "help": "N26-U053-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C003",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "奶油，饮品中加入的乳制品",
+      "answers": [
+        "cream"
+      ],
+      "hint": "cream",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S010",
+      "help": "N26-U053-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C004",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "甜度",
+      "answers": [
+        "sweetness"
+      ],
+      "hint": "sweetness",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S013",
+      "help": "N26-U053-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C005",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个杯盖",
+      "answers": [
+        "a lid"
+      ],
+      "hint": "a lid",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S016",
+      "help": "N26-U053-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C006",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一根吸管",
+      "answers": [
+        "a straw"
+      ],
+      "hint": "a straw",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S019",
+      "help": "N26-U053-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C007",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "不加奶油",
+      "answers": [
+        "without cream"
+      ],
+      "hint": "without cream",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S022",
+      "help": "N26-U053-L01-S022-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C008",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这杯饮品的甜度",
+      "answers": [
+        "the sweetness"
+      ],
+      "hint": "the sweetness",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S025",
+      "help": "N26-U053-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C009",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "饮品要求是不加奶油，先听再说。",
+      "answers": [
+        "without cream"
+      ],
+      "hint": "without cream",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S028",
+      "help": "N26-U053-L01-S028-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C010",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想谈的是这杯饮品的甜度，听后接上。",
+      "answers": [
+        "the sweetness"
+      ],
+      "hint": "the sweetness",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S031",
+      "help": "N26-U053-L01-S031-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C011",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说不加奶油。",
+      "answers": [
+        "without cream"
+      ],
+      "hint": "without cream",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S033",
+      "help": "N26-U053-L01-S033-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C012",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说这杯饮品的甜度。",
+      "answers": [
+        "the sweetness"
+      ],
+      "hint": "the sweetness",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L01-S035",
+      "help": "N26-U053-L01-S035-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C013",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象点饮品，你用短语说明不加奶油。",
+      "answers": [
+        "without cream"
+      ],
+      "hint": "without cream",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L01-S037",
+      "help": "N26-U053-L01-S037-HELP"
+    },
+    {
+      "id": "N26-U053-L01-C014",
+      "course": "N26-U053-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对你关注什么，你说明这杯饮品的甜度。",
+      "answers": [
+        "the sweetness"
+      ],
+      "hint": "the sweetness",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L01-S039",
+      "help": "N26-U053-L01-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U053-L01-S004-HELP",
+      "forStep": "N26-U053-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0fff72ad7d37beef5114",
+      "display": "lid",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S007-HELP",
+      "forStep": "N26-U053-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ad64ab643139398b2712",
+      "display": "straw",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S010-HELP",
+      "forStep": "N26-U053-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ff46924674387402eed2",
+      "display": "cream",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S013-HELP",
+      "forStep": "N26-U053-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8e29e3d4cc838cc49193",
+      "display": "sweetness",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S016-HELP",
+      "forStep": "N26-U053-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1cd760c8d27a6d06ec23",
+      "display": "a lid",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S019-HELP",
+      "forStep": "N26-U053-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-cc8a45fe61811c90c183",
+      "display": "a straw",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S022-HELP",
+      "forStep": "N26-U053-L01-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-281293e5034356e83e5d",
+      "display": "without cream",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S025-HELP",
+      "forStep": "N26-U053-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "display": "the sweetness",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S028-HELP",
+      "forStep": "N26-U053-L01-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-281293e5034356e83e5d",
+      "display": "without cream",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S031-HELP",
+      "forStep": "N26-U053-L01-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "display": "the sweetness",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S033-HELP",
+      "forStep": "N26-U053-L01-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-281293e5034356e83e5d",
+      "display": "without cream",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S035-HELP",
+      "forStep": "N26-U053-L01-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "display": "the sweetness",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S037-HELP",
+      "forStep": "N26-U053-L01-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-281293e5034356e83e5d",
+      "display": "without cream",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L01-S039-HELP",
+      "forStep": "N26-U053-L01-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9b769fed174dcdc13a28",
+      "display": "the sweetness",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L01-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "lid",
+      "word": "lid",
+      "ipa": "/lɪd/",
+      "meaning": "杯盖，容器上面的盖子",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fff72ad7d37beef5114"
+    },
+    {
+      "key": "straw",
+      "word": "straw",
+      "ipa": "/strɔː/",
+      "meaning": "吸管",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ad64ab643139398b2712"
+    },
+    {
+      "key": "cream",
+      "word": "cream",
+      "ipa": "/kriːm/",
+      "meaning": "奶油，饮品中加入的乳制品",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ff46924674387402eed2"
+    },
+    {
+      "key": "sweetness",
+      "word": "sweetness",
+      "ipa": "/ˈswiːtnəs/",
+      "meaning": "甜度",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8e29e3d4cc838cc49193"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "without",
+      "word": "without",
+      "ipa": "/wɪˈðaʊt/",
+      "meaning": "没有，不带有",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0aafc5e270fc8bc4649f"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：lid=杯盖，容器上面的盖子；straw=吸管；cream=奶油，饮品中加入的乳制品；sweetness=甜度。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "without",
+      "sourceCourse": "N26-U049-L09",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-ed54427897284dd2cf79",
+      "N26A-2a8f072a4a407fc42052",
+      "N26A-0fff72ad7d37beef5114",
+      "N26A-2ef6dccada7ea5c21c6f",
+      "N26A-ad64ab643139398b2712",
+      "N26A-988814830008d6ba0ed5",
+      "N26A-ff46924674387402eed2",
+      "N26A-86df1d46c58622f26635",
+      "N26A-8e29e3d4cc838cc49193",
+      "N26A-b2233f2e747120d3ee65",
+      "N26A-1cd760c8d27a6d06ec23",
+      "N26A-e813cb8e1e974fa03436",
+      "N26A-cc8a45fe61811c90c183",
+      "N26A-4e456e0201074ac217c5",
+      "N26A-281293e5034356e83e5d",
+      "N26A-50982be0d48b4755f9d3",
+      "N26A-9b769fed174dcdc13a28",
+      "N26A-c47798d309aea59d78fe",
+      "N26A-d3846ade429882419211",
+      "N26A-d908a549a986abcc3c62",
+      "N26A-f6f286c38a50d468a90f",
+      "N26A-f8d61ab86410afd65189",
+      "N26A-0e52d43ae9c24e6d94ac",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-0aafc5e270fc8bc4649f",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

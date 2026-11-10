@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:ui' show PointerDeviceKind;
 
 import 'package:flutter/material.dart';
@@ -10,6 +11,63 @@ import 'package:snow_speaks/features/lesson/presentation/course_library_page.dar
 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
+  for (final size in [const Size(320, 568), const Size(844, 390), const Size(1280, 900)]) {
+    testWidgets('555 directory filters category then unit and blocks unfinished lesson at $size', (tester) async {
+      tester.view.physicalSize = size;
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final plan = jsonDecode(File('../data/curriculum/formal-plan.json').readAsStringSync()) as Map<String, dynamic>;
+      final directory = FormalDirectory({
+        ...plan,
+        'categories': [for (final c in plan['categories'] as List) {'name': c}],
+        'courses': [for (final c in plan['courses'] as List) {...c as Map, 'status': 'planned'}],
+      });
+      final controller = LessonController();
+      addTearDown(controller.dispose);
+      await tester.pumpWidget(MaterialApp(home: CourseLibraryPage(controller: controller, directory: directory)));
+      await tester.pumpAndSettle();
+      expect(find.text('新体系 · 555课'), findsOneWidget);
+      expect(find.textContaining('B1.01'), findsNothing);
+      expect(find.textContaining('体验测试'), findsNothing);
+      final food = find.text('食物与饮品');
+      await tester.ensureVisible(food);await tester.tap(food);await tester.pumpAndSettle();
+      expect(find.text('认识水果并表达想要'), findsOneWidget);
+      final active = find.byKey(const ValueKey('active-course-target'));
+      expect(tester.widget<Semantics>(active).properties.label, contains('苹果与香蕉'));
+      expect(tester.widget<Semantics>(active).properties.label, isNot(contains('第')));
+      await tester.tap(active);await tester.pump();
+      expect(find.text('这节课正在制作，完成验收后开放学习'), findsOneWidget);
+      expect(controller.courseId, courseCatalog.first.id);
+      expect(find.byType(CourseLibraryPage), findsOneWidget);
+      // Exercise a non-initial unit using the approved title rather than a guessed label.
+      final next = directory.units.where((u) => u['category'] == '食物与饮品').skip(1).first;
+      final target = find.text(next['title'] as String);
+      await tester.ensureVisible(target);await tester.tap(target);await tester.pumpAndSettle();
+      expect(tester.widget<Semantics>(active).properties.label, contains(directory.courses.firstWhere((c) => c.unit == next['id']).title));
+      await tester.tap(find.text('原正式课'));await tester.pumpAndSettle();
+      expect(find.textContaining('B1.01'), findsNothing);
+      expect(tester.takeException(), isNull);
+    });
+  }
+  testWidgets('pilot courses extend the existing deck without replacing old categories', (tester) async {
+    final controller = LessonController();
+    addTearDown(controller.dispose);
+    String? selected;
+    await tester.pumpWidget(MaterialApp(home: Builder(builder: (context) => Scaffold(body: TextButton(onPressed: () => showCourseLibrary(context, controller,
+      additions: const [CourseInfo('B1.01-L01', 'b101-1', '01 · 见面与告别', '打招呼', coverTitle: 'Hello')],
+      onAdditionalSelected: (id) async { selected = id; },
+    ), child: const Text('open'))))));
+    await tester.tap(find.text('open'));await tester.pumpAndSettle();
+    expect(find.text(courseTypes.first.title),findsOneWidget);
+    final type=find.text('体验测试 · B1.01');
+    await tester.ensureVisible(type);await tester.tap(type);await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('course-deck')),findsOneWidget);
+    expect(find.byType(BackdropFilter),findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('active-course-target')));await tester.pumpAndSettle();
+    expect(selected,'B1.01-L01');expect(controller.courseId,courseCatalog.first.id);
+    expect(tester.takeException(),isNull);
+  });
   test('course library reads only the current learner and tolerates a corrupt record', () async {
     final id = courseCatalog.first.id;
     SharedPreferences.setMockInitialValues({

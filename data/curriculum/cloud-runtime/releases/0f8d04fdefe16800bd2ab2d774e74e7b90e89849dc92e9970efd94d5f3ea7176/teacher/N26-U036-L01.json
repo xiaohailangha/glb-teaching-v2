@@ -1,0 +1,1977 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit036-v1",
+  "courseId": "N26-U036-L01",
+  "unitId": "N26-U036",
+  "category": "城市与交通",
+  "title": "街口与车站",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "0e16e7d5466cbbf0f9b1d27566f1e627108c30ddbf9f2f7b080ec6750b47840e",
+  "newWords": [
+    "avenue",
+    "crosswalk",
+    "roundabout",
+    "station",
+    "train"
+  ],
+  "prerequisites": [
+    "N26-U005",
+    "N26-U023",
+    "N26-U025",
+    "N26-U026"
+  ],
+  "goal": "在“街道与路口 1”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "avenue",
+        "surface": "avenue",
+        "meaning": "大街，林荫大道",
+        "kind": "new_word"
+      },
+      {
+        "key": "crosswalk",
+        "surface": "crosswalk",
+        "meaning": "人行横道",
+        "kind": "new_word"
+      },
+      {
+        "key": "roundabout",
+        "surface": "roundabout",
+        "meaning": "环形交叉路口",
+        "kind": "new_word"
+      },
+      {
+        "key": "station",
+        "surface": "station",
+        "meaning": "车站",
+        "kind": "new_word"
+      },
+      {
+        "key": "train",
+        "surface": "train",
+        "meaning": "火车",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "中文口述或明确想象情境；无虚构实际展示资产。卡住恢复完整示范，提示练习不计独立掌握。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U036-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U036-L01-S002",
+        "N26-U036-L01-S003",
+        "N26-U036-L01-S004",
+        "N26-U036-L01-S005",
+        "N26-U036-L01-S006",
+        "N26-U036-L01-S007",
+        "N26-U036-L01-S008",
+        "N26-U036-L01-S009",
+        "N26-U036-L01-S010",
+        "N26-U036-L01-S011",
+        "N26-U036-L01-S012",
+        "N26-U036-L01-S013",
+        "N26-U036-L01-S014",
+        "N26-U036-L01-S015",
+        "N26-U036-L01-S016"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U036-L01-S017",
+        "N26-U036-L01-S018",
+        "N26-U036-L01-S019",
+        "N26-U036-L01-S020",
+        "N26-U036-L01-S021",
+        "N26-U036-L01-S022",
+        "N26-U036-L01-S023",
+        "N26-U036-L01-S024",
+        "N26-U036-L01-S025",
+        "N26-U036-L01-S026",
+        "N26-U036-L01-S027",
+        "N26-U036-L01-S028",
+        "N26-U036-L01-S029",
+        "N26-U036-L01-S030",
+        "N26-U036-L01-S031",
+        "N26-U036-L01-S032",
+        "N26-U036-L01-S033",
+        "N26-U036-L01-S034"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U036-L01-S035",
+        "N26-U036-L01-S036",
+        "N26-U036-L01-S037",
+        "N26-U036-L01-S038",
+        "N26-U036-L01-S039",
+        "N26-U036-L01-S040"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U036-L01-S041",
+        "N26-U036-L01-S042",
+        "N26-U036-L01-S043",
+        "N26-U036-L01-S044"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U036-L01-S045",
+        "N26-U036-L01-S046",
+        "N26-U036-L01-S047",
+        "N26-U036-L01-S048",
+        "N26-U036-L01-S049",
+        "N26-U036-L01-S050"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U036-L01-S001",
+      "course": "N26-U036-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象在街口找车站。今天认识大街、人行横道、环岛路口和火车。",
+      "display": "",
+      "audio": "N26A-b4cb3998f39548f7c05f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S002",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "大街，林荫大道。今天说道路类型，不加路名。",
+      "display": "avenue",
+      "audio": "N26A-826fc99f25c0304f65f6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S003",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "大街，林荫大道",
+      "display": "avenue",
+      "audio": "N26A-eeffbce20f47e57428d0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "大街，林荫大道",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S004",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "avenue",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C001",
+      "model": "N26A-eeffbce20f47e57428d0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S005",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "人行横道。明确供行人横过道路的位置。",
+      "display": "crosswalk",
+      "audio": "N26A-eaeec515ff096791192f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S006",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "人行横道",
+      "display": "crosswalk",
+      "audio": "N26A-29cf753a5ff405d1b496",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "人行横道",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S007",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "crosswalk",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C002",
+      "model": "N26A-29cf753a5ff405d1b496",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S008",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "环形交叉路口。先认识路口类型，不提供真实驾驶指挥。",
+      "display": "roundabout",
+      "audio": "N26A-9b4d622ea2649990db8d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S009",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "环形交叉路口",
+      "display": "roundabout",
+      "audio": "N26A-911cda1135679b00534a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "环形交叉路口",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S010",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "roundabout",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C003",
+      "model": "N26A-911cda1135679b00534a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S011",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "车站。本课与火车连用。",
+      "display": "station",
+      "audio": "N26A-f01cf33b40d706d44996",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S012",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "车站",
+      "display": "station",
+      "audio": "N26A-25ac8894b130b8ba8640",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "车站",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S013",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "station",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C004",
+      "model": "N26A-25ac8894b130b8ba8640",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S014",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "火车。",
+      "display": "train",
+      "audio": "N26A-40827930b404b9bdf0f9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S015",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "火车",
+      "display": "train",
+      "audio": "N26A-86335d76cc0fb461eae2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "火车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S016",
+      "course": "N26-U036-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "train",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C005",
+      "model": "N26A-86335d76cc0fb461eae2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L01-S017",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那条大街。所指道路已用中文说明。",
+      "display": "the avenue",
+      "audio": "N26A-379019bbc084c6bde25a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S018",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那条大街",
+      "display": "the avenue",
+      "audio": "N26A-a62630dd836faf48c772",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那条大街",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S019",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the avenue",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C006",
+      "model": "N26A-a62630dd836faf48c772",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S020",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那条人行横道。先听地点名。",
+      "display": "the crosswalk",
+      "audio": "N26A-99ca2680445b6b41fd9a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S021",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那条人行横道",
+      "display": "the crosswalk",
+      "audio": "N26A-5279c6baa902137a7d59",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那条人行横道",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S022",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the crosswalk",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C007",
+      "model": "N26A-5279c6baa902137a7d59",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S023",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那个环形交叉路口。先听完整短语。",
+      "display": "the roundabout",
+      "audio": "N26A-c5656be22952cb06ebdf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S024",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那个环形交叉路口",
+      "display": "the roundabout",
+      "audio": "N26A-383e007805bca43931b0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那个环形交叉路口",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S025",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the roundabout",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C008",
+      "model": "N26A-383e007805bca43931b0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S026",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那个火车站。火车限定车站类型。",
+      "display": "the train station",
+      "audio": "N26A-fb05bb569c4ea620269a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S027",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那个火车站",
+      "display": "the train station",
+      "audio": "N26A-de67549bdf0d358fa946",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那个火车站",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S028",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the train station",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C009",
+      "model": "N26A-de67549bdf0d358fa946",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S029",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "去那个火车站。仅想象路线排练。",
+      "display": "Go to the train station",
+      "audio": "N26A-227f3e481688189ba38c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S030",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "去那个火车站。",
+      "display": "Go to the train station.",
+      "audio": "N26A-0bd4c6cf409674689f3c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "去那个火车站。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S031",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Go to the train station.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C010",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S032",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "在人行横道处过街。仅口述地点说法，不要求实际过街或替代道路观察。",
+      "display": "Cross at the crosswalk",
+      "audio": "N26A-ae25086eb44a97267638",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S033",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "在人行横道处过街。",
+      "display": "Cross at the crosswalk.",
+      "audio": "N26A-1782119b550603d7e425",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "在人行横道处过街。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S034",
+      "course": "N26-U036-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Cross at the crosswalk.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L01-C011",
+      "model": "N26A-1782119b550603d7e425",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L01-S035",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "去那个火车站。",
+      "display": "Go to the train station.",
+      "audio": "N26A-0bd4c6cf409674689f3c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "去那个火车站。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U036-L01-S036",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "目的地是火车站，先听整句再接上。",
+      "display": "",
+      "audio": "N26A-ef0f6203548182f8883e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S037",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Go to the train station.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C012",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S038",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "那个环形交叉路口",
+      "display": "the roundabout",
+      "audio": "N26A-383e007805bca43931b0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那个环形交叉路口",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U036-L01-S039",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述路口是环形交叉路口，先听短语再说。",
+      "display": "",
+      "audio": "N26A-db04ba1b8c0d812fbdb7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S040",
+      "course": "N26-U036-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the roundabout",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C013",
+      "model": "N26A-383e007805bca43931b0",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S041",
+      "course": "N26-U036-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说那条大街，看提示表达。",
+      "display": "",
+      "audio": "N26A-a49e037b101f33eeb081",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S042",
+      "course": "N26-U036-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the avenue",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C014",
+      "model": "N26A-a62630dd836faf48c772",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S043",
+      "course": "N26-U036-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说那条人行横道，看提示表达。",
+      "display": "",
+      "audio": "N26A-ddf7ee4ef7c0ea13e0aa",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S044",
+      "course": "N26-U036-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the crosswalk",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C015",
+      "model": "N26A-5279c6baa902137a7d59",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S045",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友用中文问，接下来让我去哪儿？想象目的地是火车站，你告诉朋友去那里。",
+      "display": "",
+      "audio": "N26A-fce0d49f380fc5edf953",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S046",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Go to the train station.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C016",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S047",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换到口述过街位置的练习，你说在人行横道处过街。",
+      "display": "",
+      "audio": "N26A-aaa2759d57ae24ffb8b9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S048",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Cross at the crosswalk.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L01-C017",
+      "model": "N26A-1782119b550603d7e425",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U036-L01-S049",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L01-S050",
+      "course": "N26-U036-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U036-L01-C001",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "大街，林荫大道",
+      "answers": [
+        "avenue"
+      ],
+      "hint": "avenue",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S004",
+      "help": "N26-U036-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C002",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "人行横道",
+      "answers": [
+        "crosswalk"
+      ],
+      "hint": "crosswalk",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S007",
+      "help": "N26-U036-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C003",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "环形交叉路口",
+      "answers": [
+        "roundabout"
+      ],
+      "hint": "roundabout",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S010",
+      "help": "N26-U036-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C004",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "车站",
+      "answers": [
+        "station"
+      ],
+      "hint": "station",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S013",
+      "help": "N26-U036-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C005",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "火车",
+      "answers": [
+        "train"
+      ],
+      "hint": "train",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S016",
+      "help": "N26-U036-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C006",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那条大街",
+      "answers": [
+        "the avenue"
+      ],
+      "hint": "the avenue",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S019",
+      "help": "N26-U036-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C007",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那条人行横道",
+      "answers": [
+        "the crosswalk"
+      ],
+      "hint": "the crosswalk",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S022",
+      "help": "N26-U036-L01-S022-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C008",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那个环形交叉路口",
+      "answers": [
+        "the roundabout"
+      ],
+      "hint": "the roundabout",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S025",
+      "help": "N26-U036-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C009",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那个火车站",
+      "answers": [
+        "the train station"
+      ],
+      "hint": "the train station",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S028",
+      "help": "N26-U036-L01-S028-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C010",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "去那个火车站。",
+      "answers": [
+        "Go to the train station."
+      ],
+      "hint": "Go to the train station.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S031",
+      "help": "N26-U036-L01-S031-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C011",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在人行横道处过街。",
+      "answers": [
+        "Cross at the crosswalk."
+      ],
+      "hint": "Cross at the crosswalk.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S034",
+      "help": "N26-U036-L01-S034-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C012",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "目的地是火车站，先听整句再接上。",
+      "answers": [
+        "Go to the train station."
+      ],
+      "hint": "Go to the train station.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S037",
+      "help": "N26-U036-L01-S037-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C013",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述路口是环形交叉路口，先听短语再说。",
+      "answers": [
+        "the roundabout"
+      ],
+      "hint": "the roundabout",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S040",
+      "help": "N26-U036-L01-S040-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C014",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说那条大街，看提示表达。",
+      "answers": [
+        "the avenue"
+      ],
+      "hint": "the avenue",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S042",
+      "help": "N26-U036-L01-S042-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C015",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说那条人行横道，看提示表达。",
+      "answers": [
+        "the crosswalk"
+      ],
+      "hint": "the crosswalk",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L01-S044",
+      "help": "N26-U036-L01-S044-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C016",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友用中文问，接下来让我去哪儿？想象目的地是火车站，你告诉朋友去那里。",
+      "answers": [
+        "Go to the train station."
+      ],
+      "hint": "Go to the train station.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U036-L01-S046",
+      "help": "N26-U036-L01-S046-HELP"
+    },
+    {
+      "id": "N26-U036-L01-C017",
+      "course": "N26-U036-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换到口述过街位置的练习，你说在人行横道处过街。",
+      "answers": [
+        "Cross at the crosswalk."
+      ],
+      "hint": "Cross at the crosswalk.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U036-L01-S048",
+      "help": "N26-U036-L01-S048-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U036-L01-S004-HELP",
+      "forStep": "N26-U036-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eeffbce20f47e57428d0",
+      "display": "avenue",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S007-HELP",
+      "forStep": "N26-U036-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-29cf753a5ff405d1b496",
+      "display": "crosswalk",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S010-HELP",
+      "forStep": "N26-U036-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-911cda1135679b00534a",
+      "display": "roundabout",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S013-HELP",
+      "forStep": "N26-U036-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-25ac8894b130b8ba8640",
+      "display": "station",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S016-HELP",
+      "forStep": "N26-U036-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-86335d76cc0fb461eae2",
+      "display": "train",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S019-HELP",
+      "forStep": "N26-U036-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a62630dd836faf48c772",
+      "display": "the avenue",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S022-HELP",
+      "forStep": "N26-U036-L01-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5279c6baa902137a7d59",
+      "display": "the crosswalk",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S025-HELP",
+      "forStep": "N26-U036-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-383e007805bca43931b0",
+      "display": "the roundabout",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S028-HELP",
+      "forStep": "N26-U036-L01-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-de67549bdf0d358fa946",
+      "display": "the train station",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S031-HELP",
+      "forStep": "N26-U036-L01-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "display": "Go to the train station.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S034-HELP",
+      "forStep": "N26-U036-L01-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1782119b550603d7e425",
+      "display": "Cross at the crosswalk.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S037-HELP",
+      "forStep": "N26-U036-L01-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "display": "Go to the train station.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S040-HELP",
+      "forStep": "N26-U036-L01-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-383e007805bca43931b0",
+      "display": "the roundabout",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S042-HELP",
+      "forStep": "N26-U036-L01-S042",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a62630dd836faf48c772",
+      "display": "the avenue",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S042",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S044-HELP",
+      "forStep": "N26-U036-L01-S044",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5279c6baa902137a7d59",
+      "display": "the crosswalk",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S044",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S046-HELP",
+      "forStep": "N26-U036-L01-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0bd4c6cf409674689f3c",
+      "display": "Go to the train station.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L01-S048-HELP",
+      "forStep": "N26-U036-L01-S048",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1782119b550603d7e425",
+      "display": "Cross at the crosswalk.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L01-S048",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "avenue",
+      "word": "avenue",
+      "ipa": "/ˈævənuː/",
+      "meaning": "大街，林荫大道",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-eeffbce20f47e57428d0"
+    },
+    {
+      "key": "crosswalk",
+      "word": "crosswalk",
+      "ipa": "/ˈkrɔːswɔːk/",
+      "meaning": "人行横道",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-29cf753a5ff405d1b496"
+    },
+    {
+      "key": "roundabout",
+      "word": "roundabout",
+      "ipa": "/ˈraʊndəbaʊt/",
+      "meaning": "环形交叉路口",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-911cda1135679b00534a"
+    },
+    {
+      "key": "station",
+      "word": "station",
+      "ipa": "/ˈsteɪʃən/",
+      "meaning": "车站",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-25ac8894b130b8ba8640"
+    },
+    {
+      "key": "train",
+      "word": "train",
+      "ipa": "/treɪn/",
+      "meaning": "火车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-86335d76cc0fb461eae2"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "go",
+      "word": "go",
+      "ipa": "/ɡoʊ/",
+      "meaning": "去，朝另一个地方离开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ee5295cc979e8aab87bd"
+    },
+    {
+      "key": "to",
+      "word": "to",
+      "ipa": "/tuː/",
+      "meaning": "到，向",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-88ae8049c1f9bdf7fcca"
+    },
+    {
+      "key": "cross",
+      "word": "cross",
+      "ipa": "/krɔːs/",
+      "meaning": "横穿，穿过",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e088d4dbab41bb01653d"
+    },
+    {
+      "key": "at",
+      "word": "at",
+      "ipa": "/æt/",
+      "meaning": "在某个地点",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a8d0f4911a7e1d6771b5"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "train只火车，roundabout只路口；所有道路行为仅语言排练非实时指路。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "cross",
+      "sourceCourse": "N26-U016-L05",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 38,
+    "availableExactAssets": 38,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-b4cb3998f39548f7c05f",
+      "N26A-826fc99f25c0304f65f6",
+      "N26A-eeffbce20f47e57428d0",
+      "N26A-eaeec515ff096791192f",
+      "N26A-29cf753a5ff405d1b496",
+      "N26A-9b4d622ea2649990db8d",
+      "N26A-911cda1135679b00534a",
+      "N26A-f01cf33b40d706d44996",
+      "N26A-25ac8894b130b8ba8640",
+      "N26A-40827930b404b9bdf0f9",
+      "N26A-86335d76cc0fb461eae2",
+      "N26A-379019bbc084c6bde25a",
+      "N26A-a62630dd836faf48c772",
+      "N26A-99ca2680445b6b41fd9a",
+      "N26A-5279c6baa902137a7d59",
+      "N26A-c5656be22952cb06ebdf",
+      "N26A-383e007805bca43931b0",
+      "N26A-fb05bb569c4ea620269a",
+      "N26A-de67549bdf0d358fa946",
+      "N26A-227f3e481688189ba38c",
+      "N26A-0bd4c6cf409674689f3c",
+      "N26A-ae25086eb44a97267638",
+      "N26A-1782119b550603d7e425",
+      "N26A-ef0f6203548182f8883e",
+      "N26A-db04ba1b8c0d812fbdb7",
+      "N26A-a49e037b101f33eeb081",
+      "N26A-ddf7ee4ef7c0ea13e0aa",
+      "N26A-fce0d49f380fc5edf953",
+      "N26A-aaa2759d57ae24ffb8b9",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-ee5295cc979e8aab87bd",
+      "N26A-88ae8049c1f9bdf7fcca",
+      "N26A-e088d4dbab41bb01653d",
+      "N26A-a8d0f4911a7e1d6771b5",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

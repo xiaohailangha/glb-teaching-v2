@@ -195,7 +195,7 @@ void main() {
     );
     expect(
       bars.any(
-        (b) => b.constraints!.maxHeight > 2 && b.constraints!.maxHeight <= 9,
+        (b) => b.constraints!.maxHeight > 22 && b.constraints!.maxHeight <= 40,
       ),
       isTrue,
     );
@@ -204,7 +204,7 @@ void main() {
     expect(
       tester
           .widgetList<AnimatedContainer>(find.byType(AnimatedContainer))
-          .every((b) => b.constraints!.maxHeight == 2),
+          .every((b) => b.constraints!.maxHeight >= 10 && b.constraints!.maxHeight <= 22),
       isTrue,
     );
   });

@@ -1,0 +1,1623 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit063-v1",
+  "courseId": "N26-U063-L10",
+  "unitId": "N26-U063",
+  "category": "身体与健康",
+  "title": "包扎与服药",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "30b0889cb93609e5c7534ad999fea321ddcaa17ae619ecd132612ca53476b401",
+  "newWords": [
+    "bandage",
+    "plaster",
+    "swallow",
+    "internal"
+  ],
+  "prerequisites": [
+    "N26-U063-L09"
+  ],
+  "goal": "围绕“使用说明词”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "bandage",
+        "surface": "bandage",
+        "meaning": "绷带",
+        "kind": "new_word"
+      },
+      {
+        "key": "plaster",
+        "surface": "plaster",
+        "meaning": "创可贴，贴在小伤口上的敷贴",
+        "kind": "new_word"
+      },
+      {
+        "key": "swallow",
+        "surface": "swallow",
+        "meaning": "吞咽",
+        "kind": "new_word"
+      },
+      {
+        "key": "internal",
+        "surface": "internal",
+        "meaning": "内部的，身体内部的",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U063-L10-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U063-L10-S002",
+        "N26-U063-L10-S003",
+        "N26-U063-L10-S004",
+        "N26-U063-L10-S005",
+        "N26-U063-L10-S006",
+        "N26-U063-L10-S007",
+        "N26-U063-L10-S008",
+        "N26-U063-L10-S009",
+        "N26-U063-L10-S010",
+        "N26-U063-L10-S011",
+        "N26-U063-L10-S012",
+        "N26-U063-L10-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U063-L10-S014",
+        "N26-U063-L10-S015",
+        "N26-U063-L10-S016",
+        "N26-U063-L10-S017",
+        "N26-U063-L10-S018",
+        "N26-U063-L10-S019",
+        "N26-U063-L10-S020",
+        "N26-U063-L10-S021",
+        "N26-U063-L10-S022",
+        "N26-U063-L10-S023",
+        "N26-U063-L10-S024",
+        "N26-U063-L10-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U063-L10-S026",
+        "N26-U063-L10-S027",
+        "N26-U063-L10-S028",
+        "N26-U063-L10-S029",
+        "N26-U063-L10-S030",
+        "N26-U063-L10-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U063-L10-S032",
+        "N26-U063-L10-S033",
+        "N26-U063-L10-S034",
+        "N26-U063-L10-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U063-L10-S036",
+        "N26-U063-L10-S037",
+        "N26-U063-L10-S038",
+        "N26-U063-L10-S039",
+        "N26-U063-L10-S040",
+        "N26-U063-L10-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U063-L10-S001",
+      "course": "N26-U063-L10",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象了解包扎用品和服药动作。今天认识绷带、创可贴、吞咽与内部的特点，不进行实际操作。",
+      "display": "",
+      "audio": "N26A-036f464e46d5dad3737c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S002",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "绷带。这里说绷带，先听完整的声音。",
+      "display": "bandage",
+      "audio": "N26A-1b095b3af8b33b438795",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S003",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "绷带",
+      "display": "bandage",
+      "audio": "N26A-7bd063517b50940c91bb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "绷带",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S004",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "bandage",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C001",
+      "model": "N26A-7bd063517b50940c91bb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S005",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "创可贴，贴在小伤口上的敷贴。这种称呼常见于英式英语，本课保留美式发音。",
+      "display": "plaster",
+      "audio": "N26A-ddc1e0561736ba6f73b5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S006",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "创可贴，贴在小伤口上的敷贴",
+      "display": "plaster",
+      "audio": "N26A-bae47325c0080985ff09",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "创可贴，贴在小伤口上的敷贴",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S007",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "plaster",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C002",
+      "model": "N26A-bae47325c0080985ff09",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S008",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "吞咽。这里说把食物或药物咽下去这个动作，先听完整声音。",
+      "display": "swallow",
+      "audio": "N26A-1af07449afb67484a9e7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S009",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "吞咽",
+      "display": "swallow",
+      "audio": "N26A-ac1246097113db4b0340",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "吞咽",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S010",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "swallow",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C003",
+      "model": "N26A-ac1246097113db4b0340",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S011",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "内部的，身体内部的。把内部的和压力连成短语，先听整体。",
+      "display": "internal",
+      "audio": "N26A-56e9401852b31119466f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S012",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "内部的，身体内部的",
+      "display": "internal",
+      "audio": "N26A-7bfd49cbd70cb3d45d65",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "内部的，身体内部的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S013",
+      "course": "N26-U063-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "internal",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C004",
+      "model": "N26A-7bfd49cbd70cb3d45d65",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U063-L10-S014",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一条绷带。先听这一组，再连起来说。",
+      "display": "a bandage",
+      "audio": "N26A-6bf389554f258f063fc7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S015",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一条绷带",
+      "display": "a bandage",
+      "audio": "N26A-e583af53abda50d49674",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一条绷带",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S016",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a bandage",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C005",
+      "model": "N26A-e583af53abda50d49674",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S017",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一片创可贴。这种称呼常见于英式英语，本课保留美式发音。",
+      "display": "a plaster",
+      "audio": "N26A-3cd138f3e64dcec41467",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S018",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一片创可贴",
+      "display": "a plaster",
+      "audio": "N26A-016fd9c2473f19597198",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一片创可贴",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S019",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a plaster",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C006",
+      "model": "N26A-016fd9c2473f19597198",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S020",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "吞下一粒胶囊。这里说把食物或药物咽下去这个动作，先听完整声音。",
+      "display": "swallow a capsule",
+      "audio": "N26A-1c3c5ae3af6faa2b994b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S021",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "吞下一粒胶囊",
+      "display": "swallow a capsule",
+      "audio": "N26A-03784b83cf3f68ac2e21",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "吞下一粒胶囊",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S022",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "swallow a capsule",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C007",
+      "model": "N26A-03784b83cf3f68ac2e21",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S023",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "身体内部的压力。把内部的和压力连成短语，先听整体。",
+      "display": "internal pressure",
+      "audio": "N26A-63453419e37a8fe76263",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S024",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "身体内部的压力",
+      "display": "internal pressure",
+      "audio": "N26A-72e9eda52d66008d2c7c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "身体内部的压力",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S025",
+      "course": "N26-U063-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "internal pressure",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U063-L10-C008",
+      "model": "N26A-72e9eda52d66008d2c7c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U063-L10-S026",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一条绷带",
+      "display": "a bandage",
+      "audio": "N26A-e583af53abda50d49674",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一条绷带",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U063-L10-S027",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述用品是一条绷带，先听短语。",
+      "display": "",
+      "audio": "N26A-7699b8518277228c7383",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S028",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a bandage",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C009",
+      "model": "N26A-e583af53abda50d49674",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S029",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一片创可贴",
+      "display": "a plaster",
+      "audio": "N26A-016fd9c2473f19597198",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一片创可贴",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U063-L10-S030",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述用品是创可贴，先听短语。",
+      "display": "",
+      "audio": "N26A-610e49ba4e7373df1db1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S031",
+      "course": "N26-U063-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a plaster",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C010",
+      "model": "N26A-016fd9c2473f19597198",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S032",
+      "course": "N26-U063-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一条绷带。",
+      "display": "",
+      "audio": "N26A-a7b3da250831aa87b5ba",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S033",
+      "course": "N26-U063-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a bandage",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C011",
+      "model": "N26A-e583af53abda50d49674",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S034",
+      "course": "N26-U063-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一片创可贴。",
+      "display": "",
+      "audio": "N26A-f1000700b1cb54254839",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S035",
+      "course": "N26-U063-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a plaster",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C012",
+      "model": "N26A-016fd9c2473f19597198",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S036",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象核对包扎用品名称，你说明一条绷带。",
+      "display": "",
+      "audio": "N26A-4cb4f0be8c0e54af1a48",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S037",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a bandage",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C013",
+      "model": "N26A-e583af53abda50d49674",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S038",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对用品名字，你用本课说法说一片创可贴。",
+      "display": "",
+      "audio": "N26A-9478f37c73377e089e25",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S039",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a plaster",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U063-L10-C014",
+      "model": "N26A-016fd9c2473f19597198",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U063-L10-S040",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U063-L10-S041",
+      "course": "N26-U063-L10",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U063-L10-C001",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "绷带",
+      "answers": [
+        "bandage"
+      ],
+      "hint": "bandage",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S004",
+      "help": "N26-U063-L10-S004-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C002",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "创可贴，贴在小伤口上的敷贴",
+      "answers": [
+        "plaster"
+      ],
+      "hint": "plaster",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S007",
+      "help": "N26-U063-L10-S007-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C003",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "吞咽",
+      "answers": [
+        "swallow"
+      ],
+      "hint": "swallow",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S010",
+      "help": "N26-U063-L10-S010-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C004",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "内部的，身体内部的",
+      "answers": [
+        "internal"
+      ],
+      "hint": "internal",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S013",
+      "help": "N26-U063-L10-S013-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C005",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一条绷带",
+      "answers": [
+        "a bandage"
+      ],
+      "hint": "a bandage",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S016",
+      "help": "N26-U063-L10-S016-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C006",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一片创可贴",
+      "answers": [
+        "a plaster"
+      ],
+      "hint": "a plaster",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S019",
+      "help": "N26-U063-L10-S019-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C007",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "吞下一粒胶囊",
+      "answers": [
+        "swallow a capsule"
+      ],
+      "hint": "swallow a capsule",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S022",
+      "help": "N26-U063-L10-S022-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C008",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "身体内部的压力",
+      "answers": [
+        "internal pressure"
+      ],
+      "hint": "internal pressure",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S025",
+      "help": "N26-U063-L10-S025-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C009",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述用品是一条绷带，先听短语。",
+      "answers": [
+        "a bandage"
+      ],
+      "hint": "a bandage",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S028",
+      "help": "N26-U063-L10-S028-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C010",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述用品是创可贴，先听短语。",
+      "answers": [
+        "a plaster"
+      ],
+      "hint": "a plaster",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S031",
+      "help": "N26-U063-L10-S031-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C011",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一条绷带。",
+      "answers": [
+        "a bandage"
+      ],
+      "hint": "a bandage",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S033",
+      "help": "N26-U063-L10-S033-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C012",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一片创可贴。",
+      "answers": [
+        "a plaster"
+      ],
+      "hint": "a plaster",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U063-L10-S035",
+      "help": "N26-U063-L10-S035-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C013",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象核对包扎用品名称，你说明一条绷带。",
+      "answers": [
+        "a bandage"
+      ],
+      "hint": "a bandage",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U063-L10-S037",
+      "help": "N26-U063-L10-S037-HELP"
+    },
+    {
+      "id": "N26-U063-L10-C014",
+      "course": "N26-U063-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对用品名字，你用本课说法说一片创可贴。",
+      "answers": [
+        "a plaster"
+      ],
+      "hint": "a plaster",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U063-L10-S039",
+      "help": "N26-U063-L10-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U063-L10-S004-HELP",
+      "forStep": "N26-U063-L10-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7bd063517b50940c91bb",
+      "display": "bandage",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S007-HELP",
+      "forStep": "N26-U063-L10-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bae47325c0080985ff09",
+      "display": "plaster",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S010-HELP",
+      "forStep": "N26-U063-L10-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ac1246097113db4b0340",
+      "display": "swallow",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S013-HELP",
+      "forStep": "N26-U063-L10-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7bfd49cbd70cb3d45d65",
+      "display": "internal",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S016-HELP",
+      "forStep": "N26-U063-L10-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e583af53abda50d49674",
+      "display": "a bandage",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S019-HELP",
+      "forStep": "N26-U063-L10-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-016fd9c2473f19597198",
+      "display": "a plaster",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S022-HELP",
+      "forStep": "N26-U063-L10-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-03784b83cf3f68ac2e21",
+      "display": "swallow a capsule",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S025-HELP",
+      "forStep": "N26-U063-L10-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-72e9eda52d66008d2c7c",
+      "display": "internal pressure",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S028-HELP",
+      "forStep": "N26-U063-L10-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e583af53abda50d49674",
+      "display": "a bandage",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S031-HELP",
+      "forStep": "N26-U063-L10-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-016fd9c2473f19597198",
+      "display": "a plaster",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S033-HELP",
+      "forStep": "N26-U063-L10-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e583af53abda50d49674",
+      "display": "a bandage",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S035-HELP",
+      "forStep": "N26-U063-L10-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-016fd9c2473f19597198",
+      "display": "a plaster",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S037-HELP",
+      "forStep": "N26-U063-L10-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e583af53abda50d49674",
+      "display": "a bandage",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U063-L10-S039-HELP",
+      "forStep": "N26-U063-L10-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-016fd9c2473f19597198",
+      "display": "a plaster",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U063-L10-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "bandage",
+      "word": "bandage",
+      "ipa": "/ˈbændɪdʒ/",
+      "meaning": "绷带",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7bd063517b50940c91bb"
+    },
+    {
+      "key": "plaster",
+      "word": "plaster",
+      "ipa": "/ˈplæstər/",
+      "meaning": "创可贴，贴在小伤口上的敷贴",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-bae47325c0080985ff09"
+    },
+    {
+      "key": "swallow",
+      "word": "swallow",
+      "ipa": "/ˈswɑːloʊ/",
+      "meaning": "吞咽",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac1246097113db4b0340"
+    },
+    {
+      "key": "internal",
+      "word": "internal",
+      "ipa": "/ɪnˈtɜːrnəl/",
+      "meaning": "内部的，身体内部的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7bfd49cbd70cb3d45d65"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "capsule",
+      "word": "capsule",
+      "ipa": "/ˈkæpsəl/",
+      "meaning": "胶囊",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b3bcd6dc14cd8dd83e63"
+    },
+    {
+      "key": "pressure",
+      "word": "pressure",
+      "ipa": "/ˈprɛʃər/",
+      "meaning": "压力",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2baf2211fc8b604b1fe0"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：bandage=绷带；plaster=创可贴，贴在小伤口上的敷贴；swallow=吞咽；internal=内部的，身体内部的。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 internal只接此前已教的pressure，不将medicine从药物暗扩为医学学科。 r4语义整改：U040063-R046，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-036f464e46d5dad3737c",
+      "N26A-1b095b3af8b33b438795",
+      "N26A-7bd063517b50940c91bb",
+      "N26A-ddc1e0561736ba6f73b5",
+      "N26A-bae47325c0080985ff09",
+      "N26A-1af07449afb67484a9e7",
+      "N26A-ac1246097113db4b0340",
+      "N26A-56e9401852b31119466f",
+      "N26A-7bfd49cbd70cb3d45d65",
+      "N26A-6bf389554f258f063fc7",
+      "N26A-e583af53abda50d49674",
+      "N26A-3cd138f3e64dcec41467",
+      "N26A-016fd9c2473f19597198",
+      "N26A-1c3c5ae3af6faa2b994b",
+      "N26A-03784b83cf3f68ac2e21",
+      "N26A-63453419e37a8fe76263",
+      "N26A-72e9eda52d66008d2c7c",
+      "N26A-7699b8518277228c7383",
+      "N26A-610e49ba4e7373df1db1",
+      "N26A-a7b3da250831aa87b5ba",
+      "N26A-f1000700b1cb54254839",
+      "N26A-4cb4f0be8c0e54af1a48",
+      "N26A-9478f37c73377e089e25",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-b3bcd6dc14cd8dd83e63",
+      "N26A-2baf2211fc8b604b1fe0",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

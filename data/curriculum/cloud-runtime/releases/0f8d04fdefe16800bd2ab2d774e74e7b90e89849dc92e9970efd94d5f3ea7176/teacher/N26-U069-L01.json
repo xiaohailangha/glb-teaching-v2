@@ -1,0 +1,980 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit069-v1",
+  "courseId": "N26-U069-L01",
+  "unitId": "N26-U069",
+  "category": "自然与生活环境",
+  "title": "让物品循环利用",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "9f9e8de10f75cc87ee1a15f9a8db4cd0d3b4ad93b2705907d26566656cec7225",
+  "newWords": [
+    "recycle"
+  ],
+  "prerequisites": [
+    "N26-U001",
+    "N26-U023",
+    "N26-U024",
+    "N26-U025"
+  ],
+  "goal": "在“回收利用 1”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "recycle",
+        "surface": "recycle",
+        "meaning": "回收利用",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U069-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U069-L01-S002",
+        "N26-U069-L01-S003",
+        "N26-U069-L01-S004"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U069-L01-S005",
+        "N26-U069-L01-S006",
+        "N26-U069-L01-S007"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U069-L01-S008",
+        "N26-U069-L01-S009",
+        "N26-U069-L01-S010",
+        "N26-U069-L01-S011",
+        "N26-U069-L01-S012",
+        "N26-U069-L01-S013"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U069-L01-S014",
+        "N26-U069-L01-S015",
+        "N26-U069-L01-S016",
+        "N26-U069-L01-S017"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U069-L01-S018",
+        "N26-U069-L01-S019",
+        "N26-U069-L01-S020",
+        "N26-U069-L01-S021",
+        "N26-U069-L01-S022",
+        "N26-U069-L01-S023"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U069-L01-S001",
+      "course": "N26-U069-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象整理用过的纸，今天练习说可以把纸回收利用。",
+      "display": "",
+      "audio": "N26A-466360f662aa1930a68e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S002",
+      "course": "N26-U069-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "回收利用。指把材料回收后再利用。",
+      "display": "recycle",
+      "audio": "N26A-a2f0a6a0e300d5007c1b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S003",
+      "course": "N26-U069-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "回收利用",
+      "display": "recycle",
+      "audio": "N26A-059d849313db7b559522",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "回收利用",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U069-L01-S004",
+      "course": "N26-U069-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "recycle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U069-L01-C001",
+      "model": "N26A-059d849313db7b559522",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U069-L01-S005",
+      "course": "N26-U069-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可以回收利用纸。指把材料回收后再利用。",
+      "display": "I can recycle paper",
+      "audio": "N26A-05c5742bb6fac7b4e355",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S006",
+      "course": "N26-U069-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可以回收利用纸。",
+      "display": "I can recycle paper.",
+      "audio": "N26A-a8b7613d01d9e68d6b5d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以回收利用纸。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U069-L01-S007",
+      "course": "N26-U069-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U069-L01-C002",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U069-L01-S008",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可以回收利用纸。",
+      "display": "I can recycle paper.",
+      "audio": "N26A-a8b7613d01d9e68d6b5d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以回收利用纸。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U069-L01-S009",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "朋友问你能怎样处理用过的纸，先听再说。",
+      "display": "",
+      "audio": "N26A-0b625eab915b5e013ecf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S010",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C003",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S011",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可以回收利用纸。",
+      "display": "I can recycle paper.",
+      "audio": "N26A-a8b7613d01d9e68d6b5d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以回收利用纸。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U069-L01-S012",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "话题仍是纸的回收，听完整句接上。",
+      "display": "",
+      "audio": "N26A-7570b74cc48daf94ad3b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S013",
+      "course": "N26-U069-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C004",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S014",
+      "course": "N26-U069-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "要表达可以回收纸，看提示练习。",
+      "display": "",
+      "audio": "N26A-7e6a4d93d7d0172b315a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S015",
+      "course": "N26-U069-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C005",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S016",
+      "course": "N26-U069-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "把可行的回收行动说完整，看整句说。",
+      "display": "",
+      "audio": "N26A-bb229038cea2891cbcc2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S017",
+      "course": "N26-U069-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C006",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S018",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象一起整理纸张，你主动提出可以回收纸。",
+      "display": "",
+      "audio": "N26A-3103884deeaf6e7dd021",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S019",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C007",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S020",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换一回环保行动讨论，你说出这项能力。",
+      "display": "",
+      "audio": "N26A-580828471cdb567bc9ba",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S021",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I can recycle paper.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U069-L01-C008",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U069-L01-S022",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U069-L01-S023",
+      "course": "N26-U069-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U069-L01-C001",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "回收利用",
+      "answers": [
+        "recycle"
+      ],
+      "hint": "recycle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S004",
+      "help": "N26-U069-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C002",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可以回收利用纸。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S007",
+      "help": "N26-U069-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C003",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友问你能怎样处理用过的纸，先听再说。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S010",
+      "help": "N26-U069-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C004",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "话题仍是纸的回收，听完整句接上。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S013",
+      "help": "N26-U069-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C005",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "要表达可以回收纸，看提示练习。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S015",
+      "help": "N26-U069-L01-S015-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C006",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把可行的回收行动说完整，看整句说。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U069-L01-S017",
+      "help": "N26-U069-L01-S017-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C007",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象一起整理纸张，你主动提出可以回收纸。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U069-L01-S019",
+      "help": "N26-U069-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U069-L01-C008",
+      "course": "N26-U069-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换一回环保行动讨论，你说出这项能力。",
+      "answers": [
+        "I can recycle paper."
+      ],
+      "hint": "I can recycle paper.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U069-L01-S021",
+      "help": "N26-U069-L01-S021-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U069-L01-S004-HELP",
+      "forStep": "N26-U069-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-059d849313db7b559522",
+      "display": "recycle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S007-HELP",
+      "forStep": "N26-U069-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S010-HELP",
+      "forStep": "N26-U069-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S013-HELP",
+      "forStep": "N26-U069-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S015-HELP",
+      "forStep": "N26-U069-L01-S015",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S015",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S017-HELP",
+      "forStep": "N26-U069-L01-S017",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S017",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S019-HELP",
+      "forStep": "N26-U069-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U069-L01-S021-HELP",
+      "forStep": "N26-U069-L01-S021",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a8b7613d01d9e68d6b5d",
+      "display": "I can recycle paper.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U069-L01-S021",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "recycle",
+      "word": "recycle",
+      "ipa": "/ˌriˈsaɪkəl/",
+      "meaning": "回收利用",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-059d849313db7b559522"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "can",
+      "word": "can",
+      "ipa": "/kæn/",
+      "meaning": "能，可以",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac940722cc38a8e45268"
+    },
+    {
+      "key": "paper",
+      "word": "paper",
+      "ipa": "/ˈpeɪpər/",
+      "meaning": "纸",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3fa1c22054daabaea2d8"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "recycle限材料回收再利用，不等同于简单重复使用；can表示可行行动，不假称已经回收；paper为更早词保护。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "can",
+      "sourceCourse": "N26-U004-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "paper",
+      "sourceCourse": "N26-U039-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 18,
+    "availableExactAssets": 18,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-466360f662aa1930a68e",
+      "N26A-a2f0a6a0e300d5007c1b",
+      "N26A-059d849313db7b559522",
+      "N26A-05c5742bb6fac7b4e355",
+      "N26A-a8b7613d01d9e68d6b5d",
+      "N26A-0b625eab915b5e013ecf",
+      "N26A-7570b74cc48daf94ad3b",
+      "N26A-7e6a4d93d7d0172b315a",
+      "N26A-bb229038cea2891cbcc2",
+      "N26A-3103884deeaf6e7dd021",
+      "N26A-580828471cdb567bc9ba",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-ac940722cc38a8e45268",
+      "N26A-3fa1c22054daabaea2d8",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

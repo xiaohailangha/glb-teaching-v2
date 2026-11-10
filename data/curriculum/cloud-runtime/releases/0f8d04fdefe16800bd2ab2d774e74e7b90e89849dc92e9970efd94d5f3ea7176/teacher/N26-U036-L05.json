@@ -1,0 +1,2312 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit036-v1",
+  "courseId": "N26-U036-L05",
+  "unitId": "N26-U036",
+  "category": "城市与交通",
+  "title": "看时刻表坐公交",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "82ba09d451e282e8ea5e04769202425406802bf59c8318efd950c49ab7b83d2c",
+  "newWords": [
+    "bus",
+    "local",
+    "timetable",
+    "line",
+    "route",
+    "driver",
+    "drive"
+  ],
+  "prerequisites": [
+    "N26-U036-L04"
+  ],
+  "goal": "在“公交出行／路线与驾驶 4”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "bus",
+        "surface": "bus",
+        "meaning": "公交车",
+        "kind": "new_word"
+      },
+      {
+        "key": "local",
+        "surface": "local",
+        "meaning": "本地的",
+        "kind": "new_word"
+      },
+      {
+        "key": "timetable",
+        "surface": "timetable",
+        "meaning": "时刻表",
+        "kind": "new_word"
+      },
+      {
+        "key": "line",
+        "surface": "line",
+        "meaning": "线路",
+        "kind": "new_word"
+      },
+      {
+        "key": "route",
+        "surface": "route",
+        "meaning": "路线",
+        "kind": "new_word"
+      },
+      {
+        "key": "driver",
+        "surface": "driver",
+        "meaning": "司机",
+        "kind": "new_word"
+      },
+      {
+        "key": "drive",
+        "surface": "drive",
+        "meaning": "驾驶，开车",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "中文口述或明确想象情境；无虚构实际展示资产。卡住恢复完整示范，提示练习不计独立掌握。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U036-L05-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U036-L05-S002",
+        "N26-U036-L05-S003",
+        "N26-U036-L05-S004",
+        "N26-U036-L05-S005",
+        "N26-U036-L05-S006",
+        "N26-U036-L05-S007",
+        "N26-U036-L05-S008",
+        "N26-U036-L05-S009",
+        "N26-U036-L05-S010",
+        "N26-U036-L05-S011",
+        "N26-U036-L05-S012",
+        "N26-U036-L05-S013",
+        "N26-U036-L05-S014",
+        "N26-U036-L05-S015",
+        "N26-U036-L05-S016",
+        "N26-U036-L05-S017",
+        "N26-U036-L05-S018",
+        "N26-U036-L05-S019",
+        "N26-U036-L05-S020",
+        "N26-U036-L05-S021",
+        "N26-U036-L05-S022"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U036-L05-S023",
+        "N26-U036-L05-S024",
+        "N26-U036-L05-S025",
+        "N26-U036-L05-S026",
+        "N26-U036-L05-S027",
+        "N26-U036-L05-S028",
+        "N26-U036-L05-S029",
+        "N26-U036-L05-S030",
+        "N26-U036-L05-S031",
+        "N26-U036-L05-S032",
+        "N26-U036-L05-S033",
+        "N26-U036-L05-S034",
+        "N26-U036-L05-S035",
+        "N26-U036-L05-S036",
+        "N26-U036-L05-S037",
+        "N26-U036-L05-S038",
+        "N26-U036-L05-S039",
+        "N26-U036-L05-S040",
+        "N26-U036-L05-S041",
+        "N26-U036-L05-S042",
+        "N26-U036-L05-S043"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U036-L05-S044",
+        "N26-U036-L05-S045",
+        "N26-U036-L05-S046",
+        "N26-U036-L05-S047",
+        "N26-U036-L05-S048",
+        "N26-U036-L05-S049"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U036-L05-S050",
+        "N26-U036-L05-S051",
+        "N26-U036-L05-S052",
+        "N26-U036-L05-S053"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U036-L05-S054",
+        "N26-U036-L05-S055",
+        "N26-U036-L05-S056",
+        "N26-U036-L05-S057",
+        "N26-U036-L05-S058",
+        "N26-U036-L05-S059"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U036-L05-S001",
+      "course": "N26-U036-L05",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天想象乘公交。先听公交车、时刻表和路线，再说司机与开车。",
+      "display": "",
+      "audio": "N26A-5f5b2d52996f87483f1c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S002",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "公交车。先认识交通工具。",
+      "display": "bus",
+      "audio": "N26A-dab40f89a0e7dfdc95ff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S003",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "公交车",
+      "display": "bus",
+      "audio": "N26A-77fe8a9eea5bdaf740fe",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "公交车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S004",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "bus",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C001",
+      "model": "N26A-77fe8a9eea5bdaf740fe",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S005",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "本地的。今天形容在本地运行的公交。",
+      "display": "local",
+      "audio": "N26A-25f6fa20865f735fc40e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S006",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "本地的",
+      "display": "local",
+      "audio": "N26A-03e73f3a8480d5985522",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "本地的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S007",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "local",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C002",
+      "model": "N26A-03e73f3a8480d5985522",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S008",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "时刻表。列出班次时间的资料。",
+      "display": "timetable",
+      "audio": "N26A-2654806fdf1a833fe22b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S009",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "时刻表",
+      "display": "timetable",
+      "audio": "N26A-899af0678ed4819186c0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "时刻表",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S010",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "timetable",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C003",
+      "model": "N26A-899af0678ed4819186c0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S011",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "线路。今天说公交线路",
+      "display": "line",
+      "audio": "N26A-c70f7b621412180af8ce",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S012",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "线路",
+      "display": "line",
+      "audio": "N26A-ed78f141c2cb6174d042",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "线路",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S013",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "line",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C004",
+      "model": "N26A-ed78f141c2cb6174d042",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S014",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "路线。先听这条路线的名字，再放进公交路线的短语。",
+      "display": "route",
+      "audio": "N26A-b635e6aaa1012052f4f7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S015",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "路线",
+      "display": "route",
+      "audio": "N26A-378a19ea5ad3e0ac7ba3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "路线",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S016",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "route",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C005",
+      "model": "N26A-378a19ea5ad3e0ac7ba3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S017",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "司机。今天说开车的人。",
+      "display": "driver",
+      "audio": "N26A-50e4a3c9363fc2d63ccf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S018",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "司机",
+      "display": "driver",
+      "audio": "N26A-a20a2165fd79ac7cd37c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "司机",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S019",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "driver",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C006",
+      "model": "N26A-a20a2165fd79ac7cd37c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S020",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "驾驶，开车。",
+      "display": "drive",
+      "audio": "N26A-ed41703fee97046ba982",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S021",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "驾驶，开车",
+      "display": "drive",
+      "audio": "N26A-e007923aac85ee653785",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "驾驶，开车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S022",
+      "course": "N26-U036-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "drive",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C007",
+      "model": "N26A-e007923aac85ee653785",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U036-L05-S023",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆本地公交车。先听整组。",
+      "display": "a local bus",
+      "audio": "N26A-d1cb9c940e2efaf21f6e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S024",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆本地公交车",
+      "display": "a local bus",
+      "audio": "N26A-5b70302121187dbda840",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆本地公交车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S025",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a local bus",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C008",
+      "model": "N26A-5b70302121187dbda840",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S026",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那份公交时刻表。所指资料已明确。",
+      "display": "the bus timetable",
+      "audio": "N26A-14afee2e0d9e3722037c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S027",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那份公交时刻表",
+      "display": "the bus timetable",
+      "audio": "N26A-4b048b04096d194d7483",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那份公交时刻表",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S028",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the bus timetable",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C009",
+      "model": "N26A-4b048b04096d194d7483",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S029",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这条公交线路。想象你和朋友正在谈同一条公交线路。",
+      "display": "this bus line",
+      "audio": "N26A-e694f5c057567c92d3b7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S030",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这条公交线路",
+      "display": "this bus line",
+      "audio": "N26A-06a2630dcfa57f3a6cbe",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这条公交线路",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S031",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "this bus line",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C010",
+      "model": "N26A-06a2630dcfa57f3a6cbe",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S032",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那条公交路线。先听完整名字。",
+      "display": "the bus route",
+      "audio": "N26A-193bf8548c9808759f12",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S033",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那条公交路线",
+      "display": "the bus route",
+      "audio": "N26A-978fbdd7a54cb0c545c7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那条公交路线",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S034",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the bus route",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C011",
+      "model": "N26A-978fbdd7a54cb0c545c7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S035",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那位司机。中文已说明所指。",
+      "display": "the driver",
+      "audio": "N26A-35c3a1e2c3916f1bec40",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S036",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那位司机",
+      "display": "the driver",
+      "audio": "N26A-a4fba459161d53cdc368",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那位司机",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S037",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the driver",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C012",
+      "model": "N26A-a4fba459161d53cdc368",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S038",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "驾驶公交车。动作短语，不是正在驾驶。",
+      "display": "drive a bus",
+      "audio": "N26A-96cd27bb3b3871135c7a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S039",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "驾驶公交车",
+      "display": "drive a bus",
+      "audio": "N26A-eeefcbddbb83083df270",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "驾驶公交车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S040",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "drive a bus",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C013",
+      "model": "N26A-eeefcbddbb83083df270",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S041",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我需要那份公交时刻表。先听完整表达。",
+      "display": "I need the bus timetable",
+      "audio": "N26A-78e0965f4acba558f5e1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S042",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我需要那份公交时刻表。",
+      "display": "I need the bus timetable.",
+      "audio": "N26A-9460f68a85d65e9e9491",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要那份公交时刻表。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S043",
+      "course": "N26-U036-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I need the bus timetable.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U036-L05-C014",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U036-L05-S044",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我需要那份公交时刻表。",
+      "display": "I need the bus timetable.",
+      "audio": "N26A-9460f68a85d65e9e9491",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要那份公交时刻表。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U036-L05-S045",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "需要公交时刻表，先听整句再接上。",
+      "display": "",
+      "audio": "N26A-6b6785888c28a4b3840c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S046",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I need the bus timetable.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C015",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S047",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "那条公交路线",
+      "display": "the bus route",
+      "audio": "N26A-978fbdd7a54cb0c545c7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那条公交路线",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U036-L05-S048",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述谈到公交路线，先听短语再说。",
+      "display": "",
+      "audio": "N26A-271804cfde38d45a8788",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S049",
+      "course": "N26-U036-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the bus route",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C016",
+      "model": "N26A-978fbdd7a54cb0c545c7",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S050",
+      "course": "N26-U036-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说本地公交车，看提示表达。",
+      "display": "",
+      "audio": "N26A-bde4ee8ec60342bf472f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S051",
+      "course": "N26-U036-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a local bus",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C017",
+      "model": "N26A-5b70302121187dbda840",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S052",
+      "course": "N26-U036-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说驾驶公交车这个动作，看提示表达。",
+      "display": "",
+      "audio": "N26A-e3ec2f13f29133748753",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S053",
+      "course": "N26-U036-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "drive a bus",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C018",
+      "model": "N26A-eeefcbddbb83083df270",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S054",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象乘车安排中，你向同伴说明需要公交时刻表。",
+      "display": "",
+      "audio": "N26A-f78d3a498adf97574590",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S055",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I need the bus timetable.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C019",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S056",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对所谈人物，情境为司机，你用短语回应。",
+      "display": "",
+      "audio": "N26A-039668ddd6e5906eb167",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S057",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "the driver",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U036-L05-C020",
+      "model": "N26A-a4fba459161d53cdc368",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U036-L05-S058",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U036-L05-S059",
+      "course": "N26-U036-L05",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U036-L05-C001",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "公交车",
+      "answers": [
+        "bus"
+      ],
+      "hint": "bus",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S004",
+      "help": "N26-U036-L05-S004-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C002",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "本地的",
+      "answers": [
+        "local"
+      ],
+      "hint": "local",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S007",
+      "help": "N26-U036-L05-S007-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C003",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "时刻表",
+      "answers": [
+        "timetable"
+      ],
+      "hint": "timetable",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S010",
+      "help": "N26-U036-L05-S010-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C004",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "线路",
+      "answers": [
+        "line"
+      ],
+      "hint": "line",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S013",
+      "help": "N26-U036-L05-S013-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C005",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "路线",
+      "answers": [
+        "route"
+      ],
+      "hint": "route",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S016",
+      "help": "N26-U036-L05-S016-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C006",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "司机",
+      "answers": [
+        "driver"
+      ],
+      "hint": "driver",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S019",
+      "help": "N26-U036-L05-S019-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C007",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "驾驶，开车",
+      "answers": [
+        "drive"
+      ],
+      "hint": "drive",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S022",
+      "help": "N26-U036-L05-S022-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C008",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆本地公交车",
+      "answers": [
+        "a local bus"
+      ],
+      "hint": "a local bus",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S025",
+      "help": "N26-U036-L05-S025-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C009",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那份公交时刻表",
+      "answers": [
+        "the bus timetable"
+      ],
+      "hint": "the bus timetable",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S028",
+      "help": "N26-U036-L05-S028-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C010",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这条公交线路",
+      "answers": [
+        "this bus line"
+      ],
+      "hint": "this bus line",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S031",
+      "help": "N26-U036-L05-S031-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C011",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那条公交路线",
+      "answers": [
+        "the bus route"
+      ],
+      "hint": "the bus route",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S034",
+      "help": "N26-U036-L05-S034-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C012",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那位司机",
+      "answers": [
+        "the driver"
+      ],
+      "hint": "the driver",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S037",
+      "help": "N26-U036-L05-S037-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C013",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "驾驶公交车",
+      "answers": [
+        "drive a bus"
+      ],
+      "hint": "drive a bus",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S040",
+      "help": "N26-U036-L05-S040-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C014",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我需要那份公交时刻表。",
+      "answers": [
+        "I need the bus timetable."
+      ],
+      "hint": "I need the bus timetable.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S043",
+      "help": "N26-U036-L05-S043-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C015",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "需要公交时刻表，先听整句再接上。",
+      "answers": [
+        "I need the bus timetable."
+      ],
+      "hint": "I need the bus timetable.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S046",
+      "help": "N26-U036-L05-S046-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C016",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述谈到公交路线，先听短语再说。",
+      "answers": [
+        "the bus route"
+      ],
+      "hint": "the bus route",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S049",
+      "help": "N26-U036-L05-S049-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C017",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说本地公交车，看提示表达。",
+      "answers": [
+        "a local bus"
+      ],
+      "hint": "a local bus",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S051",
+      "help": "N26-U036-L05-S051-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C018",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说驾驶公交车这个动作，看提示表达。",
+      "answers": [
+        "drive a bus"
+      ],
+      "hint": "drive a bus",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U036-L05-S053",
+      "help": "N26-U036-L05-S053-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C019",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象乘车安排中，你向同伴说明需要公交时刻表。",
+      "answers": [
+        "I need the bus timetable."
+      ],
+      "hint": "I need the bus timetable.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U036-L05-S055",
+      "help": "N26-U036-L05-S055-HELP"
+    },
+    {
+      "id": "N26-U036-L05-C020",
+      "course": "N26-U036-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对所谈人物，情境为司机，你用短语回应。",
+      "answers": [
+        "the driver"
+      ],
+      "hint": "the driver",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U036-L05-S057",
+      "help": "N26-U036-L05-S057-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U036-L05-S004-HELP",
+      "forStep": "N26-U036-L05-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-77fe8a9eea5bdaf740fe",
+      "display": "bus",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S007-HELP",
+      "forStep": "N26-U036-L05-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-03e73f3a8480d5985522",
+      "display": "local",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S010-HELP",
+      "forStep": "N26-U036-L05-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-899af0678ed4819186c0",
+      "display": "timetable",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S013-HELP",
+      "forStep": "N26-U036-L05-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ed78f141c2cb6174d042",
+      "display": "line",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S016-HELP",
+      "forStep": "N26-U036-L05-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-378a19ea5ad3e0ac7ba3",
+      "display": "route",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S019-HELP",
+      "forStep": "N26-U036-L05-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a20a2165fd79ac7cd37c",
+      "display": "driver",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S022-HELP",
+      "forStep": "N26-U036-L05-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e007923aac85ee653785",
+      "display": "drive",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S025-HELP",
+      "forStep": "N26-U036-L05-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b70302121187dbda840",
+      "display": "a local bus",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S028-HELP",
+      "forStep": "N26-U036-L05-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4b048b04096d194d7483",
+      "display": "the bus timetable",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S031-HELP",
+      "forStep": "N26-U036-L05-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-06a2630dcfa57f3a6cbe",
+      "display": "this bus line",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S034-HELP",
+      "forStep": "N26-U036-L05-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-978fbdd7a54cb0c545c7",
+      "display": "the bus route",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S037-HELP",
+      "forStep": "N26-U036-L05-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a4fba459161d53cdc368",
+      "display": "the driver",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S040-HELP",
+      "forStep": "N26-U036-L05-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eeefcbddbb83083df270",
+      "display": "drive a bus",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S043-HELP",
+      "forStep": "N26-U036-L05-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "display": "I need the bus timetable.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S046-HELP",
+      "forStep": "N26-U036-L05-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "display": "I need the bus timetable.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S049-HELP",
+      "forStep": "N26-U036-L05-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-978fbdd7a54cb0c545c7",
+      "display": "the bus route",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S051-HELP",
+      "forStep": "N26-U036-L05-S051",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b70302121187dbda840",
+      "display": "a local bus",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S051",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S053-HELP",
+      "forStep": "N26-U036-L05-S053",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eeefcbddbb83083df270",
+      "display": "drive a bus",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S053",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S055-HELP",
+      "forStep": "N26-U036-L05-S055",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9460f68a85d65e9e9491",
+      "display": "I need the bus timetable.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S055",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U036-L05-S057-HELP",
+      "forStep": "N26-U036-L05-S057",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a4fba459161d53cdc368",
+      "display": "the driver",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U036-L05-S057",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "bus",
+      "word": "bus",
+      "ipa": "/bʌs/",
+      "meaning": "公交车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-77fe8a9eea5bdaf740fe"
+    },
+    {
+      "key": "local",
+      "word": "local",
+      "ipa": "/ˈloʊkəl/",
+      "meaning": "本地的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-03e73f3a8480d5985522"
+    },
+    {
+      "key": "timetable",
+      "word": "timetable",
+      "ipa": "/ˈtaɪmteɪbəl/",
+      "meaning": "时刻表",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-899af0678ed4819186c0"
+    },
+    {
+      "key": "line",
+      "word": "line",
+      "ipa": "/laɪn/",
+      "meaning": "线路",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ed78f141c2cb6174d042"
+    },
+    {
+      "key": "route",
+      "word": "route",
+      "ipa": "/ruːt/",
+      "meaning": "路线",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-378a19ea5ad3e0ac7ba3"
+    },
+    {
+      "key": "driver",
+      "word": "driver",
+      "ipa": "/ˈdraɪvər/",
+      "meaning": "司机",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a20a2165fd79ac7cd37c"
+    },
+    {
+      "key": "drive",
+      "word": "drive",
+      "ipa": "/draɪv/",
+      "meaning": "驾驶，开车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e007923aac85ee653785"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "this",
+      "word": "this",
+      "ipa": "/ðɪs/",
+      "meaning": "这，这个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a6d2d26e0ac16e513dbb"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "need",
+      "word": "need",
+      "ipa": "/niːd/",
+      "meaning": "需要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-41d4daf3bebc573aa688"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "line仅线路，route /ruːt/另一美式读法暂不引入，媒体待验；drive动作短语无暗加过去式。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "need",
+      "sourceCourse": "N26-U004-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 44,
+    "availableExactAssets": 44,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-5f5b2d52996f87483f1c",
+      "N26A-dab40f89a0e7dfdc95ff",
+      "N26A-77fe8a9eea5bdaf740fe",
+      "N26A-25f6fa20865f735fc40e",
+      "N26A-03e73f3a8480d5985522",
+      "N26A-2654806fdf1a833fe22b",
+      "N26A-899af0678ed4819186c0",
+      "N26A-c70f7b621412180af8ce",
+      "N26A-ed78f141c2cb6174d042",
+      "N26A-b635e6aaa1012052f4f7",
+      "N26A-378a19ea5ad3e0ac7ba3",
+      "N26A-50e4a3c9363fc2d63ccf",
+      "N26A-a20a2165fd79ac7cd37c",
+      "N26A-ed41703fee97046ba982",
+      "N26A-e007923aac85ee653785",
+      "N26A-d1cb9c940e2efaf21f6e",
+      "N26A-5b70302121187dbda840",
+      "N26A-14afee2e0d9e3722037c",
+      "N26A-4b048b04096d194d7483",
+      "N26A-e694f5c057567c92d3b7",
+      "N26A-06a2630dcfa57f3a6cbe",
+      "N26A-193bf8548c9808759f12",
+      "N26A-978fbdd7a54cb0c545c7",
+      "N26A-35c3a1e2c3916f1bec40",
+      "N26A-a4fba459161d53cdc368",
+      "N26A-96cd27bb3b3871135c7a",
+      "N26A-eeefcbddbb83083df270",
+      "N26A-78e0965f4acba558f5e1",
+      "N26A-9460f68a85d65e9e9491",
+      "N26A-6b6785888c28a4b3840c",
+      "N26A-271804cfde38d45a8788",
+      "N26A-bde4ee8ec60342bf472f",
+      "N26A-e3ec2f13f29133748753",
+      "N26A-f78d3a498adf97574590",
+      "N26A-039668ddd6e5906eb167",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-a6d2d26e0ac16e513dbb",
+      "N26A-f353b20c6f3418376965",
+      "N26A-41d4daf3bebc573aa688",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

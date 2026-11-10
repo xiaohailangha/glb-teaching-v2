@@ -1,0 +1,1179 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch01-v1",
+  "courseId": "N26-U005-L02",
+  "unitId": "N26-U005",
+  "category": "城市与交通",
+  "title": "这里与那里",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "d96e7ad1a577c084791ba705f5d5957d20da8617ec1e12f1ef835d67d4a65122",
+  "newWords": [
+    "here",
+    "there"
+  ],
+  "prerequisites": [
+    "N26-U005-L01"
+  ],
+  "goal": "先用已有物品或清晰动作说明位置，学员直接跟说。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "here",
+        "surface": "here",
+        "meaning": "这里，说话者所在或指着的近处",
+        "kind": "new_word"
+      },
+      {
+        "key": "there",
+        "surface": "there",
+        "meaning": "那里，双方正在说的另一处",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U005-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U005-L02-S002",
+        "N26-U005-L02-S003",
+        "N26-U005-L02-S004",
+        "N26-U005-L02-S005",
+        "N26-U005-L02-S006",
+        "N26-U005-L02-S007"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U005-L02-S008",
+        "N26-U005-L02-S009",
+        "N26-U005-L02-S010",
+        "N26-U005-L02-S011",
+        "N26-U005-L02-S012",
+        "N26-U005-L02-S013"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U005-L02-S014",
+        "N26-U005-L02-S015",
+        "N26-U005-L02-S016",
+        "N26-U005-L02-S017",
+        "N26-U005-L02-S018",
+        "N26-U005-L02-S019"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U005-L02-S020",
+        "N26-U005-L02-S021",
+        "N26-U005-L02-S022",
+        "N26-U005-L02-S023"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U005-L02-S024",
+        "N26-U005-L02-S025",
+        "N26-U005-L02-S026",
+        "N26-U005-L02-S027",
+        "N26-U005-L02-S028",
+        "N26-U005-L02-S029"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U005-L02-S001",
+      "course": "N26-U005-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "来和去已经认识了。今天加上这里和那里，让方向说得更清楚。",
+      "display": "",
+      "audio": "N26A-1c1d6281de8adcbd52e4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S002",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "这里，说话者所在或指着的近处。想到自己现在这一边，再听这个词。",
+      "display": "here",
+      "audio": "N26A-cee29398b21051124a0c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S003",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "这里，说话者所在或指着的近处",
+      "display": "here",
+      "audio": "N26A-a208761389f2f47f44cb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这里，说话者所在或指着的近处",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U005-L02-S004",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "here",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U005-L02-C001",
+      "model": "N26A-a208761389f2f47f44cb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U005-L02-S005",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "那里，双方正在说的另一处。说的是双方正在谈的那个地方，位置离说话的人远一些。",
+      "display": "there",
+      "audio": "N26A-0966121a8b683e2ea4e1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S006",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "那里，双方正在说的另一处",
+      "display": "there",
+      "audio": "N26A-d15b74585dc21961230b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那里，双方正在说的另一处",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U005-L02-S007",
+      "course": "N26-U005-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "there",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U005-L02-C002",
+      "model": "N26A-d15b74585dc21961230b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U005-L02-S008",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "来这里。邀请朋友来到自己这一边，听整组连起来。",
+      "display": "Come here",
+      "audio": "N26A-2d60238478dd059f25dd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S009",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "来这里。",
+      "display": "Come here.",
+      "audio": "N26A-ffb9fb80c71974b038cc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "来这里。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U005-L02-S010",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Come here.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U005-L02-C003",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U005-L02-S011",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "去那里。双方已经明确另一处在哪里时，用这一组说清方向。",
+      "display": "Go there",
+      "audio": "N26A-cc68a107776678fa8c8c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S012",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "去那里。",
+      "display": "Go there.",
+      "audio": "N26A-0509f5c23778ead16490",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "去那里。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U005-L02-S013",
+      "course": "N26-U005-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Go there.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U005-L02-C004",
+      "model": "N26A-0509f5c23778ead16490",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U005-L02-S014",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "来这里。",
+      "display": "Come here.",
+      "audio": "N26A-ffb9fb80c71974b038cc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "来这里。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U005-L02-S015",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "我先邀请朋友来这里，你听后用同样的话接上。",
+      "display": "",
+      "audio": "N26A-e6dfa49de573e8324bb0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S016",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Come here.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C005",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S017",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "去那里。",
+      "display": "Go there.",
+      "audio": "N26A-0509f5c23778ead16490",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "去那里。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U005-L02-S018",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "现在中文说明去另一处，你听后把方向说清楚。",
+      "display": "",
+      "audio": "N26A-6207f1d299191b69a237",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S019",
+      "course": "N26-U005-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Go there.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C006",
+      "model": "N26A-0509f5c23778ead16490",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S020",
+      "course": "N26-U005-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "想让朋友来到你这一边，看着提示说。",
+      "display": "",
+      "audio": "N26A-bd7f63355b76111d825e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S021",
+      "course": "N26-U005-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Come here.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C007",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S022",
+      "course": "N26-U005-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "排练里要去双方已经知道的另一处，看着提示说。",
+      "display": "",
+      "audio": "N26A-d46498eab4b0074c0770",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S023",
+      "course": "N26-U005-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Go there.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C008",
+      "model": "N26A-0509f5c23778ead16490",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S024",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "你在桌边招呼熟悉的朋友过来，用完整搭配开口。",
+      "display": "",
+      "audio": "N26A-5a2390b0d756e7170efc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S025",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Come here.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C009",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S026",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友接着问排练里应去另一处时怎么说，你示范那组方向表达。",
+      "display": "",
+      "audio": "N26A-9017ff3835fc0df32152",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S027",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Go there.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U005-L02-C010",
+      "model": "N26A-0509f5c23778ead16490",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U005-L02-S028",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U005-L02-S029",
+      "course": "N26-U005-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U005-L02-C001",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这里，说话者所在或指着的近处",
+      "answers": [
+        "here"
+      ],
+      "hint": "here",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S004",
+      "help": "N26-U005-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C002",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那里，双方正在说的另一处",
+      "answers": [
+        "there"
+      ],
+      "hint": "there",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S007",
+      "help": "N26-U005-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C003",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "来这里。",
+      "answers": [
+        "Come here."
+      ],
+      "hint": "Come here.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S010",
+      "help": "N26-U005-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C004",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "去那里。",
+      "answers": [
+        "Go there."
+      ],
+      "hint": "Go there.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S013",
+      "help": "N26-U005-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C005",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我先邀请朋友来这里，你听后用同样的话接上。",
+      "answers": [
+        "Come here."
+      ],
+      "hint": "Come here.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S016",
+      "help": "N26-U005-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C006",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "现在中文说明去另一处，你听后把方向说清楚。",
+      "answers": [
+        "Go there."
+      ],
+      "hint": "Go there.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S019",
+      "help": "N26-U005-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C007",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想让朋友来到你这一边，看着提示说。",
+      "answers": [
+        "Come here."
+      ],
+      "hint": "Come here.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S021",
+      "help": "N26-U005-L02-S021-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C008",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "排练里要去双方已经知道的另一处，看着提示说。",
+      "answers": [
+        "Go there."
+      ],
+      "hint": "Go there.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U005-L02-S023",
+      "help": "N26-U005-L02-S023-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C009",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你在桌边招呼熟悉的朋友过来，用完整搭配开口。",
+      "answers": [
+        "Come here."
+      ],
+      "hint": "Come here.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U005-L02-S025",
+      "help": "N26-U005-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U005-L02-C010",
+      "course": "N26-U005-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友接着问排练里应去另一处时怎么说，你示范那组方向表达。",
+      "answers": [
+        "Go there."
+      ],
+      "hint": "Go there.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U005-L02-S027",
+      "help": "N26-U005-L02-S027-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U005-L02-S004-HELP",
+      "forStep": "N26-U005-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a208761389f2f47f44cb",
+      "display": "here",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S007-HELP",
+      "forStep": "N26-U005-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d15b74585dc21961230b",
+      "display": "there",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S010-HELP",
+      "forStep": "N26-U005-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "display": "Come here.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S013-HELP",
+      "forStep": "N26-U005-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0509f5c23778ead16490",
+      "display": "Go there.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S016-HELP",
+      "forStep": "N26-U005-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "display": "Come here.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S019-HELP",
+      "forStep": "N26-U005-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0509f5c23778ead16490",
+      "display": "Go there.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S021-HELP",
+      "forStep": "N26-U005-L02-S021",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "display": "Come here.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S021",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S023-HELP",
+      "forStep": "N26-U005-L02-S023",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0509f5c23778ead16490",
+      "display": "Go there.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S023",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S025-HELP",
+      "forStep": "N26-U005-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffb9fb80c71974b038cc",
+      "display": "Come here.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U005-L02-S027-HELP",
+      "forStep": "N26-U005-L02-S027",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0509f5c23778ead16490",
+      "display": "Go there.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U005-L02-S027",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "here",
+      "word": "here",
+      "ipa": "/hɪr/",
+      "meaning": "这里，说话者所在或指着的近处",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a208761389f2f47f44cb"
+    },
+    {
+      "key": "there",
+      "word": "there",
+      "ipa": "/ðer/",
+      "meaning": "那里，双方正在说的另一处",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d15b74585dc21961230b"
+    },
+    {
+      "key": "come",
+      "word": "come",
+      "ipa": "/kʌm/",
+      "meaning": "来，向说话者所在的一边靠近",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-76056ace88b83ce73420"
+    },
+    {
+      "key": "go",
+      "word": "go",
+      "ipa": "/ɡoʊ/",
+      "meaning": "去，朝另一个地方离开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ee5295cc979e8aab87bd"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "there只取地点副词；无there is新结构；不强制真实身体动作，也不假装已呈现地图。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "changed_since_review_pending_recheck",
+      "reviewedContentHash": "c1f0081cafe4d05f9d630e98750edf3d8a1e88e372e65a5b7807b309eb57598b",
+      "findingIds": [],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 21,
+    "availableExactAssets": 21,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-1c1d6281de8adcbd52e4",
+      "N26A-cee29398b21051124a0c",
+      "N26A-a208761389f2f47f44cb",
+      "N26A-0966121a8b683e2ea4e1",
+      "N26A-d15b74585dc21961230b",
+      "N26A-2d60238478dd059f25dd",
+      "N26A-ffb9fb80c71974b038cc",
+      "N26A-cc68a107776678fa8c8c",
+      "N26A-0509f5c23778ead16490",
+      "N26A-e6dfa49de573e8324bb0",
+      "N26A-6207f1d299191b69a237",
+      "N26A-bd7f63355b76111d825e",
+      "N26A-d46498eab4b0074c0770",
+      "N26A-5a2390b0d756e7170efc",
+      "N26A-9017ff3835fc0df32152",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-76056ace88b83ce73420",
+      "N26A-ee5295cc979e8aab87bd",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

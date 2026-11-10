@@ -2,6 +2,7 @@ import 'course_resources.dart';
 
 import 'dart:async';
 import 'dart:js_interop';
+import 'dart:typed_data';
 
 import 'package:just_audio/just_audio.dart' show ProcessingState;
 import 'package:web/web.dart' as web;
@@ -9,6 +10,17 @@ import 'package:web/web.dart' as web;
 /// Keep one audio element for the whole lesson. Safari's gesture permission
 /// belongs to that element, so stopping a session must not replace it.
 class SpeechPlayer {
+  Future<void> setVerifiedBytes(Uint8List bytes, String hash) async {
+    final key = 'verified:$hash';
+    _assetBlobs.putIfAbsent(
+      key,
+      () => web.URL.createObjectURL(
+        web.Blob([bytes.toJS].toJS, web.BlobPropertyBag(type: 'audio/wav')),
+      ),
+    );
+    await setUrl(_assetBlobs[key]!);
+  }
+
   SpeechPlayer() {
     _audio
       ..preload = 'auto'

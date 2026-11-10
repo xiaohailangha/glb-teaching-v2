@@ -1,0 +1,2117 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit054-v1",
+  "courseId": "N26-U054-L10",
+  "unitId": "N26-U054",
+  "category": "食物与饮品",
+  "title": "结账、分账与请客",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "7c89b56074577198a2dbc2f6e272cf1121e78846627dfea8688e1c321256ea88",
+  "newWords": [
+    "bill",
+    "fee",
+    "split",
+    "treat",
+    "excellent",
+    "pay"
+  ],
+  "prerequisites": [
+    "N26-U054-L09"
+  ],
+  "goal": "在“结账与招待 8”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "bill",
+        "surface": "bill",
+        "meaning": "账单",
+        "kind": "new_word"
+      },
+      {
+        "key": "fee",
+        "surface": "fee",
+        "meaning": "费用，一项服务收取的钱",
+        "kind": "new_word"
+      },
+      {
+        "key": "split",
+        "surface": "split",
+        "meaning": "分摊",
+        "kind": "new_word"
+      },
+      {
+        "key": "treat",
+        "surface": "treat",
+        "meaning": "请客，自己付钱招待",
+        "kind": "new_word"
+      },
+      {
+        "key": "excellent",
+        "surface": "excellent",
+        "meaning": "极好的",
+        "kind": "new_word"
+      },
+      {
+        "key": "pay",
+        "surface": "pay",
+        "meaning": "付款",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U054-L10-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U054-L10-S002",
+        "N26-U054-L10-S003",
+        "N26-U054-L10-S004",
+        "N26-U054-L10-S005",
+        "N26-U054-L10-S006",
+        "N26-U054-L10-S007",
+        "N26-U054-L10-S008",
+        "N26-U054-L10-S009",
+        "N26-U054-L10-S010",
+        "N26-U054-L10-S011",
+        "N26-U054-L10-S012",
+        "N26-U054-L10-S013",
+        "N26-U054-L10-S014",
+        "N26-U054-L10-S015",
+        "N26-U054-L10-S016",
+        "N26-U054-L10-S017",
+        "N26-U054-L10-S018",
+        "N26-U054-L10-S019"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U054-L10-S020",
+        "N26-U054-L10-S021",
+        "N26-U054-L10-S022",
+        "N26-U054-L10-S023",
+        "N26-U054-L10-S024",
+        "N26-U054-L10-S025",
+        "N26-U054-L10-S026",
+        "N26-U054-L10-S027",
+        "N26-U054-L10-S028",
+        "N26-U054-L10-S029",
+        "N26-U054-L10-S030",
+        "N26-U054-L10-S031",
+        "N26-U054-L10-S032",
+        "N26-U054-L10-S033",
+        "N26-U054-L10-S034",
+        "N26-U054-L10-S035",
+        "N26-U054-L10-S036",
+        "N26-U054-L10-S037"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U054-L10-S038",
+        "N26-U054-L10-S039",
+        "N26-U054-L10-S040",
+        "N26-U054-L10-S041",
+        "N26-U054-L10-S042",
+        "N26-U054-L10-S043"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U054-L10-S044",
+        "N26-U054-L10-S045",
+        "N26-U054-L10-S046",
+        "N26-U054-L10-S047"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U054-L10-S048",
+        "N26-U054-L10-S049",
+        "N26-U054-L10-S050",
+        "N26-U054-L10-S051",
+        "N26-U054-L10-S052",
+        "N26-U054-L10-S053"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U054-L10-S001",
+      "course": "N26-U054-L10",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象和朋友结账。今天认识账单、费用、分账、请客和付款，也说这次餐食很棒。",
+      "display": "",
+      "audio": "N26A-261c94b076a022bafd0e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S002",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "账单。这里说账单，先听完整的声音。",
+      "display": "bill",
+      "audio": "N26A-73db5f3591be0b57c83d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S003",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "账单",
+      "display": "bill",
+      "audio": "N26A-c9bf871dc5079316209b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "账单",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S004",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "bill",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C001",
+      "model": "N26A-c9bf871dc5079316209b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S005",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "费用，一项服务收取的钱。这里说费用，一项服务收取的钱，先听完整的声音。",
+      "display": "fee",
+      "audio": "N26A-8f3e60721699526a2229",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S006",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "费用，一项服务收取的钱",
+      "display": "fee",
+      "audio": "N26A-799573242b84b57c1dc2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "费用，一项服务收取的钱",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S007",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fee",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C002",
+      "model": "N26A-799573242b84b57c1dc2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S008",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "分摊。这里说分摊，先听完整的声音。",
+      "display": "split",
+      "audio": "N26A-f4ada2871b9c9a05dbfd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S009",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "分摊",
+      "display": "split",
+      "audio": "N26A-7563010a54f2cc65b48e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "分摊",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S010",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "split",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C003",
+      "model": "N26A-7563010a54f2cc65b48e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S011",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "请客，自己付钱招待。整体短语用于主动承担这次费用。",
+      "display": "treat",
+      "audio": "N26A-7ebb27df7ca9d0422263",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S012",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "请客，自己付钱招待",
+      "display": "treat",
+      "audio": "N26A-00d6bd5d0300839e5848",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请客，自己付钱招待",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S013",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "treat",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C004",
+      "model": "N26A-00d6bd5d0300839e5848",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S014",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "极好的。这里说极好的，先听完整的声音。",
+      "display": "excellent",
+      "audio": "N26A-a85a73a5a0fe76c75710",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S015",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "极好的",
+      "display": "excellent",
+      "audio": "N26A-ddb840e77266b86c5217",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "极好的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S016",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "excellent",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C005",
+      "model": "N26A-ddb840e77266b86c5217",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S017",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "付款。这里说付款，先听完整的声音。",
+      "display": "pay",
+      "audio": "N26A-0dab409534a0c18e25f3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S018",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "付款",
+      "display": "pay",
+      "audio": "N26A-eb5b55b05b2cd29d6708",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "付款",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S019",
+      "course": "N26-U054-L10",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pay",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C006",
+      "model": "N26A-eb5b55b05b2cd29d6708",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L10-S020",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这份账单。先听这一组，再连起来说。",
+      "display": "the bill",
+      "audio": "N26A-ba7022616f9f96b02ba2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S021",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这份账单",
+      "display": "the bill",
+      "audio": "N26A-202b0c76aa1676493611",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这份账单",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S022",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the bill",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C007",
+      "model": "N26A-202b0c76aa1676493611",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S023",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一笔费用。先听这一组，再连起来说。",
+      "display": "a fee",
+      "audio": "N26A-60b1acb9442eca4173d7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S024",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一笔费用",
+      "display": "a fee",
+      "audio": "N26A-737ec21c4e101a02faa9",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一笔费用",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S025",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a fee",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C008",
+      "model": "N26A-737ec21c4e101a02faa9",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S026",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "分摊账单。先听这一组，再连起来说。",
+      "display": "split the bill",
+      "audio": "N26A-52497f6e805669889550",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S027",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "分摊账单",
+      "display": "split the bill",
+      "audio": "N26A-c303e155b58211a57d1e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "分摊账单",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S028",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "split the bill",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C009",
+      "model": "N26A-c303e155b58211a57d1e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S029",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我请客。整体短语用于主动承担这次费用。",
+      "display": "My treat",
+      "audio": "N26A-7f3978fc3f23e9b53858",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S030",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我请客。",
+      "display": "My treat.",
+      "audio": "N26A-6708dfa1f8ac3b7a13af",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我请客。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S031",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "My treat.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C010",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S032",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "食物很棒。先听这一组，再连起来说。",
+      "display": "The food is excellent",
+      "audio": "N26A-150f43091793f22ccd0c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S033",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "食物很棒。",
+      "display": "The food is excellent.",
+      "audio": "N26A-0121b4e39c0710f89227",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "食物很棒。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S034",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "The food is excellent.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C011",
+      "model": "N26A-0121b4e39c0710f89227",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S035",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我来付款。先听这一组，再连起来说。",
+      "display": "I will pay",
+      "audio": "N26A-5931b1c19e7bc98b627b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S036",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我来付款。",
+      "display": "I will pay.",
+      "audio": "N26A-039fc70d2e01369d4acc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我来付款。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S037",
+      "course": "N26-U054-L10",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I will pay.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L10-C012",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L10-S038",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我请客。",
+      "display": "My treat.",
+      "audio": "N26A-6708dfa1f8ac3b7a13af",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我请客。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L10-S039",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你主动请朋友吃这顿饭，先听简短表达。",
+      "display": "",
+      "audio": "N26A-13078146dc5b02f4de82",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S040",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "My treat.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C013",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S041",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我来付款。",
+      "display": "I will pay.",
+      "audio": "N26A-039fc70d2e01369d4acc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我来付款。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L10-S042",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你愿意承担付款，先听整句。",
+      "display": "",
+      "audio": "N26A-04e59c00504c470dbffd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S043",
+      "course": "N26-U054-L10",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I will pay.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C014",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S044",
+      "course": "N26-U054-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说我请客。",
+      "display": "",
+      "audio": "N26A-bfe3bef6895920704d00",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S045",
+      "course": "N26-U054-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "My treat.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C015",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S046",
+      "course": "N26-U054-L10",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说我来付款。",
+      "display": "",
+      "audio": "N26A-bdb02299c43001fb3da0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S047",
+      "course": "N26-U054-L10",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I will pay.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C016",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S048",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象用餐结束，你主动表示这次自己请客。",
+      "display": "",
+      "audio": "N26A-a3c8828f5010ba3030ae",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S049",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "My treat.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C017",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S050",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象结账情境里，你表示自己来付款。",
+      "display": "",
+      "audio": "N26A-8c53ca6449f58928b449",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S051",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I will pay.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L10-C018",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L10-S052",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L10-S053",
+      "course": "N26-U054-L10",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U054-L10-C001",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "账单",
+      "answers": [
+        "bill"
+      ],
+      "hint": "bill",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S004",
+      "help": "N26-U054-L10-S004-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C002",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "费用，一项服务收取的钱",
+      "answers": [
+        "fee"
+      ],
+      "hint": "fee",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S007",
+      "help": "N26-U054-L10-S007-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C003",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "分摊",
+      "answers": [
+        "split"
+      ],
+      "hint": "split",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S010",
+      "help": "N26-U054-L10-S010-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C004",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请客，自己付钱招待",
+      "answers": [
+        "treat"
+      ],
+      "hint": "treat",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S013",
+      "help": "N26-U054-L10-S013-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C005",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "极好的",
+      "answers": [
+        "excellent"
+      ],
+      "hint": "excellent",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S016",
+      "help": "N26-U054-L10-S016-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C006",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "付款",
+      "answers": [
+        "pay"
+      ],
+      "hint": "pay",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S019",
+      "help": "N26-U054-L10-S019-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C007",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这份账单",
+      "answers": [
+        "the bill"
+      ],
+      "hint": "the bill",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S022",
+      "help": "N26-U054-L10-S022-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C008",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一笔费用",
+      "answers": [
+        "a fee"
+      ],
+      "hint": "a fee",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S025",
+      "help": "N26-U054-L10-S025-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C009",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "分摊账单",
+      "answers": [
+        "split the bill"
+      ],
+      "hint": "split the bill",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S028",
+      "help": "N26-U054-L10-S028-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C010",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我请客。",
+      "answers": [
+        "My treat."
+      ],
+      "hint": "My treat.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S031",
+      "help": "N26-U054-L10-S031-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C011",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "食物很棒。",
+      "answers": [
+        "The food is excellent."
+      ],
+      "hint": "The food is excellent.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S034",
+      "help": "N26-U054-L10-S034-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C012",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我来付款。",
+      "answers": [
+        "I will pay."
+      ],
+      "hint": "I will pay.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S037",
+      "help": "N26-U054-L10-S037-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C013",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你主动请朋友吃这顿饭，先听简短表达。",
+      "answers": [
+        "My treat."
+      ],
+      "hint": "My treat.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S040",
+      "help": "N26-U054-L10-S040-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C014",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你愿意承担付款，先听整句。",
+      "answers": [
+        "I will pay."
+      ],
+      "hint": "I will pay.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S043",
+      "help": "N26-U054-L10-S043-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C015",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说我请客。",
+      "answers": [
+        "My treat."
+      ],
+      "hint": "My treat.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S045",
+      "help": "N26-U054-L10-S045-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C016",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说我来付款。",
+      "answers": [
+        "I will pay."
+      ],
+      "hint": "I will pay.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L10-S047",
+      "help": "N26-U054-L10-S047-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C017",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象用餐结束，你主动表示这次自己请客。",
+      "answers": [
+        "My treat."
+      ],
+      "hint": "My treat.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L10-S049",
+      "help": "N26-U054-L10-S049-HELP"
+    },
+    {
+      "id": "N26-U054-L10-C018",
+      "course": "N26-U054-L10",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象结账情境里，你表示自己来付款。",
+      "answers": [
+        "I will pay."
+      ],
+      "hint": "I will pay.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L10-S051",
+      "help": "N26-U054-L10-S051-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U054-L10-S004-HELP",
+      "forStep": "N26-U054-L10-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c9bf871dc5079316209b",
+      "display": "bill",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S007-HELP",
+      "forStep": "N26-U054-L10-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-799573242b84b57c1dc2",
+      "display": "fee",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S010-HELP",
+      "forStep": "N26-U054-L10-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7563010a54f2cc65b48e",
+      "display": "split",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S013-HELP",
+      "forStep": "N26-U054-L10-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-00d6bd5d0300839e5848",
+      "display": "treat",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S016-HELP",
+      "forStep": "N26-U054-L10-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ddb840e77266b86c5217",
+      "display": "excellent",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S019-HELP",
+      "forStep": "N26-U054-L10-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eb5b55b05b2cd29d6708",
+      "display": "pay",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S022-HELP",
+      "forStep": "N26-U054-L10-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-202b0c76aa1676493611",
+      "display": "the bill",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S025-HELP",
+      "forStep": "N26-U054-L10-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-737ec21c4e101a02faa9",
+      "display": "a fee",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S028-HELP",
+      "forStep": "N26-U054-L10-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c303e155b58211a57d1e",
+      "display": "split the bill",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S031-HELP",
+      "forStep": "N26-U054-L10-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "display": "My treat.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S034-HELP",
+      "forStep": "N26-U054-L10-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0121b4e39c0710f89227",
+      "display": "The food is excellent.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S037-HELP",
+      "forStep": "N26-U054-L10-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "display": "I will pay.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S040-HELP",
+      "forStep": "N26-U054-L10-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "display": "My treat.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S043-HELP",
+      "forStep": "N26-U054-L10-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "display": "I will pay.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S045-HELP",
+      "forStep": "N26-U054-L10-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "display": "My treat.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S047-HELP",
+      "forStep": "N26-U054-L10-S047",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "display": "I will pay.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S047",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S049-HELP",
+      "forStep": "N26-U054-L10-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6708dfa1f8ac3b7a13af",
+      "display": "My treat.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L10-S051-HELP",
+      "forStep": "N26-U054-L10-S051",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-039fc70d2e01369d4acc",
+      "display": "I will pay.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L10-S051",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "bill",
+      "word": "bill",
+      "ipa": "/bɪl/",
+      "meaning": "账单",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c9bf871dc5079316209b"
+    },
+    {
+      "key": "fee",
+      "word": "fee",
+      "ipa": "/fiː/",
+      "meaning": "费用，一项服务收取的钱",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-799573242b84b57c1dc2"
+    },
+    {
+      "key": "split",
+      "word": "split",
+      "ipa": "/splɪt/",
+      "meaning": "分摊",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7563010a54f2cc65b48e"
+    },
+    {
+      "key": "treat",
+      "word": "treat",
+      "ipa": "/triːt/",
+      "meaning": "请客，自己付钱招待",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-00d6bd5d0300839e5848"
+    },
+    {
+      "key": "excellent",
+      "word": "excellent",
+      "ipa": "/ˈɛksələnt/",
+      "meaning": "极好的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ddb840e77266b86c5217"
+    },
+    {
+      "key": "pay",
+      "word": "pay",
+      "ipa": "/peɪ/",
+      "meaning": "付款",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-eb5b55b05b2cd29d6708"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-183a93891321d5fea817"
+    },
+    {
+      "key": "food",
+      "word": "food",
+      "ipa": "/fuːd/",
+      "meaning": "食物，能吃的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e2cd8cc5ea6a8d314978"
+    },
+    {
+      "key": "be",
+      "word": "is",
+      "ipa": "/ɪz/",
+      "meaning": "是",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-78777013595e3ab65c2f"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "will",
+      "word": "will",
+      "ipa": "/wɪl/",
+      "meaning": "将会，表示接下来的打算",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-40da104194627e9f2535"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：bill=账单；fee=费用，一项服务收取的钱；split=分摊；treat=请客，自己付钱招待；excellent=极好的；pay=付款。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "food",
+      "sourceCourse": "N26-U008-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "will",
+      "sourceCourse": "N26-U051-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 42,
+    "availableExactAssets": 42,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-261c94b076a022bafd0e",
+      "N26A-73db5f3591be0b57c83d",
+      "N26A-c9bf871dc5079316209b",
+      "N26A-8f3e60721699526a2229",
+      "N26A-799573242b84b57c1dc2",
+      "N26A-f4ada2871b9c9a05dbfd",
+      "N26A-7563010a54f2cc65b48e",
+      "N26A-7ebb27df7ca9d0422263",
+      "N26A-00d6bd5d0300839e5848",
+      "N26A-a85a73a5a0fe76c75710",
+      "N26A-ddb840e77266b86c5217",
+      "N26A-0dab409534a0c18e25f3",
+      "N26A-eb5b55b05b2cd29d6708",
+      "N26A-ba7022616f9f96b02ba2",
+      "N26A-202b0c76aa1676493611",
+      "N26A-60b1acb9442eca4173d7",
+      "N26A-737ec21c4e101a02faa9",
+      "N26A-52497f6e805669889550",
+      "N26A-c303e155b58211a57d1e",
+      "N26A-7f3978fc3f23e9b53858",
+      "N26A-6708dfa1f8ac3b7a13af",
+      "N26A-150f43091793f22ccd0c",
+      "N26A-0121b4e39c0710f89227",
+      "N26A-5931b1c19e7bc98b627b",
+      "N26A-039fc70d2e01369d4acc",
+      "N26A-13078146dc5b02f4de82",
+      "N26A-04e59c00504c470dbffd",
+      "N26A-bfe3bef6895920704d00",
+      "N26A-bdb02299c43001fb3da0",
+      "N26A-a3c8828f5010ba3030ae",
+      "N26A-8c53ca6449f58928b449",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-183a93891321d5fea817",
+      "N26A-e2cd8cc5ea6a8d314978",
+      "N26A-78777013595e3ab65c2f",
+      "N26A-f353b20c6f3418376965",
+      "N26A-40da104194627e9f2535",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

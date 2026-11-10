@@ -1,0 +1,1613 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit043-v1",
+  "courseId": "N26-U043-L07",
+  "unitId": "N26-U043",
+  "category": "工作与学习",
+  "title": "科学家、农民与厨师",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "00edf686bb542cf7be58d4be2933325c95b5113f7607b8743ffdb7ea676f9f3b",
+  "newWords": [
+    "scientist",
+    "farmer",
+    "chef",
+    "officer"
+  ],
+  "prerequisites": [
+    "N26-U043-L06"
+  ],
+  "goal": "在“职业与同事 5”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "scientist",
+        "surface": "scientist",
+        "meaning": "科学家",
+        "kind": "new_word"
+      },
+      {
+        "key": "farmer",
+        "surface": "farmer",
+        "meaning": "农民，经营农场的人",
+        "kind": "new_word"
+      },
+      {
+        "key": "chef",
+        "surface": "chef",
+        "meaning": "厨师，专业烹饪的人",
+        "kind": "new_word"
+      },
+      {
+        "key": "officer",
+        "surface": "officer",
+        "meaning": "警官",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U043-L07-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U043-L07-S002",
+        "N26-U043-L07-S003",
+        "N26-U043-L07-S004",
+        "N26-U043-L07-S005",
+        "N26-U043-L07-S006",
+        "N26-U043-L07-S007",
+        "N26-U043-L07-S008",
+        "N26-U043-L07-S009",
+        "N26-U043-L07-S010",
+        "N26-U043-L07-S011",
+        "N26-U043-L07-S012",
+        "N26-U043-L07-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U043-L07-S014",
+        "N26-U043-L07-S015",
+        "N26-U043-L07-S016",
+        "N26-U043-L07-S017",
+        "N26-U043-L07-S018",
+        "N26-U043-L07-S019",
+        "N26-U043-L07-S020",
+        "N26-U043-L07-S021",
+        "N26-U043-L07-S022",
+        "N26-U043-L07-S023",
+        "N26-U043-L07-S024",
+        "N26-U043-L07-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U043-L07-S026",
+        "N26-U043-L07-S027",
+        "N26-U043-L07-S028",
+        "N26-U043-L07-S029",
+        "N26-U043-L07-S030",
+        "N26-U043-L07-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U043-L07-S032",
+        "N26-U043-L07-S033",
+        "N26-U043-L07-S034",
+        "N26-U043-L07-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U043-L07-S036",
+        "N26-U043-L07-S037",
+        "N26-U043-L07-S038",
+        "N26-U043-L07-S039",
+        "N26-U043-L07-S040",
+        "N26-U043-L07-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U043-L07-S001",
+      "course": "N26-U043-L07",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象继续认识不同职业。今天说科学家、农民、厨师和警官，先把完整词听清楚。",
+      "display": "",
+      "audio": "N26A-3a9dafc7ccfeeb8e8db7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S002",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "科学家。这里说科学家，先听完整的声音。",
+      "display": "scientist",
+      "audio": "N26A-cd2f739e2c05e5823903",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S003",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "科学家",
+      "display": "scientist",
+      "audio": "N26A-ede351a70cabf3d4fd0b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "科学家",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S004",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "scientist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C001",
+      "model": "N26A-ede351a70cabf3d4fd0b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S005",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "农民，经营农场的人。这里说农民，经营农场的人，先听完整的声音。",
+      "display": "farmer",
+      "audio": "N26A-38ad01a639230daf2158",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S006",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "农民，经营农场的人",
+      "display": "farmer",
+      "audio": "N26A-a0691d91051bbe45084f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "农民，经营农场的人",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S007",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "farmer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C002",
+      "model": "N26A-a0691d91051bbe45084f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S008",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "厨师，专业烹饪的人。这里说厨师，专业烹饪的人，先听完整的声音。",
+      "display": "chef",
+      "audio": "N26A-3a88f9f1b5a5e78bb76d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S009",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "厨师，专业烹饪的人",
+      "display": "chef",
+      "audio": "N26A-e6522565b05c20d58cac",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "厨师，专业烹饪的人",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S010",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "chef",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C003",
+      "model": "N26A-e6522565b05c20d58cac",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S011",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "警官。本课取警务人员义，不泛指公司职位。",
+      "display": "officer",
+      "audio": "N26A-0fd3c41ddac63dae6ff5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S012",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "警官",
+      "display": "officer",
+      "audio": "N26A-f6a90fc582a4a31633ff",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "警官",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S013",
+      "course": "N26-U043-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "officer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C004",
+      "model": "N26A-f6a90fc582a4a31633ff",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L07-S014",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一位科学家。先听这一组，再连起来说。",
+      "display": "a scientist",
+      "audio": "N26A-1732868761435bcc8636",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S015",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一位科学家",
+      "display": "a scientist",
+      "audio": "N26A-5135a3cb64f5433fc406",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位科学家",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S016",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a scientist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C005",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S017",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一位农民。先听这一组，再连起来说。",
+      "display": "a farmer",
+      "audio": "N26A-1053c8d6731accc231b9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S018",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一位农民",
+      "display": "a farmer",
+      "audio": "N26A-a397ef04eaceedd19fad",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位农民",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S019",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a farmer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C006",
+      "model": "N26A-a397ef04eaceedd19fad",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S020",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一位厨师。先听这一组，再连起来说。",
+      "display": "a chef",
+      "audio": "N26A-ff384d50737d33484de8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S021",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一位厨师",
+      "display": "a chef",
+      "audio": "N26A-21cfb3a121a8efc88d2a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位厨师",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S022",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a chef",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C007",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S023",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一名警官。本课取警务人员义，不泛指公司职位。",
+      "display": "an officer",
+      "audio": "N26A-2ecf77fdaf9a2e83ddc3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S024",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一名警官",
+      "display": "an officer",
+      "audio": "N26A-f8c8436660e958225e89",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名警官",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S025",
+      "course": "N26-U043-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an officer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L07-C008",
+      "model": "N26A-f8c8436660e958225e89",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L07-S026",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一位厨师",
+      "display": "a chef",
+      "audio": "N26A-21cfb3a121a8efc88d2a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位厨师",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U043-L07-S027",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "介绍专业烹饪的人，先听厨师短语。",
+      "display": "",
+      "audio": "N26A-d0d88603784e597a75b4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S028",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a chef",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C009",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S029",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一位科学家",
+      "display": "a scientist",
+      "audio": "N26A-5135a3cb64f5433fc406",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位科学家",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U043-L07-S030",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "介绍从事科学研究的人，先听短语。",
+      "display": "",
+      "audio": "N26A-67938b83a731c74c168a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S031",
+      "course": "N26-U043-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a scientist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C010",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S032",
+      "course": "N26-U043-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一位厨师。",
+      "display": "",
+      "audio": "N26A-bb9548734ee99a64485c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S033",
+      "course": "N26-U043-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a chef",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C011",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S034",
+      "course": "N26-U043-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一位科学家。",
+      "display": "",
+      "audio": "N26A-010966534eae750ce33b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S035",
+      "course": "N26-U043-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a scientist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C012",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S036",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象谈职业，你用短语介绍一位厨师。",
+      "display": "",
+      "audio": "N26A-4a342587deab5755c218",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S037",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a chef",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C013",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S038",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友问正在介绍谁，情境为科学家，你说明职业。",
+      "display": "",
+      "audio": "N26A-b9cab33e106ca6fdff29",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S039",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a scientist",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L07-C014",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U043-L07-S040",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L07-S041",
+      "course": "N26-U043-L07",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U043-L07-C001",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "科学家",
+      "answers": [
+        "scientist"
+      ],
+      "hint": "scientist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S004",
+      "help": "N26-U043-L07-S004-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C002",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "农民，经营农场的人",
+      "answers": [
+        "farmer"
+      ],
+      "hint": "farmer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S007",
+      "help": "N26-U043-L07-S007-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C003",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "厨师，专业烹饪的人",
+      "answers": [
+        "chef"
+      ],
+      "hint": "chef",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S010",
+      "help": "N26-U043-L07-S010-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C004",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "警官",
+      "answers": [
+        "officer"
+      ],
+      "hint": "officer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S013",
+      "help": "N26-U043-L07-S013-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C005",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一位科学家",
+      "answers": [
+        "a scientist"
+      ],
+      "hint": "a scientist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S016",
+      "help": "N26-U043-L07-S016-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C006",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一位农民",
+      "answers": [
+        "a farmer"
+      ],
+      "hint": "a farmer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S019",
+      "help": "N26-U043-L07-S019-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C007",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一位厨师",
+      "answers": [
+        "a chef"
+      ],
+      "hint": "a chef",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S022",
+      "help": "N26-U043-L07-S022-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C008",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一名警官",
+      "answers": [
+        "an officer"
+      ],
+      "hint": "an officer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S025",
+      "help": "N26-U043-L07-S025-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C009",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍专业烹饪的人，先听厨师短语。",
+      "answers": [
+        "a chef"
+      ],
+      "hint": "a chef",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S028",
+      "help": "N26-U043-L07-S028-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C010",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍从事科学研究的人，先听短语。",
+      "answers": [
+        "a scientist"
+      ],
+      "hint": "a scientist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S031",
+      "help": "N26-U043-L07-S031-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C011",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一位厨师。",
+      "answers": [
+        "a chef"
+      ],
+      "hint": "a chef",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S033",
+      "help": "N26-U043-L07-S033-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C012",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一位科学家。",
+      "answers": [
+        "a scientist"
+      ],
+      "hint": "a scientist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L07-S035",
+      "help": "N26-U043-L07-S035-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C013",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象谈职业，你用短语介绍一位厨师。",
+      "answers": [
+        "a chef"
+      ],
+      "hint": "a chef",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U043-L07-S037",
+      "help": "N26-U043-L07-S037-HELP"
+    },
+    {
+      "id": "N26-U043-L07-C014",
+      "course": "N26-U043-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友问正在介绍谁，情境为科学家，你说明职业。",
+      "answers": [
+        "a scientist"
+      ],
+      "hint": "a scientist",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U043-L07-S039",
+      "help": "N26-U043-L07-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U043-L07-S004-HELP",
+      "forStep": "N26-U043-L07-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ede351a70cabf3d4fd0b",
+      "display": "scientist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S007-HELP",
+      "forStep": "N26-U043-L07-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a0691d91051bbe45084f",
+      "display": "farmer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S010-HELP",
+      "forStep": "N26-U043-L07-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e6522565b05c20d58cac",
+      "display": "chef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S013-HELP",
+      "forStep": "N26-U043-L07-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f6a90fc582a4a31633ff",
+      "display": "officer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S016-HELP",
+      "forStep": "N26-U043-L07-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "display": "a scientist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S019-HELP",
+      "forStep": "N26-U043-L07-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a397ef04eaceedd19fad",
+      "display": "a farmer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S022-HELP",
+      "forStep": "N26-U043-L07-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "display": "a chef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S025-HELP",
+      "forStep": "N26-U043-L07-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f8c8436660e958225e89",
+      "display": "an officer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S028-HELP",
+      "forStep": "N26-U043-L07-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "display": "a chef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S031-HELP",
+      "forStep": "N26-U043-L07-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "display": "a scientist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S033-HELP",
+      "forStep": "N26-U043-L07-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "display": "a chef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S035-HELP",
+      "forStep": "N26-U043-L07-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "display": "a scientist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S037-HELP",
+      "forStep": "N26-U043-L07-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-21cfb3a121a8efc88d2a",
+      "display": "a chef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L07-S039-HELP",
+      "forStep": "N26-U043-L07-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5135a3cb64f5433fc406",
+      "display": "a scientist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L07-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "scientist",
+      "word": "scientist",
+      "ipa": "/ˈsaɪəntɪst/",
+      "meaning": "科学家",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ede351a70cabf3d4fd0b"
+    },
+    {
+      "key": "farmer",
+      "word": "farmer",
+      "ipa": "/ˈfɑːrmər/",
+      "meaning": "农民，经营农场的人",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a0691d91051bbe45084f"
+    },
+    {
+      "key": "chef",
+      "word": "chef",
+      "ipa": "/ʃɛf/",
+      "meaning": "厨师，专业烹饪的人",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e6522565b05c20d58cac"
+    },
+    {
+      "key": "officer",
+      "word": "officer",
+      "ipa": "/ˈɔːfɪsər/",
+      "meaning": "警官",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f6a90fc582a4a31633ff"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：scientist=科学家；farmer=农民，经营农场的人；chef=厨师，专业烹饪的人；officer=警官。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 29,
+    "availableExactAssets": 29,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-3a9dafc7ccfeeb8e8db7",
+      "N26A-cd2f739e2c05e5823903",
+      "N26A-ede351a70cabf3d4fd0b",
+      "N26A-38ad01a639230daf2158",
+      "N26A-a0691d91051bbe45084f",
+      "N26A-3a88f9f1b5a5e78bb76d",
+      "N26A-e6522565b05c20d58cac",
+      "N26A-0fd3c41ddac63dae6ff5",
+      "N26A-f6a90fc582a4a31633ff",
+      "N26A-1732868761435bcc8636",
+      "N26A-5135a3cb64f5433fc406",
+      "N26A-1053c8d6731accc231b9",
+      "N26A-a397ef04eaceedd19fad",
+      "N26A-ff384d50737d33484de8",
+      "N26A-21cfb3a121a8efc88d2a",
+      "N26A-2ecf77fdaf9a2e83ddc3",
+      "N26A-f8c8436660e958225e89",
+      "N26A-d0d88603784e597a75b4",
+      "N26A-67938b83a731c74c168a",
+      "N26A-bb9548734ee99a64485c",
+      "N26A-010966534eae750ce33b",
+      "N26A-4a342587deab5755c218",
+      "N26A-b9cab33e106ca6fdff29",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

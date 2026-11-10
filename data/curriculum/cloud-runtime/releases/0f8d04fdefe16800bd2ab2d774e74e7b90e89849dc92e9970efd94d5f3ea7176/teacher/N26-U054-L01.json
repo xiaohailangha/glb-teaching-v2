@@ -1,0 +1,2585 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit054-v1",
+  "courseId": "N26-U054-L01",
+  "unitId": "N26-U054",
+  "category": "食物与饮品",
+  "title": "切洗与搅拌食材",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "2c8ac76ec0abc8827da2a4b0cc0ea3f19b012f91d318ecf1033dc20a20f14870",
+  "newWords": [
+    "chop",
+    "peel",
+    "rinse",
+    "method",
+    "pour",
+    "mix",
+    "beat",
+    "fold"
+  ],
+  "prerequisites": [
+    "N26-U001",
+    "N26-U023",
+    "N26-U024",
+    "N26-U025"
+  ],
+  "goal": "在“处理食材 1”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "chop",
+        "surface": "chop",
+        "meaning": "切碎",
+        "kind": "new_word"
+      },
+      {
+        "key": "peel",
+        "surface": "peel",
+        "meaning": "削皮，剥皮",
+        "kind": "new_word"
+      },
+      {
+        "key": "rinse",
+        "surface": "rinse",
+        "meaning": "冲洗",
+        "kind": "new_word"
+      },
+      {
+        "key": "method",
+        "surface": "method",
+        "meaning": "方法",
+        "kind": "new_word"
+      },
+      {
+        "key": "pour",
+        "surface": "pour",
+        "meaning": "倒入，倾倒液体",
+        "kind": "new_word"
+      },
+      {
+        "key": "mix",
+        "surface": "mix",
+        "meaning": "混合",
+        "kind": "new_word"
+      },
+      {
+        "key": "beat",
+        "surface": "beat",
+        "meaning": "打散，搅打",
+        "kind": "new_word"
+      },
+      {
+        "key": "fold",
+        "surface": "fold",
+        "meaning": "翻拌，轻轻把材料翻入混合物",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U054-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U054-L01-S002",
+        "N26-U054-L01-S003",
+        "N26-U054-L01-S004",
+        "N26-U054-L01-S005",
+        "N26-U054-L01-S006",
+        "N26-U054-L01-S007",
+        "N26-U054-L01-S008",
+        "N26-U054-L01-S009",
+        "N26-U054-L01-S010",
+        "N26-U054-L01-S011",
+        "N26-U054-L01-S012",
+        "N26-U054-L01-S013",
+        "N26-U054-L01-S014",
+        "N26-U054-L01-S015",
+        "N26-U054-L01-S016",
+        "N26-U054-L01-S017",
+        "N26-U054-L01-S018",
+        "N26-U054-L01-S019",
+        "N26-U054-L01-S020",
+        "N26-U054-L01-S021",
+        "N26-U054-L01-S022",
+        "N26-U054-L01-S023",
+        "N26-U054-L01-S024",
+        "N26-U054-L01-S025"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U054-L01-S026",
+        "N26-U054-L01-S027",
+        "N26-U054-L01-S028",
+        "N26-U054-L01-S029",
+        "N26-U054-L01-S030",
+        "N26-U054-L01-S031",
+        "N26-U054-L01-S032",
+        "N26-U054-L01-S033",
+        "N26-U054-L01-S034",
+        "N26-U054-L01-S035",
+        "N26-U054-L01-S036",
+        "N26-U054-L01-S037",
+        "N26-U054-L01-S038",
+        "N26-U054-L01-S039",
+        "N26-U054-L01-S040",
+        "N26-U054-L01-S041",
+        "N26-U054-L01-S042",
+        "N26-U054-L01-S043",
+        "N26-U054-L01-S044",
+        "N26-U054-L01-S045",
+        "N26-U054-L01-S046",
+        "N26-U054-L01-S047",
+        "N26-U054-L01-S048",
+        "N26-U054-L01-S049"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U054-L01-S050",
+        "N26-U054-L01-S051",
+        "N26-U054-L01-S052",
+        "N26-U054-L01-S053",
+        "N26-U054-L01-S054",
+        "N26-U054-L01-S055"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U054-L01-S056",
+        "N26-U054-L01-S057",
+        "N26-U054-L01-S058",
+        "N26-U054-L01-S059"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U054-L01-S060",
+        "N26-U054-L01-S061",
+        "N26-U054-L01-S062",
+        "N26-U054-L01-S063",
+        "N26-U054-L01-S064",
+        "N26-U054-L01-S065"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U054-L01-S001",
+      "course": "N26-U054-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象在厨房口头排练备餐。今天分清切、削皮、冲洗、倒入、混合、打散和翻拌，再认识方法这个词。",
+      "display": "",
+      "audio": "N26A-45165439a886d487285b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S002",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "切碎。这里说切碎，先听完整的声音。",
+      "display": "chop",
+      "audio": "N26A-7f05baa5a57b9c0843d0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S003",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "切碎",
+      "display": "chop",
+      "audio": "N26A-4096ed2f566b086c3310",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "切碎",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S004",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "chop",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C001",
+      "model": "N26A-4096ed2f566b086c3310",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S005",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "削皮，剥皮。这里说削皮，剥皮，先听完整的声音。",
+      "display": "peel",
+      "audio": "N26A-b34da1568c47e2e94922",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S006",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "削皮，剥皮",
+      "display": "peel",
+      "audio": "N26A-1080b6ad469d46e4de54",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "削皮，剥皮",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S007",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "peel",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C002",
+      "model": "N26A-1080b6ad469d46e4de54",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S008",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "冲洗。这里说冲洗，先听完整的声音。",
+      "display": "rinse",
+      "audio": "N26A-3e70d390dccd457d3154",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S009",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "冲洗",
+      "display": "rinse",
+      "audio": "N26A-73b872dd9dd1c3637e74",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "冲洗",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S010",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "rinse",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C003",
+      "model": "N26A-73b872dd9dd1c3637e74",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S011",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "方法。这里说方法，先听完整的声音。",
+      "display": "method",
+      "audio": "N26A-9840a531f7b9c1e079cc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S012",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "方法",
+      "display": "method",
+      "audio": "N26A-b7d9eac577ce5f19f336",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "方法",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S013",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "method",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C004",
+      "model": "N26A-b7d9eac577ce5f19f336",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S014",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "倒入，倾倒液体。这里说倒入，倾倒液体，先听完整的声音。",
+      "display": "pour",
+      "audio": "N26A-aeb37818564417d98292",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S015",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "倒入，倾倒液体",
+      "display": "pour",
+      "audio": "N26A-3b2016682e033f16b1d2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "倒入，倾倒液体",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S016",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pour",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C005",
+      "model": "N26A-3b2016682e033f16b1d2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S017",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "混合。这里说混合，先听完整的声音。",
+      "display": "mix",
+      "audio": "N26A-5e84d97992fb55137bc8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S018",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "混合",
+      "display": "mix",
+      "audio": "N26A-c55ae03796a5376801cc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "混合",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S019",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "mix",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C006",
+      "model": "N26A-c55ae03796a5376801cc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S020",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "打散，搅打。这里是烹饪动作，不说打人或获胜。",
+      "display": "beat",
+      "audio": "N26A-06a757a158881d60cce5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S021",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "打散，搅打",
+      "display": "beat",
+      "audio": "N26A-7f83b89fb8a60a77c724",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "打散，搅打",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S022",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beat",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C007",
+      "model": "N26A-7f83b89fb8a60a77c724",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S023",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "翻拌，轻轻把材料翻入混合物。固定烹饪场景，不混入折衣服的动作。",
+      "display": "fold",
+      "audio": "N26A-cbefc0924f34c17c0396",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S024",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "翻拌，轻轻把材料翻入混合物",
+      "display": "fold",
+      "audio": "N26A-86d546879822cad71802",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "翻拌，轻轻把材料翻入混合物",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S025",
+      "course": "N26-U054-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fold",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C008",
+      "model": "N26A-86d546879822cad71802",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L01-S026",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "把胡萝卜切碎。先听这一组，再连起来说。",
+      "display": "chop the carrot",
+      "audio": "N26A-7d9797696658020825a3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S027",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "把胡萝卜切碎",
+      "display": "chop the carrot",
+      "audio": "N26A-332475945eae7156bf89",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "把胡萝卜切碎",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S028",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "chop the carrot",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C009",
+      "model": "N26A-332475945eae7156bf89",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S029",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "给土豆削皮。先听这一组，再连起来说。",
+      "display": "peel the potato",
+      "audio": "N26A-30ee5cc39490231b205e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S030",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "给土豆削皮",
+      "display": "peel the potato",
+      "audio": "N26A-90ad86f5e180b6e5edc5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "给土豆削皮",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S031",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "peel the potato",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C010",
+      "model": "N26A-90ad86f5e180b6e5edc5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S032",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "冲洗胡萝卜。先听这一组，再连起来说。",
+      "display": "rinse the carrot",
+      "audio": "N26A-a9e0d271e8382a4ccabc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S033",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "冲洗胡萝卜",
+      "display": "rinse the carrot",
+      "audio": "N26A-079b26f18891cc2408fc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "冲洗胡萝卜",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S034",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "rinse the carrot",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C011",
+      "model": "N26A-079b26f18891cc2408fc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S035",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一种方法。先听这一组，再连起来说。",
+      "display": "a method",
+      "audio": "N26A-a8cada34661cdc0eb138",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S036",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一种方法",
+      "display": "a method",
+      "audio": "N26A-d35fa2ba14fb38ea719d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一种方法",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S037",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a method",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C012",
+      "model": "N26A-d35fa2ba14fb38ea719d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S038",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "倒水。先听这一组，再连起来说。",
+      "display": "pour the water",
+      "audio": "N26A-457de775de33071c335b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S039",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "倒水",
+      "display": "pour the water",
+      "audio": "N26A-61c3fb1dce14e9a7200a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "倒水",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S040",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pour the water",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C013",
+      "model": "N26A-61c3fb1dce14e9a7200a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S041",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "混合酱汁。先听这一组，再连起来说。",
+      "display": "mix the sauce",
+      "audio": "N26A-742f85322d59c5c70dec",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S042",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "混合酱汁",
+      "display": "mix the sauce",
+      "audio": "N26A-de935238f3c0bb4cf1f5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "混合酱汁",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S043",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "mix the sauce",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C014",
+      "model": "N26A-de935238f3c0bb4cf1f5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S044",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "打散鸡蛋。这里是烹饪动作，不说打人或获胜。",
+      "display": "beat the egg",
+      "audio": "N26A-5259b3026efe5c528e63",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S045",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "打散鸡蛋",
+      "display": "beat the egg",
+      "audio": "N26A-187f1a7905858e50efee",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "打散鸡蛋",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S046",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beat the egg",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C015",
+      "model": "N26A-187f1a7905858e50efee",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S047",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "翻拌混合物。固定烹饪场景，不混入折衣服的动作。",
+      "display": "fold the mixture",
+      "audio": "N26A-52748f171813ae2b5117",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S048",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "翻拌混合物",
+      "display": "fold the mixture",
+      "audio": "N26A-7ee97c376e294fd34901",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "翻拌混合物",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S049",
+      "course": "N26-U054-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fold the mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L01-C016",
+      "model": "N26A-7ee97c376e294fd34901",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L01-S050",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "打散鸡蛋",
+      "display": "beat the egg",
+      "audio": "N26A-187f1a7905858e50efee",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "打散鸡蛋",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L01-S051",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述备餐步骤是打散鸡蛋，先听短语。",
+      "display": "",
+      "audio": "N26A-2f9f72ff05d8bc33a889",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S052",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "beat the egg",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C017",
+      "model": "N26A-187f1a7905858e50efee",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S053",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "冲洗胡萝卜",
+      "display": "rinse the carrot",
+      "audio": "N26A-079b26f18891cc2408fc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "冲洗胡萝卜",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L01-S054",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "步骤换成冲洗胡萝卜，先听再说。",
+      "display": "",
+      "audio": "N26A-e85d71f2986aecfdf7b6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S055",
+      "course": "N26-U054-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "rinse the carrot",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C018",
+      "model": "N26A-079b26f18891cc2408fc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S056",
+      "course": "N26-U054-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说打散鸡蛋。",
+      "display": "",
+      "audio": "N26A-9db21a3b75a660219b27",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S057",
+      "course": "N26-U054-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "beat the egg",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C019",
+      "model": "N26A-187f1a7905858e50efee",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S058",
+      "course": "N26-U054-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说冲洗胡萝卜。",
+      "display": "",
+      "audio": "N26A-8cdc51020a5ea8ecab8b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S059",
+      "course": "N26-U054-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "rinse the carrot",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C020",
+      "model": "N26A-079b26f18891cc2408fc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S060",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象列备餐步骤，你说明打散鸡蛋这一项。",
+      "display": "",
+      "audio": "N26A-a9e31611ca18414ed9cf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S061",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "beat the egg",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C021",
+      "model": "N26A-187f1a7905858e50efee",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S062",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对准备工作，你说明冲洗胡萝卜。",
+      "display": "",
+      "audio": "N26A-bad90dfd4a7909085659",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S063",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "rinse the carrot",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L01-C022",
+      "model": "N26A-079b26f18891cc2408fc",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L01-S064",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L01-S065",
+      "course": "N26-U054-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U054-L01-C001",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "切碎",
+      "answers": [
+        "chop"
+      ],
+      "hint": "chop",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S004",
+      "help": "N26-U054-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C002",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "削皮，剥皮",
+      "answers": [
+        "peel"
+      ],
+      "hint": "peel",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S007",
+      "help": "N26-U054-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C003",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "冲洗",
+      "answers": [
+        "rinse"
+      ],
+      "hint": "rinse",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S010",
+      "help": "N26-U054-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C004",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "方法",
+      "answers": [
+        "method"
+      ],
+      "hint": "method",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S013",
+      "help": "N26-U054-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C005",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "倒入，倾倒液体",
+      "answers": [
+        "pour"
+      ],
+      "hint": "pour",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S016",
+      "help": "N26-U054-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C006",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "混合",
+      "answers": [
+        "mix"
+      ],
+      "hint": "mix",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S019",
+      "help": "N26-U054-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C007",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "打散，搅打",
+      "answers": [
+        "beat"
+      ],
+      "hint": "beat",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S022",
+      "help": "N26-U054-L01-S022-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C008",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "翻拌，轻轻把材料翻入混合物",
+      "answers": [
+        "fold"
+      ],
+      "hint": "fold",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S025",
+      "help": "N26-U054-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C009",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把胡萝卜切碎",
+      "answers": [
+        "chop the carrot"
+      ],
+      "hint": "chop the carrot",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S028",
+      "help": "N26-U054-L01-S028-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C010",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "给土豆削皮",
+      "answers": [
+        "peel the potato"
+      ],
+      "hint": "peel the potato",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S031",
+      "help": "N26-U054-L01-S031-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C011",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "冲洗胡萝卜",
+      "answers": [
+        "rinse the carrot"
+      ],
+      "hint": "rinse the carrot",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S034",
+      "help": "N26-U054-L01-S034-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C012",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一种方法",
+      "answers": [
+        "a method"
+      ],
+      "hint": "a method",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S037",
+      "help": "N26-U054-L01-S037-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C013",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "倒水",
+      "answers": [
+        "pour the water"
+      ],
+      "hint": "pour the water",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S040",
+      "help": "N26-U054-L01-S040-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C014",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "混合酱汁",
+      "answers": [
+        "mix the sauce"
+      ],
+      "hint": "mix the sauce",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S043",
+      "help": "N26-U054-L01-S043-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C015",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "打散鸡蛋",
+      "answers": [
+        "beat the egg"
+      ],
+      "hint": "beat the egg",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S046",
+      "help": "N26-U054-L01-S046-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C016",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "翻拌混合物",
+      "answers": [
+        "fold the mixture"
+      ],
+      "hint": "fold the mixture",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S049",
+      "help": "N26-U054-L01-S049-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C017",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述备餐步骤是打散鸡蛋，先听短语。",
+      "answers": [
+        "beat the egg"
+      ],
+      "hint": "beat the egg",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S052",
+      "help": "N26-U054-L01-S052-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C018",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "步骤换成冲洗胡萝卜，先听再说。",
+      "answers": [
+        "rinse the carrot"
+      ],
+      "hint": "rinse the carrot",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S055",
+      "help": "N26-U054-L01-S055-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C019",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说打散鸡蛋。",
+      "answers": [
+        "beat the egg"
+      ],
+      "hint": "beat the egg",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S057",
+      "help": "N26-U054-L01-S057-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C020",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说冲洗胡萝卜。",
+      "answers": [
+        "rinse the carrot"
+      ],
+      "hint": "rinse the carrot",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L01-S059",
+      "help": "N26-U054-L01-S059-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C021",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象列备餐步骤，你说明打散鸡蛋这一项。",
+      "answers": [
+        "beat the egg"
+      ],
+      "hint": "beat the egg",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L01-S061",
+      "help": "N26-U054-L01-S061-HELP"
+    },
+    {
+      "id": "N26-U054-L01-C022",
+      "course": "N26-U054-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对准备工作，你说明冲洗胡萝卜。",
+      "answers": [
+        "rinse the carrot"
+      ],
+      "hint": "rinse the carrot",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L01-S063",
+      "help": "N26-U054-L01-S063-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U054-L01-S004-HELP",
+      "forStep": "N26-U054-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4096ed2f566b086c3310",
+      "display": "chop",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S007-HELP",
+      "forStep": "N26-U054-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1080b6ad469d46e4de54",
+      "display": "peel",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S010-HELP",
+      "forStep": "N26-U054-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-73b872dd9dd1c3637e74",
+      "display": "rinse",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S013-HELP",
+      "forStep": "N26-U054-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b7d9eac577ce5f19f336",
+      "display": "method",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S016-HELP",
+      "forStep": "N26-U054-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3b2016682e033f16b1d2",
+      "display": "pour",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S019-HELP",
+      "forStep": "N26-U054-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c55ae03796a5376801cc",
+      "display": "mix",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S022-HELP",
+      "forStep": "N26-U054-L01-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7f83b89fb8a60a77c724",
+      "display": "beat",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S025-HELP",
+      "forStep": "N26-U054-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-86d546879822cad71802",
+      "display": "fold",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S028-HELP",
+      "forStep": "N26-U054-L01-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-332475945eae7156bf89",
+      "display": "chop the carrot",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S031-HELP",
+      "forStep": "N26-U054-L01-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-90ad86f5e180b6e5edc5",
+      "display": "peel the potato",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S034-HELP",
+      "forStep": "N26-U054-L01-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-079b26f18891cc2408fc",
+      "display": "rinse the carrot",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S037-HELP",
+      "forStep": "N26-U054-L01-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d35fa2ba14fb38ea719d",
+      "display": "a method",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S040-HELP",
+      "forStep": "N26-U054-L01-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-61c3fb1dce14e9a7200a",
+      "display": "pour the water",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S043-HELP",
+      "forStep": "N26-U054-L01-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-de935238f3c0bb4cf1f5",
+      "display": "mix the sauce",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S046-HELP",
+      "forStep": "N26-U054-L01-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-187f1a7905858e50efee",
+      "display": "beat the egg",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S049-HELP",
+      "forStep": "N26-U054-L01-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7ee97c376e294fd34901",
+      "display": "fold the mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S052-HELP",
+      "forStep": "N26-U054-L01-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-187f1a7905858e50efee",
+      "display": "beat the egg",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S055-HELP",
+      "forStep": "N26-U054-L01-S055",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-079b26f18891cc2408fc",
+      "display": "rinse the carrot",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S055",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S057-HELP",
+      "forStep": "N26-U054-L01-S057",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-187f1a7905858e50efee",
+      "display": "beat the egg",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S057",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S059-HELP",
+      "forStep": "N26-U054-L01-S059",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-079b26f18891cc2408fc",
+      "display": "rinse the carrot",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S059",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S061-HELP",
+      "forStep": "N26-U054-L01-S061",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-187f1a7905858e50efee",
+      "display": "beat the egg",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S061",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L01-S063-HELP",
+      "forStep": "N26-U054-L01-S063",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-079b26f18891cc2408fc",
+      "display": "rinse the carrot",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L01-S063",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "chop",
+      "word": "chop",
+      "ipa": "/tʃɑːp/",
+      "meaning": "切碎",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-4096ed2f566b086c3310"
+    },
+    {
+      "key": "peel",
+      "word": "peel",
+      "ipa": "/piːl/",
+      "meaning": "削皮，剥皮",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1080b6ad469d46e4de54"
+    },
+    {
+      "key": "rinse",
+      "word": "rinse",
+      "ipa": "/rɪns/",
+      "meaning": "冲洗",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-73b872dd9dd1c3637e74"
+    },
+    {
+      "key": "method",
+      "word": "method",
+      "ipa": "/ˈmɛθəd/",
+      "meaning": "方法",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b7d9eac577ce5f19f336"
+    },
+    {
+      "key": "pour",
+      "word": "pour",
+      "ipa": "/pɔːr/",
+      "meaning": "倒入，倾倒液体",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3b2016682e033f16b1d2"
+    },
+    {
+      "key": "mix",
+      "word": "mix",
+      "ipa": "/mɪks/",
+      "meaning": "混合",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c55ae03796a5376801cc"
+    },
+    {
+      "key": "beat",
+      "word": "beat",
+      "ipa": "/biːt/",
+      "meaning": "打散，搅打",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7f83b89fb8a60a77c724"
+    },
+    {
+      "key": "fold",
+      "word": "fold",
+      "ipa": "/foʊld/",
+      "meaning": "翻拌，轻轻把材料翻入混合物",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-86d546879822cad71802"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "carrot",
+      "word": "carrot",
+      "ipa": "/ˈker.ət/",
+      "meaning": "胡萝卜",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-26ed0f0ce943152a1788"
+    },
+    {
+      "key": "potato",
+      "word": "potato",
+      "ipa": "/pəˈteɪ.t̬oʊ/",
+      "meaning": "土豆",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c1f8fbd91c405c184755"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "water",
+      "word": "water",
+      "ipa": "/ˈwɑː.t̬ɚ/",
+      "meaning": "水",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-64351fa189db1fad970c"
+    },
+    {
+      "key": "sauce",
+      "word": "sauce",
+      "ipa": "/sɔːs/",
+      "meaning": "酱汁",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b2c76d57278371d51474"
+    },
+    {
+      "key": "egg",
+      "word": "egg",
+      "ipa": "/eɡ/",
+      "meaning": "鸡蛋，这里先说一个鸡蛋",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e3f124bfa9d1f4f20b7c"
+    },
+    {
+      "key": "mixture",
+      "word": "mixture",
+      "ipa": "/ˈmɪkstʃər/",
+      "meaning": "混合物",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-dd36b53f5159cf17f985"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：chop=切碎；peel=削皮，剥皮；rinse=冲洗；method=方法；pour=倒入，倾倒液体；mix=混合；beat=打散，搅打；fold=翻拌，轻轻把材料翻入混合物。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R001，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "carrot",
+      "sourceCourse": "N26-U008-L03",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "potato",
+      "sourceCourse": "N26-U008-L03",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "sauce",
+      "sourceCourse": "N26-U053-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "egg",
+      "sourceCourse": "N26-U008-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "mixture",
+      "sourceCourse": "N26-U053-L05",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 51,
+    "availableExactAssets": 51,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-45165439a886d487285b",
+      "N26A-7f05baa5a57b9c0843d0",
+      "N26A-4096ed2f566b086c3310",
+      "N26A-b34da1568c47e2e94922",
+      "N26A-1080b6ad469d46e4de54",
+      "N26A-3e70d390dccd457d3154",
+      "N26A-73b872dd9dd1c3637e74",
+      "N26A-9840a531f7b9c1e079cc",
+      "N26A-b7d9eac577ce5f19f336",
+      "N26A-aeb37818564417d98292",
+      "N26A-3b2016682e033f16b1d2",
+      "N26A-5e84d97992fb55137bc8",
+      "N26A-c55ae03796a5376801cc",
+      "N26A-06a757a158881d60cce5",
+      "N26A-7f83b89fb8a60a77c724",
+      "N26A-cbefc0924f34c17c0396",
+      "N26A-86d546879822cad71802",
+      "N26A-7d9797696658020825a3",
+      "N26A-332475945eae7156bf89",
+      "N26A-30ee5cc39490231b205e",
+      "N26A-90ad86f5e180b6e5edc5",
+      "N26A-a9e0d271e8382a4ccabc",
+      "N26A-079b26f18891cc2408fc",
+      "N26A-a8cada34661cdc0eb138",
+      "N26A-d35fa2ba14fb38ea719d",
+      "N26A-457de775de33071c335b",
+      "N26A-61c3fb1dce14e9a7200a",
+      "N26A-742f85322d59c5c70dec",
+      "N26A-de935238f3c0bb4cf1f5",
+      "N26A-5259b3026efe5c528e63",
+      "N26A-187f1a7905858e50efee",
+      "N26A-52748f171813ae2b5117",
+      "N26A-7ee97c376e294fd34901",
+      "N26A-2f9f72ff05d8bc33a889",
+      "N26A-e85d71f2986aecfdf7b6",
+      "N26A-9db21a3b75a660219b27",
+      "N26A-8cdc51020a5ea8ecab8b",
+      "N26A-a9e31611ca18414ed9cf",
+      "N26A-bad90dfd4a7909085659",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-26ed0f0ce943152a1788",
+      "N26A-c1f8fbd91c405c184755",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-64351fa189db1fad970c",
+      "N26A-b2c76d57278371d51474",
+      "N26A-e3f124bfa9d1f4f20b7c",
+      "N26A-dd36b53f5159cf17f985",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

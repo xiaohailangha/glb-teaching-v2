@@ -1,0 +1,1661 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit076-v1",
+  "courseId": "N26-U076-L02",
+  "unitId": "N26-U076",
+  "category": "城市与交通",
+  "title": "避险与寻求保护",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "04479043f1b960355845168cca104b274c9ad0992f850cbbb43c5e24b558d112",
+  "newWords": [
+    "escape",
+    "survive",
+    "seek",
+    "defend"
+  ],
+  "prerequisites": [
+    "N26-U076-L01"
+  ],
+  "goal": "在“改道与避险 2”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "escape",
+        "surface": "escape",
+        "meaning": "逃离",
+        "kind": "new_word"
+      },
+      {
+        "key": "survive",
+        "surface": "survive",
+        "meaning": "幸存，生存下来",
+        "kind": "new_word"
+      },
+      {
+        "key": "seek",
+        "surface": "seek",
+        "meaning": "寻求",
+        "kind": "new_word"
+      },
+      {
+        "key": "defend",
+        "surface": "defend",
+        "meaning": "保护，保卫",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U076-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U076-L02-S002",
+        "N26-U076-L02-S003",
+        "N26-U076-L02-S004",
+        "N26-U076-L02-S005",
+        "N26-U076-L02-S006",
+        "N26-U076-L02-S007",
+        "N26-U076-L02-S008",
+        "N26-U076-L02-S009",
+        "N26-U076-L02-S010",
+        "N26-U076-L02-S011",
+        "N26-U076-L02-S012",
+        "N26-U076-L02-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U076-L02-S014",
+        "N26-U076-L02-S015",
+        "N26-U076-L02-S016",
+        "N26-U076-L02-S017",
+        "N26-U076-L02-S018",
+        "N26-U076-L02-S019",
+        "N26-U076-L02-S020",
+        "N26-U076-L02-S021",
+        "N26-U076-L02-S022",
+        "N26-U076-L02-S023",
+        "N26-U076-L02-S024",
+        "N26-U076-L02-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U076-L02-S026",
+        "N26-U076-L02-S027",
+        "N26-U076-L02-S028",
+        "N26-U076-L02-S029",
+        "N26-U076-L02-S030",
+        "N26-U076-L02-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U076-L02-S032",
+        "N26-U076-L02-S033",
+        "N26-U076-L02-S034",
+        "N26-U076-L02-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U076-L02-S036",
+        "N26-U076-L02-S037",
+        "N26-U076-L02-S038",
+        "N26-U076-L02-S039",
+        "N26-U076-L02-S040",
+        "N26-U076-L02-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U076-L02-S001",
+      "course": "N26-U076-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象安全沟通排练，认识逃离、幸存、寻求和保护的动作。",
+      "display": "",
+      "audio": "N26A-255695d44e57723536c6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S002",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "逃离。先说可以离开的能力。",
+      "display": "escape",
+      "audio": "N26A-909eca63178e6ffe443d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S003",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "逃离",
+      "display": "escape",
+      "audio": "N26A-30479656e508b0828969",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "逃离",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S004",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "escape",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C001",
+      "model": "N26A-30479656e508b0828969",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S005",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "幸存，生存下来。先认识这个动作名称。",
+      "display": "survive",
+      "audio": "N26A-9329d3ff305a3ce42ccb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S006",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "幸存，生存下来",
+      "display": "survive",
+      "audio": "N26A-28a929cec32be6e1b464",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "幸存，生存下来",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S007",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "survive",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C002",
+      "model": "N26A-28a929cec32be6e1b464",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S008",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "寻求。后面直接接寻求的东西。",
+      "display": "seek",
+      "audio": "N26A-c26e10111f8a7e9bbe56",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S009",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "寻求",
+      "display": "seek",
+      "audio": "N26A-4628bd785dfdf477ff3f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "寻求",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S010",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "seek",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C003",
+      "model": "N26A-4628bd785dfdf477ff3f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S011",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "保护，保卫。这里说保护家人。",
+      "display": "defend",
+      "audio": "N26A-02be1b517e961f30b0c5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S012",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "保护，保卫",
+      "display": "defend",
+      "audio": "N26A-4d660becb53ed2020ddc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "保护，保卫",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S013",
+      "course": "N26-U076-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "defend",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C004",
+      "model": "N26A-4d660becb53ed2020ddc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U076-L02-S014",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可以逃离。先说可以离开的能力。",
+      "display": "I can escape",
+      "audio": "N26A-030df54044f4df415e9f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S015",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可以逃离。",
+      "display": "I can escape.",
+      "audio": "N26A-67e08fc1074f1b4fea3e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以逃离。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S016",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can escape.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C005",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S017",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "幸存。先认识这个动作名称。",
+      "display": "survive",
+      "audio": "N26A-3bbe6dd9f79598db6aa3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S018",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "幸存",
+      "display": "survive",
+      "audio": "N26A-28a929cec32be6e1b464",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "幸存",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S019",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "survive",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C006",
+      "model": "N26A-28a929cec32be6e1b464",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S020",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可以寻求帮助。后面直接接寻求的东西。",
+      "display": "I can seek help",
+      "audio": "N26A-aae715b194f89ea5c47d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S021",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可以寻求帮助。",
+      "display": "I can seek help.",
+      "audio": "N26A-029d434796a4e657167f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以寻求帮助。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S022",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can seek help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C007",
+      "model": "N26A-029d434796a4e657167f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S023",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我可以保护家人。这里说保护家人。",
+      "display": "I can defend my family",
+      "audio": "N26A-235bcf3519f21e621b0c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S024",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我可以保护家人。",
+      "display": "I can defend my family.",
+      "audio": "N26A-eb32a115dc82284c97e7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以保护家人。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S025",
+      "course": "N26-U076-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can defend my family.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U076-L02-C008",
+      "model": "N26A-eb32a115dc82284c97e7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U076-L02-S026",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可以寻求帮助。",
+      "display": "I can seek help.",
+      "audio": "N26A-029d434796a4e657167f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以寻求帮助。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U076-L02-S027",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你要说明能够寻求帮助，先听完整句。",
+      "display": "",
+      "audio": "N26A-24f47298758736668730",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S028",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can seek help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C009",
+      "model": "N26A-029d434796a4e657167f",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S029",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我可以逃离。",
+      "display": "I can escape.",
+      "audio": "N26A-67e08fc1074f1b4fea3e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我可以逃离。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U076-L02-S030",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "排练中确认有能力离开，听后说可以逃离。",
+      "display": "",
+      "audio": "N26A-4a4bfaa62a486baf1ed2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S031",
+      "course": "N26-U076-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can escape.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C010",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S032",
+      "course": "N26-U076-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "只说幸存这个动作名称，看词练习。",
+      "display": "",
+      "audio": "N26A-238b8727ed2eda045a80",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S033",
+      "course": "N26-U076-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "survive",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C011",
+      "model": "N26A-28a929cec32be6e1b464",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S034",
+      "course": "N26-U076-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "表达可以保护家人，看整句说。",
+      "display": "",
+      "audio": "N26A-fbb70e154bf175548f3c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S035",
+      "course": "N26-U076-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I can defend my family.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C012",
+      "model": "N26A-eb32a115dc82284c97e7",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S036",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象和朋友商量求援，你主动表示可以寻求帮助。",
+      "display": "",
+      "audio": "N26A-7590604697d7c0139df9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S037",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I can seek help.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C013",
+      "model": "N26A-029d434796a4e657167f",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S038",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "虚构情境已明确有可行出口，你用能力句说明可以离开。",
+      "display": "",
+      "audio": "N26A-d719b297a00536ccdb12",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S039",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I can escape.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U076-L02-C014",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U076-L02-S040",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U076-L02-S041",
+      "course": "N26-U076-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U076-L02-C001",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "逃离",
+      "answers": [
+        "escape"
+      ],
+      "hint": "escape",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S004",
+      "help": "N26-U076-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C002",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "幸存，生存下来",
+      "answers": [
+        "survive"
+      ],
+      "hint": "survive",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S007",
+      "help": "N26-U076-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C003",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "寻求",
+      "answers": [
+        "seek"
+      ],
+      "hint": "seek",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S010",
+      "help": "N26-U076-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C004",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "保护，保卫",
+      "answers": [
+        "defend"
+      ],
+      "hint": "defend",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S013",
+      "help": "N26-U076-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C005",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可以逃离。",
+      "answers": [
+        "I can escape."
+      ],
+      "hint": "I can escape.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S016",
+      "help": "N26-U076-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C006",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "幸存",
+      "answers": [
+        "survive"
+      ],
+      "hint": "survive",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S019",
+      "help": "N26-U076-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C007",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可以寻求帮助。",
+      "answers": [
+        "I can seek help."
+      ],
+      "hint": "I can seek help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S022",
+      "help": "N26-U076-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C008",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我可以保护家人。",
+      "answers": [
+        "I can defend my family."
+      ],
+      "hint": "I can defend my family.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S025",
+      "help": "N26-U076-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C009",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你要说明能够寻求帮助，先听完整句。",
+      "answers": [
+        "I can seek help."
+      ],
+      "hint": "I can seek help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S028",
+      "help": "N26-U076-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C010",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "排练中确认有能力离开，听后说可以逃离。",
+      "answers": [
+        "I can escape."
+      ],
+      "hint": "I can escape.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S031",
+      "help": "N26-U076-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C011",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "只说幸存这个动作名称，看词练习。",
+      "answers": [
+        "survive"
+      ],
+      "hint": "survive",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S033",
+      "help": "N26-U076-L02-S033-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C012",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "表达可以保护家人，看整句说。",
+      "answers": [
+        "I can defend my family."
+      ],
+      "hint": "I can defend my family.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U076-L02-S035",
+      "help": "N26-U076-L02-S035-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C013",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象和朋友商量求援，你主动表示可以寻求帮助。",
+      "answers": [
+        "I can seek help."
+      ],
+      "hint": "I can seek help.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U076-L02-S037",
+      "help": "N26-U076-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U076-L02-C014",
+      "course": "N26-U076-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "虚构情境已明确有可行出口，你用能力句说明可以离开。",
+      "answers": [
+        "I can escape."
+      ],
+      "hint": "I can escape.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U076-L02-S039",
+      "help": "N26-U076-L02-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U076-L02-S004-HELP",
+      "forStep": "N26-U076-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-30479656e508b0828969",
+      "display": "escape",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S007-HELP",
+      "forStep": "N26-U076-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-28a929cec32be6e1b464",
+      "display": "survive",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S010-HELP",
+      "forStep": "N26-U076-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4628bd785dfdf477ff3f",
+      "display": "seek",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S013-HELP",
+      "forStep": "N26-U076-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4d660becb53ed2020ddc",
+      "display": "defend",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S016-HELP",
+      "forStep": "N26-U076-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "display": "I can escape.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S019-HELP",
+      "forStep": "N26-U076-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-28a929cec32be6e1b464",
+      "display": "survive",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S022-HELP",
+      "forStep": "N26-U076-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-029d434796a4e657167f",
+      "display": "I can seek help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S025-HELP",
+      "forStep": "N26-U076-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eb32a115dc82284c97e7",
+      "display": "I can defend my family.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S028-HELP",
+      "forStep": "N26-U076-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-029d434796a4e657167f",
+      "display": "I can seek help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S031-HELP",
+      "forStep": "N26-U076-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "display": "I can escape.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S033-HELP",
+      "forStep": "N26-U076-L02-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-28a929cec32be6e1b464",
+      "display": "survive",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S035-HELP",
+      "forStep": "N26-U076-L02-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-eb32a115dc82284c97e7",
+      "display": "I can defend my family.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S037-HELP",
+      "forStep": "N26-U076-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-029d434796a4e657167f",
+      "display": "I can seek help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U076-L02-S039-HELP",
+      "forStep": "N26-U076-L02-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-67e08fc1074f1b4fea3e",
+      "display": "I can escape.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U076-L02-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "escape",
+      "word": "escape",
+      "ipa": "/ɪˈskeɪp/",
+      "meaning": "逃离",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-30479656e508b0828969"
+    },
+    {
+      "key": "survive",
+      "word": "survive",
+      "ipa": "/sɚˈvaɪv/",
+      "meaning": "幸存，生存下来",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-28a929cec32be6e1b464"
+    },
+    {
+      "key": "seek",
+      "word": "seek",
+      "ipa": "/siːk/",
+      "meaning": "寻求",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-4628bd785dfdf477ff3f"
+    },
+    {
+      "key": "defend",
+      "word": "defend",
+      "ipa": "/dɪˈfɛnd/",
+      "meaning": "保护，保卫",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-4d660becb53ed2020ddc"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "can",
+      "word": "can",
+      "ipa": "/kæn/",
+      "meaning": "能，可以",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac940722cc38a8e45268"
+    },
+    {
+      "key": "help",
+      "word": "help",
+      "ipa": "/help/",
+      "meaning": "帮助",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2158eaece6e592f2cc15"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "family",
+      "word": "family",
+      "ipa": "/ˈfæm.əl.i/",
+      "meaning": "家庭，家人组成的一家",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-26088dc1ee3bb64af339"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "仅词义和虚构能力表达，不提供逃生路线或防卫操作；survive不使用一般现在冒充过去幸存事实。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "can",
+      "sourceCourse": "N26-U004-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "help",
+      "sourceCourse": "N26-U004-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "family",
+      "sourceCourse": "N26-U011-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 31,
+    "availableExactAssets": 31,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-255695d44e57723536c6",
+      "N26A-909eca63178e6ffe443d",
+      "N26A-30479656e508b0828969",
+      "N26A-9329d3ff305a3ce42ccb",
+      "N26A-28a929cec32be6e1b464",
+      "N26A-c26e10111f8a7e9bbe56",
+      "N26A-4628bd785dfdf477ff3f",
+      "N26A-02be1b517e961f30b0c5",
+      "N26A-4d660becb53ed2020ddc",
+      "N26A-030df54044f4df415e9f",
+      "N26A-67e08fc1074f1b4fea3e",
+      "N26A-3bbe6dd9f79598db6aa3",
+      "N26A-aae715b194f89ea5c47d",
+      "N26A-029d434796a4e657167f",
+      "N26A-235bcf3519f21e621b0c",
+      "N26A-eb32a115dc82284c97e7",
+      "N26A-24f47298758736668730",
+      "N26A-4a4bfaa62a486baf1ed2",
+      "N26A-238b8727ed2eda045a80",
+      "N26A-fbb70e154bf175548f3c",
+      "N26A-7590604697d7c0139df9",
+      "N26A-d719b297a00536ccdb12",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-ac940722cc38a8e45268",
+      "N26A-2158eaece6e592f2cc15",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-26088dc1ee3bb64af339",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

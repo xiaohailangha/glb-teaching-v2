@@ -1,0 +1,271 @@
+{
+  "text": "although this is difficult",
+  "alignment": {
+    "SuggestedScore": 98.53978729248047,
+    "PronAccuracy": 98.53978729248047,
+    "PronFluency": 0.9550150632858276,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 350,
+        "MemEndTime": 930,
+        "PronAccuracy": 97.87187194824219,
+        "PronFluency": 0.9217510223388672,
+        "ReferenceWord": "although_0",
+        "Word": "although",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 350,
+            "MemEndTime": 510,
+            "PronAccuracy": 96.94005584716797,
+            "DetectedStress": false,
+            "Phone": "ao",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 510,
+            "MemEndTime": 610,
+            "PronAccuracy": 97.36675262451172,
+            "DetectedStress": false,
+            "Phone": "l",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 610,
+            "MemEndTime": 740,
+            "PronAccuracy": 98.68814849853516,
+            "DetectedStress": false,
+            "Phone": "dh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 740,
+            "MemEndTime": 930,
+            "PronAccuracy": 98.4925537109375,
+            "DetectedStress": false,
+            "Phone": "ow",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 930,
+        "MemEndTime": 1190,
+        "PronAccuracy": 98.65522766113281,
+        "PronFluency": 0.9641103744506836,
+        "ReferenceWord": "this_1",
+        "Word": "this",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 930,
+            "MemEndTime": 1030,
+            "PronAccuracy": 98.65642547607422,
+            "DetectedStress": false,
+            "Phone": "dh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1030,
+            "MemEndTime": 1090,
+            "PronAccuracy": 98.51316833496094,
+            "DetectedStress": false,
+            "Phone": "ih",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1090,
+            "MemEndTime": 1190,
+            "PronAccuracy": 98.79609680175781,
+            "DetectedStress": false,
+            "Phone": "s",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1190,
+        "MemEndTime": 1350,
+        "PronAccuracy": 98.4170150756836,
+        "PronFluency": 0.9806205034255981,
+        "ReferenceWord": "is_2",
+        "Word": "is",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1190,
+            "MemEndTime": 1270,
+            "PronAccuracy": 98.90655517578125,
+            "DetectedStress": false,
+            "Phone": "ih",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1270,
+            "MemEndTime": 1350,
+            "PronAccuracy": 97.92747497558594,
+            "DetectedStress": false,
+            "Phone": "z",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1350,
+        "MemEndTime": 2170,
+        "PronAccuracy": 98.86115264892578,
+        "PronFluency": 0.953578531742096,
+        "ReferenceWord": "difficult_3",
+        "Word": "difficult",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1350,
+            "MemEndTime": 1430,
+            "PronAccuracy": 98.69831848144531,
+            "DetectedStress": false,
+            "Phone": "d",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1430,
+            "MemEndTime": 1510,
+            "PronAccuracy": 98.94952392578125,
+            "DetectedStress": false,
+            "Phone": "ih",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1510,
+            "MemEndTime": 1590,
+            "PronAccuracy": 98.87580871582031,
+            "DetectedStress": false,
+            "Phone": "f",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1590,
+            "MemEndTime": 1650,
+            "PronAccuracy": 98.84712982177734,
+            "DetectedStress": false,
+            "Phone": "ah",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1650,
+            "MemEndTime": 1710,
+            "PronAccuracy": 98.88446044921875,
+            "DetectedStress": false,
+            "Phone": "k",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1710,
+            "MemEndTime": 1790,
+            "PronAccuracy": 99.00178527832031,
+            "DetectedStress": false,
+            "Phone": "ah",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1790,
+            "MemEndTime": 1950,
+            "PronAccuracy": 98.90522003173828,
+            "DetectedStress": false,
+            "Phone": "l",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1950,
+            "MemEndTime": 2170,
+            "PronAccuracy": 98.7269515991211,
+            "DetectedStress": false,
+            "Phone": "t",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  },
+  "cueSource": "soe-phone-timing"
+}

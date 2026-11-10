@@ -7,7 +7,7 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 characters = set(range(32, 256))
-for folder, pattern in [('scene-preview/lib', '*.dart'), ('scene-preview/assets/avatar/courses', '*.json')]:
+for folder, pattern in [('scene-preview/lib', '*.dart'), ('scene-preview/assets/avatar/courses', '*.json'), ('data/curriculum', '*.json')]:
     for source in (root / folder).rglob(pattern):
         characters.update(map(ord, source.read_text(encoding='utf-8-sig')))
 font = subset.load_font(str(root / 'assets/fonts/NotoSansSC.ttf'), subset.Options())

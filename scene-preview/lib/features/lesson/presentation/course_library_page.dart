@@ -3,8 +3,8 @@ import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../core/avatar/scene/course_resources.dart';
 
+import '../../../core/avatar/scene/course_resources.dart';
 
 import '../application/lesson_controller.dart';
 import '../domain/course_catalog.dart';
@@ -20,11 +20,15 @@ const _palettes = [
   [Color(0xFFFAB9BC), Color(0xFFDC819B)],
   [Color(0xFFD9EAA7), Color(0xFF9FBE86)],
 ];
+
 /// The teaching route stays mounted and visible through the frosted overlay.
 Future<void> showCourseLibrary(
   BuildContext context,
-  LessonController controller,
-) {
+  LessonController controller, {
+  List<CourseInfo> additions = const [],
+  FormalDirectory? directory,
+  Future<void> Function(String)? onAdditionalSelected,
+}) {
   final reduced = MediaQuery.disableAnimationsOf(context);
   return Navigator.of(context).push<void>(
     PageRouteBuilder<void>(
@@ -33,7 +37,12 @@ Future<void> showCourseLibrary(
       barrierColor: Colors.transparent,
       transitionDuration: Duration(milliseconds: reduced ? 0 : 220),
       reverseTransitionDuration: Duration(milliseconds: reduced ? 0 : 180),
-      pageBuilder: (_, _, _) => CourseLibraryPage(controller: controller),
+      pageBuilder: (_, _, _) => CourseLibraryPage(
+        controller: controller,
+        additions: additions,
+        directory: directory,
+        onAdditionalSelected: onAdditionalSelected,
+      ),
       transitionsBuilder: (_, animation, _, child) =>
           FadeTransition(opacity: animation, child: child),
     ),
@@ -41,7 +50,16 @@ Future<void> showCourseLibrary(
 }
 
 class CourseLibraryPage extends StatefulWidget {
-  const CourseLibraryPage({super.key, required this.controller});
+  const CourseLibraryPage({
+    super.key,
+    required this.controller,
+    this.additions = const [],
+    this.directory,
+    this.onAdditionalSelected,
+  });
+  final List<CourseInfo> additions;
+  final FormalDirectory? directory;
+  final Future<void> Function(String)? onAdditionalSelected;
   final LessonController controller;
   @override
   State<CourseLibraryPage> createState() => _CourseLibraryPageState();
@@ -49,6 +67,32 @@ class CourseLibraryPage extends StatefulWidget {
 
 class _CourseLibraryPageState extends State<CourseLibraryPage>
     with SingleTickerProviderStateMixin {
+  bool _formal = false;
+  String _unit = '';
+  List<CourseInfo> get catalog => _formal
+      ? widget.directory!.courses
+      : [...courseCatalog, ...widget.additions];
+  List<CourseType> get types => _formal
+      ? [
+          for (final name in widget.directory!.categories)
+            CourseType(
+              name,
+              name,
+              catalog
+                  .where((c) => c.category == name)
+                  .map((c) => c.id)
+                  .toList(),
+            ),
+        ]
+      : [
+          ...courseTypes,
+          if (widget.additions.isNotEmpty)
+            CourseType(
+              'b101',
+              '体验测试 · B1.01',
+              widget.additions.map((c) => c.id).toList(),
+            ),
+        ];
   late final AnimationController _position;
   late List<int> _indices;
   late String _type;
@@ -59,17 +103,27 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
   @override
   void initState() {
     super.initState();
-    final initial = courseCatalog.indexWhere(
+    _formal = widget.directory != null;
+    final initial = catalog.indexWhere(
       (c) => c.id == widget.controller.courseId,
     );
-    final type = courseTypes.firstWhere(
+    final type = types.firstWhere(
       (type) => type.courseIds.contains(widget.controller.courseId),
-      orElse: () => courseTypes.first,
+      orElse: () => types.first,
     );
     _type = type.id;
+    if (_formal) {
+      _unit =
+          widget.directory!.units.firstWhere(
+                (u) => u['category'] == _type,
+              )['id']
+              as String;
+    }
     _indices = [
-      for (var i = 0; i < courseCatalog.length; i++)
-        if (type.courseIds.contains(courseCatalog[i].id)) i,
+      for (var i = 0; i < catalog.length; i++)
+        if (type.courseIds.contains(catalog[i].id) &&
+            (!_formal || catalog[i].unit == _unit))
+          i,
     ];
     _position = AnimationController.unbounded(
       vsync: this,
@@ -84,13 +138,57 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
     _position.stop();
     setState(() {
       _type = type.id;
+      if (_formal) {
+        _unit =
+            widget.directory!.units.firstWhere(
+                  (u) => u['category'] == _type,
+                )['id']
+                as String;
+      }
       _indices = [
-        for (var i = 0; i < courseCatalog.length; i++)
-          if (type.courseIds.contains(courseCatalog[i].id)) i,
+        for (var i = 0; i < catalog.length; i++)
+          if (type.courseIds.contains(catalog[i].id) &&
+              (!_formal || catalog[i].unit == _unit))
+            i,
       ];
       _position.value =
           (_indices.length * 1000 + math.max(0, _indices.indexOf(previous)))
               .toDouble();
+    });
+  }
+
+  void _source(bool formal) {
+    if (_opening || _formal == formal) return;
+    _position.stop();
+    setState(() {
+      _formal = formal;
+      _type = types.first.id;
+      _unit = formal
+          ? widget.directory!.units.firstWhere(
+                  (u) => u['category'] == _type,
+                )['id']
+                as String
+          : '';
+      _indices = [
+        for (var i = 0; i < catalog.length; i++)
+          if (types.first.courseIds.contains(catalog[i].id) &&
+              (!formal || catalog[i].unit == _unit))
+            i,
+      ];
+      _position.value = (_indices.length * 1000).toDouble();
+    });
+  }
+
+  void _selectUnit(CourseType unit) {
+    if (_opening || _unit == unit.id) return;
+    _position.stop();
+    setState(() {
+      _unit = unit.id;
+      _indices = [
+        for (var i = 0; i < catalog.length; i++)
+          if (catalog[i].unit == _unit) i,
+      ];
+      _position.value = (_indices.length * 1000).toDouble();
     });
   }
 
@@ -119,10 +217,20 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
   Future<void> _open() async {
     if (_opening) return;
     _position.stop();
-    final course = courseCatalog[_index];
+    final course = catalog[_index];
+    if (_formal && course.status != 'published') {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('这节课正在制作，完成验收后开放学习')));
+      return;
+    }
     setState(() => _opening = true);
     try {
-      await widget.controller.selectCourse(course.id);
+      if (widget.additions.any((c) => c.id == course.id)) {
+        await widget.onAdditionalSelected?.call(course.id);
+      } else {
+        await widget.onAdditionalSelected?.call('');
+        await widget.controller.selectCourse(course.id);
+      }
       if (mounted) Navigator.pop(context);
     } catch (_) {
       if (!mounted) return;
@@ -222,7 +330,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                                     button: true,
                                     enabled: !_opening,
                                     label:
-                                        '${slot == center ? '进入课程' : '居中课程'}：${courseCatalog[_indices[slot % _indices.length]].title}',
+                                        '${slot == center ? '进入课程' : '居中课程'}：${catalog[_indices[slot % _indices.length]].title}',
                                     onTap: _opening
                                         ? null
                                         : () => _activate(slot),
@@ -234,6 +342,9 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                                           : () => _activate(slot),
                                       child: ExcludeSemantics(
                                         child: _Poster(
+                                          course:
+                                              catalog[_indices[slot %
+                                                  _indices.length]],
                                           index:
                                               _indices[slot % _indices.length],
                                         ),
@@ -285,6 +396,36 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                 animation: _position,
                 builder: (context, _) => Column(
                   children: [
+                    if (widget.directory != null)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Row(
+                          children: [
+                            TextButton(
+                              onPressed: _opening ? null : () => _source(true),
+                              child: Text(
+                                '新体系 · ${widget.directory!.courses.length}课',
+                                style: TextStyle(
+                                  color: _formal
+                                      ? Colors.white
+                                      : Colors.white60,
+                                ),
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: _opening ? null : () => _source(false),
+                              child: Text(
+                                '原正式课',
+                                style: TextStyle(
+                                  color: !_formal
+                                      ? Colors.white
+                                      : Colors.white60,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     Padding(
                       padding: const EdgeInsets.only(
                         left: 12,
@@ -295,6 +436,7 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                         children: [
                           Expanded(
                             child: CourseTypeStrip(
+                              types: types,
                               selected: _type,
                               enabled: !_opening,
                               onSelected: _filter,
@@ -313,6 +455,25 @@ class _CourseLibraryPageState extends State<CourseLibraryPage>
                         ],
                       ),
                     ),
+                    if (_formal)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: CourseTypeStrip(
+                          types: [
+                            for (final u in widget.directory!.units.where(
+                              (u) => u['category'] == _type,
+                            ))
+                              CourseType(
+                                u['id'] as String,
+                                u['title'] as String,
+                                (u['courses'] as List).cast<String>(),
+                              ),
+                          ],
+                          selected: _unit,
+                          enabled: !_opening,
+                          onSelected: _selectUnit,
+                        ),
+                      ),
                     Expanded(child: _deck()),
                     Padding(
                       padding: const EdgeInsets.only(top: 4, bottom: 14),
@@ -352,7 +513,7 @@ class CourseTypeStrip extends StatefulWidget {
     required this.selected,
     required this.onSelected,
     this.enabled = true,
-  // ignore: prefer_initializing_formals
+    // ignore: prefer_initializing_formals
   }) : _types = types;
   final List<CourseType>? _types;
   List<CourseType> get types => _types ?? courseTypes;
@@ -438,7 +599,9 @@ class _CourseTypeStripState extends State<CourseTypeStrip> {
 }
 
 class _Poster extends StatelessWidget {
-  const _Poster({required this.index});
+  const _Poster({required this.index, this.course});
+  final CourseInfo? course;
+  CourseInfo get info => course ?? courseCatalog[index];
   final int index;
   @override
   Widget build(BuildContext context) => LayoutBuilder(
@@ -460,7 +623,10 @@ class _Poster extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: _palettes[(courseTypes.indexWhere((t) => t.courseIds.contains(courseCatalog[index].id)).clamp(0, _palettes.length - 1))],
+                    colors:
+                        _palettes[(courseTypes
+                            .indexWhere((t) => t.courseIds.contains(info.id))
+                            .clamp(0, _palettes.length - 1))],
                   ),
                 ),
                 child: Stack(
@@ -499,7 +665,7 @@ class _Poster extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'LESSON ${courseCatalog[index].title.split(' · ').first}',
+                            'LESSON ${info.number.isEmpty ? info.title.split(' · ').first : info.number}',
                             style: const TextStyle(
                               color: Color(0xFF34434A),
                               fontSize: 10,
@@ -524,16 +690,18 @@ class _Poster extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         fit: BoxFit.scaleDown,
                         child: Text(
-                        courseCatalog[index].coverTitle.isEmpty ? 'Learn\n& grow.' : courseCatalog[index].coverTitle,
-                        textScaler: TextScaler.noScaling,
-                        style: const TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 49,
-                          height: .98,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: -2.5,
-                          color: Color(0xFF20343D),
-                        ),
+                          info.coverTitle.isEmpty
+                              ? 'Learn\n& grow.'
+                              : info.coverTitle,
+                          textScaler: TextScaler.noScaling,
+                          style: const TextStyle(
+                            fontFamily: 'Arial',
+                            fontSize: 49,
+                            height: .98,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: -2.5,
+                            color: Color(0xFF20343D),
+                          ),
                         ),
                       ),
                     ),
@@ -542,15 +710,39 @@ class _Poster extends StatelessWidget {
                       right: 0,
                       top: designHeight * .36,
                       height: designHeight * .42,
-                      child: SvgPicture.asset(
-                        courseCatalog[index].asset.startsWith('adult-')
-                            ? 'assets/avatar/images/apple.svg'
-                            : 'assets/avatar/images/cover-${courseCatalog[index].asset}.svg',
-                        bundle: CourseResources.instance,
-                        semanticsLabel: '${courseCatalog[index].title.split(' · ').last}主题插图',
-                        fit: BoxFit.contain,
-                        placeholderBuilder: (_) => const SizedBox.shrink(),
-                      ),
+                      child: info.unit.isNotEmpty
+                          ? const Icon(
+                              Icons.menu_book_rounded,
+                              size: 126,
+                              color: Color(0xFF34434A),
+                            )
+                          : info.id.startsWith('B1.01')
+                          ? Icon(
+                              const [
+                                Icons.waving_hand_rounded,
+                                Icons.sentiment_satisfied_alt,
+                                Icons.badge_outlined,
+                                Icons.chat_bubble_outline,
+                                Icons.public,
+                                Icons.forum_outlined,
+                              ][((int.tryParse(info.asset.split('-').last) ??
+                                          1) -
+                                      1)
+                                  .clamp(0, 5)],
+                              size: 126,
+                              color: const Color(0xFF34434A),
+                            )
+                          : SvgPicture.asset(
+                              info.asset.startsWith('adult-')
+                                  ? 'assets/avatar/images/apple.svg'
+                                  : 'assets/avatar/images/cover-${info.asset}.svg',
+                              bundle: CourseResources.instance,
+                              semanticsLabel:
+                                  '${info.title.split(' · ').last}主题插图',
+                              fit: BoxFit.contain,
+                              placeholderBuilder: (_) =>
+                                  const SizedBox.shrink(),
+                            ),
                     ),
                     Positioned(
                       left: 25,
@@ -559,8 +751,16 @@ class _Poster extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          if (info.number.isNotEmpty)
+                            Text(
+                              '第${info.number}课 · ${info.status == 'published' ? '已开放' : '制作中'}',
+                              style: const TextStyle(
+                                color: Color(0xFF34434A),
+                                fontSize: 12,
+                              ),
+                            ),
                           Text(
-                            courseCatalog[index].title.split(' · ').last,
+                            info.title.split(' · ').last,
                             textScaler: TextScaler.noScaling,
                             style: const TextStyle(
                               color: Color(0xFF20343D),
@@ -570,7 +770,7 @@ class _Poster extends StatelessWidget {
                           ),
                           const SizedBox(height: 6),
                           Text(
-                            courseCatalog[index].example.isEmpty ? courseCatalog[index].goal : courseCatalog[index].example,
+                            info.example.isEmpty ? info.goal : info.example,
                             textScaler: TextScaler.noScaling,
                             style: const TextStyle(
                               color: Color(0xFF34434A),

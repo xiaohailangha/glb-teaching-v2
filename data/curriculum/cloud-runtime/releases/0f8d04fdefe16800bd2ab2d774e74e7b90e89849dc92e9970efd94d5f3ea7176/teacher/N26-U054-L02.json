@@ -1,0 +1,1637 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit054-v1",
+  "courseId": "N26-U054-L02",
+  "unitId": "N26-U054",
+  "category": "食物与饮品",
+  "title": "卷起、叠放与涂抹",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "0fa7c75e9772e10a63c31e7d9f3ddd3f045594b82aa4cf8619acf61f3d7b6166",
+  "newWords": [
+    "roll",
+    "layer",
+    "spread",
+    "fresh"
+  ],
+  "prerequisites": [
+    "N26-U054-L01"
+  ],
+  "goal": "围绕“处理食材、食材状态”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "roll",
+        "surface": "roll",
+        "meaning": "卷起，把柔软食物卷起来",
+        "kind": "new_word"
+      },
+      {
+        "key": "layer",
+        "surface": "layer",
+        "meaning": "分层叠放，把食材一层层放好",
+        "kind": "new_word"
+      },
+      {
+        "key": "spread",
+        "surface": "spread",
+        "meaning": "涂抹，抹开",
+        "kind": "new_word"
+      },
+      {
+        "key": "fresh",
+        "surface": "fresh",
+        "meaning": "新鲜的",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U054-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U054-L02-S002",
+        "N26-U054-L02-S003",
+        "N26-U054-L02-S004",
+        "N26-U054-L02-S005",
+        "N26-U054-L02-S006",
+        "N26-U054-L02-S007",
+        "N26-U054-L02-S008",
+        "N26-U054-L02-S009",
+        "N26-U054-L02-S010",
+        "N26-U054-L02-S011",
+        "N26-U054-L02-S012",
+        "N26-U054-L02-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U054-L02-S014",
+        "N26-U054-L02-S015",
+        "N26-U054-L02-S016",
+        "N26-U054-L02-S017",
+        "N26-U054-L02-S018",
+        "N26-U054-L02-S019",
+        "N26-U054-L02-S020",
+        "N26-U054-L02-S021",
+        "N26-U054-L02-S022",
+        "N26-U054-L02-S023",
+        "N26-U054-L02-S024",
+        "N26-U054-L02-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U054-L02-S026",
+        "N26-U054-L02-S027",
+        "N26-U054-L02-S028",
+        "N26-U054-L02-S029",
+        "N26-U054-L02-S030",
+        "N26-U054-L02-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U054-L02-S032",
+        "N26-U054-L02-S033",
+        "N26-U054-L02-S034",
+        "N26-U054-L02-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U054-L02-S036",
+        "N26-U054-L02-S037",
+        "N26-U054-L02-S038",
+        "N26-U054-L02-S039",
+        "N26-U054-L02-S040",
+        "N26-U054-L02-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U054-L02-S001",
+      "course": "N26-U054-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象两种备餐做法：把一片压平的软面包卷起，或把几片面包一层层叠放。今天练卷起、叠放和涂抹，再认识新鲜的特点。",
+      "display": "",
+      "audio": "N26A-a277a050ee04a82cc83e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S002",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "卷起，把柔软食物卷起来。想象一片压平的软面包，用这个动作把它卷起来。",
+      "display": "roll",
+      "audio": "N26A-ce6e47b9a7705c84a97a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S003",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "卷起，把柔软食物卷起来",
+      "display": "roll",
+      "audio": "N26A-7027f752abb42b03a472",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "卷起，把柔软食物卷起来",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S004",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "roll",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C001",
+      "model": "N26A-7027f752abb42b03a472",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S005",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "分层叠放，把食材一层层放好。想象把几片面包一层层放好，这里说分层叠放的动作。",
+      "display": "layer",
+      "audio": "N26A-f1428fcffbd7cc7ee945",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S006",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "分层叠放，把食材一层层放好",
+      "display": "layer",
+      "audio": "N26A-b5ced7ba7985a8b24358",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "分层叠放，把食材一层层放好",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S007",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "layer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C002",
+      "model": "N26A-b5ced7ba7985a8b24358",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S008",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "涂抹，抹开。这里说涂抹，抹开，先听完整的声音。",
+      "display": "spread",
+      "audio": "N26A-be159adcf62a433d00b2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S009",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "涂抹，抹开",
+      "display": "spread",
+      "audio": "N26A-8658662a467e9acac559",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "涂抹，抹开",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S010",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "spread",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C003",
+      "model": "N26A-8658662a467e9acac559",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S011",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "新鲜的。这里说新鲜的，先听完整的声音。",
+      "display": "fresh",
+      "audio": "N26A-a36aa9d7c380b22c8c78",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S012",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "新鲜的",
+      "display": "fresh",
+      "audio": "N26A-08032752e624e8729673",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "新鲜的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S013",
+      "course": "N26-U054-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fresh",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C004",
+      "model": "N26A-08032752e624e8729673",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U054-L02-S014",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "把面包卷起来。想象一片压平的软面包，先听把它卷起来的动作表达。",
+      "display": "Roll the bread",
+      "audio": "N26A-582ccbfcc5aa83bd9c7c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S015",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "把面包卷起来。",
+      "display": "Roll the bread.",
+      "audio": "N26A-d1f550b4ae54e247cdb1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "把面包卷起来。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S016",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Roll the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C005",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S017",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "把面包一层层叠放好。换到分层摆放的做法，先听完整动作表达。",
+      "display": "Layer the bread",
+      "audio": "N26A-9c13c3bba7931644429b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S018",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "把面包一层层叠放好。",
+      "display": "Layer the bread.",
+      "audio": "N26A-446c507eba3c1c21cadf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "把面包一层层叠放好。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S019",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Layer the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C006",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S020",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "涂抹黄油。先听这一组，再连起来说。",
+      "display": "spread the butter",
+      "audio": "N26A-891c691f467e9f50eb23",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S021",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "涂抹黄油",
+      "display": "spread the butter",
+      "audio": "N26A-3f60670d6f87e43f3bfd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "涂抹黄油",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S022",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "spread the butter",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C007",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S023",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "新鲜面包。先听这一组，再连起来说。",
+      "display": "fresh bread",
+      "audio": "N26A-877c9024cf0a77988d72",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S024",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "新鲜面包",
+      "display": "fresh bread",
+      "audio": "N26A-89c0cbe7154bef587115",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "新鲜面包",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S025",
+      "course": "N26-U054-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fresh bread",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U054-L02-C008",
+      "model": "N26A-89c0cbe7154bef587115",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U054-L02-S026",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "把面包卷起来。",
+      "display": "Roll the bread.",
+      "audio": "N26A-d1f550b4ae54e247cdb1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "把面包卷起来。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L02-S027",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想象一片压平的软面包，需要卷起来。先听动作表达，再说。",
+      "display": "",
+      "audio": "N26A-0fde9ba90b87ce72f9ba",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S028",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Roll the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C009",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S029",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "把面包一层层叠放好。",
+      "display": "Layer the bread.",
+      "audio": "N26A-446c507eba3c1c21cadf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "把面包一层层叠放好。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U054-L02-S030",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "换到分层摆放的做法，需要把面包一层层叠好。先听，再说。",
+      "display": "",
+      "audio": "N26A-e53ff010b1c5bb5a8c99",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S031",
+      "course": "N26-U054-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Layer the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C010",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S032",
+      "course": "N26-U054-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说把面包卷起来。",
+      "display": "",
+      "audio": "N26A-af934693215ef3471fc6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S033",
+      "course": "N26-U054-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Roll the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C011",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S034",
+      "course": "N26-U054-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说涂抹黄油。",
+      "display": "",
+      "audio": "N26A-52c5e7d350e2f7e6dbbd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S035",
+      "course": "N26-U054-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "spread the butter",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C012",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S036",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象准备一份分层摆放的面包，你用动作表达说明把面包一层层叠好。",
+      "display": "",
+      "audio": "N26A-61eb9221e1a06c025d7c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S037",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Layer the bread.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C013",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S038",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换到给面包涂黄油的想象步骤，你说出涂抹黄油这一项。",
+      "display": "",
+      "audio": "N26A-903ea1439506a790eeaa",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S039",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "spread the butter",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U054-L02-C014",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U054-L02-S040",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U054-L02-S041",
+      "course": "N26-U054-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U054-L02-C001",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "卷起，把柔软食物卷起来",
+      "answers": [
+        "roll"
+      ],
+      "hint": "roll",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S004",
+      "help": "N26-U054-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C002",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "分层叠放，把食材一层层放好",
+      "answers": [
+        "layer"
+      ],
+      "hint": "layer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S007",
+      "help": "N26-U054-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C003",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "涂抹，抹开",
+      "answers": [
+        "spread"
+      ],
+      "hint": "spread",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S010",
+      "help": "N26-U054-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C004",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "新鲜的",
+      "answers": [
+        "fresh"
+      ],
+      "hint": "fresh",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S013",
+      "help": "N26-U054-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C005",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把面包卷起来。",
+      "answers": [
+        "Roll the bread."
+      ],
+      "hint": "Roll the bread.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S016",
+      "help": "N26-U054-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C006",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "把面包一层层叠放好。",
+      "answers": [
+        "Layer the bread."
+      ],
+      "hint": "Layer the bread.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S019",
+      "help": "N26-U054-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C007",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "涂抹黄油",
+      "answers": [
+        "spread the butter"
+      ],
+      "hint": "spread the butter",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S022",
+      "help": "N26-U054-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C008",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "新鲜面包",
+      "answers": [
+        "fresh bread"
+      ],
+      "hint": "fresh bread",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S025",
+      "help": "N26-U054-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C009",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象一片压平的软面包，需要卷起来。先听动作表达，再说。",
+      "answers": [
+        "Roll the bread."
+      ],
+      "hint": "Roll the bread.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S028",
+      "help": "N26-U054-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C010",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换到分层摆放的做法，需要把面包一层层叠好。先听，再说。",
+      "answers": [
+        "Layer the bread."
+      ],
+      "hint": "Layer the bread.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S031",
+      "help": "N26-U054-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C011",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说把面包卷起来。",
+      "answers": [
+        "Roll the bread."
+      ],
+      "hint": "Roll the bread.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S033",
+      "help": "N26-U054-L02-S033-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C012",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说涂抹黄油。",
+      "answers": [
+        "spread the butter"
+      ],
+      "hint": "spread the butter",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U054-L02-S035",
+      "help": "N26-U054-L02-S035-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C013",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象准备一份分层摆放的面包，你用动作表达说明把面包一层层叠好。",
+      "answers": [
+        "Layer the bread."
+      ],
+      "hint": "Layer the bread.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L02-S037",
+      "help": "N26-U054-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U054-L02-C014",
+      "course": "N26-U054-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换到给面包涂黄油的想象步骤，你说出涂抹黄油这一项。",
+      "answers": [
+        "spread the butter"
+      ],
+      "hint": "spread the butter",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U054-L02-S039",
+      "help": "N26-U054-L02-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U054-L02-S004-HELP",
+      "forStep": "N26-U054-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7027f752abb42b03a472",
+      "display": "roll",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S007-HELP",
+      "forStep": "N26-U054-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b5ced7ba7985a8b24358",
+      "display": "layer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S010-HELP",
+      "forStep": "N26-U054-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8658662a467e9acac559",
+      "display": "spread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S013-HELP",
+      "forStep": "N26-U054-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-08032752e624e8729673",
+      "display": "fresh",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S016-HELP",
+      "forStep": "N26-U054-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "display": "Roll the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S019-HELP",
+      "forStep": "N26-U054-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "display": "Layer the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S022-HELP",
+      "forStep": "N26-U054-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "display": "spread the butter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S025-HELP",
+      "forStep": "N26-U054-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-89c0cbe7154bef587115",
+      "display": "fresh bread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S028-HELP",
+      "forStep": "N26-U054-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "display": "Roll the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S031-HELP",
+      "forStep": "N26-U054-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "display": "Layer the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S033-HELP",
+      "forStep": "N26-U054-L02-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f550b4ae54e247cdb1",
+      "display": "Roll the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S035-HELP",
+      "forStep": "N26-U054-L02-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "display": "spread the butter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S037-HELP",
+      "forStep": "N26-U054-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-446c507eba3c1c21cadf",
+      "display": "Layer the bread.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U054-L02-S039-HELP",
+      "forStep": "N26-U054-L02-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3f60670d6f87e43f3bfd",
+      "display": "spread the butter",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U054-L02-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "roll",
+      "word": "roll",
+      "ipa": "/roʊl/",
+      "meaning": "卷起，把柔软食物卷起来",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7027f752abb42b03a472"
+    },
+    {
+      "key": "layer",
+      "word": "layer",
+      "ipa": "/ˈleɪər/",
+      "meaning": "分层叠放，把食材一层层放好",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b5ced7ba7985a8b24358"
+    },
+    {
+      "key": "spread",
+      "word": "spread",
+      "ipa": "/sprɛd/",
+      "meaning": "涂抹，抹开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8658662a467e9acac559"
+    },
+    {
+      "key": "fresh",
+      "word": "fresh",
+      "ipa": "/frɛʃ/",
+      "meaning": "新鲜的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-08032752e624e8729673"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "bread",
+      "word": "bread",
+      "ipa": "/bred/",
+      "meaning": "面包",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b4a38d7a6e9d40078fdf"
+    },
+    {
+      "key": "butter",
+      "word": "butter",
+      "ipa": "/ˈbʌt̬.ɚ/",
+      "meaning": "黄油",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c45156ef00bf4e55ebaf"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：roll=卷起，把柔软食物卷起来；layer=分层叠放，把食材一层层放好；spread=涂抹，抹开；fresh=新鲜的。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R015，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "bread",
+      "sourceCourse": "N26-U008-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "butter",
+      "sourceCourse": "N26-U008-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-a277a050ee04a82cc83e",
+      "N26A-ce6e47b9a7705c84a97a",
+      "N26A-7027f752abb42b03a472",
+      "N26A-f1428fcffbd7cc7ee945",
+      "N26A-b5ced7ba7985a8b24358",
+      "N26A-be159adcf62a433d00b2",
+      "N26A-8658662a467e9acac559",
+      "N26A-a36aa9d7c380b22c8c78",
+      "N26A-08032752e624e8729673",
+      "N26A-582ccbfcc5aa83bd9c7c",
+      "N26A-d1f550b4ae54e247cdb1",
+      "N26A-9c13c3bba7931644429b",
+      "N26A-446c507eba3c1c21cadf",
+      "N26A-891c691f467e9f50eb23",
+      "N26A-3f60670d6f87e43f3bfd",
+      "N26A-877c9024cf0a77988d72",
+      "N26A-89c0cbe7154bef587115",
+      "N26A-0fde9ba90b87ce72f9ba",
+      "N26A-e53ff010b1c5bb5a8c99",
+      "N26A-af934693215ef3471fc6",
+      "N26A-52c5e7d350e2f7e6dbbd",
+      "N26A-61eb9221e1a06c025d7c",
+      "N26A-903ea1439506a790eeaa",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-b4a38d7a6e9d40078fdf",
+      "N26A-c45156ef00bf4e55ebaf",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

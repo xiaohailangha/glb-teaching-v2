@@ -1,0 +1,2081 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit060-v1",
+  "courseId": "N26-U060-L06",
+  "unitId": "N26-U060",
+  "category": "城市与交通",
+  "title": "叫辆车出发",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "a2b2b555c2edbb81e20e244214cecf92750a4ae5df5caaf0cec3b1cde573b30f",
+  "newWords": [
+    "taxi",
+    "cab",
+    "pickup",
+    "van",
+    "vehicle",
+    "car"
+  ],
+  "prerequisites": [
+    "N26-U060-L05"
+  ],
+  "goal": "在“叫车与车辆 6”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "taxi",
+        "surface": "taxi",
+        "meaning": "出租车",
+        "kind": "new_word"
+      },
+      {
+        "key": "cab",
+        "surface": "cab",
+        "meaning": "出租车，常用的较短叫法",
+        "kind": "new_word"
+      },
+      {
+        "key": "pickup",
+        "surface": "pickup",
+        "meaning": "接人，接送中的接取服务",
+        "kind": "new_word"
+      },
+      {
+        "key": "van",
+        "surface": "van",
+        "meaning": "厢式货车",
+        "kind": "new_word"
+      },
+      {
+        "key": "vehicle",
+        "surface": "vehicle",
+        "meaning": "车辆",
+        "kind": "new_word"
+      },
+      {
+        "key": "car",
+        "surface": "car",
+        "meaning": "汽车，通常指小汽车",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U060-L06-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U060-L06-S002",
+        "N26-U060-L06-S003",
+        "N26-U060-L06-S004",
+        "N26-U060-L06-S005",
+        "N26-U060-L06-S006",
+        "N26-U060-L06-S007",
+        "N26-U060-L06-S008",
+        "N26-U060-L06-S009",
+        "N26-U060-L06-S010",
+        "N26-U060-L06-S011",
+        "N26-U060-L06-S012",
+        "N26-U060-L06-S013",
+        "N26-U060-L06-S014",
+        "N26-U060-L06-S015",
+        "N26-U060-L06-S016",
+        "N26-U060-L06-S017",
+        "N26-U060-L06-S018",
+        "N26-U060-L06-S019"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U060-L06-S020",
+        "N26-U060-L06-S021",
+        "N26-U060-L06-S022",
+        "N26-U060-L06-S023",
+        "N26-U060-L06-S024",
+        "N26-U060-L06-S025",
+        "N26-U060-L06-S026",
+        "N26-U060-L06-S027",
+        "N26-U060-L06-S028",
+        "N26-U060-L06-S029",
+        "N26-U060-L06-S030",
+        "N26-U060-L06-S031",
+        "N26-U060-L06-S032",
+        "N26-U060-L06-S033",
+        "N26-U060-L06-S034",
+        "N26-U060-L06-S035",
+        "N26-U060-L06-S036",
+        "N26-U060-L06-S037"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U060-L06-S038",
+        "N26-U060-L06-S039",
+        "N26-U060-L06-S040",
+        "N26-U060-L06-S041",
+        "N26-U060-L06-S042",
+        "N26-U060-L06-S043"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U060-L06-S044",
+        "N26-U060-L06-S045",
+        "N26-U060-L06-S046",
+        "N26-U060-L06-S047"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U060-L06-S048",
+        "N26-U060-L06-S049",
+        "N26-U060-L06-S050",
+        "N26-U060-L06-S051",
+        "N26-U060-L06-S052",
+        "N26-U060-L06-S053"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U060-L06-S001",
+      "course": "N26-U060-L06",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象商量叫车出发。今天认识出租车的两种常用说法、接人、小货车、车辆和汽车。",
+      "display": "",
+      "audio": "N26A-35f471df5148da27a87a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S002",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "出租车。这里说出租车，先听完整的声音。",
+      "display": "taxi",
+      "audio": "N26A-c7242e161e66be0254fd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S003",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "出租车",
+      "display": "taxi",
+      "audio": "N26A-6b1d4ac6b3447499b243",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "出租车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S004",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "taxi",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C001",
+      "model": "N26A-6b1d4ac6b3447499b243",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S005",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "出租车，常用的较短叫法。这里说出租车，常用的较短叫法，先听完整的声音。",
+      "display": "cab",
+      "audio": "N26A-53aefba9ddba1e8a74fc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S006",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "出租车，常用的较短叫法",
+      "display": "cab",
+      "audio": "N26A-b2b744d72bcfc40c9cee",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "出租车，常用的较短叫法",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S007",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "cab",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C002",
+      "model": "N26A-b2b744d72bcfc40c9cee",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S008",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "接人，接送中的接取服务。本课是名词，不拆成新的动词组合。",
+      "display": "pickup",
+      "audio": "N26A-350571a06d7ae53d9018",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S009",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "接人，接送中的接取服务",
+      "display": "pickup",
+      "audio": "N26A-13e6b41f90f676d1024a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "接人，接送中的接取服务",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S010",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pickup",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C003",
+      "model": "N26A-13e6b41f90f676d1024a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S011",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "厢式货车。这里说厢式货车，先听完整的声音。",
+      "display": "van",
+      "audio": "N26A-264ba89a6aa3850770cf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S012",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "厢式货车",
+      "display": "van",
+      "audio": "N26A-6dd2a40ef5516ad0c65e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "厢式货车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S013",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "van",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C004",
+      "model": "N26A-6dd2a40ef5516ad0c65e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S014",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "车辆。这里说车辆，先听完整的声音。",
+      "display": "vehicle",
+      "audio": "N26A-be8b17238e864fc09057",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S015",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "车辆",
+      "display": "vehicle",
+      "audio": "N26A-f67a389b067f1aa9009b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "车辆",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S016",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "vehicle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C005",
+      "model": "N26A-f67a389b067f1aa9009b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S017",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "汽车，通常指小汽车。这里说汽车，通常指小汽车，先听完整的声音。",
+      "display": "car",
+      "audio": "N26A-29ae9896a57964f7a6a1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S018",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "汽车，通常指小汽车",
+      "display": "car",
+      "audio": "N26A-0268bbfb05ac03830d05",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "汽车，通常指小汽车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S019",
+      "course": "N26-U060-L06",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "car",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C006",
+      "model": "N26A-0268bbfb05ac03830d05",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L06-S020",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆出租车。先听这一组，再连起来说。",
+      "display": "a taxi",
+      "audio": "N26A-0763477d41bae0ad3d7c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S021",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆出租车",
+      "display": "a taxi",
+      "audio": "N26A-d080acfebb95e217877c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆出租车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S022",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a taxi",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C007",
+      "model": "N26A-d080acfebb95e217877c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S023",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆出租车。先听这一组，再连起来说。",
+      "display": "a cab",
+      "audio": "N26A-0763477d41bae0ad3d7c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S024",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆出租车",
+      "display": "a cab",
+      "audio": "N26A-b199db129c690a0a5941",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆出租车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S025",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a cab",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C008",
+      "model": "N26A-b199db129c690a0a5941",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S026",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这次接人。本课是名词，不拆成新的动词组合。",
+      "display": "the pickup",
+      "audio": "N26A-0e25d824400cdb011d89",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S027",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这次接人",
+      "display": "the pickup",
+      "audio": "N26A-ae165470d2793193561e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这次接人",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S028",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the pickup",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C009",
+      "model": "N26A-ae165470d2793193561e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S029",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆厢式货车。先听这一组，再连起来说。",
+      "display": "a van",
+      "audio": "N26A-66db7c90da7fe1163246",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S030",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆厢式货车",
+      "display": "a van",
+      "audio": "N26A-713a3b97e3ea962b4641",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆厢式货车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S031",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a van",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C010",
+      "model": "N26A-713a3b97e3ea962b4641",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S032",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆车。先听这一组，再连起来说。",
+      "display": "a vehicle",
+      "audio": "N26A-1924b2ec5d0bbb507634",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S033",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆车",
+      "display": "a vehicle",
+      "audio": "N26A-b9a04a0b1b1027451745",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S034",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a vehicle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C011",
+      "model": "N26A-b9a04a0b1b1027451745",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S035",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我需要一辆汽车。先听这一组，再连起来说。",
+      "display": "I need a car",
+      "audio": "N26A-b4a31af1332799bf7e75",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S036",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我需要一辆汽车。",
+      "display": "I need a car.",
+      "audio": "N26A-a949b034dc2fcda04698",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要一辆汽车。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S037",
+      "course": "N26-U060-L06",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I need a car.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L06-C012",
+      "model": "N26A-a949b034dc2fcda04698",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L06-S038",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我需要一辆汽车。",
+      "display": "I need a car.",
+      "audio": "N26A-a949b034dc2fcda04698",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我需要一辆汽车。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U060-L06-S039",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "角色需要一辆汽车，先听整句。",
+      "display": "",
+      "audio": "N26A-94aefd46db0f57e542a3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S040",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I need a car.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C013",
+      "model": "N26A-a949b034dc2fcda04698",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S041",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一辆出租车",
+      "display": "a cab",
+      "audio": "N26A-b199db129c690a0a5941",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆出租车",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U060-L06-S042",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "交通方式是出租车，先听短叫法。",
+      "display": "",
+      "audio": "N26A-6f36a78bc8e565be18d6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S043",
+      "course": "N26-U060-L06",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a cab",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C014",
+      "model": "N26A-b199db129c690a0a5941",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S044",
+      "course": "N26-U060-L06",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说需要一辆汽车。",
+      "display": "",
+      "audio": "N26A-3e6a2d5aaa869e9fd65c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S045",
+      "course": "N26-U060-L06",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I need a car.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C015",
+      "model": "N26A-a949b034dc2fcda04698",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S046",
+      "course": "N26-U060-L06",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示用较短叫法说一辆出租车。",
+      "display": "",
+      "audio": "N26A-a48f25ad90cd8ac0108d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S047",
+      "course": "N26-U060-L06",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a cab",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C016",
+      "model": "N26A-b199db129c690a0a5941",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S048",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象和朋友商量出行，你说明需要一辆汽车。",
+      "display": "",
+      "audio": "N26A-980041c6cea9083c6885",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S049",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I need a car.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C017",
+      "model": "N26A-a949b034dc2fcda04698",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S050",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对要叫哪种车，你用较短叫法说一辆出租车。",
+      "display": "",
+      "audio": "N26A-88bed2bb8b9157b3ef30",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S051",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a cab",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L06-C018",
+      "model": "N26A-b199db129c690a0a5941",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U060-L06-S052",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L06-S053",
+      "course": "N26-U060-L06",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U060-L06-C001",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "出租车",
+      "answers": [
+        "taxi"
+      ],
+      "hint": "taxi",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S004",
+      "help": "N26-U060-L06-S004-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C002",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "出租车，常用的较短叫法",
+      "answers": [
+        "cab"
+      ],
+      "hint": "cab",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S007",
+      "help": "N26-U060-L06-S007-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C003",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "接人，接送中的接取服务",
+      "answers": [
+        "pickup"
+      ],
+      "hint": "pickup",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S010",
+      "help": "N26-U060-L06-S010-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C004",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "厢式货车",
+      "answers": [
+        "van"
+      ],
+      "hint": "van",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S013",
+      "help": "N26-U060-L06-S013-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C005",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "车辆",
+      "answers": [
+        "vehicle"
+      ],
+      "hint": "vehicle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S016",
+      "help": "N26-U060-L06-S016-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C006",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "汽车，通常指小汽车",
+      "answers": [
+        "car"
+      ],
+      "hint": "car",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S019",
+      "help": "N26-U060-L06-S019-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C007",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆出租车",
+      "answers": [
+        "a taxi"
+      ],
+      "hint": "a taxi",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S022",
+      "help": "N26-U060-L06-S022-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C008",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆出租车",
+      "answers": [
+        "a cab"
+      ],
+      "hint": "a cab",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S025",
+      "help": "N26-U060-L06-S025-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C009",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这次接人",
+      "answers": [
+        "the pickup"
+      ],
+      "hint": "the pickup",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S028",
+      "help": "N26-U060-L06-S028-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C010",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆厢式货车",
+      "answers": [
+        "a van"
+      ],
+      "hint": "a van",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S031",
+      "help": "N26-U060-L06-S031-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C011",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆车",
+      "answers": [
+        "a vehicle"
+      ],
+      "hint": "a vehicle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S034",
+      "help": "N26-U060-L06-S034-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C012",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我需要一辆汽车。",
+      "answers": [
+        "I need a car."
+      ],
+      "hint": "I need a car.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S037",
+      "help": "N26-U060-L06-S037-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C013",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "角色需要一辆汽车，先听整句。",
+      "answers": [
+        "I need a car."
+      ],
+      "hint": "I need a car.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S040",
+      "help": "N26-U060-L06-S040-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C014",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "交通方式是出租车，先听短叫法。",
+      "answers": [
+        "a cab"
+      ],
+      "hint": "a cab",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S043",
+      "help": "N26-U060-L06-S043-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C015",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说需要一辆汽车。",
+      "answers": [
+        "I need a car."
+      ],
+      "hint": "I need a car.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S045",
+      "help": "N26-U060-L06-S045-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C016",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示用较短叫法说一辆出租车。",
+      "answers": [
+        "a cab"
+      ],
+      "hint": "a cab",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L06-S047",
+      "help": "N26-U060-L06-S047-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C017",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象和朋友商量出行，你说明需要一辆汽车。",
+      "answers": [
+        "I need a car."
+      ],
+      "hint": "I need a car.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U060-L06-S049",
+      "help": "N26-U060-L06-S049-HELP"
+    },
+    {
+      "id": "N26-U060-L06-C018",
+      "course": "N26-U060-L06",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对要叫哪种车，你用较短叫法说一辆出租车。",
+      "answers": [
+        "a cab"
+      ],
+      "hint": "a cab",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U060-L06-S051",
+      "help": "N26-U060-L06-S051-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U060-L06-S004-HELP",
+      "forStep": "N26-U060-L06-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6b1d4ac6b3447499b243",
+      "display": "taxi",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S007-HELP",
+      "forStep": "N26-U060-L06-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b2b744d72bcfc40c9cee",
+      "display": "cab",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S010-HELP",
+      "forStep": "N26-U060-L06-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-13e6b41f90f676d1024a",
+      "display": "pickup",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S013-HELP",
+      "forStep": "N26-U060-L06-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6dd2a40ef5516ad0c65e",
+      "display": "van",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S016-HELP",
+      "forStep": "N26-U060-L06-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f67a389b067f1aa9009b",
+      "display": "vehicle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S019-HELP",
+      "forStep": "N26-U060-L06-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0268bbfb05ac03830d05",
+      "display": "car",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S022-HELP",
+      "forStep": "N26-U060-L06-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d080acfebb95e217877c",
+      "display": "a taxi",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S025-HELP",
+      "forStep": "N26-U060-L06-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b199db129c690a0a5941",
+      "display": "a cab",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S028-HELP",
+      "forStep": "N26-U060-L06-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ae165470d2793193561e",
+      "display": "the pickup",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S031-HELP",
+      "forStep": "N26-U060-L06-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-713a3b97e3ea962b4641",
+      "display": "a van",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S034-HELP",
+      "forStep": "N26-U060-L06-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b9a04a0b1b1027451745",
+      "display": "a vehicle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S037-HELP",
+      "forStep": "N26-U060-L06-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a949b034dc2fcda04698",
+      "display": "I need a car.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S040-HELP",
+      "forStep": "N26-U060-L06-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a949b034dc2fcda04698",
+      "display": "I need a car.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S043-HELP",
+      "forStep": "N26-U060-L06-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b199db129c690a0a5941",
+      "display": "a cab",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S045-HELP",
+      "forStep": "N26-U060-L06-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a949b034dc2fcda04698",
+      "display": "I need a car.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S047-HELP",
+      "forStep": "N26-U060-L06-S047",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b199db129c690a0a5941",
+      "display": "a cab",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S047",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S049-HELP",
+      "forStep": "N26-U060-L06-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a949b034dc2fcda04698",
+      "display": "I need a car.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L06-S051-HELP",
+      "forStep": "N26-U060-L06-S051",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b199db129c690a0a5941",
+      "display": "a cab",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L06-S051",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "taxi",
+      "word": "taxi",
+      "ipa": "/ˈtæksi/",
+      "meaning": "出租车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b1d4ac6b3447499b243"
+    },
+    {
+      "key": "cab",
+      "word": "cab",
+      "ipa": "/kæb/",
+      "meaning": "出租车，常用的较短叫法",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b2b744d72bcfc40c9cee"
+    },
+    {
+      "key": "pickup",
+      "word": "pickup",
+      "ipa": "/ˈpɪkʌp/",
+      "meaning": "接人，接送中的接取服务",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-13e6b41f90f676d1024a"
+    },
+    {
+      "key": "van",
+      "word": "van",
+      "ipa": "/væn/",
+      "meaning": "厢式货车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6dd2a40ef5516ad0c65e"
+    },
+    {
+      "key": "vehicle",
+      "word": "vehicle",
+      "ipa": "/ˈviːəkəl/",
+      "meaning": "车辆",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f67a389b067f1aa9009b"
+    },
+    {
+      "key": "car",
+      "word": "car",
+      "ipa": "/kɑːr/",
+      "meaning": "汽车，通常指小汽车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0268bbfb05ac03830d05"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "need",
+      "word": "need",
+      "ipa": "/niːd/",
+      "meaning": "需要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-41d4daf3bebc573aa688"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：taxi=出租车；cab=出租车，常用的较短叫法；pickup=接人，接送中的接取服务；van=厢式货车；vehicle=车辆；car=汽车，通常指小汽车。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "need",
+      "sourceCourse": "N26-U004-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 38,
+    "availableExactAssets": 38,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-35f471df5148da27a87a",
+      "N26A-c7242e161e66be0254fd",
+      "N26A-6b1d4ac6b3447499b243",
+      "N26A-53aefba9ddba1e8a74fc",
+      "N26A-b2b744d72bcfc40c9cee",
+      "N26A-350571a06d7ae53d9018",
+      "N26A-13e6b41f90f676d1024a",
+      "N26A-264ba89a6aa3850770cf",
+      "N26A-6dd2a40ef5516ad0c65e",
+      "N26A-be8b17238e864fc09057",
+      "N26A-f67a389b067f1aa9009b",
+      "N26A-29ae9896a57964f7a6a1",
+      "N26A-0268bbfb05ac03830d05",
+      "N26A-0763477d41bae0ad3d7c",
+      "N26A-d080acfebb95e217877c",
+      "N26A-b199db129c690a0a5941",
+      "N26A-0e25d824400cdb011d89",
+      "N26A-ae165470d2793193561e",
+      "N26A-66db7c90da7fe1163246",
+      "N26A-713a3b97e3ea962b4641",
+      "N26A-1924b2ec5d0bbb507634",
+      "N26A-b9a04a0b1b1027451745",
+      "N26A-b4a31af1332799bf7e75",
+      "N26A-a949b034dc2fcda04698",
+      "N26A-94aefd46db0f57e542a3",
+      "N26A-6f36a78bc8e565be18d6",
+      "N26A-3e6a2d5aaa869e9fd65c",
+      "N26A-a48f25ad90cd8ac0108d",
+      "N26A-980041c6cea9083c6885",
+      "N26A-88bed2bb8b9157b3ef30",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-f353b20c6f3418376965",
+      "N26A-41d4daf3bebc573aa688",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

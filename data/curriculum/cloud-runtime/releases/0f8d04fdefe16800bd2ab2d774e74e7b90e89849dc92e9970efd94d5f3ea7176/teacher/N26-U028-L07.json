@@ -1,0 +1,1759 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit028-v1",
+  "courseId": "N26-U028-L07",
+  "unitId": "N26-U028",
+  "category": "家庭与居住",
+  "title": "清洗床单与枕套",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "d607a7018d8664e7610905a963d7a64b7fa1965db7e7be3b8f5d52dbaa5e8079",
+  "newWords": [
+    "wash",
+    "laundry",
+    "sheet",
+    "pillow"
+  ],
+  "prerequisites": [
+    "N26-U028-L06"
+  ],
+  "goal": "围绕“清洁用品”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "wash",
+        "surface": "wash",
+        "meaning": "清洗，洗",
+        "kind": "new_word"
+      },
+      {
+        "key": "laundry",
+        "surface": "laundry",
+        "meaning": "待洗的衣物",
+        "kind": "new_word"
+      },
+      {
+        "key": "sheet",
+        "surface": "sheet",
+        "meaning": "床单",
+        "kind": "new_word"
+      },
+      {
+        "key": "pillow",
+        "surface": "pillow",
+        "meaning": "枕头",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "中文口述或明确想象情境；无虚构实际展示资产。卡住恢复完整示范，提示练习不计独立掌握。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U028-L07-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U028-L07-S002",
+        "N26-U028-L07-S003",
+        "N26-U028-L07-S004",
+        "N26-U028-L07-S005",
+        "N26-U028-L07-S006",
+        "N26-U028-L07-S007",
+        "N26-U028-L07-S008",
+        "N26-U028-L07-S009",
+        "N26-U028-L07-S010",
+        "N26-U028-L07-S011",
+        "N26-U028-L07-S012",
+        "N26-U028-L07-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U028-L07-S014",
+        "N26-U028-L07-S015",
+        "N26-U028-L07-S016",
+        "N26-U028-L07-S017",
+        "N26-U028-L07-S018",
+        "N26-U028-L07-S019",
+        "N26-U028-L07-S020",
+        "N26-U028-L07-S021",
+        "N26-U028-L07-S022",
+        "N26-U028-L07-S023",
+        "N26-U028-L07-S024",
+        "N26-U028-L07-S025",
+        "N26-U028-L07-S026",
+        "N26-U028-L07-S027",
+        "N26-U028-L07-S028"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U028-L07-S029",
+        "N26-U028-L07-S030",
+        "N26-U028-L07-S031",
+        "N26-U028-L07-S032",
+        "N26-U028-L07-S033",
+        "N26-U028-L07-S034"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U028-L07-S035",
+        "N26-U028-L07-S036",
+        "N26-U028-L07-S037",
+        "N26-U028-L07-S038"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U028-L07-S039",
+        "N26-U028-L07-S040",
+        "N26-U028-L07-S041",
+        "N26-U028-L07-S042",
+        "N26-U028-L07-S043",
+        "N26-U028-L07-S044"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U028-L07-S001",
+      "course": "N26-U028-L07",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象更换床单和枕套。先把枕套里面的枕头拿出来。今天认识清洗、待洗衣物、床单和枕头，再练清洗床单的请求。",
+      "display": "",
+      "audio": "N26A-e7a600656b0e068b8e95",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S002",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "清洗，洗。今天说洗物品。",
+      "display": "wash",
+      "audio": "N26A-c41ad893882cd1abe7d2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S003",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "清洗，洗",
+      "display": "wash",
+      "audio": "N26A-ba7f9c98d85acad367af",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "清洗，洗",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S004",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "wash",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C001",
+      "model": "N26A-ba7f9c98d85acad367af",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S005",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "待洗的衣物。本课选衣物集合名词，不当成洗衣店。",
+      "display": "laundry",
+      "audio": "N26A-5b06ae7c104263331fff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S006",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "待洗的衣物",
+      "display": "laundry",
+      "audio": "N26A-f3c286601e865ab07d97",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "待洗的衣物",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S007",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "laundry",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C002",
+      "model": "N26A-f3c286601e865ab07d97",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S008",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "床单。",
+      "display": "sheet",
+      "audio": "N26A-636b653309cda2cba998",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S009",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "床单",
+      "display": "sheet",
+      "audio": "N26A-597a4c62015746c98614",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "床单",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S010",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "sheet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C003",
+      "model": "N26A-597a4c62015746c98614",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S011",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "枕头。换枕套时先把里面的枕头拿出来。这里的名字只指枕头本体。",
+      "display": "pillow",
+      "audio": "N26A-f92e4c3d06bfcb5775a0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S012",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "枕头",
+      "display": "pillow",
+      "audio": "N26A-1bcb2b886dc5bf6c3721",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "枕头",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S013",
+      "course": "N26-U028-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pillow",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C004",
+      "model": "N26A-1bcb2b886dc5bf6c3721",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U028-L07-S014",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请洗那条床单。想象向共同分担家务的人提出请求。",
+      "display": "Wash the sheet, please",
+      "audio": "N26A-36485684b5a8e559d856",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S015",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请洗那条床单。",
+      "display": "Wash the sheet, please.",
+      "audio": "N26A-b875983ea13975061dad",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请洗那条床单。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S016",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Wash the sheet, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C005",
+      "model": "N26A-b875983ea13975061dad",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S017",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那批待洗衣物。中文已说明是哪批。",
+      "display": "the laundry",
+      "audio": "N26A-7ce658d7efa2b8c50007",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S018",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那批待洗衣物",
+      "display": "the laundry",
+      "audio": "N26A-085d050f6436e093de84",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那批待洗衣物",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S019",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the laundry",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C006",
+      "model": "N26A-085d050f6436e093de84",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S020",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一条干净的床单。这里说洗后的状态，不陈述谁已洗。",
+      "display": "a clean sheet",
+      "audio": "N26A-f9c48cdff41eac2921bb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S021",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一条干净的床单",
+      "display": "a clean sheet",
+      "audio": "N26A-e93f77c90fd1fe94e571",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一条干净的床单",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S022",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a clean sheet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C007",
+      "model": "N26A-e93f77c90fd1fe94e571",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S023",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个枕头。想象刚从枕套里取出的那一个枕头，先听整组。",
+      "display": "a pillow",
+      "audio": "N26A-5024dfc4d319e623d3c9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S024",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个枕头",
+      "display": "a pillow",
+      "audio": "N26A-8179d11192a858a1fba1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个枕头",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S025",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a pillow",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C008",
+      "model": "N26A-8179d11192a858a1fba1",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S026",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个枕头和一条床单。想象更换床上用品时要整理这两件东西。",
+      "display": "a pillow and a sheet",
+      "audio": "N26A-539ff325ae010bd76c94",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S027",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个枕头和一条床单",
+      "display": "a pillow and a sheet",
+      "audio": "N26A-cd163e4ea291c90e557b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个枕头和一条床单",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S028",
+      "course": "N26-U028-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a pillow and a sheet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U028-L07-C009",
+      "model": "N26A-cd163e4ea291c90e557b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U028-L07-S029",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "请洗那条床单。",
+      "display": "Wash the sheet, please.",
+      "audio": "N26A-b875983ea13975061dad",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请洗那条床单。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U028-L07-S030",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想请同伴洗床单，先听请求再接上。",
+      "display": "",
+      "audio": "N26A-5d6210851c1c4634753f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S031",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Wash the sheet, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C010",
+      "model": "N26A-b875983ea13975061dad",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S032",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一条干净的床单",
+      "display": "a clean sheet",
+      "audio": "N26A-e93f77c90fd1fe94e571",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一条干净的床单",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U028-L07-S033",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述床单目前干净，先听短语再说。",
+      "display": "",
+      "audio": "N26A-4cbba4abb6262aecb8df",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S034",
+      "course": "N26-U028-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a clean sheet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C011",
+      "model": "N26A-e93f77c90fd1fe94e571",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S035",
+      "course": "N26-U028-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说那批待洗衣物，看提示表达。",
+      "display": "",
+      "audio": "N26A-e07367ba72732dd70512",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S036",
+      "course": "N26-U028-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the laundry",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C012",
+      "model": "N26A-085d050f6436e093de84",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S037",
+      "course": "N26-U028-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "更换枕套时，先取出里面的枕头。说一个枕头，看提示表达。",
+      "display": "",
+      "audio": "N26A-00c7fb0696a6ea1bac2e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S038",
+      "course": "N26-U028-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a pillow",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C013",
+      "model": "N26A-8179d11192a858a1fba1",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S039",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象一起更换床上用品，你请同伴清洗刚取下的床单。",
+      "display": "",
+      "audio": "N26A-4b7407f6f50c9352081f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S040",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Wash the sheet, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C014",
+      "model": "N26A-b875983ea13975061dad",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S041",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换枕套之前，朋友用中文核对先拿出来的是什么。情境为一个枕头，你用短语回应。",
+      "display": "",
+      "audio": "N26A-f559acbe6410196a7fb7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S042",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a pillow",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U028-L07-C015",
+      "model": "N26A-8179d11192a858a1fba1",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U028-L07-S043",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U028-L07-S044",
+      "course": "N26-U028-L07",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U028-L07-C001",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "清洗，洗",
+      "answers": [
+        "wash"
+      ],
+      "hint": "wash",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S004",
+      "help": "N26-U028-L07-S004-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C002",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "待洗的衣物",
+      "answers": [
+        "laundry"
+      ],
+      "hint": "laundry",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S007",
+      "help": "N26-U028-L07-S007-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C003",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "床单",
+      "answers": [
+        "sheet"
+      ],
+      "hint": "sheet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S010",
+      "help": "N26-U028-L07-S010-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C004",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "枕头",
+      "answers": [
+        "pillow"
+      ],
+      "hint": "pillow",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S013",
+      "help": "N26-U028-L07-S013-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C005",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请洗那条床单。",
+      "answers": [
+        "Wash the sheet, please."
+      ],
+      "hint": "Wash the sheet, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S016",
+      "help": "N26-U028-L07-S016-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C006",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那批待洗衣物",
+      "answers": [
+        "the laundry"
+      ],
+      "hint": "the laundry",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S019",
+      "help": "N26-U028-L07-S019-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C007",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一条干净的床单",
+      "answers": [
+        "a clean sheet"
+      ],
+      "hint": "a clean sheet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S022",
+      "help": "N26-U028-L07-S022-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C008",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个枕头",
+      "answers": [
+        "a pillow"
+      ],
+      "hint": "a pillow",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S025",
+      "help": "N26-U028-L07-S025-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C009",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个枕头和一条床单",
+      "answers": [
+        "a pillow and a sheet"
+      ],
+      "hint": "a pillow and a sheet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S028",
+      "help": "N26-U028-L07-S028-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C010",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想请同伴洗床单，先听请求再接上。",
+      "answers": [
+        "Wash the sheet, please."
+      ],
+      "hint": "Wash the sheet, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S031",
+      "help": "N26-U028-L07-S031-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C011",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述床单目前干净，先听短语再说。",
+      "answers": [
+        "a clean sheet"
+      ],
+      "hint": "a clean sheet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S034",
+      "help": "N26-U028-L07-S034-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C012",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说那批待洗衣物，看提示表达。",
+      "answers": [
+        "the laundry"
+      ],
+      "hint": "the laundry",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S036",
+      "help": "N26-U028-L07-S036-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C013",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "更换枕套时，先取出里面的枕头。说一个枕头，看提示表达。",
+      "answers": [
+        "a pillow"
+      ],
+      "hint": "a pillow",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U028-L07-S038",
+      "help": "N26-U028-L07-S038-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C014",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象一起更换床上用品，你请同伴清洗刚取下的床单。",
+      "answers": [
+        "Wash the sheet, please."
+      ],
+      "hint": "Wash the sheet, please.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U028-L07-S040",
+      "help": "N26-U028-L07-S040-HELP"
+    },
+    {
+      "id": "N26-U028-L07-C015",
+      "course": "N26-U028-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换枕套之前，朋友用中文核对先拿出来的是什么。情境为一个枕头，你用短语回应。",
+      "answers": [
+        "a pillow"
+      ],
+      "hint": "a pillow",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U028-L07-S042",
+      "help": "N26-U028-L07-S042-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U028-L07-S004-HELP",
+      "forStep": "N26-U028-L07-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba7f9c98d85acad367af",
+      "display": "wash",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S007-HELP",
+      "forStep": "N26-U028-L07-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f3c286601e865ab07d97",
+      "display": "laundry",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S010-HELP",
+      "forStep": "N26-U028-L07-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-597a4c62015746c98614",
+      "display": "sheet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S013-HELP",
+      "forStep": "N26-U028-L07-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1bcb2b886dc5bf6c3721",
+      "display": "pillow",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S016-HELP",
+      "forStep": "N26-U028-L07-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b875983ea13975061dad",
+      "display": "Wash the sheet, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S019-HELP",
+      "forStep": "N26-U028-L07-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-085d050f6436e093de84",
+      "display": "the laundry",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S022-HELP",
+      "forStep": "N26-U028-L07-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e93f77c90fd1fe94e571",
+      "display": "a clean sheet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S025-HELP",
+      "forStep": "N26-U028-L07-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8179d11192a858a1fba1",
+      "display": "a pillow",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S028-HELP",
+      "forStep": "N26-U028-L07-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-cd163e4ea291c90e557b",
+      "display": "a pillow and a sheet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S031-HELP",
+      "forStep": "N26-U028-L07-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b875983ea13975061dad",
+      "display": "Wash the sheet, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S034-HELP",
+      "forStep": "N26-U028-L07-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e93f77c90fd1fe94e571",
+      "display": "a clean sheet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S036-HELP",
+      "forStep": "N26-U028-L07-S036",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-085d050f6436e093de84",
+      "display": "the laundry",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S036",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S038-HELP",
+      "forStep": "N26-U028-L07-S038",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8179d11192a858a1fba1",
+      "display": "a pillow",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S038",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S040-HELP",
+      "forStep": "N26-U028-L07-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b875983ea13975061dad",
+      "display": "Wash the sheet, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U028-L07-S042-HELP",
+      "forStep": "N26-U028-L07-S042",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8179d11192a858a1fba1",
+      "display": "a pillow",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U028-L07-S042",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "wash",
+      "word": "wash",
+      "ipa": "/wɑːʃ/",
+      "meaning": "清洗，洗",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ba7f9c98d85acad367af"
+    },
+    {
+      "key": "laundry",
+      "word": "laundry",
+      "ipa": "/ˈlɔːndri/",
+      "meaning": "待洗的衣物",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f3c286601e865ab07d97"
+    },
+    {
+      "key": "sheet",
+      "word": "sheet",
+      "ipa": "/ʃiːt/",
+      "meaning": "床单",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-597a4c62015746c98614"
+    },
+    {
+      "key": "pillow",
+      "word": "pillow",
+      "ipa": "/ˈpɪloʊ/",
+      "meaning": "枕头",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1bcb2b886dc5bf6c3721"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "clean",
+      "word": "clean",
+      "ipa": "/kliːn/",
+      "meaning": "干净的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-feb6bffc30420982051f"
+    },
+    {
+      "key": "and",
+      "word": "and",
+      "ipa": "/ænd/",
+      "meaning": "和，连接一起说的两样",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-88b3fef8eb3b2d905bc2"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "r4：保持正式标题与首教分配，以中文更换枕套、取出枕头的真实情境承接题名。pillow明确只指枕头本体；没有教枕套英语，也未新增pillowcase。此中英范围边界交主审复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "please",
+      "sourceCourse": "N26-U004-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "and",
+      "sourceCourse": "N26-U006-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 34,
+    "availableExactAssets": 34,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-e7a600656b0e068b8e95",
+      "N26A-c41ad893882cd1abe7d2",
+      "N26A-ba7f9c98d85acad367af",
+      "N26A-5b06ae7c104263331fff",
+      "N26A-f3c286601e865ab07d97",
+      "N26A-636b653309cda2cba998",
+      "N26A-597a4c62015746c98614",
+      "N26A-f92e4c3d06bfcb5775a0",
+      "N26A-1bcb2b886dc5bf6c3721",
+      "N26A-36485684b5a8e559d856",
+      "N26A-b875983ea13975061dad",
+      "N26A-7ce658d7efa2b8c50007",
+      "N26A-085d050f6436e093de84",
+      "N26A-f9c48cdff41eac2921bb",
+      "N26A-e93f77c90fd1fe94e571",
+      "N26A-5024dfc4d319e623d3c9",
+      "N26A-8179d11192a858a1fba1",
+      "N26A-539ff325ae010bd76c94",
+      "N26A-cd163e4ea291c90e557b",
+      "N26A-5d6210851c1c4634753f",
+      "N26A-4cbba4abb6262aecb8df",
+      "N26A-e07367ba72732dd70512",
+      "N26A-00c7fb0696a6ea1bac2e",
+      "N26A-4b7407f6f50c9352081f",
+      "N26A-f559acbe6410196a7fb7",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-119c942deb8552028da1",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-feb6bffc30420982051f",
+      "N26A-88b3fef8eb3b2d905bc2",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

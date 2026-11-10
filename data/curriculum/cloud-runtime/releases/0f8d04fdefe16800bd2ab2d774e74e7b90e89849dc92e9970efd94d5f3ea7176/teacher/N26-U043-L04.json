@@ -1,0 +1,1623 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit043-v1",
+  "courseId": "N26-U043-L04",
+  "unitId": "N26-U043",
+  "category": "工作与学习",
+  "title": "同事与身边的伙伴",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "964f8cb673ddb6dcfed9008a8500d8019043e54fd4ce93aaf80697d8f82cfa0f",
+  "newWords": [
+    "organization",
+    "colleague",
+    "classmate",
+    "secretary"
+  ],
+  "prerequisites": [
+    "N26-U043-L03"
+  ],
+  "goal": "围绕“部门与团队、职业与同事”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "organization",
+        "surface": "organization",
+        "meaning": "组织，机构",
+        "kind": "new_word"
+      },
+      {
+        "key": "colleague",
+        "surface": "colleague",
+        "meaning": "同事",
+        "kind": "new_word"
+      },
+      {
+        "key": "classmate",
+        "surface": "classmate",
+        "meaning": "同班同学",
+        "kind": "new_word"
+      },
+      {
+        "key": "secretary",
+        "surface": "secretary",
+        "meaning": "秘书",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U043-L04-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U043-L04-S002",
+        "N26-U043-L04-S003",
+        "N26-U043-L04-S004",
+        "N26-U043-L04-S005",
+        "N26-U043-L04-S006",
+        "N26-U043-L04-S007",
+        "N26-U043-L04-S008",
+        "N26-U043-L04-S009",
+        "N26-U043-L04-S010",
+        "N26-U043-L04-S011",
+        "N26-U043-L04-S012",
+        "N26-U043-L04-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U043-L04-S014",
+        "N26-U043-L04-S015",
+        "N26-U043-L04-S016",
+        "N26-U043-L04-S017",
+        "N26-U043-L04-S018",
+        "N26-U043-L04-S019",
+        "N26-U043-L04-S020",
+        "N26-U043-L04-S021",
+        "N26-U043-L04-S022",
+        "N26-U043-L04-S023",
+        "N26-U043-L04-S024",
+        "N26-U043-L04-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U043-L04-S026",
+        "N26-U043-L04-S027",
+        "N26-U043-L04-S028",
+        "N26-U043-L04-S029",
+        "N26-U043-L04-S030",
+        "N26-U043-L04-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U043-L04-S032",
+        "N26-U043-L04-S033",
+        "N26-U043-L04-S034",
+        "N26-U043-L04-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U043-L04-S036",
+        "N26-U043-L04-S037",
+        "N26-U043-L04-S038",
+        "N26-U043-L04-S039",
+        "N26-U043-L04-S040",
+        "N26-U043-L04-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U043-L04-S001",
+      "course": "N26-U043-L04",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象介绍身边的合作伙伴。今天认识组织、同事、同学和秘书，区分不同关系。",
+      "display": "",
+      "audio": "N26A-de4257bad1baf01d5eb7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S002",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "组织，机构。这里说组织，机构，先听完整的声音。",
+      "display": "organization",
+      "audio": "N26A-d5bd1b4a1bae7a318bf4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S003",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "组织，机构",
+      "display": "organization",
+      "audio": "N26A-fdcea69a04a9cef09427",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "组织，机构",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S004",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "organization",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C001",
+      "model": "N26A-fdcea69a04a9cef09427",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S005",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "同事。这里说同事，先听完整的声音。",
+      "display": "colleague",
+      "audio": "N26A-9f235595d15d2a1eca16",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S006",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "同事",
+      "display": "colleague",
+      "audio": "N26A-8a25d95a5865fdfa750f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "同事",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S007",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "colleague",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C002",
+      "model": "N26A-8a25d95a5865fdfa750f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S008",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "同班同学。这里说同班同学，先听完整的声音。",
+      "display": "classmate",
+      "audio": "N26A-84f1022c281744c94773",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S009",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "同班同学",
+      "display": "classmate",
+      "audio": "N26A-017e2ee9be26d7e3e3d9",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "同班同学",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S010",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "classmate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C003",
+      "model": "N26A-017e2ee9be26d7e3e3d9",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S011",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "秘书。这里说秘书，先听完整的声音。",
+      "display": "secretary",
+      "audio": "N26A-397d37d92d4187a2efb5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S012",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "秘书",
+      "display": "secretary",
+      "audio": "N26A-e5b077961e9f5002f4fd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "秘书",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S013",
+      "course": "N26-U043-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "secretary",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C004",
+      "model": "N26A-e5b077961e9f5002f4fd",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U043-L04-S014",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个组织。先听这一组，再连起来说。",
+      "display": "an organization",
+      "audio": "N26A-e9f27926cfa994f39dfb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S015",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个组织",
+      "display": "an organization",
+      "audio": "N26A-a4c077cf209d7a9ec536",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个组织",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S016",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an organization",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C005",
+      "model": "N26A-a4c077cf209d7a9ec536",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S017",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的同事。先听这一组，再连起来说。",
+      "display": "my colleague",
+      "audio": "N26A-bc999ae8aa4fcba50cf2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S018",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的同事",
+      "display": "my colleague",
+      "audio": "N26A-1ec1b97d92c728fd4c3b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的同事",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S019",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my colleague",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C006",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S020",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的同班同学。先听这一组，再连起来说。",
+      "display": "my classmate",
+      "audio": "N26A-e4bf0f1af4ac91ce6d1b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S021",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的同班同学",
+      "display": "my classmate",
+      "audio": "N26A-18c6cc339032eee2c500",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的同班同学",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S022",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my classmate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C007",
+      "model": "N26A-18c6cc339032eee2c500",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S023",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那位秘书。先听这一组，再连起来说。",
+      "display": "the secretary",
+      "audio": "N26A-aefe06478db3287a56c6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S024",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那位秘书",
+      "display": "the secretary",
+      "audio": "N26A-464e7cb1da7aa050e4d2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那位秘书",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S025",
+      "course": "N26-U043-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the secretary",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U043-L04-C008",
+      "model": "N26A-464e7cb1da7aa050e4d2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U043-L04-S026",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我的同事",
+      "display": "my colleague",
+      "audio": "N26A-1ec1b97d92c728fd4c3b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的同事",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U043-L04-S027",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "介绍工作中共事的人，听后说我的同事。",
+      "display": "",
+      "audio": "N26A-75ee2c07204ecee17a40",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S028",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my colleague",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C009",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S029",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我的同班同学",
+      "display": "my classmate",
+      "audio": "N26A-18c6cc339032eee2c500",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的同班同学",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U043-L04-S030",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "介绍同班学习的人，先听短语。",
+      "display": "",
+      "audio": "N26A-237174e6faed19f7e18c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S031",
+      "course": "N26-U043-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my classmate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C010",
+      "model": "N26A-18c6cc339032eee2c500",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S032",
+      "course": "N26-U043-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说我的同事。",
+      "display": "",
+      "audio": "N26A-57a744e65b20cea2c479",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S033",
+      "course": "N26-U043-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my colleague",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C011",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S034",
+      "course": "N26-U043-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说我的同班同学。",
+      "display": "",
+      "audio": "N26A-fdc113737acd96dfe044",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S035",
+      "course": "N26-U043-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my classmate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C012",
+      "model": "N26A-18c6cc339032eee2c500",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S036",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象介绍同行伙伴，情境是你的同事，你说清关系。",
+      "display": "",
+      "audio": "N26A-973cbf4151ce8f945f4c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S037",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "my colleague",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C013",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S038",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换到想象校园介绍，你说明这个人是你的同班同学。",
+      "display": "",
+      "audio": "N26A-d817616fbe46b07ccaaa",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S039",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "my classmate",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U043-L04-C014",
+      "model": "N26A-18c6cc339032eee2c500",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U043-L04-S040",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U043-L04-S041",
+      "course": "N26-U043-L04",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U043-L04-C001",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "组织，机构",
+      "answers": [
+        "organization"
+      ],
+      "hint": "organization",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S004",
+      "help": "N26-U043-L04-S004-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C002",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "同事",
+      "answers": [
+        "colleague"
+      ],
+      "hint": "colleague",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S007",
+      "help": "N26-U043-L04-S007-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C003",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "同班同学",
+      "answers": [
+        "classmate"
+      ],
+      "hint": "classmate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S010",
+      "help": "N26-U043-L04-S010-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C004",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "秘书",
+      "answers": [
+        "secretary"
+      ],
+      "hint": "secretary",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S013",
+      "help": "N26-U043-L04-S013-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C005",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个组织",
+      "answers": [
+        "an organization"
+      ],
+      "hint": "an organization",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S016",
+      "help": "N26-U043-L04-S016-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C006",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的同事",
+      "answers": [
+        "my colleague"
+      ],
+      "hint": "my colleague",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S019",
+      "help": "N26-U043-L04-S019-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C007",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的同班同学",
+      "answers": [
+        "my classmate"
+      ],
+      "hint": "my classmate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S022",
+      "help": "N26-U043-L04-S022-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C008",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那位秘书",
+      "answers": [
+        "the secretary"
+      ],
+      "hint": "the secretary",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S025",
+      "help": "N26-U043-L04-S025-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C009",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍工作中共事的人，听后说我的同事。",
+      "answers": [
+        "my colleague"
+      ],
+      "hint": "my colleague",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S028",
+      "help": "N26-U043-L04-S028-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C010",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍同班学习的人，先听短语。",
+      "answers": [
+        "my classmate"
+      ],
+      "hint": "my classmate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S031",
+      "help": "N26-U043-L04-S031-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C011",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说我的同事。",
+      "answers": [
+        "my colleague"
+      ],
+      "hint": "my colleague",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S033",
+      "help": "N26-U043-L04-S033-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C012",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说我的同班同学。",
+      "answers": [
+        "my classmate"
+      ],
+      "hint": "my classmate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U043-L04-S035",
+      "help": "N26-U043-L04-S035-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C013",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象介绍同行伙伴，情境是你的同事，你说清关系。",
+      "answers": [
+        "my colleague"
+      ],
+      "hint": "my colleague",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U043-L04-S037",
+      "help": "N26-U043-L04-S037-HELP"
+    },
+    {
+      "id": "N26-U043-L04-C014",
+      "course": "N26-U043-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换到想象校园介绍，你说明这个人是你的同班同学。",
+      "answers": [
+        "my classmate"
+      ],
+      "hint": "my classmate",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U043-L04-S039",
+      "help": "N26-U043-L04-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U043-L04-S004-HELP",
+      "forStep": "N26-U043-L04-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fdcea69a04a9cef09427",
+      "display": "organization",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S007-HELP",
+      "forStep": "N26-U043-L04-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8a25d95a5865fdfa750f",
+      "display": "colleague",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S010-HELP",
+      "forStep": "N26-U043-L04-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-017e2ee9be26d7e3e3d9",
+      "display": "classmate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S013-HELP",
+      "forStep": "N26-U043-L04-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e5b077961e9f5002f4fd",
+      "display": "secretary",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S016-HELP",
+      "forStep": "N26-U043-L04-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a4c077cf209d7a9ec536",
+      "display": "an organization",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S019-HELP",
+      "forStep": "N26-U043-L04-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "display": "my colleague",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S022-HELP",
+      "forStep": "N26-U043-L04-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-18c6cc339032eee2c500",
+      "display": "my classmate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S025-HELP",
+      "forStep": "N26-U043-L04-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-464e7cb1da7aa050e4d2",
+      "display": "the secretary",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S028-HELP",
+      "forStep": "N26-U043-L04-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "display": "my colleague",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S031-HELP",
+      "forStep": "N26-U043-L04-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-18c6cc339032eee2c500",
+      "display": "my classmate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S033-HELP",
+      "forStep": "N26-U043-L04-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "display": "my colleague",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S035-HELP",
+      "forStep": "N26-U043-L04-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-18c6cc339032eee2c500",
+      "display": "my classmate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S037-HELP",
+      "forStep": "N26-U043-L04-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1ec1b97d92c728fd4c3b",
+      "display": "my colleague",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U043-L04-S039-HELP",
+      "forStep": "N26-U043-L04-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-18c6cc339032eee2c500",
+      "display": "my classmate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U043-L04-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "organization",
+      "word": "organization",
+      "ipa": "/ˌɔːrɡənəˈzeɪʃən/",
+      "meaning": "组织，机构",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-fdcea69a04a9cef09427"
+    },
+    {
+      "key": "colleague",
+      "word": "colleague",
+      "ipa": "/ˈkɑːliːɡ/",
+      "meaning": "同事",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8a25d95a5865fdfa750f"
+    },
+    {
+      "key": "classmate",
+      "word": "classmate",
+      "ipa": "/ˈklæsmeɪt/",
+      "meaning": "同班同学",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-017e2ee9be26d7e3e3d9"
+    },
+    {
+      "key": "secretary",
+      "word": "secretary",
+      "ipa": "/ˈsɛkrəteri/",
+      "meaning": "秘书",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e5b077961e9f5002f4fd"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：organization=组织，机构；colleague=同事；classmate=同班同学；secretary=秘书。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-de4257bad1baf01d5eb7",
+      "N26A-d5bd1b4a1bae7a318bf4",
+      "N26A-fdcea69a04a9cef09427",
+      "N26A-9f235595d15d2a1eca16",
+      "N26A-8a25d95a5865fdfa750f",
+      "N26A-84f1022c281744c94773",
+      "N26A-017e2ee9be26d7e3e3d9",
+      "N26A-397d37d92d4187a2efb5",
+      "N26A-e5b077961e9f5002f4fd",
+      "N26A-e9f27926cfa994f39dfb",
+      "N26A-a4c077cf209d7a9ec536",
+      "N26A-bc999ae8aa4fcba50cf2",
+      "N26A-1ec1b97d92c728fd4c3b",
+      "N26A-e4bf0f1af4ac91ce6d1b",
+      "N26A-18c6cc339032eee2c500",
+      "N26A-aefe06478db3287a56c6",
+      "N26A-464e7cb1da7aa050e4d2",
+      "N26A-75ee2c07204ecee17a40",
+      "N26A-237174e6faed19f7e18c",
+      "N26A-57a744e65b20cea2c479",
+      "N26A-fdc113737acd96dfe044",
+      "N26A-973cbf4151ce8f945f4c",
+      "N26A-d817616fbe46b07ccaaa",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

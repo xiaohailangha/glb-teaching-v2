@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-02T05:52:21.279Z",
+  "checks": [
+    "App login, registration and session restoration",
+    "App deployed bundle hash matches release",
+    "Production browser playback, CORS, microphone upload and oral evidence",
+    "Original course deck, lesson text frame and My page remain usable"
+  ],
+  "scope": "Production services; dedicated test account and synthetic microphone recording. Not a human study.",
+  "completed": true,
+  "backup": "/opt/glb-backups/before-scene-20261102T055154Z"
+}

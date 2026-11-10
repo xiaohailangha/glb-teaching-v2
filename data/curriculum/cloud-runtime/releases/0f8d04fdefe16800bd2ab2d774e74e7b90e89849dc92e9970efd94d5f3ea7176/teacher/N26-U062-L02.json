@@ -1,0 +1,1872 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit062-v1",
+  "courseId": "N26-U062-L02",
+  "unitId": "N26-U062",
+  "category": "旅行与住宿",
+  "title": "前台办理入住",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "874ce6aa2f57f00e21e64bdc9dd51268a082842f265db5e203f60f844f375038",
+  "newWords": [
+    "deposit",
+    "reception",
+    "receptionist",
+    "collect",
+    "collection"
+  ],
+  "prerequisites": [
+    "N26-U062-L01"
+  ],
+  "goal": "在“预订与押金／客房服务 2”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "deposit",
+        "surface": "deposit",
+        "meaning": "押金",
+        "kind": "new_word"
+      },
+      {
+        "key": "reception",
+        "surface": "reception",
+        "meaning": "接待处，酒店前台",
+        "kind": "new_word"
+      },
+      {
+        "key": "receptionist",
+        "surface": "receptionist",
+        "meaning": "前台接待员",
+        "kind": "new_word"
+      },
+      {
+        "key": "collect",
+        "surface": "collect",
+        "meaning": "领取，去拿已准备好的物品",
+        "kind": "new_word"
+      },
+      {
+        "key": "collection",
+        "surface": "collection",
+        "meaning": "领取，拿取物品这件事",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U062-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U062-L02-S002",
+        "N26-U062-L02-S003",
+        "N26-U062-L02-S004",
+        "N26-U062-L02-S005",
+        "N26-U062-L02-S006",
+        "N26-U062-L02-S007",
+        "N26-U062-L02-S008",
+        "N26-U062-L02-S009",
+        "N26-U062-L02-S010",
+        "N26-U062-L02-S011",
+        "N26-U062-L02-S012",
+        "N26-U062-L02-S013",
+        "N26-U062-L02-S014",
+        "N26-U062-L02-S015",
+        "N26-U062-L02-S016"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U062-L02-S017",
+        "N26-U062-L02-S018",
+        "N26-U062-L02-S019",
+        "N26-U062-L02-S020",
+        "N26-U062-L02-S021",
+        "N26-U062-L02-S022",
+        "N26-U062-L02-S023",
+        "N26-U062-L02-S024",
+        "N26-U062-L02-S025",
+        "N26-U062-L02-S026",
+        "N26-U062-L02-S027",
+        "N26-U062-L02-S028",
+        "N26-U062-L02-S029",
+        "N26-U062-L02-S030",
+        "N26-U062-L02-S031"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U062-L02-S032",
+        "N26-U062-L02-S033",
+        "N26-U062-L02-S034",
+        "N26-U062-L02-S035",
+        "N26-U062-L02-S036",
+        "N26-U062-L02-S037"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U062-L02-S038",
+        "N26-U062-L02-S039",
+        "N26-U062-L02-S040",
+        "N26-U062-L02-S041"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U062-L02-S042",
+        "N26-U062-L02-S043",
+        "N26-U062-L02-S044",
+        "N26-U062-L02-S045",
+        "N26-U062-L02-S046",
+        "N26-U062-L02-S047"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U062-L02-S001",
+      "course": "N26-U062-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象到酒店前台。今天认识押金、接待处和接待员，再练领取钥匙的请求。",
+      "display": "",
+      "audio": "N26A-0eb1747f9916699643b0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S002",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "押金。这里说押金，先听完整的声音。",
+      "display": "deposit",
+      "audio": "N26A-c373d1cc18da44ab3191",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S003",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "押金",
+      "display": "deposit",
+      "audio": "N26A-6c633aead8929ef088a1",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "押金",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S004",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "deposit",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C001",
+      "model": "N26A-6c633aead8929ef088a1",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S005",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "接待处，酒店前台。这里说接待处，酒店前台，先听完整的声音。",
+      "display": "reception",
+      "audio": "N26A-63dd28e0c906cc64e7fd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S006",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "接待处，酒店前台",
+      "display": "reception",
+      "audio": "N26A-ba5e67482d78d9419216",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "接待处，酒店前台",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S007",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "reception",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C002",
+      "model": "N26A-ba5e67482d78d9419216",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S008",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "前台接待员。这里说前台接待员，先听完整的声音。",
+      "display": "receptionist",
+      "audio": "N26A-bbaa12c9ffc21b8fd715",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S009",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "前台接待员",
+      "display": "receptionist",
+      "audio": "N26A-5c8791df565729615aca",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "前台接待员",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S010",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "receptionist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C003",
+      "model": "N26A-5c8791df565729615aca",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S011",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "领取，去拿已准备好的物品。这里说领取，去拿已准备好的物品，先听完整的声音。",
+      "display": "collect",
+      "audio": "N26A-94bdb4067c23fbaca01c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S012",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "领取，去拿已准备好的物品",
+      "display": "collect",
+      "audio": "N26A-a632d5994dcfab01d646",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "领取，去拿已准备好的物品",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S013",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "collect",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C004",
+      "model": "N26A-a632d5994dcfab01d646",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S014",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "领取，拿取物品这件事。与领取动作对应",
+      "display": "collection",
+      "audio": "N26A-58e2a176456f737b93ca",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S015",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "领取，拿取物品这件事",
+      "display": "collection",
+      "audio": "N26A-323cd732561597cda61e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "领取，拿取物品这件事",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S016",
+      "course": "N26-U062-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "collection",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C005",
+      "model": "N26A-323cd732561597cda61e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U062-L02-S017",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一笔押金。先听这一组，再连起来说。",
+      "display": "a deposit",
+      "audio": "N26A-f175d4bb45e0b6770202",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S018",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一笔押金",
+      "display": "a deposit",
+      "audio": "N26A-771127e1d4b2500c867e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一笔押金",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S019",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a deposit",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C006",
+      "model": "N26A-771127e1d4b2500c867e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S020",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "在酒店前台。先听这一组，再连起来说。",
+      "display": "at reception",
+      "audio": "N26A-77de9e069b55ab0fae48",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S021",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "在酒店前台",
+      "display": "at reception",
+      "audio": "N26A-68a2a5c2243b737734de",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "在酒店前台",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S022",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "at reception",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C007",
+      "model": "N26A-68a2a5c2243b737734de",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S023",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那位前台接待员。先听这一组，再连起来说。",
+      "display": "the receptionist",
+      "audio": "N26A-d2cd0d1d9c7ebfec16e4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S024",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那位前台接待员",
+      "display": "the receptionist",
+      "audio": "N26A-500c71c713248fd629ec",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那位前台接待员",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S025",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the receptionist",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C008",
+      "model": "N26A-500c71c713248fd629ec",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S026",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请领取这把钥匙。先听这一组，再连起来说。",
+      "display": "Collect the key, please",
+      "audio": "N26A-a9d35d92c0fdbf58fc92",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S027",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请领取这把钥匙。",
+      "display": "Collect the key, please.",
+      "audio": "N26A-773cdca2f1214b56cceb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请领取这把钥匙。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S028",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Collect the key, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C009",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S029",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "领取钥匙。与领取动作对应",
+      "display": "key collection",
+      "audio": "N26A-7e0c2acab093a7136d49",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S030",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "领取钥匙",
+      "display": "key collection",
+      "audio": "N26A-42173af3d4cce2ca037f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "领取钥匙",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S031",
+      "course": "N26-U062-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "key collection",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U062-L02-C010",
+      "model": "N26A-42173af3d4cce2ca037f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U062-L02-S032",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "在酒店前台",
+      "display": "at reception",
+      "audio": "N26A-68a2a5c2243b737734de",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "在酒店前台",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U062-L02-S033",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述位置在酒店前台，先听地点短语。",
+      "display": "",
+      "audio": "N26A-cb4ec006a10933221216",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S034",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "at reception",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C011",
+      "model": "N26A-68a2a5c2243b737734de",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S035",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "请领取这把钥匙。",
+      "display": "Collect the key, please.",
+      "audio": "N26A-773cdca2f1214b56cceb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请领取这把钥匙。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U062-L02-S036",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "模拟前台请客人领取钥匙，先听整句。",
+      "display": "",
+      "audio": "N26A-284903331cd9ad6c3289",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S037",
+      "course": "N26-U062-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Collect the key, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C012",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S038",
+      "course": "N26-U062-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说在酒店前台。",
+      "display": "",
+      "audio": "N26A-9d1ab676027071308cea",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S039",
+      "course": "N26-U062-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "at reception",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C013",
+      "model": "N26A-68a2a5c2243b737734de",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S040",
+      "course": "N26-U062-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说请领取这把钥匙。",
+      "display": "",
+      "audio": "N26A-097761a56a945662db02",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S041",
+      "course": "N26-U062-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Collect the key, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C014",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S042",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对虚构所在位置，你说明在酒店前台。",
+      "display": "",
+      "audio": "N26A-e77a1b3acaa6158e9a59",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S043",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "at reception",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C015",
+      "model": "N26A-68a2a5c2243b737734de",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S044",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象前台对话中，你礼貌请客人领取这把钥匙。",
+      "display": "",
+      "audio": "N26A-fb0fef1bd07966e46c8b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S045",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Collect the key, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U062-L02-C016",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U062-L02-S046",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U062-L02-S047",
+      "course": "N26-U062-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U062-L02-C001",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "押金",
+      "answers": [
+        "deposit"
+      ],
+      "hint": "deposit",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S004",
+      "help": "N26-U062-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C002",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "接待处，酒店前台",
+      "answers": [
+        "reception"
+      ],
+      "hint": "reception",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S007",
+      "help": "N26-U062-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C003",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "前台接待员",
+      "answers": [
+        "receptionist"
+      ],
+      "hint": "receptionist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S010",
+      "help": "N26-U062-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C004",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "领取，去拿已准备好的物品",
+      "answers": [
+        "collect"
+      ],
+      "hint": "collect",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S013",
+      "help": "N26-U062-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C005",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "领取，拿取物品这件事",
+      "answers": [
+        "collection"
+      ],
+      "hint": "collection",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S016",
+      "help": "N26-U062-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C006",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一笔押金",
+      "answers": [
+        "a deposit"
+      ],
+      "hint": "a deposit",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S019",
+      "help": "N26-U062-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C007",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在酒店前台",
+      "answers": [
+        "at reception"
+      ],
+      "hint": "at reception",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S022",
+      "help": "N26-U062-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C008",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那位前台接待员",
+      "answers": [
+        "the receptionist"
+      ],
+      "hint": "the receptionist",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S025",
+      "help": "N26-U062-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C009",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请领取这把钥匙。",
+      "answers": [
+        "Collect the key, please."
+      ],
+      "hint": "Collect the key, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S028",
+      "help": "N26-U062-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C010",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "领取钥匙",
+      "answers": [
+        "key collection"
+      ],
+      "hint": "key collection",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S031",
+      "help": "N26-U062-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C011",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述位置在酒店前台，先听地点短语。",
+      "answers": [
+        "at reception"
+      ],
+      "hint": "at reception",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S034",
+      "help": "N26-U062-L02-S034-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C012",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "模拟前台请客人领取钥匙，先听整句。",
+      "answers": [
+        "Collect the key, please."
+      ],
+      "hint": "Collect the key, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S037",
+      "help": "N26-U062-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C013",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说在酒店前台。",
+      "answers": [
+        "at reception"
+      ],
+      "hint": "at reception",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S039",
+      "help": "N26-U062-L02-S039-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C014",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说请领取这把钥匙。",
+      "answers": [
+        "Collect the key, please."
+      ],
+      "hint": "Collect the key, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U062-L02-S041",
+      "help": "N26-U062-L02-S041-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C015",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对虚构所在位置，你说明在酒店前台。",
+      "answers": [
+        "at reception"
+      ],
+      "hint": "at reception",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U062-L02-S043",
+      "help": "N26-U062-L02-S043-HELP"
+    },
+    {
+      "id": "N26-U062-L02-C016",
+      "course": "N26-U062-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象前台对话中，你礼貌请客人领取这把钥匙。",
+      "answers": [
+        "Collect the key, please."
+      ],
+      "hint": "Collect the key, please.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U062-L02-S045",
+      "help": "N26-U062-L02-S045-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U062-L02-S004-HELP",
+      "forStep": "N26-U062-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6c633aead8929ef088a1",
+      "display": "deposit",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S007-HELP",
+      "forStep": "N26-U062-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ba5e67482d78d9419216",
+      "display": "reception",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S010-HELP",
+      "forStep": "N26-U062-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5c8791df565729615aca",
+      "display": "receptionist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S013-HELP",
+      "forStep": "N26-U062-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a632d5994dcfab01d646",
+      "display": "collect",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S016-HELP",
+      "forStep": "N26-U062-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-323cd732561597cda61e",
+      "display": "collection",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S019-HELP",
+      "forStep": "N26-U062-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-771127e1d4b2500c867e",
+      "display": "a deposit",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S022-HELP",
+      "forStep": "N26-U062-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68a2a5c2243b737734de",
+      "display": "at reception",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S025-HELP",
+      "forStep": "N26-U062-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-500c71c713248fd629ec",
+      "display": "the receptionist",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S028-HELP",
+      "forStep": "N26-U062-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "display": "Collect the key, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S031-HELP",
+      "forStep": "N26-U062-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-42173af3d4cce2ca037f",
+      "display": "key collection",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S034-HELP",
+      "forStep": "N26-U062-L02-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68a2a5c2243b737734de",
+      "display": "at reception",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S037-HELP",
+      "forStep": "N26-U062-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "display": "Collect the key, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S039-HELP",
+      "forStep": "N26-U062-L02-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68a2a5c2243b737734de",
+      "display": "at reception",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S041-HELP",
+      "forStep": "N26-U062-L02-S041",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "display": "Collect the key, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S041",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S043-HELP",
+      "forStep": "N26-U062-L02-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68a2a5c2243b737734de",
+      "display": "at reception",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U062-L02-S045-HELP",
+      "forStep": "N26-U062-L02-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-773cdca2f1214b56cceb",
+      "display": "Collect the key, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U062-L02-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "deposit",
+      "word": "deposit",
+      "ipa": "/dɪˈpɑːzɪt/",
+      "meaning": "押金",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6c633aead8929ef088a1"
+    },
+    {
+      "key": "reception",
+      "word": "reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "meaning": "接待处，酒店前台",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ba5e67482d78d9419216"
+    },
+    {
+      "key": "receptionist",
+      "word": "receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "meaning": "前台接待员",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5c8791df565729615aca"
+    },
+    {
+      "key": "collect",
+      "word": "collect",
+      "ipa": "/kəˈlɛkt/",
+      "meaning": "领取，去拿已准备好的物品",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a632d5994dcfab01d646"
+    },
+    {
+      "key": "collection",
+      "word": "collection",
+      "ipa": "/kəˈlɛkʃən/",
+      "meaning": "领取，拿取物品这件事",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-323cd732561597cda61e"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "at",
+      "word": "at",
+      "ipa": "/æt/",
+      "meaning": "在某个地点",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a8d0f4911a7e1d6771b5"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "key",
+      "word": "key",
+      "ipa": "/kiː/",
+      "meaning": "钥匙",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-691793115a9c53081366"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：deposit=押金；reception=接待处，酒店前台；receptionist=前台接待员；collect=领取，去拿已准备好的物品；collection=领取，拿取物品这件事。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "key",
+      "sourceCourse": "N26-U028-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 36,
+    "availableExactAssets": 36,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-0eb1747f9916699643b0",
+      "N26A-c373d1cc18da44ab3191",
+      "N26A-6c633aead8929ef088a1",
+      "N26A-63dd28e0c906cc64e7fd",
+      "N26A-ba5e67482d78d9419216",
+      "N26A-bbaa12c9ffc21b8fd715",
+      "N26A-5c8791df565729615aca",
+      "N26A-94bdb4067c23fbaca01c",
+      "N26A-a632d5994dcfab01d646",
+      "N26A-58e2a176456f737b93ca",
+      "N26A-323cd732561597cda61e",
+      "N26A-f175d4bb45e0b6770202",
+      "N26A-771127e1d4b2500c867e",
+      "N26A-77de9e069b55ab0fae48",
+      "N26A-68a2a5c2243b737734de",
+      "N26A-d2cd0d1d9c7ebfec16e4",
+      "N26A-500c71c713248fd629ec",
+      "N26A-a9d35d92c0fdbf58fc92",
+      "N26A-773cdca2f1214b56cceb",
+      "N26A-7e0c2acab093a7136d49",
+      "N26A-42173af3d4cce2ca037f",
+      "N26A-cb4ec006a10933221216",
+      "N26A-284903331cd9ad6c3289",
+      "N26A-9d1ab676027071308cea",
+      "N26A-097761a56a945662db02",
+      "N26A-e77a1b3acaa6158e9a59",
+      "N26A-fb0fef1bd07966e46c8b",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-a8d0f4911a7e1d6771b5",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-691793115a9c53081366",
+      "N26A-119c942deb8552028da1",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

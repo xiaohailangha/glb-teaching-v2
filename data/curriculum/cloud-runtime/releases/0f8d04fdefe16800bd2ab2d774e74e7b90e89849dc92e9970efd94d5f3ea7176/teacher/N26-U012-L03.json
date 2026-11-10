@@ -1,0 +1,1963 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch07-v1",
+  "courseId": "N26-U012-L03",
+  "unitId": "N26-U012",
+  "category": "时间与日常",
+  "title": "从十几数到几十",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "797c0143aad5639022f638a3a70027a39c5448d7d9d2b09368cb26a743ee3b3b",
+  "newWords": [
+    "sixteen",
+    "seventeen",
+    "eighteen",
+    "nineteen",
+    "twenty",
+    "thirty",
+    "forty"
+  ],
+  "prerequisites": [
+    "N26-U012-L02"
+  ],
+  "goal": "在“数量与计数 3”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "sixteen",
+        "surface": "sixteen",
+        "meaning": "十六",
+        "kind": "new_word"
+      },
+      {
+        "key": "seventeen",
+        "surface": "seventeen",
+        "meaning": "十七",
+        "kind": "new_word"
+      },
+      {
+        "key": "eighteen",
+        "surface": "eighteen",
+        "meaning": "十八",
+        "kind": "new_word"
+      },
+      {
+        "key": "nineteen",
+        "surface": "nineteen",
+        "meaning": "十九",
+        "kind": "new_word"
+      },
+      {
+        "key": "twenty",
+        "surface": "twenty",
+        "meaning": "二十",
+        "kind": "new_word"
+      },
+      {
+        "key": "thirty",
+        "surface": "thirty",
+        "meaning": "三十",
+        "kind": "new_word"
+      },
+      {
+        "key": "forty",
+        "surface": "forty",
+        "meaning": "四十",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U012-L03-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U012-L03-S002",
+        "N26-U012-L03-S003",
+        "N26-U012-L03-S004",
+        "N26-U012-L03-S005",
+        "N26-U012-L03-S006",
+        "N26-U012-L03-S007",
+        "N26-U012-L03-S008",
+        "N26-U012-L03-S009",
+        "N26-U012-L03-S010",
+        "N26-U012-L03-S011",
+        "N26-U012-L03-S012",
+        "N26-U012-L03-S013",
+        "N26-U012-L03-S014",
+        "N26-U012-L03-S015",
+        "N26-U012-L03-S016",
+        "N26-U012-L03-S017",
+        "N26-U012-L03-S018",
+        "N26-U012-L03-S019",
+        "N26-U012-L03-S020",
+        "N26-U012-L03-S021",
+        "N26-U012-L03-S022"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U012-L03-S023",
+        "N26-U012-L03-S024",
+        "N26-U012-L03-S025",
+        "N26-U012-L03-S026",
+        "N26-U012-L03-S027",
+        "N26-U012-L03-S028",
+        "N26-U012-L03-S029",
+        "N26-U012-L03-S030",
+        "N26-U012-L03-S031",
+        "N26-U012-L03-S032",
+        "N26-U012-L03-S033",
+        "N26-U012-L03-S034"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U012-L03-S035",
+        "N26-U012-L03-S036",
+        "N26-U012-L03-S037",
+        "N26-U012-L03-S038",
+        "N26-U012-L03-S039",
+        "N26-U012-L03-S040"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U012-L03-S041",
+        "N26-U012-L03-S042",
+        "N26-U012-L03-S043",
+        "N26-U012-L03-S044"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U012-L03-S045",
+        "N26-U012-L03-S046",
+        "N26-U012-L03-S047",
+        "N26-U012-L03-S048",
+        "N26-U012-L03-S049",
+        "N26-U012-L03-S050"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U012-L03-S001",
+      "course": "N26-U012-L03",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天听十六到十九，再听二十、三十和四十。先分段示范，不要求猜后面的规律。",
+      "display": "",
+      "audio": "N26A-636144879c3edccdc179",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S002",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "十六。先听完整词。",
+      "display": "sixteen",
+      "audio": "N26A-28ee1017feb5ce82de0e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S003",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "十六",
+      "display": "sixteen",
+      "audio": "N26A-68409736c74d1d191a8f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "十六",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S004",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "sixteen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C001",
+      "model": "N26A-68409736c74d1d191a8f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S005",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "十七。把后面较清楚的一拍听出来。",
+      "display": "seventeen",
+      "audio": "N26A-bb28e4a5bc2becf2057c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S006",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "十七",
+      "display": "seventeen",
+      "audio": "N26A-53cb1ff62e0c314eec50",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "十七",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S007",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "seventeen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C002",
+      "model": "N26A-53cb1ff62e0c314eec50",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S008",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "十八。开头和结尾连起来。",
+      "display": "eighteen",
+      "audio": "N26A-be9764d9c66d79e289e5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S009",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "十八",
+      "display": "eighteen",
+      "audio": "N26A-e01fdc89399896a816c4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "十八",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S010",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "eighteen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C003",
+      "model": "N26A-e01fdc89399896a816c4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S011",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "十九。先听整词。",
+      "display": "nineteen",
+      "audio": "N26A-c7b5fd944091d0d4d927",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S012",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "十九",
+      "display": "nineteen",
+      "audio": "N26A-227accaf84c188a57bea",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "十九",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S013",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "nineteen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C004",
+      "model": "N26A-227accaf84c188a57bea",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S014",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "二十。前面一拍更清楚。",
+      "display": "twenty",
+      "audio": "N26A-e7b2add70b0c11e8dd29",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S015",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "二十",
+      "display": "twenty",
+      "audio": "N26A-ad7d862279a351b9d636",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "二十",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S016",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "twenty",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C005",
+      "model": "N26A-ad7d862279a351b9d636",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S017",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "三十。和十三分开听，不靠拼写猜读音。",
+      "display": "thirty",
+      "audio": "N26A-101f032025bbcdc5ee9d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S018",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "三十",
+      "display": "thirty",
+      "audio": "N26A-0654a51018e8600c7efe",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "三十",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S019",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "thirty",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C006",
+      "model": "N26A-0654a51018e8600c7efe",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S020",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "四十。本课保持这个标准拼写。",
+      "display": "forty",
+      "audio": "N26A-336c1cf614c3d3a064bd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S021",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "四十",
+      "display": "forty",
+      "audio": "N26A-07cb0274bc55163195b7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "四十",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S022",
+      "course": "N26-U012-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "forty",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C007",
+      "model": "N26A-07cb0274bc55163195b7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U012-L03-S023",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "十六、十七、十八、十九。先听这一小段。",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "audio": "N26A-e4009cce83eac51ee837",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S024",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "十六、十七、十八、十九",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "audio": "N26A-68db6f6759eded921b36",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "十六、十七、十八、十九",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S025",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C008",
+      "model": "N26A-68db6f6759eded921b36",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S026",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "二十、三十、四十。听清整十数的声音。",
+      "display": "twenty, thirty, forty",
+      "audio": "N26A-18f2ed682701d093fb0c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S027",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "二十、三十、四十",
+      "display": "twenty, thirty, forty",
+      "audio": "N26A-8ed5293420f93ed6d402",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "二十、三十、四十",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S028",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "twenty, thirty, forty",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C009",
+      "model": "N26A-8ed5293420f93ed6d402",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S029",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "二十个苹果。在清点情境里说整组数量。",
+      "display": "twenty apples",
+      "audio": "N26A-e0a00f16cd325bdc3afb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S030",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "二十个苹果",
+      "display": "twenty apples",
+      "audio": "N26A-890755563b677a212bf8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "二十个苹果",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S031",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "twenty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C010",
+      "model": "N26A-890755563b677a212bf8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S032",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "四十个苹果。数量换成四十，苹果仍用表示多个的说法。",
+      "display": "forty apples",
+      "audio": "N26A-62605419fac813027fe4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S033",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "四十个苹果",
+      "display": "forty apples",
+      "audio": "N26A-f813a17049e77c78e49c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "四十个苹果",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S034",
+      "course": "N26-U012-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "forty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U012-L03-C011",
+      "model": "N26A-f813a17049e77c78e49c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U012-L03-S035",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "二十个苹果",
+      "display": "twenty apples",
+      "audio": "N26A-890755563b677a212bf8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "二十个苹果",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U012-L03-S036",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "这一组清点为二十个苹果，先听短语，再接上。",
+      "display": "",
+      "audio": "N26A-a703777b10220fa19d50",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S037",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "twenty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C012",
+      "model": "N26A-890755563b677a212bf8",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S038",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "四十个苹果",
+      "display": "forty apples",
+      "audio": "N26A-f813a17049e77c78e49c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "四十个苹果",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U012-L03-S039",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "另一组为四十个苹果，先听，再说明。",
+      "display": "",
+      "audio": "N26A-180ee103591fc13fc229",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S040",
+      "course": "N26-U012-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "forty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C013",
+      "model": "N26A-f813a17049e77c78e49c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S041",
+      "course": "N26-U012-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "一起说十六到十九，看着提示跟着说。",
+      "display": "",
+      "audio": "N26A-7beaffbff458dc373d9f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S042",
+      "course": "N26-U012-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C014",
+      "model": "N26A-68db6f6759eded921b36",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S043",
+      "course": "N26-U012-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "一起说二十、三十和四十，看着提示跟着说。",
+      "display": "",
+      "audio": "N26A-07e1599390d67008c827",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S044",
+      "course": "N26-U012-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "twenty, thirty, forty",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C015",
+      "model": "N26A-8ed5293420f93ed6d402",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S045",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友用中文问这一组苹果有多少。这里共有二十个，请用熟悉的短语回答。",
+      "display": "",
+      "audio": "N26A-6d7aafb143369971bc67",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S046",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "twenty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C016",
+      "model": "N26A-890755563b677a212bf8",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S047",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "另一回整组有四十个苹果，你直接说明数量。",
+      "display": "",
+      "audio": "N26A-b5c3f785b985f0e3bbd3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S048",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "forty apples",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U012-L03-C017",
+      "model": "N26A-f813a17049e77c78e49c",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U012-L03-S049",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U012-L03-S050",
+      "course": "N26-U012-L03",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U012-L03-C001",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "十六",
+      "answers": [
+        "sixteen"
+      ],
+      "hint": "sixteen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S004",
+      "help": "N26-U012-L03-S004-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C002",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "十七",
+      "answers": [
+        "seventeen"
+      ],
+      "hint": "seventeen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S007",
+      "help": "N26-U012-L03-S007-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C003",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "十八",
+      "answers": [
+        "eighteen"
+      ],
+      "hint": "eighteen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S010",
+      "help": "N26-U012-L03-S010-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C004",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "十九",
+      "answers": [
+        "nineteen"
+      ],
+      "hint": "nineteen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S013",
+      "help": "N26-U012-L03-S013-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C005",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "二十",
+      "answers": [
+        "twenty"
+      ],
+      "hint": "twenty",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S016",
+      "help": "N26-U012-L03-S016-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C006",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "三十",
+      "answers": [
+        "thirty"
+      ],
+      "hint": "thirty",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S019",
+      "help": "N26-U012-L03-S019-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C007",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "四十",
+      "answers": [
+        "forty"
+      ],
+      "hint": "forty",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S022",
+      "help": "N26-U012-L03-S022-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C008",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "十六、十七、十八、十九",
+      "answers": [
+        "sixteen, seventeen, eighteen, nineteen"
+      ],
+      "hint": "sixteen, seventeen, eighteen, nineteen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S025",
+      "help": "N26-U012-L03-S025-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C009",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "二十、三十、四十",
+      "answers": [
+        "twenty, thirty, forty"
+      ],
+      "hint": "twenty, thirty, forty",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S028",
+      "help": "N26-U012-L03-S028-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C010",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "二十个苹果",
+      "answers": [
+        "twenty apples"
+      ],
+      "hint": "twenty apples",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S031",
+      "help": "N26-U012-L03-S031-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C011",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "四十个苹果",
+      "answers": [
+        "forty apples"
+      ],
+      "hint": "forty apples",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S034",
+      "help": "N26-U012-L03-S034-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C012",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这一组清点为二十个苹果，先听短语，再接上。",
+      "answers": [
+        "twenty apples"
+      ],
+      "hint": "twenty apples",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S037",
+      "help": "N26-U012-L03-S037-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C013",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "另一组为四十个苹果，先听，再说明。",
+      "answers": [
+        "forty apples"
+      ],
+      "hint": "forty apples",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S040",
+      "help": "N26-U012-L03-S040-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C014",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一起说十六到十九，看着提示跟着说。",
+      "answers": [
+        "sixteen, seventeen, eighteen, nineteen"
+      ],
+      "hint": "sixteen, seventeen, eighteen, nineteen",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S042",
+      "help": "N26-U012-L03-S042-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C015",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一起说二十、三十和四十，看着提示跟着说。",
+      "answers": [
+        "twenty, thirty, forty"
+      ],
+      "hint": "twenty, thirty, forty",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U012-L03-S044",
+      "help": "N26-U012-L03-S044-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C016",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友用中文问这一组苹果有多少。这里共有二十个，请用熟悉的短语回答。",
+      "answers": [
+        "twenty apples"
+      ],
+      "hint": "twenty apples",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U012-L03-S046",
+      "help": "N26-U012-L03-S046-HELP"
+    },
+    {
+      "id": "N26-U012-L03-C017",
+      "course": "N26-U012-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "另一回整组有四十个苹果，你直接说明数量。",
+      "answers": [
+        "forty apples"
+      ],
+      "hint": "forty apples",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U012-L03-S048",
+      "help": "N26-U012-L03-S048-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U012-L03-S004-HELP",
+      "forStep": "N26-U012-L03-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68409736c74d1d191a8f",
+      "display": "sixteen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S007-HELP",
+      "forStep": "N26-U012-L03-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-53cb1ff62e0c314eec50",
+      "display": "seventeen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S010-HELP",
+      "forStep": "N26-U012-L03-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e01fdc89399896a816c4",
+      "display": "eighteen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S013-HELP",
+      "forStep": "N26-U012-L03-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-227accaf84c188a57bea",
+      "display": "nineteen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S016-HELP",
+      "forStep": "N26-U012-L03-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ad7d862279a351b9d636",
+      "display": "twenty",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S019-HELP",
+      "forStep": "N26-U012-L03-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0654a51018e8600c7efe",
+      "display": "thirty",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S022-HELP",
+      "forStep": "N26-U012-L03-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-07cb0274bc55163195b7",
+      "display": "forty",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S025-HELP",
+      "forStep": "N26-U012-L03-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68db6f6759eded921b36",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S028-HELP",
+      "forStep": "N26-U012-L03-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8ed5293420f93ed6d402",
+      "display": "twenty, thirty, forty",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S031-HELP",
+      "forStep": "N26-U012-L03-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-890755563b677a212bf8",
+      "display": "twenty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S034-HELP",
+      "forStep": "N26-U012-L03-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f813a17049e77c78e49c",
+      "display": "forty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S037-HELP",
+      "forStep": "N26-U012-L03-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-890755563b677a212bf8",
+      "display": "twenty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S040-HELP",
+      "forStep": "N26-U012-L03-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f813a17049e77c78e49c",
+      "display": "forty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S042-HELP",
+      "forStep": "N26-U012-L03-S042",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-68db6f6759eded921b36",
+      "display": "sixteen, seventeen, eighteen, nineteen",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S042",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S044-HELP",
+      "forStep": "N26-U012-L03-S044",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8ed5293420f93ed6d402",
+      "display": "twenty, thirty, forty",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S044",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S046-HELP",
+      "forStep": "N26-U012-L03-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-890755563b677a212bf8",
+      "display": "twenty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U012-L03-S048-HELP",
+      "forStep": "N26-U012-L03-S048",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f813a17049e77c78e49c",
+      "display": "forty apples",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U012-L03-S048",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "sixteen",
+      "word": "sixteen",
+      "ipa": "/ˌsɪksˈtiːn/",
+      "meaning": "十六",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-68409736c74d1d191a8f"
+    },
+    {
+      "key": "seventeen",
+      "word": "seventeen",
+      "ipa": "/ˌsev.ənˈtiːn/",
+      "meaning": "十七",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-53cb1ff62e0c314eec50"
+    },
+    {
+      "key": "eighteen",
+      "word": "eighteen",
+      "ipa": "/ˌeɪˈtiːn/",
+      "meaning": "十八",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e01fdc89399896a816c4"
+    },
+    {
+      "key": "nineteen",
+      "word": "nineteen",
+      "ipa": "/ˌnaɪnˈtiːn/",
+      "meaning": "十九",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-227accaf84c188a57bea"
+    },
+    {
+      "key": "twenty",
+      "word": "twenty",
+      "ipa": "/ˈtwen.t̬i/",
+      "meaning": "二十",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ad7d862279a351b9d636"
+    },
+    {
+      "key": "thirty",
+      "word": "thirty",
+      "ipa": "/ˈθɝː.t̬i/",
+      "meaning": "三十",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0654a51018e8600c7efe"
+    },
+    {
+      "key": "forty",
+      "word": "forty",
+      "ipa": "/ˈfɔːr.t̬i/",
+      "meaning": "四十",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-07cb0274bc55163195b7"
+    },
+    {
+      "key": "apple",
+      "word": "apples",
+      "ipa": "/ˈæp.əlz/",
+      "meaning": "苹果，表示不止一个时的样子",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a8841609634ebb0034b2"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "不临时加twenty-one等尚未示范组合；thirty与thirteen分别读，不把重音区别写成已经过真人发音校准。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "changed_since_review_pending_recheck",
+      "reviewedContentHash": "ed0095acaeb2d4d20a0eb304f41d7c6dad5f77654a8125d35dfea30ed47bf310",
+      "findingIds": [],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 34,
+    "availableExactAssets": 34,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-636144879c3edccdc179",
+      "N26A-28ee1017feb5ce82de0e",
+      "N26A-68409736c74d1d191a8f",
+      "N26A-bb28e4a5bc2becf2057c",
+      "N26A-53cb1ff62e0c314eec50",
+      "N26A-be9764d9c66d79e289e5",
+      "N26A-e01fdc89399896a816c4",
+      "N26A-c7b5fd944091d0d4d927",
+      "N26A-227accaf84c188a57bea",
+      "N26A-e7b2add70b0c11e8dd29",
+      "N26A-ad7d862279a351b9d636",
+      "N26A-101f032025bbcdc5ee9d",
+      "N26A-0654a51018e8600c7efe",
+      "N26A-336c1cf614c3d3a064bd",
+      "N26A-07cb0274bc55163195b7",
+      "N26A-e4009cce83eac51ee837",
+      "N26A-68db6f6759eded921b36",
+      "N26A-18f2ed682701d093fb0c",
+      "N26A-8ed5293420f93ed6d402",
+      "N26A-e0a00f16cd325bdc3afb",
+      "N26A-890755563b677a212bf8",
+      "N26A-62605419fac813027fe4",
+      "N26A-f813a17049e77c78e49c",
+      "N26A-a703777b10220fa19d50",
+      "N26A-180ee103591fc13fc229",
+      "N26A-7beaffbff458dc373d9f",
+      "N26A-07e1599390d67008c827",
+      "N26A-6d7aafb143369971bc67",
+      "N26A-b5c3f785b985f0e3bbd3",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-a8841609634ebb0034b2",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

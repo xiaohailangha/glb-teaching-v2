@@ -1,0 +1,2526 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit027-v1",
+  "courseId": "N26-U027-L02",
+  "unitId": "N26-U027",
+  "category": "食物与饮品",
+  "title": "米饭、面食与肉类",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "a323606f2d5a441f7bcc2fd755e033c7146b3fc58cc207415b176205cdcfcd93",
+  "newWords": [
+    "rice",
+    "noodle",
+    "pasta",
+    "meat",
+    "beef",
+    "pork",
+    "chicken",
+    "fish"
+  ],
+  "prerequisites": [
+    "N26-U027-L01"
+  ],
+  "goal": "在“主食与肉类 2”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "rice",
+        "surface": "rice",
+        "meaning": "米饭",
+        "kind": "new_word"
+      },
+      {
+        "key": "noodle",
+        "surface": "noodle",
+        "meaning": "一根面条",
+        "kind": "new_word"
+      },
+      {
+        "key": "pasta",
+        "surface": "pasta",
+        "meaning": "意大利面食",
+        "kind": "new_word"
+      },
+      {
+        "key": "meat",
+        "surface": "meat",
+        "meaning": "肉，食用肉类",
+        "kind": "new_word"
+      },
+      {
+        "key": "beef",
+        "surface": "beef",
+        "meaning": "牛肉",
+        "kind": "new_word"
+      },
+      {
+        "key": "pork",
+        "surface": "pork",
+        "meaning": "猪肉",
+        "kind": "new_word"
+      },
+      {
+        "key": "chicken",
+        "surface": "chicken",
+        "meaning": "鸡肉",
+        "kind": "new_word"
+      },
+      {
+        "key": "fish",
+        "surface": "fish",
+        "meaning": "鱼肉",
+        "kind": "new_word"
+      },
+      {
+        "key": "noodle",
+        "surface": "noodles",
+        "meaning": "面条，食物中通常说多个",
+        "kind": "explicit_form_or_sense"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "中文口述或明确想象情境；无虚构实际展示资产。卡住恢复完整示范，提示练习不计独立掌握。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U027-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U027-L02-S002",
+        "N26-U027-L02-S003",
+        "N26-U027-L02-S004",
+        "N26-U027-L02-S005",
+        "N26-U027-L02-S006",
+        "N26-U027-L02-S007",
+        "N26-U027-L02-S008",
+        "N26-U027-L02-S009",
+        "N26-U027-L02-S010",
+        "N26-U027-L02-S011",
+        "N26-U027-L02-S012",
+        "N26-U027-L02-S013",
+        "N26-U027-L02-S014",
+        "N26-U027-L02-S015",
+        "N26-U027-L02-S016",
+        "N26-U027-L02-S017",
+        "N26-U027-L02-S018",
+        "N26-U027-L02-S019",
+        "N26-U027-L02-S020",
+        "N26-U027-L02-S021",
+        "N26-U027-L02-S022",
+        "N26-U027-L02-S023",
+        "N26-U027-L02-S024",
+        "N26-U027-L02-S025",
+        "N26-U027-L02-S026",
+        "N26-U027-L02-S027",
+        "N26-U027-L02-S028"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U027-L02-S029",
+        "N26-U027-L02-S030",
+        "N26-U027-L02-S031",
+        "N26-U027-L02-S032",
+        "N26-U027-L02-S033",
+        "N26-U027-L02-S034",
+        "N26-U027-L02-S035",
+        "N26-U027-L02-S036",
+        "N26-U027-L02-S037",
+        "N26-U027-L02-S038",
+        "N26-U027-L02-S039",
+        "N26-U027-L02-S040",
+        "N26-U027-L02-S041",
+        "N26-U027-L02-S042",
+        "N26-U027-L02-S043",
+        "N26-U027-L02-S044",
+        "N26-U027-L02-S045",
+        "N26-U027-L02-S046",
+        "N26-U027-L02-S047",
+        "N26-U027-L02-S048",
+        "N26-U027-L02-S049"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U027-L02-S050",
+        "N26-U027-L02-S051",
+        "N26-U027-L02-S052",
+        "N26-U027-L02-S053",
+        "N26-U027-L02-S054",
+        "N26-U027-L02-S055"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U027-L02-S056",
+        "N26-U027-L02-S057",
+        "N26-U027-L02-S058",
+        "N26-U027-L02-S059"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U027-L02-S060",
+        "N26-U027-L02-S061",
+        "N26-U027-L02-S062",
+        "N26-U027-L02-S063",
+        "N26-U027-L02-S064",
+        "N26-U027-L02-S065"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U027-L02-S001",
+      "course": "N26-U027-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天把想吃的主食和肉类说清楚。先逐个听名字，再练点米饭和鸡肉。",
+      "display": "",
+      "audio": "N26A-8948ffff121d89f5e1d1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S002",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "米饭。用餐场景里指煮好的米饭。",
+      "display": "rice",
+      "audio": "N26A-b4f67635b4b4e52a41a3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S003",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "米饭",
+      "display": "rice",
+      "audio": "N26A-d565dccc28dd33126e8c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "米饭",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S004",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "rice",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C001",
+      "model": "N26A-d565dccc28dd33126e8c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S005",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "一根面条。通常吃面条会用多个的形式，下面单独听。",
+      "display": "noodle",
+      "audio": "N26A-eda2eb36072aabb37cb7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S006",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "一根面条",
+      "display": "noodle",
+      "audio": "N26A-3009ea26b299ecab8002",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一根面条",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S007",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "noodle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C002",
+      "model": "N26A-3009ea26b299ecab8002",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S008",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "意大利面食。这里是食物名，不按一根数。",
+      "display": "pasta",
+      "audio": "N26A-02294d81c550488f61a6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S009",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "意大利面食",
+      "display": "pasta",
+      "audio": "N26A-149561bc79847f595e81",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "意大利面食",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S010",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pasta",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C003",
+      "model": "N26A-149561bc79847f595e81",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S011",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "肉，食用肉类。这里是整体食物。",
+      "display": "meat",
+      "audio": "N26A-a7802ebc5b2c8ec227e4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S012",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "肉，食用肉类",
+      "display": "meat",
+      "audio": "N26A-3bab1ea455f501838a20",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "肉，食用肉类",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S013",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "meat",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C004",
+      "model": "N26A-3bab1ea455f501838a20",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S014",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "牛肉。先听肉类名字。",
+      "display": "beef",
+      "audio": "N26A-5bbe2b1b685648172136",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S015",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "牛肉",
+      "display": "beef",
+      "audio": "N26A-554d291231c82d91cdde",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "牛肉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S016",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beef",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C005",
+      "model": "N26A-554d291231c82d91cdde",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S017",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "猪肉。先听整词。",
+      "display": "pork",
+      "audio": "N26A-07458dac195022d5d377",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S018",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "猪肉",
+      "display": "pork",
+      "audio": "N26A-76e75281749bb996874f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "猪肉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S019",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pork",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C006",
+      "model": "N26A-76e75281749bb996874f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S020",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "鸡肉。",
+      "display": "chicken",
+      "audio": "N26A-24be5692848038b63081",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S021",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "鸡肉",
+      "display": "chicken",
+      "audio": "N26A-5ba07e481af0464399f2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "鸡肉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S022",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "chicken",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C007",
+      "model": "N26A-5ba07e481af0464399f2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S023",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "鱼肉。今天用餐场景只教鱼肉。",
+      "display": "fish",
+      "audio": "N26A-d29014d745cd50c796b1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S024",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "鱼肉",
+      "display": "fish",
+      "audio": "N26A-c5bfd29c9a36f858f93c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "鱼肉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S025",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fish",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C008",
+      "model": "N26A-c5bfd29c9a36f858f93c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S026",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "面条，食物中通常说多个。听清结尾，再用于点餐。",
+      "display": "noodles",
+      "audio": "N26A-3df6d358faad3aa8af4d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S027",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "面条，食物中通常说多个",
+      "display": "noodles",
+      "audio": "N26A-8b6c8db60cf97a82a324",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "面条，食物中通常说多个",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S028",
+      "course": "N26-U027-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "noodles",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C009",
+      "model": "N26A-8b6c8db60cf97a82a324",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U027-L02-S029",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要米饭。米饭不加一个。",
+      "display": "I want rice",
+      "audio": "N26A-5965fca0dfcd4c78a379",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S030",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要米饭。",
+      "display": "I want rice.",
+      "audio": "N26A-8cc2c0cf725b6ebca4fc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要米饭。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S031",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want rice.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C010",
+      "model": "N26A-8cc2c0cf725b6ebca4fc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S032",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要面条。使用刚单独听过的多个形式。",
+      "display": "I want noodles",
+      "audio": "N26A-eb299dabde1bf48a20f9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S033",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要面条。",
+      "display": "I want noodles.",
+      "audio": "N26A-c9e12f04334508380ea2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要面条。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S034",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want noodles.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C011",
+      "model": "N26A-c9e12f04334508380ea2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S035",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要意大利面。先听整句。",
+      "display": "I want pasta",
+      "audio": "N26A-9462bbe0384f07001359",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S036",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要意大利面。",
+      "display": "I want pasta.",
+      "audio": "N26A-a90a62522963d2d165f0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要意大利面。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S037",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want pasta.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C012",
+      "model": "N26A-a90a62522963d2d165f0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S038",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "肉类。不把整体食物数成一个。",
+      "display": "meat",
+      "audio": "N26A-8596ff26dd68b27a1a74",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S039",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "肉类",
+      "display": "meat",
+      "audio": "N26A-3bab1ea455f501838a20",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "肉类",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S040",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "meat",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C013",
+      "model": "N26A-3bab1ea455f501838a20",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S041",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "牛肉和猪肉。两种肉一起说。",
+      "display": "beef and pork",
+      "audio": "N26A-636a1339b9679bfedefa",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S042",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "牛肉和猪肉",
+      "display": "beef and pork",
+      "audio": "N26A-2cbf243b34b423250724",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "牛肉和猪肉",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S043",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beef and pork",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C014",
+      "model": "N26A-2cbf243b34b423250724",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S044",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要米饭和鸡肉。说明主食和肉类都要。",
+      "display": "I want rice and chicken",
+      "audio": "N26A-551acc5ddd0a33cc6061",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S045",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要米饭和鸡肉。",
+      "display": "I want rice and chicken.",
+      "audio": "N26A-fe3db0f262be0a47c502",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要米饭和鸡肉。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S046",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want rice and chicken.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C015",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S047",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要鱼肉。这里不指买一条活鱼。",
+      "display": "I want fish",
+      "audio": "N26A-e3a52fc82500b7ec348e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S048",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要鱼肉。",
+      "display": "I want fish.",
+      "audio": "N26A-9e62001f77a39838e96a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要鱼肉。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S049",
+      "course": "N26-U027-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I want fish.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U027-L02-C016",
+      "model": "N26A-9e62001f77a39838e96a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U027-L02-S050",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我想要米饭和鸡肉。",
+      "display": "I want rice and chicken.",
+      "audio": "N26A-fe3db0f262be0a47c502",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要米饭和鸡肉。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U027-L02-S051",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "点米饭和鸡肉，先听整句再接上。",
+      "display": "",
+      "audio": "N26A-864f8572a085bf0ac795",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S052",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want rice and chicken.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C017",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S053",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我想要面条。",
+      "display": "I want noodles.",
+      "audio": "N26A-c9e12f04334508380ea2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要面条。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U027-L02-S054",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想吃面条，先听完整表达再说。",
+      "display": "",
+      "audio": "N26A-52e5a09246d24dbfd86c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S055",
+      "course": "N26-U027-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want noodles.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C018",
+      "model": "N26A-c9e12f04334508380ea2",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S056",
+      "course": "N26-U027-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "点意大利面，看提示表达。",
+      "display": "",
+      "audio": "N26A-9d35f2aacbcf35a24bae",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S057",
+      "course": "N26-U027-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want pasta.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C019",
+      "model": "N26A-a90a62522963d2d165f0",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S058",
+      "course": "N26-U027-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "点鱼肉，看提示表达。",
+      "display": "",
+      "audio": "N26A-500ca68581dd73af08d4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S059",
+      "course": "N26-U027-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I want fish.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C020",
+      "model": "N26A-9e62001f77a39838e96a",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S060",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象点餐时同伴核对你的选择，你说米饭和鸡肉。",
+      "display": "",
+      "audio": "N26A-fc2a514e24e611f9a0d0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S061",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I want rice and chicken.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C021",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S062",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "另一回想吃面条，你用整句告诉对方。",
+      "display": "",
+      "audio": "N26A-23b6e7a285fbb217e9cf",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S063",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I want noodles.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U027-L02-C022",
+      "model": "N26A-c9e12f04334508380ea2",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U027-L02-S064",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U027-L02-S065",
+      "course": "N26-U027-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U027-L02-C001",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "米饭",
+      "answers": [
+        "rice"
+      ],
+      "hint": "rice",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S004",
+      "help": "N26-U027-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C002",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一根面条",
+      "answers": [
+        "noodle"
+      ],
+      "hint": "noodle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S007",
+      "help": "N26-U027-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C003",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "意大利面食",
+      "answers": [
+        "pasta"
+      ],
+      "hint": "pasta",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S010",
+      "help": "N26-U027-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C004",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "肉，食用肉类",
+      "answers": [
+        "meat"
+      ],
+      "hint": "meat",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S013",
+      "help": "N26-U027-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C005",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "牛肉",
+      "answers": [
+        "beef"
+      ],
+      "hint": "beef",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S016",
+      "help": "N26-U027-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C006",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "猪肉",
+      "answers": [
+        "pork"
+      ],
+      "hint": "pork",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S019",
+      "help": "N26-U027-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C007",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "鸡肉",
+      "answers": [
+        "chicken"
+      ],
+      "hint": "chicken",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S022",
+      "help": "N26-U027-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C008",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "鱼肉",
+      "answers": [
+        "fish"
+      ],
+      "hint": "fish",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S025",
+      "help": "N26-U027-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C009",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "面条，食物中通常说多个",
+      "answers": [
+        "noodles"
+      ],
+      "hint": "noodles",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S028",
+      "help": "N26-U027-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C010",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要米饭。",
+      "answers": [
+        "I want rice."
+      ],
+      "hint": "I want rice.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S031",
+      "help": "N26-U027-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C011",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要面条。",
+      "answers": [
+        "I want noodles."
+      ],
+      "hint": "I want noodles.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S034",
+      "help": "N26-U027-L02-S034-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C012",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要意大利面。",
+      "answers": [
+        "I want pasta."
+      ],
+      "hint": "I want pasta.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S037",
+      "help": "N26-U027-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C013",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "肉类",
+      "answers": [
+        "meat"
+      ],
+      "hint": "meat",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S040",
+      "help": "N26-U027-L02-S040-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C014",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "牛肉和猪肉",
+      "answers": [
+        "beef and pork"
+      ],
+      "hint": "beef and pork",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S043",
+      "help": "N26-U027-L02-S043-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C015",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要米饭和鸡肉。",
+      "answers": [
+        "I want rice and chicken."
+      ],
+      "hint": "I want rice and chicken.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S046",
+      "help": "N26-U027-L02-S046-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C016",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要鱼肉。",
+      "answers": [
+        "I want fish."
+      ],
+      "hint": "I want fish.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S049",
+      "help": "N26-U027-L02-S049-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C017",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "点米饭和鸡肉，先听整句再接上。",
+      "answers": [
+        "I want rice and chicken."
+      ],
+      "hint": "I want rice and chicken.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S052",
+      "help": "N26-U027-L02-S052-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C018",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想吃面条，先听完整表达再说。",
+      "answers": [
+        "I want noodles."
+      ],
+      "hint": "I want noodles.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S055",
+      "help": "N26-U027-L02-S055-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C019",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "点意大利面，看提示表达。",
+      "answers": [
+        "I want pasta."
+      ],
+      "hint": "I want pasta.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S057",
+      "help": "N26-U027-L02-S057-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C020",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "点鱼肉，看提示表达。",
+      "answers": [
+        "I want fish."
+      ],
+      "hint": "I want fish.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U027-L02-S059",
+      "help": "N26-U027-L02-S059-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C021",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象点餐时同伴核对你的选择，你说米饭和鸡肉。",
+      "answers": [
+        "I want rice and chicken."
+      ],
+      "hint": "I want rice and chicken.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U027-L02-S061",
+      "help": "N26-U027-L02-S061-HELP"
+    },
+    {
+      "id": "N26-U027-L02-C022",
+      "course": "N26-U027-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "另一回想吃面条，你用整句告诉对方。",
+      "answers": [
+        "I want noodles."
+      ],
+      "hint": "I want noodles.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U027-L02-S063",
+      "help": "N26-U027-L02-S063-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U027-L02-S004-HELP",
+      "forStep": "N26-U027-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d565dccc28dd33126e8c",
+      "display": "rice",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S007-HELP",
+      "forStep": "N26-U027-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3009ea26b299ecab8002",
+      "display": "noodle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S010-HELP",
+      "forStep": "N26-U027-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-149561bc79847f595e81",
+      "display": "pasta",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S013-HELP",
+      "forStep": "N26-U027-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3bab1ea455f501838a20",
+      "display": "meat",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S016-HELP",
+      "forStep": "N26-U027-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-554d291231c82d91cdde",
+      "display": "beef",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S019-HELP",
+      "forStep": "N26-U027-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-76e75281749bb996874f",
+      "display": "pork",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S022-HELP",
+      "forStep": "N26-U027-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5ba07e481af0464399f2",
+      "display": "chicken",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S025-HELP",
+      "forStep": "N26-U027-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c5bfd29c9a36f858f93c",
+      "display": "fish",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S028-HELP",
+      "forStep": "N26-U027-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8b6c8db60cf97a82a324",
+      "display": "noodles",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S031-HELP",
+      "forStep": "N26-U027-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8cc2c0cf725b6ebca4fc",
+      "display": "I want rice.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S034-HELP",
+      "forStep": "N26-U027-L02-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c9e12f04334508380ea2",
+      "display": "I want noodles.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S037-HELP",
+      "forStep": "N26-U027-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a90a62522963d2d165f0",
+      "display": "I want pasta.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S040-HELP",
+      "forStep": "N26-U027-L02-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3bab1ea455f501838a20",
+      "display": "meat",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S043-HELP",
+      "forStep": "N26-U027-L02-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2cbf243b34b423250724",
+      "display": "beef and pork",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S046-HELP",
+      "forStep": "N26-U027-L02-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "display": "I want rice and chicken.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S049-HELP",
+      "forStep": "N26-U027-L02-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9e62001f77a39838e96a",
+      "display": "I want fish.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S052-HELP",
+      "forStep": "N26-U027-L02-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "display": "I want rice and chicken.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S055-HELP",
+      "forStep": "N26-U027-L02-S055",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c9e12f04334508380ea2",
+      "display": "I want noodles.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S055",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S057-HELP",
+      "forStep": "N26-U027-L02-S057",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a90a62522963d2d165f0",
+      "display": "I want pasta.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S057",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S059-HELP",
+      "forStep": "N26-U027-L02-S059",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9e62001f77a39838e96a",
+      "display": "I want fish.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S059",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S061-HELP",
+      "forStep": "N26-U027-L02-S061",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fe3db0f262be0a47c502",
+      "display": "I want rice and chicken.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S061",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U027-L02-S063-HELP",
+      "forStep": "N26-U027-L02-S063",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c9e12f04334508380ea2",
+      "display": "I want noodles.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U027-L02-S063",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "rice",
+      "word": "rice",
+      "ipa": "/raɪs/",
+      "meaning": "米饭",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d565dccc28dd33126e8c"
+    },
+    {
+      "key": "noodle",
+      "word": "noodle",
+      "ipa": "/ˈnuːdəl/",
+      "meaning": "一根面条",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3009ea26b299ecab8002"
+    },
+    {
+      "key": "pasta",
+      "word": "pasta",
+      "ipa": "/ˈpɑːstə/",
+      "meaning": "意大利面食",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-149561bc79847f595e81"
+    },
+    {
+      "key": "meat",
+      "word": "meat",
+      "ipa": "/miːt/",
+      "meaning": "肉，食用肉类",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3bab1ea455f501838a20"
+    },
+    {
+      "key": "beef",
+      "word": "beef",
+      "ipa": "/biːf/",
+      "meaning": "牛肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-554d291231c82d91cdde"
+    },
+    {
+      "key": "pork",
+      "word": "pork",
+      "ipa": "/pɔːrk/",
+      "meaning": "猪肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-76e75281749bb996874f"
+    },
+    {
+      "key": "chicken",
+      "word": "chicken",
+      "ipa": "/ˈtʃɪkɪn/",
+      "meaning": "鸡肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5ba07e481af0464399f2"
+    },
+    {
+      "key": "fish",
+      "word": "fish",
+      "ipa": "/fɪʃ/",
+      "meaning": "鱼肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c5bfd29c9a36f858f93c"
+    },
+    {
+      "key": "noodle",
+      "word": "noodles",
+      "ipa": "/ˈnuːdəlz/",
+      "meaning": "面条，食物中通常说多个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8b6c8db60cf97a82a324"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "want",
+      "word": "want",
+      "ipa": "/wɑːnt/",
+      "meaning": "想要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1d75c03d2f2c3a602f7a"
+    },
+    {
+      "key": "and",
+      "word": "and",
+      "ipa": "/ænd/",
+      "meaning": "和，连接一起说的两样",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-88b3fef8eb3b2d905bc2"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "noodles显式复数；rice/meat/beef/pork/chicken/fish限制食物义，不引入动物数量。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "and",
+      "sourceCourse": "N26-U006-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 45,
+    "availableExactAssets": 45,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-8948ffff121d89f5e1d1",
+      "N26A-b4f67635b4b4e52a41a3",
+      "N26A-d565dccc28dd33126e8c",
+      "N26A-eda2eb36072aabb37cb7",
+      "N26A-3009ea26b299ecab8002",
+      "N26A-02294d81c550488f61a6",
+      "N26A-149561bc79847f595e81",
+      "N26A-a7802ebc5b2c8ec227e4",
+      "N26A-3bab1ea455f501838a20",
+      "N26A-5bbe2b1b685648172136",
+      "N26A-554d291231c82d91cdde",
+      "N26A-07458dac195022d5d377",
+      "N26A-76e75281749bb996874f",
+      "N26A-24be5692848038b63081",
+      "N26A-5ba07e481af0464399f2",
+      "N26A-d29014d745cd50c796b1",
+      "N26A-c5bfd29c9a36f858f93c",
+      "N26A-3df6d358faad3aa8af4d",
+      "N26A-8b6c8db60cf97a82a324",
+      "N26A-5965fca0dfcd4c78a379",
+      "N26A-8cc2c0cf725b6ebca4fc",
+      "N26A-eb299dabde1bf48a20f9",
+      "N26A-c9e12f04334508380ea2",
+      "N26A-9462bbe0384f07001359",
+      "N26A-a90a62522963d2d165f0",
+      "N26A-8596ff26dd68b27a1a74",
+      "N26A-636a1339b9679bfedefa",
+      "N26A-2cbf243b34b423250724",
+      "N26A-551acc5ddd0a33cc6061",
+      "N26A-fe3db0f262be0a47c502",
+      "N26A-e3a52fc82500b7ec348e",
+      "N26A-9e62001f77a39838e96a",
+      "N26A-864f8572a085bf0ac795",
+      "N26A-52e5a09246d24dbfd86c",
+      "N26A-9d35f2aacbcf35a24bae",
+      "N26A-500ca68581dd73af08d4",
+      "N26A-fc2a514e24e611f9a0d0",
+      "N26A-23b6e7a285fbb217e9cf",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-1d75c03d2f2c3a602f7a",
+      "N26A-88b3fef8eb3b2d905bc2",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

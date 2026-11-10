@@ -1,0 +1,1667 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit053-v1",
+  "courseId": "N26-U053-L11",
+  "unitId": "N26-U053",
+  "category": "食物与饮品",
+  "title": "烘焙、煎炸与烧烤",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "dc73d29510b52c575d05776211d310711968c04524ffba034e679d74a66f8bbb",
+  "newWords": [
+    "bake",
+    "fry",
+    "grill",
+    "roast"
+  ],
+  "prerequisites": [
+    "N26-U053-L10"
+  ],
+  "goal": "围绕“烹调动作”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "bake",
+        "surface": "bake",
+        "meaning": "烘焙，在烤箱里烤制",
+        "kind": "new_word"
+      },
+      {
+        "key": "fry",
+        "surface": "fry",
+        "meaning": "煎炸，用油加热烹调",
+        "kind": "new_word"
+      },
+      {
+        "key": "grill",
+        "surface": "grill",
+        "meaning": "用烤架烤",
+        "kind": "new_word"
+      },
+      {
+        "key": "roast",
+        "surface": "roast",
+        "meaning": "烘烤，通常烤肉等食物",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U053-L11-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U053-L11-S002",
+        "N26-U053-L11-S003",
+        "N26-U053-L11-S004",
+        "N26-U053-L11-S005",
+        "N26-U053-L11-S006",
+        "N26-U053-L11-S007",
+        "N26-U053-L11-S008",
+        "N26-U053-L11-S009",
+        "N26-U053-L11-S010",
+        "N26-U053-L11-S011",
+        "N26-U053-L11-S012",
+        "N26-U053-L11-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U053-L11-S014",
+        "N26-U053-L11-S015",
+        "N26-U053-L11-S016",
+        "N26-U053-L11-S017",
+        "N26-U053-L11-S018",
+        "N26-U053-L11-S019",
+        "N26-U053-L11-S020",
+        "N26-U053-L11-S021",
+        "N26-U053-L11-S022",
+        "N26-U053-L11-S023",
+        "N26-U053-L11-S024",
+        "N26-U053-L11-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U053-L11-S026",
+        "N26-U053-L11-S027",
+        "N26-U053-L11-S028",
+        "N26-U053-L11-S029",
+        "N26-U053-L11-S030",
+        "N26-U053-L11-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U053-L11-S032",
+        "N26-U053-L11-S033",
+        "N26-U053-L11-S034",
+        "N26-U053-L11-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U053-L11-S036",
+        "N26-U053-L11-S037",
+        "N26-U053-L11-S038",
+        "N26-U053-L11-S039",
+        "N26-U053-L11-S040",
+        "N26-U053-L11-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U053-L11-S001",
+      "course": "N26-U053-L11",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象说不同烹饪方式。今天分清烘焙、煎炸、用烤架烤和烘烤，不需要实际操作。",
+      "display": "",
+      "audio": "N26A-66e467adaa84d46b97c2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S002",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "烘焙，在烤箱里烤制。这里说烘焙，在烤箱里烤制，先听完整的声音。",
+      "display": "bake",
+      "audio": "N26A-e53ba1ac3856685e74ab",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S003",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "烘焙，在烤箱里烤制",
+      "display": "bake",
+      "audio": "N26A-5c8258e7e317e39f13d4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "烘焙，在烤箱里烤制",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S004",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "bake",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C001",
+      "model": "N26A-5c8258e7e317e39f13d4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S005",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "煎炸，用油加热烹调。这里说煎炸，用油加热烹调，先听完整的声音。",
+      "display": "fry",
+      "audio": "N26A-c0b17dab476852dec5b7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S006",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "煎炸，用油加热烹调",
+      "display": "fry",
+      "audio": "N26A-ae63e171b80f2dd44074",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "煎炸，用油加热烹调",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S007",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fry",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C002",
+      "model": "N26A-ae63e171b80f2dd44074",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S008",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "用烤架烤。这里说用烤架烤，先听完整的声音。",
+      "display": "grill",
+      "audio": "N26A-648407192a13615df195",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S009",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "用烤架烤",
+      "display": "grill",
+      "audio": "N26A-42a1c99106f577fe9386",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用烤架烤",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S010",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "grill",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C003",
+      "model": "N26A-42a1c99106f577fe9386",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S011",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "烘烤，通常烤肉等食物。这里说烘烤，通常烤肉等食物，先听完整的声音。",
+      "display": "roast",
+      "audio": "N26A-096bdfcd411f719bc7e1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S012",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "烘烤，通常烤肉等食物",
+      "display": "roast",
+      "audio": "N26A-e9451468b7fb38d34328",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "烘烤，通常烤肉等食物",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S013",
+      "course": "N26-U053-L11",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "roast",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C004",
+      "model": "N26A-e9451468b7fb38d34328",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L11-S014",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "烤面包。先听这一组，再连起来说。",
+      "display": "bake bread",
+      "audio": "N26A-336e4d0c86fd2ad7da3c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S015",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "烤面包",
+      "display": "bake bread",
+      "audio": "N26A-b789ca832e01a1547fe3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "烤面包",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S016",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "bake bread",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C005",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S017",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "煎一个鸡蛋。先听这一组，再连起来说。",
+      "display": "fry an egg",
+      "audio": "N26A-a2422efd9e90b9377c47",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S018",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "煎一个鸡蛋",
+      "display": "fry an egg",
+      "audio": "N26A-c78ae1cd50b859a14a06",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "煎一个鸡蛋",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S019",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "fry an egg",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C006",
+      "model": "N26A-c78ae1cd50b859a14a06",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S020",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "用烤架烤鱼。先听这一组，再连起来说。",
+      "display": "grill fish",
+      "audio": "N26A-0d383062799819503ae0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S021",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "用烤架烤鱼",
+      "display": "grill fish",
+      "audio": "N26A-5841af222afc04be9e2e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用烤架烤鱼",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S022",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "grill fish",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C007",
+      "model": "N26A-5841af222afc04be9e2e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S023",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "烤鸡肉。先听这一组，再连起来说。",
+      "display": "roast chicken",
+      "audio": "N26A-6f4309ccc5bf11ee58e7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S024",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "烤鸡肉",
+      "display": "roast chicken",
+      "audio": "N26A-429aea92692e5e6c2ae3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "烤鸡肉",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S025",
+      "course": "N26-U053-L11",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "roast chicken",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L11-C008",
+      "model": "N26A-429aea92692e5e6c2ae3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L11-S026",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "烤面包",
+      "display": "bake bread",
+      "audio": "N26A-b789ca832e01a1547fe3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "烤面包",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L11-S027",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "计划中的做法是烤面包，先听动作短语。",
+      "display": "",
+      "audio": "N26A-54c2bc2a8b1bd8fc5dd9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S028",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "bake bread",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C009",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S029",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "用烤架烤鱼",
+      "display": "grill fish",
+      "audio": "N26A-5841af222afc04be9e2e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用烤架烤鱼",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L11-S030",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "计划中的做法是用烤架烤鱼，听后说。",
+      "display": "",
+      "audio": "N26A-057a07cb463e2498858e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S031",
+      "course": "N26-U053-L11",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "grill fish",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C010",
+      "model": "N26A-5841af222afc04be9e2e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S032",
+      "course": "N26-U053-L11",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说烤面包。",
+      "display": "",
+      "audio": "N26A-4c97a6f3ceef7d927548",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S033",
+      "course": "N26-U053-L11",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "bake bread",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C011",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S034",
+      "course": "N26-U053-L11",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说用烤架烤鱼。",
+      "display": "",
+      "audio": "N26A-7e98661832aba5e1fff8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S035",
+      "course": "N26-U053-L11",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "grill fish",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C012",
+      "model": "N26A-5841af222afc04be9e2e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S036",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象列烹饪步骤，你指出烤面包这一项。",
+      "display": "",
+      "audio": "N26A-265f406d831115c7684f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S037",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "bake bread",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C013",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S038",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对做法，你说明用烤架烤鱼。",
+      "display": "",
+      "audio": "N26A-850ac78664f4fb29bb34",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S039",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "grill fish",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L11-C014",
+      "model": "N26A-5841af222afc04be9e2e",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L11-S040",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L11-S041",
+      "course": "N26-U053-L11",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U053-L11-C001",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "烘焙，在烤箱里烤制",
+      "answers": [
+        "bake"
+      ],
+      "hint": "bake",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S004",
+      "help": "N26-U053-L11-S004-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C002",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "煎炸，用油加热烹调",
+      "answers": [
+        "fry"
+      ],
+      "hint": "fry",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S007",
+      "help": "N26-U053-L11-S007-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C003",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "用烤架烤",
+      "answers": [
+        "grill"
+      ],
+      "hint": "grill",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S010",
+      "help": "N26-U053-L11-S010-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C004",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "烘烤，通常烤肉等食物",
+      "answers": [
+        "roast"
+      ],
+      "hint": "roast",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S013",
+      "help": "N26-U053-L11-S013-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C005",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "烤面包",
+      "answers": [
+        "bake bread"
+      ],
+      "hint": "bake bread",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S016",
+      "help": "N26-U053-L11-S016-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C006",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "煎一个鸡蛋",
+      "answers": [
+        "fry an egg"
+      ],
+      "hint": "fry an egg",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S019",
+      "help": "N26-U053-L11-S019-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C007",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "用烤架烤鱼",
+      "answers": [
+        "grill fish"
+      ],
+      "hint": "grill fish",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S022",
+      "help": "N26-U053-L11-S022-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C008",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "烤鸡肉",
+      "answers": [
+        "roast chicken"
+      ],
+      "hint": "roast chicken",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S025",
+      "help": "N26-U053-L11-S025-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C009",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "计划中的做法是烤面包，先听动作短语。",
+      "answers": [
+        "bake bread"
+      ],
+      "hint": "bake bread",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S028",
+      "help": "N26-U053-L11-S028-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C010",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "计划中的做法是用烤架烤鱼，听后说。",
+      "answers": [
+        "grill fish"
+      ],
+      "hint": "grill fish",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S031",
+      "help": "N26-U053-L11-S031-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C011",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说烤面包。",
+      "answers": [
+        "bake bread"
+      ],
+      "hint": "bake bread",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S033",
+      "help": "N26-U053-L11-S033-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C012",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说用烤架烤鱼。",
+      "answers": [
+        "grill fish"
+      ],
+      "hint": "grill fish",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L11-S035",
+      "help": "N26-U053-L11-S035-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C013",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象列烹饪步骤，你指出烤面包这一项。",
+      "answers": [
+        "bake bread"
+      ],
+      "hint": "bake bread",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L11-S037",
+      "help": "N26-U053-L11-S037-HELP"
+    },
+    {
+      "id": "N26-U053-L11-C014",
+      "course": "N26-U053-L11",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对做法，你说明用烤架烤鱼。",
+      "answers": [
+        "grill fish"
+      ],
+      "hint": "grill fish",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L11-S039",
+      "help": "N26-U053-L11-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U053-L11-S004-HELP",
+      "forStep": "N26-U053-L11-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5c8258e7e317e39f13d4",
+      "display": "bake",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S007-HELP",
+      "forStep": "N26-U053-L11-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ae63e171b80f2dd44074",
+      "display": "fry",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S010-HELP",
+      "forStep": "N26-U053-L11-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-42a1c99106f577fe9386",
+      "display": "grill",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S013-HELP",
+      "forStep": "N26-U053-L11-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9451468b7fb38d34328",
+      "display": "roast",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S016-HELP",
+      "forStep": "N26-U053-L11-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "display": "bake bread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S019-HELP",
+      "forStep": "N26-U053-L11-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c78ae1cd50b859a14a06",
+      "display": "fry an egg",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S022-HELP",
+      "forStep": "N26-U053-L11-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5841af222afc04be9e2e",
+      "display": "grill fish",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S025-HELP",
+      "forStep": "N26-U053-L11-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-429aea92692e5e6c2ae3",
+      "display": "roast chicken",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S028-HELP",
+      "forStep": "N26-U053-L11-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "display": "bake bread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S031-HELP",
+      "forStep": "N26-U053-L11-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5841af222afc04be9e2e",
+      "display": "grill fish",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S033-HELP",
+      "forStep": "N26-U053-L11-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "display": "bake bread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S035-HELP",
+      "forStep": "N26-U053-L11-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5841af222afc04be9e2e",
+      "display": "grill fish",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S037-HELP",
+      "forStep": "N26-U053-L11-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b789ca832e01a1547fe3",
+      "display": "bake bread",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L11-S039-HELP",
+      "forStep": "N26-U053-L11-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5841af222afc04be9e2e",
+      "display": "grill fish",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L11-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "bake",
+      "word": "bake",
+      "ipa": "/beɪk/",
+      "meaning": "烘焙，在烤箱里烤制",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5c8258e7e317e39f13d4"
+    },
+    {
+      "key": "fry",
+      "word": "fry",
+      "ipa": "/fraɪ/",
+      "meaning": "煎炸，用油加热烹调",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ae63e171b80f2dd44074"
+    },
+    {
+      "key": "grill",
+      "word": "grill",
+      "ipa": "/ɡrɪl/",
+      "meaning": "用烤架烤",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-42a1c99106f577fe9386"
+    },
+    {
+      "key": "roast",
+      "word": "roast",
+      "ipa": "/roʊst/",
+      "meaning": "烘烤，通常烤肉等食物",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e9451468b7fb38d34328"
+    },
+    {
+      "key": "bread",
+      "word": "bread",
+      "ipa": "/bred/",
+      "meaning": "面包",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b4a38d7a6e9d40078fdf"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "egg",
+      "word": "egg",
+      "ipa": "/eɡ/",
+      "meaning": "鸡蛋，这里先说一个鸡蛋",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e3f124bfa9d1f4f20b7c"
+    },
+    {
+      "key": "fish",
+      "word": "fish",
+      "ipa": "/fɪʃ/",
+      "meaning": "鱼肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c5bfd29c9a36f858f93c"
+    },
+    {
+      "key": "chicken",
+      "word": "chicken",
+      "ipa": "/ˈtʃɪkɪn/",
+      "meaning": "鸡肉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5ba07e481af0464399f2"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：bake=烘焙，在烤箱里烤制；fry=煎炸，用油加热烹调；grill=用烤架烤；roast=烘烤，通常烤肉等食物。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "bread",
+      "sourceCourse": "N26-U008-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "egg",
+      "sourceCourse": "N26-U008-L06",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "fish",
+      "sourceCourse": "N26-U027-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "chicken",
+      "sourceCourse": "N26-U027-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 32,
+    "availableExactAssets": 32,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-66e467adaa84d46b97c2",
+      "N26A-e53ba1ac3856685e74ab",
+      "N26A-5c8258e7e317e39f13d4",
+      "N26A-c0b17dab476852dec5b7",
+      "N26A-ae63e171b80f2dd44074",
+      "N26A-648407192a13615df195",
+      "N26A-42a1c99106f577fe9386",
+      "N26A-096bdfcd411f719bc7e1",
+      "N26A-e9451468b7fb38d34328",
+      "N26A-336e4d0c86fd2ad7da3c",
+      "N26A-b789ca832e01a1547fe3",
+      "N26A-a2422efd9e90b9377c47",
+      "N26A-c78ae1cd50b859a14a06",
+      "N26A-0d383062799819503ae0",
+      "N26A-5841af222afc04be9e2e",
+      "N26A-6f4309ccc5bf11ee58e7",
+      "N26A-429aea92692e5e6c2ae3",
+      "N26A-54c2bc2a8b1bd8fc5dd9",
+      "N26A-057a07cb463e2498858e",
+      "N26A-4c97a6f3ceef7d927548",
+      "N26A-7e98661832aba5e1fff8",
+      "N26A-265f406d831115c7684f",
+      "N26A-850ac78664f4fb29bb34",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-b4a38d7a6e9d40078fdf",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-e3f124bfa9d1f4f20b7c",
+      "N26A-c5bfd29c9a36f858f93c",
+      "N26A-5ba07e481af0464399f2",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

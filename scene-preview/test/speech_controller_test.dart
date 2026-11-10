@@ -3,6 +3,38 @@ import 'package:snow_speaks/features/lesson/application/lesson_controller.dart';
 
 void main() {
   test(
+    'verified curriculum playback completes only on the avatar callback',
+    () async {
+      final c = LessonController();
+      final commands = <Map<String, Object?>>[];
+      c.attach(commands.add);
+      c.handle({
+        'event': 'ready',
+        'speech': {'configured': true},
+      });
+      var ended = false;
+      final future = c
+          .playCurriculumAudio({'id': 'hello'})
+          .then((_) => ended = true);
+      expect(commands.last['type'], 'curriculum-audio');
+      expect(ended, false);
+      final finish = commands.last['complete'] as void Function(Object?);
+      finish(null);
+      finish(null);
+      await future;
+      expect(ended, true);
+      final failed = c.playCurriculumAudio({'id': 'hello'});
+      final assertion = expectLater(failed, throwsStateError);
+      (commands.last['complete'] as void Function(Object?))(
+        StateError('cancelled'),
+      );
+      await assertion;
+      c.stopCurriculumAudio();
+      expect(commands.last['type'], 'stop');
+      c.dispose();
+    },
+  );
+  test(
     'microphone only starts in a response stage and stale results are ignored',
     () {
       final c = LessonController();

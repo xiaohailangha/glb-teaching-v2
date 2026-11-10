@@ -1,4 +1,5 @@
 import '../../../core/avatar/scene/course_resources.dart';
+
 import 'dart:math' as math;
 import 'dart:async';
 
@@ -33,6 +34,11 @@ class AdultCoursePanel extends StatelessWidget {
           ? c.coachSentence
           : c.courseDisplay;
       final entry = courseLexicon[c.courseDisplay.toLowerCase()];
+      final displayIpa =
+          entry?.ipa ??
+          c.reviewIpa(
+            c.courseDisplay.toLowerCase().replaceAll(RegExp(r'[.!?]'), ''),
+          );
       // Only actual answer cards may enter the screen. Legacy transition
       // actions can still exist in director data but must never flash here.
       final visibleOptions = c.courseOptions
@@ -41,14 +47,15 @@ class AdultCoursePanel extends StatelessWidget {
                 ? const {'next', 'skip'}.contains(o['id']) &&
                       const {'学习红苹果', '结束本课'}.contains(o['label'])
                 : c.lessonPhase == 'choice' &&
-                      (o['id']!.startsWith('answer_') || const {
-                        'apple',
-                        'banana',
-                        'choose_apple',
-                        'choose_banana',
-                        'phrase_apple',
-                        'phrase_banana',
-                      }.contains(o['id'])),
+                      (o['id']!.startsWith('answer_') ||
+                          const {
+                            'apple',
+                            'banana',
+                            'choose_apple',
+                            'choose_banana',
+                            'phrase_apple',
+                            'phrase_banana',
+                          }.contains(o['id'])),
           )
           .toList();
       final choice = visibleOptions.isNotEmpty;
@@ -119,33 +126,80 @@ class AdultCoursePanel extends StatelessWidget {
             const Text('轻触任意位置继续，或从「课程」选择下一课。'),
           ] else if (summary) ...[
             Text(
-              c.address('本节课我们就学到这里。'),
+              c.verifiedCourseClosing ?? c.address('本节课我们就学到这里。'),
               style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 15),
             Text(
-              '+${c.vocabulary.newThisCourse.length}',
+              '+${c.confirmedCourseWords?.length ?? c.vocabulary.newThisCourse.length}',
               style: const TextStyle(
                 fontSize: 58,
                 fontWeight: FontWeight.w300,
                 color: Color(0xFFBDE5DD),
               ),
             ),
-            Text('本课新接触 · 累计 ${c.vocabulary.seen.length} 词'),
-            const SizedBox(height: 10),
             Text(
-              (c.vocabulary.newThisCourse.toList()..sort()).join(' · '),
-              style: const TextStyle(color: Colors.white70),
+              c.confirmedCourseWords == null
+                  ? '本课新接触 · 累计 ${c.vocabulary.seen.length} 词'
+                  : '本课新确认 · 累计 ${c.confirmedWordTotal} 词',
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 20,
+              runSpacing: 10,
+              children: [
+                for (final word in c.courseReviewWords)
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      InkWell(
+                        onTap: () => c.previewWord(word),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 5),
+                          child: Text(
+                            word == 'i' ? 'I' : word,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () => c.previewWord(word),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 5),
+                          child: Text(
+                            c.reviewIpa(word),
+                            style: const TextStyle(
+                              color: Color(0xFFBDE5DD),
+                              fontSize: 14,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
             ),
             const SizedBox(height: 14),
             Text(
               c.closingCheer,
               style: const TextStyle(color: Color(0xFFBDE5DD), fontSize: 18),
             ),
+            if (c.nextCourse != null) const SizedBox(height: 24),
             if (c.nextCourse != null)
               TextButton(
                 onPressed: () => c.selectCourse(c.nextCourse!.id),
-                child: Text('下一课 · ${c.nextCourse!.title.substring(5)} →'),
+                style: TextButton.styleFrom(
+                  foregroundColor: const Color(0xFFBDE5DD),
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  alignment: Alignment.centerLeft,
+                ),
+                child: Text(
+                  '下一课  ·  ${c.nextCourse!.title.replaceFirst(RegExp(r"^\d+\s*·\s*"), "")}  →',
+                ),
               ),
           ] else ...[
             SizedBox(
@@ -160,8 +214,13 @@ class AdultCoursePanel extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     choice
-                        ? (visibleOptions.any((o) => o['id']!.startsWith('answer_'))
-                            ? '听音 · 选择意思' : '听音 · 选出图片')
+                        ? (visibleOptions.any(
+                                (o) => o['id']!.startsWith('answer_'),
+                              )
+                              ? '听音 · 选择意思'
+                              : '听音 · 选出图片')
+                        : c.lessonPhase == 'meaning'
+                        ? '认识意思'
                         : c.playing ||
                               !const {
                                 'listen',
@@ -198,9 +257,11 @@ class AdultCoursePanel extends StatelessWidget {
                   size: compact ? 34 : 42,
                 ),
               ),
-            if (entry != null && !c.hideAnswer && c.coachSentence.isEmpty)
+            if (displayIpa.isNotEmpty &&
+                !c.hideAnswer &&
+                c.coachSentence.isEmpty)
               IpaText(
-                entry.ipa,
+                displayIpa,
                 controller: c,
                 style: const TextStyle(
                   fontFamily: 'NotoSansIPA',
@@ -331,7 +392,12 @@ class ListeningLine extends StatelessWidget {
       children: [
         MicWave(
           level: c.micLevel,
-          active: listening && !c.playing && !thinking,
+          active:
+              listening &&
+              !c.playing &&
+              !thinking &&
+              !c.coursePaused &&
+              c.automaticState != 'error',
         ),
         if (c.liveTranscript.isNotEmpty)
           Padding(
@@ -351,56 +417,42 @@ class ListeningLine extends StatelessWidget {
   }
 }
 
-class MicWave extends StatefulWidget {
+/// Five rounded voice bars match EntryIdentity; amplitude is microphone-only.
+class MicWave extends StatelessWidget {
   const MicWave({super.key, required this.level, required this.active});
   final double level;
   final bool active;
   @override
-  State<MicWave> createState() => _MicWaveState();
-}
-
-class _MicWaveState extends State<MicWave> {
-  final samples = List<double>.filled(5, 0, growable: true);
-  @override
-  void didUpdateWidget(MicWave old) {
-    super.didUpdateWidget(old);
-    if (!widget.active || widget.level <= 0) {
-      samples.fillRange(0, samples.length, 0);
-      return;
-    }
-    samples.removeAt(0);
-    samples.add(widget.level.clamp(0, 1));
-  }
-
-  @override
-  Widget build(BuildContext context) => Semantics(
-    label: widget.active ? '收音提示' : '收音提示静止',
-    child: SizedBox(
-      width: 24,
-      height: 14,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          for (var i = 0; i < samples.length; i++)
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 160),
-              width: 2,
-              height: 2 + samples[i] * 7,
-              decoration: BoxDecoration(
-                color: widget.active
-                    ? Color.lerp(
-                        const Color(0x6678B8B0),
-                        const Color(0x9978B8B0),
-                        samples[i],
-                      )
-                    : Colors.white30,
-                borderRadius: BorderRadius.circular(2),
+  Widget build(BuildContext context) {
+    final amplitude = active && level.isFinite ? level.clamp(0.0, 1.0) : 0.0;
+    return Semantics(
+      label: active ? '正在收音' : '收音暂停',
+      child: SizedBox(
+        width: 56,
+        height: 40,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            for (var i = 0; i < 5; i++)
+              AnimatedContainer(
+                key: ValueKey('lesson-voice-bar-$i'),
+                duration: MediaQuery.disableAnimationsOf(context)
+                    ? Duration.zero
+                    : const Duration(milliseconds: 80),
+                width: 6,
+                height:
+                    [10.0, 16.0, 22.0, 16.0, 10.0][i] +
+                    [6.0, 12.0, 18.0, 12.0, 6.0][i] * amplitude,
+                decoration: BoxDecoration(
+                  color: active ? const Color(0xFFBDE5DD) : Colors.white30,
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
-            ),
-        ],
+          ],
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 /// Only reveals characters received from ASR; never fills from the lesson target.

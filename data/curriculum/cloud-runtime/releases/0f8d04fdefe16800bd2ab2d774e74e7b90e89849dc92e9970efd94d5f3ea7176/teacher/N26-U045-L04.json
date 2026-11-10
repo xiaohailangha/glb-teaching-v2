@@ -1,0 +1,2092 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit045-v1",
+  "courseId": "N26-U045-L04",
+  "unitId": "N26-U045",
+  "category": "社交与休闲",
+  "title": "加入球队一起练",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "5f73a3167337033dcf76cdfd8ab230d62ee4e4de3e62be5d02ee53bc2c568269",
+  "newWords": [
+    "coach",
+    "training",
+    "club",
+    "member",
+    "player",
+    "uniform"
+  ],
+  "prerequisites": [
+    "N26-U045-L03"
+  ],
+  "goal": "在“队伍与训练 4”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "coach",
+        "surface": "coach",
+        "meaning": "教练",
+        "kind": "new_word"
+      },
+      {
+        "key": "training",
+        "surface": "training",
+        "meaning": "训练",
+        "kind": "new_word"
+      },
+      {
+        "key": "club",
+        "surface": "club",
+        "meaning": "俱乐部",
+        "kind": "new_word"
+      },
+      {
+        "key": "member",
+        "surface": "member",
+        "meaning": "成员",
+        "kind": "new_word"
+      },
+      {
+        "key": "player",
+        "surface": "player",
+        "meaning": "球员",
+        "kind": "new_word"
+      },
+      {
+        "key": "uniform",
+        "surface": "uniform",
+        "meaning": "队服，统一服装",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U045-L04-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U045-L04-S002",
+        "N26-U045-L04-S003",
+        "N26-U045-L04-S004",
+        "N26-U045-L04-S005",
+        "N26-U045-L04-S006",
+        "N26-U045-L04-S007",
+        "N26-U045-L04-S008",
+        "N26-U045-L04-S009",
+        "N26-U045-L04-S010",
+        "N26-U045-L04-S011",
+        "N26-U045-L04-S012",
+        "N26-U045-L04-S013",
+        "N26-U045-L04-S014",
+        "N26-U045-L04-S015",
+        "N26-U045-L04-S016",
+        "N26-U045-L04-S017",
+        "N26-U045-L04-S018",
+        "N26-U045-L04-S019"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U045-L04-S020",
+        "N26-U045-L04-S021",
+        "N26-U045-L04-S022",
+        "N26-U045-L04-S023",
+        "N26-U045-L04-S024",
+        "N26-U045-L04-S025",
+        "N26-U045-L04-S026",
+        "N26-U045-L04-S027",
+        "N26-U045-L04-S028",
+        "N26-U045-L04-S029",
+        "N26-U045-L04-S030",
+        "N26-U045-L04-S031",
+        "N26-U045-L04-S032",
+        "N26-U045-L04-S033",
+        "N26-U045-L04-S034",
+        "N26-U045-L04-S035",
+        "N26-U045-L04-S036",
+        "N26-U045-L04-S037"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U045-L04-S038",
+        "N26-U045-L04-S039",
+        "N26-U045-L04-S040",
+        "N26-U045-L04-S041",
+        "N26-U045-L04-S042",
+        "N26-U045-L04-S043"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U045-L04-S044",
+        "N26-U045-L04-S045",
+        "N26-U045-L04-S046",
+        "N26-U045-L04-S047"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U045-L04-S048",
+        "N26-U045-L04-S049",
+        "N26-U045-L04-S050",
+        "N26-U045-L04-S051",
+        "N26-U045-L04-S052",
+        "N26-U045-L04-S053"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U045-L04-S001",
+      "course": "N26-U045-L04",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象加入球队参加训练。今天认识教练、训练、俱乐部、成员、球员和队服。",
+      "display": "",
+      "audio": "N26A-f29da886a18a99a8ffd8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S002",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "教练。这里说教练，先听完整的声音。",
+      "display": "coach",
+      "audio": "N26A-407210c2464abf97817e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S003",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "教练",
+      "display": "coach",
+      "audio": "N26A-ab5cfe5586e6ada1b9dd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "教练",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S004",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "coach",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C001",
+      "model": "N26A-ab5cfe5586e6ada1b9dd",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S005",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "训练。这里说训练，先听完整的声音。",
+      "display": "training",
+      "audio": "N26A-29b036e18c73ef5bb23d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S006",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "训练",
+      "display": "training",
+      "audio": "N26A-359c10e58e2d25b32a35",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "训练",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S007",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "training",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C002",
+      "model": "N26A-359c10e58e2d25b32a35",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S008",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "俱乐部。这里说俱乐部，先听完整的声音。",
+      "display": "club",
+      "audio": "N26A-e20be9fd100b778fe236",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S009",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "俱乐部",
+      "display": "club",
+      "audio": "N26A-8490283e1cf0344b2ac6",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "俱乐部",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S010",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "club",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C003",
+      "model": "N26A-8490283e1cf0344b2ac6",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S011",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "成员。这里说成员，先听完整的声音。",
+      "display": "member",
+      "audio": "N26A-3cd969d2e0ec3d5ea697",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S012",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "成员",
+      "display": "member",
+      "audio": "N26A-b1648e39a4dd6c4f50f4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "成员",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S013",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "member",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C004",
+      "model": "N26A-b1648e39a4dd6c4f50f4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S014",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "球员。这里说球员，先听完整的声音。",
+      "display": "player",
+      "audio": "N26A-6826456ebdeaac2759d3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S015",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "球员",
+      "display": "player",
+      "audio": "N26A-02ea3812e466f484e582",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "球员",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S016",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "player",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C005",
+      "model": "N26A-02ea3812e466f484e582",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S017",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "队服，统一服装。这里说队服，统一服装，先听完整的声音。",
+      "display": "uniform",
+      "audio": "N26A-40a33f9ebceb9c3eb8f5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S018",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "队服，统一服装",
+      "display": "uniform",
+      "audio": "N26A-064c7645e7a501c8348f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "队服，统一服装",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S019",
+      "course": "N26-U045-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "uniform",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C006",
+      "model": "N26A-064c7645e7a501c8348f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U045-L04-S020",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的教练。先听这一组，再连起来说。",
+      "display": "my coach",
+      "audio": "N26A-18bee88cb33a5e6f5dd5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S021",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的教练",
+      "display": "my coach",
+      "audio": "N26A-96ded52f459e1011c2ec",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的教练",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S022",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my coach",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C007",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S023",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "橄榄球训练。先听这一组，再连起来说。",
+      "display": "football training",
+      "audio": "N26A-d99e8584db2b633caadb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S024",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "橄榄球训练",
+      "display": "football training",
+      "audio": "N26A-415b15c6ead85abdf266",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "橄榄球训练",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S025",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "football training",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C008",
+      "model": "N26A-415b15c6ead85abdf266",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S026",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个俱乐部。先听这一组，再连起来说。",
+      "display": "a club",
+      "audio": "N26A-2bd9b1a52ce87df52647",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S027",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个俱乐部",
+      "display": "a club",
+      "audio": "N26A-865bb55e48a245c63ab0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个俱乐部",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S028",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a club",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C009",
+      "model": "N26A-865bb55e48a245c63ab0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S029",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一名团队成员。先听这一组，再连起来说。",
+      "display": "a team member",
+      "audio": "N26A-562a1daa17e4e76a1f3e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S030",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一名团队成员",
+      "display": "a team member",
+      "audio": "N26A-d48251f0a0f6f8c63ab0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名团队成员",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S031",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a team member",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C010",
+      "model": "N26A-d48251f0a0f6f8c63ab0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S032",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一名足球球员。先听这一组，再连起来说。",
+      "display": "a soccer player",
+      "audio": "N26A-10787ddf951d49c16a0e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S033",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一名足球球员",
+      "display": "a soccer player",
+      "audio": "N26A-ffe3a82c104474f4342c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名足球球员",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S034",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a soccer player",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C011",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S035",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一套队服。先听这一组，再连起来说。",
+      "display": "a uniform",
+      "audio": "N26A-25f2b94e39db1f3d26dd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S036",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一套队服",
+      "display": "a uniform",
+      "audio": "N26A-50a63bf840d9c08fea85",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一套队服",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S037",
+      "course": "N26-U045-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a uniform",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U045-L04-C012",
+      "model": "N26A-50a63bf840d9c08fea85",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U045-L04-S038",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我的教练",
+      "display": "my coach",
+      "audio": "N26A-96ded52f459e1011c2ec",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的教练",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U045-L04-S039",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "介绍自己的教练，先听短语。",
+      "display": "",
+      "audio": "N26A-6d61a6dac1cf124f45b8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S040",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my coach",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C013",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S041",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一名足球球员",
+      "display": "a soccer player",
+      "audio": "N26A-ffe3a82c104474f4342c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名足球球员",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U045-L04-S042",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "谈的是一名足球球员，先听再说。",
+      "display": "",
+      "audio": "N26A-b3ad8f8256ce85797e38",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S043",
+      "course": "N26-U045-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a soccer player",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C014",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S044",
+      "course": "N26-U045-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说我的教练。",
+      "display": "",
+      "audio": "N26A-fc26693b25a5c9e23746",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S045",
+      "course": "N26-U045-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my coach",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C015",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S046",
+      "course": "N26-U045-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一名足球球员。",
+      "display": "",
+      "audio": "N26A-7fec62dfca510e99d775",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S047",
+      "course": "N26-U045-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a soccer player",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C016",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S048",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象来到球队，你向朋友介绍自己的教练。",
+      "display": "",
+      "audio": "N26A-f53539d16dad3f76dd04",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S049",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "my coach",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C017",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S050",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对人员身份，你说明一名足球球员。",
+      "display": "",
+      "audio": "N26A-48e1744f7be3e49b6a07",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S051",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a soccer player",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U045-L04-C018",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U045-L04-S052",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U045-L04-S053",
+      "course": "N26-U045-L04",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U045-L04-C001",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "教练",
+      "answers": [
+        "coach"
+      ],
+      "hint": "coach",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S004",
+      "help": "N26-U045-L04-S004-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C002",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "训练",
+      "answers": [
+        "training"
+      ],
+      "hint": "training",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S007",
+      "help": "N26-U045-L04-S007-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C003",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "俱乐部",
+      "answers": [
+        "club"
+      ],
+      "hint": "club",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S010",
+      "help": "N26-U045-L04-S010-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C004",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "成员",
+      "answers": [
+        "member"
+      ],
+      "hint": "member",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S013",
+      "help": "N26-U045-L04-S013-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C005",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "球员",
+      "answers": [
+        "player"
+      ],
+      "hint": "player",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S016",
+      "help": "N26-U045-L04-S016-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C006",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "队服，统一服装",
+      "answers": [
+        "uniform"
+      ],
+      "hint": "uniform",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S019",
+      "help": "N26-U045-L04-S019-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C007",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的教练",
+      "answers": [
+        "my coach"
+      ],
+      "hint": "my coach",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S022",
+      "help": "N26-U045-L04-S022-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C008",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "橄榄球训练",
+      "answers": [
+        "football training"
+      ],
+      "hint": "football training",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S025",
+      "help": "N26-U045-L04-S025-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C009",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个俱乐部",
+      "answers": [
+        "a club"
+      ],
+      "hint": "a club",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S028",
+      "help": "N26-U045-L04-S028-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C010",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一名团队成员",
+      "answers": [
+        "a team member"
+      ],
+      "hint": "a team member",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S031",
+      "help": "N26-U045-L04-S031-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C011",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一名足球球员",
+      "answers": [
+        "a soccer player"
+      ],
+      "hint": "a soccer player",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S034",
+      "help": "N26-U045-L04-S034-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C012",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一套队服",
+      "answers": [
+        "a uniform"
+      ],
+      "hint": "a uniform",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S037",
+      "help": "N26-U045-L04-S037-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C013",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍自己的教练，先听短语。",
+      "answers": [
+        "my coach"
+      ],
+      "hint": "my coach",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S040",
+      "help": "N26-U045-L04-S040-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C014",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "谈的是一名足球球员，先听再说。",
+      "answers": [
+        "a soccer player"
+      ],
+      "hint": "a soccer player",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S043",
+      "help": "N26-U045-L04-S043-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C015",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说我的教练。",
+      "answers": [
+        "my coach"
+      ],
+      "hint": "my coach",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S045",
+      "help": "N26-U045-L04-S045-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C016",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一名足球球员。",
+      "answers": [
+        "a soccer player"
+      ],
+      "hint": "a soccer player",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U045-L04-S047",
+      "help": "N26-U045-L04-S047-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C017",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象来到球队，你向朋友介绍自己的教练。",
+      "answers": [
+        "my coach"
+      ],
+      "hint": "my coach",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U045-L04-S049",
+      "help": "N26-U045-L04-S049-HELP"
+    },
+    {
+      "id": "N26-U045-L04-C018",
+      "course": "N26-U045-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对人员身份，你说明一名足球球员。",
+      "answers": [
+        "a soccer player"
+      ],
+      "hint": "a soccer player",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U045-L04-S051",
+      "help": "N26-U045-L04-S051-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U045-L04-S004-HELP",
+      "forStep": "N26-U045-L04-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ab5cfe5586e6ada1b9dd",
+      "display": "coach",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S007-HELP",
+      "forStep": "N26-U045-L04-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-359c10e58e2d25b32a35",
+      "display": "training",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S010-HELP",
+      "forStep": "N26-U045-L04-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8490283e1cf0344b2ac6",
+      "display": "club",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S013-HELP",
+      "forStep": "N26-U045-L04-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b1648e39a4dd6c4f50f4",
+      "display": "member",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S016-HELP",
+      "forStep": "N26-U045-L04-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-02ea3812e466f484e582",
+      "display": "player",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S019-HELP",
+      "forStep": "N26-U045-L04-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-064c7645e7a501c8348f",
+      "display": "uniform",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S022-HELP",
+      "forStep": "N26-U045-L04-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "display": "my coach",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S025-HELP",
+      "forStep": "N26-U045-L04-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-415b15c6ead85abdf266",
+      "display": "football training",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S028-HELP",
+      "forStep": "N26-U045-L04-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-865bb55e48a245c63ab0",
+      "display": "a club",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S031-HELP",
+      "forStep": "N26-U045-L04-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d48251f0a0f6f8c63ab0",
+      "display": "a team member",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S034-HELP",
+      "forStep": "N26-U045-L04-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "display": "a soccer player",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S037-HELP",
+      "forStep": "N26-U045-L04-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-50a63bf840d9c08fea85",
+      "display": "a uniform",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S040-HELP",
+      "forStep": "N26-U045-L04-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "display": "my coach",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S043-HELP",
+      "forStep": "N26-U045-L04-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "display": "a soccer player",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S045-HELP",
+      "forStep": "N26-U045-L04-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "display": "my coach",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S047-HELP",
+      "forStep": "N26-U045-L04-S047",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "display": "a soccer player",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S047",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S049-HELP",
+      "forStep": "N26-U045-L04-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-96ded52f459e1011c2ec",
+      "display": "my coach",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U045-L04-S051-HELP",
+      "forStep": "N26-U045-L04-S051",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ffe3a82c104474f4342c",
+      "display": "a soccer player",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U045-L04-S051",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "coach",
+      "word": "coach",
+      "ipa": "/koʊtʃ/",
+      "meaning": "教练",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ab5cfe5586e6ada1b9dd"
+    },
+    {
+      "key": "training",
+      "word": "training",
+      "ipa": "/ˈtreɪnɪŋ/",
+      "meaning": "训练",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-359c10e58e2d25b32a35"
+    },
+    {
+      "key": "club",
+      "word": "club",
+      "ipa": "/klʌb/",
+      "meaning": "俱乐部",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8490283e1cf0344b2ac6"
+    },
+    {
+      "key": "member",
+      "word": "member",
+      "ipa": "/ˈmɛmbər/",
+      "meaning": "成员",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b1648e39a4dd6c4f50f4"
+    },
+    {
+      "key": "player",
+      "word": "player",
+      "ipa": "/ˈpleɪər/",
+      "meaning": "球员",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-02ea3812e466f484e582"
+    },
+    {
+      "key": "uniform",
+      "word": "uniform",
+      "ipa": "/ˈjuːnɪfɔːrm/",
+      "meaning": "队服，统一服装",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-064c7645e7a501c8348f"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "football",
+      "word": "football",
+      "ipa": "/ˈfʊtbɔːl/",
+      "meaning": "美式橄榄球运动",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d8711272c8dbd05ab49c"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "team",
+      "word": "team",
+      "ipa": "/tiːm/",
+      "meaning": "团队",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7b166e58cad53da7aeb2"
+    },
+    {
+      "key": "soccer",
+      "word": "soccer",
+      "ipa": "/ˈsɑːkər/",
+      "meaning": "足球运动",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e6f6b97f6219c0306378"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：coach=教练；training=训练；club=俱乐部；member=成员；player=球员；uniform=队服，统一服装。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "team",
+      "sourceCourse": "N26-U043-L03",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 40,
+    "availableExactAssets": 40,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-f29da886a18a99a8ffd8",
+      "N26A-407210c2464abf97817e",
+      "N26A-ab5cfe5586e6ada1b9dd",
+      "N26A-29b036e18c73ef5bb23d",
+      "N26A-359c10e58e2d25b32a35",
+      "N26A-e20be9fd100b778fe236",
+      "N26A-8490283e1cf0344b2ac6",
+      "N26A-3cd969d2e0ec3d5ea697",
+      "N26A-b1648e39a4dd6c4f50f4",
+      "N26A-6826456ebdeaac2759d3",
+      "N26A-02ea3812e466f484e582",
+      "N26A-40a33f9ebceb9c3eb8f5",
+      "N26A-064c7645e7a501c8348f",
+      "N26A-18bee88cb33a5e6f5dd5",
+      "N26A-96ded52f459e1011c2ec",
+      "N26A-d99e8584db2b633caadb",
+      "N26A-415b15c6ead85abdf266",
+      "N26A-2bd9b1a52ce87df52647",
+      "N26A-865bb55e48a245c63ab0",
+      "N26A-562a1daa17e4e76a1f3e",
+      "N26A-d48251f0a0f6f8c63ab0",
+      "N26A-10787ddf951d49c16a0e",
+      "N26A-ffe3a82c104474f4342c",
+      "N26A-25f2b94e39db1f3d26dd",
+      "N26A-50a63bf840d9c08fea85",
+      "N26A-6d61a6dac1cf124f45b8",
+      "N26A-b3ad8f8256ce85797e38",
+      "N26A-fc26693b25a5c9e23746",
+      "N26A-7fec62dfca510e99d775",
+      "N26A-f53539d16dad3f76dd04",
+      "N26A-48e1744f7be3e49b6a07",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-d8711272c8dbd05ab49c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-7b166e58cad53da7aeb2",
+      "N26A-e6f6b97f6219c0306378",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

@@ -29,6 +29,15 @@ final class WebGlContext extends GpuContext {
       );
     }
     _gl = gl;
+    _canvas.addEventListener(
+      'webglcontextlost',
+      ((web.Event event) {
+        event.preventDefault();
+        // The application can pause capture and show a recovery action instead
+        // of continuing to submit invalid textures into a permanently blank view.
+        web.window.dispatchEvent(web.Event('flutter-scene-context-lost'));
+      }).toJS,
+    );
     // Cache extensions we rely on for later phases.
     _gl.getExtension('EXT_color_buffer_float');
     _gl.getExtension('OES_texture_float_linear');

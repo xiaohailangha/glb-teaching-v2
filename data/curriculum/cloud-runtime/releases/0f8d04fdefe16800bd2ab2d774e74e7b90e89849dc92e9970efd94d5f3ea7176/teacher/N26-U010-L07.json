@@ -1,0 +1,2388 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch05-v1",
+  "courseId": "N26-U010-L07",
+  "unitId": "N26-U010",
+  "category": "社交与休闲",
+  "title": "看懂表格的栏目",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "da610c6fc882b19eadbc0bbbddec0538f9ab1800d78d4202a0e67884d0ae5e11",
+  "newWords": [
+    "part",
+    "section",
+    "column",
+    "mark",
+    "none",
+    "several",
+    "symbol"
+  ],
+  "prerequisites": [
+    "N26-U010-L06"
+  ],
+  "goal": "在“填写与核对 7”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "part",
+        "surface": "part",
+        "meaning": "部分，一个整体里的一部分",
+        "kind": "new_word"
+      },
+      {
+        "key": "section",
+        "surface": "section",
+        "meaning": "区段，表格分出来的一组",
+        "kind": "new_word"
+      },
+      {
+        "key": "column",
+        "surface": "column",
+        "meaning": "列，表格中竖着排列的一栏",
+        "kind": "new_word"
+      },
+      {
+        "key": "mark",
+        "surface": "mark",
+        "meaning": "标记，提示某项位置的记号",
+        "kind": "new_word"
+      },
+      {
+        "key": "none",
+        "surface": "None",
+        "meaning": "无，没有任何一项",
+        "kind": "new_word"
+      },
+      {
+        "key": "several",
+        "surface": "several",
+        "meaning": "几个，若干个",
+        "kind": "new_word"
+      },
+      {
+        "key": "symbol",
+        "surface": "symbol",
+        "meaning": "符号，一个表示意义的记号",
+        "kind": "new_word"
+      },
+      {
+        "key": "column",
+        "surface": "columns",
+        "meaning": "列，表示不止一列的样子",
+        "kind": "explicit_form_or_sense"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U010-L07-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U010-L07-S002",
+        "N26-U010-L07-S003",
+        "N26-U010-L07-S004",
+        "N26-U010-L07-S005",
+        "N26-U010-L07-S006",
+        "N26-U010-L07-S007",
+        "N26-U010-L07-S008",
+        "N26-U010-L07-S009",
+        "N26-U010-L07-S010",
+        "N26-U010-L07-S011",
+        "N26-U010-L07-S012",
+        "N26-U010-L07-S013",
+        "N26-U010-L07-S014",
+        "N26-U010-L07-S015",
+        "N26-U010-L07-S016",
+        "N26-U010-L07-S017",
+        "N26-U010-L07-S018",
+        "N26-U010-L07-S019",
+        "N26-U010-L07-S020",
+        "N26-U010-L07-S021",
+        "N26-U010-L07-S022",
+        "N26-U010-L07-S023",
+        "N26-U010-L07-S024",
+        "N26-U010-L07-S025"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U010-L07-S026",
+        "N26-U010-L07-S027",
+        "N26-U010-L07-S028",
+        "N26-U010-L07-S029",
+        "N26-U010-L07-S030",
+        "N26-U010-L07-S031",
+        "N26-U010-L07-S032",
+        "N26-U010-L07-S033",
+        "N26-U010-L07-S034",
+        "N26-U010-L07-S035",
+        "N26-U010-L07-S036",
+        "N26-U010-L07-S037",
+        "N26-U010-L07-S038",
+        "N26-U010-L07-S039",
+        "N26-U010-L07-S040",
+        "N26-U010-L07-S041",
+        "N26-U010-L07-S042",
+        "N26-U010-L07-S043",
+        "N26-U010-L07-S044",
+        "N26-U010-L07-S045",
+        "N26-U010-L07-S046"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U010-L07-S047",
+        "N26-U010-L07-S048",
+        "N26-U010-L07-S049",
+        "N26-U010-L07-S050",
+        "N26-U010-L07-S051",
+        "N26-U010-L07-S052"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U010-L07-S053",
+        "N26-U010-L07-S054",
+        "N26-U010-L07-S055",
+        "N26-U010-L07-S056"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U010-L07-S057",
+        "N26-U010-L07-S058",
+        "N26-U010-L07-S059",
+        "N26-U010-L07-S060",
+        "N26-U010-L07-S061",
+        "N26-U010-L07-S062"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U010-L07-S001",
+      "course": "N26-U010-L07",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天看懂表格分成的部分、栏目和标记。遇到没有资料的项目，也先听自然的填写标签。",
+      "display": "",
+      "audio": "N26A-e9b6324597c79d23bf5b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S002",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "部分，一个整体里的一部分。今天说表格里面的一部分。",
+      "display": "part",
+      "audio": "N26A-8e36c53e1ee55237683e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S003",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "部分，一个整体里的一部分",
+      "display": "part",
+      "audio": "N26A-6d0952a43e835922f7cc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "部分，一个整体里的一部分",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S004",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "part",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C001",
+      "model": "N26A-6d0952a43e835922f7cc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S005",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "区段，表格分出来的一组。比一处细节更完整的一组内容。",
+      "display": "section",
+      "audio": "N26A-9e4bc96a863d12c9291f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S006",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "区段，表格分出来的一组",
+      "display": "section",
+      "audio": "N26A-5fe89bd3ecfbc5cf47f0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "区段，表格分出来的一组",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S007",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "section",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C002",
+      "model": "N26A-5fe89bd3ecfbc5cf47f0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S008",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "列，表格中竖着排列的一栏。先认识一列的说法。",
+      "display": "column",
+      "audio": "N26A-3aec9705b138425d6a51",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S009",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "列，表格中竖着排列的一栏",
+      "display": "column",
+      "audio": "N26A-fc404b3519cac5a0b5db",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "列，表格中竖着排列的一栏",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S010",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "column",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C003",
+      "model": "N26A-fc404b3519cac5a0b5db",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S011",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "标记，提示某项位置的记号。想象用一个小记号提醒自己某一栏的位置。",
+      "display": "mark",
+      "audio": "N26A-acc3506b2242db06df44",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S012",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "标记，提示某项位置的记号",
+      "display": "mark",
+      "audio": "N26A-8b03c02971eb8616e2d8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "标记，提示某项位置的记号",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S013",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "mark",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C004",
+      "model": "N26A-8b03c02971eb8616e2d8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S014",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "无，没有任何一项。在表格项目不适用或没有内容时，可用这个标签。",
+      "display": "None",
+      "audio": "N26A-6aec0aa58354bc9c059c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S015",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "无，没有任何一项",
+      "display": "None.",
+      "audio": "N26A-2bd2531220915976861c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "无，没有任何一项",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S016",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "None.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C005",
+      "model": "N26A-2bd2531220915976861c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S017",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "几个，若干个。这里说不只一个的几个栏目。",
+      "display": "several",
+      "audio": "N26A-a09842d713929d21a2d6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S018",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "几个，若干个",
+      "display": "several",
+      "audio": "N26A-4e0b3c0eb4dbccada420",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "几个，若干个",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S019",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "several",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C006",
+      "model": "N26A-4e0b3c0eb4dbccada420",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S020",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "符号，一个表示意义的记号。先认识一个符号。",
+      "display": "symbol",
+      "audio": "N26A-c0f2d2d5b4db2ddcdbe1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S021",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "符号，一个表示意义的记号",
+      "display": "symbol",
+      "audio": "N26A-73ce172ea9d924179b05",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "符号，一个表示意义的记号",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S022",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "symbol",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C007",
+      "model": "N26A-73ce172ea9d924179b05",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S023",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "列，表示不止一列的样子。说几个栏目时，列的结尾会变化，先听完整声音。",
+      "display": "columns",
+      "audio": "N26A-91841b0a8658e73fb057",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S024",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "列，表示不止一列的样子",
+      "display": "columns",
+      "audio": "N26A-991719874c26a38d76fe",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "列，表示不止一列的样子",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S025",
+      "course": "N26-U010-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "columns",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C008",
+      "model": "N26A-991719874c26a38d76fe",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U010-L07-S026",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个部分。先认识一份部分。",
+      "display": "a part",
+      "audio": "N26A-0b0cad49c1dc617a721d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S027",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个部分",
+      "display": "a part",
+      "audio": "N26A-49e2e312781677399640",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个部分",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S028",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a part",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C009",
+      "model": "N26A-49e2e312781677399640",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S029",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个区段。这里说表格的一组内容。",
+      "display": "a section",
+      "audio": "N26A-78390779e10f1e7be976",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S030",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个区段",
+      "display": "a section",
+      "audio": "N26A-28a8014e49fac880de8e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个区段",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S031",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a section",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C010",
+      "model": "N26A-28a8014e49fac880de8e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S032",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一列。先说一列。",
+      "display": "a column",
+      "audio": "N26A-01258ca4514dd35f4732",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S033",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一列",
+      "display": "a column",
+      "audio": "N26A-4bde12eece439d9391f6",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一列",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S034",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a column",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C011",
+      "model": "N26A-4bde12eece439d9391f6",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S035",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个标记。把这个记号的短语说清楚。",
+      "display": "a mark",
+      "audio": "N26A-8e4dab21148755eeca39",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S036",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个标记",
+      "display": "a mark",
+      "audio": "N26A-c3078c8e06eae7fa935d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个标记",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S037",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a mark",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C012",
+      "model": "N26A-c3078c8e06eae7fa935d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S038",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "无。在中文已说明没有任何资料的项目中，读出这个标签。",
+      "display": "None",
+      "audio": "N26A-7921be568a7de7b0a1c3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S039",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "无。",
+      "display": "None.",
+      "audio": "N26A-2bd2531220915976861c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "无。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S040",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "None.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C013",
+      "model": "N26A-2bd2531220915976861c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S041",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "几列。用刚才明确示范过的新结尾，把几个栏目接成一组。",
+      "display": "several columns",
+      "audio": "N26A-b48c6f756e37cca0f335",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S042",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "几列",
+      "display": "several columns",
+      "audio": "N26A-93797d023c9f95cf3110",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "几列",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S043",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "several columns",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C014",
+      "model": "N26A-93797d023c9f95cf3110",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S044",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个符号。先说一个记号。",
+      "display": "a symbol",
+      "audio": "N26A-b1747e5f5adee3c1dec9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S045",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个符号",
+      "display": "a symbol",
+      "audio": "N26A-e497dc1307bfe2a47040",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个符号",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S046",
+      "course": "N26-U010-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a symbol",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U010-L07-C015",
+      "model": "N26A-e497dc1307bfe2a47040",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U010-L07-S047",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "无，没有任何一项",
+      "display": "None.",
+      "audio": "N26A-2bd2531220915976861c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "无，没有任何一项",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U010-L07-S048",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "这处项目没有任何内容，先听表格里无的标签，再接上。",
+      "display": "",
+      "audio": "N26A-162888b387b7e963e8fd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S049",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "None.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C016",
+      "model": "N26A-2bd2531220915976861c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S050",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "几列",
+      "display": "several columns",
+      "audio": "N26A-93797d023c9f95cf3110",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "几列",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U010-L07-S051",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "现在谈的是几列表格，先听整组，再说明。",
+      "display": "",
+      "audio": "N26A-6142c160dd649c647089",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S052",
+      "course": "N26-U010-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "several columns",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C017",
+      "model": "N26A-93797d023c9f95cf3110",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S053",
+      "course": "N26-U010-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "指出表格里的一个区段，看着提示表达。",
+      "display": "",
+      "audio": "N26A-1f2c83f7a8d5acc60812",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S054",
+      "course": "N26-U010-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a section",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C018",
+      "model": "N26A-28a8014e49fac880de8e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S055",
+      "course": "N26-U010-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说一个符号，看着提示把短语说清楚。",
+      "display": "",
+      "audio": "N26A-50016908dcb48416adfd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S056",
+      "course": "N26-U010-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a symbol",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C019",
+      "model": "N26A-e497dc1307bfe2a47040",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S057",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "练习伙伴用中文问这处是否有资料，情境已说明没有，你用已学标签回应。",
+      "display": "",
+      "audio": "N26A-2958bb37e8d28ee49fe5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S058",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "None.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C020",
+      "model": "N26A-2bd2531220915976861c",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S059",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "另一回你要说清正在讨论几列内容，用已示范的短语说明。",
+      "display": "",
+      "audio": "N26A-313750a0764fcc64ed66",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S060",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "several columns",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U010-L07-C021",
+      "model": "N26A-93797d023c9f95cf3110",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U010-L07-S061",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U010-L07-S062",
+      "course": "N26-U010-L07",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U010-L07-C001",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "部分，一个整体里的一部分",
+      "answers": [
+        "part"
+      ],
+      "hint": "part",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S004",
+      "help": "N26-U010-L07-S004-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C002",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "区段，表格分出来的一组",
+      "answers": [
+        "section"
+      ],
+      "hint": "section",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S007",
+      "help": "N26-U010-L07-S007-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C003",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "列，表格中竖着排列的一栏",
+      "answers": [
+        "column"
+      ],
+      "hint": "column",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S010",
+      "help": "N26-U010-L07-S010-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C004",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "标记，提示某项位置的记号",
+      "answers": [
+        "mark"
+      ],
+      "hint": "mark",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S013",
+      "help": "N26-U010-L07-S013-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C005",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "无，没有任何一项",
+      "answers": [
+        "None."
+      ],
+      "hint": "None.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S016",
+      "help": "N26-U010-L07-S016-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C006",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "几个，若干个",
+      "answers": [
+        "several"
+      ],
+      "hint": "several",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S019",
+      "help": "N26-U010-L07-S019-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C007",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "符号，一个表示意义的记号",
+      "answers": [
+        "symbol"
+      ],
+      "hint": "symbol",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S022",
+      "help": "N26-U010-L07-S022-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C008",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "列，表示不止一列的样子",
+      "answers": [
+        "columns"
+      ],
+      "hint": "columns",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S025",
+      "help": "N26-U010-L07-S025-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C009",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个部分",
+      "answers": [
+        "a part"
+      ],
+      "hint": "a part",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S028",
+      "help": "N26-U010-L07-S028-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C010",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个区段",
+      "answers": [
+        "a section"
+      ],
+      "hint": "a section",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S031",
+      "help": "N26-U010-L07-S031-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C011",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一列",
+      "answers": [
+        "a column"
+      ],
+      "hint": "a column",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S034",
+      "help": "N26-U010-L07-S034-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C012",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个标记",
+      "answers": [
+        "a mark"
+      ],
+      "hint": "a mark",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S037",
+      "help": "N26-U010-L07-S037-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C013",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "无。",
+      "answers": [
+        "None."
+      ],
+      "hint": "None.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S040",
+      "help": "N26-U010-L07-S040-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C014",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "几列",
+      "answers": [
+        "several columns"
+      ],
+      "hint": "several columns",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S043",
+      "help": "N26-U010-L07-S043-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C015",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个符号",
+      "answers": [
+        "a symbol"
+      ],
+      "hint": "a symbol",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S046",
+      "help": "N26-U010-L07-S046-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C016",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这处项目没有任何内容，先听表格里无的标签，再接上。",
+      "answers": [
+        "None."
+      ],
+      "hint": "None.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S049",
+      "help": "N26-U010-L07-S049-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C017",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "现在谈的是几列表格，先听整组，再说明。",
+      "answers": [
+        "several columns"
+      ],
+      "hint": "several columns",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S052",
+      "help": "N26-U010-L07-S052-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C018",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "指出表格里的一个区段，看着提示表达。",
+      "answers": [
+        "a section"
+      ],
+      "hint": "a section",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S054",
+      "help": "N26-U010-L07-S054-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C019",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说一个符号，看着提示把短语说清楚。",
+      "answers": [
+        "a symbol"
+      ],
+      "hint": "a symbol",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U010-L07-S056",
+      "help": "N26-U010-L07-S056-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C020",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "练习伙伴用中文问这处是否有资料，情境已说明没有，你用已学标签回应。",
+      "answers": [
+        "None."
+      ],
+      "hint": "None.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U010-L07-S058",
+      "help": "N26-U010-L07-S058-HELP"
+    },
+    {
+      "id": "N26-U010-L07-C021",
+      "course": "N26-U010-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "另一回你要说清正在讨论几列内容，用已示范的短语说明。",
+      "answers": [
+        "several columns"
+      ],
+      "hint": "several columns",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U010-L07-S060",
+      "help": "N26-U010-L07-S060-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U010-L07-S004-HELP",
+      "forStep": "N26-U010-L07-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6d0952a43e835922f7cc",
+      "display": "part",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S007-HELP",
+      "forStep": "N26-U010-L07-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5fe89bd3ecfbc5cf47f0",
+      "display": "section",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S010-HELP",
+      "forStep": "N26-U010-L07-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fc404b3519cac5a0b5db",
+      "display": "column",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S013-HELP",
+      "forStep": "N26-U010-L07-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8b03c02971eb8616e2d8",
+      "display": "mark",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S016-HELP",
+      "forStep": "N26-U010-L07-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2bd2531220915976861c",
+      "display": "None.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S019-HELP",
+      "forStep": "N26-U010-L07-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4e0b3c0eb4dbccada420",
+      "display": "several",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S022-HELP",
+      "forStep": "N26-U010-L07-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-73ce172ea9d924179b05",
+      "display": "symbol",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S025-HELP",
+      "forStep": "N26-U010-L07-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-991719874c26a38d76fe",
+      "display": "columns",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S028-HELP",
+      "forStep": "N26-U010-L07-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-49e2e312781677399640",
+      "display": "a part",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S031-HELP",
+      "forStep": "N26-U010-L07-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-28a8014e49fac880de8e",
+      "display": "a section",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S034-HELP",
+      "forStep": "N26-U010-L07-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4bde12eece439d9391f6",
+      "display": "a column",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S037-HELP",
+      "forStep": "N26-U010-L07-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c3078c8e06eae7fa935d",
+      "display": "a mark",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S040-HELP",
+      "forStep": "N26-U010-L07-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2bd2531220915976861c",
+      "display": "None.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S043-HELP",
+      "forStep": "N26-U010-L07-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-93797d023c9f95cf3110",
+      "display": "several columns",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S046-HELP",
+      "forStep": "N26-U010-L07-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e497dc1307bfe2a47040",
+      "display": "a symbol",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S049-HELP",
+      "forStep": "N26-U010-L07-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2bd2531220915976861c",
+      "display": "None.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S052-HELP",
+      "forStep": "N26-U010-L07-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-93797d023c9f95cf3110",
+      "display": "several columns",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S054-HELP",
+      "forStep": "N26-U010-L07-S054",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-28a8014e49fac880de8e",
+      "display": "a section",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S054",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S056-HELP",
+      "forStep": "N26-U010-L07-S056",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e497dc1307bfe2a47040",
+      "display": "a symbol",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S056",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S058-HELP",
+      "forStep": "N26-U010-L07-S058",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2bd2531220915976861c",
+      "display": "None.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S058",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U010-L07-S060-HELP",
+      "forStep": "N26-U010-L07-S060",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-93797d023c9f95cf3110",
+      "display": "several columns",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U010-L07-S060",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "part",
+      "word": "part",
+      "ipa": "/pɑːrt/",
+      "meaning": "部分，一个整体里的一部分",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6d0952a43e835922f7cc"
+    },
+    {
+      "key": "section",
+      "word": "section",
+      "ipa": "/ˈsek.ʃən/",
+      "meaning": "区段，表格分出来的一组",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5fe89bd3ecfbc5cf47f0"
+    },
+    {
+      "key": "column",
+      "word": "column",
+      "ipa": "/ˈkɑː.ləm/",
+      "meaning": "列，表格中竖着排列的一栏",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-fc404b3519cac5a0b5db"
+    },
+    {
+      "key": "mark",
+      "word": "mark",
+      "ipa": "/mɑːrk/",
+      "meaning": "标记，提示某项位置的记号",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-8b03c02971eb8616e2d8"
+    },
+    {
+      "key": "none",
+      "word": "none",
+      "ipa": "/nʌn/",
+      "meaning": "无，没有任何一项",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-9e4fd36e24b1b64158cc"
+    },
+    {
+      "key": "several",
+      "word": "several",
+      "ipa": "/ˈsev.ɚ.əl/",
+      "meaning": "几个，若干个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-4e0b3c0eb4dbccada420"
+    },
+    {
+      "key": "symbol",
+      "word": "symbol",
+      "ipa": "/ˈsɪm.bəl/",
+      "meaning": "符号，一个表示意义的记号",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-73ce172ea9d924179b05"
+    },
+    {
+      "key": "column",
+      "word": "columns",
+      "ipa": "/ˈkɑː.ləmz/",
+      "meaning": "列，表示不止一列的样子",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-991719874c26a38d76fe"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "columns显式作为column新形式先教；mark只取标记义；none是口头字段回应，不是让学习者点击无的选择题。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "revised_pending_independent_recheck",
+      "reviewedContentHash": "146b4def1d141c7c403ecccafafa014d3ddfac1a8d1e1430f4a7744101e533c1",
+      "findingIds": [
+        "Q05"
+      ],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 42,
+    "availableExactAssets": 42,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-e9b6324597c79d23bf5b",
+      "N26A-8e36c53e1ee55237683e",
+      "N26A-6d0952a43e835922f7cc",
+      "N26A-9e4bc96a863d12c9291f",
+      "N26A-5fe89bd3ecfbc5cf47f0",
+      "N26A-3aec9705b138425d6a51",
+      "N26A-fc404b3519cac5a0b5db",
+      "N26A-acc3506b2242db06df44",
+      "N26A-8b03c02971eb8616e2d8",
+      "N26A-6aec0aa58354bc9c059c",
+      "N26A-2bd2531220915976861c",
+      "N26A-a09842d713929d21a2d6",
+      "N26A-4e0b3c0eb4dbccada420",
+      "N26A-c0f2d2d5b4db2ddcdbe1",
+      "N26A-73ce172ea9d924179b05",
+      "N26A-91841b0a8658e73fb057",
+      "N26A-991719874c26a38d76fe",
+      "N26A-0b0cad49c1dc617a721d",
+      "N26A-49e2e312781677399640",
+      "N26A-78390779e10f1e7be976",
+      "N26A-28a8014e49fac880de8e",
+      "N26A-01258ca4514dd35f4732",
+      "N26A-4bde12eece439d9391f6",
+      "N26A-8e4dab21148755eeca39",
+      "N26A-c3078c8e06eae7fa935d",
+      "N26A-7921be568a7de7b0a1c3",
+      "N26A-b48c6f756e37cca0f335",
+      "N26A-93797d023c9f95cf3110",
+      "N26A-b1747e5f5adee3c1dec9",
+      "N26A-e497dc1307bfe2a47040",
+      "N26A-162888b387b7e963e8fd",
+      "N26A-6142c160dd649c647089",
+      "N26A-1f2c83f7a8d5acc60812",
+      "N26A-50016908dcb48416adfd",
+      "N26A-2958bb37e8d28ee49fe5",
+      "N26A-313750a0764fcc64ed66",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-9e4fd36e24b1b64158cc",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

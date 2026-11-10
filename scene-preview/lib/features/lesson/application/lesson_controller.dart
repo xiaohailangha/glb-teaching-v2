@@ -12,10 +12,37 @@ import '../domain/vocabulary_ledger.dart';
 import '../domain/course_lexicon.dart';
 import '../domain/course_catalog.dart';
 import '../domain/ipa_sounds.dart';
+import '../../../core/avatar/scene/render_budget.dart';
 
 typedef AvatarCommand = void Function(Map<String, Object?> command);
 
 class LessonController extends ChangeNotifier {
+  void setCurriculumPhase(String phase) =>
+      _send?.call({'type': 'curriculum-phase', 'phase': phase});
+  void unlockCurriculumAudio() => _send?.call({'type': 'audio-unlock'});
+  Future<void> playCurriculumAudio(Map<String, dynamic> audio) {
+    if (!ready || _send == null) {
+      return Future.error(StateError('人物尚未准备好，请稍后再试'));
+    }
+    final done = Completer<void>();
+    _send!({
+      'type': 'curriculum-audio',
+      'session': ++session,
+      'audio': audio,
+      'complete': (Object? error) {
+        if (!done.isCompleted) {
+          if (error == null) {
+            done.complete();
+          } else {
+            done.completeError(error);
+          }
+        }
+      },
+    });
+    return done.future.timeout(const Duration(seconds: 40));
+  }
+
+  void stopCurriculumAudio() => _send?.call({'type': 'stop'});
   LessonController({
     this.accountId = '',
     String? accountNickname,
@@ -28,6 +55,7 @@ class LessonController extends ChangeNotifier {
   Future<void> Function(String)? saveAccountNickname;
   final resourceTick = ValueNotifier<int>(0);
   bool scenePresented = false;
+  bool graphicsLost = false;
   double resourceProgress = 0;
   String resourceLabel = '准备出发';
   Future<void> bindAccount({
@@ -48,6 +76,7 @@ class LessonController extends ChangeNotifier {
   }
 
   void resetResources() {
+    graphicsLost = false;
     ready = scenePresented = false;
     error = null;
     resourceProgress = 0;
@@ -106,6 +135,11 @@ class LessonController extends ChangeNotifier {
   }
 
   void expose(String text) {
+    if (courseMode && courseStep != 'summary') {
+      encounteredCourseWords.addAll(
+        VocabularyLedger.words(text).where(courseLexicon.containsKey),
+      );
+    }
     if (vocabulary.expose(text)) {
       onLearningEvent?.call('expose', {'words': vocabulary.seen.toList()});
       unawaited(_saveVocabulary());
@@ -134,6 +168,19 @@ class LessonController extends ChangeNotifier {
   List<Map<String, String>> courseSegments = [];
   String courseDisplay = '', coursePicture = '', courseChapter = '';
   int coursePosition = 0, courseTotal = 1;
+  final encounteredCourseWords = <String>{};
+  List<String> get courseReviewWords {
+    final row = courseCatalog.where((c) => c.id == courseId).firstOrNull;
+    final words = row?.reviewWords ?? [];
+    return words.isEmpty
+        ? encounteredCourseWords.toList()
+        : words.where(courseLexicon.containsKey).toList();
+  }
+
+  String reviewIpa(String word) => courseLexicon[word]?.ipa ?? '';
+  List<String>? confirmedCourseWords;
+  int confirmedWordTotal = 0;
+  String? verifiedCourseClosing;
   String courseId = 'adult-fruit-v2';
   CourseInfo get activeCourse =>
       courseCatalog.firstWhere((c) => c.id == courseId);
@@ -153,6 +200,7 @@ class LessonController extends ChangeNotifier {
       final prefs = await SharedPreferences.getInstance();
       if (_disposed || selection != _courseSelection) return;
       courseId = id;
+      encounteredCourseWords.clear();
       courseCheckpoint = null;
       final saved = prefs.getString(_storageKey(id));
       if (saved != null) {
@@ -267,6 +315,21 @@ class LessonController extends ChangeNotifier {
     });
   }
 
+  Future<void> persistBeforeRecovery() async {
+    await _saveQueue;
+    if (courseCheckpoint == null) return;
+    final prefs = await SharedPreferences.getInstance();
+    final saved = await prefs.setString(
+      _storageKey(courseId),
+      jsonEncode(courseCheckpoint),
+    );
+    final active = await prefs.setString(
+      _storageKey('active-course'),
+      courseId,
+    );
+    if (!saved || !active) throw StateError('Checkpoint not persisted');
+  }
+
   void pauseCourse() {
     if (!adultCourse || coursePaused) return;
     onLearningEvent?.call('pause');
@@ -351,7 +414,7 @@ class LessonController extends ChangeNotifier {
   AvatarCommand? _send;
   Map<String, Object?> _renderSettings = {
     'type': 'render-settings',
-    'quality': 'high',
+    'quality': isMobileBrowser ? 'medium' : 'high',
     'adaptive': true,
   };
   void setRenderSettings(Map<String, Object?> value) {
@@ -373,10 +436,15 @@ class LessonController extends ChangeNotifier {
       'scene-presented',
       'ready',
       'error',
+      'graphics-lost',
     }.contains(event)) {
       resourceTick.value++;
     }
-    if (event == 'resource-progress') {
+    if (event == 'graphics-lost') {
+      graphicsLost = true;
+      ready = false;
+      playing = false;
+    } else if (event == 'resource-progress') {
       resourceProgress = (message['value'] as num).toDouble().clamp(0, .99);
       resourceLabel = message['label'] as String;
     } else if (event == 'scene-presented') {

@@ -15,6 +15,8 @@ import 'entry_design.dart';
 import 'world_browser_stub.dart'
     if (dart.library.js_interop) 'world_browser_web.dart';
 import '../../core/avatar/avatar_view.dart';
+import '../../core/avatar/graphics_recovery_panel.dart';
+import '../../core/avatar/scene/browser_graphics.dart';
 import '../lesson/application/lesson_controller.dart';
 
 class AuthGate extends StatefulWidget {
@@ -124,7 +126,7 @@ class _AuthGateState extends State<AuthGate> {
       );
     } catch (_) {
       if (mounted) {
-        shared.handle({'event':'error','message':'课程资源暂时未能加载，请重试'});
+        shared.handle({'event': 'error', 'message': '课程资源暂时未能加载，请重试'});
         setState(() {});
       }
     }
@@ -326,7 +328,11 @@ class _AuthGateState extends State<AuthGate> {
   void _sceneChanged() {
     // Resource events notify before the controller updates its fields.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted || inLesson) return;
+      if (!mounted) return;
+      if (inLesson) {
+        setState(() {});
+        return;
+      }
       if (step == 0 && authReady && !busy) {
         if (user != null) {
           if (!shared.scenePresented) return;
@@ -423,7 +429,13 @@ class _AuthGateState extends State<AuthGate> {
               fit: StackFit.expand,
               children: [
                 if (widget.prepareScene)
-                  AvatarView(key: ValueKey(sceneAttempt), controller: shared),
+                  TickerMode(
+                    enabled: inLesson || step == 0 || step == 4,
+                    child: AvatarView(
+                      key: ValueKey(sceneAttempt),
+                      controller: shared,
+                    ),
+                  ),
                 if (inLesson)
                   LessonPage(
                     key: ValueKey(user?.id ?? 'guest'),
@@ -652,6 +664,13 @@ class _AuthGateState extends State<AuthGate> {
             ),
           ),
         ),
+        if (shared.graphicsLost)
+          GraphicsRecoveryPanel(
+            onRecover: () async {
+              await shared.persistBeforeRecovery();
+              reloadForGraphicsRecovery();
+            },
+          ),
       ],
     ),
   );

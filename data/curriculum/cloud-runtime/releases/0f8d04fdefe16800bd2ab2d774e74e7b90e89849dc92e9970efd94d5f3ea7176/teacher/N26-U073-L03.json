@@ -1,0 +1,1643 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit073-v1",
+  "courseId": "N26-U073-L03",
+  "unitId": "N26-U073",
+  "category": "食物与饮品",
+  "title": "啤酒、葡萄酒与饮酒",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "c7341ccd5ded728132bb68ee70245f87a990da831fd138117867e793fb47a8c6",
+  "newWords": [
+    "alcoholic",
+    "beer",
+    "wine",
+    "drunk"
+  ],
+  "prerequisites": [
+    "N26-U073-L02"
+  ],
+  "goal": "围绕“酒类与消费”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "alcoholic",
+        "surface": "alcoholic",
+        "meaning": "含酒精的",
+        "kind": "new_word"
+      },
+      {
+        "key": "beer",
+        "surface": "beer",
+        "meaning": "啤酒",
+        "kind": "new_word"
+      },
+      {
+        "key": "wine",
+        "surface": "wine",
+        "meaning": "葡萄酒",
+        "kind": "new_word"
+      },
+      {
+        "key": "drunk",
+        "surface": "drunk",
+        "meaning": "醉酒的",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U073-L03-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U073-L03-S002",
+        "N26-U073-L03-S003",
+        "N26-U073-L03-S004",
+        "N26-U073-L03-S005",
+        "N26-U073-L03-S006",
+        "N26-U073-L03-S007",
+        "N26-U073-L03-S008",
+        "N26-U073-L03-S009",
+        "N26-U073-L03-S010",
+        "N26-U073-L03-S011",
+        "N26-U073-L03-S012",
+        "N26-U073-L03-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U073-L03-S014",
+        "N26-U073-L03-S015",
+        "N26-U073-L03-S016",
+        "N26-U073-L03-S017",
+        "N26-U073-L03-S018",
+        "N26-U073-L03-S019",
+        "N26-U073-L03-S020",
+        "N26-U073-L03-S021",
+        "N26-U073-L03-S022",
+        "N26-U073-L03-S023",
+        "N26-U073-L03-S024",
+        "N26-U073-L03-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U073-L03-S026",
+        "N26-U073-L03-S027",
+        "N26-U073-L03-S028",
+        "N26-U073-L03-S029",
+        "N26-U073-L03-S030",
+        "N26-U073-L03-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U073-L03-S032",
+        "N26-U073-L03-S033",
+        "N26-U073-L03-S034",
+        "N26-U073-L03-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U073-L03-S036",
+        "N26-U073-L03-S037",
+        "N26-U073-L03-S038",
+        "N26-U073-L03-S039",
+        "N26-U073-L03-S040",
+        "N26-U073-L03-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U073-L03-S001",
+      "course": "N26-U073-L03",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象认识菜单里的酒类词，再学习描述醉酒状态的形容词。",
+      "display": "",
+      "audio": "N26A-a6afd67080ae27699559",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S002",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "含酒精的。本课仅饮品形容词。",
+      "display": "alcoholic",
+      "audio": "N26A-e6a548e86d1efd8d786b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S003",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "含酒精的",
+      "display": "alcoholic",
+      "audio": "N26A-4083257915ea4742c101",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "含酒精的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S004",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "alcoholic",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C001",
+      "model": "N26A-4083257915ea4742c101",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S005",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "啤酒。认识饮品类别。",
+      "display": "beer",
+      "audio": "N26A-00e49c70829f669fecda",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S006",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "啤酒",
+      "display": "beer",
+      "audio": "N26A-91e8da2cd28df5b2976d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "啤酒",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S007",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C002",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S008",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "葡萄酒。认识另一种饮品。",
+      "display": "wine",
+      "audio": "N26A-d5d2d61fd91c0eb12e32",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S009",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "葡萄酒",
+      "display": "wine",
+      "audio": "N26A-75aabd2316772e032ffc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "葡萄酒",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S010",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "wine",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C003",
+      "model": "N26A-75aabd2316772e032ffc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S011",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "醉酒的。这里用来描述自己喝醉的感觉，先听完整声音。",
+      "display": "drunk",
+      "audio": "N26A-488d5e9dac00c18b8226",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S012",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "醉酒的",
+      "display": "drunk",
+      "audio": "N26A-3e05a9a75adede4bad1f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "醉酒的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S013",
+      "course": "N26-U073-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "drunk",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C004",
+      "model": "N26A-3e05a9a75adede4bad1f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U073-L03-S014",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一杯含酒精的饮品。本课仅饮品形容词。",
+      "display": "an alcoholic drink",
+      "audio": "N26A-b383d62963ca1c514c0e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S015",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一杯含酒精的饮品",
+      "display": "an alcoholic drink",
+      "audio": "N26A-efcc2e850d53dc3afe1e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一杯含酒精的饮品",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S016",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an alcoholic drink",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C005",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S017",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "啤酒。认识饮品类别。",
+      "display": "beer",
+      "audio": "N26A-00e49c70829f669fecda",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S018",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "啤酒",
+      "display": "beer",
+      "audio": "N26A-91e8da2cd28df5b2976d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "啤酒",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S019",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "beer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C006",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S020",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "葡萄酒。认识另一种饮品。",
+      "display": "wine",
+      "audio": "N26A-d5d2d61fd91c0eb12e32",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S021",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "葡萄酒",
+      "display": "wine",
+      "audio": "N26A-75aabd2316772e032ffc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "葡萄酒",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S022",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "wine",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C007",
+      "model": "N26A-75aabd2316772e032ffc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S023",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我感觉醉了。说的是自己当前喝醉的感觉，先听整句。",
+      "display": "I feel drunk",
+      "audio": "N26A-486e9b84a7a2e2834455",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S024",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我感觉醉了。",
+      "display": "I feel drunk.",
+      "audio": "N26A-d1f2abdf83962e297594",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我感觉醉了。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S025",
+      "course": "N26-U073-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I feel drunk.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U073-L03-C008",
+      "model": "N26A-d1f2abdf83962e297594",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U073-L03-S026",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一杯含酒精的饮品",
+      "display": "an alcoholic drink",
+      "audio": "N26A-efcc2e850d53dc3afe1e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一杯含酒精的饮品",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U073-L03-S027",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "要核对饮品类别是否含酒精，听后说该类别。",
+      "display": "",
+      "audio": "N26A-230e20f47bd83a0e9eb3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S028",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "an alcoholic drink",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C009",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S029",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我感觉醉了。",
+      "display": "I feel drunk.",
+      "audio": "N26A-d1f2abdf83962e297594",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我感觉醉了。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U073-L03-S030",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想象健康沟通排练中说明醉酒感受，听后接上。",
+      "display": "",
+      "audio": "N26A-f80d15e79e3682a3031f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S031",
+      "course": "N26-U073-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I feel drunk.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C010",
+      "model": "N26A-d1f2abdf83962e297594",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S032",
+      "course": "N26-U073-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "菜单类别明确是啤酒，看整词说。",
+      "display": "",
+      "audio": "N26A-81884f91404aba9ef64b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S033",
+      "course": "N26-U073-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "beer",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C011",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S034",
+      "course": "N26-U073-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "类别换成葡萄酒，看提示说。",
+      "display": "",
+      "audio": "N26A-dfeec72eb182763e978c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S035",
+      "course": "N26-U073-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "wine",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C012",
+      "model": "N26A-75aabd2316772e032ffc",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S036",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友用中文问讨论哪种饮品，你说含酒精的饮品。",
+      "display": "",
+      "audio": "N26A-5fb17cf15876a4dd7819",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S037",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "an alcoholic drink",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C013",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S038",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换到虚构的身体感受排练，你说明感觉醉了。",
+      "display": "",
+      "audio": "N26A-4b9d9a0c3b255a2fe3f1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S039",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I feel drunk.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U073-L03-C014",
+      "model": "N26A-d1f2abdf83962e297594",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U073-L03-S040",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U073-L03-S041",
+      "course": "N26-U073-L03",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U073-L03-C001",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "含酒精的",
+      "answers": [
+        "alcoholic"
+      ],
+      "hint": "alcoholic",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S004",
+      "help": "N26-U073-L03-S004-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C002",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "啤酒",
+      "answers": [
+        "beer"
+      ],
+      "hint": "beer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S007",
+      "help": "N26-U073-L03-S007-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C003",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "葡萄酒",
+      "answers": [
+        "wine"
+      ],
+      "hint": "wine",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S010",
+      "help": "N26-U073-L03-S010-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C004",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "醉酒的",
+      "answers": [
+        "drunk"
+      ],
+      "hint": "drunk",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S013",
+      "help": "N26-U073-L03-S013-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C005",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一杯含酒精的饮品",
+      "answers": [
+        "an alcoholic drink"
+      ],
+      "hint": "an alcoholic drink",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S016",
+      "help": "N26-U073-L03-S016-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C006",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "啤酒",
+      "answers": [
+        "beer"
+      ],
+      "hint": "beer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S019",
+      "help": "N26-U073-L03-S019-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C007",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "葡萄酒",
+      "answers": [
+        "wine"
+      ],
+      "hint": "wine",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S022",
+      "help": "N26-U073-L03-S022-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C008",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我感觉醉了。",
+      "answers": [
+        "I feel drunk."
+      ],
+      "hint": "I feel drunk.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S025",
+      "help": "N26-U073-L03-S025-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C009",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "要核对饮品类别是否含酒精，听后说该类别。",
+      "answers": [
+        "an alcoholic drink"
+      ],
+      "hint": "an alcoholic drink",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S028",
+      "help": "N26-U073-L03-S028-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C010",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象健康沟通排练中说明醉酒感受，听后接上。",
+      "answers": [
+        "I feel drunk."
+      ],
+      "hint": "I feel drunk.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S031",
+      "help": "N26-U073-L03-S031-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C011",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "菜单类别明确是啤酒，看整词说。",
+      "answers": [
+        "beer"
+      ],
+      "hint": "beer",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S033",
+      "help": "N26-U073-L03-S033-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C012",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "类别换成葡萄酒，看提示说。",
+      "answers": [
+        "wine"
+      ],
+      "hint": "wine",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U073-L03-S035",
+      "help": "N26-U073-L03-S035-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C013",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友用中文问讨论哪种饮品，你说含酒精的饮品。",
+      "answers": [
+        "an alcoholic drink"
+      ],
+      "hint": "an alcoholic drink",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U073-L03-S037",
+      "help": "N26-U073-L03-S037-HELP"
+    },
+    {
+      "id": "N26-U073-L03-C014",
+      "course": "N26-U073-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换到虚构的身体感受排练，你说明感觉醉了。",
+      "answers": [
+        "I feel drunk."
+      ],
+      "hint": "I feel drunk.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U073-L03-S039",
+      "help": "N26-U073-L03-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U073-L03-S004-HELP",
+      "forStep": "N26-U073-L03-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4083257915ea4742c101",
+      "display": "alcoholic",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S007-HELP",
+      "forStep": "N26-U073-L03-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "display": "beer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S010-HELP",
+      "forStep": "N26-U073-L03-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-75aabd2316772e032ffc",
+      "display": "wine",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S013-HELP",
+      "forStep": "N26-U073-L03-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3e05a9a75adede4bad1f",
+      "display": "drunk",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S016-HELP",
+      "forStep": "N26-U073-L03-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "display": "an alcoholic drink",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S019-HELP",
+      "forStep": "N26-U073-L03-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "display": "beer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S022-HELP",
+      "forStep": "N26-U073-L03-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-75aabd2316772e032ffc",
+      "display": "wine",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S025-HELP",
+      "forStep": "N26-U073-L03-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f2abdf83962e297594",
+      "display": "I feel drunk.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S028-HELP",
+      "forStep": "N26-U073-L03-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "display": "an alcoholic drink",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S031-HELP",
+      "forStep": "N26-U073-L03-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f2abdf83962e297594",
+      "display": "I feel drunk.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S033-HELP",
+      "forStep": "N26-U073-L03-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-91e8da2cd28df5b2976d",
+      "display": "beer",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S035-HELP",
+      "forStep": "N26-U073-L03-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-75aabd2316772e032ffc",
+      "display": "wine",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S037-HELP",
+      "forStep": "N26-U073-L03-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-efcc2e850d53dc3afe1e",
+      "display": "an alcoholic drink",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U073-L03-S039-HELP",
+      "forStep": "N26-U073-L03-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d1f2abdf83962e297594",
+      "display": "I feel drunk.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U073-L03-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "alcoholic",
+      "word": "alcoholic",
+      "ipa": "/ˌælkəˈhɔlɪk/",
+      "meaning": "含酒精的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-4083257915ea4742c101"
+    },
+    {
+      "key": "beer",
+      "word": "beer",
+      "ipa": "/bɪr/",
+      "meaning": "啤酒",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-91e8da2cd28df5b2976d"
+    },
+    {
+      "key": "wine",
+      "word": "wine",
+      "ipa": "/waɪn/",
+      "meaning": "葡萄酒",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-75aabd2316772e032ffc"
+    },
+    {
+      "key": "drunk",
+      "word": "drunk",
+      "ipa": "/drʌŋk/",
+      "meaning": "醉酒的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3e05a9a75adede4bad1f"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "drink",
+      "word": "drink",
+      "ipa": "/drɪŋk/",
+      "meaning": "饮品，一份喝的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3d23ac1e75034aba5118"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "feel",
+      "word": "feel",
+      "ipa": "/fiːl/",
+      "meaning": "感觉，觉得",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-73a93030ba2fb79bf986"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "alcoholic仅形容词不标记人群；drunk限状态形容词不借drink词形；不鼓励饮酒或给安全剂量建议。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "drink",
+      "sourceCourse": "N26-U008-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "feel",
+      "sourceCourse": "N26-U019-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 27,
+    "availableExactAssets": 27,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-a6afd67080ae27699559",
+      "N26A-e6a548e86d1efd8d786b",
+      "N26A-4083257915ea4742c101",
+      "N26A-00e49c70829f669fecda",
+      "N26A-91e8da2cd28df5b2976d",
+      "N26A-d5d2d61fd91c0eb12e32",
+      "N26A-75aabd2316772e032ffc",
+      "N26A-488d5e9dac00c18b8226",
+      "N26A-3e05a9a75adede4bad1f",
+      "N26A-b383d62963ca1c514c0e",
+      "N26A-efcc2e850d53dc3afe1e",
+      "N26A-486e9b84a7a2e2834455",
+      "N26A-d1f2abdf83962e297594",
+      "N26A-230e20f47bd83a0e9eb3",
+      "N26A-f80d15e79e3682a3031f",
+      "N26A-81884f91404aba9ef64b",
+      "N26A-dfeec72eb182763e978c",
+      "N26A-5fb17cf15876a4dd7819",
+      "N26A-4b9d9a0c3b255a2fe3f1",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-3d23ac1e75034aba5118",
+      "N26A-f353b20c6f3418376965",
+      "N26A-73a93030ba2fb79bf986",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

@@ -1,0 +1,2513 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit041-v1",
+  "courseId": "N26-U041-L02",
+  "unitId": "N26-U041",
+  "category": "工作与学习",
+  "title": "打开设置与程序",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "a0158ddf67574d401b935f53d3547e20584e1d0c87d1225da9351184fbb0cf5b",
+  "newWords": [
+    "user",
+    "setting",
+    "click",
+    "program",
+    "software",
+    "hardware",
+    "device",
+    "tablet"
+  ],
+  "prerequisites": [
+    "N26-U041-L01"
+  ],
+  "goal": "在“常用设备 2”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "user",
+        "surface": "user",
+        "meaning": "用户，使用系统的人",
+        "kind": "new_word"
+      },
+      {
+        "key": "setting",
+        "surface": "setting",
+        "meaning": "设置项",
+        "kind": "new_word"
+      },
+      {
+        "key": "click",
+        "surface": "click",
+        "meaning": "点击",
+        "kind": "new_word"
+      },
+      {
+        "key": "program",
+        "surface": "program",
+        "meaning": "程序",
+        "kind": "new_word"
+      },
+      {
+        "key": "software",
+        "surface": "software",
+        "meaning": "软件",
+        "kind": "new_word"
+      },
+      {
+        "key": "hardware",
+        "surface": "hardware",
+        "meaning": "硬件",
+        "kind": "new_word"
+      },
+      {
+        "key": "device",
+        "surface": "device",
+        "meaning": "设备",
+        "kind": "new_word"
+      },
+      {
+        "key": "tablet",
+        "surface": "tablet",
+        "meaning": "平板电脑",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U041-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U041-L02-S002",
+        "N26-U041-L02-S003",
+        "N26-U041-L02-S004",
+        "N26-U041-L02-S005",
+        "N26-U041-L02-S006",
+        "N26-U041-L02-S007",
+        "N26-U041-L02-S008",
+        "N26-U041-L02-S009",
+        "N26-U041-L02-S010",
+        "N26-U041-L02-S011",
+        "N26-U041-L02-S012",
+        "N26-U041-L02-S013",
+        "N26-U041-L02-S014",
+        "N26-U041-L02-S015",
+        "N26-U041-L02-S016",
+        "N26-U041-L02-S017",
+        "N26-U041-L02-S018",
+        "N26-U041-L02-S019",
+        "N26-U041-L02-S020",
+        "N26-U041-L02-S021",
+        "N26-U041-L02-S022",
+        "N26-U041-L02-S023",
+        "N26-U041-L02-S024",
+        "N26-U041-L02-S025"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U041-L02-S026",
+        "N26-U041-L02-S027",
+        "N26-U041-L02-S028",
+        "N26-U041-L02-S029",
+        "N26-U041-L02-S030",
+        "N26-U041-L02-S031",
+        "N26-U041-L02-S032",
+        "N26-U041-L02-S033",
+        "N26-U041-L02-S034",
+        "N26-U041-L02-S035",
+        "N26-U041-L02-S036",
+        "N26-U041-L02-S037",
+        "N26-U041-L02-S038",
+        "N26-U041-L02-S039",
+        "N26-U041-L02-S040",
+        "N26-U041-L02-S041",
+        "N26-U041-L02-S042",
+        "N26-U041-L02-S043",
+        "N26-U041-L02-S044",
+        "N26-U041-L02-S045",
+        "N26-U041-L02-S046",
+        "N26-U041-L02-S047",
+        "N26-U041-L02-S048",
+        "N26-U041-L02-S049"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U041-L02-S050",
+        "N26-U041-L02-S051",
+        "N26-U041-L02-S052",
+        "N26-U041-L02-S053",
+        "N26-U041-L02-S054",
+        "N26-U041-L02-S055"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U041-L02-S056",
+        "N26-U041-L02-S057",
+        "N26-U041-L02-S058",
+        "N26-U041-L02-S059"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U041-L02-S060",
+        "N26-U041-L02-S061",
+        "N26-U041-L02-S062",
+        "N26-U041-L02-S063",
+        "N26-U041-L02-S064",
+        "N26-U041-L02-S065"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U041-L02-S001",
+      "course": "N26-U041-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象在给朋友介绍设备资料。认识用户、设置和程序，也练一个点击请求；这里只做口述排练。",
+      "display": "",
+      "audio": "N26A-a7551beb5b49a007ef2c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S002",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "用户，使用系统的人。这里说用户，使用系统的人，先听完整的声音。",
+      "display": "user",
+      "audio": "N26A-3e802618ea49a629b29d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S003",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "用户，使用系统的人",
+      "display": "user",
+      "audio": "N26A-41ccd66da53e0d1933ee",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用户，使用系统的人",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S004",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "user",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C001",
+      "model": "N26A-41ccd66da53e0d1933ee",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S005",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "设置项。这里说一项设置，先把完整声音听清楚。",
+      "display": "setting",
+      "audio": "N26A-d19e026ada1237138316",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S006",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "设置项",
+      "display": "setting",
+      "audio": "N26A-6315b2f3682d486f4176",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "设置项",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S007",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "setting",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C002",
+      "model": "N26A-6315b2f3682d486f4176",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S008",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "点击。这里说点击，先听完整的声音。",
+      "display": "click",
+      "audio": "N26A-a4525751fc294239bab1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S009",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "点击",
+      "display": "click",
+      "audio": "N26A-b5d53329477120c0a5af",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "点击",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S010",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "click",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C003",
+      "model": "N26A-b5d53329477120c0a5af",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S011",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "程序。这里说程序，先听完整的声音。",
+      "display": "program",
+      "audio": "N26A-66d59ab017b9f3ae2bc2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S012",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "程序",
+      "display": "program",
+      "audio": "N26A-81f6fc9fc94d79da7e8c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "程序",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S013",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "program",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C004",
+      "model": "N26A-81f6fc9fc94d79da7e8c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S014",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "软件。这里按整体说软件，不加一个。",
+      "display": "software",
+      "audio": "N26A-d28b2655b231a03bfdd5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S015",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "软件",
+      "display": "software",
+      "audio": "N26A-f813a8916b2006632ec3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "软件",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S016",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "software",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C005",
+      "model": "N26A-f813a8916b2006632ec3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S017",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "硬件。这里按整体说硬件，不加一个。",
+      "display": "hardware",
+      "audio": "N26A-9ba6b34b9ef96506d565",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S018",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "硬件",
+      "display": "hardware",
+      "audio": "N26A-16797125fbaf8626603c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "硬件",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S019",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "hardware",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C006",
+      "model": "N26A-16797125fbaf8626603c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S020",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "设备。这里说设备，先听完整的声音。",
+      "display": "device",
+      "audio": "N26A-50391a21a2860727eb27",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S021",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "设备",
+      "display": "device",
+      "audio": "N26A-abdc6f356d126df77932",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "设备",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S022",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "device",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C007",
+      "model": "N26A-abdc6f356d126df77932",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S023",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "平板电脑。这里说平板电脑，先听完整的声音。",
+      "display": "tablet",
+      "audio": "N26A-1b28cf9a657b83c35691",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S024",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "平板电脑",
+      "display": "tablet",
+      "audio": "N26A-7a33181c28975d4551d7",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "平板电脑",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S025",
+      "course": "N26-U041-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "tablet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C008",
+      "model": "N26A-7a33181c28975d4551d7",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U041-L02-S026",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一名用户。先听这一组，再连起来说。",
+      "display": "a user",
+      "audio": "N26A-31331aa9a1f63fa457ef",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S027",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一名用户",
+      "display": "a user",
+      "audio": "N26A-177900318c911c8f7805",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名用户",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S028",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a user",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C009",
+      "model": "N26A-177900318c911c8f7805",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S029",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那项设置。这里说一项设置，先把完整声音听清楚。",
+      "display": "the setting",
+      "audio": "N26A-98bf5b45d1765840c0b8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S030",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那项设置",
+      "display": "the setting",
+      "audio": "N26A-e1d2a6d0897972879507",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那项设置",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S031",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the setting",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C010",
+      "model": "N26A-e1d2a6d0897972879507",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S032",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请点击那个应用程序。先听这一组，再连起来说。",
+      "display": "Click the app, please",
+      "audio": "N26A-81d6c394530911fb32c0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S033",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请点击那个应用程序。",
+      "display": "Click the app, please.",
+      "audio": "N26A-1cb127683fb093effd0e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请点击那个应用程序。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S034",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Click the app, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C011",
+      "model": "N26A-1cb127683fb093effd0e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S035",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个程序。先听这一组，再连起来说。",
+      "display": "a program",
+      "audio": "N26A-477d341bc0fd07c2a190",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S036",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个程序",
+      "display": "a program",
+      "audio": "N26A-54ed3e72c18ac901f355",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个程序",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S037",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a program",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C012",
+      "model": "N26A-54ed3e72c18ac901f355",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S038",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那套软件。这里按整体说软件，不加一个。",
+      "display": "the software",
+      "audio": "N26A-924e1f3a3c041e7eb069",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S039",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那套软件",
+      "display": "the software",
+      "audio": "N26A-71e8dc7600dc9e60bf3d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那套软件",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S040",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the software",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C013",
+      "model": "N26A-71e8dc7600dc9e60bf3d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S041",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "那些硬件。这里按整体说硬件，不加一个。",
+      "display": "the hardware",
+      "audio": "N26A-c1697db1be764fdc9a7a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S042",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "那些硬件",
+      "display": "the hardware",
+      "audio": "N26A-dac451b0f02fe0c6f65d",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "那些硬件",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S043",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the hardware",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C014",
+      "model": "N26A-dac451b0f02fe0c6f65d",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S044",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一台设备。先听这一组，再连起来说。",
+      "display": "a device",
+      "audio": "N26A-1719f64978394c2a62f0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S045",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一台设备",
+      "display": "a device",
+      "audio": "N26A-9937ab84c6415d202a5a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一台设备",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S046",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a device",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C015",
+      "model": "N26A-9937ab84c6415d202a5a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S047",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一台平板电脑。先听这一组，再连起来说。",
+      "display": "a tablet",
+      "audio": "N26A-889f8aa0724f733b617e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S048",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一台平板电脑",
+      "display": "a tablet",
+      "audio": "N26A-4ba675b1d21fec352f0c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一台平板电脑",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S049",
+      "course": "N26-U041-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a tablet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U041-L02-C016",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U041-L02-S050",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "请点击那个应用程序。",
+      "display": "Click the app, please.",
+      "audio": "N26A-1cb127683fb093effd0e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请点击那个应用程序。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U041-L02-S051",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想象帮朋友熟悉操作，先听点击应用的请求，再说。",
+      "display": "",
+      "audio": "N26A-9d3375c766f8ad6287c7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S052",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Click the app, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C017",
+      "model": "N26A-1cb127683fb093effd0e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S053",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一台平板电脑",
+      "display": "a tablet",
+      "audio": "N26A-4ba675b1d21fec352f0c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一台平板电脑",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U041-L02-S054",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "这次需要平板电脑，听后说出设备。",
+      "display": "",
+      "audio": "N26A-dae12457ff873e85cc54",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S055",
+      "course": "N26-U041-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a tablet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C018",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S056",
+      "course": "N26-U041-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示请朋友点击那个应用。",
+      "display": "",
+      "audio": "N26A-194b1e4100e52793daf3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S057",
+      "course": "N26-U041-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Click the app, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C019",
+      "model": "N26A-1cb127683fb093effd0e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S058",
+      "course": "N26-U041-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一台平板电脑。",
+      "display": "",
+      "audio": "N26A-7b5c15c1264c2180062c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S059",
+      "course": "N26-U041-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a tablet",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C020",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S060",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在口述操作排练里，你礼貌请朋友点击双方说好的应用。",
+      "display": "",
+      "audio": "N26A-9ef8148ccd73b7249dd0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S061",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Click the app, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C021",
+      "model": "N26A-1cb127683fb093effd0e",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S062",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象核对设备清单，你说明一台平板电脑。",
+      "display": "",
+      "audio": "N26A-44659c2cfa688dfd4b5d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S063",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a tablet",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U041-L02-C022",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U041-L02-S064",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U041-L02-S065",
+      "course": "N26-U041-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U041-L02-C001",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "用户，使用系统的人",
+      "answers": [
+        "user"
+      ],
+      "hint": "user",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S004",
+      "help": "N26-U041-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C002",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "设置项",
+      "answers": [
+        "setting"
+      ],
+      "hint": "setting",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S007",
+      "help": "N26-U041-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C003",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "点击",
+      "answers": [
+        "click"
+      ],
+      "hint": "click",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S010",
+      "help": "N26-U041-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C004",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "程序",
+      "answers": [
+        "program"
+      ],
+      "hint": "program",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S013",
+      "help": "N26-U041-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C005",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "软件",
+      "answers": [
+        "software"
+      ],
+      "hint": "software",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S016",
+      "help": "N26-U041-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C006",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "硬件",
+      "answers": [
+        "hardware"
+      ],
+      "hint": "hardware",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S019",
+      "help": "N26-U041-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C007",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "设备",
+      "answers": [
+        "device"
+      ],
+      "hint": "device",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S022",
+      "help": "N26-U041-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C008",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "平板电脑",
+      "answers": [
+        "tablet"
+      ],
+      "hint": "tablet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S025",
+      "help": "N26-U041-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C009",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一名用户",
+      "answers": [
+        "a user"
+      ],
+      "hint": "a user",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S028",
+      "help": "N26-U041-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C010",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那项设置",
+      "answers": [
+        "the setting"
+      ],
+      "hint": "the setting",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S031",
+      "help": "N26-U041-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C011",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请点击那个应用程序。",
+      "answers": [
+        "Click the app, please."
+      ],
+      "hint": "Click the app, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S034",
+      "help": "N26-U041-L02-S034-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C012",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个程序",
+      "answers": [
+        "a program"
+      ],
+      "hint": "a program",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S037",
+      "help": "N26-U041-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C013",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那套软件",
+      "answers": [
+        "the software"
+      ],
+      "hint": "the software",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S040",
+      "help": "N26-U041-L02-S040-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C014",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "那些硬件",
+      "answers": [
+        "the hardware"
+      ],
+      "hint": "the hardware",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S043",
+      "help": "N26-U041-L02-S043-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C015",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一台设备",
+      "answers": [
+        "a device"
+      ],
+      "hint": "a device",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S046",
+      "help": "N26-U041-L02-S046-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C016",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一台平板电脑",
+      "answers": [
+        "a tablet"
+      ],
+      "hint": "a tablet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S049",
+      "help": "N26-U041-L02-S049-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C017",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象帮朋友熟悉操作，先听点击应用的请求，再说。",
+      "answers": [
+        "Click the app, please."
+      ],
+      "hint": "Click the app, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S052",
+      "help": "N26-U041-L02-S052-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C018",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这次需要平板电脑，听后说出设备。",
+      "answers": [
+        "a tablet"
+      ],
+      "hint": "a tablet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S055",
+      "help": "N26-U041-L02-S055-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C019",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示请朋友点击那个应用。",
+      "answers": [
+        "Click the app, please."
+      ],
+      "hint": "Click the app, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S057",
+      "help": "N26-U041-L02-S057-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C020",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一台平板电脑。",
+      "answers": [
+        "a tablet"
+      ],
+      "hint": "a tablet",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U041-L02-S059",
+      "help": "N26-U041-L02-S059-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C021",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在口述操作排练里，你礼貌请朋友点击双方说好的应用。",
+      "answers": [
+        "Click the app, please."
+      ],
+      "hint": "Click the app, please.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U041-L02-S061",
+      "help": "N26-U041-L02-S061-HELP"
+    },
+    {
+      "id": "N26-U041-L02-C022",
+      "course": "N26-U041-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象核对设备清单，你说明一台平板电脑。",
+      "answers": [
+        "a tablet"
+      ],
+      "hint": "a tablet",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U041-L02-S063",
+      "help": "N26-U041-L02-S063-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U041-L02-S004-HELP",
+      "forStep": "N26-U041-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41ccd66da53e0d1933ee",
+      "display": "user",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S007-HELP",
+      "forStep": "N26-U041-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6315b2f3682d486f4176",
+      "display": "setting",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S010-HELP",
+      "forStep": "N26-U041-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-b5d53329477120c0a5af",
+      "display": "click",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S013-HELP",
+      "forStep": "N26-U041-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-81f6fc9fc94d79da7e8c",
+      "display": "program",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S016-HELP",
+      "forStep": "N26-U041-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f813a8916b2006632ec3",
+      "display": "software",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S019-HELP",
+      "forStep": "N26-U041-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-16797125fbaf8626603c",
+      "display": "hardware",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S022-HELP",
+      "forStep": "N26-U041-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-abdc6f356d126df77932",
+      "display": "device",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S025-HELP",
+      "forStep": "N26-U041-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7a33181c28975d4551d7",
+      "display": "tablet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S028-HELP",
+      "forStep": "N26-U041-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-177900318c911c8f7805",
+      "display": "a user",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S031-HELP",
+      "forStep": "N26-U041-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e1d2a6d0897972879507",
+      "display": "the setting",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S034-HELP",
+      "forStep": "N26-U041-L02-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1cb127683fb093effd0e",
+      "display": "Click the app, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S037-HELP",
+      "forStep": "N26-U041-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-54ed3e72c18ac901f355",
+      "display": "a program",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S040-HELP",
+      "forStep": "N26-U041-L02-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-71e8dc7600dc9e60bf3d",
+      "display": "the software",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S043-HELP",
+      "forStep": "N26-U041-L02-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-dac451b0f02fe0c6f65d",
+      "display": "the hardware",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S046-HELP",
+      "forStep": "N26-U041-L02-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9937ab84c6415d202a5a",
+      "display": "a device",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S049-HELP",
+      "forStep": "N26-U041-L02-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "display": "a tablet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S052-HELP",
+      "forStep": "N26-U041-L02-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1cb127683fb093effd0e",
+      "display": "Click the app, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S055-HELP",
+      "forStep": "N26-U041-L02-S055",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "display": "a tablet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S055",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S057-HELP",
+      "forStep": "N26-U041-L02-S057",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1cb127683fb093effd0e",
+      "display": "Click the app, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S057",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S059-HELP",
+      "forStep": "N26-U041-L02-S059",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "display": "a tablet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S059",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S061-HELP",
+      "forStep": "N26-U041-L02-S061",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1cb127683fb093effd0e",
+      "display": "Click the app, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S061",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U041-L02-S063-HELP",
+      "forStep": "N26-U041-L02-S063",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-4ba675b1d21fec352f0c",
+      "display": "a tablet",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U041-L02-S063",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "user",
+      "word": "user",
+      "ipa": "/ˈjuːzər/",
+      "meaning": "用户，使用系统的人",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-41ccd66da53e0d1933ee"
+    },
+    {
+      "key": "setting",
+      "word": "setting",
+      "ipa": "/ˈsɛtɪŋ/",
+      "meaning": "设置项",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6315b2f3682d486f4176"
+    },
+    {
+      "key": "click",
+      "word": "click",
+      "ipa": "/klɪk/",
+      "meaning": "点击",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b5d53329477120c0a5af"
+    },
+    {
+      "key": "program",
+      "word": "program",
+      "ipa": "/ˈproʊɡræm/",
+      "meaning": "程序",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-81f6fc9fc94d79da7e8c"
+    },
+    {
+      "key": "software",
+      "word": "software",
+      "ipa": "/ˈsɔːftwɛr/",
+      "meaning": "软件",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f813a8916b2006632ec3"
+    },
+    {
+      "key": "hardware",
+      "word": "hardware",
+      "ipa": "/ˈhɑːrdwɛr/",
+      "meaning": "硬件",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-16797125fbaf8626603c"
+    },
+    {
+      "key": "device",
+      "word": "device",
+      "ipa": "/dɪˈvaɪs/",
+      "meaning": "设备",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-abdc6f356d126df77932"
+    },
+    {
+      "key": "tablet",
+      "word": "tablet",
+      "ipa": "/ˈtæblət/",
+      "meaning": "平板电脑",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7a33181c28975d4551d7"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "app",
+      "word": "app",
+      "ipa": "/æp/",
+      "meaning": "应用程序",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-b4f6713dad7695f92de4"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：user=用户，使用系统的人；setting=设置项；click=点击；program=程序；software=软件；hardware=硬件；device=设备；tablet=平板电脑。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R016，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 47,
+    "availableExactAssets": 47,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-a7551beb5b49a007ef2c",
+      "N26A-3e802618ea49a629b29d",
+      "N26A-41ccd66da53e0d1933ee",
+      "N26A-d19e026ada1237138316",
+      "N26A-6315b2f3682d486f4176",
+      "N26A-a4525751fc294239bab1",
+      "N26A-b5d53329477120c0a5af",
+      "N26A-66d59ab017b9f3ae2bc2",
+      "N26A-81f6fc9fc94d79da7e8c",
+      "N26A-d28b2655b231a03bfdd5",
+      "N26A-f813a8916b2006632ec3",
+      "N26A-9ba6b34b9ef96506d565",
+      "N26A-16797125fbaf8626603c",
+      "N26A-50391a21a2860727eb27",
+      "N26A-abdc6f356d126df77932",
+      "N26A-1b28cf9a657b83c35691",
+      "N26A-7a33181c28975d4551d7",
+      "N26A-31331aa9a1f63fa457ef",
+      "N26A-177900318c911c8f7805",
+      "N26A-98bf5b45d1765840c0b8",
+      "N26A-e1d2a6d0897972879507",
+      "N26A-81d6c394530911fb32c0",
+      "N26A-1cb127683fb093effd0e",
+      "N26A-477d341bc0fd07c2a190",
+      "N26A-54ed3e72c18ac901f355",
+      "N26A-924e1f3a3c041e7eb069",
+      "N26A-71e8dc7600dc9e60bf3d",
+      "N26A-c1697db1be764fdc9a7a",
+      "N26A-dac451b0f02fe0c6f65d",
+      "N26A-1719f64978394c2a62f0",
+      "N26A-9937ab84c6415d202a5a",
+      "N26A-889f8aa0724f733b617e",
+      "N26A-4ba675b1d21fec352f0c",
+      "N26A-9d3375c766f8ad6287c7",
+      "N26A-dae12457ff873e85cc54",
+      "N26A-194b1e4100e52793daf3",
+      "N26A-7b5c15c1264c2180062c",
+      "N26A-9ef8148ccd73b7249dd0",
+      "N26A-44659c2cfa688dfd4b5d",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-b4f6713dad7695f92de4",
+      "N26A-119c942deb8552028da1",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

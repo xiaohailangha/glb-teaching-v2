@@ -33,6 +33,7 @@ for(const group of plan.categories){
   for(const [i,item] of source.chunks.entries())practice('recall_chunk_'+i,item,'recall','不看英文，请表达：'+item.meaning);
   for(const [i,item] of source.sentences.entries())practice('transfer_'+i,item,'recall','情境练习：'+source.scenario+'\n这一句请表达：'+item.meaning);
   add({id:'summary',phase:'finish',display:'本节学习记录',text:'本节课我们就学到这里。',options:[]});
+  if(source.teachingStages)stages.splice(0,stages.length,...structuredClone(source.teachingStages));
   const course={id:slot.id,title,category:group.id,goal:source.goal,prerequisites:source.prerequisites,scenario:source.scenario,stages};
   fs.writeFileSync(`${root}/courses/${slot.asset}.json`,JSON.stringify(course,null,2)+'\n');
   catalog.push({id:slot.id,asset:slot.asset,title,goal:source.goal,category:group.id,coverTitle:source.coverTitle,example:source.sentences[0].text,unit:group.order,status:'published',prerequisites:source.prerequisites,version:crypto.createHash('sha256').update(JSON.stringify(course)).digest('hex').slice(0,12),stages});

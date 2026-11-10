@@ -1,0 +1,1994 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit049-v1",
+  "courseId": "N26-U049-L02",
+  "unitId": "N26-U049",
+  "category": "情绪与观点",
+  "title": "道歉与请人帮忙",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "53b4a6d8bfd165d4aec3c94b802bf2d4faab141c8b3a2cc0246fc5cb1d4f6f1c",
+  "newWords": [
+    "apology",
+    "apologize",
+    "favour",
+    "careful",
+    "careless"
+  ],
+  "prerequisites": [
+    "N26-U049-L01"
+  ],
+  "goal": "在“表达歉意 2”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "apology",
+        "surface": "apology",
+        "meaning": "道歉，歉意的表达",
+        "kind": "new_word"
+      },
+      {
+        "key": "apologize",
+        "surface": "apologize",
+        "meaning": "道歉",
+        "kind": "new_word"
+      },
+      {
+        "key": "favour",
+        "surface": "favour",
+        "meaning": "帮忙，别人做的一件好意之事",
+        "kind": "new_word"
+      },
+      {
+        "key": "careful",
+        "surface": "careful",
+        "meaning": "细心的，小心的",
+        "kind": "new_word"
+      },
+      {
+        "key": "careless",
+        "surface": "careless",
+        "meaning": "粗心的",
+        "kind": "new_word"
+      },
+      {
+        "key": "be",
+        "surface": "be",
+        "meaning": "处于某种状态，这里用于小心的提醒",
+        "kind": "explicit_form_or_sense"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U049-L02-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U049-L02-S002",
+        "N26-U049-L02-S003",
+        "N26-U049-L02-S004",
+        "N26-U049-L02-S005",
+        "N26-U049-L02-S006",
+        "N26-U049-L02-S007",
+        "N26-U049-L02-S008",
+        "N26-U049-L02-S009",
+        "N26-U049-L02-S010",
+        "N26-U049-L02-S011",
+        "N26-U049-L02-S012",
+        "N26-U049-L02-S013",
+        "N26-U049-L02-S014",
+        "N26-U049-L02-S015",
+        "N26-U049-L02-S016",
+        "N26-U049-L02-S017",
+        "N26-U049-L02-S018",
+        "N26-U049-L02-S019"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U049-L02-S020",
+        "N26-U049-L02-S021",
+        "N26-U049-L02-S022",
+        "N26-U049-L02-S023",
+        "N26-U049-L02-S024",
+        "N26-U049-L02-S025",
+        "N26-U049-L02-S026",
+        "N26-U049-L02-S027",
+        "N26-U049-L02-S028",
+        "N26-U049-L02-S029",
+        "N26-U049-L02-S030",
+        "N26-U049-L02-S031",
+        "N26-U049-L02-S032",
+        "N26-U049-L02-S033",
+        "N26-U049-L02-S034"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U049-L02-S035",
+        "N26-U049-L02-S036",
+        "N26-U049-L02-S037",
+        "N26-U049-L02-S038",
+        "N26-U049-L02-S039",
+        "N26-U049-L02-S040"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U049-L02-S041",
+        "N26-U049-L02-S042",
+        "N26-U049-L02-S043",
+        "N26-U049-L02-S044"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U049-L02-S045",
+        "N26-U049-L02-S046",
+        "N26-U049-L02-S047",
+        "N26-U049-L02-S048",
+        "N26-U049-L02-S049",
+        "N26-U049-L02-S050"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U049-L02-S001",
+      "course": "N26-U049-L02",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象表达歉意或请人帮忙。今天分清道歉的名词与动作，也认识小忙、细心和粗心。",
+      "display": "",
+      "audio": "N26A-050d87624a5b0d7c6920",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S002",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "道歉，歉意的表达。这里说道歉，歉意的表达，先听完整的声音。",
+      "display": "apology",
+      "audio": "N26A-6444593b90bfb15dcede",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S003",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "道歉，歉意的表达",
+      "display": "apology",
+      "audio": "N26A-ac08a6523a24ec4f5b59",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "道歉，歉意的表达",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S004",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "apology",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C001",
+      "model": "N26A-ac08a6523a24ec4f5b59",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S005",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "道歉。这里说道歉，先听完整的声音。",
+      "display": "apologize",
+      "audio": "N26A-8a8aab906e0c20373167",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S006",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "道歉",
+      "display": "apologize",
+      "audio": "N26A-e7379ceeac80e7889aa0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "道歉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S007",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "apologize",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C002",
+      "model": "N26A-e7379ceeac80e7889aa0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S008",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "帮忙，别人做的一件好意之事。这里说别人出于好意帮你做的一件事，先听完整声音。",
+      "display": "favour",
+      "audio": "N26A-6508881982f815b3df3b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S009",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "帮忙，别人做的一件好意之事",
+      "display": "favour",
+      "audio": "N26A-50354c2edad257d11f35",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "帮忙，别人做的一件好意之事",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S010",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "favour",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C003",
+      "model": "N26A-50354c2edad257d11f35",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S011",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "细心的，小心的。这里说细心的，小心的，先听完整的声音。",
+      "display": "careful",
+      "audio": "N26A-02aaf78a417f926628ba",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S012",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "细心的，小心的",
+      "display": "careful",
+      "audio": "N26A-fa0fd87835aec2fd4dfb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "细心的，小心的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S013",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "careful",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C004",
+      "model": "N26A-fa0fd87835aec2fd4dfb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S014",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "粗心的。这里说粗心的，先听完整的声音。",
+      "display": "careless",
+      "audio": "N26A-0bb14d88ffc414e4d594",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S015",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "粗心的",
+      "display": "careless",
+      "audio": "N26A-98a8b75a4850ecb065c6",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "粗心的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S016",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "careless",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C005",
+      "model": "N26A-98a8b75a4850ecb065c6",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S017",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "处于某种状态，这里用于小心的提醒。先听这个声音，再听请小心的整句。",
+      "display": "be",
+      "audio": "N26A-b69c120dae98dc452ca8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S018",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "处于某种状态，这里用于小心的提醒",
+      "display": "be",
+      "audio": "N26A-cea0b05a69827ac4420b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "处于某种状态，这里用于小心的提醒",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S019",
+      "course": "N26-U049-L02",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "be",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C006",
+      "model": "N26A-cea0b05a69827ac4420b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L02-S020",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个道歉。先听这一组，再连起来说。",
+      "display": "an apology",
+      "audio": "N26A-f96a6f2e93d1fece6632",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S021",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个道歉",
+      "display": "an apology",
+      "audio": "N26A-8ea531918349a5ad3eb8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个道歉",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S022",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "an apology",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C007",
+      "model": "N26A-8ea531918349a5ad3eb8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S023",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我道歉。先听这一组，再连起来说。",
+      "display": "I apologize",
+      "audio": "N26A-1982b5e5164b36a54547",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S024",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我道歉。",
+      "display": "I apologize.",
+      "audio": "N26A-380c76b8ef111b823664",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我道歉。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S025",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I apologize.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C008",
+      "model": "N26A-380c76b8ef111b823664",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S026",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一个忙。这里说别人出于好意帮你做的一件事，先听完整声音。",
+      "display": "a favour",
+      "audio": "N26A-90dbf8371c34dcec45ec",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S027",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一个忙",
+      "display": "a favour",
+      "audio": "N26A-99f9eb6506599275cc7c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一个忙",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S028",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a favour",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C009",
+      "model": "N26A-99f9eb6506599275cc7c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S029",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请小心。先听这一组，再连起来说。",
+      "display": "Be careful, please",
+      "audio": "N26A-de7e916c1b4f7d62cb1b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S030",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请小心。",
+      "display": "Be careful, please.",
+      "audio": "N26A-5b3a05fbc048589c98ab",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请小心。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S031",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Be careful, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C010",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S032",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一名粗心的工作人员。先听这一组，再连起来说。",
+      "display": "a careless worker",
+      "audio": "N26A-426ac548e18ad79eaf9d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S033",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一名粗心的工作人员",
+      "display": "a careless worker",
+      "audio": "N26A-a378e92f08706387fe15",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一名粗心的工作人员",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S034",
+      "course": "N26-U049-L02",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a careless worker",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L02-C011",
+      "model": "N26A-a378e92f08706387fe15",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L02-S035",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我道歉。",
+      "display": "I apologize.",
+      "audio": "N26A-380c76b8ef111b823664",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我道歉。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U049-L02-S036",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "角色需要表达道歉，先听整句。",
+      "display": "",
+      "audio": "N26A-2c1b31b4533c2c41bffd",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S037",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I apologize.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C012",
+      "model": "N26A-380c76b8ef111b823664",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S038",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "请小心。",
+      "display": "Be careful, please.",
+      "audio": "N26A-5b3a05fbc048589c98ab",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请小心。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U049-L02-S039",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "要温和提醒伙伴小心，先听请求。",
+      "display": "",
+      "audio": "N26A-7f7750b705a3667ad478",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S040",
+      "course": "N26-U049-L02",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Be careful, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C013",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S041",
+      "course": "N26-U049-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示表达我道歉。",
+      "display": "",
+      "audio": "N26A-638760197a9ae77a191c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S042",
+      "course": "N26-U049-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I apologize.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C014",
+      "model": "N26A-380c76b8ef111b823664",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S043",
+      "course": "N26-U049-L02",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示请伙伴小心。",
+      "display": "",
+      "audio": "N26A-e204d9a9bad7f2bfd94e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S044",
+      "course": "N26-U049-L02",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Be careful, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C015",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S045",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象自己打扰了对方，你用简短整句表达歉意。",
+      "display": "",
+      "audio": "N26A-9383ab019ac28f2a9a71",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S046",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I apologize.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C016",
+      "model": "N26A-380c76b8ef111b823664",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S047",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象协作中，你温和说请小心。",
+      "display": "",
+      "audio": "N26A-5f8ade29e906930d06b2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S048",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Be careful, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L02-C017",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U049-L02-S049",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L02-S050",
+      "course": "N26-U049-L02",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U049-L02-C001",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "道歉，歉意的表达",
+      "answers": [
+        "apology"
+      ],
+      "hint": "apology",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S004",
+      "help": "N26-U049-L02-S004-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C002",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "道歉",
+      "answers": [
+        "apologize"
+      ],
+      "hint": "apologize",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S007",
+      "help": "N26-U049-L02-S007-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C003",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "帮忙，别人做的一件好意之事",
+      "answers": [
+        "favour"
+      ],
+      "hint": "favour",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S010",
+      "help": "N26-U049-L02-S010-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C004",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "细心的，小心的",
+      "answers": [
+        "careful"
+      ],
+      "hint": "careful",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S013",
+      "help": "N26-U049-L02-S013-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C005",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "粗心的",
+      "answers": [
+        "careless"
+      ],
+      "hint": "careless",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S016",
+      "help": "N26-U049-L02-S016-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C006",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "处于某种状态，这里用于小心的提醒",
+      "answers": [
+        "be"
+      ],
+      "hint": "be",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S019",
+      "help": "N26-U049-L02-S019-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C007",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个道歉",
+      "answers": [
+        "an apology"
+      ],
+      "hint": "an apology",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S022",
+      "help": "N26-U049-L02-S022-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C008",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我道歉。",
+      "answers": [
+        "I apologize."
+      ],
+      "hint": "I apologize.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S025",
+      "help": "N26-U049-L02-S025-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C009",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一个忙",
+      "answers": [
+        "a favour"
+      ],
+      "hint": "a favour",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S028",
+      "help": "N26-U049-L02-S028-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C010",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请小心。",
+      "answers": [
+        "Be careful, please."
+      ],
+      "hint": "Be careful, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S031",
+      "help": "N26-U049-L02-S031-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C011",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一名粗心的工作人员",
+      "answers": [
+        "a careless worker"
+      ],
+      "hint": "a careless worker",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S034",
+      "help": "N26-U049-L02-S034-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C012",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "角色需要表达道歉，先听整句。",
+      "answers": [
+        "I apologize."
+      ],
+      "hint": "I apologize.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S037",
+      "help": "N26-U049-L02-S037-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C013",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "要温和提醒伙伴小心，先听请求。",
+      "answers": [
+        "Be careful, please."
+      ],
+      "hint": "Be careful, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S040",
+      "help": "N26-U049-L02-S040-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C014",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示表达我道歉。",
+      "answers": [
+        "I apologize."
+      ],
+      "hint": "I apologize.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S042",
+      "help": "N26-U049-L02-S042-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C015",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示请伙伴小心。",
+      "answers": [
+        "Be careful, please."
+      ],
+      "hint": "Be careful, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L02-S044",
+      "help": "N26-U049-L02-S044-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C016",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象自己打扰了对方，你用简短整句表达歉意。",
+      "answers": [
+        "I apologize."
+      ],
+      "hint": "I apologize.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U049-L02-S046",
+      "help": "N26-U049-L02-S046-HELP"
+    },
+    {
+      "id": "N26-U049-L02-C017",
+      "course": "N26-U049-L02",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象协作中，你温和说请小心。",
+      "answers": [
+        "Be careful, please."
+      ],
+      "hint": "Be careful, please.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U049-L02-S048",
+      "help": "N26-U049-L02-S048-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U049-L02-S004-HELP",
+      "forStep": "N26-U049-L02-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ac08a6523a24ec4f5b59",
+      "display": "apology",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S007-HELP",
+      "forStep": "N26-U049-L02-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e7379ceeac80e7889aa0",
+      "display": "apologize",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S010-HELP",
+      "forStep": "N26-U049-L02-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-50354c2edad257d11f35",
+      "display": "favour",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S013-HELP",
+      "forStep": "N26-U049-L02-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fa0fd87835aec2fd4dfb",
+      "display": "careful",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S016-HELP",
+      "forStep": "N26-U049-L02-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-98a8b75a4850ecb065c6",
+      "display": "careless",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S019-HELP",
+      "forStep": "N26-U049-L02-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-cea0b05a69827ac4420b",
+      "display": "be",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S022-HELP",
+      "forStep": "N26-U049-L02-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8ea531918349a5ad3eb8",
+      "display": "an apology",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S025-HELP",
+      "forStep": "N26-U049-L02-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-380c76b8ef111b823664",
+      "display": "I apologize.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S028-HELP",
+      "forStep": "N26-U049-L02-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-99f9eb6506599275cc7c",
+      "display": "a favour",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S031-HELP",
+      "forStep": "N26-U049-L02-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "display": "Be careful, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S034-HELP",
+      "forStep": "N26-U049-L02-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a378e92f08706387fe15",
+      "display": "a careless worker",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S037-HELP",
+      "forStep": "N26-U049-L02-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-380c76b8ef111b823664",
+      "display": "I apologize.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S040-HELP",
+      "forStep": "N26-U049-L02-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "display": "Be careful, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S042-HELP",
+      "forStep": "N26-U049-L02-S042",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-380c76b8ef111b823664",
+      "display": "I apologize.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S042",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S044-HELP",
+      "forStep": "N26-U049-L02-S044",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "display": "Be careful, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S044",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S046-HELP",
+      "forStep": "N26-U049-L02-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-380c76b8ef111b823664",
+      "display": "I apologize.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L02-S048-HELP",
+      "forStep": "N26-U049-L02-S048",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5b3a05fbc048589c98ab",
+      "display": "Be careful, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L02-S048",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "apology",
+      "word": "apology",
+      "ipa": "/əˈpɑːlədʒi/",
+      "meaning": "道歉，歉意的表达",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac08a6523a24ec4f5b59"
+    },
+    {
+      "key": "apologize",
+      "word": "apologize",
+      "ipa": "/əˈpɑːlədʒaɪz/",
+      "meaning": "道歉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e7379ceeac80e7889aa0"
+    },
+    {
+      "key": "favour",
+      "word": "favour",
+      "ipa": "/ˈfeɪvər/",
+      "meaning": "帮忙，别人做的一件好意之事",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-50354c2edad257d11f35"
+    },
+    {
+      "key": "careful",
+      "word": "careful",
+      "ipa": "/ˈkɛrfəl/",
+      "meaning": "细心的，小心的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-fa0fd87835aec2fd4dfb"
+    },
+    {
+      "key": "careless",
+      "word": "careless",
+      "ipa": "/ˈkɛrləs/",
+      "meaning": "粗心的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-98a8b75a4850ecb065c6"
+    },
+    {
+      "key": "be",
+      "word": "be",
+      "ipa": "/biː/",
+      "meaning": "处于某种状态，这里用于小心的提醒",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-cea0b05a69827ac4420b"
+    },
+    {
+      "key": "a",
+      "word": "an",
+      "ipa": "/ən/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0fb02158f7daf9b06979"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    },
+    {
+      "key": "worker",
+      "word": "worker",
+      "ipa": "/ˈwɜːrkər/",
+      "meaning": "工作人员，劳动者",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-405e434fffe54f4d7987"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：apology=道歉，歉意的表达；apologize=道歉；favour=帮忙，别人做的一件好意之事；careful=细心的，小心的；careless=粗心的。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 本课显式示范be原形后才练Be careful，避免把早课is/am接触当作已经学过原形。 r4语义整改：U040063-R020，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "please",
+      "sourceCourse": "N26-U004-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "worker",
+      "sourceCourse": "N26-U043-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 38,
+    "availableExactAssets": 38,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-050d87624a5b0d7c6920",
+      "N26A-6444593b90bfb15dcede",
+      "N26A-ac08a6523a24ec4f5b59",
+      "N26A-8a8aab906e0c20373167",
+      "N26A-e7379ceeac80e7889aa0",
+      "N26A-6508881982f815b3df3b",
+      "N26A-50354c2edad257d11f35",
+      "N26A-02aaf78a417f926628ba",
+      "N26A-fa0fd87835aec2fd4dfb",
+      "N26A-0bb14d88ffc414e4d594",
+      "N26A-98a8b75a4850ecb065c6",
+      "N26A-b69c120dae98dc452ca8",
+      "N26A-cea0b05a69827ac4420b",
+      "N26A-f96a6f2e93d1fece6632",
+      "N26A-8ea531918349a5ad3eb8",
+      "N26A-1982b5e5164b36a54547",
+      "N26A-380c76b8ef111b823664",
+      "N26A-90dbf8371c34dcec45ec",
+      "N26A-99f9eb6506599275cc7c",
+      "N26A-de7e916c1b4f7d62cb1b",
+      "N26A-5b3a05fbc048589c98ab",
+      "N26A-426ac548e18ad79eaf9d",
+      "N26A-a378e92f08706387fe15",
+      "N26A-2c1b31b4533c2c41bffd",
+      "N26A-7f7750b705a3667ad478",
+      "N26A-638760197a9ae77a191c",
+      "N26A-e204d9a9bad7f2bfd94e",
+      "N26A-9383ab019ac28f2a9a71",
+      "N26A-5f8ade29e906930d06b2",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-0fb02158f7daf9b06979",
+      "N26A-f353b20c6f3418376965",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-119c942deb8552028da1",
+      "N26A-405e434fffe54f4d7987",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

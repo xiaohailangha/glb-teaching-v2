@@ -44,12 +44,13 @@ export class LearningStore{
  if(!groups.has(key))groups.set(key,{userId:r.user_id,date:day,all:[],allSessions:new Map(),active:[],activeSessions:new Map(),sessions:new Set(),courses:new Set(),first:a,last:b});const g=groups.get(key);g.all.push([a,b]);if(!g.allSessions.has(r.session_id))g.allSessions.set(r.session_id,[]);g.allSessions.get(r.session_id).push([a,b]);if(r.active){g.active.push([a,b]);if(!g.activeSessions.has(r.session_id))g.activeSessions.set(r.session_id,[]);g.activeSessions.get(r.session_id).push([a,b]);}g.sessions.add(r.session_id);if(r.course)g.courses.add(r.course);g.first=Math.min(g.first,a);g.last=Math.max(g.last,b);a=b;}}
  return [...groups.values()].map(g=>({userId:g.userId,date:g.date,foregroundMs:[...g.allSessions.values()].reduce((total,rows)=>total+unionMs(rows),0),learningMs:[...g.activeSessions.values()].reduce((total,rows)=>total+unionMs(rows),0),sessions:g.sessions.size,courses:g.courses.size,first:g.first,last:g.last}));
  }
- summary(user,catalog){
+ summary(user,catalog,{explored=[],completed=[],excludeCourses=new Set()}={}){
  const events=this.db.prepare('SELECT course,stage,type,detail FROM events WHERE user_id=?').all(user);
  const courses=new Set(),finished=new Set(),chapters=new Set(),words=new Set();
  const addWords=list=>{for(const word of list||[]){if(typeof word==='string'&&/^[a-z]+(?:'[a-z]+)?$/i.test(word)){const w=word.toLowerCase();words.add(({apples:'apple',bananas:'banana',eggs:'egg',cups:'cup',bags:'bag',dollars:'dollar',tickets:'ticket',sports:'sport',parents:'parent',dishes:'dish',teeth:'tooth',noodles:'noodle',learning:'learn',reading:'read',going:'go',visited:'visit',watched:'watch',sounds:'sound',fits:'fit',does:'do',am:'be',are:'be',is:'be',was:'be'})[w]||w);}}};
  const lookup=new Map(catalog.courses.map(c=>[c.id,c]));
  for(const event of events){
+  if(excludeCourses.has(event.course))continue;
   if(['start','stage','finish'].includes(event.type))courses.add(event.course);
   if(event.type==='finish')finished.add(event.course);
   if(event.type==='stage'){
@@ -58,7 +59,10 @@ export class LearningStore{
   }
   if(event.type==='expose'){try{addWords(JSON.parse(event.detail).words);}catch{}}
  }
- for(const row of this.db.prepare('SELECT payload FROM checkpoints WHERE user_id=?').all(user)){
+ for(const course of explored){if(excludeCourses.has(course.id))continue;courses.add(course.id);if(course.category)chapters.add(course.category);}
+ for(const id of completed)if(!excludeCourses.has(id))finished.add(id);
+ for(const row of this.db.prepare('SELECT course,payload FROM checkpoints WHERE user_id=?').all(user)){
+  if(excludeCourses.has(row.course))continue;
   try{addWords(JSON.parse(row.payload).vocabulary?.seen);}catch{}
  }
  const first=this.db.prepare('SELECT min(start) AS at FROM activity WHERE user_id=?').get(user).at;

@@ -6,6 +6,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/scheduler.dart' show SchedulerBinding, SchedulerPhase;
 import 'package:flutter/services.dart' show AssetBundle;
+import 'render/frame_image_releaser.dart';
 import 'package:flutter_scene/src/hot_reload/hot_reload_coordinator.dart';
 import 'package:flutter_scene/src/coplanar_overlaps.dart'
     as coplanar
@@ -789,6 +790,7 @@ base class Scene implements SceneGraph {
       return;
     }
     _disposed = true;
+    _webFrameImages.dispose();
     surface.dispose();
     _taaState?.dispose();
     _taaState = null;
@@ -2825,8 +2827,9 @@ base class Scene implements SceneGraph {
       final previous = surface.lastSwapchainColorTexture(i);
       final viewArea = _viewDrawArea(drawArea, view.viewport);
       if (previous == null || viewArea.isEmpty) continue;
+      final image = previous.asImage();
       canvas.drawImageRect(
-        previous.asImage(),
+        image,
         ui.Rect.fromLTWH(
           0,
           0,
@@ -2836,6 +2839,7 @@ base class Scene implements SceneGraph {
         viewArea,
         ui.Paint()..filterQuality = view.filterQuality ?? filterQuality,
       );
+      _releaseWebFrameImage(image);
     }
   }
 
@@ -2895,12 +2899,9 @@ base class Scene implements SceneGraph {
       final srcRect = ui.Rect.fromLTWH(0, 0, pixelSize.width, pixelSize.height);
       final paint = ui.Paint()
         ..filterQuality = view.filterQuality ?? filterQuality;
-      canvas.drawImageRect(
-        gpu.gpuHost.textureToImage(previous),
-        srcRect,
-        drawArea,
-        paint,
-      );
+      final image = gpu.gpuHost.textureToImage(previous);
+      canvas.drawImageRect(image, srcRect, drawArea, paint);
+      _releaseWebFrameImage(image);
       return;
     }
 
@@ -2944,6 +2945,18 @@ base class Scene implements SceneGraph {
     final paint = ui.Paint()
       ..filterQuality = view.filterQuality ?? filterQuality;
     canvas.drawImageRect(image, srcRect, drawArea, paint);
+    _releaseWebFrameImage(image);
+  }
+
+  // CanvasKit wraps each submitted WebGL snapshot in a fresh ui.Image and
+  // ImageBitmap. Dropping the Dart reference alone does not close that bitmap.
+  // Keep it through the next paint (lazy texture upload), then release it.
+  final _webFrameImages = FrameImageReleaser();
+  int get heldFrameImages => _webFrameImages.heldImages;
+
+  void _releaseWebFrameImage(ui.Image image) {
+    if (!kIsWeb) return;
+    _webFrameImages.defer(image);
   }
 
   // How [view]'s passes rasterize depth for a view of [viewportSize] logical

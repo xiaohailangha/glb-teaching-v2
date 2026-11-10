@@ -66,6 +66,7 @@ class AutomaticReader {
     this.onSignal,
     this.onTranscript,
     this.onRecognized,
+    this.onUtterance,
   }) : _recorder = audioRecorder,
        client = httpClient ?? http.Client();
   final Uri Function(String) endpoint;
@@ -74,6 +75,9 @@ class AutomaticReader {
   final void Function(double)? onSignal;
   final void Function(String)? onTranscript;
   final void Function(String)? onRecognized;
+  /// Account-backed courses may evaluate the same completed utterance on their
+  /// evidence endpoint; microphone gating and live transcription stay shared.
+  final Future<void> Function(Uint8List)? onUtterance;
   LiveTranscript? live, finalizingLive;
   bool recognitionOnly = false;
   AudioRecorder? _recorder;
@@ -186,6 +190,12 @@ class AutomaticReader {
       if (recognitionOnly) {
         final heard = await recognition ?? '';
         if (enabled && token == generation) onRecognized?.call(heard);
+        return;
+      }
+      if (onUtterance != null) {
+        if (recognition != null) await recognition;
+        if (!enabled || token != generation || expectedKey != key) return;
+        await onUtterance!(pcmToWav(pcm));
         return;
       }
       final response = await client

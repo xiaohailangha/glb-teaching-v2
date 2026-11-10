@@ -19,7 +19,15 @@ for(const course of catalog.courses){
  const source=read(root+'/courses/'+course.asset+'.json');
  assert.equal(source.id,course.id);
  assert.equal(new Set(source.stages.map(s=>s.id)).size,source.stages.length);
- assert.ok(source.stages.some(s=>s.phase==='recall'));
+ if(course.id==='food-01-v1'){
+  assert.ok(!JSON.stringify(source.stages).includes('orange'));
+  assert.ok(!source.stages.some(s=>s.phase==='choice'||s.answer));
+  const modelled=new Set();
+  for(const stage of source.stages){
+   if(stage.phase==='demonstrate')modelled.add(stage.speechText);
+   if(stage.phase==='listen')assert.ok(modelled.has(stage.speechText),'Unmodelled fruit practice: '+stage.id);
+  }
+ }else assert.ok(source.stages.some(s=>s.phase==='recall'));
  assert.equal(source.stages.at(-1).id,'summary');
  for(const stage of source.stages){
   stages++;

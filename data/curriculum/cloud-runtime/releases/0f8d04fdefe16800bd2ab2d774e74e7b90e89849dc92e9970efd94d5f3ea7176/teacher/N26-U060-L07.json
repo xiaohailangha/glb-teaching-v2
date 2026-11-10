@@ -1,0 +1,1907 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit060-v1",
+  "courseId": "N26-U060-L07",
+  "unitId": "N26-U060",
+  "category": "城市与交通",
+  "title": "车流与车辆信息",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "ee83933d7a84628b04e8c199553cec7af59046ded773de888e2ead7478a324c5",
+  "newWords": [
+    "plate",
+    "control",
+    "motorcycle",
+    "jam",
+    "pull"
+  ],
+  "prerequisites": [
+    "N26-U060-L06"
+  ],
+  "goal": "在“上车与目的地／行车路线 7”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "plate",
+        "surface": "plate",
+        "meaning": "车牌牌照",
+        "kind": "new_word"
+      },
+      {
+        "key": "control",
+        "surface": "control",
+        "meaning": "控制，操控",
+        "kind": "new_word"
+      },
+      {
+        "key": "motorcycle",
+        "surface": "motorcycle",
+        "meaning": "摩托车",
+        "kind": "new_word"
+      },
+      {
+        "key": "jam",
+        "surface": "jam",
+        "meaning": "拥堵，堵住的车流",
+        "kind": "new_word"
+      },
+      {
+        "key": "pull",
+        "surface": "pull",
+        "meaning": "拉",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U060-L07-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U060-L07-S002",
+        "N26-U060-L07-S003",
+        "N26-U060-L07-S004",
+        "N26-U060-L07-S005",
+        "N26-U060-L07-S006",
+        "N26-U060-L07-S007",
+        "N26-U060-L07-S008",
+        "N26-U060-L07-S009",
+        "N26-U060-L07-S010",
+        "N26-U060-L07-S011",
+        "N26-U060-L07-S012",
+        "N26-U060-L07-S013",
+        "N26-U060-L07-S014",
+        "N26-U060-L07-S015",
+        "N26-U060-L07-S016"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U060-L07-S017",
+        "N26-U060-L07-S018",
+        "N26-U060-L07-S019",
+        "N26-U060-L07-S020",
+        "N26-U060-L07-S021",
+        "N26-U060-L07-S022",
+        "N26-U060-L07-S023",
+        "N26-U060-L07-S024",
+        "N26-U060-L07-S025",
+        "N26-U060-L07-S026",
+        "N26-U060-L07-S027",
+        "N26-U060-L07-S028",
+        "N26-U060-L07-S029",
+        "N26-U060-L07-S030",
+        "N26-U060-L07-S031"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U060-L07-S032",
+        "N26-U060-L07-S033",
+        "N26-U060-L07-S034",
+        "N26-U060-L07-S035",
+        "N26-U060-L07-S036",
+        "N26-U060-L07-S037"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U060-L07-S038",
+        "N26-U060-L07-S039",
+        "N26-U060-L07-S040",
+        "N26-U060-L07-S041"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U060-L07-S042",
+        "N26-U060-L07-S043",
+        "N26-U060-L07-S044",
+        "N26-U060-L07-S045",
+        "N26-U060-L07-S046",
+        "N26-U060-L07-S047"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U060-L07-S001",
+      "course": "N26-U060-L07",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象核对车辆信息。今天认识车牌、控制、摩托车、堵车和拉的动作，先听每一项的用法。",
+      "display": "",
+      "audio": "N26A-3511710be0e4bad57f7a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S002",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "车牌牌照。在车辆语境中用完整搭配",
+      "display": "plate",
+      "audio": "N26A-dee60acbf6c8aa9055e6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S003",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "车牌牌照",
+      "display": "plate",
+      "audio": "N26A-818af5d7fda9dbaa5fb0",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "车牌牌照",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S004",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "plate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C001",
+      "model": "N26A-818af5d7fda9dbaa5fb0",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S005",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "控制，操控。这里说控制，操控，先听完整的声音。",
+      "display": "control",
+      "audio": "N26A-db4f82fd84d63d5c4b2e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S006",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "控制，操控",
+      "display": "control",
+      "audio": "N26A-7c88d881575482a82ecb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "控制，操控",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S007",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "control",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C002",
+      "model": "N26A-7c88d881575482a82ecb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S008",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "摩托车。这里说摩托车，先听完整的声音。",
+      "display": "motorcycle",
+      "audio": "N26A-de0ede58e378134570da",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S009",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "摩托车",
+      "display": "motorcycle",
+      "audio": "N26A-86dcc9b49eb2ddf62425",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "摩托车",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S010",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "motorcycle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C003",
+      "model": "N26A-86dcc9b49eb2ddf62425",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S011",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "拥堵，堵住的车流。本课是交通拥堵名词，不说果酱。",
+      "display": "jam",
+      "audio": "N26A-fd4ff3187ade6294b84d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S012",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "拥堵，堵住的车流",
+      "display": "jam",
+      "audio": "N26A-3e958952d2eaddbf4423",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拥堵，堵住的车流",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S013",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "jam",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C004",
+      "model": "N26A-3e958952d2eaddbf4423",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S014",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "拉。只是想象门的操作排练，不要求操作车辆部件。",
+      "display": "pull",
+      "audio": "N26A-fae616dcbecc6e44f103",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S015",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "拉",
+      "display": "pull",
+      "audio": "N26A-56008de8bd9448dd11d8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "拉",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S016",
+      "course": "N26-U060-L07",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pull",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C005",
+      "model": "N26A-56008de8bd9448dd11d8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U060-L07-S017",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这块车牌。在车辆语境中用完整搭配",
+      "display": "the number plate",
+      "audio": "N26A-b77ef61b73970cd41c06",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S018",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这块车牌",
+      "display": "the number plate",
+      "audio": "N26A-d42609b3af463151c9f4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这块车牌",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S019",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "the number plate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C006",
+      "model": "N26A-d42609b3af463151c9f4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S020",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "操控这辆车。先听这一组，再连起来说。",
+      "display": "control the vehicle",
+      "audio": "N26A-684ef74c66c89eb74df7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S021",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "操控这辆车",
+      "display": "control the vehicle",
+      "audio": "N26A-d43abe785ea170c61958",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "操控这辆车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S022",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "control the vehicle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C007",
+      "model": "N26A-d43abe785ea170c61958",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S023",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一辆摩托车。先听这一组，再连起来说。",
+      "display": "a motorcycle",
+      "audio": "N26A-f594fac4797a8bcad569",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S024",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一辆摩托车",
+      "display": "a motorcycle",
+      "audio": "N26A-018048a290ed681fdd88",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一辆摩托车",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S025",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a motorcycle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C008",
+      "model": "N26A-018048a290ed681fdd88",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S026",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一次交通拥堵。本课是交通拥堵名词，不说果酱。",
+      "display": "a traffic jam",
+      "audio": "N26A-310f232aa9234f4178ef",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S027",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一次交通拥堵",
+      "display": "a traffic jam",
+      "audio": "N26A-07afad649b852f48b446",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一次交通拥堵",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S028",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a traffic jam",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C009",
+      "model": "N26A-07afad649b852f48b446",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S029",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "请拉门。只是想象门的操作排练，不要求操作车辆部件。",
+      "display": "Pull the door, please",
+      "audio": "N26A-3f171e3add574fc3015d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S030",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "请拉门。",
+      "display": "Pull the door, please.",
+      "audio": "N26A-c93a174ff2502fc892bf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "请拉门。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S031",
+      "course": "N26-U060-L07",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Pull the door, please.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U060-L07-C010",
+      "model": "N26A-c93a174ff2502fc892bf",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U060-L07-S032",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "这块车牌",
+      "display": "the number plate",
+      "audio": "N26A-d42609b3af463151c9f4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这块车牌",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U060-L07-S033",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "核对的是车牌，先听完整搭配。",
+      "display": "",
+      "audio": "N26A-ea13d9a7c18dc3d3da38",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S034",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the number plate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C011",
+      "model": "N26A-d42609b3af463151c9f4",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S035",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一次交通拥堵",
+      "display": "a traffic jam",
+      "audio": "N26A-07afad649b852f48b446",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一次交通拥堵",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U060-L07-S036",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口头描述交通情况为拥堵，先听短语。",
+      "display": "",
+      "audio": "N26A-017f4b131164b5f4c595",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S037",
+      "course": "N26-U060-L07",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a traffic jam",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C012",
+      "model": "N26A-07afad649b852f48b446",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S038",
+      "course": "N26-U060-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说这块车牌。",
+      "display": "",
+      "audio": "N26A-1876c792a4d2fe177f2e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S039",
+      "course": "N26-U060-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "the number plate",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C013",
+      "model": "N26A-d42609b3af463151c9f4",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S040",
+      "course": "N26-U060-L07",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一次交通拥堵。",
+      "display": "",
+      "audio": "N26A-d703dd7b1d7afdf2b9e1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S041",
+      "course": "N26-U060-L07",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a traffic jam",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C014",
+      "model": "N26A-07afad649b852f48b446",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S042",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象核对车辆资料，你指出这块车牌。",
+      "display": "",
+      "audio": "N26A-04c5fb94ecb610401625",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S043",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "the number plate",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C015",
+      "model": "N26A-d42609b3af463151c9f4",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S044",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对出行情况，你说明一次交通拥堵。",
+      "display": "",
+      "audio": "N26A-e358402581ba97d937ff",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S045",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a traffic jam",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U060-L07-C016",
+      "model": "N26A-07afad649b852f48b446",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U060-L07-S046",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U060-L07-S047",
+      "course": "N26-U060-L07",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U060-L07-C001",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "车牌牌照",
+      "answers": [
+        "plate"
+      ],
+      "hint": "plate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S004",
+      "help": "N26-U060-L07-S004-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C002",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "控制，操控",
+      "answers": [
+        "control"
+      ],
+      "hint": "control",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S007",
+      "help": "N26-U060-L07-S007-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C003",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "摩托车",
+      "answers": [
+        "motorcycle"
+      ],
+      "hint": "motorcycle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S010",
+      "help": "N26-U060-L07-S010-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C004",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拥堵，堵住的车流",
+      "answers": [
+        "jam"
+      ],
+      "hint": "jam",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S013",
+      "help": "N26-U060-L07-S013-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C005",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "拉",
+      "answers": [
+        "pull"
+      ],
+      "hint": "pull",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S016",
+      "help": "N26-U060-L07-S016-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C006",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这块车牌",
+      "answers": [
+        "the number plate"
+      ],
+      "hint": "the number plate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S019",
+      "help": "N26-U060-L07-S019-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C007",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "操控这辆车",
+      "answers": [
+        "control the vehicle"
+      ],
+      "hint": "control the vehicle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S022",
+      "help": "N26-U060-L07-S022-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C008",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一辆摩托车",
+      "answers": [
+        "a motorcycle"
+      ],
+      "hint": "a motorcycle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S025",
+      "help": "N26-U060-L07-S025-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C009",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一次交通拥堵",
+      "answers": [
+        "a traffic jam"
+      ],
+      "hint": "a traffic jam",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S028",
+      "help": "N26-U060-L07-S028-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C010",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "请拉门。",
+      "answers": [
+        "Pull the door, please."
+      ],
+      "hint": "Pull the door, please.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S031",
+      "help": "N26-U060-L07-S031-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C011",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "核对的是车牌，先听完整搭配。",
+      "answers": [
+        "the number plate"
+      ],
+      "hint": "the number plate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S034",
+      "help": "N26-U060-L07-S034-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C012",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口头描述交通情况为拥堵，先听短语。",
+      "answers": [
+        "a traffic jam"
+      ],
+      "hint": "a traffic jam",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S037",
+      "help": "N26-U060-L07-S037-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C013",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说这块车牌。",
+      "answers": [
+        "the number plate"
+      ],
+      "hint": "the number plate",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S039",
+      "help": "N26-U060-L07-S039-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C014",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一次交通拥堵。",
+      "answers": [
+        "a traffic jam"
+      ],
+      "hint": "a traffic jam",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U060-L07-S041",
+      "help": "N26-U060-L07-S041-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C015",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象核对车辆资料，你指出这块车牌。",
+      "answers": [
+        "the number plate"
+      ],
+      "hint": "the number plate",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U060-L07-S043",
+      "help": "N26-U060-L07-S043-HELP"
+    },
+    {
+      "id": "N26-U060-L07-C016",
+      "course": "N26-U060-L07",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对出行情况，你说明一次交通拥堵。",
+      "answers": [
+        "a traffic jam"
+      ],
+      "hint": "a traffic jam",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U060-L07-S045",
+      "help": "N26-U060-L07-S045-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U060-L07-S004-HELP",
+      "forStep": "N26-U060-L07-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-818af5d7fda9dbaa5fb0",
+      "display": "plate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S007-HELP",
+      "forStep": "N26-U060-L07-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7c88d881575482a82ecb",
+      "display": "control",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S010-HELP",
+      "forStep": "N26-U060-L07-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-86dcc9b49eb2ddf62425",
+      "display": "motorcycle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S013-HELP",
+      "forStep": "N26-U060-L07-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3e958952d2eaddbf4423",
+      "display": "jam",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S016-HELP",
+      "forStep": "N26-U060-L07-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-56008de8bd9448dd11d8",
+      "display": "pull",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S019-HELP",
+      "forStep": "N26-U060-L07-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d42609b3af463151c9f4",
+      "display": "the number plate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S022-HELP",
+      "forStep": "N26-U060-L07-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d43abe785ea170c61958",
+      "display": "control the vehicle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S025-HELP",
+      "forStep": "N26-U060-L07-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-018048a290ed681fdd88",
+      "display": "a motorcycle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S028-HELP",
+      "forStep": "N26-U060-L07-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-07afad649b852f48b446",
+      "display": "a traffic jam",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S031-HELP",
+      "forStep": "N26-U060-L07-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c93a174ff2502fc892bf",
+      "display": "Pull the door, please.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S034-HELP",
+      "forStep": "N26-U060-L07-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d42609b3af463151c9f4",
+      "display": "the number plate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S037-HELP",
+      "forStep": "N26-U060-L07-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-07afad649b852f48b446",
+      "display": "a traffic jam",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S039-HELP",
+      "forStep": "N26-U060-L07-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d42609b3af463151c9f4",
+      "display": "the number plate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S041-HELP",
+      "forStep": "N26-U060-L07-S041",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-07afad649b852f48b446",
+      "display": "a traffic jam",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S041",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S043-HELP",
+      "forStep": "N26-U060-L07-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d42609b3af463151c9f4",
+      "display": "the number plate",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U060-L07-S045-HELP",
+      "forStep": "N26-U060-L07-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-07afad649b852f48b446",
+      "display": "a traffic jam",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U060-L07-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "plate",
+      "word": "plate",
+      "ipa": "/pleɪt/",
+      "meaning": "车牌牌照",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-818af5d7fda9dbaa5fb0"
+    },
+    {
+      "key": "control",
+      "word": "control",
+      "ipa": "/kənˈtroʊl/",
+      "meaning": "控制，操控",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-7c88d881575482a82ecb"
+    },
+    {
+      "key": "motorcycle",
+      "word": "motorcycle",
+      "ipa": "/ˈmoʊtərsaɪkəl/",
+      "meaning": "摩托车",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-86dcc9b49eb2ddf62425"
+    },
+    {
+      "key": "jam",
+      "word": "jam",
+      "ipa": "/dʒæm/",
+      "meaning": "拥堵，堵住的车流",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-3e958952d2eaddbf4423"
+    },
+    {
+      "key": "pull",
+      "word": "pull",
+      "ipa": "/pʊl/",
+      "meaning": "拉",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-56008de8bd9448dd11d8"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "number",
+      "word": "number",
+      "ipa": "/ˈnʌm.bɚ/",
+      "meaning": "数字，表示数量的数",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ae650b9d8c2fd8eb9aa6"
+    },
+    {
+      "key": "vehicle",
+      "word": "vehicle",
+      "ipa": "/ˈviːəkəl/",
+      "meaning": "车辆",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f67a389b067f1aa9009b"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "traffic",
+      "word": "traffic",
+      "ipa": "/ˈtræfɪk/",
+      "meaning": "交通，车辆往来",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6a684f132f87507ad95a"
+    },
+    {
+      "key": "door",
+      "word": "door",
+      "ipa": "/dɔːr/",
+      "meaning": "门",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c724b849bea2344aefa2"
+    },
+    {
+      "key": "please",
+      "word": "please",
+      "ipa": "/pliːz/",
+      "meaning": "请，让请求更礼貌",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-119c942deb8552028da1"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：plate=车牌牌照；control=控制，操控；motorcycle=摩托车；jam=拥堵，堵住的车流；pull=拉。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "number",
+      "sourceCourse": "N26-U012-L05",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "traffic",
+      "sourceCourse": "N26-U016-L09",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "door",
+      "sourceCourse": "N26-U009-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "please",
+      "sourceCourse": "N26-U004-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 38,
+    "availableExactAssets": 38,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-3511710be0e4bad57f7a",
+      "N26A-dee60acbf6c8aa9055e6",
+      "N26A-818af5d7fda9dbaa5fb0",
+      "N26A-db4f82fd84d63d5c4b2e",
+      "N26A-7c88d881575482a82ecb",
+      "N26A-de0ede58e378134570da",
+      "N26A-86dcc9b49eb2ddf62425",
+      "N26A-fd4ff3187ade6294b84d",
+      "N26A-3e958952d2eaddbf4423",
+      "N26A-fae616dcbecc6e44f103",
+      "N26A-56008de8bd9448dd11d8",
+      "N26A-b77ef61b73970cd41c06",
+      "N26A-d42609b3af463151c9f4",
+      "N26A-684ef74c66c89eb74df7",
+      "N26A-d43abe785ea170c61958",
+      "N26A-f594fac4797a8bcad569",
+      "N26A-018048a290ed681fdd88",
+      "N26A-310f232aa9234f4178ef",
+      "N26A-07afad649b852f48b446",
+      "N26A-3f171e3add574fc3015d",
+      "N26A-c93a174ff2502fc892bf",
+      "N26A-ea13d9a7c18dc3d3da38",
+      "N26A-017f4b131164b5f4c595",
+      "N26A-1876c792a4d2fe177f2e",
+      "N26A-d703dd7b1d7afdf2b9e1",
+      "N26A-04c5fb94ecb610401625",
+      "N26A-e358402581ba97d937ff",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-ae650b9d8c2fd8eb9aa6",
+      "N26A-f67a389b067f1aa9009b",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-6a684f132f87507ad95a",
+      "N26A-c724b849bea2344aefa2",
+      "N26A-119c942deb8552028da1",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

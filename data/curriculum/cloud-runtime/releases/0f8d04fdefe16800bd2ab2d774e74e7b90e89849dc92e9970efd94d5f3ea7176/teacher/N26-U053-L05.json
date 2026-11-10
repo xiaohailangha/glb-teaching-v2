@@ -1,0 +1,1613 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit053-v1",
+  "courseId": "N26-U053-L05",
+  "unitId": "N26-U053",
+  "category": "食物与饮品",
+  "title": "纯净成分与混合物",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "98da00f5a9f6cc91b9fd2a9eb9984c2f3f0064a90511662e4eb1c0794805486f",
+  "newWords": [
+    "chemical",
+    "substance",
+    "pure",
+    "mixture"
+  ],
+  "prerequisites": [
+    "N26-U053-L04"
+  ],
+  "goal": "在“成分说明 3”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "chemical",
+        "surface": "chemical",
+        "meaning": "化学的，与化学有关的",
+        "kind": "new_word"
+      },
+      {
+        "key": "substance",
+        "surface": "substance",
+        "meaning": "物质",
+        "kind": "new_word"
+      },
+      {
+        "key": "pure",
+        "surface": "pure",
+        "meaning": "纯的，不混入其他成分的",
+        "kind": "new_word"
+      },
+      {
+        "key": "mixture",
+        "surface": "mixture",
+        "meaning": "混合物",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U053-L05-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U053-L05-S002",
+        "N26-U053-L05-S003",
+        "N26-U053-L05-S004",
+        "N26-U053-L05-S005",
+        "N26-U053-L05-S006",
+        "N26-U053-L05-S007",
+        "N26-U053-L05-S008",
+        "N26-U053-L05-S009",
+        "N26-U053-L05-S010",
+        "N26-U053-L05-S011",
+        "N26-U053-L05-S012",
+        "N26-U053-L05-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U053-L05-S014",
+        "N26-U053-L05-S015",
+        "N26-U053-L05-S016",
+        "N26-U053-L05-S017",
+        "N26-U053-L05-S018",
+        "N26-U053-L05-S019",
+        "N26-U053-L05-S020",
+        "N26-U053-L05-S021",
+        "N26-U053-L05-S022",
+        "N26-U053-L05-S023",
+        "N26-U053-L05-S024",
+        "N26-U053-L05-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U053-L05-S026",
+        "N26-U053-L05-S027",
+        "N26-U053-L05-S028",
+        "N26-U053-L05-S029",
+        "N26-U053-L05-S030",
+        "N26-U053-L05-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U053-L05-S032",
+        "N26-U053-L05-S033",
+        "N26-U053-L05-S034",
+        "N26-U053-L05-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U053-L05-S036",
+        "N26-U053-L05-S037",
+        "N26-U053-L05-S038",
+        "N26-U053-L05-S039",
+        "N26-U053-L05-S040",
+        "N26-U053-L05-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U053-L05-S001",
+      "course": "N26-U053-L05",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象读一段成分介绍。今天分清化学的特点、物质、纯净的状态和混合物。",
+      "display": "",
+      "audio": "N26A-8bf3c63e0a296aecf1ca",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S002",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "化学的，与化学有关的。本课教形容词，不把化学自动等同有害。",
+      "display": "chemical",
+      "audio": "N26A-53393d19afafa4913d4f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S003",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "化学的，与化学有关的",
+      "display": "chemical",
+      "audio": "N26A-f18654aa0989347d3751",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "化学的，与化学有关的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S004",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "chemical",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C001",
+      "model": "N26A-f18654aa0989347d3751",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S005",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "物质。这里说物质，先听完整的声音。",
+      "display": "substance",
+      "audio": "N26A-b62a38f5d69e060de052",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S006",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "物质",
+      "display": "substance",
+      "audio": "N26A-41ac00093749e7b18838",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "物质",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S007",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "substance",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C002",
+      "model": "N26A-41ac00093749e7b18838",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S008",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "纯的，不混入其他成分的。这里说纯的，不混入其他成分的，先听完整的声音。",
+      "display": "pure",
+      "audio": "N26A-bff8cfffd1628185a2e6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S009",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "纯的，不混入其他成分的",
+      "display": "pure",
+      "audio": "N26A-0163c5c75ad6afec0f58",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "纯的，不混入其他成分的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S010",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pure",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C003",
+      "model": "N26A-0163c5c75ad6afec0f58",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S011",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "混合物。这里说混合物，先听完整的声音。",
+      "display": "mixture",
+      "audio": "N26A-ed2015916dc64460cb02",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S012",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "混合物",
+      "display": "mixture",
+      "audio": "N26A-dd36b53f5159cf17f985",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "混合物",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S013",
+      "course": "N26-U053-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C004",
+      "model": "N26A-dd36b53f5159cf17f985",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U053-L05-S014",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一种化学物质。本课教形容词，不把化学自动等同有害。",
+      "display": "a chemical substance",
+      "audio": "N26A-51ce058dd0de94787478",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S015",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一种化学物质",
+      "display": "a chemical substance",
+      "audio": "N26A-644a5a91af2e0f6d5946",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一种化学物质",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S016",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a chemical substance",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C005",
+      "model": "N26A-644a5a91af2e0f6d5946",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S017",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一种物质。先听这一组，再连起来说。",
+      "display": "a substance",
+      "audio": "N26A-a2d560d3e55038e50fc1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S018",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一种物质",
+      "display": "a substance",
+      "audio": "N26A-429f11b687bd619a3096",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一种物质",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S019",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a substance",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C006",
+      "model": "N26A-429f11b687bd619a3096",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S020",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "纯水。先听这一组，再连起来说。",
+      "display": "pure water",
+      "audio": "N26A-10df72b07fe22445b3ae",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S021",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "纯水",
+      "display": "pure water",
+      "audio": "N26A-2a3b44a7b0784c2b17eb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "纯水",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S022",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "pure water",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C007",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S023",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一种混合物。先听这一组，再连起来说。",
+      "display": "a mixture",
+      "audio": "N26A-c4dd925238298608329e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S024",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一种混合物",
+      "display": "a mixture",
+      "audio": "N26A-41208ee0b281aa10cc70",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一种混合物",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S025",
+      "course": "N26-U053-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U053-L05-C008",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U053-L05-S026",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一种混合物",
+      "display": "a mixture",
+      "audio": "N26A-41208ee0b281aa10cc70",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一种混合物",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L05-S027",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述材料是一种混合物，先听短语。",
+      "display": "",
+      "audio": "N26A-876217f8cb2e68c02849",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S028",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C009",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S029",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "纯水",
+      "display": "pure water",
+      "audio": "N26A-2a3b44a7b0784c2b17eb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "纯水",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U053-L05-S030",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述说的是纯水，先听搭配。",
+      "display": "",
+      "audio": "N26A-df908ef351e456e57909",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S031",
+      "course": "N26-U053-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "pure water",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C010",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S032",
+      "course": "N26-U053-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说一种混合物。",
+      "display": "",
+      "audio": "N26A-c3786b0b8dbf09c25600",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S033",
+      "course": "N26-U053-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C011",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S034",
+      "course": "N26-U053-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说纯水。",
+      "display": "",
+      "audio": "N26A-439846bb403c94dd6ce5",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S035",
+      "course": "N26-U053-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "pure water",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C012",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S036",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象核对成分描述，你说明一种混合物。",
+      "display": "",
+      "audio": "N26A-b5104803c7d5991037e1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S037",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a mixture",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C013",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S038",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对所谈物质，你说明纯水。",
+      "display": "",
+      "audio": "N26A-5b4f5dfe95d723792b4a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S039",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "pure water",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U053-L05-C014",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U053-L05-S040",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U053-L05-S041",
+      "course": "N26-U053-L05",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U053-L05-C001",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "化学的，与化学有关的",
+      "answers": [
+        "chemical"
+      ],
+      "hint": "chemical",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S004",
+      "help": "N26-U053-L05-S004-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C002",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "物质",
+      "answers": [
+        "substance"
+      ],
+      "hint": "substance",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S007",
+      "help": "N26-U053-L05-S007-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C003",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "纯的，不混入其他成分的",
+      "answers": [
+        "pure"
+      ],
+      "hint": "pure",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S010",
+      "help": "N26-U053-L05-S010-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C004",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "混合物",
+      "answers": [
+        "mixture"
+      ],
+      "hint": "mixture",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S013",
+      "help": "N26-U053-L05-S013-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C005",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一种化学物质",
+      "answers": [
+        "a chemical substance"
+      ],
+      "hint": "a chemical substance",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S016",
+      "help": "N26-U053-L05-S016-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C006",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一种物质",
+      "answers": [
+        "a substance"
+      ],
+      "hint": "a substance",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S019",
+      "help": "N26-U053-L05-S019-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C007",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "纯水",
+      "answers": [
+        "pure water"
+      ],
+      "hint": "pure water",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S022",
+      "help": "N26-U053-L05-S022-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C008",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一种混合物",
+      "answers": [
+        "a mixture"
+      ],
+      "hint": "a mixture",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S025",
+      "help": "N26-U053-L05-S025-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C009",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述材料是一种混合物，先听短语。",
+      "answers": [
+        "a mixture"
+      ],
+      "hint": "a mixture",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S028",
+      "help": "N26-U053-L05-S028-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C010",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述说的是纯水，先听搭配。",
+      "answers": [
+        "pure water"
+      ],
+      "hint": "pure water",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S031",
+      "help": "N26-U053-L05-S031-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C011",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说一种混合物。",
+      "answers": [
+        "a mixture"
+      ],
+      "hint": "a mixture",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S033",
+      "help": "N26-U053-L05-S033-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C012",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说纯水。",
+      "answers": [
+        "pure water"
+      ],
+      "hint": "pure water",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U053-L05-S035",
+      "help": "N26-U053-L05-S035-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C013",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象核对成分描述，你说明一种混合物。",
+      "answers": [
+        "a mixture"
+      ],
+      "hint": "a mixture",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L05-S037",
+      "help": "N26-U053-L05-S037-HELP"
+    },
+    {
+      "id": "N26-U053-L05-C014",
+      "course": "N26-U053-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对所谈物质，你说明纯水。",
+      "answers": [
+        "pure water"
+      ],
+      "hint": "pure water",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U053-L05-S039",
+      "help": "N26-U053-L05-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U053-L05-S004-HELP",
+      "forStep": "N26-U053-L05-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-f18654aa0989347d3751",
+      "display": "chemical",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S007-HELP",
+      "forStep": "N26-U053-L05-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41ac00093749e7b18838",
+      "display": "substance",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S010-HELP",
+      "forStep": "N26-U053-L05-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-0163c5c75ad6afec0f58",
+      "display": "pure",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S013-HELP",
+      "forStep": "N26-U053-L05-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-dd36b53f5159cf17f985",
+      "display": "mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S016-HELP",
+      "forStep": "N26-U053-L05-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-644a5a91af2e0f6d5946",
+      "display": "a chemical substance",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S019-HELP",
+      "forStep": "N26-U053-L05-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-429f11b687bd619a3096",
+      "display": "a substance",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S022-HELP",
+      "forStep": "N26-U053-L05-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "display": "pure water",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S025-HELP",
+      "forStep": "N26-U053-L05-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "display": "a mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S028-HELP",
+      "forStep": "N26-U053-L05-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "display": "a mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S031-HELP",
+      "forStep": "N26-U053-L05-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "display": "pure water",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S033-HELP",
+      "forStep": "N26-U053-L05-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "display": "a mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S035-HELP",
+      "forStep": "N26-U053-L05-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "display": "pure water",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S037-HELP",
+      "forStep": "N26-U053-L05-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-41208ee0b281aa10cc70",
+      "display": "a mixture",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U053-L05-S039-HELP",
+      "forStep": "N26-U053-L05-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2a3b44a7b0784c2b17eb",
+      "display": "pure water",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U053-L05-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "chemical",
+      "word": "chemical",
+      "ipa": "/ˈkɛmɪkəl/",
+      "meaning": "化学的，与化学有关的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f18654aa0989347d3751"
+    },
+    {
+      "key": "substance",
+      "word": "substance",
+      "ipa": "/ˈsʌbstəns/",
+      "meaning": "物质",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-41ac00093749e7b18838"
+    },
+    {
+      "key": "pure",
+      "word": "pure",
+      "ipa": "/pjʊr/",
+      "meaning": "纯的，不混入其他成分的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0163c5c75ad6afec0f58"
+    },
+    {
+      "key": "mixture",
+      "word": "mixture",
+      "ipa": "/ˈmɪkstʃər/",
+      "meaning": "混合物",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-dd36b53f5159cf17f985"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "water",
+      "word": "water",
+      "ipa": "/ˈwɑː.t̬ɚ/",
+      "meaning": "水",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-64351fa189db1fad970c"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：chemical=化学的，与化学有关的；substance=物质；pure=纯的，不混入其他成分的；mixture=混合物。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 29,
+    "availableExactAssets": 29,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-8bf3c63e0a296aecf1ca",
+      "N26A-53393d19afafa4913d4f",
+      "N26A-f18654aa0989347d3751",
+      "N26A-b62a38f5d69e060de052",
+      "N26A-41ac00093749e7b18838",
+      "N26A-bff8cfffd1628185a2e6",
+      "N26A-0163c5c75ad6afec0f58",
+      "N26A-ed2015916dc64460cb02",
+      "N26A-dd36b53f5159cf17f985",
+      "N26A-51ce058dd0de94787478",
+      "N26A-644a5a91af2e0f6d5946",
+      "N26A-a2d560d3e55038e50fc1",
+      "N26A-429f11b687bd619a3096",
+      "N26A-10df72b07fe22445b3ae",
+      "N26A-2a3b44a7b0784c2b17eb",
+      "N26A-c4dd925238298608329e",
+      "N26A-41208ee0b281aa10cc70",
+      "N26A-876217f8cb2e68c02849",
+      "N26A-df908ef351e456e57909",
+      "N26A-c3786b0b8dbf09c25600",
+      "N26A-439846bb403c94dd6ce5",
+      "N26A-b5104803c7d5991037e1",
+      "N26A-5b4f5dfe95d723792b4a",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-64351fa189db1fad970c",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

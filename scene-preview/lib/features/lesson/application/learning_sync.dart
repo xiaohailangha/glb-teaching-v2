@@ -21,6 +21,7 @@ class LearningSync with WidgetsBindingObserver {
   final events = <Map<String, dynamic>>[];
   final revisions = <String, int>{};
   final saved = <String, String>{};
+  bool curriculumOverlay = false;
   Timer? timer;
   bool visible = true, sending = false, disposed = false, initialized = false;
   int lastTick = 0,
@@ -107,7 +108,9 @@ class LearningSync with WidgetsBindingObserver {
           'start': start,
           'end': end,
           'active': true,
-          'course': controller.adultCourse ? controller.courseId : '',
+          'course': !curriculumOverlay && controller.adultCourse
+              ? controller.courseId
+              : '',
         });
         start = end;
       }

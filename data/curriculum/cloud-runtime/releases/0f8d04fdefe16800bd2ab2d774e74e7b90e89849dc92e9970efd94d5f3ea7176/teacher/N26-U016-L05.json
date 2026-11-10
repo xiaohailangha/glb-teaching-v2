@@ -1,0 +1,2200 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit016-v1",
+  "courseId": "N26-U016-L05",
+  "unitId": "N26-U016",
+  "category": "城市与交通",
+  "title": "左转右转与过马路",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "816ec9054a317897c30f04455a5991c7a9e51c21a2c7884fd083892602ccb4ab",
+  "newWords": [
+    "left",
+    "right",
+    "turn",
+    "straight",
+    "cross",
+    "across",
+    "along"
+  ],
+  "prerequisites": [
+    "N26-U016-L04"
+  ],
+  "goal": "在“行走与转向 5”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "left",
+        "surface": "left",
+        "meaning": "向左",
+        "kind": "new_word"
+      },
+      {
+        "key": "right",
+        "surface": "right",
+        "meaning": "向右",
+        "kind": "new_word"
+      },
+      {
+        "key": "turn",
+        "surface": "turn",
+        "meaning": "转弯",
+        "kind": "new_word"
+      },
+      {
+        "key": "straight",
+        "surface": "straight",
+        "meaning": "径直，直着向前",
+        "kind": "new_word"
+      },
+      {
+        "key": "cross",
+        "surface": "cross",
+        "meaning": "横穿，穿过",
+        "kind": "new_word"
+      },
+      {
+        "key": "across",
+        "surface": "across",
+        "meaning": "穿过，到另一侧",
+        "kind": "new_word"
+      },
+      {
+        "key": "along",
+        "surface": "along",
+        "meaning": "沿着",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "仅口述想象地点与路线；无实际地图或方向箭头，不要求指认实际物体。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U016-L05-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U016-L05-S002",
+        "N26-U016-L05-S003",
+        "N26-U016-L05-S004",
+        "N26-U016-L05-S005",
+        "N26-U016-L05-S006",
+        "N26-U016-L05-S007",
+        "N26-U016-L05-S008",
+        "N26-U016-L05-S009",
+        "N26-U016-L05-S010",
+        "N26-U016-L05-S011",
+        "N26-U016-L05-S012",
+        "N26-U016-L05-S013",
+        "N26-U016-L05-S014",
+        "N26-U016-L05-S015",
+        "N26-U016-L05-S016",
+        "N26-U016-L05-S017",
+        "N26-U016-L05-S018",
+        "N26-U016-L05-S019",
+        "N26-U016-L05-S020",
+        "N26-U016-L05-S021",
+        "N26-U016-L05-S022"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U016-L05-S023",
+        "N26-U016-L05-S024",
+        "N26-U016-L05-S025",
+        "N26-U016-L05-S026",
+        "N26-U016-L05-S027",
+        "N26-U016-L05-S028",
+        "N26-U016-L05-S029",
+        "N26-U016-L05-S030",
+        "N26-U016-L05-S031",
+        "N26-U016-L05-S032",
+        "N26-U016-L05-S033",
+        "N26-U016-L05-S034",
+        "N26-U016-L05-S035",
+        "N26-U016-L05-S036",
+        "N26-U016-L05-S037",
+        "N26-U016-L05-S038",
+        "N26-U016-L05-S039",
+        "N26-U016-L05-S040"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U016-L05-S041",
+        "N26-U016-L05-S042",
+        "N26-U016-L05-S043",
+        "N26-U016-L05-S044",
+        "N26-U016-L05-S045",
+        "N26-U016-L05-S046"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U016-L05-S047",
+        "N26-U016-L05-S048",
+        "N26-U016-L05-S049",
+        "N26-U016-L05-S050"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U016-L05-S051",
+        "N26-U016-L05-S052",
+        "N26-U016-L05-S053",
+        "N26-U016-L05-S054",
+        "N26-U016-L05-S055",
+        "N26-U016-L05-S056"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U016-L05-S001",
+      "course": "N26-U016-L05",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天在想象中练走路方向。先分清左和右，再说直走、穿过和沿着。",
+      "display": "",
+      "audio": "N26A-5241a79447884b07fcbe",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S002",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "向左。今天说转向",
+      "display": "left",
+      "audio": "N26A-8f48cdda2a2807e64f1e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S003",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "向左",
+      "display": "left",
+      "audio": "N26A-d6ccf5df5a26694243d3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "向左",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S004",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "left",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C001",
+      "model": "N26A-d6ccf5df5a26694243d3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S005",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "向右。今天说方向",
+      "display": "right",
+      "audio": "N26A-a82767d9baf89d1fb301",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S006",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "向右",
+      "display": "right",
+      "audio": "N26A-d5b6a3a6a8d96cdf0e6c",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "向右",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S007",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "right",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C002",
+      "model": "N26A-d5b6a3a6a8d96cdf0e6c",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S008",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "转弯。与左或右一起说转向。",
+      "display": "turn",
+      "audio": "N26A-387556c2d25881984a60",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S009",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "转弯",
+      "display": "turn",
+      "audio": "N26A-1df46ea7c1c88f66bf51",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "转弯",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S010",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "turn",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C003",
+      "model": "N26A-1df46ea7c1c88f66bf51",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S011",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "径直，直着向前。这里说明直走。",
+      "display": "straight",
+      "audio": "N26A-94f1a7f859f75e28f584",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S012",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "径直，直着向前",
+      "display": "straight",
+      "audio": "N26A-2c10dd14db5e9a78deae",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "径直，直着向前",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S013",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "straight",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C004",
+      "model": "N26A-2c10dd14db5e9a78deae",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S014",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "横穿，穿过。动作后面直接接穿过的地方。",
+      "display": "cross",
+      "audio": "N26A-e4d9ffafa28d0dcc84f7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S015",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "横穿，穿过",
+      "display": "cross",
+      "audio": "N26A-927bd66949970de3bf8e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "横穿，穿过",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S016",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "cross",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C005",
+      "model": "N26A-927bd66949970de3bf8e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S017",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "穿过，到另一侧。接在走这个动作后面说明方向。",
+      "display": "across",
+      "audio": "N26A-4e0165dfefd7e508ee00",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S018",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "穿过，到另一侧",
+      "display": "across",
+      "audio": "N26A-39759f1e1dc9a84c11c5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "穿过，到另一侧",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S019",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "across",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C006",
+      "model": "N26A-39759f1e1dc9a84c11c5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S020",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "沿着。后面接沿着走的路线或边界。",
+      "display": "along",
+      "audio": "N26A-541f9daae1413fbbe2ec",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S021",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "沿着",
+      "display": "along",
+      "audio": "N26A-068461dea34afcf0d5b5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "沿着",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S022",
+      "course": "N26-U016-L05",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "along",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C007",
+      "model": "N26A-068461dea34afcf0d5b5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U016-L05-S023",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "向左转。仅练口述，不要求移动。",
+      "display": "Turn left",
+      "audio": "N26A-1f8903ef1ac175428559",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S024",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "向左转。",
+      "display": "Turn left.",
+      "audio": "N26A-065cdf14941a0a4afd86",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "向左转。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S025",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Turn left.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C008",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S026",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "向右转。先听清右的声音。",
+      "display": "Turn right",
+      "audio": "N26A-3c978183f10793dae6ee",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S027",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "向右转。",
+      "display": "Turn right.",
+      "audio": "N26A-14e177b766aa0f029d3a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "向右转。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S028",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Turn right.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C009",
+      "model": "N26A-14e177b766aa0f029d3a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S029",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "直走。把去和直着向前连起来。",
+      "display": "Go straight",
+      "audio": "N26A-6636f0108f8370242c63",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S030",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "直走。",
+      "display": "Go straight.",
+      "audio": "N26A-3ab2f71f37a9101620dc",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "直走。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S031",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Go straight.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C010",
+      "model": "N26A-3ab2f71f37a9101620dc",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S032",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "横穿那个公园。想象从一侧到另一侧。",
+      "display": "Cross the park",
+      "audio": "N26A-f0f6b6b0e81bc9a7f2b7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S033",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "横穿那个公园。",
+      "display": "Cross the park.",
+      "audio": "N26A-04caf0b2858deb118173",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "横穿那个公园。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S034",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Cross the park.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C011",
+      "model": "N26A-04caf0b2858deb118173",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S035",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "穿过那个公园。先听整组。",
+      "display": "Go across the park",
+      "audio": "N26A-0d904931209b165ba5ae",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S036",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "穿过那个公园。",
+      "display": "Go across the park.",
+      "audio": "N26A-285d9da9ba75bb6505fd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "穿过那个公园。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S037",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Go across the park.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C012",
+      "model": "N26A-285d9da9ba75bb6505fd",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S038",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "沿着那道围栏走。想象围栏是一条清楚的边界。",
+      "display": "Go along the fence",
+      "audio": "N26A-407b1ed16e5fa82e44e8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S039",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "沿着那道围栏走。",
+      "display": "Go along the fence.",
+      "audio": "N26A-536a0481e787dd12689e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "沿着那道围栏走。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S040",
+      "course": "N26-U016-L05",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Go along the fence.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U016-L05-C013",
+      "model": "N26A-536a0481e787dd12689e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U016-L05-S041",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "向左转。",
+      "display": "Turn left.",
+      "audio": "N26A-065cdf14941a0a4afd86",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "向左转。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U016-L05-S042",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "下一步要左转，先听后说明方向。",
+      "display": "",
+      "audio": "N26A-10fce4f67663b00ab85c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S043",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Turn left.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C014",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S044",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "穿过那个公园。",
+      "display": "Go across the park.",
+      "audio": "N26A-285d9da9ba75bb6505fd",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "穿过那个公园。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U016-L05-S045",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "路线要横穿公园，先听再接上。",
+      "display": "",
+      "audio": "N26A-02e368353e11b71b58a2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S046",
+      "course": "N26-U016-L05",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Go across the park.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C015",
+      "model": "N26A-285d9da9ba75bb6505fd",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S047",
+      "course": "N26-U016-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "想象要向右转，看提示说。",
+      "display": "",
+      "audio": "N26A-3824423f226a9394bfd2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S048",
+      "course": "N26-U016-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Turn right.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C016",
+      "model": "N26A-14e177b766aa0f029d3a",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S049",
+      "course": "N26-U016-L05",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "想象沿围栏走，看提示说。",
+      "display": "",
+      "audio": "N26A-893a6ab2390ce25e237e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S050",
+      "course": "N26-U016-L05",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Go along the fence.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C017",
+      "model": "N26A-536a0481e787dd12689e",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S051",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "你向朋友口述下一步直走的方向。",
+      "display": "",
+      "audio": "N26A-8527e87d64d5dd6e6b45",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S052",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Go straight.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C018",
+      "model": "N26A-3ab2f71f37a9101620dc",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S053",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换一条路线，下一步左转，你说明。",
+      "display": "",
+      "audio": "N26A-371753139ef29ce476ee",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S054",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Turn left.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U016-L05-C019",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U016-L05-S055",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U016-L05-S056",
+      "course": "N26-U016-L05",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U016-L05-C001",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "向左",
+      "answers": [
+        "left"
+      ],
+      "hint": "left",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S004",
+      "help": "N26-U016-L05-S004-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C002",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "向右",
+      "answers": [
+        "right"
+      ],
+      "hint": "right",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S007",
+      "help": "N26-U016-L05-S007-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C003",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "转弯",
+      "answers": [
+        "turn"
+      ],
+      "hint": "turn",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S010",
+      "help": "N26-U016-L05-S010-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C004",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "径直，直着向前",
+      "answers": [
+        "straight"
+      ],
+      "hint": "straight",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S013",
+      "help": "N26-U016-L05-S013-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C005",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "横穿，穿过",
+      "answers": [
+        "cross"
+      ],
+      "hint": "cross",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S016",
+      "help": "N26-U016-L05-S016-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C006",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "穿过，到另一侧",
+      "answers": [
+        "across"
+      ],
+      "hint": "across",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S019",
+      "help": "N26-U016-L05-S019-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C007",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "沿着",
+      "answers": [
+        "along"
+      ],
+      "hint": "along",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S022",
+      "help": "N26-U016-L05-S022-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C008",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "向左转。",
+      "answers": [
+        "Turn left."
+      ],
+      "hint": "Turn left.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S025",
+      "help": "N26-U016-L05-S025-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C009",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "向右转。",
+      "answers": [
+        "Turn right."
+      ],
+      "hint": "Turn right.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S028",
+      "help": "N26-U016-L05-S028-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C010",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "直走。",
+      "answers": [
+        "Go straight."
+      ],
+      "hint": "Go straight.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S031",
+      "help": "N26-U016-L05-S031-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C011",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "横穿那个公园。",
+      "answers": [
+        "Cross the park."
+      ],
+      "hint": "Cross the park.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S034",
+      "help": "N26-U016-L05-S034-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C012",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "穿过那个公园。",
+      "answers": [
+        "Go across the park."
+      ],
+      "hint": "Go across the park.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S037",
+      "help": "N26-U016-L05-S037-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C013",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "沿着那道围栏走。",
+      "answers": [
+        "Go along the fence."
+      ],
+      "hint": "Go along the fence.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S040",
+      "help": "N26-U016-L05-S040-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C014",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "下一步要左转，先听后说明方向。",
+      "answers": [
+        "Turn left."
+      ],
+      "hint": "Turn left.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S043",
+      "help": "N26-U016-L05-S043-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C015",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "路线要横穿公园，先听再接上。",
+      "answers": [
+        "Go across the park."
+      ],
+      "hint": "Go across the park.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S046",
+      "help": "N26-U016-L05-S046-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C016",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象要向右转，看提示说。",
+      "answers": [
+        "Turn right."
+      ],
+      "hint": "Turn right.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S048",
+      "help": "N26-U016-L05-S048-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C017",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象沿围栏走，看提示说。",
+      "answers": [
+        "Go along the fence."
+      ],
+      "hint": "Go along the fence.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U016-L05-S050",
+      "help": "N26-U016-L05-S050-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C018",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你向朋友口述下一步直走的方向。",
+      "answers": [
+        "Go straight."
+      ],
+      "hint": "Go straight.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U016-L05-S052",
+      "help": "N26-U016-L05-S052-HELP"
+    },
+    {
+      "id": "N26-U016-L05-C019",
+      "course": "N26-U016-L05",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换一条路线，下一步左转，你说明。",
+      "answers": [
+        "Turn left."
+      ],
+      "hint": "Turn left.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U016-L05-S054",
+      "help": "N26-U016-L05-S054-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U016-L05-S004-HELP",
+      "forStep": "N26-U016-L05-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d6ccf5df5a26694243d3",
+      "display": "left",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S007-HELP",
+      "forStep": "N26-U016-L05-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d5b6a3a6a8d96cdf0e6c",
+      "display": "right",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S010-HELP",
+      "forStep": "N26-U016-L05-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1df46ea7c1c88f66bf51",
+      "display": "turn",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S013-HELP",
+      "forStep": "N26-U016-L05-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2c10dd14db5e9a78deae",
+      "display": "straight",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S016-HELP",
+      "forStep": "N26-U016-L05-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-927bd66949970de3bf8e",
+      "display": "cross",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S019-HELP",
+      "forStep": "N26-U016-L05-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-39759f1e1dc9a84c11c5",
+      "display": "across",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S022-HELP",
+      "forStep": "N26-U016-L05-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-068461dea34afcf0d5b5",
+      "display": "along",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S025-HELP",
+      "forStep": "N26-U016-L05-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "display": "Turn left.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S028-HELP",
+      "forStep": "N26-U016-L05-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-14e177b766aa0f029d3a",
+      "display": "Turn right.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S031-HELP",
+      "forStep": "N26-U016-L05-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3ab2f71f37a9101620dc",
+      "display": "Go straight.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S034-HELP",
+      "forStep": "N26-U016-L05-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-04caf0b2858deb118173",
+      "display": "Cross the park.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S037-HELP",
+      "forStep": "N26-U016-L05-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-285d9da9ba75bb6505fd",
+      "display": "Go across the park.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S040-HELP",
+      "forStep": "N26-U016-L05-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-536a0481e787dd12689e",
+      "display": "Go along the fence.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S043-HELP",
+      "forStep": "N26-U016-L05-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "display": "Turn left.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S046-HELP",
+      "forStep": "N26-U016-L05-S046",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-285d9da9ba75bb6505fd",
+      "display": "Go across the park.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S046",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S048-HELP",
+      "forStep": "N26-U016-L05-S048",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-14e177b766aa0f029d3a",
+      "display": "Turn right.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S048",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S050-HELP",
+      "forStep": "N26-U016-L05-S050",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-536a0481e787dd12689e",
+      "display": "Go along the fence.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S050",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S052-HELP",
+      "forStep": "N26-U016-L05-S052",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3ab2f71f37a9101620dc",
+      "display": "Go straight.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S052",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U016-L05-S054-HELP",
+      "forStep": "N26-U016-L05-S054",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-065cdf14941a0a4afd86",
+      "display": "Turn left.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U016-L05-S054",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "left",
+      "word": "left",
+      "ipa": "/left/",
+      "meaning": "向左",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d6ccf5df5a26694243d3"
+    },
+    {
+      "key": "right",
+      "word": "right",
+      "ipa": "/raɪt/",
+      "meaning": "向右",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d5b6a3a6a8d96cdf0e6c"
+    },
+    {
+      "key": "turn",
+      "word": "turn",
+      "ipa": "/tɜːrn/",
+      "meaning": "转弯",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1df46ea7c1c88f66bf51"
+    },
+    {
+      "key": "straight",
+      "word": "straight",
+      "ipa": "/streɪt/",
+      "meaning": "径直，直着向前",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2c10dd14db5e9a78deae"
+    },
+    {
+      "key": "cross",
+      "word": "cross",
+      "ipa": "/krɔːs/",
+      "meaning": "横穿，穿过",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-927bd66949970de3bf8e"
+    },
+    {
+      "key": "across",
+      "word": "across",
+      "ipa": "/əˈkrɔːs/",
+      "meaning": "穿过，到另一侧",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-39759f1e1dc9a84c11c5"
+    },
+    {
+      "key": "along",
+      "word": "along",
+      "ipa": "/əˈlɔːŋ/",
+      "meaning": "沿着",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-068461dea34afcf0d5b5"
+    },
+    {
+      "key": "go",
+      "word": "go",
+      "ipa": "/ɡoʊ/",
+      "meaning": "去，朝另一个地方离开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ee5295cc979e8aab87bd"
+    },
+    {
+      "key": "the",
+      "word": "the",
+      "ipa": "/ðə/",
+      "meaning": "双方都知道的那个或这一个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-70e3c53eb88448ff3f16"
+    },
+    {
+      "key": "park",
+      "word": "park",
+      "ipa": "/pɑːrk/",
+      "meaning": "公园",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a93c05f16f311640117d"
+    },
+    {
+      "key": "fence",
+      "word": "fence",
+      "ipa": "/fens/",
+      "meaning": "围栏",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d56c8f549139715e710b"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "cross/across用横穿公园，along用已教fence，避免提前使用road或river。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "fence",
+      "sourceCourse": "N26-U009-L08",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 41,
+    "availableExactAssets": 41,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-5241a79447884b07fcbe",
+      "N26A-8f48cdda2a2807e64f1e",
+      "N26A-d6ccf5df5a26694243d3",
+      "N26A-a82767d9baf89d1fb301",
+      "N26A-d5b6a3a6a8d96cdf0e6c",
+      "N26A-387556c2d25881984a60",
+      "N26A-1df46ea7c1c88f66bf51",
+      "N26A-94f1a7f859f75e28f584",
+      "N26A-2c10dd14db5e9a78deae",
+      "N26A-e4d9ffafa28d0dcc84f7",
+      "N26A-927bd66949970de3bf8e",
+      "N26A-4e0165dfefd7e508ee00",
+      "N26A-39759f1e1dc9a84c11c5",
+      "N26A-541f9daae1413fbbe2ec",
+      "N26A-068461dea34afcf0d5b5",
+      "N26A-1f8903ef1ac175428559",
+      "N26A-065cdf14941a0a4afd86",
+      "N26A-3c978183f10793dae6ee",
+      "N26A-14e177b766aa0f029d3a",
+      "N26A-6636f0108f8370242c63",
+      "N26A-3ab2f71f37a9101620dc",
+      "N26A-f0f6b6b0e81bc9a7f2b7",
+      "N26A-04caf0b2858deb118173",
+      "N26A-0d904931209b165ba5ae",
+      "N26A-285d9da9ba75bb6505fd",
+      "N26A-407b1ed16e5fa82e44e8",
+      "N26A-536a0481e787dd12689e",
+      "N26A-10fce4f67663b00ab85c",
+      "N26A-02e368353e11b71b58a2",
+      "N26A-3824423f226a9394bfd2",
+      "N26A-893a6ab2390ce25e237e",
+      "N26A-8527e87d64d5dd6e6b45",
+      "N26A-371753139ef29ce476ee",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-ee5295cc979e8aab87bd",
+      "N26A-70e3c53eb88448ff3f16",
+      "N26A-a93c05f16f311640117d",
+      "N26A-d56c8f549139715e710b",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

@@ -7,18 +7,37 @@ import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:record/record.dart';
+import 'package:crypto/crypto.dart';
 
 import 'teaching_math.dart';
 import 'speech_player.dart';
 
 class SpeechClip {
-  SpeechClip(this.path, this.cues, {this.remote = false});
+  SpeechClip(this.path, this.cues, {this.remote = false, this.bytes});
+  final Uint8List? bytes;
   final String path;
   final List<MouthCue> cues;
   final bool remote;
 }
 
 class SpeechClient {
+  Future<SpeechClip> prepareVerified(Map<String, dynamic> item) async {
+    final hash = item['sha256'] as String;
+    if (!RegExp(r'^[a-f0-9]{64}$').hasMatch(hash)) throw StateError('声音校验信息无效');
+    if (cache.containsKey(hash)) return cache[hash]!;
+    final response = await client
+        .get(Uri.parse(item['url'] as String))
+        .timeout(const Duration(seconds: 25));
+    final bytes = response.bodyBytes;
+    if (response.statusCode != 200 ||
+        bytes.length != item['size'] ||
+        sha256.convert(bytes).toString() != hash) {
+      throw StateError('声音文件校验未通过，请刷新后重试');
+    }
+    final cues = MouthCue.fromJson(item['cues']);
+    return cache[hash] = SpeechClip(hash, cues, bytes: bytes);
+  }
+
   final SpeechPlayer player = SpeechPlayer();
   void Function(Object error)? onPlaybackError;
   final http.Client client = http.Client();
@@ -93,7 +112,9 @@ class SpeechClient {
 
   Future<void> play(SpeechClip clip, double rate, int token) async {
     if (token != generation) return;
-    if (clip.remote) {
+    if (clip.bytes != null) {
+      await player.setVerifiedBytes(clip.bytes!, clip.path);
+    } else if (clip.remote) {
       await player.setUrl(clip.path);
     } else {
       final path = 'assets/avatar/audio/${clip.path}.wav';

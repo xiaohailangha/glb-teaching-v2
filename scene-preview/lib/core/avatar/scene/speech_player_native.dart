@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'course_resources.dart';
 
@@ -6,6 +7,16 @@ import 'package:just_audio/just_audio.dart';
 
 class SpeechPlayer extends AudioPlayer {
   int _sourceGeneration = 0;
+  Future<void> setVerifiedBytes(Uint8List bytes, String hash) async {
+    final generation = ++_sourceGeneration;
+    final file = File(
+      '${Directory.systemTemp.path}/snow-speaks-audio/$hash.wav',
+    );
+    await file.parent.create(recursive: true);
+    await file.writeAsBytes(bytes, flush: true);
+    if (generation != _sourceGeneration) return;
+    await setFilePath(file.path);
+  }
 
   @override
   Future<void> stop() {
@@ -18,6 +29,7 @@ class SpeechPlayer extends AudioPlayer {
     ++_sourceGeneration;
     return super.dispose();
   }
+
   Future<void> setCourseAsset(String path) async {
     final generation = ++_sourceGeneration;
     final data = await CourseResources.instance.load(path);

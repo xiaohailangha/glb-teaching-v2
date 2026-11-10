@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_scene/scene.dart';
 
 import '../../features/lesson/application/lesson_controller.dart';
 import 'scene/scene_runtime.dart';
+import 'scene/browser_graphics.dart';
 
 class AvatarView extends StatefulWidget {
   const AvatarView({super.key, required this.controller, this.welcome = false});
@@ -16,11 +19,20 @@ class _AvatarViewState extends State<AvatarView>
     with WidgetsBindingObserver, SingleTickerProviderStateMixin {
   late final SceneRuntime runtime;
   late final AnimationController welcome;
+  late final BrowserGraphicsWatch graphics;
+  bool _foreground = true, _graphicsLost = false;
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     runtime = SceneRuntime(widget.controller);
+    graphics = BrowserGraphicsWatch(() {
+      if (!mounted || _graphicsLost) return;
+      widget.controller.pauseCourse();
+      unawaited(runtime.stop().catchError((Object _) {}));
+      widget.controller.handle({'event': 'graphics-lost'});
+      setState(() => _graphicsLost = true);
+    });
     welcome = AnimationController(
       vsync: this,
       value: widget.welcome ? 1 : 0,
@@ -47,6 +59,9 @@ class _AvatarViewState extends State<AvatarView>
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     runtime.resetFrameSamples();
+    if (mounted) {
+      setState(() => _foreground = state == AppLifecycleState.resumed);
+    }
   }
 
   @override
@@ -56,16 +71,19 @@ class _AvatarViewState extends State<AvatarView>
       builder: (context, size) {
         runtime.aspect = size.maxWidth / size.maxHeight;
         runtime.background.reduced = MediaQuery.disableAnimationsOf(context);
-        if (!runtime.loaded) {
+        if (!runtime.loaded || _graphicsLost) {
           return const SizedBox.expand();
         }
         return IgnorePointer(
-          child: SceneView(
-            runtime.scene,
-            onTick: runtime.tick,
-            cameraBuilder: (_) => runtime.camera(),
-            pixelRatio: 1,
-            maxFrameRate: runtime.targetFps,
+          child: RepaintBoundary(
+            child: SceneView(
+              runtime.scene,
+              onTick: runtime.tick,
+              cameraBuilder: (_) => runtime.camera(),
+              pixelRatio: 1,
+              maxFrameRate: runtime.targetFps,
+              autoTick: _foreground,
+            ),
           ),
         );
       },
@@ -75,6 +93,7 @@ class _AvatarViewState extends State<AvatarView>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     welcome.dispose();
+    graphics.dispose();
     runtime.dispose();
     super.dispose();
   }

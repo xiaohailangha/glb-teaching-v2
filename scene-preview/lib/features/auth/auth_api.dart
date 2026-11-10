@@ -42,7 +42,9 @@ class AuthApi {
         request.body = jsonEncode(data);
       }
       final response = await http.Response.fromStream(
-        await client.send(request).timeout(const Duration(seconds: 20)),
+        await client
+            .send(request)
+            .timeout(Duration(seconds: path.endsWith('/oral') ? 100 : 20)),
       );
       final body = jsonDecode(response.body) as Map<String, dynamic>;
       if (response.statusCode >= 400) {

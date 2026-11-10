@@ -1,0 +1,1689 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit049-v1",
+  "courseId": "N26-U049-L04",
+  "unitId": "N26-U049",
+  "category": "情绪与观点",
+  "title": "聊一段简单对话",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "bc871e4143beee3b656da52466b4edb843269e4d2e6ab34348c7cff1feeeb260",
+  "newWords": [
+    "able",
+    "conversation",
+    "dialogue",
+    "talk"
+  ],
+  "prerequisites": [
+    "N26-U049-L03"
+  ],
+  "goal": "围绕“语言与表达、请对方讲清楚”只教本课4个词；先释义和逐词跟读，再用已教表达练习。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "able",
+        "surface": "able",
+        "meaning": "能够的，有能力的",
+        "kind": "new_word"
+      },
+      {
+        "key": "conversation",
+        "surface": "conversation",
+        "meaning": "交谈，双方自然交流",
+        "kind": "new_word"
+      },
+      {
+        "key": "dialogue",
+        "surface": "dialogue",
+        "meaning": "对话，双方的一问一答",
+        "kind": "new_word"
+      },
+      {
+        "key": "talk",
+        "surface": "talk",
+        "meaning": "交谈",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U049-L04-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U049-L04-S002",
+        "N26-U049-L04-S003",
+        "N26-U049-L04-S004",
+        "N26-U049-L04-S005",
+        "N26-U049-L04-S006",
+        "N26-U049-L04-S007",
+        "N26-U049-L04-S008",
+        "N26-U049-L04-S009",
+        "N26-U049-L04-S010",
+        "N26-U049-L04-S011",
+        "N26-U049-L04-S012",
+        "N26-U049-L04-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U049-L04-S014",
+        "N26-U049-L04-S015",
+        "N26-U049-L04-S016",
+        "N26-U049-L04-S017",
+        "N26-U049-L04-S018",
+        "N26-U049-L04-S019",
+        "N26-U049-L04-S020",
+        "N26-U049-L04-S021",
+        "N26-U049-L04-S022",
+        "N26-U049-L04-S023",
+        "N26-U049-L04-S024",
+        "N26-U049-L04-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U049-L04-S026",
+        "N26-U049-L04-S027",
+        "N26-U049-L04-S028",
+        "N26-U049-L04-S029",
+        "N26-U049-L04-S030",
+        "N26-U049-L04-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U049-L04-S032",
+        "N26-U049-L04-S033",
+        "N26-U049-L04-S034",
+        "N26-U049-L04-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U049-L04-S036",
+        "N26-U049-L04-S037",
+        "N26-U049-L04-S038",
+        "N26-U049-L04-S039",
+        "N26-U049-L04-S040",
+        "N26-U049-L04-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U049-L04-S001",
+      "course": "N26-U049-L04",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象进行一次简短交谈。今天分清能够做、自然交谈和对话，也练说能帮忙。",
+      "display": "",
+      "audio": "N26A-ef3e95e1580054c281b9",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S002",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "能够的，有能力的。先听完整结构，再整体表达能力。",
+      "display": "able",
+      "audio": "N26A-e03b3fa6b807d97163d2",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S003",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "能够的，有能力的",
+      "display": "able",
+      "audio": "N26A-2ccabdf54c905cc3cc63",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "能够的，有能力的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S004",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "able",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C001",
+      "model": "N26A-2ccabdf54c905cc3cc63",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S005",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "交谈，双方自然交流。这里说交谈，双方自然交流，先听完整的声音。",
+      "display": "conversation",
+      "audio": "N26A-f0b8e3c046fea34485d4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S006",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "交谈，双方自然交流",
+      "display": "conversation",
+      "audio": "N26A-94163c444cf3329607b2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "交谈，双方自然交流",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S007",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "conversation",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C002",
+      "model": "N26A-94163c444cf3329607b2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S008",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "对话，双方的一问一答。这里说对话，双方的一问一答，先听完整的声音。",
+      "display": "dialogue",
+      "audio": "N26A-4d0a22a4c953ac9699c0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S009",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "对话，双方的一问一答",
+      "display": "dialogue",
+      "audio": "N26A-5bfaf387ed5a4e4cb258",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "对话，双方的一问一答",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S010",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "dialogue",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C003",
+      "model": "N26A-5bfaf387ed5a4e4cb258",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S011",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "交谈。这里说交谈，先听完整的声音。",
+      "display": "talk",
+      "audio": "N26A-bb206d7f1078038920c4",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S012",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "交谈",
+      "display": "talk",
+      "audio": "N26A-d43f7f0af60ec6a9ee97",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "交谈",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S013",
+      "course": "N26-U049-L04",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "talk",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C004",
+      "model": "N26A-d43f7f0af60ec6a9ee97",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U049-L04-S014",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我能够帮忙。先听完整结构，再整体表达能力。 这里用中间的小词把能够做到与后面的动作接起来，先听整句。 这个小词接出后面的动作，整句一起理解。",
+      "display": "I am able to help",
+      "audio": "N26A-dc821538fff903e16794",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S015",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我能够帮忙。",
+      "display": "I am able to help.",
+      "audio": "N26A-53cd89fc1ef20219a7bf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我能够帮忙。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S016",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I am able to help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C005",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S017",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一次交谈。先听这一组，再连起来说。",
+      "display": "a conversation",
+      "audio": "N26A-11ab22d175e22aababd1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S018",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一次交谈",
+      "display": "a conversation",
+      "audio": "N26A-72b957ef35043db1ff63",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一次交谈",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S019",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a conversation",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C006",
+      "model": "N26A-72b957ef35043db1ff63",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S020",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一段对话。先听这一组，再连起来说。",
+      "display": "a dialogue",
+      "audio": "N26A-95ffb4a8e47242c514c8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S021",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一段对话",
+      "display": "a dialogue",
+      "audio": "N26A-27b5200cf145d5673de3",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一段对话",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S022",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a dialogue",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C007",
+      "model": "N26A-27b5200cf145d5673de3",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S023",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我们可以谈谈吗。先听这一组，再连起来说。",
+      "display": "Can we talk",
+      "audio": "N26A-18ae7dff723672df4751",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S024",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我们可以谈谈吗？",
+      "display": "Can we talk?",
+      "audio": "N26A-bbf921a8fab5b0e7b217",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我们可以谈谈吗？",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S025",
+      "course": "N26-U049-L04",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Can we talk?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U049-L04-C008",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U049-L04-S026",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我能够帮忙。",
+      "display": "I am able to help.",
+      "audio": "N26A-53cd89fc1ef20219a7bf",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我能够帮忙。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U049-L04-S027",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "情境明确你能帮忙，先听整句。",
+      "display": "",
+      "audio": "N26A-1f15b13f1cc74e4790dc",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S028",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I am able to help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C009",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S029",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我们可以谈谈吗？",
+      "display": "Can we talk?",
+      "audio": "N26A-bbf921a8fab5b0e7b217",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我们可以谈谈吗？",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U049-L04-S030",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "你想和朋友谈谈，先听请求。",
+      "display": "",
+      "audio": "N26A-dd65193dd246b0566943",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S031",
+      "course": "N26-U049-L04",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Can we talk?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C010",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S032",
+      "course": "N26-U049-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示说能够帮忙。",
+      "display": "",
+      "audio": "N26A-67530707775a8ed35959",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S033",
+      "course": "N26-U049-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I am able to help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C011",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S034",
+      "course": "N26-U049-L04",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示问我们可以谈谈吗。",
+      "display": "",
+      "audio": "N26A-6f4d8c902947df8fc4a8",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S035",
+      "course": "N26-U049-L04",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Can we talk?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C012",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S036",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友需要帮助，你在想象交流里说明自己能够帮忙。",
+      "display": "",
+      "audio": "N26A-1b138fe796b47c52d9b3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S037",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I am able to help.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C013",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S038",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象来到朋友身边，你提出谈谈的请求。",
+      "display": "",
+      "audio": "N26A-b4204a8a00ce940857a6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S039",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Can we talk?",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U049-L04-C014",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U049-L04-S040",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U049-L04-S041",
+      "course": "N26-U049-L04",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U049-L04-C001",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "能够的，有能力的",
+      "answers": [
+        "able"
+      ],
+      "hint": "able",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S004",
+      "help": "N26-U049-L04-S004-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C002",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "交谈，双方自然交流",
+      "answers": [
+        "conversation"
+      ],
+      "hint": "conversation",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S007",
+      "help": "N26-U049-L04-S007-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C003",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "对话，双方的一问一答",
+      "answers": [
+        "dialogue"
+      ],
+      "hint": "dialogue",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S010",
+      "help": "N26-U049-L04-S010-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C004",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "交谈",
+      "answers": [
+        "talk"
+      ],
+      "hint": "talk",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S013",
+      "help": "N26-U049-L04-S013-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C005",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我能够帮忙。",
+      "answers": [
+        "I am able to help."
+      ],
+      "hint": "I am able to help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S016",
+      "help": "N26-U049-L04-S016-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C006",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一次交谈",
+      "answers": [
+        "a conversation"
+      ],
+      "hint": "a conversation",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S019",
+      "help": "N26-U049-L04-S019-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C007",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一段对话",
+      "answers": [
+        "a dialogue"
+      ],
+      "hint": "a dialogue",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S022",
+      "help": "N26-U049-L04-S022-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C008",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我们可以谈谈吗？",
+      "answers": [
+        "Can we talk?"
+      ],
+      "hint": "Can we talk?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S025",
+      "help": "N26-U049-L04-S025-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C009",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "情境明确你能帮忙，先听整句。",
+      "answers": [
+        "I am able to help."
+      ],
+      "hint": "I am able to help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S028",
+      "help": "N26-U049-L04-S028-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C010",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你想和朋友谈谈，先听请求。",
+      "answers": [
+        "Can we talk?"
+      ],
+      "hint": "Can we talk?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S031",
+      "help": "N26-U049-L04-S031-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C011",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示说能够帮忙。",
+      "answers": [
+        "I am able to help."
+      ],
+      "hint": "I am able to help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S033",
+      "help": "N26-U049-L04-S033-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C012",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示问我们可以谈谈吗。",
+      "answers": [
+        "Can we talk?"
+      ],
+      "hint": "Can we talk?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U049-L04-S035",
+      "help": "N26-U049-L04-S035-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C013",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友需要帮助，你在想象交流里说明自己能够帮忙。",
+      "answers": [
+        "I am able to help."
+      ],
+      "hint": "I am able to help.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U049-L04-S037",
+      "help": "N26-U049-L04-S037-HELP"
+    },
+    {
+      "id": "N26-U049-L04-C014",
+      "course": "N26-U049-L04",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象来到朋友身边，你提出谈谈的请求。",
+      "answers": [
+        "Can we talk?"
+      ],
+      "hint": "Can we talk?",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U049-L04-S039",
+      "help": "N26-U049-L04-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U049-L04-S004-HELP",
+      "forStep": "N26-U049-L04-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2ccabdf54c905cc3cc63",
+      "display": "able",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S007-HELP",
+      "forStep": "N26-U049-L04-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-94163c444cf3329607b2",
+      "display": "conversation",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S010-HELP",
+      "forStep": "N26-U049-L04-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-5bfaf387ed5a4e4cb258",
+      "display": "dialogue",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S013-HELP",
+      "forStep": "N26-U049-L04-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-d43f7f0af60ec6a9ee97",
+      "display": "talk",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S016-HELP",
+      "forStep": "N26-U049-L04-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "display": "I am able to help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S019-HELP",
+      "forStep": "N26-U049-L04-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-72b957ef35043db1ff63",
+      "display": "a conversation",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S022-HELP",
+      "forStep": "N26-U049-L04-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-27b5200cf145d5673de3",
+      "display": "a dialogue",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S025-HELP",
+      "forStep": "N26-U049-L04-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "display": "Can we talk?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S028-HELP",
+      "forStep": "N26-U049-L04-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "display": "I am able to help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S031-HELP",
+      "forStep": "N26-U049-L04-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "display": "Can we talk?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S033-HELP",
+      "forStep": "N26-U049-L04-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "display": "I am able to help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S035-HELP",
+      "forStep": "N26-U049-L04-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "display": "Can we talk?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S037-HELP",
+      "forStep": "N26-U049-L04-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-53cd89fc1ef20219a7bf",
+      "display": "I am able to help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U049-L04-S039-HELP",
+      "forStep": "N26-U049-L04-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bbf921a8fab5b0e7b217",
+      "display": "Can we talk?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U049-L04-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "able",
+      "word": "able",
+      "ipa": "/ˈeɪbəl/",
+      "meaning": "能够的，有能力的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2ccabdf54c905cc3cc63"
+    },
+    {
+      "key": "conversation",
+      "word": "conversation",
+      "ipa": "/ˌkɑːnvərˈseɪʃən/",
+      "meaning": "交谈，双方自然交流",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-94163c444cf3329607b2"
+    },
+    {
+      "key": "dialogue",
+      "word": "dialogue",
+      "ipa": "/ˈdaɪəlɔːɡ/",
+      "meaning": "对话，双方的一问一答",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5bfaf387ed5a4e4cb258"
+    },
+    {
+      "key": "talk",
+      "word": "talk",
+      "ipa": "/tɔːk/",
+      "meaning": "交谈",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-d43f7f0af60ec6a9ee97"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "be",
+      "word": "am",
+      "ipa": "/æm/",
+      "meaning": "是，跟在我后面的样子",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-bba49fdb90ac09791dac"
+    },
+    {
+      "key": "to",
+      "word": "to",
+      "ipa": "/tuː/",
+      "meaning": "在能够做某事的表达中，引出后面的动作",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-88ae8049c1f9bdf7fcca"
+    },
+    {
+      "key": "help",
+      "word": "help",
+      "ipa": "/help/",
+      "meaning": "帮助",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2158eaece6e592f2cc15"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "can",
+      "word": "can",
+      "ipa": "/kæn/",
+      "meaning": "能，可以",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-72760fa541459a27ea74"
+    },
+    {
+      "key": "we",
+      "word": "we",
+      "ipa": "/wiː/",
+      "meaning": "我们，作句子主语",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5525da766843cb8e6d1f"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": [
+      {
+        "word": "to",
+        "meaning": "在能够做某事的表达中，引出后面的动作",
+        "model": "I am able to help.",
+        "modeledAt": "N26-U049-L04-S015"
+      }
+    ]
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：able=能够的，有能力的；conversation=交谈，双方自然交流；dialogue=对话，双方的一问一答；talk=交谈。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R002，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "help",
+      "sourceCourse": "N26-U004-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "can",
+      "sourceCourse": "N26-U004-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "we",
+      "sourceCourse": "N26-U020-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 34,
+    "availableExactAssets": 34,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-ef3e95e1580054c281b9",
+      "N26A-e03b3fa6b807d97163d2",
+      "N26A-2ccabdf54c905cc3cc63",
+      "N26A-f0b8e3c046fea34485d4",
+      "N26A-94163c444cf3329607b2",
+      "N26A-4d0a22a4c953ac9699c0",
+      "N26A-5bfaf387ed5a4e4cb258",
+      "N26A-bb206d7f1078038920c4",
+      "N26A-d43f7f0af60ec6a9ee97",
+      "N26A-dc821538fff903e16794",
+      "N26A-53cd89fc1ef20219a7bf",
+      "N26A-11ab22d175e22aababd1",
+      "N26A-72b957ef35043db1ff63",
+      "N26A-95ffb4a8e47242c514c8",
+      "N26A-27b5200cf145d5673de3",
+      "N26A-18ae7dff723672df4751",
+      "N26A-bbf921a8fab5b0e7b217",
+      "N26A-1f15b13f1cc74e4790dc",
+      "N26A-dd65193dd246b0566943",
+      "N26A-67530707775a8ed35959",
+      "N26A-6f4d8c902947df8fc4a8",
+      "N26A-1b138fe796b47c52d9b3",
+      "N26A-b4204a8a00ce940857a6",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-bba49fdb90ac09791dac",
+      "N26A-88ae8049c1f9bdf7fcca",
+      "N26A-2158eaece6e592f2cc15",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-72760fa541459a27ea74",
+      "N26A-5525da766843cb8e6d1f",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

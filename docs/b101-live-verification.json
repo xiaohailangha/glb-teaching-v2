@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-02T04:22:00.668Z",
+  "checks": [
+    "App login, registration and session restoration",
+    "App deployed bundle hash matches release",
+    "40 private COS audio files, hashes and mouth timelines",
+    "Production browser playback, CORS, microphone upload and oral evidence",
+    "My page and browser runtime without uncaught errors",
+    "All six lessons and fourteen core checks completed on production",
+    "Hint and text exclusion, two-context word recognition, six-course completion",
+    "Learning evidence restored in a second browser context",
+    "Admin login, unit grouping, formal audio playback and 22-word evidence table",
+    "App and administrator logout",
+    "Production summary correction: 1 category, 6 courses completed, 1 confirmed word; account time preserved",
+    "Anonymous curriculum and media requests return 401; internal management remains private",
+    "Administrator JavaScript and stylesheet hashes match release"
+  ],
+  "scope": "Production services; dedicated test account and synthetic microphone recording. Not a human study.",
+  "completed": true,
+  "checkedAt": "2026-11-02T04:26:17.012Z",
+  "app": "https://49.233.179.83/scene/",
+  "admin": "https://49.233.179.83/admin/",
+  "backups": [
+    "/opt/glb-backups/before-scene-20261102T041746Z",
+    "/opt/glb-backups/admin-only-20261102T041809Z",
+    "/opt/glb-backups/b101-summary-20261102T042521Z"
+  ]
+}

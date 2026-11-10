@@ -1,0 +1,1543 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit019-v1",
+  "courseId": "N26-U019-L09",
+  "unitId": "N26-U019",
+  "category": "情绪与观点",
+  "title": "害羞与困惑",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "4abfb07960a33eba2c244181023cafd58db0519be5caba9a209097803bbd4035",
+  "newWords": [
+    "confuse",
+    "shy"
+  ],
+  "prerequisites": [
+    "N26-U019-L08"
+  ],
+  "goal": "在“缓和情绪 9”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "confuse",
+        "surface": "confuse",
+        "meaning": "使……困惑",
+        "kind": "new_word"
+      },
+      {
+        "key": "shy",
+        "surface": "shy",
+        "meaning": "害羞的",
+        "kind": "new_word"
+      },
+      {
+        "key": "be",
+        "surface": "am",
+        "meaning": "是，在，配合我时的形式",
+        "kind": "explicit_form_or_sense"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": "中文口述或明确想象情境；无虚构实际展示资产。卡住恢复完整示范，提示练习不计独立掌握。"
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U019-L09-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U019-L09-S002",
+        "N26-U019-L09-S003",
+        "N26-U019-L09-S004",
+        "N26-U019-L09-S005",
+        "N26-U019-L09-S006",
+        "N26-U019-L09-S007",
+        "N26-U019-L09-S008",
+        "N26-U019-L09-S009",
+        "N26-U019-L09-S010"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U019-L09-S011",
+        "N26-U019-L09-S012",
+        "N26-U019-L09-S013",
+        "N26-U019-L09-S014",
+        "N26-U019-L09-S015",
+        "N26-U019-L09-S016",
+        "N26-U019-L09-S017",
+        "N26-U019-L09-S018",
+        "N26-U019-L09-S019",
+        "N26-U019-L09-S020",
+        "N26-U019-L09-S021",
+        "N26-U019-L09-S022"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U019-L09-S023",
+        "N26-U019-L09-S024",
+        "N26-U019-L09-S025",
+        "N26-U019-L09-S026",
+        "N26-U019-L09-S027",
+        "N26-U019-L09-S028"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U019-L09-S029",
+        "N26-U019-L09-S030",
+        "N26-U019-L09-S031",
+        "N26-U019-L09-S032"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U019-L09-S033",
+        "N26-U019-L09-S034",
+        "N26-U019-L09-S035",
+        "N26-U019-L09-S036",
+        "N26-U019-L09-S037",
+        "N26-U019-L09-S038"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U019-L09-S001",
+      "course": "N26-U019-L09",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天认识害羞，也听懂让人困惑这个动作。我们在想象对话里慢慢表达。",
+      "display": "",
+      "audio": "N26A-637a4ccab071321c9227",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S002",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "使……困惑。这个动作需要说明谁受到困惑。",
+      "display": "confuse",
+      "audio": "N26A-ec7cdbb343efe1f8e95e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S003",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "使……困惑",
+      "display": "confuse",
+      "audio": "N26A-db30721e6641cf2a8d2b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "使……困惑",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S004",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "confuse",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C001",
+      "model": "N26A-db30721e6641cf2a8d2b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S005",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "害羞的。说一种感受或性格，不等于不友好。",
+      "display": "shy",
+      "audio": "N26A-fa8515f1f88a7a9dc13b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S006",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "害羞的",
+      "display": "shy",
+      "audio": "N26A-42cc57b8b47f5b8a3a55",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "害羞的",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S007",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "shy",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C002",
+      "model": "N26A-42cc57b8b47f5b8a3a55",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S008",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "是，在，配合我时的形式。先单独听这个词，再放进本课的自我说明。",
+      "display": "am",
+      "audio": "N26A-5e011d6cd5b0707ed400",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S009",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "是，在，配合我时的形式",
+      "display": "am",
+      "audio": "N26A-bba49fdb90ac09791dac",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "是，在，配合我时的形式",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S010",
+      "course": "N26-U019-L09",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "am",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C003",
+      "model": "N26A-bba49fdb90ac09791dac",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U019-L09-S011",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "使一个孩子困惑。只是辨认动作短语，不是要求这样做。",
+      "display": "confuse a child",
+      "audio": "N26A-2e0cf9dfc1ecfb6ae9ca",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S012",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "使一个孩子困惑",
+      "display": "confuse a child",
+      "audio": "N26A-9fac4310a672a56df9d8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "使一个孩子困惑",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S013",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "confuse a child",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C004",
+      "model": "N26A-9fac4310a672a56df9d8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S014",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一位害羞的女孩。描述想象人物，不评价学员。",
+      "display": "a shy girl",
+      "audio": "N26A-4cfd2cf79be483a4aa45",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S015",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一位害羞的女孩",
+      "display": "a shy girl",
+      "audio": "N26A-8cec261c26e6ff168b1b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位害羞的女孩",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S016",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a shy girl",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C005",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S017",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我有些害羞。这里按角色设定表达。",
+      "display": "I am shy",
+      "audio": "N26A-5480e0239e6c8fd9b43c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S018",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我有些害羞。",
+      "display": "I am shy.",
+      "audio": "N26A-6f1988b6a309859252db",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我有些害羞。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S019",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I am shy.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C006",
+      "model": "N26A-6f1988b6a309859252db",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S020",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "一位害羞的男孩。先听整组。",
+      "display": "a shy boy",
+      "audio": "N26A-fe349345150bfd2558b3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S021",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "一位害羞的男孩",
+      "display": "a shy boy",
+      "audio": "N26A-c854046468180b4337fb",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位害羞的男孩",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S022",
+      "course": "N26-U019-L09",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "a shy boy",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U019-L09-C007",
+      "model": "N26A-c854046468180b4337fb",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U019-L09-S023",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "一位害羞的女孩",
+      "display": "a shy girl",
+      "audio": "N26A-8cec261c26e6ff168b1b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "一位害羞的女孩",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U019-L09-S024",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "口述人物是害羞的女孩，先听描述再说。",
+      "display": "",
+      "audio": "N26A-2c15fa850f3227b5ec1f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S025",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a shy girl",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C008",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S026",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我有些害羞。",
+      "display": "I am shy.",
+      "audio": "N26A-6f1988b6a309859252db",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我有些害羞。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U019-L09-S027",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "角色有些害羞，先听完整表达再接上。",
+      "display": "",
+      "audio": "N26A-27faf478fad52bd63145",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S028",
+      "course": "N26-U019-L09",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I am shy.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C009",
+      "model": "N26A-6f1988b6a309859252db",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S029",
+      "course": "N26-U019-L09",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说一位害羞的男孩，看提示表达。",
+      "display": "",
+      "audio": "N26A-a17efe58227ba3f6649b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S030",
+      "course": "N26-U019-L09",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "a shy boy",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C010",
+      "model": "N26A-c854046468180b4337fb",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S031",
+      "course": "N26-U019-L09",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说使一个孩子困惑这个动作，看提示表达。",
+      "display": "",
+      "audio": "N26A-c309ca5bc01ccb066973",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S032",
+      "course": "N26-U019-L09",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "confuse a child",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C011",
+      "model": "N26A-9fac4310a672a56df9d8",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S033",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象角色在自我介绍时说明自己害羞，你用整句表达。",
+      "display": "",
+      "audio": "N26A-2e72c52e2ecd946ea30e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S034",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I am shy.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C012",
+      "model": "N26A-6f1988b6a309859252db",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S035",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友核对所描述的女孩特点，情境为害羞，你用短语回应。",
+      "display": "",
+      "audio": "N26A-7fe4a7fd9b73a77b1e6d",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S036",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "a shy girl",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U019-L09-C013",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U019-L09-S037",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U019-L09-S038",
+      "course": "N26-U019-L09",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U019-L09-C001",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "使……困惑",
+      "answers": [
+        "confuse"
+      ],
+      "hint": "confuse",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S004",
+      "help": "N26-U019-L09-S004-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C002",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "害羞的",
+      "answers": [
+        "shy"
+      ],
+      "hint": "shy",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S007",
+      "help": "N26-U019-L09-S007-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C003",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "是，在，配合我时的形式",
+      "answers": [
+        "am"
+      ],
+      "hint": "am",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S010",
+      "help": "N26-U019-L09-S010-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C004",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "使一个孩子困惑",
+      "answers": [
+        "confuse a child"
+      ],
+      "hint": "confuse a child",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S013",
+      "help": "N26-U019-L09-S013-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C005",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一位害羞的女孩",
+      "answers": [
+        "a shy girl"
+      ],
+      "hint": "a shy girl",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S016",
+      "help": "N26-U019-L09-S016-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C006",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我有些害羞。",
+      "answers": [
+        "I am shy."
+      ],
+      "hint": "I am shy.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S019",
+      "help": "N26-U019-L09-S019-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C007",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "一位害羞的男孩",
+      "answers": [
+        "a shy boy"
+      ],
+      "hint": "a shy boy",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S022",
+      "help": "N26-U019-L09-S022-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C008",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "口述人物是害羞的女孩，先听描述再说。",
+      "answers": [
+        "a shy girl"
+      ],
+      "hint": "a shy girl",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S025",
+      "help": "N26-U019-L09-S025-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C009",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "角色有些害羞，先听完整表达再接上。",
+      "answers": [
+        "I am shy."
+      ],
+      "hint": "I am shy.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S028",
+      "help": "N26-U019-L09-S028-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C010",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说一位害羞的男孩，看提示表达。",
+      "answers": [
+        "a shy boy"
+      ],
+      "hint": "a shy boy",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S030",
+      "help": "N26-U019-L09-S030-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C011",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说使一个孩子困惑这个动作，看提示表达。",
+      "answers": [
+        "confuse a child"
+      ],
+      "hint": "confuse a child",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U019-L09-S032",
+      "help": "N26-U019-L09-S032-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C012",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象角色在自我介绍时说明自己害羞，你用整句表达。",
+      "answers": [
+        "I am shy."
+      ],
+      "hint": "I am shy.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U019-L09-S034",
+      "help": "N26-U019-L09-S034-HELP"
+    },
+    {
+      "id": "N26-U019-L09-C013",
+      "course": "N26-U019-L09",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友核对所描述的女孩特点，情境为害羞，你用短语回应。",
+      "answers": [
+        "a shy girl"
+      ],
+      "hint": "a shy girl",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U019-L09-S036",
+      "help": "N26-U019-L09-S036-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U019-L09-S004-HELP",
+      "forStep": "N26-U019-L09-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-db30721e6641cf2a8d2b",
+      "display": "confuse",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S007-HELP",
+      "forStep": "N26-U019-L09-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-42cc57b8b47f5b8a3a55",
+      "display": "shy",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S010-HELP",
+      "forStep": "N26-U019-L09-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-bba49fdb90ac09791dac",
+      "display": "am",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S013-HELP",
+      "forStep": "N26-U019-L09-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9fac4310a672a56df9d8",
+      "display": "confuse a child",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S016-HELP",
+      "forStep": "N26-U019-L09-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "display": "a shy girl",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S019-HELP",
+      "forStep": "N26-U019-L09-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6f1988b6a309859252db",
+      "display": "I am shy.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S022-HELP",
+      "forStep": "N26-U019-L09-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c854046468180b4337fb",
+      "display": "a shy boy",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S025-HELP",
+      "forStep": "N26-U019-L09-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "display": "a shy girl",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S028-HELP",
+      "forStep": "N26-U019-L09-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6f1988b6a309859252db",
+      "display": "I am shy.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S030-HELP",
+      "forStep": "N26-U019-L09-S030",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c854046468180b4337fb",
+      "display": "a shy boy",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S030",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S032-HELP",
+      "forStep": "N26-U019-L09-S032",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-9fac4310a672a56df9d8",
+      "display": "confuse a child",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S032",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S034-HELP",
+      "forStep": "N26-U019-L09-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-6f1988b6a309859252db",
+      "display": "I am shy.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U019-L09-S036-HELP",
+      "forStep": "N26-U019-L09-S036",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-8cec261c26e6ff168b1b",
+      "display": "a shy girl",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U019-L09-S036",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "confuse",
+      "word": "confuse",
+      "ipa": "/kənˈfjuːz/",
+      "meaning": "使……困惑",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-db30721e6641cf2a8d2b"
+    },
+    {
+      "key": "shy",
+      "word": "shy",
+      "ipa": "/ʃaɪ/",
+      "meaning": "害羞的",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-42cc57b8b47f5b8a3a55"
+    },
+    {
+      "key": "be",
+      "word": "am",
+      "ipa": "/æm/",
+      "meaning": "是，在，配合我时的形式",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-bba49fdb90ac09791dac"
+    },
+    {
+      "key": "a",
+      "word": "a",
+      "ipa": "/ə/",
+      "meaning": "一个；一（按本课已示范的搭配使用）",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2112c00aabb1042badb5"
+    },
+    {
+      "key": "child",
+      "word": "child",
+      "ipa": "/tʃaɪld/",
+      "meaning": "孩子，这里指一位孩子",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-fc4ca42cc9a7d3d56465"
+    },
+    {
+      "key": "girl",
+      "word": "girl",
+      "ipa": "/ɡɝːl/",
+      "meaning": "女孩",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-50c5f5a19c454e2809cf"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "boy",
+      "word": "boy",
+      "ipa": "/bɔɪ/",
+      "meaning": "男孩",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac75342fcf2c4aec56b9"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "confuse作使动动作，不暗加confused词形；短语不是命令。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "child",
+      "sourceCourse": "N26-U011-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "girl",
+      "sourceCourse": "N26-U011-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "boy",
+      "sourceCourse": "N26-U011-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-637a4ccab071321c9227",
+      "N26A-ec7cdbb343efe1f8e95e",
+      "N26A-db30721e6641cf2a8d2b",
+      "N26A-fa8515f1f88a7a9dc13b",
+      "N26A-42cc57b8b47f5b8a3a55",
+      "N26A-5e011d6cd5b0707ed400",
+      "N26A-bba49fdb90ac09791dac",
+      "N26A-2e0cf9dfc1ecfb6ae9ca",
+      "N26A-9fac4310a672a56df9d8",
+      "N26A-4cfd2cf79be483a4aa45",
+      "N26A-8cec261c26e6ff168b1b",
+      "N26A-5480e0239e6c8fd9b43c",
+      "N26A-6f1988b6a309859252db",
+      "N26A-fe349345150bfd2558b3",
+      "N26A-c854046468180b4337fb",
+      "N26A-2c15fa850f3227b5ec1f",
+      "N26A-27faf478fad52bd63145",
+      "N26A-a17efe58227ba3f6649b",
+      "N26A-c309ca5bc01ccb066973",
+      "N26A-2e72c52e2ecd946ea30e",
+      "N26A-7fe4a7fd9b73a77b1e6d",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-2112c00aabb1042badb5",
+      "N26A-fc4ca42cc9a7d3d56465",
+      "N26A-50c5f5a19c454e2809cf",
+      "N26A-f353b20c6f3418376965",
+      "N26A-ac75342fcf2c4aec56b9",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

@@ -1,0 +1,1159 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch01-v1",
+  "courseId": "N26-U003-L01",
+  "unitId": "N26-U003",
+  "category": "见面与基础表达",
+  "title": "你好，再见",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "00f4fec1ed7e58480eabfc4d0af1e90eb3db40121fb9d131455b2fc6efa65773",
+  "newWords": [
+    "hello",
+    "goodbye"
+  ],
+  "prerequisites": [
+    "N26-U001"
+  ],
+  "goal": "固定使用已说明的名字，my/your和am/is在介绍中示范。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "hello",
+        "surface": "Hello",
+        "meaning": "你好，见面时打招呼",
+        "kind": "new_word"
+      },
+      {
+        "key": "goodbye",
+        "surface": "Goodbye",
+        "meaning": "再见，离开时道别",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U003-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U003-L01-S002",
+        "N26-U003-L01-S003",
+        "N26-U003-L01-S004",
+        "N26-U003-L01-S005",
+        "N26-U003-L01-S006",
+        "N26-U003-L01-S007"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U003-L01-S008",
+        "N26-U003-L01-S009",
+        "N26-U003-L01-S010",
+        "N26-U003-L01-S011",
+        "N26-U003-L01-S012",
+        "N26-U003-L01-S013"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U003-L01-S014",
+        "N26-U003-L01-S015",
+        "N26-U003-L01-S016",
+        "N26-U003-L01-S017",
+        "N26-U003-L01-S018",
+        "N26-U003-L01-S019"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U003-L01-S020",
+        "N26-U003-L01-S021",
+        "N26-U003-L01-S022",
+        "N26-U003-L01-S023"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U003-L01-S024",
+        "N26-U003-L01-S025",
+        "N26-U003-L01-S026",
+        "N26-U003-L01-S027",
+        "N26-U003-L01-S028",
+        "N26-U003-L01-S029"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U003-L01-S001",
+      "course": "N26-U003-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天用两句很短的话完成见面和道别。先听它们分别用在什么时候。",
+      "display": "",
+      "audio": "N26A-3247045c1d98e7ee9b9f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S002",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "你好，见面时打招呼。见面时自然开口，不需要另外加一句问候。",
+      "display": "Hello",
+      "audio": "N26A-8c6a36d7827ffc1d1d6a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S003",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "你好，见面时打招呼",
+      "display": "Hello.",
+      "audio": "N26A-59c0406aa5a08706f670",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "你好，见面时打招呼",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U003-L01-S004",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Hello.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U003-L01-C001",
+      "model": "N26A-59c0406aa5a08706f670",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U003-L01-S005",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "再见，离开时道别。准备结束见面、各自离开时说，后面一拍说清楚。",
+      "display": "Goodbye",
+      "audio": "N26A-e68223ea8ea552d0ea5e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S006",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "再见，离开时道别",
+      "display": "Goodbye.",
+      "audio": "N26A-7dbed1f0c01c589e5030",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "再见，离开时道别",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U003-L01-S007",
+      "course": "N26-U003-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Goodbye.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U003-L01-C002",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U003-L01-S008",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "你好。把这个词当作完整的招呼，说得自然一点。",
+      "display": "Hello",
+      "audio": "N26A-08890ba466217feddc44",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S009",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "你好。",
+      "display": "Hello.",
+      "audio": "N26A-59c0406aa5a08706f670",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "你好。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U003-L01-S010",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Hello.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U003-L01-C003",
+      "model": "N26A-59c0406aa5a08706f670",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U003-L01-S011",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "再见。道别时语气放柔，像真的准备离开。",
+      "display": "Goodbye",
+      "audio": "N26A-63c64ecfe04f2c258cd3",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S012",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "再见。",
+      "display": "Goodbye.",
+      "audio": "N26A-7dbed1f0c01c589e5030",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "再见。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U003-L01-S013",
+      "course": "N26-U003-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Goodbye.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U003-L01-C004",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U003-L01-S014",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "你好，见面时打招呼",
+      "display": "Hello.",
+      "audio": "N26A-59c0406aa5a08706f670",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "你好，见面时打招呼",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U003-L01-S015",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "我们刚见面。我先向你问好，你用已经听过的招呼回应。",
+      "display": "",
+      "audio": "N26A-22f635015315ddc0cde6",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S016",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Hello.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C005",
+      "model": "N26A-59c0406aa5a08706f670",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S017",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "再见，离开时道别",
+      "display": "Goodbye.",
+      "audio": "N26A-7dbed1f0c01c589e5030",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "再见，离开时道别",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U003-L01-S018",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "我们准备各自离开。我先道别，你也接一句。",
+      "display": "",
+      "audio": "N26A-c3a992f86deb476e7d17",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S019",
+      "course": "N26-U003-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Goodbye.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C006",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S020",
+      "course": "N26-U003-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "刚见到对方，看着提示向对方问好。",
+      "display": "",
+      "audio": "N26A-d7b455e2295d15186826",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S021",
+      "course": "N26-U003-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Hello.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C007",
+      "model": "N26A-59c0406aa5a08706f670",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S022",
+      "course": "N26-U003-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "准备离开了，看着提示向对方道别。",
+      "display": "",
+      "audio": "N26A-3f6b349cd700146eca60",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S023",
+      "course": "N26-U003-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Goodbye.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C008",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S024",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "你走到朋友面前，先自然打个招呼。",
+      "display": "",
+      "audio": "N26A-0166b93cf57ba200e294",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S025",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Hello.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C009",
+      "model": "N26A-59c0406aa5a08706f670",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S026",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "这次见面结束了，你主动道别。",
+      "display": "",
+      "audio": "N26A-85317d981a32eeac8b3a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S027",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Goodbye.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U003-L01-C010",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U003-L01-S028",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U003-L01-S029",
+      "course": "N26-U003-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U003-L01-C001",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你好，见面时打招呼",
+      "answers": [
+        "Hello."
+      ],
+      "hint": "Hello.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S004",
+      "help": "N26-U003-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C002",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "再见，离开时道别",
+      "answers": [
+        "Goodbye."
+      ],
+      "hint": "Goodbye.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S007",
+      "help": "N26-U003-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C003",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你好。",
+      "answers": [
+        "Hello."
+      ],
+      "hint": "Hello.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S010",
+      "help": "N26-U003-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C004",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "再见。",
+      "answers": [
+        "Goodbye."
+      ],
+      "hint": "Goodbye.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S013",
+      "help": "N26-U003-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C005",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我们刚见面。我先向你问好，你用已经听过的招呼回应。",
+      "answers": [
+        "Hello."
+      ],
+      "hint": "Hello.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S016",
+      "help": "N26-U003-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C006",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我们准备各自离开。我先道别，你也接一句。",
+      "answers": [
+        "Goodbye."
+      ],
+      "hint": "Goodbye.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S019",
+      "help": "N26-U003-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C007",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "刚见到对方，看着提示向对方问好。",
+      "answers": [
+        "Hello."
+      ],
+      "hint": "Hello.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S021",
+      "help": "N26-U003-L01-S021-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C008",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "准备离开了，看着提示向对方道别。",
+      "answers": [
+        "Goodbye."
+      ],
+      "hint": "Goodbye.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U003-L01-S023",
+      "help": "N26-U003-L01-S023-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C009",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你走到朋友面前，先自然打个招呼。",
+      "answers": [
+        "Hello."
+      ],
+      "hint": "Hello.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U003-L01-S025",
+      "help": "N26-U003-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U003-L01-C010",
+      "course": "N26-U003-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这次见面结束了，你主动道别。",
+      "answers": [
+        "Goodbye."
+      ],
+      "hint": "Goodbye.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U003-L01-S027",
+      "help": "N26-U003-L01-S027-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U003-L01-S004-HELP",
+      "forStep": "N26-U003-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-59c0406aa5a08706f670",
+      "display": "Hello.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S007-HELP",
+      "forStep": "N26-U003-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "display": "Goodbye.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S010-HELP",
+      "forStep": "N26-U003-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-59c0406aa5a08706f670",
+      "display": "Hello.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S013-HELP",
+      "forStep": "N26-U003-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "display": "Goodbye.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S016-HELP",
+      "forStep": "N26-U003-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-59c0406aa5a08706f670",
+      "display": "Hello.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S019-HELP",
+      "forStep": "N26-U003-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "display": "Goodbye.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S021-HELP",
+      "forStep": "N26-U003-L01-S021",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-59c0406aa5a08706f670",
+      "display": "Hello.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S021",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S023-HELP",
+      "forStep": "N26-U003-L01-S023",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "display": "Goodbye.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S023",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S025-HELP",
+      "forStep": "N26-U003-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-59c0406aa5a08706f670",
+      "display": "Hello.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U003-L01-S027-HELP",
+      "forStep": "N26-U003-L01-S027",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-7dbed1f0c01c589e5030",
+      "display": "Goodbye.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U003-L01-S027",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "hello",
+      "word": "hello",
+      "ipa": "/həˈloʊ/",
+      "meaning": "你好，见面时打招呼",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-732e312764e924686fcd"
+    },
+    {
+      "key": "goodbye",
+      "word": "goodbye",
+      "ipa": "/ˌɡʊdˈbaɪ/",
+      "meaning": "再见，离开时道别",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-71f1d61ac28a30ced514"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "不把hi或bye混入正式首教；不加入How are you；早期扩展是同词的完整交际用法。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "changed_since_review_pending_recheck",
+      "reviewedContentHash": "8670126a54367f3880c3c7cead72b50a290c992c3e4e8e204fcb7e929eb73b9c",
+      "findingIds": [],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r1",
+  "mediaRequirements": {
+    "uniqueAssets": 19,
+    "availableExactAssets": 19,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-3247045c1d98e7ee9b9f",
+      "N26A-8c6a36d7827ffc1d1d6a",
+      "N26A-59c0406aa5a08706f670",
+      "N26A-e68223ea8ea552d0ea5e",
+      "N26A-7dbed1f0c01c589e5030",
+      "N26A-08890ba466217feddc44",
+      "N26A-63c64ecfe04f2c258cd3",
+      "N26A-22f635015315ddc0cde6",
+      "N26A-c3a992f86deb476e7d17",
+      "N26A-d7b455e2295d15186826",
+      "N26A-3f6b349cd700146eca60",
+      "N26A-0166b93cf57ba200e294",
+      "N26A-85317d981a32eeac8b3a",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-732e312764e924686fcd",
+      "N26A-71f1d61ac28a30ced514",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

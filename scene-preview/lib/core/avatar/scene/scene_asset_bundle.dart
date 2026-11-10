@@ -11,6 +11,12 @@ import 'asset_cache.dart';
 class SceneAssetBundle extends CachingAssetBundle {
   SceneAssetBundle(this.onProgress);
   final void Function(int completed, int total) onProgress;
+  final _client = http.Client();
+  bool _closed = false;
+  void close() {
+    _closed = true;
+    _client.close();
+  }
 
   @override
   Future<ByteData> load(String key) async {
@@ -18,12 +24,15 @@ class SceneAssetBundle extends CachingAssetBundle {
         !key.endsWith('.fsceneb')) {
       return rootBundle.load(key);
     }
-    final client = http.Client();
+    if (_closed) throw StateError('Scene load cancelled');
+    final client = _client;
     try {
       final response = await client
           .get(Uri.base.resolve('/api/assets/scene-manifest'))
           .timeout(const Duration(seconds: 20));
-      if (response.statusCode != 200) { throw StateError('人物资源暂时不可用，请重试'); }
+      if (response.statusCode != 200) {
+        throw StateError('人物资源暂时不可用，请重试');
+      }
       final manifest = jsonDecode(response.body) as Map<String, dynamic>;
       validateSceneManifest(manifest);
       final bytes = await downloadSceneParts(
@@ -33,7 +42,7 @@ class SceneAssetBundle extends CachingAssetBundle {
       );
       return ByteData.sublistView(bytes);
     } catch (_) {
-      if (kDebugMode) return rootBundle.load(key);
+      if (kDebugMode && !_closed) return rootBundle.load(key);
       rethrow;
     } finally {
       client.close();
@@ -122,12 +131,34 @@ Future<Uint8List> downloadSceneParts(
         bytes,
       );
       onProgress(++completed, parts.length);
+      // Cache hits may all complete in microtasks. Yield so loading feedback,
+      // taps and lifecycle changes remain responsive on a warm iPhone load.
+      await Future<void>.delayed(Duration.zero);
     }
   }
 
   await Future.wait(List.generate(3, (_) => worker()));
-  if (sha256.convert(output).toString() != manifest['revision']) {
+  final digest = _SceneDigest();
+  final hasher = sha256.startChunkedConversion(digest);
+  for (var start = 0; start < output.length; start += 4 * 1024 * 1024) {
+    final end = (start + 4 * 1024 * 1024).clamp(0, output.length);
+    hasher.add(Uint8List.sublistView(output, start, end));
+    await Future<void>.delayed(Duration.zero);
+  }
+  hasher.close();
+  if (digest.value.toString() != manifest['revision']) {
     throw const FormatException('Scene model revision mismatch');
   }
   return output;
+}
+
+class _SceneDigest implements Sink<Digest> {
+  Digest? value;
+  @override
+  void add(Digest data) {
+    value = data;
+  }
+
+  @override
+  void close() {}
 }

@@ -1,0 +1,20 @@
+// Local-only test server. Production data and service configuration are untouched.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+process.chdir(root);
+process.env.SNOW_DATA_DIR=path.join(root,'work/local-guided-data');
+process.env.SNOW_CACHE_DIR=path.join(root,'work/local-guided-cache');
+process.env.AUTH_TEST_MODE='1';
+process.env.AUTH_SECURE_COOKIE='0';
+process.env.PORT='5297';
+process.env.COS_ASSETS_ENABLED='true';
+ process.env.LOCAL_TEACHING_AUDIO='1';
+const {ContentStore}=await import('../services/content-store.mjs');
+const store=new ContentStore();
+const release=JSON.parse(fs.readFileSync('work/course-release/staged.json','utf8'));
+store.stage(release);
+if(store.state().active!==release.id)store.activate(release.id,store.state().active);
+await import('../server.mjs');
+await import('./local-preview-proxy.mjs');

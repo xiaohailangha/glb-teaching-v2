@@ -23,7 +23,10 @@ function command(program,args){return new Promise((resolve,reject)=>{
  child.on('error',reject);child.on('exit',code=>code===0?resolve():reject(Error(program+': '+error)));
 });}
 await fs.access('scene-preview/build/web/main.dart.js');
+if(!(await fs.readFile('scene-preview/build/web/index.html','utf8')).includes('<base href="/scene/">'))throw Error('Build with --base-href /scene/ before deploying this route.');
 await fs.access('.secrets/cos-scene-assets.json');
+await fs.mkdir('work/cloud-deploy',{recursive:true});
+await command('tar',['-czf','work/cloud-deploy/curriculum.tar.gz','data/curriculum/plan-3000.json','data/curriculum/access.json','data/curriculum/sample.json','data/curriculum/checks.json','data/curriculum/word-checks.json','data/curriculum/audio-release.json','services/curriculum.mjs','services/curriculum-evidence.mjs','services/curriculum-media.mjs']);
 await command('tar',['-czf','work/cloud-deploy/scene-preview.tar.gz','--exclude=./assets/flutter_scene_generated/*.fsceneb','-C','scene-preview/build/web','.']);
 console.log('Scene release archive prepared.');
 const publicKey=(await fs.readFile('.secrets/lighthouse-deploy.pub','utf8')).trim();
@@ -53,6 +56,7 @@ echo SCENE_UPLOAD_READY
  const ssh=['-i','.secrets/lighthouse-deploy','-o','UserKnownHostsFile=.secrets/lighthouse-known-hosts','-o','StrictHostKeyChecking=yes','-o','IdentitiesOnly=yes'];
  for(const [source,target]of [
   ['work/cloud-deploy/scene-preview.tar.gz','glb-scene-preview.tar.gz'],
+  ['work/cloud-deploy/curriculum.tar.gz','glb-curriculum.tar.gz'],
   ['services/cos-assets.mjs','glb-scene-cos-assets.mjs'],
   ['services/speech-http.mjs','glb-scene-speech-http.mjs'],
   ['services/live-recognition.mjs','glb-scene-live-recognition.mjs'],
@@ -75,9 +79,24 @@ set -euo pipefail
 test "$(hostname)" = VM-0-11-ubuntu
 backup=/opt/glb-backups/before-scene-$(date -u +%Y%m%dT%H%M%SZ)
 install -d -m 700 "$backup"
+python3 - "$backup" <<'PY'
+import pathlib,sqlite3,subprocess,sys
+pid=subprocess.check_output(['systemctl','show','glb-teaching','-p','MainPID','--value'],text=True).strip()
+env=dict(x.split('=',1) for x in pathlib.Path('/proc/'+pid+'/environ').read_text().split(chr(0)) if '=' in x)
+root=pathlib.Path(env.get('SNOW_DATA_DIR','/opt/glb-teaching/var'))
+for db in root.rglob('*.sqlite'):
+    target=pathlib.Path(sys.argv[1])/'database'/db.relative_to(root)
+    target.parent.mkdir(parents=True,exist_ok=True)
+    with sqlite3.connect('file:'+str(db)+'?mode=ro',uri=True) as src, sqlite3.connect(target) as dst: src.backup(dst)
+print('Consistent account database snapshots saved.')
+PY
 cp /etc/nginx/sites-available/glb-teaching "$backup/nginx.conf"
 if test -f /etc/systemd/system/glb-teaching.service.d/auth-test.conf; then cp /etc/systemd/system/glb-teaching.service.d/auth-test.conf "$backup/auth-test.conf"; fi
 cp /opt/glb-teaching/server.mjs "$backup/server.mjs"
+if test -d /opt/glb-teaching/data/curriculum; then cp -a /opt/glb-teaching/data/curriculum "$backup/curriculum"; fi
+for name in curriculum curriculum-evidence curriculum-media; do
+ if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
+done
 for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
  if test -f /opt/glb-teaching/services/$name.mjs; then cp /opt/glb-teaching/services/$name.mjs "$backup/$name.mjs"; fi
 done
@@ -108,6 +127,10 @@ rollback(){
  trap - ERR
  cp "$backup/nginx.conf" /etc/nginx/sites-available/glb-teaching
  cp "$backup/server.mjs" /opt/glb-teaching/server.mjs
+ if test -d "$backup/curriculum"; then cp -a "$backup/curriculum/." /opt/glb-teaching/data/curriculum/; fi
+ for name in curriculum curriculum-evidence curriculum-media; do
+  if test -f "$backup/$name.mjs"; then cp "$backup/$name.mjs" /opt/glb-teaching/services/$name.mjs; fi
+ done
  if test -f "$backup/course-catalog.json"; then cp "$backup/course-catalog.json" /opt/glb-teaching/data/course-catalog.json; fi
  for name in auth-http tencent-sms learning-http learning-store storage-paths content-store content-http backup-codec tencent-speech; do
   if test -f "$backup/$name.mjs"; then cp "$backup/$name.mjs" /opt/glb-teaching/services/$name.mjs; fi
@@ -125,7 +148,14 @@ rollback(){
  echo SCENE_RELEASE_ROLLED_BACK >&2
 }
 trap rollback ERR
-backend_changed=0
+backend_changed=1
+tar -xzf /root/glb-curriculum.tar.gz -C /opt/glb-teaching
+chown -R glbapp:glbapp /opt/glb-teaching/data/curriculum
+for name in curriculum curriculum-evidence curriculum-media; do
+ chown glbapp:glbapp /opt/glb-teaching/services/$name.mjs
+ /opt/glb-runtime/node/bin/node --check /opt/glb-teaching/services/$name.mjs
+done
+(cd /opt/glb-teaching && /opt/glb-runtime/node/bin/node --input-type=module -e "import {validateCurriculum} from './services/curriculum.mjs'; validateCurriculum();")
 if ! cmp -s /root/glb-course-catalog.json /opt/glb-teaching/data/course-catalog.json; then backend_changed=1; fi
 if test -f /opt/glb-teaching/data/course-catalog.json; then cp /opt/glb-teaching/data/course-catalog.json "$backup/course-catalog.json"; fi
 /opt/glb-runtime/node/bin/node -e "require('node:sqlite')"
@@ -157,6 +187,23 @@ python3 - <<'PY'
 from pathlib import Path
 p=Path('/etc/nginx/sites-available/glb-teaching')
 s=p.read_text()
+if 'location = /api/auth/learning/curriculum/oral' not in s:
+    marker='  location ^~ /api/auth/'
+    assert marker in s
+    block='''  location = /api/auth/learning/curriculum/oral {
+    proxy_pass http://127.0.0.1:5296;
+    proxy_set_header Host $http_host;
+    proxy_set_header Origin $http_origin;
+    proxy_set_header Sec-Fetch-Site $http_sec_fetch_site;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Cookie $http_cookie;
+    client_max_body_size 950k;
+    proxy_read_timeout 100s;
+    add_header Cache-Control "private, no-store" always;
+  }
+'''
+    s=s.replace(marker,block+marker,1)
+    p.write_text(s)
 if 'location ^~ /api/auth/' not in s:
     marker='  location ^~ /api/speech/ {'
     assert marker in s

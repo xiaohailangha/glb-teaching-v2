@@ -279,7 +279,12 @@ class _MyLearningPageState extends State<MyLearningPage> {
               child: metric(data?['courses']?.toString() ?? '—', '学过课程'),
             ),
             const SizedBox(width: 12),
-            Expanded(child: metric(data?['words']?.toString() ?? '—', '接触单词')),
+            Expanded(
+              child: metric(
+                (data?['confirmedWords'] ?? data?['words'])?.toString() ?? '—',
+                '已学单词',
+              ),
+            ),
           ],
         ),
         if (data != null) ...[

@@ -20,7 +20,8 @@ $env:GIT_CONFIG_KEY_0 = 'safe.directory'
 $env:GIT_CONFIG_VALUE_0 = ($taskRoot + '\work\flutter-scene-sdk').Replace('\','/')
 $taskPushed = $false
 try {
-    Push-Location (Join-Path 'V:\' $WorkingDirectory)
+    $taskWorkingDirectory = if ([System.IO.Path]::IsPathRooted($WorkingDirectory)) { $WorkingDirectory } else { Join-Path 'V:\' $WorkingDirectory }
+    Push-Location $taskWorkingDirectory
     $taskPushed = $true
     if ($Dart) { & 'V:\work\flutter-scene-sdk\bin\dart.bat' @FlutterArgs }
     else { & 'V:\work\flutter-scene-sdk\bin\flutter.bat' @FlutterArgs }

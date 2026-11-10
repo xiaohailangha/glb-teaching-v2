@@ -1,0 +1,1629 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "batch06-v1",
+  "courseId": "N26-U011-L03",
+  "unitId": "N26-U011",
+  "category": "社交与休闲",
+  "title": "姑姨叔舅与表亲",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "1bab5b1b05d5b226f262c1b450b753391a63d407ff5f007d8d853b027a69581e",
+  "newWords": [
+    "grandparent",
+    "aunt",
+    "uncle",
+    "cousin"
+  ],
+  "prerequisites": [
+    "N26-U011-L02"
+  ],
+  "goal": "在“家庭成员 3”中逐词学会本课意思，再用已教内容作简短表达。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "grandparent",
+        "surface": "grandparent",
+        "meaning": "祖父母或外祖父母中的一位",
+        "kind": "new_word"
+      },
+      {
+        "key": "aunt",
+        "surface": "aunt",
+        "meaning": "姑、姨、婶、舅母等女性亲属的统称",
+        "kind": "new_word"
+      },
+      {
+        "key": "uncle",
+        "surface": "uncle",
+        "meaning": "叔、伯、舅、姑父、姨父等男性亲属的统称",
+        "kind": "new_word"
+      },
+      {
+        "key": "cousin",
+        "surface": "cousin",
+        "meaning": "堂兄弟姐妹或表兄弟姐妹",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U011-L03-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U011-L03-S002",
+        "N26-U011-L03-S003",
+        "N26-U011-L03-S004",
+        "N26-U011-L03-S005",
+        "N26-U011-L03-S006",
+        "N26-U011-L03-S007",
+        "N26-U011-L03-S008",
+        "N26-U011-L03-S009",
+        "N26-U011-L03-S010",
+        "N26-U011-L03-S011",
+        "N26-U011-L03-S012",
+        "N26-U011-L03-S013"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U011-L03-S014",
+        "N26-U011-L03-S015",
+        "N26-U011-L03-S016",
+        "N26-U011-L03-S017",
+        "N26-U011-L03-S018",
+        "N26-U011-L03-S019",
+        "N26-U011-L03-S020",
+        "N26-U011-L03-S021",
+        "N26-U011-L03-S022",
+        "N26-U011-L03-S023",
+        "N26-U011-L03-S024",
+        "N26-U011-L03-S025"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U011-L03-S026",
+        "N26-U011-L03-S027",
+        "N26-U011-L03-S028",
+        "N26-U011-L03-S029",
+        "N26-U011-L03-S030",
+        "N26-U011-L03-S031"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U011-L03-S032",
+        "N26-U011-L03-S033",
+        "N26-U011-L03-S034",
+        "N26-U011-L03-S035"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U011-L03-S036",
+        "N26-U011-L03-S037",
+        "N26-U011-L03-S038",
+        "N26-U011-L03-S039",
+        "N26-U011-L03-S040",
+        "N26-U011-L03-S041"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U011-L03-S001",
+      "course": "N26-U011-L03",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "今天认识更多亲属称呼。中文里的好几种关系，在英文里可能用同一个词，我们先按本课的家庭关系理解。",
+      "display": "",
+      "audio": "N26A-cf24da9c1b4027b57361",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S002",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "祖父母或外祖父母中的一位。这个词还是单数，指祖辈中的一位。",
+      "display": "grandparent",
+      "audio": "N26A-21a3c2a90277cafd8375",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S003",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "祖父母或外祖父母中的一位",
+      "display": "grandparent",
+      "audio": "N26A-c22fb7641547a68b767e",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "祖父母或外祖父母中的一位",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S004",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "grandparent",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C001",
+      "model": "N26A-c22fb7641547a68b767e",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S005",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "姑、姨、婶、舅母等女性亲属的统称。今天先用一个英文称呼认识这一组近亲关系。",
+      "display": "aunt",
+      "audio": "N26A-81092a0fa72e21698094",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S006",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "姑、姨、婶、舅母等女性亲属的统称",
+      "display": "aunt",
+      "audio": "N26A-a521c953c6c59880359a",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "姑、姨、婶、舅母等女性亲属的统称",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S007",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "aunt",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C002",
+      "model": "N26A-a521c953c6c59880359a",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S008",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "叔、伯、舅、姑父、姨父等男性亲属的统称。先听这个整词，不逐个添加更多英文称呼。",
+      "display": "uncle",
+      "audio": "N26A-f647cea9bb4e07737078",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S009",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "叔、伯、舅、姑父、姨父等男性亲属的统称",
+      "display": "uncle",
+      "audio": "N26A-a344537aa4bee5793641",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "叔、伯、舅、姑父、姨父等男性亲属的统称",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S010",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "uncle",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C003",
+      "model": "N26A-a344537aa4bee5793641",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S011",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "堂兄弟姐妹或表兄弟姐妹。这里说一位同辈亲属，本词不区分性别。",
+      "display": "cousin",
+      "audio": "N26A-828701630ae6d4de68df",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S012",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "堂兄弟姐妹或表兄弟姐妹",
+      "display": "cousin",
+      "audio": "N26A-1e75dd78bfca08e87b3f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "堂兄弟姐妹或表兄弟姐妹",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S013",
+      "course": "N26-U011-L03",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "cousin",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C004",
+      "model": "N26A-1e75dd78bfca08e87b3f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U011-L03-S014",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我的一位祖辈家人。不是把几位祖辈合在一起说。",
+      "display": "my grandparent",
+      "audio": "N26A-2bbf772b1c6849a717ed",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S015",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我的一位祖辈家人",
+      "display": "my grandparent",
+      "audio": "N26A-46407b18822089043c86",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我的一位祖辈家人",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S016",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "my grandparent",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C005",
+      "model": "N26A-46407b18822089043c86",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S017",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这是我的姑姨辈女性亲属。相册情境已用中文说明具体关系，英文用这一种称呼。",
+      "display": "This is my aunt",
+      "audio": "N26A-21cd47cb599ce386b12c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S018",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这是我的姑姨辈女性亲属。",
+      "display": "This is my aunt.",
+      "audio": "N26A-2ff59197a30d1d87bba4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这是我的姑姨辈女性亲属。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S019",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "This is my aunt.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C006",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S020",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这是我的叔舅辈男性亲属。同样先听完整介绍。",
+      "display": "This is my uncle",
+      "audio": "N26A-7c42009430c9e1395878",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S021",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这是我的叔舅辈男性亲属。",
+      "display": "This is my uncle.",
+      "audio": "N26A-fc02237df578c0863b8f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这是我的叔舅辈男性亲属。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S022",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "This is my uncle.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C007",
+      "model": "N26A-fc02237df578c0863b8f",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S023",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "这是我的堂表亲。这个说法可以介绍一位堂兄弟姐妹或表兄弟姐妹。",
+      "display": "This is my cousin",
+      "audio": "N26A-d7c70e059d44471dab9e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S024",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "这是我的堂表亲。",
+      "display": "This is my cousin.",
+      "audio": "N26A-3ceb947b1505c6e04ae5",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这是我的堂表亲。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S025",
+      "course": "N26-U011-L03",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "This is my cousin.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U011-L03-C008",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U011-L03-S026",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "这是我的姑姨辈女性亲属。",
+      "display": "This is my aunt.",
+      "audio": "N26A-2ff59197a30d1d87bba4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这是我的姑姨辈女性亲属。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U011-L03-S027",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想象相册中这位亲属是你的姨妈。听完英文介绍后，请用同一句话回答。",
+      "display": "",
+      "audio": "N26A-5a5a06bc2e30d41d1bb7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S028",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "This is my aunt.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C009",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S029",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "这是我的叔舅辈男性亲属。",
+      "display": "This is my uncle.",
+      "audio": "N26A-fc02237df578c0863b8f",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "这是我的叔舅辈男性亲属。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U011-L03-S030",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "现在用中文说明是一位舅舅，先听整句，再介绍。",
+      "display": "",
+      "audio": "N26A-37972b42b92858aafd5a",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S031",
+      "course": "N26-U011-L03",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "This is my uncle.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C010",
+      "model": "N26A-fc02237df578c0863b8f",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S032",
+      "course": "N26-U011-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "说自己的一位祖辈家人，看着提示表达。",
+      "display": "",
+      "audio": "N26A-f605344d4e05c3ad2833",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S033",
+      "course": "N26-U011-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "my grandparent",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C011",
+      "model": "N26A-46407b18822089043c86",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S034",
+      "course": "N26-U011-L03",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "介绍相册中的一位堂表亲，看着提示说完整。",
+      "display": "",
+      "audio": "N26A-5f656a42a097178ebbca",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S035",
+      "course": "N26-U011-L03",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "This is my cousin.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C012",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S036",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "朋友用中文问相册里和你同辈的那位亲属是谁，你用已学句子介绍堂表亲。",
+      "display": "",
+      "audio": "N26A-50a5736d8f0c1cd66a33",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S037",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "This is my cousin.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C013",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S038",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "换一张相片，中文已说明是姑妈，你用刚才学过的完整称呼介绍。",
+      "display": "",
+      "audio": "N26A-32abd5332f904b50486b",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S039",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "This is my aunt.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U011-L03-C014",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U011-L03-S040",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U011-L03-S041",
+      "course": "N26-U011-L03",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U011-L03-C001",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "祖父母或外祖父母中的一位",
+      "answers": [
+        "grandparent"
+      ],
+      "hint": "grandparent",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S004",
+      "help": "N26-U011-L03-S004-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C002",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "姑、姨、婶、舅母等女性亲属的统称",
+      "answers": [
+        "aunt"
+      ],
+      "hint": "aunt",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S007",
+      "help": "N26-U011-L03-S007-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C003",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "叔、伯、舅、姑父、姨父等男性亲属的统称",
+      "answers": [
+        "uncle"
+      ],
+      "hint": "uncle",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S010",
+      "help": "N26-U011-L03-S010-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C004",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "堂兄弟姐妹或表兄弟姐妹",
+      "answers": [
+        "cousin"
+      ],
+      "hint": "cousin",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S013",
+      "help": "N26-U011-L03-S013-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C005",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我的一位祖辈家人",
+      "answers": [
+        "my grandparent"
+      ],
+      "hint": "my grandparent",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S016",
+      "help": "N26-U011-L03-S016-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C006",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这是我的姑姨辈女性亲属。",
+      "answers": [
+        "This is my aunt."
+      ],
+      "hint": "This is my aunt.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S019",
+      "help": "N26-U011-L03-S019-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C007",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这是我的叔舅辈男性亲属。",
+      "answers": [
+        "This is my uncle."
+      ],
+      "hint": "This is my uncle.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S022",
+      "help": "N26-U011-L03-S022-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C008",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "这是我的堂表亲。",
+      "answers": [
+        "This is my cousin."
+      ],
+      "hint": "This is my cousin.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S025",
+      "help": "N26-U011-L03-S025-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C009",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象相册中这位亲属是你的姨妈。听完英文介绍后，请用同一句话回答。",
+      "answers": [
+        "This is my aunt."
+      ],
+      "hint": "This is my aunt.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S028",
+      "help": "N26-U011-L03-S028-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C010",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "现在用中文说明是一位舅舅，先听整句，再介绍。",
+      "answers": [
+        "This is my uncle."
+      ],
+      "hint": "This is my uncle.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S031",
+      "help": "N26-U011-L03-S031-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C011",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "说自己的一位祖辈家人，看着提示表达。",
+      "answers": [
+        "my grandparent"
+      ],
+      "hint": "my grandparent",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S033",
+      "help": "N26-U011-L03-S033-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C012",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "介绍相册中的一位堂表亲，看着提示说完整。",
+      "answers": [
+        "This is my cousin."
+      ],
+      "hint": "This is my cousin.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U011-L03-S035",
+      "help": "N26-U011-L03-S035-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C013",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "朋友用中文问相册里和你同辈的那位亲属是谁，你用已学句子介绍堂表亲。",
+      "answers": [
+        "This is my cousin."
+      ],
+      "hint": "This is my cousin.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U011-L03-S037",
+      "help": "N26-U011-L03-S037-HELP"
+    },
+    {
+      "id": "N26-U011-L03-C014",
+      "course": "N26-U011-L03",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "换一张相片，中文已说明是姑妈，你用刚才学过的完整称呼介绍。",
+      "answers": [
+        "This is my aunt."
+      ],
+      "hint": "This is my aunt.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U011-L03-S039",
+      "help": "N26-U011-L03-S039-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U011-L03-S004-HELP",
+      "forStep": "N26-U011-L03-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c22fb7641547a68b767e",
+      "display": "grandparent",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S007-HELP",
+      "forStep": "N26-U011-L03-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a521c953c6c59880359a",
+      "display": "aunt",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S010-HELP",
+      "forStep": "N26-U011-L03-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a344537aa4bee5793641",
+      "display": "uncle",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S013-HELP",
+      "forStep": "N26-U011-L03-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-1e75dd78bfca08e87b3f",
+      "display": "cousin",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S016-HELP",
+      "forStep": "N26-U011-L03-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-46407b18822089043c86",
+      "display": "my grandparent",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S019-HELP",
+      "forStep": "N26-U011-L03-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "display": "This is my aunt.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S022-HELP",
+      "forStep": "N26-U011-L03-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fc02237df578c0863b8f",
+      "display": "This is my uncle.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S025-HELP",
+      "forStep": "N26-U011-L03-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "display": "This is my cousin.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S028-HELP",
+      "forStep": "N26-U011-L03-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "display": "This is my aunt.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S031-HELP",
+      "forStep": "N26-U011-L03-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-fc02237df578c0863b8f",
+      "display": "This is my uncle.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S033-HELP",
+      "forStep": "N26-U011-L03-S033",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-46407b18822089043c86",
+      "display": "my grandparent",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S033",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S035-HELP",
+      "forStep": "N26-U011-L03-S035",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "display": "This is my cousin.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S035",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S037-HELP",
+      "forStep": "N26-U011-L03-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-3ceb947b1505c6e04ae5",
+      "display": "This is my cousin.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U011-L03-S039-HELP",
+      "forStep": "N26-U011-L03-S039",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-2ff59197a30d1d87bba4",
+      "display": "This is my aunt.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U011-L03-S039",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "grandparent",
+      "word": "grandparent",
+      "ipa": "/ˈɡrænˌper.ənt/",
+      "meaning": "祖父母或外祖父母中的一位",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c22fb7641547a68b767e"
+    },
+    {
+      "key": "aunt",
+      "word": "aunt",
+      "ipa": "/ænt/",
+      "meaning": "姑、姨、婶、舅母等女性亲属的统称",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a521c953c6c59880359a"
+    },
+    {
+      "key": "uncle",
+      "word": "uncle",
+      "ipa": "/ˈʌŋ.kəl/",
+      "meaning": "叔、伯、舅、姑父、姨父等男性亲属的统称",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a344537aa4bee5793641"
+    },
+    {
+      "key": "cousin",
+      "word": "cousin",
+      "ipa": "/ˈkʌz.ən/",
+      "meaning": "堂兄弟姐妹或表兄弟姐妹",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-1e75dd78bfca08e87b3f"
+    },
+    {
+      "key": "my",
+      "word": "my",
+      "ipa": "/maɪ/",
+      "meaning": "我的，后面接正在说的东西",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-6b12889be6ce32fa0f9c"
+    },
+    {
+      "key": "this",
+      "word": "this",
+      "ipa": "/ðɪs/",
+      "meaning": "这，这个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-0873f0cb8f45837e004f"
+    },
+    {
+      "key": "be",
+      "word": "is",
+      "ipa": "/ɪz/",
+      "meaning": "是",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-78777013595e3ab65c2f"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": []
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "grandparent为一位祖辈；aunt/uncle解释语言覆盖范围而不加新词；cousin保持性别中性，不默认是男性。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started",
+    "independentReview": {
+      "status": "changed_since_review_pending_recheck",
+      "reviewedContentHash": "ecf0c71271b3e2967730fab61817d3cd7712bcedff0b03184e49f2f0bb5f5ccc",
+      "findingIds": [],
+      "releaseAccepted": false
+    }
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution"
+    ]
+  },
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 30,
+    "availableExactAssets": 30,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-cf24da9c1b4027b57361",
+      "N26A-21a3c2a90277cafd8375",
+      "N26A-c22fb7641547a68b767e",
+      "N26A-81092a0fa72e21698094",
+      "N26A-a521c953c6c59880359a",
+      "N26A-f647cea9bb4e07737078",
+      "N26A-a344537aa4bee5793641",
+      "N26A-828701630ae6d4de68df",
+      "N26A-1e75dd78bfca08e87b3f",
+      "N26A-2bbf772b1c6849a717ed",
+      "N26A-46407b18822089043c86",
+      "N26A-21cd47cb599ce386b12c",
+      "N26A-2ff59197a30d1d87bba4",
+      "N26A-7c42009430c9e1395878",
+      "N26A-fc02237df578c0863b8f",
+      "N26A-d7c70e059d44471dab9e",
+      "N26A-3ceb947b1505c6e04ae5",
+      "N26A-5a5a06bc2e30d41d1bb7",
+      "N26A-37972b42b92858aafd5a",
+      "N26A-f605344d4e05c3ad2833",
+      "N26A-5f656a42a097178ebbca",
+      "N26A-50a5736d8f0c1cd66a33",
+      "N26A-32abd5332f904b50486b",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-6b12889be6ce32fa0f9c",
+      "N26A-0873f0cb8f45837e004f",
+      "N26A-78777013595e3ab65c2f",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}

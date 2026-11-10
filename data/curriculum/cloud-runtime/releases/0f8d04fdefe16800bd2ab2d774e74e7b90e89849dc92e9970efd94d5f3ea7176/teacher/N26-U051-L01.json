@@ -1,0 +1,2164 @@
+{
+  "schema": "snow-speaks.content/1",
+  "packageVersion": "unit051-v1",
+  "courseId": "N26-U051-L01",
+  "unitId": "N26-U051",
+  "category": "时间与日常",
+  "title": "商量要做的事",
+  "planVersion": "formal-555-e0b541757e509695",
+  "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d",
+  "sourceCourseHash": "f22a2f43c729c05e666c07f53b30b4efff0fbdf1314d191a10aa7d0cd667b803",
+  "newWords": [
+    "do",
+    "will",
+    "would",
+    "could",
+    "should",
+    "must"
+  ],
+  "prerequisites": [
+    "N26-U003"
+  ],
+  "goal": "按当前语境教一项用法；不同词形、语序和语气先示范，不列助动词表。",
+  "teachingScope": {
+    "introduced": [
+      {
+        "key": "do",
+        "surface": "do",
+        "meaning": "做，完成某件事",
+        "kind": "new_word"
+      },
+      {
+        "key": "will",
+        "surface": "will",
+        "meaning": "将会，表示接下来的打算",
+        "kind": "new_word"
+      },
+      {
+        "key": "would",
+        "surface": "would",
+        "meaning": "用于礼貌表达想要",
+        "kind": "new_word"
+      },
+      {
+        "key": "could",
+        "surface": "could",
+        "meaning": "可以，用于委婉请求",
+        "kind": "new_word"
+      },
+      {
+        "key": "should",
+        "surface": "should",
+        "meaning": "应该，用于建议",
+        "kind": "new_word"
+      },
+      {
+        "key": "must",
+        "surface": "must",
+        "meaning": "必须，表示必要",
+        "kind": "new_word"
+      }
+    ],
+    "properNames": [],
+    "noUnlistedWords": true,
+    "formsAreExplicit": true,
+    "notes": null
+  },
+  "sixStages": [
+    {
+      "id": 1,
+      "name": "情境与词义导入",
+      "steps": [
+        "N26-U051-L01-S001"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "逐词释义示范即时跟读",
+      "steps": [
+        "N26-U051-L01-S002",
+        "N26-U051-L01-S003",
+        "N26-U051-L01-S004",
+        "N26-U051-L01-S005",
+        "N26-U051-L01-S006",
+        "N26-U051-L01-S007",
+        "N26-U051-L01-S008",
+        "N26-U051-L01-S009",
+        "N26-U051-L01-S010",
+        "N26-U051-L01-S011",
+        "N26-U051-L01-S012",
+        "N26-U051-L01-S013",
+        "N26-U051-L01-S014",
+        "N26-U051-L01-S015",
+        "N26-U051-L01-S016",
+        "N26-U051-L01-S017",
+        "N26-U051-L01-S018",
+        "N26-U051-L01-S019"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "扩展示范跟读",
+      "steps": [
+        "N26-U051-L01-S020",
+        "N26-U051-L01-S021",
+        "N26-U051-L01-S022",
+        "N26-U051-L01-S023",
+        "N26-U051-L01-S024",
+        "N26-U051-L01-S025",
+        "N26-U051-L01-S026",
+        "N26-U051-L01-S027",
+        "N26-U051-L01-S028",
+        "N26-U051-L01-S029",
+        "N26-U051-L01-S030",
+        "N26-U051-L01-S031",
+        "N26-U051-L01-S032",
+        "N26-U051-L01-S033",
+        "N26-U051-L01-S034",
+        "N26-U051-L01-S035",
+        "N26-U051-L01-S036",
+        "N26-U051-L01-S037"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "理解接话",
+      "steps": [
+        "N26-U051-L01-S038",
+        "N26-U051-L01-S039",
+        "N26-U051-L01-S040",
+        "N26-U051-L01-S041",
+        "N26-U051-L01-S042",
+        "N26-U051-L01-S043"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "有提示表达",
+      "steps": [
+        "N26-U051-L01-S044",
+        "N26-U051-L01-S045",
+        "N26-U051-L01-S046",
+        "N26-U051-L01-S047"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "小情境",
+      "steps": [
+        "N26-U051-L01-S048",
+        "N26-U051-L01-S049",
+        "N26-U051-L01-S050",
+        "N26-U051-L01-S051",
+        "N26-U051-L01-S052",
+        "N26-U051-L01-S053"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "N26-U051-L01-S001",
+      "course": "N26-U051-L01",
+      "stage": 1,
+      "phase": "开场",
+      "instruction": "想象商量日常安排。今天把做、将会、想要、可以、应该和必须放在熟悉的动作前面，分清语气。",
+      "display": "",
+      "audio": "N26A-14a17324bf3c9cd6ae80",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S002",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "做，完成某件事。这里是有实际意思的做",
+      "display": "do",
+      "audio": "N26A-e827c11cdffd0842caf0",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S003",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "做，完成某件事",
+      "display": "do",
+      "audio": "N26A-c5015dafc16fc30c19a2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "做，完成某件事",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S004",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "do",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C001",
+      "model": "N26A-c5015dafc16fc30c19a2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S005",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "将会，表示接下来的打算。这里说将会，表示接下来的打算，先听完整的声音。",
+      "display": "will",
+      "audio": "N26A-91ffe8186184bcd79e66",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S006",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "将会，表示接下来的打算",
+      "display": "will",
+      "audio": "N26A-40da104194627e9f2535",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "将会，表示接下来的打算",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S007",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "will",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C002",
+      "model": "N26A-40da104194627e9f2535",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S008",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "用于礼貌表达想要。这里用它把需要说得更礼貌，接下来完整听我想要水的表达。",
+      "display": "would",
+      "audio": "N26A-4d71c419dbeff5d10a14",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S009",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "用于礼貌表达想要",
+      "display": "would",
+      "audio": "N26A-18ff8bb7852b314560c6",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "用于礼貌表达想要",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S010",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "would",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C003",
+      "model": "N26A-18ff8bb7852b314560c6",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S011",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "可以，用于委婉请求。这里是礼貌请求，不表示过去能力。",
+      "display": "could",
+      "audio": "N26A-335a402ef3da6d7a8488",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S012",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "可以，用于委婉请求",
+      "display": "could",
+      "audio": "N26A-c6876a4712d3c49aeece",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "可以，用于委婉请求",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S013",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "could",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C004",
+      "model": "N26A-c6876a4712d3c49aeece",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S014",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "应该，用于建议。这里说应该，用于建议，先听完整的声音。",
+      "display": "should",
+      "audio": "N26A-a7770fc1e2fa6ee47bfb",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S015",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "应该，用于建议",
+      "display": "should",
+      "audio": "N26A-626faf82e5c29d4a4f57",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "应该，用于建议",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S016",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "should",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C005",
+      "model": "N26A-626faf82e5c29d4a4f57",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S017",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "释义",
+      "instruction": "必须，表示必要。这里说必须，表示必要，先听完整的声音。",
+      "display": "must",
+      "audio": "N26A-345edc65c76b26d6da87",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S018",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "示范",
+      "instruction": "必须，表示必要",
+      "display": "must",
+      "audio": "N26A-e6a9056b326a365cb659",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "必须，表示必要",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S019",
+      "course": "N26-U051-L01",
+      "stage": 2,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "must",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C006",
+      "model": "N26A-e6a9056b326a365cb659",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "单词"
+    },
+    {
+      "id": "N26-U051-L01-S020",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我能做这件事。这里是有实际意思的做",
+      "display": "I can do this",
+      "audio": "N26A-50bb989bcb3b36d40da7",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S021",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我能做这件事。",
+      "display": "I can do this.",
+      "audio": "N26A-e9a51b57bc1aebf107f4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我能做这件事。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S022",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I can do this.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C007",
+      "model": "N26A-e9a51b57bc1aebf107f4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S023",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我会帮忙。先听这一组，再连起来说。",
+      "display": "I will help",
+      "audio": "N26A-87acdd61138668f4599c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S024",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我会帮忙。",
+      "display": "I will help.",
+      "audio": "N26A-ad8f21a88ea3cdfaa1f4",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我会帮忙。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S025",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I will help.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C008",
+      "model": "N26A-ad8f21a88ea3cdfaa1f4",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S026",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我想要水。整体示范礼貌需要表达 这两个词连在一起，礼貌表达想要；先听完整表达。 这两个词连起来，礼貌表示想要或愿意，整句一起理解。",
+      "display": "I would like water",
+      "audio": "N26A-5829ea84e1f2950d2aba",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S027",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我想要水。",
+      "display": "I would like water.",
+      "audio": "N26A-a45a7fbdf55be2da320b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要水。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S028",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I would like water.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C009",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S029",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "你可以帮我吗。这里是礼貌请求，不表示过去能力。",
+      "display": "Could you help me",
+      "audio": "N26A-a42a132fe869be83392e",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S030",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "你可以帮我吗？",
+      "display": "Could you help me?",
+      "audio": "N26A-369a06e097d1370be4a2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "你可以帮我吗？",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S031",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "Could you help me?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C010",
+      "model": "N26A-369a06e097d1370be4a2",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S032",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我应该走了。先听这一组，再连起来说。",
+      "display": "I should go",
+      "audio": "N26A-6bfc9f7d79d6bb0b243c",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S033",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我应该走了。",
+      "display": "I should go.",
+      "audio": "N26A-384f7167f1124a1487c8",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我应该走了。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S034",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I should go.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C011",
+      "model": "N26A-384f7167f1124a1487c8",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S035",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "释义",
+      "instruction": "我必须走了。先听这一组，再连起来说。",
+      "display": "I must go",
+      "audio": "N26A-7e3299fae02c41634cec",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S036",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "示范",
+      "instruction": "我必须走了。",
+      "display": "I must go.",
+      "audio": "N26A-58053d1a62853bb58ada",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我必须走了。",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S037",
+      "course": "N26-U051-L01",
+      "stage": 3,
+      "phase": "跟读",
+      "instruction": "",
+      "display": "I must go.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "hold",
+        "eyeContact": "attentive",
+        "bodyIntent": "身体微向前，保持倾听，停止讲解手势"
+      },
+      "check": "N26-U051-L01-C012",
+      "model": "N26A-58053d1a62853bb58ada",
+      "supported": true,
+      "capture": "immediate_on_same_display_after_model",
+      "evidence": "guided_only",
+      "group": "短语与句子"
+    },
+    {
+      "id": "N26-U051-L01-S038",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "你可以帮我吗？",
+      "display": "Could you help me?",
+      "audio": "N26A-369a06e097d1370be4a2",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "你可以帮我吗？",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U051-L01-S039",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想礼貌请朋友帮助，先听问句。",
+      "display": "",
+      "audio": "N26A-8f11dc727862027f1711",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S040",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Could you help me?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C013",
+      "model": "N26A-369a06e097d1370be4a2",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S041",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "示范",
+      "instruction": "我想要水。",
+      "display": "I would like water.",
+      "audio": "N26A-a45a7fbdf55be2da320b",
+      "avatar": {
+        "phase": "model",
+        "onAudioEnd": "listen",
+        "eyeContact": "learner",
+        "bodyIntent": "清晰示范，轻微自然手势，整词结束后准备倾听"
+      },
+      "meaning": "我想要水。",
+      "group": "理解接话示范"
+    },
+    {
+      "id": "N26-U051-L01-S042",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "带练提示",
+      "instruction": "想礼貌说需要水，先听完整表达。",
+      "display": "",
+      "audio": "N26A-6bf22d85c7b57a5cbfc1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S043",
+      "course": "N26-U051-L01",
+      "stage": 4,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I would like water.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C014",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S044",
+      "course": "N26-U051-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示委婉请朋友帮忙。",
+      "display": "",
+      "audio": "N26A-bff5349e03bad7a12eb1",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S045",
+      "course": "N26-U051-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "Could you help me?",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C015",
+      "model": "N26A-369a06e097d1370be4a2",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S046",
+      "course": "N26-U051-L01",
+      "stage": 5,
+      "phase": "带练提示",
+      "instruction": "看提示礼貌说想要水。",
+      "display": "",
+      "audio": "N26A-32efc10a2e0a39f65985",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S047",
+      "course": "N26-U051-L01",
+      "stage": 5,
+      "phase": "有提示表达",
+      "instruction": "",
+      "display": "I would like water.",
+      "audio": "",
+      "avatar": {
+        "phase": "listen",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C016",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "supported": true,
+      "evidence": "guided_only",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S048",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "想象你需要帮忙，你用委婉方式向朋友开口。",
+      "display": "",
+      "audio": "N26A-c26cf376e7990e60970f",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S049",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "Could you help me?",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C017",
+      "model": "N26A-369a06e097d1370be4a2",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S050",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "带练提示",
+      "instruction": "在想象待客情境里，你礼貌表达想要水。",
+      "display": "",
+      "audio": "N26A-bc58a59bcc9e903ca312",
+      "avatar": {
+        "phase": "meaning",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S051",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "情境",
+      "instruction": "",
+      "display": "I would like water.",
+      "audio": "",
+      "avatar": {
+        "phase": "recall",
+        "onAudioEnd": "listen",
+        "eyeContact": "attentive",
+        "bodyIntent": "轻微前倾，保持目光与倾听表情；不以循环手势假装说话"
+      },
+      "check": "N26-U051-L01-C018",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "supported": false,
+      "evidence": "natural_turn_not_mastery",
+      "hintPolicy": "available_at_all_times_never_forced_hidden",
+      "promptPolicy": "meaning_first_optional_full_expression"
+    },
+    {
+      "id": "N26-U051-L01-S052",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "鼓励",
+      "instruction": "我们刚才把这些话用起来了。想再听时，可以随时回到示范。",
+      "display": "",
+      "audio": "N26A-a07ee7f5a548cb3d2bb1",
+      "avatar": {
+        "phase": "success",
+        "onAudioEnd": "hold",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    },
+    {
+      "id": "N26-U051-L01-S053",
+      "course": "N26-U051-L01",
+      "stage": 6,
+      "phase": "收束",
+      "instruction": "本节课我们就学到这里。你可以点单词，再听一听。",
+      "display": "",
+      "audio": "N26A-5c7e8b9dab280d7e9c2c",
+      "avatar": {
+        "phase": "finish",
+        "onAudioEnd": "finish",
+        "eyeContact": "learner",
+        "bodyIntent": "自然讲解手势，与语义对应的表情"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "N26-U051-L01-C001",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "做，完成某件事",
+      "answers": [
+        "do"
+      ],
+      "hint": "do",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S004",
+      "help": "N26-U051-L01-S004-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C002",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "将会，表示接下来的打算",
+      "answers": [
+        "will"
+      ],
+      "hint": "will",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S007",
+      "help": "N26-U051-L01-S007-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C003",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "用于礼貌表达想要",
+      "answers": [
+        "would"
+      ],
+      "hint": "would",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S010",
+      "help": "N26-U051-L01-S010-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C004",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "可以，用于委婉请求",
+      "answers": [
+        "could"
+      ],
+      "hint": "could",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S013",
+      "help": "N26-U051-L01-S013-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C005",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "应该，用于建议",
+      "answers": [
+        "should"
+      ],
+      "hint": "should",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S016",
+      "help": "N26-U051-L01-S016-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C006",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "必须，表示必要",
+      "answers": [
+        "must"
+      ],
+      "hint": "must",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S019",
+      "help": "N26-U051-L01-S019-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C007",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我能做这件事。",
+      "answers": [
+        "I can do this."
+      ],
+      "hint": "I can do this.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S022",
+      "help": "N26-U051-L01-S022-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C008",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我会帮忙。",
+      "answers": [
+        "I will help."
+      ],
+      "hint": "I will help.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S025",
+      "help": "N26-U051-L01-S025-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C009",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我想要水。",
+      "answers": [
+        "I would like water."
+      ],
+      "hint": "I would like water.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S028",
+      "help": "N26-U051-L01-S028-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C010",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "你可以帮我吗？",
+      "answers": [
+        "Could you help me?"
+      ],
+      "hint": "Could you help me?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S031",
+      "help": "N26-U051-L01-S031-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C011",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我应该走了。",
+      "answers": [
+        "I should go."
+      ],
+      "hint": "I should go.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S034",
+      "help": "N26-U051-L01-S034-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C012",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "我必须走了。",
+      "answers": [
+        "I must go."
+      ],
+      "hint": "I must go.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S037",
+      "help": "N26-U051-L01-S037-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C013",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想礼貌请朋友帮助，先听问句。",
+      "answers": [
+        "Could you help me?"
+      ],
+      "hint": "Could you help me?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S040",
+      "help": "N26-U051-L01-S040-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C014",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想礼貌说需要水，先听完整表达。",
+      "answers": [
+        "I would like water."
+      ],
+      "hint": "I would like water.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S043",
+      "help": "N26-U051-L01-S043-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C015",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示委婉请朋友帮忙。",
+      "answers": [
+        "Could you help me?"
+      ],
+      "hint": "Could you help me?",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S045",
+      "help": "N26-U051-L01-S045-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C016",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "看提示礼貌说想要水。",
+      "answers": [
+        "I would like water."
+      ],
+      "hint": "I would like water.",
+      "supported": true,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "guided-N26-U051-L01-S047",
+      "help": "N26-U051-L01-S047-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C017",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "想象你需要帮忙，你用委婉方式向朋友开口。",
+      "answers": [
+        "Could you help me?"
+      ],
+      "hint": "Could you help me?",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U051-L01-S049",
+      "help": "N26-U051-L01-S049-HELP"
+    },
+    {
+      "id": "N26-U051-L01-C018",
+      "course": "N26-U051-L01",
+      "kind": "teaching",
+      "audio": [],
+      "prompt": "在想象待客情境里，你礼貌表达想要水。",
+      "answers": [
+        "I would like water."
+      ],
+      "hint": "I would like water.",
+      "supported": false,
+      "independentEligible": false,
+      "passiveWords": [],
+      "contextVariant": "situation-N26-U051-L01-S051",
+      "help": "N26-U051-L01-S051-HELP"
+    }
+  ],
+  "helpBranches": [
+    {
+      "id": "N26-U051-L01-S004-HELP",
+      "forStep": "N26-U051-L01-S004",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c5015dafc16fc30c19a2",
+      "display": "do",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S004",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S007-HELP",
+      "forStep": "N26-U051-L01-S007",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-40da104194627e9f2535",
+      "display": "will",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S007",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S010-HELP",
+      "forStep": "N26-U051-L01-S010",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-18ff8bb7852b314560c6",
+      "display": "would",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S010",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S013-HELP",
+      "forStep": "N26-U051-L01-S013",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-c6876a4712d3c49aeece",
+      "display": "could",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S013",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S016-HELP",
+      "forStep": "N26-U051-L01-S016",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-626faf82e5c29d4a4f57",
+      "display": "should",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S016",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S019-HELP",
+      "forStep": "N26-U051-L01-S019",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e6a9056b326a365cb659",
+      "display": "must",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S019",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S022-HELP",
+      "forStep": "N26-U051-L01-S022",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-e9a51b57bc1aebf107f4",
+      "display": "I can do this.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S022",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S025-HELP",
+      "forStep": "N26-U051-L01-S025",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-ad8f21a88ea3cdfaa1f4",
+      "display": "I will help.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S025",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S028-HELP",
+      "forStep": "N26-U051-L01-S028",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "display": "I would like water.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S028",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S031-HELP",
+      "forStep": "N26-U051-L01-S031",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-369a06e097d1370be4a2",
+      "display": "Could you help me?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S031",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S034-HELP",
+      "forStep": "N26-U051-L01-S034",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-384f7167f1124a1487c8",
+      "display": "I should go.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S034",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S037-HELP",
+      "forStep": "N26-U051-L01-S037",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-58053d1a62853bb58ada",
+      "display": "I must go.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前整词或表达；重播后继续倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S037",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S040-HELP",
+      "forStep": "N26-U051-L01-S040",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-369a06e097d1370be4a2",
+      "display": "Could you help me?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S040",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S043-HELP",
+      "forStep": "N26-U051-L01-S043",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "display": "I would like water.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S043",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S045-HELP",
+      "forStep": "N26-U051-L01-S045",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-369a06e097d1370be4a2",
+      "display": "Could you help me?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S045",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S047-HELP",
+      "forStep": "N26-U051-L01-S047",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "display": "I would like water.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S047",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S049-HELP",
+      "forStep": "N26-U051-L01-S049",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-369a06e097d1370be4a2",
+      "display": "Could you help me?",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S049",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    },
+    {
+      "id": "N26-U051-L01-S051-HELP",
+      "forStep": "N26-U051-L01-S051",
+      "trigger": [
+        "learner_requests_help",
+        "no_speech",
+        "unmatched_or_unclear"
+      ],
+      "instruction": "我们先听一遍，再一起说。",
+      "audio": "N26A-b7c9af52467c9d3fd6ff",
+      "model": "N26A-a45a7fbdf55be2da320b",
+      "display": "I would like water.",
+      "avatar": {
+        "phase": "support",
+        "bodyIntent": "眉眼放松，开放手势指向当前表达，示范后回到倾听"
+      },
+      "retry": {
+        "sameStep": "N26-U051-L01-S051",
+        "supported": true,
+        "independentEligible": false
+      },
+      "onRepeatedDifficulty": {
+        "instruction": "可以继续看着提示练，也可以先听一遍再往下。",
+        "audio": "N26A-f5b30feeb893901ffb37",
+        "allowListenAndContinue": true,
+        "awardMastery": false
+      }
+    }
+  ],
+  "actualWords": [
+    {
+      "key": "do",
+      "word": "do",
+      "ipa": "/duː/",
+      "meaning": "做，完成某件事",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c5015dafc16fc30c19a2"
+    },
+    {
+      "key": "will",
+      "word": "will",
+      "ipa": "/wɪl/",
+      "meaning": "将会，表示接下来的打算",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-40da104194627e9f2535"
+    },
+    {
+      "key": "would",
+      "word": "would",
+      "ipa": "/wʊd/",
+      "meaning": "用于礼貌表达想要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-18ff8bb7852b314560c6"
+    },
+    {
+      "key": "could",
+      "word": "could",
+      "ipa": "/kʊd/",
+      "meaning": "可以，用于委婉请求",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c6876a4712d3c49aeece"
+    },
+    {
+      "key": "should",
+      "word": "should",
+      "ipa": "/ʃʊd/",
+      "meaning": "应该，用于建议",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-626faf82e5c29d4a4f57"
+    },
+    {
+      "key": "must",
+      "word": "must",
+      "ipa": "/mʌst/",
+      "meaning": "必须，表示必要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-e6a9056b326a365cb659"
+    },
+    {
+      "key": "i",
+      "word": "I",
+      "ipa": "/aɪ/",
+      "meaning": "我",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f353b20c6f3418376965"
+    },
+    {
+      "key": "can",
+      "word": "can",
+      "ipa": "/kæn/",
+      "meaning": "能，可以",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-ac940722cc38a8e45268"
+    },
+    {
+      "key": "this",
+      "word": "this",
+      "ipa": "/ðɪs/",
+      "meaning": "这，这个",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a6d2d26e0ac16e513dbb"
+    },
+    {
+      "key": "help",
+      "word": "help",
+      "ipa": "/help/",
+      "meaning": "帮助",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-2158eaece6e592f2cc15"
+    },
+    {
+      "key": "like",
+      "word": "like",
+      "ipa": "/laɪk/",
+      "meaning": "在would like搭配中，与would一起礼貌表达想要",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-f06ff4b855c0f39e40f2"
+    },
+    {
+      "key": "water",
+      "word": "water",
+      "ipa": "/ˈwɑː.t̬ɚ/",
+      "meaning": "水",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-64351fa189db1fad970c"
+    },
+    {
+      "key": "you",
+      "word": "you",
+      "ipa": "/juː/",
+      "meaning": "你",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-c75a3357f6b0ff78a737"
+    },
+    {
+      "key": "me",
+      "word": "me",
+      "ipa": "/miː/",
+      "meaning": "我，放在动作后面",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-a031b121cd2022db84c8"
+    },
+    {
+      "key": "go",
+      "word": "go",
+      "ipa": "/ɡoʊ/",
+      "meaning": "去，朝另一个地方离开",
+      "properName": false,
+      "countIn3000": true,
+      "audio": "N26A-5297ca7fc196cba0063f"
+    }
+  ],
+  "avatar": {
+    "identity": "reuse_existing_character",
+    "background": "reuse_existing_background",
+    "states": [
+      "meaning",
+      "model",
+      "listen",
+      "recall",
+      "support",
+      "success",
+      "finish"
+    ],
+    "performanceStatus": "authored_not_runtime_verified"
+  },
+  "summary": {
+    "wordSource": "actualWords",
+    "wholeWordAndIpaClickable": true,
+    "extraNewWordCount": 0,
+    "properNamesIncludedButNotCounted": true,
+    "contextSenses": [
+      {
+        "word": "like",
+        "meaning": "在would like搭配中，与would一起礼貌表达想要",
+        "model": "I would like water.",
+        "modeledAt": "N26-U051-L01-S027"
+      }
+    ]
+  },
+  "review": {
+    "status": "author_semantic_review_complete",
+    "method": "逐课内容语义复核（AI作者自审）；人工审校与真人试学待验",
+    "notes": "场景词义逐项核对：do=做，完成某件事；will=将会，表示接下来的打算；would=用于礼貌表达想要；could=可以，用于委婉请求；should=应该，用于建议；must=必须，表示必要。逐词核对本课场景义；练习回应均在扩展逐句示范。英语只用当前词及明确保护的前序词，不把提示练习认定为独立掌握。音标与同形词声音待媒体阶段复核。 r4语义整改：U040063-R003、U040063-R022，具体决策见辅助整改记录。",
+    "humanStudy": "not_started",
+    "humanEditorialReview": "not_started",
+    "runtimeReview": "not_started"
+  },
+  "status": {
+    "script": "authored_semantically_reviewed",
+    "audio": "all_assets_present_listening_pending",
+    "alignment": "see_per_asset_historical_evidence",
+    "motion": "authored_intents_not_playback_verified",
+    "study": "not_started",
+    "release": "not_published"
+  },
+  "integration": {
+    "guidance": "Content authored for the guidedLessons style adapter; this package is not an imported runtime catalogue.",
+    "needs": [
+      "per-step help branches",
+      "explicit actualWords summary",
+      "plan-scoped IDs and evidence isolation",
+      "hash verified media resolution",
+      "runtime formal taught-word prerequisite guard"
+    ],
+    "taughtWordGuard": "needs_runtime_taught_word_guard"
+  },
+  "requiredTaughtWords": [
+    {
+      "key": "can",
+      "sourceCourse": "N26-U004-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "help",
+      "sourceCourse": "N26-U004-L02",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "like",
+      "sourceCourse": "N26-U005-L04",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "water",
+      "sourceCourse": "N26-U002-L03",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "me",
+      "sourceCourse": "N26-U020-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    },
+    {
+      "key": "go",
+      "sourceCourse": "N26-U005-L01",
+      "planHash": "e0b541757e5096952f551b2f54ffbbc55332b875a223c5831e3e12269d41858d"
+    }
+  ],
+  "contentRevision": "2026-11-02-r4",
+  "mediaRequirements": {
+    "uniqueAssets": 44,
+    "availableExactAssets": 44,
+    "missingAssets": 0,
+    "requiredIds": [
+      "N26A-14a17324bf3c9cd6ae80",
+      "N26A-e827c11cdffd0842caf0",
+      "N26A-c5015dafc16fc30c19a2",
+      "N26A-91ffe8186184bcd79e66",
+      "N26A-40da104194627e9f2535",
+      "N26A-4d71c419dbeff5d10a14",
+      "N26A-18ff8bb7852b314560c6",
+      "N26A-335a402ef3da6d7a8488",
+      "N26A-c6876a4712d3c49aeece",
+      "N26A-a7770fc1e2fa6ee47bfb",
+      "N26A-626faf82e5c29d4a4f57",
+      "N26A-345edc65c76b26d6da87",
+      "N26A-e6a9056b326a365cb659",
+      "N26A-50bb989bcb3b36d40da7",
+      "N26A-e9a51b57bc1aebf107f4",
+      "N26A-87acdd61138668f4599c",
+      "N26A-ad8f21a88ea3cdfaa1f4",
+      "N26A-5829ea84e1f2950d2aba",
+      "N26A-a45a7fbdf55be2da320b",
+      "N26A-a42a132fe869be83392e",
+      "N26A-369a06e097d1370be4a2",
+      "N26A-6bfc9f7d79d6bb0b243c",
+      "N26A-384f7167f1124a1487c8",
+      "N26A-7e3299fae02c41634cec",
+      "N26A-58053d1a62853bb58ada",
+      "N26A-8f11dc727862027f1711",
+      "N26A-6bf22d85c7b57a5cbfc1",
+      "N26A-bff5349e03bad7a12eb1",
+      "N26A-32efc10a2e0a39f65985",
+      "N26A-c26cf376e7990e60970f",
+      "N26A-bc58a59bcc9e903ca312",
+      "N26A-a07ee7f5a548cb3d2bb1",
+      "N26A-5c7e8b9dab280d7e9c2c",
+      "N26A-f353b20c6f3418376965",
+      "N26A-ac940722cc38a8e45268",
+      "N26A-a6d2d26e0ac16e513dbb",
+      "N26A-2158eaece6e592f2cc15",
+      "N26A-f06ff4b855c0f39e40f2",
+      "N26A-64351fa189db1fad970c",
+      "N26A-c75a3357f6b0ff78a737",
+      "N26A-a031b121cd2022db84c8",
+      "N26A-5297ca7fc196cba0063f",
+      "N26A-b7c9af52467c9d3fd6ff",
+      "N26A-f5b30feeb893901ffb37"
+    ],
+    "humanListeningReview": "not_started"
+  }
+}
