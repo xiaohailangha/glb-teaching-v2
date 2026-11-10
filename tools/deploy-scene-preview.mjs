@@ -13,7 +13,8 @@ console.log('scene-preview: package verified. '+archive);
 if(!process.argv.includes('--apply')){console.log('Review complete. Add --apply to publish.');process.exit(0);}
 const uploaded='/root/snow-scene-preview-'+Date.now()+'.tar.gz';
 await upload([[archive,uploaded]]);
-console.log(await remote(`set -eu
+console.log(await remote(`#!/bin/bash
+set -eu
 target=/opt/glb-teaching
 stage=$(mktemp -d /opt/snow-scene-preview-XXXXXX)
 backup=/opt/snow-scene-preview-backup-$(date +%s)
@@ -22,7 +23,7 @@ mkdir -p "$backup"
 cp -a "$target/build/web" "$backup/web"
 rollback() { cp -a "$backup/web/." "$target/build/web/"; }
 trap rollback ERR
-cp -a "$stage/." "$target/build/web/"
+cp -a "$stage/"* "$target/build/web/"
 chown -R glbapp:glbapp "$target/build/web"
 curl -kfsS https://49.233.179.83/scene/ >/dev/null
 trap - ERR
