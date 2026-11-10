@@ -1,534 +1,1289 @@
 {
-  "total": 88,
-  "passed": 88,
+  "revision": "stable-teaching-20261110-v1",
+  "at": "2026-11-10T03:55:27.795Z",
+  "assets": 213,
+  "chinese": 168,
+  "english": 45,
+  "passed": 213,
+  "verification": "existing independent ASR/SOE receipts, real phone cues and WAV hashes; no new paid requests",
   "results": [
     {
-      "sha256": "48e8bc7a830d24793171f9d72e021d0ca5b862261450a66c4abe0303bd3aa9a9",
-      "expected": "第一个词表示和，可以把两样东西连起来。苹果和香蕉，两样都在这里。",
-      "heard": "第一个词表示和，可以把两样东西连起来，苹果和香蕉，两样都在这里。",
-      "accepted": true
+      "id": "N26A-8cf789a027fbff0fd79b",
+      "language": "en",
+      "sha256": "bac313625aaf65d9766deed79796400136fce240f0a52a73187ffbd0af2c7d37",
+      "checked": true
     },
     {
-      "sha256": "424484993c896684c20dd661f7081733db17c4f87be48b4006392f14f1e64e4e",
-      "expected": "今天学两个连接词。第一个把两样连接起来，第二个表示不同选择。在今天的例子里，要分清两样都要和任选一种。先听两个短语，不用急着回答。",
-      "heard": "今天学两个连接词，第一个把两样连接起来，第二个表示不同选择。在今天的例子里，要分清两样，都要和任选一种，先听两个短语，不用急着回答。",
-      "accepted": true
+      "id": "N26A-27ea960eefc7115f07e5",
+      "language": "en",
+      "sha256": "8267de4ca9500dfbbc42dff5dde395b122392ec44b727e7b93ce754906317f10",
+      "checked": true
     },
     {
-      "sha256": "b6efea1a664a751b23070134f9bbc0112361a1a9575df57ed27d3f9955bcfd38",
-      "expected": "现在放进完整句子。先听示范，再看着这句话说，两样都想要。",
-      "heard": "现在放进完整句子，先听示范，再看着这句话说，两样都想要。",
-      "accepted": true
+      "id": "N26A-88b3fef8eb3b2d905bc2",
+      "language": "en",
+      "sha256": "a00cd440698706b491474129cb8b61905834dc6ee0e7b77300057a33fe6cae6a",
+      "checked": true
     },
     {
-      "sha256": "1b06b8641eff74f61baa463b30aa782392d128f2a210ddfb4ca4b9a722983a31",
-      "expected": "放进句子以后，连接词可以读轻一些。意思清楚，衔接自然就可以，不用每个词都一样重。",
-      "heard": "放进句子以后，连接词可以读轻一些，意思清楚，衔接自然就可以，不用每个词都一样重。",
-      "accepted": true
+      "id": "N26A-157c94216e315a170625",
+      "language": "en",
+      "sha256": "e2488d29bdfc3d73efcfa4df3ad60639e7f91c0296aff5f32ac0eae11dd920d5",
+      "checked": true
     },
     {
-      "sha256": "cd055ed60e3e88a611699f244df2ff88a44b18b913d81e2e67d284d1d3ba99fa",
-      "expected": "第二个词表示或者。在这个情境里，苹果或者香蕉，任意一种都可以。",
-      "heard": "第二个词表示或者，在这个情境里，苹果或者香蕉任意一种都可以。",
-      "accepted": true
+      "id": "N26A-5bb4bb2ed6f38b53e1c7",
+      "language": "en",
+      "sha256": "8a7114d5d14821f831058ae0c62e82b7908f2549354df41a705a49a7dd165644",
+      "checked": true
     },
     {
-      "sha256": "fab63e70965e23ae63ee728b9b0025e8b305e919ffe650e5e9ad973b3f810a1b",
-      "expected": "保留熟悉的句子，只换中间的连接词。先听示范，再看着说。",
-      "heard": "保留熟悉的句子，只换中间的连接词，先听示范，再看着说。",
-      "accepted": true
+      "id": "N26A-c78734809ca9792e369b",
+      "language": "en",
+      "sha256": "ead5438be4ce558751ffc9620ea781e971dc605ecb6b43ab5cd6d3e5117f0001",
+      "checked": true
     },
     {
-      "sha256": "5187e194fe9c5cec6f886cc1a7a996743bbd17a7573e64eefdc96093d6c41605",
-      "expected": "现在想表达任意一种水果都可以。看着完整提示告诉我，这次不先播放英文答案。",
-      "heard": "现在想表达任意一种水果都可以看着完整提示告诉我，这次不先播放英文答案。",
-      "accepted": true
+      "id": "N26A-ae541628e9af08195cda",
+      "language": "en",
+      "sha256": "2ec475b40fea3d3345deed7165baf0e9aefeef3d68a09791921fd2017d02ca0e",
+      "checked": true
     },
     {
-      "sha256": "cbfd3c01e801649dd18e97894e61ff3a517f658dcd26482ade64cf18a748e126",
-      "expected": "这次把两种水果前后换一换，意思还是任意一种都可以。看着完整提示说。",
-      "heard": "这次把两种水果前后换一换，意思还是任意一种都可以，看着完整提示说。",
-      "accepted": true
+      "id": "N26A-7fabeeddda307be3dd80",
+      "language": "en",
+      "sha256": "7874f561b34f1c6623b071019963bbfd398507b445d8454b71096132105dce21",
+      "checked": true
     },
     {
-      "sha256": "c975ec1e3d0cea45835bab2218a632fbe114d3fff3fff75f1c01e9ecfd3f9467",
-      "expected": "今天练习了两种表达。需要复习的具体位置会保留。",
-      "heard": "今天练习了两种表达，需要复习的具体位置会保留。",
-      "accepted": true
+      "id": "N26A-2f8d6c4c6e7329067e38",
+      "language": "en",
+      "sha256": "241fc06e9b93e10ba5e850bde2a9e91a23bfc19719f0634777f21e14992f5d86",
+      "checked": true
     },
     {
-      "sha256": "7a62e9eed355437fdf42dd3c4b46dd7087b9b16b322f1ba434d24b7fff0bb352",
-      "expected": "这个词表示虽然。先承认一种情况，再说后面的想法。先听这个词，然后看着跟读一遍。",
-      "heard": "这个词表示虽然先承认一种情况，再说后面的想法。先听这个词，然后看着跟读一遍。",
-      "accepted": true
+      "id": "N26A-8baf931ae6372e0e99b1",
+      "language": "en",
+      "sha256": "030d9169d3c8e2885c4ab325923cc5804f7fb9d2103da4db1023eea43d9a9064",
+      "checked": true
     },
     {
-      "sha256": "a4a66b21b5d86035186af4cb562c41ad53be1e63ec9d01e4d9efb14cc5f677b5",
-      "expected": "先认识这里用到的词。困难的。先听声音，再看着读一遍。",
-      "heard": "先认识这里用到的词，困难的先听声音，再看着读一遍。",
-      "accepted": true
+      "id": "N26A-9173396e9f90644f59b6",
+      "language": "en",
+      "sha256": "ee0e91b881c41da653dacf2239673bd63c84f5b76b5f631a5b9b7b1d99a24bc4",
+      "checked": true
     },
     {
-      "sha256": "46466f06ed789b9647407d6d4e3b1a89692f983e9ce2ae29d56c961577de417a",
-      "expected": "前半部分承认困难，后半部分说自己可以试试。先听完整句子，再看着说。",
-      "heard": "前半部分承认困难，后半部分说自己可以试试，先听完整句子再看着说。",
-      "accepted": true
+      "id": "N26A-2651613ef36dc2947bc5",
+      "language": "en",
+      "sha256": "f823c367e46aa749b247dc1abf74e4695b677c6d20ee671deb762cb7fd490f85",
+      "checked": true
     },
     {
-      "sha256": "f145430e6c82b9b8b5fb75e37425f1b0167dd9adb05c22513956cd169e41cc5e",
-      "expected": "这个词在本课也表示虽然，和前面用同样的结构。先听这个词，再看着跟读。",
-      "heard": "这个词在本课也表示，虽然和前面用同样的结构，先听这个词，再看着跟读。",
-      "accepted": true
+      "id": "N26A-9b658b82bcde8f66ba72",
+      "language": "en",
+      "sha256": "dee8b9577b8156e004c221110bea3bf093581b1efaaf23f6e0e721463a7ccc28",
+      "checked": true
     },
     {
-      "sha256": "1cf3c98207bca99f33eedebace2f21f8d997ad60ac5448a6bb1f70ff61a18ebc",
-      "expected": "这个词读过了，现在放进完整表达里听一遍。",
-      "heard": "这个词读过了，现在放进完整表达里听一遍。",
-      "accepted": true
+      "id": "en-60e329a0f2748fa20aa90270c342e7dd571068e1c0737e6307d2fe4557b8c8c4",
+      "language": "en",
+      "sha256": "60e329a0f2748fa20aa90270c342e7dd571068e1c0737e6307d2fe4557b8c8c4",
+      "checked": true
     },
     {
-      "sha256": "3d2fb72cb47b1ee28e37862780ad5e7934bb188161b271bc80dc1c9e79d202f0",
-      "expected": "这个词表示尽管。本课后面用名词短语表示困难。先听这个词，再看着跟读。",
-      "heard": "这个词表示尽管。本课后面用名词短语表示困难，先听这个词，再看着跟读。",
-      "accepted": true
+      "id": "N26A-b8928c4d8b92a1cce29e",
+      "language": "en",
+      "sha256": "d624abe0a00eceeb45a3d7e6e614014de671af5d2bbefc1a8dc0ad227ef3ba83",
+      "checked": true
     },
     {
-      "sha256": "ebe1c4ff20aa5be7b7c1c8b472d4a5a347b84c253776cad8bf416937c590f72e",
-      "expected": "先认识这里用到的词。困难这个名词。先听声音，再看着读一遍。",
-      "heard": "先认识这里用到的词困难这个名词，先听声音，再看着读一遍。",
-      "accepted": true
+      "id": "N26A-9072400ef3859b658069",
+      "language": "en",
+      "sha256": "c3862f2cb17c69a87f3261da148981437e9c29d3830c13bc4eb493719654dec7",
+      "checked": true
     },
     {
-      "sha256": "8e3ceae912cb52a3961c4f0aa657f36c772ce0d08a4ea70de86f54f0de36e9ca",
-      "expected": "上面是一件完整的事，下面是表示这个困难的名词短语。换开头时，后面的结构也要跟着换。先听短语和完整句，再看着说。",
-      "heard": "上面是一件完整的事，下面是表示这个困难的名词短语换开头时，后面的结构也要跟着换。先听短语和完整句，再看着说。",
-      "accepted": true
+      "id": "N26A-fefda3dca51a8b166927",
+      "language": "en",
+      "sha256": "7d9ac6f74488c6f8e7b42f1fa7b189ea7ff10e57ad23272d8eb5b69465cf9658",
+      "checked": true
     },
     {
-      "sha256": "bc2187d3054337c9720db898ed60ef8d4c88b5cfcf04b58a1e3b86dc9c2d77b1",
-      "expected": "现在把第一句的开头换成尽管，后面的结构也一起换好。完整表达就在下面，看着说即可。",
-      "heard": "现在把第一句的开头换成尽管，后面的结构也一起换好，完整表达就在下面看着说即可。",
-      "accepted": true
+      "id": "N26A-d6c2914bfa5a547de29b",
+      "language": "en",
+      "sha256": "46060c9f327212c4c0630cc73c2039b765d554f45d8cecd11d8a44fd053637e0",
+      "checked": true
     },
     {
-      "sha256": "32d5feadb28906edfe9e27f11b703031ca88314bd09e400871eb41e6b8728696",
-      "expected": "这一段里，虽然的后面用了完整小句，尽管的后面用了名词短语。换词时也要留意后面的结构。可以随时离开课程，下次接着学。",
-      "heard": "这一段里，虽然的后面用了完整小句，尽管的后面用了名词短语。换词时也要留意后面的结构，可以随时离开课程，下次接着学。",
-      "accepted": true
+      "id": "N26A-9779e00071963a1a6823",
+      "language": "en",
+      "sha256": "ea1d16f120dbcbb466208b17695d6ea6ec350ae89bd003b7f0a2e690bbb30fd5",
+      "checked": true
     },
     {
-      "sha256": "6fb7c0398c5eb8832f5204d2bd7f804966438230d51228a7dc10b6ef927786dd",
-      "expected": "这个词表示然而，用来表达转折。先把这个词读清楚，再放进两句话里。",
-      "heard": "这个词表示然而，用来表达转折。先把这个词读清楚，再放进两句话里。",
-      "accepted": true
+      "id": "N26A-271538886d6820f6b52f",
+      "language": "en",
+      "sha256": "b9477f6ec8c1102a32ad035ec2b03b7782edcc7aff629a75fdb8fdc704d67d00",
+      "checked": true
     },
     {
-      "sha256": "b32ff3330c5c6ba12ba5988b79cdf18012983eb092498c1029380da8a31211ad",
-      "expected": "第一句先说有困难。第二句表达转折，说自己可以尝试。意思有联系，这次组织成两句话。先听示范，再看着说。",
-      "heard": "第一句先说有困难，第二句表达转折，说自己可以尝试，意思有联系。这次组织成两句话，先听示范，再看着说。",
-      "accepted": true
+      "id": "N26A-361d440cab7884534011",
+      "language": "en",
+      "sha256": "011cd05ef62813535b33bec5d3e13f6377607de151648e5489dd88283092e8de",
+      "checked": true
     },
     {
-      "sha256": "fdbce3c9603160a2a932c5c74cfe9b05e411b0ad2ff0cb0e65b1589695a20fb5",
-      "expected": "这个词表示尽管如此，强调即使有前面说的情况，后面的意思仍然成立。在较正式的表达中也会遇到。先听，可以跟读，也可以直接用右箭头继续。",
-      "heard": "这个词表示尽管如此，强调即使有前面说的情况，后面的意思仍然成立。在较正式的表达中也会遇到先听，可以跟读，也可以直接用右箭头继续。",
-      "accepted": true
+      "id": "N26A-112f9cfc0b5ee00b2420",
+      "language": "en",
+      "sha256": "8c0badb3040d02090c7080f8d185ecccae796b99dd7d019df82a77900dcc43e2",
+      "checked": true
     },
     {
-      "sha256": "0b21fa1b59b2275147a7da2bae8105190e3e757e06debf19610598240ad0fd0a",
-      "expected": "现在表达事情有困难，自己仍然可以试试。看着完整提示说，也可以使用刚才学过的其他正确说法。",
-      "heard": "现在表达事情有困难，自己仍然可以试试看着完整提示说，也可以使用刚才学过的其他正确说法。",
-      "accepted": true
+      "id": "en-b719c4771541e1d8662e991469b3b52d3fc7741b24d81650470e6059247f6cb4",
+      "language": "en",
+      "sha256": "b719c4771541e1d8662e991469b3b52d3fc7741b24d81650470e6059247f6cb4",
+      "checked": true
     },
     {
-      "sha256": "eca05b8a1dd8140313fb11be7146b7deff63f999956d9c911f4e1f0079f0073f",
-      "expected": "你练习了用不同方式表达转折。先使用自己最熟悉的一种，其他说法以后再逐步熟练。可以随时离开课程，下次接着学。",
-      "heard": "你练习了用不同方式表达转折，先使用自己最熟悉的一种，其他说法以后再逐步熟练，可以随时离开课程，下次接着学。",
-      "accepted": true
+      "id": "N26A-284beb52c8438a3890e6",
+      "language": "en",
+      "sha256": "10c00e70d527f32b5c7537c9588969d561ed820f3f61366276c3654ddf73dbbf",
+      "checked": true
     },
     {
-      "sha256": "ca7391d1f8ca2c0b9e5455cd6dc45a3c92e9aa5d330009715865d09425354a7b",
-      "expected": "这个词在本课表示反对，后面说明反对的对象。先听这个词，再看着跟读。",
-      "heard": "这个词在本课表示反对，后面说明反对的对象先听这个词，再看着跟读。",
-      "accepted": true
+      "id": "N26A-fd874fe9c6124e4fb96d",
+      "language": "en",
+      "sha256": "fa27e5363b195df8b8b06a342abe32d12b5216832225bf27346e8a8999770f9a",
+      "checked": true
     },
     {
-      "sha256": "412d66ac012c57f815c796b914afdb4f59ae982f6710c450ddf65c7aec6c160d",
-      "expected": "先认识这里用到的词。提案或者建议。先听声音，再看着读一遍。",
-      "heard": "先认识这里用到的词，提案或者建议，先听声音，再看着读一遍。",
-      "accepted": true
+      "id": "N26A-9447ffb5758ddbf48406",
+      "language": "en",
+      "sha256": "d57ff89c36338e745837d951a9dd3903c5e0bac839efc2c471a2b049d47c90ca",
+      "checked": true
     },
     {
-      "sha256": "17e4bcb08b644e26a4adbcbfe2378786ac9bb047f5b0a56004b49a248d715b5c",
-      "expected": "这个短语表示反对这项提案。先听示范，再看着短语说。",
-      "heard": "这个短语表示反对这项提案。先听示范，再看着短语说。",
-      "accepted": true
+      "id": "N26A-8986d2e6be5462e33a18",
+      "language": "en",
+      "sha256": "8a7296ec08a07a1aa324176b2571edf21ed3526ac8781455752f8915301f7e85",
+      "checked": true
     },
     {
-      "sha256": "b07e74d45de82757dc67fee30907ca3ea73a5a26ecee24a98637b660c539ba56",
-      "expected": "这里反对的对象是这项提案。听一个完整例子，不用额外再读一遍。",
-      "heard": "这里反对的对象是这项提案，听一个完整例子，不用额外再读一遍。",
-      "accepted": true
+      "id": "N26A-df4187ff6c38b6463f3e",
+      "language": "en",
+      "sha256": "47d59c232c67a0227d131569bf69ede96c329f914bf4dfe8b161ab9ebb19966e",
+      "checked": true
     },
     {
-      "sha256": "e2c49d1eca7d6da0d7a39a8b7270798e38bf2e19c5ae0ceb0e6fa958e043fcba",
-      "expected": "这个形式表示多位朋友，结尾保留复数的声音。先听完整词，再跟着读一遍。",
-      "heard": "这个形式表示多位朋友，结尾保留复数的声音，先听完整词，再跟着读一遍。",
-      "accepted": true
+      "id": "en-f3cf6a65e8ee652531583110c4356cd8da5596f6b31f88f6471b987f88290391",
+      "language": "en",
+      "sha256": "f3cf6a65e8ee652531583110c4356cd8da5596f6b31f88f6471b987f88290391",
+      "checked": true
     },
     {
-      "sha256": "6b21771a8f1a4399e9c1eb179f929e4f239c1d93e27e4d5442e4d3cf52d40b18",
-      "expected": "这个词表示在一个群体之中。先听这个词，再跟读，之后放进短语。",
-      "heard": "这个词表示在一个群体之中，先听这个词，再跟读，之后放进短语。",
-      "accepted": true
+      "id": "en-91162c9fd07decef28113c3485951c5c8b260fab3e325721bfdfc7caf147bd2d",
+      "language": "en",
+      "sha256": "91162c9fd07decef28113c3485951c5c8b260fab3e325721bfdfc7caf147bd2d",
+      "checked": true
     },
     {
-      "sha256": "3431eb4c98709ee74ad47a5c9713772cd0eeee7ce281a84a38faa33acd5238f6",
-      "expected": "现在把刚才的词放进短语。先听在朋友之中的表达，再看着跟读。",
-      "heard": "现在把刚才的词放进短语，先听在朋友之中的表达，再看着跟读。",
-      "accepted": true
+      "id": "N26A-b7a47eabc0611a3727e1",
+      "language": "en",
+      "sha256": "0cb7c8f808b61e29fe6a9601f5fc132cb09934a4c23afbc7cc06a0489d132aad",
+      "checked": true
     },
     {
-      "sha256": "533c63b5cdca2bfcce7d6fe4026b817544da0ceeaa074790ce8f04aa271ba84d",
-      "expected": "这个词表示除某个人或东西之外，把它排除在范围外。先听这个词，再跟读。",
-      "heard": "这个词表示除某个人或东西之外，把它排除在范围外。先听这个词，再跟读。",
-      "accepted": true
+      "id": "N26A-61234f236e3841232330",
+      "language": "en",
+      "sha256": "6a7a550c06cb871d526a9696bd67a5b5595fd57d95de39f35ea034e217eed02c",
+      "checked": true
     },
     {
-      "sha256": "69adfd5f5b940791a4689fb1cd444f195f0fc860cabaafa21eef94b595f07455",
-      "expected": "这里表达除我之外。看着提示说，注意和刚才在朋友之中的意思区别。",
-      "heard": "这里表达除我之外，看着提示说注意和刚才在朋友之中的意思区别。",
-      "accepted": true
+      "id": "en-900efc3ff2f9fe641d55e67de58d12ce46ae818f1ddd4af230c0851473cde8e3",
+      "language": "en",
+      "sha256": "900efc3ff2f9fe641d55e67de58d12ce46ae818f1ddd4af230c0851473cde8e3",
+      "checked": true
     },
     {
-      "sha256": "62140611ec6a537da2e5661c89cc662f353eba74ed45766248e48347fb641bfa",
-      "expected": "听一个完整例子。这里把我排除在范围之外，不要求背下整句。",
-      "heard": "听一个完整例子，这里把我排除在范围之外，不要求背下整句。",
-      "accepted": true
+      "id": "N26A-2d49534a6cc2459ded00",
+      "language": "en",
+      "sha256": "ac8f807fdb992b07bfdbba2462cb369b024ddd2138f57775cdcf70ad5ee6cacf",
+      "checked": true
     },
     {
-      "sha256": "dcf4e0b926d0d8292fef12803abfc8455fe58a03416ea0a13a27fe5f47fea9c5",
-      "expected": "这三个短语分别说明反对的对象，所在群体，以及排除的对象。只复习这次还不稳定的一处，前面顺利就直接结束。",
-      "heard": "这三个短语分别说明反对的对象、所在群体以及排除的对象。只复习这次还不稳定的一处，前面顺利就直接结束。",
-      "accepted": true
+      "id": "en-43df6d56b8282367093ba277a23e7d9f8dd419f6bf3a24bc85a7571b0279faa6",
+      "language": "en",
+      "sha256": "43df6d56b8282367093ba277a23e7d9f8dd419f6bf3a24bc85a7571b0279faa6",
+      "checked": true
     },
     {
-      "sha256": "6f9a4d90ba387f1db1652fda89e23e1cf82be87d3bd3c9a24d16c2791a6b9473",
-      "expected": "只复习刚才还不稳定的这一处。看着完整提示说一次。",
-      "heard": "只复习刚才还不稳定的这一处，看着完整提示说一次。",
-      "accepted": true
+      "id": "en-0a93d557ddf8f6f93c7693ef0d901f577f96f45a13e2482648be6ef5bf809494",
+      "language": "en",
+      "sha256": "0a93d557ddf8f6f93c7693ef0d901f577f96f45a13e2482648be6ef5bf809494",
+      "checked": true
     },
     {
-      "sha256": "f45248f3c189e697f1df3ef4621934bc0f18e7992320e71309f5122d24a7ecf9",
-      "expected": "今天练习了三种关系：承认困难后继续表达；说明反对的对象；以及所在范围和例外。不需要把所有句子再读一遍。需要帮助的地方会保留。",
-      "heard": "今天练习了三种关系，承认困难后继续表达，说明反对的对象以及所在范围和例外。不需要把所有句子再读一遍，需要帮助的地方会保留。",
-      "accepted": true
+      "id": "N26A-f353b20c6f3418376965",
+      "language": "en",
+      "sha256": "d623ec95fbac26a8cc86c723397d694b6502ef17fc9f3461d89537e5975613dd",
+      "checked": true
     },
     {
-      "sha256": "01b802cfcf6a911aa87669a57e8d73155a9b0e66589c5ffb69ca4e66fcbbafd6",
-      "expected": "前面的元音嘴张开、舌位靠前，后面的音节轻一些。",
-      "heard": "前面的元音嘴张开，舌位靠前，后面的音节轻一些。",
-      "accepted": true
+      "id": "N26A-1d75c03d2f2c3a602f7a",
+      "language": "en",
+      "sha256": "a28d304ea515038dbb68618eb1eea454f5deb8970599f13f771440b25c73c564",
+      "checked": true
     },
     {
-      "sha256": "344cf0a2e91d1561ab3bc2ed20bb1e13565988551a00c14258cf06c402fa46ea",
-      "expected": "三个音节，中间音节重读，两端轻一些。",
-      "heard": "三个音节，中间音节重读，两端轻一些。",
-      "accepted": true
+      "id": "N26A-a6d2d26e0ac16e513dbb",
+      "language": "en",
+      "sha256": "1bdd5dec66014657bac5ca53ff1dbd4c7746124c0686cbf75d7445812e6e0475",
+      "checked": true
     },
     {
-      "sha256": "c2b6a1557b6eadbfb09ba15765fd8e7e4b3e57198d4fb26d41ba6cb9df20e6b7",
-      "expected": "这是表示和的连接词。放在句子里可以轻读，不必刻意重读。",
-      "heard": "这是表示和的连接词，放在句子里，可以轻读，不必刻意重读。",
-      "accepted": true
+      "id": "N26A-78777013595e3ab65c2f",
+      "language": "en",
+      "sha256": "f5e32209db499490475c0a92ca18d4215c7ff132379f87518f9d3e7fcf11af17",
+      "checked": true
     },
     {
-      "sha256": "9b0bd56ff7c92574f6a85a3ab2bdd4f6f930eb4321019ddadea0a61096d9f31f",
-      "expected": "这是表示或者的连接词。先听这个词，再放回句子。",
-      "heard": "这是表示或者的连接词，先听这个词，再放回句子。",
-      "accepted": true
+      "id": "N26A-ac940722cc38a8e45268",
+      "language": "en",
+      "sha256": "0822872eea579efad1f66e959fba8e86d5e719c0013cb0660d6891186ba855f2",
+      "checked": true
     },
     {
-      "sha256": "6adf30d2caf3e6da3f122d76d1f750cf979245ea5f2eb934313786990f00c935",
-      "expected": "句子里通常轻读，不要把它当作字母名称来读。",
-      "heard": "句子里通常轻读，不要把它当作字母名称来读。",
-      "accepted": true
+      "id": "N26A-53bc07afeb7aac43d679",
+      "language": "en",
+      "sha256": "8b9c34a6ad0037050e98f895300330f2ed4a03f0606f22504217250aed1737f2",
+      "checked": true
     },
     {
-      "sha256": "587d8b39196cb6eb9380f1de3e3cdc27d7ed80243c61abaa5504d1ce0fa4e798",
-      "expected": "句子里轻读，结尾自然接到后面的词。",
-      "heard": "句子里轻读，结尾自然接到后面的词。",
-      "accepted": true
+      "id": "N26A-70e3c53eb88448ff3f16",
+      "language": "en",
+      "sha256": "bb82d6322fb3674ae69f08ffe28003582f2425b2b335e4e0672eae905696f460",
+      "checked": true
     },
     {
-      "sha256": "b31197b04f6a2404c6d0018b22d2e29c54f5a8209c9952d70fde97447e7a30e3",
-      "expected": "结尾保留辅音，不要额外加一个元音。",
-      "heard": "结尾保留辅音，不要额外加一个元音。",
-      "accepted": true
+      "id": "N26A-a031b121cd2022db84c8",
+      "language": "en",
+      "sha256": "6768fb38ab33fdc2a9e1c76ffdb392468e684e0fed43bc902c1cc30041d147f3",
+      "checked": true
     },
     {
-      "sha256": "d513305addefbdec26671b5c907b1b20ad5a53357ef7dbee9ea1ca0895e55a8e",
-      "expected": "一口气滑动读完，不要拆成两个音节。",
-      "heard": "一口气滑动读完，不要拆成两个音节。",
-      "accepted": true
+      "id": "zh-8c01b74a1b9397bd689847793bb1f351e3719af8884f73cef9d5ccbb49616c4f",
+      "language": "zh",
+      "sha256": "36dc5fae1f78f9d266f49b564bd22a7d9b4c1583a5f232b2f4987936dc36407d",
+      "checked": true
     },
     {
-      "sha256": "abc42ba374f9ecba968cb3fbe4b8967bcd1d144ed8337117f0c688f32a97334e",
-      "expected": "中间的齿间音，舌尖轻放上下齿之间，声带振动。",
-      "heard": "中间的齿间音，舌尖轻放，上下齿之间声带振动。",
-      "accepted": true
+      "id": "zh-aabd07eb47b1900b02feb6d169d6dab018ffcfd7be29bc7e35a20473531d3e98",
+      "language": "zh",
+      "sha256": "c4f1058a56069b475927fdba545cd855fe1330c65c9cb59d47d866bca764066b",
+      "checked": true
     },
     {
-      "sha256": "d2283227c020d98895b5528805960e229d504d08d02ba7567027a35ef7f39be2",
-      "expected": "开头的齿间音，舌尖轻放上下齿之间，声带振动。",
-      "heard": "开头的齿间音，舌尖轻放上下齿之间，声带振动。",
-      "accepted": true
+      "id": "zh-429a2bfd9d4f6496e545bacf18ee0bc380b08ba16482bfc0e7a789349978f427",
+      "language": "zh",
+      "sha256": "aa71c5d6c00a0cad9d65e6fee5ad4f52fc8bf94ae90fbddfaf9a413fc594ca4f",
+      "checked": true
     },
     {
-      "sha256": "bf85215bbbf0304bbdb4367c291b907f78c553dc643d11b195faa058ecc4a1db",
-      "expected": "重音在后面的音节，结尾不要多加元音。",
-      "heard": "重音在后面的音节结尾，不要多加元音。",
-      "accepted": true
+      "id": "zh-1310f0baaa1526f893ee1941ad86915de1ca5afaaf170c562e223d2b202dcee4",
+      "language": "zh",
+      "sha256": "ef6fa9281054321af587d2e33db3cc499be8bf2759b533f7260d878eba74bcd1",
+      "checked": true
     },
     {
-      "sha256": "1ebe0921e3d4f4dfadc2871e6df19d54dcb0e378a7b2eec24842665f2a1a6db3",
-      "expected": "这是表示困难的名词，重音在前面的音节。",
-      "heard": "这是表示困难的名词，重音在前面的音节。",
-      "accepted": true
+      "id": "zh-3828480108b62ecec5bd3cdc665be3098a4054ded595767ddd070ac9d820c01e",
+      "language": "zh",
+      "sha256": "aa99850aa6b342efa8e4d5efb1816fa2fe583176cec0eecedba8ae88b11d0fd6",
+      "checked": true
     },
     {
-      "sha256": "b60880a4dddb396818d642742128b7ea59729bc8fd0f605259fc34afba357576",
-      "expected": "重音在前面的音节，结尾保持简短。",
-      "heard": "重音在前面的音节结尾保持简短。",
-      "accepted": true
+      "id": "zh-ca8578d93b194ac11f92f9e812e5374f439ed960d2012792118b832bfda32e38",
+      "language": "zh",
+      "sha256": "6a9bbf95944ac137cde0e98a222015710d80c1aeb7f61698d8396ebea0ac20ff",
+      "checked": true
     },
     {
-      "sha256": "75866f4526b06febdc8aafb4d71e09ae0db42b627bd972dab75390543a1990e7",
-      "expected": "中间音节重读，把词读清楚再接后面的句子。",
-      "heard": "中间音节重读，把词读清楚，再接后面的句子。",
-      "accepted": true
+      "id": "zh-c962c4608f40d72c261e4d975d37e411d4c0bb9e6e125e6f2a7a97282a71a1a7",
+      "language": "zh",
+      "sha256": "079104250ab9acb5cea4225fe548fbe99f3d679c6961505aa0415196f2491717",
+      "checked": true
     },
     {
-      "sha256": "c8df83f309b1c4d0e193a17ff1d6551335762410fd3db5ffbc10bec05fd8bd7a",
-      "expected": "注意几个音节连起来，先听完整词，再跟着说。",
-      "heard": "注意几个音节连起来，先听完整词，再跟着说。",
-      "accepted": true
+      "id": "zh-2c299b2c50b0d56a85adf612c96428cb8f6f7269b1b53020a0b9e0b3db438efa",
+      "language": "zh",
+      "sha256": "cfced08849492da8c124614f4169c2dee56ad484c95a80ebf04777cdef438950",
+      "checked": true
     },
     {
-      "sha256": "7b902810c0c8c07f533d97e3fab48b6319bd74e6126c5df3e45c9e3a4897cfd3",
-      "expected": "后面的音节重读，结尾辅音连起来，不额外加元音。",
-      "heard": "后面的音节重读，结尾辅音连起来，不额外加元音。",
-      "accepted": true
+      "id": "zh-b5507286d491d6b4d137940ab994c0fcbcc702022db61ed906182fedb4392831",
+      "language": "zh",
+      "sha256": "e2ffe73d4fcc201d77122e104e4cca3fd2c26ce5edd88000d3190c750424658d",
+      "checked": true
     },
     {
-      "sha256": "58bcfbf9bb544252f6062748885b7253fb7dc7e6fc243f4c84cffa7ff3cb6fae",
-      "expected": "后面的音节重读，结尾是鼻音，不多加一个音节。",
-      "heard": "后面的音节重读，结尾是鼻音，不多加一个音节。",
-      "accepted": true
+      "id": "zh-b1fea2d0ae75858fc1dfa48d05e97effc315987e7a1fff1b86d18c979fcc8057",
+      "language": "zh",
+      "sha256": "61e9ab17882efe2179a1550fcb8bb58ff3532b913e51836c20dd36d7e72ff594",
+      "checked": true
     },
     {
-      "sha256": "43c3fbdbe67c874abf209e977857144832ff2034453826866ebad2bc916f52e1",
-      "expected": "后面的音节重读，结尾两个辅音连起来。",
-      "heard": "后面的音节重读，结尾两个辅音连起来。",
-      "accepted": true
+      "id": "zh-007a4c611b9155783c8c173e4dc917fe4374ad04d77c6cba708c9e220ad800dd",
+      "language": "zh",
+      "sha256": "32bc079562f90bc6f24600edab50483342060ad1db1149e606c1e70761ac1822",
+      "checked": true
     },
     {
-      "sha256": "9b1d6faba7d155d03074d9399a0971810e410526216155e756902092dcc35130",
-      "expected": "结尾保留表示复数的声音，不额外加一个音节。",
-      "heard": "结尾保留表示复数的声音，不额外加一个音节。",
-      "accepted": true
+      "id": "zh-76b19e376635d6f100bf7c893b6701dc09bbd24b637ca9006c0bc77d76eeedf0",
+      "language": "zh",
+      "sha256": "96a47044252f27a689b69bbf85f878138a4fa9d3e21121201c519f12aff3f98c",
+      "checked": true
     },
     {
-      "sha256": "1f50414b4564f685e9fccc51370386d43bc21338d5cc03bf0b90783d92d20037",
-      "expected": "重音在中间，两端音节轻一些。",
-      "heard": "重音在中间两端，音节轻一些。",
-      "accepted": true
+      "id": "zh-fef0bfd9e8405eabf40f9d0a90b98ff64274e0d9a24145670627bee4ede2f90d",
+      "language": "zh",
+      "sha256": "ba87e2661aa35124da3328cacfea8d843b02f1a52b11a3f7a23b7ba20629d7fe",
+      "checked": true
     },
     {
-      "sha256": "2605bcca227b3f7794f6e99455bff0f133c1d85e19316371e0edce7c8f51b76f",
-      "expected": "这一处没有听清，这次不算读错。请看着提示再说一次。",
-      "heard": "这一处没有听清，这次不算读错，请看着提示再说一次。",
-      "accepted": true
+      "id": "zh-8b31fb1609fadd9854b7e32c0b3883628a12a949a13f2218f93723473adc83af",
+      "language": "zh",
+      "sha256": "d92dd9339001c55fd3257d4e1197b0a0f4944e0944fc323ffdaa9c990c648e29",
+      "checked": true
     },
     {
-      "sha256": "a0684c548787a184ae8b7d47edecb0dd79ad0b3ec77b8f1bc1e70599d11f3b88",
-      "expected": "这一处清楚了。现在回到原来的表达，把整句话连起来说。",
-      "heard": "这一处清楚了，现在回到原来的表达，把整句话连起来说。",
-      "accepted": true
+      "id": "zh-5f5acd0c90292357c885f9c0c0eaeedcf690413928d51f6f5d9d99c8b49e1e43",
+      "language": "zh",
+      "sha256": "62728edb2a0a06ced59e61b46dac38bc06950a1510c7c9a735cee123da34dd70",
+      "checked": true
     },
     {
-      "sha256": "8e45674cfd70df51dc8ba569032a8e2d7a68c381341c44855d529b69db0d2fbe",
-      "expected": "这一处还需要一点帮助。先听局部示范，只说当前这一小段。",
-      "heard": "这一处还需要一点帮助，先听局部示范，只说当前这一小段。",
-      "accepted": true
+      "id": "zh-fc863c34d4fd485f7b597f07bac09b4e636f48c3a0dcf4be375655fd7896833b",
+      "language": "zh",
+      "sha256": "63103ad739fcc23ba94a9fab6887707a3a5a928e6017ab1e51ef242c38b4b655",
+      "checked": true
     },
     {
-      "sha256": "94b0ecbdc8ab51dc84c3b8a5ab2bec2c5b07838e336bc62f7f8c51419263e424",
-      "expected": "这次两样都要。表示或者的连接词不适合这里，请换成表示和的连接词。",
-      "heard": "这次两样都要表示或者的连接词不适合，这里请换成表示和的连接词。",
-      "accepted": true
+      "id": "zh-42017d978f33c2f7c66d03cd9f9957e4a0a34058ffe70e8d0f2b60105c9d61b4",
+      "language": "zh",
+      "sha256": "c10748c1e15d15a3fc329d812a29f7a5222c4b0bb7c116e085cb658a5cab101a",
+      "checked": true
     },
     {
-      "sha256": "06d6df536922b899b41f8d58bf59a256d7bc6bb8cc166fe774fdd1231793785c",
-      "expected": "这次任意一种都可以。请用表示或者的连接词，其他部分不用改变。",
-      "heard": "这次任意一种都可以，请用表示或者的连接词，其他部分不用改变。",
-      "accepted": true
+      "id": "zh-643c5a20e600058dec286e2e1329d4180ee7c98697ec922f4bfb1858c4309130",
+      "language": "zh",
+      "sha256": "3cb2f32dcf4a7b6412a1e5912dc4a1e50de7de0e97a729789651cc06303ca26b",
+      "checked": true
     },
     {
-      "sha256": "f6c03b649f160da5e45c9170c1583e258994119606b8a112c3dcd9f801e93b25",
-      "expected": "意思清楚。需要调整的是开头后面的结构。在本课这里，请用表示困难的名词短语。",
-      "heard": "意思清楚，需要调整的是开头后面的结构。在本课这里请用表示困难的名词短语。",
-      "accepted": true
+      "id": "zh-6bef9704397a9e6499ecd28665a6b5ca531ca391de2702514e12fac09458322d",
+      "language": "zh",
+      "sha256": "14b9f428b72dafe3460b713e63d71d0ab58520ed2f511d579cca42905e059cf4",
+      "checked": true
     },
     {
-      "sha256": "b63e8e276a714ddec7b78195a6721194f2e9dcc365a33ebdfe68e539e8c64a5c",
-      "expected": "你想表达在朋友这个群体中。表示排除的词不合适，请换成表示在群体之中的词。",
-      "heard": "你想表达在朋友这个群体中，表示排除的词不合适，请换成表示在群体之中的词。",
-      "accepted": true
+      "id": "zh-0509c64dc54973f5e97b9a52ab506513c5896b40d3da8470e4e4d39078633281",
+      "language": "zh",
+      "sha256": "fb21e8f848bd483498d69ec0ca8e05d47a84e899b8733b0c72bb1549411f3c50",
+      "checked": true
     },
     {
-      "sha256": "b7595e50969ee3ba698f60f5278d0b9e2f64459bae1bcfdc8b7e3de8ace5e5dd",
-      "expected": "这里要把我排除在范围外，请用表示除我之外的表达。",
-      "heard": "这里要把我排除在范围外，请用表示除我之外的表达。",
-      "accepted": true
+      "id": "zh-e690230bcea7652c0a22f2e9804937ca009af87839adbfe7410496a11face5f3",
+      "language": "zh",
+      "sha256": "3a37290003d17bf29c730eb751adfb438c0cbd18bec29eb50e128e5cc8339028",
+      "checked": true
     },
     {
-      "sha256": "60c8850ccd3a1965295f00f281f62af3060bd2b8576c34eca6fb5dede6bc7161",
-      "expected": "这一小段和当前要表达的内容不同。看着标出的部分，先听示范，再说这一小段。",
-      "heard": "这一小段和当前要表达的内容不同，看着标出的部分，先听示范，再说这一小段。",
-      "accepted": true
+      "id": "zh-ec347ed10ead52d3bbccb4e4e081c7ce99a55a4573fe537fbd64b4adb955be62",
+      "language": "zh",
+      "sha256": "4e3d3d85a1ad7163d4edad193b47d4048cf0407243c28d65563ce2ce1b4fd83b",
+      "checked": true
     },
     {
-      "sha256": "8fa4a7bc387b03de98ee476ff3cfdee4065866f8f667999f9a8b31e00dd721ad",
-      "expected": "这一处先留作复习。现在看着完整提示，把刚才的意思连起来说。",
-      "heard": "这一处先留作复习，现在看着完整提示，把刚才的意思连起来说。",
-      "accepted": true
+      "id": "zh-0a7fadb25c49f8a7e5a0dd0a791b8675ec89778d45d51bd705dd83ca2fa07e2d",
+      "language": "zh",
+      "sha256": "6dbac037ff521c452dfa3b7e2ce202b917b7c50d1656e142be6f6afb75c04da5",
+      "checked": true
     },
     {
-      "sha256": "6cb70c073989c1a34261b9421b358b5852471ed9be8b8c32a69c303aae00386b",
-      "expected": "你完成了示范后的跟读，具体项目已经列在屏幕上。",
-      "heard": "你完成了示范后的跟读，具体项目已经列在屏幕上。",
-      "accepted": true
+      "id": "zh-8ec2a39a473e5f67b2360a0b2848bf62a8f06faec54a65b6df57bee5774ab846",
+      "language": "zh",
+      "sha256": "f86f716947071a06d6148a3e5e4e1012c702e0632c0fa09b2c864ee614347386",
+      "checked": true
     },
     {
-      "sha256": "7780bf2953e19b992084c99ffad0d6336a40b72b3d7f2560948e1b1047b5988a",
-      "expected": "你已经借助文字提示表达了刚才的意思，屏幕列出了本次使用过的表达。",
-      "heard": "你已经借助文字提示表达了刚才的意思，屏幕列出了本次使用过的表达。",
-      "accepted": true
+      "id": "zh-214f855474096a694d3dfe5defe8d8096d16a49b6995d1948be8971b987447ee",
+      "language": "zh",
+      "sha256": "e6d2a32dd13ad996525df28cc00df1d8033b264d43c132d06920ffd2fd549407",
+      "checked": true
     },
     {
-      "sha256": "5f491a589202fc86ef9c56055023f1c7619e3a4a4f01f3bab7d1beb3cfebb423",
-      "expected": "你还完成了一次更换已学词语的练习。",
-      "heard": "你还完成了一次更换已学词语的练习。",
-      "accepted": true
+      "id": "zh-1586d6b630e78dc438ef70d5eb5e4f15cfff746a3a1e7b4da3c8224b8dc8e3e9",
+      "language": "zh",
+      "sha256": "64766eb6d14b5bf9813f5a5df5136d88f1fadc55d115b81b3067524f873765e9",
+      "checked": true
     },
     {
-      "sha256": "121a7773d2c844fdad19a870690ea407111a71a858d9d908efbfaa6168f992cc",
-      "expected": "屏幕标出的词语或结构还需要复习，下次先从这些位置开始。",
-      "heard": "屏幕标出的词语或结构还需要复习，下次先从这些位置开始。",
-      "accepted": true
+      "id": "zh-0efea650aa4f4010af4e49a70df85248e1c35969c5999b8ec6895577a3ed5729",
+      "language": "zh",
+      "sha256": "26f017bf7ffa619f29fb7b5be474e65f6e880e7067b0af92f3168b341e54ed25",
+      "checked": true
     },
     {
+      "id": "zh-4e5a371b4d50aa351b566554e2b3e7ba0f1ca6c603ad75ea04d4b37dff14f086",
+      "language": "zh",
+      "sha256": "bb7cedfa5f7739b15cf1619bb3dfc9c55b4e7f32d8ca1df6c9329827e52bae90",
+      "checked": true
+    },
+    {
+      "id": "zh-ee02ce1fc36bf6edd83abab48e0c097f7811c6611c6dac9d37c5028dd09bd6a3",
+      "language": "zh",
+      "sha256": "d1f6aaa54ce737712bddbfa58b3741b56af8801b4d74d1b24261c323607b5f26",
+      "checked": true
+    },
+    {
+      "id": "zh-15a99266e767a85510c2fc912a09eb1e93358385b2519093ce7c624f9896da64",
+      "language": "zh",
+      "sha256": "bfc80a1821b8295d3ed067b1294370373bf9dbad93b3d51fba19a46977970de0",
+      "checked": true
+    },
+    {
+      "id": "zh-82cd6897af2c3bfde1413499cc01c2adee14a5dba13f2393a89e373fc572de1a",
+      "language": "zh",
+      "sha256": "7d28e5de5c023ed53bb0cc4bd8d7d8c26f837ff50f0a134ebb072b2135f4e567",
+      "checked": true
+    },
+    {
+      "id": "zh-cf918cc4010e8ede6cfc4e68a16f32abe203b3c1b77439d1d8305bc0bb0ac41d",
+      "language": "zh",
+      "sha256": "7b8874ce269dbf64af6fd4d127af9c57f8d016078caae4a2b4a1cb9660511958",
+      "checked": true
+    },
+    {
+      "id": "zh-1ed759e38ebdce8c0252a05308cae791e9cc86fce7475d5590a39921ef57b3e8",
+      "language": "zh",
+      "sha256": "012ffe5cd8fda6e11a97a3c2ec80d7b5577cb11f69e1466d6f6470a407165008",
+      "checked": true
+    },
+    {
+      "id": "zh-1a19000ee25f571cadd4097bae3478259fbed010430009593e3ad968a8087b8d",
+      "language": "zh",
+      "sha256": "03973e5cc15868e943d7b30182c9f8056910bc7213bc6d8dee72aaade3631367",
+      "checked": true
+    },
+    {
+      "id": "zh-812786e8801495155911dbcc8a5356d533c56dcafbd8a1a548021a63a127f69b",
+      "language": "zh",
+      "sha256": "f2898658829f13838181c1e13f16b33e6ed649ecfb5685e82683daf838f4017a",
+      "checked": true
+    },
+    {
+      "id": "zh-837cf5ab0d3d5eba9982ad4df4cb17e20caf28a47e040206494fcc5a9a250973",
+      "language": "zh",
+      "sha256": "575dd4b69c3475012cb5d12a09b9ba9fb2d9e7e318c4a260801a8b910574526b",
+      "checked": true
+    },
+    {
+      "id": "zh-2580bf35027c8785127e3101dd7be5dcba06842f6f87f8cf8c34f2c57d8c9355",
+      "language": "zh",
+      "sha256": "6fbd700c5ac73a01d962d2c4525474cc5185873a2070049a366c45d74936d0b4",
+      "checked": true
+    },
+    {
+      "id": "zh-3086e7c789a134c83620c2dbffbdc60b55bae0a00baadc45086d13024e998302",
+      "language": "zh",
+      "sha256": "37089d146b25469a53aa415f482d399da33a4f13bc15db3e9854e527910d9abe",
+      "checked": true
+    },
+    {
+      "id": "zh-ecf32f1f5e3facec270c628cbddc14f8f377e0611df6b42f7e00533fc1d05d0e",
+      "language": "zh",
+      "sha256": "63de4e8d1ab6fc6559b4bfcf65290be5810ae02e511516da9ebe9d7215cc8691",
+      "checked": true
+    },
+    {
+      "id": "zh-3dc4934ccccea6853ffbd546896cb8affda1ccf7db382cdebdf4d788e2e8c408",
+      "language": "zh",
+      "sha256": "dd194aab5406540297f75d8e661d04d826c46c0044bfb092820b693c5f91c4d1",
+      "checked": true
+    },
+    {
+      "id": "zh-cf4bfcb8b2a8eb22d7de560a213a78548330411d6db82ef9ac89f157d8bea20e",
+      "language": "zh",
+      "sha256": "9c52515e7b8797b2c3354418fc435180d91ee687c9a83e248ba1a4c46d3f4a24",
+      "checked": true
+    },
+    {
+      "id": "zh-f7b74737d6f7241916f580ac0100be2e4a3a98024fb4279b672f037ebfad61e3",
+      "language": "zh",
+      "sha256": "65d9835eff384ce7fabdc17537ad5e2f5e455550e412cf3d31cc181c17f1a400",
+      "checked": true
+    },
+    {
+      "id": "zh-5b9d56948cfe5d615cb8312db51e25933faf004e9a45c62dfe06e5f75c16c23e",
+      "language": "zh",
+      "sha256": "0104229e33fe486f4ec4dac428ff5ec112d34e56a8dc98ee9da76d76646b18de",
+      "checked": true
+    },
+    {
+      "id": "zh-5a766db00e92aa6ea3fe6e08752589c98e86db748ee1eaef6778a8246df74a77",
+      "language": "zh",
+      "sha256": "0193b7a8d577e34b11fc369cabc52cdaf9910fbfbaf29849ac8b5766ede9e9b6",
+      "checked": true
+    },
+    {
+      "id": "zh-5c7cafc64f362278aad2c724152f8fc10dfed987f9a1973a6d151f7ad14d8c26",
+      "language": "zh",
+      "sha256": "fb34e4d52f0b4b246c1d6d9d2904489a2fb94c562d0942b119f9b09024263def",
+      "checked": true
+    },
+    {
+      "id": "zh-01bb87accceede32185a4bf8ad11bb648d305bad4de1cf6a1522ed3a822c5d25",
+      "language": "zh",
+      "sha256": "2fc67d2f9da4b9345a6013b2108953ce1fe26d72aa97a4f15611f93760f96d1e",
+      "checked": true
+    },
+    {
+      "id": "zh-47de443c59bf509803ba3cc13cd8962d29f16f1c6f3b784660cd4740e7c1fe79",
+      "language": "zh",
+      "sha256": "fcea207cb4d75745cd68c8e4413b646d7c8f71e8ea25bc495e0d8a12e69dc01e",
+      "checked": true
+    },
+    {
+      "id": "zh-ac03734b7394a7d45c665e5bb15f80c232c7f23e8f9876115acd2ffae8756522",
+      "language": "zh",
+      "sha256": "a4555111e4cdd5b861bc794799bd9e7226a716fb1a4c7c9809929efea54d86fc",
+      "checked": true
+    },
+    {
+      "id": "zh-ff69fe3e6c1e18a94479d6c5b0fc6255669143833761633ab7060250f9dd808b",
+      "language": "zh",
+      "sha256": "432b6ae61d345ae12846f04601e2de9792261ec9d3e4c84bb443a45ea89dd16c",
+      "checked": true
+    },
+    {
+      "id": "zh-95befcf2bd699e70466c3c9a0f4908539ec99a5dccb9b4f81159ae8a71af3ead",
+      "language": "zh",
+      "sha256": "e17d01aa91860d086f17573b72344a0bf96cabdd7029d371d2d15354e25c0028",
+      "checked": true
+    },
+    {
+      "id": "zh-9cbfb930d3ec6f6bbb6399d719d9097cc44f83eda7929f985e8ea448cb8da550",
+      "language": "zh",
+      "sha256": "c8fc340508fa78815167e305a9bc24b2d7c34bd0ea798251cb1db9c2fee2611c",
+      "checked": true
+    },
+    {
+      "id": "zh-c6cf9203ebe0f7e00765115306cebcbde9dc2684b9f70fcd20c5510b8331437b",
+      "language": "zh",
+      "sha256": "41bc6d9ea436def969c4adeddddeb166820f478baeabf806fcd875fb65f45712",
+      "checked": true
+    },
+    {
+      "id": "zh-97c550f88235ed29bd1a1e96eb5c9dca75f941f7bac483ea3dba767958d90e35",
+      "language": "zh",
+      "sha256": "991cca8d01ca61590bb401d082a65d437989090bcf9a191eaa66e54e0831da08",
+      "checked": true
+    },
+    {
+      "id": "zh-58ee54b51daa2068b40ace74b2901962dd01ca637ec21779d6da475dae75a5f1",
+      "language": "zh",
+      "sha256": "3c7b1b7cf0d1b88f0b1521bfe8fc8af78b29c985164915cc0aa313d40950f707",
+      "checked": true
+    },
+    {
+      "id": "zh-6685a6758f406f56e8520d239a3c0e6079f40d9eea854047a23ab000aacb1bb7",
+      "language": "zh",
+      "sha256": "609fb51268c6742a4948d740144c9802d5de83e45cb3dd4d52bdc108cd95513b",
+      "checked": true
+    },
+    {
+      "id": "zh-fe0f88951df21c2e9436b12f79943ba9ea68555f5bdce722e29e21bdf3384a22",
+      "language": "zh",
+      "sha256": "076848887c73bf5b5096a1df7ff750a8243084f33fed5b0a1487f148088ff742",
+      "checked": true
+    },
+    {
+      "id": "zh-46892ed697888357a018c7b3515cb7fbdda76b6d879c507f95f0e4cf1907afd1",
+      "language": "zh",
+      "sha256": "5ca8329c7895174c146d1dd547dfe8329c343803e3f3d9d3dd34cf9e4793f656",
+      "checked": true
+    },
+    {
+      "id": "zh-4216ac65c0ac9eb030825cd728ea67e4efdc7156595e7c73ade402edb3493ba6",
+      "language": "zh",
+      "sha256": "7b577d9c88c2607001a519e604ceea90ddea8929f1b5220e09ede61a3d13ea80",
+      "checked": true
+    },
+    {
+      "id": "zh-9f4fd628776d4151fb453d70ff5599792d788a3d2258fdab5ea28d9e99e8d581",
+      "language": "zh",
+      "sha256": "e41eacece7421607f2ced28f2fdf55c962d5ed4c2cf57ba636bc9405326b7c0e",
+      "checked": true
+    },
+    {
+      "id": "zh-6946528bcd9486620e4538fc82071ddcfc85492cd4d889ad3f919825979dc2d3",
+      "language": "zh",
+      "sha256": "2a2c79e04446d6f11e02ae1c20ca98d0bd6d64f3953866dd074d71dfeb51cbd0",
+      "checked": true
+    },
+    {
+      "id": "zh-654be8f5f83b1bfaaea16af375dcf66adb78ee20057c7224d897cb663abac44e",
+      "language": "zh",
+      "sha256": "cc1c9346d486d003fa736894ff09869026225972fd50c21082ab0fcdb2a56799",
+      "checked": true
+    },
+    {
+      "id": "zh-e7c7eee2b7f00143291d26525556b9dbd4fd3459a7186a504c12717133c823dc",
+      "language": "zh",
+      "sha256": "d153c8af835cb3bf3c9f067b8c4d7a164ebb51a28f95e3bd98bc8a70a2d1fa66",
+      "checked": true
+    },
+    {
+      "id": "zh-827f83ca31be2437448d5bb1d0288632c4aab6626a4beaf53ec72619c50ead27",
+      "language": "zh",
+      "sha256": "8fead35f81ff0964929f4ddb883dfc66d4bb0901dfc731c374e3659ec464196e",
+      "checked": true
+    },
+    {
+      "id": "zh-b5106c445bcbde7195c9db8d60f31aae1a2fcb3e46fb8b2b960e72bcc3065161",
+      "language": "zh",
+      "sha256": "5bae4c6f8cf857025265d784afc9374d6eb57a7af74fc7234f127180bf1ea833",
+      "checked": true
+    },
+    {
+      "id": "zh-c61adfbab7d99b0bcb56dde7a430942553299fd7cc3efca42e23d5ff44d8b213",
+      "language": "zh",
+      "sha256": "1101d9225c54edb584c581196f9b1eac06b5496889c81234f183ae87624061f1",
+      "checked": true
+    },
+    {
+      "id": "zh-42c4b1f6c14970c84953be07aacc6917836078bbeed0b2c119263179938ad527",
+      "language": "zh",
+      "sha256": "fbd76ed2b21b47d58d6b4671c1865dbd649a98c6bf7862a2ff7f9853c64f33c8",
+      "checked": true
+    },
+    {
+      "id": "zh-510d5f899a03c53a330490fda258d7f774a64c33ce6a366f5cf0d8789e0cff99",
+      "language": "zh",
+      "sha256": "f7791ecf1fbf5bf141a65fb6d027cc88121ce42ff2c662874a1d1de048da6320",
+      "checked": true
+    },
+    {
+      "id": "zh-b618cabb2c12fc5b734f22eb9aa0afab97bca3a1875bf7d90660fdc626b4db79",
+      "language": "zh",
+      "sha256": "0b5f748d2c2efec0447ad98ac328a66cea6e1cf4aace9dc41c0b68d0f3fc3a2a",
+      "checked": true
+    },
+    {
+      "id": "zh-7253d46c4435321d9a7919db6b86db0ee5f3d38dd561713e369cbfba04bfd499",
+      "language": "zh",
+      "sha256": "be6a7d15dec407a4beb2900a44387aab25497bb6b5d1cd6b073b9adb7811c591",
+      "checked": true
+    },
+    {
+      "id": "zh-c9a8aef73e96e8a52fceb9b695c48c0ce1ca729b95bb3ae11d09605cd2ff3e71",
+      "language": "zh",
+      "sha256": "d7126cd47cec9a88a5cee0623824e76541468c0920da6ffe76bde7b6e4f16c22",
+      "checked": true
+    },
+    {
+      "id": "zh-8f5c6fc427e8e5a4683b36728adf133ab8bec09a8dca7f039a189d7a51aaed0a",
+      "language": "zh",
+      "sha256": "34f8ed49ed8d0fd253140f6eca8a92f5e14c02c763054038a56127f761b77efb",
+      "checked": true
+    },
+    {
+      "id": "zh-9a02fd6aab76548b21db9fca7d69266894c9d2f0555ed2c452d7aa5813c92e16",
+      "language": "zh",
+      "sha256": "d5912aa1f6a320aaaf85fc118fe9669e835ac4e186a372c8ed98bb569aeb998a",
+      "checked": true
+    },
+    {
+      "id": "zh-696b48d494d155ead00ff7678671b73ca73eea884c6ca61d2e55804109c7a93b",
+      "language": "zh",
+      "sha256": "e9c0ba1c16ea6c6399ed9996bc1a02bea6dcf196607997802e34928df04a88eb",
+      "checked": true
+    },
+    {
+      "id": "zh-29cfbfcc1a68941b5065e3da7b0afe0169a92e63af803a945ac59f8c308f8641",
+      "language": "zh",
+      "sha256": "b161212646ec53e04c2ddd86504221b839925e5d7d879c7e1fcbb17cbc39fed7",
+      "checked": true
+    },
+    {
+      "id": "zh-d12ac5a0e3f41fe7270d536d9addee2359ae4cee9d27f5b6be0802bbeef4d673",
+      "language": "zh",
+      "sha256": "ad3057f6740445ce0da4d8dd7a938fa73a237d95707b4f69473d51a271f7f10d",
+      "checked": true
+    },
+    {
+      "id": "zh-689325023605653f84734b6314fbfef268ad7e206006b4b30e67f95cdbc275b1",
+      "language": "zh",
+      "sha256": "fac9ce57a7cc9741d50ddb3fcbdeb614e6e3a2e9c62f02a1d3cd4de3457b5144",
+      "checked": true
+    },
+    {
+      "id": "zh-eeeb340ef057f9d12f86e73354cd54ffbc1e586de1e9ac8f248dabfa2e2ba3df",
+      "language": "zh",
+      "sha256": "ca2609c17498010aa4ad5e27948091aca92e9c8ae661c551050950cbe38ae48b",
+      "checked": true
+    },
+    {
+      "id": "zh-bbfe60ac6e87ae460eba4f5e9f64a27708f222be265bc8401d4f44998bc2d211",
+      "language": "zh",
+      "sha256": "7bd723f20f240e3cda86d0562e0e8d70c2ef3f31d6944fbaf46d8fa46ac3d466",
+      "checked": true
+    },
+    {
+      "id": "zh-c5daee536918f2f5b9749138cfda4e8383483514b0ac42c9469b15c4542acd97",
+      "language": "zh",
+      "sha256": "2017530abc1621ae26ef2c7388589b479f0d7307a5deb5d8dc8d7a0dac79c18a",
+      "checked": true
+    },
+    {
+      "id": "zh-fef9a8c9528b92e96b72d7b0069d5bb2614bb6e213a5e260f68cb31d8be4cea1",
+      "language": "zh",
+      "sha256": "02980804ec9a0dab0df1ea1058ac8a35a0aa9c058d3e824993f7f88ca3840eaf",
+      "checked": true
+    },
+    {
+      "id": "zh-8f874b4444a3b07b65ae03bcdac9431a3d7c6264e83ec0a836b91b2c673b5fec",
+      "language": "zh",
+      "sha256": "182e1516f95b7a6c72402d5d434edb4c8036d368f35d2b2bbcf4fd7d7e5662da",
+      "checked": true
+    },
+    {
+      "id": "zh-4c49cad872fb79b323d647a3e24d27a0c31ef92676a01fe9b2d34deb48fbe112",
+      "language": "zh",
+      "sha256": "7b59d5d72c0dd618d3b1068f0dc26ee1d0f5f299267ecfe7e0824554ec7850e3",
+      "checked": true
+    },
+    {
+      "id": "zh-05bb7b40f59459eca7b2391660a87e397993ae9b49b992addf9b6c9f24fd9554",
+      "language": "zh",
+      "sha256": "504025035a52f73b44e3909f49b4593ea2c7f1195d7df0d6aa6b20adce0b954e",
+      "checked": true
+    },
+    {
+      "id": "zh-4d5d4983f6a804696445d5a5bfca1147f760cdec1e1734fa092dc14d74a1d861",
+      "language": "zh",
+      "sha256": "ba67f8ae828d16be3c74faef7c23351942421230e0c67236df4191cb3d3eb8c1",
+      "checked": true
+    },
+    {
+      "id": "zh-8d7e0bcb95ebe62ef4f2ecbfbdcc9bccc604f7e988f7149e0302350057b93e83",
+      "language": "zh",
+      "sha256": "ad7b099e4c0fc9105b9c2fa6bcf9f2e39bec8e9e5800d9dcc3b331f18474f695",
+      "checked": true
+    },
+    {
+      "id": "zh-f88c1d6ec24a5a08e9aad34ee0470a382071ff2b51faf2dc1356e654db92e1f1",
+      "language": "zh",
+      "sha256": "fd09a4fb28e6a290114aa96f43e2a4fdc38d11536e43da5e40bbe2285116c61d",
+      "checked": true
+    },
+    {
+      "id": "zh-d9de52ede7124a94fa015e9cc506b256456ae29ce5efc7cc06d1c04fe364c0e0",
+      "language": "zh",
+      "sha256": "1a436d9251959eb92e9fae029e4b38159391f50863103a347be0de883f5ef5d1",
+      "checked": true
+    },
+    {
+      "id": "zh-64952389a2e0a414ae0b5144ca33209872905cb59d66c5a28c337d007a5c6350",
+      "language": "zh",
+      "sha256": "f1504f8d7c4af74d54d61f41bb75e2ea5c6646bdd5be394a5ddd4105191e5730",
+      "checked": true
+    },
+    {
+      "id": "zh-58a91d5b8d48c298c29a198b00099fb9fa2e0c777149a7894fc7ef0314594c93",
+      "language": "zh",
+      "sha256": "869b26becf3c4d3a752a08c00490e502a9def61399a460fd1231ccb789d16ce8",
+      "checked": true
+    },
+    {
+      "id": "zh-ebfa0451f5d4d1888e2015fe714fb9c9acd1ea9dcf6b08dca0bc5d0e168afed4",
+      "language": "zh",
+      "sha256": "077e303bf992047a32009ece5c7dc28ee1ae34d691abc6c7c2e482455accbd30",
+      "checked": true
+    },
+    {
+      "id": "zh-32312c0586cb2e3591675055b3c657ce0ee36b681a585e531fee94eefefcca92",
+      "language": "zh",
+      "sha256": "9f929b736de683a766660cc0b2a21dcbd7ba7ae73428e3ca9a7fd9b33e1903ab",
+      "checked": true
+    },
+    {
+      "id": "zh-4792606099a804138af29374e45bca4f6c538552e76c92b00d3283dfbe067e87",
+      "language": "zh",
+      "sha256": "6ff2e0faf2af43e0c54172e761f2bee3740f338d7e3f2f5cb2157c71c8e63bff",
+      "checked": true
+    },
+    {
+      "id": "zh-6eabc44959f4740a181c7d374aa8778aa7fdfbbca6083247810a6e9d83bafc8a",
+      "language": "zh",
+      "sha256": "c37534b8cf071482a1e453298bf3e7ec0365f07b1a1377fd49ea5452f7b8c68b",
+      "checked": true
+    },
+    {
+      "id": "zh-8afa870486a663ce926a42dcf5a32bc3ebabdcee69354f34ca465263b4c643a0",
+      "language": "zh",
+      "sha256": "3ba53e1daabaa11297ad5273dbb60708504425d403385786295fc3cbacb77f28",
+      "checked": true
+    },
+    {
+      "id": "zh-d665f8739272755f99fb869e8f3addf52fc1e8d0cc51fac8ece69e1e47ee79b4",
+      "language": "zh",
+      "sha256": "7423a8e1abdcf46f82a1b1a46e03e70755f734b0b15ac60147e601284d4ad31f",
+      "checked": true
+    },
+    {
+      "id": "zh-aeaacd4c38bbe2d0e9551351eb4bb738623da046d4064601e54359a576de6c05",
+      "language": "zh",
+      "sha256": "81190c577aec44f0f9f188e64f85a991561ddc6f41bed1147f9458d309326abd",
+      "checked": true
+    },
+    {
+      "id": "zh-ed86c2b082750cca7625881208e50f5d50b0813280fd5207a65bea15d80e44ac",
+      "language": "zh",
+      "sha256": "1f1827fc88f7cb97c7d71da2df59ddc745a14e7451843b83e5a3dee06d153be4",
+      "checked": true
+    },
+    {
+      "id": "zh-99f517c84474f6e8adf119806c63dba371d2dd07f6773234f9661572474491af",
+      "language": "zh",
+      "sha256": "a9b07eb996cca5fad086b1310b436eca04f2ac508246634eab73fa7924555279",
+      "checked": true
+    },
+    {
+      "id": "zh-2184612238f5b494c8a69459e2205ffa3d1e066da846b25b7bfbc57c7bc27749",
+      "language": "zh",
+      "sha256": "d8d38cb758f4cf99c6102a9e408b03aa56ccca46f1d70900ddbc75f214cd3cfb",
+      "checked": true
+    },
+    {
+      "id": "zh-997f511bc44ef2028848f6a757ea506bde4e5c27f04f643f3450e3ca4117b0dc",
+      "language": "zh",
+      "sha256": "3c215fb35beae55c63af3a4f7fcb778cfa89865ef3b2e860cbe37d95956a38ab",
+      "checked": true
+    },
+    {
+      "id": "zh-2e578046a248388ef1f0072f2406254f39f420cdc00f288f26f45b6d6e1aba31",
+      "language": "zh",
+      "sha256": "d490befc0d440e103c686c0e4ec276e43da2c073a8f13547df3c4f5572dc50de",
+      "checked": true
+    },
+    {
+      "id": "zh-2e3df8376caab31046a70c276b915f19f31bc1ec9e31978d9e3384256707af07",
+      "language": "zh",
+      "sha256": "8dd520abd3c94faa5ad55d46d59923265e35852750b44977fb894d44eac73629",
+      "checked": true
+    },
+    {
+      "id": "zh-8eb3c6670d8c738d4cff54e4e966fa110d26a1253b066a9d32fc62ab39840324",
+      "language": "zh",
+      "sha256": "8f8b4dad4ab6a430c698cc8903748b64799082f22c32ad03aade98fb2b643c62",
+      "checked": true
+    },
+    {
+      "id": "zh-d4cc5547775f332b27dc3b9a3a88141a93b9f24faca0412aa3ad585b40528688",
+      "language": "zh",
+      "sha256": "b483375982ac91dd19d7ce61d82326556ed7705ce78cc6d3bf0d9f80debe8bd2",
+      "checked": true
+    },
+    {
+      "id": "zh-e27e1456ff9a200f50df122c07293d1dd5842893606a9832da0f01ae22ad5f36",
+      "language": "zh",
+      "sha256": "24fab129e3d190e30fcfd26dc0122cf0ccad10dd73344c10f699379b34fc3220",
+      "checked": true
+    },
+    {
+      "id": "zh-b422158c79c8fe2529d026b5c80a10d59087a9197d15df269d6c32ae9b6c9868",
+      "language": "zh",
+      "sha256": "d3ce92570d9e99412ccc8367d400b864683ecbd9fd56e7edb212efdba89b1bf4",
+      "checked": true
+    },
+    {
+      "id": "zh-3a0834103ab9b34728978746ff593ea447726e70c87976c1c1993cfa1f2c0947",
+      "language": "zh",
+      "sha256": "bd352ded6e20548a9c659f03b6d88933bf5ab3392640a7b392b3921818671d61",
+      "checked": true
+    },
+    {
+      "id": "zh-5619661c31d30f5f88349d2d559b96db19d56a1810823f1f52643864d4cf30a5",
+      "language": "zh",
+      "sha256": "e789f858ea47042957b7c247a2e8ab1ea4e7dc854c220d834c73311b99513492",
+      "checked": true
+    },
+    {
+      "id": "zh-48f2bde3e1e03a0a1281cb42dff5494035e7e372f62152ad999e7c494f33f9d4",
+      "language": "zh",
+      "sha256": "b2bfcd9b5fd28b4cb6c58c8f1295be70c28f133d1ab567dcca1f3d6511efb9af",
+      "checked": true
+    },
+    {
+      "id": "zh-610e7ae7f5df81f724f2d6e5eaffe466bd51557991529332b0fc9334b8cb936b",
+      "language": "zh",
+      "sha256": "aec6b1cacb1d39edd05221d914f0f6a3e6fb62aafb4e70633740aa47dab3122f",
+      "checked": true
+    },
+    {
+      "id": "zh-b48a31c817d3e8014cc2d87d0b5de42e58b9efe3c1cddae14aa3f8c41befacf5",
+      "language": "zh",
+      "sha256": "d4f086bcb3c13f9354f2bd0c1da65d66f58b6aec8f9bf22e822a249ba245a135",
+      "checked": true
+    },
+    {
+      "id": "zh-824b91c1ccb5ad8c25daa39372f4a1ec96432b068659ef3a12d96fe2146e60a8",
+      "language": "zh",
+      "sha256": "22dc60259042792e61bfda0b0852b855c5fc03c7410473128f72f2b1c742882c",
+      "checked": true
+    },
+    {
+      "id": "zh-c4a6683c7fb3fc305e236043479564860eb5f86949d3c736c0e7747a12df251a",
+      "language": "zh",
+      "sha256": "21d2036953dc59bbce58b8c2d9ddc7f3563a31e9efac18ae7ab87294090fa85d",
+      "checked": true
+    },
+    {
+      "id": "zh-d07040856c0e0e652b65020c1e996564ff9df61cc3d27feaf04944d5690d8af5",
+      "language": "zh",
+      "sha256": "da5aa041b08501f8e0ea68ac456dec67e7e792c1f1888b13fe00c8ed394992ce",
+      "checked": true
+    },
+    {
+      "id": "zh-ce2b5b0f23972aadc86db8b119d0dc8bb7cf910e6075c19e6ec49882e24de329",
+      "language": "zh",
+      "sha256": "fdabbdd3e114970858373b822cf679c4745884895f9c7e205ab480c51e57fdcc",
+      "checked": true
+    },
+    {
+      "id": "zh-c3fb3fd2297f3fdf7f0c3a6f470b2e0867857cebd10d68780546bc09b2c2fec3",
+      "language": "zh",
+      "sha256": "1a77f6547bbe4c7881f02d8b3c682db7042ce6f9aad7ad203deb46aab734c26c",
+      "checked": true
+    },
+    {
+      "id": "zh-32846dc1f3554864933bab8f06030238c44172cef6f7f37504a6b27f676b7ad4",
+      "language": "zh",
+      "sha256": "6497bfef459709aa184f3958c69d175e86b4bdf8864a19f74ba2cd356352d39f",
+      "checked": true
+    },
+    {
+      "id": "zh-f6e747dc2b0aafddaa34668cf299e28f85366cd851379a51a42e1cc2a1abf02a",
+      "language": "zh",
+      "sha256": "1b984a0986fc0ea3139c1b381ec73aca97ea0a1818be12e93ac11f7325502d0b",
+      "checked": true
+    },
+    {
+      "id": "zh-4a5d719d336cc62625051ec606744a55b2cf680c4788c0e69871231360b14b93",
+      "language": "zh",
+      "sha256": "73f1f7e0daf7590f01ffbe5798915e3a61d095e6a1aaee3daa80f288c654f43e",
+      "checked": true
+    },
+    {
+      "id": "zh-f213b134bc9e995f8fc76a26fba1ffd3052266f1bd49cdd105f49a07416bfcf0",
+      "language": "zh",
+      "sha256": "c99186b74d191389bdb4aa0da7aeff050cc189818f05995b732d2463e57a0390",
+      "checked": true
+    },
+    {
+      "id": "zh-67a52dd52baad34f6ac88edd43ca285b30fa7d44b913cc990b669162c70656a3",
+      "language": "zh",
+      "sha256": "00a2d110162accca09f8cbd9207a2d333665c33434f6cfc0e40f3d29444cbd2d",
+      "checked": true
+    },
+    {
+      "id": "zh-841fc9e1611b3079ee9cbbfa59aeb8d967dd3babd25e4f26fda6deb79ca2b9c6",
+      "language": "zh",
+      "sha256": "d0451495a9842ae4d1605504ecead2fddd1019d620016e767b53873947fd2dd9",
+      "checked": true
+    },
+    {
+      "id": "zh-f4f6b6e99a2e2a12f16c58769034c31194565aeb114f8f399a687ac4cfa1265a",
+      "language": "zh",
+      "sha256": "4aa4ce5e107999e4400ac1cd25daef75ca631eb8e35565c63fe533a63bec8552",
+      "checked": true
+    },
+    {
+      "id": "zh-377ea2d1756d41cad7166bcd364ff2ef05980efc7315f90648b30a0ddca25bb5",
+      "language": "zh",
+      "sha256": "7e7341d539047be5c1b5d383eabeb3e5b55a18a117ca9641265f39a1e6d3a851",
+      "checked": true
+    },
+    {
+      "id": "zh-b16130947bd52f5d544deda0e2a95a4fde44f313daf0ffe11240e734104fb423",
+      "language": "zh",
+      "sha256": "5235a96d127e2332b7fe2d71833adb70f8809420ee4df86218a682cd8611cf33",
+      "checked": true
+    },
+    {
+      "id": "zh-fc53988dae2a41e055aef4c6ffde865fafff8c7d54f114635fc743310d014bd6",
+      "language": "zh",
+      "sha256": "6fe2679e170026bb5f68e8c8bc597d3148ddd453e6a060256945d049465d9325",
+      "checked": true
+    },
+    {
+      "id": "zh-ef51f96557a28906d3f78161b88f9c2dc26c6d0303ba3ad1159f7dcc7a8f8550",
+      "language": "zh",
+      "sha256": "b9ce82772de9b5f39d95f0903494323179aeb8c585ed533250e91dc05d47d356",
+      "checked": true
+    },
+    {
+      "id": "zh-2139de721debba1543d9f2ae851b106544f213d4e389edcd1f94331d26d82cc4",
+      "language": "zh",
+      "sha256": "839096bac08a1ad77dd13a86ead76478b6475d94a027e67079f3fb1ac6d7c0a0",
+      "checked": true
+    },
+    {
+      "id": "zh-69ca01eb65c8693087fe18993df76700b60fe2b2d71e35e4ff2edfdcdc32d940",
+      "language": "zh",
+      "sha256": "9f49759373e6bd4c1fed12f4a2fd9d679b79162f67aba76f756b2b560fa78283",
+      "checked": true
+    },
+    {
+      "id": "zh-e6d5cb45b476671cac4f51eeae0446072eb63c04ed4aa1ac9d3b343eb79add2e",
+      "language": "zh",
+      "sha256": "3b157c2097a2c30a285a2a8bd02591eaf077f77ac75de43266c6e532bb7e6f95",
+      "checked": true
+    },
+    {
+      "id": "zh-15aa76f74dd277188964b503bb86c47f5c62a5b2ccaaa19f3f194e0bec50324e",
+      "language": "zh",
+      "sha256": "6ffd75cb196b0b02094078d7d460ac5f6846907a00787e6de17b0eb2d163c04e",
+      "checked": true
+    },
+    {
+      "id": "zh-87eb751e2844d350e29c3a83135000aebfbf749e27fdf4d28d21fa9b6c757d50",
+      "language": "zh",
+      "sha256": "2e92ede8810dd758240689c24817ae7cb86fc5d3511963d808a8641f31a776c4",
+      "checked": true
+    },
+    {
+      "id": "zh-e7e1b569e1228c1784aa70077836268048168c9dfb8c97ebf8985012945781f0",
+      "language": "zh",
+      "sha256": "6cd7e073df35370b3748833cd2e7e25c45684b2211b8d41c0b79732b1ea7f42e",
+      "checked": true
+    },
+    {
+      "id": "zh-5c56f34ab0aeab3485a357d74fd0f446b04325ab3633d8112a239be278c18c32",
+      "language": "zh",
+      "sha256": "d4b9e07dd2c3fb13c77e1169ca8995237d9156c4be4d3d490750ba4e408ac43f",
+      "checked": true
+    },
+    {
+      "id": "zh-33044e1270af29922c6731f8d5ffa83c59661f6ce084952afc281d3ab49eba53",
+      "language": "zh",
+      "sha256": "0fddc878fbad7addd4154d2454f4ebcf165a8f7ea0857107ad19860366b8fda8",
+      "checked": true
+    },
+    {
+      "id": "zh-e2d145ec5b708eb7a3945cfbfc87351f3d585c34f4cc32e11c65e00f3e638552",
+      "language": "zh",
+      "sha256": "bbdec3463830e37868198a6a5c76b04fcbce9ad3a597fd74dfb4ebd1bde9f883",
+      "checked": true
+    },
+    {
+      "id": "zh-d08aac48d9291e774def9f64de23e218597e56135d187aafb5d1d53af26a478d",
+      "language": "zh",
+      "sha256": "f68abfc4769f0546df2e781d26df6452e3965f3886c665ed0d710370f155d82d",
+      "checked": true
+    },
+    {
+      "id": "zh-e27e1bf81998a02eceb8eaba6b446e8873d53eddd1f6881c776d37573f862b5c",
+      "language": "zh",
+      "sha256": "cccfbe0ed729f035c8100c8d00fae9db82981cd56e9f32cdeacce9a869618451",
+      "checked": true
+    },
+    {
+      "id": "zh-d1fcd83d2a2ec79835453004ad67997f07fa12156efe03140e398ce8889c5434",
+      "language": "zh",
+      "sha256": "32bc05f1b61cbc90cacebbf9758948592df04dc57491dd3be69921b54ea15dbb",
+      "checked": true
+    },
+    {
+      "id": "zh-51b4369b43b19ab166ac4ce862498d3b89b3cd2b796a174e626f0a27e94c2507",
+      "language": "zh",
+      "sha256": "d7c324cf95c82f4f17e8af32e5a38a32c21ca19c227f6827ce6df3987587e90d",
+      "checked": true
+    },
+    {
+      "id": "zh-84ae30ac1cecf3419ad1a533ca2f2ba3e34f1c52fe684d910332029bb7467de2",
+      "language": "zh",
+      "sha256": "1d70b290df5b0711a1fc3a38d26542d83d49e7d8aba1aab8c7d49136af0c6371",
+      "checked": true
+    },
+    {
+      "id": "zh-1b4634ce6bb613061638587febca85f365c18404861eb5e4da53e33c69eb6155",
+      "language": "zh",
+      "sha256": "3e8d8a3935ebcaa9b863cf7f17dd28f0074fdd5d2028a00cad6ea60eb694bba2",
+      "checked": true
+    },
+    {
+      "id": "zh-5466a677dec0ff4c4284b0f5551d82eccf70383d1f9620aee3feb0602fd88f3b",
+      "language": "zh",
+      "sha256": "1a263da8cfadda622f39da8df4588c565cc5f8b88ab0441468f259e26e22413f",
+      "checked": true
+    },
+    {
+      "id": "zh-0bdbc588af3aa1e50033517d578c20fb851ba16cddc3f2bcd36eec6ca8b543e6",
+      "language": "zh",
+      "sha256": "eff14d4c93afc1575be7692d5828e5310a44b33ad5a2de7b5aa2ee7a50f43465",
+      "checked": true
+    },
+    {
+      "id": "zh-16de788e06cede3acadb87fedcc76118b23ab922c1135207bb50ba066137afbc",
+      "language": "zh",
+      "sha256": "87f860e74e6b0964adce012e3f40958f2a506435bd58d56286a4a08e0645957b",
+      "checked": true
+    },
+    {
+      "id": "zh-2826d3245bb776345af5ce5d319b0ac5b5dd4e3adc4fe4d574d653a3867cfa4e",
+      "language": "zh",
+      "sha256": "a61303db95803e6b7f62031b6d86d39173fe4b31656e0274ba9cba2090b847ca",
+      "checked": true
+    },
+    {
+      "id": "zh-0d378d4d14d6fb03db6a0d51917ae98bed8011e34d27e5df5a279c19102f5cbd",
+      "language": "zh",
+      "sha256": "dd6d52fa21f0cbcde9d8b3ed06782069e18c1e408f5c02a15452f6cf538ee6fa",
+      "checked": true
+    },
+    {
+      "id": "zh-cd026cf2732aff9d021ecd5a1ec0e9cbb662dbed484fe658bae462bb5f176f54",
+      "language": "zh",
+      "sha256": "8a41761fbe50bfa577ad27f2385988d7e9b9f0bbd0dd5a01ae372278c0428875",
+      "checked": true
+    },
+    {
+      "id": "zh-c37e5fdfe572a9a9382080a7638c781cd42f80d32529a34395e3427f2e7bdbb6",
+      "language": "zh",
+      "sha256": "c20b5a33cc9cabba8e6d62ead238f98ec22b4b3b17334de9b2fd13e551a60bd3",
+      "checked": true
+    },
+    {
+      "id": "zh-1ee24806b277581869efb4cea24b754f3b10068ad4ed4a6971ae626d2261691a",
+      "language": "zh",
+      "sha256": "3014ea0e9e0f83f2b42acccc5f2e7be4df8691df809103ee9c7a158d50894f3d",
+      "checked": true
+    },
+    {
+      "id": "zh-b16935d1a2bdd07210b8489e913cfbb1bc5508fb424ee5730c834d7bd0119db0",
+      "language": "zh",
+      "sha256": "a3e799a8ed172bb9ad066ea37a231b3b4f79410a728497b7eb652b509e748f6d",
+      "checked": true
+    },
+    {
+      "id": "zh-a1592d3aa8d110ba79f7e30c164c2a113d4a7417b2dd1aa590feddfdb03668ae",
+      "language": "zh",
       "sha256": "47cf32c86f84ff046a0637c8b8a328a40a0fe00646f098df3e2484f1fed59c5c",
-      "expected": "嘴张开、舌位靠前，先听这个元音。",
-      "heard": "嘴张开，舌位靠前，先听这个原音。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-99882c8dbc1fac411472600a42b949210430a0b8fe649c6cc43caf0803724a54",
+      "language": "zh",
       "sha256": "a572d198df4738af654e38eee5546cdd568c5fdc80e8372a4f69be9f9f67ab5b",
-      "expected": "舌尖轻放上下齿之间，声带振动。",
-      "heard": "舌尖轻放上下齿之间，声带振动。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-e56e68b44b5b32c105226b4aa516da3b0899d5667a163a2b24a74005363e59d8",
+      "language": "zh",
       "sha256": "820248e88992223fc35e6c57b2ac52b756602e130a1962b4c64d90c7c34611d4",
-      "expected": "舌尖轻放上下齿之间，轻轻送气。",
-      "heard": "舌尖轻放上下齿之间，轻轻送气。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-c3c52e10af719db399379a7bcdb37b190cf02b60a100104afb2ce97b3442f3b3",
+      "language": "zh",
       "sha256": "1f2c1df2cfb660c81d0dda8a18999cdf3b695a36a543147a3035a703effd9ba6",
-      "expected": "舌位靠前，保持这个元音，不另加音节。",
-      "heard": "舌位靠前，保持这个元音，不另加音节。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-24db70dc2932799dd06306ddad5f8fa218ed248ccb3df0cfed317c4841b4604d",
+      "language": "zh",
       "sha256": "8021f4f45046e2bfa3858fccf06110960d88b4d34941bc8c25f265c35e13c7d0",
-      "expected": "这个元音短一些，嘴不要绷得太紧。",
-      "heard": "这个元音短一些，嘴不要绷得太紧。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-51285cf8a385855b24d8e29741888567b1098b1eb6fe7a0a4225eafac9895213",
+      "language": "zh",
       "sha256": "5a5f0b11feb01340591f460a6cc3eca406fa1664b1748414808f94f8b6eb8224",
-      "expected": "口形自然滑动，一口气读完。",
-      "heard": "口形自然滑动，一口气读完。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-395e210d535b46896021196ff8be1cce1a0ee700f88a915709971a07615ae51c",
+      "language": "zh",
       "sha256": "b454b1454ae0384e6e5f0da3963ddc875547e205f20f5d0d6ed483abfe5bce98",
-      "expected": "舌尖抵住上齿后方，让气流从鼻腔通过。",
-      "heard": "舌尖抵住上齿后方，让气流从鼻腔通过。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-2945a49525a8633e62ba8e476a2416db29d31c1bfd056b8a84f0f9bc57d36f95",
+      "language": "zh",
       "sha256": "d9e8d563bb637ba0d4928967e8cf363cad271d595250d343dd62b6d9e050fe00",
-      "expected": "舌尖轻触上齿后方，气流从舌头两侧通过。",
-      "heard": "舌尖轻触上齿后方，气流从舌头两侧通过。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-9b127634bf521b56119f4e08dfe2bb9f56bf4d2ceb846eb0e99781e9db0793f2",
+      "language": "zh",
       "sha256": "185f1f081ce3521f6bbf232dc6b74514a2a5dd1033d1b5c1f20fbdb113af761c",
-      "expected": "声带振动，结尾不要额外加元音。",
-      "heard": "声带振动结尾不要额外加元音。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-cc6c58e5cc7fa3d9cc3d69857fdcb0c41df8196d50da31be5bcdc4f2092662ea",
+      "language": "zh",
       "sha256": "504193664d65ddfdc615c5fa51255dd2b6227d6b47a05a9f2df2cb9e34535300",
-      "expected": "舌尖接触上齿后方，再放开，不多加一个音节。",
-      "heard": "舌尖接触上齿后方，再放开，不多加一个音节。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-e79dcec6ab39a22db65c7bede3b6fa72d2c03a4f7aec0e88af17aeaa4370d982",
+      "language": "zh",
       "sha256": "703b14681b3253ea3e0922afcaa2ac862137878a80857a6dad26191d9882b1a7",
-      "expected": "双唇先合拢，再轻轻放开。",
-      "heard": "双唇先合拢，再轻轻放开。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-cb79c5f8a6b648623a4ba7e00cb360f4eb6f230a2f2b237792ba0784121cab42",
+      "language": "zh",
       "sha256": "9841a432578b4174628397b7df8c1ab9630a8ec8d446b4cd49ade5b667bd23c5",
-      "expected": "双唇先合拢，再放开，声带振动。",
-      "heard": "双唇先合拢，再放开，声带振动。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-1ec98090d1eee2160dc4d9899f4cf1ed43b6a499c31489f1422f5d60c368d269",
+      "language": "zh",
       "sha256": "125442d7504d76ecad28b23470ce0e2fa93a3c7ca5d70f1a4f2c04bf98574ab6",
-      "expected": "舌尖接触上齿后方，再放开，声带振动。",
-      "heard": "舌尖接触上齿后方，再放开声带振动。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-ed74087d03e65fad8f77926b429b9d3b6fefb491937161a1b0cb4d48a806145d",
+      "language": "zh",
       "sha256": "596bff814b0040564d8af0cdbc2334efb3ced0a22d7fa642a66cd74a9a6eae9e",
-      "expected": "舌尖不要碰上腭，先听这个辅音。",
-      "heard": "舌尖不要碰上颚，先听这个辅音。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-c27c0b821f03824c60cc606a4c6d12e76e136ae102edfe00084a516b3e8c4dff",
+      "language": "zh",
       "sha256": "b525b40014315803d28163d22d0671b5078928dfa470c36fe5a95b81768f8045",
-      "expected": "让气流从齿间窄缝通过，不多加元音。",
-      "heard": "让气流从齿间窄缝通过，不多加原因。",
-      "accepted": true
+      "checked": true
     },
     {
+      "id": "zh-b846f5e5c34640c0982253ea827a62906d85621faa49f46aaae9f3735f57990c",
+      "language": "zh",
       "sha256": "e8280af88882da4d1e09d65313ed16dd4f86caf38ccfae6c7e1a302f29052145",
-      "expected": "放松口形，轻轻读这个元音。",
-      "heard": "放松口型，轻轻读这个元音。",
-      "accepted": true
+      "checked": true
     },
     {
-      "sha256": "25efbf28b38aaaae30bd6f1bc68ce1d0d05f52ebca5ebe5ffcbbede490bd30b4",
-      "expected": "本课分三段。先学虽然与尽管的结构，再学两句话之间的转折，最后说清对象、群体和例外。一段一段来，不用一次记住所有说法。",
-      "heard": "本课分三段，先学虽然与尽管的结构，在学两句话之间的转折，最后说清对象群体和例外。一段一段来，不用一次记住所有说法。",
-      "accepted": true
+      "id": "zh-dea06892ece0e057a95f10a93d0b089c27997f798375877e41cec84df668e8cf",
+      "language": "zh",
+      "sha256": "d01803c893c862bd01fb98a39ccc28d89544979ee9e466412066302cad059dfb",
+      "checked": true
+    },
+    {
+      "id": "en-c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+      "language": "en",
+      "sha256": "c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+      "checked": true
     }
   ]
 }

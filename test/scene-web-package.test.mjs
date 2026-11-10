@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import {packageSceneWeb} from '../tools/package-scene-web.mjs';
+
+test('each web release has content-addressed entrypoints and a fresh recovery URL',t=>{
+ const app=fs.mkdtempSync(path.join(os.tmpdir(),'scene-web-package-'));
+ t.after(()=>fs.rmSync(app,{recursive:true,force:true}));
+ const dir=path.join(app,'build/web');fs.mkdirSync(dir,{recursive:true});
+ fs.mkdirSync(path.join(app,'web'));
+ fs.writeFileSync(path.join(app,'web/retire_service_worker.js'),'// retire only the old worker');
+ fs.writeFileSync(path.join(dir,'main.dart.js'),'window.mainVersion = 1;');
+ fs.writeFileSync(path.join(dir,'flutter_bootstrap.js'),'_flutter.buildConfig = {"builds":[{"mainJsPath":"main.dart.js"}]};\n');
+ fs.writeFileSync(path.join(dir,'index.html'),'<base href="/scene/"><link rel="preload" href="main.dart.js" as="script"><script src="flutter_bootstrap.js"></script>');
+ fs.mkdirSync(path.join(dir,'assets'));fs.writeFileSync(path.join(dir,'assets/model.bin'),'keep verified model');
+ const a=packageSceneWeb(app,'trial-current');
+ assert.match(a.mainFile,/^main\.[a-f0-9]{16}\.dart\.js$/);
+ assert.ok(fs.readFileSync(path.join(dir,a.indexFile),'utf8').includes(a.bootstrapFile));
+ assert.ok(fs.readFileSync(path.join(dir,a.indexFile),'utf8').includes(`href="${a.mainFile}"`));
+ assert.ok(fs.readFileSync(path.join(dir,a.bootstrapFile),'utf8').includes(a.mainFile));
+ assert.deepEqual(packageSceneWeb(app,'trial-current'),a);
+ fs.writeFileSync(path.join(dir,'main.dart.js'),'window.mainVersion = 2;');
+ const b=packageSceneWeb(app,'trial-current');
+ assert.notEqual(a.mainFile,b.mainFile);assert.notEqual(a.indexFile,b.indexFile);
+ assert.ok(fs.readFileSync(path.join(dir,a.indexFile),'utf8').includes(b.bootstrapFile));
+ assert.ok(!fs.existsSync(path.join(dir,a.mainFile)));
+ assert.equal(fs.readFileSync(path.join(dir,'assets/model.bin'),'utf8'),'keep verified model');
+ assert.equal(fs.readFileSync(path.join(dir,'flutter_service_worker.js'),'utf8'),'// retire only the old worker');
+});

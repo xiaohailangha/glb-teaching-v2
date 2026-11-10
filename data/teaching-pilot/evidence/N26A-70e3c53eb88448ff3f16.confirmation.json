@@ -1,0 +1,107 @@
+{
+  "asset": {
+    "id": "N26A-70e3c53eb88448ff3f16",
+    "text": "the",
+    "language": "en",
+    "voice": 403008,
+    "sha256": "bb82d6322fb3674ae69f08ffe28003582f2425b2b335e4e0672eae905696f460",
+    "size": 43564,
+    "duration": 1.36,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 17
+      },
+      {
+        "time": 0.22,
+        "id": 1
+      },
+      {
+        "time": 1.17,
+        "id": 0
+      },
+      {
+        "time": 1.24,
+        "id": 0
+      },
+      {
+        "time": 1.36,
+        "id": 0
+      }
+    ],
+    "wordTimings": [
+      {
+        "word": "the",
+        "start": 0.13,
+        "end": 1.17
+      }
+    ],
+    "machineReviewPassed": true,
+    "source": "pilot",
+    "originalSource": {
+      "release": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+      "id": "N26A-70e3c53eb88448ff3f16"
+    },
+    "file": "audio/bb82d6322fb3674ae69f08ffe28003582f2425b2b335e4e0672eae905696f460.wav",
+    "speechEndMs": 1230
+  },
+  "recognition": {
+    "text": "The.",
+    "engine": "16k_en_large"
+  },
+  "assessment": {
+    "SuggestedScore": 94.02381896972656,
+    "PronAccuracy": 94.02381896972656,
+    "PronFluency": 0.5650833249092102,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 130,
+        "MemEndTime": 1170,
+        "PronAccuracy": 94.02381896972656,
+        "PronFluency": 0.5650833249092102,
+        "ReferenceWord": "the_0",
+        "Word": "the",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 130,
+            "MemEndTime": 220,
+            "PronAccuracy": 89.0997085571289,
+            "DetectedStress": false,
+            "Phone": "dh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 220,
+            "MemEndTime": 1170,
+            "PronAccuracy": 98.94792938232422,
+            "DetectedStress": false,
+            "Phone": "ah",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  }
+}

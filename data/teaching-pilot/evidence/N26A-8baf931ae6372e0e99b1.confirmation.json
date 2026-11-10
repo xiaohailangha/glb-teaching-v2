@@ -1,0 +1,107 @@
+{
+  "asset": {
+    "id": "N26A-8baf931ae6372e0e99b1",
+    "text": "though",
+    "language": "en",
+    "voice": 403008,
+    "sha256": "030d9169d3c8e2885c4ab325923cc5804f7fb9d2103da4db1023eea43d9a9064",
+    "size": 27248,
+    "duration": 0.850125,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 17
+      },
+      {
+        "time": 0.25,
+        "id": 8
+      },
+      {
+        "time": 0.66,
+        "id": 0
+      },
+      {
+        "time": 0.730125,
+        "id": 0
+      },
+      {
+        "time": 0.850125,
+        "id": 0
+      }
+    ],
+    "wordTimings": [
+      {
+        "word": "though",
+        "start": 0.13,
+        "end": 0.66
+      }
+    ],
+    "machineReviewPassed": true,
+    "source": "pilot",
+    "originalSource": {
+      "release": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+      "id": "N26A-8baf931ae6372e0e99b1"
+    },
+    "file": "audio/030d9169d3c8e2885c4ab325923cc5804f7fb9d2103da4db1023eea43d9a9064.wav",
+    "speechEndMs": 720
+  },
+  "recognition": {
+    "text": "Though.",
+    "engine": "16k_en_large"
+  },
+  "assessment": {
+    "SuggestedScore": 97.43902587890625,
+    "PronAccuracy": 97.43902587890625,
+    "PronFluency": 0.7777756452560425,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 130,
+        "MemEndTime": 660,
+        "PronAccuracy": 97.43902587890625,
+        "PronFluency": 0.7777756452560425,
+        "ReferenceWord": "though_0",
+        "Word": "though",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 130,
+            "MemEndTime": 250,
+            "PronAccuracy": 98.41862487792969,
+            "DetectedStress": false,
+            "Phone": "dh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 250,
+            "MemEndTime": 660,
+            "PronAccuracy": 96.45942687988281,
+            "DetectedStress": false,
+            "Phone": "ow",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  }
+}

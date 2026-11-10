@@ -1,0 +1,86 @@
+{
+  "asset": {
+    "id": "en-c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+    "text": "an",
+    "language": "en",
+    "voice": 403008,
+    "source": "pilot",
+    "file": "audio/c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4.wav",
+    "sha256": "c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+    "size": 37132,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.11,
+        "id": 1
+      },
+      {
+        "time": 0.54,
+        "id": 19
+      },
+      {
+        "time": 0.71,
+        "id": 0
+      }
+    ],
+    "speechEndMs": 770
+  },
+  "assessment": {
+    "SuggestedScore": 93.852294921875,
+    "PronAccuracy": 93.852294921875,
+    "PronFluency": 0.7785128355026245,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 110,
+        "MemEndTime": 710,
+        "PronAccuracy": 93.852294921875,
+        "PronFluency": 0.7785128355026245,
+        "ReferenceWord": "an_0",
+        "Word": "an",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 110,
+            "MemEndTime": 540,
+            "PronAccuracy": 97.26978302001953,
+            "DetectedStress": false,
+            "Phone": "ae",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 540,
+            "MemEndTime": 710,
+            "PronAccuracy": 90.43479919433594,
+            "DetectedStress": false,
+            "Phone": "n",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  },
+  "recognition": {
+    "text": "An.",
+    "engine": "16k_zh_en_2.0"
+  }
+}

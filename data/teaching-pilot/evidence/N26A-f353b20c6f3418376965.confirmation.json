@@ -1,0 +1,92 @@
+{
+  "asset": {
+    "id": "N26A-f353b20c6f3418376965",
+    "text": "I",
+    "language": "en",
+    "voice": 403008,
+    "sha256": "d623ec95fbac26a8cc86c723397d694b6502ef17fc9f3461d89537e5975613dd",
+    "size": 44846,
+    "duration": 1.4000625,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 11
+      },
+      {
+        "time": 1.21,
+        "id": 0
+      },
+      {
+        "time": 1.2800625,
+        "id": 0
+      },
+      {
+        "time": 1.4000625,
+        "id": 0
+      }
+    ],
+    "wordTimings": [
+      {
+        "word": "i",
+        "start": 0.13,
+        "end": 1.2100000000000002
+      }
+    ],
+    "machineReviewPassed": true,
+    "source": "pilot",
+    "originalSource": {
+      "release": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+      "id": "N26A-f353b20c6f3418376965"
+    },
+    "file": "audio/d623ec95fbac26a8cc86c723397d694b6502ef17fc9f3461d89537e5975613dd.wav",
+    "speechEndMs": 1310
+  },
+  "recognition": {
+    "text": "I.",
+    "engine": "16k_en_large"
+  },
+  "assessment": {
+    "SuggestedScore": 99.3167495727539,
+    "PronAccuracy": 99.3167495727539,
+    "PronFluency": 0.31405574083328247,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 130,
+        "MemEndTime": 1020,
+        "PronAccuracy": 99.3167495727539,
+        "PronFluency": 0.31405574083328247,
+        "ReferenceWord": "i_0",
+        "Word": "i",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 130,
+            "MemEndTime": 1020,
+            "PronAccuracy": 99.3167495727539,
+            "DetectedStress": false,
+            "Phone": "ay",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  }
+}

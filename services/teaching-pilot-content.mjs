@@ -1,39 +1,55 @@
-import {pilotLessons,wordGuides,repairMessages} from './teaching-pilot-v4-content.mjs';
-export {pilotLessons,wordGuides,repairMessages};
-export const pilotRevision='teacher-plan-20261106-v5';
-const make=(id,part,title,body,display='',models=[],answers=[],extra={})=>({id,part,title,body,display,models,answers,supported:true,...extra});
-const [basic,advanced]=pilotLessons;
-const goal=basic.steps[0];goal.display='an apple and a banana\nan apple or a banana';goal.translation='苹果和香蕉，两样都要\n苹果或者香蕉，任意一种都可以';goal.models=['an apple and a banana','an apple or a banana'];goal.body='今天学两个连接词。第一个把两样连接起来，第二个表示不同选择。在今天的例子里，要分清两样都要和任选一种。先听两个短语，不用急着回答。';
-basic.steps.find(s=>s.id==='and-read').translation='我想要一个苹果和一根香蕉。';basic.steps.find(s=>s.id==='or-read').translation='我想要苹果或者香蕉，任意一种都可以。';
-basic.steps.find(s=>s.id==='or-use').scaffold='I want an apple … a banana.';
-basic.steps.find(s=>s.id==='or-use').reduceAfter=['and-read','or-read'];
-basic.steps.splice(3,0,make('rhythm','句子里的声音','连接词可以轻读','放进句子以后，连接词可以读轻一些。意思清楚，衔接自然就可以，不用每个词都一样重。'));
-basic.steps.splice(basic.steps.length-1,0,make('variation','只在顺利时再练一次','换一个已经读过的词','这次把两种水果前后换一换，意思还是任意一种都可以。看着完整提示说。','I want a banana or an apple.',[],['I want a banana or an apple.'],{condition:{smooth:['and-read','or-read','or-use'],words:['apple','banana']},transfer:true}));
-const word=(id,word,meaning)=>make(id,'补充陌生词',word+'：'+meaning,'先认识这里用到的词。'+meaning+'。先听声音，再看着读一遍。',word,[word],[word],{condition:{unknown:word}});
-let at=advanced.steps.findIndex(s=>s.id==='although-read');advanced.steps.splice(at,0,word('prepare-difficult','difficult','困难的'));
-at=advanced.steps.findIndex(s=>s.id==='despite-read');advanced.steps.splice(at,0,word('prepare-difficulty','difficulty','困难这个名词'));
-const d=advanced.steps.find(s=>s.id==='despite-read');d.translation='尽管有困难，我还是可以试试。';d.body='上面是一件完整的事，下面是表示这个困难的名词短语。换开头时，后面的结构也要跟着换。先听短语和完整句，再看着说。';
-at=advanced.steps.findIndex(s=>s.id==='despite-read')+1;advanced.steps.splice(at,0,
- make('despite-convert','第一段 · 结构转换','换开头，后面也一起换','现在把第一句的开头换成尽管，后面的结构也一起换好。完整表达就在下面，看着说即可。','Despite the difficulty, I can try.',[],['Despite the difficulty, I can try.'],{contrast:['Although this is difficult, I can try.','Despite the difficulty, I can try.']}),
- make('part-one-end','第一段小结','留意开头后面的结构','这一段里，虽然的后面用了完整小句，尽管的后面用了名词短语。换词时也要留意后面的结构。可以随时离开课程，下次接着学。'));
-advanced.steps.find(s=>s.id==='although-read').translation='虽然这件事有困难，我还是可以试试。';
-advanced.steps.find(s=>s.id==='however-read').body='第一句先说有困难。第二句表达转折，说自己可以尝试。意思有联系，这次组织成两句话。先听示范，再看着说。';
-advanced.steps.find(s=>s.id==='however-read').contrast=['This is difficult.','However, I can try.'];
-advanced.steps.find(s=>s.id==='nonetheless').body='这个词表示尽管如此，强调即使有前面说的情况，后面的意思仍然成立。在较正式的表达中也会遇到。先听，可以跟读，也可以直接用右箭头继续。';
-advanced.steps.find(s=>s.id==='nonetheless').optionalWindowMs=4500;
-const use=advanced.steps.find(s=>s.id==='supported-use');use.preferSuccessful=['although-read','however-read','despite-read'];
-at=advanced.steps.findIndex(s=>s.id==='supported-use')+1;advanced.steps.splice(at,0,make('part-two-end','第二段小结','先用最熟悉的一种','你练习了用不同方式表达转折。先使用自己最熟悉的一种，其他说法以后再逐步熟练。可以随时离开课程，下次接着学。'));
-at=advanced.steps.findIndex(s=>s.id==='against-read');advanced.steps.splice(at,0,word('prepare-proposal','proposal','提案或者建议'));
-at=advanced.steps.findIndex(s=>s.id==='against-read')+1;advanced.steps.splice(at,0,make('against-example','完整用法','放进句子里听','这里反对的对象是这项提案。听一个完整例子，不用额外再读一遍。','I am against the proposal.',['I am against the proposal.']));
-at=advanced.steps.findIndex(s=>s.id==='except-use')+1;advanced.steps.splice(at,0,
- make('except-example','完整用法','除我之外，其他人都能去','听一个完整例子。这里把我排除在范围之外，不要求背下整句。','Everyone can go except me.',['Everyone can go except me.']),
- make('relations','第三段 · 语言对照','对象、群体和例外','这三个短语分别说明反对的对象，所在群体，以及排除的对象。只复习这次还不稳定的一处，前面顺利就直接结束。','',[],[],{contrast:['against the proposal：反对什么','among friends：在什么群体之中','except me：把谁排除在外']}),
- make('targeted-review','只复习需要的一处','看着提示，再说这一处','只复习刚才还不稳定的这一处。看着完整提示说一次。','against the proposal',[],['against the proposal','among friends','except me'],{condition:{review:['against-read','among-phrase','except-use']},reviewTarget:true}));
-repairMessages.assisted='这一处先留作复习。现在看着完整提示，把刚才的意思连起来说。';
-repairMessages.summaryFollow='你完成了示范后的跟读，具体项目已经列在屏幕上。';
-repairMessages.summarySupported='你已经借助文字提示表达了刚才的意思，屏幕列出了本次使用过的表达。';
-repairMessages.summaryTransfer='你还完成了一次更换已学词语的练习。';
-repairMessages.summaryReview='屏幕标出的词语或结构还需要复习，下次先从这些位置开始。';
-advanced.steps[0].body='本课分三段。先学虽然与尽管的结构，再学两句话之间的转折，最后说清对象、群体和例外。一段一段来，不用一次记住所有说法。';
-advanced.steps[0].display='让步结构 / 转折表达 / 对象与范围';
-for(let i=0;i<advanced.steps.length;i++)advanced.steps[i].part=i<=advanced.steps.findIndex(s=>s.id==='part-one-end')?'第一段 · although / though / despite':i<=advanced.steps.findIndex(s=>s.id==='part-two-end')?'第二段 · however / nonetheless':'第三段 · 对象、群体和例外';
+import fs from 'node:fs';
+import path from 'node:path';
+import {projectRoot} from './storage-paths.mjs';
+export const pilotRevision='stable-teaching-20261110-v1';
+export const approvedDesign=JSON.parse(fs.readFileSync(process.env.TEACHING_PILOT_DESIGN||path.join(projectRoot,'data/teaching-pilot/design.json'),'utf8'));
+const english=s=>/^[A-Za-z][A-Za-z\s',.!?+/:;…-]*$/.test(s);
+// Parse the approved line structure, never the currently playing recording.
+export function boardFor(screen){
+ const blocks=[];
+ for(const group of screen.split(/\n\s*\n/)){
+  const lines=group.split('\n').map(x=>x.trim()).filter(Boolean);if(!lines.length)continue;
+  if(lines.some(x=>x.includes('[')))continue;
+  let i=0;
+  while(i<lines.length){
+   if(/^[A-Za-z]+$/.test(lines[i])&&/^\/[^/]+\/$/.test(lines[i+1]||'')){
+    const word=lines[i],showWord=blocks.length>0;
+    if(!showWord)blocks.push({kind:'english',role:'word',text:word});
+    const last=blocks.at(-1);
+    if(last?.kind==='pronunciations'&&last.showWords===showWord)last.words.push(word);
+    else blocks.push({kind:'pronunciations',words:[word],showWords:showWord});
+    i+=2;continue;
+   }
+   if(english(lines[i])){
+    const words=[];while(i<lines.length&&english(lines[i])&&!/^\/[^/]+\/$/.test(lines[i])&&!(words.length&&/^\/[^/]+\/$/.test(lines[i+1]||'')))words.push(lines[i++]);
+    const meaning=[];while(i<lines.length&&!english(lines[i])&&!/^\/[^/]+\/$/.test(lines[i]))meaning.push(lines[i++]);
+    const text=words.join(' ');
+    if(meaning.length&&(!blocks.length||blocks.at(-1)?.kind==='pair'))blocks.push({kind:'pair',text,meaning:meaning.join('')});
+    else {blocks.push({kind:'english',role:blocks.length?'context':'target',text});if(meaning.length)blocks.push({kind:'caption',text:meaning.join('')});}
+   }else{blocks.push({kind:blocks.some(b=>['meaning','caption','pair'].includes(b.kind))?'note':'meaning',text:lines[i++]});}
+  }
+ }
+ return blocks;
+}
+const answers={A02:['and'],A03:['I want an apple and a banana.'],A04:['or'],A05:['I want an apple or a banana.'],A06:['I want an apple and a banana.'],A07:['I want a banana or an apple.'],B02:['difficult'],B03:['Although this is difficult, I can try.'],B04:['though'],B05:['difficulty'],B06:['despite the difficulty'],B08:['Despite the difficulty, I can try.'],B10:['This is difficult. However, I can try.'],B11:['nonetheless'],B13:['Although this is difficult, I can try.','Though this is difficult, I can try.','Despite the difficulty, I can try.','This is difficult. However, I can try.','This is difficult. Nonetheless, I can try.'],B15:['proposal'],B16:['against the proposal'],B17:['friends'],B18:['among friends'],B19:['except me'],B20:['against the proposal','among friends','except me']};
+const focus={A01:['and','or'],A02:['and'],A03:['and'],A04:['or'],A05:['or'],A06:['and','or'],A07:['or'],B02:['difficult'],B03:['although'],B04:['though'],B05:['difficulty'],B06:['despite','difficulty'],B07:['this','is','difficult','the','difficulty'],B08:['despite','difficulty'],B09:['although','though','despite'],B10:['however'],B11:['nonetheless'],B12:['nonetheless'],B13:['although'],B15:['proposal'],B16:['against'],B17:['friends'],B18:['among'],B19:['except']};
+const follow={A02:['这个声音可以了。现在把两样都要放进完整表达。'],A03:['两样都要，意思清楚了。放进句子以后，中间的连接词可以轻一些，整句连贯就可以，不用每个词都一样重。'],A04:['这个词在这里带出的是两种选择。水果不用重新记，接下来只换句子中间这一处。'],A05:['这次是任选一种，和刚才两样都要的意思分开了。下面我不先读英语，你按意思选一句来说。'],A06:['这次你是按两样都要的意思，选出了合适的表达。'],A07:['顺序换了，你仍然保留了任选一种的意思。'],B02:['这个词认识了。下面把有困难和还想试试放在同一句里。'],B03:['你把困难说出来了，也保留了后面还想尝试的意思。'],B04:['这里换了开头，后面的句子框架可以保留。'],B05:['现在这两个意思分开了：一个描述困难的，一个把困难当作一件事来说。接下来就用这个名词搭配。'],B06:['这个短语表示尽管有困难。现在和刚才的说法对照一下，看看后面为什么也要换。'],B08:['这里把前面的情况换成了这个困难，后面的想法可以保留。'],B10:['这里先说困难，再转到自己仍然可以尝试。组织成两句话，意思也能连起来。'],B13:['这个说法也能表达这里的意思。'],B17:['这个词认识了。下面把在朋友之中连起来说。'],B18:['这里说明的是处在什么群体之中。接下来再看，怎样把其中一个人排除在范围外。']};
+export const repairMessages={and:'你刚才说的是任选一种。这次想表达两样都要，只调整中间这个连接词。',or:'你刚才说的是两样都要。这次任意一种都可以，只调整中间这个连接词。',despite:'后半句的想法可以保留。这里需要换的是尽管后面的部分：用这个困难，不要继续说这件事有困难。',among:'这次要说在朋友之中，先调整说明所在群体的这个词。',except:'这次要说除我之外，先调整表示排除的这个词。',wording:'先调整标出的这个词。听一次，再试这一处。',unclear:'这次声音没有确认清楚，不算读错。原来的提示留着，你准备好再说一次。',again:'这个词还需要听清楚。先听完整声音，再试这一处。',return:'这一处清楚了。现在放回刚才的完整表达，连起来说。',assisted:'这一处先留作复习。完整提示还在这里，这次可以借着提示完成。想先继续，也可以用右箭头。',summaryFollow:'这次已经跟着说过这些表达。',summarySupported:'这次也能看着提示，按意思使用其中一种表达。',summaryTransfer:'这次换过已经学过的词，仍然保留了原来的意思。',summaryReview:'需要帮助的具体位置已经留作复习。'};
+export const wordGuides={and:'把这两个东西连在一起，表示两样都要。先听这个词。',or:'这里表示任意一种都可以。先听这个词。',although:'中间这个齿间音，舌尖轻放在上下齿之间，声带振动。',though:'先听完整声音，不在词尾另外加一个音节。',despite:'后面的音节重一些，先听完整词。',however:'中间的音节重一些，两边轻一些。',nonetheless:'先听完整声音，注意最后一个主要重读音节。',against:'后面的音节重一些，词尾连在词里。',friends:'结尾连在完整词里，不额外加一个音节。',among:'后面的音节重一些，词尾鼻音收住，不额外加元音。',except:'先听完整词，结尾不额外加一个音节。',apple:'第一个元音可以把嘴张开一些，舌位靠前。',banana:'中间的音节重一些，先听完整声音。',difficult:'先听完整词，把几个音节自然连起来。',difficulty:'先听完整词，把几个音节自然连起来。',proposal:'中间的主要音节重一些，先听完整词。'};
+const part=id=>id[0]==='A'?'两样都要，还是任选一种':Number(id.slice(1))<=9?'第一段 · 有困难仍想试试':Number(id.slice(1))<=14?'第二段 · 换一种方式表达转折':'第三段 · 对象、群体和例外';
+export const pilotLessons=approvedDesign.lessons.map(l=>({id:l.id,title:l.title,goal:l.goal,steps:l.stages.map(s=>{
+ const target=answers[s.id]?.[0]??'';
+ const row={id:s.id,part:part(s.id),title:s.title,body:s.speech.join(''),display:target,models:s.models,answers:answers[s.id]??[],board:boardFor(s.screen),focus:focus[s.id]??[],supported:true,script:[...s.speech.map(text=>({language:'zh',text})),...s.models.map(text=>({language:'en',text})),...(s.afterModel?[{language:'zh',text:s.afterModel}]:[])],afterScript:(follow[s.id]??[]).map(text=>({language:'zh',text})),summary:['A08','B21'].includes(s.id),holdAfter:['B09','B14'].includes(s.id),optional:s.id==='B11',success:'step-'+s.id};
+ if(s.id==='B05')row.board=[{kind:'pair',text:'difficult',meaning:'困难的'},{kind:'pair',text:'difficulty',meaning:'困难'},{kind:'pronunciations',words:['difficulty'],showWords:false},{kind:'pair',text:'the difficulty',meaning:'这个困难'}];
+ if(['B02','B05','B15','B17'].includes(s.id))row.condition={unknown:target};
+ if(s.id==='A07'){row.condition={smooth:['A03','A05','A06'],words:['apple','banana']};row.transfer=true;}
+ if(s.id==='B13')row.preferSuccessful=['B03','B10','B08','B04'];
+ if(s.id==='B20'){row.reviewCandidates=['B16','B18','B19'];row.reviewTarget=true;row.reviewScript=[{language:'zh',text:'现在只复习还不稳定的这一处。看着对应的短语，完整说一次。'}];}
+ for(const [id,text,meaning,intro,word]of [['B16','I am against the proposal.','我反对这项提议。','把它放进一句话，就是我反对这项提议。这句先听懂用法就可以。','against'],['B19','Everyone can go except me.','除了我，其他人都能去。','放进完整句子，就是除了我，其他人都能去。这次只听懂排除的是谁。','except']])if(s.id===id){row.afterScript=[{language:'zh',text:intro},{language:'en',text}];row.afterBoard=[{kind:'english',role:'target',text},{kind:'meaning',text:meaning},{kind:'pronunciations',words:[word],showWords:true}];}
+ return row;
+})}));
+
+// Alternative prompts are authored lesson boards, not live-caption heuristics.
+const complex=pilotLessons[1];
+const expressionBoards=Object.fromEntries(['B03','B04','B08','B10','B12'].map(id=>{const step=complex.steps.find(s=>s.id===id);return [step.models.at(-1),step.board];}));
+for(const id of ['B13','B14'])complex.steps.find(s=>s.id===id).expressionBoards=expressionBoards;

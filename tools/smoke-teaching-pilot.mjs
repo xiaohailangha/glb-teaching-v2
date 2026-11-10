@@ -7,10 +7,10 @@ const outcomes=[];let number=0;
 try{
  for(const l of pilot.content.lessons){
   const user='isolated-pilot-smoke-'+l.id;
-  for(const s of l.steps.filter(s=>s.answers.length||s.practiceAnswers?.length)){
-   const answer=s.answers[0]||s.practiceAnswers[0],id=pilot.content.englishIds[answer];if(!id)throw Error('Missing model '+answer);
-   const asset=pilot.asset(id,l.id);const result=await pilot.oral(user+'-'+s.id,{revision:pilot.content.revision,course:l.id,step:s.id,attempt:'cloud-smoke-'+(++number),reference:answer,practice:!!s.practiceAnswers,intent:'both',wav:asset.inlineAudio});
-   outcomes.push({course:l.id,step:s.id,expected:answer,heard:result.heard,status:result.status,message:result.message,timings:result.timings,scene:result.scene});console.log(JSON.stringify({step:s.id,status:result.status}));
+  for(const s of l.steps.filter(s=>s.answers.length&&!s.reviewTarget)){
+   const answer=s.answers[0],id=pilot.content.englishIds[answer];if(!id)throw Error('Missing model '+answer);
+   const asset=pilot.asset(id,l.id);const result=await pilot.oral(user+'-'+s.id,{revision:pilot.content.revision,course:l.id,step:s.id,attempt:'cloud-smoke-'+(++number),reference:answer,wav:asset.inlineAudio});
+   outcomes.push({course:l.id,step:s.id,expected:answer,heard:result.heard,status:result.status,message:result.message,timings:result.timings});console.log(JSON.stringify({step:s.id,status:result.status}));
    if(result.status==='passed')await pilot.route('pilot/progress',user+'-'+s.id,{revision:pilot.content.revision,course:l.id,step:s.id,outcome:'passed',attempt:result.attempt},new URL('https://example.test'));
   }
  }

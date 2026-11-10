@@ -1,0 +1,588 @@
+{
+  "asset": {
+    "id": "zh-f88c1d6ec24a5a08e9aad34ee0470a382071ff2b51faf2dc1356e654db92e1f1",
+    "text": "这次我不先读英语，你来说。",
+    "voice": 403008,
+    "language": "zh",
+    "source": "pilot",
+    "file": "audio/fd09a4fb28e6a290114aa96f43e2a4fdc38d11536e43da5e40bbe2285116c61d.wav",
+    "sha256": "fd09a4fb28e6a290114aa96f43e2a4fdc38d11536e43da5e40bbe2285116c61d",
+    "size": 111372,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.43,
+        "id": 16
+      },
+      {
+        "time": 0.55,
+        "id": 4
+      },
+      {
+        "time": 0.69,
+        "id": 15
+      },
+      {
+        "time": 0.99,
+        "id": 7
+      },
+      {
+        "time": 1.15,
+        "id": 3
+      },
+      {
+        "time": 1.25,
+        "id": 21
+      },
+      {
+        "time": 1.31,
+        "id": 7
+      },
+      {
+        "time": 1.41,
+        "id": 16
+      },
+      {
+        "time": 1.47,
+        "id": 6
+      },
+      {
+        "time": 1.53,
+        "id": 1
+      },
+      {
+        "time": 1.5750000000000002,
+        "id": 19
+      },
+      {
+        "time": 1.69,
+        "id": 7
+      },
+      {
+        "time": 1.77,
+        "id": 6
+      },
+      {
+        "time": 1.92,
+        "id": 20
+      },
+      {
+        "time": 2.01,
+        "id": 6
+      },
+      {
+        "time": 2.15,
+        "id": 7
+      },
+      {
+        "time": 2.36,
+        "id": 0
+      },
+      {
+        "time": 2.53,
+        "id": 19
+      },
+      {
+        "time": 2.65,
+        "id": 6
+      },
+      {
+        "time": 2.73,
+        "id": 14
+      },
+      {
+        "time": 2.81,
+        "id": 2
+      },
+      {
+        "time": 2.875,
+        "id": 6
+      },
+      {
+        "time": 2.94,
+        "id": 16
+      },
+      {
+        "time": 3.03,
+        "id": 7
+      },
+      {
+        "time": 3.19,
+        "id": 3
+      },
+      {
+        "time": 3.35,
+        "id": 0
+      },
+      {
+        "time": 3.479,
+        "id": 0
+      }
+    ],
+    "cueSource": "soe-mandarin-phone-timing",
+    "speechEndMs": 3410,
+    "quality": {
+      "accuracy": 97.0869369506836,
+      "completion": 1
+    }
+  },
+  "assessment": {
+    "SuggestedScore": 97.0869369506836,
+    "PronAccuracy": 97.0869369506836,
+    "PronFluency": 0.8846074342727661,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 430,
+        "MemEndTime": 690,
+        "PronAccuracy": 94.89678192138672,
+        "PronFluency": 0.9697816371917725,
+        "ReferenceWord": "",
+        "Word": "这",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 430,
+            "MemEndTime": 550,
+            "PronAccuracy": 94.88314056396484,
+            "DetectedStress": false,
+            "Phone": "zh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 550,
+            "MemEndTime": 690,
+            "PronAccuracy": 94.9104232788086,
+            "DetectedStress": false,
+            "Phone": "e4",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 690,
+        "MemEndTime": 990,
+        "PronAccuracy": 98.37896728515625,
+        "PronFluency": 0.9740086793899536,
+        "ReferenceWord": "",
+        "Word": "次",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 690,
+            "MemEndTime": 830,
+            "PronAccuracy": 98.47821807861328,
+            "DetectedStress": false,
+            "Phone": "c",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 830,
+            "MemEndTime": 990,
+            "PronAccuracy": 98.27972412109375,
+            "DetectedStress": false,
+            "Phone": "i4",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 990,
+        "MemEndTime": 1250,
+        "PronAccuracy": 98.61048126220703,
+        "PronFluency": 0.9832141995429993,
+        "ReferenceWord": "",
+        "Word": "我",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 990,
+            "MemEndTime": 1150,
+            "PronAccuracy": 98.65190124511719,
+            "DetectedStress": false,
+            "Phone": "w",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1150,
+            "MemEndTime": 1250,
+            "PronAccuracy": 98.58977508544922,
+            "DetectedStress": false,
+            "Phone": "o3",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1250,
+        "MemEndTime": 1410,
+        "PronAccuracy": 98.75007629394531,
+        "PronFluency": 0.9886215925216675,
+        "ReferenceWord": "",
+        "Word": "不",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1250,
+            "MemEndTime": 1310,
+            "PronAccuracy": 98.71315002441406,
+            "DetectedStress": false,
+            "Phone": "b",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1310,
+            "MemEndTime": 1410,
+            "PronAccuracy": 98.78699493408203,
+            "DetectedStress": false,
+            "Phone": "u4",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1410,
+        "MemEndTime": 1620,
+        "PronAccuracy": 89.92576599121094,
+        "PronFluency": 1,
+        "ReferenceWord": "",
+        "Word": "先",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1410,
+            "MemEndTime": 1470,
+            "PronAccuracy": 86.80541229248047,
+            "DetectedStress": false,
+            "Phone": "x",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1470,
+            "MemEndTime": 1530,
+            "PronAccuracy": 86.7990493774414,
+            "DetectedStress": false,
+            "Phone": "i1",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1530,
+            "MemEndTime": 1620,
+            "PronAccuracy": 93.04930114746094,
+            "DetectedStress": false,
+            "Phone": "an",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1620,
+        "MemEndTime": 1770,
+        "PronAccuracy": 98.73110961914062,
+        "PronFluency": 0.9930511713027954,
+        "ReferenceWord": "",
+        "Word": "读",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1620,
+            "MemEndTime": 1690,
+            "PronAccuracy": 98.69485473632812,
+            "DetectedStress": false,
+            "Phone": "d",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1690,
+            "MemEndTime": 1770,
+            "PronAccuracy": 98.76736450195312,
+            "DetectedStress": false,
+            "Phone": "u2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1770,
+        "MemEndTime": 2010,
+        "PronAccuracy": 97.97051239013672,
+        "PronFluency": 0.9941661953926086,
+        "ReferenceWord": "",
+        "Word": "英",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1770,
+            "MemEndTime": 1830,
+            "PronAccuracy": 96.56803894042969,
+            "DetectedStress": false,
+            "Phone": "y",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1830,
+            "MemEndTime": 2010,
+            "PronAccuracy": 98.67176055908203,
+            "DetectedStress": false,
+            "Phone": "ing1",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 2010,
+        "MemEndTime": 2360,
+        "PronAccuracy": 98.54268646240234,
+        "PronFluency": 0.9602236151695251,
+        "ReferenceWord": "",
+        "Word": "语",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 2010,
+            "MemEndTime": 2150,
+            "PronAccuracy": 98.51667785644531,
+            "DetectedStress": false,
+            "Phone": "y",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 2150,
+            "MemEndTime": 2360,
+            "PronAccuracy": 98.56868743896484,
+            "DetectedStress": false,
+            "Phone": "v3",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 2530,
+        "MemEndTime": 2730,
+        "PronAccuracy": 98.70176696777344,
+        "PronFluency": 0.9853546619415283,
+        "ReferenceWord": "",
+        "Word": "你",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 2530,
+            "MemEndTime": 2650,
+            "PronAccuracy": 98.5941162109375,
+            "DetectedStress": false,
+            "Phone": "n",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 2650,
+            "MemEndTime": 2730,
+            "PronAccuracy": 98.80941772460938,
+            "DetectedStress": false,
+            "Phone": "i3",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 2730,
+        "MemEndTime": 2940,
+        "PronAccuracy": 98.80874633789062,
+        "PronFluency": 0.9914865493774414,
+        "ReferenceWord": "",
+        "Word": "来",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 2730,
+            "MemEndTime": 2810,
+            "PronAccuracy": 98.95954132080078,
+            "DetectedStress": false,
+            "Phone": "l",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 2810,
+            "MemEndTime": 2940,
+            "PronAccuracy": 98.73335266113281,
+            "DetectedStress": false,
+            "Phone": "ai2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 2940,
+        "MemEndTime": 3350,
+        "PronAccuracy": 98.85308074951172,
+        "PronFluency": 0.9719605445861816,
+        "ReferenceWord": "",
+        "Word": "说",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 2940,
+            "MemEndTime": 3030,
+            "PronAccuracy": 98.89582824707031,
+            "DetectedStress": false,
+            "Phone": "sh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 3030,
+            "MemEndTime": 3350,
+            "PronAccuracy": 98.83170318603516,
+            "DetectedStress": false,
+            "Phone": "uo1",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  },
+  "recognition": {
+    "text": "这次我不先读英语，你来说。",
+    "engine": "16k_zh_en_2.0"
+  }
+}

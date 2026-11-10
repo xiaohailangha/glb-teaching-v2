@@ -1,0 +1,122 @@
+{
+  "asset": {
+    "id": "N26A-53bc07afeb7aac43d679",
+    "text": "try",
+    "language": "en",
+    "voice": 403008,
+    "sha256": "8b9c34a6ad0037050e98f895300330f2ed4a03f0606f22504217250aed1737f2",
+    "size": 32684,
+    "duration": 1.02,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 19
+      },
+      {
+        "time": 0.39,
+        "id": 13
+      },
+      {
+        "time": 0.43,
+        "id": 11
+      },
+      {
+        "time": 0.83,
+        "id": 0
+      },
+      {
+        "time": 0.9,
+        "id": 0
+      },
+      {
+        "time": 1.02,
+        "id": 0
+      }
+    ],
+    "wordTimings": [
+      {
+        "word": "try",
+        "start": 0.13,
+        "end": 0.83
+      }
+    ],
+    "machineReviewPassed": true,
+    "source": "pilot",
+    "originalSource": {
+      "release": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+      "id": "N26A-53bc07afeb7aac43d679"
+    },
+    "file": "audio/8b9c34a6ad0037050e98f895300330f2ed4a03f0606f22504217250aed1737f2.wav",
+    "speechEndMs": 890
+  },
+  "recognition": {
+    "text": "Try.",
+    "engine": "16k_en_large"
+  },
+  "assessment": {
+    "SuggestedScore": 98.80717468261719,
+    "PronAccuracy": 98.80717468261719,
+    "PronFluency": 0.8491142392158508,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 130,
+        "MemEndTime": 810,
+        "PronAccuracy": 98.80717468261719,
+        "PronFluency": 0.8491142392158508,
+        "ReferenceWord": "try_0",
+        "Word": "try",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 130,
+            "MemEndTime": 390,
+            "PronAccuracy": 98.62580871582031,
+            "DetectedStress": false,
+            "Phone": "t",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 390,
+            "MemEndTime": 430,
+            "PronAccuracy": 99.0882797241211,
+            "DetectedStress": false,
+            "Phone": "r",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 430,
+            "MemEndTime": 810,
+            "PronAccuracy": 98.70742797851562,
+            "DetectedStress": false,
+            "Phone": "ay",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  }
+}

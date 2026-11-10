@@ -1,332 +1,247 @@
 {
   "referencePlaybackNotHumanSpeech": true,
-  "total": 27,
-  "passed": 27,
+  "total": 20,
+  "passed": 20,
   "outcomes": [
     {
       "course": "N26-U006-L04",
-      "step": "and",
+      "step": "A02",
       "expected": "and",
       "heard": "And.",
       "status": "passed",
       "timings": {
-        "asrMs": 274,
-        "soeMs": 669,
-        "totalMs": 692
+        "asrMs": 337,
+        "soeMs": 717,
+        "totalMs": 740
       }
     },
     {
       "course": "N26-U006-L04",
-      "step": "and-read",
+      "step": "A03",
       "expected": "I want an apple and a banana.",
       "heard": "I want an apple and a banana.",
       "status": "passed",
       "timings": {
-        "asrMs": 334,
-        "soeMs": 961,
-        "totalMs": 967
+        "asrMs": 465,
+        "soeMs": 1016,
+        "totalMs": 1023
       }
     },
     {
       "course": "N26-U006-L04",
-      "step": "or",
+      "step": "A04",
       "expected": "or",
       "heard": "Or.",
       "status": "passed",
       "timings": {
-        "asrMs": 210,
-        "soeMs": 546,
-        "totalMs": 547
+        "asrMs": 218,
+        "soeMs": 744,
+        "totalMs": 745
       }
     },
     {
       "course": "N26-U006-L04",
-      "step": "or-read",
+      "step": "A05",
       "expected": "I want an apple or a banana.",
       "heard": "I want an apple or a banana.",
       "status": "passed",
       "timings": {
-        "asrMs": 287,
-        "soeMs": 913,
-        "confirmationAsrMs": 4649,
-        "totalMs": 5564
+        "asrMs": 332,
+        "soeMs": 1029,
+        "confirmationAsrMs": 4750,
+        "totalMs": 5783
       }
     },
     {
       "course": "N26-U006-L04",
-      "step": "or-use",
-      "expected": "I want an apple or a banana.",
-      "heard": "I want an apple or a banana.",
+      "step": "A06",
+      "expected": "I want an apple and a banana.",
+      "heard": "I want an apple and a banana.",
       "status": "passed",
       "timings": {
-        "asrMs": 301,
-        "soeMs": 1150,
-        "confirmationAsrMs": 4708,
-        "totalMs": 5860
+        "asrMs": 294,
+        "soeMs": 989,
+        "totalMs": 994
       }
     },
     {
       "course": "N26-U006-L04",
-      "step": "variation",
+      "step": "A07",
       "expected": "I want a banana or an apple.",
       "heard": "I want a banana or an apple.",
       "status": "passed",
       "timings": {
-        "asrMs": 307,
-        "soeMs": 872,
-        "totalMs": 876
+        "asrMs": 271,
+        "soeMs": 838,
+        "totalMs": 843
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "although",
-      "expected": "although",
-      "heard": "Although.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 194,
-        "soeMs": 554,
-        "totalMs": 556
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "prepare-difficult",
+      "step": "B02",
       "expected": "difficult",
       "heard": "Difficult.",
       "status": "passed",
       "timings": {
-        "asrMs": 205,
-        "soeMs": 590,
-        "totalMs": 592
+        "asrMs": 267,
+        "soeMs": 520,
+        "totalMs": 522
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "although-read",
+      "step": "B03",
       "expected": "Although this is difficult, I can try.",
       "heard": "Although this is difficult, I can try.",
       "status": "passed",
       "timings": {
-        "asrMs": 318,
-        "soeMs": 853,
-        "totalMs": 857
+        "asrMs": 297,
+        "soeMs": 910,
+        "totalMs": 914
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "though",
+      "step": "B04",
       "expected": "though",
       "heard": "Though.",
       "status": "passed",
       "timings": {
-        "asrMs": 166,
-        "soeMs": 528,
-        "totalMs": 529
+        "asrMs": 151,
+        "soeMs": 501,
+        "totalMs": 503
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "despite",
-      "expected": "despite",
-      "heard": "Despite.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 221,
-        "soeMs": 634,
-        "totalMs": 636
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "prepare-difficulty",
+      "step": "B05",
       "expected": "difficulty",
       "heard": "Difficulty.",
       "status": "passed",
       "timings": {
-        "asrMs": 215,
-        "soeMs": 552,
-        "totalMs": 554
+        "asrMs": 196,
+        "soeMs": 569,
+        "totalMs": 571
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "despite-read",
+      "step": "B06",
+      "expected": "despite the difficulty",
+      "heard": "Despite the difficulty.",
+      "status": "passed",
+      "timings": {
+        "asrMs": 223,
+        "soeMs": 506,
+        "totalMs": 508
+      }
+    },
+    {
+      "course": "N26-U084-L01",
+      "step": "B08",
       "expected": "Despite the difficulty, I can try.",
       "heard": "Despite the difficulty, I can try.",
       "status": "passed",
       "timings": {
-        "asrMs": 281,
-        "soeMs": 773,
-        "totalMs": 775
+        "asrMs": 314,
+        "soeMs": 879,
+        "totalMs": 882
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "despite-convert",
-      "expected": "Despite the difficulty, I can try.",
-      "heard": "Despite the difficulty, I can try.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 312,
-        "soeMs": 815,
-        "totalMs": 818
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "however",
-      "expected": "however",
-      "heard": "However.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 225,
-        "soeMs": 619,
-        "totalMs": 620
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "however-read",
+      "step": "B10",
       "expected": "This is difficult. However, I can try.",
       "heard": "This is difficult, however.I can try.",
       "status": "passed",
       "timings": {
         "asrMs": 315,
-        "soeMs": 1108,
-        "totalMs": 1112
+        "soeMs": 1116,
+        "totalMs": 1120
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "nonetheless",
+      "step": "B11",
       "expected": "nonetheless",
       "heard": "Nonetheless.",
       "status": "passed",
       "timings": {
-        "asrMs": 219,
-        "soeMs": 656,
-        "totalMs": 657
+        "asrMs": 248,
+        "soeMs": 536,
+        "totalMs": 538
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "supported-use",
+      "step": "B13",
       "expected": "Although this is difficult, I can try.",
       "heard": "Although this is difficult, I can try.",
       "status": "passed",
       "timings": {
-        "asrMs": 250,
-        "soeMs": 870,
-        "totalMs": 873
+        "asrMs": 262,
+        "soeMs": 971,
+        "totalMs": 976
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "against",
-      "expected": "against",
-      "heard": "Against.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 194,
-        "soeMs": 503,
-        "totalMs": 504
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "prepare-proposal",
+      "step": "B15",
       "expected": "proposal",
       "heard": "Proposal.",
       "status": "passed",
       "timings": {
-        "asrMs": 256,
-        "soeMs": 612,
-        "totalMs": 614
+        "asrMs": 207,
+        "soeMs": 553,
+        "totalMs": 556
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "against-read",
+      "step": "B16",
       "expected": "against the proposal",
       "heard": "Against the proposal.",
       "status": "passed",
       "timings": {
-        "asrMs": 265,
-        "soeMs": 755,
-        "totalMs": 756
+        "asrMs": 213,
+        "soeMs": 612,
+        "totalMs": 616
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "friends",
+      "step": "B17",
       "expected": "friends",
       "heard": "Friends.",
       "status": "passed",
       "timings": {
-        "asrMs": 168,
-        "soeMs": 495,
-        "totalMs": 496
+        "asrMs": 180,
+        "soeMs": 523,
+        "totalMs": 525
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "among",
-      "expected": "among",
-      "heard": "Among.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 237,
-        "soeMs": 510,
-        "totalMs": 511
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "among-phrase",
+      "step": "B18",
       "expected": "among friends",
       "heard": "Among friends.",
       "status": "passed",
       "timings": {
-        "asrMs": 220,
-        "soeMs": 632,
-        "totalMs": 634
+        "asrMs": 248,
+        "soeMs": 681,
+        "totalMs": 682
       }
     },
     {
       "course": "N26-U084-L01",
-      "step": "except",
-      "expected": "except",
-      "heard": "Except.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 203,
-        "soeMs": 588,
-        "totalMs": 589
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "except-use",
+      "step": "B19",
       "expected": "except me",
       "heard": "Except me.",
       "status": "passed",
       "timings": {
-        "asrMs": 199,
-        "soeMs": 609,
-        "totalMs": 610
-      }
-    },
-    {
-      "course": "N26-U084-L01",
-      "step": "targeted-review",
-      "expected": "against the proposal",
-      "heard": "Against the proposal.",
-      "status": "passed",
-      "timings": {
-        "asrMs": 211,
-        "soeMs": 806,
-        "totalMs": 808
+        "asrMs": 235,
+        "soeMs": 526,
+        "totalMs": 528
       }
     }
   ]

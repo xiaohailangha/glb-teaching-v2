@@ -1,0 +1,389 @@
+{
+  "asset": {
+    "id": "zh-812786e8801495155911dbcc8a5356d533c56dcafbd8a1a548021a63a127f69b",
+    "text": "可以随时停下来。",
+    "voice": 403008,
+    "language": "zh",
+    "source": "pilot",
+    "file": "audio/f2898658829f13838181c1e13f16b33e6ed649ecfb5685e82683daf838f4017a.wav",
+    "sha256": "f2898658829f13838181c1e13f16b33e6ed649ecfb5685e82683daf838f4017a",
+    "size": 69132,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.34,
+        "id": 20
+      },
+      {
+        "time": 0.46,
+        "id": 4
+      },
+      {
+        "time": 0.56,
+        "id": 6
+      },
+      {
+        "time": 0.7,
+        "id": 15
+      },
+      {
+        "time": 0.78,
+        "id": 7
+      },
+      {
+        "time": 0.88,
+        "id": 6
+      },
+      {
+        "time": 0.98,
+        "id": 16
+      },
+      {
+        "time": 1.05,
+        "id": 15
+      },
+      {
+        "time": 1.16,
+        "id": 19
+      },
+      {
+        "time": 1.26,
+        "id": 6
+      },
+      {
+        "time": 1.35,
+        "id": 20
+      },
+      {
+        "time": 1.44,
+        "id": 16
+      },
+      {
+        "time": 1.48,
+        "id": 6
+      },
+      {
+        "time": 1.54,
+        "id": 2
+      },
+      {
+        "time": 1.6,
+        "id": 14
+      },
+      {
+        "time": 1.69,
+        "id": 2
+      },
+      {
+        "time": 1.835,
+        "id": 6
+      },
+      {
+        "time": 1.98,
+        "id": 0
+      },
+      {
+        "time": 2.159,
+        "id": 0
+      }
+    ],
+    "cueSource": "soe-mandarin-phone-timing",
+    "speechEndMs": 2040,
+    "quality": {
+      "accuracy": 98.14812469482422,
+      "completion": 1
+    }
+  },
+  "assessment": {
+    "SuggestedScore": 98.14812469482422,
+    "PronAccuracy": 98.14812469482422,
+    "PronFluency": 0.9888495206832886,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 340,
+        "MemEndTime": 560,
+        "PronAccuracy": 97.28008270263672,
+        "PronFluency": 0.988375723361969,
+        "ReferenceWord": "",
+        "Word": "可",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 340,
+            "MemEndTime": 460,
+            "PronAccuracy": 96.01012420654297,
+            "DetectedStress": false,
+            "Phone": "k",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 460,
+            "MemEndTime": 560,
+            "PronAccuracy": 98.55004119873047,
+            "DetectedStress": false,
+            "Phone": "e2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 560,
+        "MemEndTime": 700,
+        "PronAccuracy": 97.2332992553711,
+        "PronFluency": 0.9967690706253052,
+        "ReferenceWord": "",
+        "Word": "以",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 560,
+            "MemEndTime": 620,
+            "PronAccuracy": 98.35855102539062,
+            "DetectedStress": false,
+            "Phone": "y",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 620,
+            "MemEndTime": 700,
+            "PronAccuracy": 96.10804748535156,
+            "DetectedStress": false,
+            "Phone": "i3",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 700,
+        "MemEndTime": 980,
+        "PronAccuracy": 98.3301773071289,
+        "PronFluency": 0.9952675104141235,
+        "ReferenceWord": "",
+        "Word": "随",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 700,
+            "MemEndTime": 780,
+            "PronAccuracy": 98.04036712646484,
+            "DetectedStress": false,
+            "Phone": "s",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 780,
+            "MemEndTime": 980,
+            "PronAccuracy": 98.4267807006836,
+            "DetectedStress": false,
+            "Phone": "ui2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 980,
+        "MemEndTime": 1160,
+        "PronAccuracy": 98.73221588134766,
+        "PronFluency": 0.9929152727127075,
+        "ReferenceWord": "",
+        "Word": "时",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 980,
+            "MemEndTime": 1050,
+            "PronAccuracy": 98.75747680664062,
+            "DetectedStress": false,
+            "Phone": "sh",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1050,
+            "MemEndTime": 1160,
+            "PronAccuracy": 98.70695495605469,
+            "DetectedStress": false,
+            "Phone": "i2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1160,
+        "MemEndTime": 1440,
+        "PronAccuracy": 97.86923217773438,
+        "PronFluency": 0.9919207692146301,
+        "ReferenceWord": "",
+        "Word": "停",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1160,
+            "MemEndTime": 1260,
+            "PronAccuracy": 98.44965362548828,
+            "DetectedStress": false,
+            "Phone": "t",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1260,
+            "MemEndTime": 1440,
+            "PronAccuracy": 97.57901763916016,
+            "DetectedStress": false,
+            "Phone": "ing2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1440,
+        "MemEndTime": 1600,
+        "PronAccuracy": 98.74806213378906,
+        "PronFluency": 0.9998449683189392,
+        "ReferenceWord": "",
+        "Word": "下",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1440,
+            "MemEndTime": 1480,
+            "PronAccuracy": 98.4804916381836,
+            "DetectedStress": false,
+            "Phone": "x",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1480,
+            "MemEndTime": 1600,
+            "PronAccuracy": 98.88185119628906,
+            "DetectedStress": false,
+            "Phone": "ia4",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1600,
+        "MemEndTime": 1980,
+        "PronAccuracy": 98.38356018066406,
+        "PronFluency": 0.9568527340888977,
+        "ReferenceWord": "",
+        "Word": "来",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1600,
+            "MemEndTime": 1690,
+            "PronAccuracy": 98.76830291748047,
+            "DetectedStress": false,
+            "Phone": "l",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1690,
+            "MemEndTime": 1980,
+            "PronAccuracy": 98.19119262695312,
+            "DetectedStress": false,
+            "Phone": "ai2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  },
+  "recognition": {
+    "text": "可以随时停下来。",
+    "engine": "16k_zh_en_2.0"
+  }
+}

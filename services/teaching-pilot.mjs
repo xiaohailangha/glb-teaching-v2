@@ -5,7 +5,6 @@ import {projectRoot} from './storage-paths.mjs';
 import {recognize,assess,validateAudio} from './tencent-speech.mjs';
 import {PhoneticReferences} from './phonetic-reference.mjs';
 import {recognizeRecording} from './recording-recognition.mjs';
-import {sceneForSpeech,sceneAction} from './teaching-pilot-scenes.mjs';
 const fail=(status,message)=>{throw Object.assign(Error(message),{status});};
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 export const pilotTokens=s=>(String(s).toLowerCase().match(/[a-z]+(?:'[a-z]+)?/g)||[]);
@@ -46,27 +45,19 @@ export class TeachingPilot {
  constructor(store,curriculum,{directory=path.join(projectRoot,'data/teaching-pilot'),recognizer=recognizeRecording,assessor=assess}={}){Object.assign(this,{store,db:store.db,curriculum,directory,recognizer,assessor});this.inFlight=new Set();this.limits=new Map();this.db.exec(`CREATE TABLE IF NOT EXISTS teaching_pilot_visits(user_id TEXT,revision TEXT,course TEXT,step TEXT,outcome TEXT,at INTEGER,PRIMARY KEY(user_id,revision,course,step));CREATE TABLE IF NOT EXISTS teaching_pilot_attempts(user_id TEXT,id TEXT,course TEXT,step TEXT,revision TEXT,result TEXT,created INTEGER,PRIMARY KEY(user_id,id));`);}
  get content(){if(!this._content){this._content=JSON.parse(fs.readFileSync(path.join(this.directory,'current.json')));if(this._content.schema!=='snow-speaks.teaching-pilot/1'||this._content.lessons.length!==2)fail(503,'试用课程正在准备中');}return this._content;}
  lesson(course){const l=this.content.lessons.find(l=>l.id===course);if(!l)fail(404,'试用课程不存在');return l;}
- oralStep(lesson,input){
-  const base=lesson.steps.find(s=>s.id===input.step);if(!base)return null;
-  if(base.interaction==='optional-word')return {...base,answers:input.practice===true?base.practiceAnswers:[]};
-  if(base.interaction==='intent'){if(!['both','either'].includes(input.intent))fail(400,'请先选择这次想怎样装袋');return {...base,answers:[base.answers[input.intent==='both'?0:1]]};}
-  return base;
+ narration(text){const ids=this.content.narrationIds[text];return (Array.isArray(ids)?ids:[ids]).filter(Boolean);}
+ flow(user,course){return this.db.prepare('SELECT step,result FROM teaching_pilot_attempts WHERE user_id=? AND revision=? AND course=? ORDER BY created,rowid').all(user,this.content.revision,course).map(row=>({step:row.step,...JSON.parse(row.result)}));}
+ unresolved(user,course){const pending=new Map();for(const r of this.flow(user,course)){if(r.returnToSentence)continue;if(['repair','assisted','guided-complete'].includes(r.status))pending.set(r.step,r);if(r.status==='passed'&&r.evidenceLevel!=='assisted'){pending.delete(r.step);if(r.reviewSource)pending.delete(r.reviewSource);}}return pending;}
+ oralStep(lesson,input,user){const base=lesson.steps.find(s=>s.id===input.step);if(!base)return null;if(!base.reviewTarget)return base;
+  const pending=this.unresolved(user,lesson.id),candidates=base.reviewCandidates.filter(id=>pending.has(id));
+  const source=candidates.map(id=>lesson.steps.find(s=>s.id===id)).find(s=>norm(s.display)===norm(input.reference||''))||lesson.steps.find(s=>s.id===candidates[0]);
+  return {...base,answers:source?[source.display]:[],reviewSource:source?.id};
  }
- sceneEvidence(user,course){return this.db.prepare('SELECT step,result FROM teaching_pilot_attempts WHERE user_id=? AND revision=? AND course=? ORDER BY created,rowid').all(user,this.content.revision,course).map(row=>({step:row.step,...JSON.parse(row.result)})).filter(r=>r.scene||r.status==='passed'||r.status==='assisted').map(r=>({step:r.step,scene:r.scene,status:r.status,level:r.evidenceLevel||'supported',heard:r.heard}));}
- async action(user,input){
-  const l=this.lesson(input.course),step=l.steps.find(s=>s.id===input.step);if(input.revision!==this.content.revision||!step)fail(409,'场景已更新，请重新打开');
-  if(!/^[a-zA-Z0-9-]{8,90}$/.test(input.attempt||''))fail(400,'操作标识无效');
-  const old=this.db.prepare('SELECT course,step,revision,result FROM teaching_pilot_attempts WHERE user_id=? AND id=?').get(user,input.attempt);
-  if(old){if(old.course!==l.id||old.step!==step.id||old.revision!==input.revision)fail(409,'操作标识不属于当前场景');return JSON.parse(old.result);}
-  const r=sceneAction(step,input);r.message=this.content.messages[r.messageKey];r.audio=[this.content.narrationIds[r.message]].filter(Boolean);r.attempt=input.attempt;r.evidenceLevel='listening-action';
-  if(step.interaction==='transform'&&r.status==='passed')r.audio.push(this.content.englishIds['despite the difficulty']);
-  this.db.prepare('INSERT INTO teaching_pilot_attempts VALUES(?,?,?,?,?,?,?)').run(user,input.attempt,l.id,step.id,input.revision,JSON.stringify(r),this.store.now());return r;
- }
- asset(id,course){const l=this.lesson(course),c=this.content,a=c.assets[id];const permitted=new Set(l.steps.flatMap(s=>[s.narration,...s.audio]));for(const text of [...Object.values(c.guides),...Object.values(c.messages),...Object.values(soundTips)])permitted.add(c.narrationIds[text]);for(const value of Object.values(c.englishIds))permitted.add(value);if(!a||!permitted.has(id))fail(404,'试用声音不存在');
+ asset(id,course){const l=this.lesson(course),c=this.content,a=c.assets[id];const permitted=new Set(l.steps.flatMap(s=>[s.narration,...s.audio,...(s.beforeAudio||[]),...(s.afterAudio||[]),...(s.reviewAudio||[])]));for(const text of [...Object.values(c.guides),...Object.values(c.messages),...Object.values(soundTips)])for(const id of this.narration(text))permitted.add(id);for(const value of Object.values(c.englishIds))permitted.add(value);if(!a||!permitted.has(id))fail(404,'试用声音不存在');
   const base=a.source==='formal'?this.curriculum.runtime(c.release).dir:this.directory,file=path.resolve(base,a.file);if(!file.startsWith(path.resolve(base)+path.sep))fail(503,'声音路径无效');const bytes=fs.readFileSync(file);if(bytes.length!==a.size||hash(bytes)!==a.sha256)fail(503,'试用声音校验失败');if(bytes.length>1500000)fail(503,'声音超过单段限制');return {kind:'teaching-pilot',revision:c.revision,voice:403008,id:a.id,text:a.text,language:a.language,sha256:a.sha256,size:a.size,cues:a.cues,speechEndMs:a.speechEndMs,inlineAudio:bytes.toString('base64')};}
- document(user,course){const l=this.lesson(course),revision=this.content.revision,visits=this.db.prepare('SELECT step,outcome FROM teaching_pilot_visits WHERE user_id=? AND revision=? AND course=?').all(user,revision,course);const review=[...new Map(this.db.prepare('SELECT step,result FROM teaching_pilot_attempts WHERE user_id=? AND revision=? AND course=? ORDER BY created').all(user,revision,course).map(r=>({...JSON.parse(r.result),step:r.step})).filter(r=>r.status==='repair').map(r=>[r.step,{step:r.step,word:r.word,type:r.type}])).values()];return {revision,...l,visits,review,englishIds:this.content.englishIds,words:this.curriculum.lesson(course,this.content.release).lesson.actualWords.map(w=>({word:w.word,ipa:w.ipa})),formalProgress:false,independentMastery:false};}
+ document(user,course){const l=this.lesson(course),revision=this.content.revision,visits=this.db.prepare('SELECT step,outcome FROM teaching_pilot_visits WHERE user_id=? AND revision=? AND course=?').all(user,revision,course);const review=[...this.unresolved(user,course)].map(([step,r])=>({step,word:r.word,type:r.type}));return {revision,...l,visits,review,flowEvidence:this.flow(user,course),englishIds:this.content.englishIds,words:this.curriculum.lesson(course,this.content.release).lesson.actualWords.map(w=>({word:w.word,ipa:w.ipa})),formalProgress:false,independentMastery:false};}
  ticket(user,id,course,step){const t=this.db.prepare('SELECT * FROM teaching_pilot_attempts WHERE user_id=? AND id=? AND course=? AND step=? AND revision=?').get(user,id,course,step,this.content.revision);if(!t||t.created<this.store.now()-1800000)fail(409,'局部练习已过期，请重新进入当前小段');return JSON.parse(t.result);}
- async oral(user,input){const c=this.content,l=this.lesson(input.course),step=this.oralStep(l,input);if(!step?.answers.length||input.revision!==c.revision)fail(409,'试用步骤已更新，请重新打开');if(!/^[a-zA-Z0-9-]{8,90}$/.test(input.attempt||''))fail(400,'练习标识无效');
+ async oral(user,input){const c=this.content,l=this.lesson(input.course),step=this.oralStep(l,input,user);if(!step?.answers.length||input.revision!==c.revision)fail(409,'试用步骤已更新，请重新打开');if(!/^[a-zA-Z0-9-]{8,90}$/.test(input.attempt||''))fail(400,'练习标识无效');
   const started=performance.now(),timings={};
   const old=this.db.prepare('SELECT course,step,revision,result FROM teaching_pilot_attempts WHERE user_id=? AND id=?').get(user,input.attempt);if(old){if(old.course!==l.id||old.step!==step.id||old.revision!==c.revision)fail(409,'练习标识不属于当前步骤');return JSON.parse(old.result);}
   let target=null,previous=null;if(input.repair){previous=this.ticket(user,input.repair,input.course,input.step);if(previous.status!=='repair')fail(400,'局部练习无效');target=previous.target;}
@@ -102,19 +93,18 @@ export class TeachingPilot {
   }catch(e){if(e.status)throw e;fail(503,'语音服务暂时未能确认，这次不算读错，请重试');}finally{this.inFlight.delete(user);}
   timings.totalMs=Math.round(performance.now()-started);
   result={...result,heard,...(firstHeard?{firstHeard}:{}),timings,attempt:input.attempt,formalProgress:false,independentMastery:false,evidenceLevel:input.practice?'word-follow':step.transfer?'transfer':step.models.length?'followed-model':input.hint==='frame'?'frame-supported':'supported-expression'};
-  if(!previous){const scene=sceneForSpeech(step,heard);if(scene)result.scene=scene;}
+  if(step.reviewSource)result.reviewSource=step.reviewSource;
   if(result.status==='repair'){
    if(previous){result.target=target;result.original=previous.original;result.index=previous.index;result.word=previous.word;result.message='仍然只练当前这一小段。'+(result.message||'');}
    const guide=(result.phone&&soundTips[result.phone])||c.guides[result.word];result.message=result.message||c.messages[result.messageKey];if(guide&&!result.messageKey)result.message+=' 改法：'+guide;
    const narration=result.messageKey?c.messages[result.messageKey]:guide||c.messages.again;
-   result.audio=[c.narrationIds[narration],c.englishIds[result.target]].filter(Boolean);result.repair=input.attempt;
+   result.audio=[...this.narration(narration),c.englishIds[result.target]].filter(Boolean);result.repair=input.attempt;
    result.repairCount=(previous?.repairCount||0)+1;
-   if(previous&&result.repairCount>=3){result.status='assisted';result.message=c.messages.assisted||'这一处先留作复习。现在看着完整提示，把刚才的意思连起来说。';result.audio=[c.narrationIds[c.messages.assisted||c.messages.again]].filter(Boolean);result.evidenceLevel='needs-review';}
-  }else if(result.status==='passed'&&previous&&norm(previous.target)!==norm(previous.original)){result.returnToSentence=true;result.original=previous.original;result.message=c.messages.return;result.audio=[c.narrationIds[c.messages.return]];}
+   if(previous&&result.repairCount>=3){result.status='assisted';result.message=c.messages.assisted||'这一处先留作复习。现在看着完整提示，把刚才的意思连起来说。';result.audio=this.narration(c.messages.assisted||c.messages.again);result.evidenceLevel='needs-review';}
+  }else if(result.status==='passed'&&previous&&norm(previous.target)!==norm(previous.original)){result.returnToSentence=true;result.original=previous.original;result.message=c.messages.return;result.audio=this.narration(c.messages.return);}
   else if(result.status==='unclear'){result.repair=input.repair||null;result.audio=[];}
-  if(assistance&&result.status==='repair'){result.status='guided-complete';result.evidenceLevel='needs-review';result.message=c.messages.summaryReview;result.responseAudio=[c.narrationIds[c.messages.summaryReview]];}
+  if(assistance&&result.status==='repair'){result.status='guided-complete';result.evidenceLevel='needs-review';result.message=c.messages.summaryReview;result.responseAudio=this.narration(c.messages.summaryReview);}
   if(assistance&&result.status==='passed'&&!result.returnToSentence)result.evidenceLevel='assisted';
-  if(result.status==='passed'&&!result.returnToSentence){const key=step.success==='packedChoice'?(result.scene?.bag?.length===2?'packedBoth':'packedEither'):step.success;if(key){result.message=c.messages[key];result.responseAudio=[c.narrationIds[result.message]].filter(Boolean);}}
   this.db.prepare('INSERT INTO teaching_pilot_attempts VALUES(?,?,?,?,?,?,?)').run(user,input.attempt,l.id,step.id,c.revision,JSON.stringify(result),now);return result;
  }
  async route(route,user,input,url){const course=url.searchParams.get('course')||input.course;
@@ -125,21 +115,21 @@ export class TeachingPilot {
     if(['repair','assisted','guided-complete'].includes(r.status))issues.set(e.step,r.type==='structure'?'despite 后接名词短语':r.word||lesson.steps.find(s=>s.id===e.step)?.display||'当前表达');
     if(r.status==='passed'&&r.evidenceLevel!=='assisted'){
      issues.delete(e.step);
-     if(lesson.steps.find(s=>s.id===e.step)?.reviewTarget)for(const s of lesson.steps)if(norm(s.display)===norm(r.target))issues.delete(s.id);
+     if(r.reviewSource)issues.delete(r.reviewSource);
     }
    }
    const counts={follow:0,supported:0,transfer:0},review=[...new Set(issues.values())],sentences=[];
    for(const [,r]of last){if(r.status==='passed'){if(r.evidenceLevel==='transfer')counts.transfer++;else if(r.evidenceLevel==='followed-model'||r.evidenceLevel==='word-follow')counts.follow++;else counts.supported++;if(r.heard)sentences.push(r.heard);}}
    const keys=[...(counts.follow?['summaryFollow']:[]),...(counts.supported?['summarySupported']:[]),...(counts.transfer?['summaryTransfer']:[]),...(review.length?['summaryReview']:[])];
-   return {counts,review,sentences,audio:keys.map(k=>this.content.narrationIds[this.content.messages[k]]).filter(Boolean),independentMastery:false};
+   return {counts,review,sentences,skipped:this.db.prepare("SELECT count(*) n FROM teaching_pilot_visits WHERE user_id=? AND revision=? AND course=? AND outcome='skipped'").get(user,this.content.revision,course).n,audio:keys.flatMap(k=>this.narration(this.content.messages[k])),independentMastery:false};
   }
   if(route==='pilot/catalog')return {revision:this.content.revision,courses:this.content.lessons.map(l=>({id:l.id,title:l.title,goal:l.goal})),formalProgress:false};
-  if(route==='pilot/course')return {...this.document(user,course),sceneEvidence:this.sceneEvidence(user,course),flowEvidence:this.db.prepare('SELECT step,result FROM teaching_pilot_attempts WHERE user_id=? AND revision=? AND course=? ORDER BY created,rowid').all(user,this.content.revision,course).map(r=>({step:r.step,...JSON.parse(r.result)}))};
+  if(route==='pilot/course')return this.document(user,course);
   if(route==='pilot/phoneme'){this.lesson(course);this.references??=new PhoneticReferences();return {asset:this.references.get(url.searchParams.get('symbol')),revision:this.content.revision};}
   if(route==='pilot/audio')return {asset:this.asset(url.searchParams.get('id'),course),revision:this.content.revision};
   if(route==='pilot/oral')return this.oral(user,input);
-  if(route==='pilot/action')return this.action(user,input);
-  if(route==='pilot/progress'){const step=this.lesson(course).steps.find(s=>s.id===input.step);if(input.revision!==this.content.revision||!step||!['heard','passed','assisted','skipped','not-needed'].includes(input.outcome))fail(400,'试用进度无效');if(['passed','assisted'].includes(input.outcome)){const r=this.ticket(user,input.attempt,course,step.id);const assistedPass=input.outcome==='assisted'&&((r.status==='passed'&&r.evidenceLevel==='assisted')||r.status==='guided-complete');if((r.status!==input.outcome&&!assistedPass)||r.returnToSentence)fail(400,'请先完成当前练习');}else if(input.outcome==='not-needed'&&!step.condition)fail(400,'本段不能自动省略');else if(input.outcome==='heard'&&((step.answers.length&&!step.optionalWindowMs)||['fruit-listen','transform','roster'].includes(step.interaction)))fail(400,'当前小段需要表达或操作，或明确跳过');this.db.prepare('INSERT OR REPLACE INTO teaching_pilot_visits VALUES(?,?,?,?,?,?)').run(user,this.content.revision,course,step.id,input.outcome,this.store.now());return {ok:true,formalProgress:false};}
+  if(route==='pilot/action')fail(410,'旧场景试用已停用，请重新打开课程');
+  if(route==='pilot/progress'){const step=this.lesson(course).steps.find(s=>s.id===input.step);if(input.revision!==this.content.revision||!step||!['heard','passed','assisted','skipped','not-needed'].includes(input.outcome))fail(400,'试用进度无效');if(['passed','assisted'].includes(input.outcome)){const r=this.ticket(user,input.attempt,course,step.id);const assistedPass=input.outcome==='assisted'&&((r.status==='passed'&&r.evidenceLevel==='assisted')||r.status==='guided-complete');if((r.status!==input.outcome&&!assistedPass)||r.returnToSentence)fail(400,'请先完成当前练习');}else if(input.outcome==='not-needed'&&!step.condition)fail(400,'本段不能自动省略');else if(input.outcome==='heard'&&(step.answers.length&&!step.optional&&!step.reviewTarget))fail(400,'当前小段需要表达或操作，或明确跳过');this.db.prepare('INSERT OR REPLACE INTO teaching_pilot_visits VALUES(?,?,?,?,?,?)').run(user,this.content.revision,course,step.id,input.outcome,this.store.now());return {ok:true,formalProgress:false};}
   fail(404,'试用接口不存在');
  }
 }

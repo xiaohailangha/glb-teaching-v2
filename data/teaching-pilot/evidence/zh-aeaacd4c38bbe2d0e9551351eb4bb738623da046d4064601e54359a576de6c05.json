@@ -1,0 +1,263 @@
+{
+  "asset": {
+    "id": "zh-aeaacd4c38bbe2d0e9551351eb4bb738623da046d4064601e54359a576de6c05",
+    "text": "再听短语。",
+    "voice": 403008,
+    "language": "zh",
+    "source": "pilot",
+    "file": "audio/81190c577aec44f0f9f188e64f85a991561ddc6f41bed1147f9458d309326abd.wav",
+    "sha256": "81190c577aec44f0f9f188e64f85a991561ddc6f41bed1147f9458d309326abd",
+    "size": 58892,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.36,
+        "id": 15
+      },
+      {
+        "time": 0.47,
+        "id": 2
+      },
+      {
+        "time": 0.55,
+        "id": 6
+      },
+      {
+        "time": 0.63,
+        "id": 19
+      },
+      {
+        "time": 0.71,
+        "id": 6
+      },
+      {
+        "time": 0.7849999999999999,
+        "id": 20
+      },
+      {
+        "time": 0.86,
+        "id": 19
+      },
+      {
+        "time": 0.93,
+        "id": 7
+      },
+      {
+        "time": 1.01,
+        "id": 1
+      },
+      {
+        "time": 1.1,
+        "id": 19
+      },
+      {
+        "time": 1.19,
+        "id": 6
+      },
+      {
+        "time": 1.39,
+        "id": 7
+      },
+      {
+        "time": 1.71,
+        "id": 0
+      },
+      {
+        "time": 1.839,
+        "id": 0
+      }
+    ],
+    "cueSource": "soe-mandarin-phone-timing",
+    "speechEndMs": 1770,
+    "quality": {
+      "accuracy": 95.56366729736328,
+      "completion": 1
+    }
+  },
+  "assessment": {
+    "SuggestedScore": 95.56366729736328,
+    "PronAccuracy": 95.56366729736328,
+    "PronFluency": 0.9744765162467957,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 360,
+        "MemEndTime": 630,
+        "PronAccuracy": 97.61016082763672,
+        "PronFluency": 0.9871149063110352,
+        "ReferenceWord": "",
+        "Word": "再",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 360,
+            "MemEndTime": 470,
+            "PronAccuracy": 95.35570526123047,
+            "DetectedStress": false,
+            "Phone": "z",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 470,
+            "MemEndTime": 630,
+            "PronAccuracy": 98.73737335205078,
+            "DetectedStress": false,
+            "Phone": "ai4",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 630,
+        "MemEndTime": 860,
+        "PronAccuracy": 98.6178970336914,
+        "PronFluency": 0.9981599450111389,
+        "ReferenceWord": "",
+        "Word": "听",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 630,
+            "MemEndTime": 710,
+            "PronAccuracy": 98.99955749511719,
+            "DetectedStress": false,
+            "Phone": "t",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 710,
+            "MemEndTime": 860,
+            "PronAccuracy": 98.42707061767578,
+            "DetectedStress": false,
+            "Phone": "ing1",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 860,
+        "MemEndTime": 1190,
+        "PronAccuracy": 90.48770904541016,
+        "PronFluency": 0.9886256456375122,
+        "ReferenceWord": "",
+        "Word": "短",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 860,
+            "MemEndTime": 930,
+            "PronAccuracy": 98.42465209960938,
+            "DetectedStress": false,
+            "Phone": "d",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 930,
+            "MemEndTime": 1010,
+            "PronAccuracy": 69.51017761230469,
+            "DetectedStress": false,
+            "Phone": "u2",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1010,
+            "MemEndTime": 1190,
+            "PronAccuracy": 97.00798797607422,
+            "DetectedStress": false,
+            "Phone": "an",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      },
+      {
+        "MemBeginTime": 1190,
+        "MemEndTime": 1710,
+        "PronAccuracy": 98.06450653076172,
+        "PronFluency": 0.9240058064460754,
+        "ReferenceWord": "",
+        "Word": "语",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 1190,
+            "MemEndTime": 1390,
+            "PronAccuracy": 97.99833679199219,
+            "DetectedStress": false,
+            "Phone": "y",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 1390,
+            "MemEndTime": 1710,
+            "PronAccuracy": 98.13067626953125,
+            "DetectedStress": false,
+            "Phone": "v3",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  },
+  "recognition": {
+    "text": "再听短语。",
+    "engine": "16k_zh_en_2.0"
+  }
+}

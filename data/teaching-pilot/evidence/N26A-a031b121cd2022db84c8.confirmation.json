@@ -1,0 +1,107 @@
+{
+  "asset": {
+    "id": "N26A-a031b121cd2022db84c8",
+    "text": "me",
+    "language": "en",
+    "voice": 403008,
+    "sha256": "6768fb38ab33fdc2a9e1c76ffdb392468e684e0fed43bc902c1cc30041d147f3",
+    "size": 28206,
+    "duration": 0.8800625,
+    "cues": [
+      {
+        "time": 0,
+        "id": 0
+      },
+      {
+        "time": 0.13,
+        "id": 21
+      },
+      {
+        "time": 0.24,
+        "id": 6
+      },
+      {
+        "time": 0.69,
+        "id": 0
+      },
+      {
+        "time": 0.7600625,
+        "id": 0
+      },
+      {
+        "time": 0.8800625,
+        "id": 0
+      }
+    ],
+    "wordTimings": [
+      {
+        "word": "me",
+        "start": 0.13,
+        "end": 0.6900000000000001
+      }
+    ],
+    "machineReviewPassed": true,
+    "source": "pilot",
+    "originalSource": {
+      "release": "0f8d04fdefe16800bd2ab2d774e74e7b90e89849dc92e9970efd94d5f3ea7176",
+      "id": "N26A-a031b121cd2022db84c8"
+    },
+    "file": "audio/6768fb38ab33fdc2a9e1c76ffdb392468e684e0fed43bc902c1cc30041d147f3.wav",
+    "speechEndMs": 750
+  },
+  "recognition": {
+    "text": "Me.",
+    "engine": "16k_en_large"
+  },
+  "assessment": {
+    "SuggestedScore": 94.68830871582031,
+    "PronAccuracy": 94.68830871582031,
+    "PronFluency": 0.7462013959884644,
+    "PronCompletion": 1,
+    "Words": [
+      {
+        "MemBeginTime": 130,
+        "MemEndTime": 690,
+        "PronAccuracy": 94.68830871582031,
+        "PronFluency": 0.7462013959884644,
+        "ReferenceWord": "me_0",
+        "Word": "me",
+        "MatchTag": 0,
+        "KeywordTag": 0,
+        "PhoneInfos": [
+          {
+            "MemBeginTime": 130,
+            "MemEndTime": 240,
+            "PronAccuracy": 95.10549926757812,
+            "DetectedStress": false,
+            "Phone": "m",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          },
+          {
+            "MemBeginTime": 240,
+            "MemEndTime": 690,
+            "PronAccuracy": 94.27111053466797,
+            "DetectedStress": false,
+            "Phone": "iy",
+            "ReferencePhone": "",
+            "ReferenceLetter": "",
+            "Stress": false,
+            "MatchTag": 0
+          }
+        ],
+        "Tone": {
+          "Valid": false,
+          "RefTone": -1,
+          "HypothesisTone": -1
+        }
+      }
+    ],
+    "SentenceId": -1,
+    "RefTextId": -1,
+    "KeyWordHits": null,
+    "UnKeyWordHits": null
+  }
+}

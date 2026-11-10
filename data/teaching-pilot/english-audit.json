@@ -1,0 +1,431 @@
+{
+  "revision": "stable-teaching-20261110-v1",
+  "at": "2026-11-10T03:41:18.470Z",
+  "results": [
+    {
+      "id": "N26A-27ea960eefc7115f07e5",
+      "text": "an apple or a banana",
+      "sha256": "8267de4ca9500dfbbc42dff5dde395b122392ec44b727e7b93ce754906317f10",
+      "heard": "An apple or a banana.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-8cf789a027fbff0fd79b",
+      "text": "an apple and a banana",
+      "sha256": "bac313625aaf65d9766deed79796400136fce240f0a52a73187ffbd0af2c7d37",
+      "heard": "An apple and a banana.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-88b3fef8eb3b2d905bc2",
+      "text": "and",
+      "sha256": "a00cd440698706b491474129cb8b61905834dc6ee0e7b77300057a33fe6cae6a",
+      "heard": "And.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-5bb4bb2ed6f38b53e1c7",
+      "text": "or",
+      "sha256": "8a7114d5d14821f831058ae0c62e82b7908f2549354df41a705a49a7dd165644",
+      "heard": "Or.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-157c94216e315a170625",
+      "text": "I want an apple and a banana.",
+      "sha256": "e2488d29bdfc3d73efcfa4df3ad60639e7f91c0296aff5f32ac0eae11dd920d5",
+      "heard": "I want an apple and a banana.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-ae541628e9af08195cda",
+      "text": "difficult",
+      "sha256": "2ec475b40fea3d3345deed7165baf0e9aefeef3d68a09791921fd2017d02ca0e",
+      "heard": "Difficult.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-c78734809ca9792e369b",
+      "text": "I want an apple or a banana.",
+      "sha256": "ead5438be4ce558751ffc9620ea781e971dc605ecb6b43ab5cd6d3e5117f0001",
+      "heard": "I want an apple or a banana.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-7fabeeddda307be3dd80",
+      "text": "although",
+      "sha256": "7874f561b34f1c6623b071019963bbfd398507b445d8454b71096132105dce21",
+      "heard": "Although.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-8baf931ae6372e0e99b1",
+      "text": "though",
+      "sha256": "030d9169d3c8e2885c4ab325923cc5804f7fb9d2103da4db1023eea43d9a9064",
+      "heard": "走。",
+      "confirmation": {
+        "heard": "Though.",
+        "accuracy": 97.43902587890625,
+        "completion": 1,
+        "wordScores": [
+          {
+            "word": "though",
+            "score": 97.43902587890625,
+            "match": 0,
+            "phones": [
+              {
+                "phone": "dh",
+                "score": 98.41862487792969
+              },
+              {
+                "phone": "ow",
+                "score": 96.45942687988281
+              }
+            ]
+          }
+        ]
+      },
+      "accepted": true
+    },
+    {
+      "id": "N26A-2f8d6c4c6e7329067e38",
+      "text": "Although this is difficult, I can try.",
+      "sha256": "241fc06e9b93e10ba5e850bde2a9e91a23bfc19719f0634777f21e14992f5d86",
+      "heard": "Although this is difficult, I can try.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-9173396e9f90644f59b6",
+      "text": "Though this is difficult, I can try.",
+      "sha256": "ee0e91b881c41da653dacf2239673bd63c84f5b76b5f631a5b9b7b1d99a24bc4",
+      "heard": "Though this is difficult, I can try.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-2651613ef36dc2947bc5",
+      "text": "difficulty",
+      "sha256": "f823c367e46aa749b247dc1abf74e4695b677c6d20ee671deb762cb7fd490f85",
+      "heard": "Difficulty.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-9b658b82bcde8f66ba72",
+      "text": "despite",
+      "sha256": "dee8b9577b8156e004c221110bea3bf093581b1efaaf23f6e0e721463a7ccc28",
+      "heard": "Despite.",
+      "accepted": true
+    },
+    {
+      "id": "en-60e329a0f2748fa20aa90270c342e7dd571068e1c0737e6307d2fe4557b8c8c4",
+      "text": "despite the difficulty",
+      "sha256": "60e329a0f2748fa20aa90270c342e7dd571068e1c0737e6307d2fe4557b8c8c4",
+      "heard": "Despite the difficulty.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-9072400ef3859b658069",
+      "text": "however",
+      "sha256": "c3862f2cb17c69a87f3261da148981437e9c29d3830c13bc4eb493719654dec7",
+      "heard": "However.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-b8928c4d8b92a1cce29e",
+      "text": "Despite the difficulty, I can try.",
+      "sha256": "d624abe0a00eceeb45a3d7e6e614014de671af5d2bbefc1a8dc0ad227ef3ba83",
+      "heard": "Despite the difficulty, I can try.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-d6c2914bfa5a547de29b",
+      "text": "nonetheless",
+      "sha256": "46060c9f327212c4c0630cc73c2039b765d554f45d8cecd11d8a44fd053637e0",
+      "heard": "Nonetheless.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-fefda3dca51a8b166927",
+      "text": "This is difficult. However, I can try.",
+      "sha256": "7d9ac6f74488c6f8e7b42f1fa7b189ea7ff10e57ad23272d8eb5b69465cf9658",
+      "heard": "This is difficult, however.I can try.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-271538886d6820f6b52f",
+      "text": "proposal",
+      "sha256": "b9477f6ec8c1102a32ad035ec2b03b7782edcc7aff629a75fdb8fdc704d67d00",
+      "heard": "Proposal.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-361d440cab7884534011",
+      "text": "against",
+      "sha256": "011cd05ef62813535b33bec5d3e13f6377607de151648e5489dd88283092e8de",
+      "heard": "Against.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-9779e00071963a1a6823",
+      "text": "This is difficult. Nonetheless, I can try.",
+      "sha256": "ea1d16f120dbcbb466208b17695d6ea6ec350ae89bd003b7f0a2e690bbb30fd5",
+      "heard": "This is difficult nonetheless I can try.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-112f9cfc0b5ee00b2420",
+      "text": "against the proposal",
+      "sha256": "8c0badb3040d02090c7080f8d185ecccae796b99dd7d019df82a77900dcc43e2",
+      "heard": "Against the proposal.",
+      "accepted": true
+    },
+    {
+      "id": "en-b719c4771541e1d8662e991469b3b52d3fc7741b24d81650470e6059247f6cb4",
+      "text": "I am against the proposal.",
+      "sha256": "b719c4771541e1d8662e991469b3b52d3fc7741b24d81650470e6059247f6cb4",
+      "heard": "I am against the proposal.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-284beb52c8438a3890e6",
+      "text": "friends",
+      "sha256": "10c00e70d527f32b5c7537c9588969d561ed820f3f61366276c3654ddf73dbbf",
+      "heard": "Friends.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-fd874fe9c6124e4fb96d",
+      "text": "among",
+      "sha256": "fa27e5363b195df8b8b06a342abe32d12b5216832225bf27346e8a8999770f9a",
+      "heard": "Among.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-9447ffb5758ddbf48406",
+      "text": "among friends",
+      "sha256": "d57ff89c36338e745837d951a9dd3903c5e0bac839efc2c471a2b049d47c90ca",
+      "heard": "Among friends.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-8986d2e6be5462e33a18",
+      "text": "except",
+      "sha256": "8a7296ec08a07a1aa324176b2571edf21ed3526ac8781455752f8915301f7e85",
+      "heard": "Except.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-df4187ff6c38b6463f3e",
+      "text": "except me",
+      "sha256": "47d59c232c67a0227d131569bf69ede96c329f914bf4dfe8b161ab9ebb19966e",
+      "heard": "Except me.",
+      "accepted": true
+    },
+    {
+      "id": "en-f3cf6a65e8ee652531583110c4356cd8da5596f6b31f88f6471b987f88290391",
+      "text": "Everyone can go except me.",
+      "sha256": "f3cf6a65e8ee652531583110c4356cd8da5596f6b31f88f6471b987f88290391",
+      "heard": "Everyone can go except me.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-b7a47eabc0611a3727e1",
+      "text": "apple",
+      "sha256": "0cb7c8f808b61e29fe6a9601f5fc132cb09934a4c23afbc7cc06a0489d132aad",
+      "heard": "Apple.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-61234f236e3841232330",
+      "text": "banana",
+      "sha256": "6a7a550c06cb871d526a9696bd67a5b5595fd57d95de39f35ea034e217eed02c",
+      "heard": "Banana.",
+      "accepted": true
+    },
+    {
+      "id": "en-91162c9fd07decef28113c3485951c5c8b260fab3e325721bfdfc7caf147bd2d",
+      "text": "I want a banana or an apple.",
+      "sha256": "91162c9fd07decef28113c3485951c5c8b260fab3e325721bfdfc7caf147bd2d",
+      "heard": "I want a banana or an apple.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-2d49534a6cc2459ded00",
+      "text": "a banana",
+      "sha256": "ac8f807fdb992b07bfdbba2462cb369b024ddd2138f57775cdcf70ad5ee6cacf",
+      "heard": "A banana.",
+      "accepted": true
+    },
+    {
+      "id": "en-900efc3ff2f9fe641d55e67de58d12ce46ae818f1ddd4af230c0851473cde8e3",
+      "text": "although this is difficult",
+      "sha256": "900efc3ff2f9fe641d55e67de58d12ce46ae818f1ddd4af230c0851473cde8e3",
+      "heard": "Although this is difficult.",
+      "accepted": true
+    },
+    {
+      "id": "en-43df6d56b8282367093ba277a23e7d9f8dd419f6bf3a24bc85a7571b0279faa6",
+      "text": "an apple",
+      "sha256": "43df6d56b8282367093ba277a23e7d9f8dd419f6bf3a24bc85a7571b0279faa6",
+      "heard": "An apple.",
+      "accepted": true
+    },
+    {
+      "id": "en-0a93d557ddf8f6f93c7693ef0d901f577f96f45a13e2482648be6ef5bf809494",
+      "text": "the difficulty",
+      "sha256": "0a93d557ddf8f6f93c7693ef0d901f577f96f45a13e2482648be6ef5bf809494",
+      "heard": "The difficulty.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-1d75c03d2f2c3a602f7a",
+      "text": "want",
+      "sha256": "a28d304ea515038dbb68618eb1eea454f5deb8970599f13f771440b25c73c564",
+      "heard": "Want.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-f353b20c6f3418376965",
+      "text": "I",
+      "sha256": "d623ec95fbac26a8cc86c723397d694b6502ef17fc9f3461d89537e5975613dd",
+      "heard": "哎。",
+      "confirmation": {
+        "heard": "I.",
+        "accuracy": 99.3167495727539,
+        "completion": 1,
+        "wordScores": [
+          {
+            "word": "i",
+            "score": 99.3167495727539,
+            "match": 0,
+            "phones": [
+              {
+                "phone": "ay",
+                "score": 99.3167495727539
+              }
+            ]
+          }
+        ]
+      },
+      "accepted": true
+    },
+    {
+      "id": "N26A-a6d2d26e0ac16e513dbb",
+      "text": "this",
+      "sha256": "1bdd5dec66014657bac5ca53ff1dbd4c7746124c0686cbf75d7445812e6e0475",
+      "heard": "This.",
+      "accepted": true
+    },
+    {
+      "id": "N26A-78777013595e3ab65c2f",
+      "text": "is",
+      "sha256": "f5e32209db499490475c0a92ca18d4215c7ff132379f87518f9d3e7fcf11af17",
+      "heard": "Is?",
+      "accepted": true
+    },
+    {
+      "id": "N26A-ac940722cc38a8e45268",
+      "text": "can",
+      "sha256": "0822872eea579efad1f66e959fba8e86d5e719c0013cb0660d6891186ba855f2",
+      "heard": "Can?",
+      "accepted": true
+    },
+    {
+      "id": "N26A-53bc07afeb7aac43d679",
+      "text": "try",
+      "sha256": "8b9c34a6ad0037050e98f895300330f2ed4a03f0606f22504217250aed1737f2",
+      "heard": "踹。",
+      "confirmation": {
+        "heard": "Try.",
+        "accuracy": 98.80717468261719,
+        "completion": 1,
+        "wordScores": [
+          {
+            "word": "try",
+            "score": 98.80717468261719,
+            "match": 0,
+            "phones": [
+              {
+                "phone": "t",
+                "score": 98.62580871582031
+              },
+              {
+                "phone": "r",
+                "score": 99.0882797241211
+              },
+              {
+                "phone": "ay",
+                "score": 98.70742797851562
+              }
+            ]
+          }
+        ]
+      },
+      "accepted": true
+    },
+    {
+      "id": "N26A-70e3c53eb88448ff3f16",
+      "text": "the",
+      "sha256": "bb82d6322fb3674ae69f08ffe28003582f2425b2b335e4e0672eae905696f460",
+      "heard": "的。",
+      "confirmation": {
+        "heard": "The.",
+        "accuracy": 94.02381896972656,
+        "completion": 1,
+        "wordScores": [
+          {
+            "word": "the",
+            "score": 94.02381896972656,
+            "match": 0,
+            "phones": [
+              {
+                "phone": "dh",
+                "score": 89.0997085571289
+              },
+              {
+                "phone": "ah",
+                "score": 98.94792938232422
+              }
+            ]
+          }
+        ]
+      },
+      "accepted": true
+    },
+    {
+      "id": "N26A-a031b121cd2022db84c8",
+      "text": "me",
+      "sha256": "6768fb38ab33fdc2a9e1c76ffdb392468e684e0fed43bc902c1cc30041d147f3",
+      "heard": "迷。",
+      "confirmation": {
+        "heard": "Me.",
+        "accuracy": 94.68830871582031,
+        "completion": 1,
+        "wordScores": [
+          {
+            "word": "me",
+            "score": 94.68830871582031,
+            "match": 0,
+            "phones": [
+              {
+                "phone": "m",
+                "score": 95.10549926757812
+              },
+              {
+                "phone": "iy",
+                "score": 94.27111053466797
+              }
+            ]
+          }
+        ]
+      },
+      "accepted": true
+    },
+    {
+      "id": "en-c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+      "text": "an",
+      "sha256": "c1d5de71007c183a57f90c96a4519d56e2c59e5642b3bd44e83be222457c70d4",
+      "heard": "An.",
+      "accepted": true
+    }
+  ]
+}
