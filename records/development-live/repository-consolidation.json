@@ -5,7 +5,7 @@
   "oldCDeletion": "blocked by automatic approval policy; old C project remains",
   "adminTests": 5,
   "appToolTests": 7,
-  "separateDeployPackages": "validated, not deployed",
+  "separateDeployPackages": "published: App, API service and admin",
   "appSourceFilesCompared": 2270,
   "webBuild": "passed",
   "productionMigration": {
@@ -31,5 +31,32 @@
   "localSmoke": "API health, App entry and proxied speech status: 200",
   "sourceDifferencesBeforeFixturePathUpdates": 0,
   "flutterFullSuite": "passed: 117 tests, no failures or skips",
-  "testCleanup": "Deleted 11 retired test files and the obsolete local fruit-board case; updated current authentication, 555-course directory, mobile render budgets and cache isolation; cache tests passed on repeat."
+  "testCleanup": "Deleted 11 retired test files and the obsolete local fruit-board case; updated current authentication, 555-course directory, mobile render budgets and cache isolation; cache tests passed on repeat.",
+  "liveVerification": {
+    "realProgressWrites": 0,
+    "lessons": [
+      {
+        "course": "N26-U006-L04",
+        "frames": 971,
+        "audioEnded": 3,
+        "contextLost": 0
+      },
+      {
+        "course": "N26-U084-L01",
+        "frames": 879,
+        "audioEnded": 3,
+        "contextLost": 0
+      }
+    ],
+    "serverCommit": "637e9f3",
+    "mainVerifiedFromPublicUrl": true,
+    "physicalIPhone": "not connected",
+    "browser": "Chromium, 844x390 landscape; live website and model, isolated test learner and progress",
+    "onlineAudioAssetsVerified": 213,
+    "revision": "stable-teaching-20261110-v1",
+    "adminCommit": "d34e2d2",
+    "formalCourses": 555,
+    "appCommit": "1a5f913",
+    "mainSha256": "fd40550442c36f7be090820315408c7ca15830807adee7ce771f110eb399974b"
+  }
 }
