@@ -1,6 +1,7 @@
+import {stormModel} from './local-paths.mjs';
 import fs from 'node:fs';
 // Preserve the actual source-model bind transforms for attachment regressions.
-const model = fs.readFileSync('scene-preview/assets/avatar/models/storm-performance.glb');
+const model = fs.readFileSync(stormModel);
 const gltf = JSON.parse(model.subarray(20, 20 + model.readUInt32LE(12)).toString());
 const rig = JSON.parse(fs.readFileSync('scene-preview/assets/avatar/models/storm-rig.json', 'utf8'));
 const jointNames = new Set([rig.head, ...rig.eyes, ...rig.hair.map(joint => joint.name)]);

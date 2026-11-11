@@ -1,8 +1,8 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-const root=fileURLToPath(new URL('../scene-preview/build/web/',import.meta.url));
+import {webOutput as root} from './local-paths.mjs';
+fs.accessSync(path.join(root,'index.html'));
 const api=new URL(process.env.APP_API_ORIGIN||'http://127.0.0.1:5296');
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.json':'application/json','.wasm':'application/wasm','.ttf':'font/ttf','.wav':'audio/wav','.svg':'image/svg+xml','.png':'image/png','.css':'text/css'};
 http.createServer((req,res)=>{

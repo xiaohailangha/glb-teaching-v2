@@ -1,6 +1,6 @@
 """Keep facial morph normals; compact unreachable GLB accessors and buffers.
 
-The full original model and source rig remain in source-models/ and work/baseline/.
+Original model and source rig files are kept under 卡通人物/Snow Speaks beside the App repository.
 No geometry, materials, textures, target names or face positions are simplified.
 """
 import json, pathlib, struct

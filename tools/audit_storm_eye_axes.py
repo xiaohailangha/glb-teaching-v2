@@ -58,7 +58,7 @@ if '--render' in __import__('sys').argv:
         bpy.ops.render.render(write_still=True)
     render('source-eyes-orthographic.png')
     bpy.ops.wm.read_factory_settings(use_empty=True)
-    bpy.ops.import_scene.gltf(filepath=str(root/'scene-preview/assets/avatar/models/storm-performance.glb'))
+    bpy.ops.import_scene.gltf(filepath=str(root.parent / '卡通人物' / 'Snow Speaks' / 'models' / 'storm-performance.glb'))
     for obj in bpy.context.scene.objects:
         if obj.animation_data:
             obj.animation_data.action=None

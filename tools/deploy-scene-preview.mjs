@@ -3,12 +3,12 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {command,upload,remote} from './remote.mjs';
+import {outputRoot,webOutput} from './local-paths.mjs';
 process.chdir(fileURLToPath(new URL('../',import.meta.url)));
-const web=true,archive='work/deploy-scene-preview.tar.gz';
-await fs.mkdir('work',{recursive:true});
-const release=JSON.parse(await fs.readFile('scene-preview/build/web/scene-release.json','utf8'));
-await fs.access('scene-preview/build/web/'+release.mainFile);
-await command('tar',['-czf',archive,'--exclude=./assets/flutter_scene_generated/*.fsceneb','-C','scene-preview/build/web','.']);
+const archive=path.join(outputRoot,'deploy-scene-preview.tar.gz');
+const release=JSON.parse(await fs.readFile(path.join(webOutput,'scene-release.json'),'utf8'));
+await fs.access(path.join(webOutput,release.mainFile));
+await command('tar',['-czf',archive,'--exclude=./assets/flutter_scene_generated/*.fsceneb','-C',webOutput,'.']);
 console.log('scene-preview: package verified. '+archive);
 if(!process.argv.includes('--apply')){console.log('Review complete. Add --apply to publish.');process.exit(0);}
 const uploaded='/root/snow-scene-preview-'+Date.now()+'.tar.gz';

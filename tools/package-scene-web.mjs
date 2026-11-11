@@ -5,9 +5,9 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {gzipSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
+import {webOutput} from './local-paths.mjs';
 
-export function packageSceneWeb(app,revision){
- const dir=path.join(app,'build/web');
+export function packageSceneWeb(app,revision,dir=path.join(app,'build/web')){
  const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
  const main=fs.readFileSync(path.join(dir,'main.dart.js')),mainSha256=hash(main);
  const mainFile=`main.${mainSha256.slice(0,16)}.dart.js`;
@@ -55,5 +55,6 @@ export function packageSceneWeb(app,revision){
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const app=process.argv[2]||fileURLToPath(new URL('../scene-preview',import.meta.url));
  const revision=JSON.parse(fs.readFileSync(new URL('../release.json',import.meta.url))).revision;
- console.log(JSON.stringify(packageSceneWeb(path.resolve(app),revision)));
+ const dir=process.argv[3]||(!process.argv[2]?webOutput:undefined);
+ console.log(JSON.stringify(packageSceneWeb(path.resolve(app),revision,dir)));
 }

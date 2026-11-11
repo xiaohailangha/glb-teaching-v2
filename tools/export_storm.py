@@ -10,7 +10,10 @@ root=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(root/'tools'))
 from storm_motion import TRACKS,sample,body
 from storm_materials import bake_material
-r=bpy.data.objects['RIG-storm']; out=root/'work/storm';out.mkdir(exist_ok=True,parents=True)
+model_work = root.parent / '卡通人物' / 'Snow Speaks' / 'work'
+r = bpy.data.objects['RIG-storm']
+out = model_work / 'storm'
+out.mkdir(exist_ok=True, parents=True)
 if r.animation_data:
  r.animation_data.action=None
  for t in r.animation_data.nla_tracks:t.mute=True
@@ -97,7 +100,7 @@ def solid(mat):
 for src in sources:
  obj=baked[src.name];part=src.name.removeprefix('GEO-storm-')
  if part in ['head','body','hair_base','hair_clumps','top','trousers','eye.L','eye.R']:
-  bake_material(obj,part,root/'work/storm-fidelity/textures-subdiv2')
+  bake_material(obj,part,model_work / 'storm-fidelity' / 'textures-subdiv2')
  else:
   for slot in obj.material_slots:
    if slot.material:slot.material=solid(slot.material)
@@ -260,7 +263,8 @@ for o in col.objects:o.hide_render=False;o.select_set(True)
 bpy.context.view_layer.objects.active=actor
 scene.frame_start=0;scene.frame_end=72*fps
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'storm-runtime.blend'))
-dest=root/'scene-preview/assets/avatar/models/storm-performance.glb'
+dest = model_work.parent / 'models' / 'storm-performance.glb'
+dest.parent.mkdir(exist_ok=True, parents=True)
 bpy.ops.export_scene.gltf(filepath=str(dest),export_format='GLB',use_selection=True,export_animations=True,export_animation_mode='NLA_TRACKS',export_force_sampling=False,export_morph=True,export_morph_normal=True,export_skins=True,export_yup=True,export_cameras=False,export_lights=False)
 from pack_glb import pack
 stats['packing']=pack(dest,'Storm')

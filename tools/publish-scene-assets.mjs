@@ -2,6 +2,8 @@
 // private project bucket. Does not change the original model or bucket policy.
 import COS from 'cos-nodejs-sdk-v5';
 import fs from 'node:fs/promises';
+import path from 'node:path';
+import {compiledModels,webOutput} from './local-paths.mjs';
 import crypto from 'node:crypto';
 import {gzipSync} from 'node:zlib';
 
@@ -11,11 +13,11 @@ const cos=new COS({SecretId:credentials.secretId,SecretKey:credentials.secretKey
 const call=(method,params)=>new Promise((resolve,reject)=>cos[method](params,(error,result)=>error?reject(Error(`${method}: ${error.code||error.statusCode}`)):resolve(result)));
 const params={Bucket:base.bucket,Region:base.region};
 if((await call('getBucketAcl',params)).ACL!=='private')throw Error('Project bucket must stay private.');
-const directory='scene-preview/build/web/assets/flutter_scene_generated/';
-const manifest=JSON.parse(await fs.readFile(directory+'manifest.json','utf8'));
+const directory=path.join(webOutput,'assets','flutter_scene_generated');
+const manifest=JSON.parse(await fs.readFile(path.join(directory,'manifest.json'),'utf8'));
 const entry=manifest.entries.find(e=>e.source==='assets/avatar/models/storm-performance.glb');
 if(!entry||!/^scene\.storm-performance\.[a-f0-9]+\.fsceneb$/.test(entry.file))throw Error('Build the scene preview first.');
-const content=await fs.readFile(directory+entry.file);
+const content=await fs.readFile(path.join(compiledModels,entry.file));
 const revision=crypto.createHash('sha256').update(content).digest('hex'),chunkSize=1048576;
 const prefix=`models/scene-storm/${revision}`,parts=[];
 let next=0,storedBytes=0,completed=0;

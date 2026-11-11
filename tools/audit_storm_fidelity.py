@@ -1,6 +1,8 @@
 import bpy,json,pathlib
 from mathutils import Vector
-root=pathlib.Path(__file__).resolve().parents[1];out=root/'work/storm-fidelity';out.mkdir(exist_ok=True,parents=True)
+root = pathlib.Path(__file__).resolve().parents[1]
+out = root.parent / '卡通人物' / 'Snow Speaks' / 'work' / 'storm-fidelity'
+out.mkdir(exist_ok=True, parents=True)
 r=bpy.data.objects['RIG-storm']
 r.pose.bones['Properties_Character_Storm']['Anim Eyes']=False
 r.pose.bones['Properties']['ik_left_arm']=0.;r.pose.bones['Properties']['ik_right_arm']=0.

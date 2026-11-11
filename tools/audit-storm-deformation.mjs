@@ -1,9 +1,10 @@
+import {stormModel} from './local-paths.mjs';
 import fs from 'node:fs';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 
 // CPU reference using the source asset, without images or a browser renderer.
-const source = fs.readFileSync('scene-preview/assets/avatar/models/storm-performance.glb');
+const source = fs.readFileSync(stormModel);
 const jsonLength = source.readUInt32LE(12);
 const document = JSON.parse(source.subarray(20, 20 + jsonLength));
 for (const mesh of document.meshes) for (const primitive of mesh.primitives) delete primitive.material;

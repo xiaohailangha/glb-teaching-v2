@@ -13,7 +13,7 @@ import 'package:snow_speaks/features/lesson/presentation/ipa_text.dart';
 import 'package:snow_speaks/features/lesson/presentation/lesson_navigation.dart';
 
 TeachingDirector course() => TeachingDirector.fruit(
-  (jsonDecode(File('assets/avatar/courses/adult-fruit.json').readAsStringSync())
+  (jsonDecode(File('test/fixtures/legacy-course/adult-fruit.json').readAsStringSync())
           as Map)['stages']
       as List,
 );
@@ -76,11 +76,11 @@ void main() {
     'all course and explanation IPA sounds resolve to independent recordings',
     () {
       final units = jsonDecode(
-        File('assets/avatar/audio/pronunciation-units.json').readAsStringSync(),
+        File('test/fixtures/legacy-course/pronunciation-units.json').readAsStringSync(),
       ) as Map;
       final rows =
           (jsonDecode(
-                File('assets/avatar/courses/adult-fruit.json')
+                File('test/fixtures/legacy-course/adult-fruit.json')
                     .readAsStringSync(),
               ) as Map)['stages']
               as List;
