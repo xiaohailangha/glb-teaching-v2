@@ -50,7 +50,30 @@
     ],
     "serverCommit": "637e9f3",
     "mainVerifiedFromPublicUrl": true,
-    "physicalIPhone": "not connected",
+    "physicalIPhone": {
+      "samePublishedBuild": true,
+      "verificationScope": "Opening playback using live lesson GET requests and isolated progress. Initial focus loss paused playback. Both checks passed after Safari regained focus.",
+      "lessons": [
+        {
+          "seconds": 13.516,
+          "course": "N26-U006-L04",
+          "openingAudioSeconds": 7.958,
+          "contextLost": 0,
+          "frames": 766
+        },
+        {
+          "seconds": 13.38,
+          "course": "N26-U084-L01",
+          "openingAudioSeconds": 6.479,
+          "contextLost": 0,
+          "frames": 756
+        }
+      ],
+      "device": "iPhone 13 Pro Max",
+      "viewport": "832x364 landscape",
+      "ios": "26.3.1",
+      "browser": "Safari"
+    },
     "browser": "Chromium, 844x390 landscape; live website and model, isolated test learner and progress",
     "onlineAudioAssetsVerified": 213,
     "revision": "stable-teaching-20261110-v1",
